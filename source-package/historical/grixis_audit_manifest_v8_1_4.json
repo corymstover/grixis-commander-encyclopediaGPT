@@ -1,0 +1,23 @@
+{
+  "run_timestamp_utc": "2026-10-11T11:08:04.391574+00:00",
+  "pipeline_version": "8.1.4",
+  "deck_count": 62,
+  "csv_card_rows": 5963,
+  "txt_card_rows": 5963,
+  "csv_quantity_total": 6201,
+  "txt_quantity_total": 6201,
+  "csv_txt_reconciliation_pass_count": 62,
+  "csv_txt_reconciliation_review_count": 0,
+  "deck_audit_mechanical_pass_count": 58,
+  "deck_audit_review_count": 4,
+  "oracle_master_record_count": 38721,
+  "candidate_ranking_rows": 153175,
+  "oracle_text_term_search_rows": 144121,
+  "candidate_rank_weights": {
+    "edhrec_inclusion_percentile": 0.3,
+    "edhrec_lift_percentile": 0.3,
+    "edhrec_legacy_synergy_percentile": 0.25,
+    "oracle_text_relevance_pct": 0.15
+  },
+  "note": "Historical v8.1.4 summary extracted from the supplied audit manifest. Full historical source dataset remains outside this repository."
+}
