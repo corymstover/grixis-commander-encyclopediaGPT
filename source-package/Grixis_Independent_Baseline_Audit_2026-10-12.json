@@ -1,0 +1,79 @@
+{
+  "report_title": "Independent baseline and current legality checkpoint",
+  "audit_date": "2026-10-12",
+  "source_snapshot_date": "2026-10-12",
+  "source_package_filename": "Grixis_Commander_Encyclopedia_Current_Source_Package_2026-10-12(1).zip",
+  "source_package_sha256": "47892245c2cefcf528c38fa9d9e56653d6e71a0fc73fd5ea5eecdd90e2032746",
+  "package_zip_integrity": "PASS",
+  "internal_manifest": {
+    "expected_entries": 165,
+    "sha256_and_size_matches": 165,
+    "mismatched_entries": 0,
+    "missing_entries": 0
+  },
+  "current_decklists": {
+    "csv_files": 62,
+    "txt_files": 62,
+    "current_csv_rows": 5964,
+    "current_txt_entries": 5964,
+    "csv_quantity_total_including_companion": 6201,
+    "txt_quantity_total_including_companion": 6201,
+    "commander_plus_main_deck_total": 6200,
+    "separate_companion_quantity": 1,
+    "csv_txt_quantity_reconciliation": "PASS 62/62",
+    "exact_100_main_deck_plus_commander": "PASS 62/62",
+    "singleton_copy_check": "PASS 62/62 (basic-land and registered Nazgul copy allowance handled)",
+    "independently_recomputed_raw_csv_txt_sha256": "See Grixis_Independent_Deck_Hash_Manifest_2026-10-12.csv"
+  },
+  "card_metadata": {
+    "active_card_rows": 5964,
+    "unique_display_names": 1524,
+    "prior_oracle_and_color_identity_data_mostly_inherited_from_2026_10_11_snapshot": true,
+    "missing_oracle_text_in_prior_overlay": 1,
+    "missing_oracle_record_resolution": "Starscape Cleric — BLB #116; supplemental resolution confirms {1}{B}, black identity, current text and Commander legality; archive overlay itself remains unchanged.",
+    "fresh_full_scryfall_bulk_oracle_and_rulings_refresh": "NOT COMPLETED",
+    "independent_full_color_identity_download_for_every_printing": "NOT COMPLETED"
+  },
+  "official_legality": {
+    "official_commander_banned_list_checked_date": "2026-10-12",
+    "official_october_12_2026_b_r_announcement": "Published; listed no changes for tabletop Commander. The changes in that announcement are under Competitive Brawl.",
+    "exact_named_commander_banned_cards_detected_in_current_deck_exports": 3,
+    "detected_cards": [
+      {
+        "deck": "Cecily__Bjorna__Lutri",
+        "card": "Lutri, the Spellchaser",
+        "zone": "Companion",
+        "official_status": "Banned as a companion",
+        "project_status": "Explicitly authorized project exception"
+      },
+      {
+        "deck": "Cecily__Bjorna__Lutri",
+        "card": "Trade Secrets",
+        "zone": "Main deck",
+        "official_status": "Banned in Commander",
+        "project_status": "Explicitly authorized project exception"
+      },
+      {
+        "deck": "Cecily__Bjorna__Lutri",
+        "card": "Yawgmoth's Bargain",
+        "zone": "Main deck",
+        "official_status": "Banned in Commander",
+        "project_status": "Explicitly authorized project exception"
+      }
+    ],
+    "unexpected_named_commander_banned_cards": "NONE FOUND",
+    "future_release_project_exceptions_preserved": [
+      "The Madcap Jester",
+      "Dragon's Smile",
+      "Tresserhorn's Lord, Returned"
+    ],
+    "comprehensive_current_legality_verification_of_all_card_printings": "NOT COMPLETED; this is a current explicit banned-list cross-check, not a complete card-by-card Scryfall legality/printing refresh"
+  },
+  "strategic_review": {
+    "manual_commander_blueprints_completed": 0,
+    "current_strategy_profiles_with_blank_manual_strategy_terms_negative_terms_and_profile_notes": 62,
+    "high_impact_candidate_triage_and_swap_ledger": "NOT STARTED FOR THIS NEW REFINEMENT CYCLE",
+    "gameplay_or_consistency_testing": "NOT RUN AS PART OF THIS BASELINE AUDIT"
+  },
+  "result": "Baseline hash freeze and structural preflight PASS; current explicit Commander banned-list comparison PASS with three known authorized exceptions; full refreshed Oracle/rulings and full per-printing legality audit remain open."
+}

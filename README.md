@@ -12,15 +12,24 @@ Version-controlled project records for the 62-deck Grixis Commander Encyclopedia
 - Official Commander legality and project-authorized exceptions must be recorded separately.
 - Do not claim global mathematical perfection. Finalization is an evidence-backed stopping rule with documented uncertainty and material reopen triggers.
 
+## Latest verified checkpoint — 2026-10-12
+
+The source ZIP's internal manifest passed 165/165 hashes, all 62 current CSV/TXT pairs independently reconcile, all 62 main-deck-plus-commander lists independently count to 100, and all 62 singleton scans pass. The official Commander banned-list cross-check found only the three known project-authorized cards in Bjorna // Cecily + Lutri; full current Oracle/rulings and printing-level legality refresh remain open.
+
 ## Start here
 
-1. [Source package import status](source-package/IMPORT_STATUS.md)
-2. [Baseline & research freshness report](refinement/Baseline_And_Research_Freshness_Report_2026-10-12.md)
-3. [Controlled refinement & finalization protocol](refinement/Grixis_Refinement_Protocol_v1.md)
-4. [Refinement tracker](refinement/Deck_Refinement_Tracker_2026-10-12.csv)
-5. [Candidate decision ledger template](refinement/Candidate_Decision_Ledger_TEMPLATE.csv)
-6. [Playtest benchmark template](refinement/Playtest_Benchmark_TEMPLATE.csv)
-7. [Deck finalization certificate template](refinement/Deck_Finalization_Certificate_TEMPLATE.md)
+1. [Independent baseline audit](source-package/Grixis_Independent_Baseline_Audit_2026-10-12.json)
+2. [Individual deck hash manifest](source-package/Grixis_Independent_Deck_Hash_Manifest_2026-10-12.csv)
+3. [Official Commander legality checkpoint](refinement/Official_Commander_Legality_Checkpoint_2026-10-12.md)
+4. [Source consolidation register](source-package/Source_Consolidation_Register_2026-10-12.md)
+5. [Supplemental Starscape Cleric resolution](source-package/Supplemental_Starscape_Cleric_Resolution_2026-10-12.md)
+6. [Source package import status](source-package/IMPORT_STATUS.md)
+7. [Baseline & research freshness report](refinement/Baseline_And_Research_Freshness_Report_2026-10-12.md)
+8. [Controlled refinement & finalization protocol](refinement/Grixis_Refinement_Protocol_v1.md)
+9. [Refinement tracker](refinement/Deck_Refinement_Tracker_2026-10-12.csv)
+10. [Candidate decision ledger template](refinement/Candidate_Decision_Ledger_TEMPLATE.csv)
+11. [Playtest benchmark template](refinement/Playtest_Benchmark_TEMPLATE.csv)
+12. [Deck finalization certificate template](refinement/Deck_Finalization_Certificate_TEMPLATE.md)
 
 ## Current baseline status
 

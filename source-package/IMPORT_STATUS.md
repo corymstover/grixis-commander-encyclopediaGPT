@@ -13,6 +13,12 @@ The first repository setup imports the supplied Optimization Kit's actual text/C
 
 It also carries the current source manifest, the supplied package's current status and legality-freshness notes, plus the v8.1.4 guide/run manifest under an explicitly historical path. The root README documents the project rules and source-of-truth policy.
 
+## New verification update — 2026-10-12
+
+The four current CSV/TXT archive pairings have been independently parsed. All 62 pairs reconcile by card-name quantity, every main-deck-plus-commander total is exactly 100, and all 62 singleton checks pass. The source ZIP passed integrity and its 165 manifest-listed files all matched recorded sizes and hashes. See `Grixis_Independent_Baseline_Audit_2026-10-12.json` and `Grixis_Independent_Deck_Hash_Manifest_2026-10-12.csv`.
+
+The live official Commander banned list was checked on October 12, 2026. The only explicit named banned cards present are Lutri as companion, Trade Secrets, and Yawgmoth's Bargain in the designated Bjorna/Cecily deck; all three are existing authorized exceptions. The October 12 announcement lists changes for Competitive Brawl, not tabletop Commander. The complete Scryfall Oracle/rulings and printing-level legality refresh remains open.
+
 ## Source files not transferred yet
 
 The supplied source archive is `Grixis_Commander_Encyclopedia_Current_Source_Package_2026-10-12.zip`. Its full contents have **not** been copied into this repository. This includes:

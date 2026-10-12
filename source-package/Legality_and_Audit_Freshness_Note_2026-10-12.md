@@ -28,3 +28,12 @@ The sources reviewed during the packaging pass did not confirm an October 12 Com
 - `Barad-dûr`: legendary colorless land. Reference: https://cards.mtg-forum.de/magiccard.php?card=Barad-d%C3%BBr&collector_number=253&language_code=en&set=LTR
 
 The source package's card-audit overlay includes metadata source and freshness fields row by row. If a card's identity remains unresolved in the available datasets, treat that row as unknown rather than a pass.
+
+
+## Subsequent official checkpoint — 2026-10-12
+
+Wizards has now published its October 12 Banned & Restricted announcement: https://magic.wizards.com/en/news/announcements/banned-and-restricted-october-12-2026. Its listed changes are under Competitive Brawl; it does not announce a tabletop Commander change. The currently published consolidated Commander list is at https://magic.wizards.com/en/banned-restricted-list.
+
+A fresh name-level comparison of the current 62-deck exports against the explicit named Commander bans found exactly three cards, all already authorized by project policy in the designated Bjorna/Cecily deck: Lutri, the Spellchaser (companion-only ban), Trade Secrets, and Yawgmoth's Bargain. No additional named Commander-banned card was found. These exceptions remain officially banned; project authorization is a separate status.
+
+This closes the **official named banned-list checkpoint**. It does not close the full current Scryfall Oracle/rulings/printing-level legality gate.

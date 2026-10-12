@@ -42,3 +42,14 @@ Power scores and Archidekt tags are carried forward from the prior tracker recor
 ## Conversations and decision-history coverage
 
 This package incorporates the current FINAL archive uploads, available source files, the latest indexed continuation checkpoint and tracker records, and project rules available in the current project context. It is not a verbatim export of every chat over the last three days: the runtime does not expose a complete downloadable transcript of all project conversations. Where individual decisions were available in the continuation notes/tracker, their card changes are captured by the decklist delta report and retained prior notes are left in the historical source snapshot when present. No unobserved decision is invented.
+
+
+## Subsequent independent verification — 2026-10-12
+
+- Outer current source package SHA-256: `47892245c2cefcf528c38fa9d9e56653d6e71a0fc73fd5ea5eecdd90e2032746`.
+- Package integrity test: PASS; all 165 entries in its internal SHA-256 manifest passed size and hash verification.
+- Independent structural recheck: 62/62 CSV/TXT pairs reconcile; 62/62 lists have 100 main-deck-plus-commander cards; 62/62 singleton scans pass. CSV and TXT exports each total 6,201 copies when the one designated companion is included; main-deck-plus-commander total remains 6,200.
+- Official Commander banned-list checkpoint completed on October 12. Current named Commander-banned cards detected: Lutri as companion, Trade Secrets, and Yawgmoth's Bargain, all in the authorized Bjorna/Cecily project exception. No additional named Commander-banned card was found in the exports. See `../refinement/Official_Commander_Legality_Checkpoint_2026-10-12.md`.
+- One blank Oracle-text field in the inherited card-audit overlay was specifically resolved against the exact BLB #116 printing of Starscape Cleric; the original package audit file remains unchanged, with a separate supplemental resolution record.
+- Remaining open gates: fresh full Scryfall Oracle/rulings/printing-level legality refresh; detailed rules/interaction review; and completion of 62 manually authored commander-strategy blueprints. The machine-seeded profile file has blank `strategy_terms`, `negative_terms`, and `profile_notes` in all 62 rows.
+- The full source package and raw archive contents still have not been transferred into GitHub. The per-deck SHA-256 manifest pins the exact list files without claiming those files are present in the repository.

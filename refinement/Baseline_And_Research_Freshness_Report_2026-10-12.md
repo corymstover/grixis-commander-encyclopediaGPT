@@ -26,3 +26,10 @@ Do **not** restart a full research pipeline just because you are reviewing one d
 - EDHREC Lift migration: https://edhrec.com/articles/changelog-replacing-synergy-with-lift-on-edhrecs-card-pages
 - EDHREC Lift methodology: https://edhrec.com/articles/from-synergy-to-lift-the-math-behind-edhrecs-new-era
 - Scryfall bulk/API guidance: https://scryfall.com/docs/faqs/i-m-having-trouble-accessing-the-scryfall-api-or-im-blocked-17
+
+## Addendum — independent source/banned-list checkpoint (2026-10-12)
+
+- Source ZIP integrity passed. All 165 internal manifest-listed payload files matched both the exact recorded size and SHA-256 hash. Outer package SHA-256: `47892245c2cefcf528c38fa9d9e56653d6e71a0fc73fd5ea5eecdd90e2032746`.
+- An independent parser rechecked all 62 CSV/TXT deck pairs: 62/62 quantity reconciliations pass, 62/62 main-deck-plus-commander lists contain exactly 100 cards, and 62/62 singleton checks pass. Per-file raw hashes are preserved in `source-package/Grixis_Independent_Deck_Hash_Manifest_2026-10-12.csv`.
+- Wizards' October 12 B&R announcement is now published; changes are listed under Competitive Brawl only, and the consolidated Commander ban list was checked on the same date. The only named Commander-banned cards present in current decklists are the three documented Bjorna/Cecily exceptions: Lutri as companion, Trade Secrets, and Yawgmoth's Bargain. No additional named Commander-banned cards were found.
+- One blank Oracle field was individually resolved for Starscape Cleric, BLB #116. A full current Scryfall Oracle/rulings/printing-level legality refresh remains open; this update must not be represented as completing that gate.
