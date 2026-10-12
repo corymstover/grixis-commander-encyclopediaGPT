@@ -57,7 +57,7 @@ These are not newly discovered unauthorized inclusions. Preserve the existing ex
 
 ## Freeze decision
 
-**Structural baseline frozen by hash; repository content mirror incomplete.** The per-deck CSV/TXT hashes preserve the exact current list identity even though the 4 current FINAL archives, 4 historical archives, 124 individual decklists, and large research datasets have not yet been copied into GitHub. Do not call this repository a complete archive mirror until those files are transferred and verified.
+**Structural baseline frozen by hash; current decklists mirrored, full source package mirror incomplete.** The 124 current CSV/TXT files are mirrored in `source-package/GrixisFINAL_62Decks_CSV_TXT_2026-10-12.tar.gz` and their raw hashes are pinned in the manifest. The four original current FINAL ZIP archives, four historical archives, and large audit/research datasets have not been copied into GitHub. Do not call this a complete source-package mirror until those remaining files are transferred and verified.
 
 ## Next efficient action
 
