@@ -45,12 +45,14 @@ The original full source package remains available as the preserved input bundle
 - All 62 pass the source package's mechanical repeat-copy checks
 - All 62 card multisets changed relative to the previous Updated archives: 306 copy additions and 306 copy cuts
 
-These are source-package-reported structural results, not an independent new audit performed during the repository import.
+These structural results were independently rechecked on 2026-10-12 and are documented in the independent baseline audit and per-deck hash manifest.
 
 ## Audit freshness limitations
 
-The package states that full current Oracle/rulings refresh, comprehensive rules-interaction review, current official Commander legality refresh, and power-score recalculation were not performed across every final list. The legality checkpoint is marked pending in the supplied package. The inherited v8.1.4 card audit must not be represented as a new audit of the current FINAL lists.
+The current official named Commander banned-list checkpoint is complete as of 2026-10-12, with only the three already-authorized Bjorna/Cecily exceptions found. The comprehensive current Scryfall Oracle/rulings/exact-printing legality refresh, full rules-interaction review, and strategic power reassessment remain incomplete. The inherited v8.1.4 card audit must not be represented as a fresh audit of the current FINAL lists.
 
 ## Next import phase
 
-Transfer the current source package and historical archives without modifying their contents, then verify file hashes against the package manifest. Preserve ZIP archives and extracted 124 decklists; keep audit/research datasets and historical snapshots distinct. Reconcile counts and hashes before treating the GitHub copy as a complete source-of-truth mirror.
+The 124 current decklists are mirrored as a compressed archive and their raw hashes are pinned in the frozen baseline branch. The original source package and its full historical ZIP archives and large research datasets remain outside GitHub. Transfer those remaining source files without modifying them when a reliable binary upload route is available, then verify each file against the source package manifest before treating the repository as a complete source-of-truth mirror.
+
+Frozen baseline branch: https://github.com/corymstover/grixis-commander-encyclopediaGPT/tree/baseline/freeze-2026-10-12
