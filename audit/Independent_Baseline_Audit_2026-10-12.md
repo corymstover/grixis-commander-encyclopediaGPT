@@ -6,7 +6,7 @@
 - SHA-256: `47892245c2cefcf528c38fa9d9e56653d6e71a0fc73fd5ea5eecdd90e2032746`
 - Package ZIP integrity: PASS
 - Internal package manifest: 165 entries; 165 SHA-256 and size checks passed; 0 failures; 0 missing files.
-- Audit scope: independently parse the current FINAL CSV/TXT deck pairs and compare the current official Commander ban list as of 2026-10-12.
+- Audit scope: independently parse current FINAL CSV/TXT deck pairs and compare the current official Commander ban list as of 2026-10-12.
 - Exact per-deck hashes are in `Grixis_Independent_Deck_Hash_Manifest_2026-10-12.csv`.
 
 ## Structural results
@@ -25,7 +25,7 @@
 | Current active card rows | 5,964 |
 | Unique active card names | 1,524 |
 
-This verifies list structure and membership against the supplied package. It does not prove strategy quality or all current Oracle/rulings metadata.
+This verifies list structure and membership against the supplied package. It does not prove strategic quality or that every current Oracle/rulings record has been freshly retrieved.
 
 ## Current official Commander legality checkpoint
 
@@ -39,20 +39,21 @@ Three current-list entries matched the official Commander ban list, and all thre
 
 | Card | Current location | Official status | Project treatment |
 |---|---|---|---|
-| Lutri, the Spellchaser | Companion | Banned as a companion; allowed in the 99/commander | Explicit project exception; keep the companion exception distinct from official status |
+| Lutri, the Spellchaser | Companion | Banned as a companion; allowed in the 99/commander | Explicit project exception; keep companion exception distinct from official status |
 | Trade Secrets | Main deck | Banned in Commander | Explicit project-authorized exception in designated Bjorna/Cecily deck |
 | Yawgmoth's Bargain | Main deck | Banned in Commander | Explicit project-authorized exception in designated Bjorna/Cecily deck |
 
-These are not new violations or newly discovered unauthorized cards. Preserve the existing exception registry and label official legality separately from project authorization. No other official Commander banned-name matches were found by this cross-check.
+These are not newly discovered unauthorized inclusions. Preserve the existing exception registry and label official legality separately. No other official Commander banned-name matches were found by this cross-check.
 
 ## Metadata and rules work still open
 
 - The current card audit inherits much of its Oracle/color-identity data from the 2026-10-11 snapshot. That data is useful evidence, but it is not a complete fresh Scryfall Oracle/rulings pull for the current FINAL lists.
-- 188 card rows representing 182 distinct names were sourced from the candidate-ranking snapshot and had no reverified legality status. Refresh exact printing, Oracle ID/text, color identity, legality and relevant rulings for these names.
-- `Starscape Cleric` in `Sol_kanar_the_Swamp_King` has a known Oracle-text metadata gap in the inherited audit. The package records set `BLB`, collector `116`; confirm the exact non-token printing and populate current Oracle data.
-- For all 1,524 unique current-list names, complete the intended project-wide current-data refresh/identity and legality overlay before issuing a full correctness certificate. The queue at `Grixis_Targeted_Card_Review_Queue_2026-10-12.csv` captures the targeted gaps identified by the independent audit; blank color identity by itself is not an error for a colorless card.
+- 188 current card rows representing 182 distinct names came from the candidate-ranking snapshot and had no reverified legality status.
+- `Starscape Cleric` in `Sol_kanar_the_Swamp_King` has an Oracle-text metadata gap in the inherited audit. Its exact printing is `BLB` collector `116`. Current card references confirm it is a black Creature — Bat Cleric with Oracle text: “Offspring {2}{B} (You may pay an additional {2}{B} as you cast this spell. If you do, when this creature enters, create a 1/1 token copy of it.) Flying This creature can't block. Whenever you gain life, each opponent loses 1 life.” It is listed as Commander-legal. Reference: https://mtg.wtf/card/blb/116/Starscape-Cleric. Record this as a targeted metadata resolution; it does not substitute for refreshing all current records.
+- The focused metadata-gap queue has 183 unique names: the 182 names whose legality was not reverified in the inherited candidate snapshot plus `Starscape Cleric`. Blank color identity by itself is not an error for a colorless card.
+- For all 1,524 unique current-list names, complete the intended project-wide current-data refresh/identity and legality overlay before issuing a full correctness certificate.
 - Commander strategy blueprints remain incomplete for all decks. The inherited strategy profiles have blank `strategy_terms`, `negative_terms`, and `profile_notes` across all 62 rows.
-- Candidate ranks are triage evidence, not mandatory additions; the inherited rank scores were not recalculated against the current final lists.
+- Candidate ranks are triage evidence, not mandatory additions; inherited rank scores were not recalculated against the current final lists.
 - The 62 decks remain previously FINAL/approved baselines. This new audit does not reopen or alter any decklist.
 
 ## Freeze decision
@@ -62,6 +63,6 @@ These are not new violations or newly discovered unauthorized cards. Preserve th
 ## Next efficient action
 
 1. Refresh metadata for the 182 candidate-only card names plus the Starscape Cleric exact printing.
-2. Refresh and compare current identity/Oracle/legality metadata for the full 1,524-name set using a single current Scryfall dataset snapshot where practical, not repeated ad hoc pipeline runs.
+2. Refresh and compare current identity/Oracle/legality metadata for the full 1,524-name set using one current Scryfall dataset snapshot where practical, not repeated ad hoc pipeline runs.
 3. Complete commander-specific blueprints in tracker order, then assess only high-impact candidate swaps.
 4. Do not change approved lists until a concrete proposal has been presented and explicitly approved.
