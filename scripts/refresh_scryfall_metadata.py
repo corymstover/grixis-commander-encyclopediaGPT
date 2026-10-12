@@ -67,7 +67,7 @@ def main():
     card,_=choose(row)
     if card: ci.update(card.get("color_identity") or [])
   commanders[did]=sorted(ci)
- rows=[]; summary={"generated_at_utc":datetime.now(timezone.utc).isoformat(),"bulk_type":"default_cards","bulk_updated_at":bulk.get("updated_at"),"deck_count":len(decks),"decklist_rows":sum(map(len,decks.values())),"distinct_printing_keys":len(keys),"exact_matches":0,"name_variant_reviews":0,"not_found":0,"ambiguous":0,"missing_oracle_text":0,"missing_oracle_id":0,"color_identity_mismatches":[],"official_illegal_rows":[],"known_project_banned_exception_rows":[],"unresolved_printing_rows":[],"note":"Metadata overlay only; does not certify relevant rules interactions or replace the separate project exception registry."}
+ rows=[]; summary={"generated_at_utc":datetime.now(timezone.utc).isoformat(),"bulk_type":"default_cards","bulk_updated_at":bulk.get("updated_at"),"deck_count":len(decks),"decklist_rows":sum(map(len,decks.values())),"distinct_printing_keys":len(keys),"exact_matches":0,"name_variant_reviews":0,"not_found":0,"ambiguous":0,"missing_oracle_text":0,"missing_oracle_id":0,"color_identity_mismatches":[],"official_illegal_rows":[],"known_project_banned_exception_rows":[],"unresolved_project_exception_rows":[],"unresolved_printing_rows":[],"note":"Metadata overlay only; does not certify relevant rules interactions or replace the separate project exception registry."}
  for did,entries in decks.items():
   dci=commanders[did]
   for row in entries:
@@ -89,13 +89,14 @@ def main():
     else:
      out["color_identity_check"]="FAIL"; summary["color_identity_mismatches"].append({"deck_id":did,"card_name":row["card_name_export"],"card_identity":ci,"commander_identity":dci})
     zone="Companion" if "Companion" in row["role"] else "Main"
+    if row["card_name_export"]=="Lutri, the Spellchaser" and zone=="Companion": out["commander_legality"]="banned_as_companion"
     key=(did,row["card_name_export"],zone)
     if key in BANNED_EXCEPTIONS:
      out["project_exception_status"]="KNOWN PROJECT-AUTHORIZED EXCEPTION — official status retained separately"
      summary["known_project_banned_exception_rows"].append({"deck_id":did,"card_name":row["card_name_export"],"zone":zone,"official_status":out["commander_legality"]})
-    elif row["card_name_export"]=="Lutri, the Spellchaser" and zone=="Companion":
-     out["commander_legality"]="banned_as_companion"
-     out["project_exception_status"]="KNOWN PROJECT-AUTHORIZED EXCEPTION — official status retained separately"
+    elif row["card_name_export"] in FUTURE:
+     out["project_exception_status"]="KNOWN FUTURE-RELEASE PROJECT EXCEPTION — confirm exact registry row"
+     summary["unresolved_project_exception_rows"].append({"deck_id":did,"card_name":row["card_name_export"],"reason":"future-release status should be cross-checked against the current exception registry"})
     if out["commander_legality"] in ("banned","not_legal","banned_as_companion"):
      summary["official_illegal_rows"].append({"deck_id":did,"card_name":row["card_name_export"],"zone":zone,"official_status":out["commander_legality"],"project_exception_status":out["project_exception_status"]})
    rows.append(out)
@@ -103,7 +104,8 @@ def main():
  with (OUT/"Current_Scryfall_Metadata_Overlay_2026-10-12.csv").open("w",newline="",encoding="utf-8") as f:
   w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
  summary["rows_written"]=len(rows);summary["decks_with_unresolved_commander_identity"]=sorted(d for d,ci in commanders.items() if not ci)
- summary["overall_result"]="REVIEW_REQUIRED" if (summary["not_found"] or summary["ambiguous"] or summary["name_variant_reviews"] or summary["missing_oracle_text"] or summary["missing_oracle_id"] or summary["color_identity_mismatches"] or summary["unresolved_printing_rows"]) else "METADATA_REFRESH_PASS — exception/rules review remains separate"
+ summary["unexpected_official_illegal_rows"]=[x for x in summary["official_illegal_rows"] if not str(x["project_exception_status"]).startswith("KNOWN PROJECT-AUTHORIZED EXCEPTION")]
+ summary["overall_result"]="REVIEW_REQUIRED" if (summary["not_found"] or summary["ambiguous"] or summary["name_variant_reviews"] or summary["missing_oracle_text"] or summary["missing_oracle_id"] or summary["color_identity_mismatches"] or summary["unresolved_printing_rows"] or summary["unresolved_project_exception_rows"] or summary["unexpected_official_illegal_rows"]) else "METADATA_REFRESH_PASS — exception/rules review remains separate"
  (OUT/"Current_Scryfall_Metadata_Audit_Summary_2026-10-12.json").write_text(json.dumps(summary,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
  print(json.dumps({k:v for k,v in summary.items() if k not in ("color_identity_mismatches","official_illegal_rows","known_project_banned_exception_rows","unresolved_printing_rows")},indent=2))
 if __name__=="__main__": main()
