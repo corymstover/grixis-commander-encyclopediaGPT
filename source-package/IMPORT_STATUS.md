@@ -56,3 +56,7 @@ The current official named Commander banned-list checkpoint is complete as of 20
 The 124 current decklists are mirrored as a compressed archive and their raw hashes are pinned in the frozen baseline branch. The original source package and its full historical ZIP archives and large research datasets remain outside GitHub. Transfer those remaining source files without modifying them when a reliable binary upload route is available, then verify each file against the source package manifest before treating the repository as a complete source-of-truth mirror.
 
 Frozen baseline branch: https://github.com/corymstover/grixis-commander-encyclopediaGPT/tree/baseline/freeze-2026-10-12
+
+## Automated regression protection
+
+A repository workflow now runs on relevant pushes and pull requests. Its first GitHub Actions run passed, verifying all 124 raw CSV/TXT file hashes against the frozen manifest, 62 quantity reconciliations, 62 exact 100-card counts, 62 singleton/copy checks, and the collection totals. Run: https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/38324768882
