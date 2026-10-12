@@ -14,7 +14,7 @@ Version-controlled project records for the 62-deck Grixis Commander Encyclopedia
 
 ## Latest verified checkpoint — 2026-10-12
 
-The source ZIP's internal manifest passed 165/165 hashes, all 62 current CSV/TXT pairs independently reconcile, all 62 main-deck-plus-commander lists independently count to 100, and all 62 singleton scans pass. The official Commander banned-list cross-check found only the three known project-authorized cards in Bjorna // Cecily + Lutri; full current Oracle/rulings and printing-level legality refresh remain open.
+The source ZIP's internal manifest passed 165/165 hashes; all 62 current CSV/TXT pairs independently reconcile, all 62 main-deck-plus-commander lists count to 100, and all 62 singleton scans pass. The official Commander named-ban checkpoint is complete: the only matches are the three known project-authorized Bjorna // Cecily + Lutri exceptions. Full current Oracle/rulings and exact-printing legality refresh remain open. The hash manifest and detailed independent audit are preserved on the [frozen baseline branch](https://github.com/corymstover/grixis-commander-encyclopediaGPT/tree/baseline/freeze-2026-10-12).
 
 ## Start here
 
@@ -33,7 +33,7 @@ The source ZIP's internal manifest passed 165/165 hashes, all 62 current CSV/TXT
 
 ## Current baseline status
 
-The supplied 2026-10-12 source report records 62 current CSV/TXT pairs reconciled, all 62 at exactly 100 main-deck-plus-commander cards, and 306 additions / 306 cuts relative to the previous Updated archives. It also explicitly says the comprehensive fresh Oracle/rulings and current official Commander legality review was not rerun across all current lists. Those gates remain pending; the historic 62/62 structural pass must not be treated as a full present-day rules certification.
+The supplied 2026-10-12 source report records 306 card-copy additions and 306 removals relative to the previous Updated archives. The independent structural audit confirms 62/62 CSV/TXT reconciliations, 62/62 exact 100-card counts, and 62/62 singleton passes. The official named Commander ban-list checkpoint is complete; the comprehensive fresh Oracle/rulings and exact-printing legality overlay remains pending. Do not treat structural success or a name-level ban-list comparison as a full present-day rules certification.
 
 ## Current repository mirror
 
