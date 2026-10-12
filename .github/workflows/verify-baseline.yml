@@ -1,0 +1,34 @@
+name: Verify frozen decklist baseline
+
+on:
+  push:
+    branches: [main, "baseline/**"]
+    paths:
+      - "source-package/GrixisFINAL_62Decks_CSV_TXT_2026-10-12.tar.gz"
+      - "source-package/Grixis_Independent_Deck_Hash_Manifest_2026-10-12.csv"
+      - "scripts/verify_baseline.py"
+      - ".github/workflows/verify-baseline.yml"
+  pull_request:
+    branches: [main, "baseline/**"]
+    paths:
+      - "source-package/GrixisFINAL_62Decks_CSV_TXT_2026-10-12.tar.gz"
+      - "source-package/Grixis_Independent_Deck_Hash_Manifest_2026-10-12.csv"
+      - "scripts/verify_baseline.py"
+      - ".github/workflows/verify-baseline.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verify hashes, counts, and singleton rules
+        run: python scripts/verify_baseline.py
