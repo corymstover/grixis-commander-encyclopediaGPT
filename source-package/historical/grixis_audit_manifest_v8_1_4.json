@@ -1,6 +1,30 @@
 {
   "run_timestamp_utc": "2026-10-11T11:08:04.391574+00:00",
   "pipeline_version": "8.1.4",
+  "input_csv_archives": [
+    {
+      "archive": "Grixis60CSVFiles-Updated-10-11-2026.zip",
+      "member_count": 60,
+      "uncompressed_bytes": 107075
+    },
+    {
+      "archive": "Grixis2CSVFiles-Updated-10-11-2026.zip",
+      "member_count": 2,
+      "uncompressed_bytes": 3558
+    }
+  ],
+  "input_txt_archives": [
+    {
+      "archive": "Grixis60TXTFiles-Updated-10-11-2026.zip",
+      "member_count": 60,
+      "uncompressed_bytes": 216678
+    },
+    {
+      "archive": "Grixis2TXTFiles__Updated-10-11-2026.zip",
+      "member_count": 2,
+      "uncompressed_bytes": 7202
+    }
+  ],
   "deck_count": 62,
   "csv_card_rows": 5963,
   "txt_card_rows": 5963,
@@ -8,9 +32,52 @@
   "txt_quantity_total": 6201,
   "csv_txt_reconciliation_pass_count": 62,
   "csv_txt_reconciliation_review_count": 0,
+  "parse_issue_count": 0,
+  "scryfall_bulk_sources": [
+    {
+      "source": "Scryfall",
+      "bulk_type": "oracle_cards",
+      "updated_at": "2026-10-11T09:01:56.463+00:00",
+      "downloaded_at_utc": "2026-10-11T11:09:39.426212+00:00",
+      "record_count": 38721,
+      "download_url": "https://data.scryfall.io/oracle-cards/oracle-cards-20261011090156.jsonl.gz",
+      "download_url_field": "jsonl_download_uri",
+      "download_format_hint": "gzip_jsonl",
+      "cache_file": "/content/grixis_research_v8_1_4/scryfall_cache/oracle_cards.bulk",
+      "sha256": "fff859224722e6e4c19df9f287e9c5aa5411d47e35f214fa4e44450c7ee67b28",
+      "compressed_size_bytes": 24630153,
+      "uncompressed_size_bytes": ""
+    },
+    {
+      "source": "Scryfall",
+      "bulk_type": "rulings",
+      "updated_at": "2026-10-11T09:00:33.672+00:00",
+      "downloaded_at_utc": "2026-10-11T11:09:40.096521+00:00",
+      "record_count": 79706,
+      "download_url": "https://data.scryfall.io/rulings/rulings-20261011090033.jsonl.gz",
+      "download_url_field": "jsonl_download_uri",
+      "download_format_hint": "gzip_jsonl",
+      "cache_file": "/content/grixis_research_v8_1_4/scryfall_cache/rulings.bulk",
+      "sha256": "e85bd47c7e6c164d7c87ec67beab4924ac8a48fcf17c1984a0e1dc430401a4de",
+      "compressed_size_bytes": 5422271,
+      "uncompressed_size_bytes": ""
+    }
+  ],
+  "oracle_master_record_count": 38721,
   "deck_audit_mechanical_pass_count": 58,
   "deck_audit_review_count": 4,
-  "oracle_master_record_count": 38721,
+  "manual_review_queue_rows": 7,
+  "printing_review_queue_rows": 0,
+  "printing_index_enabled": false,
+  "automatic_edhrec_single_commander_fetch_enabled": true,
+  "edhrec_verified_page_overrides_enabled": true,
+  "edhrec_verified_page_override_count": 6,
+  "edhrec_stats_rows": 17190,
+  "edhrec_candidate_rows": 17190,
+  "archidekt_queue_rows_enabled": 0,
+  "archidekt_imported_card_rows": 0,
+  "archidekt_fetch_log_rows": 0,
+  "commander_strategy_profile_rows": 62,
   "candidate_ranking_rows": 153175,
   "oracle_text_term_search_rows": 144121,
   "candidate_rank_weights": {
@@ -19,5 +86,5 @@
     "edhrec_legacy_synergy_percentile": 0.25,
     "oracle_text_relevance_pct": 0.15
   },
-  "note": "Historical v8.1.4 summary extracted from the supplied audit manifest. Full historical source dataset remains outside this repository."
+  "note": "Candidate ranking is an evidence triage aid, not a card-power score; Archidekt inputs are user-selected and opt-in. Mechanical workflow only; official legality remains separate from project exceptions; strategic/rules review and swaps are not automatically certified. Printing metadata takes precedence over ambiguous name-only matches. Effective legality records narrowly scoped official Commander rule overlays (including Lutri), without overwriting Scryfall legality. EDHREC pages must pass expected-header validation."
 }
