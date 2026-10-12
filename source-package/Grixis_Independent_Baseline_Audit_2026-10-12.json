@@ -75,5 +75,20 @@
     "high_impact_candidate_triage_and_swap_ledger": "NOT STARTED FOR THIS NEW REFINEMENT CYCLE",
     "gameplay_or_consistency_testing": "NOT RUN AS PART OF THIS BASELINE AUDIT"
   },
-  "result": "Baseline hash freeze and structural preflight PASS; current explicit Commander banned-list comparison PASS with three known authorized exceptions; full refreshed Oracle/rulings and full per-printing legality audit remain open."
+  "result": "Baseline hash freeze and structural preflight PASS; current explicit Commander banned-list comparison PASS with three known authorized exceptions; full refreshed Oracle/rulings and full per-printing legality audit remain open.",
+  "current_github_mirror_bundle": {
+    "path": "source-package/GrixisFINAL_62Decks_CSV_TXT_2026-10-12.tar.gz",
+    "sha256": "f2f46436c3514ecf8412d1fe1f9926919d8d1a3d7a2f938ffee7efce073b2b20",
+    "bytes": 78061,
+    "current_csv_txt_files": 124,
+    "current_csv_txt_per_deck_hashes_match": "see committed per-deck hash manifest"
+  },
+  "metadata_review_queue": {
+    "path": "source-package/Grixis_Targeted_Card_Review_Queue_2026-10-12.csv",
+    "unique_card_names": 1524,
+    "p0": 1,
+    "p1": 182,
+    "p2": 1341,
+    "note": "Prior audit data remains stale as described; this is a targeted verification queue, not a claim all entries have been refreshed."
+  }
 }

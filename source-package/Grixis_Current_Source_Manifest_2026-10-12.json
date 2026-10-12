@@ -115,5 +115,23 @@
     ],
     "unexpected_named_banned_cards_found": 0,
     "comprehensive_all_printing_legality_audit": false
+  },
+  "current_decklist_mirror": {
+    "path": "source-package/GrixisFINAL_62Decks_CSV_TXT_2026-10-12.tar.gz",
+    "kind": "new compressed mirror bundle of the 124 current extracted CSV/TXT decklist files; not a replacement for the four original archives",
+    "files": 124,
+    "csv_files": 62,
+    "txt_files": 62,
+    "bytes": 78061,
+    "sha256": "f2f46436c3514ecf8412d1fe1f9926919d8d1a3d7a2f938ffee7efce073b2b20",
+    "raw_individual_hash_manifest": "source-package/Grixis_Independent_Deck_Hash_Manifest_2026-10-12.csv"
+  },
+  "card_verification_queue": {
+    "path": "source-package/Grixis_Targeted_Card_Review_Queue_2026-10-12.csv",
+    "unique_card_names": 1524,
+    "p0_metadata_gap_or_identity_resolution": 1,
+    "p1_inherited_legality_not_reverified": 182,
+    "p2_normal_fresh_metadata_checkpoint": 1341,
+    "note": "Queue uses empty color identity cautiously: empty is commonly valid for colorless cards and is not automatically treated as a defect."
   }
 }

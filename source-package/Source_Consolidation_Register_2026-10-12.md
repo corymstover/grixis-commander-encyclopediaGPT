@@ -28,6 +28,13 @@ The following filename pairs were verified byte-for-byte identical by size and S
 - The v8.1.4 research snapshot is retained under a historical path and must not be called a fresh audit of current card membership.
 - The uploaded duplicate attachments have not been physically deleted. This import workflow can consolidate the canonical repository layout and document exact duplicates; deleting project-source attachments is a separate source-management operation and is not necessary to establish a single repository path.
 
-## What is still not mirrored in GitHub
+## Mirror status as of 2026-10-12
 
-The source package ZIP and its four canonical deck archives, four historical archives, 124 extracted list files, and full card-audit / candidate-ranking datasets are still held in the supplied source-package attachment, not committed individually into this repository. The hash manifests establish the identity of these inputs but do not mean their contents have been transferred to GitHub.
+**Current decklists are now mirrored in GitHub** as `source-package/GrixisFINAL_62Decks_CSV_TXT_2026-10-12.tar.gz`. It contains the 62 authoritative current CSV lists and their 62 matching TXT exports (124 files). SHA-256:
+
+`f2f46436c3514ecf8412d1fe1f9926919d8d1a3d7a2f938ffee7efce073b2b20`
+
+The individual raw CSV/TXT SHA-256 values and independent count/reconciliation results are in `Grixis_Independent_Deck_Hash_Manifest_2026-10-12.csv`.
+
+The *original* four current FINAL ZIP archives, four historical Updated ZIP archives, and full current inventory/audit/candidate-ranking datasets remain in the supplied source package outside the repository. Those originals were not deleted or replaced; the mirror is a newly generated convenience bundle whose extracted contents should be checked against the hash manifest after any future transfer or restoration.
+

@@ -21,14 +21,18 @@ The live official Commander banned list was checked on October 12, 2026. The onl
 
 ## Source files not transferred yet
 
-The supplied source archive is `Grixis_Commander_Encyclopedia_Current_Source_Package_2026-10-12.zip`. Its full contents have **not** been copied into this repository. This includes:
-- Four current authoritative ZIP archives
-- Four historical `Updated-10-11-2026` archives
-- 62 CSV and 62 TXT individual decklists
-- Current inventory, reconciliation, mechanical summary, card-audit overlay, and decklist delta datasets
-- Candidate rankings, research manifest, strategy profiles, exception registry, identity overrides, historical v8.1.4 datasets, and package SHA-256 file manifest
+The 124 current individual CSV/TXT decklists are now mirrored as a compact archive:
+`source-package/GrixisFINAL_62Decks_CSV_TXT_2026-10-12.tar.gz`
+- 62 CSV and 62 TXT files
+- Archive SHA-256: `f2f46436c3514ecf8412d1fe1f9926919d8d1a3d7a2f938ffee7efce073b2b20`
+- Expected raw per-deck hashes are recorded in `Grixis_Independent_Deck_Hash_Manifest_2026-10-12.csv`.
 
-The current source package is available in the working conversation environment, but the connected GitHub write tools available for this import do not provide a direct local-file or binary ZIP upload operation. No placeholder archives have been created; the repository does not claim that these files were uploaded.
+The following exact originals/datasets are still not individually mirrored into GitHub:
+- Four current canonical source ZIP archives and four historical `Updated-10-11-2026` ZIP archives
+- Current inventory, reconciliation, mechanical summary, complete 5,964-row card-audit overlay, and decklist delta datasets
+- Candidate ranking dataset, research manifest, manually incomplete strategy profiles, exception registry, identity overrides, historical v8.1.4 data, and internal package SHA-256 manifest.
+
+The original full source package remains available as the preserved input bundle outside this repository. The compact archive is a verified copy of the 124 current decklist text files; it is not a copy of the entire source package.
 
 ## Authoritative baseline and source-package-reported findings
 
