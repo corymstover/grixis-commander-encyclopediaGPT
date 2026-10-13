@@ -42,7 +42,7 @@ def main():
  bulk=next(x for x in api["data"] if x["type"]=="default_cards")
  found=defaultdict(list)
  with tempfile.NamedTemporaryFile(suffix=".json") as tmp:
-  with request(bulk["download_uri"]) as src:
+  download_uri=bulk.get("download_uri") or bulk.get("download_url")\n if not download_uri: raise RuntimeError("Scryfall bulk entry has no download URI; keys="+",".join(sorted(bulk.keys())))\n with request(download_uri) as src:
    while True:
     b=src.read(1024*1024)
     if not b: break
