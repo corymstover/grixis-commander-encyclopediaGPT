@@ -20,7 +20,9 @@ class PairedPilotLogSummaryTests(unittest.TestCase):
             "Game Outcome: Turn 9",
             f"Game Result: Game 1 ended in 12345 ms. {target} has won!",
         ])
-        result = summarize_game_log(log, BASELINE_LABEL)
+        # Forge prefixes runtime events with [INFO] timestamps; parser must strip them.
+        prefixed = "\n".join(f"12:34:56 [INFO ] {line}" for line in log.splitlines())
+        result = summarize_game_log(prefixed, BASELINE_LABEL)
         self.assertEqual(result["outcome"], "TARGET_WIN")
         self.assertEqual(result["abaddon_first_cast_own_turn"], 2)
         self.assertEqual(result["abaddon_cascade_resolutions_observed"], 1)
