@@ -1,6 +1,6 @@
 # Grixis Commander Encyclopedia — Current Status
 
-**Status snapshot:** 2026-10-13 UTC — DECKS #1–11 REFINED AND LOCKED; NEW CYCLE ACTIVE  
+**Status snapshot:** 2026-10-13 UTC — DECKS #1–12 REFINED AND LOCKED; NEW CYCLE ACTIVE  
 **Scope:** 62 commander-first Grixis decks  
 **Frozen authoritative list snapshot:** 2026-10-12  
 **Active work branch:** `refinement/campaign-2026-10-12`  
@@ -12,7 +12,7 @@ The 2026-10-12 baseline remains frozen and structurally verified. All 62 CSV/TXT
 
 The active refinement branch now has a reproducible, CI-verified exact draw-density analysis for Abaddon. Forge test infrastructure has advanced beyond the original source-only probe: its pinned release and 95 card-script name mappings were verified, the exact baseline and isolated test variant loaded in Commander mode, and a bounded 3+3 fixed-opponent pilot completed. However, the candidate comparison was **INCONCLUSIVE** because neither Mind's Desire nor Aurora Phoenix was cast in any of the six registered games. Do not reuse those games as card-performance evidence or rerun the same AI comparison. The relevant workflow is now manual-dispatch only.
 
-**NEW CYCLE STATE (effective 2026-10-13): 11 of 62 decks are now APPROVED / LOCKED after passing the current technical gates; 51 remain UNAPPROVED / UNLOCKED.** Historical approvals and locks are superseded for current status, while their records remain preserved. Deck #1, Abaddon the Despoiler, is locked at `9629ba07807642736bce0b2c90038dd664da7b32b3892744808c8de4b526fb50`; Deck #2, Admiral Beckett Brass, at `40df97c47d37b4ae9d7f5c22623ab490c96c5dee9ab5be689a74ced25bb3be96`; Deck #3, Admiral Brass, Unsinkable, at `c7ecef8a83351f34de3a8a8f5e17c1bcbaf4755e1f2bab77d34911dd6d140f7d`; Deck #4, Anhelo, the Painter, at `7fd898ffc4c3aad208cfd33361912bfefcff4754ec662b532ec5d0a5fcefbd4a`; Deck #5, Ashad, the Lone Cyberman, at `a0142c7859626b5592d4ac6ef4711232f3fc765c7e02e1ae0963aecfe16a99e6`; Deck #6, Ashnod the Uncaring, at `35f55432f14f70bc3eb70412ea8cad7520363740e240531ff7122d2d8980dcc6`; and Deck #7, Be'lakor, the Dark Master, at `f48359f816498b386b085db60f0456576c8af9b055408685df71f0d1db448545`; and Deck #8, Bjorna, Nightfall Alchemist // Cecily, Haunted Mage + Lutri companion, at `5dd99905c7281a1fad8f0173e73413954f5fe390bfa64b1048d63ac38916cf46`. Deck #9, Cormela, Glamour Thief, is locked at `cb81718ff186d28f97bc17ce1c9ce880e02a8a90e96df8c539cfbc05beb2fe75`; Deck #10, Dr. Eggman, at `5efe92126b9919edd8c798938be9e03af397d3af94627b372d3fdec420c5fe4c`; and Deck #11, Davros, Dalek Creator, at `744ef073e8780162c8c1ccabf6f559ff076eeaa0402603bb6ac7441c74f390e5`. Next in authoritative tracker order: #12 Doctor Doom, King of Latveria.
+**NEW CYCLE STATE (effective 2026-10-13): 12 of 62 decks are now APPROVED / LOCKED after passing the current technical gates; 50 remain UNAPPROVED / UNLOCKED.** Historical approvals and locks are superseded for current status, while their records remain preserved. Deck #1, Abaddon the Despoiler, is locked at `9629ba07807642736bce0b2c90038dd664da7b32b3892744808c8de4b526fb50`; Deck #2, Admiral Beckett Brass, at `40df97c47d37b4ae9d7f5c22623ab490c96c5dee9ab5be689a74ced25bb3be96`; Deck #3, Admiral Brass, Unsinkable, at `c7ecef8a83351f34de3a8a8f5e17c1bcbaf4755e1f2bab77d34911dd6d140f7d`; Deck #4, Anhelo, the Painter, at `7fd898ffc4c3aad208cfd33361912bfefcff4754ec662b532ec5d0a5fcefbd4a`; Deck #5, Ashad, the Lone Cyberman, at `a0142c7859626b5592d4ac6ef4711232f3fc765c7e02e1ae0963aecfe16a99e6`; Deck #6, Ashnod the Uncaring, at `35f55432f14f70bc3eb70412ea8cad7520363740e240531ff7122d2d8980dcc6`; and Deck #7, Be'lakor, the Dark Master, at `f48359f816498b386b085db60f0456576c8af9b055408685df71f0d1db448545`; and Deck #8, Bjorna, Nightfall Alchemist // Cecily, Haunted Mage + Lutri companion, at `5dd99905c7281a1fad8f0173e73413954f5fe390bfa64b1048d63ac38916cf46`. Deck #9, Cormela, Glamour Thief, is locked at `cb81718ff186d28f97bc17ce1c9ce880e02a8a90e96df8c539cfbc05beb2fe75`; Deck #10, Dr. Eggman, at `5efe92126b9919edd8c798938be9e03af397d3af94627b372d3fdec420c5fe4c`; and Deck #11, Davros, Dalek Creator, at `744ef073e8780162c8c1ccabf6f559ff076eeaa0402603bb6ac7441c74f390e5`. Deck #12, Doctor Doom, King of Latveria, is locked at `f672df6cbf80b48cd727a5e28dbea4afe13b68b7ba7fed464bacfc83c6c322cc`. Next in authoritative tracker order: #13 Don Andres, the Renegade.
 
 ## Verified baseline and source integrity
 
@@ -126,12 +126,13 @@ See [Abaddon expanded interaction review](https://github.com/corymstover/grixis-
 - Deck #7, Be'lakor, the Dark Master: APPROVED / LOCKED — ALL TECHNICAL GATES PASSED. SHA-256: `f48359f816498b386b085db60f0456576c8af9b055408685df71f0d1db448545`.
 - Deck #8, Bjorna // Cecily + Lutri: APPROVED / LOCKED — ALL TECHNICAL GATES PASSED. SHA-256: `5dd99905c7281a1fad8f0173e73413954f5fe390bfa64b1048d63ac38916cf46`.
 - Deck #9, Cormela, Glamour Thief: APPROVED / LOCKED. SHA-256 `cb81718ff186d28f97bc17ce1c9ce880e02a8a90e96df8c539cfbc05beb2fe75`.
-- Current-cycle totals: 11/62 approved and locked; 51/62 remain unapproved and unlocked. Historical approvals remain provenance only.
-- Next deck: #12 Doctor Doom, King of Latveria. Proceed in authoritative tracker order; do not reopen completed decks absent an explicit request or documented material trigger.
+- Deck #12, Doctor Doom, King of Latveria: APPROVED / LOCKED. SHA-256 `f672df6cbf80b48cd727a5e28dbea4afe13b68b7ba7fed464bacfc83c6c322cc`.
+- Current-cycle totals: 12/62 approved and locked; 50/62 remain unapproved and unlocked. Historical approvals remain provenance only.
+- Next deck: #13 Don Andres, the Renegade. Proceed in authoritative tracker order; do not reopen completed decks absent an explicit request or documented material trigger.
 
 ## Efficient next sequence
 
-1. Start deck #12, Doctor Doom, King of Latveria, using the frozen October 12 baseline exports and the same technical verification gates.
+1. Start deck #13, Don Andres, the Renegade, using the frozen October 12 baseline exports and the same technical verification gates.
 2. Reassess its full list commander-first; do not force any prior deck's package onto it.
 3. Record all actual additions/cuts, rejected candidates, trade-offs, verification evidence, and the exact revision hash in the active-cycle ledgers.
 4. Auto-approve and lock only after every mandatory technical gate passes. Never reopen Abaddon unless explicitly requested or a documented material trigger justifies it.
