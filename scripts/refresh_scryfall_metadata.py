@@ -43,8 +43,8 @@ def main():
  found=defaultdict(list)
  with tempfile.NamedTemporaryFile(suffix=".json") as tmp:
   download_uri=bulk.get("download_uri") or bulk.get("download_url")
- if not download_uri: raise RuntimeError("Scryfall bulk entry has no download URI; keys="+",".join(sorted(bulk.keys())))
- with request(download_uri) as src:
+  if not download_uri: raise RuntimeError("Scryfall bulk entry has no download URI; keys="+",".join(sorted(bulk.keys())))
+  with request(download_uri) as src:
    while True:
     b=src.read(1024*1024)
     if not b: break
