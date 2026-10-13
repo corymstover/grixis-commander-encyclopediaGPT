@@ -8,6 +8,8 @@ on:
       - ".github/workflows/probe-forge-runtime.yml"
       - "refinement/variants/Abaddon_Aurora_Phoenix_Test_Variant_v1.txt"
       - "scripts/verify_abaddon_variant.py"
+      - "scripts/probe_forge_card_coverage.py"
+      - "tests/test_probe_forge_card_coverage.py"
 
 permissions:
   contents: read
@@ -15,13 +17,16 @@ permissions:
 jobs:
   probe-forge:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 25
     steps:
       - name: Check out project
         uses: actions/checkout@v4
 
       - name: Verify isolated deck variant
         run: python scripts/verify_abaddon_variant.py
+
+      - name: Test Forge coverage audit
+        run: python -m unittest discover -s tests -p 'test_probe_forge_card_coverage.py' -v
 
       - name: Download pinned Forge release
         shell: bash
@@ -35,7 +40,7 @@ jobs:
       - name: Extract pinned release
         run: tar -xjf forge-installer-2.0.15.tar.bz2
 
-      - name: Record runtime and locate the distribution
+      - name: Record runtime and launch Forge CLI probe
         shell: bash
         run: |
           set -euo pipefail
@@ -43,91 +48,42 @@ jobs:
           find . -maxdepth 2 -type f -name 'forge-gui-desktop-2.0.15-jar-with-dependencies.jar' -print | tee forge-jar-path.txt
           test -s forge-jar-path.txt
           JAR="$(head -1 forge-jar-path.txt)"
-          # Invoke documented parse mode without input to verify CLI mode parsing.
-          # This is a startup/CLI probe, not a gameplay simulation.
+          # A successful parse-mode launch confirms only CLI startup, not gameplay rules.
+          CODE=0
           timeout 90s java -jar "$JAR" parse > forge-startup.stdout.txt 2> forge-startup.stderr.txt || CODE=$?
-          CODE="${CODE:-0}"
           echo "$CODE" > forge-startup.exit-code.txt
-          echo "Startup probe exit code: $CODE"
-          # A nonzero or usage response is recorded; logs are retained for review.
+          echo "CLI startup probe exit code: $CODE"
           cat forge-startup.stdout.txt || true
           cat forge-startup.stderr.txt || true
 
-      - name: Scan 94 unique card names against pinned Forge scripts
+      - name: Check out pinned Forge card-script source
+        uses: actions/checkout@v4
+        with:
+          repository: Card-Forge/forge
+          ref: 4ec5f1a2c32fa90ecb983a72b9eb47aa5c5d7676
+          path: forge-source
+          fetch-depth: 1
+          sparse-checkout: forge-gui/res/cardsfolder
+          sparse-checkout-cone-mode: true
+          persist-credentials: false
+
+      - name: Verify pinned Forge source revision
         shell: bash
         run: |
-          python - <<'PY'
-          import json, re, unicodedata
-          from pathlib import Path
+          set -euo pipefail
+          ACTUAL="$(git -C forge-source rev-parse HEAD)"
+          printf '%s\n' "$ACTUAL" | tee forge-source-commit.txt
+          test "$ACTUAL" = "4ec5f1a2c32fa90ecb983a72b9eb47aa5c5d7676"
 
-          variant = Path("refinement/variants/Abaddon_Aurora_Phoenix_Test_Variant_v1.txt")
-          roots = [Path("res/cardsfolder")]
-          if not roots[0].exists():
-              roots = list(Path(".").glob("**/res/cardsfolder"))
-          root = next((r for r in roots if r.exists()), None)
-          if root is None:
-              raise SystemExit("Forge res/cardsfolder directory not found")
-
-          def norm(s):
-              s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode("ascii")
-              return re.sub(r"[^a-z0-9]", "", s.casefold())
-
-          deck = []
-          for line in variant.read_text(encoding="utf-8-sig").splitlines():
-              line = line.strip()
-              m = re.match(r"^\d+x\s+(.+?)\s*$", line)
-              if not m:
-                  continue
-              name = re.sub(r"\s*\[Commander\]\s*$", "", m.group(1)).strip()
-              deck.append(name)
-          unique = list(dict.fromkeys(deck))
-          scripts = {}
-          for p in root.rglob("*.txt"):
-              try:
-                  body = p.read_text(encoding="utf-8", errors="replace")
-              except OSError:
-                  continue
-              lines = body.splitlines()
-              names = [line[len("Name:"):].strip() for line in lines if line.startswith("Name:")]
-              names += [line[len("AlternateName:"):].strip() for line in lines if line.startswith("AlternateName:")]
-              oracle = any(line.startswith("Oracle:") for line in lines)
-              record = {"names": names, "path": str(p.relative_to(root)), "oracle": oracle}
-              for nm in names:
-                  scripts.setdefault(norm(nm), []).append(record)
-          print("Script inventory debug:", {"root_exists":root.exists(),"txt_files":sum(1 for _ in root.rglob("*.txt")),"indexed_names":len(scripts),"sample_files":[str(p.relative_to(root)) for p in list(root.rglob("*.txt"))[:3]],"sample_keys":list(scripts.keys())[:10],"abaddon_key":norm("Abaddon the Despoiler") in scripts})
-          rows = []
-          for name in unique:
-              candidates = [name]
-              if "//" in name:
-                  candidates.append(name.split("//", 1)[0].strip())
-              matches = []
-              for candidate in candidates:
-                  matches.extend(scripts.get(norm(candidate), []))
-              dedup = {x["path"]: x for x in matches}
-              matches = list(dedup.values())
-              status = "MATCH" if len(matches)==1 and matches[0]["oracle"] else ("AMBIGUOUS" if len(matches)>1 else "MISSING")
-              rows.append({"deck_name":name,"status":status,"matches":matches})
-          report = {
-              "release":"forge-2.0.15",
-              "commit":"4ec5f1a2c32fa90ecb983a72b9eb47aa5c5d7676",
-              "scan_type":"textual Name:/Oracle: card-script presence only; not rules correctness",
-              "card_root":str(root),
-              "unique_deck_names":len(unique),
-              "match_count":sum(x["status"]=="MATCH" for x in rows),
-              "missing_count":sum(x["status"]=="MISSING" for x in rows),
-              "ambiguous_count":sum(x["status"]=="AMBIGUOUS" for x in rows),
-              "results":rows
-          }
-          Path("forge-card-script-coverage.json").write_text(json.dumps(report,indent=2)+"\n")
-          print(json.dumps({k:report[k] for k in ("release","commit","card_root","unique_deck_names","match_count","missing_count","ambiguous_count")},indent=2))
-          # Known positive controls guard against parsing regressions.
-          by_name = {row["deck_name"]: row for row in rows}
-          required = ["Abaddon the Despoiler", "Aurora Phoenix", "Mind's Desire", "Underworld Breach", "Brain Freeze", "Lion's Eye Diamond"]
-          bad_required = [n for n in required if n not in by_name or by_name[n]["status"] != "MATCH"]
-          print("Positive control status:", {n: by_name.get(n, {}).get("status") for n in required})
-          if bad_required:
-              raise SystemExit("Known positive-control mappings failed: " + ", ".join(bad_required))
-          PY
+      - name: Scan test variant and baseline-only comparison card
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/probe_forge_card_coverage.py \
+            --variant refinement/variants/Abaddon_Aurora_Phoenix_Test_Variant_v1.txt \
+            --card-root forge-source/forge-gui/res/cardsfolder \
+            --extra-card "Mind's Desire" \
+            --output forge-card-script-coverage.json
 
       - name: Preserve probe logs and coverage report
         uses: actions/upload-artifact@v4
@@ -140,6 +96,7 @@ jobs:
             forge-startup.stdout.txt
             forge-startup.stderr.txt
             forge-startup.exit-code.txt
+            forge-source-commit.txt
             forge-card-script-coverage.json
           if-no-files-found: warn
           retention-days: 30
