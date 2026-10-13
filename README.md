@@ -57,6 +57,12 @@ Anhelo, the Painter is deck #4 and is approved/locked at the exact revised-list 
 
 Ashad, the Lone Cyberman is deck #5 and is approved/locked at revised-list hash `a0142c7859626b5592d4ac6ef4711232f3fc765c7e02e1ae0963aecfe16a99e6`. It added Ultron, Artificial Malevolence and cut Dalek Drone. See its [final decklist](refinement/decklists/Ashad_the_Lone_Cyberman_Refined_2026-10-13.txt), [verification certificate](refinement/verification/Ashad_the_Lone_Cyberman_Verification_2026-10-13.md), [candidate decisions](refinement/decisions/Ashad_the_Lone_Cyberman_Candidate_Decisions_2026-10-13.csv), and [candidate summary](refinement/decisions/Ashad_the_Lone_Cyberman_Candidate_Summary_2026-10-13.md). The cumulative [change ledger](refinement/Deck_Change_Ledger_2026-10-13.csv) now contains the actual changes for decks #1–5.
 
+## Delegated automatic approval and locking
+
+Effective 2026-10-13, the user delegated final deck approval and lock decisions to the assistant. Explicit user approval is no longer a finalization gate. The assistant may approve and lock a deck only after all mandatory technical gates pass and its final list, verification certificate, decision record, and hash are recorded and cross-checked. Any unresolved count, identity, Oracle text, color identity, legality, material rules interaction, or evidence gap blocks that deck; the status must remain unapproved/unlocked or blocked. Zero changes is a valid outcome when supported by the evidence. See the [Automated Approval and Lock Policy v1](refinement/AUTOMATED_APPROVAL_AND_LOCK_POLICY_v1.md).
+
+This policy changes who makes the final decision, not the correctness bar. Historical source files and frozen baselines remain immutable; active refinement records are updated in tracker order. Current cycle state must be read from the dated status/tracker records rather than inferred from earlier approval history.
+
 ## Automated integrity check
 
 Every relevant push and pull request runs [the baseline verifier](scripts/verify_baseline.py) through [GitHub Actions](.github/workflows/verify-baseline.yml). The verifier checks the 124-file archive against all 124 raw file hashes, CSV/TXT card-name quantities, 100-card counts, singleton/copy limits, and collection totals. The initial CI run passed: [view run](https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/38324768882).
