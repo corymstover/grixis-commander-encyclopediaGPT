@@ -84,3 +84,9 @@ The 94-name release-specific script coverage audit was attempted using remote ca
 Forge CLI docs support Commander-format AI self-play, but the documented AI explicitly has poor performance in most combo decks. CLI repeat count does not by itself establish matched library order, deterministic seeds, or adequate structured per-event output. Even if a runtime smoke test passes, these separate protocol requirements must be tested before labeling Forge results a confirmatory paired comparison. If a suitable execution environment or reproducibility controls are unavailable, record the performance comparison as not feasible with this engine and make a decision from rules/strategic evidence only, without claiming statistical playtest support.
 
 See the [consolidated Forge qualification report](Abaddon_Forge_Engine_Qualification_2026-10-13.md).
+
+## Engine smoke-test update — 2026-10-13
+
+The pinned Forge 2.0.15 workflow [run 38338464845](https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/38338464845) passed the full card-script identity/Oracle-field scan for 95 names (the variant's 94 names plus baseline-only Mind's Desire), verified the frozen baseline hash, generated the baseline/variant Commander deck files, and launched one Commander-mode simulation.
+
+This **does not change the registered test status**: the 10-second match clock stopped the game as a draw, output included contradictory winner lines and repeated Steam Vents activator warnings, and no paired/reproducible gameplay comparison was run. Do not record the variant as a win or use these logs to choose between Aurora Phoenix and Mind's Desire. Rules-event smoke tests and evidence of matched/random-seed controls remain open. The complete evidence is in [Abaddon Forge Smoke-Test Result](Abaddon_Forge_Smoke_Test_Result_2026-10-13.md).
