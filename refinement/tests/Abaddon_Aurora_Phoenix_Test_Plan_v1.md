@@ -39,11 +39,11 @@ Confirm that all cards and relevant card text are implemented, that the selected
 
 ### Phase B — pilot
 
-Run 25 paired baseline/variant goldfish games using the same starting-library order per pair where the tool permits reproducible seeds. Keep the mulligan rule fixed. Use the pilot only to verify instrumentation and estimate variability; do not choose a winner from the pilot.
+Initial instrumentation probe: run three baseline and three variant games through the pinned Forge CLI against the same fixed Commander opponent, using the same numeric seed values and seat order. This is expressly an UNPAIRED probe: Forge's standard Deck/CardPool import does not guarantee preserving deck-text order, so equal seed values do not guarantee identical opening hands or library order. Use the probe only to validate launch/import, log parsing, event observability, timeout handling, and whether the target card/engine events are reached. Do not compare wins or treat this as a performance result. Do not scale to 25/list unless the event instrumentation works and the outcomes could answer a predefined strategic question.
 
 ### Phase C — confirmatory comparison
 
-Before inspecting confirmatory results, lock the sample size and success threshold informed by Phase B. If the engine passes the support check, use at least 200 paired starts as an initial confirmatory sample, with matched starting orders and the same mulligan/seat assumptions. Do not increase sample size opportunistically after seeing an unfavorable or favorable result.
+CONFIRMATORY TEST BLOCKED under the unmodified Forge 2.0.15 CLI. The current importer does not provide a verified way to guarantee matched starting-library order. A 200-pair benchmark may be registered only after a separate ordered-library injection or paired-start implementation is built, tested, and validated against logs. Do not relabel 200 same-seed CLI runs as paired or increase sample size opportunistically.
 
 Record for each run:
 - Turn Abaddon is first cast and turn it first enables a qualifying hand-cast spell.
@@ -59,7 +59,7 @@ Record for each run:
 
 Goldfish results can compare consistency and engine value, but they do not establish multiplayer win rate or resilience to interaction. If using an AI simulator, treat results as conditional on that AI's behavior and do not claim they model real opponents without calibration.
 
-Prefer Aurora only if it shows a repeatable improvement in cascade/value output without a material regression in functional castability or access to the established combo route. The confirmatory decision should use paired differences and uncertainty intervals, not just averages. If results are within noise, disagree across metrics, or depend on unsupported rules, close the slot as inconclusive and keep the frozen baseline; do not turn the candidate variant into a final decklist.
+Prefer Aurora only if it shows a repeatable improvement in cascade/value output without a material regression in functional castability or access to the established combo route. If a genuinely controlled comparison becomes available, predeclare the estimand, sample size, threshold, randomization method, and uncertainty calculation before running it; do not infer a result from raw averages alone. If results are within noise, disagree across metrics, or depend on unsupported rules, close the slot as inconclusive and keep the frozen baseline; do not turn the candidate variant into a final decklist.
 
 The protocol's final gate still requires review of the full deck's nontrivial rules interactions, an appropriate performance check, a closed candidate ledger, an independently verified final 100-card list, and explicit user approval.
 
@@ -98,10 +98,10 @@ The earlier NOT RUN entries above document the state at initial plan registratio
 
 - Forge forge-2.0.15 starts in recognized CLI parse mode.
 - The full 94-card variant identity set plus Mind's Desire as baseline-only candidate matched 95/95 pinned-source card scripts with nonempty Oracle fields.
-- The frozen 100-card baseline and test-only 100-card variant were imported as Forge Commander DCK files. Their input order is aligned except that Aurora Phoenix occupies Mind's Desire's original slot.
+- The frozen 100-card baseline and test-only 100-card variant were imported as Forge Commander DCK files. Their decklist text differs only at the registered Mind's Desire/Aurora Phoenix slot. However, Forge normalizes deck text through CardPool/ItemPool backed by ConcurrentHashMap, so the runtime library order is not guaranteed to preserve that text order.
 - A complete head-to-head Commander smoke game ran with full logs. In that game, the log showed Abaddon-granted cascade resolutions on other spells and an Imperial Seal escaped with Underworld Breach. It did not cast Aurora Phoenix, did not demonstrate Aurora's graveyard-return ability, and did not execute the full Breach/LED/Brain Freeze route.
-- The same seeded command ran twice. The exact match-event portions were identical after timestamp and duration normalization, as independently checked from the captured logs. The fixed workflow normalizer has been updated to compare only the match event section; see [the corrected repeatability workflow run](https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/38338912312).
-- This is an engine/import/replay smoke test only. It does not count as the registered 25-pair pilot and does not determine whether Aurora Phoenix is better than Mind's Desire. Forge's own AI limitations remain relevant.
+- The same exact command ran twice with numeric seed 20261013. Match-event portions were identical after timestamp/duration normalization. This validates repeatability of the identical command only; it does not establish matched starting hands across the two different decklists. See [the repeatability workflow run](https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/38338912312).
+- This is an engine/import/replay smoke test only. It does not determine whether Aurora Phoenix is better than Mind's Desire. The current fixed-opponent CLI probe is explicitly unpaired and descriptive; Forge's own AI limitations remain relevant.
 
 ### Phase A status
 
@@ -110,13 +110,13 @@ The earlier NOT RUN entries above document the state at initial plan registratio
 | Pinned release and archive checksum | PASS |
 | 94 variant identities + baseline comparison card found in pinned scripts | PASS (95/95 name/script/Oracle-field matches) |
 | Exact 100-card DCK import into Commander-mode game | PASS |
-| Seed flag accepted and repeat event log observed | PASS in captured smoke logs; corrected workflow confirmation pending |
+| Seed flag accepted and same-command event replay observed | PASS; this is not matched-start evidence |
 | Aurora Phoenix's printed cascade and graveyard recursion exercised | NOT TESTED |
 | Abaddon threshold edge cases and double-cascade Aurora scenario | NOT TESTED |
 | Storm copies vs cast-trigger distinctions | NOT TESTED |
 | Full Breach + LED + Brain Freeze line | NOT TESTED |
 | Suitable comparative metrics and interpretation controls | NOT QUALIFIED yet |
-| 25 paired pilot games | NOT RUN |
+| 3 same-seed unpaired instrumentation trials per list | INITIAL WORKFLOW RUN IN PROGRESS; no result counted yet |
 | 200-pair confirmatory benchmark | NOT RUN |
 
-Do not choose the card slot from the smoke result. Continue with a targeted Aurora interaction test and decide whether Forge's observable logs can support the pre-registered metrics. If not, close the performance comparison as infeasible with this engine and make the slot decision only from the documented Oracle/rules/strategy evidence, explicitly recording that limitation.
+Do not choose the card slot from smoke results or the unpaired pilot. Determine whether the pilot can expose actual Aurora cast/return events and the relevant cascade/value metrics. If not—or if no valid matched-start method is engineered and validated—close statistical performance testing as infeasible under this Forge version and decide from Oracle/rules/commander-first strategic evidence, explicitly recording that performance evidence is unavailable.
