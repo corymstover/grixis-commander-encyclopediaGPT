@@ -316,3 +316,35 @@ These two items are closed only. Remaining exact-list Oracle/identity, full per-
 ## Step 9 — Blasphemous Act context check (2026-10-13 UTC)
 
 See [Abaddon Step 5 Blasphemous Act Interaction Check](../tests/Abaddon_Step_5_Blasphemous_Act_Interaction_Check_2026-10-13.md). Oracle text and the deck-specific interaction are now documented: mana value 9 despite cost reduction; damage to creatures only; the wipe can destroy Abaddon's own creature engines; and, when the hand-cast/turn/threshold conditions are met, Abaddon grants cascade before the sorcery resolves. A creature cast from that cascade is exposed to the pending wipe. The card remains in the frozen baseline; no cut is justified by rules review alone. Full list gate remains NO.
+
+
+
+## Step 10 — remainder of the 94-name coverage triage (2026-10-13 UTC)
+
+The companion triage CSV now has zero names left in the literal “NOT EXPLICITLY MENTIONED — triage required” status. The 19 outstanding rows from the previous pass were classified below as contextual checks or role-triaged. This closes the **triage queue**, not the exhaustive card-by-card Oracle audit or the final approval gates.
+
+| Card | Disposition / deck-specific constraint |
+|---|---|
+| Brainstorm | Can reorder the library before later cascade reveals, but does not guarantee a useful hit. Cascade still reveals until a nonland card with mana value less than the cascade spell is found. |
+| Deadly Rollick | Its alternate cost requires a commander on the battlefield and does not change mana value 4. Abaddon’s grant still requires a hand-cast spell during your turn and a life-loss threshold of at least four. |
+| Deflecting Swat | Its alternate cost requires a commander you control. Alternate cost does not change mana value 3; retargeting itself does not increase Abaddon’s threshold. |
+| Demonic Tutor | Ordinary library-to-hand tutor; no special Abaddon rules interaction beyond setup. It does not itself supply life loss or guarantee a cascade hit. |
+| Fierce Guardianship | Its free mode requires a commander on the battlefield. Mana value remains 3. If cast from hand during your turn at threshold 3, cascade has no useful lower-mana-value nonland hit. |
+| Flusterstorm | Storm creates copies, not casts. Copies do not retrigger cast-based exile payoffs. Mana value 1 offers no lower-mana-value nonland cascade hit. |
+| Force of Negation | Its alternate-cost mode is limited to an opponent’s turn, so that mode does not meet Abaddon’s during-your-turn requirement. Alternate cost does not change mana value. |
+| Force of Will | Exiling a blue card and paying 1 life is an alternate cost; mana value stays 5. A qualifying hand-cast on your turn can technically receive cascade at threshold 5 despite not paying its printed cost. |
+| Gamble | Searches then randomly discards. That may incidentally seed the graveyard but can discard the tutored card; mana value 1 has no lower-MV cascade hit. |
+| Imperial Seal | Puts a chosen card on top, not in hand. Follow-up draws and later library changes control when that card is accessed; mana value 1 has no lower-MV cascade hit. |
+| Mystic Remora | Its upkeep and draw triggers are not casts and do not increase Abaddon’s threshold. Mana value 1 has no lower-MV nonland hit. |
+| Mystical Tutor | Sets an instant/sorcery on top for later access; it does not guarantee the card is the next cascade hit if intervening library manipulation occurs. Mana value 1 has no lower-MV hit. |
+| Pact of Negation | Mana value 0 means no legal nonland card has a lower mana value for cascade to find. If Pact resolves, the next-upkeep payment remains a separate consequence. |
+| Ponder | Look/shuffle/draw can arrange the library, but does not guarantee a cascade hit. Mana value 1 has no lower-MV nonland hit. |
+| Pyroblast | Its target must be a blue spell or blue permanent. If the target is no longer blue on resolution, it is illegal. Mana value 1 has no lower-MV nonland hit. |
+| Rhystic Study | Triggers on opponents casting spells; its tax/draw text does not itself cause opponent life loss or increase Abaddon’s threshold. Mana value 3 has no lower-MV nonland hit. |
+| Swan Song | Targets only an enchantment, instant, or sorcery. Mana value 1 has no lower-MV nonland hit; the Bird token is an accepted interaction trade-off, not an Abaddon synergy. |
+| Thermo-Alchemist | Its damage must resolve before the relevant spell is cast to contribute to that spell’s cascade threshold. Its cast-triggered untap does not retroactively change the spell already on the stack. |
+| Vampiric Tutor | Instant-speed top-deck setup is powerful but can be interrupted by later library changes; it does not guarantee a chosen cascade hit. Mana value 1 has no lower-MV nonland hit. |
+
+The precise statements above describe these cards’ ordinary Oracle functions and their relevance to Abaddon. They do not replace the source/date-bound metadata overlay, nor do they claim exhaustive testing of every possible opponent effect or game state.
+
+**Triage disposition:** 94/94 distinct names inventoried; prior contextual items recorded; remaining triage queue empty. Cards retained unchanged. The next gate is final closeout verification, including freshly checking exact current Oracle/color identity/official Commander legality, independently recounting the frozen list and hash, and then presenting the exact list for approval. The list is not finalized until the user explicitly approves it.
