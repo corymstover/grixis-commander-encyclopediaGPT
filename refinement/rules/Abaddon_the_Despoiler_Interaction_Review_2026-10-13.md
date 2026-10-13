@@ -209,3 +209,23 @@ Thermo-Alchemist triggers on casting an instant or sorcery by untapping; it taps
 - The “not explicitly mentioned” category has therefore been triaged by role. The most material special conditions found are: Ancient Tomb self-payment is not opponent life loss; fetchlands/shocks have life costs that do not raise Abaddon's threshold; alternative/free casting costs do not reduce printed mana value; Force of Negation's free mode is opponent-turn restricted; Pact of Negation has delayed failure condition; Cabal Ritual depends on graveyard threshold; Chrome Mox depends on an imprint card; Nightscape Familiar reduces generic cost but not mana value; and Gamble can contingently seed graveyard cards.
 - This triage is a rules-oriented summary and has not tested every possible stack/game state. It does not substitute for the official fresh legality refresh and final list-level audit.
 - **Remaining card-level coverage gap:** The 33 names already explicitly mentioned in the prior review still need their coverage statuses reviewed in context; the full 94-card audit certificate is not complete. Next bounded step should verify high-impact listed interactions and the Breach sequence with current Oracle/rules sources, rather than repeating basic-card explanations.
+
+## 9. Step 2 closeout boundaries and priority interactions for the remaining review
+
+The role-based triage above is a first-pass coverage screen. The following items remain important enough to require explicit current Oracle/rules confirmation before Abaddon can pass its interaction gate:
+
+| Priority | Card/package | Verification required | Status |
+|---|---|---|---|
+| P1 | Underworld Breach + Lion's Eye Diamond + Brain Freeze | Work through a concrete legal starting state and every escape cost, LED discard/mana sequence, Brain Freeze storm count, fuel count, and termination condition. Distinguish an engine that can repeat with sufficient fuel from a deterministic infinite combo. Check how opposing interaction can break the line. | OPEN |
+| P1 | Force of Will / Force of Negation / Fierce Guardianship / Deadly Rollick / Pact of Negation | Verify alternate-cost restrictions and their mana values independently of cost paid; distinguish free modes legal only on an opponent's turn; record Pact's delayed upkeep consequence. | COVERED IN ROLE TRIAGE; current-source spot-check remains |
+| P1 | Cascade hit legality / zero-mana-value cards | Confirm the cascade comparison uses mana value rather than alternate cost and how suspend cards cast without paying mana cost behave when hit by cascade. | REVIEWED ABOVE; current-source spot-check remains |
+| P2 | Fetchlands, shocklands, Ancient Tomb, rainbow lands, channel lands, Urborg | Verify life-payment does not count toward Abaddon's opponent-life-loss threshold; verify channel activations are abilities, not casts; verify Urborg affects land types, not color identity. | COVERED IN ROLE TRIAGE; only material contradications reopen |
+| P2 | Chrome Mox / Cabal Ritual / Nightscape Familiar / Jeska's Will | Verify imprint requirement, threshold condition, cost reduction scope, mode selection, and exile-cast triggers in their relevant setup states. | COVERED IN ROLE TRIAGE |
+| P2 | Gamble / tutors / cantrips | Verify timing and contingent discard/top-of-library effects when used to assemble a cascade turn or Breach package. | COVERED IN ROLE TRIAGE |
+| P2 | Interaction suite | Confirm alternate-cost conditions and target restrictions. These are ordinary role checks unless they create a specific Abaddon/cascade dependency. | COVERED IN ROLE TRIAGE |
+
+### Audit stopping rule
+
+Do not require an individual rules essay for every land or routine spell. An entry can close as **NO SPECIAL INTERACTION** when current Oracle text has been checked and no commander-specific or nontrivial dependency exists. Keep that result distinct from **NOT CHECKED**. A package can close as **RULES-COHERENT** only after the sequence is written out with explicit zone/mana/fuel requirements and failure points.
+
+The final gate remains NO until all 94 names have an explicit per-card disposition (covered, no special interaction, or open), the material open interactions are resolved, fresh official legality is verified, the final list/hash is independently checked, and the user explicitly approves the exact list.
