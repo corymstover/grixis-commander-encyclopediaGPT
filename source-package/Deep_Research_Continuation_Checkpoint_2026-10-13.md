@@ -1,39 +1,45 @@
-# Deep-Research Continuation Checkpoint — 2026-10-13
+# Deep-Research Continuation Checkpoint — Updated 2026-10-13
 
-## Purpose
+This checkpoint supersedes earlier statements in this file where they conflict with the latest verified GitHub Actions runs or refinement-branch records. It does not replace the frozen baseline or alter any decklist.
 
-This checkpoint reconciles the uploaded **Executive Summary** with the current repository records. It is a correction and execution-order note, not a replacement for the original report or source package. No decklist or approved deck has been changed.
+## Verified state
 
-## Reconciled state
+- The authoritative 2026-10-12 source ZIP SHA-256 is `47892245c2cefcf528c38fa9d9e56653d6e71a0fc73fd5ea5eecdd90e2032746`; its internal manifest passed 165/165 entries.
+- The compact archive `source-package/GrixisFINAL_62Decks_CSV_TXT_2026-10-12.tar.gz` SHA-256 is `f2f46436c3514ecf8412d1fe1f9926919d8d1a3d7a2f938ffee7efce073b2b20`; all 124 current CSV/TXT decklists match the verified source package byte-for-byte.
+- All 62 decks pass CSV/TXT reconciliation, exact 100-card main-deck-plus-commander count, and singleton/copy-rule checks.
+- Scryfall snapshot `2026-10-12T21:06:24.577Z` matched 5,964/5,964 decklist rows to exact printing/name records; no unresolved names/Oracle text/IDs, no commander color-identity mismatches, and no unexpected official Commander-illegal rows outside registered exceptions.
+- The baseline branch `baseline/freeze-2026-10-12` remains immutable; refinement work occurs on `refinement/campaign-2026-10-12`. Historical approvals are not revoked by the new refinement-gate tracker.
 
-The Executive Summary's recommendation to import all 62 CSV and 62 TXT decklists as if they were absent is stale. The current repository's own reconciliation records establish:
+## Abaddon — current status
 
-- The authoritative source ZIP is 4,193,697 bytes, SHA-256 `47892245c2cefcf528c38fa9d9e56653d6e71a0fc73fd5ea5eecdd90e2032746`; ZIP integrity passed and all 165 entries in its internal manifest matched size and SHA-256.
-- The compact repository archive `source-package/GrixisFINAL_62Decks_CSV_TXT_2026-10-12.tar.gz` contains all 124 current decklist files (62 CSV + 62 TXT), each verified byte-for-byte against the source package. Archive SHA-256: `f2f46436c3514ecf8412d1fe1f9926919d8d1a3d7a2f938ffee7efce073b2b20`.
-- Structural checks pass for all 62 decks: CSV/TXT quantity reconciliation, exactly 100 cards including commander, and singleton/copy-rule checks.
-- Current Scryfall metadata validation reports 5,964/5,964 exact printing/name matches, no unresolved identities or commander color-identity mismatches, and no unexpected official Commander-illegal rows outside registered project exceptions.
-- The repository remains a **partial raw-source mirror**, not a complete individual-file mirror of the original package. The exact outstanding assets are listed in [Source Consolidation Reconciliation](Source_Consolidation_Reconciliation_2026-10-13.md). Do not treat the original ZIPs or large datasets as missing from the verified package; they are not all individually mirrored in GitHub.
-- The baseline branch `baseline/freeze-2026-10-12` and active refinement branch `refinement/campaign-2026-10-12` exist. The frozen baseline must remain unchanged.
+- Frozen baseline TXT hash: `2d6203d274c25e67fb93acf5e6784dce4ee1e8999844a6ab032d9b15995acfbf`.
+- Blueprint complete; 60 candidate decisions are logged after targeted triage through rank 100.
+- The expanded interaction review covers Abaddon's five-mana value and same-turn life-loss threshold; cascade instances; Bloodletter/Solphim and damage/life-loss distinctions; cast-from-exile payoffs; cast vs copy/storm guardrails; and prerequisites/fuel for Underworld Breach + Lion's Eye Diamond + Brain Freeze. This is an extensive review, not a claim every possible interaction has been exhaustively certified.
+- Aurora Phoenix remains test-only; Mind's Desire remains in the frozen baseline. The test artifact differs only by Aurora Phoenix IN / Mind's Desire OUT.
 
-## Abaddon status — no change
+### Forge qualification: corrected latest status
 
-- The baseline Abaddon TXT SHA-256 remains `2d6203d274c25e67fb93acf5e6784dce4ee1e8999844a6ab032d9b15995acfbf`.
-- The Aurora Phoenix test variant is a separate, integrity-checked 100-card artifact. It changes only Aurora Phoenix in / Mind's Desire out.
-- The interaction review supports the key rules interaction, including Abaddon's five-mana value, Aurora's potential second cascade when cast from hand at threshold ≥6, and the Breach/LED/Brain Freeze line's resource requirements. This is rules review, not gameplay evidence.
-- Forge has only been source-inspected for seven key cards. The full 94-card script audit, pinned installation, deck-load test, and interaction smoke tests remain unverified. Forge is **not qualified** for the registered confirmatory test.
-- Gameplay runs performed: **0**. No swap has been approved or applied.
+Forge `forge-2.0.15` at source commit `4ec5f1a2c32fa90ecb983a72b9eb47aa5c5d7676` has cleared limited engine-preparation gates:
+- The pinned installer checksum was verified.
+- The active scan mapped 95/95 distinct card names (94 test-variant names plus baseline-only Mind's Desire) to script entries containing nonempty Oracle fields. This proves mapping/presence, not implementation fidelity.
+- The baseline and test variant were generated as exact 100-card Forge Commander DCK inputs and loaded in Commander-mode smoke games.
+- Smoke logs showed ordinary Abaddon-granted cascade resolutions and an Underworld Breach escape cast.
+- Two identical commands using the same numeric seed produced identical normalized event sections for the tested smoke case. This demonstrates replay repeatability for that case, not matched initial libraries across different lists.
 
-See the [Abaddon interaction review](../refinement/rules/Abaddon_the_Despoiler_Interaction_Review_2026-10-13.md), [Forge qualification report](../refinement/tests/Abaddon_Forge_Engine_Qualification_2026-10-13.md), and [registered test plan](../refinement/tests/Abaddon_Aurora_Phoenix_Test_Plan_v1.md).
+The registered 3+3 fixed-opponent pilot [run 38341150840](https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/38341150840) remains INCONCLUSIVE for card comparison. Mind's Desire was cast in 0/3 baseline games and Aurora Phoenix in 0/3 variant games; neither storm/copy value nor Aurora graveyard recursion was exercised. One variant timed out/drew and logged a runtime warning. Initial libraries were not guaranteed matched. Do not infer equal or superior performance; do not rerun the same AI comparison. The same-seed pilot workflow is now manual-dispatch only to prevent repeat expenditure.
 
-## Efficient execution order
+Exact baseline density analysis was added in `scripts/analyze_abaddon_baseline_consistency.py`, with unit tests, a committed report at `refinement/tests/Abaddon_Baseline_Consistency_Report_2026-10-13.md`, and CI at [run 38343814218](https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/38343814218), which passed. It computes exact hypergeometric card-density probabilities from the frozen 99-card library. This is descriptive consistency evidence only; it does not simulate mulligans, mana colors, sequencing, game play, or deck strength and must not be presented as gameplay/performance evidence.
 
-1. Preserve the current baseline and source ZIPs. Do not re-import decklists already verified inside the compact archive merely to satisfy the stale checklist.
-2. Use a binary-safe transfer path to mirror remaining raw datasets and original archives; verify every file against the package manifest before committing. If no safe transfer is available, keep the verified original ZIP as the canonical container and leave the gap explicit.
-3. For Forge, pin a release/commit, audit all 94 card identities against that release's card scripts, load the exact test deck in Commander mode, and run manually specified smoke tests for Abaddon/Aurora cascade timing and Breach/LED/Brain Freeze. Capture version, commands, output, and logs.
-4. If any required card/effect or reproducibility control is unsupported, stop and record the engine as unsuitable for confirmatory testing. Do not substitute random-draw scripts or unsupported AI self-play for a rules-valid test.
-5. Continue the remaining Abaddon card-specific review, then close the candidate ledger. Keep Aurora Phoenix as a proposal only until evidence supports a decision.
-6. Independently verify any proposed final list, present the proposal for explicit user approval, and lock only after approval. Then proceed to the next deck without reopening approved decks.
+No card changes are approved or applied. Abaddon's new-campaign finalization gate remains NO.
 
-## Explicit non-claims
+## Efficient next actions
 
-This checkpoint does not claim that the latest repository commits have passing CI status, that Forge was installed, that the 94-card support audit ran, that gameplay tests were executed, or that Abaddon is finalized. The current project status and reconciliation reports remain the detailed evidence records.
+1. Use the frozen baseline plus refreshed metadata overlay to prepare a reproducible audit of the exact 100-card Abaddon baseline: name/printing/Oracle ID, card types and mana values, color identity, official Commander legality, exception status, duplicate/singleton rule, and recorded hash. Do not change the underlying list.
+2. Finish a card-by-card audit of remaining nontrivial Abaddon interactions and combo dependencies, distinguishing directly verified Oracle/rules facts from strategic inference.
+3. Close each candidate slot as accepted, rejected, or inconclusive. The Aurora/Mind's Desire slot is already closed inconclusive for the current engine; retain the baseline absent new valid evidence.
+4. Independently rerun count/singleton/identity/legality/hash checks on any proposed final list, then present the exact list and rationale for explicit user approval. Do not set the final gate to YES, create a finalization certificate, or claim approval beforehand.
+5. After Abaddon is explicitly approved, move to the next not-yet-refined commander. Never reopen an approved/locked deck without explicit request or a documented material trigger.
+
+## Non-claims
+
+This checkpoint does not claim that Abaddon is final, that the Aurora slot is resolved by performance evidence, that all interactions have passed a comprehensive audit, or that any of the 62 decks passed the new-campaign finalization gate. The original source archives/historical files remain preserved; the GitHub raw-source mirror is still partial even though the verified compact decklist bundle and hash manifests are present.
