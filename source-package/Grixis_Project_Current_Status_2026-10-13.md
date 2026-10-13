@@ -143,3 +143,9 @@ The triage CSV remains a working coverage tool, not an independently validated f
 ### Detailed card-level triage corrections
 
 The [updated triage CSV](https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/tests/Abaddon_Interaction_Triage_Updated_2026-10-13.csv) distinguishes names that were only mentioned in a summary from those with an actual rules discussion. In particular, Birgi // Harnfel had been counted as explicit coverage even though only Birgi was discussed; Bituminous Blast was present in a package list but lacked a detailed interaction analysis. Both are now flagged for a contextual check. The coverage inventory remains a work-in-progress aid, not a completion certificate.
+
+### Fresh official Commander banned-list check — 2026-10-13 UTC
+
+The official Wizards [Banned & Restricted list](https://magic.wizards.com/en/banned-restricted-list) was checked against all names in the frozen Abaddon baseline. No Abaddon decklist card appears on the official Commander banned list. The list labels Lutri, the Spellchaser as banned only as a companion, but Lutri is not in this Abaddon list; other project-authorized exceptions are likewise not relevant to Abaddon.
+
+**Scope of this PASS:** current official Commander banned-list checkpoint only. It does not refresh every card's Oracle text or color identity, prove all interactions, or approve the deck. The Scryfall exact-printing/Oracle/identity overlay remains dated 2026-10-12. Abaddon's final gate remains NO.
