@@ -15,6 +15,18 @@ from typing import Any
 BASELINE_LABEL = "Abaddon frozen baseline"
 VARIANT_LABEL = "Abaddon Aurora Phoenix test variant"
 OPPONENT_LABEL = "Ruthless Regiment fixed opponent"
+PLAYER_LABELS = (
+    "Ai(1)-Abaddon frozen baseline",
+    "Ai(2)-Abaddon Aurora Phoenix test variant",
+    "Ai(2)-Ruthless Regiment fixed opponent",
+)
+
+
+def strip_player_labels(line: str) -> str:
+    """Remove player display names so a name embedded in a label is not a card event."""
+    for player_label in PLAYER_LABELS:
+        line = line.replace(player_label, "PLAYER")
+    return line
 ERROR_PATTERNS = (
     "Could not load deck",
     "No deck found",
@@ -69,10 +81,11 @@ def summarize_game_log(log_text: str, target_label: str) -> dict[str, Any]:
         if line.startswith("Resolve Stack: Cascade - ") and f"Activator: {target_name}" in line:
             cascade_turns.append(target_turn if current_is_target_turn else None)
 
-        if target_name in line and "triggered Aurora Phoenix" in line:
+        event_line = strip_player_labels(line)
+        if "triggered Aurora Phoenix" in event_line:
             aurora_trigger_lines.append(line)
-        if "Aurora Phoenix" in line and "Resolve Stack:" in line and (
-            "graveyard" in line.casefold() or "hand" in line.casefold()
+        if "Aurora Phoenix" in event_line and "Resolve Stack:" in line and (
+            "graveyard" in event_line.casefold() or "hand" in event_line.casefold()
         ):
             aurora_return_lines.append(line)
         if "Mind's Desire" in line and re.search(r"\b(copy|copies|copied|storm)\b", line, re.I):
@@ -168,7 +181,7 @@ def summarize_game_log(log_text: str, target_label: str) -> dict[str, Any]:
         "raw_relevant_lines": {
             "abaddon_cast": [line for line in log_text.splitlines() if "cast Abaddon the Despoiler" in line],
             "cascade_resolutions": [line for line in log_text.splitlines() if "Resolve Stack: Cascade -" in line],
-            "aurora": [line for line in log_text.splitlines() if "Aurora Phoenix" in line],
+            "aurora": [line for line in log_text.splitlines() if "Aurora Phoenix" in strip_player_labels(line)],
             "mind_desire": [line for line in log_text.splitlines() if "Mind's Desire" in line],
             "breach_combo": [line for line in log_text.splitlines() if any(card in line for card in combo_cards)],
         },
