@@ -16,6 +16,10 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: abaddon-same-seed-pilot-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   run-pilot:
     runs-on: ubuntu-latest
