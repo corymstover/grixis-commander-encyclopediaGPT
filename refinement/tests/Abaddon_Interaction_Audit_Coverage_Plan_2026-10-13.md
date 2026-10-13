@@ -47,3 +47,14 @@ The static metadata audit already validates the frozen archive/TXT hashes, 100-c
 ## Stop rule
 
 Do not re-open Aurora Phoenix vs Mind's Desire based on the same uninformative Forge pilot. Do not re-rank the full candidate pool. Do not change the baseline during this audit. New candidates only re-enter consideration if source-backed evidence identifies a plausible, material commander-specific improvement.
+
+## Step 1 result — completed 2026-10-13 UTC
+
+The exact frozen Abaddon list has been inventoried into `Abaddon_Interaction_Coverage_Inventory_2026-10-13.csv`.
+
+- **94/94 distinct card names** are represented; the source list remains 100 total cards including commander.
+- **33 names** are explicitly mentioned in the existing interaction review and require contextual scope-checking before any item is considered closed.
+- **61 names** are not explicitly mentioned in that review and are queued for triage.
+- “Not explicitly mentioned” does not mean a card is defective or must get a separate rules entry. The next step groups these by role and checks which actually have material rules dependencies, stateful triggers, special zone behavior, or relevant interactions.
+
+No decklist changes were made. Existing explicit coverage remains provisional, and Abaddon's final gate remains NO.
