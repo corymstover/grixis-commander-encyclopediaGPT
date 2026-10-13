@@ -5,7 +5,7 @@ Version-controlled project records for the 62-deck Grixis Commander Encyclopedia
 ## Project operating rules
 
 - Each deck is commander-first and preserves that commander's identity and natural power ceiling.
-- **NEW REFINEMENT CYCLE STARTED 2026-10-13:** at cycle launch all 62 decks were unapproved and unlocked, including lists approved in prior cycles. Current status is tracked per deck; #1 Abaddon is now approved/locked after passing new-cycle technical gates, with 61 decks remaining. Historical approvals are historical records only.
+- **NEW REFINEMENT CYCLE STARTED 2026-10-13:** at cycle launch all 62 decks were unapproved and unlocked, including lists approved in prior cycles. Current status is tracked per deck; #1 Abaddon and #2 Admiral Beckett Brass are now approved/locked after passing new-cycle technical gates, with 60 decks remaining. Historical approvals are historical records only.
 - The active cycle may revise any deck after whole-list review. Automatically approve and lock a deck only after all required technical verification gates pass; do not require an additional user approval step. A failed or incomplete gate means no lock.
 - The four `GrixisFINAL` archives dated 2026-10-12 are the current authoritative membership baseline; the `Updated-10-11-2026` archives are historical.
 - Candidate rankings are a research shortlist, not automatic card additions.
@@ -30,7 +30,7 @@ The 124 current decklist CSV/TXT files are verified inside the compact archive. 
 
 ## Controlled refinement campaign — RESET 2026-10-13
 
-**Current state:** NEW CYCLE ACTIVE. The reset began with all 62 decks UNAPPROVED / UNLOCKED; **deck #1, Abaddon the Despoiler, is now APPROVED / LOCKED — ALL TECHNICAL GATES PASSED**. 61 decks remain. Next is deck #2, Admiral Beckett Brass, in authoritative tracker order. Previous-cycle lock/approval flags remain historical only; source baseline exports remain immutable. Each deck is auto-approved and locked only after all technical checks pass; do not add a user-approval gate.
+**Current state:** NEW CYCLE ACTIVE. The reset began with all 62 decks UNAPPROVED / UNLOCKED; **decks #1–2, Abaddon the Despoiler and Admiral Beckett Brass, are now APPROVED / LOCKED — ALL TECHNICAL GATES PASSED**. 60 decks remain. Next is deck #3, Admiral Brass, Unsinkable, in authoritative tracker order. Previous-cycle lock/approval flags remain historical only; source baseline exports remain immutable. Each deck is auto-approved and locked only after all technical checks pass; do not add a user-approval gate.
 
 
 
@@ -47,7 +47,9 @@ The frozen baseline is preserved on `baseline/freeze-2026-10-12`. The active, se
 - [Abaddon Aurora Phoenix test variant (separate, not final)](https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/variants/Abaddon_Aurora_Phoenix_Test_Variant_v1.txt)
 - [Campaign tracker](https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/Deck_Refinement_Tracker_2026-10-12.csv)
 
-Abaddon is deck #1 in the new-cycle pass and is now approved/locked after full technical gate closeout. The revision adds Court of Ambition and Warstorm Surge, cuts Loyal Subordinate and Rakdos, Lord of Riots, and is recorded in the [change ledger](refinement/Deck_Change_Ledger_2026-10-13.csv). See the [final decklist](refinement/decklists/Abaddon_the_Despoiler_Refined_2026-10-13.txt), [verification certificate](refinement/verification/Abaddon_the_Despoiler_Verification_2026-10-13.md), and [candidate decision summary](refinement/decisions/Abaddon_the_Despoiler_Candidate_Decisions_2026-10-13.md).
+Abaddon is deck #1 in the new-cycle pass and is approved/locked after full technical gate closeout. It added Court of Ambition and Warstorm Surge, cut Loyal Subordinate and Rakdos, Lord of Riots, as recorded in the [change ledger](refinement/Deck_Change_Ledger_2026-10-13.csv). See its [final decklist](refinement/decklists/Abaddon_the_Despoiler_Refined_2026-10-13.txt), [verification certificate](refinement/verification/Abaddon_the_Despoiler_Verification_2026-10-13.md), and [candidate decision summary](refinement/decisions/Abaddon_the_Despoiler_Candidate_Decisions_2026-10-13.md).
+
+Admiral Beckett Brass is deck #2 and is now approved/locked. It added The Indomitable and Zephyr Singer and cut Bident of Thassa and Daring Saboteur. See its [final decklist](refinement/decklists/Admiral_Beckett_Brass_Refined_2026-10-13.txt), [verification certificate](refinement/verification/Admiral_Beckett_Brass_Verification_2026-10-13.md), and [candidate decision summary](refinement/decisions/Admiral_Beckett_Brass_Candidate_Summary_2026-10-13.md). Both decks' actual card changes remain in the same [cumulative change ledger](refinement/Deck_Change_Ledger_2026-10-13.csv).
 
 ## Automated integrity check
 
