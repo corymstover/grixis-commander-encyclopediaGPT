@@ -1,0 +1,21 @@
+{
+  "validation_snapshot_date": "2026-10-12",
+  "current_archive_member_counts": {
+    "csv": 62,
+    "txt": 62
+  },
+  "csv_txt_reconciliation_pass_count": 62,
+  "main_deck_100_count_passes": 62,
+  "singleton_scan_passes": 62,
+  "available_metadata_identity_comparison_nonpass_decks": 0,
+  "unresolved_current_card_names": [],
+  "txt_parse_issue_count": 0,
+  "changed_decks_vs_prior": 62,
+  "card_copy_additions_vs_prior": 306,
+  "card_copy_cuts_vs_prior": 306,
+  "current_card_audit_rows": 5964,
+  "current_csv_rows": 5964,
+  "current_txt_rows": 5964,
+  "identity_result_scope": "comparison against available inherited audit/candidate metadata plus the explicitly documented narrow manual references; not a comprehensive fresh Scryfall printing-by-printing pass",
+  "warning": "Current full Oracle/rules and post-October 12 official Commander legality validation are not certified by this package."
+}
