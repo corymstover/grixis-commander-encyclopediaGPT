@@ -47,3 +47,13 @@ The older Step 7/Step 10 summaries included erroneous lower-mana-value claims fo
 Fresh public-reference checks confirm the current Oracle characteristics and reported Commander legality of Bituminous Blast, Boltwave, and Thermo-Alchemist, with red/red-black identities within Abaddon's UBR identity. The full current authoritative 94-card Oracle/identity/legality refresh remains **BLOCKED/PENDING**, because direct Scryfall named-card/bulk requests returned access/403 errors. The 2026-10-12 full-list snapshot is dated evidence, not a current-object refresh. Do not declare the full card-identity gate passed until a fresh source can be queried and compared across all 94 names.
 
 The exact baseline remains structurally verified and unchanged. Interaction findings are substantial and bounded; the Breach line depends on its specified starting state and no opponent interaction. Final gate stays NO pending full-list refresh and explicit user approval.
+
+
+## Updated verification checkpoint — 2026-10-13 UTC
+
+- Three priority card records checked from public card-reference pages, including text, identity subset, and Commander legality reporting.
+- The official Commander banned list was checked; none of the three is banned.
+- Cascade interaction triage corrected where it incorrectly stated that mana-value-1 spells had no potential lower-MV nonland hits. In this list, MV-0 nonlands can be hits.
+- Full current 94-card authoritative Oracle/identity/legality refresh remains blocked; Scryfall endpoints returned access/403. Previous bulk data dated 2026-10-12 is not live current verification.
+- Substantial rules/combo review complete with explicit conditions and limitations; not exhaustive proof for all states or performance evidence.
+- Finalization gate remains NO until a current source refresh can cover all 94 distinct cards and the user approves the exact unchanged list.
