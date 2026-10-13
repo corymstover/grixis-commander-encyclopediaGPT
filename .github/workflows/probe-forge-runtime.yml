@@ -160,6 +160,72 @@ jobs:
           print(json.dumps(report, indent=2))
           PY
 
+      - name: Target variant-specific Aurora Phoenix runtime exercise (exploratory only)
+        shell: bash
+        run: |
+          set -uo pipefail
+          JAR="$(head -1 forge-jar-path.txt)"
+          : > forge-aurora-targeted-summary.txt
+          for SEED in 20261014 20261015 20261016; do
+            CODE=0
+            timeout 100s java -jar "$JAR" sim \
+              -D "$PWD/forge-smoke-decks" \
+              -d "Abaddon baseline.dck" "Abaddon Aurora Phoenix variant.dck" \
+              -f Commander -n 1 -s "$SEED" -c 45 \
+              > "forge-aurora-targeted-\${SEED}.log" 2>&1 || CODE=$?
+            printf 'seed=%s exit_code=%s\n' "$SEED" "$CODE" | tee -a forge-aurora-targeted-summary.txt
+          done
+          python - <<'PY'
+          import json, re
+          from pathlib import Path
+
+          rows = []
+          for seed in (20261014, 20261015, 20261016):
+              path = Path(f"forge-aurora-targeted-{seed}.log")
+              lines = path.read_text(encoding="utf-8", errors="replace").splitlines() if path.exists() else []
+              clean = [re.sub(r"\x1b\[[0-9;]*m", "", line) for line in lines]
+              cast_lines = [line for line in clean if re.search(r"cast Aurora Phoenix", line, re.I)]
+              named_trigger_lines = [
+                  line for line in clean
+                  if "Aurora Phoenix" in line and re.search(r"trigger|resolve stack|add to stack", line, re.I)
+              ]
+              result_lines = [line for line in clean if "Game Result: Game 1 ended" in line]
+              rows.append({
+                  "seed": seed,
+                  "game_result_lines": result_lines,
+                  "variant_cast_aurora_phoenix": bool(cast_lines),
+                  "aurora_related_event_lines": named_trigger_lines[:40],
+                  "cascade_log_line_count": sum("cascade" in line.casefold() for line in clean),
+                  "explicit_timeout_draw": any("Stopping slow match as draw" in line for line in clean),
+                  "steam_vents_activator_warning_count": sum("Steam Vents Did not have activator set" in line for line in clean),
+                  "log_file": str(path),
+              })
+          report = {
+              "purpose": "variant-specific engine smoke only; not a performance comparison",
+              "release": "forge-2.0.15",
+              "seeds": [row["seed"] for row in rows],
+              "results": rows,
+              "limitations": [
+                  "The two Abaddon variants play against each other; any winner is uninterpretable as evidence of a card upgrade.",
+                  "No Aurora event in these logs does not prove the card is unsupported; the AI may not select the line.",
+                  "This is not the registered 25-pair pilot or 200-pair confirmatory benchmark.",
+                  "Forge AI is weak with most combo decks; this test only checks whether relevant events are observable."
+              ]
+          }
+          Path("forge-aurora-targeted-report.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
+          print(json.dumps({
+              "purpose": report["purpose"],
+              "results": [{
+                  "seed": row["seed"],
+                  "variant_cast_aurora_phoenix": row["variant_cast_aurora_phoenix"],
+                  "aurora_related_event_count": len(row["aurora_related_event_lines"]),
+                  "game_result_lines": row["game_result_lines"],
+                  "explicit_timeout_draw": row["explicit_timeout_draw"],
+                  "steam_vents_activator_warning_count": row["steam_vents_activator_warning_count"]
+              } for row in rows]
+          }, indent=2))
+          PY
+
       - name: Preserve probe logs and coverage report
         uses: actions/upload-artifact@v4
         if: always()
@@ -177,6 +243,9 @@ jobs:
             forge-game-smoke-seed-20261013-a.log
             forge-game-smoke-seed-20261013-b.log
             forge-seed-replay-report.json
+            forge-aurora-targeted-*.log
+            forge-aurora-targeted-summary.txt
+            forge-aurora-targeted-report.json
             forge-game-smoke-summary.txt
             forge-smoke-decks/*.dck
             forge-smoke-decks/smoke-deck-manifest.json
