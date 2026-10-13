@@ -39,6 +39,28 @@ def request(url,accept="application/json",attempts=5):
    print(f"Transient network error; retrying in {delay:.0f}s ({attempt}/{attempts-1}): {exc}")
    time.sleep(delay)
  raise RuntimeError(f"Scryfall request exhausted retries for {url}")
+def compute_overall_result(summary):
+ """Make the summary headline consistent with every required metadata integrity gate."""
+ if (
+  summary.get("deck_count") != 62
+  or summary.get("rows_written") != summary.get("decklist_rows")
+  or summary.get("exact_matches") != summary.get("decklist_rows")
+  or summary.get("not_found", 0)
+  or summary.get("ambiguous", 0)
+  or summary.get("name_variant_reviews", 0)
+  or summary.get("blank_oracle_text_rows", 0)
+  or summary.get("missing_oracle_id", 0)
+  or summary.get("color_identity_mismatches")
+  or summary.get("unresolved_printing_rows")
+  or summary.get("unresolved_project_exception_rows")
+  or summary.get("unexpected_official_illegal_rows")
+  or summary.get("unknown_commander_legality_rows")
+  or summary.get("decks_with_unresolved_commander_identity")
+ ):
+  return "REVIEW_REQUIRED"
+ return "METADATA_REFRESH_PASS — registered exceptions remain separately labeled; rules-interaction review remains separate"
+
+
 def main():
  if not ARCHIVE.is_file(): raise RuntimeError("Frozen 124-file decklist archive missing")
  if not EXCEPTIONS.is_file(): raise RuntimeError("Current project exception registry missing")
@@ -96,7 +118,7 @@ def main():
     card,_=choose(row)
     if card: ci.update(card.get("color_identity") or [])
   commanders[did]=sorted(ci)
- rows=[]; summary={"generated_at_utc":datetime.now(timezone.utc).isoformat(),"bulk_type":"default_cards","bulk_updated_at":bulk.get("updated_at"),"deck_count":len(decks),"decklist_rows":sum(map(len,decks.values())),"distinct_printing_keys":len(keys),"exact_matches":0,"name_variant_reviews":0,"not_found":0,"ambiguous":0,"blank_oracle_text_rows":0,"missing_oracle_id":0,"exception_registry_rows":len(exception_rows),"exception_registry_sha256":hashlib.sha256(EXCEPTIONS.read_bytes()).hexdigest(),"color_identity_mismatches":[],"official_illegal_rows":[],"known_project_banned_exception_rows":[],"unresolved_project_exception_rows":[],"unresolved_printing_rows":[],"note":"Metadata overlay only; does not certify relevant rules interactions or replace the separate project exception registry."}
+ rows=[]; summary={"generated_at_utc":datetime.now(timezone.utc).isoformat(),"bulk_type":"default_cards","bulk_updated_at":bulk.get("updated_at"),"deck_count":len(decks),"decklist_rows":sum(map(len,decks.values())),"distinct_printing_keys":len(keys),"exact_matches":0,"name_variant_reviews":0,"not_found":0,"ambiguous":0,"blank_oracle_text_rows":0,"missing_oracle_id":0,"exception_registry_rows":len(exception_rows),"exception_registry_sha256":hashlib.sha256(EXCEPTIONS.read_bytes()).hexdigest(),"color_identity_mismatches":[],"official_illegal_rows":[],"unknown_commander_legality_rows":[],"known_project_banned_exception_rows":[],"unresolved_project_exception_rows":[],"unresolved_printing_rows":[],"note":"Metadata overlay only; does not certify relevant rules interactions or replace the separate project exception registry."}
  for did,entries in decks.items():
   dci=commanders[did]
   for row in entries:
@@ -131,13 +153,15 @@ def main():
      out["project_exception_status"]="REGISTERED PROJECT EXCEPTION — "+er["exception_type"]+"; official status retained separately"
      if er["exception_type"] in ("project companion exception","project banned-card exception"):
       summary["known_project_banned_exception_rows"].append({"deck_id":did,"card_name":row["card_name_export"],"zone":zone,"official_status":out["commander_legality"],"exception_type":er["exception_type"]})
+    if out["commander_legality"] not in ("legal","banned","not_legal","banned_as_companion"):
+     summary["unknown_commander_legality_rows"].append({"deck_id":did,"card_name":row["card_name_export"],"zone":zone,"official_status":out["commander_legality"]})
     if out["commander_legality"] in ("banned","not_legal","banned_as_companion"):
      summary["official_illegal_rows"].append({"deck_id":did,"card_name":row["card_name_export"],"zone":zone,"official_status":out["commander_legality"],"project_exception_status":out["project_exception_status"]})
    rows.append(out)
  OUT.mkdir(parents=True,exist_ok=True)
  summary["rows_written"]=len(rows);summary["decks_with_unresolved_commander_identity"]=sorted(d for d,ci in commanders.items() if not ci)
  summary["unexpected_official_illegal_rows"]=[x for x in summary["official_illegal_rows"] if str(x["project_exception_status"]).startswith("NO PROJECT EXCEPTION REGISTERED")]
- summary["overall_result"]="REVIEW_REQUIRED" if (summary["not_found"] or summary["ambiguous"] or summary["name_variant_reviews"] or summary["missing_oracle_id"] or summary["color_identity_mismatches"] or summary["unresolved_printing_rows"] or summary["unresolved_project_exception_rows"] or summary["unexpected_official_illegal_rows"]) else "METADATA_REFRESH_PASS — registered exceptions remain separately labeled; rules-interaction review remains separate"
+ summary["overall_result"]=compute_overall_result(summary)
  overlay_names=("Current_Scryfall_Metadata_Overlay.csv","Current_Scryfall_Metadata_Overlay_2026-10-12.csv")
  summary_names=("Current_Scryfall_Metadata_Audit_Summary.json","Current_Scryfall_Metadata_Audit_Summary_2026-10-12.json")
  for output_name in overlay_names:

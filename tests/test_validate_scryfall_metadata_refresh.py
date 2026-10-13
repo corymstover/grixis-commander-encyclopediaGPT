@@ -12,7 +12,7 @@ class ValidateScryfallRefreshTests(unittest.TestCase):
             "name_variant_reviews": 0, "not_found": 0, "ambiguous": 0,
             "blank_oracle_text_rows": 0, "missing_oracle_id": 0,
             "color_identity_mismatches": [], "unresolved_printing_rows": [],
-            "unresolved_project_exception_rows": [], "unexpected_official_illegal_rows": [],
+            "unresolved_project_exception_rows": [], "unexpected_official_illegal_rows": [], "unknown_commander_legality_rows": [],
             "decks_with_unresolved_commander_identity": [],
             "overall_result": "METADATA_REFRESH_PASS — registered exceptions remain separately labeled; rules-interaction review remains separate",
         }
@@ -64,6 +64,11 @@ class ValidateScryfallRefreshTests(unittest.TestCase):
         illegal = dict(self.summary, unexpected_official_illegal_rows=[{"card_name": "Unexpected"}])
         report = validate_summary(illegal, now=self.now)
         self.assertTrue(any("unexpected official-illegal rows" in e for e in report["errors"]))
+
+    def test_unknown_commander_legality_fails(self):
+        unknown = dict(self.summary, unknown_commander_legality_rows=[{"card_name": "Mystery Card"}])
+        report = validate_summary(unknown, now=self.now)
+        self.assertTrue(any("unknown official Commander legality rows" in e for e in report["errors"]))
 
     def test_missing_timezone_fails(self):
         wrong = dict(self.summary, generated_at_utc="2026-10-13T12:00:00")
