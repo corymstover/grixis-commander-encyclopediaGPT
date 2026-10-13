@@ -1,6 +1,6 @@
 # Grixis Commander Encyclopedia — Current Status
 
-**Status snapshot:** 2026-10-13 UTC — DECKS #1–3 REFINED AND LOCKED; NEW CYCLE ACTIVE  
+**Status snapshot:** 2026-10-13 UTC — DECKS #1–4 REFINED AND LOCKED; NEW CYCLE ACTIVE  
 **Scope:** 62 commander-first Grixis decks  
 **Frozen authoritative list snapshot:** 2026-10-12  
 **Active work branch:** `refinement/campaign-2026-10-12`  
@@ -12,7 +12,7 @@ The 2026-10-12 baseline remains frozen and structurally verified. All 62 CSV/TXT
 
 The active refinement branch now has a reproducible, CI-verified exact draw-density analysis for Abaddon. Forge test infrastructure has advanced beyond the original source-only probe: its pinned release and 95 card-script name mappings were verified, the exact baseline and isolated test variant loaded in Commander mode, and a bounded 3+3 fixed-opponent pilot completed. However, the candidate comparison was **INCONCLUSIVE** because neither Mind's Desire nor Aurora Phoenix was cast in any of the six registered games. Do not reuse those games as card-performance evidence or rerun the same AI comparison. The relevant workflow is now manual-dispatch only.
 
-**NEW CYCLE STATE (effective 2026-10-13): 3 of 62 decks are now APPROVED / LOCKED after passing the current technical gates; 59 remain UNAPPROVED / UNLOCKED.** Historical approvals and locks are superseded for current status, while their records remain preserved. Deck #1, Abaddon the Despoiler, is locked at 9629ba07807642736bce0b2c90038dd664da7b32b3892744808c8de4b526fb50; Deck #2, Admiral Beckett Brass, at 40df97c47d37b4ae9d7f5c22623ab490c96c5dee9ab5be689a74ced25bb3be96; and Deck #3, Admiral Brass, Unsinkable, at c7ecef8a83351f34de3a8a8f5e17c1bcbaf4755e1f2bab77d34911dd6d140f7d. Next in authoritative tracker order: #4 Anhelo, the Painter.
+**NEW CYCLE STATE (effective 2026-10-13): 4 of 62 decks are now APPROVED / LOCKED after passing the current technical gates; 58 remain UNAPPROVED / UNLOCKED.** Historical approvals and locks are superseded for current status, while their records remain preserved. Deck #1, Abaddon the Despoiler, is locked at `9629ba07807642736bce0b2c90038dd664da7b32b3892744808c8de4b526fb50`; Deck #2, Admiral Beckett Brass, at `40df97c47d37b4ae9d7f5c22623ab490c96c5dee9ab5be689a74ced25bb3be96`; Deck #3, Admiral Brass, Unsinkable, at `c7ecef8a83351f34de3a8a8f5e17c1bcbaf4755e1f2bab77d34911dd6d140f7d`; and Deck #4, Anhelo, the Painter, at `7fd898ffc4c3aad208cfd33361912bfefcff4754ec662b532ec5d0a5fcefbd4a`. Next in authoritative tracker order: #5 Ashad, the Lone Cyberman.
 
 ## Verified baseline and source integrity
 
@@ -86,18 +86,26 @@ See [Abaddon expanded interaction review](https://github.com/corymstover/grixis-
 - Rules checks cover Power Conduit’s counter removal as an activation cost and +1/+1 mode, Nesting Grounds’ sorcery timing and Roaming Throne sequencing, and Kitesail Larcenist’s temporary Treasure conversion and reversion when it leaves. Hypergeometric density results are descriptive; no game-performance/win-rate claim is made.
 - Current technical gates pass. Status is **APPROVED / LOCKED** for exact revised TXT SHA-256 c7ecef8a83351f34de3a8a8f5e17c1bcbaf4755e1f2bab77d34911dd6d140f7d. See the [verification certificate](../refinement/verification/Admiral_Brass_Unsinkable_Verification_2026-10-13.md) and [candidate decision summary](../refinement/decisions/Admiral_Brass_Unsinkable_Candidate_Summary_2026-10-13.md).
 
+## Anhelo, the Painter — new-cycle closeout
+
+- Revised deck #4 is stored separately from the immutable October 12 baseline at [the refined TXT list](../refinement/decklists/Anhelo_the_Painter_Refined_2026-10-13.txt) and [CSV list](../refinement/decklists/Anhelo_the_Painter_Refined_2026-10-13.csv). Both represent 100 card copies / 94 distinct names and 34 lands; only Island ×3, Mountain ×3 and Swamp ×3 repeat.
+- **Added:** Deekah, Fractal Theorist; Make an Example. **Cut:** Talrand, Sky Summoner; Talrand’s Invocation. The four actual card changes are logged in the [cumulative change ledger](../refinement/Deck_Change_Ledger_2026-10-13.csv).
+- The candidate ledger records 16 distinct options (2 accepted and 14 rejected with reasons). Deekah rewards casts and spell copies; Make an Example is copied, non-targeted, multi-opponent creature sacrifice. The cuts’ contribution to flying-token production is explicitly documented as a trade-off.
+- Current card-reference and project metadata checks pass, as do color identity, legality, the current official Commander banned-list checkpoint, relevant casualty/Magecraft/stack-order interactions, singleton and CSV/TXT reconciliation. Exact hypergeometric draw-density numbers are descriptive only; no qualified multiplayer gameplay or win-rate claim is made.
+- Status: **APPROVED / LOCKED — ALL TECHNICAL GATES PASSED** for revised-list SHA-256 7fd898ffc4c3aad208cfd33361912bfefcff4754ec662b532ec5d0a5fcefbd4a. See the [verification certificate](../refinement/verification/Anhelo_the_Painter_Verification_2026-10-13.md), [candidate decision CSV](../refinement/decisions/Anhelo_the_Painter_Candidate_Decisions_2026-10-13.csv), and [candidate summary](../refinement/decisions/Anhelo_the_Painter_Candidate_Summary_2026-10-13.md).
 ## Tracker truth
 
 - All 62 decks: baseline structural and refreshed exact-printing/Oracle/identity/legality metadata checks pass, with authorized exceptions separated.
 - Deck #1, Abaddon the Despoiler: APPROVED / LOCKED — ALL TECHNICAL GATES PASSED. Hash: `9629ba07807642736bce0b2c90038dd664da7b32b3892744808c8de4b526fb50`.
 - Deck #2, Admiral Beckett Brass: APPROVED / LOCKED — ALL TECHNICAL GATES PASSED. Hash: `40df97c47d37b4ae9d7f5c22623ab490c96c5dee9ab5be689a74ced25bb3be96`.
 - Deck #3, Admiral Brass, Unsinkable: APPROVED / LOCKED — ALL TECHNICAL GATES PASSED. Hash: c7ecef8a83351f34de3a8a8f5e17c1bcbaf4755e1f2bab77d34911dd6d140f7d.
-- Current-cycle totals: 3/62 approved and locked; 59/62 remain unapproved and unlocked. Historical approvals remain provenance only.
-- Next deck: #4 Anhelo, the Painter. Proceed in authoritative tracker order; do not reopen completed decks absent an explicit request or documented material trigger.
+- Deck #4, Anhelo, the Painter: APPROVED / LOCKED — ALL TECHNICAL GATES PASSED. SHA-256: 7fd898ffc4c3aad208cfd33361912bfefcff4754ec662b532ec5d0a5fcefbd4a.
+- Current-cycle totals: 4/62 approved and locked; 58/62 remain unapproved and unlocked. Historical approvals remain provenance only.
+- Next deck: #5 Ashad, the Lone Cyberman. Proceed in authoritative tracker order; do not reopen completed decks absent an explicit request or documented material trigger.
 
 ## Efficient next sequence
 
-1. Start deck #4, Anhelo, the Painter, using the frozen October 12 baseline exports and the same technical verification gates.
+1. Start deck #5, Ashad, the Lone Cyberman, using the frozen October 12 baseline exports and the same technical verification gates.
 2. Reassess its full list commander-first; do not force any prior deck's package onto it.
 3. Record all actual additions/cuts, rejected candidates, trade-offs, verification evidence, and the exact revision hash in the active-cycle ledgers.
 4. Auto-approve and lock only after every mandatory technical gate passes. Never reopen Abaddon unless explicitly requested or a documented material trigger justifies it.
