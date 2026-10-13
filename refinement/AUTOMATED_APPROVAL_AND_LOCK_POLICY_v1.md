@@ -102,3 +102,19 @@ The full restart at Deck #1 requires an actual fresh pass, not a metadata-only r
 - Recheck current exact-list identity, Oracle text, color identity, official legality, and material rules interactions for the selected final list.
 - Produce a new dated restart-review addendum/decision record and final certificate stating what was rechecked, what new decisions were made, what historical material was reused, and the updated final hash.
 - Never auto-approve/lock a deck solely because the prior cycle had a passing certificate. The current cycle requires recorded closure of its mandatory gates.
+
+
+## Abaddon restart work order — Deck #1 (2026-10-13)
+
+The first item in this restart is a fresh, substantive review of Abaddon the Despoiler. Previous 2026-10-13 files are historical cycle evidence; the existence of the old verification certificate is not itself the new review.
+
+Current work order:
+1. Load and compare the frozen authoritative Abaddon CSV/TXT baseline against the previous revised list; establish exact deltas and current identity/hash.
+2. Reassess the entire 99 plus commander under Abaddon's actual plan: opponent life-loss threshold before main phase, hand-cast cascade eligibility, cast-from-exile engines, spell-damage/token conversion, fast mana and protection, and the bounded Underworld Breach/LED/Brain Freeze backup line.
+3. Challenge the entire list, not just the previous 15-candidate shortlist. Revisit every prior accepted/rejected/deferred decision, review all potential weak/off-plan/low-impact slots, and discover material alternatives beyond inherited rankings. Research in batches only as a means to cover this single deck deeply.
+4. Verify new or retained card text, timing, color identity, legality and interactions for the exact selected final list; distinguish official legality from exceptions (none were used in the historical revision, but check again).
+5. Reevaluate mana/land/ramp balance, cascade-hit distribution, engine density, interaction, resilience, closing lines, and natural power ceiling after all proposed changes.
+6. Independently recount 100 cards, validate singleton/copy rules, compute a normalized exact-list hash, write a dated restart-review report, updated decision ledger, final decklist and new certificate.
+7. Re-fetch the final artifacts and active tracker row. If every mandatory gate passes, auto-approve/lock Abaddon. If a material blocker remains, keep Abaddon blocked/unapproved and continue work on Abaddon; do not advance to deck #2.
+
+No conclusion about the new-cycle Abaddon review should be inferred until that work order has been completed and recorded.
