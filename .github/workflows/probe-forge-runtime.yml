@@ -88,28 +88,21 @@ jobs:
               except OSError:
                   continue
               lines = body.splitlines()
-              names = [line[5:].strip() for line in lines if line.startswith("Name:")]
-              names += [line[len("AlternateName:"):].strip() for line in lines if line.startswith("AlternateName:")]
-              oracle = any(line.startswith("Oracle:") for line in lines)
-              record = {"path": str(p.relative_to(root)), "oracle": oracle, "declared_names": names}
-              for nm in names:
-                  scripts.setdefault(norm(nm), []).append(record)
-              script_key = p.stem
-              scripts.setdefault(norm(script_key.replace("_", " ")), []).append(record)
-              scripts.setdefault(norm(script_key), []).append(record)
-              # Filename stems are a discovery heuristic, not a canonical Oracle name.
-              # Positive controls below prevent treating a zero-match report as valid.
+              nm = next((line[5:].strip() for line in lines if line.startswith("Name:")), None)
+              if nm:
+                  scripts.setdefault(norm(nm), []).append({"name": nm, "path": str(p.relative_to(root)), "oracle": any(line.startswith("Oracle:") for line in lines)})
+              # Forge uses Name: headers, not filename conventions, as the primary key.
           rows = []
+          aliases = {"birgi god of storytelling harnfel horn of bounty": "birgi god of storytelling"}
           for name in unique:
-              front = name.split("//", 1)[0].strip() if "//" in name else name
-              candidate_keys = {norm(name), norm(front)}
-              matches = []
-              for key in candidate_keys:
-                  matches.extend(scripts.get(key, []))
-              dedup = {x["path"]: x for x in matches}
+              fullkey = norm(name)
+              front = norm(name.split("//", 1)[0].strip()) if "//" in name else fullkey
+              matches = scripts.get(fullkey, []) or scripts.get(front, [])
+              # Preserve all matches, deduplicated by relative script path.
+              dedup = {x["path"]:x for x in matches}
               matches = list(dedup.values())
-              status = "MATCH" if len(matches) == 1 and matches[0]["oracle"] else ("AMBIGUOUS" if len(matches) > 1 else "MISSING")
-              rows.append({"deck_name": name, "status": status, "matches": [{"path":x["path"],"oracle":x["oracle"],"declared_names":x["declared_names"]} for x in matches]})
+              status = "MATCH" if len(matches)==1 and matches[0]["oracle"] else ("AMBIGUOUS" if len(matches)>1 else "MISSING")
+              rows.append({"deck_name":name,"status":status,"matches":matches})
           report = {
               "release":"forge-2.0.15",
               "commit":"4ec5f1a2c32fa90ecb983a72b9eb47aa5c5d7676",
@@ -127,6 +120,7 @@ jobs:
           by_name = {row["deck_name"]: row for row in rows}
           required = ["Abaddon the Despoiler", "Aurora Phoenix", "Mind's Desire", "Underworld Breach", "Brain Freeze", "Lion's Eye Diamond"]
           bad_required = [n for n in required if n not in by_name or by_name[n]["status"] != "MATCH"]
+          print("Positive control status:", {n: by_name.get(n, {}).get("status") for n in required})
           if bad_required:
               raise SystemExit("Known positive-control mappings failed: " + ", ".join(bad_required))
           PY
