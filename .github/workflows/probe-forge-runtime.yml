@@ -94,6 +94,7 @@ jobs:
               record = {"names": names, "path": str(p.relative_to(root)), "oracle": oracle}
               for nm in names:
                   scripts.setdefault(norm(nm), []).append(record)
+          print("Script inventory debug:", {"root_exists":root.exists(),"txt_files":sum(1 for _ in root.rglob("*.txt")),"indexed_names":len(scripts),"sample_files":[str(p.relative_to(root)) for p in list(root.rglob("*.txt"))[:3]],"sample_keys":list(scripts.keys())[:10],"abaddon_key":norm("Abaddon the Despoiler") in scripts})
           rows = []
           for name in unique:
               candidates = [name]
