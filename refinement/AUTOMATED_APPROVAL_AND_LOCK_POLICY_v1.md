@@ -66,3 +66,20 @@ For every deck, the assistant must:
 A candidate is not rejected solely because it is unfamiliar, outside inherited rankings, or requires broader structural revision. A candidate is not included solely because it is highly ranked, popular, expensive, or powerful in generic Grixis. Judge it against the deck's commander-specific plan and natural power ceiling.
 
 The final review should explicitly state whether the baseline was meaningfully challenged, the strongest alternatives considered, the changes made (or why no changes were justified), the resulting strategic trade-offs, and any bounded unresolved uncertainty that is material to confidence. When a required hard correctness check remains unresolved, the deck stays unapproved/unlocked until it is cleared.
+
+
+## Strict one-deck-at-a-time workflow — 2026-10-13
+
+The user explicitly requires that the campaign work on **one deck at a time**, giving each deck the attention it deserves. This is a hard workflow constraint.
+
+1. Select the first deck in authoritative tracker order that is not already approved/locked.
+2. Keep substantive refinement focused on that deck only: baseline review, full-list strategic assessment, candidate research, swap decisions, rules/legality verification, testing where useful, final recount, certificate, final list, hashes, ledger, and tracker update.
+3. Do not begin candidate review or make proposed decklist changes for the next deck while the current deck is in progress. General project-wide data refreshes and reusable shared rules research are permitted when useful, but must not substitute for finishing the current deck or turn into parallel deck reviews.
+4. Close the current deck with a clear disposition:
+   - **APPROVED / LOCKED** when all mandatory technical gates pass and artifacts are cross-checked; or
+   - **BLOCKED / UNAPPROVED / UNLOCKED** with a concrete blocker and next action when a mandatory gate cannot yet pass.
+5. Only after that disposition and its documentation are complete may the workflow select the next unapproved deck in tracker order.
+6. Do not batch superficial reviews across multiple decks, optimize several decks in parallel, or mark the campaign as progressing merely because shared research was completed. Quality and a complete record for the current deck take precedence over throughput.
+7. If a current deck is blocked, continue bounded remediation on that same deck before moving forward. Do not silently skip it. Advancing past a blocked deck requires an explicit documented exception; absence of evidence is not an exception.
+
+The active tracker is the state source for which deck is current. The current deck's artifacts, exact-list hash, decision record, verification certificate, and final status must be fetched and cross-checked after writes before selecting the next deck.
