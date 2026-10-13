@@ -1,7 +1,7 @@
 # Admiral Brass, Unsinkable — Proposed Final Verification
 
 **Date:** 2026-10-13  
-**Status:** TECHNICAL VERIFICATION PASS — awaiting explicit approval of this exact revised list  
+**Status:** FINALIZED AND LOCKED — exact revised list explicitly approved by user on 2026-10-13  
 **Frozen baseline:** 2026-10-12 FINAL TXT export; preserved unchanged  
 **Approved swap:** cut 1x Revel in Riches; add 1x Power Conduit  
 **Card delta:** one-for-one replacement only
@@ -58,5 +58,10 @@ No gameplay win-rate or representative multiplayer testing claim is made.
 - Relevant finality-counter interaction: **PASS**.
 - Frozen baseline preserved: **PASS**.
 - User approval of the swap: **PASS**.
-- Exact revised list approved for final lock: **PENDING**.
-- Tracker `final_gate_passed`: remains **NO** until the user approves this exact revised list.
+- Exact revised list approved for final lock: **PASS — explicitly approved and locked by user on 2026-10-13**.
+- Tracker `final_gate_passed`: **YES**; exact revised-list approval date recorded as **2026-10-13**.
+
+
+## 7. Final approval and preservation
+
+The user explicitly approved this exact revised 100-card list on 2026-10-13. It is the canonical approved refinement list and is locked against further changes unless explicitly reopened by the user. The frozen 2026-10-12 source CSV/TXT exports remain untouched. Only the approved one-for-one swap was made: Revel in Riches out, Power Conduit in. No gameplay win-rate claim is made. The next unfinished deck in tracker order is Anhelo, the Painter (deck 4 of 62).
