@@ -1,0 +1,8 @@
+# Cormela, Glamour Thief — Candidate Review Summary (2026-10-13)
+
+- Baseline: frozen October 12 deck export, exactly 100 cards and 100 distinct names; 30 lands. Raw CSV SHA-256: `0780ccdcace7e54df75ddf15d02e9d4368e3d102ef7a1eb3c7123d9bb9479703`. Raw TXT SHA-256: `10639176c36a7a55853cd1c65f22ac31e22b99dd15d7e95607b1d03acb74babd`. Normalized sorted-name baseline SHA-256: `949ad1d40e2af9af6c17d487f05c046c67232dd2b347e1670ce9f6e020521615`.
+- Revised: add **Galvanic Iteration**, cut **Grapeshot**. Main deck remains exactly 100 singleton cards and 30 lands. Revised TXT SHA-256: `cb81718ff186d28f97bc17ce1c9ce880e02a8a90e96df8c539cfbc05beb2fe75`.
+- Candidate triage: 16 top-ranked commander-specific candidates reviewed; 1 accepted, 15 rejected with documented reasons. The ranking scores are discovery evidence, not automatic upgrade instructions.
+- Rationale: Galvanic Iteration is a two-mana instant that copies the next instant/sorcery spell and has flashback. It can double a high-impact spell or increase Brain Freeze output, while Cormela can return it from the graveyard on death if the card remains there. Grapeshot is the most redundant of the three storm payoffs because Brain Freeze and Tendrils of Agony remain. This is a qualitative optimization decision, not a proven win-rate increase.
+- Key rejected candidates: Silundi Vision (tapped land face and slow 3-mana selection), Cursed Recording (self-damage risk in storm), Mnemonic Deluge / Volcanic Vision / Sublime Epiphany (too expensive), and other ranked candidates that do not beat the deck’s low-curve combo requirements.
+- No matched-seed multiplayer test was available; no quantitative performance claim.
