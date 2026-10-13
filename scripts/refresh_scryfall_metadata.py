@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """Refresh exact-printing card metadata from Scryfall default_cards bulk data."""
-# One controlled refresh run requested for the 2026-10-12 campaign.
-import csv, gzip, hashlib, io, json, re, tarfile, tempfile, urllib.request
+import csv, gzip, hashlib, io, json, re, tarfile, tempfile, time, urllib.error, urllib.request
 from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -15,9 +14,31 @@ PAT=re.compile(r"^\s*(\d+)x\s+(.+?)\s+\(([^()]*)\)\s+(\S+)\s+(?:\*[^*]+\*\s+)?\[
 EXCEPTIONS=ROOT/"source-package/research/Project_Exceptions_Current_2026-10-12.csv"
 def norm(s): return re.sub(r"[^a-z0-9]+","",(s or "").casefold().replace("’","'"))
 def sha(s): return hashlib.sha256(s.encode()).hexdigest()
-def request(url,accept="application/json"):
- r=urllib.request.Request(url,headers={"User-Agent":UA,"Accept":accept})
- return urllib.request.urlopen(r,timeout=180)
+def request(url,accept="application/json",attempts=5):
+ """Use bounded retries only for transient failures; permanent errors fail fast."""
+ retryable={408,425,429,500,502,503,504}
+ for attempt in range(1,attempts+1):
+  r=urllib.request.Request(url,headers={"User-Agent":UA,"Accept":accept})
+  try:
+   return urllib.request.urlopen(r,timeout=180)
+  except urllib.error.HTTPError as exc:
+   code=exc.code
+   if code not in retryable or attempt==attempts:
+    if code==403:
+     raise RuntimeError(f"Scryfall returned HTTP 403 for {url}; current refresh blocked, do not accept cached output as fresh") from exc
+    raise RuntimeError(f"Scryfall request failed with HTTP {code} for {url} after {attempt} attempt(s)") from exc
+   retry_after=exc.headers.get("Retry-After") if exc.headers else None
+   try: delay=min(60.0,max(1.0,float(retry_after))) if retry_after else min(30.0,2.0**(attempt-1))
+   except ValueError: delay=min(30.0,2.0**(attempt-1))
+   print(f"Transient HTTP {code}; retrying in {delay:.0f}s ({attempt}/{attempts-1})")
+   time.sleep(delay)
+  except (urllib.error.URLError, TimeoutError, ConnectionError) as exc:
+   if attempt==attempts:
+    raise RuntimeError(f"Transient Scryfall network failure for {url} after {attempts} attempts: {exc}") from exc
+   delay=min(30.0,2.0**(attempt-1))
+   print(f"Transient network error; retrying in {delay:.0f}s ({attempt}/{attempts-1}): {exc}")
+   time.sleep(delay)
+ raise RuntimeError(f"Scryfall request exhausted retries for {url}")
 def main():
  if not ARCHIVE.is_file(): raise RuntimeError("Frozen 124-file decklist archive missing")
  if not EXCEPTIONS.is_file(): raise RuntimeError("Current project exception registry missing")
@@ -114,11 +135,16 @@ def main():
      summary["official_illegal_rows"].append({"deck_id":did,"card_name":row["card_name_export"],"zone":zone,"official_status":out["commander_legality"],"project_exception_status":out["project_exception_status"]})
    rows.append(out)
  OUT.mkdir(parents=True,exist_ok=True)
- with (OUT/"Current_Scryfall_Metadata_Overlay_2026-10-12.csv").open("w",newline="",encoding="utf-8") as f:
-  w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
  summary["rows_written"]=len(rows);summary["decks_with_unresolved_commander_identity"]=sorted(d for d,ci in commanders.items() if not ci)
  summary["unexpected_official_illegal_rows"]=[x for x in summary["official_illegal_rows"] if str(x["project_exception_status"]).startswith("NO PROJECT EXCEPTION REGISTERED")]
  summary["overall_result"]="REVIEW_REQUIRED" if (summary["not_found"] or summary["ambiguous"] or summary["name_variant_reviews"] or summary["missing_oracle_id"] or summary["color_identity_mismatches"] or summary["unresolved_printing_rows"] or summary["unresolved_project_exception_rows"] or summary["unexpected_official_illegal_rows"]) else "METADATA_REFRESH_PASS — registered exceptions remain separately labeled; rules-interaction review remains separate"
- (OUT/"Current_Scryfall_Metadata_Audit_Summary_2026-10-12.json").write_text(json.dumps(summary,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+ overlay_names=("Current_Scryfall_Metadata_Overlay.csv","Current_Scryfall_Metadata_Overlay_2026-10-12.csv")
+ summary_names=("Current_Scryfall_Metadata_Audit_Summary.json","Current_Scryfall_Metadata_Audit_Summary_2026-10-12.json")
+ for output_name in overlay_names:
+  with (OUT/output_name).open("w",newline="",encoding="utf-8") as f:
+   w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
+ encoded_summary=json.dumps(summary,indent=2,ensure_ascii=False)+"\n"
+ for output_name in summary_names:
+  (OUT/output_name).write_text(encoded_summary,encoding="utf-8")
  print(json.dumps({k:v for k,v in summary.items() if k not in ("color_identity_mismatches","official_illegal_rows","known_project_banned_exception_rows","unresolved_printing_rows")},indent=2))
 if __name__=="__main__": main()

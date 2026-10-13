@@ -17,8 +17,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 ARCHIVE = ROOT / "source-package/GrixisFINAL_62Decks_CSV_TXT_2026-10-12.tar.gz"
-OVERLAY = ROOT / "refinement/metadata_audit/Current_Scryfall_Metadata_Overlay_2026-10-12.csv"
-SUMMARY = ROOT / "refinement/metadata_audit/Current_Scryfall_Metadata_Audit_Summary_2026-10-12.json"
+OVERLAY = ROOT / "refinement/metadata_audit/Current_Scryfall_Metadata_Overlay.csv"
+SUMMARY = ROOT / "refinement/metadata_audit/Current_Scryfall_Metadata_Audit_Summary.json"
 EXPECTED_ARCHIVE_SHA256 = "f2f46436c3514ecf8412d1fe1f9926919d8d1a3d7a2f938ffee7efce073b2b20"
 EXPECTED_ABADDON_TXT_SHA256 = "2d6203d274c25e67fb93acf5e6784dce4ee1e8999844a6ab032d9b15995acfbf"
 COMMANDER = "Abaddon the Despoiler"
@@ -234,7 +234,7 @@ def audit() -> dict:
         "records": records,
         "status": "PASS — exact deck-scoped metadata join; rules/strategy/current legality approval gates remain separate" if passed else "REVIEW_REQUIRED",
         "limitations": [
-            "Overlay snapshot is dated 2026-10-12; rerun current official legality checks before final approval.",
+            "Freshness is gated by validate_scryfall_metadata_refresh.py; rules and approval remain independent gates.",
             "Metadata joining does not independently verify every card interaction or establish deck optimization.",
             "Project exception statuses are recorded separately from official format status and still require designated-deck assignment review.",
             "No decklist was changed by this audit.",
@@ -265,7 +265,7 @@ def main() -> int:
                 writer.writerow({key: row.get(key, "") for key in fieldnames})
     if not args.json_output and not args.csv_output:
         print(json.dumps(result, indent=2))
-    return 0
+    return 0 if str(result.get("status", "")).startswith("PASS") else 1
 
 if __name__ == "__main__":
     raise SystemExit(main())
