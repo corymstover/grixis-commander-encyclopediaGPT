@@ -47,3 +47,22 @@ Use consistent statuses:
 - `BLOCKED`: a material discrepancy or required gate failure prevents approval; include owner/action/evidence needed to clear it.
 
 Each auto-approval entry must record the date, exact final-list hash, verification certificate path, key accepted/rejected changes (or reason for zero changes), gate outcomes, and any bounded residual uncertainty.
+
+
+## Full-strength refinement standard — 2026-10-13
+
+The user's instruction is to **not be conservative about deck adjustments**. Review each deck thoroughly and make as many or as few changes as the evidence warrants. Do not preserve cards merely because they were in the baseline, and do not optimize for a low change count.
+
+For every deck, the assistant must:
+1. Reassess the entire list in commander-specific context, not merely the top-ranked candidates or obvious weak cards.
+2. Review every card's role, synergy, efficiency, curve/mana requirements, redundancy, interaction, resilience, and contribution to a win condition. Identify low-impact, replaceable, off-plan, or actively conflicting cards.
+3. Build a broad enough commander-specific candidate pool to challenge the baseline, using ranked candidates as discovery leads and targeted current source research where it can change a decision.
+4. Consider multiple plausible cuts and additions rather than stopping at the first acceptable swap. Evaluate packages and structural changes when the commander's strategy benefits from them.
+5. Make all justified improvements, whether that means many swaps, a small set of swaps, or no changes. The count is an outcome, not a target. Do not manufacture changes for the appearance of activity.
+6. Record clear decisions for meaningful candidates: accepted, rejected, or deferred—with the strategic reason and any material evidence gap. Explain the opportunity cost of important inclusions and cuts.
+7. Re-evaluate the deck as a whole after swaps. Recheck mana curve and land/ramp balance, engine density, interaction coverage, redundancy, card advantage, win-condition density, and commander synergy.
+8. Perform the full mandatory technical gates in this policy before automatic approval and locking. Thorough optimization is not permission to waive verification.
+
+A candidate is not rejected solely because it is unfamiliar, outside inherited rankings, or requires broader structural revision. A candidate is not included solely because it is highly ranked, popular, expensive, or powerful in generic Grixis. Judge it against the deck's commander-specific plan and natural power ceiling.
+
+The final review should explicitly state whether the baseline was meaningfully challenged, the strongest alternatives considered, the changes made (or why no changes were justified), the resulting strategic trade-offs, and any bounded unresolved uncertainty that is material to confidence. When a required hard correctness check remains unresolved, the deck stays unapproved/unlocked until it is cleared.
