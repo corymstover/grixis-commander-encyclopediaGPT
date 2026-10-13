@@ -26,49 +26,34 @@
 
 The standalone structural run executed against the local uploaded source package. The separate helper script committed to GitHub was not executed in GitHub Actions during this session.
 
-## Oracle metadata and official legality
+## Current Oracle metadata, color identity, and official Commander legality
 
-The package audit labels inherited legality rows as a prior snapshot, not a current legality certification. A later Scryfall bulk refresh (data last updated 2026-10-12 21:06 UTC) matched 5,964/5,964 current list rows to exact printing/name keys with no unresolved IDs/text, color identity mismatches or unexpected official-illegal statuses outside registered exceptions. That is dated metadata, not a live card-object refresh today.
+**Current metadata refresh:** generated `2026-10-13T06:44:29.581734+00:00`; Scryfall `default_cards` data last updated `2026-10-12T21:06:24.577+00:00`.
 
-Three Abaddon rows—Bituminous Blast, Boltwave and Thermo-Alchemist—came from candidate-ranking metadata rather than a fresh legality audit in the original package. They have known exact printing identifiers, Oracle identifiers/text and UBR-compatible identities in the snapshot, but their approval-time card-object refresh remains part of the open gate. Live Scryfall named-card requests could not be retrieved in this pass.
+The refresh workflow ran the shared current-data scan and failed-closed validation. It produced a `METADATA_REFRESH_PASS` summary and only committed the metadata after its validator and Abaddon-specific exact-list audit succeeded.
 
-The current official Commander banned list was checked on October 13, 2026. No card in the Abaddon baseline is named as banned. The October 12 Wizards Banned & Restricted announcement changed Competitive Brawl, not tabletop Commander. See the [official Commander banned list](https://mtgcommander.net/index.php/banned-list/) and the [October 12, 2026 Wizards announcement](https://www.magic.wizards.com/en/news/announcements/banned-and-restricted-october-12-2026). This does not replace the open current Oracle/identity/legality refresh.
+- Global inventory: 62 decks, 5,964 list rows; **5,964/5,964 exact set + collector number + card-name matches**.
+- Global unresolved statuses: zero name variants requiring review, zero missing printings, zero ambiguous matches, zero missing Oracle text, zero missing Oracle IDs, zero color-identity mismatches, zero unresolved project exceptions, zero unresolved commander identities, and zero unexpected official-illegal rows.
+- Abaddon frozen list: **94/94 distinct names matched**; all 94 have exact printing mapping, Scryfall/Oracle IDs, nonblank Oracle text, UBR-compatible color identity, and Scryfall Commander status `legal`. Zero project exceptions apply to this deck.
+- Priority rows: Bituminous Blast (J25 742, B/R, legal), Boltwave (FDN 79, R, legal), and Thermo-Alchemist (INR 403, R, legal).
+- Official Commander named-ban list: checked October 13, 2026; no card in this Abaddon baseline appears on it. Provider legality and the official list remain separate checks.
 
-## Strategic closeout
+The refresh used the current default-cards bulk updated October 12 at 21:06 UTC, less than 24 hours before the October 13 refresh. This is a current successful Scryfall bulk scan, not a claim that every provider's individual endpoint was queried separately.
 
-- Commander-first blueprint complete. Provisional ceiling: Bracket 4 / Optimized.
-- 60 candidates have documented decisions. No candidate is approved for insertion.
-- Aurora Phoenix over Mind’s Desire remains inconclusive: in the registered Forge pilot neither candidate was cast in any comparison game; starting libraries were not proven matched. Do not repeat the same AI comparison or claim a win-rate result. Retain Mind’s Desire.
-- The exact hypergeometric report is card-density math only, not gameplay, mulligan/sequence modeling or performance evidence.
-- All 94 card names have been inventoried and assigned a role/context triage disposition. This closes the literal triage queue but is not exhaustive proof across every possible game state.
-- Underworld Breach + Lion’s Eye Diamond + Brain Freeze has a worked line under explicit starting-state and no-interaction assumptions. It is coherent under those assumptions, not an unconditional infinite or guaranteed win through interaction.
+## Strategic and rules closeout
 
-
-## Closeout update — 2026-10-13 UTC
-
-The public reference spot-check closes the three named priority cards for Oracle characteristics, UBR-compatible identity, and Commander banned-list status. See Interaction Review Step 11. Important correction: previous triage lines said several MV-1 spells had no lower-MV nonland cascade hit; the list does include MV-0 nonlands, and those claims are corrected in the triage CSV and superseded in the review.
-
-Full current Oracle/identity/legality verification for all 94 unique names is still **PENDING/BLOCKED**, because current Scryfall card-object and bulk endpoints were inaccessible in this session. The available complete refresh is from 2026-10-12 and cannot be labeled live approval-time. No known invalid card was identified in available current public card sources; that is not equivalent to passing the 94-card gate.
-
-The decklist remains unchanged: 100 cards, 94 distinct names, one commander, correct singleton/basics treatment, source TXT/CSV match and frozen hashes retained. Rules/combo review is substantial and now corrected for the cascade-hit issue, but bounded rather than exhaustive. Breach line remains conditionally coherent from the recorded starting state and assumes no opponents interact. Approval/finalization gate stays NO pending the complete fresh 94-name source refresh and explicit user approval.
-
-
-
-
-## Current-source closeout checkpoint (2026-10-13 UTC)
-
-Priority named-card cross-checks are complete via current public card-reference pages: Bituminous Blast, Boltwave, and Thermo-Alchemist. Their Oracle characteristics and reported Commander legality are documented in Interaction Review Step 11. The official Commander ban list was checked; none of these three cards appears on it. Sources: https://www.mtg.wtf/card/c16/182/Bituminous-Blast, https://www.mtg.wtf/card/fdn/79/Boltwave, https://www.mtg.wtf/card/j22/83/Thermo-Alchemist, https://mtgcommander.net/index.php/banned-list/.
-
-The triage CSV has been corrected for cascade-hit errors: this list's mana-value-0 nonlands can be hits for mana-value-1 cascade spells, and mana-value-3 spells can hit mana-value-0/1/2 cards. This correction supersedes incompatible wording in prior review sections.
-
-**Full-card gate remains PENDING/BLOCKED:** direct Scryfall named-card and bulk endpoints returned access/403 errors in this session. The prior all-94 snapshot (last updated 2026-10-12) remains dated evidence, not a fresh approval-time refresh. Public reference spot-checks of the three flagged cards do not establish a fresh authoritative Oracle, identity, and Commander-legality result for all 94 unique names. Do not claim that full gate passes until a current authoritative dataset can be retrieved and compared.
-
-Rules/combo review is substantial but bounded. The Breach/LED/Brain Freeze + Wheel line is rules-coherent only from its explicit starting inventory, assuming no opponent interaction. No evidence supports a gameplay win-rate claim. No decklist changes; exact baseline hash and structural audit preserved. Final gate remains NO until full fresh card-source check and explicit user approval.
-
+- Commander-first blueprint complete; provisional ceiling remains Bracket 4 / Optimized.
+- Sixty candidates have documented decisions. None is approved for insertion; no material card swap is justified by the current evidence.
+- Aurora Phoenix over Mind’s Desire remains INCONCLUSIVE: neither candidate was cast in the registered Forge comparison and starting libraries were not proven matched. Retain Mind’s Desire; do not repeat that same uninformative trial.
+- Hypergeometric results are descriptive card-density math only, not gameplay, mulligan/sequence modeling, or win-rate evidence.
+- Interaction triage covers all 94 distinct card names. The substantive review checks cascade thresholds/timing, alternate costs and mana value, casts from hand versus exile, printed plus Abaddon-granted cascade, damage and untap sequencing, copies versus casts, Harnfel, Blasphemous Act, and the Breach package.
+- Cascade correction: this deck has seven zero-mana-value nonlands. A mana-value-1 cascade spell can hit one of the six other zero-MV cards, if revealed; Pact of Negation itself is MV 0 and cannot hit a lower-MV card. MV-3 cascade spells can hit nonlands with MV 0–2, if revealed. Hits are possible, not guaranteed.
+- Underworld Breach + Lion’s Eye Diamond + Brain Freeze + Wheel has a worked sequence only for the documented starting inventory and assuming no opponent interaction. It is not an unconditional infinite or performance proof.
+- Rules/interaction analysis is substantial but bounded, not proof of every possible board state.
 
 ## Closeout decision
 
-**Retain the frozen baseline unchanged; no card change is justified by the reviewed candidate evidence.** The full fresh 94-card source refresh is still blocked, and the exact list has not been approved in this refinement cycle. Final gate remains **NO**.
+**Retain the exact frozen list unchanged.** Structural integrity is verified; current Scryfall metadata and exact 94-name audit pass. The sole finalization gate that remains is the user's explicit approval of the exact 100-card list. Until approval is given and recorded, `final_gate_passed=NO`, approval date remains blank, and the deck is not certified/locked by this refinement cycle.
 
 ## Exact copy-and-paste list
 
