@@ -18,6 +18,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 ARCHIVE = ROOT / "source-package/GrixisFINAL_62Decks_CSV_TXT_2026-10-12.tar.gz"
 OVERLAY = ROOT / "refinement/metadata_audit/Current_Scryfall_Metadata_Overlay_2026-10-12.csv"
+SUMMARY = ROOT / "refinement/metadata_audit/Current_Scryfall_Metadata_Audit_Summary_2026-10-12.json"
 EXPECTED_ARCHIVE_SHA256 = "f2f46436c3514ecf8412d1fe1f9926919d8d1a3d7a2f938ffee7efce073b2b20"
 EXPECTED_ABADDON_TXT_SHA256 = "2d6203d274c25e67fb93acf5e6784dce4ee1e8999844a6ab032d9b15995acfbf"
 COMMANDER = "Abaddon the Despoiler"
@@ -95,7 +96,47 @@ def read_overlay() -> tuple[dict[tuple[str, str], list[dict]], list[str], str]:
                 by_deck_name.setdefault(key, []).append(row)
     return by_deck_name, columns, overlay_hash
 
+def validate_bulk_summary(summary: dict) -> dict:
+    required = {
+        "bulk_type": "default_cards",
+        "deck_count": 62,
+        "decklist_rows": 5964,
+        "exact_matches": 5964,
+        "name_variant_reviews": 0,
+        "not_found": 0,
+        "ambiguous": 0,
+        "blank_oracle_text_rows": 0,
+        "missing_oracle_id": 0,
+    }
+    issues = [f"{key} expected {expected!r}, got {summary.get(key)!r}"
+              for key, expected in required.items() if summary.get(key) != expected]
+    if not summary.get("generated_at_utc"):
+        issues.append("missing generated_at_utc")
+    if not summary.get("bulk_updated_at"):
+        issues.append("missing bulk_updated_at")
+    if summary.get("color_identity_mismatches"):
+        issues.append("nonempty color_identity_mismatches")
+    if summary.get("unresolved_printing_rows"):
+        issues.append("nonempty unresolved_printing_rows")
+    if summary.get("decks_with_unresolved_commander_identity"):
+        issues.append("nonempty decks_with_unresolved_commander_identity")
+    if summary.get("unresolved_project_exception_rows"):
+        issues.append("nonempty unresolved_project_exception_rows")
+    if summary.get("unexpected_official_illegal_rows"):
+        issues.append("nonempty unexpected_official_illegal_rows")
+    if summary.get("overall_result") != "METADATA_REFRESH_PASS — registered exceptions remain separately labeled; rules-interaction review remains separate":
+        issues.append(f"unexpected overall_result: {summary.get('overall_result')!r}")
+    if issues:
+        raise ValueError("Current Scryfall bulk summary failed preflight: " + "; ".join(issues))
+    return summary
+
+
+def read_bulk_summary() -> dict:
+    return validate_bulk_summary(json.loads(SUMMARY.read_text(encoding="utf-8")))
+
+
 def audit() -> dict:
+    bulk_summary = read_bulk_summary()
     raw, parsed = read_abaddon_list()
     counts: Counter[str] = Counter()
     for row in parsed:
@@ -128,6 +169,9 @@ def audit() -> dict:
         fields = {
             "oracle_id": first(row, ORACLE_ID_FIELDS),
             "oracle_text": first(row, ORACLE_FIELDS),
+            "scryfall_id": first(row, ("scryfall_id",)),
+            "released_at": first(row, ("released_at",)),
+            "bulk_updated_at": first(row, ("bulk_updated_at",)),
             "color_identity": first(row, IDENTITY_FIELDS),
             "commander_color_identity": first(row, ("commander_color_identity",)),
             "color_identity_check": first(row, ("color_identity_check",)),
@@ -142,9 +186,13 @@ def audit() -> dict:
         # Blank color identity is the correct representation for colorless cards.
         # For Commander legality, rely on a populated official status field; exceptions stay separate.
         problems = []
-        for key in ("oracle_id", "oracle_text", "commander_legality", "printing_match_status"):
+        for key in ("oracle_id", "oracle_text", "commander_legality", "printing_match_status", "scryfall_id", "released_at", "bulk_updated_at"):
             if not fields[key]:
                 problems.append(f"missing_{key}")
+        if fields["bulk_updated_at"] != bulk_summary["bulk_updated_at"]:
+            problems.append("row_bulk_timestamp_does_not_match_summary")
+        if fields["commander_legality"].casefold() != "legal":
+            problems.append("abaddon_card_not_ordinary_commander_legal")
         if not fields["color_identity_check"]:
             problems.append("missing_color_identity_check")
         elif fields["color_identity_check"].casefold() != "pass":
@@ -166,10 +214,13 @@ def audit() -> dict:
     passed = not missing and not ambiguous and not field_issues and not singleton_violations and total == 100
     return {
         "deck_id": "Abaddon_the_Despoiler",
-        "snapshot": "2026-10-12 Scryfall metadata overlay",
+        "snapshot": {"refresh_generated_at_utc": bulk_summary["generated_at_utc"], "scryfall_bulk_updated_at": bulk_summary["bulk_updated_at"], "bulk_type": bulk_summary["bulk_type"]},
         "archive_sha256": sha256(ARCHIVE.read_bytes()),
         "baseline_txt_sha256": sha256(raw),
         "overlay_sha256": overlay_hash,
+        "global_scryfall_refresh_overall_result": bulk_summary["overall_result"],
+        "global_scryfall_refresh_row_count": bulk_summary["decklist_rows"],
+        "global_scryfall_refresh_unexpected_illegal_rows": bulk_summary["unexpected_official_illegal_rows"],
         "total_cards_including_commander": total,
         "unique_card_names": len(counts),
         "commander": COMMANDER,
@@ -202,7 +253,7 @@ def main() -> int:
     if args.csv_output:
         args.csv_output.parent.mkdir(parents=True, exist_ok=True)
         fieldnames = [
-            "name", "quantity", "source_role_tag", "oracle_id", "oracle_text",
+            "name", "quantity", "source_role_tag", "oracle_id", "oracle_text", "scryfall_id", "released_at", "bulk_updated_at",
             "color_identity", "commander_color_identity", "color_identity_check",
             "commander_legality", "project_exception_status", "type_line", "set_code",
             "collector_number", "printing_match_status", "scryfall_name", "metadata_fields_complete",
