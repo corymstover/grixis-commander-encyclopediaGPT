@@ -69,3 +69,31 @@ The remote docs establish that Forge supports CLI AI games in Commander mode but
 
 A pinned script read was also confirmed for the six cards listed above; their declared script names and Oracle lines were present in the returned source. This does not establish coverage for the other 88 names. A second, bulk fetch attempt of 94 source paths was blocked by the connector's tool-call limit before a complete result could be collected. The report intentionally leaves the 94-card coverage gate as pending rather than presenting a partial scan as a pass.
 
+
+
+## 7. Runtime probe result — Forge starts, but no game was run
+
+GitHub Actions run [38333900815](https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/38333900815) completed successfully. Its log confirms:
+
+- Java runtime: OpenJDK 17.0.20.1 (Temurin).
+- The checksum-verified `forge-installer-2.0.15.tar.bz2` was extracted successfully.
+- The desktop JAR `forge-gui-desktop-2.0.15-jar-with-dependencies.jar` was found and invoked.
+- Forge printed `APP: Forge v.2.0.15-SNAPSHOT-09.28`, confirming the binary starts.
+- Invoking the JAR with `--help` returned exit code 0 but printed `Unknown mode. Known modes are 'sim', 'parse', 'server'`. This is a successful JVM/application startup probe, **not** a successful help-command probe.
+
+The run uploaded a short log artifact, `forge-2.0.15-runtime-probe` (artifact ID 11784126985; SHA-256 digest of the ZIP recorded by GitHub as `34550c1a1bb053957e1d09efad21465dac29139d29f1af8b003d588dd2be1c70`). The output artifact confirms startup only.
+
+### Updated status
+
+| Qualification gate | Status |
+|---|---|
+| Pinned archive SHA-256 and extraction | PASS |
+| Forge JAR JVM startup | PASS |
+| Valid command invocation/usable CLI arguments | Pending; `--help` is not a supported mode |
+| Full 94-card script coverage scan | Not run |
+| Exact deck import / Commander mode | Not run |
+| Required interaction smoke tests | Not run |
+| Fixed/paired starting orders and structured logs | Not demonstrated |
+| Gameplay runs | 0 |
+
+The runtime probe's workflow intentionally does not import the deck or play games. The engine remains **not qualified** for exploratory or confirmatory gameplay testing. The next probe must call a documented mode (`parse` or `sim`) with the correct syntax, establish how the release loads `.dck` input, and scan its extracted card script tree. Any subsequent gameplay should wait until the import and rules interactions are validated.
