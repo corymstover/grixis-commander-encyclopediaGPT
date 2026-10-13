@@ -28,6 +28,7 @@ The frozen baseline is preserved on `baseline/freeze-2026-10-12`. The active, se
 
 - [Abaddon the Despoiler — commander-first blueprint v1](https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/blueprints/Abaddon_the_Despoiler_v1.md)
 - [Abaddon candidate decision ledger](https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/decisions/Abaddon_the_Despoiler_Candidate_Decisions_2026-10-12.csv)
+- [Abaddon interaction review v1 — cascade interaction and Breach line](https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/rules/Abaddon_the_Despoiler_Interaction_Review_2026-10-13.md)
 - [Campaign tracker](https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/Deck_Refinement_Tracker_2026-10-12.csv)
 
 Abaddon is the first deck in the controlled pass. Its blueprint is complete; four candidates have been triaged. No swap has been accepted or applied. Testing, rules-interaction closeout, and user approval remain required before any final list change.
