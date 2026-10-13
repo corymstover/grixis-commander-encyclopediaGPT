@@ -38,3 +38,17 @@ The individual raw CSV/TXT SHA-256 values and independent count/reconciliation r
 
 The *original* four current FINAL ZIP archives, four historical Updated ZIP archives, and full current inventory/audit/candidate-ranking datasets remain in the supplied source package outside the repository. Those originals were not deleted or replaced; the mirror is a newly generated convenience bundle whose extracted contents should be checked against the hash manifest after any future transfer or restoration.
 
+
+
+## Updated status — 2026-10-13
+
+The dated statements above preserve the state as of October 12. Subsequent verification is documented in:
+- [Source Consolidation Reconciliation — 2026-10-13](Source_Consolidation_Reconciliation_2026-10-13.md)
+- [Duplicate Source Reconciliation — 2026-10-13](Duplicate_Source_Reconciliation_2026-10-13.md)
+
+Current corrections and additions:
+1. The compact archive already contains all 124 current CSV/TXT deck files and all 124 were checked byte-for-byte against the verified source package. The original decklists are therefore present in GitHub as archive members, though not all 124 as individual GitHub file paths.
+2. Four raw current source artifacts are now individually mirrored under `source-package/research/current-2026-10-12/`: current CSV/TXT reconciliation, current exception registry snapshot, current identity overrides, and candidate ranking methodology. Their exact hashes and verified Git blob IDs are in the duplicate-source reconciliation report.
+3. The later Scryfall metadata refresh is complete for 5,964/5,964 rows. It resolves the package-era “metadata refresh pending” status but does not certify all rules interactions or the strategic integrity of all decks.
+4. No duplicate original uploads or historical source files were deleted. No approved decklist was modified.
+5. The Abaddon refinement branch now includes an expanded rules-interaction review, an isolated Aurora Phoenix test variant, and a pre-registered test plan marked **NOT RUN** because no validated Magic-rules engine was available in the connected execution tools. No performance conclusion is claimed.
