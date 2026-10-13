@@ -90,6 +90,7 @@ def validate_summary(summary: dict[str, Any], *, now: datetime | None = None,
         "unresolved printing rows": ("unresolved_printing_rows",),
         "unresolved project exceptions": ("unresolved_project_exception_rows",),
         "unexpected official-illegal rows": ("unexpected_official_illegal_rows",),
+        "unknown official Commander legality rows": ("unknown_commander_legality_rows",),
         "unresolved commander identities": ("decks_with_unresolved_commander_identity",),
     }
     for label, keys in list_failures.items():
