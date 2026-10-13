@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
-"""Independent static audit of Abaddon baseline membership against the pinned metadata overlay.
+"""Independent static audit of the frozen Abaddon list and pinned Scryfall overlay.
 
-This script deliberately does not change any decklist, infer card rules from card names,
-or certify strategic optimality. It joins exact card names to the frozen 2026-10-12
-Scryfall metadata overlay and verifies list counts/identity/legality/exception labels.
+Run from repository root. It never changes deck contents. Output is a review artifact,
+not a finalization certificate or gameplay-performance claim.
 """
 from __future__ import annotations
 
@@ -17,203 +16,173 @@ from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-ARCHIVE = ROOT / "source-package" / "GrixisFINAL_62Decks_CSV_TXT_2026-10-12.tar.gz"
-OVERLAY = ROOT / "refinement" / "metadata_audit" / "Current_Scryfall_Metadata_Overlay_2026-10-12.csv"
-EXCEPTIONS = ROOT / "source-package" / "research" / "current-2026-10-12" / "project_exceptions_current_v8_1_4.csv"
-DECK_ID = "Abaddon_the_Despoiler"
-BASELINE_SHA256 = "2d6203d274c25e67fb93acf5e6784dce4ee1e8999844a6ab032d9b15995acfbf"
-ARCHIVE_SHA256 = "f2f46436c3514ecf8412d1fe1f9926919d8d1a3d7a2f938ffee7efce073b2b20"
-REGISTERED_EXCEPTIONS = {
-    "lutri, the spellchaser",
-    "trade secrets",
-    "yawgmoth's bargain",
-    "the madcap jester",
-    "dragon's smile",
-    "tresserhorn's lord, returned",
-}
-
+ARCHIVE = ROOT / "source-package/GrixisFINAL_62Decks_CSV_TXT_2026-10-12.tar.gz"
+OVERLAY = ROOT / "refinement/metadata_audit/Current_Scryfall_Metadata_Overlay_2026-10-12.csv"
+EXPECTED_ARCHIVE_SHA256 = "f2f46436c3514ecf8412d1fe1f9926919d8d1a3d7a2f938ffee7efce073b2b20"
+EXPECTED_ABADDON_TXT_SHA256 = "2d6203d274c25e67fb93acf5e6784dce4ee1e8999844a6ab032d9b15995acfbf"
+COMMANDER = "Abaddon the Despoiler"
+BASIC_LANDS = {"plains", "island", "swamp", "mountain", "forest", "wastes"}
+# Exact card names are the join key. Extend explicitly if a legal split/DFC name requires it.
+NAME_FIELDS = ("name", "card_name", "deck_card_name", "name_in_deck", "card_name_original")
+ORACLE_ID_FIELDS = ("oracle_id", "oracleId", "oracle_id_current")
+ORACLE_FIELDS = ("oracle_text", "oracle_text_current", "oracle")
+IDENTITY_FIELDS = ("color_identity", "colorIdentity", "color_identity_current")
+LEGALITY_FIELDS = ("commander_legality", "legalities_commander", "commander_status", "commander")
 
 def sha256(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
+def norm(s: str) -> str:
+    return re.sub(r"\s+", " ", s.strip()).casefold()
 
-def norm(text: str) -> str:
-    return re.sub(r"\s+", " ", text.strip()).casefold()
+def first(row: dict, fields: tuple[str, ...]) -> str:
+    for field in fields:
+        if field in row and row[field] is not None and str(row[field]).strip():
+            return str(row[field]).strip()
+    return ""
 
-
-def read_abaddon_list() -> tuple[bytes, list[dict]]:
-    archive_bytes = ARCHIVE.read_bytes()
-    if sha256(archive_bytes) != ARCHIVE_SHA256:
-        raise ValueError(f"Compact archive hash mismatch: {sha256(archive_bytes)}")
+def read_baseline() -> tuple[bytes, list[dict]]:
+    raw_archive = ARCHIVE.read_bytes()
+    actual_archive_hash = sha256(raw_archive)
+    if actual_archive_hash != EXPECTED_ARCHIVE_SHA256:
+        raise ValueError(f"Archive SHA-256 mismatch: {actual_archive_hash}")
     with tarfile.open(ARCHIVE, "r:gz") as tar:
-        members = [m for m in tar.getmembers()
-                   if m.isfile() and m.name.replace("\\", "/").endswith("TXT/Abaddon_the_Despoiler.txt")]
-        if len(members) != 1:
-            raise ValueError(f"Expected one Abaddon TXT member; found {len(members)}")
-        fd = tar.extractfile(members[0])
+        matches = [m for m in tar.getmembers() if m.isfile() and m.name.replace("\\", "/").endswith("TXT/Abaddon_the_Despoiler.txt")]
+        if len(matches) != 1:
+            raise ValueError(f"Expected exactly one Abaddon TXT archive member; got {len(matches)}")
+        fd = tar.extractfile(matches[0])
         if fd is None:
-            raise ValueError("Unable to extract Abaddon TXT")
+            raise ValueError("Could not extract Abaddon TXT")
         raw = fd.read()
-    if sha256(raw) != BASELINE_SHA256:
-        raise ValueError(f"Abaddon TXT hash mismatch: {sha256(raw)}")
+    actual = sha256(raw)
+    if actual != EXPECTED_ABADDON_TXT_SHA256:
+        raise ValueError(f"Abaddon TXT SHA-256 mismatch: {actual}")
     parsed = []
-    for n, line in enumerate(raw.decode("utf-8-sig").splitlines(), 1):
+    for line_no, line in enumerate(raw.decode("utf-8-sig").splitlines(), 1):
         line = line.strip()
         if not line:
             continue
         m = re.fullmatch(r"(\d+)x\s+(.+)", line)
         if not m:
-            raise ValueError(f"Line {n}: invalid quantity/name line: {line!r}")
+            raise ValueError(f"Invalid line {line_no}: {line!r}")
         qty = int(m.group(1))
         body = m.group(2).strip()
-        role_m = re.search(r"\s+\[([^\]]+)\]\s*$", body)
-        role = role_m.group(1).strip() if role_m else ""
-        if role_m:
-            body = body[:role_m.start()].strip()
-        # Strip export printing metadata only after the role tag.
-        name = re.sub(r"\s+\([^)]+\)\s+\S+\s*$", "", body).strip()
-        if qty < 1 or not name:
-            raise ValueError(f"Line {n}: invalid quantity or card name")
-        parsed.append({"line": n, "quantity": qty, "name": name, "role_tag": role})
+        tag_m = re.search(r"\s+\[([^\]]+)\]\s*$", body)
+        role = tag_m.group(1).strip() if tag_m else ""
+        if tag_m:
+            body = body[:tag_m.start()].strip()
+        # Source exports have "(set) collector-number" metadata at line ends.
+        card_name = re.sub(r"\s+\([^)]+\)\s+\S+\s*$", "", body).strip()
+        if qty <= 0 or not card_name:
+            raise ValueError(f"Invalid quantity/card name on line {line_no}")
+        parsed.append({"line": line_no, "quantity": qty, "name": card_name, "role_tag": role})
     return raw, parsed
 
-
-def load_overlay(path: Path) -> tuple[dict[str, dict], list[str]]:
-    with path.open("r", encoding="utf-8-sig", newline="") as f:
-        rows = list(csv.DictReader(f))
-    if not rows:
-        raise ValueError("Scryfall metadata overlay is empty")
-    fieldnames = list(rows[0].keys())
-    name_field = next((f for f in ("card_name", "name", "name_in_deck", "deck_card_name") if f in fieldnames), None)
-    if not name_field:
-        raise ValueError(f"Could not find card-name field in metadata overlay; fields={fieldnames}")
-    by_name = {}
-    for row in rows:
-        name = norm(row.get(name_field, ""))
-        if name:
-            by_name.setdefault(name, []).append(row)
-    return by_name, fieldnames
-
-
-def get_value(row: dict, candidates: tuple[str, ...]) -> str:
-    for key in candidates:
-        if key in row and row[key] is not None and str(row[key]).strip() != "":
-            return str(row[key]).strip()
-    return ""
-
+def read_overlay() -> tuple[dict[str, list[dict]], list[str], str]:
+    raw = OVERLAY.read_bytes()
+    overlay_hash = sha256(raw)
+    with OVERLAY.open("r", encoding="utf-8-sig", newline="") as f:
+        reader = csv.DictReader(f)
+        fields = reader.fieldnames or []
+        name_field = next((name for name in NAME_FIELDS if name in fields), None)
+        if not name_field:
+            raise ValueError(f"No card name field in overlay. Columns: {fields}")
+        by_name: dict[str, list[dict]] = {}
+        for row in reader:
+            key = norm(row.get(name_field, ""))
+            if key:
+                by_name.setdefault(key, []).append(row)
+    return by_name, fields, overlay_hash
 
 def audit() -> dict:
-    raw, cards = read_abaddon_list()
-    counts = Counter(x["name"] for x in cards for _ in range(x["quantity"]))
-    if sum(counts.values()) != 100:
-        raise ValueError(f"Expected exactly 100 cards including commander, got {sum(counts.values())}")
-    commander_rows = [x for x in cards if x["role_tag"].casefold().startswith("commander")]
-    if len(commander_rows) != 1 or commander_rows[0]["name"] != "Abaddon the Despoiler" or commander_rows[0]["quantity"] != 1:
-        raise ValueError("Commander marker/count is not exactly one Abaddon the Despoiler")
-    non_singletons = {name: quantity for name, quantity in counts.items()
-                      if quantity > 1 and name.casefold() not in {"island", "swamp", "mountain"}}
-    if non_singletons:
-        raise ValueError(f"Singleton/copy rule failures: {non_singletons}")
-    overlay, fields = load_overlay(OVERLAY)
-    audit_rows = []
-    missing = []
-    ambiguous = []
-    mismatches = []
-    for name, quantity in sorted(counts.items(), key=lambda x: x[0].casefold()):
-        matches = overlay.get(norm(name), [])
-        if len(matches) == 0:
+    raw, parsed = read_baseline()
+    counts = Counter()
+    for row in parsed:
+        counts[row["name"]] += row["quantity"]
+    total = sum(counts.values())
+    commander_rows = [x for x in parsed if "commander" in x["role_tag"].casefold()]
+    if total != 100:
+        raise ValueError(f"Expected 100 cards incl commander; got {total}")
+    if len(commander_rows) != 1 or commander_rows[0]["name"] != COMMANDER or commander_rows[0]["quantity"] != 1:
+        raise ValueError("Commander first-line marker/count does not match one Abaddon copy")
+    violations = {name: qty for name, qty in counts.items() if qty > 1 and norm(name) not in BASIC_LANDS}
+    if violations:
+        raise ValueError(f"Singleton violations: {violations}")
+    overlay, columns, overlay_hash = read_overlay()
+    matches, missing, ambiguous, field_issues = [], [], [], []
+    for name, qty in sorted(counts.items(), key=lambda pair: pair[0].casefold()):
+        hits = overlay.get(norm(name), [])
+        if not hits:
             missing.append(name)
-            audit_rows.append({"name": name, "quantity": quantity, "status": "MISSING_FROM_OVERLAY"})
             continue
-        if len(matches) > 1:
-            ambiguous.append({"name": name, "matches": len(matches)})
-            audit_rows.append({"name": name, "quantity": quantity, "status": "AMBIGUOUS_OVERLAY_MATCH"})
+        if len(hits) > 1:
+            ambiguous.append({"name": name, "match_count": len(hits)})
             continue
-        row = matches[0]
-        oracle_id = get_value(row, ("oracle_id", "oracleId", "oracle_id_current"))
-        identity = get_value(row, ("color_identity", "colorIdentity", "color_identity_current"))
-        legality = get_value(row, ("commander_legality", "legalities_commander", "commander_status", "commander"))
-        oracle_text = get_value(row, ("oracle_text", "oracle_text_current", "oracle"))
-        card_type = get_value(row, ("type_line", "type_line_current", "type"))
-        collector = get_value(row, ("collector_number", "collector_number_current", "number"))
-        set_code = get_value(row, ("set", "set_code", "set_code_current"))
-        exception_status = "NONE"
-        if norm(name) in REGISTERED_EXCEPTIONS:
-            exception_status = "REGISTERED_EXCEPTION — verify project deck assignment separately"
-        problems = []
-        if not oracle_id:
-            problems.append("MISSING_ORACLE_ID")
-        if not oracle_text:
-            problems.append("MISSING_ORACLE_TEXT")
-        if not legality:
-            problems.append("MISSING_COMMANDER_LEGALITY_FIELD")
-        elif legality.casefold() not in {"legal", "not_legal", "banned", "restricted", "legal with exception"}:
-            problems.append("UNRECOGNIZED_COMMANDER_LEGALITY_VALUE")
+        r = hits[0]
+        fields = {
+            "oracle_id": first(r, ORACLE_ID_FIELDS),
+            "oracle_text": first(r, ORACLE_FIELDS),
+            "color_identity": first(r, IDENTITY_FIELDS),
+            "commander_legality": first(r, LEGALITY_FIELDS),
+            "type_line": first(r, ("type_line", "type_line_current", "type")),
+            "set_code": first(r, ("set", "set_code", "set_code_current")),
+            "collector_number": first(r, ("collector_number", "collector_number_current", "number")),
+        }
+        problems = [f"missing_{k}" for k in ("oracle_id", "oracle_text", "color_identity", "commander_legality") if not fields[k]]
         if problems:
-            mismatches.append({"name": name, "problems": problems})
-        audit_rows.append({
-            "name": name, "quantity": quantity, "role_tag": next(x["role_tag"] for x in cards if x["name"] == name),
-            "oracle_id": oracle_id, "type_line": card_type, "color_identity": identity,
-            "commander_legality": legality, "set": set_code, "collector_number": collector,
-            "project_exception_registry_status": exception_status,
-            "oracle_text_present": bool(oracle_text), "status": "REVIEW" if problems else "METADATA_FIELDS_PRESENT",
-            "field_problems": problems,
-        })
-    if missing or ambiguous or mismatches:
-        overall = "FAIL_OR_REVIEW"
-    else:
-        overall = "STRUCTURAL_AND_METADATA_JOIN_PASS — strategy/rules certification remains separate"
+            field_issues.append({"name": name, "issues": problems})
+        matches.append({"name": name, "quantity": qty,
+                        "source_role_tag": next(x["role_tag"] for x in parsed if x["name"] == name),
+                        **fields, "metadata_fields_complete": not problems})
     return {
-        "deck_id": DECK_ID,
-        "baseline_snapshot": "2026-10-12",
+        "deck_id": "Abaddon_the_Despoiler",
+        "snapshot": "2026-10-12",
+        "archive_sha256": sha256(ARCHIVE.read_bytes()),
         "baseline_txt_sha256": sha256(raw),
-        "compact_archive_sha256": sha256(ARCHIVE.read_bytes()),
-        "total_cards_including_commander": sum(counts.values()),
+        "overlay_sha256": overlay_hash,
+        "total_cards_including_commander": total,
         "unique_card_names": len(counts),
-        "commander": commander_rows[0]["name"],
-        "commander_quantity": commander_rows[0]["quantity"],
-        "nonbasic_singleton_failures": non_singletons,
-        "overlay_path": str(OVERLAY.relative_to(ROOT)),
-        "overlay_fieldnames": fields,
-        "overlay_exact_name_match_status": overall,
-        "missing_from_overlay": missing,
-        "ambiguous_overlay_matches": ambiguous,
-        "metadata_field_issues": mismatches,
-        "cards": audit_rows,
+        "commander": COMMANDER,
+        "commander_marker_count": len(commander_rows),
+        "singleton_violations": violations,
+        "overlay_columns": columns,
+        "matched_unique_names": len(matches),
+        "missing_overlay_names": missing,
+        "ambiguous_overlay_names": ambiguous,
+        "metadata_field_issues": field_issues,
+        "records": matches,
+        "status": "METADATA_JOIN_PASS — rules/strategy/fresh legality gates remain separate"
+            if not missing and not ambiguous and not field_issues
+            else "REVIEW_REQUIRED",
         "limitations": [
-            "Metadata overlay is a dated snapshot; a current final legality checkpoint must be run before final approval.",
-            "Name matching is not the same as full card-rules verification; split/DFC/alternate-name edge cases require explicit mapping if encountered.",
-            "Project exception labels here are global guardrails, not evidence that a particular named exception is present in Abaddon.",
-            "This script does not score strategy, establish simulator correctness, or authorize any card change.",
+            "Overlay is dated 2026-10-12, not a fresh legality check at approval time.",
+            "A name/metadata join does not independently verify every relevant rule interaction.",
+            "This script does not certify strategic quality, simulation validity, or approval.",
+            "No decklist was changed by this audit.",
         ],
     }
 
-
 def main() -> int:
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--json-output", type=Path)
-    parser.add_argument("--csv-output", type=Path)
-    args = parser.parse_args()
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--json-output", type=Path)
+    ap.add_argument("--csv-output", type=Path)
+    args = ap.parse_args()
     result = audit()
     if args.json_output:
         args.json_output.parent.mkdir(parents=True, exist_ok=True)
         args.json_output.write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")
     if args.csv_output:
         args.csv_output.parent.mkdir(parents=True, exist_ok=True)
-        fields = ["name", "quantity", "role_tag", "oracle_id", "type_line", "color_identity",
-                  "commander_legality", "set", "collector_number", "project_exception_registry_status",
-                  "oracle_text_present", "status", "field_problems"]
+        fields = ["name", "quantity", "source_role_tag", "oracle_id", "oracle_text", "color_identity",
+                  "commander_legality", "type_line", "set_code", "collector_number", "metadata_fields_complete"]
         with args.csv_output.open("w", encoding="utf-8", newline="") as f:
-            writer = csv.DictWriter(f, fieldnames=fields)
-            writer.writeheader()
-            for row in result["cards"]:
-                flat = dict(row)
-                flat["field_problems"] = ";".join(flat.get("field_problems", []))
-                writer.writerow({k: flat.get(k, "") for k in fields})
+            w = csv.DictWriter(f, fieldnames=fields)
+            w.writeheader()
+            for record in result["records"]:
+                w.writerow({k: record.get(k, "") for k in fields})
     if not args.json_output and not args.csv_output:
         print(json.dumps(result, indent=2))
     return 0
-
 
 if __name__ == "__main__":
     raise SystemExit(main())
