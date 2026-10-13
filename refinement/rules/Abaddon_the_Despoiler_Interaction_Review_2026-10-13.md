@@ -311,3 +311,8 @@ References: [Birgi // Harnfel official Wizards release notes](https://media.wiza
 The detailed Harnfel reverse-face and Bituminous Blast check is recorded in [Abaddon Step 4 Context Check](../tests/Abaddon_Step_4_Context_Check_2026-10-13.md). In brief: Harnfel's exile-play permissions allow normal-cost plays that can trigger applicable cast-from-exile payoffs but do not qualify those spells for Abaddon's hand-only cascade grant. Bituminous Blast has mana value 5 and printed cascade; under Abaddon's hand-cast/turn/threshold conditions it can gain an additional cascade instance, resolving above the Blast before its creature damage resolves.
 
 These two items are closed only. Remaining exact-list Oracle/identity, full per-card interaction, final integrity, legality-at-approval, and user-approval gates remain open. No decklist changes; final gate NO.
+
+
+## Step 9 — Blasphemous Act context check (2026-10-13 UTC)
+
+See [Abaddon Step 5 Blasphemous Act Interaction Check](../tests/Abaddon_Step_5_Blasphemous_Act_Interaction_Check_2026-10-13.md). Oracle text and the deck-specific interaction are now documented: mana value 9 despite cost reduction; damage to creatures only; the wipe can destroy Abaddon's own creature engines; and, when the hand-cast/turn/threshold conditions are met, Abaddon grants cascade before the sorcery resolves. A creature cast from that cascade is exposed to the pending wipe. The card remains in the frozen baseline; no cut is justified by rules review alone. Full list gate remains NO.
