@@ -1,0 +1,36 @@
+name: Verify Abaddon test variant integrity
+
+on:
+  push:
+    branches: ["refinement/**"]
+    paths:
+      - "source-package/GrixisFINAL_62Decks_CSV_TXT_2026-10-12.tar.gz"
+      - "source-package/Grixis_Independent_Deck_Hash_Manifest_2026-10-12.csv"
+      - "refinement/variants/Abaddon_Aurora_Phoenix_Test_Variant_v1.txt"
+      - "scripts/verify_abaddon_variant.py"
+      - ".github/workflows/verify-abaddon-variant.yml"
+  pull_request:
+    branches: ["refinement/**"]
+    paths:
+      - "source-package/GrixisFINAL_62Decks_CSV_TXT_2026-10-12.tar.gz"
+      - "source-package/Grixis_Independent_Deck_Hash_Manifest_2026-10-12.csv"
+      - "refinement/variants/Abaddon_Aurora_Phoenix_Test_Variant_v1.txt"
+      - "scripts/verify_abaddon_variant.py"
+      - ".github/workflows/verify-abaddon-variant.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-abaddon-variant:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verify variant against frozen baseline
+        run: python scripts/verify_abaddon_variant.py
