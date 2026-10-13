@@ -149,3 +149,9 @@ The [updated triage CSV](https://github.com/corymstover/grixis-commander-encyclo
 The official Wizards [Banned & Restricted list](https://magic.wizards.com/en/banned-restricted-list) was checked against all names in the frozen Abaddon baseline. No Abaddon decklist card appears on the official Commander banned list. The list labels Lutri, the Spellchaser as banned only as a companion, but Lutri is not in this Abaddon list; other project-authorized exceptions are likewise not relevant to Abaddon.
 
 **Scope of this PASS:** current official Commander banned-list checkpoint only. It does not refresh every card's Oracle text or color identity, prove all interactions, or approve the deck. The Scryfall exact-printing/Oracle/identity overlay remains dated 2026-10-12. Abaddon's final gate remains NO.
+
+### Step 5 — final-list integrity checkpoint recorded (2026-10-13 UTC)
+
+The [Abaddon Final-List Integrity Checkpoint](https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/tests/Abaddon_Final_List_Integrity_Checkpoint_2026-10-13.md) consolidates the existing successful structural audit, the pinned list hashes, and the fresh official Commander banned-list check. Its disposition is **PASS WITH OPEN RULES/CURRENT-ORACLE GATES**, not deck approval. It explicitly separates the 2026-10-12 Scryfall metadata snapshot from the official October 13 banned-list check and records no decklist changes.
+
+Next work remains narrow: current live Oracle/identity validation for the exact 94 names, close remaining material contextual entries (including Harnfel face text), and retain the Breach combo as PARTIALLY VERIFIED unless a concrete starting inventory and mana/fuel ledger is proven. Final gate remains NO.
