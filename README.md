@@ -16,6 +16,16 @@ Version-controlled project records for the 62-deck Grixis Commander Encyclopedia
 
 The source ZIP's internal manifest passed 165/165 hashes; all 62 current CSV/TXT pairs independently reconcile, all 62 main-deck-plus-commander lists count to 100, and all 62 singleton scans pass. The official Commander named-ban checkpoint is complete: the only matches are the three known project-authorized Bjorna // Cecily + Lutri exceptions. Full current Oracle/rulings and exact-printing legality refresh remain open. The hash manifest and detailed independent audit are preserved on the [frozen baseline branch](https://github.com/corymstover/grixis-commander-encyclopediaGPT/tree/baseline/freeze-2026-10-12).
 
+## Controlled refinement campaign
+
+The frozen baseline is preserved on `baseline/freeze-2026-10-12`. The active, separate work branch is `refinement/campaign-2026-10-12`; no approved decklist has been changed.
+
+- [Abaddon the Despoiler — commander-first blueprint v1](https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/blueprints/Abaddon_the_Despoiler_v1.md)
+- [Abaddon candidate decision ledger](https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/decisions/Abaddon_the_Despoiler_Candidate_Decisions_2026-10-12.csv)
+- [Campaign tracker](https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/Deck_Refinement_Tracker_2026-10-12.csv)
+
+Abaddon is the first deck in the controlled pass. Its blueprint is complete; four candidates have been triaged. No swap has been accepted or applied. Testing, rules-interaction closeout, and user approval remain required before any final list change.
+
 ## Automated integrity check
 
 Every relevant push and pull request runs [the baseline verifier](scripts/verify_baseline.py) through [GitHub Actions](.github/workflows/verify-baseline.yml). The verifier checks the 124-file archive against all 124 raw file hashes, CSV/TXT card-name quantities, 100-card counts, singleton/copy limits, and collection totals. The initial CI run passed: [view run](https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/38324768882).
