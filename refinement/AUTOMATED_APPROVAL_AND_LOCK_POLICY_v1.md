@@ -92,3 +92,13 @@ The user has explicitly restarted the active refinement campaign from **Deck #1,
 The frozen authoritative source baseline and historical audit artifacts remain immutable and available as evidence. For each deck, re-review the entire list under the current full-strength standard, record whether historical findings still apply, refresh evidence where stale or incomplete, make all justified commander-specific changes, and regenerate/cross-check the final artifacts. The active tracker must show all 62 decks as `UNAPPROVED / UNLOCKED — FULL RE-REVIEW REQUIRED` until each one is re-reviewed and passes every mandatory gate.
 
 Work strictly one deck at a time in authoritative tracker order. Begin with Abaddon (#1). Do not do substantive refinement on deck #2 until deck #1's re-review has produced a verified final decision and artifacts and is auto-approved/locked—or a documented blocking discrepancy is resolved. Prior final-list hashes may be retained in historical records but must not occupy the active final-list-hash field until that deck is re-finalized in this restart.
+
+
+## Restart addendum — prior artifacts cannot be auto-promoted (2026-10-13)
+
+The full restart at Deck #1 requires an actual fresh pass, not a metadata-only reset followed by reusing the old certificate as if newly earned. Earlier completed artifacts remain useful historical evidence, but they do not by themselves satisfy the new-cycle disposition. During each deck's new pass:
+- Reassess the full existing decklist under the current full-strength standard.
+- Reuse earlier candidate decisions and interaction notes only after checking their material assumptions and source freshness; consider new material alternatives where the review is too narrow or stale.
+- Recheck current exact-list identity, Oracle text, color identity, official legality, and material rules interactions for the selected final list.
+- Produce a new dated restart-review addendum/decision record and final certificate stating what was rechecked, what new decisions were made, what historical material was reused, and the updated final hash.
+- Never auto-approve/lock a deck solely because the prior cycle had a passing certificate. The current cycle requires recorded closure of its mandatory gates.
