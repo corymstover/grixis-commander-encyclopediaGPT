@@ -39,3 +39,11 @@ Do not mark the deck finalized until the remaining gates and approval are record
 - Breach/LED/Brain Freeze + Wheel has a worked accounting example only under the exact listed starting state and no-interaction assumptions; this is not a gameplay-performance pass.
 - **Still blocked:** a current full 94-card authoritative Scryfall card-object/bulk refresh; API/bulk retrieval returned access/403 failures in this session. Existing 2026-10-12 bulk snapshot is dated and not sufficient to claim a fresh approval-time pass.
 - **Still pending:** explicit user approval of the exact 100-card list. Final gate remains NO.
+
+## Cascade-hit correction — required closeout note
+
+The older Step 7/Step 10 summaries included erroneous lower-mana-value claims for this deck. Abaddon’s current decklist contains mana-value-0 nonlands, so a mana-value-1 spell with Abaddon-granted cascade can hit one, if revealed; a mana-value-3 spell can hit mana-value-0, 1, or 2 nonlands. The triage CSV is now corrected for the affected cards, and the newer Interaction Review Step 11 supersedes the conflicting prior claims. Pact of Negation (mana value 0) still cannot find a card with a lower mana value.
+
+Fresh public-reference checks confirm the current Oracle characteristics and reported Commander legality of Bituminous Blast, Boltwave, and Thermo-Alchemist, with red/red-black identities within Abaddon's UBR identity. The full current authoritative 94-card Oracle/identity/legality refresh remains **BLOCKED/PENDING**, because direct Scryfall named-card/bulk requests returned access/403 errors. The 2026-10-12 full-list snapshot is dated evidence, not a current-object refresh. Do not declare the full card-identity gate passed until a fresh source can be queried and compared across all 94 names.
+
+The exact baseline remains structurally verified and unchanged. Interaction findings are substantial and bounded; the Breach line depends on its specified starting state and no opponent interaction. Final gate stays NO pending full-list refresh and explicit user approval.
