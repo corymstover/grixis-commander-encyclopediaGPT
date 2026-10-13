@@ -107,3 +107,11 @@ The audit code uses the overlay's actual schema and scopes every join by both de
 - [ ] Present exact list for explicit user approval. Final gate remains NO until approval.
 
 No decklist was changed in this audit.
+
+## Stepwise continuation — interaction audit coverage control
+
+The next bounded step is recorded at [Abaddon Interaction Audit Coverage Plan](https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/tests/Abaddon_Interaction_Audit_Coverage_Plan_2026-10-13.md). It formalizes an inventory of all 94 unique names in the frozen deck and maps each to existing rules/interaction coverage before researching only uncovered material dependencies.
+
+The current interaction review is extensive, but its own section 7 still marks all-card interaction closeout and the exact final-list certificate OPEN. The new plan therefore does not claim the audit is complete. It preserves existing closed findings and the inconclusive Aurora Phoenix comparison, forbids baseline changes during the audit, and separates the dated metadata pass from the fresh official legality check required at approval time.
+
+**Current step:** coverage-control plan committed; card-by-card mapping and remaining interaction review are the next work unit. The frozen list, finalization gate NO, and historic approvals remain unchanged.
