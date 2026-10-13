@@ -27,6 +27,24 @@ class ValidateScryfallRefreshTests(unittest.TestCase):
         report = validate_summary(old, now=self.now)
         self.assertTrue(any("snapshot is stale" in e for e in report["errors"]))
 
+
+    def test_snapshot_from_previous_run_fails_even_if_recent(self):
+        recent_old = dict(
+            self.summary,
+            generated_at_utc=(self.now - timedelta(minutes=10)).isoformat(),
+        )
+        run_started = (self.now - timedelta(minutes=5)).isoformat()
+        report = validate_summary(recent_old, now=self.now, not_before_utc=run_started)
+        self.assertTrue(any("snapshot predates this workflow run" in e for e in report["errors"]))
+
+    def test_snapshot_created_after_run_start_passes_run_freshness(self):
+        report = validate_summary(
+            self.summary,
+            now=self.now,
+            not_before_utc=(self.now - timedelta(minutes=1)).isoformat(),
+        )
+        self.assertFalse(any("snapshot predates this workflow run" in e for e in report["errors"]))
+
     def test_stale_bulk_fails_even_if_generated_now(self):
         old = dict(self.summary, bulk_updated_at=(self.now - timedelta(days=5)).isoformat())
         report = validate_summary(old, now=self.now)
