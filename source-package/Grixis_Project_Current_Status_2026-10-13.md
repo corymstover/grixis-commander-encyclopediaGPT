@@ -119,3 +119,9 @@ The current interaction review is extensive, but its own section 7 still marks a
 ### Step 1 completed — Abaddon interaction coverage inventory (2026-10-13 UTC)
 
 The frozen 100-card Abaddon TXT has been inventoried into [Abaddon Interaction Coverage Inventory](https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/tests/Abaddon_Interaction_Coverage_Inventory_2026-10-13.csv). All 94 unique card names are represented. The existing review explicitly mentions 33 names; 61 are not explicitly mentioned and have been queued for role-based triage. Explicit mention is not itself a certification, and absence from the narrative review is not automatically a defect. Step 2 is to assess the 61 names by role and open rule-level reviews only for material interactions/dependencies. No decklist changes were made; final gate remains NO.
+
+### Step 2 completed — role-based triage of remaining Abaddon names (2026-10-13 UTC)
+
+The 61 names absent from the prior narrative review have now been triaged in [the expanded interaction review, Section 8](https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/rules/Abaddon_the_Despoiler_Interaction_Review_2026-10-13.md). The review documents relevant conditions for mana-base lands, channel abilities, alternative/free costs, mana-value invariance, Force of Negation/Pact of Negation limitations, Cabal Ritual threshold, Chrome Mox imprint, Nightscape Familiar cost reduction, Gamble discard contingency, cantrip/draw timing, and Thermo-Alchemist threshold setup.
+
+This closes the **first-pass role-based triage** of the 61 names, not the entire 94-card interaction certificate. The 33 names already mentioned in the prior review still require context-level confirmation; the high-impact Breach sequence and remaining rules claims still require a dedicated final check. No cards changed; finalization gate remains NO.
