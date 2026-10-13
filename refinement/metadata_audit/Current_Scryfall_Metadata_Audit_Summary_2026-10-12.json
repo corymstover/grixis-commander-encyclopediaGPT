@@ -1,0 +1,124 @@
+{
+  "generated_at_utc": "2026-10-13T00:02:03.059512+00:00",
+  "bulk_type": "default_cards",
+  "bulk_updated_at": "2026-10-12T21:06:24.577+00:00",
+  "deck_count": 62,
+  "decklist_rows": 5964,
+  "distinct_printing_keys": 1644,
+  "exact_matches": 5964,
+  "name_variant_reviews": 0,
+  "not_found": 0,
+  "ambiguous": 0,
+  "missing_oracle_text": 71,
+  "missing_oracle_id": 0,
+  "color_identity_mismatches": [],
+  "official_illegal_rows": [
+    {
+      "deck_id": "Cecily__Bjorna__Lutri",
+      "card_name": "Lutri, the Spellchaser",
+      "zone": "Companion",
+      "official_status": "banned_as_companion",
+      "project_exception_status": "KNOWN PROJECT-AUTHORIZED EXCEPTION — official status retained separately"
+    },
+    {
+      "deck_id": "Cecily__Bjorna__Lutri",
+      "card_name": "Trade Secrets",
+      "zone": "Main",
+      "official_status": "banned",
+      "project_exception_status": "KNOWN PROJECT-AUTHORIZED EXCEPTION — official status retained separately"
+    },
+    {
+      "deck_id": "Cecily__Bjorna__Lutri",
+      "card_name": "Yawgmoth's Bargain",
+      "zone": "Main",
+      "official_status": "banned",
+      "project_exception_status": "KNOWN PROJECT-AUTHORIZED EXCEPTION — official status retained separately"
+    },
+    {
+      "deck_id": "The_Madcap_Jester",
+      "card_name": "Dragon's Smile",
+      "zone": "Main",
+      "official_status": "not_legal",
+      "project_exception_status": "KNOWN FUTURE-RELEASE PROJECT EXCEPTION — confirm exact registry row"
+    },
+    {
+      "deck_id": "The_Madcap_Jester",
+      "card_name": "The Madcap Jester",
+      "zone": "Main",
+      "official_status": "not_legal",
+      "project_exception_status": "KNOWN FUTURE-RELEASE PROJECT EXCEPTION — confirm exact registry row"
+    },
+    {
+      "deck_id": "Tresserhorn_s_Lord__Returned",
+      "card_name": "Tresserhorn's Lord, Returned",
+      "zone": "Main",
+      "official_status": "not_legal",
+      "project_exception_status": "KNOWN FUTURE-RELEASE PROJECT EXCEPTION — confirm exact registry row"
+    }
+  ],
+  "known_project_banned_exception_rows": [
+    {
+      "deck_id": "Cecily__Bjorna__Lutri",
+      "card_name": "Lutri, the Spellchaser",
+      "zone": "Companion",
+      "official_status": "banned_as_companion"
+    },
+    {
+      "deck_id": "Cecily__Bjorna__Lutri",
+      "card_name": "Trade Secrets",
+      "zone": "Main",
+      "official_status": "banned"
+    },
+    {
+      "deck_id": "Cecily__Bjorna__Lutri",
+      "card_name": "Yawgmoth's Bargain",
+      "zone": "Main",
+      "official_status": "banned"
+    }
+  ],
+  "unresolved_project_exception_rows": [
+    {
+      "deck_id": "The_Madcap_Jester",
+      "card_name": "Dragon's Smile",
+      "reason": "future-release status should be cross-checked against the current exception registry"
+    },
+    {
+      "deck_id": "The_Madcap_Jester",
+      "card_name": "The Madcap Jester",
+      "reason": "future-release status should be cross-checked against the current exception registry"
+    },
+    {
+      "deck_id": "Tresserhorn_s_Lord__Returned",
+      "card_name": "Tresserhorn's Lord, Returned",
+      "reason": "future-release status should be cross-checked against the current exception registry"
+    }
+  ],
+  "unresolved_printing_rows": [],
+  "note": "Metadata overlay only; does not certify relevant rules interactions or replace the separate project exception registry.",
+  "rows_written": 5964,
+  "decks_with_unresolved_commander_identity": [],
+  "unexpected_official_illegal_rows": [
+    {
+      "deck_id": "The_Madcap_Jester",
+      "card_name": "Dragon's Smile",
+      "zone": "Main",
+      "official_status": "not_legal",
+      "project_exception_status": "KNOWN FUTURE-RELEASE PROJECT EXCEPTION — confirm exact registry row"
+    },
+    {
+      "deck_id": "The_Madcap_Jester",
+      "card_name": "The Madcap Jester",
+      "zone": "Main",
+      "official_status": "not_legal",
+      "project_exception_status": "KNOWN FUTURE-RELEASE PROJECT EXCEPTION — confirm exact registry row"
+    },
+    {
+      "deck_id": "Tresserhorn_s_Lord__Returned",
+      "card_name": "Tresserhorn's Lord, Returned",
+      "zone": "Main",
+      "official_status": "not_legal",
+      "project_exception_status": "KNOWN FUTURE-RELEASE PROJECT EXCEPTION — confirm exact registry row"
+    }
+  ],
+  "overall_result": "REVIEW_REQUIRED"
+}
