@@ -52,3 +52,17 @@ The active refinement tracker has been updated to reflect the completed current 
 2. Mirror the remaining raw current research datasets and original archives to GitHub when a binary-safe transfer method is available; verify every imported file against the package manifest.
 3. Continue Abaddon: finish the actual rules/interaction review, choose a defensible test method, and do not apply a card swap until the decision has evidence and user approval.
 4. Use the controlled protocol deck-by-deck; do not mark the other 61 decks rules-audited or refined merely because their metadata checks pass.
+
+
+## Additional current source files now mirrored individually
+
+After the initial reconciliation, these four raw current source-package files were imported without semantic edits under `source-package/research/current-2026-10-12/` and their Git blob IDs were verified against the exact extracted source-package bytes:
+
+| File | Source SHA-256 | Verification |
+|---|---|---|
+| `Grixis_CSV_TXT_Reconciliation_Current_2026-10-12.csv` | `05beadf19f6ca06e0825981d128af920ef6fc75dc37b78c8753392b1585b6a6c` | Exact Git blob match after correcting one filename-field transcription; 62 data rows. |
+| `project_exceptions_current_2026-10-12.csv` | `166b49d92838ec66f32607e7e209bfcd52cf74aca07de8a03d8b9c00cfeaa052` | Exact Git blob match. This is the original project-source snapshot; later Scryfall/current legality results remain separately recorded. |
+| `card_identity_resolution_overrides_current_2026-10-12.csv` | `cdf180717f23cdda0bd17819b334ff2c06b3280c333f5ced3bdd2e85991a5277` | Exact Git blob match. |
+| `candidate_ranking_methodology.md` | `db9823247be8bc4063dbb62c8665ebc09f27e73fe0155a6e37a2fe4b5cbb2871` | Exact Git blob match; the same methodology also occurs in the v8.1.4 historical snapshot and is byte-identical there. |
+
+The major current files still held in the verified original package rather than individually mirrored include the ~3.77 MB current card-audit table, ~4.82 MB current candidate-ranking dataset, ~39 KB current commander-strategy profiles, ~33 KB current research manifest, current deck update tracker, and current decklist delta files. The connected GitHub tools available in this session do not expose a binary-safe release-asset uploader, and the large raw data have not been reserialized or truncated. The full original ZIP remains the verified container for those files.
