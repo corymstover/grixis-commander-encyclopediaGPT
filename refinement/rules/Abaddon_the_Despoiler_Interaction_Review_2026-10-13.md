@@ -249,3 +249,41 @@ The latest [Abaddon Breach Package Audit](https://github.com/corymstover/grixis-
 **Updated disposition:** RULES-COHERENT WITH SPECIFIC CONDITIONS — worked uninterrupted example provided. This proves one line from its stated starting state assuming no opponent interaction. It does not establish an unconditional infinite, a guaranteed win from arbitrary resources, or that the list reliably assembles the combo. No gameplay-performance inference is made.
 
 The 94-card review gate remains open overall: this closes the specific worked-sequence gap, not the full live Oracle refresh, exhaustive per-card disposition, or explicit user approval.
+
+
+## Step 7 — material sequencing spot-check: cascade setup, free interaction, exile casts, Thermo-Alchemist (2026-10-13 UTC)
+
+**Scope:** a bounded current-text/rules review of the four material interaction groups identified by the role triage. No decklist changes were made. This is not the final 94-name current-Oracle refresh or final approval certificate.
+
+### Top-deck setup and cascade ordering
+
+- Abaddon's grant checks the spell's **mana value** and requires that the spell be cast from its controller's hand during their turn. The amount paid, including an alternate or reduced cost, does not change mana value.
+- Brainstorm, Ponder, Mystical Tutor, Imperial Seal and Vampiric Tutor each have mana value 1. If cast from hand during your turn while Abaddon is on the battlefield, they receive cascade whenever the current opponent-life-loss threshold is at least 1; however, cascade cannot find a card with mana value below 1, so that added cascade instance does not reveal a castable card. The cantrip/tutor then resolves normally, allowing its draw or top-of-library setup to occur after that empty cascade resolution.
+- A tutor that puts a card on top can therefore set up a later, higher-mana-value cascade spell. Cascade only casts the revealed card if its mana value is less than the spell whose cascade ability is resolving; it does not compare the hit against Abaddon's life-loss threshold.
+- A fetchland activation can shuffle away a deliberately arranged top card if activated before the relevant cascade trigger resolves. Sequence fetches before arranging the top, or avoid a later shuffle when preserving the setup matters.
+- These are sequencing opportunities, not guaranteed hits: the next cascade spell's mana value, the top card's mana value, intervening shuffles, and any other cascade triggers still matter.
+
+### Free/alternate-cost interaction
+
+| Card | Mana value | Abaddon-specific finding |
+|---|---:|---|
+| Deadly Rollick | 4 | If cast from hand during your turn with Abaddon present and the threshold is at least 4, it gets cascade even if its commander-dependent alternative cost is used. Its target must still be a creature. |
+| Deflecting Swat | 3 | If cast from hand during your turn and the threshold is at least 3, its alternative cost does not prevent Abaddon from granting cascade. It still requires a spell or ability with a target that can legally be changed to a legal new target. |
+| Fierce Guardianship | 3 | If cast from hand during your turn and the threshold is at least 3, its free cast does not prevent cascade. It counters only a target noncreature spell. |
+| Force of Will | 5 | If cast from hand during your turn and the threshold is at least 5, its alternate cost does not prevent cascade. The alternative cost still requires exiling a blue card from hand and paying 1 life; paying life yourself does not add to Abaddon's threshold. |
+| Force of Negation | 3 | Its free alternative is restricted to an opponent's turn, so that free mode does not produce Abaddon-granted cascade (which applies only during your turn). If legally cast from hand during your own turn by paying its normal cost, it can receive cascade at threshold 3; it counters only a noncreature spell. |
+| Pact of Negation | 0 | A hand-cast Pact during your turn qualifies for Abaddon's grant at any nonnegative threshold, but cascade cannot find a card with mana value less than 0. It therefore gains no useful cascade hit. Its next-upkeep payment requirement remains a separate consequence. |
+
+The general rule is that **alternate cost changes what is paid, not mana value or the hand-cast zone condition**. Abaddon is not a general permission to cast these spells at times when their own rules do not allow them.
+
+### Jeska's Will and exile casts
+
+Jeska's Will has mana value 3 and lets its controller choose both modes if they control a commander as they cast it. Its exile mode gives permission to play the three exiled cards until end of turn. Those cards are cast/played from exile, not from hand: actual spells cast this way can trigger Keeper of Secrets, Passionate Archaeologist (if Abaddon is on the battlefield), Prosper, Tome-Bound and The Lost and the Damned as applicable, but do **not** receive cascade from Abaddon's hand-only grant. A land played from exile is a land play, not a spell cast, and does not receive cascade or trigger spell-cast payoffs. The mana-producing mode itself does not cause opponent life loss; mana gained is not Abaddon's threshold.
+
+### Thermo-Alchemist and threshold sequencing
+
+Thermo-Alchemist's tap ability deals 1 damage to each opponent; casting an instant or sorcery untaps it. Each resolved damage event that causes opponents to lose life during your turn adds that life loss to Abaddon's aggregate threshold. To repeat the ping, the controller must have priority and be able to activate the tap ability while Thermo-Alchemist is untapped; the untap trigger from an instant/sorcery cast uses the stack and does not retroactively change the cascade eligibility of the spell that was already cast. Thus, use a Thermo-Alchemist ping **before** casting a spell whose cascade eligibility depends on that additional life loss, rather than expecting damage after the cast to grant cascade to the same spell. Damage prevention or replacement effects can alter the actual life lost, so count life loss that actually occurs.
+
+### Evidence and limits
+
+The conclusions above follow Abaddon's Oracle condition and the current Magic Comprehensive Rules cascade, mana-value, casting, and triggered-ability framework (rules reference: [official Magic rules page](https://magic.wizards.com/en/rules); [Comprehensive Rules effective September 25, 2026](https://media.wizards.com/2026/downloads/MagicCompRules%2020260925.txt)). Card-text spot checks include [Abaddon the Despoiler](https://scryfall.com/card/40k/171/abaddon-the-despoiler), [Jeska's Will](https://scryfall.com/card/cmr/187/jeskas-will), [Thermo-Alchemist](https://scryfall.com/search?q=%21%22Thermo-Alchemist%22), and [Fierce Guardianship](https://scryfall.com/search?q=%21%22Fierce+Guardianship%22). This closes only these contextual questions; other material card entries and the fresh exact-list Oracle/identity check remain open. Final gate remains NO.
