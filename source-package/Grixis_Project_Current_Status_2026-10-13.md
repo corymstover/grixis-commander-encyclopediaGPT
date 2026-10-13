@@ -181,3 +181,8 @@ This closes those four bounded contextual groups only. It does not close all 94 
 ### Step 4 logged — Harnfel and Bituminous Blast
 
 Two contextual gaps are now documented in [Abaddon Step 4 Context Check](../refinement/tests/Abaddon_Step_4_Context_Check_2026-10-13.md) and reflected in the coverage plan. No decklist changes. The next bounded check is Blasphemous Act's creature-only damage and own-board trade-off. Full interaction closeout, current exact-list Oracle/identity refresh, final integrity checks, approval-time legality check, and explicit user approval remain open. Final gate: NO.
+
+
+### Step 5 completed — Blasphemous Act context check
+
+The card's 13-damage creature wipe, reduction-cost versus mana-value distinction, own-engine risk, and potential Abaddon-granted cascade-before-wipe timing are recorded in [Step 5 note](../refinement/tests/Abaddon_Step_5_Blasphemous_Act_Interaction_Check_2026-10-13.md). The frozen list remains unchanged; no cut follows from rules review alone. Next bounded gate: refresh current Oracle text and color identity for the exact 94 unique names, separately from official legality and final approval. Final gate remains NO.
