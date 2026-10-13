@@ -1,6 +1,6 @@
 # Grixis Commander Encyclopedia — Current Status
 
-**Status snapshot:** 2026-10-13 UTC — DECK #1 REFINED AND LOCKED; NEW CYCLE ACTIVE  
+**Status snapshot:** 2026-10-13 UTC — DECKS #1–2 REFINED AND LOCKED; NEW CYCLE ACTIVE  
 **Scope:** 62 commander-first Grixis decks  
 **Frozen authoritative list snapshot:** 2026-10-12  
 **Active work branch:** `refinement/campaign-2026-10-12`  
@@ -12,7 +12,7 @@ The 2026-10-12 baseline remains frozen and structurally verified. All 62 CSV/TXT
 
 The active refinement branch now has a reproducible, CI-verified exact draw-density analysis for Abaddon. Forge test infrastructure has advanced beyond the original source-only probe: its pinned release and 95 card-script name mappings were verified, the exact baseline and isolated test variant loaded in Commander mode, and a bounded 3+3 fixed-opponent pilot completed. However, the candidate comparison was **INCONCLUSIVE** because neither Mind's Desire nor Aurora Phoenix was cast in any of the six registered games. Do not reuse those games as card-performance evidence or rerun the same AI comparison. The relevant workflow is now manual-dispatch only.
 
-**NEW CYCLE STATE (effective 2026-10-13): 1 of 62 decks is now APPROVED / LOCKED after passing the current technical gates; 61 remain UNAPPROVED / UNLOCKED.** Historical approvals and locks are superseded for current status, while their records remain preserved. Deck #1, Abaddon the Despoiler, is locked only at normalized revision hash `9629ba07807642736bce0b2c90038dd664da7b32b3892744808c8de4b526fb50`. Next in authoritative tracker order: #2 Admiral Beckett Brass.
+**NEW CYCLE STATE (effective 2026-10-13): 2 of 62 decks are now APPROVED / LOCKED after passing the current technical gates; 60 remain UNAPPROVED / UNLOCKED.** Historical approvals and locks are superseded for current status, while their records remain preserved. Deck #1, Abaddon the Despoiler, is locked at normalized revision hash `9629ba07807642736bce0b2c90038dd664da7b32b3892744808c8de4b526fb50`; Deck #2, Admiral Beckett Brass, is locked at `40df97c47d37b4ae9d7f5c22623ab490c96c5dee9ab5be689a74ced25bb3be96`. Next in authoritative tracker order: #3 Admiral Brass, Unsinkable.
 
 ## Verified baseline and source integrity
 
@@ -73,14 +73,15 @@ See [Abaddon expanded interaction review](https://github.com/corymstover/grixis-
 ## Tracker truth
 
 - All 62 decks: baseline structural and refreshed exact-printing/Oracle/identity/legality metadata checks pass, with authorized exceptions separated.
-- Deck #1, Abaddon the Despoiler: APPROVED / LOCKED — ALL TECHNICAL GATES PASSED. The tracker final gate is YES; normalized revised-list hash is `9629ba07807642736bce0b2c90038dd664da7b32b3892744808c8de4b526fb50`.
-- Current-cycle totals: 1/62 approved and locked; 61/62 remain unapproved and unlocked. Historical approvals remain provenance only.
-- Next deck: #2 Admiral Beckett Brass. Proceed in authoritative tracker order; do not reopen Abaddon absent an explicit request or a documented material trigger.
+- Deck #1, Abaddon the Despoiler: APPROVED / LOCKED — ALL TECHNICAL GATES PASSED. Hash: `9629ba07807642736bce0b2c90038dd664da7b32b3892744808c8de4b526fb50`.
+- Deck #2, Admiral Beckett Brass: APPROVED / LOCKED — ALL TECHNICAL GATES PASSED. Hash: `40df97c47d37b4ae9d7f5c22623ab490c96c5dee9ab5be689a74ced25bb3be96`.
+- Current-cycle totals: 2/62 approved and locked; 60/62 remain unapproved and unlocked. Historical approvals remain provenance only.
+- Next deck: #3 Admiral Brass, Unsinkable. Proceed in authoritative tracker order; do not reopen either completed deck absent an explicit request or a documented material trigger.
 
 ## Efficient next sequence
 
-1. Start deck #2, Admiral Beckett Brass, using the frozen October 12 baseline exports and the same technical verification gates.
-2. Reassess its full list commander-first; do not force Abaddon's package onto it.
+1. Start deck #3, Admiral Brass, Unsinkable, using the frozen October 12 baseline exports and the same technical verification gates.
+2. Reassess its full list commander-first; do not force either prior deck's package onto it.
 3. Record all actual additions/cuts, rejected candidates, trade-offs, verification evidence, and the exact revision hash in the active-cycle ledgers.
 4. Auto-approve and lock only after every mandatory technical gate passes. Never reopen Abaddon unless explicitly requested or a documented material trigger justifies it.
 
