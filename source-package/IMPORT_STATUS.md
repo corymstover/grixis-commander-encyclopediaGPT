@@ -37,12 +37,21 @@ The 124 current individual CSV/TXT decklists are now mirrored as a compact archi
 - Archive SHA-256: `f2f46436c3514ecf8412d1fe1f9926919d8d1a3d7a2f938ffee7efce073b2b20`
 - Expected raw per-deck hashes are recorded in `Grixis_Independent_Deck_Hash_Manifest_2026-10-12.csv`.
 
-The following exact originals/datasets are still not individually mirrored into GitHub:
-- Four current canonical source ZIP archives and four historical `Updated-10-11-2026` ZIP archives
-- Current inventory, reconciliation, mechanical summary, complete 5,964-row card-audit overlay, and decklist delta datasets
-- Candidate ranking dataset, research manifest, manually incomplete strategy profiles, exception registry, identity overrides, historical v8.1.4 data, and internal package SHA-256 manifest.
+## Remaining individual source-file transfer gaps — current as of 2026-10-13
 
-The original full source package remains available as the preserved input bundle outside this repository. The compact archive is a verified copy of the 124 current decklist text files; it is not a copy of the entire source package.
+The following source artifacts have **not** been individually mirrored as raw current files in GitHub. They remain available inside the independently verified original source ZIP:
+
+- The four current canonical FINAL ZIP archives and four historical `Updated-10-11-2026` ZIP archives.
+- The ~3.77 MB full current card-audit table and ~4.82 MB current candidate-ranking dataset.
+- The current mechanical audit summary and source inventory.
+- The current deck-update tracker and current decklist delta detail/summary datasets.
+- The current commander strategy profiles and commander research manifest.
+- The package's inner SHA-256 manifest and remaining original v8.1.4 research snapshots not explicitly mirrored.
+- The large 5,964-row current Scryfall overlay is present on the refinement branch, but the metadata CSV should be treated as a generated audit artifact rather than a replacement for the original source-package card audit.
+
+These files are not lost or inferred missing from the source package: the complete uploaded ZIP passed integrity and 165/165 manifest-entry hash checks. The current decklists themselves **are already mirrored byte-for-byte** inside `GrixisFINAL_62Decks_CSV_TXT_2026-10-12.tar.gz` (124 files; all 124 matched the source ZIP). The full raw-file mirror is incomplete only because the original ZIPs and listed datasets are not individually stored as repository paths.
+
+Four current source artifacts have since been individually mirrored under `source-package/research/current-2026-10-12/`: CSV/TXT reconciliation, the current project-exception registry snapshot, card-identity resolution overrides, and candidate-ranking methodology. Do not list those four as still missing. Details and hashes are recorded in [Duplicate Source Reconciliation](Duplicate_Source_Reconciliation_2026-10-13.md) and [Source Consolidation Reconciliation](Source_Consolidation_Reconciliation_2026-10-13.md).
 
 ## Authoritative baseline and source-package-reported findings
 
