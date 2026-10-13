@@ -71,3 +71,10 @@ See [Abaddon expanded interaction review](https://github.com/corymstover/grixis-
 3. Run the registered baseline-versus-variant test only after the engine gate passes; apply the acceptance criterion before reviewing results.
 4. Close the candidate ledger, independently re-count/re-verify any proposed final list, present it for explicit approval, then hash and lock it.
 5. Move to the next deck only after Abaddon is formally closed; repeat the commander-first protocol without revisiting already approved decks unless a defined trigger or explicit request exists.
+
+
+## Abaddon local verification update — 2026-10-13
+
+A direct local verification against the uploaded frozen package completed: the outer package hash matched `47892245c2cefcf528c38fa9d9e56653d6e71a0fc73fd5ea5eecdd90e2032746`; all 165 internal manifest entries passed; Abaddon TXT/CSV matched exact members in the authoritative current FINAL archives; 94 unique names / 100 copies reconciled; one commander marker; zero nonbasic duplicate violations; and all 94 snapshot color-identity comparisons passed for UBR. Abaddon's TXT hash is `2d6203d274c25e67fb93acf5e6784dce4ee1e8999844a6ab032d9b15995acfbf`; CSV hash is `fbeb7f75302b9ebedaf67aa58171de05764b6e6f97570be5657f0cbe8df37478`.
+
+The candidate ledger still supports no material swap; Aurora Phoenix/Mind's Desire remains inconclusive and the baseline is unchanged. Current official Commander ban list and October 12 Wizards announcement were checked; no Abaddon baseline card appears banned. Approval-time fresh Scryfall Oracle/identity/card-object legality refresh remains incomplete because direct live lookups were unavailable. The final gate remains NO pending that residual check and explicit user approval. See [Abaddon Final Verification Snapshot](https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/tests/Abaddon_Final_Verification_Snapshot_2026-10-13.md).
