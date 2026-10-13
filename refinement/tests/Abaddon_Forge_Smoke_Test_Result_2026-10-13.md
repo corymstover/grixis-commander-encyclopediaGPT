@@ -42,3 +42,25 @@ Forge has cleared only the *source-presence, input-preparation, and simulation-l
 Next, investigate whether the pinned engine can run deterministic, controlled scenario tests with inspectable logs for the specific rule interactions the deck relies on. In parallel, finish the deck-wide interaction audit and candidate ledger using current Oracle text and documented rules sources. If Forge cannot provide reproducible starts and trustworthy event observations, mark statistical comparison infeasible with this engine and close the slot based on commander-specific strategic evidence, with uncertainty explicitly recorded. Keep the Aurora Phoenix variant separate and unapproved. Do not modify the frozen baseline.
 
 Artifact: [Forge smoke-run logs and reports](https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/38338464845).
+
+## Latest registered pilot and supplementary observability result — 2026-10-13
+
+The registered fixed-opponent pilot [run 38341150840](https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/38341150840) completed and uploaded raw per-game logs plus descriptive analysis. It ran **three baseline and three variant games** against the same fixed Ruthless Regiment deck with the same numeric seed series and seat order, but **not matched starting libraries**.
+
+- Baseline Mind's Desire cast: **0/3**.
+- Aurora Phoenix cast: **0/3**.
+- Mean cascade resolutions: **2.0/game** for both small samples; this is not evidence the decks are equally strong because the candidate slot was never exercised.
+- Mind's Desire storm/copy lines and Aurora Phoenix graveyard-return resolutions: **0** in the six registered games.
+- The full Underworld Breach + Lion's Eye Diamond + Brain Freeze line was not seen.
+- One variant sample ended as a timeout draw; a variant runtime warning was logged.
+- The analyzer records results as unpaired, descriptive-only, and not permitted for card approval.
+
+The supplementary passive-Obeka smoke workflow [run 38340740673](https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/38340740673) ran a different three-game variant-only exploration. Aurora Phoenix was cast and its **printed cascade** resolved in one game; no log showed the actual graveyard-return ability resolving. This confirms limited runtime event observability only. It is not a candidate comparison and its match outcomes must not be used as performance estimates.
+
+### Final test-infrastructure ruling
+
+Forge 2.0.15 is qualified for pinned card-script coverage, strict deck import, Commander-mode startup, basic exploratory gameplay, and replay checks for an identical command. **It is not qualified for the Aurora Phoenix vs Mind's Desire strength comparison**: the registered sample failed to cast either candidate, the relevant storm/recursion routes did not occur, the AI is weak at most combo decks, and equal numeric seeds do not prove matched initial libraries.
+
+The test is closed **INCONCLUSIVE** for the current engine and benchmark. No additional runs should be spent on this slot using the same AI and input method. Keep the Aurora list as a test artifact; keep Mind's Desire in the frozen baseline. The variant remains unapproved.
+
+Artifact for the registered pilot: [run 38341150840](https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/38341150840). The workflow artifact is named abaddon-same-seed-forge-pilot (raw logs, manifest, descriptive analysis).
