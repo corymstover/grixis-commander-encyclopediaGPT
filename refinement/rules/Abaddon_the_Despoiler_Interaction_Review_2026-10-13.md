@@ -241,3 +241,11 @@ A bounded standalone review is committed at [Abaddon Breach Sequence Audit](http
 The official Comprehensive Rules page identifies the current rules edition as effective September 25, 2026. A bounded review has been recorded at [Abaddon Breach Package Audit](https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/tests/Abaddon_Breach_Sequence_Audit_2026-10-13.md). The rules-level conclusions are supported: escape consumes three other graveyard cards per escape cast; LED sacrifices itself and discards the hand as activation costs; storm copies are not cast and don't raise storm count; Abaddon's grant applies to hand-cast spells; an empty library alone is not a loss.
 
 The combo remains **PARTIALLY VERIFIED**, not because the core rules are unknown, but because the repository lacks a fully itemized worked state/fuel ledger proving the exact loop/finish from a defined starting inventory. Do not downgrade or upgrade that claim without such a ledger.
+
+## 11. Step 6 — worked Breach line closes the specific-sequence proof gap (2026-10-13 UTC)
+
+The latest [Abaddon Breach Package Audit](https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/tests/Abaddon_Breach_Sequence_Audit_2026-10-13.md) now includes a worked uninterrupted line with an exact starting zone inventory, ten escape cycles, LED mana, storm counts, six-card fuel replacement, opponent-mill allocation, and a Wheel of Fortune finish. This supersedes earlier statements in Sections 3, 7 and 10 that no worked starting state had been recorded.
+
+**Updated disposition:** RULES-COHERENT WITH SPECIFIC CONDITIONS — worked uninterrupted example provided. This proves one line from its stated starting state assuming no opponent interaction. It does not establish an unconditional infinite, a guaranteed win from arbitrary resources, or that the list reliably assembles the combo. No gameplay-performance inference is made.
+
+The 94-card review gate remains open overall: this closes the specific worked-sequence gap, not the full live Oracle refresh, exhaustive per-card disposition, or explicit user approval.
