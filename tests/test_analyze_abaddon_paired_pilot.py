@@ -52,7 +52,7 @@ class PairedPilotLogSummaryTests(unittest.TestCase):
 
     def test_variant_player_label_does_not_count_as_aurora_events(self):
         target = f"Ai(1)-{VARIANT_LABEL}"
-        log = "\\n".join([
+        log = "\n".join([
             f"Turn: Turn 1 ({target})",
             f"Add To Stack: {target} cast Sol Ring",
             f"Resolve Stack: Cascade - Sol Ring [Card: Sol Ring (1), Activator: {target}, SpellAbility: Sol Ring]",
