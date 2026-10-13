@@ -304,3 +304,10 @@ Bituminous Blast is a {3}{B}{R} instant with mana value 5, printed cascade, and 
 **Disposition:** both previously flagged context questions are now checked against current card text and the current Comprehensive Rules cascade definition. This closes these two triage items only; it does not certify all remaining explicit-review entries or the full exact-list Oracle/identity gate.
 
 References: [Birgi // Harnfel official Wizards release notes](https://media.wizards.com/2021/downloads/KHM_Release_Notes/EN_MTGKHM_ReleaseNotes_20210113.pdf); [Bituminous Blast card text/rulings](https://www.mtg.wtf/card/c16/182/Bituminous-Blast); [Comprehensive Rules effective September 25, 2026](https://blogs.magicjudges.org/rules/comprehensive-rules/).
+
+
+## Step 8 result — contextual gaps closed (2026-10-13 UTC)
+
+The detailed Harnfel reverse-face and Bituminous Blast check is recorded in [Abaddon Step 4 Context Check](../tests/Abaddon_Step_4_Context_Check_2026-10-13.md). In brief: Harnfel's exile-play permissions allow normal-cost plays that can trigger applicable cast-from-exile payoffs but do not qualify those spells for Abaddon's hand-only cascade grant. Bituminous Blast has mana value 5 and printed cascade; under Abaddon's hand-cast/turn/threshold conditions it can gain an additional cascade instance, resolving above the Blast before its creature damage resolves.
+
+These two items are closed only. Remaining exact-list Oracle/identity, full per-card interaction, final integrity, legality-at-approval, and user-approval gates remain open. No decklist changes; final gate NO.
