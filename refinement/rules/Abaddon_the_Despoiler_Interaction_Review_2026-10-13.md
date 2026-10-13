@@ -229,3 +229,9 @@ The role-based triage above is a first-pass coverage screen. The following items
 Do not require an individual rules essay for every land or routine spell. An entry can close as **NO SPECIAL INTERACTION** when current Oracle text has been checked and no commander-specific or nontrivial dependency exists. Keep that result distinct from **NOT CHECKED**. A package can close as **RULES-COHERENT** only after the sequence is written out with explicit zone/mana/fuel requirements and failure points.
 
 The final gate remains NO until all 94 names have an explicit per-card disposition (covered, no special interaction, or open), the material open interactions are resolved, fresh official legality is verified, the final list/hash is independently checked, and the user explicitly approves the exact list.
+
+## 10. Step 3 — Breach package sequence audit (2026-10-13 UTC)
+
+A bounded standalone review is committed at [Abaddon Breach Sequence Audit](https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/tests/Abaddon_Breach_Sequence_Audit_2026-10-13.md). It records the required starting zones, LED's discard/mana costs, the three-card escape cost for each spell, storm-copy distinctions, resource/fuel accounting, finish constraints, and common interruption points.
+
+**Disposition: PARTIALLY VERIFIED.** The project source names this combo but does not contain a fully itemized fuel-and-mana ledger proving a specific repeatable starting state. No unconditional infinite or deterministic kill is claimed. Close only after a concrete starting inventory and every iteration's mana/fuel accounting are independently checked. No decklist changes; final gate remains NO.
