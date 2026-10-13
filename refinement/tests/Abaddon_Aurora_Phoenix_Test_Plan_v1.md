@@ -1,6 +1,6 @@
 # Abaddon the Despoiler — Aurora Phoenix vs Mind's Desire Test Plan v1
 
-**Status:** PLAN REGISTERED; NOT RUN  
+**Status:** PLAN REGISTERED; PERFORMANCE COMPARISON NOT RUN (Forge runtime smoke tests completed; candidate-specific behavior still unverified)  
 **Registered:** 2026-10-13  
 **Deck:** Abaddon the Despoiler  
 **Frozen baseline TXT SHA-256:** `2d6203d274c25e67fb93acf5e6784dce4ee1e8999844a6ab032d9b15995acfbf`  
@@ -90,3 +90,33 @@ See the [consolidated Forge qualification report](Abaddon_Forge_Engine_Qualifica
 The pinned Forge 2.0.15 workflow [run 38338464845](https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/38338464845) passed the full card-script identity/Oracle-field scan for 95 names (the variant's 94 names plus baseline-only Mind's Desire), verified the frozen baseline hash, generated the baseline/variant Commander deck files, and launched one Commander-mode simulation.
 
 This **does not change the registered test status**: the 10-second match clock stopped the game as a draw, output included contradictory winner lines and repeated Steam Vents activator warnings, and no paired/reproducible gameplay comparison was run. Do not record the variant as a win or use these logs to choose between Aurora Phoenix and Mind's Desire. Rules-event smoke tests and evidence of matched/random-seed controls remain open. The complete evidence is in [Abaddon Forge Smoke-Test Result](Abaddon_Forge_Smoke_Test_Result_2026-10-13.md).
+
+
+## 10. Runtime smoke update — 2026-10-13
+
+The earlier NOT RUN entries above document the state at initial plan registration and before the pinned executable was tested. Current status:
+
+- Forge forge-2.0.15 starts in recognized CLI parse mode.
+- The full 94-card variant identity set plus Mind's Desire as baseline-only candidate matched 95/95 pinned-source card scripts with nonempty Oracle fields.
+- The frozen 100-card baseline and test-only 100-card variant were imported as Forge Commander DCK files. Their input order is aligned except that Aurora Phoenix occupies Mind's Desire's original slot.
+- A complete head-to-head Commander smoke game ran with full logs. In that game, the log showed Abaddon-granted cascade resolutions on other spells and an Imperial Seal escaped with Underworld Breach. It did not cast Aurora Phoenix, did not demonstrate Aurora's graveyard-return ability, and did not execute the full Breach/LED/Brain Freeze route.
+- The same seeded command ran twice. The exact match-event portions were identical after timestamp and duration normalization, as independently checked from the captured logs. The fixed workflow normalizer has been updated to compare only the match event section; see [the corrected repeatability workflow run](https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/38338912312).
+- This is an engine/import/replay smoke test only. It does not count as the registered 25-pair pilot and does not determine whether Aurora Phoenix is better than Mind's Desire. Forge's own AI limitations remain relevant.
+
+### Phase A status
+
+| Check | Status |
+|---|---|
+| Pinned release and archive checksum | PASS |
+| 94 variant identities + baseline comparison card found in pinned scripts | PASS (95/95 name/script/Oracle-field matches) |
+| Exact 100-card DCK import into Commander-mode game | PASS |
+| Seed flag accepted and repeat event log observed | PASS in captured smoke logs; corrected workflow confirmation pending |
+| Aurora Phoenix's printed cascade and graveyard recursion exercised | NOT TESTED |
+| Abaddon threshold edge cases and double-cascade Aurora scenario | NOT TESTED |
+| Storm copies vs cast-trigger distinctions | NOT TESTED |
+| Full Breach + LED + Brain Freeze line | NOT TESTED |
+| Suitable comparative metrics and interpretation controls | NOT QUALIFIED yet |
+| 25 paired pilot games | NOT RUN |
+| 200-pair confirmatory benchmark | NOT RUN |
+
+Do not choose the card slot from the smoke result. Continue with a targeted Aurora interaction test and decide whether Forge's observable logs can support the pre-registered metrics. If not, close the performance comparison as infeasible with this engine and make the slot decision only from the documented Oracle/rules/strategy evidence, explicitly recording that limitation.
