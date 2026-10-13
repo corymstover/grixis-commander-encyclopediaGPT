@@ -6,7 +6,7 @@ on:
     branches: ["refinement/**"]
     paths:
       - ".github/workflows/run-abaddon-same-seed-pilot.yml"
-      - "scripts/AbaddonSameSeedForgePilot.java"
+      - "scripts/run_abaddon_same_seed_pilot.py"
       - "scripts/analyze_abaddon_paired_pilot.py"
       - "scripts/prepare_abaddon_forge_smoke_decks.py"
       - "scripts/verify_abaddon_variant.py"
@@ -72,31 +72,27 @@ jobs:
             --variant refinement/variants/Abaddon_Aurora_Phoenix_Test_Variant_v1.txt \
             --output-dir pilot-decks
 
-      - name: Compile pinned-API same-seed runner
+      - name: Locate pinned Forge CLI JAR
         shell: bash
         run: |
           set -euo pipefail
           JAR="$(find . -maxdepth 2 -type f -name 'forge-gui-desktop-2.0.15-jar-with-dependencies.jar' -print -quit)"
           test -n "$JAR"
           echo "$JAR" > forge-jar-path.txt
-          mkdir -p build/classes
-          javac -encoding UTF-8 -cp "$JAR" -d build/classes scripts/AbaddonSameSeedForgePilot.java
 
-      - name: Run three same-seed trials per list against fixed opponent
+      - name: Run three same-seed, unpaired trials per list
         shell: bash
         env:
           JAVA_TOOL_OPTIONS: "-Djava.awt.headless=true"
         run: |
           set -euo pipefail
-          JAR="$(cat forge-jar-path.txt)"
-          java -cp "build/classes:$JAR" grixis.testing.AbaddonSameSeedForgePilot \
-            --baseline "$PWD/pilot-decks/Abaddon baseline.dck" \
-            --variant "$PWD/pilot-decks/Abaddon Aurora Phoenix variant.dck" \
-            --opponent "$PWD/pilot-decks/Ruthless Regiment.dck" \
+          python scripts/run_abaddon_same_seed_pilot.py \
+            --jar "$(cat forge-jar-path.txt)" \
+            --deck-dir "$PWD/pilot-decks" \
             --output-dir "$PWD/pilot-logs" \
-            --pairs 3 --base-seed 2026101300 --timeout-seconds 30 | tee pilot-run-summary.txt
+            --trials 3 --base-seed 2026101300 --timeout-seconds 30 | tee pilot-run-summary.txt
 
-      - name: Analyze event logs (descriptive only; not paired starting hands)
+      - name: Analyze event logs (descriptive only; no matched-start inference)
         run: python scripts/analyze_abaddon_paired_pilot.py --pilot-dir pilot-logs
 
       - name: Preserve pilot evidence
