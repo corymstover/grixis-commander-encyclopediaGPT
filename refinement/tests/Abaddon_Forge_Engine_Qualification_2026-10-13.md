@@ -1,73 +1,55 @@
-# Abaddon Test Engine Qualification — Forge Review
+# Abaddon Forge Qualification — Current Evidence and Decision
 
-**Date:** 2026-10-13  
-**Candidate engine:** Card-Forge/forge  
-**Status:** PARTIAL SUPPORT EVIDENCE; NOT QUALIFIED FOR THE REGISTERED CONFIRMATORY TEST  
-**Gameplay runs performed:** 0
+**Snapshot date:** 2026-10-13  
+**Candidate version pin:** Forge `forge-2.0.15`, resolved commit `4ec5f1a2c32fa90ecb983a72b9eb47aa5c5d7676`  
+**Decision:** **NOT QUALIFIED** for gameplay testing  
+**Gameplay runs:** 0  
+**Approved card changes:** 0
 
-## 1. What was checked
+## Current verified state
 
-The official Card-Forge repository's current card scripts were located for the key interactions below. These are source-code presence checks, not a live installed-engine test.
+The exact Aurora Phoenix test variant has 100 cards including the commander, 94 distinct card names, and only one difference from the frozen baseline: Aurora Phoenix IN / Mind's Desire OUT. Its raw SHA-256 is `1ad0c11d1f6a28a54f89c378428af491c6ff9929f42813692c375fb60771503b`. The baseline TXT SHA-256 is `2d6203d274c25e67fb93acf5e6784dce4ee1e8999844a6ab032d9b15995acfbf`.
 
-| Card | Repository evidence | What the script indicates |
+Forge release `forge-2.0.15` was published on 2026-09-28. Its tag resolves to commit `4ec5f1a2c32fa90ecb983a72b9eb47aa5c5d7676`. The annotated tag is unsigned/unverified per GitHub metadata. Release: https://github.com/Card-Forge/forge/releases/tag/forge-2.0.15. The official Forge wiki describes Forge as an independent Magic rules engine supporting up to eight players and over 99% of cards, but that general statement does not establish support for this exact list or correctness of each relevant interaction. https://github.com/Card-Forge/forge/wiki/
+
+At that commit, source files were inspected for six key cards: Abaddon the Despoiler, Aurora Phoenix, Mind's Desire, Underworld Breach, Brain Freeze, and Lion's Eye Diamond. The script contents contain their expected names and Oracle text; this is source-level support evidence only. It is not a runtime test. Earlier source inspection found Wild-Magic Sorcerer on the moving main branch, but it has not yet been pinned/audited at this release commit.
+
+## Qualification gates
+
+| Gate | Evidence | Status |
 |---|---|---|
-| Abaddon the Despoiler | [card script](https://github.com/Card-Forge/forge/blob/6c1810dd0b42213f9ad768d1b5f251753e1e298d/forge-gui/res/cardsfolder/a/abaddon_the_despoiler.txt) | Continuous effect applies cascade to qualifying spells cast from hand during your turn, with a mana-value threshold tied to opponents' life lost that turn. |
-| Aurora Phoenix | [card script](https://github.com/Card-Forge/forge/blob/6c1810dd0b42213f9ad768d1b5f251753e1e298d/forge-gui/res/cardsfolder/a/aurora_phoenix.txt) | Printed cascade and a graveyard trigger that returns it to hand when its controller casts a spell with cascade. |
-| Mind's Desire | [card script](https://github.com/Card-Forge/forge/blob/6c1810dd0b42213f9ad768d1b5f251753e1e298d/forge-gui/res/cardsfolder/m/minds_desire.txt) | Storm and exile/play permission are scripted. |
-| Underworld Breach | [card script](https://github.com/Card-Forge/forge/blob/6c1810dd0b42213f9ad768d1b5f251753e1e298d/forge-gui/res/cardsfolder/u/underworld_breach.txt) | Grants escape to nonland cards in the graveyard and has an end-step sacrifice trigger. |
-| Brain Freeze | [card script](https://github.com/Card-Forge/forge/blob/6c1810dd0b42213f9ad768d1b5f251753e1e298d/forge-gui/res/cardsfolder/b/brain_freeze.txt) | Mills three cards and has storm. |
-| Lion's Eye Diamond | [card script](https://github.com/Card-Forge/forge/blob/6c1810dd0b42213f9ad768d1b5f251753e1e298d/forge-gui/res/cardsfolder/l/lions_eye_diamond.txt) | Discards hand, sacrifices itself, and produces three mana of one color at instant speed. |
-| Wild-Magic Sorcerer | [card script](https://github.com/Card-Forge/forge/blob/6c1810dd0b42213f9ad768d1b5f251753e1e298d/forge-gui/res/cardsfolder/w/wild_magic_sorcerer.txt) | Grants cascade to the first spell its controller casts from exile each turn. |
+| Release/version pin | Release and resolved commit recorded above | Identified |
+| All 94 distinct card names matched to scripts at the pin | Only six critical cards checked at pinned commit; no complete lookup audit | **Not passed** |
+| Executable installed and launched | Not done in this environment | **Not passed** |
+| Exact variant loaded in Commander mode | Not done | **Not passed** |
+| Abaddon-granted cascade and Aurora graveyard return observed in runtime | Script source only; no runtime events | **Not passed** |
+| Trigger ordering, cascade cast-from-exile behavior, storm copies, escape and combo sequence smoke tests | No runtime test/log | **Not passed** |
+| Stable seed/paired-start control and structured turn/zone event logs | Not demonstrated | **Not passed** |
+| Gameplay results | None | **Not run** |
 
-## 2. Documented engine capabilities and limitations
+## Rules-derived expected events for later smoke tests
 
-The Forge project documents command-line AI self-play, including Commander mode and examples of three-player Commander games: [Forge AI documentation](https://github.com/Card-Forge/forge/blob/master/docs/AI.md).
+These are requirements for evaluating a test engine, not claims about Forge runtime behavior.
 
-The same documentation explicitly cautions that its AI is poor at most combo decks, and that long self-play games can lag. Abaddon's list includes a compact Underworld Breach/Lion's Eye Diamond/Brain Freeze combo and complex cascade/exile sequencing, so AI self-play outcomes would be conditional on Forge's card implementation and AI policy, not an unbiased estimate of the deck's real-table win rate.
+1. With Abaddon on the battlefield during its controller's turn, a spell cast from that player's hand qualifies for Abaddon's cascade grant only if its mana value is no greater than opponents' aggregate life lost that turn at the time the spell is cast.
+2. If Aurora Phoenix is in its owner's graveyard immediately after a spell with cascade is cast, its graveyard ability triggers once for that cast event. Cascade can come from Abaddon or a card's printed ability. If Aurora Phoenix itself is cast from hand and meets Abaddon's life-loss threshold, its printed cascade and Abaddon's grant are separate instances.
+3. Storm creates copies, not casts. Copies should not produce cast-trigger events. This distinction matters for Brain Freeze, Mind's Desire, and the deck's cast-from-exile payoffs.
+4. Underworld Breach gives escape to nonland cards in the graveyard, but the LED/Brain Freeze route needs an appropriate setup and sufficient graveyard fuel. Abaddon's hand-cast cascade grant does not apply to escape spells cast from the graveyard.
 
-## 3. Qualification gates still not passed
+The current manual interaction review remains the detailed card/rules source: https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/rules/Abaddon_the_Despoiler_Interaction_Review_2026-10-13.md
 
-The following are not yet demonstrated:
+## Recommended next action
 
-1. All 94 distinct card names in the isolated variant resolve to the intended card scripts/printings in a pinned Forge release.
-2. The selected installed build can load this exact list in Commander mode without substitution, missing-card, or unsupported-effect warnings.
-3. Relevant interactions—especially Abaddon's granted cascade, Aurora Phoenix's graveyard trigger, cascade stack ordering, exile casts, storm copies, escape costs, and the Breach loop—behave correctly in that build.
-4. The simulator can provide the controlled paired starts and structured event logs required by the registered test protocol.
+In an environment that can download and execute the pinned Forge desktop/JAR build:
 
-No Forge binary was installed or run as part of this source inspection. The seven entries above are a targeted source-code sample, not a 94-card coverage audit. Therefore **the engine is not qualified and no gameplay test has been run**.
+1. Audit all 94 card identities against scripts at commit `4ec5f1a2c32fa90ecb983a72b9eb47aa5c5d7676`, handling double-faced/modal names and land-card canonical script names carefully.
+2. Run the release in a reproducible environment and record Java version, artifact hash, command line, and Forge build identifier.
+3. Load the exact baseline and variant under Commander mode without substitution or warnings.
+4. Create minimum scenario decks/states to test the expected events above. Record raw logs and compare each event to a manually specified expectation.
+5. Only after all correctness gates pass, assess whether stable paired initial library orders and structured event capture are possible. If not, the engine may be useful for exploratory testing but is not qualified for the registered paired confirmatory comparison.
 
-## 4. Efficient next step
+A card-script directory scan or a large claimed coverage percentage is not enough to certify interactions. Do not infer game performance from script presence. Do not use simplified random-draw models as a substitute for rules-resolved game play.
 
-If Forge is pursued, pin a specific release/commit, audit all 94 card identities and relevant scripts, then run a tiny scripted smoke test for the Abaddon/Aurora interaction and a separate Breach/LED/Brain Freeze sequence. Inspect logs and compare them with manually established expected events. Only if those checks pass should Forge be used for exploratory self-play. Do not call that exploratory AI self-play the registered paired confirmatory test unless the fixed-start, event-log, and sample controls can actually be implemented.
+## Project control
 
-A failed or incomplete engine gate is not a deck failure. It means the proposed test method cannot yet support a reliable performance conclusion.
-
-
-## 5. Follow-up source audit — pinned release identified, not installed
-
-**Follow-up date:** 2026-10-13
-
-A later source-only investigation identified Forge release **`forge-2.0.15`** as a reproducible candidate pin. Its release page records publication on 2026-09-28, and its annotated tag resolves to commit `4ec5f1a2c32fa90ecb983a72b9eb47aa5c5d7676` (tag object `b18e110a32462958aeda4b7fbac48c06399a2c23`). The tag object is marked unsigned/unverified by GitHub; it is a usable version identifier, not a cryptographically signed provenance guarantee. [Release page](https://github.com/Card-Forge/forge/releases/tag/forge-2.0.15) · [tag object](https://api.github.com/repos/Card-Forge/forge/git/tags/b18e110a32462958aeda4b7fbac48c06399a2c23) · [resolved commit](https://github.com/Card-Forge/forge/commit/4ec5f1a2c32fa90ecb983a72b9eb47aa5c5d7676).
-
-The six specific card scripts directly fetched from this exact commit resolve to the expected names and Oracle texts for Abaddon the Despoiler, Aurora Phoenix, Mind's Desire, Underworld Breach, Brain Freeze, and Lion's Eye Diamond. This improves the earlier evidence from unpinned current-branch links to a version-pinned script sample. It remains a **six-card source sample**, not the required 94-card audit. (The earlier seventh script, Wild-Magic Sorcerer, has not yet been fetched at this pinned commit.)
-
-| Qualification item | Follow-up evidence | Status |
-|---|---|---|
-| Specific release pin | `forge-2.0.15` → commit `4ec5f1a2c32fa90ecb983a72b9eb47aa5c5d7676` | Identified |
-| Key-card scripts at the pinned commit | Abaddon, Aurora Phoenix, Mind's Desire, Underworld Breach, Brain Freeze, Lion's Eye Diamond | Source text inspected |
-| All 94 distinct deck card identities | Not audited at this release | Pending |
-| Executable downloaded/installed/launched | Not performed in this environment | Pending |
-| Exact 100-card variant loaded under Commander rules | Not performed | Pending |
-| Deterministic interaction smoke tests and event logs | Not performed | Pending |
-| Controlled paired starts and repeatable seeds | Not demonstrated | Pending |
-| Gameplay results | 0 | Not run |
-
-The exact pinned Abaddon script expresses its continuous effect as applying Cascade to cards you control/own on the stack that were cast from hand, restricted to your turn, with the CMC comparison to `Count$LifeOppsLostThisTurn`. Aurora Phoenix is scripted with printed Cascade and a SpellCast trigger in the graveyard for a spell with Cascade. This source-level reading supports the intended interaction; **it does not prove that the running engine implements every relevant stack/trigger edge case correctly**.
-
-Forge's official wiki describes it as a Magic rules engine with support for up to eight players and says it includes over 99% of Magic cards, while explicitly describing the project as independent from Wizards of the Coast. The broad catalog claim is not a substitute for our exact 94-card check. The user guide distinguishes snapshots (daily builds) from releases, describing releases as intended to be stable but not bug-free. [Forge overview](https://github.com/Card-Forge/forge/wiki/) · [User Guide and release notes](https://github.com/Card-Forge/forge/wiki/User-Guide).
-
-### Next technical action
-
-Use the pinned release to fetch/inspect all 94 distinct card identities and identify missing, ambiguous, or scripted-but-unverified effects. The variant has 94 distinct names across 100 cards; the commander is included and no companion is present. Then install/run the exact release in a capable environment, import the exact test variant in Commander mode, and capture console/event output for hand-cast Abaddon cascade, Aurora in graveyard, both possible trigger orderings, cascade casting from exile, storm copies, and the Breach/LED/Brain Freeze line. Keep the engine unqualified until the observed events match the rules-derived expected sequence.
-
-**Current decision remains unchanged:** Forge is not qualified for confirmatory or exploratory gameplay testing yet. No gameplay was run, no swap was approved, and no list was altered.
+The frozen baseline remains authoritative and untouched. The Aurora Phoenix variant is a test-only artifact and remains unapproved. There is no reason to advance to another deck until Abaddon's rules review, testing-method decision, candidate ledger, independent final verification, and explicit approval gates are resolved.
