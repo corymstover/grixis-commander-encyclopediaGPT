@@ -28,12 +28,12 @@ The standalone structural run executed against the local uploaded source package
 
 ## Current Oracle metadata, color identity, and official Commander legality
 
-**Current metadata refresh:** generated `2026-10-13T06:55:13.382576+00:00`; Scryfall `default_cards` data last updated `2026-10-12T21:06:24.577+00:00`.
+**Current metadata refresh:** generated `2026-10-13T07:03:26.694525+00:00`; Scryfall `default_cards` data last updated `2026-10-12T21:06:24.577+00:00`.
 
-The refresh workflow ran the shared current-data scan and failed-closed validation. It produced a `METADATA_REFRESH_PASS` summary and only committed the metadata after its validator and Abaddon-specific exact-list audit succeeded.
+GitHub Actions refresh run `38360274984` first passed the frozen source-package preflight, then ran the shared current-data scan and run-anchored fail-closed validation; the Abaddon exact-list audit and metadata commit also succeeded. It produced a `METADATA_REFRESH_PASS` summary and only committed the metadata after its validator and Abaddon-specific exact-list audit succeeded.
 
 - Global inventory: 62 decks, 5,964 list rows; **5,964/5,964 exact set + collector number + card-name matches**.
-- Global unresolved statuses: zero name variants requiring review, zero missing printings, zero ambiguous matches, zero missing Oracle text, zero missing Oracle IDs, zero color-identity mismatches, zero unresolved project exceptions, zero unresolved commander identities, and zero unexpected official-illegal rows.
+- Global unresolved statuses: zero name variants requiring review, zero missing printings, zero ambiguous matches, zero missing Oracle text, zero missing Oracle IDs, zero color-identity mismatches, zero unresolved project exceptions, zero unresolved commander identities, zero unknown Commander legality statuses, and zero unexpected official-illegal rows.
 - Abaddon frozen list: **94/94 distinct names matched**; all 94 have exact printing mapping, Scryfall/Oracle IDs, nonblank Oracle text, UBR-compatible color identity, and Scryfall Commander status `legal`. Zero project exceptions apply to this deck.
 - Priority rows: Bituminous Blast (J25 742, B/R, legal), Boltwave (FDN 79, R, legal), and Thermo-Alchemist (INR 403, R, legal).
 - Official Commander named-ban list: checked October 13, 2026; no card in this Abaddon baseline appears on it. Provider legality and the official list remain separate checks.
