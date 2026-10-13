@@ -41,6 +41,9 @@ jobs:
       - name: Install refresh dependencies
         run: python -m pip install --disable-pip-version-check -r requirements-scryfall.txt
 
+      - name: Verify frozen 62-deck baseline before metadata download
+        run: python scripts/verify_baseline.py
+
       - name: Refresh all 62 frozen decklists from current Scryfall bulk
         run: python scripts/refresh_scryfall_metadata.py
 
