@@ -64,3 +64,8 @@ This is an execution constraint, not evidence that the cards are unsupported. Th
 The remote docs establish that Forge supports CLI AI games in Commander mode but specifically say AI is "pretty bad for most combo decks"; that supports only an exploratory-AI warning, not the proposed controlled paired-start comparison. The documented CLI examples show repeat counts but do not establish matched library orders, deterministic seeds, or a structured event-log API. Those controls remain unproven and are independent gates even if card support passes. [Official Forge AI/CLI documentation](https://github.com/Card-Forge/forge/blob/master/docs/AI.md)
 
 **Current qualification conclusion:** release pinned and key source scripts inspected; 94-card coverage scan incomplete; executable/list import/runtime interactions not tested; controlled paired-run support not established; no gameplay results. Forge remains not qualified.
+
+### Partial card-identity audit detail
+
+A pinned script read was also confirmed for the six cards listed above; their declared script names and Oracle lines were present in the returned source. This does not establish coverage for the other 88 names. A second, bulk fetch attempt of 94 source paths was blocked by the connector's tool-call limit before a complete result could be collected. The report intentionally leaves the 94-card coverage gate as pending rather than presenting a partial scan as a pass.
+
