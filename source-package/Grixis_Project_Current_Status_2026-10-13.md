@@ -1,6 +1,6 @@
 # Grixis Commander Encyclopedia — Current Status
 
-**Status snapshot:** 2026-10-13 UTC  
+**Status snapshot:** 2026-10-13 UTC — NEW REFINEMENT CYCLE RESET  
 **Scope:** 62 commander-first Grixis decks  
 **Frozen authoritative list snapshot:** 2026-10-12  
 **Active work branch:** `refinement/campaign-2026-10-12`  
@@ -12,7 +12,7 @@ The 2026-10-12 baseline remains frozen and structurally verified. All 62 CSV/TXT
 
 The active refinement branch now has a reproducible, CI-verified exact draw-density analysis for Abaddon. Forge test infrastructure has advanced beyond the original source-only probe: its pinned release and 95 card-script name mappings were verified, the exact baseline and isolated test variant loaded in Commander mode, and a bounded 3+3 fixed-opponent pilot completed. However, the candidate comparison was **INCONCLUSIVE** because neither Mind's Desire nor Aurora Phoenix was cast in any of the six registered games. Do not reuse those games as card-performance evidence or rerun the same AI comparison. The relevant workflow is now manual-dispatch only.
 
-**No baseline decklist has been changed, no approved deck has been reopened, and no new deck has been finalized.** The Abaddon finalization gate remains NO.
+**NEW CYCLE STATE (effective 2026-10-13): all 62 decks are UNAPPROVED / UNLOCKED.** Historical approvals and locks are superseded for current status, while their records remain preserved. No deck is locked in this cycle until its full-list technical verification gates pass. The Abaddon finalization gate remains NO.
 
 ## Verified baseline and source integrity
 
@@ -191,3 +191,8 @@ The card's 13-damage creature wipe, reduction-cost versus mana-value distinction
 ### Workflow optimization standard added — 2026-10-13 UTC
 
 Created and verified [Workflow Optimization Playbook v1](../refinement/WORKFLOW_OPTIMIZATION_PLAYBOOK_v1.md) based on the Abaddon pilot. Future decks should use one frozen-baseline intake, one bounded commander-specific candidate screen, one role-based triage, targeted material interaction checks, separate current Oracle/identity and legality gates, then independent integrity and user approval. Reuse sourced rules notes across decks where applicable; never repeat inconclusive tests without new evidence. Every work unit must update the detailed note, triage/coverage record, status and tracker as applicable, then re-fetch the files to verify writes. This is a process standard, not permission to skip final verification. Abaddon remains the pilot; current Oracle/identity refresh for its 94-name list is the next gate.
+
+
+## New refinement cycle reset — 2026-10-13
+
+All 62 decks are unapproved and unlocked. Work begins at #1 Abaddon the Despoiler and follows the authoritative tracker. Each deck receives a full-list, commander-first reassessment. No arbitrary swap cap applies; zero changes is acceptable when no improvement is supported. Frozen source exports and historical records remain immutable. The active tracker clears current approval/lock flags and resets final-gate status to NO. A deck is automatically approved and locked only after all mandatory technical verification gates pass and the new list, decision ledger, certificate, and hash are recorded. Explicit user approval is not an additional gate. Any failed or incomplete mandatory gate leaves the deck unlocked.
