@@ -94,7 +94,9 @@ jobs:
               record = {"path": str(p.relative_to(root)), "oracle": oracle, "declared_names": names}
               for nm in names:
                   scripts.setdefault(norm(nm), []).append(record)
-              scripts.setdefault(norm(p.stem.replace("_", " ")), []).append(record)
+              script_key = p.stem
+              scripts.setdefault(norm(script_key.replace("_", " ")), []).append(record)
+              scripts.setdefault(norm(script_key), []).append(record)
               # Filename stems are a discovery heuristic, not a canonical Oracle name.
               # Positive controls below prevent treating a zero-match report as valid.
           rows = []
