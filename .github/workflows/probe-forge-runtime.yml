@@ -10,6 +10,8 @@ on:
       - "scripts/verify_abaddon_variant.py"
       - "scripts/probe_forge_card_coverage.py"
       - "scripts/prepare_abaddon_forge_smoke_decks.py"
+      - "scripts/analyze_abaddon_paired_pilot.py"
+      - "tests/test_analyze_abaddon_paired_pilot.py"
       - "tests/test_probe_forge_card_coverage.py"
       - "tests/test_prepare_abaddon_forge_smoke_decks.py"
 
