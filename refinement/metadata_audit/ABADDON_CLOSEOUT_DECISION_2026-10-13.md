@@ -3,8 +3,8 @@
 **Date:** 2026-10-13 (America/Chicago)  
 **Decklist authority:** frozen 2026-10-12 source package  
 **Decklist changes:** none  
-**Verification result:** READY FOR USER APPROVAL  
-**Approval recorded:** NO — awaiting explicit user approval of the unchanged list
+**Verification result:** PASS — approved and locked  
+**Approval recorded:** YES — explicit user approval received 2026-10-13
 
 ## 1. Decision
 
@@ -65,7 +65,8 @@ The current review does not claim exhaustive game-state proof or actual playtest
 **Technical verification: PASS.**  
 **Decklist mutation: NONE.**  
 **Candidate swap required: NO.**  
-**User approval: PENDING.**  
-**Finalized/locked by this closeout: NO.**
+**User approval: PASS — explicit approval received 2026-10-13.**  
+**Finalized/locked: YES — exact unchanged 2026-10-12 baseline.**  
+**Final list SHA-256 (authoritative TXT export):** `2d6203d274c25e67fb93acf5e6784dce4ee1e8999844a6ab032d9b15995acfbf`.
 
-The only remaining gate is explicit user approval of the exact unchanged 100-card baseline. Do not set an approval date, change the tracker approval flag, or describe the deck as finalized before that approval is received.
+Abaddon is approved and locked. Preserve this list; do not reopen or modify it unless the user explicitly requests it. The next unfinished deck in tracker order is **Admiral Beckett Brass** (deck 2 of 62).
