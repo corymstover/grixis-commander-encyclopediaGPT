@@ -125,8 +125,31 @@ def prepare(archive: Path, variant_path: Path, output_dir: Path) -> dict[str, An
     if any(baseline_counts[n] != variant_counts[n] for n in common):
         raise ValueError("Test variant changed a common card quantity")
 
+    # Preserve the frozen baseline's main-deck order in both decks. Put Aurora Phoenix
+    # in Mind's Desire's exact slot so identical RNG seeds operate on aligned deck positions.
+    # Forge may still consume randomness differently during a game; this only controls input order.
+    ordered_variant_counts: dict[str, int] = {}
+    for name in baseline_counts:
+        if name == "Mind's Desire":
+            ordered_variant_counts["Aurora Phoenix"] = variant_counts["Aurora Phoenix"]
+        elif name in variant_counts:
+            ordered_variant_counts[name] = variant_counts[name]
+    if set(ordered_variant_counts) != set(variant_counts):
+        raise ValueError(
+            "Could not align variant order to baseline; unplaced names: "
+            f"{set(variant_counts) - set(ordered_variant_counts)!r}"
+        )
+    baseline_order = [name for name in baseline_counts if name != COMMANDER]
+    variant_order = [name for name in ordered_variant_counts if name != COMMANDER]
+    expected_order = [
+        "Aurora Phoenix" if name == "Mind's Desire" else name
+        for name in baseline_order
+    ]
+    if variant_order != expected_order:
+        raise ValueError("Paired-input card order mismatch beyond the registered one-card substitution")
+
     write_dck(output_dir / "Abaddon baseline.dck", "Abaddon frozen baseline", baseline_counts)
-    write_dck(output_dir / "Abaddon Aurora Phoenix variant.dck", "Abaddon Aurora Phoenix test variant", variant_counts)
+    write_dck(output_dir / "Abaddon Aurora Phoenix variant.dck", "Abaddon Aurora Phoenix test variant", ordered_variant_counts)
 
     report = {
         "purpose": "one-game Forge deck-load/runtime smoke test only; no comparative performance claim",
@@ -135,6 +158,15 @@ def prepare(archive: Path, variant_path: Path, output_dir: Path) -> dict[str, An
         "variant_file": str(variant_path),
         "variant_sha256": variant_hash,
         "comparison": {"removed": baseline_minus, "added": variant_minus},
+        "paired_input_order": {
+            "baseline_main_card_order": baseline_order,
+            "variant_main_card_order": variant_order,
+            "differences": [
+                {"slot": baseline_order.index("Mind's Desire"), "baseline": "Mind's Desire", "variant": "Aurora Phoenix"}
+            ],
+            "all_other_slots_aligned": True,
+            "limitation": "Input order is aligned for equal seeds, but runtime RNG-stream equivalence and identical opening hands are not yet independently verified."
+        },
         "baseline": baseline_meta,
         "variant": variant_meta,
         "dck_files": ["Abaddon baseline.dck", "Abaddon Aurora Phoenix variant.dck"],
