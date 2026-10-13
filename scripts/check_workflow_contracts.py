@@ -39,6 +39,12 @@ def main() -> int:
             errors.append("refresh validator is not anchored to the current workflow start time")
         if '--not-before-utc "$RUN_STARTED_AT"' not in validator_block:
             errors.append("freshness validator is not rejecting snapshots predating this run")
+    preflight_start = wf.find("- name: Verify frozen 62-deck baseline before metadata download")
+    refresh_start = wf.find("- name: Refresh all 62 frozen decklists from current Scryfall bulk")
+    if preflight_start < 0 or refresh_start < 0 or preflight_start >= refresh_start:
+        errors.append("frozen-baseline verification must run before the large Scryfall download")
+    if "scripts/verify_baseline.py" not in wf:
+        errors.append("refresh workflow does not verify the source archive before downloading metadata")
     if "audit_abaddon_baseline_metadata.py" not in wf:
         errors.append("refresh workflow does not run the Abaddon exact-name audit")
     if "upload-artifact@v4" not in wf:
