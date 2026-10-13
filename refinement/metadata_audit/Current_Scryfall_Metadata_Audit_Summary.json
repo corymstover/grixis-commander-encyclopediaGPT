@@ -1,0 +1,91 @@
+{
+  "generated_at_utc": "2026-10-13T06:40:49.559388+00:00",
+  "bulk_type": "default_cards",
+  "bulk_updated_at": "2026-10-12T21:06:24.577+00:00",
+  "deck_count": 62,
+  "decklist_rows": 5964,
+  "distinct_printing_keys": 1644,
+  "exact_matches": 5964,
+  "name_variant_reviews": 0,
+  "not_found": 0,
+  "ambiguous": 0,
+  "blank_oracle_text_rows": 0,
+  "missing_oracle_id": 0,
+  "exception_registry_rows": 8,
+  "exception_registry_sha256": "166b49d92838ec66f32607e7e209bfcd52cf74aca07de8a03d8b9c00cfeaa052",
+  "color_identity_mismatches": [],
+  "official_illegal_rows": [
+    {
+      "deck_id": "Cecily__Bjorna__Lutri",
+      "card_name": "Lutri, the Spellchaser",
+      "zone": "Companion",
+      "official_status": "banned_as_companion",
+      "project_exception_status": "REGISTERED PROJECT EXCEPTION — project companion exception; official status retained separately"
+    },
+    {
+      "deck_id": "Cecily__Bjorna__Lutri",
+      "card_name": "Trade Secrets",
+      "zone": "Main",
+      "official_status": "banned",
+      "project_exception_status": "REGISTERED PROJECT EXCEPTION — project banned-card exception; official status retained separately"
+    },
+    {
+      "deck_id": "Cecily__Bjorna__Lutri",
+      "card_name": "Yawgmoth's Bargain",
+      "zone": "Main",
+      "official_status": "banned",
+      "project_exception_status": "REGISTERED PROJECT EXCEPTION — project banned-card exception; official status retained separately"
+    },
+    {
+      "deck_id": "The_Madcap_Jester",
+      "card_name": "Dragon's Smile",
+      "zone": "Main",
+      "official_status": "not_legal",
+      "project_exception_status": "REGISTERED PROJECT EXCEPTION — future-release or project card; official status retained separately"
+    },
+    {
+      "deck_id": "The_Madcap_Jester",
+      "card_name": "The Madcap Jester",
+      "zone": "Main",
+      "official_status": "not_legal",
+      "project_exception_status": "REGISTERED PROJECT EXCEPTION — future-release commander; official status retained separately"
+    },
+    {
+      "deck_id": "Tresserhorn_s_Lord__Returned",
+      "card_name": "Tresserhorn's Lord, Returned",
+      "zone": "Main",
+      "official_status": "not_legal",
+      "project_exception_status": "REGISTERED PROJECT EXCEPTION — future-release commander; official status retained separately"
+    }
+  ],
+  "known_project_banned_exception_rows": [
+    {
+      "deck_id": "Cecily__Bjorna__Lutri",
+      "card_name": "Lutri, the Spellchaser",
+      "zone": "Companion",
+      "official_status": "banned_as_companion",
+      "exception_type": "project companion exception"
+    },
+    {
+      "deck_id": "Cecily__Bjorna__Lutri",
+      "card_name": "Trade Secrets",
+      "zone": "Main",
+      "official_status": "banned",
+      "exception_type": "project banned-card exception"
+    },
+    {
+      "deck_id": "Cecily__Bjorna__Lutri",
+      "card_name": "Yawgmoth's Bargain",
+      "zone": "Main",
+      "official_status": "banned",
+      "exception_type": "project banned-card exception"
+    }
+  ],
+  "unresolved_project_exception_rows": [],
+  "unresolved_printing_rows": [],
+  "note": "Metadata overlay only; does not certify relevant rules interactions or replace the separate project exception registry.",
+  "rows_written": 5964,
+  "decks_with_unresolved_commander_identity": [],
+  "unexpected_official_illegal_rows": [],
+  "overall_result": "METADATA_REFRESH_PASS — registered exceptions remain separately labeled; rules-interaction review remains separate"
+}
