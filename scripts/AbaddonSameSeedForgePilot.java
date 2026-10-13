@@ -100,7 +100,7 @@ public final class AbaddonSameSeedForgePilot {
             + "  \"forge_release\": \"" + FORGE_RELEASE + "\",\n"
             + "  \"forge_source_commit\": \"" + FORGE_COMMIT + "\",\n"
             + "  \"purpose\": \"same-seed but unpaired exploratory AI pilot; not a real-world win-rate estimate\",\n"
-            + "  \"pairs\": " + options.pairs + ",\n"
+            + "  \"trials_per_list\": " + options.pairs + ",\n"
             + "  \"base_seed\": " + options.baseSeed + ",\n"
             + "  \"timeout_seconds_per_game\": " + options.timeoutSeconds + ",\n"
             + "  \"baseline_sha256\": \"" + baselineHash + "\",\n"
