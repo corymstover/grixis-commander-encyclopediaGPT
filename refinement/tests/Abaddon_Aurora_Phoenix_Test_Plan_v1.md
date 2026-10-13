@@ -68,3 +68,8 @@ The protocol's final gate still requires review of the full deck's nontrivial ru
 ## Separate list-integrity verification
 
 The isolated variant and frozen baseline were rechecked on 2026-10-13. The baseline archive/hash, both raw decklist hashes, both normalized membership hashes, exactly 100 cards per list, singleton compliance, and the single substitution (Mind's Desire out / Aurora Phoenix in) all passed. See [Abaddon_Variant_Integrity_Check_2026-10-13.json](Abaddon_Variant_Integrity_Check_2026-10-13.json). This does **not** mean a gameplay test has run; the gameplay test remains NOT RUN.
+
+
+## Forge engine qualification update
+
+A targeted source-code review found scripts for Abaddon, Aurora Phoenix, Mind's Desire, Underworld Breach, Brain Freeze, Lion's Eye Diamond, and Wild-Magic Sorcerer, but this is not a complete 94-card support audit or live engine test. Forge's own documentation warns its AI is poor at most combo decks. The engine therefore remains **NOT QUALIFIED** for the registered test; no games have been run. See [Abaddon Forge Engine Qualification](Abaddon_Forge_Engine_Qualification_2026-10-13.md).
