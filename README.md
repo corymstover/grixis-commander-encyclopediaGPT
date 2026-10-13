@@ -14,7 +14,7 @@ Version-controlled project records for the 62-deck Grixis Commander Encyclopedia
 
 ## Latest verified checkpoint — 2026-10-12
 
-The source ZIP's internal manifest passed 165/165 hashes; all 62 current CSV/TXT pairs independently reconcile, all 62 main-deck-plus-commander lists count to 100, and all 62 singleton scans pass. The official Commander named-ban checkpoint is complete: the only matches are the three known project-authorized Bjorna // Cecily + Lutri exceptions. Full current Oracle/rulings and exact-printing legality refresh remain open. The hash manifest and detailed independent audit are preserved on the [frozen baseline branch](https://github.com/corymstover/grixis-commander-encyclopediaGPT/tree/baseline/freeze-2026-10-12).
+The source ZIP's internal manifest passed 165/165 hashes; all 62 current CSV/TXT pairs independently reconcile, all 62 main-deck-plus-commander lists count to 100, and all 62 singleton scans pass. The official Commander named-ban checkpoint is complete: the only explicit banned-list matches are the three known project-authorized Bjorna // Cecily + Lutri exceptions. The initial source report marked the full current Oracle/identity/exact-printing legality refresh as pending; a subsequent Scryfall metadata refresh has since completed and is summarized below. Detailed rules/interaction verification remains open. The hash manifest and detailed independent audit are preserved on the [frozen baseline branch](https://github.com/corymstover/grixis-commander-encyclopediaGPT/tree/baseline/freeze-2026-10-12).
 
 ## Current baseline and source consolidation
 
