@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Summarize paired Forge pilot logs without treating pilot outcomes as card-choice proof."""
+"""Summarize unpaired same-seed Forge logs; pilot outcomes cannot decide card choice."""
 from __future__ import annotations
 
 import argparse
@@ -260,8 +260,8 @@ def analyze(pilot_dir: Path) -> dict[str, Any]:
         "baseline": summarize_group(baseline_games),
         "variant": summarize_group(variant_games),
         "same_seed_outcomes": {
-            "same_outcome_pairs": outcomes_match,
-            "different_outcome_pairs": len(paired_rows) - outcomes_match,
+            "same_outcome_seed_labels": outcomes_match,
+            "different_outcome_seed_labels": len(paired_rows) - outcomes_match,
             "interpretation": "Baseline and variant use the same numeric seed values, but their starting libraries are not proven aligned. Descriptive AI-play only, not real-world win-rate evidence or a paired confirmatory test."
         },
         "decision_use_allowed": False,
@@ -277,13 +277,13 @@ def analyze(pilot_dir: Path) -> dict[str, Any]:
     }
 
     (pilot_dir / "pilot-results.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
-    with (pilot_dir / "paired-results-summary.csv").open("w", newline="", encoding="utf-8") as handle:
+    with (pilot_dir / "same-seed-results-summary.csv").open("w", newline="", encoding="utf-8") as handle:
         writer = csv.DictWriter(handle, fieldnames=list(paired_rows[0].keys()))
         writer.writeheader()
         writer.writerows(paired_rows)
 
     md = [
-        "# Abaddon Paired Forge Pilot — Descriptive Only",
+        "# Abaddon Same-Seed Forge Pilot — Unpaired, Descriptive Only",
         "",
         f"- Same-seed trials per list: {len(trials)}",
         f"- Opponent: {OPPONENT_LABEL}",
@@ -305,7 +305,7 @@ def analyze(pilot_dir: Path) -> dict[str, Any]:
         "## Paired outcomes",
         "",
         f"- Same-outcome seed labels: {outcomes_match}/{len(trials)}",
-        f"- Different-outcome seed labels: {len(pairs) - outcomes_match}/{len(pairs)}",
+        f"- Different-outcome seed labels: {len(trials) - outcomes_match}/{len(trials)}",
         "",
         "## Interpretation control",
         "",
@@ -323,7 +323,7 @@ def main() -> int:
     report = analyze(args.pilot_dir)
     print(json.dumps({
         "status": report["status"],
-        "pairs": report["pairs"],
+        "trials_per_list": report["trials_per_list"],
         "baseline": report["baseline"],
         "variant": report["variant"],
         "same_seed_outcomes": report["same_seed_outcomes"],
