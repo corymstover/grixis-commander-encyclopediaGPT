@@ -58,3 +58,10 @@ The exact frozen Abaddon list has been inventoried into `Abaddon_Interaction_Cov
 - “Not explicitly mentioned” does not mean a card is defective or must get a separate rules entry. The next step groups these by role and checks which actually have material rules dependencies, stateful triggers, special zone behavior, or relevant interactions.
 
 No decklist changes were made. Existing explicit coverage remains provisional, and Abaddon's final gate remains NO.
+
+
+## Step 2 result — role-based triage completed
+
+The refined [Abaddon Interaction Triage](https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/tests/Abaddon_Interaction_Triage_Updated_2026-10-13.csv) is now the preferred per-card triage source. It distinguishes ordinary land/ramp roles from cards with meaningful functional constraints and flags material contextual checks rather than treating every previously unmentioned card as a rules problem. The companion [Role Triage Summary](https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/tests/Abaddon_Role_Triage_Summary_2026-10-13.md) summarizes the result.
+
+**Next bounded step:** verify only the material contextual checks against current Oracle text and Comprehensive Rules, especially top-deck/cascade sequencing, alternate-cost spells, Jeska's Will's exile casts, Thermo-Alchemist, and any remaining named interaction questions. The worked Breach sequence has a separate updated audit and should not be re-opened unless a specific contradiction appears. No card changes; final gate NO.
