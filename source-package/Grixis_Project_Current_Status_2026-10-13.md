@@ -1,6 +1,6 @@
 # Grixis Commander Encyclopedia — Current Status
 
-**Status snapshot:** 2026-10-13 UTC — NEW REFINEMENT CYCLE RESET  
+**Status snapshot:** 2026-10-13 UTC — DECK #1 REFINED AND LOCKED; NEW CYCLE ACTIVE  
 **Scope:** 62 commander-first Grixis decks  
 **Frozen authoritative list snapshot:** 2026-10-12  
 **Active work branch:** `refinement/campaign-2026-10-12`  
@@ -12,7 +12,7 @@ The 2026-10-12 baseline remains frozen and structurally verified. All 62 CSV/TXT
 
 The active refinement branch now has a reproducible, CI-verified exact draw-density analysis for Abaddon. Forge test infrastructure has advanced beyond the original source-only probe: its pinned release and 95 card-script name mappings were verified, the exact baseline and isolated test variant loaded in Commander mode, and a bounded 3+3 fixed-opponent pilot completed. However, the candidate comparison was **INCONCLUSIVE** because neither Mind's Desire nor Aurora Phoenix was cast in any of the six registered games. Do not reuse those games as card-performance evidence or rerun the same AI comparison. The relevant workflow is now manual-dispatch only.
 
-**NEW CYCLE STATE (effective 2026-10-13): all 62 decks are UNAPPROVED / UNLOCKED.** Historical approvals and locks are superseded for current status, while their records remain preserved. No deck is locked in this cycle until its full-list technical verification gates pass. The Abaddon finalization gate remains NO.
+**NEW CYCLE STATE (effective 2026-10-13): 1 of 62 decks is now APPROVED / LOCKED after passing the current technical gates; 61 remain UNAPPROVED / UNLOCKED.** Historical approvals and locks are superseded for current status, while their records remain preserved. Deck #1, Abaddon the Despoiler, is locked only at normalized revision hash `9629ba07807642736bce0b2c90038dd664da7b32b3892744808c8de4b526fb50`. Next in authoritative tracker order: #2 Admiral Beckett Brass.
 
 ## Verified baseline and source integrity
 
@@ -59,29 +59,30 @@ The registered pilot [run 38341150840](https://github.com/corymstover/grixis-com
 
 The same-seed pilot workflow was changed to manual dispatch only to prevent expensive automatic reruns. Exact baseline consistency CI [run 38343814218](https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/38343814218) passed. The latest pilot run [run 38343803830](https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/38343803830) also completed successfully as a workflow; that success means its scripted checks and registered exploratory pilot completed, not that the candidate comparison was conclusive.
 
-### Remaining Abaddon finalization gates
+### Abaddon new-cycle closeout — complete
 
-- Complete a checklist-based audit of every remaining card-specific interaction/package materially relied upon by the list; the existing interaction review is extensive but not yet certified exhaustive.
-- Independently validate the exact frozen baseline list against current Oracle identity, color identity, official legality and registered exception records before any final-list certificate.
-- Record a final exact-list SHA-256 and an independent count/singleton verification at closeout.
-- Resolve the slot decision with the already recorded inconclusive outcome and commander-identity/opportunity-cost rationale; no replacement card is justified by the current test evidence.
-- Present the exact list for explicit user approval. Do not mark Abaddon final or change the baseline before approval.
+- The revised list is stored separately from the immutable baseline, is independently recounted at 100 copies/94 names, and passes singleton/basic-land checks; the 34-land count is unchanged.
+- Two additions and two paired cuts are recorded in the [cycle change ledger](../refinement/Deck_Change_Ledger_2026-10-13.csv).
+- The [refined copy-and-paste list](../refinement/decklists/Abaddon_the_Despoiler_Refined_2026-10-13.txt), [verification certificate](../refinement/verification/Abaddon_the_Despoiler_Verification_2026-10-13.md), and [candidate decision summary](../refinement/decisions/Abaddon_the_Despoiler_Candidate_Decisions_2026-10-13.md) are on the active branch.
+- Current technical gates pass under the active auto-finalization protocol; Abaddon is now APPROVED / LOCKED. The final hash is `9629ba07807642736bce0b2c90038dd664da7b32b3892744808c8de4b526fb50`.
+- The old Aurora Phoenix vs. Mind's Desire game comparison remains inconclusive and was not relied upon. No gameplay win-rate or multiplayer superiority claim is made.
+
 
 See [Abaddon expanded interaction review](https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/rules/Abaddon_the_Despoiler_Interaction_Review_2026-10-13.md), [candidate ledger](https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/decisions/Abaddon_the_Despoiler_Candidate_Decisions_2026-10-12.csv), [Forge smoke-test report](https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/tests/Abaddon_Forge_Smoke_Test_Result_2026-10-13.md), and [baseline consistency report](https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/tests/Abaddon_Baseline_Consistency_Report_2026-10-13.md).
 
 ## Tracker truth
 
 - All 62 decks: baseline structural and refreshed exact-printing/Oracle/identity/legality metadata checks pass, with authorized exceptions separated.
-- All 62 current refinement finalization gates: NO under the new campaign protocol. This does not revoke historical approvals; all previously approved/locked decklists remain untouched.
-- Abaddon: blueprint and candidate screening complete; Aurora/Mind's Desire closed inconclusive; exact draw-density report complete and CI-verified; full remaining card-specific closeout, independent final audit/hash, and user approval pending.
-- Remaining 61 decks: commander-specific rules/strategy reviews and controlled refinement for this new campaign remain outstanding.
+- Deck #1, Abaddon the Despoiler: APPROVED / LOCKED — ALL TECHNICAL GATES PASSED. The tracker final gate is YES; normalized revised-list hash is `9629ba07807642736bce0b2c90038dd664da7b32b3892744808c8de4b526fb50`.
+- Current-cycle totals: 1/62 approved and locked; 61/62 remain unapproved and unlocked. Historical approvals remain provenance only.
+- Next deck: #2 Admiral Beckett Brass. Proceed in authoritative tracker order; do not reopen Abaddon absent an explicit request or a documented material trigger.
 
 ## Efficient next sequence
 
-1. Continue only source-preserving, hash-verified consolidation where it removes a material workflow obstacle.
-2. Finish Abaddon's remaining card-specific interaction checklist and independent audit preparation; do not repeat the inconclusive Forge AI comparison.
-3. Close Abaddon only after all hard gates are met, present the exact list and rationale, and wait for explicit approval.
-4. After approval, write the final hash/certificate and move to the next not-yet-refined deck. Never reopen an already approved/locked deck without an explicit request or a documented material trigger.
+1. Start deck #2, Admiral Beckett Brass, using the frozen October 12 baseline exports and the same technical verification gates.
+2. Reassess its full list commander-first; do not force Abaddon's package onto it.
+3. Record all actual additions/cuts, rejected candidates, trade-offs, verification evidence, and the exact revision hash in the active-cycle ledgers.
+4. Auto-approve and lock only after every mandatory technical gate passes. Never reopen Abaddon unless explicitly requested or a documented material trigger justifies it.
 
 ## Latest Abaddon independent static metadata audit — 2026-10-13 UTC
 
