@@ -186,3 +186,8 @@ Two contextual gaps are now documented in [Abaddon Step 4 Context Check](../refi
 ### Step 5 completed — Blasphemous Act context check
 
 The card's 13-damage creature wipe, reduction-cost versus mana-value distinction, own-engine risk, and potential Abaddon-granted cascade-before-wipe timing are recorded in [Step 5 note](../refinement/tests/Abaddon_Step_5_Blasphemous_Act_Interaction_Check_2026-10-13.md). The frozen list remains unchanged; no cut follows from rules review alone. Next bounded gate: refresh current Oracle text and color identity for the exact 94 unique names, separately from official legality and final approval. Final gate remains NO.
+
+
+### Workflow optimization standard added — 2026-10-13 UTC
+
+Created and verified [Workflow Optimization Playbook v1](../refinement/WORKFLOW_OPTIMIZATION_PLAYBOOK_v1.md) based on the Abaddon pilot. Future decks should use one frozen-baseline intake, one bounded commander-specific candidate screen, one role-based triage, targeted material interaction checks, separate current Oracle/identity and legality gates, then independent integrity and user approval. Reuse sourced rules notes across decks where applicable; never repeat inconclusive tests without new evidence. Every work unit must update the detailed note, triage/coverage record, status and tracker as applicable, then re-fetch the files to verify writes. This is a process standard, not permission to skip final verification. Abaddon remains the pilot; current Oracle/identity refresh for its 94-name list is the next gate.
