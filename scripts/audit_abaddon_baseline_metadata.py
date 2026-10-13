@@ -74,21 +74,23 @@ def read_abaddon_list() -> tuple[bytes, list[dict]]:
         parsed.append({"line": line_no, "quantity": qty, "name": card_name, "role_tag": role})
     return raw, parsed
 
-def read_overlay() -> tuple[dict[str, list[dict]], list[str], str]:
+def read_overlay() -> tuple[dict[tuple[str, str], list[dict]], list[str], str]:
     raw = OVERLAY.read_bytes()
     overlay_hash = sha256(raw)
     with OVERLAY.open("r", encoding="utf-8-sig", newline="") as f:
         reader = csv.DictReader(f)
         columns = reader.fieldnames or []
         name_field = next((candidate for candidate in NAME_FIELDS if candidate in columns), None)
-        if not name_field:
-            raise ValueError(f"No supported card-name field in metadata overlay columns: {columns}")
-        by_name: dict[str, list[dict]] = {}
+        deck_field = "deck_id" if "deck_id" in columns else None
+        if not name_field or not deck_field:
+            raise ValueError(f"Overlay must contain deck_id and a supported name field; columns={columns}")
+        by_deck_name: dict[tuple[str, str], list[dict]] = {}
         for row in reader:
-            key = norm(row.get(name_field, ""))
-            if key:
-                by_name.setdefault(key, []).append(row)
-    return by_name, columns, overlay_hash
+            deck_id = norm(row.get(deck_field, ""))
+            card_name = norm(row.get(name_field, ""))
+            if deck_id and card_name:
+                by_deck_name.setdefault((deck_id, card_name), []).append(row)
+    return by_deck_name, columns, overlay_hash
 
 def audit() -> dict:
     raw, parsed = read_abaddon_list()
@@ -105,14 +107,10 @@ def audit() -> dict:
     if non_singletons:
         raise ValueError(f"Singleton violations: {non_singletons}")
     overlay, columns, overlay_hash = read_overlay()
-    # Overlay is project-wide, so use deck_id plus exported name as the strict key.
-    # Name-only joins silently collide across 62 decks (e.g., Island appears many times).
-    deck_rows = {}
-    for (deck_id, card_name), rows in []:
-        pass
+    deck_id = norm("Abaddon_the_Despoiler")
     matches, missing, ambiguous, field_issues = [], [], [], []
     for name, qty in sorted(counts.items(), key=lambda pair: pair[0].casefold()):
-        hits = overlay.get(norm(name), [])
+        hits = overlay.get((deck_id, norm(name)), [])
         if not hits:
             missing.append(name)
             continue
@@ -124,12 +122,17 @@ def audit() -> dict:
             "oracle_id": first(row, ORACLE_ID_FIELDS),
             "oracle_text": first(row, ORACLE_FIELDS),
             "color_identity": first(row, IDENTITY_FIELDS),
+            "commander_color_identity": first(row, ("commander_color_identity",)),
+            "color_identity_check": first(row, ("color_identity_check",)),
             "commander_legality": first(row, LEGALITY_FIELDS),
+            "project_exception_status": first(row, ("project_exception_status",)),
             "type_line": first(row, ("type_line", "type_line_current", "type")),
-            "set_code": first(row, ("set", "set_code", "set_code_current")),
+            "set_code": first(row, ("set_code", "set", "set_code_current")),
             "collector_number": first(row, ("collector_number", "collector_number_current", "number")),
+            "printing_match_status": first(row, ("printing_match_status",)),
+            "scryfall_name": first(row, ("scryfall_name",)),
         }
-        problems = [f"missing_{k}" for k in ("oracle_id", "oracle_text", "color_identity", "commander_legality") if not fields[k]]
+        problems = [f"missing_{k}" for k in ("oracle_id", "oracle_text", "color_identity", "commander_legality", "printing_match_status") if not fields[k]]
         if problems:
             field_issues.append({"name": name, "issues": problems})
         matches.append({
@@ -137,6 +140,7 @@ def audit() -> dict:
             "source_role_tag": next(x["role_tag"] for x in parsed if x["name"] == name),
             **fields, "metadata_fields_complete": not problems
         })
+    status = "METADATA_JOIN_PASS — strategy/rules/fresh legality gates remain separate" if not missing and not ambiguous and not field_issues else "REVIEW_REQUIRED"
     return {
         "deck_id": "Abaddon_the_Despoiler",
         "snapshot": "2026-10-12",
@@ -154,8 +158,7 @@ def audit() -> dict:
         "ambiguous_overlay_names": ambiguous,
         "metadata_field_issues": field_issues,
         "records": matches,
-        "status": "METADATA_JOIN_PASS — strategy/rules/fresh legality gates remain separate"
-            if not missing and not ambiguous and not field_issues else "REVIEW_REQUIRED",
+        "status": status,
         "limitations": [
             "Overlay is dated 2026-10-12, not a fresh legality check at approval time.",
             "A name/metadata join does not independently verify every relevant rule interaction.",
