@@ -45,11 +45,14 @@ jobs:
         run: python scripts/refresh_scryfall_metadata.py
 
       - name: Validate snapshot freshness and completeness (fail closed)
-        if: always()
+        if: success()
+        env:
+          RUN_STARTED_AT: ${{ github.run_started_at }}
         run: >-
           python scripts/validate_scryfall_metadata_refresh.py
           --summary refinement/metadata_audit/Current_Scryfall_Metadata_Audit_Summary.json
           --report-output /tmp/scryfall-refresh-validation.json
+          --not-before-utc "$RUN_STARTED_AT"
           --max-generated-age-hours 2
           --max-bulk-age-hours 72
 
