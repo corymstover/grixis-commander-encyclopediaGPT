@@ -1,6 +1,6 @@
 # Grixis Commander Encyclopedia — Current Status
 
-**Status snapshot:** 2026-10-13 UTC — DECKS #1–6 REFINED AND LOCKED; NEW CYCLE ACTIVE  
+**Status snapshot:** 2026-10-13 UTC — DECKS #1–7 REFINED AND LOCKED; NEW CYCLE ACTIVE  
 **Scope:** 62 commander-first Grixis decks  
 **Frozen authoritative list snapshot:** 2026-10-12  
 **Active work branch:** `refinement/campaign-2026-10-12`  
@@ -12,7 +12,7 @@ The 2026-10-12 baseline remains frozen and structurally verified. All 62 CSV/TXT
 
 The active refinement branch now has a reproducible, CI-verified exact draw-density analysis for Abaddon. Forge test infrastructure has advanced beyond the original source-only probe: its pinned release and 95 card-script name mappings were verified, the exact baseline and isolated test variant loaded in Commander mode, and a bounded 3+3 fixed-opponent pilot completed. However, the candidate comparison was **INCONCLUSIVE** because neither Mind's Desire nor Aurora Phoenix was cast in any of the six registered games. Do not reuse those games as card-performance evidence or rerun the same AI comparison. The relevant workflow is now manual-dispatch only.
 
-**NEW CYCLE STATE (effective 2026-10-13): 6 of 62 decks are now APPROVED / LOCKED after passing the current technical gates; 56 remain UNAPPROVED / UNLOCKED.** Historical approvals and locks are superseded for current status, while their records remain preserved. Deck #1, Abaddon the Despoiler, is locked at `9629ba07807642736bce0b2c90038dd664da7b32b3892744808c8de4b526fb50`; Deck #2, Admiral Beckett Brass, at `40df97c47d37b4ae9d7f5c22623ab490c96c5dee9ab5be689a74ced25bb3be96`; Deck #3, Admiral Brass, Unsinkable, at `c7ecef8a83351f34de3a8a8f5e17c1bcbaf4755e1f2bab77d34911dd6d140f7d`; Deck #4, Anhelo, the Painter, at `7fd898ffc4c3aad208cfd33361912bfefcff4754ec662b532ec5d0a5fcefbd4a`; Deck #5, Ashad, the Lone Cyberman, at `a0142c7859626b5592d4ac6ef4711232f3fc765c7e02e1ae0963aecfe16a99e6`; and Deck #6, Ashnod the Uncaring, at `35f55432f14f70bc3eb70412ea8cad7520363740e240531ff7122d2d8980dcc6`. Next in authoritative tracker order: #7 Be'lakor, the Dark Master.
+**NEW CYCLE STATE (effective 2026-10-13): 7 of 62 decks are now APPROVED / LOCKED after passing the current technical gates; 55 remain UNAPPROVED / UNLOCKED.** Historical approvals and locks are superseded for current status, while their records remain preserved. Deck #1, Abaddon the Despoiler, is locked at `9629ba07807642736bce0b2c90038dd664da7b32b3892744808c8de4b526fb50`; Deck #2, Admiral Beckett Brass, at `40df97c47d37b4ae9d7f5c22623ab490c96c5dee9ab5be689a74ced25bb3be96`; Deck #3, Admiral Brass, Unsinkable, at `c7ecef8a83351f34de3a8a8f5e17c1bcbaf4755e1f2bab77d34911dd6d140f7d`; Deck #4, Anhelo, the Painter, at `7fd898ffc4c3aad208cfd33361912bfefcff4754ec662b532ec5d0a5fcefbd4a`; Deck #5, Ashad, the Lone Cyberman, at `a0142c7859626b5592d4ac6ef4711232f3fc765c7e02e1ae0963aecfe16a99e6`; Deck #6, Ashnod the Uncaring, at `35f55432f14f70bc3eb70412ea8cad7520363740e240531ff7122d2d8980dcc6`; and Deck #7, Be'lakor, the Dark Master, at `f48359f816498b386b085db60f0456576c8af9b055408685df71f0d1db448545`. Next in authoritative tracker order: #8 Bjorna, Nightfall Alchemist // Cecily, Haunted Mage.
 
 ## Verified baseline and source integrity
 
@@ -107,6 +107,13 @@ See [Abaddon expanded interaction review](https://github.com/corymstover/grixis-
 - Anvil’s artifact-sacrifice activation is copied by Ashnod, doubling its table-wide drain/life gain; artifact departure also creates a Construct once per turn. Stormclaw Rager’s sacrifice activation yields two draws and two +1/+1 counters from one sacrificed permanent, with sorcery-speed activation as the key limitation.
 - Candidate review records 16 options: two accepted, two existing core cards retained, and twelve rejected with reasons. Current project-wide Scryfall refresh plus direct checks for both changes support identity, Oracle and legality verification. Official Commander ban list checked 2026-10-13; October 12 B&R changes affected Competitive Brawl only.
 - Status: **APPROVED / LOCKED — ALL TECHNICAL GATES PASSED** at revised-list SHA-256 `35f55432f14f70bc3eb70412ea8cad7520363740e240531ff7122d2d8980dcc6`. No qualified matched-start multiplayer test was available, so no win-rate or empirical superiority claim is made. See the [verification certificate](../refinement/verification/Ashnod_the_Uncaring_Verification_2026-10-13.md), [candidate decisions](../refinement/decisions/Ashnod_the_Uncaring_Candidate_Decisions_2026-10-13.csv), and [candidate summary](../refinement/decisions/Ashnod_the_Uncaring_Candidate_Summary_2026-10-13.md).
+## Be'lakor, the Dark Master — new-cycle closeout
+
+- Revised deck #7 is separate from the immutable October 12 baseline: [refined TXT list](../refinement/decklists/Be_lakor_the_Dark_Master_Refined_2026-10-13.txt) and [CSV list](../refinement/decklists/Be_lakor_the_Dark_Master_Refined_2026-10-13.csv). Both represent 100 card copies / 94 distinct names and 36 lands; only basic lands repeat.
+- **Added:** Demonic Covenant and Ardyn, the Usurper. **Cut:** Reaper from the Abyss and Archfiend of Depravity. The four actual change rows are recorded in the [cumulative change ledger](../refinement/Deck_Change_Ledger_2026-10-13.csv).
+- Demonic Covenant is a Kindred Enchantment — Demon, so it counts for Be'lakor's ETB draw count; its own entry has no power and deals 0 through Be'lakor's power-based damage trigger. Its 5/5 flying Demon tokens can deal 5 damage each through Be'lakor. Ardyn is not itself a Demon, but grants Demons menace, lifelink and haste and creates a 5/5 Demon token copy from a graveyard each combat when a target is available.
+- Candidate review records 16 options: two accepted, two existing core candidates retained, and twelve rejected with reasons. Current project-wide Scryfall refresh plus direct checks for both changes and cuts support identity, Oracle and legality verification. Official Commander ban list checked 2026-10-13; October 12 Wizards changes affected Competitive Brawl only.
+- Status: **APPROVED / LOCKED — ALL TECHNICAL GATES PASSED** at revised-list SHA-256 `f48359f816498b386b085db60f0456576c8af9b055408685df71f0d1db448545`. No qualified matched-start multiplayer test was available, so no win-rate or empirical superiority claim is made. See the [verification certificate](../refinement/verification/Be_lakor_the_Dark_Master_Verification_2026-10-13.md), [candidate decisions](../refinement/decisions/Be_lakor_the_Dark_Master_Candidate_Decisions_2026-10-13.csv), and [candidate summary](../refinement/decisions/Be_lakor_the_Dark_Master_Candidate_Summary_2026-10-13.md).
 ## Tracker truth
 
 - All 62 decks: baseline structural and refreshed exact-printing/Oracle/identity/legality metadata checks pass, with authorized exceptions separated.
@@ -116,12 +123,13 @@ See [Abaddon expanded interaction review](https://github.com/corymstover/grixis-
 - Deck #4, Anhelo, the Painter: APPROVED / LOCKED — ALL TECHNICAL GATES PASSED. SHA-256: 7fd898ffc4c3aad208cfd33361912bfefcff4754ec662b532ec5d0a5fcefbd4a.
 - Deck #5, Ashad, the Lone Cyberman: APPROVED / LOCKED — ALL TECHNICAL GATES PASSED. SHA-256: `a0142c7859626b5592d4ac6ef4711232f3fc765c7e02e1ae0963aecfe16a99e6`.
 - Deck #6, Ashnod the Uncaring: APPROVED / LOCKED — ALL TECHNICAL GATES PASSED. SHA-256: `35f55432f14f70bc3eb70412ea8cad7520363740e240531ff7122d2d8980dcc6`.
-- Current-cycle totals: 6/62 approved and locked; 56/62 remain unapproved and unlocked. Historical approvals remain provenance only.
-- Next deck: #7 Be'lakor, the Dark Master. Proceed in authoritative tracker order; do not reopen completed decks absent an explicit request or documented material trigger.
+- Deck #7, Be'lakor, the Dark Master: APPROVED / LOCKED — ALL TECHNICAL GATES PASSED. SHA-256: `f48359f816498b386b085db60f0456576c8af9b055408685df71f0d1db448545`.
+- Current-cycle totals: 7/62 approved and locked; 55/62 remain unapproved and unlocked. Historical approvals remain provenance only.
+- Next deck: #8 Bjorna, Nightfall Alchemist // Cecily, Haunted Mage. Proceed in authoritative tracker order; do not reopen completed decks absent an explicit request or documented material trigger.
 
 ## Efficient next sequence
 
-1. Start deck #7, Be'lakor, the Dark Master, using the frozen October 12 baseline exports and the same technical verification gates.
+1. Start deck #8, Bjorna, Nightfall Alchemist // Cecily, Haunted Mage, using the frozen October 12 baseline exports and the same technical verification gates.
 2. Reassess its full list commander-first; do not force any prior deck's package onto it.
 3. Record all actual additions/cuts, rejected candidates, trade-offs, verification evidence, and the exact revision hash in the active-cycle ledgers.
 4. Auto-approve and lock only after every mandatory technical gate passes. Never reopen Abaddon unless explicitly requested or a documented material trigger justifies it.
