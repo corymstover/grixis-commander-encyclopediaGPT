@@ -1,8 +1,8 @@
 # Abaddon the Despoiler — Current Card-by-Card Audit
 
-**Audit refreshed by automated closeout run (UTC):** 2026-10-13T06:44:29.581734Z
+**Audit refreshed by automated closeout run (UTC):** 2026-10-13T06:50:59.642396Z
 **Scryfall default_cards bulk updated (UTC):** 2026-10-12T21:06:24.577+00:00
-**Scryfall overlay generated (UTC):** 2026-10-13T06:44:29.581734+00:00
+**Scryfall overlay generated (UTC):** 2026-10-13T06:50:59.642396+00:00
 **Authority:** frozen 2026-10-12 FINAL CSV/TXT pair
 **Source package SHA-256:** `47892245c2cefcf528c38fa9d9e56653d6e71a0fc73fd5ea5eecdd90e2032746`
 **Abaddon TXT SHA-256:** `2d6203d274c25e67fb93acf5e6784dce4ee1e8999844a6ab032d9b15995acfbf`
@@ -49,7 +49,7 @@
 
 ## Commander legality
 
-The fresh Scryfall `default_cards` refresh summary generated at `2026-10-13T06:44:29.581734+00:00` reports `bulk_updated_at=2026-10-12T21:06:24.577+00:00`, 5,964/5,964 exact global print/name matches, zero missing/ambiguous/name-variant rows, zero blank Oracle text/Oracle IDs, zero color-identity mismatches, zero unresolved printing/exception rows, and zero unexpected official-illegal rows. The Abaddon-specific audit gate passed: all 94 distinct names are exact-matched; all 94 have Oracle IDs and nonblank Oracle text; all 94 color identities fit UBR; all 94 are marked Commander-legal; no Abaddon project exceptions apply. The official Commander banned list was checked on October 13, 2026; no card in this frozen Abaddon list is named on it. The October 12, 2026 Wizards Banned & Restricted announcement changed Competitive Brawl, not tabletop Commander.
+The fresh Scryfall `default_cards` refresh summary generated at `2026-10-13T06:50:59.642396+00:00` reports `bulk_updated_at=2026-10-12T21:06:24.577+00:00`, 5,964/5,964 exact global print/name matches, zero missing/ambiguous/name-variant rows, zero blank Oracle text/Oracle IDs, zero color-identity mismatches, zero unresolved printing/exception rows, and zero unexpected official-illegal rows. The Abaddon-specific audit gate passed: all 94 distinct names are exact-matched; all 94 have Oracle IDs and nonblank Oracle text; all 94 color identities fit UBR; all 94 are marked Commander-legal; no Abaddon project exceptions apply. The official Commander banned list was checked on October 13, 2026; no card in this frozen Abaddon list is named on it. The October 12, 2026 Wizards Banned & Restricted announcement changed Competitive Brawl, not tabletop Commander.
 
 ## Corrected cascade-hit analysis
 
