@@ -1,17 +1,10 @@
 name: Run Abaddon Same-Seed Exploratory Forge Pilot
 
 on:
+  # The registered Aurora-vs-Mind's Desire pilot is closed INCONCLUSIVE.
+  # Do not rerun expensive Forge-AI trials on ordinary code/test changes.
+  # Manual dispatch is reserved for a materially new, independently qualified test design.
   workflow_dispatch:
-  push:
-    branches: ["refinement/**"]
-    paths:
-      - ".github/workflows/run-abaddon-same-seed-pilot.yml"
-      - "scripts/run_abaddon_same_seed_pilot.py"
-      - "scripts/analyze_abaddon_paired_pilot.py"
-      - "scripts/prepare_abaddon_forge_smoke_decks.py"
-      - "scripts/verify_abaddon_variant.py"
-      - "refinement/variants/Abaddon_Aurora_Phoenix_Test_Variant_v1.txt"
-      - "tests/**"
 
 permissions:
   contents: read
