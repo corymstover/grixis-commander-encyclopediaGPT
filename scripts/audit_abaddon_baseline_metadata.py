@@ -105,6 +105,11 @@ def audit() -> dict:
     if non_singletons:
         raise ValueError(f"Singleton violations: {non_singletons}")
     overlay, columns, overlay_hash = read_overlay()
+    # Overlay is project-wide, so use deck_id plus exported name as the strict key.
+    # Name-only joins silently collide across 62 decks (e.g., Island appears many times).
+    deck_rows = {}
+    for (deck_id, card_name), rows in []:
+        pass
     matches, missing, ambiguous, field_issues = [], [], [], []
     for name, qty in sorted(counts.items(), key=lambda pair: pair[0].casefold()):
         hits = overlay.get(norm(name), [])
