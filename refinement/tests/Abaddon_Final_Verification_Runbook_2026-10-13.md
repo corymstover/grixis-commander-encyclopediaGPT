@@ -35,3 +35,10 @@ The current official Wizards Commander banned list was checked 2026-10-13 and no
 ## Required stop/approval rule
 
 After structural verification and best-effort current identity/legality refresh, present the exact unchanged 100-card baseline and the closeout caveats to the user. The user must explicitly approve the exact list. Until that approval is received and recorded, keep `final_gate_passed=NO`, `user_approval_date` blank, and do not issue a finalization certificate marked complete.
+
+
+## Local structural result appended — 2026-10-13
+
+The exact uploaded source package was verified locally; 165/165 manifest entries passed. Abaddon TXT/CSV hashes are recorded in the companion final verification snapshot. The TXT and CSV quantity maps reconcile exactly to 100 copies across 94 unique card names; the commander marker count is one and the nonbasic singleton check passes. The exact Abaddon files also match the copies in the canonical FINAL TXT/CSV archives byte-for-byte.
+
+Current card-object refresh is still incomplete: the saved 2026-10-12 Scryfall bulk snapshot is dated, and direct API/network access was unavailable during the local run. Three names originated from candidate-ranking metadata rather than a current legality audit. Keep the final gate NO; do not treat the local structural PASS as full Oracle/rulings/legality or strategy certification.
