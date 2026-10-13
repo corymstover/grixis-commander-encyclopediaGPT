@@ -70,6 +70,14 @@ The same-seed pilot workflow was changed to manual dispatch only to prevent expe
 
 See [Abaddon expanded interaction review](https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/rules/Abaddon_the_Despoiler_Interaction_Review_2026-10-13.md), [candidate ledger](https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/decisions/Abaddon_the_Despoiler_Candidate_Decisions_2026-10-12.csv), [Forge smoke-test report](https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/tests/Abaddon_Forge_Smoke_Test_Result_2026-10-13.md), and [baseline consistency report](https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/tests/Abaddon_Baseline_Consistency_Report_2026-10-13.md).
 
+## Admiral Beckett Brass — new-cycle closeout
+
+- Revised deck #2 is stored separately from the immutable baseline at [the refined decklist](../refinement/decklists/Admiral_Beckett_Brass_Refined_2026-10-13.txt), with exact CSV/TXT reconciliation, 100 total cards, 97 distinct card names and 35 lands.
+- **Added:** The Indomitable; Zephyr Singer. **Cut:** Bident of Thassa; Daring Saboteur. All four actual card changes are in the [cumulative change ledger](../refinement/Deck_Change_Ledger_2026-10-13.csv).
+- The candidate ledger records 14 distinct candidates (2 accepted, 12 rejected). Admiral’s Order was rejected because its Raid discount does not provide Counterspell’s reliable two-mana cost on opponents’ turns.
+- Relevant rules reviewed: the commander’s three-Pirate/same-opponent end-step theft condition, The Indomitable’s graveyard-casting permission, and Zephyr Singer’s convoke/flying-counter limitation. Draw-density metrics are descriptive, not gameplay or win-rate evidence.
+- Current technical gates pass. Status is **APPROVED / LOCKED** for normalized SHA-256 `40df97c47d37b4ae9d7f5c22623ab490c96c5dee9ab5be689a74ced25bb3be96`. See the [verification certificate](../refinement/verification/Admiral_Beckett_Brass_Verification_2026-10-13.md) and [candidate decision summary](../refinement/decisions/Admiral_Beckett_Brass_Candidate_Summary_2026-10-13.md).
+
 ## Tracker truth
 
 - All 62 decks: baseline structural and refreshed exact-printing/Oracle/identity/legality metadata checks pass, with authorized exceptions separated.
@@ -87,13 +95,15 @@ See [Abaddon expanded interaction review](https://github.com/corymstover/grixis-
 
 ## Latest Abaddon independent static metadata audit — 2026-10-13 UTC
 
+> **Historical provenance note:** the initial audit checklist below records gates that were open when it was written. Those unchecked items are superseded by the later new-cycle closeout in “Abaddon new-cycle closeout — complete” above and its linked final verification certificate.
+
 The audit is implemented in `scripts/audit_abaddon_baseline_metadata.py`, with helper tests and workflow `.github/workflows/verify-abaddon-baseline-audit.yml`. The latest successful CI run is [38345446231](https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/38345446231), and its machine-readable output is [artifact 11787549914](https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/38345446231/artifacts/11787549914).
 
 **Observed output:** 100 total cards including commander; 94 unique card names; one Abaddon commander marker/copy; zero nonbasic singleton violations; all 94 unique names join exactly once to the deck-scoped row in the 2026-10-12 Scryfall overlay; zero missing/ambiguous rows; zero required metadata-field issues; all recorded printing status values are exact; all metadata color-identity checks pass. This is a dated metadata/static membership pass, not a fresh official ban-list check at approval time and not an exhaustive interaction/strategic optimality certification.
 
 The audit code uses the overlay's actual schema and scopes every join by both deck ID and exported card name. Earlier failed runs exposed two defects (wrong card-name column assumptions, then project-wide name-only joins that collided across decks). Those runs were kept as CI history; they are superseded by the current deck-scoped passing run. Keep the failed history rather than pretending the first implementation was correct.
 
-### Current Abaddon audit checklist
+### Historical pre-closeout checklist (superseded by final certificate)
 
 - [x] Frozen compact archive hash verified.
 - [x] Baseline TXT hash verified.
