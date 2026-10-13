@@ -63,9 +63,9 @@ class AbaddonForgeSmokeDeckTests(unittest.TestCase):
             self.assertEqual(len(baseline_main), len(variant_main))
             manifest = json.loads((outdir / "smoke-deck-manifest.json").read_text(encoding="utf-8"))
             self.assertEqual(manifest["comparison"]["added"], {"Aurora Phoenix": 1})
-            self.assertTrue(manifest["paired_input_order"]["all_other_slots_aligned"])
+            self.assertTrue(manifest["decklist_text_order_check"]["deck_text_lines_differ_only_at_registered_slot"])
             self.assertEqual(
-                manifest["paired_input_order"]["differences"],
+                manifest["decklist_text_order_check"]["differences"],
                 [{"slot": 0, "baseline": "Mind's Desire", "variant": "Aurora Phoenix"}],
             )
 
