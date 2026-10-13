@@ -27,7 +27,7 @@ All **61** cards that were not explicitly named in the existing interaction revi
 4. **Thermo-Alchemist — CHECKED:** its damage can raise the threshold only before the spell whose cascade eligibility depends on that damage is cast.
 5. **Breach resource tension — WORKED SEQUENCE RECORDED:** the Breach/LED/Brain Freeze line is rules-coherent from its documented starting state and fuel assumptions, not an unconditional infinite. Cabal Ritual and Chrome Mox constraints are role-triaged.
 6. **Channel/land-type effects — ROLE-TRIAGED:** Otawara, Takenuma, Urborg, fetchlands and Xander's Lounge have relevant functional notes; reopen only for a concrete contradiction.
-7. **Blasphemous Act — NEXT BOUNDED CHECK:** verify creature-only damage and the trade-off of destroying this deck's own creature engines.
+7. **Blasphemous Act — CHECKED:** creature-only damage, own-engine loss, mana-value-9/cost reduction, and Abaddon cascade timing are documented in [Step 5 note](Abaddon_Step_5_Blasphemous_Act_Interaction_Check_2026-10-13.md).
 8. **Harnfel face and Bituminous Blast — CHECKED:** see [Abaddon Step 4 Context Check](Abaddon_Step_4_Context_Check_2026-10-13.md).
 
 These dispositions record bounded checks, not the final 94-name live Oracle/identity certificate.
@@ -35,3 +35,8 @@ These dispositions record bounded checks, not the final 94-name live Oracle/iden
 ## Stop rule
 
 No new candidate search, no rerun of the inconclusive Aurora Phoenix vs Mind's Desire Forge comparison, and no decklist changes. Only material interaction claims from this list move to detailed Step 3 verification.
+
+
+## Step 5 result
+
+Blasphemous Act's deck-specific context check is complete. No swap was justified by rules review alone. The next bounded gate is a fresh exact-list Oracle text and color-identity refresh for the frozen 94-name Abaddon list, keeping legality and final approval as separate checks.
