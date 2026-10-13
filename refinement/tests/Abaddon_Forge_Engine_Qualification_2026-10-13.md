@@ -53,3 +53,14 @@ A card-script directory scan or a large claimed coverage percentage is not enoug
 ## Project control
 
 The frozen baseline remains authoritative and untouched. The Aurora Phoenix variant is a test-only artifact and remains unapproved. There is no reason to advance to another deck until Abaddon's rules review, testing-method decision, candidate ledger, independent final verification, and explicit approval gates are resolved.
+
+
+## 6. Automated pinned-release source audit — 2026-10-13
+
+The 94 distinct card names in the isolated variant were extracted from the version-controlled test list. Six core card scripts were independently fetched at the pinned Forge commit listed above; a batch attempt to fetch the entire set did **not** complete because the GitHub connector imposed a tool-call limit. Therefore full release-specific script coverage remains **unverified**. Do not describe the card inventory as passed or fully audited.
+
+This is an execution constraint, not evidence that the cards are unsupported. The next effective step is to run a repository checkout and a local path/name scanner in an environment able to fetch or clone the pinned Forge source (or query the pinned Git tree) without one remote tool call per card. The scanner must handle split/modal card names and confirm each card is mapped to a nonempty script, then produce a machine-readable coverage report with missing/ambiguous entries for manual review.
+
+The remote docs establish that Forge supports CLI AI games in Commander mode but specifically say AI is "pretty bad for most combo decks"; that supports only an exploratory-AI warning, not the proposed controlled paired-start comparison. The documented CLI examples show repeat counts but do not establish matched library orders, deterministic seeds, or a structured event-log API. Those controls remain unproven and are independent gates even if card support passes. [Official Forge AI/CLI documentation](https://github.com/Card-Forge/forge/blob/master/docs/AI.md)
+
+**Current qualification conclusion:** release pinned and key source scripts inspected; 94-card coverage scan incomplete; executable/list import/runtime interactions not tested; controlled paired-run support not established; no gameplay results. Forge remains not qualified.
