@@ -32,6 +32,10 @@ The 124 current decklist CSV/TXT files are verified inside the compact archive. 
 
 **Current state:** NEW CYCLE ACTIVE. All 62 decks are UNAPPROVED / UNLOCKED. Start with deck #1, Abaddon the Despoiler, and proceed in authoritative tracker order. Previous-cycle lock/approval flags are superseded, not deleted from historical records. Baseline source exports remain immutable. Each deck is eligible for full-list optimization; apply zero or any defensible number of changes. A revised list is auto-approved and locked only when all required technical checks pass and the verification certificate, change ledger, and new list hash are recorded. Do not require user approval as an extra gate.
 
+## Controlled refinement campaign — RESET 2026-10-13
+
+**Current state:** NEW CYCLE ACTIVE. All 62 decks are UNAPPROVED / UNLOCKED. Start with deck #1, Abaddon the Despoiler, and proceed in authoritative tracker order. Previous-cycle lock/approval flags are superseded, not deleted from historical records. Baseline source exports remain immutable. Each deck is eligible for full-list optimization; apply zero or any defensible number of changes. A revised list is auto-approved and locked only when all required technical checks pass and the verification certificate, change ledger, and new list hash are recorded. Do not require user approval as an extra gate.
+
 
 
 The frozen baseline is preserved on `baseline/freeze-2026-10-12`. The active, separate work branch is `refinement/campaign-2026-10-12`; no baseline decklist has been changed. All previous approvals are reset for the active cycle.
