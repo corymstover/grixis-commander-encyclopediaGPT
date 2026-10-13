@@ -260,3 +260,10 @@ This policy is a decision-authority update, not a waiver of card correctness, le
 ## New refinement cycle reset — 2026-10-13
 
 At cycle launch, all 62 decks were unapproved and unlocked. Current per-deck approval/lock state follows the active tracker: #1 Abaddon the Despoiler is now approved/locked after passing the new-cycle technical gates; 61 decks remain unapproved/unlocked. The cycle began at #1 and proceeds in authoritative tracker order. Each deck receives a full-list, commander-first reassessment; zero changes or any defensible number of changes is acceptable. Frozen source exports and historical records remain immutable. A deck is automatically approved and locked only after all mandatory technical verification gates pass and the new list, decision ledger, certificate, and hash are recorded. Explicit user approval is not an additional gate. Any failed or incomplete mandatory gate leaves that individual deck unlocked.
+
+
+## Full campaign restart — 2026-10-13 (latest instruction)
+
+The user has requested a fresh review beginning at Deck #1 to ensure each deck receives the attention required by the full-strength, commander-first process. Effective immediately, all prior-cycle approval/lock statuses are historical and no longer current. All 62 tracker rows are reset to **UNAPPROVED / UNLOCKED — FULL RE-REVIEW REQUIRED**; active final gate and final hash fields are cleared pending the new review. The frozen 2026-10-12 source baselines and historical verification certificates remain preserved and must not be overwritten.
+
+**Active deck: #1 — Abaddon the Despoiler.** Reassess the complete decklist from its preserved baseline, use prior work as historical evidence rather than a substitute for current review, reevaluate candidates and cuts under the full-strength standard, complete all current mandatory verification, regenerate the final list/hash/certificate/ledger, and cross-check the updated tracker. Do not start substantive review of Deck #2 until Deck #1 is fully dispositioned. Continue in authoritative tracker order, one deck at a time, auto-approving/locking only after every mandatory gate passes.
