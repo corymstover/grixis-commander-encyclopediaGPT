@@ -1,0 +1,195 @@
+# Abaddon Forge Qualification — Current Evidence and Decision
+
+**Snapshot date:** 2026-10-13  
+**Candidate version pin:** Forge `forge-2.0.15`, resolved commit `4ec5f1a2c32fa90ecb983a72b9eb47aa5c5d7676`  
+**Current decision:** smoke checks for source presence and Commander-mode deck loading **PASS**; **NOT QUALIFIED** for rules-correctness testing or comparative gameplay.  
+**Valid comparative gameplay runs:** 0. Smoke games validate basic launch/import only; no valid card-choice comparison has been completed.  
+**Approved card changes:** 0
+
+> **Current-status note (2026-10-13):** Sections 1–9 below preserve the investigation chronology and include historical statuses that were accurate before the latest CI run. The authoritative current outcome is in [Section 10](#10-latest-qualified-scope-after-the-commander-mode-smoke-test) and the [smoke-test result record](Abaddon_Forge_Smoke_Test_Result_2026-10-13.md). Do not interpret the earlier pending-source-scan or no-deck-load statements as current.
+
+## Current verified state
+
+The exact Aurora Phoenix test variant has 100 cards including the commander, 94 distinct card names, and only one difference from the frozen baseline: Aurora Phoenix IN / Mind's Desire OUT. Its raw SHA-256 is `1ad0c11d1f6a28a54f89c378428af491c6ff9929f42813692c375fb60771503b`. The baseline TXT SHA-256 is `2d6203d274c25e67fb93acf5e6784dce4ee1e8999844a6ab032d9b15995acfbf`.
+
+Forge release `forge-2.0.15` was published on 2026-09-28. Its tag resolves to commit `4ec5f1a2c32fa90ecb983a72b9eb47aa5c5d7676`. The annotated tag is unsigned/unverified per GitHub metadata. Release: https://github.com/Card-Forge/forge/releases/tag/forge-2.0.15. The official Forge wiki describes Forge as an independent Magic rules engine supporting up to eight players and over 99% of cards, but that general statement does not establish support for this exact list or correctness of each relevant interaction. https://github.com/Card-Forge/forge/wiki/
+
+At that commit, a checked-out source-tree scan matched 95/95 distinct names (94 test-variant names plus baseline-only Mind's Desire) to exactly one standard card script with a nonempty Oracle field. This confirms source mapping, not rules correctness. The pin is forge-2.0.15 at commit 4ec5f1a2c32fa90ecb983a72b9eb47aa5c5d7676.
+
+## Qualification gates — current status
+
+| Gate | Evidence | Status |
+|---|---|---|
+| Pinned release/version | forge-2.0.15, source commit and installer SHA-256 fixed | PASS |
+| Source presence/name mapping for test variant plus baseline-only comparison card | 95/95 distinct names map to one pinned standard script with nonempty Oracle field; zero unmatched/ambiguous | PASS — presence only |
+| CLI executable starts | Pinned JAR starts in parse mode under OpenJDK 17 | PASS |
+| Exact 100-card baseline and test-only variant load in Commander mode | Both DCK files loaded in completed smoke game(s) | PASS — import/basic runtime only |
+| Abaddon-granted cascade observed | Smoke logs show cascade resolutions after opponents lost life that turn | PARTIAL — not complete edge-case validation |
+| Aurora Phoenix cast / graveyard-return behavior | No recorded runtime event has cast Aurora Phoenix or demonstrated its return trigger | NOT TESTED |
+| Full Underworld Breach + Lion's Eye Diamond + Brain Freeze route | No full line demonstrated in captured logs | NOT TESTED |
+| Same-command deterministic replay | Two identical commands with the same numeric seed produced identical normalized match-event lines | PASS — replay only |
+| Matched starting-library/opening hands for baseline vs variant | Forge normal deck normalization uses unordered ItemPool/ConcurrentHashMap iteration, so text-order alignment and equal seeds do not guarantee aligned starts | NOT AVAILABLE through current unmodified CLI |
+| Comparative gameplay evidence | No valid matched-start or adequately controlled card-choice experiment | NOT RUN |
+| Approved card changes | None; frozen baseline remains untouched | 0 |
+
+## Rules-derived expected events for later smoke tests
+
+These are requirements for evaluating a test engine, not claims about Forge runtime behavior.
+
+1. With Abaddon on the battlefield during its controller's turn, a spell cast from that player's hand qualifies for Abaddon's cascade grant only if its mana value is no greater than opponents' aggregate life lost that turn at the time the spell is cast.
+2. If Aurora Phoenix is in its owner's graveyard immediately after a spell with cascade is cast, its graveyard ability triggers once for that cast event. Cascade can come from Abaddon or a card's printed ability. If Aurora Phoenix itself is cast from hand and meets Abaddon's life-loss threshold, its printed cascade and Abaddon's grant are separate instances.
+3. Storm creates copies, not casts. Copies should not produce cast-trigger events. This distinction matters for Brain Freeze, Mind's Desire, and the deck's cast-from-exile payoffs.
+4. Underworld Breach gives escape to nonland cards in the graveyard, but the LED/Brain Freeze route needs an appropriate setup and sufficient graveyard fuel. Abaddon's hand-cast cascade grant does not apply to escape spells cast from the graveyard.
+
+The current manual interaction review remains the detailed card/rules source: https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/rules/Abaddon_the_Despoiler_Interaction_Review_2026-10-13.md
+
+## Recommended next action
+
+Use the pinned CLI for a bounded fixed-opponent instrumentation pilot only. Treat equal seed values as a reproducibility control, not a matched-start experiment. The normal deck loader does not preserve declared text order as a guaranteed initial-library order, so this release cannot support the registered paired-start comparison without a separately validated ordered-deck injection method or a properly qualified patched simulator.
+
+The immediate checks are to run the small same-seed pilot against the fixed Commander opponent, verify that the log parser reports actual events correctly, and test whether Aurora Phoenix ever casts/returns in observable games. Do not increase sample size merely to accumulate game counts. If the required event metrics or a defensible comparison design remain unavailable, mark Forge as exploratory-only and close the performance-test route as infeasible for this candidate; make the slot decision from Oracle/rules/commander-first strategic evidence and record the testing limitation.
+
+A card-script directory scan or a large claimed coverage percentage is not enough to certify interactions. Do not infer game performance from script presence. Do not use simplified random-draw models as a substitute for rules-resolved game play.
+
+## Project control
+
+The frozen baseline remains authoritative and untouched. The Aurora Phoenix variant is a test-only artifact and remains unapproved. There is no reason to advance to another deck until Abaddon's rules review, testing-method decision, candidate ledger, independent final verification, and explicit approval gates are resolved.
+
+
+## 6. Automated pinned-release source audit — 2026-10-13
+
+The 94 distinct card names in the isolated variant were extracted from the version-controlled test list. Six core card scripts were independently fetched at the pinned Forge commit listed above; a batch attempt to fetch the entire set did **not** complete because the GitHub connector imposed a tool-call limit. Therefore full release-specific script coverage remains **unverified**. Do not describe the card inventory as passed or fully audited.
+
+This is an execution constraint, not evidence that the cards are unsupported. The next effective step is to run a repository checkout and a local path/name scanner in an environment able to fetch or clone the pinned Forge source (or query the pinned Git tree) without one remote tool call per card. The scanner must handle split/modal card names and confirm each card is mapped to a nonempty script, then produce a machine-readable coverage report with missing/ambiguous entries for manual review.
+
+The remote docs establish that Forge supports CLI AI games in Commander mode but specifically say AI is "pretty bad for most combo decks"; that supports only an exploratory-AI warning, not the proposed controlled paired-start comparison. The documented CLI examples show repeat counts but do not establish matched library orders, deterministic seeds, or a structured event-log API. Those controls remain unproven and are independent gates even if card support passes. [Official Forge AI/CLI documentation](https://github.com/Card-Forge/forge/blob/master/docs/AI.md)
+
+**Current qualification conclusion:** release pinned and key source scripts inspected; 94-card coverage scan incomplete; executable/list import/runtime interactions not tested; controlled paired-run support not established; no gameplay results. Forge remains not qualified.
+
+### Partial card-identity audit detail
+
+A pinned script read was also confirmed for the six cards listed above; their declared script names and Oracle lines were present in the returned source. This does not establish coverage for the other 88 names. A second, bulk fetch attempt of 94 source paths was blocked by the connector's tool-call limit before a complete result could be collected. The report intentionally leaves the 94-card coverage gate as pending rather than presenting a partial scan as a pass.
+
+
+
+## 7. Runtime probe result — Forge starts, but no game was run
+
+GitHub Actions run [38333900815](https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/38333900815) completed successfully. Its log confirms:
+
+- Java runtime: OpenJDK 17.0.20.1 (Temurin).
+- The checksum-verified `forge-installer-2.0.15.tar.bz2` was extracted successfully.
+- The desktop JAR `forge-gui-desktop-2.0.15-jar-with-dependencies.jar` was found and invoked.
+- Forge printed `APP: Forge v.2.0.15-SNAPSHOT-09.28`, confirming the binary starts.
+- Invoking the JAR with `--help` returned exit code 0 but printed `Unknown mode. Known modes are 'sim', 'parse', 'server'`. This is a successful JVM/application startup probe, **not** a successful help-command probe.
+
+The run uploaded a short log artifact, `forge-2.0.15-runtime-probe` (artifact ID 11784126985; SHA-256 digest of the ZIP recorded by GitHub as `34550c1a1bb053957e1d09efad21465dac29139d29f1af8b003d588dd2be1c70`). The output artifact confirms startup only.
+
+### Updated status
+
+| Qualification gate | Status |
+|---|---|
+| Pinned archive SHA-256 and extraction | PASS |
+| Forge JAR JVM startup | PASS |
+| Valid command invocation/usable CLI arguments | Pending; `--help` is not a supported mode |
+| Full 94-card script coverage scan | Not run |
+| Exact deck import / Commander mode | Not run |
+| Required interaction smoke tests | Not run |
+| Fixed/paired starting orders and structured logs | Not demonstrated |
+| Gameplay runs | 0 |
+
+The runtime probe's workflow intentionally does not import the deck or play games. The engine remains **not qualified** for exploratory or confirmatory gameplay testing. The next probe must call a documented mode (`parse` or `sim`) with the correct syntax, establish how the release loads `.dck` input, and scan its extracted card script tree. Any subsequent gameplay should wait until the import and rules interactions are validated.
+
+
+## 8. Follow-up: pinned Forge CLI startup (2026-10-13)
+
+The revised workflow used Forge's documented `parse` mode without input instead of the unsupported `--help` argument. GitHub Actions run [38334035177](https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/38334035177) completed successfully, with the variant integrity verifier passing and the pinned release downloaded and extracted after its SHA-256 check. The JAR starts on OpenJDK 17.0.20.1 and reports `Forge v.2.0.15-SNAPSHOT-09.28`. The `parse` invocation returned exit code 0 without the earlier `Unknown mode` message.
+
+This confirms the pinned desktop distribution can start and accept a recognized mode in a GitHub Actions runner. It does **not** yet demonstrate deck parsing because no deck input was provided, nor does it validate Commander setup or rules interactions.
+
+- Runtime startup: **PASS**
+- Correct CLI mode accepted: **PASS**
+- Exact deck parsed/imported: **NOT TESTED**
+- 94-card script audit: **NOT TESTED**
+- Runtime rules smoke tests: **NOT TESTED**
+- Paired starts / structured event logs: **NOT DEMONSTRATED**
+- Gameplay tests: **0**
+
+The next step is to use Forge's parse command with a minimal, known-valid input and inspect the documented expected output, then test the exact deck importer format. Do not submit actual baseline-vs-variant games until list loading and interaction smoke tests are validated. Forge is still **not qualified** for either exploratory gameplay or confirmatory paired testing.
+
+
+## 9. Automated card-script presence scan — 2026-10-13
+
+The new coverage scan ran in GitHub Actions [run 38334295959](https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/38334295959), at Forge release commit `4ec5f1a2c32fa90ecb983a72b9eb47aa5c5d7676`. The workflow passed its release archive SHA-256 check, extraction, and JAR startup; the script scanner found the `res/cardsfolder` tree and read the deck variant as **94 distinct names**.
+
+**Initial scan result: 0 matches / 94 missing / 0 ambiguous.** This does *not* mean all cards are unsupported. The scanner compared each deck name to the script `Name:` field using overly strict normalized full-name matching; Forge’s card scripts commonly use front-face canonical names and filenames, so double-faced cards and name conventions may differ. This result is a scanner false-negative risk, not evidence of actual missing support.
+
+The scan did successfully exercise a key workflow capability: the release tree and all card-script text are available locally inside CI, so the coverage audit can now be corrected and rerun without 94 remote fetch calls. The raw JSON and startup logs are preserved in artifact `forge-2.0.15-runtime-probe`, ID `11783883372`, SHA-256 `0a289c0bb076a9c6cc7059c971e20f69a9d8f682f57917c3bf46e305bece805c`.
+
+### Coverage-audit follow-up
+
+1. Inspect the script text and naming pattern for a sample of ordinary names, split/modal cards, and the deck's double-faced Birgi // Harnfel card.
+2. Adjust the scanner to compare both Forge `Name:` aliases and actual script file stems, using the front-face name as an explicit DFC candidate while preserving full original names in the report.
+3. Add unit checks for known positive mappings (e.g. Abaddon, Aurora Phoenix, Mind's Desire, Underworld Breach, Brain Freeze, Lion's Eye Diamond) so a zero-match regression fails the audit instead of silently reporting 94 missing.
+4. Rerun. Manually resolve every missing/ambiguous row. A script-presence match still does not demonstrate runtime rules correctness.
+
+Current qualification remains **NOT QUALIFIED**. The deck has not been imported; no card-specific interaction smoke tests or gameplay have run; paired starts and structured event logs remain unproven.
+
+
+## 10. Latest qualified scope after the Commander-mode smoke test
+
+The latest workflow [run 38338464845](https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/38338464845) supersedes the earlier statements in this report that the full card-script audit and exact deck-load test were still pending.
+
+- The pinned card-script scan matched **95/95** names: 94 unique names in the isolated variant plus Mind's Desire as the baseline-only comparison card; zero missing/invalid rows; all required controls passed.
+- The frozen baseline archive/hash was verified, and the exact baseline and isolated test variant were converted to Forge Commander `.dck` inputs. Both lists retained exactly 100 cards; only Mind's Desire was replaced with Aurora Phoenix.
+- The Forge 2.0.15 CLI launched the Commander simulation using both deck files. That is a successful deck-load/runtime smoke test.
+- The game was forcibly stopped as a draw under its 10-second per-game clock. The log also contained contradictory winner lines and repeated Steam Vents activator warnings. Therefore the output is **not a valid gameplay result**, and no comparison or card decision may be inferred from it.
+- Deterministic/paired starting orders, structured event logging, and runtime validation of Abaddon's cascade grant, Aurora's graveyard trigger, storm/copy behavior, and the Breach line remain unproven.
+
+See [Abaddon Forge Smoke-Test Result](Abaddon_Forge_Smoke_Test_Result_2026-10-13.md) for the full evidence and exact gate status. The overall decision remains **NOT QUALIFIED for comparative gameplay testing**; the Aurora Phoenix proposal remains separate from the baseline and unapproved. The registered baseline-versus-variant performance test remains **NOT RUN**.
+
+
+## 10. Latest runtime and source-coverage evidence — 2026-10-13
+
+This section supersedes earlier status statements that the source scan, CLI launch, and deck import had not been tested. Historical attempts above are retained as audit history.
+
+### Passed gates
+
+- **Pinned executable:** Forge forge-2.0.15; installer SHA-256 verified by the workflow, and the runtime reports Forge v.2.0.15-SNAPSHOT-09.28 on OpenJDK 17.0.20.1.
+- **Exact source revision:** 4ec5f1a2c32fa90ecb983a72b9eb47aa5c5d7676 was checked out and verified.
+- **Card-script source coverage:** GitHub Actions [run 38338154797](https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/38338154797) scanned 33,405 standard card-script files. The 94 unique names in the Aurora variant plus baseline-only Mind's Desire produced 95/95 unique-name matches to a nonempty Oracle field, with zero missing, ambiguous, or empty-Oracle matches. This checks card-script presence/name mapping only; it does not verify the implementation of each card's rules.
+- **Baseline-preserving smoke fixture:** GitHub Actions [run 38338464845](https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/38338464845) verified the archived baseline TXT SHA-256, both 100-card lists, and the exact one-card difference. The fixture places Aurora Phoenix in Mind's Desire's text-file slot, but source review of Forge's normal Deck/CardPool importer found that text order is not guaranteed to be the runtime library order. Equal seeds therefore do not establish matched starting libraries. Neither frozen nor approved deck membership changed.
+- **Actual Commander-mode smoke game:** Forge loaded both DCK files and played a complete head-to-head game. In that smoke match, the log showed cascade resolutions on spells cast by the Abaddon deck after opponents had lost life that turn, and an Imperial Seal cast via Underworld Breach escape. This is useful runtime evidence for basic card-engine operation. It is not a controlled validation of the complete combo line or a performance result.
+- **Forge RNG seed support:** In the pinned source, forge-gui-desktop/src/main/java/forge/view/SimulateMatch.java parses the -s seed option and calls MyRandom.setRandom(new Random(seed)). The source CLI therefore has an explicit RNG seed option. See [pinned Forge source](https://github.com/Card-Forge/forge/blob/4ec5f1a2c32fa90ecb983a72b9eb47aa5c5d7676/forge-gui-desktop/src/main/java/forge/view/SimulateMatch.java).
+
+### Still open
+
+- **Aurora-specific interaction:** The smoke games did not cast Aurora Phoenix, so no runtime observation established its cascade/recursion behavior. The Aurora Phoenix vs Mind's Desire hypothesis remains untested.
+- **Full combo:** The smoke games did not demonstrate the entire Underworld Breach + Lion's Eye Diamond + Brain Freeze route.
+- **Replay repeatability vs matched starts:** Replaying the same exact command with seed 20261013 produced identical normalized match-event lines. This establishes repeatability of that command/fixture only; it does not establish matched baseline-versus-variant opening hands or library order. The current unmodified Forge CLI cannot be treated as a paired-start benchmark. The corrected replay run is [38338912312](https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/38338912312).
+- **AI validity:** Forge's own [AI documentation](https://github.com/Card-Forge/forge/blob/4ec5f1a2c32fa90ecb983a72b9eb47aa5c5d7676/docs/AI.md) warns that its AI is poor at most combo decks. Therefore a Forge AI win rate is conditional on Forge's heuristic choices and must not be presented as real-world Commander win rate.
+- **Confirmatory comparison:** Not run. No 25-game pilot or 200-pair confirmatory comparison has been counted as complete. No candidate swap is approved.
+
+### Updated decision
+
+Forge is useful for **exploratory engine smoke tests and event-log inspection**, but it remains **unqualified for deciding the Aurora Phoenix slot**. A fixed-opponent CLI pilot can assess whether relevant events are observable; absent a validated ordered-library control, runs with the same numeric seed are explicitly unpaired. No win-rate or matched-difference inference may be drawn from them. A one-game variant-versus-baseline duel is never comparative evidence.
+
+The frozen baseline stays authoritative and untouched. The Aurora Phoenix list stays a test-only artifact.
+
+## 11. Final qualification ruling after the registered same-seed pilot — 2026-10-13
+
+### Qualified use
+
+Forge 2.0.15 can be used for:
+- pinned-source card-script/name and nonempty Oracle-field checks;
+- verified conversion of the frozen baseline and a separate variant to 100-card Commander DCK inputs;
+- Commander-mode CLI launch and basic interaction smoke logs;
+- limited event observability when the AI happens to execute the event;
+- replay checks for the exact same command and seed.
+
+### Not qualified for
+
+Forge is **not qualified to rank or choose between Aurora Phoenix and Mind's Desire**. The registered fixed-opponent pilot [run 38341150840](https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/38341150840) ran three baseline and three variant games, but neither Mind's Desire nor Aurora Phoenix was cast; neither candidate's key value engine was measured. The same numeric seed/seat order do not guarantee matched libraries because the pinned importer does not preserve text-file order. The supplementary Obeka smoke run observed Aurora's printed cascade once but not its graveyard-return resolution. These runs cannot establish comparative consistency, win rate, or strategic superiority.
+
+**Testing decision:** close this engine pathway for this candidate as inconclusive and do not increase sample size under the same setup. Retain the separate variant artifact and untouched baseline. Reopen only if a materially different, validated test method becomes available or relevant high-quality real-game evidence demonstrates an actual deficiency.
+
+**Scope caution:** this test-infrastructure closure is not equivalent to deck finalization. Abaddon's deck-wide interaction audit, current candidate decision screen, exact final 100-card review, and user-approval gate remain separate requirements. Do not mark Abaddon final or modify the list solely on the strength of these smoke runs.

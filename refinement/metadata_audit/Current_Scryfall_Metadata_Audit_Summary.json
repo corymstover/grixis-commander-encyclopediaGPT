@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-13T06:50:59.642396+00:00",
+  "generated_at_utc": "2026-10-13T07:03:26.694525+00:00",
   "bulk_type": "default_cards",
   "bulk_updated_at": "2026-10-12T21:06:24.577+00:00",
   "deck_count": 62,
@@ -58,6 +58,7 @@
       "project_exception_status": "REGISTERED PROJECT EXCEPTION — future-release commander; official status retained separately"
     }
   ],
+  "unknown_commander_legality_rows": [],
   "known_project_banned_exception_rows": [
     {
       "deck_id": "Cecily__Bjorna__Lutri",

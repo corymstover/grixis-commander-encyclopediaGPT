@@ -1,0 +1,51 @@
+{
+  "generated_at_utc": "2026-10-13T06:20:27Z",
+  "scryfall_bulk_type": "default_cards",
+  "scryfall_bulk_updated_at": "2026-10-12T21:06:24.577+00:00",
+  "scryfall_overlay_generated_at_utc": "2026-10-13T04:36:45.235158+00:00",
+  "source_overlay_rows": 5964,
+  "deck_id": "Abaddon_the_Despoiler",
+  "frozen_txt_sha256": "2d6203d274c25e67fb93acf5e6784dce4ee1e8999844a6ab032d9b15995acfbf",
+  "frozen_csv_sha256": "fbeb7f75302b9ebedaf67aa58171de05764b6e6f97570be5657f0cbe8df37478",
+  "source_package_sha256": "47892245c2cefcf528c38fa9d9e56653d6e71a0fc73fd5ea5eecdd90e2032746",
+  "distinct_card_names": 94,
+  "total_copies": 100,
+  "exact_printing_name_matches": 94,
+  "scryfall_ids_present": 94,
+  "oracle_ids_present": 94,
+  "nonblank_oracle_text": 94,
+  "color_identity_pass": 94,
+  "commander_legal_rows": 94,
+  "commander_identity": "UBR",
+  "registered_project_exception_rows": 0,
+  "priority_cards": [
+    {
+      "name": "Bituminous Blast",
+      "printing": "J25 742",
+      "oracle_id": "d291d8f7-bb67-470c-8794-cd553c91e5cc",
+      "color_identity": "B,R",
+      "commander_legality": "legal",
+      "oracle_text_sha256": "20543d61d5b775672cb30066047f1b6a10bf0e1ced5047744e113ec7513a0c3f"
+    },
+    {
+      "name": "Boltwave",
+      "printing": "FDN 79",
+      "oracle_id": "bb8cccc8-e56f-42fa-a0d7-fc889b5e1c7b",
+      "color_identity": "R",
+      "commander_legality": "legal",
+      "oracle_text_sha256": "be953e7e16fa9fc3dc800a37e3ecfb4ab2dc83a4c64e212024d1b2c2707b8f6c"
+    },
+    {
+      "name": "Thermo-Alchemist",
+      "printing": "INR 403",
+      "oracle_id": "228fbae1-423e-461d-b8c3-55786938a3cb",
+      "color_identity": "R",
+      "commander_legality": "legal",
+      "oracle_text_sha256": "0fa365ca471645c4b0b113334127b0c0c66dfbcd93f2c2ab6c41714378a6a15a"
+    }
+  ],
+  "official_commander_ban_list_checked_date": "2026-10-13",
+  "decklist_changes": 0,
+  "failures": [],
+  "result": "PASS — all 94 Abaddon cards matched current Scryfall bulk metadata"
+}

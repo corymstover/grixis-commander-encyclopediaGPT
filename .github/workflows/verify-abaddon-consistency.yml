@@ -1,0 +1,31 @@
+name: Verify Abaddon baseline consistency analysis
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ["refinement/**"]
+    paths:
+      - ".github/workflows/verify-abaddon-consistency.yml"
+      - "scripts/analyze_abaddon_baseline_consistency.py"
+      - "tests/test_analyze_abaddon_baseline_consistency.py"
+      - "source-package/GrixisFINAL_62Decks_CSV_TXT_2026-10-12.tar.gz"
+      - "refinement/tests/Abaddon_Baseline_Consistency_Report_2026-10-13.md"
+
+permissions:
+  contents: read
+
+jobs:
+  verify-consistency:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run exact-probability unit tests
+        run: python -m unittest discover -s tests -p 'test_analyze_abaddon_baseline_consistency.py' -v
+      - name: Regenerate the frozen-baseline report
+        run: python scripts/analyze_abaddon_baseline_consistency.py --report-output refinement/tests/Abaddon_Baseline_Consistency_Report_2026-10-13.md
+      - name: Ensure committed report matches reproducible calculation
+        run: git diff --exit-code -- refinement/tests/Abaddon_Baseline_Consistency_Report_2026-10-13.md

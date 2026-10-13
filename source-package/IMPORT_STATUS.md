@@ -13,21 +13,11 @@ The first repository setup imports the supplied Optimization Kit's actual text/C
 
 It also carries the current source manifest, the supplied package's current status and legality-freshness notes, plus the v8.1.4 guide/run manifest under an explicitly historical path. The root README documents the project rules and source-of-truth policy.
 
-## Verified source-consolidation reconciliation — 2026-10-13
-
-The authoritative source package was rechecked against its own SHA-256 manifest. The uploaded package ZIP has SHA-256 `47892245c2cefcf528c38fa9d9e56653d6e71a0fc73fd5ea5eecdd90e2032746`, passes ZIP integrity, and all 165 manifest-listed files match their recorded byte sizes and hashes. The four current canonical CSV/TXT archive hashes also match the source manifest.
-
-**Correction to avoid ambiguity:** the 124 current CSV/TXT decklist files are already mirrored byte-for-byte inside the repository's compact archive `GrixisFINAL_62Decks_CSV_TXT_2026-10-12.tar.gz`. The compact archive contains 62 CSV + 62 TXT files and matches all 124 corresponding files in the full current source package exactly (no missing, differing, or extra files). Therefore it is incorrect to say that all 124 decklists are missing from GitHub. They are present in a compressed archive, not all as standalone GitHub paths.
-
-The full source package is not yet a complete raw-file mirror in GitHub: the four original canonical ZIP archives and the large current research/audit datasets are not all individually stored in the repository. See [Source Consolidation Reconciliation](Source_Consolidation_Reconciliation_2026-10-13.md) for exact verified counts, hashes, limitations, and remaining transfer gaps.
-
-The tracker has separately been reconciled to the later Scryfall metadata refresh. Do not edit the original source manifest's package-build-time metadata fields: the later Scryfall run supersedes those fields for current metadata status without changing the historical package record.
-
 ## New verification update — 2026-10-12
 
 The four current CSV/TXT archive pairings have been independently parsed. All 62 pairs reconcile by card-name quantity, every main-deck-plus-commander total is exactly 100, and all 62 singleton checks pass. The source ZIP passed integrity and its 165 manifest-listed files all matched recorded sizes and hashes. See `Grixis_Independent_Baseline_Audit_2026-10-12.json` and `Grixis_Independent_Deck_Hash_Manifest_2026-10-12.csv`.
 
-The live official Commander banned list was checked on October 12, 2026. The only explicit named banned cards present are Lutri as companion, Trade Secrets, and Yawgmoth's Bargain in the designated Bjorna/Cecily deck; all three are existing authorized exceptions. The October 12 announcement lists changes for Competitive Brawl, not tabletop Commander. At the time of this initial verification note, the full printing-level metadata refresh remained open. It has since been completed by the later Scryfall metadata workflow documented below; detailed card rulings and deck-specific rules/interaction checks remain open.
+The live official Commander banned list was checked on October 12, 2026. The only explicit named banned cards present are Lutri as companion, Trade Secrets, and Yawgmoth's Bargain in the designated Bjorna/Cecily deck; all three are existing authorized exceptions. The October 12 announcement lists changes for Competitive Brawl, not tabletop Commander. The complete Scryfall Oracle/rulings and printing-level legality refresh remains open.
 
 ## Source files not transferred yet
 
@@ -37,21 +27,12 @@ The 124 current individual CSV/TXT decklists are now mirrored as a compact archi
 - Archive SHA-256: `f2f46436c3514ecf8412d1fe1f9926919d8d1a3d7a2f938ffee7efce073b2b20`
 - Expected raw per-deck hashes are recorded in `Grixis_Independent_Deck_Hash_Manifest_2026-10-12.csv`.
 
-## Remaining individual source-file transfer gaps — current as of 2026-10-13
+The following exact originals/datasets are still not individually mirrored into GitHub:
+- Four current canonical source ZIP archives and four historical `Updated-10-11-2026` ZIP archives
+- Current inventory, reconciliation, mechanical summary, complete 5,964-row card-audit overlay, and decklist delta datasets
+- Candidate ranking dataset, research manifest, manually incomplete strategy profiles, exception registry, identity overrides, historical v8.1.4 data, and internal package SHA-256 manifest.
 
-The following source artifacts have **not** been individually mirrored as raw current files in GitHub. They remain available inside the independently verified original source ZIP:
-
-- The four current canonical FINAL ZIP archives and four historical `Updated-10-11-2026` ZIP archives.
-- The ~3.77 MB full current card-audit table and ~4.82 MB current candidate-ranking dataset.
-- The current mechanical audit summary and source inventory.
-- The current deck-update tracker and current decklist delta detail/summary datasets.
-- The current commander strategy profiles and commander research manifest.
-- The package's inner SHA-256 manifest and remaining original v8.1.4 research snapshots not explicitly mirrored.
-- The large 5,964-row current Scryfall overlay is present on the refinement branch, but the metadata CSV should be treated as a generated audit artifact rather than a replacement for the original source-package card audit.
-
-These files are not lost or inferred missing from the source package: the complete uploaded ZIP passed integrity and 165/165 manifest-entry hash checks. The current decklists themselves **are already mirrored byte-for-byte** inside `GrixisFINAL_62Decks_CSV_TXT_2026-10-12.tar.gz` (124 files; all 124 matched the source ZIP). The full raw-file mirror is incomplete only because the original ZIPs and listed datasets are not individually stored as repository paths.
-
-Four current source artifacts have been individually mirrored under `source-package/research/current-2026-10-12/`: CSV/TXT reconciliation, the current project-exception registry snapshot, card-identity resolution overrides, and candidate-ranking methodology. Seven additional exact source files are mirrored under `source-package/reference-copies/current-package-text-2026-10-12/`: package entry-point README, project charter, continuation checkpoint, source-package build validation, legality freshness note, package-time project status, and current source manifest. All 11 exact files are hash-verified against source-package bytes; the folder README records their SHA-256 values and cautions that package-time status statements are historical. Do not list these 11 as missing. Details are recorded in [Duplicate Source Reconciliation](Duplicate_Source_Reconciliation_2026-10-13.md) and [Source Consolidation Reconciliation](Source_Consolidation_Reconciliation_2026-10-13.md).
+The original full source package remains available as the preserved input bundle outside this repository. The compact archive is a verified copy of the 124 current decklist text files; it is not a copy of the entire source package.
 
 ## Authoritative baseline and source-package-reported findings
 
@@ -68,7 +49,7 @@ These structural results were independently rechecked on 2026-10-12 and are docu
 
 ## Audit freshness limitations
 
-The current official named Commander banned-list checkpoint is complete as of 2026-10-12. The Scryfall `default_cards` refresh is now complete for all 5,964 current decklist rows: 5,964 exact printing/name matches, zero unmatched/ambiguous printings, zero missing Oracle IDs, and zero commander color-identity mismatches. The six rows with current official Commander status other than ordinary legal status are all present in the mirrored eight-row project exception registry; their official statuses remain distinct from project authorization. Detailed rulings/interaction verification and strategic power reassessment remain incomplete. The inherited v8.1.4 card audit must not be represented as a fresh audit of the current FINAL lists.
+The current official named Commander banned-list checkpoint is complete as of 2026-10-12, with only the three already-authorized Bjorna/Cecily exceptions found. The comprehensive current Scryfall Oracle/rulings/exact-printing legality refresh, full rules-interaction review, and strategic power reassessment remain incomplete. The inherited v8.1.4 card audit must not be represented as a fresh audit of the current FINAL lists.
 
 ## Next import phase
 
@@ -76,22 +57,6 @@ The 124 current decklists are mirrored as a compressed archive and their raw has
 
 Frozen baseline branch: https://github.com/corymstover/grixis-commander-encyclopediaGPT/tree/baseline/freeze-2026-10-12
 
-## Current Scryfall metadata refresh
-
-The generated exact-printing overlay and summary are committed to the controlled campaign branch:
-- https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/metadata_audit/Current_Scryfall_Metadata_Overlay_2026-10-12.csv
-- https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/metadata_audit/Current_Scryfall_Metadata_Audit_Summary_2026-10-12.json
-- Project exception registry: `source-package/research/Project_Exceptions_Current_2026-10-12.csv`
-
-The full current Oracle/color-identity/exact-printing legality metadata gate is closed. Per-deck rules interactions, combos, commander strategy blueprints, and refinement decisions remain separate work.
-
 ## Automated regression protection
 
 A repository workflow now runs on relevant pushes and pull requests. Its first GitHub Actions run passed, verifying all 124 raw CSV/TXT file hashes against the frozen manifest, 62 quantity reconciliations, 62 exact 100-card counts, 62 singleton/copy checks, and the collection totals. Run: https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/38324768882
-
-
-## Duplicate-source reconciliation — 2026-10-13
-
-A separate SHA-verified report now records byte-identical upload groups, canonical current-versus-historical file choices, and the remaining full-source mirror gap: [Duplicate Source Reconciliation](Duplicate_Source_Reconciliation_2026-10-13.md). No source files were deleted. The report documents that top-level v8.1.4 inputs match their corresponding historical source-package entries, while current-named 2026-10-12 audit/ranking files differ and take precedence for current work.
-
-Eleven exact source artifacts are now individually mirrored: four under `source-package/research/current-2026-10-12/` (current reconciliation, current exception registry, identity overrides, methodology) and seven under `source-package/reference-copies/current-package-text-2026-10-12/` (source entry-point README, charter, continuation checkpoint, build validation, legality freshness note, package-time status, current source manifest). Hashes are recorded in the relevant directory README files and [Duplicate Source Reconciliation](Duplicate_Source_Reconciliation_2026-10-13.md). The large card-audit/ranking data and remaining mid-sized source tables remain preserved in the verified original ZIP rather than individually mirrored.

@@ -1,0 +1,111 @@
+name: Run Abaddon Same-Seed Exploratory Forge Pilot
+
+on:
+  # The registered Aurora-vs-Mind's Desire pilot is closed INCONCLUSIVE.
+  # Do not rerun expensive Forge-AI trials on ordinary code/test changes.
+  # Manual dispatch is reserved for a materially new, independently qualified test design.
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: abaddon-same-seed-pilot-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  run-pilot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Check out project
+        uses: actions/checkout@v4
+
+      - name: Verify isolated variant
+        run: python scripts/verify_abaddon_variant.py
+
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Download pinned Forge release
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --location --fail --retry 3 --retry-delay 2 \
+            --output forge-installer-2.0.15.tar.bz2 \
+            https://github.com/Card-Forge/forge/releases/download/forge-2.0.15/forge-installer-2.0.15.tar.bz2
+          echo "4468f182b60f6ca62d89697baa208981085af744f116781af751c611826db600  forge-installer-2.0.15.tar.bz2" | sha256sum --check
+
+      - name: Extract pinned Forge release
+        run: tar -xjf forge-installer-2.0.15.tar.bz2
+
+      - name: Check out pinned Forge source and fixed Commander opponent
+        uses: actions/checkout@v4
+        with:
+          repository: Card-Forge/forge
+          ref: 4ec5f1a2c32fa90ecb983a72b9eb47aa5c5d7676
+          path: forge-source
+          fetch-depth: 1
+          sparse-checkout: |
+            forge-gui/res/cardsfolder
+            forge-gui/res/adventure/Realm of Legends/decks/starter/commanderprecon
+          sparse-checkout-cone-mode: true
+          persist-credentials: false
+
+      - name: Verify exact Forge source revision and fixed opponent
+        shell: bash
+        run: |
+          set -euo pipefail
+          ACTUAL="$(git -C forge-source rev-parse HEAD)"
+          test "$ACTUAL" = "4ec5f1a2c32fa90ecb983a72b9eb47aa5c5d7676"
+          echo "$ACTUAL" | tee forge-source-commit.txt
+          mkdir -p pilot-decks pilot-logs
+          cp "forge-source/forge-gui/res/adventure/Realm of Legends/decks/starter/commanderprecon/C20 - Ruthless Regiment.dck" "pilot-decks/Ruthless Regiment.dck"
+
+      - name: Prepare verified baseline and single-swap test variant
+        run: |
+          python scripts/prepare_abaddon_forge_smoke_decks.py \
+            --archive source-package/GrixisFINAL_62Decks_CSV_TXT_2026-10-12.tar.gz \
+            --variant refinement/variants/Abaddon_Aurora_Phoenix_Test_Variant_v1.txt \
+            --output-dir pilot-decks
+
+      - name: Locate pinned Forge CLI JAR
+        shell: bash
+        run: |
+          set -euo pipefail
+          JAR="$(find . -maxdepth 2 -type f -name 'forge-gui-desktop-2.0.15-jar-with-dependencies.jar' -print -quit)"
+          test -n "$JAR"
+          echo "$JAR" > forge-jar-path.txt
+
+      - name: Run three same-seed, unpaired trials per list
+        shell: bash
+        env:
+          JAVA_TOOL_OPTIONS: "-Djava.awt.headless=true"
+        run: |
+          set -euo pipefail
+          python scripts/run_abaddon_same_seed_pilot.py \
+            --jar "$(cat forge-jar-path.txt)" \
+            --deck-dir "$PWD/pilot-decks" \
+            --output-dir "$PWD/pilot-logs" \
+            --trials 3 --base-seed 2026101300 --timeout-seconds 30 | tee pilot-run-summary.txt
+
+      - name: Analyze event logs (descriptive only; no matched-start inference)
+        run: python scripts/analyze_abaddon_paired_pilot.py --pilot-dir pilot-logs
+
+      - name: Preserve pilot evidence
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: abaddon-same-seed-forge-pilot
+          path: |
+            forge-source-commit.txt
+            forge-jar-path.txt
+            pilot-run-summary.txt
+            pilot-decks/*.dck
+            pilot-decks/smoke-deck-manifest.json
+            pilot-logs/*.log
+            pilot-logs/*.json
+            pilot-logs/*.csv
+            pilot-logs/*.md
+          if-no-files-found: warn
+          retention-days: 60

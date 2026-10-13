@@ -1,0 +1,57 @@
+name: Probe Forge CLI distribution
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ["refinement/**"]
+    paths:
+      - ".github/workflows/probe-forge-release.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  inspect-pinned-forge-release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Download pinned Forge 2.0.15 release archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --location --fail --retry 3 --retry-delay 2 \
+            --output forge-installer-2.0.15.tar.bz2 \
+            https://github.com/Card-Forge/forge/releases/download/forge-2.0.15/forge-installer-2.0.15.tar.bz2
+          echo "4468f182b60f6ca62d89697baa208981085af744f116781af751c611826db600  forge-installer-2.0.15.tar.bz2" | sha256sum --check
+          stat --printf="Downloaded bytes: %s\n" forge-installer-2.0.15.tar.bz2
+
+      - name: Inspect archive layout without installing or running games
+        shell: bash
+        run: |
+          set -euo pipefail
+          tar -tjf forge-installer-2.0.15.tar.bz2 > forge-archive-file-list.txt
+          {
+            echo "# Forge 2.0.15 distribution probe"
+            echo
+            echo "- Release: [forge-2.0.15](https://github.com/Card-Forge/forge/releases/tag/forge-2.0.15)"
+            echo "- Asset: forge-installer-2.0.15.tar.bz2"
+            echo "- Pinned SHA-256: 4468f182b60f6ca62d89697baa208981085af744f116781af751c611826db600"
+            echo "- Archive entries: $(wc -l < forge-archive-file-list.txt)"
+            echo
+            echo "## Runnable jar / card database indicators"
+            grep -Ei '(^|/)(forge[^/]*\.jar|[^/]*installer[^/]*\.jar|cardsfolder|res/cardsfolder|forge\.jar)$|(^|/)forge\.jar$' forge-archive-file-list.txt | head -100 || true
+            echo
+            echo "## First 100 archive paths"
+            head -100 forge-archive-file-list.txt
+          } > forge-probe-summary.md
+          cat forge-probe-summary.md
+
+      - name: Preserve distribution probe report
+        uses: actions/upload-artifact@v4
+        with:
+          name: forge-2.0.15-distribution-probe
+          path: |
+            forge-probe-summary.md
+            forge-archive-file-list.txt
+          if-no-files-found: error
+          retention-days: 30

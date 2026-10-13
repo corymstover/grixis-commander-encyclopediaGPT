@@ -1,31 +1,36 @@
 # Abaddon the Despoiler — Current Card-by-Card Audit
 
-**Audit assembled (UTC):** 2026-10-13T06:20:27Z
+**Audit refreshed by automated closeout run (UTC):** 2026-10-13T07:03:26.694525Z
 **Scryfall default_cards bulk updated (UTC):** 2026-10-12T21:06:24.577+00:00
-**Scryfall overlay generated (UTC):** 2026-10-13T04:36:45.235158+00:00
-**Frozen baseline:** 2026-10-12 authoritative FINAL CSV/TXT pair
-**Frozen TXT SHA-256:** `2d6203d274c25e67fb93acf5e6784dce4ee1e8999844a6ab032d9b15995acfbf`
+**Scryfall overlay generated (UTC):** 2026-10-13T07:03:26.694525+00:00
+**Authority:** frozen 2026-10-12 FINAL CSV/TXT pair
+**Source package SHA-256:** `47892245c2cefcf528c38fa9d9e56653d6e71a0fc73fd5ea5eecdd90e2032746`
+**Abaddon TXT SHA-256:** `2d6203d274c25e67fb93acf5e6784dce4ee1e8999844a6ab032d9b15995acfbf`
+**Abaddon CSV SHA-256:** `fbeb7f75302b9ebedaf67aa58171de05764b6e6f97570be5657f0cbe8df37478`
 **Decklist changes:** none
 
-## Card-by-card result
+## Exact-printing Oracle / identity / legality result
 
+**Automated current-source run:** refresh summary, freshness validator, and Abaddon exact-name audit passed in GitHub Actions. The exact Abaddon audit ran after the refreshed Scryfall overlay was generated; the successful metadata commit was created only after these validation steps succeeded.
+
+- Overall result: **PASS — all 94 Abaddon cards matched current Scryfall bulk metadata**.
+- Distinct card names: **94/94**; total copies: **100/100**.
 - Exact set + collector number + card-name matches: **94/94**.
-- Scryfall IDs and Oracle IDs present: **94/94** and **94/94**.
-- Nonblank current Oracle text: **94/94**.
+- Scryfall IDs / Oracle IDs / nonblank Oracle text: **94/94 / 94/94 / 94/94**.
 - Color identity within Abaddon's UBR identity: **94/94**.
-- Current Scryfall Commander legality marked `legal`: **94/94**.
-- Unexpected nonlegal rows or color mismatches: **0**.
-- All 94 exact-printing rows are retained in the companion CSV with complete Oracle text, Scryfall ID, Oracle ID, text SHA-256, color identity, Commander identity, legality, release date and exact-match status.
+- Current Scryfall Commander legality marked legal: **94/94**.
+- Registered project exception rows for Abaddon: **0**.
+- The companion CSV contains every exact card row with full current Oracle text, Oracle-text SHA-256, Scryfall/Oracle IDs, exact set/collector printing, color identity, Commander identity, Commander legality, release date and match status.
 
 ## Priority cards
 
-| Card | Exact printing | Oracle ID | Color identity | Commander legality |
-|---|---|---|---|---|
-| Bituminous Blast | J25 742 | `d291d8f7-bb67-470c-8794-cd553c91e5cc` | B,R | legal |
-| Boltwave | FDN 79 | `bb8cccc8-e56f-42fa-a0d7-fc889b5e1c7b` | R | legal |
-| Thermo-Alchemist | INR 403 | `228fbae1-423e-461d-b8c3-55786938a3cb` | R | legal |
+| Card | Exact printing | Color identity | Current Commander legality |
+|---|---|---|---|
+| Bituminous Blast | J25 742 | B,R | legal |
+| Boltwave | FDN 79 | R | legal |
+| Thermo-Alchemist | INR 403 | R | legal |
 
-### Current Oracle text
+### Oracle text confirmed from the exact-printing rows
 
 **Bituminous Blast** — Instant.
 
@@ -44,17 +49,19 @@
 
 ## Commander legality
 
-The current Scryfall bulk overlay marks all 94 Abaddon rows legal in Commander and all color-identity checks pass. The official Commander banned list was inspected on October 13, 2026; no card in this Abaddon list is named on it. The October 12, 2026 Wizards Banned & Restricted announcement changed Competitive Brawl, not tabletop Commander.
+The fresh Scryfall `default_cards` refresh summary generated at `2026-10-13T07:03:26.694525+00:00` reports `bulk_updated_at=2026-10-12T21:06:24.577+00:00`, 5,964/5,964 exact global print/name matches, zero missing/ambiguous/name-variant rows, zero blank Oracle text/Oracle IDs, zero color-identity mismatches, zero unresolved printing/exception rows, zero unknown Commander legality statuses, and zero unexpected official-illegal rows. The Abaddon-specific audit gate passed: all 94 distinct names are exact-matched; all 94 have Oracle IDs and nonblank Oracle text; all 94 color identities fit UBR; all 94 are marked Commander-legal; no Abaddon project exceptions apply. The official Commander banned list was checked on October 13, 2026; no card in this frozen Abaddon list is named on it. The October 12, 2026 Wizards Banned & Restricted announcement changed Competitive Brawl, not tabletop Commander.
 
-## Cascade-hit correction
+## Corrected cascade-hit analysis
 
-The previous interaction triage incorrectly said mana-value-1 and mana-value-3 spells had no lower-mana-value nonland hits. The deck contains five 0-mana-value nonlands: **Ancestral Vision, Chrome Mox, Inevitable Betrayal, Lion's Eye Diamond, and Lotus Petal**. A cascade source with mana value 1 can potentially hit these; a source with mana value 3 can potentially hit any nonland with mana value 0–2. Inevitable Betrayal requires a legal target; Chrome Mox may enter without an imprint card. These are possible hits, not guaranteed or always useful outcomes. Pact of Negation is the exception: at mana value 0, no card has a lower mana value.
+The prior triage's claim that mana-value-1 and mana-value-3 spells had no lower-mana-value nonland hits was incorrect. The frozen deck has **seven** 0-mana-value nonlands: **Ancestral Vision, Chrome Mox, Inevitable Betrayal, Lion's Eye Diamond, Lotus Petal, Pact of Negation, and Profane Tutor**.
 
-Cascade resolves before its source spell. Therefore a mana-value-1 tutor's top-deck setup cannot feed that same spell's cascade, but can set up a later spell. Playing a land from exile does not cast a spell or gain Abaddon's hand-only cascade, but it does trigger Prosper, Tome-Bound's Treasure ability because Prosper cares about playing a card from exile.
+A mana-value-1 cascade source can potentially hit any of these seven. A mana-value-3 source can potentially hit any nonland with mana value 0, 1, or 2. These are possible hits, not guaranteed outcomes. Ancestral Vision, Inevitable Betrayal, and Profane Tutor have no mana cost but may be cast when an effect permits casting without paying that cost; Inevitable Betrayal requires a legal target. Pact of Negation requires a legal spell target. Chrome Mox can enter without an imprint card and then fail to produce mana. Cascade at mana value 0 (for example, a cascade instance granted to Pact of Negation) has no legal hit because no card has negative mana value.
+
+Cascade resolves before its source spell. A mana-value-1 tutor's top-deck setup cannot feed that same spell's cascade; it can set up a later spell. A spell's own later damage or cast triggers cannot retroactively grant cascade to that spell. Playing a land from exile does not cast a spell or gain Abaddon's hand-only cascade, but it **does** trigger Prosper, Tome-Bound's Treasure ability because Prosper cares about playing a card from exile.
 
 ## Combo and interaction disposition
 
-The Underworld Breach + Lion's Eye Diamond + Brain Freeze line has a worked uninterrupted sequence from an explicit starting state with escape costs, six-card fuel replacement, storm counts, milling allocations, mana accounting and a Wheel of Fortune finish. It is rules-coherent from those conditions, but not an unconditional infinite, a guaranteed win through interaction, or evidence of reliable assembly. Relevant cascade, alternate-cost, cast-from-exile, damage-threshold, copy-vs-cast and wipe-timing interactions have substantial documented coverage; this is not exhaustive proof of every possible game state.
+The Underworld Breach + Lion's Eye Diamond + Brain Freeze line has a worked uninterrupted sequence from an explicit starting state with escape costs, six-card fuel replacement, storm counts, milling allocations, mana accounting, and a Wheel of Fortune finish. It is rules-coherent from those conditions, but is not an unconditional infinite, a guaranteed win through interaction, or evidence of reliable assembly. Relevant cascade, alternate-cost, cast-from-exile, damage-threshold, copy-vs-cast, and wipe-timing interactions have substantial documented coverage; this is not exhaustive proof of every possible game state.
 
 ## References
 
@@ -63,4 +70,8 @@ The Underworld Breach + Lion's Eye Diamond + Brain Freeze line has a worked unin
 - [Wizards Banned & Restricted announcement — October 12, 2026](https://www.magic.wizards.com/en/news/announcements/banned-and-restricted-october-12-2026)
 - [Current Magic Comprehensive Rules](https://magic.wizards.com/en/rules), effective September 25, 2026
 
-**Finalization:** metadata verification passes for the frozen list. Do not mark the deck approved/finalized until the user explicitly approves the exact unchanged 100-card list.
+**Finalization:** current metadata preflight and exact 94-name audit pass; structural hash/count/singleton verification passed independently. Rules-interaction coverage is substantial but bounded, not exhaustive gameplay proof. The frozen list remains unchanged. The deck is not marked finalized until the user explicitly approves this exact unchanged 100-card list.
+
+## Latest pipeline evidence — 2026-10-13T07:03:26.694525Z
+
+GitHub Actions refresh run `38360274984` succeeded end-to-end: frozen 62-deck source preflight, current Scryfall default-cards scan, run-anchored freshness/completeness validation, Abaddon exact 94-name audit, metadata commit and diagnostic artifact. The generated summary reports 5,964/5,964 exact matches; zero missing Oracle text/IDs, color identity mismatches, unresolved printings/exceptions, unknown Commander legality statuses or unexpected official-illegal rows. Bulk timestamp is `2026-10-12T21:06:24.577+00:00`. Decklist unchanged; user approval remains required.
