@@ -187,17 +187,35 @@ jobs:
                   raise RuntimeError(f"Missing or empty per-seed Forge log: {path}")
               lines = path.read_text(encoding="utf-8", errors="replace").splitlines()
               clean = [re.sub(r"\x1b\[[0-9;]*m", "", line) for line in lines]
-              cast_lines = [line for line in clean if re.search(r"cast Aurora Phoenix", line, re.I)]
+              # Exclude the deck's display name before detecting card events: it contains
+              # "Aurora Phoenix" on every line controlled by the variant player.
+              event_text = [
+                  line.replace("Ai(1)-Abaddon frozen baseline", "")
+                      .replace("Ai(2)-Abaddon Aurora Phoenix test variant", "")
+                  for line in clean
+              ]
+              cast_lines = [
+                  clean[i] for i, line in enumerate(event_text)
+                  if re.search(r"\bcast Aurora Phoenix\b", line, re.I)
+              ]
               named_trigger_lines = [
-                  line for line in clean
-                  if "Aurora Phoenix" in line and re.search(r"trigger|resolve stack|add to stack", line, re.I)
+                  clean[i] for i, line in enumerate(event_text)
+                  if re.search(r"\bAurora Phoenix\b", line, re.I)
+                  and re.search(r"\b(triggered|trigger|resolve stack|add to stack|cast)\b", line, re.I)
+              ]
+              return_lines = [
+                  clean[i] for i, line in enumerate(event_text)
+                  if re.search(r"\bAurora Phoenix\b", line, re.I)
+                  and re.search(r"return(?:s|ed)? .* (?:graveyard|hand)|from (?:your )?graveyard to (?:your )?hand", line, re.I)
               ]
               result_lines = [line for line in clean if "Game Result: Game 1 ended" in line]
               rows.append({
                   "seed": seed,
                   "game_result_lines": result_lines,
                   "variant_cast_aurora_phoenix": bool(cast_lines),
+                  "aurora_cast_event_lines": cast_lines,
                   "aurora_related_event_lines": named_trigger_lines[:40],
+                  "aurora_graveyard_return_event_lines": return_lines[:40],
                   "cascade_log_line_count": sum("cascade" in line.casefold() for line in clean),
                   "explicit_timeout_draw": any("Stopping slow match as draw" in line for line in clean),
                   "steam_vents_activator_warning_count": sum("Steam Vents Did not have activator set" in line for line in clean),
