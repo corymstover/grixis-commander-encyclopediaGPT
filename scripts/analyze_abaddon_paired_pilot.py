@@ -95,6 +95,11 @@ def summarize_game_log(log_text: str, target_label: str) -> dict[str, Any]:
             if match:
                 duration_ms = int(match.group(1).replace(",", ""))
 
+    # Forge can print a nominal winner after its simulation clock stopped the match as a draw.
+    # The explicit timeout marker is authoritative for this diagnostic report.
+    if any("Stopping slow match as draw" in line for line in log_text.splitlines()):
+        outcome = "DRAW"
+
     cast_names = [event["card"] for event in cast_events]
 
     def first_cast(card_name: str) -> int | None:
@@ -215,7 +220,7 @@ def analyze(pilot_dir: Path) -> dict[str, Any]:
     with manifest_path.open(newline="", encoding="utf-8-sig") as handle:
         trials = list(csv.DictReader(handle))
     if not trials:
-        raise ValueError("Paired seed manifest is empty")
+        raise ValueError("Same-seed run manifest is empty")
 
     baseline_games: list[dict[str, Any]] = []
     variant_games: list[dict[str, Any]] = []
@@ -302,7 +307,7 @@ def analyze(pilot_dir: Path) -> dict[str, Any]:
         json.dumps(report["variant"], indent=2),
         "~~~",
         "",
-        "## Paired outcomes",
+        "## Same-seed outcome labels (not matched-start pairs)",
         "",
         f"- Same-outcome seed labels: {outcomes_match}/{len(trials)}",
         f"- Different-outcome seed labels: {len(trials) - outcomes_match}/{len(trials)}",
