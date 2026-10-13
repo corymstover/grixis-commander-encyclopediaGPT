@@ -147,3 +147,25 @@ This is a resource-dependent finite-game combo sequence, not a resource-free mat
 - [Official Magic Comprehensive Rules, effective September 25, 2026](https://media.wizards.com/2026/downloads/MagicCompRules%2020260925.txt): rules 702.85a and 702.85c (cascade and multiple instances); 702.40a (storm); 603.2 (trigger conditions); 113.10 (granted abilities); 707.10 (spell copies are not cast); 120.3a (damage to a player causes life loss); and 121.4 (a player attempting to draw from an empty library loses the game the next time priority would be received).
 - [Current Scryfall Abaddon printing](https://scryfall.com/card/40k/171/abaddon-the-despoiler); [Aurora Phoenix](https://scryfall.com/card/cmr/161/aurora-phoenix); [Bloodletter of Aclazotz](https://scryfall.com/card/lci/92/bloodletter-of-aclazotz); [Solphim, Mayhem Dominus](https://scryfall.com/card/one/150/solphim-mayhem-dominus); [The Ruinous Powers](https://scryfall.com/card/40k/139/the-ruinous-powers); [The Lost and the Damned](https://scryfall.com/card/40k/129/the-lost-and-the-damned); [Keeper of Secrets](https://scryfall.com/card/40k/78/keeper-of-secrets); [Nalfeshnee](https://scryfall.com/card/clb/678/nalfeshnee); [Passionate Archaeologist](https://scryfall.com/card/clb/656/passionate-archaeologist); [Prosper, Tome-Bound](https://scryfall.com/card/afc/2/prosper-tome-bound); [Wild-Magic Sorcerer](https://scryfall.com/card/clb/816/wild-magic-sorcerer); [Exalted Flamer of Tzeentch](https://scryfall.com/card/40k/119/exalted-flamer-of-tzeentch); [Delayed Blast Fireball](https://scryfall.com/card/clb/676/delayed-blast-fireball); [Call Forth the Tempest](https://scryfall.com/card/hoc/22/call-forth-the-tempest); [Noise Marine](https://scryfall.com/card/40k/82/noise-marine).
 - [EDHREC/Commander Spellbook-style combo record for Underworld Breach + Lion's Eye Diamond + Brain Freeze](https://edhrec.com/combos/izzet/1368-3518-4856) lists the starting state and six-card hand/graveyard fuel prerequisite. This is combo-discovery evidence; the steps still require applying current Oracle text and the Comprehensive Rules.
+
+## 7. Bounded closeout checklist — current evidence
+
+This table makes the remaining work explicit and prevents already-settled questions from being repeatedly reopened.
+
+| Check | Status | Evidence / consequence |
+|---|---|---|
+| Abaddon mana cost and mana value | CLOSED | `{2}{U}{B}{R}`, mana value 5; confirmed in current Oracle data. |
+| Same-turn opponent life-loss threshold | CLOSED | The threshold counts aggregate opponents' life loss during the current turn; prior-turn loss and self-life-loss do not count. |
+| Granted/printed cascade stacking | CLOSED for documented interactions | Multiple cascade instances trigger separately. Aurora Phoenix and Call Forth the Tempest cases are recorded above. |
+| Aurora Phoenix graveyard return from a cascade spell | RULES-CLOSED; PERFORMANCE INCONCLUSIVE | Rules interaction is supported; Forge pilot never cast either candidate and is not valid swap evidence. Keep baseline Mind's Desire. |
+| Damage replacement / life-loss amplification | REVIEWED | Solphim amplifies noncombat damage to opponents; Bloodletter doubles opponents' life loss on your turn. Do not conflate damage with direct life loss. |
+| Cast from exile vs cast from hand vs cast from graveyard | REVIEWED | Abaddon's grant is hand-only; exile/graveyard casts can still trigger the specific payoffs that refer to those zones. |
+| Spell copies vs casts / Storm | REVIEWED | Ordinary cast-trigger payoffs do not trigger from copies; Storm-Kiln Artist's cast-or-copy wording is the exception called out above. |
+| Breach + LED + Brain Freeze route | RULES-COHERENT; FINAL SEQUENCE AUDIT OPEN | Prerequisites and resource dependence recorded, but do not call it a resource-free infinite or imply it has been fully runtime-validated. |
+| All remaining 100-card membership and every other interaction | OPEN | Must finish the independent exact-list audit; this document is not yet the final card-by-card certificate. |
+| Exact final list hash / approval | OPEN | Frozen baseline unchanged; finalization gate NO pending final audit and explicit user approval. |
+
+### Scope boundary and stop rule for this review
+
+The completed items above are closed unless current Oracle/rules sources materially change or a concrete contradictory interaction is found. Do not reopen Aurora-versus-Mind's Desire for the same uninformative Forge AI comparison. The remaining work is a bounded card-specific audit of the frozen list, not another general search for possible upgrades. Candidate ledger decisions remain proposals/rejections/inconclusive records, not authorized card changes.
+
