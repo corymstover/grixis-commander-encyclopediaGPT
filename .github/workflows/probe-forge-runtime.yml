@@ -53,6 +53,73 @@ jobs:
           cat forge-startup.stdout.txt || true
           cat forge-startup.stderr.txt || true
 
+      - name: Scan 94 unique card names against pinned Forge scripts
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, re, unicodedata
+          from pathlib import Path
+
+          variant = Path("refinement/variants/Abaddon_Aurora_Phoenix_Test_Variant_v1.txt")
+          roots = [Path("res/cardsfolder")]
+          if not roots[0].exists():
+              roots = list(Path(".").glob("**/res/cardsfolder"))
+          root = next((r for r in roots if r.exists()), None)
+          if root is None:
+              raise SystemExit("Forge res/cardsfolder directory not found")
+
+          def norm(s):
+              s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode("ascii")
+              return re.sub(r"[^a-z0-9]", "", s.casefold())
+
+          deck = []
+          for line in variant.read_text(encoding="utf-8-sig").splitlines():
+              line = line.strip()
+              m = re.match(r"^\d+x\s+(.+?)\s*$", line)
+              if not m:
+                  continue
+              name = re.sub(r"\s*\[Commander\]\s*$", "", m.group(1)).strip()
+              deck.append(name)
+          unique = list(dict.fromkeys(deck))
+          scripts = {}
+          for p in root.rglob("*.txt"):
+              try:
+                  body = p.read_text(encoding="utf-8", errors="replace")
+              except OSError:
+                  continue
+              nm = next((line[5:].strip() for line in body.splitlines() if line.startswith("Name:")), None)
+              if nm:
+                  scripts.setdefault(norm(nm), []).append({"name": nm, "path": str(p.relative_to(root)),"oracle": any(line.startswith("Oracle:") for line in body.splitlines())})
+          rows = []
+          for name in unique:
+              candidates = [name]
+              if "//" in name:
+                  candidates.append(name.split("//",1)[0].strip())
+              matches = []
+              for c in candidates:
+                  matches.extend(scripts.get(norm(c), []))
+              # Stable path deduplication, with aliases still visible if multiple scripts match.
+              dedup = {x["path"]: x for x in matches}
+              matches = list(dedup.values())
+              status = "MATCH" if len(matches)==1 and matches[0]["oracle"] else ("AMBIGUOUS" if len(matches)>1 else "MISSING")
+              rows.append({"deck_name":name,"status":status,"matches":matches})
+          report = {
+              "release":"forge-2.0.15",
+              "commit":"4ec5f1a2c32fa90ecb983a72b9eb47aa5c5d7676",
+              "scan_type":"textual Name:/Oracle: card-script presence only; not rules correctness",
+              "card_root":str(root),
+              "unique_deck_names":len(unique),
+              "match_count":sum(x["status"]=="MATCH" for x in rows),
+              "missing_count":sum(x["status"]=="MISSING" for x in rows),
+              "ambiguous_count":sum(x["status"]=="AMBIGUOUS" for x in rows),
+              "results":rows
+          }
+          Path("forge-card-script-coverage.json").write_text(json.dumps(report,indent=2)+"\n")
+          print(json.dumps({k:report[k] for k in ("release","commit","card_root","unique_deck_names","match_count","missing_count","ambiguous_count")},indent=2))
+          # No hard failure merely for aliases in this first audit; the JSON lists all
+          # unresolved rows for explicit manual review.
+          PY
+
       - name: Preserve probe logs and coverage report
         uses: actions/upload-artifact@v4
         if: always()
@@ -64,5 +131,6 @@ jobs:
             forge-startup.stdout.txt
             forge-startup.stderr.txt
             forge-startup.exit-code.txt
+            forge-card-script-coverage.json
           if-no-files-found: warn
           retention-days: 30
