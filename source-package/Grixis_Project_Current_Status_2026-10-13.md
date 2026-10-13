@@ -38,8 +38,9 @@ The [Scryfall metadata audit summary](https://github.com/corymstover/grixis-comm
 
 - Byte-identical duplicate upload groups and current-versus-historical source choices are documented in [Duplicate Source Reconciliation](Duplicate_Source_Reconciliation_2026-10-13.md).
 - Full package verification and remaining raw-mirror gaps are documented in [Source Consolidation Reconciliation](Source_Consolidation_Reconciliation_2026-10-13.md).
-- Four exact current raw sources are individually mirrored under `source-package/research/current-2026-10-12/`: CSV/TXT reconciliation, project-exception registry snapshot, card-identity resolution overrides, and ranking methodology. Hashes are recorded in the reconciliation report.
-- Still not individually mirrored: original current and historical deck ZIPs; large current card-audit and candidate-ranking datasets; current audit summary and inventory; deck-update tracker and delta tables; current strategy profiles and research manifest; and the original package's inner SHA manifest and remaining historical research snapshots.
+- Four exact current raw sources are individually mirrored under `source-package/research/current-2026-10-12/`: CSV/TXT reconciliation, project-exception registry snapshot, card-identity resolution overrides, and ranking methodology.
+- Seven exact package source documents are mirrored under `source-package/reference-copies/current-package-text-2026-10-12/`: entry-point README, project charter, continuation checkpoint, package build validation, legality freshness note, package-time project status, and current source manifest. The directory README records their SHA-256 values.
+- Remaining raw-source gaps: original current/historical ZIP archives; large current card-audit and candidate-ranking datasets; current audit summary and source inventory; update tracker and delta tables; current strategy profiles and research manifest; internal package-file SHA manifest and remaining historical research snapshots. These are all preserved inside the verified source ZIP.
 - No uploaded duplicate or historical file was deleted.
 
 ## Abaddon refinement — in progress
