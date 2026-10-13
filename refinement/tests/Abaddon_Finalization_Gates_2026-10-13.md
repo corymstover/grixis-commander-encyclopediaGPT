@@ -3,7 +3,7 @@
 **Updated:** 2026-10-13  
 **Baseline TXT SHA-256:** `2d6203d274c25e67fb93acf5e6784dce4ee1e8999844a6ab032d9b15995acfbf`  
 **Decklist changes:** none  
-**Finalization status:** NO — awaiting exact-list approval and remaining closeout evidence
+**Finalization status:** NO — full fresh 94-card Oracle/identity/legality refresh remains pending; exact-list approval also required
 
 ## Completed for this campaign
 
@@ -30,3 +30,12 @@
 A complete role/context triage is not exhaustive certification of every possible game state. Forge's inconclusive AI comparison is not performance evidence. No statistical win-rate claim is supported. Official Commander legality and any project exceptions must remain clearly distinguished.
 
 Do not mark the deck finalized until the remaining gates and approval are recorded.
+
+
+## Closeout update — 2026-10-13 UTC
+
+- Priority-card public references checked: Bituminous Blast, Boltwave, and Thermo-Alchemist; their current Oracle characteristics, identity subset, and reported Commander legality are recorded in Interaction Review Step 11.
+- Interaction triage corrected: decklist contains MV-0 nonlands, so MV-1 cascade spells can hit those cards; several previous “no lower-MV nonland hit” statements were wrong. Triage CSV updated, and Step 11 supersedes those old statements.
+- Breach/LED/Brain Freeze + Wheel has a worked accounting example only under the exact listed starting state and no-interaction assumptions; this is not a gameplay-performance pass.
+- **Still blocked:** a current full 94-card authoritative Scryfall card-object/bulk refresh; API/bulk retrieval returned access/403 failures in this session. Existing 2026-10-12 bulk snapshot is dated and not sufficient to claim a fresh approval-time pass.
+- **Still pending:** explicit user approval of the exact 100-card list. Final gate remains NO.
