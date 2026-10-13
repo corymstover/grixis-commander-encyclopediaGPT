@@ -16,6 +16,12 @@ Version-controlled project records for the 62-deck Grixis Commander Encyclopedia
 
 The source ZIP's internal manifest passed 165/165 hashes; all 62 current CSV/TXT pairs independently reconcile, all 62 main-deck-plus-commander lists count to 100, and all 62 singleton scans pass. The official Commander named-ban checkpoint is complete: the only matches are the three known project-authorized Bjorna // Cecily + Lutri exceptions. Full current Oracle/rulings and exact-printing legality refresh remain open. The hash manifest and detailed independent audit are preserved on the [frozen baseline branch](https://github.com/corymstover/grixis-commander-encyclopediaGPT/tree/baseline/freeze-2026-10-12).
 
+## Current baseline and source consolidation
+
+- [Source consolidation reconciliation — 2026-10-13](source-package/Source_Consolidation_Reconciliation_2026-10-13.md)
+
+The 124 current decklist CSV/TXT files are verified inside the compact archive. The full original source package has been integrity/hash-checked, but not every large raw source file is individually mirrored in GitHub. See the reconciliation report for the exact boundary.
+
 ## Controlled refinement campaign
 
 The frozen baseline is preserved on `baseline/freeze-2026-10-12`. The active, separate work branch is `refinement/campaign-2026-10-12`; no approved decklist has been changed.
