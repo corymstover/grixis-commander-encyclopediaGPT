@@ -63,3 +63,8 @@ Prefer Aurora only if it shows a repeatable improvement in cascade/value output 
 
 The protocol's final gate still requires review of the full deck's nontrivial rules interactions, an appropriate performance check, a closed candidate ledger, an independently verified final 100-card list, and explicit user approval.
 
+
+
+## Separate list-integrity verification
+
+The isolated variant and frozen baseline were rechecked on 2026-10-13. The baseline archive/hash, both raw decklist hashes, both normalized membership hashes, exactly 100 cards per list, singleton compliance, and the single substitution (Mind's Desire out / Aurora Phoenix in) all passed. See [Abaddon_Variant_Integrity_Check_2026-10-13.json](Abaddon_Variant_Integrity_Check_2026-10-13.json). This does **not** mean a gameplay test has run; the gameplay test remains NOT RUN.
