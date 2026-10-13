@@ -20,6 +20,7 @@ The source ZIP's internal manifest passed 165/165 hashes; all 62 current CSV/TXT
 
 - [Source consolidation reconciliation — 2026-10-13](source-package/Source_Consolidation_Reconciliation_2026-10-13.md)
 - [Duplicate source reconciliation — 2026-10-13](source-package/Duplicate_Source_Reconciliation_2026-10-13.md)
+- [Current project status — 2026-10-13](source-package/Grixis_Project_Current_Status_2026-10-13.md)
 
 The 124 current decklist CSV/TXT files are verified inside the compact archive. The full original source package has been integrity/hash-checked, but not every large raw source file is individually mirrored in GitHub. See the reconciliation report for the exact boundary.
 
