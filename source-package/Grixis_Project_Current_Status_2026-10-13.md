@@ -82,3 +82,28 @@ See [Abaddon expanded interaction review](https://github.com/corymstover/grixis-
 2. Finish Abaddon's remaining card-specific interaction checklist and independent audit preparation; do not repeat the inconclusive Forge AI comparison.
 3. Close Abaddon only after all hard gates are met, present the exact list and rationale, and wait for explicit approval.
 4. After approval, write the final hash/certificate and move to the next not-yet-refined deck. Never reopen an already approved/locked deck without an explicit request or a documented material trigger.
+
+## Latest Abaddon independent static metadata audit — 2026-10-13 UTC
+
+The audit is implemented in `scripts/audit_abaddon_baseline_metadata.py`, with helper tests and workflow `.github/workflows/verify-abaddon-baseline-audit.yml`. The latest successful CI run is [38345446231](https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/38345446231), and its machine-readable output is [artifact 11787549914](https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/38345446231/artifacts/11787549914).
+
+**Observed output:** 100 total cards including commander; 94 unique card names; one Abaddon commander marker/copy; zero nonbasic singleton violations; all 94 unique names join exactly once to the deck-scoped row in the 2026-10-12 Scryfall overlay; zero missing/ambiguous rows; zero required metadata-field issues; all recorded printing status values are exact; all metadata color-identity checks pass. This is a dated metadata/static membership pass, not a fresh official ban-list check at approval time and not an exhaustive interaction/strategic optimality certification.
+
+The audit code uses the overlay's actual schema and scopes every join by both deck ID and exported card name. Earlier failed runs exposed two defects (wrong card-name column assumptions, then project-wide name-only joins that collided across decks). Those runs were kept as CI history; they are superseded by the current deck-scoped passing run. Keep the failed history rather than pretending the first implementation was correct.
+
+### Current Abaddon audit checklist
+
+- [x] Frozen compact archive hash verified.
+- [x] Baseline TXT hash verified.
+- [x] Exactly 100 total cards and one Abaddon commander marker.
+- [x] Singleton/copy rules checked.
+- [x] 94/94 exact deck-scoped metadata matches.
+- [x] Oracle ID and Oracle text present for all 94 names.
+- [x] Scryfall identity-check field is PASS for all 94 names; blank color identity is correctly accepted for colorless cards.
+- [x] Current stored Commander legality fields are present and no overlay metadata join issues remain.
+- [ ] Re-run fresh official Commander legality/banned-list validation immediately before approval.
+- [ ] Finish the full card-specific interaction audit and source each nontrivial rules claim.
+- [ ] Independently compare any proposed final list/hash against the frozen baseline and verify current copy-paste export.
+- [ ] Present exact list for explicit user approval. Final gate remains NO until approval.
+
+No decklist was changed in this audit.
