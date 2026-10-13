@@ -8,8 +8,8 @@
 
 This section supersedes any conflicting approval, lock, completion, or sign-off language elsewhere in older project records for the active cycle.
 
-- All 62 decks are **UNAPPROVED / UNLOCKED**. No historical approval or lock carries forward as current approval.
-- Begin at deck #1, Abaddon the Despoiler, and follow the authoritative 62-deck tracker order.
+- At cycle launch on 2026-10-13, all 62 decks were **UNAPPROVED / UNLOCKED**. Historical approvals do not carry forward as current approval. The live state of each deck is whatever the active refinement tracker currently records.
+- The cycle began at deck #1, Abaddon the Despoiler, and follows authoritative tracker order. After a deck passes all mandatory gates and is locked, proceed to the next not-yet-refined deck; do not describe completed decks as still unlocked.
 - Reassess the entire deck, not merely prior proposed slots. Evaluate the commander plan, mana base, curve, consistency, interaction, protection, card advantage, recovery, win conditions, synergistic packages, candidate alternatives, and meaningful cuts.
 - There is no arbitrary swap limit. Make every defensible improvement; zero changes is valid if evidence does not support a change.
 - Keep original source exports and frozen baseline hashes immutable. Store revised lists, decision ledgers, certificates, and hashes as separate revision artifacts.
