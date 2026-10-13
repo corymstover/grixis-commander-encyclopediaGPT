@@ -10,6 +10,7 @@ on:
       - "tests/test_audit_abaddon_baseline_metadata.py"
       - "source-package/GrixisFINAL_62Decks_CSV_TXT_2026-10-12.tar.gz"
       - "refinement/metadata_audit/Current_Scryfall_Metadata_Overlay_2026-10-12.csv"
+      - "refinement/metadata_audit/Current_Scryfall_Metadata_Audit_Summary_2026-10-12.json"
 
 permissions:
   contents: read
