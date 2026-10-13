@@ -5,7 +5,7 @@ Version-controlled project records for the 62-deck Grixis Commander Encyclopedia
 ## Project operating rules
 
 - Each deck is commander-first and preserves that commander's identity and natural power ceiling.
-- **NEW REFINEMENT CYCLE STARTED 2026-10-13:** at cycle launch all 62 decks were unapproved and unlocked, including lists approved in prior cycles. Current status is tracked per deck; decks #1–5 (Abaddon, Admiral Beckett Brass, Admiral Brass, Unsinkable, Anhelo, the Painter, and Ashad, the Lone Cyberman) are now approved/locked after passing new-cycle technical gates, with 57 decks remaining. Historical approvals are historical records only.
+- **NEW REFINEMENT CYCLE STARTED 2026-10-13:** at cycle launch all 62 decks were unapproved and unlocked, including lists approved in prior cycles. Current status is tracked per deck; decks #1–6 (Abaddon, Admiral Beckett Brass, Admiral Brass, Unsinkable, Anhelo, the Painter, Ashad, the Lone Cyberman, and Ashnod the Uncaring) are now approved/locked after passing new-cycle technical gates, with 56 decks remaining. Historical approvals are historical records only.
 - The active cycle may revise any deck after whole-list review. Automatically approve and lock a deck only after all required technical verification gates pass; do not require an additional user approval step. A failed or incomplete gate means no lock.
 - The four `GrixisFINAL` archives dated 2026-10-12 are the current authoritative membership baseline; the `Updated-10-11-2026` archives are historical.
 - Candidate rankings are a research shortlist, not automatic card additions.
@@ -30,7 +30,7 @@ The 124 current decklist CSV/TXT files are verified inside the compact archive. 
 
 ## Controlled refinement campaign — RESET 2026-10-13
 
-**Current state:** NEW CYCLE ACTIVE. The reset began with all 62 decks UNAPPROVED / UNLOCKED; **decks #1–5, Abaddon the Despoiler, Admiral Beckett Brass, Admiral Brass, Unsinkable, Anhelo, the Painter, and Ashad, the Lone Cyberman, are now APPROVED / LOCKED — ALL TECHNICAL GATES PASSED**. 57 decks remain. Next is deck #6, Ashnod the Uncaring, in authoritative tracker order. Previous-cycle lock/approval flags remain historical only; source baseline exports remain immutable. Each deck is auto-approved and locked only after all technical checks pass; do not add a user-approval gate.
+**Current state:** NEW CYCLE ACTIVE. The reset began with all 62 decks UNAPPROVED / UNLOCKED; **decks #1–6, Abaddon the Despoiler, Admiral Beckett Brass, Admiral Brass, Unsinkable, Anhelo, the Painter, Ashad, the Lone Cyberman, and Ashnod the Uncaring, are now APPROVED / LOCKED — ALL TECHNICAL GATES PASSED**. 56 decks remain. Next is deck #7, Be'lakor, the Dark Master, in authoritative tracker order. Previous-cycle lock/approval flags remain historical only; source baseline exports remain immutable. Each deck is auto-approved and locked only after all technical checks pass; do not add a user-approval gate.
 
 
 
@@ -105,3 +105,5 @@ Put new refinement records in separate paths; do not silently replace historical
 ## Automated quality and metadata refresh
 
 The repository uses a scheduled Scryfall bulk refresh plus fail-closed freshness and exact-list verification. See [Automation Operations Guide](refinement/Automation_Operations_Guide.md). Pull requests run the unit suite, workflow-contract checks, and frozen 62-deck hash/count/singleton verification. The large metadata download is serialized and runs weekly or on an explicit refresh request; it is not repeated for ordinary text-only edits.
+
+Ashnod the Uncaring is deck #6 and is approved/locked at revised-list hash `35f55432f14f70bc3eb70412ea8cad7520363740e240531ff7122d2d8980dcc6`. It added Oni-Cult Anvil and Stormclaw Rager and cut Commander's Sphere and Dockside Chef. See its [final decklist](refinement/decklists/Ashnod_the_Uncaring_Refined_2026-10-13.txt), [verification certificate](refinement/verification/Ashnod_the_Uncaring_Verification_2026-10-13.md), [candidate decisions](refinement/decisions/Ashnod_the_Uncaring_Candidate_Decisions_2026-10-13.csv), and [candidate summary](refinement/decisions/Ashnod_the_Uncaring_Candidate_Summary_2026-10-13.md). The cumulative [change ledger](refinement/Deck_Change_Ledger_2026-10-13.csv) now contains the actual changes for decks #1–6.
