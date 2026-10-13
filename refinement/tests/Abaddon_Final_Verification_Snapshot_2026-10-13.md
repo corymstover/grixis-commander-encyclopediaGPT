@@ -43,16 +43,19 @@ The current official Commander banned list was checked on October 13, 2026. No c
 - All 94 card names have been inventoried and assigned a role/context triage disposition. This closes the literal triage queue but is not exhaustive proof across every possible game state.
 - Underworld Breach + Lion’s Eye Diamond + Brain Freeze has a worked line under explicit starting-state and no-interaction assumptions. It is coherent under those assumptions, not an unconditional infinite or guaranteed win through interaction.
 
+
+## Closeout update — 2026-10-13 UTC
+
+The public reference spot-check closes the three named priority cards for Oracle characteristics, UBR-compatible identity, and Commander banned-list status. See Interaction Review Step 11. Important correction: previous triage lines said several MV-1 spells had no lower-MV nonland cascade hit; the list does include MV-0 nonlands, and those claims are corrected in the triage CSV and superseded in the review.
+
+Full current Oracle/identity/legality verification for all 94 unique names is still **PENDING/BLOCKED**, because current Scryfall card-object and bulk endpoints were inaccessible in this session. The available complete refresh is from 2026-10-12 and cannot be labeled live approval-time. No known invalid card was identified in available current public card sources; that is not equivalent to passing the 94-card gate.
+
+The decklist remains unchanged: 100 cards, 94 distinct names, one commander, correct singleton/basics treatment, source TXT/CSV match and frozen hashes retained. Rules/combo review is substantial and now corrected for the cascade-hit issue, but bounded rather than exhaustive. Breach line remains conditionally coherent from the recorded starting state and assumes no opponents interact. Approval/finalization gate stays NO pending the complete fresh 94-name source refresh and explicit user approval.
+
+
 ## Closeout decision
 
-**Retain the frozen baseline unchanged.** The candidate evidence does not justify a material card swap, and the inconclusive test does not justify replacing Mind’s Desire.
-
-Remaining gates:
-1. Complete a fresh approval-time Oracle/color-identity/official Commander-legality refresh across the 94 unique card objects, or keep the blocker explicit if authoritative data is unavailable.
-2. Present this exact, unchanged 100-card list for explicit user approval.
-3. Only after approval, record the approved-list hash/date and set the finalization gate YES.
-
-Until the user approves, final gate = **NO**.
+**Retain the frozen baseline unchanged; no card change is justified by the reviewed candidate evidence.** The full fresh 94-card source refresh is still blocked, and the exact list has not been approved in this refinement cycle. Final gate remains **NO**.
 
 ## Exact copy-and-paste list
 
