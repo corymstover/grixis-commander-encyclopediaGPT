@@ -56,8 +56,18 @@ class AbaddonForgeSmokeDeckTests(unittest.TestCase):
             self.assertIn("1 Mind's Desire", baseline)
             self.assertNotIn("Mind's Desire", variant_dck)
             self.assertIn("1 Aurora Phoenix", variant_dck)
+            baseline_main = baseline.split("[Main]\n", 1)[1].split("[Sideboard]", 1)[0].strip().splitlines()
+            variant_main = variant_dck.split("[Main]\n", 1)[1].split("[Sideboard]", 1)[0].strip().splitlines()
+            self.assertEqual(variant_main, ["1 Aurora Phoenix", "98 Island"])
+            self.assertEqual(baseline_main, ["1 Mind's Desire", "98 Island"])
+            self.assertEqual(len(baseline_main), len(variant_main))
             manifest = json.loads((outdir / "smoke-deck-manifest.json").read_text(encoding="utf-8"))
             self.assertEqual(manifest["comparison"]["added"], {"Aurora Phoenix": 1})
+            self.assertTrue(manifest["paired_input_order"]["all_other_slots_aligned"])
+            self.assertEqual(
+                manifest["paired_input_order"]["differences"],
+                [{"slot": 0, "baseline": "Mind's Desire", "variant": "Aurora Phoenix"}],
+            )
 
     def test_prepare_rejects_unregistered_list_changes(self):
         with tempfile.TemporaryDirectory() as tmp:
