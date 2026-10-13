@@ -2,9 +2,11 @@
 
 **Snapshot date:** 2026-10-13  
 **Candidate version pin:** Forge `forge-2.0.15`, resolved commit `4ec5f1a2c32fa90ecb983a72b9eb47aa5c5d7676`  
-**Decision:** **NOT QUALIFIED** for gameplay testing  
-**Gameplay runs:** 0  
+**Current decision:** smoke checks for source presence and Commander-mode deck loading **PASS**; **NOT QUALIFIED** for rules-correctness testing or comparative gameplay.  
+**Valid comparative gameplay runs:** 0 (one bounded CLI smoke match was stopped as a draw after a 10-second clock).  
 **Approved card changes:** 0
+
+> **Current-status note (2026-10-13):** Sections 1–9 below preserve the investigation chronology and include historical statuses that were accurate before the latest CI run. The authoritative current outcome is in [Section 10](#10-latest-qualified-scope-after-the-commander-mode-smoke-test) and the [smoke-test result record](Abaddon_Forge_Smoke_Test_Result_2026-10-13.md). Do not interpret the earlier pending-source-scan or no-deck-load statements as current.
 
 ## Current verified state
 
@@ -132,3 +134,16 @@ The scan did successfully exercise a key workflow capability: the release tree a
 4. Rerun. Manually resolve every missing/ambiguous row. A script-presence match still does not demonstrate runtime rules correctness.
 
 Current qualification remains **NOT QUALIFIED**. The deck has not been imported; no card-specific interaction smoke tests or gameplay have run; paired starts and structured event logs remain unproven.
+
+
+## 10. Latest qualified scope after the Commander-mode smoke test
+
+The latest workflow [run 38338464845](https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/38338464845) supersedes the earlier statements in this report that the full card-script audit and exact deck-load test were still pending.
+
+- The pinned card-script scan matched **95/95** names: 94 unique names in the isolated variant plus Mind's Desire as the baseline-only comparison card; zero missing/invalid rows; all required controls passed.
+- The frozen baseline archive/hash was verified, and the exact baseline and isolated test variant were converted to Forge Commander `.dck` inputs. Both lists retained exactly 100 cards; only Mind's Desire was replaced with Aurora Phoenix.
+- The Forge 2.0.15 CLI launched the Commander simulation using both deck files. That is a successful deck-load/runtime smoke test.
+- The game was forcibly stopped as a draw under its 10-second per-game clock. The log also contained contradictory winner lines and repeated Steam Vents activator warnings. Therefore the output is **not a valid gameplay result**, and no comparison or card decision may be inferred from it.
+- Deterministic/paired starting orders, structured event logging, and runtime validation of Abaddon's cascade grant, Aurora's graveyard trigger, storm/copy behavior, and the Breach line remain unproven.
+
+See [Abaddon Forge Smoke-Test Result](Abaddon_Forge_Smoke_Test_Result_2026-10-13.md) for the full evidence and exact gate status. The overall decision remains **NOT QUALIFIED for comparative gameplay testing**; the Aurora Phoenix proposal remains separate from the baseline and unapproved. The registered baseline-versus-variant performance test remains **NOT RUN**.
