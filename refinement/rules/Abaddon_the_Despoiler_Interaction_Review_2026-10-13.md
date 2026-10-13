@@ -80,3 +80,63 @@ This review closes the first candidate's specific Abaddon/Aurora cascade-grant q
 - Do not infer performance from card popularity, rules synergy, or a scripted model that does not faithfully implement Magic's rules.
 - Present a final exact list only if a swap is justified, independently recount and reverify it, and wait for explicit user approval before considering it finalized.
 
+
+
+## 5. Commander-specific package interaction review — expanded 2026-10-13
+
+This section follows the current source-package Oracle text for the Abaddon list and the current Scryfall metadata refresh. It records the important trigger and zone interactions rather than treating every card as an isolated inclusion. This is still a focused interaction review, not proof that every conceivable game state has been tested.
+
+### Cascade and same-turn life-loss engine
+
+| Package/card | Verified interaction | Guardrail |
+|---|---|---|
+| **Bloodletter of Aclazotz + Solphim, Mayhem Dominus + damage spells** | On your turn, Bloodletter doubles life loss an opponent would take. Solphim separately doubles noncombat damage dealt to opponents. Where both apply to a damage event, a base 1 damage ping can become 2 damage from Solphim, then 4 life lost after Bloodletter. These are replacement effects acting on different parts of damage/life loss. | This only applies to opponent life loss during your turn. Solphim does not double pure life-loss effects such as Loyal Subordinate or The Ruinous Powers trigger. |
+| **Boltwave / Flame Rift** | With both Solphim and Bloodletter on your turn, Boltwave's 3 damage becomes 6 damage to each opponent and then 12 life lost per opponent; Flame Rift's 4 damage becomes 8 damage to each opponent and then 16 life lost per opponent. The life lost is aggregated across opponents for Abaddon's threshold. | Flame Rift also deals its printed 4 damage to you; Solphim and Bloodletter's opponent-only effects do not double your own life loss. Do not count self-damage from lands or mana sources toward Abaddon's threshold. |
+| **Loyal Subordinate + Bloodletter** | Loyal Subordinate's lieutenant trigger makes each opponent lose 3 life at the beginning of combat. Bloodletter doubles that to 6 per opponent on your turn (18 total at a normal three-opponent table), without needing combat damage. | This is life loss, not damage, so Solphim does not amplify it. It requires control of your commander at the beginning of combat, not that your commander attack. |
+| **Neheb, the Eternal** | At the beginning of each postcombat main phase, Neheb adds red mana equal to the total life opponents have lost this turn. This can convert Abaddon's damage/life-loss setup into mana for a postcombat cascade turn. | It counts life lost this turn; it does not carry the prior turn's loss forward. Mana is generated at the postcombat main phase trigger only. |
+| **Rakdos, Lord of Riots** | He cannot be cast unless an opponent has lost life this turn, and the cost reduction for creature spells is {1} for each life opponents have lost this turn. Abaddon's damage setup assists both conditions. | This is a separate life-loss check/reduction; it does not itself grant cascade to spells cast from zones other than hand. |
+
+The doubling sequence can make a low-mana spell open a large Abaddon threshold. For instance, Boltwave is mana value one; if Solphim and Bloodletter are both present on your turn, the resulting 12 life loss per opponent is enough to satisfy Abaddon's mana-value threshold for much of the deck. The engine is conditional on those permanents and the damage resolving, so this is a high-ceiling line, not a baseline guarantee.
+
+### Cast-from-exile value and damage
+
+| Package/card | Verified interaction | Guardrail |
+|---|---|---|
+| **Passionate Archaeologist** | Abaddon is a commander creature you own, so the Background gives Abaddon an ability that triggers when you cast a spell from exile. It deals damage equal to that spell's mana value to a target opponent. Cascade hits, spells cast from The Ruinous Powers, and suspend casts from exile can all trigger it. | A card copy created by Nalfeshnee or Storm is not cast; it does not trigger Passionate Archaeologist. If Abaddon is not on the battlefield when the exile spell is cast, Abaddon cannot deal this damage. |
+| **Keeper of Secrets** | Whenever you cast a spell from anywhere other than your hand, Keeper deals damage equal to that spell's mana value to a target opponent. This includes cascade hits cast from exile and escape casts from the graveyard. | Copies of a spell are not cast, so they do not trigger Keeper of Secrets. |
+| **Nalfeshnee** | Casting a spell from exile triggers Nalfeshnee, which can copy that spell. A copied permanent spell becomes a token permanent with haste and an end-step sacrifice ability; a copied instant/sorcery spell is copied on the stack. | Nalfeshnee's copy is not cast. It does not create a second cascade trigger, does not trigger Passionate Archaeologist/Keeper/Prosper's cast-from-exile text, and does not count as a spell cast for Storm. It **does** count as a copied instant/sorcery for Storm-Kiln Artist's magecraft ability. |
+| **Prosper, Tome-Bound** | Each card you play from exile creates a Treasure. This includes a card cast from cascade or The Ruinous Powers and a land played from exile when a land play is permitted. | A spell copy is not a card played from exile. It doesn't trigger Prosper. Track the normal land-play limit and the duration of each exile permission. |
+| **The Lost and the Damned** | Each spell you cast from a zone other than your hand creates a 3/3 Spawn token; a land entering under your control from other than your hand also triggers it. This covers cascade/suspend casts from exile and escape casts from the graveyard, as well as lands played from exile. | It triggers on the actual cast/land-entry event, not on storm or Nalfeshnee copies. It is not limited to only one spell per turn. |
+| **The Ruinous Powers** | At your upkeep, it randomly selects an opponent and exiles that player's top card for play until end of turn. If you cast a spell this way, that spell's owner loses life equal to its mana value. If the owner is an opponent, this life loss increases Abaddon's threshold for subsequent spells from hand during your turn; Bloodletter doubles that life loss on your turn. | The spell cast from The Ruinous Powers is from exile, not your hand, so Abaddon does not grant cascade to that spell. The loss-of-life trigger resolves after the spell has been cast and cannot retroactively grant that same spell cascade. A land played from exile is not a spell and does not cause this life-loss trigger. |
+| **Wild-Magic Sorcerer** | The first spell you cast from exile each turn has cascade. A first cascade hit can itself receive this additional cascade, potentially continuing the chain. If that spell already has printed cascade, its instances trigger separately. | The extra cascade is limited to the first spell cast from exile each turn; do not assign it to every cascade hit. |
+| **Delayed Blast Fireball** | When cascade casts it from exile, the exile condition applies: it deals 5 damage to each opponent and their creatures, rather than 2. Solphim and Bloodletter can amplify its opponent life-loss component on your turn. | The exile clause depends on how it was cast. A normal cast from hand doesn't receive the 5-damage version just because Abaddon granted cascade to the spell that found it. |
+
+### Spell-copy, storm, and damage-trigger interactions
+
+- **Exalted Flamer of Tzeentch** deals 1 damage to each opponent whenever you cast an instant or sorcery, including spells cast from exile or escaped from the graveyard. It doesn't trigger just because an instant/sorcery is copied.
+- **Kessig Flamebreather** and **Vivi Ornitier** trigger when you cast a noncreature spell. Each real cast in a cascade chain can trigger them; a copy is not cast. Vivi's counter and damage trigger happen from the same noncreature cast.
+- **Storm-Kiln Artist** triggers when you cast or copy an instant or sorcery. Unlike the effects above that require a cast, it can make Treasures from the copies created by Brain Freeze's storm ability or Nalfeshnee's copy ability.
+- **Birgi, God of Storytelling** triggers for spells actually cast, including from exile or the graveyard; it doesn't trigger from spell copies. This list does not contain Grinning Ignus, so do not claim the known Birgi + Grinning Ignus infinite loop is present.
+- **Noise Marine** has printed cascade and an enters-the-battlefield ability dealing damage equal to the number of spells cast that turn. Spells cast while its own cascade triggers resolve before Noise Marine resolves can increase that later damage number.
+- **Call Forth the Tempest** has two printed instances of cascade. When cast from hand during your turn after opponents have lost at least eight total life that turn, Abaddon grants an additional cascade instance, for three separate cascade triggers. Its damage to opposing creatures is based on the total mana value of other spells cast that turn; actual cascade-hit spells count as casts, while storm/Nalfeshnee spell copies do not.
+- **Ancestral Vision, Inevitable Betrayal, and Profane Tutor** have mana value zero and can be hit by cascade effects that allow casting them without paying their mana cost. When cast from exile this way they are normal spell casts, not suspend casts. They do not get cascade from Abaddon because they were cast from exile rather than the controller's hand.
+
+### Breach / Brain Freeze finish and practical conditions
+
+The baseline's Underworld Breach + Lion's Eye Diamond + Brain Freeze package is listed by EDHREC/Commander Spellbook as a high-ceiling three-card combo with these starting prerequisites: Brain Freeze in the graveyard; Breach and LED on the battlefield; at least six other cards across hand and graveyard. The exact sequence depends on the starting zones, fuel, available mana, spell/escape timing, and how many cards are available to keep the engine moving.
+
+1. Sacrifice LED to discard your hand and add three mana of one color.
+2. Escape LED by exiling three other graveyard cards.
+3. Escape Brain Freeze for {1}{U}, exiling three cards.
+4. Use Brain Freeze's storm copies to mill yourself for continuing escape fuel and opponents for a potential finish; repeated casts raise storm count.
+5. If using **Wheel of Fortune** or **Windfall** to make opponents with empty libraries attempt to draw and lose, retain enough of your own library to survive those draw instructions. Milling an opponent's library alone does not make them lose immediately.
+
+With Storm-Kiln Artist in play, Brain Freeze casts **and their storm copies** can create Treasures; Exalted Flamer triggers for each actual instant/sorcery cast, while Nalfeshnee and the cast-from-exile payoffs trigger only for spells actually cast from exile. Those trigger distinctions matter when sequencing and estimating mana or damage.
+
+This is a resource-dependent finite-game combo sequence, not a resource-free mathematical infinite. Opponents can interact between steps, and graveyard hate, counters, and insufficient fuel can stop it. Official combo discovery/reference: [EDHREC's Underworld Breach + LED + Brain Freeze record](https://edhrec.com/combos/izzet/1368-3518-4856); Abaddon-specific known combo listing: [EDHREC Abaddon combo list](https://edhrec.com/combos/abaddon-the-despoiler).
+
+## 6. Updated result and open gates
+
+**Closed by this review:** the Abaddon mana-value fact (5, not 6); the proposed Aurora/Phoenix granted-cascade interaction; the primary same-turn opponent-life-loss threshold interactions; major cast-from-exile trigger boundaries; and the core Breach/LED/Brain Freeze package prerequisites and copy/cast guardrails.
+
+**Still open:** verify remaining individual interactions not covered above; review card-by-card current Oracle text for any later changes after the recorded Scryfall snapshot; a validated test engine and actual baseline-vs-variant gameplay results; the test decision; any final-list recount and hash; and explicit user approval before any proposed final change. This review does not justify marking the deck final.
