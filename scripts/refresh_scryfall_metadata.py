@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 """Refresh exact-printing card metadata from Scryfall default_cards bulk data."""
-# One controlled refresh run requested for the 2026-10-12 campaign.
 import csv, gzip, hashlib, io, json, re, tarfile, tempfile, time, urllib.error, urllib.request
 from collections import defaultdict
 from datetime import datetime, timezone
@@ -16,11 +15,7 @@ EXCEPTIONS=ROOT/"source-package/research/Project_Exceptions_Current_2026-10-12.c
 def norm(s): return re.sub(r"[^a-z0-9]+","",(s or "").casefold().replace("’","'"))
 def sha(s): return hashlib.sha256(s.encode()).hexdigest()
 def request(url,accept="application/json",attempts=5):
- """Request Scryfall with bounded retries for transient errors only.
-
- Permanent client errors such as HTTP 403 fail immediately with a clear message; a
- stale snapshot is never silently substituted for a failed current refresh.
- """
+ """Use bounded retries only for transient failures; permanent errors fail fast."""
  retryable={408,425,429,500,502,503,504}
  for attempt in range(1,attempts+1):
   r=urllib.request.Request(url,headers={"User-Agent":UA,"Accept":accept})
