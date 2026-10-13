@@ -29,7 +29,7 @@ archive_sequence_no,deck_id,current_csv_filename,current_txt_filename,csv_rows,t
 28,Loki__the_Deceiver,Loki__the_Deceiver.csv,Loki__the_Deceiver.txt,95,95,100,100,100,,,,0,PASS
 29,Lord_of_Tresserhorn,Lord_of_Tresserhorn.csv,Lord_of_Tresserhorn.txt,98,98,100,100,100,,,,0,PASS
 30,Lord_Xander__the_Collector,Lord_Xander__the_Collector.csv,Lord_Xander__the_Collector.txt,97,97,100,100,100,,,,0,PASS
-31,Lynde__Cheerful_Tormentor,Lynde__Cheerful_Tormentor.txt,93,93,100,100,100,,,,0,PASS
+31,Lynde__Cheerful_Tormentor,Lynde__Cheerful_Tormentor.csv,Lynde__Cheerful_Tormentor.txt,93,93,100,100,100,,,,0,PASS
 32,Mai_and_Zuko,Mai_and_Zuko.csv,Mai_and_Zuko.txt,100,100,100,100,100,,,,0,PASS
 33,Mairsil__the_Pretender,Mairsil__the_Pretender.csv,Mairsil__the_Pretender.txt,100,100,100,100,100,,,,0,PASS
 34,Marchesa__Dealer_of_Death,Marchesa__Dealer_of_Death.csv,Marchesa__Dealer_of_Death.txt,100,100,100,100,100,,,,0,PASS
