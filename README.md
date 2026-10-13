@@ -19,6 +19,7 @@ The source ZIP's internal manifest passed 165/165 hashes; all 62 current CSV/TXT
 ## Current baseline and source consolidation
 
 - [Source consolidation reconciliation — 2026-10-13](source-package/Source_Consolidation_Reconciliation_2026-10-13.md)
+- [Deep-research continuation checkpoint — 2026-10-13](source-package/Deep_Research_Continuation_Checkpoint_2026-10-13.md)
 - [Duplicate source reconciliation — 2026-10-13](source-package/Duplicate_Source_Reconciliation_2026-10-13.md)
 - [Exact current source-package text copies and source hashes](source-package/reference-copies/current-package-text-2026-10-12/README.md)
 - [Current project status — 2026-10-13](source-package/Grixis_Project_Current_Status_2026-10-13.md)
