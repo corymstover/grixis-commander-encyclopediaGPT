@@ -115,3 +115,7 @@ The next bounded step is recorded at [Abaddon Interaction Audit Coverage Plan](h
 The current interaction review is extensive, but its own section 7 still marks all-card interaction closeout and the exact final-list certificate OPEN. The new plan therefore does not claim the audit is complete. It preserves existing closed findings and the inconclusive Aurora Phoenix comparison, forbids baseline changes during the audit, and separates the dated metadata pass from the fresh official legality check required at approval time.
 
 **Current step:** coverage-control plan committed; card-by-card mapping and remaining interaction review are the next work unit. The frozen list, finalization gate NO, and historic approvals remain unchanged.
+
+### Step 1 completed — Abaddon interaction coverage inventory (2026-10-13 UTC)
+
+The frozen 100-card Abaddon TXT has been inventoried into [Abaddon Interaction Coverage Inventory](https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/tests/Abaddon_Interaction_Coverage_Inventory_2026-10-13.csv). All 94 unique card names are represented. The existing review explicitly mentions 33 names; 61 are not explicitly mentioned and have been queued for role-based triage. Explicit mention is not itself a certification, and absence from the narrative review is not automatically a defect. Step 2 is to assess the 61 names by role and open rule-level reviews only for material interactions/dependencies. No decklist changes were made; final gate remains NO.
