@@ -73,3 +73,14 @@ The isolated variant and frozen baseline were rechecked on 2026-10-13. The basel
 ## Forge engine qualification update
 
 A targeted source-code review found scripts for Abaddon, Aurora Phoenix, Mind's Desire, Underworld Breach, Brain Freeze, Lion's Eye Diamond, and Wild-Magic Sorcerer, but this is not a complete 94-card support audit or live engine test. Forge's own documentation warns its AI is poor at most combo decks. The engine therefore remains **NOT QUALIFIED** for the registered test; no games have been run. See [Abaddon Forge Engine Qualification](Abaddon_Forge_Engine_Qualification_2026-10-13.md).
+
+
+## 8. Current engine gate update — 2026-10-13
+
+A candidate Forge release is now pinned: `forge-2.0.15` resolving to commit `4ec5f1a2c32fa90ecb983a72b9eb47aa5c5d7676`. Six high-priority scripts (Abaddon, Aurora Phoenix, Mind's Desire, Underworld Breach, Brain Freeze, Lion's Eye Diamond) were read at that commit. This remains a source sample only.
+
+The 94-name release-specific script coverage audit was attempted using remote calls but could not be completed within the connector's tool-call budget. The engine has not been installed, the variant has not been loaded into Forge, runtime smoke tests have not been run, and the required paired-start/event-log controls have not been demonstrated. Thus the test plan is still **REGISTERED — NOT RUN**, and the engine gate is **NOT PASSED**.
+
+Forge CLI docs support Commander-format AI self-play, but the documented AI explicitly has poor performance in most combo decks. CLI repeat count does not by itself establish matched library order, deterministic seeds, or adequate structured per-event output. Even if a runtime smoke test passes, these separate protocol requirements must be tested before labeling Forge results a confirmatory paired comparison. If a suitable execution environment or reproducibility controls are unavailable, record the performance comparison as not feasible with this engine and make a decision from rules/strategic evidence only, without claiming statistical playtest support.
+
+See the [consolidated Forge qualification report](Abaddon_Forge_Engine_Qualification_2026-10-13.md).
