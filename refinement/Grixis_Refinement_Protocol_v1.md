@@ -156,7 +156,7 @@ A deck may be marked `FINAL AS OF YYYY-MM-DD` only when *all* are true:
 5. **No material upgrade identified:** every proposed high-impact swap was accepted, rejected with a reason, or closed as inconclusive because the evidence did not justify a change.
 6. **Performance check complete:** the resulting list meets predeclared consistency/strategy targets; there is no demonstrated material regression versus baseline; tests have known assumptions and limitations.
 7. **Decision log complete:** additions/cuts, evidence, rejected close alternatives, remaining uncertainty, source dates and final list hash are preserved.
-8. **User approved:** final list presented in the required one-card-per-line format and explicitly accepted.
+8. **Automatic approval and lock:** after Gates 1–7 pass, the exact final list is presented in the required one-card-per-line format; the verification certificate, final hash, and all gate evidence are recorded; then the revision is automatically marked APPROVED / LOCKED. User approval is not an additional gate in the active cycle.
 
 If two choices remain close and neither has reliable evidence of superiority, choose based on commander identity, resilience, versatility, and stated project values, document the tie-break, and stop. Do not reopen the slot just because another plausible card can be found.
 
@@ -174,7 +174,7 @@ Otherwise maintain the finalized snapshot. A newer date by itself is not a reaso
 ## 10. Efficient campaign sequence
 
 1. **Project-wide preflight once:** confirm the current baseline source, refresh official legality/Oracle data and mark the data date. Do not rebuild ranking research for no reason.
-2. **Per deck:** blueprint → targeted candidate triage → slot-level swaps → rules audit → tests → finalization gate → user approval → hash and lock.
+2. **Per deck:** full-list blueprint and audit → targeted candidate triage → evidence-backed slot/package decisions → rules and legality verification → appropriate consistency/performance tests → finalization gate → certificate and hash → automatic approval and lock only if every mandatory gate passes.
 3. **Do not revisit finished decks during this campaign** unless a predeclared trigger appears. Move to the next commander only after the current review is formally closed.
 4. **After all 62:** preserve the final lists, finalization records, test summaries, card-data snapshot, exception registry and aggregate audit. Thereafter, run only trigger-based maintenance.
 
