@@ -43,6 +43,10 @@ def summarize_game_log(log_text: str, target_label: str) -> dict[str, Any]:
 
     for raw_line in log_text.splitlines():
         line = re.sub(r"\x1b\[[0-9;]*m", "", raw_line).strip()
+        # Forge CLI logs prefix engine events with a wall-clock timestamp and [INFO].
+        # Strip those prefixes before matching, while retaining untouched raw logs in artifacts.
+        line = re.sub(r"^\d{4}-\d\d-\d\dT[^\s]+Z\s*", "", line)
+        line = re.sub(r"^\d{2}:\d{2}:\d{2}\s+\[INFO\s*\]\s*", "", line)
         turn_match = re.match(r"^Turn:\s+Turn\s+(\d+)\s+\((.+)\)$", line)
         if turn_match:
             all_turn_count += 1
