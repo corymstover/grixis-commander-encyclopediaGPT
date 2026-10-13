@@ -43,14 +43,13 @@ jobs:
           find . -maxdepth 2 -type f -name 'forge-gui-desktop-2.0.15-jar-with-dependencies.jar' -print | tee forge-jar-path.txt
           test -s forge-jar-path.txt
           JAR="$(head -1 forge-jar-path.txt)"
-          # Start the pinned JAR only with no game/deck command. This is a runtime
-          # startup probe, not a gameplay simulation.
-          timeout 90s java -jar "$JAR" --help > forge-startup.stdout.txt 2> forge-startup.stderr.txt || CODE=$?
+          # Invoke documented parse mode without input to verify CLI mode parsing.
+          # This is a startup/CLI probe, not a gameplay simulation.
+          timeout 90s java -jar "$JAR" parse > forge-startup.stdout.txt 2> forge-startup.stderr.txt || CODE=$?
           CODE="${CODE:-0}"
           echo "$CODE" > forge-startup.exit-code.txt
           echo "Startup probe exit code: $CODE"
-          # A nonzero/help-unrecognized exit isn't silently converted to a pass;
-          # logs are retained and inspected separately.
+          # A nonzero or usage response is recorded; logs are retained for review.
           cat forge-startup.stdout.txt || true
           cat forge-startup.stderr.txt || true
 
