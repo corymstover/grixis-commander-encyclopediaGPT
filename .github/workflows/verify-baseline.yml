@@ -48,5 +48,7 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_*.py' -v
       - name: Check refresh trigger/path contracts
         run: python scripts/check_workflow_contracts.py
+      - name: Verify refinement tracker schema and approval metadata
+        run: python scripts/check_tracker_integrity.py
       - name: Verify frozen 62-deck source package
         run: python scripts/verify_baseline.py

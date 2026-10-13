@@ -7,6 +7,8 @@ WORKFLOW = ROOT / ".github/workflows/refresh-scryfall-metadata.yml"
 REQUEST = ROOT / "refinement/metadata_audit/REFRESH_REQUEST.md"
 SCRIPT = ROOT / "scripts/refresh_scryfall_metadata.py"
 VALIDATOR = ROOT / "scripts/validate_scryfall_metadata_refresh.py"
+TRACKER_CHECK = ROOT / "scripts/check_tracker_integrity.py"
+QUALITY_WORKFLOW = ROOT / ".github/workflows/verify-baseline.yml"
 
 def main() -> int:
     errors = []
@@ -25,18 +27,34 @@ def main() -> int:
             errors.append(f"canonical current-output path is not shared by script/workflow: {filename}")
     if "validate_scryfall_metadata_refresh.py" not in wf:
         errors.append("refresh workflow does not execute the freshness validator")
+    validator_start = wf.find("- name: Validate snapshot freshness and completeness")
+    abaddon_start = wf.find("- name: Audit Abaddon's exact 94-name frozen list")
+    if validator_start < 0 or abaddon_start < 0 or abaddon_start <= validator_start:
+        errors.append("refresh validator must precede the Abaddon exact-list audit")
+    else:
+        validator_block = wf[validator_start:abaddon_start]
+        if "if: success()" not in validator_block:
+            errors.append("refresh validator must run only after the current refresh step succeeds")
+        if 'RUN_STARTED_AT: ${{ github.run_started_at }}' not in validator_block:
+            errors.append("refresh validator is not anchored to the current workflow start time")
+        if '--not-before-utc "$RUN_STARTED_AT"' not in validator_block:
+            errors.append("freshness validator is not rejecting snapshots predating this run")
     if "audit_abaddon_baseline_metadata.py" not in wf:
         errors.append("refresh workflow does not run the Abaddon exact-name audit")
     if "upload-artifact@v4" not in wf:
         errors.append("refresh workflow does not preserve run diagnostics")
     if not VALIDATOR.is_file():
         errors.append("refresh validator script is missing")
+    if not TRACKER_CHECK.is_file():
+        errors.append("tracker integrity checker is missing")
+    if "check_tracker_integrity.py" not in QUALITY_WORKFLOW.read_text(encoding="utf-8"):
+        errors.append("fast quality workflow does not run tracker integrity validation")
     if errors:
         print("FAIL: automation contract mismatch", file=sys.stderr)
         for error in errors:
             print(f"- {error}", file=sys.stderr)
         return 1
-    print("PASS: watched path, weekly/manual triggers, concurrency, stable outputs, freshness gate, Abaddon audit, and diagnostics are wired.")
+    print("PASS: watched path, weekly/manual triggers, concurrency, current-run freshness gate, Abaddon audit, tracker integrity and diagnostics are wired.")
     return 0
 
 if __name__ == "__main__":
