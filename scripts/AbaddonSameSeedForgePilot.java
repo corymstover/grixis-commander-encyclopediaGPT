@@ -112,8 +112,8 @@ public final class AbaddonSameSeedForgePilot {
             + "  \"paired_input_order_alignment\": \"Verified by Python deck-fixture helper; Aurora Phoenix occupies the baseline Mind's Desire slot.\",\n"
             + "  \"limitations\": [\n"
             + "    \"Forge AI has known limitations on combo decks; all outcomes are conditional on this AI and this one fixed opponent.\",\n"
-            + "    \"Identical seeds plus aligned DCK input order are the pairing control; opening hands are not directly exposed as a separate verified assertion.\",\n"
-            + "    \"This pilot estimates instrumentation/variance only and must not be used to choose the card slot.\",\n"
+            + "    \"Forge DCK/CardPool iteration does not establish identical starting library order; treat each run as unpaired.\",\n"
+            + "    \"This pilot tests log instrumentation and exploratory AI behavior only; it must not be used to choose the card slot.\",\n"
             + "    \"Raw per-game logs are preserved for event-level inspection.\"\n"
             + "  ]\n"
             + "}\n";
