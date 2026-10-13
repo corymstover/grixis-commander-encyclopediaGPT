@@ -9,7 +9,9 @@ on:
       - "refinement/variants/Abaddon_Aurora_Phoenix_Test_Variant_v1.txt"
       - "scripts/verify_abaddon_variant.py"
       - "scripts/probe_forge_card_coverage.py"
+      - "scripts/prepare_abaddon_forge_smoke_decks.py"
       - "tests/test_probe_forge_card_coverage.py"
+      - "tests/test_prepare_abaddon_forge_smoke_decks.py"
 
 permissions:
   contents: read
@@ -17,7 +19,7 @@ permissions:
 jobs:
   probe-forge:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 30
     steps:
       - name: Check out project
         uses: actions/checkout@v4
@@ -25,8 +27,8 @@ jobs:
       - name: Verify isolated deck variant
         run: python scripts/verify_abaddon_variant.py
 
-      - name: Test Forge coverage audit
-        run: python -m unittest discover -s tests -p 'test_probe_forge_card_coverage.py' -v
+      - name: Run unit tests for audit and smoke-deck preparation
+        run: python -m unittest discover -s tests -v
 
       - name: Download pinned Forge release
         shell: bash
@@ -85,6 +87,29 @@ jobs:
             --extra-card "Mind's Desire" \
             --output forge-card-script-coverage.json
 
+      - name: Generate hash-verified Forge deck-load fixtures
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/prepare_abaddon_forge_smoke_decks.py \
+            --archive source-package/GrixisFINAL_62Decks_CSV_TXT_2026-10-12.tar.gz \
+            --variant refinement/variants/Abaddon_Aurora_Phoenix_Test_Variant_v1.txt \
+            --output-dir forge-smoke-decks | tee forge-smoke-deck-preparation.txt
+
+      - name: Run one-game Commander deck-load smoke test
+        shell: bash
+        run: |
+          set -euo pipefail
+          JAR="$(head -1 forge-jar-path.txt)"
+          # This verifies deck import and a rules-engine game launch only. The mirrored
+          # decks are deliberately not treated as a performance comparison.
+          timeout 180s java -jar "$JAR" sim \
+            -D "$PWD/forge-smoke-decks" \
+            -d "Abaddon baseline.dck" "Abaddon Aurora Phoenix variant.dck" \
+            -f Commander -n 1 -q -c 10 2>&1 | tee forge-game-smoke.log
+          grep -Ei 'winner|wins|draw|match' forge-game-smoke.log > forge-game-smoke-summary.txt
+          test -s forge-game-smoke-summary.txt
+
       - name: Preserve probe logs and coverage report
         uses: actions/upload-artifact@v4
         if: always()
@@ -98,5 +123,10 @@ jobs:
             forge-startup.exit-code.txt
             forge-source-commit.txt
             forge-card-script-coverage.json
+            forge-smoke-deck-preparation.txt
+            forge-game-smoke.log
+            forge-game-smoke-summary.txt
+            forge-smoke-decks/*.dck
+            forge-smoke-decks/smoke-deck-manifest.json
           if-no-files-found: warn
           retention-days: 30
