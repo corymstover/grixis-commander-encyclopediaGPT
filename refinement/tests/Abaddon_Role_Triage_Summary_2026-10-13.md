@@ -19,16 +19,18 @@ All **61** cards that were not explicitly named in the existing interaction revi
 - **Board wipe:** Blasphemous Act damages creatures rather than players; it can remove the deck's own creature engines but is not itself an opponent-life-loss threshold enabler.
 - **Remaining ordinary roles:** routine draw engines, tutors, basic lands, and ordinary ramp have no additional deck-specific rules issue identified in this triage pass.
 
-## Step 3 priority list
+## Step 3 priority list and disposition
 
-The following items merit sourced card-text/sequence verification before being marked closed:
-1. **Top-deck and cascade sequencing:** Brainstorm, Ponder, Mystical Tutor, Imperial Seal, Vampiric Tutor, plus fetchland shuffles.
-2. **Abaddon + cost-reduced/alternate-cost spells:** Nightscape Familiar, Deadly Rollick, Deflecting Swat, Fierce Guardianship, Force of Will, Pact of Negation, Force of Negation.
-3. **Jeska's Will and exile payoffs:** confirm which payoffs trigger on the actual spell cast and which do not trigger from copies.
-4. **Thermo-Alchemist threshold loop** and interaction with instant/sorcery casts.
-5. **Breach resource tension:** Cabal Ritual threshold, Chrome Mox imprint, and Underworld Breach fuel.
-6. **Channel / land-type effects:** Otawara, Takenuma, Urborg, fetchlands, and Xander's Lounge; close with source-backed notes where relevant.
-7. **Blasphemous Act and own-board opportunity cost**; not a deck-specific rules ambiguity, but document its interaction with the creature engine.
+1. **Top-deck/cascade sequencing — CHECKED:** Brainstorm, Ponder, Mystical Tutor, Imperial Seal, Vampiric Tutor and fetchland shuffles. Mana-value-1 setup spells cannot cascade into a lower mana-value card.
+2. **Alternate/free-cost spells — CHECKED FOR NAMED MATERIAL CASES:** Deadly Rollick, Deflecting Swat, Fierce Guardianship, Force of Will, Force of Negation and Pact of Negation. Nightscape Familiar's cost reduction was separately role-triaged; costs paid do not change mana value.
+3. **Jeska's Will/exile payoffs — CHECKED:** actual spells cast from exile can trigger relevant payoffs but do not receive Abaddon's hand-only cascade grant. Copies are not casts.
+4. **Thermo-Alchemist — CHECKED:** its damage can raise the threshold only before the spell whose cascade eligibility depends on that damage is cast.
+5. **Breach resource tension — WORKED SEQUENCE RECORDED:** the Breach/LED/Brain Freeze line is rules-coherent from its documented starting state and fuel assumptions, not an unconditional infinite. Cabal Ritual and Chrome Mox constraints are role-triaged.
+6. **Channel/land-type effects — ROLE-TRIAGED:** Otawara, Takenuma, Urborg, fetchlands and Xander's Lounge have relevant functional notes; reopen only for a concrete contradiction.
+7. **Blasphemous Act — NEXT BOUNDED CHECK:** verify creature-only damage and the trade-off of destroying this deck's own creature engines.
+8. **Harnfel face and Bituminous Blast — CHECKED:** see [Abaddon Step 4 Context Check](Abaddon_Step_4_Context_Check_2026-10-13.md).
+
+These dispositions record bounded checks, not the final 94-name live Oracle/identity certificate.
 
 ## Stop rule
 
