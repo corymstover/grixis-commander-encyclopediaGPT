@@ -114,3 +114,21 @@ This confirms the pinned desktop distribution can start and accept a recognized 
 - Gameplay tests: **0**
 
 The next step is to use Forge's parse command with a minimal, known-valid input and inspect the documented expected output, then test the exact deck importer format. Do not submit actual baseline-vs-variant games until list loading and interaction smoke tests are validated. Forge is still **not qualified** for either exploratory gameplay or confirmatory paired testing.
+
+
+## 9. Automated card-script presence scan — 2026-10-13
+
+The new coverage scan ran in GitHub Actions [run 38334295959](https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/38334295959), at Forge release commit `4ec5f1a2c32fa90ecb983a72b9eb47aa5c5d7676`. The workflow passed its release archive SHA-256 check, extraction, and JAR startup; the script scanner found the `res/cardsfolder` tree and read the deck variant as **94 distinct names**.
+
+**Initial scan result: 0 matches / 94 missing / 0 ambiguous.** This does *not* mean all cards are unsupported. The scanner compared each deck name to the script `Name:` field using overly strict normalized full-name matching; Forge’s card scripts commonly use front-face canonical names and filenames, so double-faced cards and name conventions may differ. This result is a scanner false-negative risk, not evidence of actual missing support.
+
+The scan did successfully exercise a key workflow capability: the release tree and all card-script text are available locally inside CI, so the coverage audit can now be corrected and rerun without 94 remote fetch calls. The raw JSON and startup logs are preserved in artifact `forge-2.0.15-runtime-probe`, ID `11783883372`, SHA-256 `0a289c0bb076a9c6cc7059c971e20f69a9d8f682f57917c3bf46e305bece805c`.
+
+### Coverage-audit follow-up
+
+1. Inspect the script text and naming pattern for a sample of ordinary names, split/modal cards, and the deck's double-faced Birgi // Harnfel card.
+2. Adjust the scanner to compare both Forge `Name:` aliases and actual script file stems, using the front-face name as an explicit DFC candidate while preserving full original names in the report.
+3. Add unit checks for known positive mappings (e.g. Abaddon, Aurora Phoenix, Mind's Desire, Underworld Breach, Brain Freeze, Lion's Eye Diamond) so a zero-match regression fails the audit instead of silently reporting 94 missing.
+4. Rerun. Manually resolve every missing/ambiguous row. A script-presence match still does not demonstrate runtime rules correctness.
+
+Current qualification remains **NOT QUALIFIED**. The deck has not been imported; no card-specific interaction smoke tests or gameplay have run; paired starts and structured event logs remain unproven.
