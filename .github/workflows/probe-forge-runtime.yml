@@ -95,6 +95,8 @@ jobs:
               for nm in names:
                   scripts.setdefault(norm(nm), []).append(record)
               scripts.setdefault(norm(p.stem.replace("_", " ")), []).append(record)
+              # Filename stems are a discovery heuristic, not a canonical Oracle name.
+              # Positive controls below prevent treating a zero-match report as valid.
           rows = []
           for name in unique:
               front = name.split("//", 1)[0].strip() if "//" in name else name
