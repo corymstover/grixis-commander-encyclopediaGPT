@@ -168,12 +168,13 @@ jobs:
           : > forge-aurora-targeted-summary.txt
           for SEED in 20261014 20261015 20261016; do
             CODE=0
+            LOG_FILE="$(printf 'forge-aurora-targeted-%s.log' "$SEED")"
             timeout 100s java -jar "$JAR" sim \
               -D "$PWD/forge-smoke-decks" \
               -d "Abaddon baseline.dck" "Abaddon Aurora Phoenix variant.dck" \
               -f Commander -n 1 -s "$SEED" -c 45 \
-              > "forge-aurora-targeted-\${SEED}.log" 2>&1 || CODE=$?
-            printf 'seed=%s exit_code=%s\n' "$SEED" "$CODE" | tee -a forge-aurora-targeted-summary.txt
+              > "$LOG_FILE" 2>&1 || CODE=$?
+            printf 'seed=%s exit_code=%s log_file=%s\n' "$SEED" "$CODE" "$LOG_FILE" | tee -a forge-aurora-targeted-summary.txt
           done
           python - <<'PY'
           import json, re
@@ -182,7 +183,9 @@ jobs:
           rows = []
           for seed in (20261014, 20261015, 20261016):
               path = Path(f"forge-aurora-targeted-{seed}.log")
-              lines = path.read_text(encoding="utf-8", errors="replace").splitlines() if path.exists() else []
+              if not path.is_file() or path.stat().st_size == 0:
+                  raise RuntimeError(f"Missing or empty per-seed Forge log: {path}")
+              lines = path.read_text(encoding="utf-8", errors="replace").splitlines()
               clean = [re.sub(r"\x1b\[[0-9;]*m", "", line) for line in lines]
               cast_lines = [line for line in clean if re.search(r"cast Aurora Phoenix", line, re.I)]
               named_trigger_lines = [
