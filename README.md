@@ -20,6 +20,17 @@ The source ZIP's internal manifest passed 165/165 hashes; all 62 current CSV/TXT
 
 Every relevant push and pull request runs [the baseline verifier](scripts/verify_baseline.py) through [GitHub Actions](.github/workflows/verify-baseline.yml). The verifier checks the 124-file archive against all 124 raw file hashes, CSV/TXT card-name quantities, 100-card counts, singleton/copy limits, and collection totals. The initial CI run passed: [view run](https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/38324768882).
 
+## Current Scryfall metadata refresh — completed
+
+The controlled refresh used Scryfall's `default_cards` bulk snapshot updated at `2026-10-12T21:06:24.577Z`. All **5,964/5,964 current decklist rows** matched an exact set + collector number + card name; there were no unmatched or ambiguous printings, no Oracle IDs missing, and no commander color-identity mismatches. All 62 decks' commander identities resolved. The six rows whose current official Commander legality is not ordinary `legal` status are fully registered project exceptions: Lutri as companion, Trade Secrets, Yawgmoth's Bargain, The Madcap Jester, Dragon's Smile, and Tresserhorn's Lord, Returned. Their official status remains visible; project authorization is not misrepresented as official legality.
+
+- [Scryfall metadata audit summary](https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/metadata_audit/Current_Scryfall_Metadata_Audit_Summary_2026-10-12.json)
+- [Full exact-printing metadata overlay](https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/metadata_audit/Current_Scryfall_Metadata_Overlay_2026-10-12.csv)
+- [Project exception registry](source-package/research/Project_Exceptions_Current_2026-10-12.csv)
+- [Refresh workflow run](https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/38325331651)
+
+This closes the fresh Oracle/color-identity/exact-printing Commander-legality metadata gate. It does **not** close commander-specific rules/interaction verification, combo checks, strategic blueprints, candidate decisions, or testing.
+
 ## Start here
 
 1. [Independent baseline audit](source-package/Grixis_Independent_Baseline_Audit_2026-10-12.json)
@@ -37,7 +48,7 @@ Every relevant push and pull request runs [the baseline verifier](scripts/verify
 
 ## Current baseline status
 
-The supplied 2026-10-12 source report records 306 card-copy additions and 306 removals relative to the previous Updated archives. The independent structural audit confirms 62/62 CSV/TXT reconciliations, 62/62 exact 100-card counts, and 62/62 singleton passes. The official named Commander ban-list checkpoint is complete; the comprehensive fresh Oracle/rulings and exact-printing legality overlay remains pending. Do not treat structural success or a name-level ban-list comparison as a full present-day rules certification.
+The supplied 2026-10-12 source report records 306 card-copy additions and 306 removals relative to the previous Updated archives. The independent structural audit confirms 62/62 CSV/TXT reconciliations, 62/62 exact 100-card counts, and 62/62 singleton passes. The official named Commander ban-list checkpoint and current exact-printing Scryfall metadata refresh are complete. Detailed card rulings, combo/interaction verification, and commander-first strategic refinement remain pending; do not treat metadata validation as a full strategy or rules-interaction certification.
 
 ## Current repository mirror
 
