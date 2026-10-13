@@ -229,9 +229,9 @@ jobs:
                   ]
                   return_lines = [
                       clean[i] for i, line in enumerate(events)
-                      if re.search(r"\bAurora Phoenix\b", line, re.I)
+                      if "Resolve Stack:" in line
                       and re.search(
-                          r"\b(triggered|trigger|resolve stack|add to stack)\b|return .*graveyard|graveyard to .*hand",
+                          r"return (?:this card|Aurora Phoenix) from (?:your )?graveyard to (?:your )?hand",
                           line, re.I
                       )
                   ]
