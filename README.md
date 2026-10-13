@@ -5,7 +5,7 @@ Version-controlled project records for the 62-deck Grixis Commander Encyclopedia
 ## Project operating rules
 
 - Each deck is commander-first and preserves that commander's identity and natural power ceiling.
-- **NEW REFINEMENT CYCLE STARTED 2026-10-13:** at cycle launch all 62 decks were unapproved and unlocked, including lists approved in prior cycles. Current status is tracked per deck; #1 Abaddon and #2 Admiral Beckett Brass are now approved/locked after passing new-cycle technical gates, with 60 decks remaining. Historical approvals are historical records only.
+- **NEW REFINEMENT CYCLE STARTED 2026-10-13:** at cycle launch all 62 decks were unapproved and unlocked, including lists approved in prior cycles. Current status is tracked per deck; #1 Abaddon, #2 Admiral Beckett Brass, and #3 Admiral Brass, Unsinkable are now approved/locked after passing new-cycle technical gates, with 59 decks remaining. Historical approvals are historical records only.
 - The active cycle may revise any deck after whole-list review. Automatically approve and lock a deck only after all required technical verification gates pass; do not require an additional user approval step. A failed or incomplete gate means no lock.
 - The four `GrixisFINAL` archives dated 2026-10-12 are the current authoritative membership baseline; the `Updated-10-11-2026` archives are historical.
 - Candidate rankings are a research shortlist, not automatic card additions.
@@ -30,7 +30,7 @@ The 124 current decklist CSV/TXT files are verified inside the compact archive. 
 
 ## Controlled refinement campaign — RESET 2026-10-13
 
-**Current state:** NEW CYCLE ACTIVE. The reset began with all 62 decks UNAPPROVED / UNLOCKED; **decks #1–2, Abaddon the Despoiler and Admiral Beckett Brass, are now APPROVED / LOCKED — ALL TECHNICAL GATES PASSED**. 60 decks remain. Next is deck #3, Admiral Brass, Unsinkable, in authoritative tracker order. Previous-cycle lock/approval flags remain historical only; source baseline exports remain immutable. Each deck is auto-approved and locked only after all technical checks pass; do not add a user-approval gate.
+**Current state:** NEW CYCLE ACTIVE. The reset began with all 62 decks UNAPPROVED / UNLOCKED; **decks #1–3, Abaddon the Despoiler, Admiral Beckett Brass, and Admiral Brass, Unsinkable, are now APPROVED / LOCKED — ALL TECHNICAL GATES PASSED**. 59 decks remain. Next is deck #4, Anhelo, the Painter, in authoritative tracker order. Previous-cycle lock/approval flags remain historical only; source baseline exports remain immutable. Each deck is auto-approved and locked only after all technical checks pass; do not add a user-approval gate.
 
 
 
@@ -49,7 +49,9 @@ The frozen baseline is preserved on `baseline/freeze-2026-10-12`. The active, se
 
 Abaddon is deck #1 in the new-cycle pass and is approved/locked after full technical gate closeout. It added Court of Ambition and Warstorm Surge, cut Loyal Subordinate and Rakdos, Lord of Riots, as recorded in the [change ledger](refinement/Deck_Change_Ledger_2026-10-13.csv). See its [final decklist](refinement/decklists/Abaddon_the_Despoiler_Refined_2026-10-13.txt), [verification certificate](refinement/verification/Abaddon_the_Despoiler_Verification_2026-10-13.md), and [candidate decision summary](refinement/decisions/Abaddon_the_Despoiler_Candidate_Decisions_2026-10-13.md).
 
-Admiral Beckett Brass is deck #2 and is now approved/locked. It added The Indomitable and Zephyr Singer and cut Bident of Thassa and Daring Saboteur. See its [final decklist](refinement/decklists/Admiral_Beckett_Brass_Refined_2026-10-13.txt), [verification certificate](refinement/verification/Admiral_Beckett_Brass_Verification_2026-10-13.md), and [candidate decision summary](refinement/decisions/Admiral_Beckett_Brass_Candidate_Summary_2026-10-13.md). Both decks' actual card changes remain in the same [cumulative change ledger](refinement/Deck_Change_Ledger_2026-10-13.csv).
+Admiral Beckett Brass is deck #2 and is now approved/locked. It added The Indomitable and Zephyr Singer and cut Bident of Thassa and Daring Saboteur. See its [final decklist](refinement/decklists/Admiral_Beckett_Brass_Refined_2026-10-13.txt), [verification certificate](refinement/verification/Admiral_Beckett_Brass_Verification_2026-10-13.md), and [candidate decision summary](refinement/decisions/Admiral_Beckett_Brass_Candidate_Summary_2026-10-13.md).
+
+Admiral Brass, Unsinkable is deck #3 and is now approved/locked. It added Power Conduit, Nesting Grounds, and Kitesail Larcenist; it cut Dire Fleet Daredevil, Crumbling Necropolis, and Amphin Mutineer. See its [final decklist](refinement/decklists/Admiral_Brass_Unsinkable_Refined_2026-10-13.txt), [verification certificate](refinement/verification/Admiral_Brass_Unsinkable_Verification_2026-10-13.md), and [candidate decision summary](refinement/decisions/Admiral_Brass_Unsinkable_Candidate_Summary_2026-10-13.md). Actual card changes for all three decks are preserved in the same [cumulative change ledger](refinement/Deck_Change_Ledger_2026-10-13.csv).
 
 ## Automated integrity check
 
