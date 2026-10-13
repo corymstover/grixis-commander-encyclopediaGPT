@@ -1,7 +1,7 @@
 # Admiral Beckett Brass — Proposed Final Verification
 
 **Date:** 2026-10-13  
-**Status:** TECHNICAL VERIFICATION PASS — awaiting explicit approval of this exact revised list  
+**Status:** FINALIZED AND LOCKED — exact revised 100-card list approved by user on 2026-10-13  
 **Authoritative frozen baseline:** 2026-10-12 FINAL CSV/TXT exports; preserved unchanged  
 **Approved change:** cut 1x Coastal Piracy; add 1x The Indomitable (LCC #75)  
 **Decklist change count:** one-for-one replacement only
@@ -63,5 +63,9 @@ No further swap is introduced. No other card is changed.
 - New card current Oracle / identity / Commander legality: **PASS**.
 - Frozen baseline preserved: **PASS**.
 - Candidate decision ledger updated to user-approved swap: **PASS**.
-- Exact revised list approved for final lock: **PENDING**.
-- Tracker `final_gate_passed`: remains **NO** until the user explicitly approves this exact revised list.
+- Exact revised list approved for final lock: **PASS — user explicitly approved and locked this exact list on 2026-10-13**.
+- Tracker `final_gate_passed`: **YES**.
+
+## 7. Final approval and lock
+
+The user explicitly approved the exact revised 100-card list on 2026-10-13, including The Indomitable replacing Coastal Piracy. This is the canonical approved refinement list; the frozen 2026-10-12 source ZIP exports remain unchanged. Final clean-list SHA-256 (UTF-8, LF, trailing newline): `bd636ec183ae8829eefa0e4c71db00c96d82a55919131f1a3cc4907fe5af5a94`. No other card or quantity changed. Deck status: **APPROVED/LOCKED**.
