@@ -287,3 +287,20 @@ Thermo-Alchemist's tap ability deals 1 damage to each opponent; casting an insta
 ### Evidence and limits
 
 The conclusions above follow Abaddon's Oracle condition and the current Magic Comprehensive Rules cascade, mana-value, casting, and triggered-ability framework (rules reference: [official Magic rules page](https://magic.wizards.com/en/rules); [Comprehensive Rules effective September 25, 2026](https://media.wizards.com/2026/downloads/MagicCompRules%2020260925.txt)). Card-text spot checks include [Abaddon the Despoiler](https://scryfall.com/card/40k/171/abaddon-the-despoiler), [Jeska's Will](https://scryfall.com/card/cmr/187/jeskas-will), [Thermo-Alchemist](https://scryfall.com/search?q=%21%22Thermo-Alchemist%22), and [Fierce Guardianship](https://scryfall.com/search?q=%21%22Fierce+Guardianship%22). This closes only these contextual questions; other material card entries and the fresh exact-list Oracle/identity check remain open. Final gate remains NO.
+
+
+## Step 8 — Harnfel and Bituminous Blast contextual checks (2026-10-13 UTC)
+
+**Scope:** close the two named gaps from the per-card triage. No list changes.
+
+### Birgi // Harnfel reverse face
+
+Harnfel, Horn of Bounty has the activated ability “Discard a card: Exile the top two cards of your library. You may play those cards this turn.” The discarded card is a cost and is not one of the two cards exiled by the ability. The permission lasts for the turn even if Harnfel leaves the battlefield. Cards played this way follow their normal costs and timing restrictions. Each actual spell cast from exile can trigger the list's applicable cast-from-exile payoffs (including Keeper of Secrets, Passionate Archaeologist if Abaddon is on the battlefield, Prosper, Tome-Bound, and The Lost and the Damned); the spell does not receive Abaddon's cascade grant because it was not cast from hand. A land played this way is a land play, not a spell cast. This is card advantage/velocity with a discard cost, not a free cast engine by itself.
+
+### Bituminous Blast
+
+Bituminous Blast is a {3}{B}{R} instant with mana value 5, printed cascade, and “Bituminous Blast deals 4 damage to target creature.” It has two relevant roles: instant-speed creature removal and a cascade value spell. If cast from hand during its controller's turn while Abaddon is on the battlefield and opponents have lost at least five total life that turn, Abaddon grants a second cascade instance. The printed and granted cascade abilities trigger separately and resolve separately; each uses the spell's mana value 5 as the comparison point, and each may cast a qualifying card with mana value less than 5. The revealed/cast cascade spell resolves above Bituminous Blast, so the removal damage from Bituminous Blast itself has not yet resolved while its cascade chain is happening. Its target must be a creature when cast and must remain legal for the damage spell to resolve. If Bituminous Blast is cast from exile or another non-hand zone, its printed cascade still functions, but Abaddon does not grant another instance.
+
+**Disposition:** both previously flagged context questions are now checked against current card text and the current Comprehensive Rules cascade definition. This closes these two triage items only; it does not certify all remaining explicit-review entries or the full exact-list Oracle/identity gate.
+
+References: [Birgi // Harnfel official Wizards release notes](https://media.wizards.com/2021/downloads/KHM_Release_Notes/EN_MTGKHM_ReleaseNotes_20210113.pdf); [Bituminous Blast card text/rulings](https://www.mtg.wtf/card/c16/182/Bituminous-Blast); [Comprehensive Rules effective September 25, 2026](https://blogs.magicjudges.org/rules/comprehensive-rules/).
