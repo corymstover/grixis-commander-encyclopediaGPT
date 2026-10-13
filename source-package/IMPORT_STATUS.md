@@ -13,6 +13,16 @@ The first repository setup imports the supplied Optimization Kit's actual text/C
 
 It also carries the current source manifest, the supplied package's current status and legality-freshness notes, plus the v8.1.4 guide/run manifest under an explicitly historical path. The root README documents the project rules and source-of-truth policy.
 
+## Verified source-consolidation reconciliation — 2026-10-13
+
+The authoritative source package was rechecked against its own SHA-256 manifest. The uploaded package ZIP has SHA-256 `47892245c2cefcf528c38fa9d9e56653d6e71a0fc73fd5ea5eecdd90e2032746`, passes ZIP integrity, and all 165 manifest-listed files match their recorded byte sizes and hashes. The four current canonical CSV/TXT archive hashes also match the source manifest.
+
+**Correction to avoid ambiguity:** the 124 current CSV/TXT decklist files are already mirrored byte-for-byte inside the repository's compact archive `GrixisFINAL_62Decks_CSV_TXT_2026-10-12.tar.gz`. The compact archive contains 62 CSV + 62 TXT files and matches all 124 corresponding files in the full current source package exactly (no missing, differing, or extra files). Therefore it is incorrect to say that all 124 decklists are missing from GitHub. They are present in a compressed archive, not all as standalone GitHub paths.
+
+The full source package is not yet a complete raw-file mirror in GitHub: the four original canonical ZIP archives and the large current research/audit datasets are not all individually stored in the repository. See [Source Consolidation Reconciliation](Source_Consolidation_Reconciliation_2026-10-13.md) for exact verified counts, hashes, limitations, and remaining transfer gaps.
+
+The tracker has separately been reconciled to the later Scryfall metadata refresh. Do not edit the original source manifest's package-build-time metadata fields: the later Scryfall run supersedes those fields for current metadata status without changing the historical package record.
+
 ## New verification update — 2026-10-12
 
 The four current CSV/TXT archive pairings have been independently parsed. All 62 pairs reconcile by card-name quantity, every main-deck-plus-commander total is exactly 100, and all 62 singleton checks pass. The source ZIP passed integrity and its 165 manifest-listed files all matched recorded sizes and hashes. See `Grixis_Independent_Baseline_Audit_2026-10-12.json` and `Grixis_Independent_Deck_Hash_Manifest_2026-10-12.csv`.
