@@ -26,6 +26,7 @@ def parse_timestamp(value: str, field: str) -> datetime:
 
 
 def validate_summary(summary: dict[str, Any], *, now: datetime | None = None,
+                     not_before_utc: str | None = None,
                      max_generated_age_hours: float = 2, max_bulk_age_hours: float = 72,
                      expected_decks: int = 62) -> dict[str, Any]:
     now = (now or datetime.now(timezone.utc)).astimezone(timezone.utc)
@@ -40,6 +41,17 @@ def validate_summary(summary: dict[str, Any], *, now: datetime | None = None,
     except ValueError as exc:
         generated_age = None
         errors.append(str(exc))
+    if not_before_utc:
+        try:
+            run_started = parse_timestamp(not_before_utc, "not_before_utc")
+            snapshot_generated = parse_timestamp(summary.get("generated_at_utc"), "generated_at_utc")
+            if snapshot_generated < run_started:
+                errors.append(
+                    f"snapshot predates this workflow run: generated_at_utc={snapshot_generated.isoformat()}, "
+                    f"run_started_at={run_started.isoformat()}"
+                )
+        except ValueError as exc:
+            errors.append(str(exc))
     try:
         bulk_updated = parse_timestamp(summary.get("bulk_updated_at"), "bulk_updated_at")
         bulk_age = (now - bulk_updated).total_seconds() / 3600
@@ -91,6 +103,7 @@ def validate_summary(summary: dict[str, Any], *, now: datetime | None = None,
     return {
         "validation": "PASS" if not errors else "FAIL",
         "generated_at_utc": summary.get("generated_at_utc"),
+        "run_started_at_utc": not_before_utc,
         "bulk_updated_at": summary.get("bulk_updated_at"),
         "generated_age_hours": round(generated_age, 3) if generated_age is not None else None,
         "bulk_age_hours": round(bulk_age, 3) if bulk_age is not None else None,
@@ -105,6 +118,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--summary", required=True, type=Path)
     parser.add_argument("--report-output", type=Path)
+    parser.add_argument("--not-before-utc", help="Require generated_at_utc to be at or after this workflow run start")
     parser.add_argument("--max-generated-age-hours", type=float, default=2)
     parser.add_argument("--max-bulk-age-hours", type=float, default=72)
     parser.add_argument("--expected-decks", type=int, default=62)
@@ -113,7 +127,8 @@ def main() -> int:
         summary = json.loads(args.summary.read_text(encoding="utf-8"))
         if not isinstance(summary, dict):
             raise ValueError("summary root must be a JSON object")
-        report = validate_summary(summary, max_generated_age_hours=args.max_generated_age_hours,
+        report = validate_summary(summary, not_before_utc=args.not_before_utc,
+                                  max_generated_age_hours=args.max_generated_age_hours,
                                   max_bulk_age_hours=args.max_bulk_age_hours, expected_decks=args.expected_decks)
     except (OSError, json.JSONDecodeError, ValueError) as exc:
         report = {"validation": "FAIL", "errors": [str(exc)]}
