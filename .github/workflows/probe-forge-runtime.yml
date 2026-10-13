@@ -87,22 +87,25 @@ jobs:
                   body = p.read_text(encoding="utf-8", errors="replace")
               except OSError:
                   continue
-              nm = next((line[5:].strip() for line in body.splitlines() if line.startswith("Name:")), None)
-              if nm:
-                  scripts.setdefault(norm(nm), []).append({"name": nm, "path": str(p.relative_to(root)),"oracle": any(line.startswith("Oracle:") for line in body.splitlines())})
+              lines = body.splitlines()
+              names = [line[5:].strip() for line in lines if line.startswith("Name:")]
+              names += [line[len("AlternateName:"):].strip() for line in lines if line.startswith("AlternateName:")]
+              oracle = any(line.startswith("Oracle:") for line in lines)
+              record = {"path": str(p.relative_to(root)), "oracle": oracle, "declared_names": names}
+              for nm in names:
+                  scripts.setdefault(norm(nm), []).append(record)
+              scripts.setdefault(norm(p.stem.replace("_", " ")), []).append(record)
           rows = []
           for name in unique:
-              candidates = [name]
-              if "//" in name:
-                  candidates.append(name.split("//",1)[0].strip())
+              front = name.split("//", 1)[0].strip() if "//" in name else name
+              candidate_keys = {norm(name), norm(front)}
               matches = []
-              for c in candidates:
-                  matches.extend(scripts.get(norm(c), []))
-              # Stable path deduplication, with aliases still visible if multiple scripts match.
+              for key in candidate_keys:
+                  matches.extend(scripts.get(key, []))
               dedup = {x["path"]: x for x in matches}
               matches = list(dedup.values())
-              status = "MATCH" if len(matches)==1 and matches[0]["oracle"] else ("AMBIGUOUS" if len(matches)>1 else "MISSING")
-              rows.append({"deck_name":name,"status":status,"matches":matches})
+              status = "MATCH" if len(matches) == 1 and matches[0]["oracle"] else ("AMBIGUOUS" if len(matches) > 1 else "MISSING")
+              rows.append({"deck_name": name, "status": status, "matches": [{"path":x["path"],"oracle":x["oracle"],"declared_names":x["declared_names"]} for x in matches]})
           report = {
               "release":"forge-2.0.15",
               "commit":"4ec5f1a2c32fa90ecb983a72b9eb47aa5c5d7676",
@@ -116,8 +119,12 @@ jobs:
           }
           Path("forge-card-script-coverage.json").write_text(json.dumps(report,indent=2)+"\n")
           print(json.dumps({k:report[k] for k in ("release","commit","card_root","unique_deck_names","match_count","missing_count","ambiguous_count")},indent=2))
-          # No hard failure merely for aliases in this first audit; the JSON lists all
-          # unresolved rows for explicit manual review.
+          # Known positive controls prevent an all-zero false-negative scan from passing.
+          by_name = {row["deck_name"]: row for row in rows}
+          required = ["Abaddon the Despoiler", "Aurora Phoenix", "Mind's Desire", "Underworld Breach", "Brain Freeze", "Lion's Eye Diamond"]
+          bad_required = [n for n in required if n not in by_name or by_name[n]["status"] != "MATCH"]
+          if bad_required:
+              raise SystemExit("Known positive-control mappings failed: " + ", ".join(bad_required))
           PY
 
       - name: Preserve probe logs and coverage report
