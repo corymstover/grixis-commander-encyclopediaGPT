@@ -5,10 +5,11 @@ Version-controlled project records for the 62-deck Grixis Commander Encyclopedia
 ## Project operating rules
 
 - Each deck is commander-first and preserves that commander's identity and natural power ceiling.
-- Existing approved/locked decks are preserved. Do not change a list without an explicit request and a logged review.
+- **NEW REFINEMENT CYCLE STARTED 2026-10-13:** all 62 decks are unapproved and unlocked, including lists approved in prior cycles. Historical approvals are historical records only and confer no current lock status.
+- The active cycle may revise any deck after whole-list review. Automatically approve and lock a deck only after all required technical verification gates pass; do not require an additional user approval step. A failed or incomplete gate means no lock.
 - The four `GrixisFINAL` archives dated 2026-10-12 are the current authoritative membership baseline; the `Updated-10-11-2026` archives are historical.
 - Candidate rankings are a research shortlist, not automatic card additions.
-- Approval requires an independently verified 100-card main-deck-plus-commander list, singleton and copy-rule compliance, current identity/Oracle/rulings/legality review, documented project exceptions, relevant interaction verification, and explicit user approval.
+- Approval requires an independently verified 100-card main-deck-plus-commander list, singleton and copy-rule compliance, current identity/Oracle/rulings/legality review, documented project exceptions, relevant interaction verification, and a recorded verification certificate. Explicit user approval is not a gate in this new cycle.
 - Official Commander legality and project-authorized exceptions must be recorded separately.
 - Do not claim global mathematical perfection. Finalization is an evidence-backed stopping rule with documented uncertainty and material reopen triggers.
 
@@ -27,9 +28,13 @@ The source ZIP's internal manifest passed 165/165 hashes; all 62 current CSV/TXT
 
 The 124 current decklist CSV/TXT files are verified inside the compact archive. The full original source package has been integrity/hash-checked, but not every large raw source file is individually mirrored in GitHub. See the reconciliation report for the exact boundary.
 
-## Controlled refinement campaign
+## Controlled refinement campaign — RESET 2026-10-13
 
-The frozen baseline is preserved on `baseline/freeze-2026-10-12`. The active, separate work branch is `refinement/campaign-2026-10-12`; no approved decklist has been changed.
+**Current state:** NEW CYCLE ACTIVE. All 62 decks are UNAPPROVED / UNLOCKED. Start with deck #1, Abaddon the Despoiler, and proceed in authoritative tracker order. Previous-cycle lock/approval flags are superseded, not deleted from historical records. Baseline source exports remain immutable. Each deck is eligible for full-list optimization; apply zero or any defensible number of changes. A revised list is auto-approved and locked only when all required technical checks pass and the verification certificate, change ledger, and new list hash are recorded. Do not require user approval as an extra gate.
+
+
+
+The frozen baseline is preserved on `baseline/freeze-2026-10-12`. The active, separate work branch is `refinement/campaign-2026-10-12`; no baseline decklist has been changed. All previous approvals are reset for the active cycle.
 
 - [Abaddon the Despoiler — commander-first blueprint v1](https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/blueprints/Abaddon_the_Despoiler_v1.md)
 - [Abaddon candidate decision ledger](https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/decisions/Abaddon_the_Despoiler_Candidate_Decisions_2026-10-12.csv)
@@ -84,7 +89,7 @@ The four original canonical FINAL ZIP archives, four historical Updated archives
 
 ## Change control
 
-Put new refinement records in separate paths; do not silently replace historical baselines. Every approved card change must have a reason, source/date, current legality and Oracle checks, a verified new list, and user approval. Reopen a finalized deck only for the triggers in the protocol or on explicit user request.
+Put new refinement records in separate paths; do not silently replace historical baselines. Every card change must have a reason and source/date, current legality and Oracle checks, a verified new list, and a recorded decision. Auto-approve/lock only after all technical gates pass; user approval is not required in this cycle. Reopen a finalized deck only for the triggers in the protocol or on explicit user request.
 
 
 ## Automated quality and metadata refresh
