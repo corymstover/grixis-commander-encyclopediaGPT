@@ -1,23 +1,24 @@
 # Abaddon Forge Smoke-Test Result — 2026-10-13
 
-**Purpose:** verify pinned Forge source-card coverage, prepare the exact baseline and one-card variant, and prove that both files load into a Commander-mode simulation. This is not a performance comparison.
+**Purpose:** verify the pinned Forge source-card coverage, exact baseline/test-variant import, basic Commander-mode runtime, and whether repeated seeded smoke runs yield reproducible match-event logs. This is not a performance comparison.
 
-## Verdict
+## Current verdict — smoke gates passed; comparative testing still unqualified
 
-**Smoke-test pass, with explicit limitations.** GitHub Actions run [38338464845](https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/38338464845) completed successfully on commit [33ac3a2](https://github.com/corymstover/grixis-commander-encyclopediaGPT/commit/33ac3a29b403889bdeb64ecf91767f0e6f6a0d0c).
+The latest corrected replay workflow [run 38338912312](https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/38338912312) completed successfully on the active refinement branch.
 
-- Pinned Forge release archive SHA-256 check and extraction: **PASS**.
-- Forge desktop JAR starts on OpenJDK 17.0.20.1 and reports Forge 2.0.15-SNAPSHOT-09.28: **PASS**.
-- Pinned card-script source commit `4ec5f1a2c32fa90ecb983a72b9eb47aa5c5d7676`: **PASS**.
-- Card-script presence and nonempty Oracle-field scan: **95/95 names matched; 0 missing or invalid**. This covers the test variant's 94 unique names plus Mind's Desire from the frozen baseline, with all required control cards matched.
-- Frozen Abaddon baseline was extracted only after its recorded SHA-256 verified; baseline and variant were converted to Forge `.dck` files; both were 100 cards with 99 in Main and Abaddon in Commander; the declared difference remained exactly Mind's Desire OUT / Aurora Phoenix IN: **PASS**.
-- Forge CLI entered Commander simulation and instantiated the baseline-vs-variant match: **PASS as a deck-load/runtime smoke check**.
+- Pinned Forge release checksum/extraction and Forge CLI startup: **PASS**.
+- Pinned source commit `4ec5f1a2c32fa90ecb983a72b9eb47aa5c5d7676`: **PASS**.
+- Card-script identity and nonempty Oracle-field scan: **95/95 names matched; zero missing/invalid** (94 variant names plus baseline-only Mind's Desire). This proves script presence and name mapping only, not faithful rules execution for every card.
+- Frozen baseline TXT hash and exact 100-card DCK conversion/import: **PASS**. The test variant differs by exactly Aurora Phoenix IN / Mind's Desire OUT, with all other main-deck input positions aligned.
+- A 20-second-clock exploratory Commander smoke match completed and produced interpretable log lines for ordinary Abaddon-granted cascade resolutions and an Imperial Seal cast through Underworld Breach. It did not cast Aurora Phoenix, show its graveyard-return trigger, or complete Underworld Breach + Lion's Eye Diamond + Brain Freeze.
+- Two runs of the same command and seed produced identical normalized match-event sections in the corrected repeatability check. This is evidence of replay repeatability for that exact smoke case, not proof of identical baseline/variant starting hands or comparative performance.
+- Three additional seeded Aurora-specific exploration runs have been registered in the active workflow; their outcomes are a separate pending gate until the workflow report completes.
 
-## What happened in the smoke match
+**No gameplay result has been counted toward the registered pilot/confirmatory test, and no card change is approved.** Forge remains unqualified for deciding Aurora Phoenix versus Mind's Desire until the relevant Aurora events are observed reliably and the test metrics/controls are shown to be suitable.
 
-The bounded CLI command used a **10-second per-game clock**. Forge logged that it stopped the slow match as a draw after approximately nine seconds. It then emitted contradictory outcome lines (each player reported as having won) and a match score naming the variant. The log also emitted repeated `Steam Vents Did not have activator set in SpellAbility_Condition.checkConditions()` warnings.
+## Earlier 10-second smoke attempt (historical; not used as current verdict)
 
-**Do not count this as a win, gameplay result, or evidence that Aurora Phoenix is better.** The explicit draw and contradictory output make it unsuitable for comparing the two lists. The warnings are recorded for investigation; this smoke run did not establish whether they affect actual card behavior.
+The first bounded CLI run used a **10-second per-game clock**. Forge stopped the match as a draw after approximately nine seconds, then emitted contradictory winner lines (both players reported as having won) and repeated `Steam Vents Did not have activator set in SpellAbility_Condition.checkConditions()` warnings. This run is retained as a diagnostic artifact only and is not interpreted as a win or as card-comparison evidence.
 
 ## Remaining gates
 
