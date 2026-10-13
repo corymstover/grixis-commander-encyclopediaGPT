@@ -72,13 +72,11 @@ References:
 - [EDHREC combo record: Underworld Breach + Lion's Eye Diamond + Brain Freeze](https://edhrec.com/combos/izzet/1368-3518-4856)
 - [Current Comprehensive Rules: cascade and storm](https://media.wizards.com/2026/downloads/MagicCompRules%2020260925.txt)
 
-## 4. What remains open
+## 4. Historical open items — superseded by Steps 11–12
 
-This review closes the first candidate's specific Abaddon/Aurora cascade-grant question and records a rules-coherent summary of the Breach line. It does **not** close the entire Abaddon deck rules audit. The following remain:
-- Audit each relied-upon nontrivial interaction/package in the list.
-- Complete a real, controlled comparison of baseline versus Aurora variant, or explicitly document that test data cannot be collected with available tools.
-- Do not infer performance from card popularity, rules synergy, or a scripted model that does not faithfully implement Magic's rules.
-- Present a final exact list only if a swap is justified, independently recount and reverify it, and wait for explicit user approval before considering it finalized.
+This section records the earlier stage of the refinement and is retained for audit history. The exact-list current-source gate subsequently passed in the Scryfall refresh and Abaddon audit run `38360274984` (summary generated `2026-10-13T07:03:26.694525Z`). The material interaction review also advanced through the bounded card-level checks and worked Breach sequence documented below.
+
+The items that remain are narrower: (1) this interaction review is substantial but intentionally not exhaustive across every imaginable game state; (2) the Aurora Phoenix vs Mind's Desire performance comparison is INCONCLUSIVE and should not be rerun without a materially different qualified test design; and (3) finalization still requires explicit user approval of the exact unchanged 100-card list. No card swap has been justified.
 
 
 
@@ -139,7 +137,7 @@ This is a resource-dependent finite-game combo sequence, not a resource-free mat
 
 **Closed by this review:** the Abaddon mana-value fact (5, not 6); the proposed Aurora/Phoenix granted-cascade interaction; the primary same-turn opponent-life-loss threshold interactions; major cast-from-exile trigger boundaries; and the core Breach/LED/Brain Freeze package prerequisites and copy/cast guardrails.
 
-**Still open:** verify remaining individual interactions not covered above; review card-by-card current Oracle text for any later changes after the recorded Scryfall snapshot; a validated test engine and actual baseline-vs-variant gameplay results; the test decision; any final-list recount and hash; and explicit user approval before any proposed final change. This review does not justify marking the deck final.
+**Status updated by Step 12:** current exact-printing Oracle metadata, UBR identity checks, and Commander legality passed for all 94 unique Abaddon cards. The material interaction review remains substantial but bounded; gameplay comparison remains inconclusive. No card change is supported by the current evidence, and explicit user approval of the exact unchanged list is required before finalization.
 
 
 ### Rules references for the expanded review
@@ -208,7 +206,7 @@ Thermo-Alchemist triggers on casting an instant or sorcery by untapping; it taps
 - Thermo-Alchemist: reviewed as a threshold enabler.
 - The “not explicitly mentioned” category has therefore been triaged by role. The most material special conditions found are: Ancient Tomb self-payment is not opponent life loss; fetchlands/shocks have life costs that do not raise Abaddon's threshold; alternative/free casting costs do not reduce printed mana value; Force of Negation's free mode is opponent-turn restricted; Pact of Negation has delayed failure condition; Cabal Ritual depends on graveyard threshold; Chrome Mox depends on an imprint card; Nightscape Familiar reduces generic cost but not mana value; and Gamble can contingently seed graveyard cards.
 - This triage is a rules-oriented summary and has not tested every possible stack/game state. It does not substitute for the official fresh legality refresh and final list-level audit.
-- **Remaining card-level coverage gap:** The 33 names already explicitly mentioned in the prior review still need their coverage statuses reviewed in context; the full 94-card audit certificate is not complete. Next bounded step should verify high-impact listed interactions and the Breach sequence with current Oracle/rules sources, rather than repeating basic-card explanations.
+- **Historical status, superseded by the final current-source audit:** all 94 distinct names now have an exact-printing metadata record; the final audit is recorded in `Abaddon_Current_Card_Audit_2026-10-13.md`. This role-based triage remains a coverage-control mechanism rather than exhaustive proof for every possible board state.
 
 ## 9. Step 2 closeout boundaries and priority interactions for the remaining review
 
@@ -248,7 +246,7 @@ The latest [Abaddon Breach Package Audit](https://github.com/corymstover/grixis-
 
 **Updated disposition:** RULES-COHERENT WITH SPECIFIC CONDITIONS — worked uninterrupted example provided. This proves one line from its stated starting state assuming no opponent interaction. It does not establish an unconditional infinite, a guaranteed win from arbitrary resources, or that the list reliably assembles the combo. No gameplay-performance inference is made.
 
-The 94-card review gate remains open overall: this closes the specific worked-sequence gap, not the full live Oracle refresh, exhaustive per-card disposition, or explicit user approval.
+The worked-sequence proof gap is closed for the exact starting inventory shown in the companion audit. This does not prove an unconditional infinite or guarantee the line through interaction. The Scryfall metadata gate later passed in Step 12; finalization remains pending only because the user has not yet approved the exact unchanged list.
 
 
 ## Step 7 — material sequencing spot-check: cascade setup, free interaction, exile casts, Thermo-Alchemist (2026-10-13 UTC)
@@ -286,7 +284,7 @@ Thermo-Alchemist's tap ability deals 1 damage to each opponent; casting an insta
 
 ### Evidence and limits
 
-The conclusions above follow Abaddon's Oracle condition and the current Magic Comprehensive Rules cascade, mana-value, casting, and triggered-ability framework (rules reference: [official Magic rules page](https://magic.wizards.com/en/rules); [Comprehensive Rules effective September 25, 2026](https://media.wizards.com/2026/downloads/MagicCompRules%2020260925.txt)). Card-text spot checks include [Abaddon the Despoiler](https://scryfall.com/card/40k/171/abaddon-the-despoiler), [Jeska's Will](https://scryfall.com/card/cmr/187/jeskas-will), [Thermo-Alchemist](https://scryfall.com/search?q=%21%22Thermo-Alchemist%22), and [Fierce Guardianship](https://scryfall.com/search?q=%21%22Fierce+Guardianship%22). This closes only these contextual questions; other material card entries and the fresh exact-list Oracle/identity check remain open. Final gate remains NO.
+The conclusions above follow Abaddon's Oracle condition and the current Magic Comprehensive Rules cascade, mana-value, casting, and triggered-ability framework (rules reference: [official Magic rules page](https://magic.wizards.com/en/rules); [Comprehensive Rules effective September 25, 2026](https://media.wizards.com/2026/downloads/MagicCompRules%2020260925.txt)). Card-text spot checks include [Abaddon the Despoiler](https://scryfall.com/card/40k/171/abaddon-the-despoiler), [Jeska's Will](https://scryfall.com/card/cmr/187/jeskas-will), [Thermo-Alchemist](https://scryfall.com/search?q=%21%22Thermo-Alchemist%22), and [Fierce Guardianship](https://scryfall.com/search?q=%21%22Fierce+Guardianship%22). These are bounded contextual findings. The fresh exact-list Oracle/identity/legality check subsequently passed in Step 12; final gate remains NO pending explicit approval of the exact unchanged list.
 
 
 ## Step 8 — Harnfel and Bituminous Blast contextual checks (2026-10-13 UTC)
@@ -310,7 +308,7 @@ References: [Birgi // Harnfel official Wizards release notes](https://media.wiza
 
 The detailed Harnfel reverse-face and Bituminous Blast check is recorded in [Abaddon Step 4 Context Check](../tests/Abaddon_Step_4_Context_Check_2026-10-13.md). In brief: Harnfel's exile-play permissions allow normal-cost plays that can trigger applicable cast-from-exile payoffs but do not qualify those spells for Abaddon's hand-only cascade grant. Bituminous Blast has mana value 5 and printed cascade; under Abaddon's hand-cast/turn/threshold conditions it can gain an additional cascade instance, resolving above the Blast before its creature damage resolves.
 
-These two items are closed only. Remaining exact-list Oracle/identity, full per-card interaction, final integrity, legality-at-approval, and user-approval gates remain open. No decklist changes; final gate NO.
+These two contextual items are closed; the exact-list structural and Oracle/identity/legality checks subsequently passed. Interaction review remains substantial but bounded. No decklist changes; final gate remains NO pending explicit user approval.
 
 
 ## Step 9 — Blasphemous Act context check (2026-10-13 UTC)
@@ -363,7 +361,7 @@ The card-level triage CSV has been corrected accordingly for the affected claims
 - The official Commander banned list was rechecked via https://mtgcommander.net/index.php/banned-list/; none of these three cards is banned. This specific claim is grounded in the official named banned list and public card references, not a direct Scryfall API card-object fetch.
 
 ### Current Oracle / identity / legality gate — honest status
-A direct current Scryfall named-card or bulk endpoint refresh could not be obtained in this session; Scryfall's API endpoint returned access/403 errors. Thus the above named-card facts have been independently cross-checked against up-to-date public card-reference pages, and the official Commander ban list was checked, but this cannot honestly be labeled a fresh Scryfall object refresh across all 94 unique cards. The prior 2026-10-12 bulk snapshot remains dated evidence for the complete 94-name dataset. The remaining full-list gate requires retrieving a fresh authoritative bulk/card-object source and comparing all 94 names' Oracle text, color identity, and commander legality. No card is known from the current evidence to fail the gate, but don't substitute that for verification.
+The temporary direct-endpoint/API-access issue was resolved operationally by using the repository's automated Scryfall default-cards bulk workflow, with freshness anchored to the current workflow start and exact-list audit required before outputs are committed. Run `38360274984` completed the baseline preflight, metadata refresh, freshness validator, and Abaddon 94-name audit successfully. Its generated summary (`2026-10-13T07:03:26.694525Z`; bulk updated `2026-10-12T21:06:24.577Z`) reports 5,964/5,964 exact print/name matches and zero missing Oracle text/IDs, identity mismatches, unresolved printings/exceptions, unknown Commander legality statuses, or unexpected illegal rows. The full current-source metadata gate is therefore PASS; this does not replace rules analysis or explicit user approval.
 
 ### Interaction and combo closeout
 The review's material rules checks remain rules findings, not multiplayer performance evidence: Abaddon's threshold is aggregate opponent life actually lost during your turn; alternate costs do not alter mana value; Abaddon's grant requires a spell cast from hand while Abaddon is on the battlefield; cast-from-exile payoffs only see actual spells cast from exile; copies do not count as casts; printed cascade and Abaddon-granted cascade are separate triggers; and the worked Breach/LED/Brain Freeze + Wheel sequence is coherent only from its explicitly stated starting state with no interaction. It is not an unconditional infinite or evidence of reliable assembly. This bounded interaction review is substantial, not exhaustive proof of every game state.
@@ -378,3 +376,8 @@ This is metadata/identity/legality evidence from one shared current bulk scan an
 
 The automation fixes merged to main include a weekly/manual refresh, exact watched request path, serialized bulk jobs, transient-only retry logic, stable Current_* output names with legacy aliases, fail-closed freshness/completeness validation, an Abaddon exact-name audit in the refresh job, diagnostic artifacts, and fast CI for unit tests/workflow contracts/frozen-baseline integrity. The first quality-gate run passed. This closes the current metadata blocker; it does not bypass the user's explicit final-list approval requirement.
 
+## Step 13 — record alignment and project automation improvements (2026-10-13 UTC)
+
+The repository-wide automation improvements now active on `main` and synchronized into this refinement branch are documented in [Automation Operations Guide](../Automation_Operations_Guide.md). They prevent several prior sources of wasted work: source-package preflight runs before the expensive Scryfall bulk download; refreshes are serialized; transient network errors are retried but HTTP 403 fails clearly; the validator rejects cached summaries predating the current run; summary result headlines fail closed for missing Oracle text/IDs and unknown Commander legality; and tracker schema/approval metadata is validated in CI. The tracker edit trigger also ensures schema validation runs when the tracker changes.
+
+**Current closeout state:** structural integrity PASS; current Scryfall metadata and exact 94-name audit PASS; material rules/combo review substantial but bounded; no decklist changes justified. The one remaining approval gate is explicit user approval of the exact unchanged 100-card list. The Aurora-vs-Mind's Desire trial remains inconclusive, so no win-rate or swap-performance claim is made.
