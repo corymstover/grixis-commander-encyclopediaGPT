@@ -63,7 +63,7 @@ jobs:
           test "$ACTUAL" = "4ec5f1a2c32fa90ecb983a72b9eb47aa5c5d7676"
           echo "$ACTUAL" | tee forge-source-commit.txt
           mkdir -p pilot-decks pilot-logs
-          cp "forge-source/forge-gui/res/adventure/Realm of Legends/decks/starter/commanderprecon/C20 - Ruthless Regiment.dck" pilot-decks/
+          cp "forge-source/forge-gui/res/adventure/Realm of Legends/decks/starter/commanderprecon/C20 - Ruthless Regiment.dck" "pilot-decks/Ruthless Regiment.dck"
 
       - name: Prepare verified baseline and single-swap test variant
         run: |
