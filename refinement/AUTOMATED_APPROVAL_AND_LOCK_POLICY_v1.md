@@ -83,3 +83,12 @@ The user explicitly requires that the campaign work on **one deck at a time**, g
 7. If a current deck is blocked, continue bounded remediation on that same deck before moving forward. Do not silently skip it. Advancing past a blocked deck requires an explicit documented exception; absence of evidence is not an exception.
 
 The active tracker is the state source for which deck is current. The current deck's artifacts, exact-list hash, decision record, verification certificate, and final status must be fetched and cross-checked after writes before selecting the next deck.
+
+
+## Full campaign restart — 2026-10-13
+
+The user has explicitly restarted the active refinement campaign from **Deck #1, Abaddon the Despoiler**, because every deck must receive a fresh, complete review under the current standards. All earlier approvals and locks are now historical records only and must not be treated as active-cycle approvals. Do not carry forward the active APPROVED / LOCKED status of any deck from a previous pass.
+
+The frozen authoritative source baseline and historical audit artifacts remain immutable and available as evidence. For each deck, re-review the entire list under the current full-strength standard, record whether historical findings still apply, refresh evidence where stale or incomplete, make all justified commander-specific changes, and regenerate/cross-check the final artifacts. The active tracker must show all 62 decks as `UNAPPROVED / UNLOCKED — FULL RE-REVIEW REQUIRED` until each one is re-reviewed and passes every mandatory gate.
+
+Work strictly one deck at a time in authoritative tracker order. Begin with Abaddon (#1). Do not do substantive refinement on deck #2 until deck #1's re-review has produced a verified final decision and artifacts and is auto-approved/locked—or a documented blocking discrepancy is resolved. Prior final-list hashes may be retained in historical records but must not occupy the active final-list-hash field until that deck is re-finalized in this restart.
