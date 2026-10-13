@@ -1,0 +1,51 @@
+{
+  "audit_date": "2026-10-13",
+  "check_type": "list integrity only; no gameplay testing",
+  "result": "PASS",
+  "frozen_baseline": {
+    "archive_path": "source-package/GrixisFINAL_62Decks_CSV_TXT_2026-10-12.tar.gz",
+    "archive_sha256": "f2f46436c3514ecf8412d1fe1f9926919d8d1a3d7a2f938ffee7efce073b2b20",
+    "deck_id": "Abaddon_the_Despoiler",
+    "csv_raw_sha256": "fbeb7f75302b9ebedaf67aa58171de05764b6e6f97570be5657f0cbe8df37478",
+    "txt_raw_sha256": "2d6203d274c25e67fb93acf5e6784dce4ee1e8999844a6ab032d9b15995acfbf",
+    "normalized_membership_sha256": "4af2214a2d4055f4a1a5e91dcbe50a1193e3ee27070a0d9cb1208a17d994eb53",
+    "card_count": 100,
+    "distinct_card_names": 94,
+    "commander": "Abaddon the Despoiler"
+  },
+  "test_variant": {
+    "path": "refinement/variants/Abaddon_Aurora_Phoenix_Test_Variant_v1.txt",
+    "raw_sha256": "1ad0c11d1f6a28a54f89c378428af491c6ff9929f42813692c375fb60771503b",
+    "normalized_membership_sha256": "fbc57b9eb9fcf14bd28dc3f59a73486eb78c6dc097b0102cde5178e7d5c8b862",
+    "card_count": 100,
+    "distinct_card_names": 94,
+    "commander": "Abaddon the Despoiler",
+    "commander_marker_count": 1
+  },
+  "exact_membership_difference": {
+    "removed": [
+      {
+        "card_name": "Mind's Desire",
+        "quantity": 1
+      }
+    ],
+    "added": [
+      {
+        "card_name": "Aurora Phoenix",
+        "quantity": 1
+      }
+    ],
+    "other_differences": 0
+  },
+  "additional_checks": {
+    "frozen_archive_hash": "PASS",
+    "baseline_csv_txt_hashes": "PASS",
+    "exact_100_card_count_both_lists": "PASS",
+    "variant_singleton_check": "PASS (only multiples are basic lands)",
+    "commander_first_and_marked": "PASS",
+    "normalized_membership_hashes": "PASS",
+    "gameplay_test": "NOT RUN",
+    "git_hub_actions_execution_status": "NOT independently confirmed"
+  },
+  "interpretation": "The isolated candidate list is structurally faithful to the frozen baseline and changes exactly one card. This result does not demonstrate a strategic improvement and does not authorize a final decklist change."
+}
