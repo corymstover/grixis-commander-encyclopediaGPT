@@ -155,3 +155,9 @@ The official Wizards [Banned & Restricted list](https://magic.wizards.com/en/ban
 The [Abaddon Final-List Integrity Checkpoint](https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/tests/Abaddon_Final_List_Integrity_Checkpoint_2026-10-13.md) consolidates the existing successful structural audit, the pinned list hashes, and the fresh official Commander banned-list check. Its disposition is **PASS WITH OPEN RULES/CURRENT-ORACLE GATES**, not deck approval. It explicitly separates the 2026-10-12 Scryfall metadata snapshot from the official October 13 banned-list check and records no decklist changes.
 
 Next work remains narrow: current live Oracle/identity validation for the exact 94 names, close remaining material contextual entries (including Harnfel face text), and retain the Breach combo as PARTIALLY VERIFIED unless a concrete starting inventory and mana/fuel ledger is proven. Final gate remains NO.
+
+### Step 6 — worked Abaddon Breach sequence added (2026-10-13 UTC)
+
+The [Breach package audit](https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/tests/Abaddon_Breach_Sequence_Audit_2026-10-13.md) now includes a concrete ten-cycle line from a specified board/graveyard/library state, with resource accounting and a Wheel of Fortune finish. The combo's **specific-sequence** status is upgraded from PARTIALLY VERIFIED to **RULES-COHERENT WITH SPECIFIC CONDITIONS** for that uninterrupted state. The review explicitly does not call this an unconditional infinite or a guaranteed line through interaction.
+
+Remaining overall gates are unchanged: live Oracle/identity refresh for the exact list, completion of all material card-level contextual checks, final export/hash/count verification, and explicit user approval. No card change has been made; final gate NO.
