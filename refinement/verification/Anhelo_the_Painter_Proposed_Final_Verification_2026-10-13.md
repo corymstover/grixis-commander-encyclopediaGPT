@@ -1,7 +1,7 @@
-# Anhelo, the Painter — Proposed Final Verification
+# Anhelo, the Painter — Final Verification and Lock Record
 
 **Date:** 2026-10-13  
-**Status:** TECHNICAL VERIFICATION PASS FOR PROPOSED ONE-FOR-ONE SWAP — awaiting explicit approval of the exact revised list  
+**Status:** FINALIZED AND LOCKED — exact revised list approved by user on 2026-10-13  
 **Frozen baseline:** 2026-10-12 FINAL TXT export; preserved unchanged  
 **Proposed swap:** cut 1x Talrand's Invocation; add 1x Cryptic Pursuit  
 **Card delta:** one-for-one replacement only
@@ -60,5 +60,9 @@ No gameplay win-rate or representative multiplayer testing claim is made.
 - New card Oracle text, color identity, and Commander legality: **PASS**.
 - Relevant Anhelo/casualty/manifest interaction: **PASS**.
 - Frozen baseline preserved: **PASS**.
-- Exact revised list approved for final lock: **PENDING**.
-- Tracker `final_gate_passed`: remains **NO** until user approves this exact revised list.
+- Exact revised list approved for final lock: **PASS — user approved on 2026-10-13**.
+- Tracker `final_gate_passed`: **YES**.
+
+## 7. Approval and preservation record
+
+The user explicitly approved and locked this exact revised 100-card list on 2026-10-13. Standing instruction from this date forward: auto-approve future deck recommendations once the project's verification gates pass; do not pause for routine approval. Genuine hard-gate failures or unresolved source conflicts still block finalization. The only deck change is Talrand's Invocation -> Cryptic Pursuit. Frozen baseline exports remain unchanged.
