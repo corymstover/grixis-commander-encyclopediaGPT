@@ -17,8 +17,8 @@ VARIANT_LABEL = "Abaddon Aurora Phoenix test variant"
 OPPONENT_LABEL = "Ruthless Regiment fixed opponent"
 def strip_player_labels(line: str) -> str:
     """Remove player display names (either seat) before testing card-name events."""
-    line = re.sub(r"Ai\\(\\d+\\)-Abaddon (?:frozen baseline|Aurora Phoenix test variant)", "PLAYER", line)
-    line = re.sub(r"Ai\\(\\d+\\)-Ruthless Regiment fixed opponent", "PLAYER", line)
+    line = re.sub(r"Ai\(\d+\)-Abaddon (?:frozen baseline|Aurora Phoenix test variant)", "PLAYER", line)
+    line = re.sub(r"Ai\(\d+\)-Ruthless Regiment fixed opponent", "PLAYER", line)
     return line
 ERROR_PATTERNS = (
     "Could not load deck",
