@@ -133,3 +133,9 @@ The standalone [Abaddon Breach Sequence Audit](https://github.com/corymstover/gr
 ### Step 3 current-source spot-check logged
 
 The Breach/LED/Brain Freeze bounded audit was checked against the current Magic Comprehensive Rules (effective September 25, 2026) and current card reference pages. The rules concepts are supported, but the package remains **PARTIALLY VERIFIED** because no exact starting-zone inventory and iteration-by-iteration mana/fuel ledger has been proven. The next task is not further generic combo research: verify the 33 previously mentioned card entries in context and then determine whether a worked combo state can responsibly be provided from the actual frozen list resources. Current official Commander legality, final list/hash checks, and user approval remain outstanding.
+
+### Step 4 — explicit per-card triage record (2026-10-13 UTC)
+
+A more detailed [Abaddon Interaction Triage CSV](https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/tests/Abaddon_Interaction_Triage_Updated_2026-10-13.csv) now assigns per-name notes to the 94 distinct card names, keeping routine-role cards distinct from material interactions. It tightens coverage labels for two names where the first inventory overcalled explicit coverage: Birgi // Harnfel (the old review discussed Birgi but did not analyze the Harnfel face) and Bituminous Blast (listed in the blueprint, but not substantively explained in the interaction review). These are now flagged for a brief context check rather than counted as fully closed.
+
+The triage CSV remains a working coverage tool, not an independently validated final certificate. Several notes are source/Oracle spot-check targets rather than a claim that every exact interaction has been exhaustively checked. No cards changed; final gate remains NO.
