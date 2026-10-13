@@ -90,3 +90,8 @@ Put new refinement records in separate paths; do not silently replace historical
 ## Automated quality and metadata refresh
 
 The repository uses a scheduled Scryfall bulk refresh plus fail-closed freshness and exact-list verification. See [Automation Operations Guide](refinement/Automation_Operations_Guide.md). Pull requests run the unit suite, workflow-contract checks, and frozen 62-deck hash/count/singleton verification. The large metadata download is serialized and runs weekly or on an explicit refresh request; it is not repeated for ordinary text-only edits.
+
+
+## Project automation and maintenance
+
+The current automation, triggers, quality gates, safe refresh procedure, and fail-closed rules are documented in the [Project Automation Runbook](PROJECT_AUTOMATION_RUNBOOK.md). Use the existing workflows for routine metadata freshness and validation rather than repeating manual pipelines. Automation updates metadata and audit artifacts only; it does not change or approve decklists.

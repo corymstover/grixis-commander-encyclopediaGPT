@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 """Check critical automation contracts to catch trigger/path drift."""
 from pathlib import Path
+import fnmatch
 import sys
 ROOT = Path(__file__).resolve().parents[1]
 WORKFLOW = ROOT / ".github/workflows/refresh-scryfall-metadata.yml"
-REQUEST = ROOT / "refinement/metadata_audit/REFRESH_REQUEST.md"
+REQUEST_DIR = ROOT / "refinement/metadata_audit"
+REQUEST_GLOB = "refinement/metadata_audit/REFRESH_REQUEST*.md"
 SCRIPT = ROOT / "scripts/refresh_scryfall_metadata.py"
 VALIDATOR = ROOT / "scripts/validate_scryfall_metadata_refresh.py"
 TRACKER_CHECK = ROOT / "scripts/check_tracker_integrity.py"
@@ -14,11 +16,15 @@ def main() -> int:
     errors = []
     wf = WORKFLOW.read_text(encoding="utf-8")
     script = SCRIPT.read_text(encoding="utf-8")
-    if not REQUEST.is_file():
-        errors.append(f"watched request path is missing: {REQUEST.relative_to(ROOT)}")
-    rel = REQUEST.relative_to(ROOT).as_posix()
-    if rel not in wf:
-        errors.append(f"workflow path filter does not watch {rel}")
+    request_files = sorted(p.relative_to(ROOT).as_posix() for p in REQUEST_DIR.glob("REFRESH_REQUEST*.md") if p.is_file())
+    if not request_files:
+        errors.append(f"no refresh request files found under {REQUEST_DIR.relative_to(ROOT)}")
+    if REQUEST_GLOB not in wf:
+        errors.append(f"refresh workflow must watch the dated request glob {REQUEST_GLOB}")
+    if REQUEST_GLOB not in QUALITY_WORKFLOW.read_text(encoding="utf-8"):
+        errors.append(f"quality workflow push/PR filters must watch the dated request glob {REQUEST_GLOB}")
+    if not any(fnmatch.fnmatchcase(path, REQUEST_GLOB) for path in request_files):
+        errors.append(f"no existing refresh request file matches {REQUEST_GLOB}")
     for fragment in ("workflow_dispatch:", "schedule:", "concurrency:", "timeout-minutes:"):
         if fragment not in wf:
             errors.append(f"refresh workflow missing required control: {fragment}")

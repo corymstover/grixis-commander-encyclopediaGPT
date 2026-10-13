@@ -9,7 +9,7 @@ on:
       - "scripts/audit_abaddon_baseline_metadata.py"
       - ".github/workflows/refresh-scryfall-metadata.yml"
       - "requirements-scryfall.txt"
-      - "refinement/metadata_audit/REFRESH_REQUEST.md"
+      - "refinement/metadata_audit/REFRESH_REQUEST*.md"
   schedule:
     - cron: "23 8 * * 1"
   workflow_dispatch:
