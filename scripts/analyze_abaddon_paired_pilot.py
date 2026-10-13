@@ -211,20 +211,20 @@ def summarize_group(games: list[dict[str, Any]]) -> dict[str, Any]:
 
 
 def analyze(pilot_dir: Path) -> dict[str, Any]:
-    manifest_path = pilot_dir / "paired-seed-manifest.csv"
+    manifest_path = pilot_dir / "same-seed-run-manifest.csv"
     with manifest_path.open(newline="", encoding="utf-8-sig") as handle:
-        pairs = list(csv.DictReader(handle))
-    if not pairs:
+        trials = list(csv.DictReader(handle))
+    if not trials:
         raise ValueError("Paired seed manifest is empty")
 
     baseline_games: list[dict[str, Any]] = []
     variant_games: list[dict[str, Any]] = []
     paired_rows: list[dict[str, Any]] = []
 
-    for pair in pairs:
-        seed = int(pair["seed"])
-        baseline_text = (pilot_dir / pair["baseline_log"]).read_text(encoding="utf-8", errors="replace")
-        variant_text = (pilot_dir / pair["variant_log"]).read_text(encoding="utf-8", errors="replace")
+    for trial in trials:
+        seed = int(trial["seed"])
+        baseline_text = (pilot_dir / trial["baseline_log"]).read_text(encoding="utf-8", errors="replace")
+        variant_text = (pilot_dir / trial["variant_log"]).read_text(encoding="utf-8", errors="replace")
         baseline_result = summarize_game_log(baseline_text, BASELINE_LABEL)
         variant_result = summarize_game_log(variant_text, VARIANT_LABEL)
         baseline_result["seed"] = seed
@@ -232,7 +232,7 @@ def analyze(pilot_dir: Path) -> dict[str, Any]:
         baseline_games.append(baseline_result)
         variant_games.append(variant_result)
         paired_rows.append({
-            "pair_index": int(pair["pair_index"]),
+            "trial_index": int(trial["trial_index"]),
             "seed": seed,
             "baseline_outcome": baseline_result["outcome"],
             "variant_outcome": variant_result["outcome"],
@@ -252,17 +252,17 @@ def analyze(pilot_dir: Path) -> dict[str, Any]:
 
     outcomes_match = sum(row["baseline_outcome"] == row["variant_outcome"] for row in paired_rows)
     report = {
-        "status": "PILOT COMPLETE — DESCRIPTIVE ONLY; DO NOT USE TO APPROVE A CARD SWAP",
+        "status": "SAME-SEED PILOT COMPLETE — UNPAIRED DESCRIPTIVE ONLY; DO NOT USE TO APPROVE A CARD SWAP",
         "engine": "Forge forge-2.0.15",
         "opponent": OPPONENT_LABEL,
-        "paired_start_control": "same seed per baseline/variant pair, same seat order, same opponent file, and aligned main-deck order except the registered slot",
-        "pairs": len(pairs),
+        "comparison_design": "same numeric seed values and same fixed opponent/seat order, but UNPAIRED by initial library order; Forge Deck/CardPool iteration is not order-preserving",
+        "trials_per_list": len(trials),
         "baseline": summarize_group(baseline_games),
         "variant": summarize_group(variant_games),
-        "paired_outcomes": {
+        "same_seed_outcomes": {
             "same_outcome_pairs": outcomes_match,
             "different_outcome_pairs": len(paired_rows) - outcomes_match,
-            "interpretation": "Descriptive AI-play results only; this is not real-world win-rate evidence and not a confirmatory test."
+            "interpretation": "Baseline and variant use the same numeric seed values, but their starting libraries are not proven aligned. Descriptive AI-play only, not real-world win-rate evidence or a paired confirmatory test."
         },
         "decision_use_allowed": False,
         "limitations": [
@@ -273,7 +273,7 @@ def analyze(pilot_dir: Path) -> dict[str, Any]:
             "No card substitution is approved or applied by this report."
         ],
         "games": {"baseline": baseline_games, "variant": variant_games},
-        "paired_rows": paired_rows,
+        "same_seed_comparison_rows": paired_rows,
     }
 
     (pilot_dir / "pilot-results.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
@@ -285,9 +285,9 @@ def analyze(pilot_dir: Path) -> dict[str, Any]:
     md = [
         "# Abaddon Paired Forge Pilot — Descriptive Only",
         "",
-        f"- Pairs: {len(pairs)}",
+        f"- Same-seed trials per list: {len(trials)}",
         f"- Opponent: {OPPONENT_LABEL}",
-        "- Same seed, seat order, opponent deck, and aligned target-deck slot per pair.",
+        "- Same numeric seeds and seat order per trial; starting hands/library order are NOT guaranteed matched by Forge.",
         "- This does not decide the Aurora Phoenix vs Mind's Desire slot.",
         "",
         "## Baseline summary",
@@ -304,8 +304,8 @@ def analyze(pilot_dir: Path) -> dict[str, Any]:
         "",
         "## Paired outcomes",
         "",
-        f"- Same-outcome pairs: {outcomes_match}/{len(pairs)}",
-        f"- Different-outcome pairs: {len(pairs) - outcomes_match}/{len(pairs)}",
+        f"- Same-outcome seed labels: {outcomes_match}/{len(trials)}",
+        f"- Different-outcome seed labels: {len(pairs) - outcomes_match}/{len(pairs)}",
         "",
         "## Interpretation control",
         "",
@@ -326,7 +326,7 @@ def main() -> int:
         "pairs": report["pairs"],
         "baseline": report["baseline"],
         "variant": report["variant"],
-        "paired_outcomes": report["paired_outcomes"],
+        "same_seed_outcomes": report["same_seed_outcomes"],
         "decision_use_allowed": report["decision_use_allowed"],
     }, indent=2))
     return 0
