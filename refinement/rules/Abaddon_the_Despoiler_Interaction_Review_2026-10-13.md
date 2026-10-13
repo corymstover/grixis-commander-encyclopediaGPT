@@ -23,21 +23,21 @@ Sources checked:
 
 ### Confirmed interaction
 
-**Abaddon-granted cascade does trigger Aurora Phoenix's graveyard ability.** Abaddon's static ability grants cascade to qualifying spells cast from hand. Cascade triggers when the spell is cast (CR 702.85a); Aurora Phoenix's trigger condition is that a spell with cascade was cast (CR 603.2). Therefore, if Aurora Phoenix is in its owner's graveyard immediately after a qualifying hand-cast spell is finished being cast, its return ability triggers even when that spell received cascade from Abaddon rather than printing cascade.
+**Abaddon-granted cascade does trigger Aurora Phoenix's graveyard ability.** Abaddon itself costs five mana ({2}{U}{B}{R}; mana value 5), not six. Abaddon's static ability grants cascade to qualifying spells cast from hand. Cascade triggers when the spell is cast (CR 702.85a); Aurora Phoenix's trigger condition is that a spell with cascade was cast (CR 603.2). Therefore, if Aurora Phoenix is in its owner's graveyard immediately after a qualifying hand-cast spell is finished being cast, its return ability triggers even when that spell received cascade from Abaddon rather than printing cascade.
 
 The Aurora Phoenix ruling states that its return ability triggers only if Aurora Phoenix is in the graveyard immediately after casting finishes, and that the cascade ability and Aurora return trigger can be put on the stack in either order. This matters for decision-making:
 - Put Aurora Phoenix's return trigger above the cascade trigger to return the Phoenix before revealing/casting a cascade hit.
 - Put the cascade trigger above the Phoenix return trigger to resolve cascade first. Aurora can return later if it is still in the graveyard when its return trigger resolves.
 - If the Phoenix is not in the graveyard immediately after the spell is cast, the return ability does not trigger for that cast.
 
-Aurora's printed cascade works when Aurora itself is cast from hand or another zone; Abaddon grants an additional cascade instance only if Aurora was cast from hand and its mana value (6) is within the life-loss threshold. If Aurora is cast from exile by a cascade effect, Abaddon's hand-cast condition does not grant it another instance.
+Aurora's printed cascade works when Aurora itself is cast from hand or another zone. If Aurora is cast from hand during your turn and the threshold is at least six, Abaddon grants it a second instance of cascade in addition to its printed instance; CR 702.85c says multiple instances trigger separately. Thus Aurora can generate two cascade triggers on that cast, while its graveyard-return ability triggers only once for that one cast event if Aurora was in the graveyard immediately after casting. If Aurora is cast from exile by a cascade effect, Abaddon's hand-cast condition does not grant it another instance.
 
 ### What is actually lost by cutting Mind's Desire
 
 The proposed swap is not a free upgrade:
 - Both cards have mana value six.
-- Aurora increases recursive cascade density and supplies a reusable threat/value card if the deck repeatedly casts cascade spells while Aurora can be returned.
-- Mind's Desire supplies a potentially explosive storm spell and can itself gain Abaddon-granted cascade when cast from hand after at least six aggregate opponent life loss this turn.
+- Aurora increases recursive cascade density and supplies a reusable threat/value card if the deck repeatedly casts cascade spells while Aurora can be returned. When cast from hand at a threshold of six or more, its printed cascade plus Abaddon's granted instance produce two cascade triggers.
+- Mind's Desire supplies a potentially explosive storm spell and can itself gain one Abaddon-granted cascade when cast from hand after at least six aggregate opponent life loss this turn; its storm copies are not cast and therefore do not trigger cascade.
 - Consequently, replacing Mind's Desire reduces a high-ceiling draw payoff that can combine storm and cascade on a qualifying turn. This cost must be included in testing; cascade synergy alone does not establish that Aurora is the stronger card.
 
 **Candidate status:** Rules interaction confirmed; **proposed for testing, not accepted**.
