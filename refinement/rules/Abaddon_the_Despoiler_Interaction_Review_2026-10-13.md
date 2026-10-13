@@ -4,7 +4,7 @@
 **Baseline snapshot:** 2026-10-12  
 **Baseline TXT SHA-256:** `2d6203d274c25e67fb93acf5e6784dce4ee1e8999844a6ab032d9b15995acfbf`  
 **Decklist changes:** None.  
-**Playtests:** None run; this report must not be treated as test evidence.
+**Comparative playtests:** None completed; exploratory Forge runtime/replay smoke checks exist but are not performance evidence. This interaction review must not be treated as comparative test evidence.
 
 ## 1. Aurora Phoenix ↔ Mind's Desire: rules findings
 
