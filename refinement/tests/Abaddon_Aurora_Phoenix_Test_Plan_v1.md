@@ -120,3 +120,21 @@ The earlier NOT RUN entries above document the state at initial plan registratio
 | 200-pair confirmatory benchmark | NOT RUN |
 
 Do not choose the card slot from smoke results or the unpaired pilot. Determine whether the pilot can expose actual Aurora cast/return events and the relevant cascade/value metrics. If not—or if no valid matched-start method is engineered and validated—close statistical performance testing as infeasible under this Forge version and decide from Oracle/rules/commander-first strategic evidence, explicitly recording that performance evidence is unavailable.
+
+## 9. Current disposition after the registered fixed-opponent pilot — 2026-10-13
+
+**Disposition: performance comparison closed as inconclusive under the current Forge 2.0.15 AI workflow. The frozen list remains authoritative.**
+
+The registered run [38341150840](https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/38341150840) completed three baseline games and three test-variant games against the same fixed Ruthless Regiment Commander deck. This was an **unpaired descriptive pilot**: the same numeric seeds and seat order were used, but Forge's deck/card-pool import does not guarantee matched opening hands or initial library order.
+
+- Candidate casts: Mind's Desire **0/3**; Aurora Phoenix **0/3**.
+- Mean logged cascade resolutions: **2.0 per game in each condition**. This does not establish equal underlying performance because neither candidate card was cast.
+- Aurora graveyard-return resolutions: **0**; Mind's Desire storm/copy lines: **0**; full Underworld Breach + Lion's Eye Diamond + Brain Freeze line: **0** in both samples.
+- One Aurora-variant run ended in a timeout draw and one variant run emitted a runtime warning.
+- The pilot explicitly records that results are unpaired, descriptive-only, and not permitted for card approval.
+
+The supplementary smoke run [38340740673](https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/38340740673) used a passive Obeka fixture, not the registered opponent. It observed Aurora Phoenix being cast and its **printed cascade** resolving in one of three variant-only games. It did not observe the graveyard-return ability resolving. This shows limited runtime execution, not comparative evidence.
+
+**Decision:** keep Mind's Desire in the frozen baseline and close this test question as **INCONCLUSIVE — NO MATERIAL UPGRADE DEMONSTRATED**. Do not scale more Forge AI trials for this specific comparison: the registered samples did not cast either candidate, the relevant lines were not reached, and starting libraries were not demonstrably matched. Reopen only with meaningful real-game observations, a validated rules-event harness that can force and inspect the interactions, or material structural evidence identifying a concrete failure the swap would address.
+
+This closure applies to the Aurora Phoenix vs Mind's Desire test—not to Abaddon's overall finalization gate. The card-by-card interaction audit and commander-specific opportunity screen still must be closed before requesting final approval. No card change has been applied.
