@@ -176,3 +176,8 @@ The expanded [Abaddon interaction review](https://github.com/corymstover/grixis-
 Key practical findings: mana value is not reduced by alternate costs; cascade compares the revealed card against the cascade spell's mana value, not Abaddon's threshold; mana-value-1 cantrips/tutors cannot hit a lower-mana-value card with Abaddon-granted cascade; Pact of Negation's mana value 0 yields no legal cascade hit; Force of Negation's free mode is opponent-turn-only; spells cast from Jeska's Will's exile permission do not qualify for Abaddon's hand-only grant; and Thermo-Alchemist damage must happen before the relevant spell is cast to raise that spell's eligibility threshold.
 
 This closes those four bounded contextual groups only. It does not close all 94 card dispositions, the fresh exact-list Oracle/identity refresh, the final list/hash verification, or explicit approval. No cards changed; finalization gate remains NO. The next step is a short, sourced context check of the remaining named exceptions in triage (especially Harnfel's reverse face and Bituminous Blast), not a new candidate-ranking or Forge run.
+
+
+### Step 4 logged — Harnfel and Bituminous Blast
+
+Two contextual gaps are now documented in [Abaddon Step 4 Context Check](../refinement/tests/Abaddon_Step_4_Context_Check_2026-10-13.md) and reflected in the coverage plan. No decklist changes. The next bounded check is Blasphemous Act's creature-only damage and own-board trade-off. Full interaction closeout, current exact-list Oracle/identity refresh, final integrity checks, approval-time legality check, and explicit user approval remain open. Final gate: NO.
