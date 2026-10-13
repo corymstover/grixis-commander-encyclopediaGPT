@@ -39,7 +39,8 @@ class PairedPilotLogSummaryTests(unittest.TestCase):
             f"Turn: Turn 3 ({target})",
             f"Add To Stack: {target} cast Aurora Phoenix",
             f"Add To Stack: {target} triggered Aurora Phoenix",
-            f"Resolve Stack: Whenever you cast a spell with cascade, return Aurora Phoenix from your graveyard to your hand. [Activator: {target}]",
+            f"Resolve Stack: Cascade - Aurora Phoenix [Card: Aurora Phoenix (45), Activator: {target}, SpellAbility: Aurora Phoenix]",
+            f"Resolve Stack: Whenever you cast a spell with cascade, return this card from your graveyard to your hand. [Activator: {target}]",
             f"Game Result: Game 1 ended in 23456 ms. {target} has won!",
         ])
         result = summarize_game_log(log, VARIANT_LABEL)
@@ -49,6 +50,19 @@ class PairedPilotLogSummaryTests(unittest.TestCase):
         self.assertTrue(result["candidate_cast_by_own_turn_6"])
         self.assertEqual(result["aurora_trigger_line_count"], 1)
         self.assertEqual(result["aurora_return_resolution_line_count"], 1)
+
+    def test_printed_cascade_trigger_does_not_count_as_graveyard_return(self):
+        target = f"Ai(1)-{VARIANT_LABEL}"
+        log = "\n".join([
+            f"Turn: Turn 1 ({target})",
+            f"Add To Stack: {target} cast Aurora Phoenix",
+            f"Add To Stack: {target} triggered Aurora Phoenix",
+            f"Resolve Stack: Cascade - Aurora Phoenix [Card: Aurora Phoenix (45), Activator: {target}, SpellAbility: Aurora Phoenix]",
+            f"Game Result: Game 1 ended in 12345 ms. {target} has won!",
+        ])
+        result = summarize_game_log(log, VARIANT_LABEL)
+        self.assertEqual(result["aurora_trigger_line_count"], 1)
+        self.assertEqual(result["aurora_return_resolution_line_count"], 0)
 
     def test_variant_player_label_does_not_count_as_aurora_events(self):
         target = f"Ai(1)-{VARIANT_LABEL}"
