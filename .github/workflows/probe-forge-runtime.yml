@@ -54,15 +54,6 @@ jobs:
           cat forge-startup.stdout.txt || true
           cat forge-startup.stderr.txt || true
 
-      - name: Scan card script files for names (not rules correctness)
-        shell: bash
-        run: |
-          python scripts/audit_forge_card_script_coverage.py \
-            --variant refinement/variants/Abaddon_Aurora_Phoenix_Test_Variant_v1.txt \
-            --cards-root res/cardsfolder \
-            --output forge-card-script-coverage.json
-        continue-on-error: true
-
       - name: Preserve probe logs and coverage report
         uses: actions/upload-artifact@v4
         if: always()
@@ -74,6 +65,5 @@ jobs:
             forge-startup.stdout.txt
             forge-startup.stderr.txt
             forge-startup.exit-code.txt
-            forge-card-script-coverage.json
           if-no-files-found: warn
           retention-days: 30
