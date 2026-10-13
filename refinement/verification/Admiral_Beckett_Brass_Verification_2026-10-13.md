@@ -41,7 +41,7 @@ The current baseline already supports that plan with 29 printed Pirate cards in 
 
 ## Candidate review
 
-15 unique candidate decisions are recorded in `Admiral_Beckett_Brass_Candidate_Decisions_2026-10-13.csv`: 2 accepted/implemented and 13 rejected for this revision. Candidate rankings and EDHREC data were discovery and corroboration, not automatic-add rules.
+14 unique candidate decisions are recorded in `Admiral_Beckett_Brass_Candidate_Decisions_2026-10-13.csv`: 2 accepted/implemented and 12 rejected for this revision. Candidate rankings and EDHREC data were discovery and corroboration, not automatic-add rules.
 
 ### Implemented change 1 — The Indomitable for Bident of Thassa
 
@@ -85,7 +85,7 @@ No qualified matched-start multiplayer simulator or representative game sample w
 | Structural count and singleton | **PASS** | 100 total; 97 card names; 35 lands; one commander marker; no nonbasic duplicates; CSV/TXT quantities agree. |
 | Identity, Oracle, current legal status, ban-list checkpoint | **PASS** | Current project-wide exact-printing refresh; both additions individually checked; official Commander banned list checked 2026-10-13; no project exception. |
 | Commander-first strategic blueprint | **PASS** | Trigger and its same-opponent, three-Pirate combat requirement drive the selected changes. |
-| Candidate decision coverage | **PASS** | 15 unique candidate decisions recorded; two additions/two cuts; rejects have reasons. |
+| Candidate decision coverage | **PASS** | 14 unique candidate decisions recorded; two additions/two cuts; 12 distinct rejected alternatives have reasons. |
 | Rules/interactions | **PASS** | Relevant commander, convoke and graveyard-casting timing verified; no unsupported combo claim. |
 | Consistency / performance | **PASS WITH LIMITS** | Exact hypergeometric density check; no qualified gameplay comparison or win-rate claim. |
 | Audit record / normalized hash | **PASS** | Revised copy list, CSV, candidate decisions, actual add/cut rows and hash are recorded separately from baseline. |
