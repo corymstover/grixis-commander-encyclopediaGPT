@@ -1,59 +1,33 @@
 # Abaddon the Despoiler — Finalization Gate Review
 
-**Updated:** 2026-10-13  
+**Updated:** 2026-10-13 UTC  
+**Authority:** frozen 2026-10-12 FINAL CSV/TXT pair  
 **Baseline TXT SHA-256:** `2d6203d274c25e67fb93acf5e6784dce4ee1e8999844a6ab032d9b15995acfbf`  
 **Decklist changes:** none  
-**Finalization status:** NO — full fresh 94-card Oracle/identity/legality refresh remains pending; exact-list approval also required
+**Current finalization status:** **NO — exact-list user approval is still required**
 
-## Completed for this campaign
+## Completed verification gates
 
-- Commander-first blueprint and provisional natural power ceiling recorded.
-- Current candidate pool screen: 60 entries reviewed; no additions applied automatically.
-- Aurora Phoenix vs Mind's Desire: closed inconclusive for the qualified evidence available; retain Mind's Desire and do not rerun the same Forge AI comparison.
-- Frozen baseline: 100 cards including commander, CSV/TXT reconciliation and singleton checks already passed in the independent baseline audit; 94 distinct card names joined to deck-scoped metadata in CI.
-- Interaction coverage control and role/context triage includes all 94 distinct card names and has no remaining literal “triage required” status.
-- Specific cascade, alternate-cost, top-deck sequencing, damage-threshold, cast-from-exile and combo constraints have been documented. The Breach/LED/Brain Freeze line is rules-coherent only from its explicit state with no opponent interaction.
-- Reproducible hypergeometric draw-density report committed and tested; it is descriptive math, not gameplay or win-rate evidence.
-- GitHub refinement tracker and final verification runbook updated.
+- **Baseline structure:** PASS — 100 cards including commander, 94 unique names, CSV/TXT quantity maps reconcile, one commander marker, no nonbasic singleton violations, and frozen source hashes match.
+- **Source package integrity:** PASS — uploaded source manifest 165/165 checks passed; authoritative Abaddon CSV/TXT hashes match the frozen package.
+- **Current Oracle / identity / printing metadata:** PASS — Scryfall refresh summary generated `2026-10-13T06:44:29.581734+00:00`; source bulk timestamp `2026-10-12T21:06:24.577+00:00`. Global inventory is 62 decks / 5,964 rows with 5,964 exact set+collector+name matches; zero unresolved/ambiguous printings, missing Oracle text/IDs, identity mismatches, unresolved project exceptions, or unexpected official-illegal rows.
+- **Abaddon exact-list audit:** PASS — 94/94 distinct names exact-matched; 94/94 Scryfall IDs, Oracle IDs, and Oracle text; 94/94 color identities within UBR; 94/94 Commander legality fields marked legal; zero Abaddon project exception rows.
+- **Priority-card checks:** PASS — Bituminous Blast (J25 742; B/R; legal), Boltwave (FDN 79; R; legal), Thermo-Alchemist (INR 403; R; legal). Text and card-specific sequencing are recorded in the current card audit.
+- **Official ban-list checkpoint:** PASS — official Commander named-ban list checked October 13, 2026; no card from this baseline is named on it. This remains separate from Scryfall's per-card legality status.
+- **Commander-first blueprint and candidate screen:** PASS — 60 candidate decisions recorded. No addition is approved automatically; current evidence does not justify a material swap. Aurora Phoenix vs Mind's Desire remains INCONCLUSIVE; retain Mind's Desire and do not repeat the same uninformative Forge trial.
+- **Rules/combo review:** SUBSTANTIAL, BOUNDED REVIEW — material cascade, threshold, mana-value, alternative-cost, cast-from-exile, copy-vs-cast, Thermo-Alchemist, Harnfel, Blasphemous Act, and Breach/LED/Brain Freeze + Wheel conditions documented. The Breach line is coherent from its exact starting inventory assuming no interaction, not an unconditional infinite or gameplay performance proof.
+- **Cascade audit correction:** PASS — corrected triage CSV and review where older text incorrectly stated MV-1 spells had no lower-MV hit. This deck contains seven MV-0 nonlands; MV-1 cascade can hit one of the six other MV-0 cards if revealed. Pact of Negation is MV 0 and cannot hit a lower-MV card.
 
-## Remaining gates
+## Remaining gate
 
-1. Execute the committed read-only structural verifier in a local checkout or CI environment and record its actual output. The current connector session can read/write repository files but cannot run a remote shell/workflow dispatch; no claim is made that this new script executed.
-2. Confirm exact list membership and count/singleton rules against the authoritative TXT/CSV pair, including exact hash, before finalization.
-3. Use a fresh approval-time Oracle/color-identity/official Commander-legality check for all 94 distinct card names; the currently committed Scryfall snapshot is dated 2026-10-12 and is not considered live today.
-4. Decide whether the current unchanged list meets the strategic stopping rule. No card swap is justified by current candidate evidence; do not make speculative changes to manufacture an “upgrade”.
-5. Present the exact 100-card copy-paste list and evidence limitations to the user. Obtain explicit approval for that exact list.
-6. After explicit approval only, record approved hash and date and set the finalization gate to YES.
+1. **Exact-list approval:** present the verified unchanged 100-card list to the user and obtain explicit approval. Only after approval, record the approved list hash/date and set `final_gate_passed=YES`.
 
-## Required interpretation
+## Required evidence boundaries
 
-A complete role/context triage is not exhaustive certification of every possible game state. Forge's inconclusive AI comparison is not performance evidence. No statistical win-rate claim is supported. Official Commander legality and any project exceptions must remain clearly distinguished.
+- The metadata check confirms exact printing references, Oracle IDs/text presence, color identity, and Commander legality status from the current Scryfall bulk snapshot. It does not prove every possible rules interaction.
+- Interaction review is substantial but not exhaustive; the current status should not be described as full gameplay simulation or every-board-state proof.
+- Hypergeometric analysis is descriptive card-density math, not gameplay or win-rate evidence.
+- The Forge Aurora/Mind's Desire comparison is inconclusive and must not be cited as performance evidence.
+- Project-specific exceptions, when applicable to other decks, must be distinguished from official legality. No Abaddon exception applies here.
 
-Do not mark the deck finalized until the remaining gates and approval are recorded.
-
-
-## Closeout update — 2026-10-13 UTC
-
-- Priority-card public references checked: Bituminous Blast, Boltwave, and Thermo-Alchemist; their current Oracle characteristics, identity subset, and reported Commander legality are recorded in Interaction Review Step 11.
-- Interaction triage corrected: decklist contains MV-0 nonlands, so MV-1 cascade spells can hit those cards; several previous “no lower-MV nonland hit” statements were wrong. Triage CSV updated, and Step 11 supersedes those old statements.
-- Breach/LED/Brain Freeze + Wheel has a worked accounting example only under the exact listed starting state and no-interaction assumptions; this is not a gameplay-performance pass.
-- **Still blocked:** a current full 94-card authoritative Scryfall card-object/bulk refresh; API/bulk retrieval returned access/403 failures in this session. Existing 2026-10-12 bulk snapshot is dated and not sufficient to claim a fresh approval-time pass.
-- **Still pending:** explicit user approval of the exact 100-card list. Final gate remains NO.
-
-## Cascade-hit correction — required closeout note
-
-The older Step 7/Step 10 summaries included erroneous lower-mana-value claims for this deck. Abaddon’s current decklist contains mana-value-0 nonlands, so a mana-value-1 spell with Abaddon-granted cascade can hit one, if revealed; a mana-value-3 spell can hit mana-value-0, 1, or 2 nonlands. The triage CSV is now corrected for the affected cards, and the newer Interaction Review Step 11 supersedes the conflicting prior claims. Pact of Negation (mana value 0) still cannot find a card with a lower mana value.
-
-Fresh public-reference checks confirm the current Oracle characteristics and reported Commander legality of Bituminous Blast, Boltwave, and Thermo-Alchemist, with red/red-black identities within Abaddon's UBR identity. The full current authoritative 94-card Oracle/identity/legality refresh remains **BLOCKED/PENDING**, because direct Scryfall named-card/bulk requests returned access/403 errors. The 2026-10-12 full-list snapshot is dated evidence, not a current-object refresh. Do not declare the full card-identity gate passed until a fresh source can be queried and compared across all 94 names.
-
-The exact baseline remains structurally verified and unchanged. Interaction findings are substantial and bounded; the Breach line depends on its specified starting state and no opponent interaction. Final gate stays NO pending full-list refresh and explicit user approval.
-
-
-## Updated verification checkpoint — 2026-10-13 UTC
-
-- Three priority card records checked from public card-reference pages, including text, identity subset, and Commander legality reporting.
-- The official Commander banned list was checked; none of the three is banned.
-- Cascade interaction triage corrected where it incorrectly stated that mana-value-1 spells had no potential lower-MV nonland hits. In this list, MV-0 nonlands can be hits.
-- Full current 94-card authoritative Oracle/identity/legality refresh remains blocked; Scryfall endpoints returned access/403. Previous bulk data dated 2026-10-12 is not live current verification.
-- Substantial rules/combo review complete with explicit conditions and limitations; not exhaustive proof for all states or performance evidence.
-- Finalization gate remains NO until a current source refresh can cover all 94 distinct cards and the user approves the exact unchanged list.
+**Disposition:** all technical metadata and structural gates pass; no card changes are justified by current candidate evidence. Keep the frozen baseline unchanged. The deck remains not finalized until the user approves this exact 100-card list.
