@@ -71,6 +71,11 @@ The user has directed that deck reviews must not be conservative about changes. 
 
 Refine exactly one deck at a time in authoritative tracker order. Complete the current deck's full-list review, commander-specific research, decisions, rules and legality verification, final count/hash, verification certificate, decklist, and tracker update before beginning substantive review of the next deck. If a mandatory gate blocks the current deck, stay on it for bounded remediation; record a blocker rather than silently skipping it. Do not batch superficial reviews or optimize multiple decks in parallel. Shared data refreshes/reusable rules research are allowed, but they do not count as finishing a deck. The next deck may be selected only after the current deck's final disposition and artifacts have been re-fetched and cross-checked. Details: [Automated Approval and Lock Policy v1](refinement/AUTOMATED_APPROVAL_AND_LOCK_POLICY_v1.md).
 
+
+## Full campaign restart — review again from deck #1
+
+The active refinement cycle has been reset at the user's direction. Every prior approval is historical only; all 62 decks require a new full re-review under the full-strength, one-deck-at-a-time policy. Frozen baseline exports and historical artifacts remain preserved. Active campaign order restarts with Abaddon the Despoiler (#1); complete and document its new review before starting deck #2. Auto-approval/locking is permitted only after all current mandatory gates and final artifact/hash checks pass. Current progress is defined by the active refinement tracker, not prior-cycle statuses.
+
 ## Automated integrity check
 
 Every relevant push and pull request runs [the baseline verifier](scripts/verify_baseline.py) through [GitHub Actions](.github/workflows/verify-baseline.yml). The verifier checks the 124-file archive against all 124 raw file hashes, CSV/TXT card-name quantities, 100-card counts, singleton/copy limits, and collection totals. The initial CI run passed: [view run](https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/38324768882).
