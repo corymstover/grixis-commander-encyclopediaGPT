@@ -7,7 +7,7 @@
 
 ## Commander identity and operating rule
 
-Abaddon the Despoiler is a six-mana Grixis commander with trample. During your turn, spells cast from your hand with mana value no greater than the total life opponents have lost **this turn** have cascade.
+Abaddon the Despoiler is a five-mana Grixis commander ({2}{U}{B}{R}; mana value 5) with trample. During your turn, spells cast from your hand with mana value no greater than the total life opponents have lost **this turn** have cascade.
 
 This is not a generic Grixis spells deck with cascade added as a bonus. The list should repeatedly convert early opponent life loss into a larger cascade threshold, then convert those cascade casts into more spells, damage, and value from exile.
 
@@ -37,7 +37,7 @@ The current 100-card baseline has 34 lands, 19 cards tagged as ramp, and 11 tagg
 
 ## Natural power ceiling — provisional
 
-**Provisional target: Bracket 4 / Optimized, with a compact combo package that can threaten a higher ceiling.** The existing list contains fast mana, tutors, free interaction, and the Breach combo, but Abaddon is a six-mana commander whose primary engine depends on same-turn opponent life loss. Do not label it cEDH solely because it contains a cEDH-capable combo; revisit the bracket only if representative games show cEDH-level speed, consistency, and interaction.
+**Provisional target: Bracket 4 / Optimized, with a compact combo package that can threaten a higher ceiling.** The existing list contains fast mana, tutors, free interaction, and the Breach combo, but Abaddon costs five mana and its primary engine depends on same-turn opponent life loss. Do not label it cEDH solely because it contains a cEDH-capable combo; revisit the bracket only if representative games show cEDH-level speed, consistency, and interaction.
 
 The inherited candidate scores are not a current power measurement. Current EDHREC inclusion/Lift is observational association, not proof of optimality.
 
