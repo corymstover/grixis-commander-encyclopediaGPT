@@ -169,3 +169,43 @@ This table makes the remaining work explicit and prevents already-settled questi
 
 The completed items above are closed unless current Oracle/rules sources materially change or a concrete contradictory interaction is found. Do not reopen Aurora-versus-Mind's Desire for the same uninformative Forge AI comparison. The remaining work is a bounded card-specific audit of the frozen list, not another general search for possible upgrades. Candidate ledger decisions remain proposals/rejections/inconclusive records, not authorized card changes.
 
+## 8. Step 2 — role-based triage of the 61 previously unmentioned names (2026-10-13 UTC)
+
+**Scope:** Frozen baseline only. No cards added, removed or reclassified. This closes the first-pass triage for the 61 names not explicitly mentioned in the prior narrative; it does not by itself certify all 94 card names or all game-state interactions.
+
+### Lands (28 copies / basic duplicates noted)
+
+All 28 land copies are mana infrastructure. Fetchlands, shocklands, rainbow lands and duals need a mana-base/color-source audit but no special cascade/cast-copy interactions. Otawara and Takenuma have channel abilities that function from hand by paying their channel costs; they are not spells, do not trigger cast payoffs, and do not receive Abaddon cascade. Urborg changes Swamp land types for all lands on the battlefield, potentially broadening black production, but does not change color identity. Ancient Tomb costs 2 life to activate; self-life-loss does not increase Abaddon's opponent-life-loss threshold.
+
+### Ordinary tutors
+
+Demonic Tutor, Imperial Seal, Mystical Tutor and Vampiric Tutor are normal search effects with no special Abaddon interaction. Gamble's random discard occurs after searching; if a chosen card is discarded, it can seed Underworld Breach or other graveyard uses, but this is contingent and not a guarantee. Tutors must be sequenced before the intended cascade turn if their mana cost exceeds the current Abaddon threshold; because they are cast from hand, the tutor itself may receive cascade if Abaddon is out and the threshold is met.
+
+### Free/conditional interaction
+
+Deadly Rollick and Fierce Guardianship can be cast for zero mana with their commander-on-battlefield alternate conditions; Abaddon still sees their printed mana values for its threshold and cascade's mana value comparison, not their alternate costs. Deflecting Swat's free mode likewise does not lower mana value. Force of Will and Force of Negation alternate costs involve exiling a blue card and paying life for Force of Will; that life is paid by you and does not increase Abaddon's threshold. Force of Negation's free mode is restricted to an opponent's turn, so it does not serve as a free cascade spell during your own turn. Pact of Negation's delayed upkeep payment is a separate risk: after casting it, you must pay {3}{U}{U} at the next upkeep or lose. Flusterstorm copies itself for each spell cast before it that turn; these copies are not cast and do not trigger ordinary cast triggers, but Storm-Kiln Artist sees copies of an instant/sorcery and can trigger magecraft for them. Pyroblast can target a blue spell/permanent and can be cast targeting any spell even if that spell is not blue, but its resolution only affects the target if it's blue; Swan Song counters enchantment, instant, or sorcery spells, with the created Bird token on resolution. None of these interaction spells changes the frozen card list; exact targeting legality and stack states are game-dependent.
+
+### Rituals / acceleration
+
+Arcane Signet and the Talismans are routine mana rocks. Sol Ring and Mana Vault make colorless mana and cannot pay colored pips without another effect. Chrome Mox requires exiling a nonartifact, nonland card from hand as it enters and has imprint; Lotus Petal sacrifices itself for one mana. Dark Ritual and Rite of Flame are one-shot black/red rituals; Rite of Flame scales with prior Rite of Flame cards in graveyards. Cabal Ritual adds {B}{B}{B}, or {B}{B}{B}{B}{B} with threshold (seven or more cards in your graveyard), so it is a conditional rather than guaranteed burst. Jeska's Will has modes chosen on cast: a mana mode based on opponents' hand size, or exile the top three cards and allow them to be played until end of turn, or both if you control a commander; if cast with Abaddon present from hand at threshold, the spell can gain cascade. Nightscape Familiar reduces blue/red spell costs by {1} and can regenerate itself for {B}; cost reduction does not change mana value for Abaddon's threshold or cascade. The reduction applies to generic portions of blue/red spells, and does not reduce colored pips.
+
+### Draw / cantrips
+
+Brainstorm draws three then puts two cards from hand on top of library, so it can protect/reposition cards but may put valuable cascade hits back into the library. Ponder looks at the top three and can shuffle; its value with cascade depends on timing and top-deck setup. Mystic Remora and Rhystic Study are upkeep/conditional draw engines, not cast-trigger engines; their upkeep costs tax resources but do not interact specially with cascade. Their card advantage improves ability to build a cascade turn but does not lower mana value.
+
+### Thermo-Alchemist
+
+Thermo-Alchemist triggers on casting an instant or sorcery by untapping; it taps to deal 1 damage to each opponent. If activated during your turn before casting a qualifying spell, the opponent life loss from its damage can raise Abaddon's threshold after damage resolves. It does not have haste inherently; timing of its first activation matters. Damage is life loss only after damage is dealt and state-based actions/trigger ordering are processed; do not count projected damage before it occurs.
+
+
+### Result and what remains
+
+- Land role: 28 card copies, reviewed as mana-base infrastructure; nonbasic color-production and utility-land activations are documented above.
+- Ritual/mana acceleration role: 13 names, reviewed for alternate-cost/setup requirements and relevant mana-value guardrails.
+- Draw/cantrips role: 4 names reviewed.
+- Tutor role: 5 names reviewed.
+- Free/conditional interaction and counters: 10 names reviewed.
+- Thermo-Alchemist: reviewed as a threshold enabler.
+- The “not explicitly mentioned” category has therefore been triaged by role. The most material special conditions found are: Ancient Tomb self-payment is not opponent life loss; fetchlands/shocks have life costs that do not raise Abaddon's threshold; alternative/free casting costs do not reduce printed mana value; Force of Negation's free mode is opponent-turn restricted; Pact of Negation has delayed failure condition; Cabal Ritual depends on graveyard threshold; Chrome Mox depends on an imprint card; Nightscape Familiar reduces generic cost but not mana value; and Gamble can contingently seed graveyard cards.
+- This triage is a rules-oriented summary and has not tested every possible stack/game state. It does not substitute for the official fresh legality refresh and final list-level audit.
+- **Remaining card-level coverage gap:** The 33 names already explicitly mentioned in the prior review still need their coverage statuses reviewed in context; the full 94-card audit certificate is not complete. Next bounded step should verify high-impact listed interactions and the Breach sequence with current Oracle/rules sources, rather than repeating basic-card explanations.
