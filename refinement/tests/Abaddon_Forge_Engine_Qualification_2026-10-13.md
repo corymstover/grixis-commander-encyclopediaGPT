@@ -3,7 +3,7 @@
 **Snapshot date:** 2026-10-13  
 **Candidate version pin:** Forge `forge-2.0.15`, resolved commit `4ec5f1a2c32fa90ecb983a72b9eb47aa5c5d7676`  
 **Current decision:** smoke checks for source presence and Commander-mode deck loading **PASS**; **NOT QUALIFIED** for rules-correctness testing or comparative gameplay.  
-**Valid comparative gameplay runs:** 0 (one bounded CLI smoke match was stopped as a draw after a 10-second clock).  
+**Valid comparative gameplay runs:** 0. Smoke games validate basic launch/import only; no valid card-choice comparison has been completed.  
 **Approved card changes:** 0
 
 > **Current-status note (2026-10-13):** Sections 1–9 below preserve the investigation chronology and include historical statuses that were accurate before the latest CI run. The authoritative current outcome is in [Section 10](#10-latest-qualified-scope-after-the-commander-mode-smoke-test) and the [smoke-test result record](Abaddon_Forge_Smoke_Test_Result_2026-10-13.md). Do not interpret the earlier pending-source-scan or no-deck-load statements as current.
@@ -14,20 +14,23 @@ The exact Aurora Phoenix test variant has 100 cards including the commander, 94 
 
 Forge release `forge-2.0.15` was published on 2026-09-28. Its tag resolves to commit `4ec5f1a2c32fa90ecb983a72b9eb47aa5c5d7676`. The annotated tag is unsigned/unverified per GitHub metadata. Release: https://github.com/Card-Forge/forge/releases/tag/forge-2.0.15. The official Forge wiki describes Forge as an independent Magic rules engine supporting up to eight players and over 99% of cards, but that general statement does not establish support for this exact list or correctness of each relevant interaction. https://github.com/Card-Forge/forge/wiki/
 
-At that commit, source files were inspected for six key cards: Abaddon the Despoiler, Aurora Phoenix, Mind's Desire, Underworld Breach, Brain Freeze, and Lion's Eye Diamond. The script contents contain their expected names and Oracle text; this is source-level support evidence only. It is not a runtime test. Earlier source inspection found Wild-Magic Sorcerer on the moving main branch, but it has not yet been pinned/audited at this release commit.
+At that commit, a checked-out source-tree scan matched 95/95 distinct names (94 test-variant names plus baseline-only Mind's Desire) to exactly one standard card script with a nonempty Oracle field. This confirms source mapping, not rules correctness. The pin is forge-2.0.15 at commit 4ec5f1a2c32fa90ecb983a72b9eb47aa5c5d7676.
 
-## Qualification gates
+## Qualification gates — current status
 
 | Gate | Evidence | Status |
 |---|---|---|
-| Release/version pin | Release and resolved commit recorded above | Identified |
-| All 94 distinct card names matched to scripts at the pin | Only six critical cards checked at pinned commit; no complete lookup audit | **Not passed** |
-| Executable installed and launched | Not done in this environment | **Not passed** |
-| Exact variant loaded in Commander mode | Not done | **Not passed** |
-| Abaddon-granted cascade and Aurora graveyard return observed in runtime | Script source only; no runtime events | **Not passed** |
-| Trigger ordering, cascade cast-from-exile behavior, storm copies, escape and combo sequence smoke tests | No runtime test/log | **Not passed** |
-| Stable seed/paired-start control and structured turn/zone event logs | Not demonstrated | **Not passed** |
-| Gameplay results | None | **Not run** |
+| Pinned release/version | forge-2.0.15, source commit and installer SHA-256 fixed | PASS |
+| Source presence/name mapping for test variant plus baseline-only comparison card | 95/95 distinct names map to one pinned standard script with nonempty Oracle field; zero unmatched/ambiguous | PASS — presence only |
+| CLI executable starts | Pinned JAR starts in parse mode under OpenJDK 17 | PASS |
+| Exact 100-card baseline and test-only variant load in Commander mode | Both DCK files loaded in completed smoke game(s) | PASS — import/basic runtime only |
+| Abaddon-granted cascade observed | Smoke logs show cascade resolutions after opponents lost life that turn | PARTIAL — not complete edge-case validation |
+| Aurora Phoenix cast / graveyard-return behavior | No recorded runtime event has cast Aurora Phoenix or demonstrated its return trigger | NOT TESTED |
+| Full Underworld Breach + Lion's Eye Diamond + Brain Freeze route | No full line demonstrated in captured logs | NOT TESTED |
+| Same-command deterministic replay | Two identical commands with the same numeric seed produced identical normalized match-event lines | PASS — replay only |
+| Matched starting-library/opening hands for baseline vs variant | Forge normal deck normalization uses unordered ItemPool/ConcurrentHashMap iteration, so text-order alignment and equal seeds do not guarantee aligned starts | NOT AVAILABLE through current unmodified CLI |
+| Comparative gameplay evidence | No valid matched-start or adequately controlled card-choice experiment | NOT RUN |
+| Approved card changes | None; frozen baseline remains untouched | 0 |
 
 ## Rules-derived expected events for later smoke tests
 
@@ -42,13 +45,9 @@ The current manual interaction review remains the detailed card/rules source: ht
 
 ## Recommended next action
 
-In an environment that can download and execute the pinned Forge desktop/JAR build:
+Use the pinned CLI for a bounded fixed-opponent instrumentation pilot only. Treat equal seed values as a reproducibility control, not a matched-start experiment. The normal deck loader does not preserve declared text order as a guaranteed initial-library order, so this release cannot support the registered paired-start comparison without a separately validated ordered-deck injection method or a properly qualified patched simulator.
 
-1. Audit all 94 card identities against scripts at commit `4ec5f1a2c32fa90ecb983a72b9eb47aa5c5d7676`, handling double-faced/modal names and land-card canonical script names carefully.
-2. Run the release in a reproducible environment and record Java version, artifact hash, command line, and Forge build identifier.
-3. Load the exact baseline and variant under Commander mode without substitution or warnings.
-4. Create minimum scenario decks/states to test the expected events above. Record raw logs and compare each event to a manually specified expectation.
-5. Only after all correctness gates pass, assess whether stable paired initial library orders and structured event capture are possible. If not, the engine may be useful for exploratory testing but is not qualified for the registered paired confirmatory comparison.
+The immediate checks are to run the small same-seed pilot against the fixed Commander opponent, verify that the log parser reports actual events correctly, and test whether Aurora Phoenix ever casts/returns in observable games. Do not increase sample size merely to accumulate game counts. If the required event metrics or a defensible comparison design remain unavailable, mark Forge as exploratory-only and close the performance-test route as infeasible for this candidate; make the slot decision from Oracle/rules/commander-first strategic evidence and record the testing limitation.
 
 A card-script directory scan or a large claimed coverage percentage is not enough to certify interactions. Do not infer game performance from script presence. Do not use simplified random-draw models as a substitute for rules-resolved game play.
 
