@@ -174,3 +174,22 @@ This section supersedes earlier status statements that the source scan, CLI laun
 Forge is useful for **exploratory engine smoke tests and event-log inspection**, but it remains **unqualified for deciding the Aurora Phoenix slot**. A fixed-opponent CLI pilot can assess whether relevant events are observable; absent a validated ordered-library control, runs with the same numeric seed are explicitly unpaired. No win-rate or matched-difference inference may be drawn from them. A one-game variant-versus-baseline duel is never comparative evidence.
 
 The frozen baseline stays authoritative and untouched. The Aurora Phoenix list stays a test-only artifact.
+
+## 11. Final qualification ruling after the registered same-seed pilot — 2026-10-13
+
+### Qualified use
+
+Forge 2.0.15 can be used for:
+- pinned-source card-script/name and nonempty Oracle-field checks;
+- verified conversion of the frozen baseline and a separate variant to 100-card Commander DCK inputs;
+- Commander-mode CLI launch and basic interaction smoke logs;
+- limited event observability when the AI happens to execute the event;
+- replay checks for the exact same command and seed.
+
+### Not qualified for
+
+Forge is **not qualified to rank or choose between Aurora Phoenix and Mind's Desire**. The registered fixed-opponent pilot [run 38341150840](https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/38341150840) ran three baseline and three variant games, but neither Mind's Desire nor Aurora Phoenix was cast; neither candidate's key value engine was measured. The same numeric seed/seat order do not guarantee matched libraries because the pinned importer does not preserve text-file order. The supplementary Obeka smoke run observed Aurora's printed cascade once but not its graveyard-return resolution. These runs cannot establish comparative consistency, win rate, or strategic superiority.
+
+**Testing decision:** close this engine pathway for this candidate as inconclusive and do not increase sample size under the same setup. Retain the separate variant artifact and untouched baseline. Reopen only if a materially different, validated test method becomes available or relevant high-quality real-game evidence demonstrates an actual deficiency.
+
+**Scope caution:** this test-infrastructure closure is not equivalent to deck finalization. Abaddon's deck-wide interaction audit, current candidate decision screen, exact final 100-card review, and user-approval gate remain separate requirements. Do not mark Abaddon final or modify the list solely on the strength of these smoke runs.
