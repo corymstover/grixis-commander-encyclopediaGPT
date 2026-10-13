@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Refresh exact-printing card metadata from Scryfall default_cards bulk data."""
 # One controlled refresh run requested for the 2026-10-12 campaign.
-import csv, hashlib, io, json, re, tarfile, tempfile, urllib.request
+import csv, gzip, hashlib, io, json, re, tarfile, tempfile, urllib.request
 from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -41,8 +41,8 @@ def main():
  with request("https://api.scryfall.com/bulk-data") as r: api=json.load(r)
  bulk=next(x for x in api["data"] if x["type"]=="default_cards")
  found=defaultdict(list)
- with tempfile.NamedTemporaryFile(suffix=".json") as tmp:
-  download_uri=bulk.get("download_uri") or bulk.get("download_url")
+ with tempfile.NamedTemporaryFile(suffix=".jsonl.gz") as tmp:
+  download_uri=bulk.get("jsonl_download_uri") or bulk.get("download_uri") or bulk.get("download_url")
   if not download_uri: raise RuntimeError("Scryfall bulk entry has no download URI; keys="+",".join(sorted(bulk.keys())))
   with request(download_uri) as src:
    while True:
@@ -50,8 +50,10 @@ def main():
     if not b: break
     tmp.write(b)
   tmp.flush()
-  with open(tmp.name,"rb") as src:
-   for card in ijson.items(src,"item"):
+  with gzip.open(tmp.name,"rt",encoding="utf-8") as src:
+   for line in src:
+    if not line.strip(): continue
+    card=json.loads(line)
     key=(str(card.get("set","")).lower(),str(card.get("collector_number","")))
     if key in keys: found[key].append(card)
  def choose(row):
