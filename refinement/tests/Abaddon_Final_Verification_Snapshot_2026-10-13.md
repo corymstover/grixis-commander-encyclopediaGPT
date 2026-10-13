@@ -53,6 +53,19 @@ Full current Oracle/identity/legality verification for all 94 unique names is st
 The decklist remains unchanged: 100 cards, 94 distinct names, one commander, correct singleton/basics treatment, source TXT/CSV match and frozen hashes retained. Rules/combo review is substantial and now corrected for the cascade-hit issue, but bounded rather than exhaustive. Breach line remains conditionally coherent from the recorded starting state and assumes no opponents interact. Approval/finalization gate stays NO pending the complete fresh 94-name source refresh and explicit user approval.
 
 
+
+
+## Current-source closeout checkpoint (2026-10-13 UTC)
+
+Priority named-card cross-checks are complete via current public card-reference pages: Bituminous Blast, Boltwave, and Thermo-Alchemist. Their Oracle characteristics and reported Commander legality are documented in Interaction Review Step 11. The official Commander ban list was checked; none of these three cards appears on it. Sources: https://www.mtg.wtf/card/c16/182/Bituminous-Blast, https://www.mtg.wtf/card/fdn/79/Boltwave, https://www.mtg.wtf/card/j22/83/Thermo-Alchemist, https://mtgcommander.net/index.php/banned-list/.
+
+The triage CSV has been corrected for cascade-hit errors: this list's mana-value-0 nonlands can be hits for mana-value-1 cascade spells, and mana-value-3 spells can hit mana-value-0/1/2 cards. This correction supersedes incompatible wording in prior review sections.
+
+**Full-card gate remains PENDING/BLOCKED:** direct Scryfall named-card and bulk endpoints returned access/403 errors in this session. The prior all-94 snapshot (last updated 2026-10-12) remains dated evidence, not a fresh approval-time refresh. Public reference spot-checks of the three flagged cards do not establish a fresh authoritative Oracle, identity, and Commander-legality result for all 94 unique names. Do not claim that full gate passes until a current authoritative dataset can be retrieved and compared.
+
+Rules/combo review is substantial but bounded. The Breach/LED/Brain Freeze + Wheel line is rules-coherent only from its explicit starting inventory, assuming no opponent interaction. No evidence supports a gameplay win-rate claim. No decklist changes; exact baseline hash and structural audit preserved. Final gate remains NO until full fresh card-source check and explicit user approval.
+
+
 ## Closeout decision
 
 **Retain the frozen baseline unchanged; no card change is justified by the reviewed candidate evidence.** The full fresh 94-card source refresh is still blocked, and the exact list has not been approved in this refinement cycle. Final gate remains **NO**.
