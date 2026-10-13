@@ -1,8 +1,8 @@
 # Abaddon the Despoiler — Current Card-by-Card Audit
 
-**Audit refreshed by automated closeout run (UTC):** 2026-10-13T06:55:13.382576Z
+**Audit refreshed by automated closeout run (UTC):** 2026-10-13T07:03:26.694525Z
 **Scryfall default_cards bulk updated (UTC):** 2026-10-12T21:06:24.577+00:00
-**Scryfall overlay generated (UTC):** 2026-10-13T06:55:13.382576+00:00
+**Scryfall overlay generated (UTC):** 2026-10-13T07:03:26.694525+00:00
 **Authority:** frozen 2026-10-12 FINAL CSV/TXT pair
 **Source package SHA-256:** `47892245c2cefcf528c38fa9d9e56653d6e71a0fc73fd5ea5eecdd90e2032746`
 **Abaddon TXT SHA-256:** `2d6203d274c25e67fb93acf5e6784dce4ee1e8999844a6ab032d9b15995acfbf`
@@ -49,7 +49,7 @@
 
 ## Commander legality
 
-The fresh Scryfall `default_cards` refresh summary generated at `2026-10-13T06:55:13.382576+00:00` reports `bulk_updated_at=2026-10-12T21:06:24.577+00:00`, 5,964/5,964 exact global print/name matches, zero missing/ambiguous/name-variant rows, zero blank Oracle text/Oracle IDs, zero color-identity mismatches, zero unresolved printing/exception rows, and zero unexpected official-illegal rows. The Abaddon-specific audit gate passed: all 94 distinct names are exact-matched; all 94 have Oracle IDs and nonblank Oracle text; all 94 color identities fit UBR; all 94 are marked Commander-legal; no Abaddon project exceptions apply. The official Commander banned list was checked on October 13, 2026; no card in this frozen Abaddon list is named on it. The October 12, 2026 Wizards Banned & Restricted announcement changed Competitive Brawl, not tabletop Commander.
+The fresh Scryfall `default_cards` refresh summary generated at `2026-10-13T07:03:26.694525+00:00` reports `bulk_updated_at=2026-10-12T21:06:24.577+00:00`, 5,964/5,964 exact global print/name matches, zero missing/ambiguous/name-variant rows, zero blank Oracle text/Oracle IDs, zero color-identity mismatches, zero unresolved printing/exception rows, zero unknown Commander legality statuses, and zero unexpected official-illegal rows. The Abaddon-specific audit gate passed: all 94 distinct names are exact-matched; all 94 have Oracle IDs and nonblank Oracle text; all 94 color identities fit UBR; all 94 are marked Commander-legal; no Abaddon project exceptions apply. The official Commander banned list was checked on October 13, 2026; no card in this frozen Abaddon list is named on it. The October 12, 2026 Wizards Banned & Restricted announcement changed Competitive Brawl, not tabletop Commander.
 
 ## Corrected cascade-hit analysis
 
@@ -71,3 +71,7 @@ The Underworld Breach + Lion's Eye Diamond + Brain Freeze line has a worked unin
 - [Current Magic Comprehensive Rules](https://magic.wizards.com/en/rules), effective September 25, 2026
 
 **Finalization:** current metadata preflight and exact 94-name audit pass; structural hash/count/singleton verification passed independently. Rules-interaction coverage is substantial but bounded, not exhaustive gameplay proof. The frozen list remains unchanged. The deck is not marked finalized until the user explicitly approves this exact unchanged 100-card list.
+
+## Latest pipeline evidence — 2026-10-13T07:03:26.694525Z
+
+GitHub Actions refresh run `38360274984` succeeded end-to-end: frozen 62-deck source preflight, current Scryfall default-cards scan, run-anchored freshness/completeness validation, Abaddon exact 94-name audit, metadata commit and diagnostic artifact. The generated summary reports 5,964/5,964 exact matches; zero missing Oracle text/IDs, color identity mismatches, unresolved printings/exceptions, unknown Commander legality statuses or unexpected official-illegal rows. Bulk timestamp is `2026-10-12T21:06:24.577+00:00`. Decklist unchanged; user approval remains required.
