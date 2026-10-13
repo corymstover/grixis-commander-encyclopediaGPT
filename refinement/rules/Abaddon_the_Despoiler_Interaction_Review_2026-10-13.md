@@ -235,3 +235,9 @@ The final gate remains NO until all 94 names have an explicit per-card dispositi
 A bounded standalone review is committed at [Abaddon Breach Sequence Audit](https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/tests/Abaddon_Breach_Sequence_Audit_2026-10-13.md). It records the required starting zones, LED's discard/mana costs, the three-card escape cost for each spell, storm-copy distinctions, resource/fuel accounting, finish constraints, and common interruption points.
 
 **Disposition: PARTIALLY VERIFIED.** The project source names this combo but does not contain a fully itemized fuel-and-mana ledger proving a specific repeatable starting state. No unconditional infinite or deterministic kill is claimed. Close only after a concrete starting inventory and every iteration's mana/fuel accounting are independently checked. No decklist changes; final gate remains NO.
+
+### Current-source confirmation — 2026-10-13 UTC
+
+The official Comprehensive Rules page identifies the current rules edition as effective September 25, 2026. A bounded review has been recorded at [Abaddon Breach Package Audit](https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/tests/Abaddon_Breach_Sequence_Audit_2026-10-13.md). The rules-level conclusions are supported: escape consumes three other graveyard cards per escape cast; LED sacrifices itself and discards the hand as activation costs; storm copies are not cast and don't raise storm count; Abaddon's grant applies to hand-cast spells; an empty library alone is not a loss.
+
+The combo remains **PARTIALLY VERIFIED**, not because the core rules are unknown, but because the repository lacks a fully itemized worked state/fuel ledger proving the exact loop/finish from a defined starting inventory. Do not downgrade or upgrade that claim without such a ledger.
