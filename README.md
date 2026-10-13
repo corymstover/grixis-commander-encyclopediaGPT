@@ -30,7 +30,7 @@ The 124 current decklist CSV/TXT files are verified inside the compact archive. 
 
 ## Controlled refinement campaign — RESET 2026-10-13
 
-**Current state:** NEW CYCLE ACTIVE. All 62 decks are UNAPPROVED / UNLOCKED. Start with deck #1, Abaddon the Despoiler, and proceed in authoritative tracker order. Previous-cycle lock/approval flags are superseded, not deleted from historical records. Baseline source exports remain immutable. Each deck is eligible for full-list optimization; apply zero or any defensible number of changes. A revised list is auto-approved and locked only when all required technical checks pass and the verification certificate, change ledger, and new list hash are recorded. Do not require user approval as an extra gate.
+**Current state:** NEW CYCLE ACTIVE. The reset began with all 62 decks UNAPPROVED / UNLOCKED; **deck #1, Abaddon the Despoiler, is now APPROVED / LOCKED — ALL TECHNICAL GATES PASSED**. 61 decks remain. Next is deck #2, Admiral Beckett Brass, in authoritative tracker order. Previous-cycle lock/approval flags remain historical only; source baseline exports remain immutable. Each deck is auto-approved and locked only after all technical checks pass; do not add a user-approval gate.
 
 ## Controlled refinement campaign — RESET 2026-10-13
 
@@ -49,7 +49,7 @@ The frozen baseline is preserved on `baseline/freeze-2026-10-12`. The active, se
 - [Abaddon Aurora Phoenix test variant (separate, not final)](https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/variants/Abaddon_Aurora_Phoenix_Test_Variant_v1.txt)
 - [Campaign tracker](https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/Deck_Refinement_Tracker_2026-10-12.csv)
 
-Abaddon is the first deck in the controlled pass. Its blueprint is complete; four candidates have been triaged. No swap has been accepted or applied. Testing, rules-interaction closeout, and user approval remain required before any final list change.
+Abaddon is deck #1 in the new-cycle pass and is now approved/locked after full technical gate closeout. The revision adds Court of Ambition and Warstorm Surge, cuts Loyal Subordinate and Rakdos, Lord of Riots, and is recorded in the [change ledger](refinement/Deck_Change_Ledger_2026-10-13.csv). See the [final decklist](refinement/decklists/Abaddon_the_Despoiler_Refined_2026-10-13.txt), [verification certificate](refinement/verification/Abaddon_the_Despoiler_Verification_2026-10-13.md), and [candidate decision summary](refinement/decisions/Abaddon_the_Despoiler_Candidate_Decisions_2026-10-13.md).
 
 ## Automated integrity check
 
