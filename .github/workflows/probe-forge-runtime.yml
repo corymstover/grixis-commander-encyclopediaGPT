@@ -96,19 +96,50 @@ jobs:
             --variant refinement/variants/Abaddon_Aurora_Phoenix_Test_Variant_v1.txt \
             --output-dir forge-smoke-decks | tee forge-smoke-deck-preparation.txt
 
-      - name: Run one-game Commander deck-load smoke test
+      - name: Run repeated same-seed Commander runtime smoke tests
         shell: bash
         run: |
           set -euo pipefail
           JAR="$(head -1 forge-jar-path.txt)"
-          # This verifies deck import and a rules-engine game launch only. The mirrored
-          # decks are deliberately not treated as a performance comparison.
+          # This is only a repeatability/deck-load smoke test: the two Abaddon variants
+          # play each other, so their winner is not evidence that either list is better.
+          # The pinned CLI's -s flag seeds its RNG; full logs are retained for inspection.
           timeout 180s java -jar "$JAR" sim \
             -D "$PWD/forge-smoke-decks" \
             -d "Abaddon baseline.dck" "Abaddon Aurora Phoenix variant.dck" \
-            -f Commander -n 1 -q -c 10 2>&1 | tee forge-game-smoke.log
-          grep -Ei 'winner|wins|draw|match' forge-game-smoke.log > forge-game-smoke-summary.txt
+            -f Commander -n 1 -s 20261013 -c 20 2>&1 | tee forge-game-smoke-seed-20261013-a.log
+          timeout 180s java -jar "$JAR" sim \
+            -D "$PWD/forge-smoke-decks" \
+            -d "Abaddon baseline.dck" "Abaddon Aurora Phoenix variant.dck" \
+            -f Commander -n 1 -s 20261013 -c 20 2>&1 | tee forge-game-smoke-seed-20261013-b.log
+          grep -Ei 'winner|wins|draw|match|Game Result|Game Outcome' forge-game-smoke-seed-20261013-a.log > forge-game-smoke-summary.txt
           test -s forge-game-smoke-summary.txt
+          python - <<'PY'
+          import hashlib, json, re
+          from pathlib import Path
+          def normalize(path):
+              text = Path(path).read_text(encoding="utf-8", errors="replace")
+              text = re.sub(r"(?i)(took|ended in)\s+[0-9,]+\s+ms", r"\1 <ELAPSED_MS> ms", text)
+              return text
+          a = normalize("forge-game-smoke-seed-20261013-a.log")
+          b = normalize("forge-game-smoke-seed-20261013-b.log")
+          report = {
+              "seed": 20261013,
+              "release": "forge-2.0.15",
+              "same_command_same_seed": True,
+              "non_timing_logs_identical": a == b,
+              "log_a_sha256": hashlib.sha256(a.encode()).hexdigest(),
+              "log_b_sha256": hashlib.sha256(b.encode()).hexdigest(),
+              "purpose": "single-game replay determinism probe only; not a deck-performance comparison",
+              "limitations": [
+                  "This does not verify identical initial hands or library permutations independently.",
+                  "This does not validate Abaddon, cascade, storm, escape, or graveyard interactions.",
+                  "Forge AI performance is conditional on its heuristics and is not real-world win-rate evidence."
+              ]
+          }
+          Path("forge-seed-replay-report.json").write_text(json.dumps(report, indent=2) + "\n")
+          print(json.dumps(report, indent=2))
+          PY
 
       - name: Preserve probe logs and coverage report
         uses: actions/upload-artifact@v4
@@ -124,7 +155,9 @@ jobs:
             forge-source-commit.txt
             forge-card-script-coverage.json
             forge-smoke-deck-preparation.txt
-            forge-game-smoke.log
+            forge-game-smoke-seed-20261013-a.log
+            forge-game-smoke-seed-20261013-b.log
+            forge-seed-replay-report.json
             forge-game-smoke-summary.txt
             forge-smoke-decks/*.dck
             forge-smoke-decks/smoke-deck-manifest.json
