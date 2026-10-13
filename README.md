@@ -85,3 +85,8 @@ The four original canonical FINAL ZIP archives, four historical Updated archives
 ## Change control
 
 Put new refinement records in separate paths; do not silently replace historical baselines. Every approved card change must have a reason, source/date, current legality and Oracle checks, a verified new list, and user approval. Reopen a finalized deck only for the triggers in the protocol or on explicit user request.
+
+
+## Automated quality and metadata refresh
+
+The repository uses a scheduled Scryfall bulk refresh plus fail-closed freshness and exact-list verification. See [Automation Operations Guide](refinement/Automation_Operations_Guide.md). Pull requests run the unit suite, workflow-contract checks, and frozen 62-deck hash/count/singleton verification. The large metadata download is serialized and runs weekly or on an explicit refresh request; it is not repeated for ordinary text-only edits.
