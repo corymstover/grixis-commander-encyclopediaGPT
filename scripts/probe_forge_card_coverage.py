@@ -28,8 +28,11 @@ NONSTANDARD_SUBTREES = {"rebalanced", "upcoming"}
 
 
 def normalize_name(value: str) -> str:
+    value = value.casefold()
+    for source, replacement in (("æ", "ae"), ("œ", "oe"), ("ø", "o"), ("ł", "l"), ("đ", "d"), ("ð", "d"), ("þ", "th"), ("ß", "ss")):
+        value = value.replace(source, replacement)
     value = unicodedata.normalize("NFKD", value).encode("ascii", "ignore").decode("ascii")
-    return re.sub(r"[^a-z0-9]", "", value.casefold())
+    return re.sub(r"[^a-z0-9]", "", value)
 
 
 def parse_deck_names(path: Path) -> tuple[list[str], dict[str, int]]:
