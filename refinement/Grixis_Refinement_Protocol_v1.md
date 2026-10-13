@@ -1,8 +1,21 @@
 # Grixis Commander Encyclopedia — Controlled Refinement & Finalization Protocol
 
-**Protocol version:** 1.0  
+**Protocol version:** 1.1 — New-cycle reset  
 **Prepared against:** Current Source Package dated 2026-10-12  
-**Scope:** One disciplined, evidence-led refinement cycle for the 62 current FINAL decks.
+**Scope:** New full-list refinement cycle for all 62 current FINAL decks, starting 2026-10-13. All decks are unapproved and unlocked until they pass the new cycle's technical gates.
+
+## 0. Active-cycle authority — effective 2026-10-13
+
+This section supersedes any conflicting approval, lock, completion, or sign-off language elsewhere in older project records for the active cycle.
+
+- All 62 decks are **UNAPPROVED / UNLOCKED**. No historical approval or lock carries forward as current approval.
+- Begin at deck #1, Abaddon the Despoiler, and follow the authoritative 62-deck tracker order.
+- Reassess the entire deck, not merely prior proposed slots. Evaluate the commander plan, mana base, curve, consistency, interaction, protection, card advantage, recovery, win conditions, synergistic packages, candidate alternatives, and meaningful cuts.
+- There is no arbitrary swap limit. Make every defensible improvement; zero changes is valid if evidence does not support a change.
+- Keep original source exports and frozen baseline hashes immutable. Store revised lists, decision ledgers, certificates, and hashes as separate revision artifacts.
+- **Auto-approval and lock rule:** after all required technical gates pass, issue the verification certificate, record the revised list hash and audit evidence, and automatically mark that revision APPROVED / LOCKED. User approval is not an additional gate in this cycle.
+- Any failed, unknown, or incomplete mandatory gate means **NOT APPROVED / UNLOCKED**. Never misstate project-authorized exceptions as officially legal.
+- Historical trackers may retain old approval text for provenance, but active tracker fields must explicitly show the reset state until the new gate passes.
 
 ## 1. Objective and guarantee boundary
 
