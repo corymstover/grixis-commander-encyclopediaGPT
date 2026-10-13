@@ -72,3 +72,10 @@ The refined [Abaddon Interaction Triage](https://github.com/corymstover/grixis-c
 A bounded current-rule review was added to Section 12 of the expanded interaction review, covering top-deck/cascade sequencing, alternate/free-cost interaction, Jeska's Will exile casts, and Thermo-Alchemist threshold timing. Findings include: alternate costs do not change mana value; cascade compares the hit to the spell with cascade; mana-value-1 cantrips/tutors and mana-value-0 Pact of Negation cannot produce a lower-mana-value hit; Force of Negation's free mode is opponent-turn-only; Jeska's Will exile casts do not meet Abaddon's hand-cast condition; and Thermo-Alchemist's damage must precede the spell cast if it is to increase that spell's threshold.
 
 **Disposition:** these four bounded groups are checked, not the entire card audit. Remaining material contextual checks include Harnfel's reverse face, Bituminous Blast, and the remaining previously mentioned cards whose explicit mention has not yet been independently confirmed in context. The exact-list live Oracle/identity refresh, final hash/count check, fresh legality check at approval, and user approval remain open. No decklist changes; final gate NO.
+
+
+## Step 4 result — context checks recorded (2026-10-13 UTC)
+
+The Harnfel face of Birgi // Harnfel and Bituminous Blast were checked in the separate [Step 4 context note](Abaddon_Step_4_Context_Check_2026-10-13.md). Harnfel creates exile-play permissions with normal costs and timing; spells cast this way do not qualify for Abaddon's hand-only cascade grant. Bituminous Blast has printed cascade and mana value 5; if cast from hand during its controller's turn at threshold five, it can gain an additional Abaddon-granted cascade. Both cascades resolve before its creature damage resolves.
+
+These two gaps are closed only. Next bounded work unit: review Blasphemous Act's creature-only damage and own-board trade-off. No list changes; final gate remains NO.
