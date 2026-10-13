@@ -79,3 +79,8 @@ The full current Oracle/color-identity/exact-printing legality metadata gate is 
 ## Automated regression protection
 
 A repository workflow now runs on relevant pushes and pull requests. Its first GitHub Actions run passed, verifying all 124 raw CSV/TXT file hashes against the frozen manifest, 62 quantity reconciliations, 62 exact 100-card counts, 62 singleton/copy checks, and the collection totals. Run: https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/38324768882
+
+
+## Duplicate-source reconciliation — 2026-10-13
+
+A separate SHA-verified report now records byte-identical upload groups, canonical current-versus-historical file choices, and the remaining full-source mirror gap: [Duplicate Source Reconciliation](Duplicate_Source_Reconciliation_2026-10-13.md). No source files were deleted. The report documents that top-level v8.1.4 inputs match their corresponding historical source-package entries, while current-named 2026-10-12 audit/ranking files differ and take precedence for current work.
