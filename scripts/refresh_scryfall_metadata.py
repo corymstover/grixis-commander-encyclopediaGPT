@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Refresh exact-printing card metadata from Scryfall default_cards bulk data."""
+# One controlled refresh run requested for the 2026-10-12 campaign.
 import csv, hashlib, io, json, re, tarfile, tempfile, urllib.request
 from collections import defaultdict
 from datetime import datetime, timezone
