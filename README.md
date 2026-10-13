@@ -5,7 +5,7 @@ Version-controlled project records for the 62-deck Grixis Commander Encyclopedia
 ## Project operating rules
 
 - Each deck is commander-first and preserves that commander's identity and natural power ceiling.
-- **NEW REFINEMENT CYCLE STARTED 2026-10-13:** at cycle launch all 62 decks were unapproved and unlocked, including lists approved in prior cycles. Current status is tracked per deck; 13 decks are approved/locked after passing new-cycle technical gates: #1–9 (Abaddon through Cormela), plus #12 Davros, #13 Doctor Doom, #14 Don Andres, and #15 Dr. Eggman. 49 decks remain; #10 Crosis and #11 Cult of Skaro are the next unresolved decks in authoritative tracker order. Historical approvals are historical records only.
+- **NEW REFINEMENT CYCLE STARTED 2026-10-13:** at cycle launch all 62 decks were unapproved and unlocked, including lists approved in prior cycles. Current status is tracked per deck; 14 decks are approved/locked after passing new-cycle technical gates: #1–10 (Abaddon through Crosis), plus #12 Davros, #13 Doctor Doom, #14 Don Andres, and #15 Dr. Eggman. 48 decks remain; #11 Cult of Skaro is the next unresolved deck in authoritative tracker order. Historical approvals are historical records only.
 - The active cycle may revise any deck after whole-list review. Automatically approve and lock a deck only after all required technical verification gates pass; do not require an additional user approval step. A failed or incomplete gate means no lock.
 - The four `GrixisFINAL` archives dated 2026-10-12 are the current authoritative membership baseline; the `Updated-10-11-2026` archives are historical.
 - Candidate rankings are a research shortlist, not automatic card additions.
@@ -30,7 +30,7 @@ The 124 current decklist CSV/TXT files are verified inside the compact archive. 
 
 ## Controlled refinement campaign — RESET 2026-10-13
 
-**Current state:** NEW CYCLE ACTIVE. The reset began with all 62 decks UNAPPROVED / UNLOCKED; **13 decks are APPROVED / LOCKED — ALL TECHNICAL GATES PASSED**: #1–9, plus #12 Davros, #13 Doctor Doom, #14 Don Andres, and #15 Dr. Eggman. 49 decks remain. Next is deck #10, Crosis, the Purger, then #11 Cult of Skaro. The four later decks remain locked; only administrative numbering was corrected. Previous-cycle lock/approval flags remain historical only; source baseline exports remain immutable. Each deck is auto-approved and locked only after all technical checks pass; do not add a user-approval gate.
+**Current state:** NEW CYCLE ACTIVE. The reset began with all 62 decks UNAPPROVED / UNLOCKED; **14 decks are APPROVED / LOCKED — ALL TECHNICAL GATES PASSED**: #1–10, plus #12 Davros, #13 Doctor Doom, #14 Don Andres, and #15 Dr. Eggman. 48 decks remain. Next is deck #11, Cult of Skaro. The four later decks remain locked; only administrative numbering was corrected. Previous-cycle lock/approval flags remain historical only; source baseline exports remain immutable. Each deck is auto-approved and locked only after all technical checks pass; do not add a user-approval gate.
 
 
 
@@ -117,3 +117,5 @@ Deck #9 Cormela, Glamour Thief: [final list](refinement/decklists/Cormela_Glamou
 Deck #12 Doctor Doom, King of Latveria: [final list](refinement/decklists/Doctor_Doom_Refined_2026-10-13.txt), [verification](refinement/verification/Doctor_Doom_Verification_2026-10-13.md); added Glorious Purpose, cut The Soul Stone. Current-cycle total: 12/62 locked; next is #13 Don Andres, the Renegade.
 
 **Tracker-order correction (2026-10-13):** the authoritative order places Crosis, the Purger at #10 and Cult of Skaro at #11. The already verified/locked later decks retain their lists and locks but use the corrected tracker numbering: Davros #12, Doctor Doom #13, Don Andres #14, Dr. Eggman #15. Candidate and change-row identifiers and cumulative ledger deck numbers were aligned to that order. Next work resumes at Crosis #10.
+
+Deck #10 Crosis, the Purger: [final list](refinement/decklists/Crosis_Refined_2026-10-13.txt), [verification](refinement/verification/Crosis_Verification_2026-10-13.md); added Blizzard Specter and Recoil, cut Specter's Shroud and Chaos Warp. Current-cycle total: 14/62 locked; next is #11 Cult of Skaro.
