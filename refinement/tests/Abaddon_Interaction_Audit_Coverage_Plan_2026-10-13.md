@@ -79,3 +79,8 @@ A bounded current-rule review was added to Section 12 of the expanded interactio
 The Harnfel face of Birgi // Harnfel and Bituminous Blast were checked in the separate [Step 4 context note](Abaddon_Step_4_Context_Check_2026-10-13.md). Harnfel creates exile-play permissions with normal costs and timing; spells cast this way do not qualify for Abaddon's hand-only cascade grant. Bituminous Blast has printed cascade and mana value 5; if cast from hand during its controller's turn at threshold five, it can gain an additional Abaddon-granted cascade. Both cascades resolve before its creature damage resolves.
 
 These two gaps are closed only. Next bounded work unit: review Blasphemous Act's creature-only damage and own-board trade-off. No list changes; final gate remains NO.
+
+
+## Step 5 result — Blasphemous Act checked
+
+The [Step 5 interaction note](Abaddon_Step_5_Blasphemous_Act_Interaction_Check_2026-10-13.md) records its mana-value-9/cost-reduction distinction, creature-only damage, own-engine downside, and the possibility of an Abaddon-granted cascade trigger resolving before the wipe. The current card is retained; no change follows from this rules check alone. No cards changed; final gate remains NO.
