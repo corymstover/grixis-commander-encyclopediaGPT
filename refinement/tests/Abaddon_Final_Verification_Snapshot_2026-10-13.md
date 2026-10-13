@@ -28,7 +28,7 @@ The standalone structural run executed against the local uploaded source package
 
 ## Current Oracle metadata, color identity, and official Commander legality
 
-**Current metadata refresh:** generated `2026-10-13T06:50:59.642396+00:00`; Scryfall `default_cards` data last updated `2026-10-12T21:06:24.577+00:00`.
+**Current metadata refresh:** generated `2026-10-13T06:55:13.382576+00:00`; Scryfall `default_cards` data last updated `2026-10-12T21:06:24.577+00:00`.
 
 The refresh workflow ran the shared current-data scan and failed-closed validation. It produced a `METADATA_REFRESH_PASS` summary and only committed the metadata after its validator and Abaddon-specific exact-list audit succeeded.
 
