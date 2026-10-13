@@ -99,7 +99,7 @@ def audit(
     scripts, script_count = index_card_scripts(card_root)
 
     # Audit the exact test variant plus explicitly declared baseline-only comparison cards.
-    checked_names = list(dict.fromkeys(variant_names + (extra_cards or [])))
+    checked_names = list(dict.fromkeys(variant_names + (extra_cards or []) + list(REQUIRED_CONTROLS)))
     results: list[dict[str, Any]] = []
     for name in checked_names:
         candidates = [name]
