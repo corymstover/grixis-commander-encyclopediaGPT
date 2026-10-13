@@ -77,8 +77,12 @@ def summarize_game_log(log_text: str, target_label: str) -> dict[str, Any]:
         event_line = strip_player_labels(line)
         if "triggered Aurora Phoenix" in event_line:
             aurora_trigger_lines.append(line)
-        if "Aurora Phoenix" in event_line and "Resolve Stack:" in line and (
-            "graveyard" in event_line.casefold() or "hand" in event_line.casefold()
+        # Count the graveyard-return ability only when its actual effect text resolves.
+        # "triggered Aurora Phoenix" can also refer to the card's printed cascade trigger.
+        if "Resolve Stack:" in line and re.search(
+            r"return (?:this card|Aurora Phoenix) from (?:your )?graveyard to (?:your )?hand",
+            line,
+            re.I,
         ):
             aurora_return_lines.append(line)
         if "Mind's Desire" in line and re.search(r"\b(copy|copies|copied|storm)\b", line, re.I):
@@ -214,7 +218,7 @@ def summarize_group(games: list[dict[str, Any]]) -> dict[str, Any]:
         "mean_cascade_resolutions": _mean_if_values([
             float(game["abaddon_cascade_resolutions_observed"]) for game in games
         ]),
-        "games_with_aurora_trigger": sum(game["aurora_trigger_line_count"] > 0 for game in games),
+        "games_with_aurora_return_resolution": sum(game["aurora_return_resolution_line_count"] > 0 for game in games),
         "games_with_mind_desire_copy_or_storm_line": sum(
             game["mind_desire_copy_or_storm_line_count"] > 0 for game in games
         ),
