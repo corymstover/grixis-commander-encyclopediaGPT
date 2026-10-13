@@ -97,3 +97,20 @@ The run uploaded a short log artifact, `forge-2.0.15-runtime-probe` (artifact ID
 | Gameplay runs | 0 |
 
 The runtime probe's workflow intentionally does not import the deck or play games. The engine remains **not qualified** for exploratory or confirmatory gameplay testing. The next probe must call a documented mode (`parse` or `sim`) with the correct syntax, establish how the release loads `.dck` input, and scan its extracted card script tree. Any subsequent gameplay should wait until the import and rules interactions are validated.
+
+
+## 8. Follow-up: pinned Forge CLI startup (2026-10-13)
+
+The revised workflow used Forge's documented `parse` mode without input instead of the unsupported `--help` argument. GitHub Actions run [38334035177](https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/38334035177) completed successfully, with the variant integrity verifier passing and the pinned release downloaded and extracted after its SHA-256 check. The JAR starts on OpenJDK 17.0.20.1 and reports `Forge v.2.0.15-SNAPSHOT-09.28`. The `parse` invocation returned exit code 0 without the earlier `Unknown mode` message.
+
+This confirms the pinned desktop distribution can start and accept a recognized mode in a GitHub Actions runner. It does **not** yet demonstrate deck parsing because no deck input was provided, nor does it validate Commander setup or rules interactions.
+
+- Runtime startup: **PASS**
+- Correct CLI mode accepted: **PASS**
+- Exact deck parsed/imported: **NOT TESTED**
+- 94-card script audit: **NOT TESTED**
+- Runtime rules smoke tests: **NOT TESTED**
+- Paired starts / structured event logs: **NOT DEMONSTRATED**
+- Gameplay tests: **0**
+
+The next step is to use Forge's parse command with a minimal, known-valid input and inspect the documented expected output, then test the exact deck importer format. Do not submit actual baseline-vs-variant games until list loading and interaction smoke tests are validated. Forge is still **not qualified** for either exploratory gameplay or confirmatory paired testing.
