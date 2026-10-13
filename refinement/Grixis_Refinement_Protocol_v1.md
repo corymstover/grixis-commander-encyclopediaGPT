@@ -177,3 +177,7 @@ Otherwise maintain the finalized snapshot. A newer date by itself is not a reaso
 - Official Commander/B&R sources should be rechecked at each final legality checkpoint: https://magic.wizards.com/en/banned-restricted-list
 
 These tools inform the decision. None substitutes for source verification, rules analysis or the commander-first blueprint.
+
+## 9. Standing Auto-Approval Instruction (effective 2026-10-13)
+
+The user has instructed that all future deck recommendations in this project are to be auto-approved. After commander-first candidate review and all applicable verification gates pass, implement the selected recommendation(s), mark the revised list approved/locked, and update the tracker, decision ledger, and verification artifacts without pausing for routine user approval. This replaces the prior per-deck explicit-approval pause. It does **not** waive technical requirements: block finalization for a failed 100-card/singleton check, identity or legality issue, unresolved Oracle/rules interaction, unexplained source conflict, unregistered project exception, or other material correctness failure. Do not invent evidence of playtesting or win rates. Preserve frozen baseline exports and previously locked decks; only refine the current deck in tracker order.
