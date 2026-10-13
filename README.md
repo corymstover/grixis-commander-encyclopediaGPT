@@ -63,6 +63,10 @@ Effective 2026-10-13, the user delegated final deck approval and lock decisions 
 
 This policy changes who makes the final decision, not the correctness bar. Historical source files and frozen baselines remain immutable; active refinement records are updated in tracker order. Current cycle state must be read from the dated status/tracker records rather than inferred from earlier approval history.
 
+## Full-strength deck refinement standard
+
+The user has directed that deck reviews must not be conservative about changes. Reassess the entire 99 plus commander, challenge inherited inclusions, research a broad commander-specific candidate pool, evaluate packages and plausible cuts, and make all changes the evidence supports—many, few, or none. No target swap count; no keeping a card just because it was in the baseline; no adding a card just because it's highly ranked or generically powerful. Reassess overall curve, engines, interaction, resilience, win conditions, and commander synergy after proposed changes. Follow the [Automated Approval and Lock Policy v1](refinement/AUTOMATED_APPROVAL_AND_LOCK_POLICY_v1.md), including every mandatory correctness gate before auto-approval.
+
 ## Automated integrity check
 
 Every relevant push and pull request runs [the baseline verifier](scripts/verify_baseline.py) through [GitHub Actions](.github/workflows/verify-baseline.yml). The verifier checks the 124-file archive against all 124 raw file hashes, CSV/TXT card-name quantities, 100-card counts, singleton/copy limits, and collection totals. The initial CI run passed: [view run](https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/38324768882).
