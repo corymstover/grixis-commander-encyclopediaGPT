@@ -158,14 +158,14 @@ def prepare(archive: Path, variant_path: Path, output_dir: Path) -> dict[str, An
         "variant_file": str(variant_path),
         "variant_sha256": variant_hash,
         "comparison": {"removed": baseline_minus, "added": variant_minus},
-        "paired_input_order": {
+        "decklist_text_order_check": {
             "baseline_main_card_order": baseline_order,
             "variant_main_card_order": variant_order,
             "differences": [
                 {"slot": baseline_order.index("Mind's Desire"), "baseline": "Mind's Desire", "variant": "Aurora Phoenix"}
             ],
-            "all_other_slots_aligned": True,
-            "limitation": "Input order is aligned for equal seeds, but runtime RNG-stream equivalence and identical opening hands are not yet independently verified."
+            "deck_text_lines_differ_only_at_registered_slot": True,
+            "runtime_ordering_limit": "Forge Deck.normalizeDeferredSections converts deck text through CardPool.fromCardList and iterates ItemPool backed by ConcurrentHashMap; Forge does not guarantee preserving this text order, so equal numeric seeds do not establish matched starting hands or library order."
         },
         "baseline": baseline_meta,
         "variant": variant_meta,
