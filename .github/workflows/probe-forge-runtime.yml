@@ -1,0 +1,79 @@
+name: Probe pinned Forge runtime and card-script coverage
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ["refinement/**"]
+    paths:
+      - ".github/workflows/probe-forge-runtime.yml"
+      - "refinement/variants/Abaddon_Aurora_Phoenix_Test_Variant_v1.txt"
+      - "scripts/verify_abaddon_variant.py"
+
+permissions:
+  contents: read
+
+jobs:
+  probe-forge:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out project
+        uses: actions/checkout@v4
+
+      - name: Verify isolated deck variant
+        run: python scripts/verify_abaddon_variant.py
+
+      - name: Download pinned Forge release
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --location --fail --retry 3 --retry-delay 2 \
+            --output forge-installer-2.0.15.tar.bz2 \
+            https://github.com/Card-Forge/forge/releases/download/forge-2.0.15/forge-installer-2.0.15.tar.bz2
+          echo "4468f182b60f6ca62d89697baa208981085af744f116781af751c611826db600  forge-installer-2.0.15.tar.bz2" | sha256sum --check
+
+      - name: Extract pinned release
+        run: tar -xjf forge-installer-2.0.15.tar.bz2
+
+      - name: Record runtime and locate the distribution
+        shell: bash
+        run: |
+          set -euo pipefail
+          java -version 2>&1 | tee java-version.txt
+          find . -maxdepth 2 -type f -name 'forge-gui-desktop-2.0.15-jar-with-dependencies.jar' -print | tee forge-jar-path.txt
+          test -s forge-jar-path.txt
+          JAR="$(head -1 forge-jar-path.txt)"
+          # Start the pinned JAR only with no game/deck command. This is a runtime
+          # startup probe, not a gameplay simulation.
+          timeout 90s java -jar "$JAR" --help > forge-startup.stdout.txt 2> forge-startup.stderr.txt || CODE=$?
+          CODE="${CODE:-0}"
+          echo "$CODE" > forge-startup.exit-code.txt
+          echo "Startup probe exit code: $CODE"
+          # A nonzero/help-unrecognized exit isn't silently converted to a pass;
+          # logs are retained and inspected separately.
+          cat forge-startup.stdout.txt || true
+          cat forge-startup.stderr.txt || true
+
+      - name: Scan card script files for names (not rules correctness)
+        shell: bash
+        run: |
+          python scripts/audit_forge_card_script_coverage.py \
+            --variant refinement/variants/Abaddon_Aurora_Phoenix_Test_Variant_v1.txt \
+            --cards-root res/cardsfolder \
+            --output forge-card-script-coverage.json
+        continue-on-error: true
+
+      - name: Preserve probe logs and coverage report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: forge-2.0.15-runtime-probe
+          path: |
+            java-version.txt
+            forge-jar-path.txt
+            forge-startup.stdout.txt
+            forge-startup.stderr.txt
+            forge-startup.exit-code.txt
+            forge-card-script-coverage.json
+          if-no-files-found: warn
+          retention-days: 30
