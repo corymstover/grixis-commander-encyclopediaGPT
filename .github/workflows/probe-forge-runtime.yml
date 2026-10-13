@@ -117,22 +117,41 @@ jobs:
           python - <<'PY'
           import hashlib, json, re
           from pathlib import Path
-          def normalize(path):
-              text = Path(path).read_text(encoding="utf-8", errors="replace")
-              text = re.sub(r"(?i)(took|ended in)\s+[0-9,]+\s+ms", r"\1 <ELAPSED_MS> ms", text)
-              return text
-          a = normalize("forge-game-smoke-seed-20261013-a.log")
-          b = normalize("forge-game-smoke-seed-20261013-b.log")
+
+          HEADER = "Ai(1)-Abaddon frozen baseline vs Ai(2)-Abaddon Aurora Phoenix test variant - one game of Commander seed 20261013"
+
+          def normalize_match(path):
+              lines = Path(path).read_text(encoding="utf-8", errors="replace").splitlines()
+              starts = [i for i, line in enumerate(lines) if HEADER in line]
+              if len(starts) != 1:
+                  raise RuntimeError(f"{path}: expected one match header, found {len(starts)}")
+              start = starts[0]
+              end = next((i for i in range(start, len(lines)) if "Game Result: Game 1 ended" in lines[i]), None)
+              if end is None:
+                  raise RuntimeError(f"{path}: Game Result line not found")
+              block = lines[start:end + 1]
+              normalized = []
+              for line in block:
+                  line = re.sub(r"^\d{4}-\d\d-\d\dT[^\s]+Z\s*", "", line)
+                  line = re.sub(r"\x1b\[[0-9;]*m", "", line)
+                  line = re.sub(r"^\d{2}:\d{2}:\d{2}\s+\[INFO\s*\]\s*", "", line)
+                  line = re.sub(r"(?i)(took|ended in)\s+[0-9,]+\s+ms", r"\1 <ELAPSED_MS> ms", line)
+                  line = re.sub(r"Match Duration \d+m : \d+s", "Match Duration <DURATION>", line)
+                  normalized.append(line)
+              return "\n".join(normalized)
+
+          a = normalize_match("forge-game-smoke-seed-20261013-a.log")
+          b = normalize_match("forge-game-smoke-seed-20261013-b.log")
           report = {
               "seed": 20261013,
               "release": "forge-2.0.15",
               "same_command_same_seed": True,
-              "non_timing_logs_identical": a == b,
-              "log_a_sha256": hashlib.sha256(a.encode()).hexdigest(),
-              "log_b_sha256": hashlib.sha256(b.encode()).hexdigest(),
+              "normalized_match_event_logs_identical": a == b,
+              "match_log_a_sha256": hashlib.sha256(a.encode()).hexdigest(),
+              "match_log_b_sha256": hashlib.sha256(b.encode()).hexdigest(),
               "purpose": "single-game replay determinism probe only; not a deck-performance comparison",
               "limitations": [
-                  "This does not verify identical initial hands or library permutations independently.",
+                  "This verifies repeatability of the observed match log, not independent identity of each starting hand or library permutation.",
                   "This does not validate Abaddon, cascade, storm, escape, or graveyard interactions.",
                   "Forge AI performance is conditional on its heuristics and is not real-world win-rate evidence."
               ]
