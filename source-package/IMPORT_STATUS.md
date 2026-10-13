@@ -49,13 +49,22 @@ These structural results were independently rechecked on 2026-10-12 and are docu
 
 ## Audit freshness limitations
 
-The current official named Commander banned-list checkpoint is complete as of 2026-10-12, with only the three already-authorized Bjorna/Cecily exceptions found. The comprehensive current Scryfall Oracle/rulings/exact-printing legality refresh, full rules-interaction review, and strategic power reassessment remain incomplete. The inherited v8.1.4 card audit must not be represented as a fresh audit of the current FINAL lists.
+The current official named Commander banned-list checkpoint is complete as of 2026-10-12. The Scryfall `default_cards` refresh is now complete for all 5,964 current decklist rows: 5,964 exact printing/name matches, zero unmatched/ambiguous printings, zero missing Oracle IDs, and zero commander color-identity mismatches. The six rows with current official Commander status other than ordinary legal status are all present in the mirrored eight-row project exception registry; their official statuses remain distinct from project authorization. Detailed rulings/interaction verification and strategic power reassessment remain incomplete. The inherited v8.1.4 card audit must not be represented as a fresh audit of the current FINAL lists.
 
 ## Next import phase
 
 The 124 current decklists are mirrored as a compressed archive and their raw hashes are pinned in the frozen baseline branch. The original source package and its full historical ZIP archives and large research datasets remain outside GitHub. Transfer those remaining source files without modifying them when a reliable binary upload route is available, then verify each file against the source package manifest before treating the repository as a complete source-of-truth mirror.
 
 Frozen baseline branch: https://github.com/corymstover/grixis-commander-encyclopediaGPT/tree/baseline/freeze-2026-10-12
+
+## Current Scryfall metadata refresh
+
+The generated exact-printing overlay and summary are committed to the controlled campaign branch:
+- https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/metadata_audit/Current_Scryfall_Metadata_Overlay_2026-10-12.csv
+- https://github.com/corymstover/grixis-commander-encyclopediaGPT/blob/refinement/campaign-2026-10-12/refinement/metadata_audit/Current_Scryfall_Metadata_Audit_Summary_2026-10-12.json
+- Project exception registry: `source-package/research/Project_Exceptions_Current_2026-10-12.csv`
+
+The full current Oracle/color-identity/exact-printing legality metadata gate is closed. Per-deck rules interactions, combos, commander strategy blueprints, and refinement decisions remain separate work.
 
 ## Automated regression protection
 
