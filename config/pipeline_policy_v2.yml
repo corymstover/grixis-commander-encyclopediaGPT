@@ -1,0 +1,52 @@
+version: 1
+defaults:
+  max_attempts: 3
+  timeout_seconds: 900
+  circuit_breaker_failures: 3
+  checkpoint_on_success: true
+stages:
+  intake:
+    cache_scope: deck_hash
+    timeout_seconds: 120
+  blueprint:
+    cache_scope: deck_hash_and_blueprint_version
+    timeout_seconds: 300
+  candidate_triage:
+    cache_scope: deck_hash_commander_source_snapshot_method
+    timeout_seconds: 900
+    research_budget:
+      broad_passes: 1
+      targeted_passes: 2
+  rules_review:
+    cache_scope: oracle_ids_rules_snapshot
+    timeout_seconds: 900
+  verify:
+    cache_scope: deck_hash_metadata_snapshot_legality_snapshot
+    timeout_seconds: 300
+  test:
+    cache_scope: deck_hash_engine_config_seed_set
+    timeout_seconds: 1800
+    max_attempts: 2
+  finalize:
+    cache_scope: deck_hash_all_gate_artifact_hashes
+    timeout_seconds: 180
+adaptive_optimizer:
+  enabled: true
+  allowed_parameters:
+    - timeout_seconds
+    - concurrency
+    - batch_size
+    - cache_policy
+    - retry_backoff
+  forbidden_mutations:
+    - decklists
+    - project_exceptions
+    - approval_status
+    - lock_status
+    - hard_gate_definitions
+    - commander_strategy
+  acceptance:
+    require_hard_gate_equivalence: true
+    require_fixture_pass: true
+    max_failure_rate_regression: 0.0
+    min_runtime_improvement_fraction: 0.10
