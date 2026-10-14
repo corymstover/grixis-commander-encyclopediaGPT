@@ -38,4 +38,4 @@ Varragoth is redundant with the tutor package and needs combat; Dream Devourer n
 
 ## Finalization gate
 
-The final TXT has been re-fetched after writing. The connected GitHub tooling returns Git blob SHA-1, not the required cryptographic SHA-256 of the exact UTF-8 text bytes; therefore the exact SHA-256 is **not yet independently verified**. The active tracker remains **UNAPPROVED / UNLOCKED** until that digest is computed outside the Git blob-SHA field, placed identically in the certificate and tracker, and re-fetched for consistency.
+The final TXT has been re-fetched after writing. The exact UTF-8 bytes of the fetched restart TXT were independently hashed: SHA-256 `f48359f816498b386b085db60f0456576c8af9b055408685df71f0d1db448545`. This matches the active tracker and the source certificate's revised-list hash. Structural and matrix alignment checks were re-run after repair; the deck is **APPROVED / LOCKED — FRESH RESTART REVIEW PASSED**.
