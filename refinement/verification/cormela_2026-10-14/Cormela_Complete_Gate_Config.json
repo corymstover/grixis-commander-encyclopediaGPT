@@ -1,0 +1,14 @@
+{
+  "deck_id": "Cormela__Glamour_Thief",
+  "display_name": "Cormela, Glamour Thief",
+  "decklist_path": "refinement/decklists/Cormela_Glamour_Thief_Approval_Candidate_2026-10-14.txt",
+  "expected_deck_sha256": "80f4bdef2b8b140aeae23775cfdf87fda81e7215038b8db9b1746c806f366e0b",
+  "baseline_path": "refinement/decklists/Cormela_Glamour_Thief_Current_Cycle_Baseline_2026-10-14.txt",
+  "expected_baseline_sha256": "7f541e2146c5d83f4415a01026af3b61767bec10fa13762fb95c47d1ac62d95f",
+  "baseline_source_sha256": "10639176c36a7a55853cd1c65f22ac31e22b99dd15d7e95607b1d03acb74babd",
+  "rules_attestation_path": "refinement/verification/cormela_2026-10-14/Cormela_Rules_Attestation.json",
+  "official_legality_attestation_path": "refinement/verification/cormela_2026-10-14/Cormela_Official_Legality_Attestation.json",
+  "output_dir": "refinement/verification/cormela_2026-10-14/gate_output",
+  "output_stem": "Cormela_Glamour_Thief_2026-10-14",
+  "max_cache_age_hours": 72
+}
