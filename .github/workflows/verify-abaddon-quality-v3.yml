@@ -1,0 +1,30 @@
+name: Verify Abaddon Deck Quality Gates v3
+on:
+  push:
+    branches: ["refinement/abaddon-v3-reverification-2026-10-13"]
+    paths:
+      - "refinement/evidence/Abaddon_the_Despoiler_Deck_Quality_v3.json"
+      - "refinement/evidence/Abaddon_the_Despoiler_Deck_Quality_v3.md"
+      - "grixis_pipeline/**"
+      - "scripts/evaluate_deck_quality_packet.py"
+  pull_request:
+    paths:
+      - "refinement/evidence/Abaddon_the_Despoiler_Deck_Quality_v3.json"
+      - "refinement/evidence/Abaddon_the_Despoiler_Deck_Quality_v3.md"
+      - "grixis_pipeline/**"
+      - "scripts/evaluate_deck_quality_packet.py"
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - name: Evaluate Abaddon v3 evidence packet
+        run: PYTHONPATH=. python scripts/evaluate_deck_quality_packet.py refinement/evidence/Abaddon_the_Despoiler_Deck_Quality_v3.json --output /tmp/abaddon-v3-report.json
+      - name: Run deck quality regression tests
+        run: python -m unittest tests.test_epistemic_gates tests.test_generic_runner tests.test_dependency_invalidation -v
+      - name: Verify frozen baseline
+        run: python scripts/verify_baseline.py

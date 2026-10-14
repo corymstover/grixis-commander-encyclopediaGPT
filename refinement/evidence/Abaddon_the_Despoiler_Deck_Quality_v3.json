@@ -1,0 +1,204 @@
+{
+  "deck_id": "Abaddon_the_Despoiler",
+  "hard_gates": {
+    "exact_100": true,
+    "singleton": true,
+    "color_identity": true,
+    "commander_legality_or_registered_exception": true,
+    "oracle_and_rules": true,
+    "strategic_coherence": true
+  },
+  "discovery_passes": 2,
+  "new_material_candidates_last_pass": 0,
+  "candidates": [
+    {
+      "card": "Aurora Phoenix",
+      "impact": "HIGH",
+      "decision": "REJECT",
+      "reason": "Rules-valid and on-theme, but the registered comparison never cast either candidate and therefore did not demonstrate a material upgrade over Mind's Desire; retain baseline rather than infer superiority.",
+      "evidence_refs": [
+        "ABADDON-001",
+        "Abaddon_Final_Verification_Snapshot_2026-10-13"
+      ]
+    },
+    {
+      "card": "Deny Reality",
+      "impact": "MEDIUM",
+      "decision": "REJECT",
+      "reason": "Broader permanent targeting does not outweigh sorcery-speed temporary bounce versus Bituminous Blast's instant-speed creature interaction while preserving printed cascade.",
+      "evidence_refs": [
+        "ABADDON-002"
+      ]
+    },
+    {
+      "card": "Poxwalkers",
+      "impact": "MEDIUM",
+      "decision": "REJECT",
+      "reason": "Real exile-cast recursion synergy, but replacing Thermo-Alchemist removes a cheap repeatable all-opponent threshold enabler without evidence that the pinger package is redundant.",
+      "evidence_refs": [
+        "ABADDON-003"
+      ]
+    },
+    {
+      "card": "Blood for the Blood God!",
+      "impact": "MEDIUM",
+      "decision": "REJECT",
+      "reason": "Powerful refill/finisher but MV 11 and creature-death discount do not solve Abaddon's threshold/castability needs; no defensible cut was identified.",
+      "evidence_refs": [
+        "ABADDON-004"
+      ]
+    }
+  ],
+  "testing_required": false,
+  "hypothesis_tests": [],
+  "red_team_findings": [
+    {
+      "category": "generic-goodstuff drift",
+      "claim": "Fast mana, tutors, free interaction and Breach could overwhelm commander identity.",
+      "material": true,
+      "resolved": true,
+      "resolution": "Blueprint and final list retain a large threshold/cascade/exile engine; Breach is a secondary compact route rather than the sole plan."
+    },
+    {
+      "category": "mana and curve",
+      "claim": "Five-mana commander plus 34 lands could be inconsistent.",
+      "material": true,
+      "resolved": true,
+      "resolution": "Baseline density analysis documents 34 lands, 19 ramp tags and 12 explicit early accelerators; no predeclared comparison demonstrates a superior land/ramp configuration."
+    },
+    {
+      "category": "candidate sacred cow",
+      "claim": "Mind's Desire may be retained merely because the Aurora Phoenix test was uninformative.",
+      "material": true,
+      "resolved": true,
+      "resolution": "Inconclusive evidence cannot justify mutation. Mind's Desire retains a distinct high-ceiling storm role; candidate remains rejected for lack of demonstrated material gain, not because the test proved baseline superiority."
+    },
+    {
+      "category": "combo integrity",
+      "claim": "Breach/LED/Brain Freeze may be overstated as an unconditional infinite.",
+      "material": true,
+      "resolved": true,
+      "resolution": "Worked audit proves only a specified uninterrupted sequence with explicit fuel, mana, storm and library accounting; documentation explicitly forbids unconditional-infinite claims."
+    },
+    {
+      "category": "commander dependence",
+      "claim": "The deck could function as generic Grixis storm without Abaddon.",
+      "material": true,
+      "resolved": true,
+      "resolution": "The primary blueprint centers same-turn opponent life loss converting hand-cast spells into cascade and then leveraging exile-cast payoffs; removing Abaddon materially removes the conversion engine even though the secondary Breach route survives."
+    }
+  ],
+  "commander_necessity": {
+    "thesis": "Abaddon converts same-turn opponent life loss into additional cascade instances on qualifying spells cast from hand, making threshold sequencing the primary engine and enabling the deck's cascade/exile payoff network.",
+    "material_dependencies": [
+      "early opponent-life-loss enablers",
+      "hand-cast mana-value threshold sequencing",
+      "printed plus granted cascade interactions",
+      "cast-from-exile payoff package"
+    ],
+    "counterfactual_impact": "STRUCTURAL",
+    "evidence_refs": [
+      "Abaddon_the_Despoiler_v1",
+      "Abaddon_Final_Verification_Snapshot_2026-10-13"
+    ]
+  },
+  "evidence_dimensions": [
+    {
+      "name": "commander_identity",
+      "confidence": "HIGH_CONFIDENCE",
+      "rationale": "Blueprint, packages and red-team counterfactual show the primary engine depends materially on Abaddon.",
+      "evidence_refs": [
+        "Abaddon_the_Despoiler_v1"
+      ]
+    },
+    {
+      "name": "engine",
+      "confidence": "HIGH_CONFIDENCE",
+      "rationale": "Threshold, cascade and exile-value packages are explicitly documented and rules-reviewed.",
+      "evidence_refs": [
+        "Abaddon_the_Despoiler_Interaction_Review_2026-10-13"
+      ]
+    },
+    {
+      "name": "mana",
+      "confidence": "HIGH_CONFIDENCE",
+      "rationale": "Exact density analysis documents 34 lands and acceleration probabilities; no superior configuration is demonstrated.",
+      "evidence_refs": [
+        "Abaddon_Baseline_Consistency_Report_2026-10-13"
+      ]
+    },
+    {
+      "name": "interaction",
+      "confidence": "HIGH_CONFIDENCE",
+      "rationale": "Card-level interaction triage and current Oracle review cover the exact frozen list.",
+      "evidence_refs": [
+        "Abaddon_Final_Verification_Snapshot_2026-10-13"
+      ]
+    },
+    {
+      "name": "resilience",
+      "confidence": "PROVISIONAL",
+      "rationale": "Protection and secondary combo route are present, but no exhaustive multiplayer resilience benchmark is claimed.",
+      "evidence_refs": [
+        "Abaddon_Final_Verification_Snapshot_2026-10-13"
+      ]
+    },
+    {
+      "name": "conversion",
+      "confidence": "HIGH_CONFIDENCE",
+      "rationale": "Cascade/exile engines, damage amplification and Breach route provide documented conversion paths.",
+      "evidence_refs": [
+        "Abaddon_the_Despoiler_v1"
+      ]
+    },
+    {
+      "name": "combo_integrity",
+      "confidence": "VERIFIED",
+      "rationale": "Breach/LED/Brain Freeze plus Wheel has a bounded worked sequence with explicit starting inventory and accounting.",
+      "evidence_refs": [
+        "Abaddon_Breach_Sequence_Audit_2026-10-13"
+      ]
+    },
+    {
+      "name": "card_quality",
+      "confidence": "HIGH_CONFIDENCE",
+      "rationale": "Sixty candidate decisions found no demonstrated material upgrade and documented concrete tradeoffs.",
+      "evidence_refs": [
+        "Abaddon_the_Despoiler_Candidate_Decisions_2026-10-12.csv"
+      ]
+    },
+    {
+      "name": "candidate_exhaustion",
+      "confidence": "HIGH_CONFIDENCE",
+      "rationale": "Sixty recorded candidates were closed for the current build; no high-impact unresolved HOLD remains.",
+      "evidence_refs": [
+        "Abaddon_the_Despoiler_Candidate_Decisions_2026-10-12.csv"
+      ]
+    },
+    {
+      "name": "testing",
+      "confidence": "PROVISIONAL",
+      "rationale": "Forge comparison was inconclusive and is not used as superiority evidence; analytical evidence is sufficient to retain the unchanged baseline absent a demonstrated swap.",
+      "evidence_refs": [
+        "Abaddon_Final_Verification_Snapshot_2026-10-13"
+      ]
+    },
+    {
+      "name": "rules_confidence",
+      "confidence": "VERIFIED",
+      "rationale": "Current Oracle metadata and bounded material interaction review passed; combo claims are constrained to proven conditions.",
+      "evidence_refs": [
+        "Abaddon_Final_Verification_Snapshot_2026-10-13",
+        "Abaddon_Breach_Sequence_Audit_2026-10-13"
+      ]
+    },
+    {
+      "name": "source_freshness",
+      "confidence": "VERIFIED",
+      "rationale": "Current Scryfall bulk refresh and official Commander ban-list checkpoint passed on 2026-10-13.",
+      "evidence_refs": [
+        "Abaddon_Final_Verification_Snapshot_2026-10-13"
+      ]
+    }
+  ]
+}
