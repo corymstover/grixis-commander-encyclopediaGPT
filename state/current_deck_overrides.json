@@ -176,6 +176,19 @@
       "complete_gate_artifact": "refinement/verification/don_andres_the_renegade_2026-10-14/gate_output/Don_Andres_the_Renegade_2026-10-14_Complete_Gate.json",
       "whole_list_audit_artifact": "refinement/verification/don_andres_the_renegade_2026-10-14/Don_Andres_the_Renegade_Whole_List_Audit_Closeout_2026-10-14.md",
       "approved_list_artifact": "refinement/decklists/Don_Andres_the_Renegade_Approved_2026-10-14.txt"
+    },
+    "Dr__Eggman": {
+      "approval_status": "APPROVED",
+      "lock_status": "LOCKED",
+      "final_gate_passed": true,
+      "user_approval_date": "2026-10-14",
+      "current_stage": "LOCKED",
+      "approved_list_sha256": "ef34986253f71043e10c852b5f9f3ce79594fdfc1086b105f6744c3f639199c3",
+      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit",
+      "approval_basis": "Explicit user approval of the exact SHA-bound Dr. Eggman approval candidate after mandatory 99-slot whole-list audit, candidate exhaustion, adversarial red-team review, zero-new-material-improvement closure, fresh Oracle/rules verification, current official Commander legality verification, and complete fail-closed gate PASS.",
+      "complete_gate_artifact": "refinement/verification/dr_eggman_2026-10-14/gate_output/Dr_Eggman_2026-10-14_Complete_Gate.json",
+      "whole_list_audit_artifact": "refinement/verification/dr_eggman_2026-10-14/Dr_Eggman_Approval_Ready_Closeout_2026-10-14.md",
+      "approved_list_artifact": "refinement/decklists/Dr_Eggman_Approved_2026-10-14.txt"
     }
   }
 }
