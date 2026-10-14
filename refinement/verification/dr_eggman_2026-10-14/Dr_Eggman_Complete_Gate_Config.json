@@ -1,0 +1,14 @@
+{
+  "deck_id": "Dr__Eggman",
+  "display_name": "Dr. Eggman",
+  "decklist_path": "refinement/decklists/Dr_Eggman_Approval_Candidate_2026-10-14.txt",
+  "expected_deck_sha256": "ef34986253f71043e10c852b5f9f3ce79594fdfc1086b105f6744c3f639199c3",
+  "baseline_path": "refinement/decklists/Dr_Eggman_Current_Cycle_Baseline_2026-10-14.txt",
+  "expected_baseline_sha256": "395dacb0238fa92407af5ba55ed2b01905b2cda585f1ffaa248f1201b4644463",
+  "baseline_source_sha256": "35406415bee72bd3b92e7639314bcdd1e2404d2cf713e103e8c20c2f27eea607",
+  "rules_attestation_path": "refinement/verification/dr_eggman_2026-10-14/Dr_Eggman_Rules_Attestation.json",
+  "official_legality_attestation_path": "refinement/verification/dr_eggman_2026-10-14/Dr_Eggman_Official_Legality_Attestation.json",
+  "output_dir": "refinement/verification/dr_eggman_2026-10-14/gate_output",
+  "output_stem": "Dr_Eggman_2026-10-14",
+  "max_cache_age_hours": 72
+}
