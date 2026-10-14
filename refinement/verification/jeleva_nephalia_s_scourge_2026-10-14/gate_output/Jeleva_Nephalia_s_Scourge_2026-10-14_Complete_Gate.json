@@ -1,0 +1,23 @@
+{
+  "generated_at_utc": "2026-10-14T22:00:26.117631+00:00",
+  "deck_id": "Jeleva__Nephalia_s_Scourge",
+  "decklist_path": "refinement/decklists/Jeleva_Nephalia_s_Scourge_Approval_Candidate_2026-10-14.txt",
+  "deck_sha256": "00e3f52118f5944684ebc49a5398acf8184f7ca878e861221e4c99931191bc2f",
+  "baseline_path": "refinement/decklists/Jeleva_Nephalia_s_Scourge_Current_Cycle_Baseline_2026-10-14.txt",
+  "baseline_source_sha256": "d5c4b5dfb27a5721136e23912cfe79fc097707f2177a0dc78d7a2c1b49f50ce0",
+  "count": 100,
+  "distinct_names": 100,
+  "commander_color_identity": [
+    "B",
+    "R",
+    "U"
+  ],
+  "cache_generated_at_utc": "2026-10-14T21:56:07.027427+00:00",
+  "cache_sha256": "bb58473b8aa1f47d795a620dd1272716f97ca031b9ac504dbca8f83faa889cf5",
+  "project_exceptions": [],
+  "rules_gate": "PASS",
+  "official_legality_gate": "PASS",
+  "errors": [],
+  "overall_result": "APPROVAL_READY",
+  "approval_state": "NOT_APPROVED — explicit user approval still required"
+}
