@@ -1,11 +1,29 @@
 # Davros, Dalek Creator — Current-Cycle Refinement Decision Record
 
 **Date:** 2026-10-14  
-**Approval status:** CANDIDATE ONLY — explicit user approval required  
+**Approval status:** APPROVAL_READY — complete gate passed; explicit user approval still required  
 **Authoritative current-cycle baseline:** `refinement/decklists/Davros_Dalek_Creator_Current_Cycle_Baseline_2026-10-14.txt`  
 **Baseline SHA-256:** `5c1d4a499704137318f0df3adceabaa048207536525fc4f0f49fb2625009c8bc`  
 **Approval candidate:** `refinement/decklists/Davros_Dalek_Creator_Approval_Candidate_2026-10-14.txt`  
 **Candidate SHA-256:** `aa6d2d343c6c1f167de8d16b23951940f7d23810c6e7705a6fd0d539a7459adc`
+
+## Complete approval gate
+
+The SHA-bound complete approval gate ran successfully on 2026-10-14 against the freshly refreshed current-cycle Oracle cache.
+
+- Count: **100**
+- Distinct names: **95** (basic-land repeats account for the difference)
+- Commander color identity: **B/R/U**
+- Rules gate: **PASS**
+- Official Commander legality gate: **PASS**
+- Project exceptions: **none**
+- Gate errors: **none**
+- Overall result: **APPROVAL_READY**
+- Gate artifact: `refinement/verification/davros_dalek_creator_2026-10-14/gate_output/Davros_Dalek_Creator_2026-10-14_Complete_Gate.json`
+
+The first gate attempt failed closed only because the then-current Oracle cache lacked three candidate names: `Court of Ambition`, `Entropic Battlecruiser`, and `Labyrinth Raptor`. The repository then performed a fresh validated Scryfall metadata refresh, rebuilt the current-cycle cache with 543 resolved names and zero unresolved records, and reran this exact candidate successfully. The decklist was not changed to bypass the gate.
+
+This result does not itself approve or lock the deck. Explicit user approval remains required.
 
 ## Baseline provenance and research-package discrepancy
 
@@ -57,7 +75,7 @@ The discard-conversion package remains through Waste Not, Geth's Grimoire, Tinyb
 
 Current EDHREC data (2026-10-14) lists Davros at roughly 5,991 decks. The commander page remains heavily centered on Daleks/artifacts, while optimized subsets strongly support the retained Dalek core. Court of Ambition appears in 50% of current optimized Davros decks, 70% of optimized artifact-tagged Davros decks, and 100% of the small optimized burn sample. Labyrinth Raptor is a high-lift Davros card and appears in 80% of the small optimized burn and optimized discard samples. These statistics are supporting evidence only; they do not override commander-first strategic judgment.
 
-## Rules checkpoints requiring exact-candidate verification
+## Rules checkpoints verified
 
 1. Davros's end-step ability triggers even if no opponent has yet lost 3 life as the end step begins; the life-loss condition is checked during resolution rather than as an intervening-if trigger condition.
 2. Scientist Supreme can copy a Davros triggered ability because Davros is an artifact source; the copy independently performs Davros's resolution instructions.
@@ -69,10 +87,11 @@ Current EDHREC data (2026-10-14) lists Davros at roughly 5,991 decks. The comman
 8. Geier Reach Sanitarium plus an active 1+ Entropic Battlecruiser can establish the threshold during our turn through the opponents' discards.
 9. Perforating Artist, Wound Reflection, and Missy share the beginning-of-end-step timing window with Davros; because we control the triggers, appropriate stack ordering can let their life-loss/damage effects resolve before Davros and establish qualification where their own conditions/choices allow it.
 10. Maestros Charm and Loyal Subordinate each directly cause every opponent to lose exactly 3 life during our turn.
+11. Labyrinth Raptor directly supports Davros and the generated Daleks because both have menace; blocked menace creatures trigger Raptor's forced-sacrifice ability.
 
 ## Proposed Archidekt classification
 
 - Power Bracket: **4 — Optimized**
 - Tags: **Daleks / Villainous Choice / Group Slug**
 
-This record does not approve or lock the deck. Approval requires a clean SHA-bound complete approval gate plus explicit user approval.
+The deck is approval-ready but remains unapproved and unlocked until the user explicitly approves it.
