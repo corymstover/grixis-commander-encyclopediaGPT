@@ -1,0 +1,14 @@
+{
+  "deck_id": "Davros__Dalek_Creator",
+  "display_name": "Davros, Dalek Creator",
+  "decklist_path": "refinement/decklists/Davros_Dalek_Creator_Approval_Candidate_2026-10-14.txt",
+  "expected_deck_sha256": "aa6d2d343c6c1f167de8d16b23951940f7d23810c6e7705a6fd0d539a7459adc",
+  "baseline_path": "refinement/decklists/Davros_Dalek_Creator_Current_Cycle_Baseline_2026-10-14.txt",
+  "expected_baseline_sha256": "5c1d4a499704137318f0df3adceabaa048207536525fc4f0f49fb2625009c8bc",
+  "baseline_source_sha256": "5c1d4a499704137318f0df3adceabaa048207536525fc4f0f49fb2625009c8bc",
+  "rules_attestation_path": "refinement/verification/davros_dalek_creator_2026-10-14/Davros_Dalek_Creator_Rules_Attestation.json",
+  "official_legality_attestation_path": "refinement/verification/davros_dalek_creator_2026-10-14/Davros_Dalek_Creator_Official_Legality_Attestation.json",
+  "output_dir": "refinement/verification/davros_dalek_creator_2026-10-14/gate_output",
+  "output_stem": "Davros_Dalek_Creator_2026-10-14",
+  "max_cache_age_hours": 72
+}
