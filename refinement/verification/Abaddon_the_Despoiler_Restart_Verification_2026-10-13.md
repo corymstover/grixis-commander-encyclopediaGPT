@@ -5,7 +5,7 @@
 **Status:** APPROVED / LOCKED — FRESH RESTART REVIEW PASSED  
 **Frozen baseline normalized SHA-256:** `a58b6ad5499596eb64af79a83b210641e4e097c79803de87cca3ba2244fab91f`  
 **Final decklist:** `refinement/decklists/Abaddon_the_Despoiler_Restart_2026-10-13.txt`  
-**Final exact list SHA-256 (UTF-8, LF, trailing newline):** `fd66ea20135a77322113f69cd6ac583fde381a1af08ffac348c9f1f4d8227e15`
+**Final exact list SHA-256 (UTF-8, LF, trailing newline):** `10c730fe3b1185c97e04abc8e354d59b132b8865081ee190b8981c55632d7e91`
 
 ## Mandatory gates
 
@@ -32,7 +32,7 @@
 - Lands: **34**.
 - Color identity: **PASS**; Protection Racket and Ancient Cellarspawn are black, Aurora Phoenix red, all within UBR.
 - Project exceptions: none.
-- Final hash: `fd66ea20135a77322113f69cd6ac583fde381a1af08ffac348c9f1f4d8227e15`.
+- Final hash: `10c730fe3b1185c97e04abc8e354d59b132b8865081ee190b8981c55632d7e91`.
 
 ## Auto-approval decision
 
