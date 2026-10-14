@@ -1,0 +1,148 @@
+name: Lock approved Evelyn the Covetous
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - ".github/workflows/lock-evelyn-the-covetous-2026-10-14.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: lock-evelyn-the-covetous-current-cycle
+  cancel-in-progress: false
+
+jobs:
+  lock:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Sync latest main
+        run: git pull --rebase origin main
+
+      - name: Assert approved candidate and update authoritative state
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import csv
+          import hashlib
+          import io
+          import json
+
+          EXPECTED = "1d602b5d9b2a370d3448816f593198212b2b83da74e92ccc3232798641b2588a"
+          DECK_ID = "Evelyn__the_Covetous"
+          candidate = Path("refinement/decklists/Evelyn_the_Covetous_Approval_Candidate_2026-10-14.txt")
+          approved = Path("refinement/decklists/Evelyn_the_Covetous_Approved_2026-10-14.txt")
+          gate_path = Path("refinement/verification/evelyn_the_covetous_2026-10-14/gate_output/Evelyn_the_Covetous_2026-10-14_Complete_Gate.json")
+          decision_path = "refinement/decisions/Evelyn_the_Covetous_Current_Cycle_Decisions_2026-10-14.md"
+          approval_path = "refinement/approvals/Evelyn_the_Covetous_Approved_2026-10-14.md"
+
+          def sha256(path: Path) -> str:
+              return hashlib.sha256(path.read_bytes()).hexdigest()
+
+          assert sha256(candidate) == EXPECTED, (sha256(candidate), EXPECTED)
+          assert sha256(approved) == EXPECTED, (sha256(approved), EXPECTED)
+          assert candidate.read_bytes() == approved.read_bytes(), "approved artifact does not byte-match candidate"
+
+          gate = json.loads(gate_path.read_text(encoding="utf-8"))
+          assert gate["deck_id"] == DECK_ID
+          assert gate["deck_sha256"] == EXPECTED
+          assert gate["count"] == 100
+          assert gate["distinct_names"] == 100
+          assert sorted(gate["commander_color_identity"]) == ["B", "R", "U"]
+          assert gate["rules_gate"] == "PASS"
+          assert gate["official_legality_gate"] == "PASS"
+          assert gate["project_exceptions"] == []
+          assert gate["errors"] == []
+          assert gate["overall_result"] == "APPROVAL_READY"
+
+          state_path = Path("state/current_deck_overrides.json")
+          state = json.loads(state_path.read_text(encoding="utf-8"))
+          assert state.get("cycle_id") == "global-restart-2026-10-13"
+          state.setdefault("decks", {})[DECK_ID] = {
+              "approval_status": "APPROVED",
+              "lock_status": "LOCKED",
+              "final_gate_passed": True,
+              "user_approval_date": "2026-10-14",
+              "current_stage": "LOCKED",
+              "approved_list_sha256": EXPECTED,
+              "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + Complete Approval Gate v1",
+              "approval_basis": "Explicit user approval of the exact SHA-bound Evelyn approval candidate after mandatory 99-slot whole-list audit, cEDH natural-ceiling determination, candidate exhaustion, adversarial red-team review, zero-new-material-improvement closure, fresh Oracle/color-identity verification, current official Commander legality verification, independent rules verification, and complete fail-closed gate PASS.",
+              "complete_gate_artifact": str(gate_path),
+              "whole_list_audit_artifact": decision_path,
+              "approval_record_artifact": approval_path,
+              "approved_list_artifact": str(approved),
+          }
+          state_path.write_text(json.dumps(state, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+          tracker_path = Path("refinement/Deck_Refinement_Tracker_2026-10-12.csv")
+          text = tracker_path.read_text(encoding="utf-8-sig")
+          reader = csv.DictReader(io.StringIO(text, newline=""))
+          fieldnames = reader.fieldnames
+          assert fieldnames, "tracker has no header"
+          rows = list(reader)
+          matches = [r for r in rows if r.get("deck_id") == DECK_ID]
+          assert len(matches) == 1, f"expected one Evelyn tracker row, found {len(matches)}"
+          row = matches[0]
+          row.update({
+              "baseline_status": "CURRENT APPROVED FINAL LIST — current-cycle canonical list locked; frozen source exports preserved unchanged.",
+              "fresh_oracle_identity_check": "PASS — fresh current-cycle Oracle cache generated 2026-10-14; exact SHA-bound Evelyn candidate verified at 100 cards / 100 distinct names within B/R/U color identity with zero unresolved metadata.",
+              "fresh_official_legality_check": "PASS — exact SHA-bound Evelyn candidate verified against current official Commander legality on 2026-10-14; no project exception required.",
+              "official_named_ban_list_checkpoint": "PASS — current official Commander legality checkpoint completed 2026-10-14; no unexpected banned cards and no project exception required.",
+              "commander_blueprint_complete": "PASS — current-cycle commander-first cEDH blueprint and mandatory 99-slot whole-list audit completed 2026-10-14.",
+              "high_impact_candidate_triage_complete": "PASS — current tournament shells, project top-100 candidates, stale-audit alternatives, EDH/cEDH evidence, and adversarial challengers exhausted; second serious pass produced ZERO NEW MATERIAL IMPROVEMENTS.",
+              "swap_decision_ledger_complete": "PASS — exact SHA-bound approval candidate explicitly approved by user on 2026-10-14; natural ceiling established as Bracket 5 cEDH.",
+              "combo_rules_interactions_verified": "PASS — SHA-bound rules attestation covers Evelyn collection-counter permissions, Worldgorger plus reanimation-Aura loops and mandatory break-target caveat, Thoracle/Consultation-Tainted Pact, Breach/LED/Brain Freeze, Vexing Bauble symmetry, and Saw in Half commander-death handling.",
+              "consistency_test_complete": "PASS — exact approved artifact verified at 100 cards / 100 distinct names / 26 lands; candidate and approved artifact byte-match SHA; Tainted Pact duplicate-name constraint satisfied.",
+              "multiplayer_test_complete_or_reason_not_applicable": "NOT APPLICABLE AS A FINALIZATION GATE — commander-first structural, rules, legality, strategic, and cEDH evidence verification passed; no gameplay win-rate claim is made.",
+              "final_gate_passed": "YES",
+              "final_list_hash": EXPECTED,
+              "user_approval_date": "2026-10-14",
+              "refinement_status": "APPROVED / LOCKED — current global-restart-2026-10-13 cycle",
+              "notes": (row.get("notes") or "") + " CURRENT-CYCLE RECONCILIATION 2026-10-14: exact SHA-bound Evelyn, the Covetous approval candidate explicitly approved and locked. Canonical hash: " + EXPECTED + ". Final candidate: 100 cards, 100 distinct names, 26 lands; B/R/U identity PASS; rules PASS; current official Commander legality PASS; no project exceptions; complete gate errors 0. Natural ceiling: Bracket 5 — cEDH. Commander-first Worldgorger/Exile/Combo identity preserved. Mandatory 99-slot whole-list audit, candidate exhaustion, red-team review, zero-new-material-improvement closure, fresh Oracle/rules/legality checks, and complete fail-closed gate all PASS. Frozen source exports remain historical baseline evidence. Next unlocked deck in tracker order: Fire Lord Azula."
+          })
+
+          out = io.StringIO(newline="")
+          writer = csv.DictWriter(out, fieldnames=fieldnames, lineterminator="\n")
+          writer.writeheader()
+          writer.writerows(rows)
+          tracker_path.write_text(out.getvalue(), encoding="utf-8")
+
+          # Final local assertions after mutation.
+          state2 = json.loads(state_path.read_text(encoding="utf-8"))["decks"][DECK_ID]
+          assert state2["approval_status"] == "APPROVED"
+          assert state2["lock_status"] == "LOCKED"
+          assert state2["approved_list_sha256"] == EXPECTED
+          check_rows = list(csv.DictReader(io.StringIO(tracker_path.read_text(encoding="utf-8"), newline="")))
+          check = next(r for r in check_rows if r["deck_id"] == DECK_ID)
+          assert check["final_gate_passed"] == "YES"
+          assert check["final_list_hash"] == EXPECTED
+          assert check["user_approval_date"] == "2026-10-14"
+          print("Evelyn authoritative lock mutation prepared successfully.")
+          PY
+
+      - name: Validate tracker integrity
+        run: python scripts/check_tracker_integrity.py
+
+      - name: Commit Evelyn lock state
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state/current_deck_overrides.json refinement/Deck_Refinement_Tracker_2026-10-12.csv
+          git diff --cached --check
+          git commit -m "Lock approved Evelyn the Covetous deck in current cycle"
+          git push origin HEAD:main
