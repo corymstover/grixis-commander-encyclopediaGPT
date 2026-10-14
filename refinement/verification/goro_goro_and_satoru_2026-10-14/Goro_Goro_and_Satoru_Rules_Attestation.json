@@ -1,0 +1,74 @@
+{
+  "status": "PASS",
+  "deck_sha256": "2fd39e3b39afaeb1bf394a59b392d8a29f28645776fa0b13c5754df67ab85fdf",
+  "checked_at_utc": "2026-10-14T20:46:12Z",
+  "sources": [
+    "Magic Comprehensive Rules — combat damage steps, double strike, attacking creatures entering after attackers are declared, triggered abilities, extra combat phases, haste, ninjutsu, Auras and alternative costs",
+    "Wizards of the Coast Teenage Mutant Ninja Turtles mechanics/update bulletin and release notes for sneak",
+    "Current Oracle text/rulings for Goro-Goro and Satoru, Raphael the Nightwatcher, Fire Navy Trebuchet, Waterbender Ascension, Samut Hazoret's Champion, Phoenix Chick, Breath of Fury, and the exact SHA-bound candidate",
+    "Commander Spellbook / current EDHREC combo evidence for Goro-Goro and Satoru plus Breath of Fury",
+    "Current project Oracle/Scryfall cache; exact candidate is independently revalidated by the complete approval gate"
+  ],
+  "interactions": [
+    {
+      "name": "Goro-Goro and Satoru combat-damage trigger scope",
+      "status": "PASS",
+      "conclusion": "The commander triggers when one or more creatures you control that entered the battlefield that turn deal combat damage to a player. Multiple qualifying creatures dealing damage to the same player in the same combat-damage step produce one commander trigger for that player, while qualifying damage to different players produces separate triggers. A later combat-damage step or later combat can trigger the ability again."
+    },
+    {
+      "name": "Ninjutsu entrants satisfy the commander condition",
+      "status": "PASS",
+      "conclusion": "A creature put onto the battlefield tapped and attacking by ninjutsu entered the battlefield that turn. If it deals combat damage to a player, it satisfies Goro-Goro and Satoru's condition even though it was not declared as an attacker. This is a central reason the retained Ninja package remains commander-specific rather than generic tribal density."
+    },
+    {
+      "name": "Raphael sneak plus double strike",
+      "status": "PASS",
+      "conclusion": "Sneak may be paid during the declare-blockers step by returning an unblocked attacker as part of the alternative cost. Raphael then enters tapped and attacking the same player or object. Because blockers have already been declared, the sneaked Raphael remains unblocked unless another effect changes combat. Raphael entered that turn and gives attacking creatures you control double strike. If Raphael or another qualifying fresh attacker deals damage in both the first-strike and regular combat-damage steps, Goro-Goro and Satoru can trigger in each step."
+    },
+    {
+      "name": "Fire Navy Trebuchet fresh-attacker engine",
+      "status": "PASS",
+      "conclusion": "Whenever you attack, Fire Navy Trebuchet creates a 2/1 flying Ballistic Boulder token tapped and attacking. The token entered that turn, so combat damage it deals to a player qualifies for Goro-Goro and Satoru. Each additional combat in which you attack can create another Boulder. The token was not declared as an attacker, but the commander does not require that it was declared attacking."
+    },
+    {
+      "name": "Phoenix Chick recursion",
+      "status": "PASS",
+      "conclusion": "When you attack with three or more creatures, Phoenix Chick may return from the graveyard tapped and attacking after paying RR. It entered the battlefield during that turn and therefore qualifies for the commander's combat-damage trigger if it connects. Its flying and haste also make a normally cast Phoenix Chick a reliable fresh attacker."
+    },
+    {
+      "name": "Waterbender Ascension trigger granularity",
+      "status": "PASS",
+      "conclusion": "Waterbender Ascension triggers separately whenever a creature you control deals combat damage to a player, rather than using the commander's one-or-more wording. Multiple creatures connecting can therefore add multiple quest counters in one combat. Once the resolving trigger sees four or more quest counters, that trigger draws a card. Its Waterbend ability can make a target creature unblockable for the turn."
+    },
+    {
+      "name": "Samut continuous haste versus Goro-Goro activated haste",
+      "status": "PASS",
+      "conclusion": "Samut, Hazoret's Champion continuously gives creatures you control haste, including creatures that enter after Samut is already on the battlefield. By contrast, Goro-Goro and Satoru's activated ability affects the set of creatures you control when that ability resolves; creatures that enter later do not inherit that earlier resolution. Samut therefore provides especially valuable continuous haste for Dragon Spirits created during additional-combat loops."
+    },
+    {
+      "name": "Goro-Goro and Satoru plus Breath of Fury loop",
+      "status": "PASS",
+      "conclusion": "With Goro-Goro and Satoru on the battlefield, Breath of Fury attached to a creature that entered that turn and can connect, and a way for each newly created Dragon Spirit to attack in the next combat, combat damage causes both Breath of Fury and the commander to trigger. To sustain the loop when the new Dragon is needed as the next Aura carrier, put the Breath trigger on the stack first and the commander trigger above it so the commander resolves first and creates the Dragon. Breath then sacrifices its current creature, attaches to the Dragon, untaps your creatures and creates an additional combat. A continuous haste source such as Samut makes each new Dragon able to attack in the next combat. Repeating produces arbitrarily many combat phases and Dragon-entry/death events, subject to opponents not disrupting the line and the enchanted creature continuing to connect."
+    },
+    {
+      "name": "Daring Piracy, Loyal Apprentice and Urabrask's Forge",
+      "status": "PASS",
+      "conclusion": "These engines create creatures during or immediately before combat on your turn. Their newly created creatures satisfy the commander's entered-this-turn condition; if they attack or enter attacking and deal combat damage to a player, they can create Dragon Spirits. Extra combats increase the value of engines that trigger on each combat or attack as their Oracle text permits."
+    },
+    {
+      "name": "Dragon Tempest and Terror of the Peaks",
+      "status": "PASS",
+      "conclusion": "Dragon Spirit tokens created by Goro-Goro and Satoru are Dragons and entering the battlefield can trigger Dragon Tempest and Terror of the Peaks as applicable. Those are noncombat damage routes and do not themselves satisfy the commander's combat-damage trigger, but they convert commander-generated Dragons into immediate reach."
+    },
+    {
+      "name": "Extra-combat effects and commander retriggering",
+      "status": "PASS",
+      "conclusion": "Karlach, Fury of Avernus, Great Train Heist, Aggravated Assault and Breath of Fury can create additional combat phases under their own conditions. A creature that entered earlier in the same turn remains a creature that entered that turn during those additional combats, so it may trigger Goro-Goro and Satoru again when it deals combat damage to a player."
+    },
+    {
+      "name": "Raphael plus Fire Navy Trebuchet",
+      "status": "PASS",
+      "conclusion": "If Raphael is on the battlefield before combat damage, the Ballistic Boulder created by Fire Navy Trebuchet is an attacking creature and has double strike. Because the Boulder entered that turn, successful damage in both combat-damage steps can generate a commander trigger in each step for the player it damages."
+    }
+  ]
+}
