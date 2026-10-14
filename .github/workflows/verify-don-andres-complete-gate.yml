@@ -67,3 +67,5 @@ jobs:
           path: refinement/verification/don_andres_the_renegade_2026-10-14/gate_output/
           if-no-files-found: warn
           retention-days: 90
+
+# Retriggered after validated current-cycle Oracle cache refresh on 2026-10-14.
