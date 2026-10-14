@@ -5,7 +5,7 @@ Version-controlled project records for the 62-deck Grixis Commander Encyclopedia
 ## Project operating rules
 
 - Each deck is commander-first and preserves that commander's identity and natural power ceiling.
-- **NEW REFINEMENT CYCLE STARTED 2026-10-13:** at cycle launch all 62 decks were unapproved and unlocked, including lists approved in prior cycles. Current status is tracked per deck; 14 decks are approved/locked after passing new-cycle technical gates: #1–10 (Abaddon through Crosis), plus #12 Davros, #13 Doctor Doom, #14 Don Andres, and #15 Dr. Eggman. 48 decks remain; #11 Cult of Skaro is the next unresolved deck in authoritative tracker order. Historical approvals are historical records only.
+- **FULL RESTART REVIEW ACTIVE — 2026-10-13:** all prior-cycle approvals were reset to historical status. Deck #1, Abaddon the Despoiler, has now completed a fresh full-list review and is approved/locked at the new verified hash recorded in the active tracker. 61 decks remain unapproved/unlocked; next in authoritative tracker order is #2 Admiral Beckett Brass. Do not begin deck #2 until deck #1’s final artifacts and tracker status are verified. Continue one deck at a time.
 - The active cycle may revise any deck after whole-list review. Automatically approve and lock a deck only after all required technical verification gates pass; do not require an additional user approval step. A failed or incomplete gate means no lock.
 - The four `GrixisFINAL` archives dated 2026-10-12 are the current authoritative membership baseline; the `Updated-10-11-2026` archives are historical.
 - Candidate rankings are a research shortlist, not automatic card additions.
