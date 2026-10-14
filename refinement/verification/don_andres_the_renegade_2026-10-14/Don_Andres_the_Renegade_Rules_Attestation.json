@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "deck_sha256": "a6022fddd295d7c671690fbce5e25dc6fed47ca7fa77bf1d8a86ebadb2d927bb",
+  "checked_at_utc": "2026-10-14T08:34:00Z",
+  "sources": [
+    "current Scryfall Oracle data / project current-cycle Oracle cache",
+    "Magic Comprehensive Rules — ownership, control, casting, triggered abilities, face-down permanents, and copy rules"
+  ],
+  "interactions": [
+    {
+      "name": "Don Andres controlled-but-not-owned creature static effect",
+      "status": "PASS",
+      "conclusion": "A creature permanent you control whose card is owned by an opponent gets +2/+2, menace, deathtouch, and is a Pirate. This includes creatures taken by control-change effects, creatures cast from opponents' cards, creatures reanimated from opponents' graveyards, and opponent-owned creatures put directly onto the battlefield under your control."
+    },
+    {
+      "name": "Don Andres noncreature stolen-spell trigger",
+      "status": "PASS",
+      "conclusion": "Each time you cast a noncreature spell whose owner is another player, Don Andres triggers and creates two tapped Treasures on resolution. Casting your own spell that merely accesses an opponent's card does not itself satisfy this condition."
+    },
+    {
+      "name": "Roaming Throne naming Pirate",
+      "status": "PASS",
+      "conclusion": "Don Andres is a Pirate. With Roaming Throne choosing Pirate, Don's Treasure triggered ability triggers an additional time, producing two Don triggers per qualifying stolen noncreature spell. Roaming Throne does not duplicate Don's static +2/+2/menace/deathtouch/type effect."
+    },
+    {
+      "name": "Thieving Amalgam manifest interaction",
+      "status": "PASS",
+      "conclusion": "Cards manifested from opponents' libraries are face-down creatures under your control but remain owned by those opponents. While Don Andres is on the battlefield, each such creature receives +2/+2, menace, deathtouch, and Pirate in addition to its face-down 2/2 creature characteristics."
+    },
+    {
+      "name": "Court of Locthwain stolen-card casting",
+      "status": "PASS",
+      "conclusion": "Cards exiled from an opponent's library remain owned by that opponent. Casting a noncreature among them triggers Don; casting a creature among them results in an opponent-owned creature you control, so Don's static effect applies after it enters."
+    },
+    {
+      "name": "Wand of Wonder multi-cast interaction",
+      "status": "PASS",
+      "conclusion": "Each opponent-owned instant or sorcery cast via Wand of Wonder is a separate noncreature spell you do not own, so each independently triggers Don Andres."
+    },
+    {
+      "name": "Decadent Dragon // Expensive Taste",
+      "status": "PASS",
+      "conclusion": "Cards exiled face down from an opponent's library remain owned by that opponent. Noncreature spells cast from those cards trigger Don; creature spells become permanents you control but do not own and receive Don's static bonuses."
+    },
+    {
+      "name": "Black Cat, Cunning Thief",
+      "status": "PASS",
+      "conclusion": "Black Cat's two exiled opponent-owned cards can be played for as long as they remain exiled. Noncreature spells cast this way trigger Don and creature permanents cast this way receive Don's controlled-but-not-owned bonuses."
+    },
+    {
+      "name": "Jhoira, Weatherlight Corsair",
+      "status": "PASS",
+      "conclusion": "Jhoira puts an opponent-owned historic permanent directly onto the battlefield under your control. If it is a creature, Don's static bonuses apply. Because Jhoira does not cast that card, putting a noncreature historic permanent onto the battlefield this way does not trigger Don's stolen-noncreature-spell ability."
+    },
+    {
+      "name": "Admiral Beckett Brass and Don's Pirate type",
+      "status": "PASS",
+      "conclusion": "Opponent-owned creatures you control are Pirates because of Don and can therefore contribute to Admiral Beckett Brass's three-Pirate combat-damage condition. A creature permanently stolen by Beckett then also receives Don's static bonuses."
+    },
+    {
+      "name": "Kindred Discovery / Coercive Recruiter Pirate checks",
+      "status": "PASS",
+      "conclusion": "An opponent-owned creature entering under your control is a Pirate on the battlefield due to Don's continuous effect. It can therefore satisfy battlefield/attack Pirate triggers such as Kindred Discovery and Coercive Recruiter while Don remains on the battlefield."
+    },
+    {
+      "name": "Arcane Heist cipher copies",
+      "status": "PASS",
+      "conclusion": "A cipher-created copy of Arcane Heist is a copy of a spell you own, so casting that copy does not itself trigger Don. However, the opponent-owned instant or sorcery that Arcane Heist then allows you to cast is a qualifying stolen noncreature spell and does trigger Don."
+    },
+    {
+      "name": "Animate Dead and Reanimate opposing graveyards",
+      "status": "PASS",
+      "conclusion": "Both can return a creature card owned by an opponent under your control. That creature remains opponent-owned and therefore receives Don's static bonuses."
+    }
+  ]
+}
