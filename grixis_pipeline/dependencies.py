@@ -30,3 +30,12 @@ def invalidated(change: Change, all_deck_ids: Iterable[str]):
     else:
         raise ValueError(f"unknown change kind: {change.kind}")
     return {deck_id: sorted(nodes) for deck_id in targets}
+
+
+def collection_invalidated(change: Change):
+    """Collection-level analyses affected by a project change."""
+    if change.kind in {"DECKLIST","COMMANDER_STRATEGY"}:
+        return ["CROSS_DECK_LEARNING","DIVERSITY_AUDIT"]
+    if change.kind in {"ORACLE_SNAPSHOT","LEGALITY_SNAPSHOT","PROJECT_EXCEPTION"}:
+        return ["DIVERSITY_AUDIT"]
+    raise ValueError(f"unknown change kind: {change.kind}")
