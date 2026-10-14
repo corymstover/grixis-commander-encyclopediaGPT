@@ -1,6 +1,6 @@
 # Retrospective decks #1–8 — machine gate summary
 
-Generated UTC: `2026-10-14T05:56:08.737581+00:00`
+Generated UTC: `2026-10-14T06:01:26.745701+00:00`
 
 | # | Deck | Count | Singleton | Oracle / CI / legality | Exceptions |
 |---:|---|---:|---|---|---|
@@ -14,7 +14,9 @@ Generated UTC: `2026-10-14T05:56:08.737581+00:00`
 | 8 | Bjorna, Nightfall Alchemist // Cecily, Haunted Mage + Lutri companion | 100 | PASS | PASS | 3 |
 
 **Machine gate:** PASS
-**Rules gate:** PENDING_HUMAN_ATTESTATION
-**Overall retrospective:** BLOCKED_PENDING_RULES_ATTESTATION
+**Rules gate:** PASS
+**Overall retrospective:** PASS
 
-Machine PASS is necessary but not sufficient: the rules-interaction attestation must be completed separately.
+Authoritative consolidated result: `refinement/verification/retrospective_1_to_8/Retrospective_1_to_8_Complete_Gate_Summary_2026-10-14.json`
+
+The machine verifier remains a separate evidence layer; final certification is supplied by the SHA-bound complete-gate consolidation.

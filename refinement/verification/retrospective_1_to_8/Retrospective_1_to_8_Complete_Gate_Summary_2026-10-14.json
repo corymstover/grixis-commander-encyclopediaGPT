@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-10-14T06:01:26.835973+00:00",
+  "cycle_id": "global-restart-2026-10-13",
+  "authoritative_final_status": true,
+  "machine_gate_result": "PASS",
+  "rules_gate_result": "PASS",
+  "overall_result": "PASS",
+  "rules_attestation_source": "refinement/verification/retrospective_1_to_8/Retrospective_1_to_8_Rules_Attestation_2026-10-14.md",
+  "rules_attestation_source_git_blob_sha1": "24a0fddd74f399170a5f9e8bded1b8a85f774630",
+  "oracle_cache_generated_at_utc": "2026-10-14T05:49:43.707110+00:00",
+  "oracle_bulk_updated_at": "2026-10-13T21:05:51.771+00:00",
+  "oracle_cache_sha256": "ff1110c1da5d9984002e38f3d451d29446e9829e6fc0f6cfc9678e5dbd9ef515",
+  "official_banlist_checkpoint": "refinement/verification/Retrospective_1_to_8_Official_Banlist_Checkpoint_2026-10-14.md",
+  "decks": [
+    {
+      "deck_number": 1,
+      "deck_id": "Abaddon_the_Despoiler",
+      "display": "Abaddon the Despoiler",
+      "machine_gate_result": "PASS",
+      "rules_gate_result": "PASS",
+      "overall_result": "PASS",
+      "approved_source": "refinement/decklists/Abaddon_the_Despoiler_Approved_2026-10-13.txt",
+      "approved_source_raw_sha256": "2d6203d274c25e67fb93acf5e6784dce4ee1e8999844a6ab032d9b15995acfbf",
+      "main_deck_count": 100,
+      "singleton_result": "PASS",
+      "project_exceptions": []
+    },
+    {
+      "deck_number": 2,
+      "deck_id": "Admiral_Beckett_Brass",
+      "display": "Admiral Beckett Brass",
+      "machine_gate_result": "PASS",
+      "rules_gate_result": "PASS",
+      "overall_result": "PASS",
+      "approved_source": "refinement/decklists/Admiral_Beckett_Brass_Approval_Ready_2026-10-13.txt",
+      "approved_source_raw_sha256": "4ba5c483eb67b5f2647d375450adf9c2b7e79a036d0ba1866e58de8441bf3414",
+      "main_deck_count": 100,
+      "singleton_result": "PASS",
+      "project_exceptions": []
+    },
+    {
+      "deck_number": 3,
+      "deck_id": "Admiral_Brass__Unsinkable",
+      "display": "Admiral Brass, Unsinkable",
+      "machine_gate_result": "PASS",
+      "rules_gate_result": "PASS",
+      "overall_result": "PASS",
+      "approved_source": "refinement/decklists/Admiral_Brass_Unsinkable_Whole_List_Approval_Candidate_2026-10-13.txt",
+      "approved_source_raw_sha256": "056f0369bc4b11967365eef65d15a806b2d0f673ecf8097b028ffcdfd472f5cc",
+      "main_deck_count": 100,
+      "singleton_result": "PASS",
+      "project_exceptions": []
+    },
+    {
+      "deck_number": 4,
+      "deck_id": "Anhelo_the_Painter",
+      "display": "Anhelo, the Painter",
+      "machine_gate_result": "PASS",
+      "rules_gate_result": "PASS",
+      "overall_result": "PASS",
+      "approved_source": "refinement/decklists/Anhelo_the_Painter_Approval_Ready_2026-10-13.txt",
+      "approved_source_raw_sha256": "8d5f8a9bd4fcdcd164aab63150c14dc69a814a4d9fd764876de3214d3adf9972",
+      "main_deck_count": 100,
+      "singleton_result": "PASS",
+      "project_exceptions": []
+    },
+    {
+      "deck_number": 5,
+      "deck_id": "Ashad_the_Lone_Cyberman",
+      "display": "Ashad, the Lone Cyberman",
+      "machine_gate_result": "PASS",
+      "rules_gate_result": "PASS",
+      "overall_result": "PASS",
+      "approved_source": "refinement/decklists/Ashad_the_Lone_Cyberman_Approval_Ready_2026-10-13.txt",
+      "approved_source_raw_sha256": "087e34c2127859111fc08f8d9ec7d66cd3495537cc571d88e829fd27d2823e25",
+      "main_deck_count": 100,
+      "singleton_result": "PASS",
+      "project_exceptions": []
+    },
+    {
+      "deck_number": 6,
+      "deck_id": "Ashnod_the_Uncaring",
+      "display": "Ashnod the Uncaring",
+      "machine_gate_result": "PASS",
+      "rules_gate_result": "PASS_WITH_DOCUMENTATION_CORRECTION",
+      "overall_result": "PASS",
+      "approved_source": "refinement/decklists/Ashnod_the_Uncaring_Approved_2026-10-13.txt",
+      "approved_source_raw_sha256": "f574e4fad4749603294f53d2fe5536a159f884a8f1a8a7b6b1a22b3a637cf1cf",
+      "main_deck_count": 100,
+      "singleton_result": "PASS",
+      "project_exceptions": []
+    },
+    {
+      "deck_number": 7,
+      "deck_id": "Be_lakor_the_Dark_Master",
+      "display": "Be'lakor, the Dark Master",
+      "machine_gate_result": "PASS",
+      "rules_gate_result": "PASS",
+      "overall_result": "PASS",
+      "approved_source": "refinement/decklists/Be_lakor_the_Dark_Master_Approved_2026-10-13.txt",
+      "approved_source_raw_sha256": "3abc951606a6db2b17ea2aceb471fc2ef4c55e2ef082d49d9140a83b2491155e",
+      "main_deck_count": 100,
+      "singleton_result": "PASS",
+      "project_exceptions": []
+    },
+    {
+      "deck_number": 8,
+      "deck_id": "Cecily__Bjorna__Lutri",
+      "display": "Bjorna, Nightfall Alchemist // Cecily, Haunted Mage + Lutri companion",
+      "machine_gate_result": "PASS",
+      "rules_gate_result": "PASS_PROJECT_EXCEPTION",
+      "overall_result": "PASS_PROJECT_EXCEPTION",
+      "approved_source": "refinement/decklists/Cecily__Bjorna__Lutri_Approved_2026-10-13.txt",
+      "approved_source_raw_sha256": "553838da88fe00974e74664633be5051c4f1a0879baa71de81ca9f880e5a6d28",
+      "main_deck_count": 100,
+      "singleton_result": "PASS",
+      "project_exceptions": [
+        {
+          "card_name": "Trade Secrets",
+          "official_status": "banned",
+          "exception_type": "project banned-card exception"
+        },
+        {
+          "card_name": "Yawgmoth's Bargain",
+          "official_status": "banned",
+          "exception_type": "project banned-card exception"
+        },
+        {
+          "card_name": "Lutri, the Spellchaser",
+          "official_status": "banned_as_companion",
+          "exception_type": "project companion exception"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "All eight machine gates pass with zero unresolved records and zero failures.",
+    "The completed human rules attestation is SHA-bound through its exact Git blob hash.",
+    "Ashnod's stale historical rules wording was corrected; no decklist change was required.",
+    "Deck #8 remains project-valid under its registered Lutri / Trade Secrets / Yawgmoth's Bargain exceptions and is not represented as officially legal without qualification."
+  ]
+}

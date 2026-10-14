@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-14T05:56:08.737581+00:00",
+  "generated_at_utc": "2026-10-14T06:01:26.745701+00:00",
   "cache_generated_at_utc": "2026-10-14T05:49:43.707110+00:00",
   "bulk_updated_at": "2026-10-13T21:05:51.771+00:00",
   "cache_sha256": "ff1110c1da5d9984002e38f3d451d29446e9829e6fc0f6cfc9678e5dbd9ef515",
@@ -207,6 +207,9 @@
     }
   ],
   "machine_gate_result": "PASS",
-  "rules_gate_result": "PENDING_HUMAN_ATTESTATION",
-  "overall_result": "BLOCKED_PENDING_RULES_ATTESTATION"
+  "rules_gate_result": "PASS",
+  "overall_result": "PASS",
+  "consolidated_complete_gate": "refinement/verification/retrospective_1_to_8/Retrospective_1_to_8_Complete_Gate_Summary_2026-10-14.json",
+  "authoritative_final_status": false,
+  "note": "Machine evidence plus rules attestation have been consolidated; use the complete-gate summary as the authoritative final status."
 }
