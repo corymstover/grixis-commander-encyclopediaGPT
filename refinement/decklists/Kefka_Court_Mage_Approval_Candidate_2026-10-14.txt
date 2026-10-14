@@ -20,7 +20,7 @@
 1x City of Traitors
 1x Command Tower
 1x Culling the Weak
-1x Cyclonic Rift
+1x Valley Floodcaller
 1x Dark Ritual
 1x Deflecting Swat
 1x Demonic Consultation
@@ -61,14 +61,14 @@
 1x Mystic Remora
 1x Mystical Tutor
 1x Necropotence
-1x Opposition Agent
+1x Demonic Counsel
 1x Orcish Bowmasters
 1x Otawara, Soaring City
 1x Pact of Negation
 1x Phantasmal Image
 1x Phyrexian Metamorph
 1x Polluted Delta
-1x Psychosis Crawler
+1x Fellwar Stone
 1x Pyroblast
 1x Ragavan, Nimble Pilferer
 1x Reanimate
