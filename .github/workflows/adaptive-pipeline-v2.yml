@@ -2,7 +2,7 @@ name: Adaptive pipeline v2 quality gate
 on:
   push:
     branches: ["automation/adaptive-pipeline-v2-*"]
-    paths: ["grixis_pipeline/**","scripts/grixis_pipeline.py","tests/test_adaptive_pipeline.py","tests/test_current_cycle_state.py","tests/test_dependency_invalidation.py","tests/test_generic_runner.py","config/pipeline_policy_v2.yml","architecture/ADAPTIVE_PIPELINE_V2.md",".github/workflows/adaptive-pipeline-v2.yml"]
+    paths: ["grixis_pipeline/**","scripts/grixis_pipeline.py","tests/test_adaptive_pipeline.py","tests/test_current_cycle_state.py","tests/test_dependency_invalidation.py","tests/test_generic_runner.py","tests/test_retry_resume.py","tests/test_metrics.py","config/pipeline_policy_v2.yml","architecture/ADAPTIVE_PIPELINE_V2.md",".github/workflows/adaptive-pipeline-v2.yml"]
   pull_request:
     paths: ["grixis_pipeline/**","scripts/grixis_pipeline.py","tests/test_adaptive_pipeline.py","config/pipeline_policy_v2.yml","architecture/ADAPTIVE_PIPELINE_V2.md"]
 permissions:
