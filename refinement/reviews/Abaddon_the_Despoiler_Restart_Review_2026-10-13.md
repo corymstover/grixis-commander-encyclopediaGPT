@@ -1,47 +1,81 @@
-# Abaddon the Despoiler — Restart Review Work Record
+# Abaddon the Despoiler — Full Restart Review
 
-**Deck:** #1 of 62  
-**Campaign:** Full re-review restart, 2026-10-13  
-**Status:** IN PROGRESS — NOT APPROVED / NOT LOCKED  
-**Frozen source baseline:** 2026-10-12 authoritative CSV/TXT archives  
-**Current work branch:** `refinement/campaign-2026-10-12`
+**Deck #1 of 62 · Review date: 2026-10-13 · Status: APPROVED / LOCKED — FRESH RESTART REVIEW PASSED**
 
-## Purpose and status
+Frozen source: October 12 authoritative CSV/TXT archives. Baseline normalized-list hash: `a58b6ad5499596eb64af79a83b210641e4e097c79803de87cca3ba2244fab91f`. Final exact list hash: `fd66ea20135a77322113f69cd6ac583fde381a1af08ffac348c9f1f4d8227e15`.
 
-The project was reset at the user's direction so every commander deck receives a fresh full-strength review, beginning with Deck #1. This record establishes the restart's work scope and the evidence review started in this turn. It does not claim that the full Abaddon review has been completed.
+## Baseline and scope
 
-The prior revised decklist, prior candidate decision ledger, historical change ledger, and prior verification certificate are retained as historical evidence only. Their existence does not satisfy current-cycle approval. No card changes or new-cycle approval have been made in this restart work record.
+The frozen Abaddon CSV/TXT baseline was reopened and reconciled: 100 copies, 94 unique card names, 34 lands. The whole list was reassessed, not merely the prior 15-candidate shortlist. Historical reports were treated as evidence to challenge, not current approval. The full-list review matrix covers every baseline card name plus the three new candidates; the decision ledger records accepted and rejected alternatives. Frozen source exports and previous-cycle artifacts remain immutable.
 
-## Historical materials inspected
+## Final changes
 
-- Prior refined list: `refinement/decklists/Abaddon_the_Despoiler_Refined_2026-10-13.txt` (100-card candidate with Court of Ambition and Warstorm Surge).
-- Prior certificate: `refinement/verification/Abaddon_the_Despoiler_Verification_2026-10-13.md` (recorded prior-cycle hash `9629ba07807642736bce0b2c90038dd664da7b32b3892744808c8de4b526fb50`).
-- Prior candidate summary: `refinement/decisions/Abaddon_the_Despoiler_Candidate_Decisions_2026-10-13.md` (15 candidates were summarized; several candidates were rejected; Aurora Phoenix vs. Mind's Desire was recorded as inconclusive rather than performance evidence).
-- Prior cumulative change ledger: `refinement/Deck_Change_Ledger_2026-10-13.csv`.
-- Prior independent baseline audit: `source-package/Grixis_Independent_Baseline_Audit_2026-10-12.json`.
-- Prior project status record and reset tracker were re-fetched in this turn. The active tracker now has 62/62 decks set to `UNAPPROVED / UNLOCKED — FULL RE-REVIEW REQUIRED`, all active final gate fields set to `NO`, and all active final-list hash fields cleared.
+| Add | Cut | Decision rationale |
+|---|---|---|
+| **Protection Racket** | Loyal Subordinate | Its upkeep trigger resolves before the first main phase. Each opponent either pays life equal to the revealed card's mana value, increasing Abaddon's threshold, or lets the card go to your hand. It supplies either threshold progress or card advantage without requiring Abaddon to survive. |
+| **Ancient Cellarspawn** | Nightscape Familiar | The deck frequently casts spells without paying their mana costs through cascade. Cellarspawn triggers targeted life loss equal to the difference between mana spent and mana value, and discounts Demon/Horror/Nightmare spells. This is more commander-specific than the Familiar's generic blue/red discount. |
+| **Aurora Phoenix** | Bituminous Blast | A recurring cascade creature can receive a second cascade trigger from Abaddon when the threshold is met and returns from the graveyard to hand whenever a spell with cascade is cast. Bituminous Blast's five-mana rate for four damage to one creature is weak in this removal-dense shell. |
 
-## Prior evidence that must be re-evaluated, not blindly inherited
+The prior-cycle additions **Court of Ambition** and **Warstorm Surge** were not carried forward automatically. Protection Racket is preferred over Court for lower cost and the life-loss/card-advantage choice. Rakdos, Lord of Riots is retained instead of Warstorm Surge because its threshold-scaled creature discount is cheaper and helps deploy the creature engine; Ancient Cellarspawn adds a lower-cost cast-for-less payoff.
 
-The historical certificate states that Abaddon was assessed as optimized Bracket 4, and that two additions/two cuts were made:
-- Add Court of Ambition; cut Loyal Subordinate.
-- Add Warstorm Surge; cut Rakdos, Lord of Riots.
+## Commander-first strategic blueprint
 
-The prior review's core plan was Abaddon threshold-based cascade from spells cast from hand, enabled by opponent life loss earlier in the turn; cast-from-exile/token/damage value; and a separate Underworld Breach + Lion's Eye Diamond + Brain Freeze line with prerequisites. Those strategic hypotheses remain review inputs, not pre-approved conclusions.
+**Primary plan:** cause opponent life loss early in the turn, then cast spells from hand whose mana values are at or below the aggregate opponent life lost that turn to gain Abaddon's cascade. Cheap all-opponent burn, repeatable pingers, Bloodletter of Aclazotz, Solphim, fast mana and cost reduction help cross the threshold and continue the chain.
 
-The prior candidate review considered 15 highlighted candidates and explicitly marked Aurora Phoenix vs. Mind's Desire inconclusive. The prior test did not demonstrate a gameplay advantage. No claim of win-rate improvement was supported. During the restart, the full baseline must be assessed independently and the candidate field must not be limited to those 15 names.
+**Cascade and exile value:** Abaddon, Call Forth the Tempest, Noise Marine, Aurora Phoenix and Wild-Magic Sorcerer create or extend cascade chains. The Lost and the Damned, Keeper of Secrets, Passionate Archaeologist, Prosper, The Ruinous Powers and Nalfeshnee reward spells cast from exile. Ancient Cellarspawn adds a targeted life-loss trigger when mana spent is below mana value; this can increase the threshold for later hand-cast spells in the same turn. Aurora Phoenix supplies recurring cascade pressure from the graveyard.
 
-## Required work not yet closed
+**Threshold setup:** Boltwave and Flame Rift deliver large aggregate opponent life loss for one mana. Thermo-Alchemist, Kessig Flamebreather, Exalted Flamer, Vivi Ornitier, Bloodletter and Solphim increase repeatable damage. Protection Racket gives upkeep life-loss-or-card decisions before main phase. Neheb converts prior opponent life loss into postcombat red mana; Rakdos discounts creature spells based on the same life-loss metric.
 
-- Full card-by-card functional/strategic review of the frozen baseline and prior revision, with exact delta reconciliation.
-- Broader commander-specific candidate discovery and systematic examination of weak/off-plan/low-impact slots, not just the inherited shortlist.
-- Re-decision of prior additions/cuts and alternative packages with current evidence.
-- Exact-final-list refresh of Oracle text, identity, Commander legality and material rules interactions; verify official legality independently from project exceptions.
-- Reassessment of mana, curve, cascade-hit distribution, engine density, free/alternate-cost interaction, protection, card advantage, closing-line consistency, and natural ceiling.
-- Independent 100-card and singleton/copy-rule audit of the chosen final list.
-- New normalized hash, restart-specific decision ledger/summary, final decklist and verification certificate.
-- Cross-check every artifact and tracker field after writes before declaring this deck approved/locked.
+**Backup line:** Underworld Breach + Lion's Eye Diamond + Brain Freeze remains a compact graveyard/storm line with normal graveyard-size, escape-cost, mana and interaction prerequisites. It remains a backup rather than turning the list into a generic combo shell.
 
-## Current gate result
+**Natural power ceiling:** optimized Bracket 4. The deck has fast mana, tutors, free interaction, high cascade density and a compact combo line, but retains its commander-first life-loss/cascade identity rather than being forced into a cEDH shell.
 
-**Restart review gate: OPEN.** The review record is intentionally explicit about incompleteness. No current-cycle approval is authorized by this record. Continue substantive work on Abaddon only; do not begin Deck #2's review until Abaddon is fully re-reviewed, documented, and either approved/locked after all mandatory gates pass or its specific blocker is resolved.
+## Full-list and candidate review
+
+Every baseline card was reviewed for role, commander synergy, efficiency, redundancy, curve/mana contribution, interaction, resilience and contribution to a win condition. The retained package includes 34 lands; fast mana and rituals; six tutors; draw/wheels/cantrips; free and low-cost interaction; threshold burn/pingers; cascade and exile payoffs; and the Breach backup line. The matrix records per-card dispositions, including the three cuts and three additions.
+
+Candidate review included Protection Racket, Ancient Cellarspawn, Aurora Phoenix, Blood for the Blood God!, Court of Ambition, Warstorm Surge, Magnus the Red, Florian, Voldaren Scion, Black Waltz No. 3, Guttersnipe, Spear Spewer, Keen Duelist, Poxwalkers, Descent into Avernus, Dark Apostle, Heralds of Tzeentch, Let the Galaxy Burn, Mutalith Vortex Beast, Pink Horror, Bloodthirster, Cryptolith Fragment // Aurora of Emrakul, Plague Drone, Chaos Mutation, Sloppity Bilepiper, Chromatic Lantern, Tzaangor Shaman, Blight Grenade and Mandate of Abaddon. Candidate rankings were treated as discovery evidence, never automatic inclusions.
+
+- **Blood for the Blood God! — rejected for this revision:** its Bloodletter synergy and draw-eight effect are real, but mana value 11 makes it unavailable as a hit from the current cascade spells and it is a conditional hand-cast finisher. Mind's Desire is mana value 6, can be hit by cascade, and scales with spells cast earlier in the turn. The deck already has Bloodletter-amplified burn and the Breach line.
+- **Magnus the Red — rejected:** strong token/cost-reduction concept with The Lost and the Damned, but five mana and token dependence; existing Birgi, Storm-Kiln Artist, Neheb, Rakdos and fast mana provide a more reliable resource package.
+- **Florian — rejected:** on-plan card selection, but the list already has substantial draw, tutors, wheels and impulse/exile engines; no current slot was a clearly better cut.
+- **Black Waltz No. 3 / Guttersnipe — rejected:** attractive pingers but overlap with Kessig Flamebreather, Exalted Flamer, Thermo-Alchemist, Vivi and damage multipliers.
+- **Spear Spewer / Keen Duelist — rejected:** less reliable or more volatile threshold enablers than Boltwave, Flame Rift and repeatable pingers.
+- **Poxwalkers — rejected:** strongest when already in the graveyard; no dedicated self-mill/sacrifice package reliably places it there.
+- **Descent into Avernus — rejected:** symmetrical Treasures accelerate opponents as well as the deck.
+- **Dark Apostle / Heralds of Tzeentch / Sloppity Bilepiper — rejected:** slower or less repeatable cascade support than Abaddon and Aurora Phoenix.
+- **Let the Galaxy Burn / Mandate of Abaddon / Blight Grenade / Chaos Mutation — rejected:** board-control overlap, self-board risk or unreliable replacement effects relative to the retained removal suite.
+- **Mutalith Vortex Beast / Pink Horror / Bloodthirster / Tzaangor Shaman — rejected:** higher variance, combat dependence or less direct commander synergy than the selected cascade package.
+
+## Oracle discrepancy corrected
+
+The inherited candidate-ranking metadata for **Ancient Cellarspawn** incorrectly stated that “each opponent loses life equal to the difference.” Current Oracle text says **“target opponent loses life equal to the difference.”** The final rules analysis uses the current target-one-opponent wording. Frozen source archives were not edited; the discrepancy is recorded in a separate active correction note.
+
+## Rules and legality
+
+- Abaddon's threshold counts total life lost by all opponents during the current turn; self-life loss does not count.
+- Protection Racket triggers during upkeep. Paying life exiles the revealed card; declining payment puts it into your hand. It does **not** cast the card from exile.
+- Ancient Cellarspawn's trigger resolves before the spell that caused it; it targets one opponent. A cascade hit cast without paying its mana cost has mana spent below mana value, but cost reductions do not change mana value.
+- Aurora Phoenix returns only if it is in the graveyard immediately after a spell with cascade is cast. Its own cascade and Abaddon's granted cascade can both trigger when cast from hand with the threshold met.
+- Bloodletter doubles opponent life loss during your turn, including loss caused by damage, only while it is on the battlefield.
+- LED discards the hand as an activation cost; Breach escape requires exiling three other graveyard cards per cast. The combo has real resource and interaction constraints.
+- The current Scryfall refresh recorded in the previous tracker pass covered all 94 baseline names; the three new candidates were separately checked against current card references. Protection Racket and Ancient Cellarspawn are black; Aurora Phoenix is red. All fit UBR and are Commander-legal.
+- Official Commander ban-list checkpoint reviewed 2026-10-13; no final-list card is banned and no project exception is used.
+
+Sources: [Ancient Cellarspawn Oracle/rulings/legal status](https://www.mtg.wtf/card/dsc/47/Ancient-Cellarspawn); [Protection Racket Oracle/legal status](https://www.mtg.wtf/card/ncc/140/Protection-Racket); [Aurora Phoenix Oracle/rulings/legal status](https://www.mtg.wtf/card/prm/86026/Aurora-Phoenix); [official Commander banned list](https://mtgcommander.net/index.php/banned-list/); [EDHREC Abaddon](https://edhrec.com/commanders/abaddon-the-despoiler); [EDHREC Abaddon Cascade](https://edhrec.com/commanders/abaddon-the-despoiler/cascade).
+
+## Independent integrity audit
+
+- Total: **100 cards including commander**.
+- Unique names: **94**.
+- Commander first line, exactly once, tagged `[Commander]`: **PASS**.
+- Singleton/copy rule: **PASS**; only Island ×3, Mountain ×3 and Swamp ×3 repeat.
+- Lands: **34**, unchanged.
+- Color identity: **PASS**, all cards fit UBR.
+- Project exceptions: **none**.
+- Exact final list SHA-256 (UTF-8, LF, trailing newline): `fd66ea20135a77322113f69cd6ac583fde381a1af08ffac348c9f1f4d8227e15`.
+- Multiplayer performance: no qualified matched-start simulator was available; no unsupported win-rate or superiority claim is made. The prior Aurora Phoenix vs. Mind's Desire six-game test cast neither card and remains explicitly inconclusive; it was not used as performance evidence.
+
+## Final disposition
+
+**APPROVED / LOCKED — FRESH RESTART REVIEW PASSED.** This approval applies only to the exact final hash above. The final list, card-by-card review matrix, candidate ledger, change ledger, correction note and verification certificate are stored as separate dated artifacts. Do not reopen unless a material correctness issue is discovered or the user explicitly requests it.
