@@ -1,0 +1,23 @@
+{
+  "generated_at_utc": "2026-10-14T05:52:44.420309+00:00",
+  "deck_id": "Cormela__Glamour_Thief",
+  "decklist_path": "refinement/decklists/Cormela_Glamour_Thief_Approval_Candidate_2026-10-14.txt",
+  "deck_sha256": "80f4bdef2b8b140aeae23775cfdf87fda81e7215038b8db9b1746c806f366e0b",
+  "baseline_path": "refinement/decklists/Cormela_Glamour_Thief_Current_Cycle_Baseline_2026-10-14.txt",
+  "baseline_source_sha256": "10639176c36a7a55853cd1c65f22ac31e22b99dd15d7e95607b1d03acb74babd",
+  "count": 100,
+  "distinct_names": 100,
+  "commander_color_identity": [
+    "B",
+    "R",
+    "U"
+  ],
+  "cache_generated_at_utc": "2026-10-14T05:49:43.707110+00:00",
+  "cache_sha256": "ff1110c1da5d9984002e38f3d451d29446e9829e6fc0f6cfc9678e5dbd9ef515",
+  "project_exceptions": [],
+  "rules_gate": "PASS",
+  "official_legality_gate": "PASS",
+  "errors": [],
+  "overall_result": "APPROVAL_READY",
+  "approval_state": "NOT_APPROVED — explicit user approval still required"
+}
