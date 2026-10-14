@@ -67,3 +67,5 @@ jobs:
           path: refinement/verification/edward_kenway_2026-10-14/gate_output/
           if-no-files-found: warn
           retention-days: 90
+
+# Manual retrigger after validated Oracle-cache refresh 87c963c76a67cfeca01627a08f10ca4ebe3cd660.
