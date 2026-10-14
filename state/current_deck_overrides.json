@@ -11,6 +11,16 @@
       "approved_list_sha256": "2d6203d274c25e67fb93acf5e6784dce4ee1e8999844a6ab032d9b15995acfbf",
       "quality_gate_version": "Deck Quality Gates v3",
       "approval_basis": "Explicit user approval after successful current-cycle v3 re-verification."
+    },
+    "Admiral_Beckett_Brass": {
+      "approval_status": "APPROVED",
+      "lock_status": "LOCKED",
+      "final_gate_passed": true,
+      "user_approval_date": "2026-10-13",
+      "current_stage": "LOCKED",
+      "approved_list_sha256": "4ba5c483eb67b5f2647d375450adf9c2b7e79a036d0ba1866e58de8441bf3414",
+      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit",
+      "approval_basis": "Explicit user approval after completed whole-list optimization, current legality/Oracle verification, red-team review, and zero-new-material-improvement closure."
     }
   }
 }
