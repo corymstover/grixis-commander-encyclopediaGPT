@@ -1,0 +1,15 @@
+{
+  "deck_id": "Fire_Lord_Azula",
+  "display_name": "Fire Lord Azula",
+  "decklist_path": "refinement/decklists/Fire_Lord_Azula_Approval_Candidate_2026-10-14.txt",
+  "expected_deck_sha256": "b6ef396641f2b5cfac0eb81fb494f21f3745e2a3fd47fa75d2eaadbdc34ddee5",
+  "baseline_path": "refinement/decklists/Fire_Lord_Azula_Current_Cycle_Baseline_2026-10-14.txt",
+  "expected_baseline_sha256": "90ec69182cef0c80828a9bea5e3acf871d5c1017b30ea1fb6b49a8b045a633f9",
+  "baseline_source_sha256": "2d83c6962c8aa6638b19bf248ddb88e2de977854e3737eb5b8f9c7497473ae7b",
+  "rules_attestation_path": "refinement/verification/fire_lord_azula_2026-10-14/Fire_Lord_Azula_Rules_Attestation.json",
+  "official_legality_attestation_path": "refinement/verification/fire_lord_azula_2026-10-14/Fire_Lord_Azula_Official_Legality_Attestation.json",
+  "output_dir": "refinement/verification/fire_lord_azula_2026-10-14/gate_output",
+  "output_stem": "Fire_Lord_Azula_2026-10-14",
+  "max_cache_age_hours": 72,
+  "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit"
+}
