@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "deck_sha256": "a59150c323aa1e21cbda65291a3b172d08ecc3b83266b708768f4e14f0b07ec1",
+  "checked_at_utc": "2026-10-14T06:23:00+00:00",
+  "sources": [
+    "https://magic.wizards.com/en/banned-restricted-list",
+    "https://magic.wizards.com/en/news/announcements/banned-and-restricted-october-12-2026",
+    "refinement/metadata_audit/Current_Cycle_Oracle_Cache.jsonl",
+    "refinement/metadata_audit/Current_Cycle_Oracle_Cache_Summary.json"
+  ],
+  "official_format": "Commander",
+  "unexpected_banned_cards": [],
+  "project_exceptions_used": [],
+  "notes": [
+    "The current Wizards Commander banned list was re-read on 2026-10-14 after the October 12, 2026 banned-and-restricted announcement.",
+    "No card in the exact Crosis approval candidate appears on the current Commander banned list.",
+    "No Crosis-specific project legality exception is required or used.",
+    "Format-specific bans or restrictions outside Commander are not treated as Commander bans; the candidate includes cards such as Mana Drain, Mind Twist, Wheel of Fortune, Windfall, Ancient Tomb, Chrome Mox, and Dark Ritual that are restricted or banned in other formats but are not banned in Commander.",
+    "The refreshed current-cycle Scryfall cache independently supplies per-card Commander legality and canonical identity; the Wizards list is the format-level banned-list reconciliation."
+  ],
+  "result_note": "Official legality attestation is bound to the exact Crosis approval-candidate SHA. Any decklist change invalidates this PASS until rechecked."
+}

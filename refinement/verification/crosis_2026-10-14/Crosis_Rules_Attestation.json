@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "deck_sha256": "a59150c323aa1e21cbda65291a3b172d08ecc3b83266b708768f4e14f0b07ec1",
+  "checked_at_utc": "2026-10-14T06:23:00+00:00",
+  "rules_checkpoint": "Magic Comprehensive Rules effective 2026-09-25",
+  "sources": [
+    "https://media.wizards.com/2026/downloads/MagicCompRules%2020260925.txt",
+    "https://magic.wizards.com/en/rules",
+    "https://commanderspellbook.com/combo/2286-3221/",
+    "refinement/metadata_audit/Current_Cycle_Oracle_Cache.jsonl",
+    "refinement/metadata_audit/Current_Cycle_Oracle_Cache_Summary.json"
+  ],
+  "interactions": [
+    {
+      "name": "Crosis combat-damage trigger",
+      "status": "PASS",
+      "note": "Crosis triggers only after it deals combat damage to a player. The controller may pay {2}{B} as the trigger resolves; if paid, a color is chosen, the damaged player reveals their hand, and discards every card of that color. The payment is not an attack cost and cannot be prepaid before the trigger resolves."
+    },
+    {
+      "name": "Crosis + Painter's Servant",
+      "status": "PASS",
+      "note": "Painter's Servant makes all cards not on the battlefield the chosen color in addition to their other colors. While Painter's Servant remains on the battlefield, cards in the damaged player's hand therefore share Painter's chosen color. After Crosis deals combat damage, paying {2}{B} and choosing that color makes that player discard their entire hand. If Painter's Servant leaves the battlefield before Crosis's trigger resolves, its continuous effect no longer applies and the full-hand result is not guaranteed."
+    },
+    {
+      "name": "Brotherhood Regalia + Crosis",
+      "status": "PASS",
+      "note": "Brotherhood Regalia can equip Crosis for its legendary-creature equip cost {1}. It gives the equipped Crosis ward {2} and makes it unable to be blocked, directly enabling Crosis's combat-damage trigger without changing the trigger's {2}{B} payment requirement."
+    },
+    {
+      "name": "Sword of Feast and Famine + Crosis trigger ordering",
+      "status": "PASS",
+      "note": "When an equipped Crosis deals combat damage to a player, Crosis and Sword of Feast and Famine both trigger under the same controller. That controller may put Crosis's trigger on the stack first and Sword's trigger above it. Sword then resolves first, making the damaged player discard a card and untapping the controller's lands; those lands can then be used to pay {2}{B} when Crosis's trigger resolves."
+    },
+    {
+      "name": "Painter's Servant + Sword of Feast and Famine protection caveat",
+      "status": "PASS",
+      "note": "Painter's Servant also makes permanents the chosen color. If Painter's Servant chooses black or green while Sword of Feast and Famine is attached to Crosis, the Sword becomes black or green and cannot remain attached to a creature with protection from black and green. Choosing blue, red, or white avoids that attachment conflict while still making every card in hand share the chosen color for Crosis."
+    },
+    {
+      "name": "Tergrid + Tinybones, Bauble Burglar discard triggers",
+      "status": "PASS",
+      "note": "When an opponent discards a permanent card while both are controlled by the Crosis player, Tergrid and Tinybones, Bauble Burglar each trigger. Because the same player controls both triggers, that player chooses their stack order. Putting Tinybones's trigger on the stack first and Tergrid's above it lets Tergrid resolve first and move the permanent card from the graveyard to the battlefield; Tinybones then cannot exile that moved card. Nonpermanent discarded cards remain available for Tinybones to stash if they are still in the graveyard when its trigger resolves."
+    },
+    {
+      "name": "Notion Thief + Teferi's Puzzle Box",
+      "status": "PASS",
+      "note": "Commander Spellbook independently indexes this as a lock: after the opponent's normal draw, Teferi's Puzzle Box puts that opponent's hand on the bottom of their library and attempts to draw that many cards; Notion Thief replaces those draws so the Crosis player draws them instead. Opponents therefore lose the rest of their hand during each of their draw steps while both permanents remain in place."
+    },
+    {
+      "name": "Notion Thief + Wheel of Fortune / Windfall / Dark Deal",
+      "status": "PASS",
+      "note": "Notion Thief replaces opponents' card draws outside the first card they draw in each draw step. Draws instructed by Wheel of Fortune, Windfall, and Dark Deal therefore become draws for the Notion Thief controller, while the discard portions still occur normally. This converts the deck's mass-discard effects into one-sided hand denial and card advantage while Notion Thief remains on the battlefield."
+    },
+    {
+      "name": "Recoil on a player with no other cards in hand",
+      "status": "PASS",
+      "note": "Recoil first returns the targeted permanent to its owner's hand and then makes that permanent's controller discard a card. If that player had no other cards in hand and the returned permanent is a card, that card is the only available card to discard, so Recoil effectively sends the permanent from battlefield to hand to graveyard unless another applicable effect changes the result."
+    },
+    {
+      "name": "Dream Salvage after Crosis or mass discard",
+      "status": "PASS",
+      "note": "Dream Salvage counts how many cards the targeted opponent discarded during the entire current turn, so cards discarded to Crosis, Painter-assisted Crosis, Wheel of Fortune, Windfall, Dark Deal, Oppression, or other effects earlier that turn all contribute to the number of cards drawn."
+    }
+  ],
+  "result_note": "Rules attestation is bound to the exact Crosis approval-candidate SHA. Any decklist change invalidates this PASS until re-attested."
+}

@@ -1,0 +1,14 @@
+{
+  "deck_id": "Crosis__the_Purger",
+  "display_name": "Crosis, the Purger",
+  "decklist_path": "refinement/decklists/Crosis_the_Purger_Approval_Candidate_2026-10-14.txt",
+  "expected_deck_sha256": "a59150c323aa1e21cbda65291a3b172d08ecc3b83266b708768f4e14f0b07ec1",
+  "baseline_path": "refinement/decklists/Crosis_the_Purger_Current_Cycle_Baseline_2026-10-14.txt",
+  "expected_baseline_sha256": "d61c6c95d34d601fffe7042fd6f5abf14222cb063a59a8ba0f273c768eb3916b",
+  "baseline_source_sha256": "d61c6c95d34d601fffe7042fd6f5abf14222cb063a59a8ba0f273c768eb3916b",
+  "rules_attestation_path": "refinement/verification/crosis_2026-10-14/Crosis_Rules_Attestation.json",
+  "official_legality_attestation_path": "refinement/verification/crosis_2026-10-14/Crosis_Official_Legality_Attestation.json",
+  "output_dir": "refinement/verification/crosis_2026-10-14/gate_output",
+  "output_stem": "Crosis_the_Purger_2026-10-14",
+  "max_cache_age_hours": 72
+}
