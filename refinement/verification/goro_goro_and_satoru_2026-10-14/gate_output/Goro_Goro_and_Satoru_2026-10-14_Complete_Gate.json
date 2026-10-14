@@ -1,0 +1,23 @@
+{
+  "generated_at_utc": "2026-10-14T20:50:47.194353+00:00",
+  "deck_id": "Goro_Goro_and_Satoru",
+  "decklist_path": "refinement/decklists/Goro_Goro_and_Satoru_Approval_Candidate_2026-10-14.txt",
+  "deck_sha256": "2fd39e3b39afaeb1bf394a59b392d8a29f28645776fa0b13c5754df67ab85fdf",
+  "baseline_path": "refinement/decklists/Goro_Goro_and_Satoru_Current_Cycle_Baseline_2026-10-14.txt",
+  "baseline_source_sha256": "c9bc81909dba75925862c5aea21a4cb178180761cef0b3a5cf4437c24b6271e3",
+  "count": 100,
+  "distinct_names": 99,
+  "commander_color_identity": [
+    "B",
+    "R",
+    "U"
+  ],
+  "cache_generated_at_utc": "2026-10-14T20:47:35.090924+00:00",
+  "cache_sha256": "fde81e9d9e984f07de95fc310d9551791d5d918a5e359f7fcfa595bf1a5becc1",
+  "project_exceptions": [],
+  "rules_gate": "PASS",
+  "official_legality_gate": "PASS",
+  "errors": [],
+  "overall_result": "APPROVAL_READY",
+  "approval_state": "NOT_APPROVED — explicit user approval still required"
+}
