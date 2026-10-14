@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "deck_sha256": "c97bd448aa4b18d2f7ed15e5d67006ab320ed67ad3ed267e44150de472e1dc58",
+  "checked_at_utc": "2026-10-14T08:20:00+00:00",
+  "sources": [
+    "https://magic.wizards.com/en/banned-restricted-list",
+    "https://www.magic.wizards.com/en/news/announcements/banned-and-restricted-october-12-2026",
+    "https://magic.wizards.com/en/news/feature/marvel-super-heroes-release-notes",
+    "https://magic.wizards.com/en/news/announcements/marvel-super-heroes-commander-decklists",
+    "refinement/metadata_audit/Current_Cycle_Oracle_Cache.jsonl",
+    "refinement/metadata_audit/Current_Cycle_Oracle_Cache_Summary.json"
+  ],
+  "official_format": "Commander",
+  "unexpected_banned_cards": [],
+  "project_exceptions_used": [],
+  "notes": [
+    "The current Wizards Commander banned list was checked on 2026-10-14 after the October 12, 2026 banned-and-restricted announcement; that announcement made no Commander-format changes.",
+    "No card in the exact Doctor Doom approval candidate appears on the current Commander banned list.",
+    "Doctor Doom, King of Latveria is a released Marvel Super Heroes Commander card and is legal as a Commander; its color identity is U/B/R.",
+    "The six additions are all officially Commander-legal: Glorious Purpose (U), Chameleon, Master of Disguise (U), Roaming Throne (colorless), Psychic Frog (U/B), Spark Double (U), and Dakmor Salvage (colorless identity). All are within the commander's Grixis color identity.",
+    "Psychic Frog being banned in Legacy is irrelevant to Commander legality; it is legal in Commander.",
+    "No Doctor Doom-specific project legality exception is required or used."
+  ],
+  "result_note": "Official legality attestation is bound to the exact Doctor Doom approval-candidate SHA. Any decklist change invalidates this PASS until rechecked."
+}
