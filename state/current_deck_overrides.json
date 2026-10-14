@@ -257,6 +257,20 @@
       "whole_list_audit_artifact": "refinement/decisions/Garza_Zol_Plague_Queen_Current_Cycle_Decisions_2026-10-14.md",
       "approval_record_artifact": "refinement/approvals/Garza_Zol_Plague_Queen_Approved_2026-10-14.md",
       "approved_list_artifact": "refinement/decklists/Garza_Zol_Plague_Queen_Approved_2026-10-14.txt"
+    },
+    "Goro_Goro_and_Satoru": {
+      "approval_status": "APPROVED",
+      "lock_status": "LOCKED",
+      "final_gate_passed": true,
+      "user_approval_date": "2026-10-14",
+      "current_stage": "LOCKED",
+      "approved_list_sha256": "2fd39e3b39afaeb1bf394a59b392d8a29f28645776fa0b13c5754df67ab85fdf",
+      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + Complete Approval Gate v1",
+      "approval_basis": "Explicit user approval of the exact SHA-bound Goro-Goro and Satoru approval candidate after mandatory 99-slot whole-list audit, candidate exhaustion, adversarial second-pass review, zero-new-material-improvement closure, fresh Oracle/color-identity verification, current official Commander legality verification, independent rules verification, and complete fail-closed gate APPROVAL_READY with zero errors.",
+      "complete_gate_artifact": "refinement/verification/goro_goro_and_satoru_2026-10-14/gate_output/Goro_Goro_and_Satoru_2026-10-14_Complete_Gate.json",
+      "whole_list_audit_artifact": "refinement/decisions/Goro_Goro_and_Satoru_Current_Cycle_Decisions_2026-10-14.md",
+      "approval_record_artifact": "refinement/approvals/Goro_Goro_and_Satoru_Approved_2026-10-14.md",
+      "approved_list_artifact": "refinement/decklists/Goro_Goro_and_Satoru_Approved_2026-10-14.txt"
     }
   }
 }
