@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "deck_sha256": "4c221e5be0439338823ef621cd91706da8d405129cf6f5a41de36a83b875ef3b",
+  "checked_at_utc": "2026-10-14T06:45:20+00:00",
+  "sources": [
+    "https://magic.wizards.com/en/banned-restricted-list",
+    "https://magic.wizards.com/en/news/announcements/banned-and-restricted-october-12-2026",
+    "refinement/metadata_audit/Current_Cycle_Oracle_Cache.jsonl",
+    "refinement/metadata_audit/Current_Cycle_Oracle_Cache_Summary.json"
+  ],
+  "official_format": "Commander",
+  "unexpected_banned_cards": [],
+  "project_exceptions_used": [],
+  "notes": [
+    "The current Wizards Commander banned list was re-read on 2026-10-14 after the October 12, 2026 banned-and-restricted announcement.",
+    "The October 12, 2026 announcement made no Commander-format banned-list changes.",
+    "No card in the exact Cult of Skaro approval candidate appears on the current Commander banned list.",
+    "No Cult of Skaro-specific project legality exception is required or used.",
+    "Cards with restrictions or bans in other formats are evaluated only by their Commander status; Mana Vault is restricted in Vintage and Mana Drain is banned in Brawl but neither is banned in Commander.",
+    "The refreshed current-cycle Scryfall cache independently supplies per-card Commander legality, current Oracle records, and color identities; the Wizards list is the format-level banned-list reconciliation."
+  ],
+  "result_note": "Official legality attestation is bound to the exact Cult of Skaro approval-candidate SHA. Any decklist change invalidates this PASS until rechecked."
+}
