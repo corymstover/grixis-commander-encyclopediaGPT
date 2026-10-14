@@ -81,6 +81,16 @@
       "approved_list_sha256": "553838da88fe00974e74664633be5051c4f1a0879baa71de81ca9f880e5a6d28",
       "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit",
       "approval_basis": "Explicit user approval of Reckless Fireweaver to Robe of the Archmagi; Lutri companion plus Trade Secrets and Yawgmoth's Bargain preserved as documented project exceptions; fresh retrospective gate completed 2026-10-14."
+    },
+    "Cormela__Glamour_Thief": {
+      "approval_status": "APPROVED",
+      "lock_status": "LOCKED",
+      "final_gate_passed": true,
+      "user_approval_date": "2026-10-14",
+      "current_stage": "LOCKED",
+      "approved_list_sha256": "80f4bdef2b8b140aeae23775cfdf87fda81e7215038b8db9b1746c806f366e0b",
+      "quality_gate_version": "Complete Approval Gate v1 — fresh Oracle, legality, rules, and structural verification",
+      "approval_basis": "Explicit user approval after the SHA-bound complete gate returned APPROVAL_READY: exactly 100 cards, 100 distinct names, Grixis color identity, fresh per-card Oracle verification, current official Commander legality, independent rules verification, zero project exceptions, and zero gate errors."
     }
   }
 }
