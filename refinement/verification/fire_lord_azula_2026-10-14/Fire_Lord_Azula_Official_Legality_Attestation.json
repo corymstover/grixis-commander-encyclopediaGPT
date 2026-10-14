@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "deck_sha256": "b6ef396641f2b5cfac0eb81fb494f21f3745e2a3fd47fa75d2eaadbdc34ddee5",
+  "checked_at_utc": "2026-10-14T00:00:00Z",
+  "sources": [
+    "Wizards of the Coast Banned & Restricted list — Commander section, checked 2026-10-14",
+    "Wizards of the Coast Banned and Restricted Announcement — 2026-10-12",
+    "Wizards of the Coast Avatar: The Last Airbender release notes",
+    "Wizards of the Coast Reality Fracture release notes",
+    "current project Oracle/Scryfall legality cache; exact candidate must be independently revalidated by the complete approval gate"
+  ],
+  "unexpected_banned_cards": [],
+  "project_exceptions": [],
+  "notes": "The exact SHA-bound Fire Lord Azula approval candidate requires no project-specific legality exception. Named-ban screening found no current Commander-banned card in the candidate. The candidate intentionally excludes Dockside Extortionist, Jeweled Lotus, Mana Crypt and other current Commander-banned cards. The current Wizards Commander banned list was checked on 2026-10-14. Final per-card official-legality and B/R/U color-identity status is fail-closed and must be independently confirmed against the refreshed current-cycle Oracle cache by the complete approval gate before APPROVAL_READY."
+}
