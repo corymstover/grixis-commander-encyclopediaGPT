@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "deck_sha256": "4c221e5be0439338823ef621cd91706da8d405129cf6f5a41de36a83b875ef3b",
+  "checked_at_utc": "2026-10-14T06:45:20+00:00",
+  "rules_checkpoint": "Magic Comprehensive Rules effective 2026-09-25",
+  "sources": [
+    "https://media.wizards.com/2026/downloads/MagicCompRules%2020260925.txt",
+    "https://magic.wizards.com/en/rules",
+    "https://media.wizards.com/2023/downloads/WHO_Release_Notes_d82nmhwn23Ed/EN_WHO_Release_Notes_20231011.pdf",
+    "https://commanderspellbook.com/combo/900-3750/",
+    "refinement/metadata_audit/Current_Cycle_Oracle_Cache.jsonl",
+    "refinement/metadata_audit/Current_Cycle_Oracle_Cache_Summary.json"
+  ],
+  "interactions": [
+    {
+      "name": "Cult of Skaro attack trigger and random mode timing",
+      "status": "PASS",
+      "note": "Cult triggers when it is declared as an attacker. Its random modal choice is made when that triggered ability is put onto the stack, not when it resolves. The selected mode is therefore known before players respond to that instance of the trigger."
+    },
+    {
+      "name": "Cult of Skaro + Strionic Resonator",
+      "status": "PASS",
+      "note": "Strionic Resonator copies the Cult triggered ability already on the stack. A copy of a modal triggered ability copies the mode already chosen for the original; it does not perform a new random selection."
+    },
+    {
+      "name": "Cult of Skaro + Scientist Supreme of A.I.M.",
+      "status": "PASS",
+      "note": "Cult is an artifact source, so during the Cult player's turn Scientist Supreme may pay 2 life to target and copy Cult's triggered ability on the stack. The copied modal ability retains the original trigger's already-selected random mode. Scientist's ability is limited to once each turn by its own Oracle text."
+    },
+    {
+      "name": "Cult of Skaro + Roaming Throne",
+      "status": "PASS",
+      "note": "With Dalek chosen for Roaming Throne, Cult's attack ability triggers an additional time. This creates a separate triggered ability rather than copying the first one. Each Cult trigger therefore makes its own random mode selection as that trigger is put onto the stack."
+    },
+    {
+      "name": "Cult of Skaro + Helm of the Host",
+      "status": "PASS",
+      "note": "When Helm is equipped to Cult, at the beginning of each combat on the controller's turn Helm creates a token copy except the token is not legendary and has haste. If that token is subsequently declared as an attacker, its copied Cult attack ability triggers. Helm triggers again at the beginning of each additional combat on that turn because its trigger is not limited to the first combat."
+    },
+    {
+      "name": "Auton Soldier copy of Cult and myriad tokens",
+      "status": "PASS",
+      "note": "Auton Soldier can enter as a nonlegendary artifact copy of Cult and its own Cult attack ability triggers when that permanent is declared as an attacker. Myriad tokens created tapped and attacking were not declared as attackers, so their copied 'whenever this creature attacks' Cult abilities do not trigger for the combat in which those tokens enter attacking."
+    },
+    {
+      "name": "Full Throttle additional combats",
+      "status": "PASS",
+      "note": "When cast in the controller's main phase, Full Throttle creates two additional combat phases after that main phase. At the beginning of each combat that turn it untaps creatures that attacked earlier in the turn, allowing Cult and other attackers to be declared again in the successive combats if otherwise able."
+    },
+    {
+      "name": "Great Train Heist additional combat mode",
+      "status": "PASS",
+      "note": "If Great Train Heist's first spree mode is selected and the spell resolves during the controller's combat phase, it untaps all creatures that player controls and creates an additional combat phase immediately after that combat phase. Cult can therefore be declared as an attacker again in the additional combat if otherwise able."
+    },
+    {
+      "name": "Aggravated Assault + Sword of Feast and Famine",
+      "status": "PASS",
+      "note": "Commander Spellbook independently verifies the loop. If Sword is attached to a creature that can connect and the controller's lands can produce at least {3}{R}{R}, combat damage causes Sword to untap those lands. During the following postcombat main phase the controller can pay {3}{R}{R} to Aggravated Assault, untapping creatures and creating another combat plus main phase, then repeat for arbitrarily many combat phases. Cult can generate an attack trigger in each combat in which it is declared as an attacker."
+    },
+    {
+      "name": "Arena of Glory haste line",
+      "status": "PASS",
+      "note": "Arena of Glory's exert ability produces {R}{R}; if any of that mana is spent to cast Cult, Cult gains haste until end of turn. This can let a newly cast Cult attack and trigger during that turn."
+    },
+    {
+      "name": "Plaza of Heroes protection line",
+      "status": "PASS",
+      "note": "Cult is legendary, so Plaza can both help cast it and, after Cult is on the battlefield, its final ability can be activated by paying {3}, tapping and exiling Plaza to give Cult hexproof and indestructible until end of turn."
+    }
+  ],
+  "result_note": "Rules attestation is bound to the exact Cult of Skaro approval-candidate SHA. Any decklist change invalidates this PASS until re-attested."
+}
