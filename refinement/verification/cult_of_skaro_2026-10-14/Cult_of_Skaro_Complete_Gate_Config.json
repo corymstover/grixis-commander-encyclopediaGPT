@@ -1,0 +1,14 @@
+{
+  "deck_id": "Cult_of_Skaro",
+  "display_name": "Cult of Skaro",
+  "decklist_path": "refinement/decklists/Cult_of_Skaro_Approval_Candidate_2026-10-14.txt",
+  "expected_deck_sha256": "4c221e5be0439338823ef621cd91706da8d405129cf6f5a41de36a83b875ef3b",
+  "baseline_path": "refinement/decklists/Cult_of_Skaro_Current_Cycle_Baseline_2026-10-14.txt",
+  "expected_baseline_sha256": "cc2f7a54479dbe166ada8253d42cc1ac9ebc7b3fdf229d9572f5631f269f3b6f",
+  "baseline_source_sha256": "cc2f7a54479dbe166ada8253d42cc1ac9ebc7b3fdf229d9572f5631f269f3b6f",
+  "rules_attestation_path": "refinement/verification/cult_of_skaro_2026-10-14/Cult_of_Skaro_Rules_Attestation.json",
+  "official_legality_attestation_path": "refinement/verification/cult_of_skaro_2026-10-14/Cult_of_Skaro_Official_Legality_Attestation.json",
+  "output_dir": "refinement/verification/cult_of_skaro_2026-10-14/gate_output",
+  "output_stem": "Cult_of_Skaro_2026-10-14",
+  "max_cache_age_hours": 72
+}
