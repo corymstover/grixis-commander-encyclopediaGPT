@@ -20,7 +20,7 @@ Make Admiral Brass's five-mana, beginning-of-combat Pirate reanimation with fina
 |---|---|---|
 | Admiral Beckett Brass | Pirate creature / tribal engine | Secondary Pirate theft payoff; high color cost but identity-linked and can exploit wide attacks. |
 | Amphin Mutineer | Pirate creature / tribal engine | Reanimatable Pirate with ETB creature removal; excellent Brass target. |
-| Ancient Tomb | Land / color and tempo | Retain as part of 35-land UBR mana framework; utility/tapped-land opportunity cost reviewed. |
+| Ancient Tomb | Land / color and tempo | Retain as part of 34-land UBR mana framework; utility/tapped-land opportunity cost reviewed. |
 | Angrath's Marauders | Pirate creature / tribal engine | Seven-mana Pirate damage doubler; poor from hand but premium graveyard target. |
 | Animate Dead | Recursion / finality reuse | Retain as complementary graveyard recovery or commander-specific repeat-use tool. |
 | Arcane Signet | Acceleration | Retain to cast five-mana commander and enable early engine setup; color-fixing/tempo role. |
