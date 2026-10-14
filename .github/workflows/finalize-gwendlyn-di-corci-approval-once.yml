@@ -1,0 +1,133 @@
+name: Finalize Gwendlyn Di Corci approval once
+
+on:
+  push:
+    paths:
+      - '.github/workflows/finalize-gwendlyn-di-corci-approval-once.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Rebase before generating approval artifacts
+        shell: bash
+        run: git pull --rebase origin main
+
+      - name: Freeze exact approved list and reconcile authoritative state
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import csv, hashlib, io, json
+
+          root = Path('.')
+          candidate = root / 'refinement/decklists/Gwendlyn_Di_Corci_Approval_Candidate_2026-10-14.txt'
+          approved = root / 'refinement/decklists/Gwendlyn_Di_Corci_Approved_2026-10-14.txt'
+          gate_path = root / 'refinement/verification/gwendlyn_di_corci_2026-10-14/gate_output/Gwendlyn_Di_Corci_2026-10-14_Complete_Gate.json'
+          ledger_path = 'refinement/decisions/Gwendlyn_Di_Corci_Current_Cycle_Decisions_2026-10-14.md'
+          approval_record_path = root / 'refinement/approvals/Gwendlyn_Di_Corci_Approved_2026-10-14.md'
+          state_path = root / 'state/current_deck_overrides.json'
+          tracker_path = root / 'refinement/Deck_Refinement_Tracker_2026-10-12.csv'
+
+          expected_sha = '9a393cb7edf40f9bfb388d37dd657839cad851dc6a021440c7d1b239c1fd20a9'
+          candidate_bytes = candidate.read_bytes()
+          actual_sha = hashlib.sha256(candidate_bytes).hexdigest()
+          assert actual_sha == expected_sha, (actual_sha, expected_sha)
+
+          gate = json.loads(gate_path.read_text(encoding='utf-8'))
+          assert gate['deck_sha256'] == expected_sha
+          assert gate['overall_result'] == 'APPROVAL_READY'
+          assert gate['count'] == 100
+          assert gate['distinct_names'] == 94
+          assert gate['commander_color_identity'] == ['B','R','U']
+          assert gate['rules_gate'] == 'PASS'
+          assert gate['official_legality_gate'] == 'PASS'
+          assert gate['project_exceptions'] == []
+          assert gate['errors'] == []
+
+          approved.parent.mkdir(parents=True, exist_ok=True)
+          approved.write_bytes(candidate_bytes)
+          assert hashlib.sha256(approved.read_bytes()).hexdigest() == expected_sha
+
+          approval_record_path.parent.mkdir(parents=True, exist_ok=True)
+          approval_record_path.write_text(f'''# Gwendlyn Di Corci — Approved and Locked\n\nCycle: `global-restart-2026-10-13`  \nApproval date: 2026-10-14  \nStatus: **APPROVED / LOCKED**\n\n## Canonical approved list\n\n- Candidate SHA-256: `{expected_sha}`\n- Approved artifact: `refinement/decklists/Gwendlyn_Di_Corci_Approved_2026-10-14.txt`\n- Approval candidate: `refinement/decklists/Gwendlyn_Di_Corci_Approval_Candidate_2026-10-14.txt`\n- Complete gate: `refinement/verification/gwendlyn_di_corci_2026-10-14/gate_output/Gwendlyn_Di_Corci_2026-10-14_Complete_Gate.json`\n- Whole-list decision ledger: `{ledger_path}`\n\nThe approved artifact is byte-identical to the exact SHA-bound candidate approved by the user. No post-approval card edits are permitted unless the user explicitly reopens this deck.\n\n## Verification state at approval\n\n- Card count: **100**\n- Distinct names: **94**\n- Commander color identity: **B/R/U**\n- Rules gate: **PASS**\n- Official Commander legality: **PASS**\n- Project exceptions: **none**\n- Gate errors: **0**\n- Complete gate result: **APPROVAL_READY** before explicit user approval\n- Mandatory 99-slot whole-list audit: **complete**\n- Candidate exhaustion / second serious pass: **ZERO NEW MATERIAL IMPROVEMENTS**\n- Natural ceiling: **Bracket 4 — Optimized**\n- Archidekt tags: **Random Discard / Activated Ability / Wheels**\n\n## Approved changes\n\n1. Bone Miser → Mind Twist\n2. Fell Specter → Illusionist's Bracers\n3. Hypnotic Specter → Pemmin's Aura\n4. Sangromancer → Tinybones, Pocket Nuisance\n5. Feed the Swarm → Withering Torment\n6. Island → Minamo, School at Water's Edge\n''', encoding='utf-8')
+
+          state = json.loads(state_path.read_text(encoding='utf-8'))
+          assert state.get('cycle_id') == 'global-restart-2026-10-13'
+          state['decks']['Gwendlyn_Di_Corci'] = {
+              'approval_status': 'APPROVED',
+              'lock_status': 'LOCKED',
+              'final_gate_passed': True,
+              'user_approval_date': '2026-10-14',
+              'current_stage': 'LOCKED',
+              'approved_list_sha256': expected_sha,
+              'quality_gate_version': 'Deck Quality Gates v3 + mandatory whole-list audit + Complete Approval Gate v1',
+              'approval_basis': 'Explicit user approval of the exact SHA-bound Gwendlyn Di Corci approval candidate after mandatory 99-slot whole-list audit, commander-first activation-engine refinement, candidate exhaustion, adversarial second-pass review, zero-new-material-improvement closure, fresh Oracle/color-identity verification, current official Commander legality verification, independent rules verification, and complete fail-closed gate APPROVAL_READY with zero errors.',
+              'complete_gate_artifact': 'refinement/verification/gwendlyn_di_corci_2026-10-14/gate_output/Gwendlyn_Di_Corci_2026-10-14_Complete_Gate.json',
+              'whole_list_audit_artifact': ledger_path,
+              'approval_record_artifact': 'refinement/approvals/Gwendlyn_Di_Corci_Approved_2026-10-14.md',
+              'approved_list_artifact': 'refinement/decklists/Gwendlyn_Di_Corci_Approved_2026-10-14.txt'
+          }
+          state_path.write_text(json.dumps(state, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
+
+          raw = tracker_path.read_text(encoding='utf-8')
+          lines = raw.splitlines()
+          header = next(csv.reader([lines[0]]))
+          idx = {name: i for i, name in enumerate(header)}
+          found = False
+          for n in range(1, len(lines)):
+              row = next(csv.reader([lines[n]]))
+              if row[idx['deck_id']] != 'Gwendlyn_Di_Corci':
+                  continue
+              found = True
+              updates = {
+                  'baseline_status': 'CURRENT APPROVED FINAL LIST — current-cycle canonical list locked; frozen source exports preserved unchanged.',
+                  'fresh_oracle_identity_check': 'PASS — fresh current-cycle Oracle cache generated 2026-10-14; exact SHA-bound Gwendlyn candidate verified at 100 cards / 94 distinct names within B/R/U color identity with zero unresolved metadata.',
+                  'fresh_official_legality_check': 'PASS — exact SHA-bound Gwendlyn candidate verified against current official Commander legality on 2026-10-14; no project exception required.',
+                  'official_named_ban_list_checkpoint': 'PASS — current official Commander legality checkpoint completed 2026-10-14; no unexpected banned cards and no project exception required.',
+                  'commander_blueprint_complete': 'PASS — current-cycle commander-first random-discard / activated-ability / wheels blueprint and mandatory 99-slot whole-list audit completed 2026-10-14.',
+                  'high_impact_candidate_triage_complete': 'PASS — project candidate rankings, current commander evidence, activation-engine alternatives, 2026 challengers, mana-base challengers, payoff alternatives, and generic combo temptations exhausted; second serious pass produced ZERO NEW MATERIAL IMPROVEMENTS.',
+                  'swap_decision_ledger_complete': 'PASS — exact six-swap SHA-bound Gwendlyn approval candidate explicitly approved by user on 2026-10-14.',
+                  'combo_rules_interactions_verified': "PASS — SHA-bound rules attestation covers Gwendlyn timing/summoning sickness, Illusionist's Bracers activation copying, Pemmin's Aura/Minamo untaps and shroud tension, Tinybones event granularity, Chains of Mephistopheles, Notion Thief, and Tergrid discard-permanent scope.",
+                  'consistency_test_complete': 'PASS — exact approved artifact verified at 100 cards / 94 distinct names / 35 lands; only basic Island, Mountain, and Swamp repeat; candidate and approved artifact byte-match SHA.',
+                  'multiplayer_test_complete_or_reason_not_applicable': 'NOT APPLICABLE AS A FINALIZATION GATE — commander-first structural, rules, legality, and strategic verification passed; no gameplay win-rate claim is made.',
+                  'final_gate_passed': 'YES',
+                  'final_list_hash': expected_sha,
+                  'user_approval_date': '2026-10-14',
+                  'refinement_status': 'APPROVED / LOCKED — current global-restart-2026-10-13 cycle',
+                  'notes': 'CURRENT-CYCLE RECONCILIATION 2026-10-14: exact SHA-bound Gwendlyn Di Corci approval candidate explicitly approved and locked. Canonical hash: ' + expected_sha + '. Final candidate: 100 cards, 94 distinct names, 35 lands; only basic Island, Mountain, and Swamp repeat; B/R/U identity PASS; rules PASS; current official Commander legality PASS; no project exceptions; complete gate errors 0. Natural ceiling: Bracket 4 — Optimized. Commander-first Random Discard / Activated Ability / Wheels identity preserved. Approved swaps: Bone Miser -> Mind Twist; Fell Specter -> Illusionist\'s Bracers; Hypnotic Specter -> Pemmin\'s Aura; Sangromancer -> Tinybones, Pocket Nuisance; Feed the Swarm -> Withering Torment; Island -> Minamo, School at Water\'s Edge. Mandatory 99-slot whole-list audit, candidate exhaustion, adversarial second-pass review, zero-new-material-improvement closure, fresh Oracle/rules/legality checks, and complete fail-closed gate all PASS. Frozen source exports remain historical baseline evidence. Next unlocked deck in tracker order: Inalla, Archmage Ritualist.'
+              }
+              for key, value in updates.items():
+                  row[idx[key]] = value
+              s = io.StringIO()
+              csv.writer(s, lineterminator='').writerow(row)
+              lines[n] = s.getvalue()
+              break
+          assert found, 'Gwendlyn tracker row not found'
+          tracker_path.write_text('\n'.join(lines) + ('\n' if raw.endswith('\n') else ''), encoding='utf-8')
+          PY
+
+      - name: Commit approval state
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add \
+            refinement/decklists/Gwendlyn_Di_Corci_Approved_2026-10-14.txt \
+            refinement/approvals/Gwendlyn_Di_Corci_Approved_2026-10-14.md \
+            state/current_deck_overrides.json \
+            refinement/Deck_Refinement_Tracker_2026-10-12.csv
+          git commit -m "Approve and lock Gwendlyn Di Corci [skip ci]"
+          git push origin HEAD:main
