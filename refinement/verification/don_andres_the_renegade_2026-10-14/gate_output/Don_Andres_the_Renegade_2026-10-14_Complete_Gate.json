@@ -1,0 +1,23 @@
+{
+  "generated_at_utc": "2026-10-14T08:41:23.965647+00:00",
+  "deck_id": "Don_Andres__the_Renegade",
+  "decklist_path": "refinement/decklists/Don_Andres_the_Renegade_Approval_Candidate_2026-10-14.txt",
+  "deck_sha256": "a6022fddd295d7c671690fbce5e25dc6fed47ca7fa77bf1d8a86ebadb2d927bb",
+  "baseline_path": "refinement/decklists/Don_Andres_the_Renegade_Current_Cycle_Baseline_2026-10-14.txt",
+  "baseline_source_sha256": "5013e0b0b035880e74f5395e55115a58eb3f60ad922cd4bd29670d5f45d0ed2e",
+  "count": 100,
+  "distinct_names": 99,
+  "commander_color_identity": [
+    "B",
+    "R",
+    "U"
+  ],
+  "cache_generated_at_utc": "2026-10-14T08:35:44.031819+00:00",
+  "cache_sha256": "248d5771d25c06917075ad3757ec702cd9ce59f6155b8561c4c5e3a094541712",
+  "project_exceptions": [],
+  "rules_gate": "PASS",
+  "official_legality_gate": "PASS",
+  "errors": [],
+  "overall_result": "APPROVAL_READY",
+  "approval_state": "NOT_APPROVED — explicit user approval still required"
+}
