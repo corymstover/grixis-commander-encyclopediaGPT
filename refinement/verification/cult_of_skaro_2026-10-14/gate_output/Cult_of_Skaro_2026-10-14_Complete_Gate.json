@@ -1,0 +1,23 @@
+{
+  "generated_at_utc": "2026-10-14T07:12:54.084516+00:00",
+  "deck_id": "Cult_of_Skaro",
+  "decklist_path": "refinement/decklists/Cult_of_Skaro_Approval_Candidate_2026-10-14.txt",
+  "deck_sha256": "4c221e5be0439338823ef621cd91706da8d405129cf6f5a41de36a83b875ef3b",
+  "baseline_path": "refinement/decklists/Cult_of_Skaro_Current_Cycle_Baseline_2026-10-14.txt",
+  "baseline_source_sha256": "cc2f7a54479dbe166ada8253d42cc1ac9ebc7b3fdf229d9572f5631f269f3b6f",
+  "count": 100,
+  "distinct_names": 94,
+  "commander_color_identity": [
+    "B",
+    "R",
+    "U"
+  ],
+  "cache_generated_at_utc": "2026-10-14T06:54:34.531855+00:00",
+  "cache_sha256": "176f5984db4e2128b37d7874b61bc04978936d37951686b11faf5bb7a9eb562e",
+  "project_exceptions": [],
+  "rules_gate": "PASS",
+  "official_legality_gate": "PASS",
+  "errors": [],
+  "overall_result": "APPROVAL_READY",
+  "approval_state": "NOT_APPROVED — explicit user approval still required"
+}
