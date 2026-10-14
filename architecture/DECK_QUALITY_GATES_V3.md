@@ -88,3 +88,17 @@ The evidence packet must explicitly state `whole_list_audit_passed: true`, the n
 ### Campaign correction rule
 
 If a methodology improvement reveals that a current-cycle approval was produced without this whole-list audit, that is a documented **correctness/process trigger** under the reopening policy. Reopen that deck, audit it under this gate, and relock only after the gate passes and the user approves the resulting exact list. This does not erase historical evidence; it prevents historical conclusions from substituting for the stronger audit.
+
+
+## User-facing reporting cadence
+
+For ordinary deck refinement, perform intermediate discovery passes, card-by-card audits, rules checks, candidate comparisons, mana analysis, red-team reviews, and closure passes internally without stopping to give the user a progress report after every pass.
+
+Continue autonomously until the deck has either:
+
+1. completed every required quality gate and is ready for the user's final review/approval; or
+2. reached a genuine blocker that cannot be resolved from the project's sources, current authoritative research, or established project rules and therefore requires user input.
+
+Do not interrupt merely because another audit pass completed. Preserve intermediate evidence in project artifacts/repository as appropriate. When a deck reaches approval-ready status, present the final proposed changes, verification result, exact 100-card list (when useful/requested), power/bracket assessment, and any material caveats in one consolidated report.
+
+This reporting cadence is permanent project policy for all decks and future refinement cycles unless the user explicitly changes it.
