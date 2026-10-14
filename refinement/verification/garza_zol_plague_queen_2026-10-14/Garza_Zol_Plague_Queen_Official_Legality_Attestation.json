@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "deck_sha256": "32c0e8049a9c8a5d238048b4f774f0457908d724f23d4597b7da93a6cba0c16f",
+  "checked_at_utc": "2026-10-14T19:58:00Z",
+  "sources": [
+    "Wizards of the Coast Banned & Restricted list — Commander section, checked 2026-10-14",
+    "Wizards of the Coast Banned and Restricted Announcement — 2026-10-12",
+    "current project Oracle/Scryfall legality cache; exact candidate must be independently revalidated by the complete approval gate"
+  ],
+  "unexpected_banned_cards": [],
+  "project_exceptions": [],
+  "notes": "The exact SHA-bound Garza Zol, Plague Queen approval candidate requires no project-specific legality exception. Named-ban screening against the current Wizards Commander banned list found no banned card in the candidate. Mana Vault, Grim Monolith and Ancient Tomb are currently Commander-legal; Mana Crypt, Jeweled Lotus, Dockside Extortionist and other current Commander-banned cards are not present. Final per-card official-legality and B/R/U color-identity status is fail-closed and must be independently confirmed against the refreshed current-cycle Oracle cache by the complete approval gate before APPROVAL_READY."
+}
