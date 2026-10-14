@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "deck_sha256": "aa6d2d343c6c1f167de8d16b23951940f7d23810c6e7705a6fd0d539a7459adc",
+  "checked_at_utc": "2026-10-14T07:25:00+00:00",
+  "sources": [
+    "https://magic.wizards.com/en/banned-restricted-list",
+    "https://magic.wizards.com/en/news/announcements/banned-and-restricted-october-12-2026",
+    "https://magic.wizards.com/en/news/feature/edge-of-eternities-release-notes",
+    "refinement/metadata_audit/Current_Cycle_Oracle_Cache.jsonl",
+    "refinement/metadata_audit/Current_Cycle_Oracle_Cache_Summary.json"
+  ],
+  "official_format": "Commander",
+  "unexpected_banned_cards": [],
+  "project_exceptions_used": [],
+  "notes": [
+    "The current Wizards Commander banned list was re-read on 2026-10-14 after the October 12, 2026 banned-and-restricted announcement.",
+    "The October 12, 2026 announcement made no Commander-format banned-list changes.",
+    "No card in the exact Davros, Dalek Creator approval candidate appears on the current Commander banned list.",
+    "No Davros-specific project legality exception is required or used.",
+    "Entropic Battlecruiser is an Edge of Eternities card and is permitted in Commander; its black color identity is within Davros's Grixis identity.",
+    "Cards with bans or restrictions in formats other than Commander are evaluated only by their Commander status. For example, Ancient Tomb, Demonic Tutor, Fierce Guardianship, Mana Drain, and other cards may have restrictions in Brawl or other formats without being banned in Commander.",
+    "The refreshed current-cycle Scryfall cache supplies per-card Commander legality, current Oracle records, and color identities; the Wizards list is the format-level banned-list reconciliation."
+  ],
+  "result_note": "Official legality attestation is bound to the exact Davros, Dalek Creator approval-candidate SHA. Any decklist change invalidates this PASS until rechecked."
+}
