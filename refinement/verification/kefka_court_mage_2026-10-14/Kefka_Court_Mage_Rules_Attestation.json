@@ -1,0 +1,90 @@
+{
+  "status": "PASS",
+  "deck_sha256": "2bb99011d85cc48841cb76edcddb8ba75696153b5e81bb36283880ff691f5acc",
+  "checked_at_utc": "2026-10-14T22:14:52Z",
+  "sources": [
+    "Magic Comprehensive Rules — triggered abilities, state-based actions, copying objects, transforming double-faced permanents, commander zone changes, haste, dies triggers, and casting from graveyard/exile",
+    "Current Oracle text and rulings for Kefka, Court Mage // Kefka, Ruler of Ruin and every interaction named below",
+    "Wizards Final Fantasy release notes for Gogo, Mysterious Mime copy/name/legend-rule handling",
+    "Current Oracle/rulings for Saw in Half, Molten Duplication, Arena of Glory, Hexing Squelcher, Harmonic Prodigy, Tinybones, Bauble Burglar, and Psychosis Crawler",
+    "Current 2026 Kefka cEDH tournament/aggregate evidence used to red-team clone, haste, protection, and compact-win packages",
+    "Current project Oracle/Scryfall cache; exact candidate is independently revalidated by the complete approval gate"
+  ],
+  "interactions": [
+    {
+      "name": "Kefka front-face enters/attacks trigger",
+      "status": "PASS",
+      "conclusion": "Whenever Kefka enters or attacks, each player discards one card during the same resolving trigger. After those discards, Kefka's controller draws one card for each card type represented among the cards discarded by that specific trigger. Separate Kefka triggers resolve independently and count only their own discarded cards."
+    },
+    {
+      "name": "Harmonic Prodigy doubles both Kefka faces",
+      "status": "PASS",
+      "conclusion": "Kefka, Court Mage is a Human Wizard and Kefka, Ruler of Ruin is an Avatar Wizard. Harmonic Prodigy therefore causes triggered abilities of Kefka, as another Wizard controlled by the Prodigy's controller, to trigger an additional time. On the front this doubles each enters/attacks trigger; on the back it doubles each Ruler-of-Ruin life-loss draw trigger."
+    },
+    {
+      "name": "Anger discarded to Kefka grants same-turn haste",
+      "status": "PASS",
+      "conclusion": "Kefka's controller may choose Anger as their discard for Kefka's enters trigger. Once that trigger finishes resolving, Anger is in the graveyard. If the controller controls a land with the Mountain subtype, Anger's static ability gives Kefka haste immediately, allowing Kefka to attack in that turn's combat. The candidate contains Mountain-typed dual/shock lands such as Badlands, Blood Crypt, Steam Vents, and Volcanic Island."
+    },
+    {
+      "name": "Arena of Glory grants Kefka haste",
+      "status": "PASS",
+      "conclusion": "Arena of Glory's exert ability adds RR and states that if any of that mana is spent on a creature spell, that spell gains haste until end of turn. Spending at least one of that mana on the Kefka creature spell therefore causes the resulting Kefka permanent to have haste that turn, subject to the spell resolving normally."
+    },
+    {
+      "name": "Gogo copying Kefka at beginning of combat",
+      "status": "PASS",
+      "conclusion": "Gogo may become a copy of Kefka until end of turn except its name remains Gogo, Mysterious Mime. Because the name remains Gogo, copying legendary Kefka does not make Gogo share Kefka's name for the legend rule. Gogo does not enter the battlefield when it becomes a copy, so no Kefka enters trigger is created. The copied Kefka ability's self-reference functions for Gogo itself; Gogo and the original Kefka gain +2/+0 and haste and must attack if able, so each produces its own Kefka-style attack trigger."
+    },
+    {
+      "name": "Phantasmal Image and Phyrexian Metamorph copying Kefka",
+      "status": "PASS",
+      "conclusion": "If Phantasmal Image or Phyrexian Metamorph enters as a copy of Kefka, it enters with Kefka's copiable characteristics (plus each clone's stated exceptions), so its Kefka enters ability triggers. The copy and original are legendary permanents with the same Kefka name, so the legend rule subsequently requires one to be kept, but the enters trigger already triggered and remains on the stack."
+    },
+    {
+      "name": "Saw in Half on commander Kefka",
+      "status": "PASS",
+      "conclusion": "If Saw in Half destroys Kefka and Kefka dies, Saw in Half creates two token copies. A commander put into the graveyard by this destruction still died; the optional move from the graveyard to the command zone is handled by a state-based action after the resolving spell finishes. Both legendary Kefka tokens enter and both Kefka enters abilities trigger. After resolution, state-based actions apply the legend rule so only one same-named Kefka token remains, but both already-created triggers remain."
+    },
+    {
+      "name": "Molten Duplication on Kefka",
+      "status": "PASS",
+      "conclusion": "Molten Duplication creates a token copy of Kefka that is also an artifact, gains haste, and has a delayed end-step sacrifice. The token's Kefka enters ability triggers. The legend rule then requires one Kefka to remain. If the hasty token is retained, it may attack that turn and produce Kefka's attack trigger before its delayed sacrifice at the beginning of the next end step."
+    },
+    {
+      "name": "Essence Flux and Displacer Kitten blink Kefka",
+      "status": "PASS",
+      "conclusion": "A blink effect that exiles Kefka and returns it during the resolution of one spell or ability returns Kefka before state-based actions are checked. The commander therefore is not automatically stranded in the command zone between those instructions. A returned front-face Kefka is a new object and produces a new enters trigger. If its owner instead applies an applicable commander move at a later state-based-action check, a return instruction that has already completed is unaffected."
+    },
+    {
+      "name": "Tinybones and Waste Not with Kefka discard",
+      "status": "PASS",
+      "conclusion": "Kefka making opponents discard causes Tinybones, Bauble Burglar and Waste Not to trigger as applicable. Those triggers wait until the currently resolving Kefka trigger finishes before being put on the stack. Tinybones exiling discarded opposing cards afterward does not prevent Kefka from determining the card types among the cards discarded by its resolving trigger."
+    },
+    {
+      "name": "Psychosis Crawler plus transformed Kefka",
+      "status": "PASS",
+      "conclusion": "Psychosis Crawler triggers once for each card its controller draws and each such trigger makes each opponent lose 1 life. During that controller's turn, each opponent life-loss event triggers Kefka, Ruler of Ruin, which draws cards equal to the life lost by that opponent. Those draws create additional Psychosis Crawler triggers, forming a compulsory feedback loop while both permanents remain and cards can be drawn. With multiple opponents the number of pending draw/life-loss triggers can grow rapidly. The interaction is not described as literally infinite: finite libraries, opponent life totals, replacement effects, removal, and the number of remaining opponents can terminate or alter it. With sufficient library cards relative to opposing life totals it functions as a deterministic table-kill engine."
+    },
+    {
+      "name": "Ruler of Ruin transformation timing",
+      "status": "PASS",
+      "conclusion": "Kefka's {8} ability may be activated only as a sorcery. On resolution each opponent sacrifices a permanent of their choice, then Kefka transforms. The candidate intentionally excludes Cursed Totem because that card would prevent activating Kefka's nonmana activated transform ability while both are on the battlefield."
+    },
+    {
+      "name": "Hexing Squelcher protection",
+      "status": "PASS",
+      "conclusion": "Hexing Squelcher itself cannot be countered, spells its controller controls cannot be countered, and other creatures its controller controls have ward—pay 2 life. This protects Kefka from targeted opposing spells/abilities through ward while Squelcher remains and makes Kefka and proactive combo spells uncounterable when they are spells on the stack; it does not stop non-counter interaction or remove already-existing targets."
+    },
+    {
+      "name": "Thassa's Oracle plus Demonic Consultation/Tainted Pact",
+      "status": "PASS",
+      "conclusion": "The candidate retains standard Oracle library-exile finishes. The exact candidate has 100 distinct card names, so Tainted Pact is not forced to stop by revealing a second card with the same name. Normal priority, interaction, and resolution requirements still apply."
+    },
+    {
+      "name": "Underworld Breach plus Lion's Eye Diamond plus Brain Freeze",
+      "status": "PASS",
+      "conclusion": "With sufficient graveyard material and mana, Underworld Breach permits repeated escape of Lion's Eye Diamond and Brain Freeze; LED supplies mana while Brain Freeze's storm/mill replenishes graveyard resources. The line can mill the controller's library and transition into an Oracle finish. It remains a compact secondary cEDH route rather than the commander-identity centerpiece."
+    }
+  ]
+}
