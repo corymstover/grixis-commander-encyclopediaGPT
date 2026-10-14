@@ -150,6 +150,19 @@
       "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit",
       "approval_basis": "Explicit user approval of the exact SHA-bound Davros approval candidate after mandatory 99-slot whole-list audit, candidate exhaustion, red-team review, zero-new-material-improvement closure, fresh Oracle/rules verification, official Commander legality verification, and complete structural gate PASS.",
       "complete_gate_artifact": "refinement/verification/davros_dalek_creator_2026-10-14/gate_output/Davros_Dalek_Creator_2026-10-14_Complete_Gate.json"
+    },
+    "Doctor_Doom__King_of_Latveria": {
+      "approval_status": "APPROVED",
+      "lock_status": "LOCKED",
+      "final_gate_passed": true,
+      "user_approval_date": "2026-10-14",
+      "current_stage": "LOCKED",
+      "approved_list_sha256": "c97bd448aa4b18d2f7ed15e5d67006ab320ed67ad3ed267e44150de472e1dc58",
+      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit",
+      "approval_basis": "Explicit user approval of the exact SHA-bound Doctor Doom approval candidate after mandatory 99-slot whole-list audit, candidate exhaustion, red-team review, zero-new-material-improvement closure, fresh Oracle/rules verification, current official Commander legality verification, and complete structural gate PASS.",
+      "complete_gate_artifact": "refinement/verification/doctor_doom_king_of_latveria_2026-10-14/gate_output/Doctor_Doom_King_of_Latveria_2026-10-14_Complete_Gate.json",
+      "whole_list_audit_artifact": "refinement/decisions/Doctor_Doom_King_of_Latveria_Current_Cycle_Decisions_2026-10-14.md",
+      "approved_list_artifact": "refinement/decklists/Doctor_Doom_King_of_Latveria_Approved_2026-10-14.txt"
     }
   }
 }
