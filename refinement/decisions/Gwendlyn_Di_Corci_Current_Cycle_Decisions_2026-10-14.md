@@ -3,11 +3,11 @@
 Cycle: `global-restart-2026-10-13`  
 Date: 2026-10-14  
 Baseline artifact: `refinement/decklists/Gwendlyn_Di_Corci_Current_Cycle_Baseline_2026-10-14.txt`  
-Baseline SHA-256: `50382d9660973d81cbca84d878ece8f09fdbd45e1154cc676b3e71b156d27c20`  
+Baseline SHA-256: `265797170468ec011582a6e0a341eee5a3ec084c921303b4f4611b7b1e112bf3`  
 Authoritative source: `GrixisFINAL60--2026.zip / Gwendlyn_Di_Corci.csv`  
 Source CSV SHA-256: `b4200e0d54197135870a5a4f13ef311c5393860ec3e8d2dc9074e565bfd08495`  
 Approval-candidate artifact: `refinement/decklists/Gwendlyn_Di_Corci_Approval_Candidate_2026-10-14.txt`  
-Approval-candidate SHA-256: `9f1e7753978f80aa2c37e5d1f073eda9f302cb02325d39828d24a770b126fd88`
+Approval-candidate SHA-256: `9a393cb7edf40f9bfb388d37dd657839cad851dc6a021440c7d1b239c1fd20a9`
 
 ## Source reconciliation
 
