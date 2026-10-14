@@ -218,3 +218,17 @@ These tools inform the decision. None substitutes for source verification, rules
 10. Explicit user approval follows a completed PASS gate; only then write the approved decklist, lock record, and advance. Never retroactively remove historical approvals without explicit instruction; if an unexpected issue is found in an already locked deck, flag it for the user rather than silently editing.
 
 **Automation enforcement:** A verifier should stop on nonzero exit status unless `all_cards_resolved && oracle_current && commander_legality_checked && color_identity_pass && deck_count_100 && singleton_pass && rules_gate_pass && exception_registry_reconciled && evidence_written`. Human review is still required for combo correctness and strategic identity. A generated PASS without source records is invalid.
+
+## 12. Don't be conservative — maximize meaningful commander-first upgrades (effective 2026-10-14)
+
+**Standing optimization rule:** Do not default to keeping a card merely because it is already in the baseline, familiar, expensive, popular, or previously rated highly. Seek the **strongest realistic implementation of this commander's own game plan**, without budget constraints or artificial reluctance to make major changes.
+
+- Proactively challenge every noncommander slot and investigate ambitious, high-upside packages, including tutors, efficient interaction, fast mana, compact combos, recursion, and unusual commander-specific technology when they materially improve the strategy.
+- Do not impose a fixed swap quota, cap the number of changes, or assume the smallest change is best. If 15, 30, or more substitutions are supported by evidence, propose them. If zero swaps are best after a rigorous challenge, retain the list and explain why.
+- Compare each candidate to the **actual weakest competing slot** and evaluate synergy, opportunity cost, speed, resilience, consistency, interaction, and real win conditions. Consider packages and combinations rather than only isolated card scores.
+- Aggressive optimization does **not** mean forcing cEDH, generic Grixis goodstuff, unrelated combos, or unproven high-variance lines into every deck. Commander identity and its natural power ceiling remain controlling priorities.
+- Challenge weak inherited cards and misleading historical 'final' labels; preserve locked lists unless the user explicitly authorizes reopening them.
+- A candidate's rejection must rest on a substantive reason, not 'too strong,' 'too many changes,' 'already optimized,' or a generalized preference for conservatism.
+- The fresh per-card Oracle/legality gate in Section 11 and explicit user approval are nonnegotiable. Ambition in strategy does not lower verification standards.
+
+**Approval-gate question:** Have we genuinely pursued the strongest credible commander-specific configuration, rather than merely avoiding changes? Record the strongest rejected alternatives and their actual opportunity costs.
