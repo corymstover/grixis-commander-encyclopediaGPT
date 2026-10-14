@@ -2,7 +2,7 @@ from __future__ import annotations
 import csv, json
 from pathlib import Path
 
-VALID_STAGES={"UNREFINED","INTAKE","BLUEPRINT","CANDIDATE_TRIAGE","RULES_REVIEW","VERIFY","TEST","FINALIZE","LOCKED","BLOCKED"}
+VALID_STAGES={"UNREFINED","INTAKE","BLUEPRINT","CANDIDATE_TRIAGE","RULES_REVIEW","VERIFY","TEST","RED_TEAM","EVIDENCE_REVIEW","FINALIZE","LOCKED","BLOCKED"}
 
 def load_cycle(path=Path("state/current_cycle.json")):
     data=json.loads(Path(path).read_text(encoding="utf-8"))
