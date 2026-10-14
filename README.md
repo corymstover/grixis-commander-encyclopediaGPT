@@ -149,6 +149,6 @@ The current-cycle restart has completed **#1 Abaddon, #2 Admiral Beckett Brass, 
 
 ## Full campaign restart and current checkpoint — 2026-10-13
 
-All prior-cycle approvals were reset to historical status. Fresh full restart reviews are complete for **Decks #1–#10**, through **#10 — Crosis, the Purger**. The active tracker has been restored from its source-of-truth inventory and the current-cycle status is applied in authoritative tracker order. Frozen October 12 baselines remain immutable.
+The fresh restart has seven previously completed decks plus **#8 Bjorna // Cecily + Lutri** recorded as locked. **#9 Cormela, Glamour Thief** has completed technical review, but its proposed Galvanic Iteration / Grapeshot swap is **awaiting explicit user approval**. **#10 Crosis, the Purger** is held pending the #9 decision so authoritative deck order is preserved. Frozen October 12 baselines and prior-cycle artifacts remain immutable.
 
-**Current active count: 10/62 approved and locked; 52 remain unapproved/unlocked. Next deck: #11 — Cormela's successor per the restored tracker (verify the row before continuing).** Historical approval notes elsewhere in the repository do not override this active checkpoint.
+**Current approval checkpoint: 8/62 approved and locked; 54 remain unapproved/unlocked. Current deck requiring decision: #9 Cormela, Glamour Thief.** The Cormela proposal hash is documented in its review artifacts but is not recorded as a final locked-list hash.
