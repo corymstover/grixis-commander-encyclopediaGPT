@@ -31,6 +31,16 @@
       "approved_list_sha256": "e66e3a59719401f41830e9938997a87a45a1b0dcaa0663b0ec7b44e10077dd39",
       "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit",
       "approval_basis": "Explicit user approval of the whole-list approval candidate after structural, Oracle/rules/legality, strategic, candidate-exhaustion, and commander-identity review."
+    },
+    "Anhelo_the_Painter": {
+      "approval_status": "APPROVED",
+      "lock_status": "LOCKED",
+      "final_gate_passed": true,
+      "user_approval_date": "2026-10-13",
+      "current_stage": "LOCKED",
+      "approved_list_sha256": "d19d94b8a96fb27a760c7b7d9181221f74bd61642d1d1dd7644fc1c59c09839e",
+      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit",
+      "approval_basis": "Explicit user approval after full 99-slot audit, rules/combo verification, candidate exhaustion, red-team review, and zero-new-material-improvement closure."
     }
   }
 }
