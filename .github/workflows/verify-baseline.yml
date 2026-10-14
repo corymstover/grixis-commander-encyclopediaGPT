@@ -10,7 +10,9 @@ on:
       - "requirements-scryfall.txt"
       - "source-package/GrixisFINAL_62Decks_CSV_TXT_2026-10-12.tar.gz"
       - "source-package/Grixis_Independent_Deck_Hash_Manifest_2026-10-12.csv"
-      - "refinement/Deck_Refinement_Tracker_2026-10-12.csv"\n      - "state/**"\n      - "grixis_pipeline/**"
+      - "refinement/Deck_Refinement_Tracker_2026-10-12.csv"
+      - "state/**"
+      - "grixis_pipeline/**"
       - "refinement/metadata_audit/REFRESH_REQUEST.md"
   pull_request:
     branches: ["main", "baseline/**"]
@@ -50,7 +52,9 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_*.py' -v
       - name: Check refresh trigger/path contracts
         run: python scripts/check_workflow_contracts.py
-      - name: Verify refinement tracker schema and approval metadata
-        run: python scripts/check_tracker_integrity.py --historical\n      - name: Verify canonical current-cycle state\n        run: python -m unittest tests.test_current_cycle_state -v
+      - name: Verify historical refinement tracker structure
+        run: python scripts/check_tracker_integrity.py --historical
+      - name: Verify canonical current-cycle state
+        run: python -m unittest tests.test_current_cycle_state -v
       - name: Verify frozen 62-deck source package
         run: python scripts/verify_baseline.py
