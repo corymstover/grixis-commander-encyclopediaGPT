@@ -1,0 +1,80 @@
+{
+  "status": "PASS",
+  "deck_sha256": "1d602b5d9b2a370d3448816f593198212b2b83da74e92ccc3232798641b2588a",
+  "checked_at_utc": "2026-10-14T10:45:00Z",
+  "sources": [
+    "current Oracle text and rulings cross-checked against Scryfall/Wizards release-note evidence on 2026-10-14",
+    "Commander Spellbook Worldgorger Dragon + Animate Dead / Dance of the Dead loop records",
+    "Commander Spellbook Underworld Breach + Lion's Eye Diamond + Brain Freeze combo record",
+    "Magic Comprehensive Rules — triggered abilities, state-based actions, replacement effects, commander zone-change option, linked/unlinked permissions, and loops",
+    "Magic: The Gathering official Unfinity and Spider-Man release notes for Saw in Half",
+    "Magic: The Gathering Modern Horizons 3 release notes for Vexing Bauble"
+  ],
+  "interactions": [
+    {
+      "name": "Worldgorger reanimation loop",
+      "status": "PASS",
+      "conclusion": "Worldgorger Dragon enchanted from a graveyard by Animate Dead, Dance of the Dead, or Necromancy repeatedly exiles and returns the controller's other permanents while the Aura repeatedly leaves and returns. Lands and mana-producing permanents may be tapped between iterations, allowing arbitrarily large mana when the loop is safely executable."
+    },
+    {
+      "name": "Worldgorger plus Evelyn repeated ETBs",
+      "status": "PASS",
+      "conclusion": "When Evelyn is among the non-Worldgorger permanents exiled and returned each iteration, each return is a new Evelyn battlefield entry and triggers her collection-counter ability. Repeating the loop can therefore exile successive top cards of each player's library with collection counters while also generating mana."
+    },
+    {
+      "name": "Mandatory Worldgorger loop safety condition",
+      "status": "PASS_WITH_PRECONDITION",
+      "conclusion": "The Worldgorger loop must have a legal break path before it is initiated for a deterministic win. If the returning reanimation Aura has no legal creature card to enchant other than Worldgorger Dragon and no player can interrupt the loop, the sequence cannot simply be stopped by choice and can force a draw. The pilot must establish another legal creature card in a graveyard or another valid interruption/break mechanism before committing to the loop."
+    },
+    {
+      "name": "Evelyn collection-counter permission across Evelyn objects",
+      "status": "PASS",
+      "conclusion": "Evelyn's permission checks whether the card in exile with a collection counter was exiled by an ability you controlled; it is not text that links the permission to one specific Evelyn object. A later Evelyn object can therefore authorize playing an otherwise qualifying collection-counter card exiled by an earlier Evelyn ability, subject to the once-each-turn limit and normal timing unless another effect changes timing."
+    },
+    {
+      "name": "Worldgorger Evelyn endpoint with Thassa's Oracle",
+      "status": "PASS_WITH_PRECONDITION",
+      "conclusion": "After a safely breakable Worldgorger loop has exiled the library and generated sufficient mana, the loop can be broken with Evelyn on the battlefield. If Thassa's Oracle is among the qualifying collection-counter cards, Evelyn can authorize casting it from exile. With the library empty or sufficiently small, its ETB can win. This endpoint depends on preserving an unused Evelyn play permission for the turn and on a valid break from the Worldgorger loop."
+    },
+    {
+      "name": "Thassa's Oracle plus Demonic Consultation",
+      "status": "PASS",
+      "conclusion": "Thassa's Oracle plus Demonic Consultation forms the standard compact library-exile win when sequenced so the Oracle trigger resolves after the library has been exiled and devotion is sufficient for the empty-library condition."
+    },
+    {
+      "name": "Thassa's Oracle plus Tainted Pact",
+      "status": "PASS",
+      "conclusion": "The exact candidate has 100 distinct card names, including only one Island and one Swamp. This allows Tainted Pact to continue through the library without stopping on a duplicate name; naming/targeting a line appropriately can exile the library for the Thassa's Oracle win."
+    },
+    {
+      "name": "Underworld Breach plus Lion's Eye Diamond plus Brain Freeze",
+      "status": "PASS_WITH_PRECONDITION",
+      "conclusion": "Underworld Breach, Lion's Eye Diamond, and Brain Freeze form the standard recursive storm/self-mill engine when the graveyard contains enough expendable cards to pay repeated escape costs. The line can generate very high storm, self-mill the library, and produce mana; it requires the documented graveyard-card resource and is not claimed to begin from an empty graveyard."
+    },
+    {
+      "name": "Vexing Bauble symmetry",
+      "status": "PASS",
+      "conclusion": "Vexing Bauble counters spells cast without spending mana regardless of controller, so it can interfere with the deck's own free Force/Pact-style interaction and zero-mana spells. Its activated sacrifice-to-draw ability is an intentional escape valve before a protected combo turn."
+    },
+    {
+      "name": "Saw in Half plus Evelyn",
+      "status": "PASS_WITH_PRECONDITION",
+      "conclusion": "Saw in Half creates token copies only if the targeted Evelyn is destroyed and actually dies. If the commander replacement effect moves Evelyn directly to the command zone instead of the graveyard, the dies condition is not satisfied and no copies are created. If Evelyn dies, two Evelyn token copies enter simultaneously. Each token sees itself enter and also sees the other Vampire enter, so four Evelyn abilities trigger in total. State-based actions then apply the legend rule before those triggers are put on the stack; one token remains, but all four already-triggered abilities are subsequently put on the stack and can resolve."
+    },
+    {
+      "name": "Leyline of Anticipation with Evelyn once-each-turn permission",
+      "status": "PASS",
+      "conclusion": "Leyline of Anticipation allows spells to be cast as though they had flash. Because Evelyn's permission is once each turn rather than once during your turn, Leyline can allow qualifying noninstant collection-counter spells to be cast during opponents' turns, subject to the one-per-turn Evelyn limit."
+    },
+    {
+      "name": "Borne Upon a Wind and Valley Floodcaller timing",
+      "status": "PASS",
+      "conclusion": "Borne Upon a Wind and Valley Floodcaller provide temporary or conditional flash-style timing that can let the pilot exploit Evelyn's once-each-turn exile permission on opponents' turns, subject to each card's own duration and restrictions."
+    },
+    {
+      "name": "Party Thrasher with Evelyn exile casting",
+      "status": "PASS",
+      "conclusion": "Party Thrasher gives noncreature spells cast from exile convoke. A noncreature spell cast from Evelyn's collection-counter exile permission is therefore eligible for Party Thrasher's convoke ability while Party Thrasher is on the battlefield."
+    }
+  ]
+}
