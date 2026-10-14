@@ -1,0 +1,97 @@
+card_name,disposition,role,paired_card,review_note
+Abaddon the Despoiler,RETAIN,Commander,,Core identity: grants cascade to hand-cast spells when aggregate opponent life loss meets mana value.
+Ancestral Vision,RETAIN,Draw,,Zero-mana-value cascade hit draws three when cast through cascade; natural suspend is slow.
+Ancient Cellarspawn,ADD,Exile-cast payoff / cost reduction,Nightscape Familiar,Free/discounted casts cause targeted life loss; discounts Demon/Horror/Nightmare spells. Current Oracle says target opponent, not each opponent.
+Ancient Tomb,RETAIN,Land,,Premium fast mana; self-life loss does not count toward Abaddon threshold.
+Arcane Signet,RETAIN,Ramp,,Two-mana color fixing for UBR.
+Aurora Phoenix,ADD,Cascade / recursion,Bituminous Blast,Native cascade and recurring graveyard-to-hand trigger when a spell with cascade is cast; can receive Abaddon cascade.
+Badlands,RETAIN,Land,,Untapped fetchable dual with Swamp/Mountain types.
+Birgi, God of Storytelling // Harnfel, Horn of Bounty,RETAIN,Ramp,,Birgi refunds red mana per spell; Harnfel converts cards to impulse draw.
+Blasphemous Act,RETAIN,Removal,,Efficient multiplayer reset; can kill own Abaddon and pingers.
+Blood Crypt,RETAIN,Land,,Fetchable untapped shock dual.
+Bloodletter of Aclazotz,RETAIN,Drain,,Doubles opponent life loss during your turn; amplifies burn.
+Bloodstained Mire,RETAIN,Land,,Fetches Swamp/Mountain-type sources.
+Boltwave,RETAIN,Burn,,One mana for three damage to each opponent; excellent threshold setup.
+Brain Freeze,RETAIN,Combo / mill,,Core Underworld Breach + Lion's Eye Diamond storm line.
+Brainstorm,RETAIN,Draw,,Cheap selection and cascade-top manipulation.
+Cabal Ritual,RETAIN,Ramp,,Explosive black mana; threshold attainable in spell-heavy turns.
+Call Forth the Tempest,RETAIN,Cascade / removal,,Two native cascade triggers plus board reset; high ceiling, but can kill own board.
+Chrome Mox,RETAIN,Ramp,,Fast mana with real imprint cost.
+City of Brass,RETAIN,Land,,Untapped fixing; self-damage is acceptable.
+Command Tower,RETAIN,Land,,Untapped UBR fixing.
+Dark Ritual,RETAIN,Ramp,,One-mana burst for commander and combo turns.
+Deadly Rollick,RETAIN,Removal,,Free commander-enabled creature removal.
+Deflecting Swat,RETAIN,Protection,,Free protection and redirection with commander.
+Delayed Blast Fireball,RETAIN,Removal / burn,,Five damage to each opponent and their creatures when cast from exile.
+Demonic Tutor,RETAIN,Tutor,,Unconditional tutor to hand.
+Exalted Flamer of Tzeentch,RETAIN,Pinger / recursion,,Instant-sorcery damage plus random upkeep recursion; Demon type benefits from Cellarspawn.
+Exotic Orchard,RETAIN,Land,,Reliable multiplayer color fixing.
+Fierce Guardianship,RETAIN,Protection,,Free counter for noncreature spell while commander is controlled.
+Flame Rift,RETAIN,Burn,,One mana for four damage to every player; 12 aggregate opponent life loss.
+Flooded Strand,RETAIN,Land,,Fetchable Island-type sources and shuffle utility.
+Flusterstorm,RETAIN,Interaction,,Efficient storm counter against instant/sorcery interaction.
+Force of Negation,RETAIN,Interaction,,Free mode only on opponents' turns; strong noncreature protection.
+Force of Will,RETAIN,Interaction,,Free counter with blue-card pitch cost.
+Gamble,RETAIN,Tutor,,One-mana tutor; random discard can feed Breach.
+Imperial Seal,RETAIN,Tutor,,Efficient topdeck tutor; sequence carefully around cascade.
+Inevitable Betrayal,RETAIN,Theft / cascade hit,,Zero-mana-value cascade hit can steal an opponent's creature for free.
+Island,RETAIN,Land,,Fetchable basic blue source.
+Jeska's Will,RETAIN,Ramp / impulse draw,,With commander chooses both modes; explosive mana and casts.
+Keeper of Secrets,RETAIN,Exile-cast payoff,,Haste and damage for spells cast from outside hand.
+Kessig Flamebreather,RETAIN,Pinger,,Cheap all-opponent damage on noncreature spells.
+Lion's Eye Diamond,RETAIN,Combo,,Core Breach mana piece; discard sequencing is critical.
+Lotus Petal,RETAIN,Ramp,,Zero-mana fixing and useful cascade hit.
+Loyal Subordinate,CUT,Pinger,Protection Racket,Combat trigger helps only postcombat main and requires commander; Racket provides upkeep life-loss-or-card choice.
+Luxury Suite,RETAIN,Land,,Usually untapped multiplayer black/red dual.
+Mana Confluence,RETAIN,Land,,Untapped any-color fixing.
+Mana Vault,RETAIN,Ramp,,High-output fast mana.
+Marsh Flats,RETAIN,Land,,Fetchable Swamp-type sources.
+Mind's Desire,RETAIN,Storm payoff,,Six-mana storm spell can be a cascade hit and scales with spells already cast; prior comparison test is inconclusive.
+Misty Rainforest,RETAIN,Land,,Fetchable Island/Mountain-type sources.
+Morphic Pool,RETAIN,Land,,Usually untapped multiplayer U/B dual.
+Mountain,RETAIN,Land,,Fetchable basic red source.
+Mystic Remora,RETAIN,Draw,,Efficient early multiplayer draw; upkeep is optional by payment.
+Mystical Tutor,RETAIN,Tutor,,Instant-speed instant/sorcery tutor; cascade-aware topdeck sequencing.
+Nalfeshnee,RETAIN,Exile-cast payoff,,Copies spells cast from exile.
+Neheb, the Eternal,RETAIN,Ramp,,Postcombat red mana scales with opponent life lost this turn.
+Nightscape Familiar,CUT,Ramp,Ancient Cellarspawn,Generic U/R discount loses to Cellarspawn's cast-for-less trigger and Demon/Horror discounts.
+Noise Marine,RETAIN,Cascade,,Native cascade creature and damage pressure.
+Otawara, Soaring City,RETAIN,Land / interaction,,Untapped blue source with channel interaction.
+Pact of Negation,RETAIN,Interaction,,Free counter; next-upkeep payment must be respected.
+Passionate Archaeologist,RETAIN,Exile-cast payoff,,Gives commander an exile-cast damage trigger.
+Polluted Delta,RETAIN,Land,,Fetchable Island/Swamp sources.
+Ponder,RETAIN,Draw,,Cheap selection and cascade-hit utility.
+Profane Tutor,RETAIN,Tutor,,Zero-mana-value cascade hit becomes free tutor.
+Prosper, Tome-Bound,RETAIN,Draw / Treasure,,Impulse draw and Treasure from cards played from exile.
+Protection Racket,ADD,Draw / threshold,Loyal Subordinate,Upkeep choice gives either opponent life loss or card advantage before first main; does not cast from exile.
+Pyroblast,RETAIN,Interaction,,Efficient one-mana interaction against blue.
+Rakdos, Lord of Riots,RETAIN,Ramp / cost reduction,,Life-loss-scaled creature discount is cheaper and more immediate than Warstorm Surge.
+Rhystic Study,RETAIN,Draw,,High-efficiency multiplayer card advantage.
+Rite of Flame,RETAIN,Ramp,,One-mana red ritual and useful cascade hit.
+Scalding Tarn,RETAIN,Land,,Fetchable Island/Mountain sources.
+Sol Ring,RETAIN,Ramp,,Premium generic acceleration.
+Solphim, Mayhem Dominus,RETAIN,Damage multiplier,,Doubles noncombat damage to opponents and their permanents.
+Steam Vents,RETAIN,Land,,Fetchable U/R shock dual.
+Storm-Kiln Artist,RETAIN,Ramp,,Treasure for every instant/sorcery cast or copied.
+Swamp,RETAIN,Land,,Fetchable basic black source.
+Swan Song,RETAIN,Interaction,,One-mana counter for enchantments, instants and sorceries.
+Takenuma, Abandoned Mire,RETAIN,Land / recursion,,Untapped black source with channel recursion.
+Talisman of Creativity,RETAIN,Ramp,,Two-mana U/R fixing.
+Talisman of Dominance,RETAIN,Ramp,,Two-mana U/B fixing.
+Talisman of Indulgence,RETAIN,Ramp,,Two-mana B/R fixing.
+The Lost and the Damned,RETAIN,Exile-cast token engine,,Creates a 3/3 Spawn when you cast a spell from outside hand.
+The Ruinous Powers,RETAIN,Exile-cast value,,Upkeep exile engine with cast-related damage/value.
+Thermo-Alchemist,RETAIN,Pinger,,Repeatable all-opponent damage and untaps on instant/sorcery casts.
+Training Center,RETAIN,Land,,Usually untapped multiplayer U/R dual.
+Underground Sea,RETAIN,Land,,Untapped fetchable U/B dual.
+Underworld Breach,RETAIN,Combo / recursion,,Core escape engine with real graveyard/exile constraints.
+Urborg, Tomb of Yawgmoth,RETAIN,Land,,Improves black access; does not itself add mana.
+Vampiric Tutor,RETAIN,Tutor,,One-mana instant tutor; sequence carefully around cascade.
+Verdant Catacombs,RETAIN,Land,,Fetchable Swamp-type sources.
+Vivi Ornitier,RETAIN,Ramp / pinger,,Grows, pings each opponent and converts power into U/R mana.
+Volcanic Island,RETAIN,Land,,Untapped fetchable U/R dual.
+Watery Grave,RETAIN,Land,,Fetchable U/B shock dual.
+Wheel of Fortune,RETAIN,Draw / graveyard,,Refills seven and fuels Breach.
+Wild-Magic Sorcerer,RETAIN,Cascade,,First spell cast from exile each turn gains cascade.
+Windfall,RETAIN,Draw / graveyard,,Second wheel; refills and fuels Breach.
+Xander's Lounge,RETAIN,Land,,Tapped tri-land is a tempo concession but cycles late and fixes all colors.
