@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "deck_sha256": "a08d3bc9c283415f1579c493eccb3febd7d10dea3777bf3dc50cfbc0dbed4019",
+  "checked_at_utc": "2026-10-14T10:00:00Z",
+  "sources": [
+    "current Scryfall/Oracle data via project current-cycle Oracle cache refreshed 2026-10-14",
+    "Magic: The Gathering Assassin’s Creed Release Notes (Edward Kenway; Jackdaw)",
+    "Outlaws of Thunder Junction Release Notes (Luxurious Locomotive crew rulings)",
+    "current Commander Spellbook / EDHREC combo records used only to cross-check combo sequences",
+    "Magic Comprehensive Rules — crew, combat, triggered abilities, permissions to play/cast, and extra turns"
+  ],
+  "interactions": [
+    {
+      "name": "Edward subtype count-once rule",
+      "status": "PASS",
+      "conclusion": "For each Edward end-step trigger, a tapped permanent that is an Assassin, Pirate, Vehicle, or several of those types is counted once, not once per matching subtype."
+    },
+    {
+      "name": "Edward Vehicle damage play permission",
+      "status": "PASS",
+      "conclusion": "Each Vehicle that deals combat damage to a player causes an Edward trigger. The face-down card exiled by that trigger may be played for as long as it remains exiled; because the permission uses ‘play,’ it can authorize a land play as well as casting a spell, subject to normal timing and land-play limits."
+    },
+    {
+      "name": "Luxurious Locomotive over-crewing with Edward",
+      "status": "PASS",
+      "conclusion": "Crew allows tapping more creatures than necessary. Luxurious Locomotive remembers every creature that crewed it that turn for its attack trigger. Eligible Pirates/Assassins tapped this way can also be counted by Edward at end step if still tapped, and the attacking Locomotive is itself a tapped Vehicle unless an effect changes that."
+    },
+    {
+      "name": "Luxurious Locomotive plus Time Sieve",
+      "status": "PASS",
+      "conclusion": "With Time Sieve and Luxurious Locomotive on the battlefield, at least five creatures available to crew with total power at least 1, and a combat where the Locomotive can attack and survive, over-crewing with five creatures causes the attack trigger to create at least five Treasures. Sacrificing those five artifacts to Time Sieve creates an extra turn; if the prerequisites can be re-established each turn, the sequence repeats for an extra-turn lock."
+    },
+    {
+      "name": "Malcolm plus Glint-Horn Buccaneer",
+      "status": "PASS",
+      "conclusion": "Malcolm triggers from damage dealt to opponents by Pirates, not only combat damage. While Glint-Horn Buccaneer is attacking, its {1}{R} discard activation causes its discard trigger to deal 1 to each opponent. With at least two opponents and a card to discard, Malcolm creates at least two Treasures, which can pay the next {1}{R} activation; Glint-Horn then draws a replacement card. This repeats until a game-state resource such as cards/opponents ends the loop and functions as a near-infinite damage/draw finish."
+    },
+    {
+      "name": "Ramirez versus Edward exile permissions",
+      "status": "PASS",
+      "conclusion": "Ramirez DePietro, Pillager allows casting the exiled card and explicitly does not allow lands to be played. Edward uses the broader word ‘play,’ so the two theft permissions are not identical. Both require normal timing/cost rules unless their effects say otherwise."
+    },
+    {
+      "name": "Ramirez and Don Andres",
+      "status": "PASS",
+      "conclusion": "A noncreature spell cast from Ramirez’s exile is a spell you do not own and therefore triggers Don Andres for two tapped Treasures. A stolen creature spell does not trigger Don Andres’s noncreature-spell trigger, though a stolen creature you control can receive Don Andres’s creature buff once on the battlefield."
+    },
+    {
+      "name": "Reaver Cleaver plus Time Sieve retained line",
+      "status": "PASS",
+      "conclusion": "If The Reaver Cleaver is attached to a creature with power at least 4 that can deal combat damage to a player, the equipped trigger makes at least five Treasures. Time Sieve can sacrifice them for an extra turn; repeating the connection each extra turn repeats the lock."
+    },
+    {
+      "name": "Roaming Throne with Edward",
+      "status": "PASS",
+      "conclusion": "Edward is both an Assassin and a Pirate. Roaming Throne choosing either type causes Edward’s triggered abilities to trigger an additional time. Each end-step trigger separately counts each qualifying tapped permanent once."
+    },
+    {
+      "name": "Academy Manufactor and Fateful Discovery",
+      "status": "PASS",
+      "conclusion": "Academy Manufactor replaces Treasure creation with creating a Clue, Food, and Treasure instead. Fateful Discovery triggers for each artifact that enters under your control, so Edward’s Treasure production can generate multiple artifact-entry draw triggers, especially while Manufactor is present."
+    },
+    {
+      "name": "RMS Titanic timing with Edward",
+      "status": "PASS",
+      "conclusion": "RMS Titanic dealing combat damage triggers Edward’s Vehicle-damage ability and Titanic’s own sacrifice/Treasure ability. Titanic may leave the battlefield before Edward’s end-step count, but the Edward combat-damage trigger already triggered and resolves independently."
+    }
+  ]
+}
