@@ -1,0 +1,23 @@
+{
+  "generated_at_utc": "2026-10-14T21:15:49.280461+00:00",
+  "deck_id": "Gwendlyn_Di_Corci",
+  "decklist_path": "refinement/decklists/Gwendlyn_Di_Corci_Approval_Candidate_2026-10-14.txt",
+  "deck_sha256": "9a393cb7edf40f9bfb388d37dd657839cad851dc6a021440c7d1b239c1fd20a9",
+  "baseline_path": "refinement/decklists/Gwendlyn_Di_Corci_Current_Cycle_Baseline_2026-10-14.txt",
+  "baseline_source_sha256": "b4200e0d54197135870a5a4f13ef311c5393860ec3e8d2dc9074e565bfd08495",
+  "count": 100,
+  "distinct_names": 94,
+  "commander_color_identity": [
+    "B",
+    "R",
+    "U"
+  ],
+  "cache_generated_at_utc": "2026-10-14T21:12:36.717001+00:00",
+  "cache_sha256": "2e6ebc0adb2979522f1a18e48ffaeb49378a139a2537643985208736c4fdc69f",
+  "project_exceptions": [],
+  "rules_gate": "PASS",
+  "official_legality_gate": "PASS",
+  "errors": [],
+  "overall_result": "APPROVAL_READY",
+  "approval_state": "NOT_APPROVED — explicit user approval still required"
+}
