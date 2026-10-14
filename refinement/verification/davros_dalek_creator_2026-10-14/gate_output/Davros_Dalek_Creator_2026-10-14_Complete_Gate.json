@@ -1,0 +1,23 @@
+{
+  "generated_at_utc": "2026-10-14T07:33:17.283698+00:00",
+  "deck_id": "Davros__Dalek_Creator",
+  "decklist_path": "refinement/decklists/Davros_Dalek_Creator_Approval_Candidate_2026-10-14.txt",
+  "deck_sha256": "aa6d2d343c6c1f167de8d16b23951940f7d23810c6e7705a6fd0d539a7459adc",
+  "baseline_path": "refinement/decklists/Davros_Dalek_Creator_Current_Cycle_Baseline_2026-10-14.txt",
+  "baseline_source_sha256": "5c1d4a499704137318f0df3adceabaa048207536525fc4f0f49fb2625009c8bc",
+  "count": 100,
+  "distinct_names": 95,
+  "commander_color_identity": [
+    "B",
+    "R",
+    "U"
+  ],
+  "cache_generated_at_utc": "2026-10-14T07:31:22.680729+00:00",
+  "cache_sha256": "2fd3c8a560c6e1e6a16bf29cad88a552098765d42dd4b7facb4b4dbfbfc7d272",
+  "project_exceptions": [],
+  "rules_gate": "PASS",
+  "official_legality_gate": "PASS",
+  "errors": [],
+  "overall_result": "APPROVAL_READY",
+  "approval_state": "NOT_APPROVED — explicit user approval still required"
+}
