@@ -1,0 +1,212 @@
+{
+  "generated_at_utc": "2026-10-14T05:30:31.421751+00:00",
+  "cache_generated_at_utc": "2026-10-14T05:25:45.050588+00:00",
+  "bulk_updated_at": "2026-10-13T21:05:51.771+00:00",
+  "cache_sha256": "b3850fc70fce8de18c2b362a6f0e83779e01b32166f58cece7d62c1a0fc4b053",
+  "official_banlist_checkpoint": "refinement/verification/Retrospective_1_to_8_Official_Banlist_Checkpoint_2026-10-14.md",
+  "decks": [
+    {
+      "deck_number": 1,
+      "deck_id": "Abaddon_the_Despoiler",
+      "display": "Abaddon the Despoiler",
+      "approved_source": "refinement/decklists/Abaddon_the_Despoiler_Approved_2026-10-13.txt",
+      "approval_evidence": "state/current_deck_overrides.json; refinement/verification/Abaddon_Approved_Source_SHA_Reconciled_2026-10-14.md",
+      "approved_source_raw_sha256": "2d6203d274c25e67fb93acf5e6784dce4ee1e8999844a6ab032d9b15995acfbf",
+      "historical_state_approved_list_sha256": "2d6203d274c25e67fb93acf5e6784dce4ee1e8999844a6ab032d9b15995acfbf",
+      "main_deck_count": 100,
+      "commander_count": 1,
+      "distinct_names": 94,
+      "commander_color_identity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "singleton_result": "PASS",
+      "companion_condition": "N/A",
+      "project_exceptions": [],
+      "unresolved": [],
+      "failures": [],
+      "machine_gate_result": "PASS"
+    },
+    {
+      "deck_number": 2,
+      "deck_id": "Admiral_Beckett_Brass",
+      "display": "Admiral Beckett Brass",
+      "approved_source": "refinement/decklists/Admiral_Beckett_Brass_Approval_Ready_2026-10-13.txt",
+      "approval_evidence": "state/current_deck_overrides.json; refinement/verification/Admiral_Beckett_Brass_Approval_Ready_Closeout_2026-10-13.md",
+      "approved_source_raw_sha256": "4ba5c483eb67b5f2647d375450adf9c2b7e79a036d0ba1866e58de8441bf3414",
+      "historical_state_approved_list_sha256": "4ba5c483eb67b5f2647d375450adf9c2b7e79a036d0ba1866e58de8441bf3414",
+      "main_deck_count": 100,
+      "commander_count": 1,
+      "distinct_names": 97,
+      "commander_color_identity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "singleton_result": "PASS",
+      "companion_condition": "N/A",
+      "project_exceptions": [],
+      "unresolved": [],
+      "failures": [],
+      "machine_gate_result": "PASS"
+    },
+    {
+      "deck_number": 3,
+      "deck_id": "Admiral_Brass__Unsinkable",
+      "display": "Admiral Brass, Unsinkable",
+      "approved_source": "refinement/decklists/Admiral_Brass_Unsinkable_Whole_List_Approval_Candidate_2026-10-13.txt",
+      "approval_evidence": "state/current_deck_overrides.json; refinement/verification/Admiral_Brass_Unsinkable_Whole_List_Closeout_2026-10-13.md",
+      "approved_source_raw_sha256": "056f0369bc4b11967365eef65d15a806b2d0f673ecf8097b028ffcdfd472f5cc",
+      "historical_state_approved_list_sha256": "e66e3a59719401f41830e9938997a87a45a1b0dcaa0663b0ec7b44e10077dd39",
+      "main_deck_count": 100,
+      "commander_count": 1,
+      "distinct_names": 97,
+      "commander_color_identity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "singleton_result": "PASS",
+      "companion_condition": "N/A",
+      "project_exceptions": [],
+      "unresolved": [],
+      "failures": [],
+      "machine_gate_result": "PASS"
+    },
+    {
+      "deck_number": 4,
+      "deck_id": "Anhelo_the_Painter",
+      "display": "Anhelo, the Painter",
+      "approved_source": "refinement/decklists/Anhelo_the_Painter_Approval_Ready_2026-10-13.txt",
+      "approval_evidence": "state/current_deck_overrides.json; refinement/verification/Anhelo_the_Painter_Approval_Ready_Closeout_2026-10-13.md",
+      "approved_source_raw_sha256": "8d5f8a9bd4fcdcd164aab63150c14dc69a814a4d9fd764876de3214d3adf9972",
+      "historical_state_approved_list_sha256": "d19d94b8a96fb27a760c7b7d9181221f74bd61642d1d1dd7644fc1c59c09839e",
+      "main_deck_count": 100,
+      "commander_count": 1,
+      "distinct_names": 94,
+      "commander_color_identity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "singleton_result": "PASS",
+      "companion_condition": "N/A",
+      "project_exceptions": [],
+      "unresolved": [],
+      "failures": [],
+      "machine_gate_result": "PASS"
+    },
+    {
+      "deck_number": 5,
+      "deck_id": "Ashad_the_Lone_Cyberman",
+      "display": "Ashad, the Lone Cyberman",
+      "approved_source": "refinement/decklists/Ashad_the_Lone_Cyberman_Approval_Ready_2026-10-13.txt",
+      "approval_evidence": "state/current_deck_overrides.json; refinement/verification/Ashad_the_Lone_Cyberman_Approval_Ready_Closeout_2026-10-13.md",
+      "approved_source_raw_sha256": "087e34c2127859111fc08f8d9ec7d66cd3495537cc571d88e829fd27d2823e25",
+      "historical_state_approved_list_sha256": "087e34c2127859111fc08f8d9ec7d66cd3495537cc571d88e829fd27d2823e25",
+      "main_deck_count": 100,
+      "commander_count": 1,
+      "distinct_names": 95,
+      "commander_color_identity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "singleton_result": "PASS",
+      "companion_condition": "N/A",
+      "project_exceptions": [],
+      "unresolved": [],
+      "failures": [],
+      "machine_gate_result": "PASS"
+    },
+    {
+      "deck_number": 6,
+      "deck_id": "Ashnod_the_Uncaring",
+      "display": "Ashnod the Uncaring",
+      "approved_source": "refinement/decklists/Ashnod_the_Uncaring_Approved_2026-10-13.txt",
+      "approval_evidence": "refinement/approvals/Ashnod_the_Uncaring_Approved_2026-10-13.md",
+      "approved_source_raw_sha256": "f574e4fad4749603294f53d2fe5536a159f884a8f1a8a7b6b1a22b3a637cf1cf",
+      "historical_state_approved_list_sha256": null,
+      "main_deck_count": 100,
+      "commander_count": 1,
+      "distinct_names": 95,
+      "commander_color_identity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "singleton_result": "PASS",
+      "companion_condition": "N/A",
+      "project_exceptions": [],
+      "unresolved": [],
+      "failures": [],
+      "machine_gate_result": "PASS"
+    },
+    {
+      "deck_number": 7,
+      "deck_id": "Be_lakor_the_Dark_Master",
+      "display": "Be'lakor, the Dark Master",
+      "approved_source": "refinement/decklists/Be_lakor_the_Dark_Master_Approved_2026-10-13.txt",
+      "approval_evidence": "refinement/approvals/Be_lakor_the_Dark_Master_Approved_2026-10-13.md",
+      "approved_source_raw_sha256": "3abc951606a6db2b17ea2aceb471fc2ef4c55e2ef082d49d9140a83b2491155e",
+      "historical_state_approved_list_sha256": null,
+      "main_deck_count": 100,
+      "commander_count": 1,
+      "distinct_names": 94,
+      "commander_color_identity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "singleton_result": "PASS",
+      "companion_condition": "N/A",
+      "project_exceptions": [],
+      "unresolved": [],
+      "failures": [],
+      "machine_gate_result": "PASS"
+    },
+    {
+      "deck_number": 8,
+      "deck_id": "Cecily__Bjorna__Lutri",
+      "display": "Bjorna, Nightfall Alchemist // Cecily, Haunted Mage + Lutri companion",
+      "approved_source": "refinement/decklists/Cecily__Bjorna__Lutri_Approved_2026-10-13.txt",
+      "approval_evidence": "refinement/approvals/Cecily__Bjorna__Lutri_Approved_2026-10-13.md",
+      "approved_source_raw_sha256": "553838da88fe00974e74664633be5051c4f1a0879baa71de81ca9f880e5a6d28",
+      "historical_state_approved_list_sha256": null,
+      "main_deck_count": 100,
+      "commander_count": 2,
+      "distinct_names": 99,
+      "commander_color_identity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "singleton_result": "PASS",
+      "companion_condition": "PASS",
+      "project_exceptions": [
+        {
+          "card_name": "Trade Secrets",
+          "official_status": "banned",
+          "exception_type": "project banned-card exception"
+        },
+        {
+          "card_name": "Yawgmoth's Bargain",
+          "official_status": "banned",
+          "exception_type": "project banned-card exception"
+        },
+        {
+          "card_name": "Lutri, the Spellchaser",
+          "official_status": "banned_as_companion",
+          "exception_type": "project companion exception"
+        }
+      ],
+      "unresolved": [],
+      "failures": [],
+      "machine_gate_result": "PASS"
+    }
+  ],
+  "machine_gate_result": "PASS",
+  "rules_gate_result": "PENDING_HUMAN_ATTESTATION",
+  "overall_result": "BLOCKED_PENDING_RULES_ATTESTATION"
+}
