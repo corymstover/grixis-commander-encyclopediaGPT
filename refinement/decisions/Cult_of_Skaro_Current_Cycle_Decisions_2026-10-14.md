@@ -1,11 +1,27 @@
 # Cult of Skaro — Current-Cycle Refinement Decision Record
 
 **Date:** 2026-10-14  
-**Approval status:** CANDIDATE ONLY — explicit user approval required  
+**Approval status:** APPROVAL_READY — complete gate passed; explicit user approval still required  
 **Authoritative current-cycle baseline:** `refinement/decklists/Cult_of_Skaro_Current_Cycle_Baseline_2026-10-14.txt`  
 **Baseline SHA-256:** `cc2f7a54479dbe166ada8253d42cc1ac9ebc7b3fdf229d9572f5631f269f3b6f`  
 **Approval candidate:** `refinement/decklists/Cult_of_Skaro_Approval_Candidate_2026-10-14.txt`  
 **Candidate SHA-256:** `4c221e5be0439338823ef621cd91706da8d405129cf6f5a41de36a83b875ef3b`
+
+## Complete approval gate
+
+The SHA-bound complete approval gate ran successfully on 2026-10-14 against the freshly refreshed current-cycle Oracle cache.
+
+- Count: **100**
+- Distinct names: **94** (basic-land repeats account for the difference)
+- Commander color identity: **B/R/U**
+- Rules gate: **PASS**
+- Official Commander legality gate: **PASS**
+- Project exceptions: **none**
+- Gate errors: **none**
+- Overall result: **APPROVAL_READY**
+- Gate artifact: `refinement/verification/cult_of_skaro_2026-10-14/gate_output/Cult_of_Skaro_2026-10-14_Complete_Gate.json`
+
+This result does not itself approve or lock the deck. Explicit user approval remains required.
 
 ## Baseline provenance
 
@@ -41,7 +57,7 @@ It also retains the commander-copy/trigger package of Irenicus's Vile Duplicatio
 
 Canoptek Spyder is retained as a repeatable draw engine for the deck's high density of nontoken artifact creatures. Padeem plus Greaves/Boots and the added Plaza absorb the protection role vacated by Cryptothrall.
 
-## Rules checkpoints to verify
+## Rules checkpoints verified
 
 1. Cult's random mode is chosen when each triggered ability is put onto the stack.
 2. Strionic Resonator and Scientist Supreme copy the already-selected mode; they do not reroll it.
@@ -57,4 +73,4 @@ Canoptek Spyder is retained as a repeatable draw engine for the deck's high dens
 - Power Bracket: **4 — Optimized**
 - Tags: **Artifacts / Extra Combats / Copies**
 
-This record does not approve or lock the deck. Approval requires a clean SHA-bound complete approval gate plus explicit user approval.
+The deck is approval-ready but remains unapproved and unlocked until the user explicitly approves it.
