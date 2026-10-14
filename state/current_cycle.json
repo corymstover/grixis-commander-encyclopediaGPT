@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "cycle_id": "global-restart-2026-10-13",
+  "effective_date": "2026-10-13",
+  "deck_count": 62,
+  "authority": "current_cycle_state",
+  "global_defaults": {
+    "approval_status": "UNAPPROVED",
+    "lock_status": "UNLOCKED",
+    "final_gate_passed": false,
+    "user_approval_date": null,
+    "current_stage": "UNREFINED"
+  },
+  "historical_state_policy": {
+    "preserve_prior_approvals": true,
+    "prior_approvals_are_current": false,
+    "preserve_prior_artifacts": true,
+    "preserve_prior_hashes": true
+  },
+  "mutation_policy": {
+    "approval_requires_explicit_user_approval": true,
+    "locking_requires_final_verification": true,
+    "automation_may_set_approved": false,
+    "automation_may_set_locked": false
+  },
+  "notes": "Canonical current-cycle authority. Historical tracker rows and artifacts are evidence only and cannot override this reset state."
+}
