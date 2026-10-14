@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "deck_sha256": "a08d3bc9c283415f1579c493eccb3febd7d10dea3777bf3dc50cfbc0dbed4019",
+  "checked_at_utc": "2026-10-14T10:00:00Z",
+  "sources": [
+    "Wizards of the Coast Banned & Restricted list — Commander section, checked 2026-10-14",
+    "Wizards Banned and Restricted Announcement — 2026-10-12 (no tabletop Commander changes)",
+    "current project current-cycle Oracle/Scryfall legality cache refreshed 2026-10-14"
+  ],
+  "unexpected_banned_cards": [],
+  "project_exceptions": [],
+  "notes": "The exact SHA-bound Edward Kenway approval candidate requires no project-specific legality exception. Edward and every proposed addition are within U/B/R color identity and legal in tabletop Commander. Ragavan’s Competitive Brawl commander restriction in the 2026-10-12 announcement is not a tabletop Commander ban."
+}
