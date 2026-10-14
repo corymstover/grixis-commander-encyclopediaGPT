@@ -163,6 +163,19 @@
       "complete_gate_artifact": "refinement/verification/doctor_doom_king_of_latveria_2026-10-14/gate_output/Doctor_Doom_King_of_Latveria_2026-10-14_Complete_Gate.json",
       "whole_list_audit_artifact": "refinement/decisions/Doctor_Doom_King_of_Latveria_Current_Cycle_Decisions_2026-10-14.md",
       "approved_list_artifact": "refinement/decklists/Doctor_Doom_King_of_Latveria_Approved_2026-10-14.txt"
+    },
+    "Don_Andres__the_Renegade": {
+      "approval_status": "APPROVED",
+      "lock_status": "LOCKED",
+      "final_gate_passed": true,
+      "user_approval_date": "2026-10-14",
+      "current_stage": "LOCKED",
+      "approved_list_sha256": "a6022fddd295d7c671690fbce5e25dc6fed47ca7fa77bf1d8a86ebadb2d927bb",
+      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit",
+      "approval_basis": "Explicit user approval of the exact SHA-bound Don Andres approval candidate after mandatory 99-slot whole-list audit, candidate exhaustion, adversarial red-team review, zero-new-material-improvement closure, fresh Oracle/rules verification, current official Commander legality verification, and complete fail-closed gate PASS.",
+      "complete_gate_artifact": "refinement/verification/don_andres_the_renegade_2026-10-14/gate_output/Don_Andres_the_Renegade_2026-10-14_Complete_Gate.json",
+      "whole_list_audit_artifact": "refinement/verification/don_andres_the_renegade_2026-10-14/Don_Andres_the_Renegade_Whole_List_Audit_Closeout_2026-10-14.md",
+      "approved_list_artifact": "refinement/decklists/Don_Andres_the_Renegade_Approved_2026-10-14.txt"
     }
   }
 }
