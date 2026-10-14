@@ -1,0 +1,63 @@
+name: Verify retrospective decks 1-8
+
+on:
+  push:
+    branches: ["main", "refinement/**", "automation/**"]
+    paths:
+      - "scripts/verify_retrospective_1_to_8.py"
+      - ".github/workflows/verify-retrospective-1-to-8.yml"
+      - "refinement/decklists/**"
+      - "refinement/metadata_audit/Current_Cycle_Oracle_Cache.jsonl"
+      - "refinement/metadata_audit/Current_Cycle_Oracle_Cache_Summary.json"
+      - "source-package/research/Project_Exceptions_Current_2026-10-12.csv"
+      - "state/current_deck_overrides.json"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: retrospective-1-to-8-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run fresh Oracle / legality retrospective machine gate
+        run: python scripts/verify_retrospective_1_to_8.py
+
+      - name: Commit verified retrospective machine evidence
+        if: success()
+        env:
+          BRANCH_NAME: ${{ github.ref_name }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add refinement/verification/retrospective_1_to_8/
+          if git diff --cached --quiet; then
+            echo "No retrospective evidence changes to commit."
+            exit 0
+          fi
+          git commit -m "Persist retrospective 1-8 fresh Oracle machine gate [skip ci]"
+          git push origin "HEAD:$BRANCH_NAME"
+
+      - name: Preserve evidence as workflow artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: retrospective-1-to-8-${{ github.run_id }}
+          path: refinement/verification/retrospective_1_to_8/
+          if-no-files-found: error
+          retention-days: 90
