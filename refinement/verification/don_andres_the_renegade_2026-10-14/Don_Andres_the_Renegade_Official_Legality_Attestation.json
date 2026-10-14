@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "deck_sha256": "a6022fddd295d7c671690fbce5e25dc6fed47ca7fa77bf1d8a86ebadb2d927bb",
+  "checked_at_utc": "2026-10-14T08:34:00Z",
+  "sources": [
+    "Wizards of the Coast Banned & Restricted list — Commander section, checked 2026-10-14",
+    "Wizards of the Coast Banned and Restricted Announcement — 2026-10-12 (no Commander changes)",
+    "current Scryfall Commander legality data / project current-cycle Oracle cache"
+  ],
+  "unexpected_banned_cards": [],
+  "project_exceptions": [],
+  "notes": "No project-specific legality exception is required. Competitive Brawl commander-only restrictions do not apply to tabletop Commander. Jhoira, Weatherlight Corsair was released with Reality Fracture on 2026-10-02 and is Commander-legal; Black Cat, Cunning Thief is already released and Commander-legal."
+}
