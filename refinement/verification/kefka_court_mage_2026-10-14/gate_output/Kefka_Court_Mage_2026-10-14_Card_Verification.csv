@@ -39,8 +39,9 @@ City of Traitors,1,,City of Traitors,a7a8b6b8-b95f-4014-b17a-a6d44d965995,f16111
 Command Tower,1,,Command Tower,1ac6cb62-45da-4e9a-84c6-09e6eacf0664,0895c9b7-ae7d-4bb3-af17-3b75deb50a25,Land,,,"B,R,U",legal,,PASS,{T}: Add one mana of any color in your commander's color identity.,https://scryfall.com/card/1ac6cb62-45da-4e9a-84c6-09e6eacf0664
 Culling the Weak,1,,Culling the Weak,50c33f18-0a5c-4e46-ab0d-6e450915594f,6385fd0d-256d-4400-9319-afa8170024db,Instant,,B,"B,R,U",legal,,PASS,"As an additional cost to cast this spell, sacrifice a creature.
 Add {B}{B}{B}{B}.",https://scryfall.com/card/50c33f18-0a5c-4e46-ab0d-6e450915594f
-Cyclonic Rift,1,,Cyclonic Rift,dfb7c4b9-f2f4-4d4e-baf2-86551c8150fe,d75b9c82-1b49-4c3e-a1b5-aeef57d6644b,Instant,,U,"B,R,U",legal,,PASS,"Return target nonland permanent you don't control to its owner's hand.
-Overload {6}{U} (You may cast this spell for its overload cost. If you do, change ""target"" in its text to ""each."")",https://scryfall.com/card/dfb7c4b9-f2f4-4d4e-baf2-86551c8150fe
+Valley Floodcaller,1,,Valley Floodcaller,90b12da0-f666-471d-95f5-15d8c9b31c92,4879c8f0-8832-4290-bc71-9838940f75cd,Creature — Otter Wizard,,U,"B,R,U",legal,,PASS,"Flash
+You may cast noncreature spells as though they had flash.
+Whenever you cast a noncreature spell, Birds, Frogs, Otters, and Rats you control get +1/+1 until end of turn. Untap them.",https://scryfall.com/card/90b12da0-f666-471d-95f5-15d8c9b31c92
 Dark Ritual,1,,Dark Ritual,11e12a84-e7be-4afc-a230-c2e644743fa8,53f7c868-b03e-4fc2-8dcf-a75bbfa3272b,Instant,,B,"B,R,U",legal,,PASS,Add {B}{B}{B}.,https://scryfall.com/card/11e12a84-e7be-4afc-a230-c2e644743fa8
 Deflecting Swat,1,,Deflecting Swat,b4b36435-55b3-4615-8812-af41d4fc64d9,ae120613-97d6-4393-b39d-c3e6c076f5d6,Instant,,R,"B,R,U",legal,,PASS,"If you control a commander, you may cast this spell without paying its mana cost.
 You may choose new targets for target spell or ability.",https://scryfall.com/card/b4b36435-55b3-4615-8812-af41d4fc64d9
@@ -109,9 +110,8 @@ Mystical Tutor,1,,Mystical Tutor,7331aade-3b7f-4b4d-b198-2e0b6b80895c,fb81f95c-7
 Necropotence,1,,Necropotence,c89c6895-b0f8-444a-9c89-c6b4fd027b3e,94a844d2-0574-45a7-b347-e0e329767c42,Enchantment,,B,"B,R,U",legal,,PASS,"Skip your draw step.
 Whenever you discard a card, exile that card from your graveyard.
 Pay 1 life: Exile the top card of your library face down. Put that card into your hand at the beginning of your next end step.",https://scryfall.com/card/c89c6895-b0f8-444a-9c89-c6b4fd027b3e
-Opposition Agent,1,,Opposition Agent,086f97e9-8b62-44f3-b467-149c2ac5ca78,1f438b8f-fe23-4f3b-ab2e-f6c33676c462,Creature — Human Rogue,,B,"B,R,U",legal,,PASS,"Flash
-You control your opponents while they're searching their libraries.
-While an opponent is searching their library, they exile each card they find. You may play those cards for as long as they remain exiled, and you may spend mana as though it were mana of any color to cast them.",https://scryfall.com/card/086f97e9-8b62-44f3-b467-149c2ac5ca78
+Demonic Counsel,1,,Demonic Counsel,ff79c845-4115-4fbf-b20f-37470f2bf7fb,712e3479-722c-40a1-9b61-d5bdde93042b,Sorcery,,B,"B,R,U",legal,,PASS,"Search your library for a Demon card, reveal it, put it into your hand, then shuffle.
+Delirium — If there are four or more card types among cards in your graveyard, instead search your library for any card, put it into your hand, then shuffle.",https://scryfall.com/card/ff79c845-4115-4fbf-b20f-37470f2bf7fb
 Orcish Bowmasters,1,,Orcish Bowmasters,7c024bae-5631-4e20-ac69-df392ac9e109,ea5103f5-27e0-4eb1-902c-7f34652d6bf3,Creature — Orc Archer,,B,"B,R,U",legal,,PASS,"Flash
 When this creature enters and whenever an opponent draws a card except the first one they draw in each of their draw steps, this creature deals 1 damage to any target. Then amass Orcs 1.",https://scryfall.com/card/7c024bae-5631-4e20-ac69-df392ac9e109
 "Otawara, Soaring City",1,,"Otawara, Soaring City",486d7edc-d983-41f0-8b78-c99aecd72996,e9b6a394-691c-425a-9307-76d8edc7375e,Legendary Land,,U,"B,R,U",legal,,PASS,"{T}: Add {U}.
@@ -122,8 +122,7 @@ Phantasmal Image,1,,Phantasmal Image,c1c080cf-a5e8-4d9d-af49-f78588971e87,bde94a
 Phyrexian Metamorph,1,,Phyrexian Metamorph,a564c2e8-f49f-4ed7-850f-7c8bc92e4926,340bbe8b-e987-4c3e-ab4e-9dee63e57d4f,Artifact Creature — Phyrexian Shapeshifter,,U,"B,R,U",legal,,PASS,"({U/P} can be paid with either {U} or 2 life.)
 You may have this creature enter as a copy of any artifact or creature on the battlefield, except it's an artifact in addition to its other types.",https://scryfall.com/card/a564c2e8-f49f-4ed7-850f-7c8bc92e4926
 Polluted Delta,1,,Polluted Delta,6e288374-2b71-4ace-b1d2-a19fee6cb4af,ef86989d-ce80-4e55-aece-7d11710eeffa,Land,,,"B,R,U",legal,,PASS,"{T}, Pay 1 life, Sacrifice this land: Search your library for an Island or Swamp card, put it onto the battlefield, then shuffle.",https://scryfall.com/card/6e288374-2b71-4ace-b1d2-a19fee6cb4af
-Psychosis Crawler,1,,Psychosis Crawler,450a680b-a2fb-495b-b22e-8c799a495fdf,2876e74f-a242-4995-9702-0b737a1ab67a,Artifact Creature — Phyrexian Horror,,,"B,R,U",legal,,PASS,"Psychosis Crawler's power and toughness are each equal to the number of cards in your hand.
-Whenever you draw a card, each opponent loses 1 life.",https://scryfall.com/card/450a680b-a2fb-495b-b22e-8c799a495fdf
+Fellwar Stone,1,,Fellwar Stone,bc99f300-29c0-44e7-9560-7bbd1dda7556,95560508-7ac9-4be9-8a3f-3c7d5b52807b,Artifact,,,"B,R,U",legal,,PASS,{T}: Add one mana of any color that a land an opponent controls could produce.,https://scryfall.com/card/bc99f300-29c0-44e7-9560-7bbd1dda7556
 Pyroblast,1,,Pyroblast,b029eb9a-dd7a-40c2-96c4-0063d9cc002c,ecc435e2-deb1-420a-a79f-01dd08747314,Instant,,R,"B,R,U",legal,,PASS,"Choose one —
 • Counter target spell if it's blue.
 • Destroy target permanent if it's blue.",https://scryfall.com/card/b029eb9a-dd7a-40c2-96c4-0063d9cc002c
