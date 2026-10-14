@@ -6,6 +6,7 @@ on:
     paths:
       - "scripts/verify_retrospective_1_to_8.py"
       - "scripts/verify_retrospective_1_to_8_v2.py"
+      - "scripts/finalize_retrospective_1_to_8.py"
       - ".github/workflows/verify-retrospective-1-to-8.yml"
       - "refinement/decklists/Abaddon_the_Despoiler_Approved_2026-10-13.txt"
       - "refinement/decklists/Admiral_Beckett_Brass_Approval_Ready_2026-10-13.txt"
@@ -17,6 +18,8 @@ on:
       - "refinement/decklists/Cecily__Bjorna__Lutri_Approved_2026-10-13.txt"
       - "refinement/metadata_audit/Current_Cycle_Oracle_Cache.jsonl"
       - "refinement/metadata_audit/Current_Cycle_Oracle_Cache_Summary.json"
+      - "refinement/verification/retrospective_1_to_8/Retrospective_1_to_8_Rules_Attestation_2026-10-14.md"
+      - "refinement/verification/retrospective_1_to_8/Retrospective_1_to_8_Rules_Attestation_2026-10-14.json"
       - "source-package/research/Project_Exceptions_Current_2026-10-12.csv"
       - "state/current_deck_overrides.json"
   workflow_dispatch:
@@ -44,7 +47,10 @@ jobs:
       - name: Run fresh Oracle / legality retrospective machine gate
         run: python scripts/verify_retrospective_1_to_8_v2.py
 
-      - name: Commit verified retrospective machine evidence
+      - name: Consolidate machine gate with SHA-bound rules attestation
+        run: python scripts/finalize_retrospective_1_to_8.py
+
+      - name: Commit verified retrospective complete-gate evidence
         if: success()
         env:
           BRANCH_NAME: ${{ github.ref_name }}
@@ -58,10 +64,10 @@ jobs:
             echo "No retrospective evidence changes to commit."
             exit 0
           fi
-          git commit -m "Persist retrospective 1-8 fresh Oracle machine gate [skip ci]"
+          git commit -m "Persist retrospective 1-8 complete approval gate [skip ci]"
           git push origin "HEAD:$BRANCH_NAME"
 
-      - name: Preserve evidence as workflow artifact
+      - name: Preserve complete retrospective evidence as workflow artifact
         if: always()
         uses: actions/upload-artifact@v4
         with:
