@@ -1,0 +1,99 @@
+{
+  "status": "PASS",
+  "deck_sha256": "00e3f52118f5944684ebc49a5398acf8184f7ca878e861221e4c99931191bc2f",
+  "checked_at_utc": "2026-10-14T22:00:00Z",
+  "sources": [
+    "Current Oracle text and official rulings for Jeleva, Nephalia's Scourge, checked 2026-10-14",
+    "Current Oracle text for Harmonic Prodigy, Arena of Glory, Torch Courier, Scroll Rack, Long-Term Plans, Scheming Symmetry, Mind's Desire, Final Fortune, and Peer into the Abyss, checked 2026-10-14",
+    "Magic Comprehensive Rules — triggered abilities, linked/exiled-card references, commander additional costs, alternative/additional costs, casting during resolution, storm, haste, and replacement effects",
+    "Current EDHREC cEDH and EDHTop16 Jeleva evidence used only for strategic red-team context; rules conclusions are independently stated here",
+    "Current project Oracle/Scryfall cache; exact candidate must be independently revalidated by the complete approval gate"
+  ],
+  "interactions": [
+    {
+      "name": "Jeleva ETB uses actual mana spent including commander tax",
+      "status": "PASS",
+      "conclusion": "Jeleva's ETB exiles the top X cards of each player's library where X is the amount of mana actually spent to cast that specific Jeleva. Additional costs paid in mana, including commander tax, are included. A normal first command-zone cast therefore uses X=4; later taxed casts normally increase X. The controller cannot simply choose to overpay without an effect allowing it. If Jeleva enters without being cast, X is 0."
+    },
+    {
+      "name": "Each Jeleva object tracks only its own exiled cards",
+      "status": "PASS",
+      "conclusion": "Cards exiled by one Jeleva remain exiled if that Jeleva leaves, but a newly entered Jeleva is a new object and is not associated with the previous Jeleva's exiled cards. The attack ability of the new object can cast only qualifying cards exiled with that new Jeleva."
+    },
+    {
+      "name": "Jeleva casts during attack-trigger resolution",
+      "status": "PASS",
+      "conclusion": "When Jeleva's attack trigger resolves, its controller may cast one instant or sorcery among cards exiled with that Jeleva without paying its mana cost. The spell is cast while the trigger resolves and before blockers are declared. Type-based timing restrictions are ignored, but other explicit timing restrictions still apply. Alternative costs such as overload cannot be chosen in addition to the free-cast permission; optional and mandatory additional costs follow normal rules, and an X in the mana cost must be chosen as 0 when applicable."
+    },
+    {
+      "name": "Harmonic Prodigy doubles Jeleva ETB and attack triggers",
+      "status": "PASS",
+      "conclusion": "Jeleva is a Wizard and is 'another Wizard' relative to Harmonic Prodigy. Therefore, while Harmonic Prodigy is controlled, each Jeleva ETB trigger and each Jeleva attack trigger triggers an additional time. At a normal X=4 cast, the two ETB triggers each exile four cards from every player. On attack, the two attack triggers can each cast a qualifying card still exiled with that Jeleva; the same physical card cannot be cast twice because the first cast moves it out of exile."
+    },
+    {
+      "name": "Top-deck tutors deliberately stage Jeleva exile targets",
+      "status": "PASS",
+      "conclusion": "Vampiric Tutor and Imperial Seal can put any chosen card on top; Mystical Tutor can put an instant or sorcery on top; Personal Tutor can put a sorcery on top. If library order remains unchanged until Jeleva's ETB resolves, a normal X=4 Jeleva cast exiles the staged card. This is setup rather than a protected deterministic line: opponents may respond, mill, shuffle, or otherwise alter the library before resolution."
+    },
+    {
+      "name": "Long-Term Plans third-from-top setup",
+      "status": "PASS",
+      "conclusion": "Long-Term Plans searches for any card and puts it third from the top after the shuffle. A normally cast Jeleva spends four mana and therefore exiles at least the top four cards when her ETB resolves, so the Long-Term Plans target is captured if library order is not changed in the meantime. Recasts that spend more mana also cover the third card."
+    },
+    {
+      "name": "Scheming Symmetry becomes Jeleva setup and potential denial",
+      "status": "PASS",
+      "conclusion": "Scheming Symmetry has two target players each search, shuffle, and put the chosen card on top. If the controller then casts Jeleva before either targeted player draws or changes their library, Jeleva's ETB exiles the staged top card from both libraries. This can both set up the controller's desired spell and deny or steal access to the opponent's tutored card, but the line is vulnerable to normal responses and top-library manipulation."
+    },
+    {
+      "name": "Brainstorm and Scroll Rack convert hand cards into Jeleva targets",
+      "status": "PASS",
+      "conclusion": "Brainstorm draws three and puts two cards from hand on top, allowing expensive instants/sorceries in hand to be staged for Jeleva. Scroll Rack temporarily exiles chosen hand cards face down, takes the same number of cards from the library into hand, then places the exiled cards on top in any order. If Jeleva is then cast before that order changes, the staged cards can be exiled by her ETB."
+    },
+    {
+      "name": "Immediate-attack package: Arena of Glory, Torch Courier, Lightning Greaves",
+      "status": "PASS",
+      "conclusion": "Arena of Glory can produce RR and grants haste to a creature spell if any of that mana was spent to cast it; Jeleva can use the red mana for her red and generic requirements and gain haste. Torch Courier can sacrifice itself to give another target creature, including Jeleva, haste until end of turn. Lightning Greaves can equip Jeleva for zero and grant haste. If Greaves has already granted Jeleva shroud, Torch Courier cannot subsequently target her, so sequencing matters."
+    },
+    {
+      "name": "Mind's Desire cast through Jeleva still has storm",
+      "status": "PASS",
+      "conclusion": "Jeleva instructs its controller to cast Mind's Desire, so Mind's Desire's storm ability triggers normally. The storm count includes spells cast before Mind's Desire that turn, including Jeleva itself if Jeleva was cast that turn and any setup spells. Each storm copy resolves independently."
+    },
+    {
+      "name": "Final Fortune extra-turn risk",
+      "status": "PASS",
+      "conclusion": "Final Fortune creates an extra turn after the current turn and a delayed trigger that makes its controller lose the game at the beginning of that extra turn's end step. Casting it for free with Jeleva does not remove that lose-the-game condition; the deck must win or otherwise avoid the condition before it resolves. The extra turn can provide another Jeleva attack if the game continues."
+    },
+    {
+      "name": "Peer into the Abyss free-cast target",
+      "status": "PASS",
+      "conclusion": "Peer into the Abyss may target its controller and, on resolution, that player draws cards equal to half the cards in their library and loses half their life, rounded up each time. Jeleva can cast it without paying its seven-mana cost if Peer is among cards exiled with that Jeleva."
+    },
+    {
+      "name": "Thassa's Oracle plus Demonic Consultation",
+      "status": "PASS",
+      "conclusion": "With Thassa's Oracle's ETB trigger pending, Demonic Consultation can name a card absent from the library to exile the remaining library. Oracle can then satisfy its devotion-versus-library-size win condition when its trigger resolves. Normal interaction and counterplay still apply."
+    },
+    {
+      "name": "Thassa's Oracle plus Tainted Pact and singleton structure",
+      "status": "PASS",
+      "conclusion": "The exact candidate has 100 distinct names, including only one Island and one Swamp. Tainted Pact therefore is not forced to stop by encountering a second copy of a previously exiled card name and supports the standard Oracle/Pact library-exile route."
+    },
+    {
+      "name": "Underworld Breach plus Lion's Eye Diamond plus Brain Freeze",
+      "status": "PASS",
+      "conclusion": "With adequate graveyard material, Underworld Breach permits repeated escape of Lion's Eye Diamond and Brain Freeze. LED supplies mana and Brain Freeze's storm/mill replenishes graveyard volume, allowing the controller to mill through their library and transition to Thassa's Oracle or another available finish. This is a secondary competitive route rather than the Jeleva identity centerpiece."
+    },
+    {
+      "name": "Doomsday role is supported without asserting an undocumented fixed pile",
+      "status": "PASS",
+      "conclusion": "Doomsday is legal to cast normally or through Jeleva if exiled with her. It reduces the library to a chosen five-card pile and loses half the controller's life rounded up. Jeleva can interact strongly with a deliberately built pile because her ETB and attack triggers manipulate/cast from the library/exile axis, but this approval does not depend on one specific unverified five-card pile."
+    },
+    {
+      "name": "Hexing Squelcher protection scope",
+      "status": "PASS",
+      "conclusion": "Hexing Squelcher itself cannot be countered, gives the controller's spells 'can't be countered' protection, and gives other creatures ward—pay 2 life. It therefore can protect proactive Jeleva/free-cast/combo spells and make Jeleva cost life to target while Squelcher remains on the battlefield. It does not make Jeleva's triggered abilities uncounterable and does not prevent non-counterspell interaction."
+    }
+  ]
+}
