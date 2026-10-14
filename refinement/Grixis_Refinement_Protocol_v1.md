@@ -193,3 +193,11 @@ Otherwise maintain the finalized snapshot. A newer date by itself is not a reaso
 
 These tools inform the decision. None substitutes for source verification, rules analysis or the commander-first blueprint.
 
+
+## 10. Uninterrupted audit-to-approval execution standard (effective 2026-10-13)
+
+**User directive:** For each deck, continue all research, slot and candidate reviews, rules/Oracle checks, legality and identity checks, tests and red-team passes **without interim user-facing updates or repeated 'proceed' prompts**. Stop and report only when (a) the deck is genuinely **APPROVAL_READY** with a complete verified list and explicit approval request, or (b) a **material blocking dependency** prevents completing a mandatory hard gate. Do not claim approval readiness merely because a candidate list or intermediate worksheet exists. Do not auto-approve, lock, or advance to the next deck. An exception for an actual blocker is a factual explanation of the blocker, not a routine progress update.
+
+**Required deliverable at approval gate:** 100-card copyable commander-first list; baseline and final hashes; full 99-slot audit disposition; candidate triage and high-impact swap decisions with rejected alternatives; current Oracle/card identity/color identity/Commander legality verification (exceptions separated); relevant combo/rules verification; strategic blueprint and ceiling; consistency/regression evidence with limitations; red-team and zero-unreviewed-material-improvement closure; concise proposed swaps and explicit user approval request. Preserve all previously approved decks.
+
+**Repository hygiene:** Store draft audits in separate refinement files. Never label an artifact AUTO-APPROVED or LOCKED absent explicit user approval. Historical labels cannot override current-cycle approval state. Do not modify immutable source archives or previously locked decks. If blocked, persist reproducible evidence and a precise checklist of the unresolved gates.
