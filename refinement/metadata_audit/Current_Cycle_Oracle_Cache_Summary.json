@@ -1,12 +1,12 @@
 {
-  "generated_at_utc": "2026-10-14T09:32:52.182844+00:00",
-  "overlay_generated_at_utc": "2026-10-14T09:32:51.805967+00:00",
+  "generated_at_utc": "2026-10-14T10:22:21.335246+00:00",
+  "overlay_generated_at_utc": "2026-10-14T10:22:20.979250+00:00",
   "bulk_updated_at": "2026-10-14T09:05:48.686+00:00",
-  "decklist_file_count": 45,
-  "distinct_names_requested": 682,
-  "records_written": 682,
-  "overlay_hits": 642,
-  "live_named_exact_lookups": 40,
+  "decklist_file_count": 48,
+  "distinct_names_requested": 703,
+  "records_written": 703,
+  "overlay_hits": 662,
+  "live_named_exact_lookups": 41,
   "exception_names_included": [
     "Dragon's Smile",
     "Lutri, the Spellchaser",
@@ -19,7 +19,7 @@
   "malformed_decklist_lines": [],
   "ambiguous_overlay_entries_rechecked_live": [],
   "unresolved": [],
-  "cache_sha256": "ddb452e54e3d7af82631fe25637586d0b5a652a850d1f1ddd1b5493cbc67f3f2",
+  "cache_sha256": "d1e36d09c6d4682923dab891903416d1f9410964d69a78fdfdbb4a284014c364",
   "overall_result": "PASS",
   "design_note": "Preferred verification cache for chat/container runs. Direct Scryfall access from chat is not required when this cache is fresh and complete."
 }
