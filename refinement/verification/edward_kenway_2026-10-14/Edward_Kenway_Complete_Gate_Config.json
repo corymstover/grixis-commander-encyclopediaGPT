@@ -10,5 +10,6 @@
   "official_legality_attestation_path": "refinement/verification/edward_kenway_2026-10-14/Edward_Kenway_Official_Legality_Attestation.json",
   "output_dir": "refinement/verification/edward_kenway_2026-10-14/gate_output",
   "output_stem": "Edward_Kenway_2026-10-14",
-  "max_cache_age_hours": 72
+  "max_cache_age_hours": 72,
+  "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit"
 }
