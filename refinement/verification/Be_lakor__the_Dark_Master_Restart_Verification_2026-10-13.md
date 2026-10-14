@@ -18,7 +18,7 @@
 | Count/singleton | PASS | 100 copies; 94 unique names; commander first and marked; only basic lands repeat; 36 lands. |
 | Rules interactions | PASS | Covenant no-power entry trigger, Demon count and token damage; Ardyn copied ETB/token behavior; cost-reducer/copy synergies documented. |
 | Multiplayer performance | NOT AVAILABLE | No qualified matched-start sample or simulator; no win-rate claim. |
-| Exact final hash | PENDING INDEPENDENT DIGEST | Must hash exact UTF-8 text bytes of the restart TXT and write the same digest here and to active tracker. |
+| Exact final hash | PASS | Must hash exact UTF-8 text bytes of the restart TXT and write the same digest here and to active tracker. |
 
 ## Structural verification
 
