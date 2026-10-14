@@ -1,0 +1,133 @@
+name: Finalize Inalla Archmage Ritualist approval once
+
+on:
+  push:
+    paths:
+      - '.github/workflows/finalize-inalla-archmage-ritualist-approval-once.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Rebase before generating approval artifacts
+        shell: bash
+        run: git pull --rebase origin main
+
+      - name: Freeze exact approved list and reconcile authoritative state
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import csv, hashlib, io, json
+
+          root = Path('.')
+          candidate = root / 'refinement/decklists/Inalla_Archmage_Ritualist_Approval_Candidate_2026-10-14.txt'
+          approved = root / 'refinement/decklists/Inalla_Archmage_Ritualist_Approved_2026-10-14.txt'
+          gate_path = root / 'refinement/verification/inalla_archmage_ritualist_2026-10-14/gate_output/Inalla_Archmage_Ritualist_2026-10-14_Complete_Gate.json'
+          ledger_path = 'refinement/decisions/Inalla_Archmage_Ritualist_Current_Cycle_Decisions_2026-10-14.md'
+          approval_record_path = root / 'refinement/approvals/Inalla_Archmage_Ritualist_Approved_2026-10-14.md'
+          state_path = root / 'state/current_deck_overrides.json'
+          tracker_path = root / 'refinement/Deck_Refinement_Tracker_2026-10-12.csv'
+
+          expected_sha = '81333ac71d483b667af968bf2ab221e1fa0de6edd7c2395170d15786e5b15fa3'
+          candidate_bytes = candidate.read_bytes()
+          actual_sha = hashlib.sha256(candidate_bytes).hexdigest()
+          assert actual_sha == expected_sha, (actual_sha, expected_sha)
+
+          gate = json.loads(gate_path.read_text(encoding='utf-8'))
+          assert gate['deck_sha256'] == expected_sha
+          assert gate['overall_result'] == 'APPROVAL_READY'
+          assert gate['count'] == 100
+          assert gate['distinct_names'] == 100
+          assert gate['commander_color_identity'] == ['B','R','U']
+          assert gate['rules_gate'] == 'PASS'
+          assert gate['official_legality_gate'] == 'PASS'
+          assert gate['project_exceptions'] == []
+          assert gate['errors'] == []
+
+          approved.parent.mkdir(parents=True, exist_ok=True)
+          approved.write_bytes(candidate_bytes)
+          assert hashlib.sha256(approved.read_bytes()).hexdigest() == expected_sha
+
+          approval_record_path.parent.mkdir(parents=True, exist_ok=True)
+          approval_record_path.write_text(f'''# Inalla, Archmage Ritualist — Approved and Locked\n\nCycle: `global-restart-2026-10-13`  \nApproval date: 2026-10-14  \nStatus: **APPROVED / LOCKED**\n\n## Canonical approved list\n\n- Candidate SHA-256: `{expected_sha}`\n- Approved artifact: `refinement/decklists/Inalla_Archmage_Ritualist_Approved_2026-10-14.txt`\n- Approval candidate: `refinement/decklists/Inalla_Archmage_Ritualist_Approval_Candidate_2026-10-14.txt`\n- Complete gate: `refinement/verification/inalla_archmage_ritualist_2026-10-14/gate_output/Inalla_Archmage_Ritualist_2026-10-14_Complete_Gate.json`\n- Whole-list decision ledger: `{ledger_path}`\n\nThe approved artifact is byte-identical to the exact SHA-bound candidate explicitly approved by the user. No post-approval card edits are permitted unless the user explicitly reopens this deck.\n\n## Verification state at approval\n\n- Card count: **100**\n- Distinct names: **100**\n- Lands: **27**\n- Commander color identity: **B/R/U**\n- Rules gate: **PASS**\n- Official Commander legality: **PASS**\n- Project exceptions: **none**\n- Gate errors: **0**\n- Complete gate result: **APPROVAL_READY** before explicit user approval\n- Mandatory 99-slot whole-list audit: **complete**\n- Candidate exhaustion / final serious pass: **ZERO NEW MATERIAL IMPROVEMENTS**\n- Natural ceiling: **Power Bracket 5 — cEDH**\n- Archidekt tags: **Spellseeker Combo / Reanimator / Turbo**\n\n## Refinement summary\n\nThe current-cycle approval is a 49-card cEDH rebuild of the authoritative FINAL60 baseline. It restores the commander-specific Spellseeker / Scholar of the Ages line, retains the Bloodline Necromancer / Ruthless Technomancer Eminence loop and Apprentice Necromancer package, adds cEDH-grade turbo/tutor/reanimation infrastructure, and rebuilds the mana base for 100 unique names and Tainted Pact compatibility. Final red-team review removed Samut, Tyrant of Naktamun because its split-second static ability conflicts with Finale of Promise and bargained Beseech the Mirror casting during resolution; Thundertrap Trainer is the approved replacement.\n''', encoding='utf-8')
+
+          state = json.loads(state_path.read_text(encoding='utf-8'))
+          assert state.get('cycle_id') == 'global-restart-2026-10-13'
+          state['decks']['Inalla__Archmage_Ritualist'] = {
+              'approval_status': 'APPROVED',
+              'lock_status': 'LOCKED',
+              'final_gate_passed': True,
+              'user_approval_date': '2026-10-14',
+              'current_stage': 'LOCKED',
+              'approved_list_sha256': expected_sha,
+              'quality_gate_version': 'Deck Quality Gates v3 + mandatory whole-list audit + Complete Approval Gate v1',
+              'approval_basis': 'Explicit user approval of the exact SHA-bound Inalla, Archmage Ritualist approval candidate after mandatory 99-slot whole-list audit, cEDH natural-ceiling determination, 49-card commander-first rebuild, candidate exhaustion, adversarial rules red-team, Samut split-second correction, zero-new-material-improvement closure, fresh Oracle/color-identity verification, current official Commander legality verification, independent combo/rules verification, and complete fail-closed gate APPROVAL_READY with zero errors.',
+              'complete_gate_artifact': 'refinement/verification/inalla_archmage_ritualist_2026-10-14/gate_output/Inalla_Archmage_Ritualist_2026-10-14_Complete_Gate.json',
+              'whole_list_audit_artifact': ledger_path,
+              'approval_record_artifact': 'refinement/approvals/Inalla_Archmage_Ritualist_Approved_2026-10-14.md',
+              'approved_list_artifact': 'refinement/decklists/Inalla_Archmage_Ritualist_Approved_2026-10-14.txt'
+          }
+          state_path.write_text(json.dumps(state, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
+
+          raw = tracker_path.read_text(encoding='utf-8')
+          lines = raw.splitlines()
+          header = next(csv.reader([lines[0]]))
+          idx = {name: i for i, name in enumerate(header)}
+          found = False
+          for n in range(1, len(lines)):
+              row = next(csv.reader([lines[n]]))
+              if row[idx['deck_id']] != 'Inalla__Archmage_Ritualist':
+                  continue
+              found = True
+              updates = {
+                  'baseline_status': 'CURRENT APPROVED FINAL LIST — current-cycle canonical list locked; frozen source exports preserved unchanged.',
+                  'fresh_oracle_identity_check': 'PASS — fresh current-cycle Oracle cache generated 2026-10-14; exact SHA-bound Inalla candidate verified at 100 cards / 100 distinct names within B/R/U color identity with zero unresolved metadata.',
+                  'fresh_official_legality_check': 'PASS — exact SHA-bound Inalla candidate verified against current official Commander legality on 2026-10-14; no project exception required.',
+                  'official_named_ban_list_checkpoint': 'PASS — current official Commander legality checkpoint completed 2026-10-14; no unexpected banned cards and no project exception required.',
+                  'commander_blueprint_complete': 'PASS — current-cycle commander-first Eminence / Spellseeker / reanimator cEDH blueprint and mandatory 99-slot whole-list audit completed 2026-10-14.',
+                  'high_impact_candidate_triage_complete': 'PASS — current cEDH aggregates, recent 2026 tournament lists, project candidates, Wizard challengers, reanimation density, interaction suites, mana-base alternatives, and generic combo temptations exhausted; final serious pass produced ZERO NEW MATERIAL IMPROVEMENTS.',
+                  'swap_decision_ledger_complete': 'PASS — exact 49-card rebuild and final Thundertrap Trainer correction recorded; exact SHA-bound Inalla approval candidate explicitly approved by user on 2026-10-14.',
+                  'combo_rules_interactions_verified': 'PASS — SHA-bound rules attestation covers Inalla Eminence, Spellseeker / Scholar of the Ages line, Bloodline Necromancer / Ruthless Technomancer loop, Apprentice Necromancer token-copy haste, Tainted Pact uniqueness, backup Oracle and Breach lines, and the rejected Samut split-second interaction.',
+                  'consistency_test_complete': 'PASS — exact approved artifact verified at 100 cards / 100 distinct names / 27 lands; candidate and approved artifact byte-match SHA.',
+                  'multiplayer_test_complete_or_reason_not_applicable': 'NOT APPLICABLE AS A FINALIZATION GATE — commander-first structural, rules, legality, competitive-ceiling, and strategic verification passed; no unsupported gameplay win-rate claim is made.',
+                  'final_gate_passed': 'YES',
+                  'final_list_hash': expected_sha,
+                  'user_approval_date': '2026-10-14',
+                  'refinement_status': 'APPROVED / LOCKED — current global-restart-2026-10-13 cycle',
+                  'notes': 'CURRENT-CYCLE RECONCILIATION 2026-10-14: exact SHA-bound Inalla, Archmage Ritualist approval candidate explicitly approved and locked. Canonical hash: ' + expected_sha + '. Final candidate: 100 cards, 100 distinct names, 27 lands; B/R/U identity PASS; rules PASS; current official Commander legality PASS; no project exceptions; complete gate errors 0. Natural ceiling: Power Bracket 5 — cEDH. Commander-first Spellseeker Combo / Reanimator / Turbo identity preserved. Current cycle uses a 49-card rebuild that completes the Spellseeker / Scholar of the Ages engine, preserves the Bloodline Necromancer / Ruthless Technomancer and Apprentice Necromancer Eminence lines, and rebuilds the deck for cEDH speed and Tainted Pact compatibility. Final rules red-team corrected Samut, Tyrant of Naktamun to Thundertrap Trainer because Samut split second conflicts with Finale of Promise and bargained Beseech the Mirror casting during resolution. Mandatory 99-slot audit, candidate exhaustion, adversarial rules review, fresh Oracle/rules/legality checks, and complete fail-closed gate all PASS. Frozen source exports remain historical baseline evidence. Next unlocked deck in tracker order: Jeleva, Nephalia\'s Scourge.'
+              }
+              for key, value in updates.items():
+                  row[idx[key]] = value
+              s = io.StringIO()
+              csv.writer(s, lineterminator='').writerow(row)
+              lines[n] = s.getvalue()
+              break
+          assert found, 'Inalla tracker row not found'
+          tracker_path.write_text('\n'.join(lines) + ('\n' if raw.endswith('\n') else ''), encoding='utf-8')
+          PY
+
+      - name: Commit approval state
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add \
+            refinement/decklists/Inalla_Archmage_Ritualist_Approved_2026-10-14.txt \
+            refinement/approvals/Inalla_Archmage_Ritualist_Approved_2026-10-14.md \
+            state/current_deck_overrides.json \
+            refinement/Deck_Refinement_Tracker_2026-10-12.csv
+          git commit -m "Approve and lock Inalla Archmage Ritualist [skip ci]"
+          git push origin HEAD:main
