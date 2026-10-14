@@ -42,7 +42,11 @@ Aggregate repeated ACCEPT/REJECT outcomes to identify research leads and ranking
 
 ## Approval boundary
 
-Passing every machine and quality gate makes a deck **approval eligible** only. Automation cannot set APPROVED or LOCKED. Explicit user approval remains mandatory, followed by the final lock transition.
+The user has granted standing project-level authorization for autonomous deckbuilding decisions and routine finalization after all required quality gates pass. Under that authorization, a deck that passes every machine gate, whole-list optimization gate, rules/legality gate, red-team gate, commander-necessity gate, final recount, and evidence/uncertainty gate may be marked APPROVED / LOCKED without pausing for another per-deck approval request.
+
+This standing authorization does **not** permit bypassing a hard gate, inventing evidence, resolving an actual source conflict by assumption, or silently accepting a new project exception. Any BLOCKED or TEST_REQUIRED dimension, legality/identity/count failure, unresolved material rules question, or unregistered exception still prevents finalization.
+
+The user may revoke this standing authorization at any time. Explicit user approval remains necessary when a decision falls outside the established project rules or requires a new exception.
 
 ## Reopening
 

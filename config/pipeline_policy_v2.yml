@@ -89,6 +89,7 @@ quality_gates:
     evidence_leads_only: true
     automatic_card_propagation: false
   approval:
-    explicit_user_approval_required: true
-    automation_may_approve: false
-    automation_may_lock: false
+    standing_user_authorization_active: true
+    per_deck_approval_pause_required: false
+    autonomous_finalization_after_all_gates: true
+    block_on_new_exception_or_out_of_policy_decision: true
