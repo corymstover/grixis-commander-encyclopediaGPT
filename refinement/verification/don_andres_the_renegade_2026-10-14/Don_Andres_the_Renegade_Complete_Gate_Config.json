@@ -1,0 +1,14 @@
+{
+  "deck_id": "Don_Andres__the_Renegade",
+  "display_name": "Don Andres, the Renegade",
+  "decklist_path": "refinement/decklists/Don_Andres_the_Renegade_Approval_Candidate_2026-10-14.txt",
+  "expected_deck_sha256": "a6022fddd295d7c671690fbce5e25dc6fed47ca7fa77bf1d8a86ebadb2d927bb",
+  "baseline_path": "refinement/decklists/Don_Andres_the_Renegade_Current_Cycle_Baseline_2026-10-14.txt",
+  "expected_baseline_sha256": "9e739e8f463dadf07c2516195995583d21ae4cd987d1af6f0f4cd695fadf7c57",
+  "baseline_source_sha256": "5013e0b0b035880e74f5395e55115a58eb3f60ad922cd4bd29670d5f45d0ed2e",
+  "rules_attestation_path": "refinement/verification/don_andres_the_renegade_2026-10-14/Don_Andres_the_Renegade_Rules_Attestation.json",
+  "official_legality_attestation_path": "refinement/verification/don_andres_the_renegade_2026-10-14/Don_Andres_the_Renegade_Official_Legality_Attestation.json",
+  "output_dir": "refinement/verification/don_andres_the_renegade_2026-10-14/gate_output",
+  "output_stem": "Don_Andres_the_Renegade_2026-10-14",
+  "max_cache_age_hours": 72
+}
