@@ -27,6 +27,12 @@ stages:
     cache_scope: deck_hash_engine_config_seed_set
     timeout_seconds: 1800
     max_attempts: 2
+  red_team:
+    cache_scope: deck_hash_blueprint_candidate_decisions_test_evidence
+    timeout_seconds: 300
+  evidence_review:
+    cache_scope: deck_hash_all_evidence_artifact_hashes
+    timeout_seconds: 300
   finalize:
     cache_scope: deck_hash_all_gate_artifact_hashes
     timeout_seconds: 180
@@ -50,3 +56,29 @@ adaptive_optimizer:
     require_fixture_pass: true
     max_failure_rate_regression: 0.0
     min_runtime_improvement_fraction: 0.10
+
+quality_gates:
+  candidate_exhaustion:
+    require_no_unresolved_high_impact_hold: true
+    require_zero_new_material_candidates_last_pass: true
+  red_team:
+    require_zero_unresolved_material_findings: true
+  hypothesis_testing:
+    preregistration_required_when_testing_is_material: true
+    controlled_comparison_required: true
+    integrity_preservation_required: true
+  commander_necessity:
+    require_material_counterfactual_impact: true
+  evidence_confidence:
+    block_on_blocked_dimension: true
+    block_on_test_required_dimension: true
+  diversity_audit:
+    advisory_not_auto_rejection: true
+    ignore_universal_infrastructure_cards: true
+  cross_deck_learning:
+    evidence_leads_only: true
+    automatic_card_propagation: false
+  approval:
+    explicit_user_approval_required: true
+    automation_may_approve: false
+    automation_may_lock: false

@@ -3,7 +3,7 @@ import hashlib, json, time
 from dataclasses import dataclass, asdict
 from pathlib import Path
 
-STAGES=("UNREFINED","INTAKE","BLUEPRINT","CANDIDATE_TRIAGE","RULES_REVIEW","VERIFY","TEST","FINALIZE","LOCKED")
+STAGES=("UNREFINED","INTAKE","BLUEPRINT","CANDIDATE_TRIAGE","RULES_REVIEW","VERIFY","TEST","RED_TEAM","EVIDENCE_REVIEW","FINALIZE","LOCKED")
 
 @dataclass
 class StageResult:

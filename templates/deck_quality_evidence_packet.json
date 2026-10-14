@@ -1,0 +1,37 @@
+{
+  "deck_id": "REPLACE_ME",
+  "hard_gates": {
+    "exact_100": false,
+    "singleton": false,
+    "color_identity": false,
+    "commander_legality_or_registered_exception": false,
+    "oracle_and_rules": false,
+    "strategic_coherence": false
+  },
+  "discovery_passes": 0,
+  "new_material_candidates_last_pass": -1,
+  "candidates": [],
+  "testing_required": false,
+  "hypothesis_tests": [],
+  "red_team_findings": [],
+  "commander_necessity": {
+    "thesis": "",
+    "material_dependencies": [],
+    "counterfactual_impact": "",
+    "evidence_refs": []
+  },
+  "evidence_dimensions": [
+    {"name":"commander_identity","confidence":"BLOCKED","rationale":"Not yet reviewed","evidence_refs":[]},
+    {"name":"engine","confidence":"BLOCKED","rationale":"Not yet reviewed","evidence_refs":[]},
+    {"name":"mana","confidence":"BLOCKED","rationale":"Not yet reviewed","evidence_refs":[]},
+    {"name":"interaction","confidence":"BLOCKED","rationale":"Not yet reviewed","evidence_refs":[]},
+    {"name":"resilience","confidence":"BLOCKED","rationale":"Not yet reviewed","evidence_refs":[]},
+    {"name":"conversion","confidence":"BLOCKED","rationale":"Not yet reviewed","evidence_refs":[]},
+    {"name":"combo_integrity","confidence":"BLOCKED","rationale":"Not yet reviewed","evidence_refs":[]},
+    {"name":"card_quality","confidence":"BLOCKED","rationale":"Not yet reviewed","evidence_refs":[]},
+    {"name":"candidate_exhaustion","confidence":"BLOCKED","rationale":"Not yet reviewed","evidence_refs":[]},
+    {"name":"testing","confidence":"BLOCKED","rationale":"Not yet reviewed","evidence_refs":[]},
+    {"name":"rules_confidence","confidence":"BLOCKED","rationale":"Not yet reviewed","evidence_refs":[]},
+    {"name":"source_freshness","confidence":"BLOCKED","rationale":"Not yet reviewed","evidence_refs":[]}
+  ]
+}
