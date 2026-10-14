@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "deck_sha256": "ef34986253f71043e10c852b5f9f3ce79594fdfc1086b105f6744c3f639199c3",
+  "checked_at_utc": "2026-10-14T09:10:00Z",
+  "sources": [
+    "Wizards of the Coast Banned & Restricted list — Commander section, checked 2026-10-14",
+    "Wizards of the Coast Banned and Restricted Announcement — 2026-10-12 (no tabletop Commander changes)",
+    "current Scryfall Commander legality data / project current-cycle Oracle cache"
+  ],
+  "unexpected_banned_cards": [],
+  "project_exceptions": [],
+  "notes": "The exact SHA-bound Dr. Eggman approval candidate requires no project-specific legality exception. Dr. Eggman and the newly proposed cards are within Grixis color identity. Current tabletop Commander legality is verified separately from Competitive Brawl restrictions; the October 12, 2026 announcement made no tabletop Commander changes."
+}
