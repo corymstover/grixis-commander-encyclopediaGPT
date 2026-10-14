@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "deck_sha256": "81333ac71d483b667af968bf2ab221e1fa0de6edd7c2395170d15786e5b15fa3",
+  "checked_at_utc": "2026-10-14T21:18:00Z",
+  "sources": [
+    "Wizards of the Coast Banned & Restricted list — Commander section, checked 2026-10-14",
+    "Wizards of the Coast Banned and Restricted Announcement — 2026-10-12; no paper Commander change applicable to this candidate",
+    "current Oracle/Commander-legality records for the exact candidate, including 2026 cards Hexing Squelcher and current legal printings used by the project",
+    "current project Oracle/Scryfall legality cache; exact candidate must be independently revalidated by the complete approval gate"
+  ],
+  "unexpected_banned_cards": [],
+  "project_exceptions": [],
+  "notes": "The exact SHA-bound Inalla, Archmage Ritualist candidate requires no project-specific legality exception. Named-ban screening against the current Wizards Commander banned list found no Commander-banned card in the candidate. The list intentionally excludes Mana Crypt, Jeweled Lotus, Dockside Extortionist, and other currently banned Commander cards. Final per-card official-legality and B/R/U color-identity status is fail-closed and must be independently confirmed against a freshly rebuilt current-cycle Oracle cache by the complete approval gate before APPROVAL_READY."
+}
