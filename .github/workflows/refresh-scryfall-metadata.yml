@@ -2,23 +2,26 @@ name: Refresh current Scryfall card metadata
 
 on:
   push:
-    branches: ["refinement/**", "automation/**"]
+    branches: ["main", "refinement/**", "automation/**"]
     paths:
       - "scripts/refresh_scryfall_metadata.py"
+      - "scripts/build_current_cycle_oracle_cache.py"
       - "scripts/validate_scryfall_metadata_refresh.py"
       - "scripts/audit_abaddon_baseline_metadata.py"
       - ".github/workflows/refresh-scryfall-metadata.yml"
       - "requirements-scryfall.txt"
+      - "refinement/decklists/**"
       - "refinement/metadata_audit/REFRESH_REQUEST.md"
       - "refinement/metadata_audit/REFRESH_REQUEST*.md"
   schedule:
-    - cron: "23 8 * * 1"
+    - cron: "23 8 * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
 
-# One run refreshes all 62 decks. Prevent redundant concurrent full-bulk downloads.
+# One run refreshes all 62 frozen decks plus the current-cycle list cache.
+# Prevent redundant concurrent full-bulk downloads.
 concurrency:
   group: scryfall-metadata-refresh
   cancel-in-progress: false
@@ -60,6 +63,10 @@ jobs:
           --max-generated-age-hours 2
           --max-bulk-age-hours 72
 
+      - name: Build current-cycle Oracle cache
+        if: success()
+        run: python scripts/build_current_cycle_oracle_cache.py
+
       - name: Audit Abaddon's exact 94-name frozen list
         if: success()
         run: >-
@@ -80,7 +87,9 @@ jobs:
             refinement/metadata_audit/Current_Scryfall_Metadata_Overlay.csv \
             refinement/metadata_audit/Current_Scryfall_Metadata_Audit_Summary.json \
             refinement/metadata_audit/Current_Scryfall_Metadata_Overlay_2026-10-12.csv \
-            refinement/metadata_audit/Current_Scryfall_Metadata_Audit_Summary_2026-10-12.json
+            refinement/metadata_audit/Current_Scryfall_Metadata_Audit_Summary_2026-10-12.json \
+            refinement/metadata_audit/Current_Cycle_Oracle_Cache.jsonl \
+            refinement/metadata_audit/Current_Cycle_Oracle_Cache_Summary.json
           if git diff --cached --quiet; then
             echo "No metadata changes to commit."
             exit 0
@@ -101,6 +110,14 @@ jobs:
             else
               echo "No validator report was produced; refresh may have failed before metadata generation."
             fi
+            if [[ -f refinement/metadata_audit/Current_Cycle_Oracle_Cache_Summary.json ]]; then
+              echo
+              echo "### Current-cycle Oracle cache"
+              cat refinement/metadata_audit/Current_Cycle_Oracle_Cache_Summary.json
+            else
+              echo
+              echo "Current-cycle Oracle cache was not produced."
+            fi
             if [[ -f /tmp/abaddon-frozen-baseline-audit.json ]]; then
               echo
               echo "### Abaddon 94-name audit"
@@ -120,6 +137,8 @@ jobs:
             refinement/metadata_audit/Current_Scryfall_Metadata_Audit_Summary.json
             refinement/metadata_audit/Current_Scryfall_Metadata_Overlay.csv
             refinement/metadata_audit/Current_Scryfall_Metadata_Audit_Summary_2026-10-12.json
+            refinement/metadata_audit/Current_Cycle_Oracle_Cache.jsonl
+            refinement/metadata_audit/Current_Cycle_Oracle_Cache_Summary.json
             /tmp/scryfall-refresh-validation.json
             /tmp/abaddon-frozen-baseline-audit.json
             /tmp/abaddon-frozen-baseline-audit.csv
