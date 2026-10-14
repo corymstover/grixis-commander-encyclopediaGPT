@@ -1,0 +1,14 @@
+{
+  "deck_id": "Edea__Possessed_Sorceress",
+  "display_name": "Edea, Possessed Sorceress",
+  "decklist_path": "refinement/decklists/Edea_Possessed_Sorceress_Approval_Candidate_2026-10-14.txt",
+  "expected_deck_sha256": "fd560a9b0777088b3ad1684ded030566c894faa206ddf6763b74d95d82c532e4",
+  "baseline_path": "refinement/decklists/Edea_Possessed_Sorceress_Current_Cycle_Baseline_2026-10-14.txt",
+  "expected_baseline_sha256": "8caaf9d1d62204627139b88e8f440ed3d3739a64e45bb1f97497590dc9df939a",
+  "baseline_source_sha256": "ae9ce6827012c97fc034a5d2fc95c808b034dc2a0c9de582536e0816225e2cd9",
+  "rules_attestation_path": "refinement/verification/edea_possessed_sorceress_2026-10-14/Edea_Possessed_Sorceress_Rules_Attestation.json",
+  "official_legality_attestation_path": "refinement/verification/edea_possessed_sorceress_2026-10-14/Edea_Possessed_Sorceress_Official_Legality_Attestation.json",
+  "output_dir": "refinement/verification/edea_possessed_sorceress_2026-10-14/gate_output",
+  "output_stem": "Edea_Possessed_Sorceress_2026-10-14",
+  "max_cache_age_hours": 72
+}
