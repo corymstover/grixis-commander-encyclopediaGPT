@@ -18,7 +18,7 @@
 | Count/singleton | PASS | 100 copies; 94 unique names; commander first and marked; only basic lands repeat; 36 lands. |
 | Rules interactions | PASS | Covenant no-power entry trigger, Demon count and token damage; Ardyn copied ETB/token behavior; cost-reducer/copy synergies documented. |
 | Multiplayer performance | NOT AVAILABLE | No qualified matched-start sample or simulator; no win-rate claim. |
-| Exact final hash | PASS | Must hash exact UTF-8 text bytes of the restart TXT and write the same digest here and to active tracker. |
+| Exact final hash | PASS | SHA-256 of the exact 1,867-byte UTF-8 restart TXT: `f48359f816498b386b085db60f0456576c8af9b055408685df71f0d1db448545`; matches active tracker. |
 
 ## Structural verification
 
@@ -31,6 +31,8 @@
 - Color identity: **PASS** (UBR).
 - Project exceptions: none.
 
-## Automatic lock gate
+## Final disposition
 
-The technical review is complete; do not mark approved/locked until the exact final TXT has been fetched after write, hashed independently, and the digest matches both this certificate and the tracker.
+**Final-list SHA-256:** `f48359f816498b386b085db60f0456576c8af9b055408685df71f0d1db448545`
+
+**Status: APPROVED / LOCKED — FRESH RESTART REVIEW PASSED.** The exact final list hash matches the active tracker, the full-list matrix covers all 94 unique names, and all mandatory technical gates pass.
