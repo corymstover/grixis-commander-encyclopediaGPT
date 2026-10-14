@@ -58,6 +58,16 @@ adaptive_optimizer:
     min_runtime_improvement_fraction: 0.10
 
 quality_gates:
+  whole_list_optimization:
+    required: true
+    review_all_noncommander_slots: true
+    challenge_historical_approvals: true
+    challenge_generic_staples: true
+    require_package_coverage: true
+    require_mana_curve_structure_review: true
+    require_current_release_check_when_material: true
+    require_post_swap_full_pass: true
+    require_zero_new_material_improvements_final_pass: true
   candidate_exhaustion:
     require_no_unresolved_high_impact_hold: true
     require_zero_new_material_candidates_last_pass: true
