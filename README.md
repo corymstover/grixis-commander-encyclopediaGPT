@@ -146,3 +146,9 @@ Deck #10 Crosis, the Purger: [final list](refinement/decklists/Crosis_Refined_20
 ## Full restart campaign checkpoint — 2026-10-13 (active cycle)
 
 The current-cycle restart has completed **#1 Abaddon, #2 Admiral Beckett Brass, #3 Admiral Brass, Unsinkable, #4 Anhelo, #5 Ashad, #6 Ashnod, #7 Be'lakor, #8 Bjorna // Cecily + Lutri, and #9 Crosis, the Purger**. All eight except Crosis count note in earlier content is corrected here: **9/62 approved and locked; 53 remain unapproved/unlocked**. Current next deck in authoritative tracker order: **#10 Cormela, Glamour Thief**. Prior-cycle records elsewhere in this README are historical and do not override the active tracker.
+
+## Full campaign restart and current checkpoint — 2026-10-13
+
+All prior-cycle approvals were reset to historical status. Fresh full restart reviews are complete for **Decks #1–#10**, through **#10 — Crosis, the Purger**. The active tracker has been restored from its source-of-truth inventory and the current-cycle status is applied in authoritative tracker order. Frozen October 12 baselines remain immutable.
+
+**Current active count: 10/62 approved and locked; 52 remain unapproved/unlocked. Next deck: #11 — Cormela's successor per the restored tracker (verify the row before continuing).** Historical approval notes elsewhere in the repository do not override this active checkpoint.

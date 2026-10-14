@@ -264,6 +264,6 @@ At cycle launch, all 62 decks were unapproved and unlocked. Current per-deck app
 
 ## Full campaign restart and current checkpoint — 2026-10-13
 
-All previous-cycle approvals were reset to historical status. Fresh restart reviews are complete for **Decks #1–#9**, through **#9 — Crosis, the Purger**. Exact list hashes and supporting artifacts are recorded in the active tracker. Frozen October 12 baselines and historical artifacts remain immutable.
+All prior-cycle approvals were reset to historical status. Fresh full restart reviews are complete for **Decks #1–#10**, through **#10 — Crosis, the Purger**. The active tracker has been restored from its source-of-truth inventory and the current-cycle status is applied in authoritative tracker order. Frozen October 12 baselines remain immutable.
 
-**Current active count: 9/62 approved and locked; 53 remain unapproved/unlocked. Next deck: #10 — Cormela, Glamour Thief.** Crosis's exact-list hash, full-list matrix, decision ledger, change ledger, review, certificate, tracker and cumulative ledger are synchronized. Continue one deck at a time in tracker order.
+**Current active count: 10/62 approved and locked; 52 remain unapproved/unlocked. Next deck: #11 — Cormela's successor per the restored tracker (verify the row before continuing).** Historical approval notes elsewhere in the repository do not override this active checkpoint.
