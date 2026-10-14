@@ -264,6 +264,6 @@ At cycle launch, all 62 decks were unapproved and unlocked. Current per-deck app
 
 ## Full campaign restart and current checkpoint — 2026-10-13
 
-All previous-cycle approvals were reset to historical status. Fresh full reviews are now complete for **Decks #1–#7**, through **#7 — Be'lakor, the Dark Master**. Their current final-list hashes and artifacts are recorded in the active tracker. The frozen 2026-10-12 source baselines and all prior-cycle artifacts remain immutable.
+All previous-cycle approvals were reset to historical status. Fresh full reviews are now complete for **Decks #1–#8**, through **#8 — Bjorna, Nightfall Alchemist // Cecily, Haunted Mage + Lutri companion**. Their current final-list hashes and artifacts are recorded in the active tracker. The frozen 2026-10-12 source baselines and all prior-cycle artifacts remain immutable.
 
-**Current active count: 7/62 approved and locked; 55 remain unapproved/unlocked. Next deck: #8 — Bjorna, Nightfall Alchemist // Cecily, Haunted Mage.** Do not begin substantive review of #8 until all Deck #7 artifacts and tracker fields are cross-checked. Continue strict one-deck-at-a-time in tracker order; a deck is auto-approved only after its fresh review passes every mandatory gate.
+**Current active count: 8/62 approved and locked; 54 remain unapproved/unlocked. Next deck: #9 per the authoritative tracker.** Deck #8 fresh-cycle artifacts, tracker fields, and four cumulative change rows are synchronized. Continue strict one-deck-at-a-time in tracker order; a deck is auto-approved only after its fresh review passes every mandatory gate.

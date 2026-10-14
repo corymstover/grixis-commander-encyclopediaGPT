@@ -12,7 +12,7 @@
 
 - Frozen baseline files are extracted from the October 12 package and match the named FINAL archives; raw source hashes are recorded above.
 - Baseline contains 100 main-deck copies plus Lutri as companion (101 total copies in the export); revised list likewise contains 100 main-deck copies plus the companion. The two commanders are counted within the 100-card main deck; Lutri is outside it.
-- Revised output: 100 lines, 101 total copies including companion, 100 distinct card names across main deck and companion; main deck excluding Lutri is 100 copies / 99 distinct names.
+- Revised output: 100 lines and 101 total copies including companion; 100 main-deck copies plus Lutri as companion. Total distinct names: 100.
 - Commander markers: Bjorna and Cecily are marked `[Commander]`; Lutri is marked `[Companion]`.
 - Singleton compliance: **PASS**. Only Island repeats (x2); no nonbasic duplicate.
 - Land count: 33 main-deck land copies, unchanged.
@@ -59,4 +59,8 @@ The deck remains a high-hand-size instant/sorcery value engine backed by an arti
 | Empirical performance test | NOT AVAILABLE | No qualified matched-start simulator/sample; no performance claim. |
 | Final technical gate | PASS | All required checks complete; exceptions documented separately. |
 
-**Final status:** APPROVED / LOCKED — ALL TECHNICAL GATES PASSED.
+**Final status:** APPROVED / LOCKED — fresh restart review passed after tracker and cumulative change-ledger synchronization.
+
+## Fresh restart disposition — 2026-10-13
+
+Final exact TXT byte length: 2038. Exact-TXT SHA-256 recorded: `5dd99905c7281a1fad8f0173e73413954f5fe390bfa64b1048d63ac38916cf46`. The verified final TXT and CSV are the fresh-cycle list files for this record. The official legality checkpoint distinguishes the Commander ban list from the three project-authorized exceptions: Lutri as companion, Trade Secrets, and Yawgmoth's Bargain. No other exception is used.
