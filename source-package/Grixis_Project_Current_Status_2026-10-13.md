@@ -1,6 +1,6 @@
 # Grixis Commander Encyclopedia — Current Status
 
-**Status snapshot:** 2026-10-13 UTC — FULL RESTART REVIEW: #1 ABADDON, #2 ADMIRAL BECKETT BRASS AND #3 ADMIRAL BRASS FRESHLY REVIEWED AND LOCKED; 59 DECKS REMAIN  
+**Status snapshot:** 2026-10-13 UTC — FULL RESTART REVIEW: #1 ABADDON, #2 ADMIRAL BECKETT BRASS, #3 ADMIRAL BRASS AND #4 ANHELO FRESHLY REVIEWED AND LOCKED; 58 DECKS REMAIN  
 **Scope:** 62 commander-first Grixis decks  
 **Frozen authoritative list snapshot:** 2026-10-12  
 **Active work branch:** `refinement/campaign-2026-10-12`  
@@ -12,7 +12,7 @@ The 2026-10-12 baseline remains frozen and structurally verified. All 62 CSV/TXT
 
 The active refinement branch now has a reproducible, CI-verified exact draw-density analysis for Abaddon. Forge test infrastructure has advanced beyond the original source-only probe: its pinned release and 95 card-script name mappings were verified, the exact baseline and isolated test variant loaded in Commander mode, and a bounded 3+3 fixed-opponent pilot completed. However, the candidate comparison was **INCONCLUSIVE** because neither Mind's Desire nor Aurora Phoenix was cast in any of the six registered games. Do not reuse those games as card-performance evidence or rerun the same AI comparison. The relevant workflow is now manual-dispatch only.
 
-**CURRENT ACTIVE STATE (restart review checkpoint 2026-10-13): 3 of 62 decks are approved/locked after fresh full restart reviews; 59 remain unapproved/unlocked.** Deck #1 Abaddon the Despoiler hash `10c730fe3b1185c97e04abc8e354d59b132b8865081ee190b8981c55632d7e91`; Deck #2 Admiral Beckett Brass hash `af427fabb694276c5f72d1800d330f938642195fafec0b9894f5d948f9900f3d`; Deck #3 Admiral Brass, Unsinkable hash `a0ded044af9998345769af6ba1cf908c1ed4b46418df598ce6288e8b3f5aa942`. Prior-cycle lock/hash entries are historical evidence only and do not count toward this campaign. Next in tracker order is #4, Anhelo, the Painter.
+**CURRENT ACTIVE STATE (restart review checkpoint 2026-10-13): 4 of 62 decks are approved/locked after fresh full restart reviews; 58 remain unapproved/unlocked.** Deck #1 Abaddon the Despoiler hash `10c730fe3b1185c97e04abc8e354d59b132b8865081ee190b8981c55632d7e91`; Deck #2 Admiral Beckett Brass hash `af427fabb694276c5f72d1800d330f938642195fafec0b9894f5d948f9900f3d`; Deck #3 Admiral Brass, Unsinkable hash `a0ded044af9998345769af6ba1cf908c1ed4b46418df598ce6288e8b3f5aa942`; Deck #4 Anhelo, the Painter hash `7836e65849bd7e4847f452f016c2204b47289bd6fb86a08edbd53e9741c9c87b`. Prior-cycle lock/hash entries are historical evidence only and do not count toward this campaign. Next in tracker order is #5, Ashad, the Lone Cyberman.
 
 ## Verified baseline and source integrity
 
@@ -264,6 +264,6 @@ At cycle launch, all 62 decks were unapproved and unlocked. Current per-deck app
 
 ## Full campaign restart and current checkpoint — 2026-10-13
 
-All previous-cycle approvals were reset to historical status. Fresh full reviews are now complete for **Deck #1 — Abaddon the Despoiler**, **Deck #2 — Admiral Beckett Brass**, and **Deck #3 — Admiral Brass, Unsinkable**. Their current final-list hashes and artifacts are recorded in the active tracker. The frozen 2026-10-12 source baselines and all prior-cycle artifacts remain immutable.
+All previous-cycle approvals were reset to historical status. Fresh full reviews are now complete for **Deck #1 — Abaddon the Despoiler**, **Deck #2 — Admiral Beckett Brass**, **Deck #3 — Admiral Brass, Unsinkable**, and **Deck #4 — Anhelo, the Painter**. Their current final-list hashes and artifacts are recorded in the active tracker. The frozen 2026-10-12 source baselines and all prior-cycle artifacts remain immutable.
 
-**Current active count: 3/62 approved and locked; 59 remain unapproved/unlocked. Next deck: #4 — Anhelo, the Painter.** Do not begin substantive review of #4 until all Deck #3 artifacts and tracker fields are cross-checked. Continue strict one-deck-at-a-time in tracker order; a deck is auto-approved only after its fresh review passes every mandatory gate.
+**Current active count: 4/62 approved and locked; 58 remain unapproved/unlocked. Next deck: #5 — Ashad, the Lone Cyberman.** Do not begin substantive review of #5 until all Deck #4 artifacts and tracker fields are cross-checked. Continue strict one-deck-at-a-time in tracker order; a deck is auto-approved only after its fresh review passes every mandatory gate.
