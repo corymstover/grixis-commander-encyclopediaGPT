@@ -1,14 +1,14 @@
 {
   "status": "PASS",
-  "deck_sha256": "2bb99011d85cc48841cb76edcddb8ba75696153b5e81bb36283880ff691f5acc",
-  "checked_at_utc": "2026-10-14T22:14:52Z",
+  "deck_sha256": "cd36192fedda7a4f54570fb8b8e4605147b40f9254e6985729097fc998f17b03",
+  "checked_at_utc": "2026-10-14T23:37:00Z",
   "sources": [
     "Wizards of the Coast Banned & Restricted list — Commander section, checked 2026-10-14",
-    "Wizards of the Coast Banned and Restricted Announcement — 2026-10-12; changes were Competitive Brawl-specific and did not change paper Commander legality for this candidate",
-    "current Oracle/Commander-legality records for the exact Kefka candidate, including 2026 card Hexing Squelcher",
+    "Wizards of the Coast Banned and Restricted Announcement — 2026-10-12; announced changes were not paper Commander changes applicable to this candidate",
+    "current Oracle/Commander-legality records for the exact revised Kefka candidate, including Demonic Counsel, Valley Floodcaller, and current 2026 cards used by the project",
     "current project Oracle/Scryfall legality cache; exact candidate must be independently revalidated by the complete approval gate"
   ],
   "unexpected_banned_cards": [],
   "project_exceptions": [],
-  "notes": "The exact SHA-bound Kefka, Court Mage // Kefka, Ruler of Ruin candidate requires no project-specific legality exception. Named-ban screening against the current Wizards Commander banned list found no Commander-banned card in the candidate. Ragavan, Nimble Pilferer was affected by the 2026-10-12 Competitive Brawl announcement as a commander-only restriction in that separate digital format; it remains legal in paper Commander and is in Kefka's 99 here. The candidate intentionally excludes currently Commander-banned Mana Crypt, Jeweled Lotus, Dockside Extortionist, and other banned cards. Final per-card official-legality and B/R/U color-identity status is fail-closed and must be independently confirmed against a freshly rebuilt current-cycle Oracle cache by the complete approval gate before APPROVAL_READY."
+  "notes": "The exact SHA-bound Kefka, Court Mage // Kefka, Ruler of Ruin candidate requires no project-specific legality exception. Named-ban screening against the current Wizards paper Commander banned list found no Commander-banned card in the candidate. Ragavan, Nimble Pilferer has restrictions in a separate Competitive Brawl context but remains legal in paper Commander and is included in Kefka's 99. Demonic Counsel is Commander-legal. The candidate intentionally excludes currently Commander-banned Mana Crypt, Jeweled Lotus, Dockside Extortionist, and other banned cards. Final per-card official-legality and B/R/U color-identity status is fail-closed and must be independently confirmed against a freshly rebuilt current-cycle Oracle cache by the complete approval gate before APPROVAL_READY."
 }
