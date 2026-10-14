@@ -5,6 +5,7 @@ on:
     branches: ["main", "refinement/**", "automation/**"]
     paths:
       - "scripts/verify_retrospective_1_to_8.py"
+      - "scripts/verify_retrospective_1_to_8_v2.py"
       - ".github/workflows/verify-retrospective-1-to-8.yml"
       - "refinement/decklists/**"
       - "refinement/metadata_audit/Current_Cycle_Oracle_Cache.jsonl"
@@ -34,7 +35,7 @@ jobs:
           python-version: "3.12"
 
       - name: Run fresh Oracle / legality retrospective machine gate
-        run: python scripts/verify_retrospective_1_to_8.py
+        run: python scripts/verify_retrospective_1_to_8_v2.py
 
       - name: Commit verified retrospective machine evidence
         if: success()
