@@ -1,0 +1,26 @@
+name: Adaptive pipeline v2 quality gate
+on:
+  push:
+    branches: ["main","automation/adaptive-pipeline-v2-*","integration/adaptive-pipeline-v2"]
+    paths: ["grixis_pipeline/**","scripts/grixis_pipeline.py","tests/test_adaptive_pipeline.py","tests/test_current_cycle_state.py","tests/test_dependency_invalidation.py","tests/test_generic_runner.py","tests/test_retry_resume.py","tests/test_metrics.py","tests/test_quality_comparator.py","tests/test_batch.py","config/pipeline_policy_v2.yml","architecture/ADAPTIVE_PIPELINE_V2.md",".github/workflows/adaptive-pipeline-v2.yml"]
+  pull_request:
+    paths: ["grixis_pipeline/**","scripts/grixis_pipeline.py","scripts/analyze_pipeline_telemetry.py","scripts/derive_current_state.py","scripts/check_tracker_integrity.py","tests/test_adaptive_pipeline.py","tests/test_current_cycle_state.py","tests/test_dependency_invalidation.py","tests/test_generic_runner.py","tests/test_retry_resume.py","tests/test_metrics.py","tests/test_quality_comparator.py","tests/test_batch.py","state/**","config/pipeline_policy_v2.yml","architecture/ADAPTIVE_PIPELINE_V2*.md","architecture/DEPENDENCY_INVALIDATION_V1.md","architecture/OPTIMIZATION_STOPPING_RULES.md",".github/workflows/adaptive-pipeline-v2.yml"]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - name: Install project test dependencies
+        run: python -m pip install --disable-pip-version-check -r requirements-scryfall.txt
+      - name: Adaptive pipeline unit tests
+        run: python -m unittest tests.test_adaptive_pipeline -v
+      - name: Existing project regression suite
+        run: python -m unittest discover -s tests -v
+        continue-on-error: false
+      - name: Frozen baseline gate
+        run: python scripts/verify_baseline.py
