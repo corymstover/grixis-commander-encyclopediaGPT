@@ -68,4 +68,4 @@ jobs:
           if-no-files-found: warn
           retention-days: 90
 
-# exact-SHA gate trigger: 2026-10-14
+# exact-SHA gate retrigger after refreshed Oracle cache: 2026-10-14
