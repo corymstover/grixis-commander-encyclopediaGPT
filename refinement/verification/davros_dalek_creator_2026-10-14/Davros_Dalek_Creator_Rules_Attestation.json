@@ -1,0 +1,91 @@
+{
+  "status": "PASS",
+  "deck_sha256": "aa6d2d343c6c1f167de8d16b23951940f7d23810c6e7705a6fd0d539a7459adc",
+  "checked_at_utc": "2026-10-14T07:25:00+00:00",
+  "rules_checkpoint": "Magic Comprehensive Rules current through Reality Fracture / 2026-09-25 rules update",
+  "sources": [
+    "https://magic.wizards.com/en/rules",
+    "https://media.wizards.com/2023/downloads/WHO_Release_Notes_d82nmhwn23Ed/EN_WHO_Release_Notes_20231011.pdf",
+    "https://magic.wizards.com/en/news/feature/edge-of-eternities-release-notes",
+    "refinement/metadata_audit/Current_Cycle_Oracle_Cache.jsonl",
+    "refinement/metadata_audit/Current_Cycle_Oracle_Cache_Summary.json"
+  ],
+  "interactions": [
+    {
+      "name": "Davros end-step trigger and 3-life qualification timing",
+      "status": "PASS",
+      "note": "Davros has 'At the beginning of your end step' as the trigger condition. The later 'if an opponent lost 3 or more life this turn' wording is part of the resolving effect, not an intervening-if clause immediately following the trigger event. Davros therefore triggers at the beginning of the controller's end step even if no opponent has yet lost 3 life; the resolving ability checks which opponents qualify when its instructions are performed. This allows another beginning-of-end-step trigger controlled by the same player to be ordered above Davros and establish qualifying life loss before Davros resolves."
+    },
+    {
+      "name": "Davros + Scientist Supreme of A.I.M.",
+      "status": "PASS",
+      "note": "Davros is an artifact source. During the Davros player's turn, after Davros's beginning-of-end-step triggered ability is on the stack, Scientist Supreme may pay 2 life to copy that triggered ability. The copy performs the same qualification check and Davros instructions when it resolves. Scientist Supreme is limited to once each turn by its Oracle text."
+    },
+    {
+      "name": "Davros + Roaming Throne",
+      "status": "PASS",
+      "note": "Davros is both an Alien and a Scientist. If Roaming Throne enters with either Alien or Scientist chosen, Davros's triggered ability triggers an additional time because Davros is another creature of the chosen type. Each trigger resolves separately and checks the turn's life-loss history at its own resolution."
+    },
+    {
+      "name": "Davros + Strionic Resonator",
+      "status": "PASS",
+      "note": "Strionic Resonator may target and copy Davros's triggered ability while it is on the stack. The copied ability resolves independently and repeats Davros's instructions."
+    },
+    {
+      "name": "Auton Soldier entering as Davros",
+      "status": "PASS",
+      "note": "Auton Soldier may enter as a copy of Davros except it is not legendary, is an artifact in addition to its other types, and has myriad. The original Auton Soldier permanent therefore carries Davros's beginning-of-your-end-step ability and can create another independent Davros trigger without a legend-rule conflict. Myriad tokens made during combat are exiled at end of combat under normal myriad rules and therefore normally do not remain for the later end step."
+    },
+    {
+      "name": "Davros + The Valeyard",
+      "status": "PASS",
+      "note": "The Valeyard's replacement effect applies whenever an opponent would face a villainous choice. Each qualifying opponent affected by each resolving Davros ability therefore faces Davros's draw-or-discard choice an additional time. Multiple Davros triggers are separate effects, so The Valeyard applies to each relevant villainous-choice event."
+    },
+    {
+      "name": "Court of Ambition + Entropic Battlecruiser at station 1+",
+      "status": "PASS",
+      "note": "At the controller's upkeep, Court of Ambition makes each opponent lose 3 life unless that opponent discards a card (or 6 unless two cards are discarded while the controller is monarch). Once Entropic Battlecruiser has at least one charge counter, its 1+ ability is active. An opponent who discards to avoid Court's life loss causes Battlecruiser to trigger and that opponent loses 3 life. Thus, while Battlecruiser's 1+ ability is active, each opponent either loses the required amount directly to Court or loses at least 3 from the Battlecruiser trigger after discarding, establishing Davros qualification during the controller's turn barring prevention/replacement effects."
+    },
+    {
+      "name": "Geier Reach Sanitarium + Entropic Battlecruiser at station 1+",
+      "status": "PASS",
+      "note": "If Geier Reach Sanitarium is activated during the Davros player's turn, each player draws a card and then discards a card. With Entropic Battlecruiser's 1+ ability active, each opponent's discard creates a Battlecruiser trigger causing that opponent to lose 3 life. Those triggers can resolve before the controller's end step and establish Davros qualification."
+    },
+    {
+      "name": "Entropic Battlecruiser station thresholds",
+      "status": "PASS",
+      "note": "Station symbols grant their associated abilities while the permanent has at least the stated number of charge counters. Entropic Battlecruiser's discard-to-lose-3 ability is active at 1+ charge counter. It does not need to be an artifact creature for that ability; it becomes an artifact creature only at its 8+ station threshold, where it also gains flying, deathtouch, and its attack trigger."
+    },
+    {
+      "name": "Perforating Artist ordering with Davros",
+      "status": "PASS",
+      "note": "If the controller attacked that turn, Perforating Artist and Davros both trigger at the beginning of the controller's end step. The controller may put Davros's trigger on the stack first and Artist's above it. Artist can therefore resolve first. An opponent who takes Artist's 3-life branch will qualify when Davros resolves. If an opponent instead discards while Entropic Battlecruiser's 1+ ability is active, the resulting Battlecruiser trigger can also resolve before Davros and establish qualification; an opponent who validly chooses the sacrifice branch may avoid both routes."
+    },
+    {
+      "name": "Wound Reflection ordering with Davros",
+      "status": "PASS",
+      "note": "Wound Reflection and Davros trigger at the beginning of the controller's end step. The controller may order Wound Reflection above Davros. Reflection then makes each opponent lose life equal to the life that opponent already lost that turn before Davros resolves. For example, an opponent who had already lost 2 life loses 2 more and has lost 4 total when Davros resolves."
+    },
+    {
+      "name": "Missy ordering with Davros",
+      "status": "PASS",
+      "note": "Missy and Davros both trigger at the beginning of the controller's end step. Missy's trigger may be placed above Davros. If an opponent chooses Missy's damage branch and the artifact creatures controlled deal at least 3 total damage to that opponent, that opponent qualifies for Davros when Davros subsequently resolves."
+    },
+    {
+      "name": "Maestros Charm threshold mode",
+      "status": "PASS",
+      "note": "Maestros Charm's second mode causes each opponent to lose exactly 3 life. If it resolves during the Davros player's turn before Davros resolves, every opponent affected by that life loss qualifies for Davros."
+    },
+    {
+      "name": "Loyal Subordinate threshold line",
+      "status": "PASS",
+      "note": "At the beginning of combat on the controller's turn, if the controller controls Davros, Loyal Subordinate makes each opponent lose 3 life. That directly establishes Davros qualification for the turn."
+    },
+    {
+      "name": "Labyrinth Raptor + Davros/Dalek menace creatures",
+      "status": "PASS",
+      "note": "Davros and the Dalek tokens Davros creates have menace. Whenever one of those menace creatures becomes blocked while Labyrinth Raptor is controlled, the defending player sacrifices a creature of their choice that is blocking it. Raptor's activated ability also pumps all creatures controlled with menace for the turn."
+    }
+  ],
+  "result_note": "Rules attestation is bound to the exact Davros, Dalek Creator approval-candidate SHA. Any decklist change invalidates this PASS until re-attested."
+}
