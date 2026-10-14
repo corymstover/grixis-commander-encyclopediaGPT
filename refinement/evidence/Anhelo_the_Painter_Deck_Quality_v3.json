@@ -1,0 +1,265 @@
+{
+  "deck_id": "Anhelo__the_Painter",
+  "hard_gates": {
+    "exact_100": true,
+    "singleton": true,
+    "color_identity": true,
+    "commander_legality_or_registered_exception": true,
+    "oracle_and_rules": true,
+    "strategic_coherence": true
+  },
+  "discovery_passes": 2,
+  "new_material_candidates_last_pass": 0,
+  "candidates": [
+    {
+      "card": "Cryptic Pursuit",
+      "impact": "HIGH",
+      "decision": "ACCEPT",
+      "reason": "Repeatable 2/2 manifest generation from hand-cast instants/sorceries directly supplies casualty 2 and conditional spell recovery.",
+      "evidence_refs": [
+        "Anhelo-v3-review",
+        "Anhelo-candidate-ledger"
+      ]
+    },
+    {
+      "card": "Jadar, Ghoulcaller of Nephalia",
+      "impact": "MEDIUM",
+      "decision": "REJECT",
+      "reason": "Efficient recurring 2/2 fodder, but end-step/decayed condition is narrower and does not reinforce spellcasting as directly as Cryptic Pursuit.",
+      "evidence_refs": [
+        "Anhelo-v3-review",
+        "Anhelo-candidate-ledger"
+      ]
+    },
+    {
+      "card": "Startle",
+      "impact": "MEDIUM",
+      "decision": "REJECT",
+      "reason": "Instant draw plus 2/2 decayed body is efficient but its interaction is low-impact and no retained slot is weaker than the repeatable engine swap.",
+      "evidence_refs": [
+        "Anhelo-v3-review",
+        "Anhelo-candidate-ledger"
+      ]
+    },
+    {
+      "card": "Rotten Reunion",
+      "impact": "MEDIUM",
+      "decision": "REJECT",
+      "reason": "Useful graveyard interaction plus fodder and flashback, but does not replace the higher-ceiling repeatable casualty engine.",
+      "evidence_refs": [
+        "Anhelo-v3-review",
+        "Anhelo-candidate-ledger"
+      ]
+    },
+    {
+      "card": "Dogged Detective",
+      "impact": "MEDIUM",
+      "decision": "REJECT",
+      "reason": "Value creature can recur, but commander-specific casualty/spell-copy improvement is less direct than repeatable 2/2 manifests.",
+      "evidence_refs": [
+        "Anhelo-v3-review",
+        "Anhelo-candidate-ledger"
+      ]
+    },
+    {
+      "card": "Sinister Concierge",
+      "impact": "MEDIUM",
+      "decision": "REJECT",
+      "reason": "Casualty-friendly body and temporary interaction are useful but do not materially improve copied-spell ceiling.",
+      "evidence_refs": [
+        "Anhelo-v3-review",
+        "Anhelo-candidate-ledger"
+      ]
+    },
+    {
+      "card": "Maestros Confluence",
+      "impact": "MEDIUM",
+      "decision": "REJECT",
+      "reason": "Flexible copied spell has a high ceiling but six mana increases dependence on already-established fodder/mana rather than fixing engine supply.",
+      "evidence_refs": [
+        "Anhelo-v3-review",
+        "Anhelo-candidate-ledger"
+      ]
+    },
+    {
+      "card": "Deekah, Fractal Theorist",
+      "impact": "MEDIUM",
+      "decision": "REJECT",
+      "reason": "Strong spell-token engine but five mana and non-immediate payoff compete with existing Talrand/Poppet engines.",
+      "evidence_refs": [
+        "Anhelo-v3-review",
+        "Anhelo-candidate-ledger"
+      ]
+    },
+    {
+      "card": "Metallurgic Summonings",
+      "impact": "MEDIUM",
+      "decision": "REJECT",
+      "reason": "Powerful token engine but five mana; Cryptic Pursuit comes down earlier and every manifest is exactly casualty-eligible regardless of spell mana value.",
+      "evidence_refs": [
+        "Anhelo-v3-review",
+        "Anhelo-candidate-ledger"
+      ]
+    },
+    {
+      "card": "Exsanguinate",
+      "impact": "LOW",
+      "decision": "REJECT",
+      "reason": "Copyable finisher overlaps Torment of Hailfire/Crackle with Power and adds no fodder engine.",
+      "evidence_refs": [
+        "Anhelo-v3-review",
+        "Anhelo-candidate-ledger"
+      ]
+    }
+  ],
+  "testing_required": false,
+  "hypothesis_tests": [],
+  "red_team_findings": [
+    {
+      "category": "casualty fodder latency",
+      "claim": "Cryptic Pursuit costs four and produces no body until a later instant/sorcery is cast from hand.",
+      "material": true,
+      "resolved": true,
+      "resolution": "The swap intentionally trades Talrand's Invocation's immediate two Drakes for a repeatable engine; the list retains numerous immediate/recurring fodder sources."
+    },
+    {
+      "category": "manifest recovery uncertainty",
+      "claim": "A manifested card is not guaranteed to be an instant or sorcery, so Cryptic Pursuit's recovery trigger is conditional.",
+      "material": true,
+      "resolved": true,
+      "resolution": "The guaranteed value being evaluated is a 2/2 manifest per qualifying hand-cast spell; spell recovery is upside, not assumed baseline value."
+    },
+    {
+      "category": "copy-trigger overclaim",
+      "claim": "Casualty copies or other spell copies could be mistakenly counted as additional Cryptic Pursuit triggers.",
+      "material": true,
+      "resolved": true,
+      "resolution": "Copies are not cast; Pursuit triggers only on instant/sorcery spells cast from hand. Evidence explicitly uses that bounded interpretation."
+    },
+    {
+      "category": "generic spellslinger drift",
+      "claim": "Premium tutors, copy spells and finishers could function without Anhelo.",
+      "material": true,
+      "resolved": true,
+      "resolution": "The token/fodder package and first-spell-per-turn sequencing are retained specifically to fund casualty 2; Anhelo materially increases conversion of those spells."
+    },
+    {
+      "category": "fodder density",
+      "claim": "Cutting Talrand's Invocation removes two immediate 2/2 flyers.",
+      "material": true,
+      "resolved": true,
+      "resolution": "Cryptic Pursuit can generate repeated 2/2 bodies and the list retains Talrand, Baral/Kari Zev, Judith, Lagomos, Poppet Stitcher, Army, Black Market Connections and Ghoulish Procession."
+    }
+  ],
+  "commander_necessity": {
+    "thesis": "Anhelo converts the first instant or sorcery cast each turn into a casualty-2 copy opportunity, making expendable power-2 creatures a spell-copy resource rather than generic token value.",
+    "material_dependencies": [
+      "power-2 casualty fodder",
+      "first-spell-per-turn sequencing",
+      "high-value instants and sorceries",
+      "spell-copy payoffs"
+    ],
+    "counterfactual_impact": "STRUCTURAL",
+    "evidence_refs": [
+      "Anhelo_the_Painter_v1"
+    ]
+  },
+  "evidence_dimensions": [
+    {
+      "name": "commander_identity",
+      "confidence": "HIGH_CONFIDENCE",
+      "rationale": "Cryptic Pursuit turns hand-cast spells into exact power-2 casualty bodies.",
+      "evidence_refs": [
+        "Anhelo-v3-review"
+      ]
+    },
+    {
+      "name": "engine",
+      "confidence": "HIGH_CONFIDENCE",
+      "rationale": "Spell casting, expendable creatures and copy payoffs form a coherent Anhelo loop.",
+      "evidence_refs": [
+        "Anhelo-v3-review"
+      ]
+    },
+    {
+      "name": "mana",
+      "confidence": "HIGH_CONFIDENCE",
+      "rationale": "Swap is four mana for four mana; mana base/ramp unchanged.",
+      "evidence_refs": [
+        "Anhelo-v3-review"
+      ]
+    },
+    {
+      "name": "interaction",
+      "confidence": "HIGH_CONFIDENCE",
+      "rationale": "Premium interaction retained; swap does not consume an interaction slot.",
+      "evidence_refs": [
+        "Anhelo-v3-review"
+      ]
+    },
+    {
+      "name": "resilience",
+      "confidence": "PROVISIONAL",
+      "rationale": "Pursuit is a persistent engine but vulnerable to enchantment removal and graveyard/exile recovery is conditional.",
+      "evidence_refs": [
+        "Anhelo-v3-review"
+      ]
+    },
+    {
+      "name": "conversion",
+      "confidence": "HIGH_CONFIDENCE",
+      "rationale": "Casualty copies scale high-impact instants/sorceries and finishers while fodder engines sustain the resource.",
+      "evidence_refs": [
+        "Anhelo-v3-review"
+      ]
+    },
+    {
+      "name": "combo_integrity",
+      "confidence": "VERIFIED",
+      "rationale": "No infinite claim required; manifest/casualty/copy rules are explicitly bounded.",
+      "evidence_refs": [
+        "Anhelo-v3-review"
+      ]
+    },
+    {
+      "name": "card_quality",
+      "confidence": "HIGH_CONFIDENCE",
+      "rationale": "Ten relevant alternatives are dispositioned against actual roles.",
+      "evidence_refs": [
+        "Anhelo-v3-review"
+      ]
+    },
+    {
+      "name": "candidate_exhaustion",
+      "confidence": "HIGH_CONFIDENCE",
+      "rationale": "No unresolved high-impact HOLD remains after current-cycle review.",
+      "evidence_refs": [
+        "Anhelo-v3-review"
+      ]
+    },
+    {
+      "name": "testing",
+      "confidence": "PROVISIONAL",
+      "rationale": "No unsupported multiplayer win-rate claim; engine swap is justified analytically.",
+      "evidence_refs": [
+        "Anhelo-v3-review"
+      ]
+    },
+    {
+      "name": "rules_confidence",
+      "confidence": "VERIFIED",
+      "rationale": "Casualty 2, manifest 2/2 status, copy-not-cast, and from-hand trigger boundaries are documented.",
+      "evidence_refs": [
+        "Anhelo-v3-review"
+      ]
+    },
+    {
+      "name": "source_freshness",
+      "confidence": "HIGH_CONFIDENCE",
+      "rationale": "Current review is anchored to the frozen source and Oct. 13 research evidence.",
+      "evidence_refs": [
+        "Anhelo-v3-review"
+      ]
+    }
+  ]
+}
