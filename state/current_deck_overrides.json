@@ -285,6 +285,20 @@
       "whole_list_audit_artifact": "refinement/decisions/Gwendlyn_Di_Corci_Current_Cycle_Decisions_2026-10-14.md",
       "approval_record_artifact": "refinement/approvals/Gwendlyn_Di_Corci_Approved_2026-10-14.md",
       "approved_list_artifact": "refinement/decklists/Gwendlyn_Di_Corci_Approved_2026-10-14.txt"
+    },
+    "Inalla__Archmage_Ritualist": {
+      "approval_status": "APPROVED",
+      "lock_status": "LOCKED",
+      "final_gate_passed": true,
+      "user_approval_date": "2026-10-14",
+      "current_stage": "LOCKED",
+      "approved_list_sha256": "81333ac71d483b667af968bf2ab221e1fa0de6edd7c2395170d15786e5b15fa3",
+      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + Complete Approval Gate v1",
+      "approval_basis": "Explicit user approval of the exact SHA-bound Inalla, Archmage Ritualist approval candidate after mandatory 99-slot whole-list audit, cEDH natural-ceiling determination, 49-card commander-first rebuild, candidate exhaustion, adversarial rules red-team, Samut split-second correction, zero-new-material-improvement closure, fresh Oracle/color-identity verification, current official Commander legality verification, independent combo/rules verification, and complete fail-closed gate APPROVAL_READY with zero errors.",
+      "complete_gate_artifact": "refinement/verification/inalla_archmage_ritualist_2026-10-14/gate_output/Inalla_Archmage_Ritualist_2026-10-14_Complete_Gate.json",
+      "whole_list_audit_artifact": "refinement/decisions/Inalla_Archmage_Ritualist_Current_Cycle_Decisions_2026-10-14.md",
+      "approval_record_artifact": "refinement/approvals/Inalla_Archmage_Ritualist_Approved_2026-10-14.md",
+      "approved_list_artifact": "refinement/decklists/Inalla_Archmage_Ritualist_Approved_2026-10-14.txt"
     }
   }
 }
