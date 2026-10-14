@@ -83,7 +83,22 @@ Scores organize evidence; they are not scientific truth and should not be report
 
 The inherited v8.1.4 methodology assigns 25% weight to an EDHREC legacy synergy field. EDHREC announced the transition from Synergy to Lift on commander pages on 2026-10-01. Retain historical scores as historical evidence only; do not treat that legacy field as a current, independently valid power statistic. For new research, capture current inclusion, current Lift, sample size, retrieval date, filter/context, and their limitations. Do not re-run the entire research pipeline just for routine deck updates; refresh only the sources/joins necessary for the current card candidates and current deck membership.
 
-## 6. The atomic unit of optimization is a proposed swap
+## 6. Mandatory full-100-card optimization pass
+
+Before narrowing work to proposed swaps, audit the complete deck. Every noncommander card must be assessed against the commander blueprint and its package. Do not begin from the assumption that the existing list is mostly correct, and do not stop after validating a previously proposed change.
+
+The optimizer must:
+- classify every noncommander slot by role and retention strength;
+- identify the weakest retained cards/packages across the whole deck;
+- challenge generic staples and historically approved cards as aggressively as thematic cards;
+- inspect lands, curve, ramp, draw/selection, interaction/protection, engine density, payoffs, recursion, finishers and combo slots;
+- search current commander-specific alternatives for the actual weak points;
+- make every material improvement supported by the evidence, whether that means zero changes or many;
+- repeat the whole-list pass after changes until a complete pass finds zero new material improvements.
+
+A zero-change or one-change result is valid only after all other slots have survived this process. Historical approval is not optimization evidence.
+
+## 7. The atomic unit of optimization is a proposed swap
 
 Do not ask, “What else can we improve in this deck?” Ask:
 
@@ -101,7 +116,7 @@ Every proposed swap must record:
 
 A swap is not accepted because the candidate ranks highly, is popular, appears in another project deck, has strong theoretical synergy, or performs well in one favorable goldfish. Likewise, do not cut a lower-popularity card that is essential to a distinctive plan merely to improve aggregate metrics.
 
-## 7. Verification and testing tiers
+## 8. Verification and testing tiers
 
 ### Tier 1 — Always required for the final 100
 
@@ -132,7 +147,7 @@ Goldfishing cannot establish resilience to removal, counterspells, graveyard hat
 - Use a pilot run to estimate variance, then a predeclared sample size and success threshold. Do not keep adding games until the result happens to look favorable.
 - Keep the benchmark fixed across all variants of the same deck and record failures as well as wins.
 
-## 8. Stop rule: when this deck is done
+## 9. Stop rule: when this deck is done
 
 A deck may be marked `FINAL AS OF YYYY-MM-DD` only when *all* are true:
 
@@ -147,7 +162,7 @@ A deck may be marked `FINAL AS OF YYYY-MM-DD` only when *all* are true:
 
 If two choices remain close and neither has reliable evidence of superiority, choose based on commander identity, resilience, versatility, and stated project values, document the tie-break, and stop. Do not reopen the slot just because another plausible card can be found.
 
-## 9. Freeze policy: changes after finalization
+## 10. Freeze policy: changes after finalization
 
 A finalized deck is not re-analyzed on every new candidate list or because another deck used a card. Reopen only for one of these triggers:
 - official rules, Oracle text, errata, or Commander legality changes that materially affect the deck;
@@ -158,14 +173,14 @@ A finalized deck is not re-analyzed on every new candidate list or because anoth
 
 Otherwise maintain the finalized snapshot. A newer date by itself is not a reason to reopen.
 
-## 10. Efficient campaign sequence
+## 11. Efficient campaign sequence
 
 1. **Project-wide preflight once:** confirm the current baseline source, refresh official legality/Oracle data and mark the data date. Do not rebuild ranking research for no reason.
 2. **Per deck:** blueprint → targeted candidate triage → slot-level swaps → rules audit → tests → finalization gate → user approval → hash and lock.
 3. **Do not revisit finished decks during this campaign** unless a predeclared trigger appears. Move to the next commander only after the current review is formally closed.
 4. **After all 62:** preserve the final lists, finalization records, test summaries, card-data snapshot, exception registry and aggregate audit. Thereafter, run only trigger-based maintenance.
 
-## 11. Authoritative sources and tools
+## 12. Authoritative sources and tools
 
 - Scryfall API/bulk-data policy: https://scryfall.com/docs/faqs/i-m-having-trouble-accessing-the-scryfall-api-or-im-blocked-17
 - EDHREC FAQ: https://edhrec.com/faq
@@ -178,6 +193,3 @@ Otherwise maintain the finalized snapshot. A newer date by itself is not a reaso
 
 These tools inform the decision. None substitutes for source verification, rules analysis or the commander-first blueprint.
 
-## 9. Standing Auto-Approval Instruction (effective 2026-10-13)
-
-The user has instructed that all future deck recommendations in this project are to be auto-approved. After commander-first candidate review and all applicable verification gates pass, implement the selected recommendation(s), mark the revised list approved/locked, and update the tracker, decision ledger, and verification artifacts without pausing for routine user approval. This replaces the prior per-deck explicit-approval pause. It does **not** waive technical requirements: block finalization for a failed 100-card/singleton check, identity or legality issue, unresolved Oracle/rules interaction, unexplained source conflict, unregistered project exception, or other material correctness failure. Do not invent evidence of playtesting or win rates. Preserve frozen baseline exports and previously locked decks; only refine the current deck in tracker order.
