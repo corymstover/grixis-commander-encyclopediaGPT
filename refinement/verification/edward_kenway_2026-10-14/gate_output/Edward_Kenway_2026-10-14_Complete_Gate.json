@@ -1,0 +1,23 @@
+{
+  "generated_at_utc": "2026-10-14T10:25:27.849836+00:00",
+  "deck_id": "Edward_Kenway",
+  "decklist_path": "refinement/decklists/Edward_Kenway_Approval_Candidate_2026-10-14.txt",
+  "deck_sha256": "a08d3bc9c283415f1579c493eccb3febd7d10dea3777bf3dc50cfbc0dbed4019",
+  "baseline_path": "refinement/decklists/Edward_Kenway_Current_Cycle_Baseline_2026-10-14.txt",
+  "baseline_source_sha256": "6361e497f78ba10e7b74c41cb728ea5c3b931d15d2a2cd2d7c107eb4e6cbd6d1",
+  "count": 100,
+  "distinct_names": 98,
+  "commander_color_identity": [
+    "B",
+    "R",
+    "U"
+  ],
+  "cache_generated_at_utc": "2026-10-14T10:22:21.335246+00:00",
+  "cache_sha256": "d1e36d09c6d4682923dab891903416d1f9410964d69a78fdfdbb4a284014c364",
+  "project_exceptions": [],
+  "rules_gate": "PASS",
+  "official_legality_gate": "PASS",
+  "errors": [],
+  "overall_result": "APPROVAL_READY",
+  "approval_state": "NOT_APPROVED — explicit user approval still required"
+}

@@ -1,0 +1,191 @@
+card_name,quantity,role,canonical_name,scryfall_id,oracle_id,type_line,mana_cost,color_identity,commander_color_identity,commander_legality,project_exception,result,oracle_text,source
+Edward Kenway,1,Commander,Edward Kenway,9472be1e-388c-45fe-a18d-35b2cb12dc5f,b2fe6d17-d045-45c6-9ca2-21e73d2e38d2,Legendary Creature — Human Assassin Pirate,,"B,R,U","B,R,U",legal,,PASS,"At the beginning of your end step, create a Treasure token for each tapped Assassin, Pirate, and/or Vehicle you control.
+Whenever a Vehicle you control deals combat damage to a player, look at the top card of that player's library, then exile it face down. You may play that card for as long as it remains exiled.",https://scryfall.com/card/9472be1e-388c-45fe-a18d-35b2cb12dc5f
+Academy Manufactor,1,,Academy Manufactor,2f5b4544-70d9-45ee-84a3-fa6253a53a82,f36d1d8b-8303-44a9-ab56-531931641ea2,Artifact Creature — Assembly-Worker,,,"B,R,U",legal,,PASS,"If you would create a Clue, Food, or Treasure token, instead create one of each.",https://scryfall.com/card/2f5b4544-70d9-45ee-84a3-fa6253a53a82
+"Adéwalé, Breaker of Chains",1,,"Adéwalé, Breaker of Chains",914efc24-5c3a-4d22-9d77-fce337a08d4d,e30d9e08-cf88-4e2d-95e1-7144d8fea5c7,Legendary Creature — Human Assassin Pirate,,"B,U","B,R,U",legal,,PASS,"When Adéwalé enters, reveal the top six cards of your library. Put an Assassin, Pirate, or Vehicle card from among them into your hand and the rest on the bottom of your library in a random order.
+Whenever a Vehicle you control deals combat damage to a player, you may return this card from your graveyard to your hand.",https://scryfall.com/card/914efc24-5c3a-4d22-9d77-fce337a08d4d
+"Admiral Brass, Unsinkable",1,,"Admiral Brass, Unsinkable",bdc2d492-9d1e-4543-8b9c-c66ee67992ce,4df179b4-7c6b-4e63-9d7d-62f4df377989,Legendary Creature — Human Pirate,,"B,R,U","B,R,U",legal,,PASS,"When Admiral Brass enters, mill four cards.
+At the beginning of combat on your turn, you may return target Pirate creature card from your graveyard to the battlefield with a finality counter on it. It has base power and toughness 4/4. It gains haste until end of turn. (If a creature with a finality counter on it would die, exile it instead.)",https://scryfall.com/card/bdc2d492-9d1e-4543-8b9c-c66ee67992ce
+Adrestia,1,,Adrestia,b3d878fc-cc21-407f-b3cc-95bf2d717a80,94779ca4-c202-4163-9c77-1036921a34bc,Legendary Artifact — Vehicle,,,"B,R,U",legal,,PASS,"Islandwalk (This creature can't be blocked as long as defending player controls an Island.)
+Whenever Adrestia attacks, if an Assassin crewed it this turn, draw a card. Adrestia becomes an Assassin in addition to its other types until end of turn.
+Crew 1",https://scryfall.com/card/b3d878fc-cc21-407f-b3cc-95bf2d717a80
+An Offer You Can't Refuse,1,,An Offer You Can't Refuse,fe1023a2-c096-4c62-8627-e865b348ba02,234a734b-ba28-4f1b-9d01-3c3e7d516590,Instant,,U,"B,R,U",legal,,PASS,"Counter target noncreature spell. Its controller creates two Treasure tokens. (They're artifacts with ""{T}, Sacrifice this token: Add one mana of any color."")",https://scryfall.com/card/fe1023a2-c096-4c62-8627-e865b348ba02
+Ancient Tomb,1,,Ancient Tomb,2189b1cb-94c4-4477-a5ef-17a1ae2c6708,23467047-6dba-4498-b783-1ebc4f74b8c2,Land,,,"B,R,U",legal,,PASS,{T}: Add {C}{C}. This land deals 2 damage to you.,https://scryfall.com/card/2189b1cb-94c4-4477-a5ef-17a1ae2c6708
+Arcane Signet,1,,Arcane Signet,c6b6117c-faab-4bbb-b851-07bd8061ef03,0bc7f093-bef0-4f1a-852c-4b75ebf54838,Artifact,,,"B,R,U",legal,,PASS,{T}: Add one mana of any color in your commander's color identity.,https://scryfall.com/card/c6b6117c-faab-4bbb-b851-07bd8061ef03
+Arid Mesa,1,,Arid Mesa,716c415e-5eb8-4644-ac64-5ba7c3f0ea65,c5acf2a5-40f4-433d-a74d-1cb56c521464,Land,,,"B,R,U",legal,,PASS,"{T}, Pay 1 life, Sacrifice this land: Search your library for a Mountain or Plains card, put it onto the battlefield, then shuffle.",https://scryfall.com/card/716c415e-5eb8-4644-ac64-5ba7c3f0ea65
+Badlands,1,,Badlands,56058359-3c0b-49db-a0ce-9ded4c3f4372,13ff3222-91cb-4796-a34e-899ed817694c,Land — Swamp Mountain,,"B,R","B,R,U",legal,,PASS,({T}: Add {B} or {R}.),https://scryfall.com/card/56058359-3c0b-49db-a0ce-9ded4c3f4372
+Basim Ibn Ishaq,1,,Basim Ibn Ishaq,f8aa19c1-4e87-4f42-814c-490e75565f6e,8a70bde5-c514-4dcf-919a-48bdd1c17768,Legendary Creature — Human Assassin,,"B,U","B,R,U",legal,,PASS,"Whenever you cast a historic spell, draw a card. Basim Ibn Ishaq can't be blocked this turn. This ability triggers only once each turn. (Artifacts, legendaries, and Sagas are historic.)
+Whenever Basim Ibn Ishaq deals combat damage to a player, put a +1/+1 counter on it.",https://scryfall.com/card/f8aa19c1-4e87-4f42-814c-490e75565f6e
+Black Market Connections,1,,Black Market Connections,9d9ca869-e68a-4f53-9f52-85c714dac6f3,d2664f28-49e1-46f8-a863-b217e961a57c,Enchantment,,B,"B,R,U",legal,,PASS,"At the beginning of your first main phase, choose one or more —
+• Sell Contraband — Create a Treasure token. You lose 1 life.
+• Buy Information — Draw a card. You lose 2 life.
+• Hire a Mercenary — Create a 3/2 colorless Shapeshifter creature token with changeling. You lose 3 life. (It is every creature type.)",https://scryfall.com/card/9d9ca869-e68a-4f53-9f52-85c714dac6f3
+Blood Crypt,1,,Blood Crypt,1b7eb998-3ec0-4cbc-a416-5a1e3e5a7316,43985bbc-a0f6-4812-984e-392bc8562633,Land — Swamp Mountain,,"B,R","B,R,U",legal,,PASS,"({T}: Add {B} or {R}.)
+As this land enters, you may pay 2 life. If you don't, it enters tapped.",https://scryfall.com/card/1b7eb998-3ec0-4cbc-a416-5a1e3e5a7316
+Bloodstained Mire,1,,Bloodstained Mire,579743fe-f71e-4cb2-8629-d6b02ed1591d,fc0707c7-d504-4ccf-a0d2-3eb6e26e7a57,Land,,,"B,R,U",legal,,PASS,"{T}, Pay 1 life, Sacrifice this land: Search your library for a Swamp or Mountain card, put it onto the battlefield, then shuffle.",https://scryfall.com/card/579743fe-f71e-4cb2-8629-d6b02ed1591d
+"Breeches, Brazen Plunderer",1,,"Breeches, Brazen Plunderer",fb6dc94e-9b57-4161-a835-15e46c3bb13a,eb77f7dc-e9e4-44ef-8616-9f4e737e8ca5,Legendary Creature — Goblin Pirate,,R,"B,R,U",legal,,PASS,"Menace
+Whenever one or more Pirates you control deal damage to your opponents, exile the top card of each of those opponents' libraries. You may play those cards this turn, and you may spend mana as though it were mana of any color to cast those spells.
+Partner (You can have two commanders if both have partner.)",https://scryfall.com/card/fb6dc94e-9b57-4161-a835-15e46c3bb13a
+"Breeches, Eager Pillager",1,,"Breeches, Eager Pillager",aadf5028-8dfe-40d3-89b4-22bd7ed0aae6,15361770-c6dc-4db7-b745-aa03e4b866ea,Legendary Creature — Goblin Pirate,,R,"B,R,U",legal,,PASS,"First strike
+Whenever a Pirate you control attacks, choose one that hasn't been chosen this turn —
+• Create a Treasure token.
+• Target creature can't block this turn.
+• Exile the top card of your library. You may play it this turn.",https://scryfall.com/card/aadf5028-8dfe-40d3-89b4-22bd7ed0aae6
+Captain Lannery Storm,1,,Captain Lannery Storm,60a457e2-6cc7-47f0-9a24-df5459395358,235bf0ba-658c-463f-b112-7478ba27bd7b,Legendary Creature — Human Pirate,,R,"B,R,U",legal,,PASS,"Haste
+Whenever Captain Lannery Storm attacks, create a Treasure token. (It's an artifact with ""{T}, Sacrifice this token: Add one mana of any color."")
+Whenever you sacrifice a Treasure, Captain Lannery Storm gets +1/+0 until end of turn.",https://scryfall.com/card/60a457e2-6cc7-47f0-9a24-df5459395358
+"Captain Storm, Cosmium Raider",1,,"Captain Storm, Cosmium Raider",14c65f5a-10bd-4f9b-b816-46c2240b11ff,431e85e3-15e6-471b-ba71-6058394c9a96,Legendary Creature — Human Pirate,,"R,U","B,R,U",legal,,PASS,"Whenever an artifact you control enters, put a +1/+1 counter on target Pirate you control.",https://scryfall.com/card/14c65f5a-10bd-4f9b-b816-46c2240b11ff
+Cavern of Souls,1,,Cavern of Souls,3aad15a2-8a1b-4460-9b06-e85863081878,89ca686a-7c72-4d8f-9290-e89635624a83,Land,,,"B,R,U",legal,,PASS,"As this land enters, choose a creature type.
+{T}: Add {C}.
+{T}: Add one mana of any color. Spend this mana only to cast a creature spell of the chosen type, and that spell can't be countered.",https://scryfall.com/card/3aad15a2-8a1b-4460-9b06-e85863081878
+Chrome Mox,1,,Chrome Mox,f340cbf7-5bbe-45b9-a4bf-d1caa500ff93,ec3d4466-547c-4e02-b1b5-a156ec4637e9,Artifact,,,"B,R,U",legal,,PASS,"Imprint — When this artifact enters, you may exile a nonartifact, nonland card from your hand.
+{T}: Add one mana of any of the exiled card's colors.",https://scryfall.com/card/f340cbf7-5bbe-45b9-a4bf-d1caa500ff93
+City of Brass,1,,City of Brass,c21565d0-fc40-4d89-9b27-87c03385e0af,f25351e3-539b-4bbc-b92d-6480acf4d722,Land,,,"B,R,U",legal,,PASS,"Whenever this land becomes tapped, it deals 1 damage to you.
+{T}: Add one mana of any color.",https://scryfall.com/card/c21565d0-fc40-4d89-9b27-87c03385e0af
+Coastal Piracy,1,,Coastal Piracy,3c3d9916-76c4-425a-a215-6226d0921f0b,8a05ec32-7b0c-4f23-a4f7-413301c2a70a,Enchantment,,U,"B,R,U",legal,,PASS,"Whenever a creature you control deals combat damage to an opponent, you may draw a card.",https://scryfall.com/card/3c3d9916-76c4-425a-a215-6226d0921f0b
+Command Tower,1,,Command Tower,1ac6cb62-45da-4e9a-84c6-09e6eacf0664,0895c9b7-ae7d-4bb3-af17-3b75deb50a25,Land,,,"B,R,U",legal,,PASS,{T}: Add one mana of any color in your commander's color identity.,https://scryfall.com/card/1ac6cb62-45da-4e9a-84c6-09e6eacf0664
+Cyclonic Rift,1,,Cyclonic Rift,dfb7c4b9-f2f4-4d4e-baf2-86551c8150fe,d75b9c82-1b49-4c3e-a1b5-aeef57d6644b,Instant,,U,"B,R,U",legal,,PASS,"Return target nonland permanent you don't control to its owner's hand.
+Overload {6}{U} (You may cast this spell for its overload cost. If you do, change ""target"" in its text to ""each."")",https://scryfall.com/card/dfb7c4b9-f2f4-4d4e-baf2-86551c8150fe
+Deadeye Quartermaster,1,,Deadeye Quartermaster,5ba70d58-69fd-4675-85d2-90bc2595c01c,40abba38-533b-4f51-99e9-a2b337d65171,Creature — Human Pirate,,U,"B,R,U",legal,,PASS,"When this creature enters, you may search your library for an Equipment or Vehicle card, reveal it, put it into your hand, then shuffle.",https://scryfall.com/card/5ba70d58-69fd-4675-85d2-90bc2595c01c
+Deadly Rollick,1,,Deadly Rollick,0e13f735-54fa-42b6-aea4-ced33811d7d4,0456ec64-2c81-4763-a352-8ff64a4c3d6b,Instant,,B,"B,R,U",legal,,PASS,"If you control a commander, you may cast this spell without paying its mana cost.
+Exile target creature.",https://scryfall.com/card/0e13f735-54fa-42b6-aea4-ced33811d7d4
+Deflecting Swat,1,,Deflecting Swat,b4b36435-55b3-4615-8812-af41d4fc64d9,ae120613-97d6-4393-b39d-c3e6c076f5d6,Instant,,R,"B,R,U",legal,,PASS,"If you control a commander, you may cast this spell without paying its mana cost.
+You may choose new targets for target spell or ability.",https://scryfall.com/card/b4b36435-55b3-4615-8812-af41d4fc64d9
+Deluxe Dragster,1,,Deluxe Dragster,4b90313d-9f61-4788-a55e-1f8189bf1ef5,56ba8fe5-8693-4783-8406-9ced99de0b2a,Artifact — Vehicle,,U,"B,R,U",legal,,PASS,"This Vehicle can't be blocked except by Vehicles.
+Whenever this Vehicle deals combat damage to a player, you may cast target instant or sorcery card from that player's graveyard without paying its mana cost. If that spell would be put into a graveyard, exile it instead.
+Crew 2",https://scryfall.com/card/4b90313d-9f61-4788-a55e-1f8189bf1ef5
+"Don Andres, the Renegade",1,,"Don Andres, the Renegade",3cf9f3ae-694d-4d37-9498-4bdd1723a55e,060ef981-db05-436b-b1c1-f55071375344,Legendary Creature — Vampire Pirate,,"B,R,U","B,R,U",legal,,PASS,"Each creature you control but don't own gets +2/+2, has menace and deathtouch, and is a Pirate in addition to its other types.
+Whenever you cast a noncreature spell you don't own, create two tapped Treasure tokens.",https://scryfall.com/card/3cf9f3ae-694d-4d37-9498-4bdd1723a55e
+Exotic Orchard,1,,Exotic Orchard,cc14b1ee-5def-42df-8ef6-0d91dba39e3a,27b047e3-0d41-45e2-98e9-9391d7923a1e,Land,,,"B,R,U",legal,,PASS,{T}: Add one mana of any color that a land an opponent controls could produce.,https://scryfall.com/card/cc14b1ee-5def-42df-8ef6-0d91dba39e3a
+Fateful Discovery,1,,Fateful Discovery,a1142fa1-b861-4876-aa48-402af35aaa63,72c6174c-fa2c-4ff2-b76e-eb6e890e97c9,Enchantment,,U,"B,R,U",legal,,PASS,"Whenever an artifact you control enters, draw a card.",https://scryfall.com/card/a1142fa1-b861-4876-aa48-402af35aaa63
+Fearless Swashbuckler,1,,Fearless Swashbuckler,0d86d66b-481f-44ec-86d8-6fc91b52ef38,6a6cdb3e-c850-4b3c-bf4b-c53dd4eaf56e,Creature — Fish Pirate,,"R,U","B,R,U",legal,,PASS,"Haste
+Vehicles you control have haste.
+Whenever you attack, if a Pirate and a Vehicle attacked this combat, draw three cards, then discard two cards.",https://scryfall.com/card/0d86d66b-481f-44ec-86d8-6fc91b52ef38
+Fellwar Stone,1,,Fellwar Stone,bc99f300-29c0-44e7-9560-7bbd1dda7556,95560508-7ac9-4be9-8a3f-3c7d5b52807b,Artifact,,,"B,R,U",legal,,PASS,{T}: Add one mana of any color that a land an opponent controls could produce.,https://scryfall.com/card/bc99f300-29c0-44e7-9560-7bbd1dda7556
+Fierce Guardianship,1,,Fierce Guardianship,f7f3dd95-bd14-4e0f-a388-444f9cf1b0dc,d09c9cba-fdd2-479b-ad5d-d05181c3e3f9,Instant,,U,"B,R,U",legal,,PASS,"If you control a commander, you may cast this spell without paying its mana cost.
+Counter target noncreature spell.",https://scryfall.com/card/f7f3dd95-bd14-4e0f-a388-444f9cf1b0dc
+Flooded Strand,1,,Flooded Strand,d3016d92-a5ee-44d7-aa0a-775fa04a7c6a,f3c7af78-a77d-4134-82a2-a5ce84285a84,Land,,,"B,R,U",legal,,PASS,"{T}, Pay 1 life, Sacrifice this land: Search your library for a Plains or Island card, put it onto the battlefield, then shuffle.",https://scryfall.com/card/d3016d92-a5ee-44d7-aa0a-775fa04a7c6a
+Force of Will,1,,Force of Will,89f612d6-7c59-4a7b-a87d-45f789e88ba5,956381ba-6d37-4a8a-846c-bad79222dbee,Instant,,U,"B,R,U",legal,,PASS,"You may pay 1 life and exile a blue card from your hand rather than pay this spell's mana cost.
+Counter target spell.",https://scryfall.com/card/89f612d6-7c59-4a7b-a87d-45f789e88ba5
+Gemcutter Buccaneer,1,,Gemcutter Buccaneer,ce8f708a-2b7b-48b9-88ae-70dd60007b3d,68e45c07-96c5-4f87-a816-d9fa4f119740,Creature — Orc Pirate Artificer,,R,"B,R,U",legal,,PASS,"Whenever this creature or another Pirate you control enters, create a tapped Treasure token.
+Treasures you control are Equipment in addition to their other types and have ""Equipped creature gets +2/+0,"" equip Pirate {1}, and equip {3}.",https://scryfall.com/card/ce8f708a-2b7b-48b9-88ae-70dd60007b3d
+Hoard Hauler,1,,Hoard Hauler,19f190e9-52f3-4e34-8fb6-88174c189ee7,2578e8e4-a93c-4904-9037-92a1529c2c67,Artifact — Vehicle,,R,"B,R,U",legal,,PASS,"Trample
+Whenever this Vehicle deals combat damage to a player, create a Treasure token for each artifact they control.
+Crew 3",https://scryfall.com/card/19f190e9-52f3-4e34-8fb6-88174c189ee7
+Hostage Taker,1,,Hostage Taker,c168af49-acae-45de-8c62-0e6d1006f325,c5c2d209-e3ef-4b0d-85f5-e7402dcf09eb,Creature — Human Pirate,,"B,U","B,R,U",legal,,PASS,"When this creature enters, exile another target creature or artifact until this creature leaves the battlefield. You may cast that card for as long as it remains exiled, and mana of any type can be spent to cast that spell.",https://scryfall.com/card/c168af49-acae-45de-8c62-0e6d1006f325
+Imperial Seal,1,,Imperial Seal,e71a6bd3-7478-4c3a-8ae0-98352ce28492,16cd0b90-f70c-4efa-b252-8de8784ef9a3,Sorcery,,B,"B,R,U",legal,,PASS,"Search your library for a card, then shuffle and put that card on top. You lose 2 life.",https://scryfall.com/card/e71a6bd3-7478-4c3a-8ae0-98352ce28492
+Imposter Mech,1,,Imposter Mech,59b7450c-3163-4f12-9af1-2e998a6c36cf,f434e266-d9d6-4058-96ff-a1bd4029d8dc,Artifact — Vehicle,,U,"B,R,U",legal,,PASS,"You may have this Vehicle enter as a copy of a creature an opponent controls, except it's a Vehicle artifact with crew 3 and it loses all other card types.
+Crew 3",https://scryfall.com/card/59b7450c-3163-4f12-9af1-2e998a6c36cf
+Island,2,,Island,1335d293-3dd2-4f13-bd2c-22181f4528ee,b2c6aa39-2d2a-459c-a555-fb48ba993373,Basic Land — Island,,U,"B,R,U",legal,,PASS,({T}: Add {U}.),https://scryfall.com/card/1335d293-3dd2-4f13-bd2c-22181f4528ee
+Jackdaw,1,,Jackdaw,63056bb9-e825-418a-a8ff-692980aa65fe,ac161100-46b7-4f0f-a72b-84aaa45980ad,Legendary Artifact — Vehicle,,"R,U","B,R,U",legal,,PASS,"Whenever Jackdaw deals combat damage to a player, you may discard your hand. If you do, draw a card for each artifact you control.
+Crew 3",https://scryfall.com/card/63056bb9-e825-418a-a8ff-692980aa65fe
+Jeska's Will,1,,Jeska's Will,99e0c371-1024-4432-9fd9-3bc29c8d38e4,0fd114c4-092b-4e28-b0dc-ef529f3bc73e,Sorcery,,R,"B,R,U",legal,,PASS,"Choose one. If you control a commander as you cast this spell, you may choose both instead.
+• Add {R} for each card in target opponent's hand.
+• Exile the top three cards of your library. You may play them this turn.",https://scryfall.com/card/99e0c371-1024-4432-9fd9-3bc29c8d38e4
+Kitesail Larcenist,1,,Kitesail Larcenist,03207457-70d8-4462-8c8b-ed39791d56a1,2452be47-cc23-47f7-a3a1-fec900bb0119,Creature — Human Pirate,,U,"B,R,U",legal,,PASS,"Flying, ward {1}
+When this creature enters, for each player, choose up to one other target artifact or creature that player controls. For as long as this creature remains on the battlefield, the chosen permanents become Treasure artifacts with ""{T}, Sacrifice this artifact: Add one mana of any color"" and lose all other abilities.",https://scryfall.com/card/03207457-70d8-4462-8c8b-ed39791d56a1
+Lotus Petal,1,,Lotus Petal,153983dd-54dc-420d-9249-665b0d669614,32e5339e-9e4f-46f8-b305-f9d6d3ba8bb5,Artifact,,,"B,R,U",legal,,PASS,"{T}, Sacrifice this artifact: Add one mana of any color.",https://scryfall.com/card/153983dd-54dc-420d-9249-665b0d669614
+Luxury Suite,1,,Luxury Suite,3c409d1e-f634-44a2-8fcf-dcdcb0babc3f,819e1765-8325-4e6f-89c1-63ea86de369f,Land,,"B,R","B,R,U",legal,,PASS,"This land enters tapped unless you have two or more opponents.
+{T}: Add {B} or {R}.",https://scryfall.com/card/3c409d1e-f634-44a2-8fcf-dcdcb0babc3f
+"Malcolm, Keen-Eyed Navigator",1,,"Malcolm, Keen-Eyed Navigator",51187cdb-85ee-4f68-9e29-d84d296f0825,a66f8b44-0163-4456-b152-4acefab896a4,Legendary Creature — Siren Pirate,,U,"B,R,U",legal,,PASS,"Flying
+Whenever one or more Pirates you control deal damage to your opponents, you create a Treasure token for each opponent dealt damage. (It's an artifact with ""{T}, Sacrifice this token: Add one mana of any color."")
+Partner (You can have two commanders if both have partner.)",https://scryfall.com/card/51187cdb-85ee-4f68-9e29-d84d296f0825
+Mana Confluence,1,,Mana Confluence,504a69eb-3c2d-4bb1-b117-252b15acf0c2,d0ee5bdc-2b69-4b73-9a20-ffcc18783b29,Land,,,"B,R,U",legal,,PASS,"{T}, Pay 1 life: Add one mana of any color.",https://scryfall.com/card/504a69eb-3c2d-4bb1-b117-252b15acf0c2
+Mana Drain,1,,Mana Drain,3c429c40-2389-41e5-8681-4bb274e25eba,74d3277a-38e5-4732-afed-084a56148f20,Instant,,U,"B,R,U",legal,,PASS,"Counter target spell. At the beginning of your next main phase, add an amount of {C} equal to that spell's mana value.",https://scryfall.com/card/3c429c40-2389-41e5-8681-4bb274e25eba
+Mana Vault,1,,Mana Vault,c1a31d52-a407-4ded-bfca-cc812f11afa0,736892cb-a34b-4bb9-b56c-e26e3db207a2,Artifact,,,"B,R,U",legal,,PASS,"This artifact doesn't untap during your untap step.
+At the beginning of your upkeep, you may pay {4}. If you do, untap this artifact.
+At the beginning of your draw step, if this artifact is tapped, it deals 1 damage to you.
+{T}: Add {C}{C}{C}.",https://scryfall.com/card/c1a31d52-a407-4ded-bfca-cc812f11afa0
+Marsh Flats,1,,Marsh Flats,f19a6f20-8ca1-4a8b-8488-bcb5d86868dc,dab520d0-20b4-4273-ba6b-eb07f85ea433,Land,,,"B,R,U",legal,,PASS,"{T}, Pay 1 life, Sacrifice this land: Search your library for a Plains or Swamp card, put it onto the battlefield, then shuffle.",https://scryfall.com/card/f19a6f20-8ca1-4a8b-8488-bcb5d86868dc
+Mary Read and Anne Bonny,1,,Mary Read and Anne Bonny,116bf8c6-8488-4eff-b350-b3ea821353b1,5182de2d-aceb-450e-bd20-8bc7db124334,Legendary Creature — Human Assassin Pirate,,"R,U","B,R,U",legal,,PASS,"Haste
+{T}: Draw a card, then discard a card.
+Whenever you discard an Island, Pirate, or Vehicle card, create a tapped Treasure token.",https://scryfall.com/card/116bf8c6-8488-4eff-b350-b3ea821353b1
+Glint-Horn Buccaneer,1,,Glint-Horn Buccaneer,0884ffe1-4f4c-40a4-88c2-d34a19d80dd9,64ad5657-78e9-4f34-8877-18c4f51fff9a,Creature — Minotaur Pirate,,R,"B,R,U",legal,,PASS,"Haste
+Whenever you discard a card, this creature deals 1 damage to each opponent.
+{1}{R}, Discard a card: Draw a card. Activate only if this creature is attacking.",https://scryfall.com/card/0884ffe1-4f4c-40a4-88c2-d34a19d80dd9
+Misty Rainforest,1,,Misty Rainforest,c6cad746-a1dc-4739-9707-9c12c42e141a,09dd85aa-47bc-4713-a9b9-8b52ff2285ed,Land,,,"B,R,U",legal,,PASS,"{T}, Pay 1 life, Sacrifice this land: Search your library for a Forest or Island card, put it onto the battlefield, then shuffle.",https://scryfall.com/card/c6cad746-a1dc-4739-9707-9c12c42e141a
+Morphic Pool,1,,Morphic Pool,48e40927-dd87-42ed-b805-0ae8ba81f5fb,bd004c9d-771e-4e63-a97d-a2259c096af8,Land,,"B,U","B,R,U",legal,,PASS,"This land enters tapped unless you have two or more opponents.
+{T}: Add {U} or {B}.",https://scryfall.com/card/48e40927-dd87-42ed-b805-0ae8ba81f5fb
+Mountain,1,,Mountain,85177bd7-6c50-48da-b692-ae5fe7bd357c,a3fb7228-e76b-4e96-a40e-20b5fed75685,Basic Land — Mountain,,R,"B,R,U",legal,,PASS,({T}: Add {R}.),https://scryfall.com/card/85177bd7-6c50-48da-b692-ae5fe7bd357c
+Mox Diamond,1,,Mox Diamond,28028830-83ed-45e2-b495-3b9ad9d3e988,f3c5978a-70fa-431f-933b-b954bd0db0ea,Artifact,,,"B,R,U",legal,,PASS,"If this artifact would enter, you may discard a land card instead. If you do, put this artifact onto the battlefield. If you don't, put it into its owner's graveyard.
+{T}: Add one mana of any color.",https://scryfall.com/card/28028830-83ed-45e2-b495-3b9ad9d3e988
+Mox Opal,1,,Mox Opal,56001a36-126b-4c08-af98-a6cc4d84210e,de2440de-e948-4811-903c-0bbe376ff64d,Legendary Artifact,,,"B,R,U",legal,,PASS,Metalcraft — {T}: Add one mana of any color. Activate only if you control three or more artifacts.,https://scryfall.com/card/56001a36-126b-4c08-af98-a6cc4d84210e
+Nautiloid Ship,1,,Nautiloid Ship,d4e2f75e-75f3-4255-969f-0eab32f7bd1e,613a8774-165e-4cf6-ad43-124f9ffc9980,Artifact — Vehicle,,,"B,R,U",legal,,PASS,"Flying
+When this Vehicle enters, exile target player's graveyard.
+Whenever this Vehicle deals combat damage to a player, you may put a creature card exiled with this Vehicle onto the battlefield under your control.
+Crew 3",https://scryfall.com/card/d4e2f75e-75f3-4255-969f-0eab32f7bd1e
+"Otawara, Soaring City",1,,"Otawara, Soaring City",486d7edc-d983-41f0-8b78-c99aecd72996,e9b6a394-691c-425a-9307-76d8edc7375e,Legendary Land,,U,"B,R,U",legal,,PASS,"{T}: Add {U}.
+Channel — {3}{U}, Discard this card: Return target artifact, creature, enchantment, or planeswalker to its owner's hand. This ability costs {1} less to activate for each legendary creature you control.",https://scryfall.com/card/486d7edc-d983-41f0-8b78-c99aecd72996
+Polluted Delta,1,,Polluted Delta,6e288374-2b71-4ace-b1d2-a19fee6cb4af,ef86989d-ce80-4e55-aece-7d11710eeffa,Land,,,"B,R,U",legal,,PASS,"{T}, Pay 1 life, Sacrifice this land: Search your library for an Island or Swamp card, put it onto the battlefield, then shuffle.",https://scryfall.com/card/6e288374-2b71-4ace-b1d2-a19fee6cb4af
+Port Razer,1,,Port Razer,eb32429a-7ef9-418f-baf8-fed9aa010c9e,653e4b68-3184-4352-ac91-127f7e6d7c12,Creature — Orc Pirate,,R,"B,R,U",legal,,PASS,"Whenever this creature deals combat damage to a player, untap each creature you control. After this phase, there is an additional combat phase.
+This creature can't attack a player it has already attacked this turn.",https://scryfall.com/card/eb32429a-7ef9-418f-baf8-fed9aa010c9e
+"Ragavan, Nimble Pilferer",1,,"Ragavan, Nimble Pilferer",8d27e717-8bda-44dc-90b9-a6f7029c7b93,37108cd4-bbab-4ce3-9ed6-f60e8422e703,Legendary Creature — Monkey Pirate,,R,"B,R,U",legal,,PASS,"Whenever Ragavan deals combat damage to a player, create a Treasure token and exile the top card of that player's library. Until end of turn, you may cast that card.
+Dash {1}{R} (You may cast this spell for its dash cost. If you do, it gains haste, and it's returned from the battlefield to its owner's hand at the beginning of the next end step.)",https://scryfall.com/card/8d27e717-8bda-44dc-90b9-a6f7029c7b93
+Luxurious Locomotive,1,,Luxurious Locomotive,cc598338-eeba-4815-a0a6-ff2dc09790d2,c68c2a98-9a6d-4199-af3a-78eb92beda48,Artifact — Vehicle,{5},,"B,R,U",legal,,PASS,"Whenever this Vehicle attacks, create a Treasure token for each creature that crewed it this turn. (They're artifacts with ""{T}, Sacrifice this token: Add one mana of any color."")
+Crew 1. Activate only once each turn. (Tap any number of creatures you control with total power 1 or more: This Vehicle becomes an artifact creature until end of turn.)",https://scryfall.com/card/otj/244/luxurious-locomotive?utm_source=api
+RMS Titanic,1,,RMS Titanic,3f5bcf60-f956-4e0d-beb7-a7f5c1c83692,6754753d-790e-4a95-a150-76741c4a02d4,Legendary Artifact — Vehicle,,R,"B,R,U",legal,,PASS,"Flying, trample
+When RMS Titanic deals combat damage to a player, sacrifice it and create that many Treasure tokens.
+Crew 3 (Tap any number of creatures you control with total power 3 or more: This Vehicle becomes an artifact creature until end of turn.)",https://scryfall.com/card/3f5bcf60-f956-4e0d-beb7-a7f5c1c83692
+Roaming Throne,1,,Roaming Throne,32fd8b7c-baf3-4d3d-be6f-044a917b11a0,3640c29b-1534-4952-b297-619ade948431,Artifact Creature — Golem,,,"B,R,U",legal,,PASS,"Ward {2}
+As this creature enters, choose a creature type.
+This creature is the chosen type in addition to its other types.
+If a triggered ability of another creature you control of the chosen type triggers, it triggers an additional time.",https://scryfall.com/card/32fd8b7c-baf3-4d3d-be6f-044a917b11a0
+Scalding Tarn,1,,Scalding Tarn,17c6ba55-2470-4dde-a7fa-137a60716c96,cb027150-848c-4a66-88ad-e20222304dd8,Land,,,"B,R,U",legal,,PASS,"{T}, Pay 1 life, Sacrifice this land: Search your library for an Island or Mountain card, put it onto the battlefield, then shuffle.",https://scryfall.com/card/17c6ba55-2470-4dde-a7fa-137a60716c96
+"Ramirez DePietro, Pillager",1,,"Ramirez DePietro, Pillager",11a4e199-faa9-4c41-863d-92170c8f20cc,a3b8690e-ac47-444f-924e-ab2a12a85431,Legendary Creature — Human Pirate,,"B,U","B,R,U",legal,,PASS,"When Ramirez DePietro enters, you lose 2 life and create two Treasure tokens.
+Whenever one or more Pirates you control deal combat damage to a player, exile the top card of that player's library. You may cast that card for as long as it remains exiled.",https://scryfall.com/card/11a4e199-faa9-4c41-863d-92170c8f20cc
+Shivan Reef,1,,Shivan Reef,9fb3938c-9ecf-46cc-865a-0091455419f9,0fe16212-66c3-4e45-a641-7391e9b2e304,Land,,"R,U","B,R,U",legal,,PASS,"{T}: Add {C}.
+{T}: Add {U} or {R}. This land deals 1 damage to you.",https://scryfall.com/card/9fb3938c-9ecf-46cc-865a-0091455419f9
+Siren Stormtamer,1,,Siren Stormtamer,073c301e-5bb6-49fa-bf61-2f662030540f,59c7496b-19a2-478b-b28f-6f153c2458ae,Creature — Siren Pirate Wizard,,U,"B,R,U",legal,,PASS,"Flying
+{U}, Sacrifice this creature: Counter target spell or ability that targets you or a creature you control.",https://scryfall.com/card/073c301e-5bb6-49fa-bf61-2f662030540f
+"Skysovereign, Consul Flagship",1,,"Skysovereign, Consul Flagship",0c254f4d-31ed-436a-92cb-85bb3709743e,50b14338-9318-4327-a1dd-c0ef38903cc4,Legendary Artifact — Vehicle,,,"B,R,U",legal,,PASS,"Flying
+Whenever Skysovereign enters or attacks, it deals 3 damage to target creature or planeswalker an opponent controls.
+Crew 3 (Tap any number of creatures you control with total power 3 or more: This Vehicle becomes an artifact creature until end of turn.)",https://scryfall.com/card/0c254f4d-31ed-436a-92cb-85bb3709743e
+Smuggler's Copter,1,,Smuggler's Copter,2680ed41-da35-475a-9d80-ae2f4686feed,49136bdc-bc50-49a2-999a-1ef9c16ea130,Artifact — Vehicle,,,"B,R,U",legal,,PASS,"Flying
+Whenever this Vehicle attacks or blocks, you may draw a card. If you do, discard a card.
+Crew 1 (Tap any number of creatures you control with total power 1 or more: This Vehicle becomes an artifact creature until end of turn.)",https://scryfall.com/card/2680ed41-da35-475a-9d80-ae2f4686feed
+Sol Ring,1,,Sol Ring,8ee443cc-e17a-493b-9c93-1f9e141a30e4,6ad8011d-3471-4369-9d68-b264cc027487,Artifact,,,"B,R,U",legal,,PASS,{T}: Add {C}{C}.,https://scryfall.com/card/8ee443cc-e17a-493b-9c93-1f9e141a30e4
+Steam Vents,1,,Steam Vents,a83903c7-fd51-4526-aed2-359e946fea36,17039058-822d-409f-938c-b727a366ba63,Land — Island Mountain,,"R,U","B,R,U",legal,,PASS,"({T}: Add {U} or {R}.)
+As this land enters, you may pay 2 life. If you don't, it enters tapped.",https://scryfall.com/card/a83903c7-fd51-4526-aed2-359e946fea36
+Subterranean Schooner,1,,Subterranean Schooner,94b6881a-b00e-4e90-92e6-602ed8e0e090,7f82bae3-feaa-4967-a843-32a4f72806d5,Artifact — Vehicle,,U,"B,R,U",legal,,PASS,"Whenever this Vehicle attacks, target creature that crewed it this turn explores. (Reveal the top card of your library. Put that card into your hand if it's a land. Otherwise, put a +1/+1 counter on that creature, then put the card back or put it into your graveyard.)
+Crew 1",https://scryfall.com/card/94b6881a-b00e-4e90-92e6-602ed8e0e090
+Underground River,1,,Underground River,e8b05f37-815f-4854-bf82-ca544ca67532,857febd9-cdd7-4f8e-a852-d88084b0cfbc,Land,,"B,U","B,R,U",legal,,PASS,"{T}: Add {C}.
+{T}: Add {U} or {B}. This land deals 1 damage to you.",https://scryfall.com/card/e8b05f37-815f-4854-bf82-ca544ca67532
+Sulfurous Springs,1,,Sulfurous Springs,be340a1c-f1e7-446e-ae91-86ecb884479c,f5c38c01-4a40-469f-91a0-7479daf4e8e7,Land,,"B,R","B,R,U",legal,,PASS,"{T}: Add {C}.
+{T}: Add {B} or {R}. This land deals 1 damage to you.",https://scryfall.com/card/be340a1c-f1e7-446e-ae91-86ecb884479c
+Swamp,2,,Swamp,b233b117-9369-45c1-80c5-cc857386b6be,56719f6a-1a6c-4c0a-8d21-18f7d7350b68,Basic Land — Swamp,,B,"B,R,U",legal,,PASS,({T}: Add {B}.),https://scryfall.com/card/b233b117-9369-45c1-80c5-cc857386b6be
+Swan Song,1,,Swan Song,83d0b761-d694-4232-9f40-5bd8c82a05f1,8ddfc283-c9b4-41a5-af88-cf0068e986cc,Instant,,U,"B,R,U",legal,,PASS,"Counter target enchantment, instant, or sorcery spell. Its controller creates a 2/2 blue Bird creature token with flying.",https://scryfall.com/card/83d0b761-d694-4232-9f40-5bd8c82a05f1
+Talisman of Creativity,1,,Talisman of Creativity,d4ba86c8-8052-4c9e-a0d0-ac6ad0b2679c,14d2979d-5728-42d7-a027-0eb1f754655d,Artifact,,"R,U","B,R,U",legal,,PASS,"{T}: Add {C}.
+{T}: Add {U} or {R}. This artifact deals 1 damage to you.",https://scryfall.com/card/d4ba86c8-8052-4c9e-a0d0-ac6ad0b2679c
+Talisman of Dominance,1,,Talisman of Dominance,78d5366f-eb6d-4ec1-880b-111872863766,4c0a0448-b9d6-43a0-8549-64066dac63f0,Artifact,,"B,U","B,R,U",legal,,PASS,"{T}: Add {C}.
+{T}: Add {U} or {B}. This artifact deals 1 damage to you.",https://scryfall.com/card/78d5366f-eb6d-4ec1-880b-111872863766
+Talisman of Indulgence,1,,Talisman of Indulgence,36bd614f-ab3b-4ad1-ab5c-a7ca0a641f32,1d9aeaaa-66f6-41cb-9bac-162d6fd8662c,Artifact,,"B,R","B,R,U",legal,,PASS,"{T}: Add {C}.
+{T}: Add {B} or {R}. This artifact deals 1 damage to you.",https://scryfall.com/card/36bd614f-ab3b-4ad1-ab5c-a7ca0a641f32
+The Belligerent,1,,The Belligerent,1454af8c-bce9-47d3-890f-283e2fea2cf2,9a0c9023-9431-4f98-b167-ab4c7215319c,Legendary Artifact — Vehicle,,"R,U","B,R,U",legal,,PASS,"Whenever The Belligerent attacks, create a Treasure token. Until end of turn, you may look at the top card of your library any time, and you may play lands and cast spells from the top of your library.
+Crew 3",https://scryfall.com/card/1454af8c-bce9-47d3-890f-283e2fea2cf2
+The Indomitable,1,,The Indomitable,e6456329-b521-474b-bfb5-bfcd7e52b5f8,276dc5c8-c8cf-4b9c-ad75-31876e6e040a,Legendary Artifact — Vehicle,,U,"B,R,U",legal,,PASS,"Trample
+Whenever a creature you control deals combat damage to a player, draw a card.
+Crew 3
+You may cast this card from your graveyard as long as you control three or more tapped Pirates and/or Vehicles.",https://scryfall.com/card/e6456329-b521-474b-bfb5-bfcd7e52b5f8
+The Reaver Cleaver,1,,The Reaver Cleaver,1d671d06-5881-41c4-a4ff-79c8733bebf5,37a2a31d-51e6-4c07-b4c2-b206ad40eb42,Legendary Artifact — Equipment,,R,"B,R,U",legal,,PASS,"Equipped creature gets +1/+1 and has trample and ""Whenever this creature deals combat damage to a player or planeswalker, create that many Treasure tokens.""
+Equip {3}",https://scryfall.com/card/1d671d06-5881-41c4-a4ff-79c8733bebf5
+Time Sieve,1,,Time Sieve,2b86e588-86f1-4b65-9e84-522f9cae9997,3da5977a-36d4-4f32-ab9b-8b93809d818d,Artifact,,"B,U","B,R,U",legal,,PASS,"{T}, Sacrifice five artifacts: Take an extra turn after this one.",https://scryfall.com/card/2b86e588-86f1-4b65-9e84-522f9cae9997
+Toxic Deluge,1,,Toxic Deluge,de5afccc-8d42-4bd6-b068-b9ea2361655e,afaef788-34d1-460b-b884-9d7ae6ddeb18,Sorcery,,B,"B,R,U",legal,,PASS,"As an additional cost to cast this spell, pay X life.
+All creatures get -X/-X until end of turn.",https://scryfall.com/card/de5afccc-8d42-4bd6-b068-b9ea2361655e
+Training Center,1,,Training Center,78a39d22-5e3b-4ba0-b728-dbf16b61fc8f,e3570ac7-c593-40e3-bbd6-ec3da6d8158d,Land,,"R,U","B,R,U",legal,,PASS,"This land enters tapped unless you have two or more opponents.
+{T}: Add {U} or {R}.",https://scryfall.com/card/78a39d22-5e3b-4ba0-b728-dbf16b61fc8f
+Underground Sea,1,,Underground Sea,1f35877c-e66c-4ef0-842a-f68cd233ae4b,4b22be3a-8ce1-47d1-b82e-6c3ccfb0548b,Land — Island Swamp,,"B,U","B,R,U",legal,,PASS,({T}: Add {U} or {B}.),https://scryfall.com/card/1f35877c-e66c-4ef0-842a-f68cd233ae4b
+Urza's Saga,1,,Urza's Saga,c1e0f201-42cb-46a1-901a-65bb4fc18f6c,4c6a0c30-b547-4eff-8ff4-0ca25803c076,Enchantment Land — Urza's Saga,,,"B,R,U",legal,,PASS,"(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)
+I — This Saga gains ""{T}: Add {C}.""
+II — This Saga gains ""{2}, {T}: Create a 0/0 colorless Construct artifact creature token with 'This token gets +1/+1 for each artifact you control.'""
+III — Search your library for an artifact card with mana cost {0} or {1}, put it onto the battlefield, then shuffle.",https://scryfall.com/card/c1e0f201-42cb-46a1-901a-65bb4fc18f6c
+"Vaan, Street Thief",1,,"Vaan, Street Thief",50e1ec29-9de3-4f1b-b818-057e030d475b,24fd1f47-bb15-45c6-a7b1-ba8eb3bb8b1d,Legendary Creature — Human Scout,,R,"B,R,U",legal,,PASS,"Whenever one or more Scouts, Pirates, and/or Rogues you control deal combat damage to a player, exile the top card of that player's library. You may cast it. If you don't, create a Treasure token.
+Whenever you cast a spell you don't own, put a +1/+1 counter on each Scout, Pirate, and Rogue you control.",https://scryfall.com/card/50e1ec29-9de3-4f1b-b818-057e030d475b
+Vampiric Tutor,1,,Vampiric Tutor,77ad722a-d6f3-483e-bd13-e0923cc8a265,ededbdae-d9dc-4206-9335-d7158f2d7700,Instant,,B,"B,R,U",legal,,PASS,"Search your library for a card, then shuffle and put that card on top. You lose 2 life.",https://scryfall.com/card/77ad722a-d6f3-483e-bd13-e0923cc8a265
+Verdant Catacombs,1,,Verdant Catacombs,981b3a2e-de94-428d-8e5d-5a7ba6afe4a2,67d60b24-d429-4ded-90d9-06e49f28c396,Land,,,"B,R,U",legal,,PASS,"{T}, Pay 1 life, Sacrifice this land: Search your library for a Swamp or Forest card, put it onto the battlefield, then shuffle.",https://scryfall.com/card/981b3a2e-de94-428d-8e5d-5a7ba6afe4a2
+Volcanic Island,1,,Volcanic Island,b12e5430-0e80-47dd-80ac-85728b656a24,c718911c-c955-4eb9-9e16-be4bd49a4e4e,Land — Island Mountain,,"R,U","B,R,U",legal,,PASS,({T}: Add {U} or {R}.),https://scryfall.com/card/b12e5430-0e80-47dd-80ac-85728b656a24
+Watery Grave,1,,Watery Grave,5525d6a6-e532-4047-9da4-bfae7927fecc,fc9ec820-4245-4a96-b009-5308a818ca58,Land — Island Swamp,,"B,U","B,R,U",legal,,PASS,"({T}: Add {U} or {B}.)
+As this land enters, you may pay 2 life. If you don't, it enters tapped.",https://scryfall.com/card/5525d6a6-e532-4047-9da4-bfae7927fecc
+Wooded Foothills,1,,Wooded Foothills,4e11ea8a-f895-438d-a3b7-f070238e4161,6587a463-a108-4854-b6d1-944e89b8c8a4,Land,,,"B,R,U",legal,,PASS,"{T}, Pay 1 life, Sacrifice this land: Search your library for a Mountain or Forest card, put it onto the battlefield, then shuffle.",https://scryfall.com/card/4e11ea8a-f895-438d-a3b7-f070238e4161
+Xander's Lounge,1,,Xander's Lounge,54f449ff-4025-465e-9ec5-a5cf42c4c9d3,8291543f-d086-48aa-b2b7-5481ca8c9198,Land — Island Swamp Mountain,,"B,R,U","B,R,U",legal,,PASS,"({T}: Add {U}, {B}, or {R}.)
+This land enters tapped.
+Cycling {3} ({3}, Discard this card: Draw a card.)",https://scryfall.com/card/54f449ff-4025-465e-9ec5-a5cf42c4c9d3
