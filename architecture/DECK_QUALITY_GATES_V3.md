@@ -47,3 +47,40 @@ Passing every machine and quality gate makes a deck **approval eligible** only. 
 ## Reopening
 
 A locked deck is reopened only by explicit user request or the project's documented rules for a material source/rules/legality/correctness change. Historical artifacts remain evidence and do not silently override current-cycle state.
+
+
+## Mandatory whole-deck optimization audit
+
+Candidate exhaustion is not sufficient if the search begins from only historically proposed swaps. Before a deck can become approval eligible, **every card slot in the complete current 100-card list must be challenged against the commander blueprint**.
+
+The audit is permanent project policy and applies to every deck in every future refinement cycle. Its purpose is maximum realistic optimization, not minimum necessary modification.
+
+Required whole-list review:
+
+1. Inventory all 99 noncommander cards and assign their actual functions/packages. Multifunction cards may occupy multiple roles, but no card may remain unexamined.
+2. Reconstruct the deck from the commander outward: determine which cards would still be selected if the deck were being built today with no attachment to the existing list.
+3. Identify the weakest cards and weakest packages across the entire list, including lands, mana, interaction, tutors, protection, engines, payoffs, finishers, combo pieces, recursion, utility cards, and generic staples.
+4. Challenge sacred cows. Existing inclusion, historical approval, price, popularity, staple status, candidate rank, or prior lock is not evidence that a card is optimal.
+5. Quantitatively inspect mana base, curve, ramp, draw/selection, interaction/protection, engine density, payoff/conversion density, recovery and closing power where the deck makes those quantities meaningful.
+6. Search broadly enough to identify credible alternatives for the actual weakest slots, including current releases and commander-specific cards absent from inherited rankings.
+7. Compare candidates against the best plausible cut anywhere in the deck when roles are fungible; do not artificially restrict a candidate to a historically chosen comparison slot.
+8. Continue accepting material improvements until another complete pass produces no new material swap. A one-card or zero-card result is valid only after the other slots have survived this audit.
+9. Record every retained card at least at the slot/package level as CORE, STRONG RETAIN, ROLE-CONSTRAINED RETAIN, or CUT CANDIDATE, with a defensible commander-specific reason.
+10. Red-team the resulting full list again after all accepted swaps because multiple individually good changes can create package imbalance.
+
+### Whole-list closure gate
+
+A deck fails finalization if any of the following is true:
+- any card or functional package was never reviewed;
+- the review merely re-validates historical proposed swaps;
+- plausible weak slots remain without candidate comparison;
+- a current-release search was skipped when freshness could matter;
+- mana/curve/interaction/engine structure was not assessed;
+- a material candidate remains HOLD/unresolved;
+- a final post-swap whole-list pass has not closed with zero new material improvements.
+
+The evidence packet must explicitly state `whole_list_audit_passed: true`, the number of noncommander slots reviewed, package coverage, the weakest retained cards/packages, accepted swaps, rejected close alternatives, and the final zero-new-improvement pass.
+
+### Campaign correction rule
+
+If a methodology improvement reveals that a current-cycle approval was produced without this whole-list audit, that is a documented **correctness/process trigger** under the reopening policy. Reopen that deck, audit it under this gate, and relock only after the gate passes and the user approves the resulting exact list. This does not erase historical evidence; it prevents historical conclusions from substituting for the stronger audit.
