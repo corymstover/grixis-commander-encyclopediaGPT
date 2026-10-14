@@ -1,0 +1,14 @@
+{
+  "deck_id": "Edward_Kenway",
+  "display_name": "Edward Kenway",
+  "decklist_path": "refinement/decklists/Edward_Kenway_Approval_Candidate_2026-10-14.txt",
+  "expected_deck_sha256": "a08d3bc9c283415f1579c493eccb3febd7d10dea3777bf3dc50cfbc0dbed4019",
+  "baseline_path": "refinement/decklists/Edward_Kenway_Current_Cycle_Baseline_2026-10-14.txt",
+  "expected_baseline_sha256": "05526735a23cc3278c14e86f328fa7a857007905c8bcd8dc02967861790030c3",
+  "baseline_source_sha256": "6361e497f78ba10e7b74c41cb728ea5c3b931d15d2a2cd2d7c107eb4e6cbd6d1",
+  "rules_attestation_path": "refinement/verification/edward_kenway_2026-10-14/Edward_Kenway_Rules_Attestation.json",
+  "official_legality_attestation_path": "refinement/verification/edward_kenway_2026-10-14/Edward_Kenway_Official_Legality_Attestation.json",
+  "output_dir": "refinement/verification/edward_kenway_2026-10-14/gate_output",
+  "output_stem": "Edward_Kenway_2026-10-14",
+  "max_cache_age_hours": 72
+}
