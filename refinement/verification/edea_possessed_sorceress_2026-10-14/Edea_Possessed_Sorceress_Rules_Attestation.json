@@ -1,0 +1,102 @@
+{
+  "status": "PASS",
+  "deck_sha256": "fd560a9b0777088b3ad1684ded030566c894faa206ddf6763b74d95d82c532e4",
+  "checked_at_utc": "2026-10-14T09:34:00Z",
+  "sources": [
+    "current Scryfall Oracle data / project current-cycle Oracle cache generated 2026-10-14T09:32:52Z",
+    "Magic Comprehensive Rules effective 2026-09-25 — zone changes, continuous effects, triggered abilities, copy effects, control-changing effects, sacrifice, and additional combat phases",
+    "current Wizards card/release rulings where applicable"
+  ],
+  "interactions": [
+    {
+      "name": "Edea temporary control and targeting",
+      "status": "PASS",
+      "conclusion": "Edea's beginning-of-combat ability targets a creature an opponent controls, then on resolution gains control of that creature until end of turn, untaps it, and gives it haste until end of turn. The target must remain legal on resolution. Hexproof or shroud can prevent a creature from being a legal target; Arcane Lighthouse can remove hexproof and shroud from opponents' creatures for the turn before the trigger is put onto the stack or resolves."
+    },
+    {
+      "name": "Edea death trigger after a borrowed creature dies",
+      "status": "PASS",
+      "conclusion": "A creature Edea borrowed is controlled by Edea's controller but still owned by its original owner. If it dies while that control relationship exists, Edea triggers. On resolution the card is returned to the battlefield under its owner's control if it is still where the effect expects it, and Edea's controller draws a card."
+    },
+    {
+      "name": "Multiple Edea death triggers for one death",
+      "status": "PASS",
+      "conclusion": "If multiple Edea abilities trigger from the same borrowed creature dying, such as from Roaming Throne or multiple Edea copies, the first resolving trigger can return the card. Later triggers cannot return that same card after it has changed zones, but they still perform the independent draw instruction and therefore still draw a card."
+    },
+    {
+      "name": "Thassa, Deep-Dwelling permanently retains an Edea-borrowed creature",
+      "status": "PASS",
+      "conclusion": "At the beginning of the end step, Edea's temporary control effect has not yet expired, so Thassa may target the creature Edea borrowed that turn because its controller still controls it. Thassa exiles that card and returns it to the battlefield under Thassa's controller's control. The returned permanent is a new object, so Edea's earlier 'until end of turn' control effect does not apply to it. This converts the temporary borrow into lasting control, subject to later control-changing effects."
+    },
+    {
+      "name": "Roaming Throne naming Warlock",
+      "status": "PASS",
+      "conclusion": "Edea is a Human Warlock. If Roaming Throne chooses Warlock, each triggered ability of Edea caused by a permanent of the chosen type triggers an additional time. This applies to both Edea's beginning-of-combat theft trigger and her borrowed-creature death trigger. Each instance resolves separately and may have independently chosen legal targets where applicable."
+    },
+    {
+      "name": "Strionic Resonator with Edea",
+      "status": "PASS",
+      "conclusion": "Strionic Resonator may copy Edea's triggered ability on the stack. A copied beginning-of-combat trigger may choose a new legal target and can steal a second opposing creature. A copied death trigger can produce an additional draw even if the original resolving trigger has already returned the dead card and the copied return instruction can no longer move it."
+    },
+    {
+      "name": "Gogo, Master of Mimicry copying Edea triggers",
+      "status": "PASS",
+      "conclusion": "With X=1, Gogo can copy one target triggered ability, including an Edea trigger, subject to Gogo's activation requirements. The copied Edea trigger behaves like the original and may use new targets when the copied ability permits them."
+    },
+    {
+      "name": "Spark Double and Sakashima as Edea copies",
+      "status": "PASS",
+      "conclusion": "Spark Double may enter as a nonlegendary copy of Edea and therefore coexist with the commander. Sakashima of a Thousand Faces may copy Edea and its static ability causes the legend rule not to apply to permanents its controller controls. Each Edea copy has its own independent combat and death triggers."
+    },
+    {
+      "name": "Irma, Part-Time Mutant copying Edea",
+      "status": "PASS",
+      "conclusion": "If Irma becomes a copy of Edea during a beginning-of-combat step, the beginning-of-combat event for that combat has already occurred, so Irma does not retroactively create an Edea theft trigger for that same event. Because the copy effect has no stated duration, Irma remains an Edea copy until another effect changes it; later combat phases, including additional combats that turn, begin with Irma already having Edea's trigger and therefore do trigger it."
+    },
+    {
+      "name": "Full Throttle and Edea",
+      "status": "PASS",
+      "conclusion": "Full Throttle creates two additional combat phases after the current main phase. Each additional combat has its own beginning-of-combat step, so Edea triggers at the beginning of each one. Full Throttle's instructions also untap creatures that attacked this turn at the appropriate additional combats, allowing previously borrowed attackers to be reused while their until-end-of-turn control effects remain active."
+    },
+    {
+      "name": "Karlach additional combat and Edea",
+      "status": "PASS",
+      "conclusion": "When Karlach's condition creates an additional combat phase, that combat has its own beginning-of-combat step and therefore produces another Edea theft trigger."
+    },
+    {
+      "name": "Garland, Royal Kidnapper anti-synergy",
+      "status": "PASS",
+      "conclusion": "Garland's static restriction applies to creatures its controller controls but does not own, not merely the creature Garland itself stole. While Garland is controlled, creatures temporarily borrowed by Edea cannot be sacrificed. Removing Garland therefore restores Edea's core sacrifice-conversion plan."
+    },
+    {
+      "name": "Chaos Shrine's Black Crystal and Edea",
+      "status": "PASS",
+      "conclusion": "When a borrowed nontoken creature dies, both Edea and Black Crystal can trigger. If Black Crystal's trigger resolves first and exiles the card, Edea can no longer return that same object from the graveyard, but Edea's controller still draws. Black Crystal can later put its exiled card onto the battlefield under its controller's control with a finality counter when its normal condition is met."
+    },
+    {
+      "name": "Nightmare Shepherd and Edea",
+      "status": "PASS",
+      "conclusion": "If Nightmare Shepherd's trigger resolves first for a borrowed nontoken creature that died, its controller may exile that card and create the specified token copy. Edea's later return instruction can no longer return the original card from the graveyard, but the Edea trigger still draws a card. The token copy is owned by the player who created it."
+    },
+    {
+      "name": "Saw in Half on a borrowed creature",
+      "status": "PASS",
+      "conclusion": "If Saw in Half destroys a nontoken creature currently borrowed by Edea, that creature dies under Edea's controller and can trigger Edea. Saw in Half's controller creates the resulting token copies under their own control. The original card is handled by Edea's death trigger normally if still in the expected zone."
+    },
+    {
+      "name": "Mass Mutiny with Edea",
+      "status": "PASS",
+      "conclusion": "Mass Mutiny can gain control of up to one target creature each opponent controls. Those creatures remain owned by their original owners, so any of them that die while controlled by Edea's controller satisfy Edea's 'control but don't own' condition and trigger Edea."
+    },
+    {
+      "name": "Captivating Crew sequencing",
+      "status": "PASS",
+      "conclusion": "Captivating Crew's activated ability can be activated only any time its controller could cast a sorcery. Activating it in the precombat main phase can borrow one creature before combat; Edea can then borrow a different creature at beginning of combat. Both control effects last until end of turn and both borrowed creatures may be sacrificed before then."
+    },
+    {
+      "name": "Marchesa, the Black Rose does not cleanly retain Edea's borrowed dead creature",
+      "status": "PASS",
+      "conclusion": "A borrowed creature with a +1/+1 counter can cause both Edea and Marchesa to trigger when it dies. Edea's mandatory resolving trigger can return the card to its owner's battlefield before Marchesa's delayed return effect reaches the next end step; once the card changes zones, Marchesa's delayed effect no longer tracks that same object. Resolving Marchesa's trigger first only creates the delayed instruction and does not immediately move the card. Thus Marchesa is not a reliable permanent-retention engine for the same borrowed card."
+    }
+  ]
+}
