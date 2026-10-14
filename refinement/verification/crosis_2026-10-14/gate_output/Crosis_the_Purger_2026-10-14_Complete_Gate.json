@@ -1,0 +1,23 @@
+{
+  "generated_at_utc": "2026-10-14T06:24:38.669960+00:00",
+  "deck_id": "Crosis__the_Purger",
+  "decklist_path": "refinement/decklists/Crosis_the_Purger_Approval_Candidate_2026-10-14.txt",
+  "deck_sha256": "a59150c323aa1e21cbda65291a3b172d08ecc3b83266b708768f4e14f0b07ec1",
+  "baseline_path": "refinement/decklists/Crosis_the_Purger_Current_Cycle_Baseline_2026-10-14.txt",
+  "baseline_source_sha256": "d61c6c95d34d601fffe7042fd6f5abf14222cb063a59a8ba0f273c768eb3916b",
+  "count": 100,
+  "distinct_names": 92,
+  "commander_color_identity": [
+    "B",
+    "R",
+    "U"
+  ],
+  "cache_generated_at_utc": "2026-10-14T06:20:28.820622+00:00",
+  "cache_sha256": "2d4912b3acf607c83d3accbfd6b0fc8e50275d2cfb1a999e475d50dfcbe68dae",
+  "project_exceptions": [],
+  "rules_gate": "PASS",
+  "official_legality_gate": "PASS",
+  "errors": [],
+  "overall_result": "APPROVAL_READY",
+  "approval_state": "NOT_APPROVED — explicit user approval still required"
+}
