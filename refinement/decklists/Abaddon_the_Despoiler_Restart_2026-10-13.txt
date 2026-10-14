@@ -34,9 +34,7 @@
 1x Gamble
 1x Imperial Seal
 1x Inevitable Betrayal
-1x Island
-1x Island
-1x Island
+3x Island
 1x Jeska's Will
 1x Keeper of Secrets
 1x Kessig Flamebreather
@@ -49,9 +47,7 @@
 1x Mind's Desire
 1x Misty Rainforest
 1x Morphic Pool
-1x Mountain
-1x Mountain
-1x Mountain
+3x Mountain
 1x Mystic Remora
 1x Mystical Tutor
 1x Nalfeshnee
@@ -74,9 +70,7 @@
 1x Solphim, Mayhem Dominus
 1x Steam Vents
 1x Storm-Kiln Artist
-1x Swamp
-1x Swamp
-1x Swamp
+3x Swamp
 1x Swan Song
 1x Takenuma, Abandoned Mire
 1x Talisman of Creativity
