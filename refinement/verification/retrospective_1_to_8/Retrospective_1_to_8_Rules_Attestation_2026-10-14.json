@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "attestation_date": "2026-10-14",
+  "cycle_id": "global-restart-2026-10-13",
+  "source_markdown_path": "refinement/verification/retrospective_1_to_8/Retrospective_1_to_8_Rules_Attestation_2026-10-14.md",
+  "source_markdown_git_blob_sha1": "24a0fddd74f399170a5f9e8bded1b8a85f774630",
+  "rules_gate_result": "PASS",
+  "decks": [
+    {"deck_number": 1, "deck_id": "Abaddon_the_Despoiler", "rules_result": "PASS"},
+    {"deck_number": 2, "deck_id": "Admiral_Beckett_Brass", "rules_result": "PASS"},
+    {"deck_number": 3, "deck_id": "Admiral_Brass__Unsinkable", "rules_result": "PASS"},
+    {"deck_number": 4, "deck_id": "Anhelo_the_Painter", "rules_result": "PASS"},
+    {"deck_number": 5, "deck_id": "Ashad_the_Lone_Cyberman", "rules_result": "PASS"},
+    {"deck_number": 6, "deck_id": "Ashnod_the_Uncaring", "rules_result": "PASS_WITH_DOCUMENTATION_CORRECTION"},
+    {"deck_number": 7, "deck_id": "Be_lakor_the_Dark_Master", "rules_result": "PASS"},
+    {"deck_number": 8, "deck_id": "Cecily__Bjorna__Lutri", "rules_result": "PASS_PROJECT_EXCEPTION"}
+  ],
+  "notes": "Machine-readable binding of the completed human rules attestation. Ashnod's stale historical wording was corrected without a decklist change. Deck #8 retains the documented project exceptions for Lutri, Trade Secrets, and Yawgmoth's Bargain."
+}
