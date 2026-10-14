@@ -8,6 +8,10 @@ class TrackerIntegrityTests(unittest.TestCase):
         content = HEADER + '0,Abaddon_the_Despoiler,Abaddon the Despoiler,NO,,\n'
         self.assertEqual(validate_tracker_text(content, expected_decks=1)["validation"], "PASS")
 
+    def test_historical_mode_ignores_stale_approval_semantics(self):
+        content = HEADER + '0,A,A,YES,,\n'
+        self.assertEqual(validate_tracker_text(content, expected_decks=1, validate_approval_metadata=False)["validation"], "PASS")
+
     def test_malformed_extra_column_fails(self):
         content = HEADER + '0,Abaddon_the_Despoiler,Abaddon the Despoiler,NO,,,EXTRA\n'
         report = validate_tracker_text(content, expected_decks=1)
