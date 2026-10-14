@@ -1,0 +1,15 @@
+{
+  "deck_id": "Garza_Zol__Plague_Queen",
+  "display_name": "Garza Zol, Plague Queen",
+  "decklist_path": "refinement/decklists/Garza_Zol_Plague_Queen_Approval_Candidate_2026-10-14.txt",
+  "expected_deck_sha256": "32c0e8049a9c8a5d238048b4f774f0457908d724f23d4597b7da93a6cba0c16f",
+  "baseline_path": "refinement/decklists/Garza_Zol_Plague_Queen_Current_Cycle_Baseline_2026-10-14.txt",
+  "expected_baseline_sha256": "517c454d17cc1fd4eb09260f65a18b7ef67734018134dea5b7389acf26a48063",
+  "baseline_source_sha256": "a59a2fa54ef1c42e6ec512c301ebe35ba118e59a31a2361adcb16cdbb8592182",
+  "rules_attestation_path": "refinement/verification/garza_zol_plague_queen_2026-10-14/Garza_Zol_Plague_Queen_Rules_Attestation.json",
+  "official_legality_attestation_path": "refinement/verification/garza_zol_plague_queen_2026-10-14/Garza_Zol_Plague_Queen_Official_Legality_Attestation.json",
+  "output_dir": "refinement/verification/garza_zol_plague_queen_2026-10-14/gate_output",
+  "output_stem": "Garza_Zol_Plague_Queen_2026-10-14",
+  "max_cache_age_hours": 72,
+  "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + Complete Approval Gate v1"
+}
