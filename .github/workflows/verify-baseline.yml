@@ -2,7 +2,7 @@ name: Project quality gates and frozen baseline verification
 
 on:
   push:
-    branches: ["main", "baseline/**", "refinement/**", "automation/**"]
+    branches: ["main", "baseline/**", "refinement/**", "automation/**", "integration/**"]
     paths:
       - ".github/workflows/**"
       - "scripts/**"
