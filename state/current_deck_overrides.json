@@ -299,6 +299,20 @@
       "whole_list_audit_artifact": "refinement/decisions/Inalla_Archmage_Ritualist_Current_Cycle_Decisions_2026-10-14.md",
       "approval_record_artifact": "refinement/approvals/Inalla_Archmage_Ritualist_Approved_2026-10-14.md",
       "approved_list_artifact": "refinement/decklists/Inalla_Archmage_Ritualist_Approved_2026-10-14.txt"
+    },
+    "Jeleva__Nephalia_s_Scourge": {
+      "approval_status": "APPROVED",
+      "lock_status": "LOCKED",
+      "final_gate_passed": true,
+      "user_approval_date": "2026-10-14",
+      "current_stage": "LOCKED",
+      "approved_list_sha256": "00e3f52118f5944684ebc49a5398acf8184f7ca878e861221e4c99931191bc2f",
+      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + Complete Approval Gate v1",
+      "approval_basis": "Explicit user approval of the exact SHA-bound Jeleva, Nephalia's Scourge approval candidate after mandatory 99-slot whole-list audit, contemporary cEDH ceiling review, candidate exhaustion, adversarial second-pass review, zero-new-material-improvement closure, fresh Oracle/color-identity verification, current official Commander legality verification, independent rules verification, and complete fail-closed gate APPROVAL_READY with zero errors.",
+      "complete_gate_artifact": "refinement/verification/jeleva_nephalia_s_scourge_2026-10-14/gate_output/Jeleva_Nephalia_s_Scourge_2026-10-14_Complete_Gate.json",
+      "whole_list_audit_artifact": "refinement/decisions/Jeleva_Nephalia_s_Scourge_Current_Cycle_Decisions_2026-10-14.md",
+      "approval_record_artifact": "refinement/approvals/Jeleva_Nephalia_s_Scourge_Approved_2026-10-14.md",
+      "approved_list_artifact": "refinement/decklists/Jeleva_Nephalia_s_Scourge_Approved_2026-10-14.txt"
     }
   }
 }
