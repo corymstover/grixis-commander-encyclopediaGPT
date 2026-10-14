@@ -1,0 +1,93 @@
+{
+  "status": "PASS",
+  "deck_sha256": "b6ef396641f2b5cfac0eb81fb494f21f3745e2a3fd47fa75d2eaadbdc34ddee5",
+  "checked_at_utc": "2026-10-14T00:00:00Z",
+  "sources": [
+    "Wizards of the Coast — Magic: The Gathering | Avatar: The Last Airbender release notes, Fire Lord Azula card-specific notes",
+    "Wizards of the Coast — Reality Fracture release notes, Samut, Tyrant of Naktamun card-specific notes",
+    "Wizards of the Coast — Modern Horizons 3 release notes, Arena of Glory card-specific notes",
+    "Beseech the Mirror current Oracle/rulings — bargain and copied bargained spell ruling",
+    "Commander Spellbook — Fire Lord Azula + Narset's Reversal + Frantic Search",
+    "Commander Spellbook — Fire Lord Azula + Underworld Breach + Frantic Search",
+    "Commander Spellbook — Underworld Breach + Lion's Eye Diamond + Brain Freeze",
+    "Commander Spellbook — Thassa's Oracle + Demonic Consultation / Tainted Pact",
+    "Magic Comprehensive Rules — copying spells, split second, triggered abilities, legendary permanents, spell copies and token resolution"
+  ],
+  "interactions": [
+    {
+      "name": "Fire Lord Azula copy timing",
+      "status": "PASS",
+      "conclusion": "Whenever a spell is cast while Azula is attacking, her triggered ability goes on the stack above that spell and creates a copy before the original resolves. The copy is not cast. Azula's trigger and resulting copy can still resolve even if the original spell leaves the stack first."
+    },
+    {
+      "name": "Additional costs on copied spells",
+      "status": "PASS",
+      "conclusion": "Azula's official ruling states that an additional cost cannot be paid again for the copy, but effects based on additional costs paid for the original are copied as though those costs were paid for the copy. This validates the intended Demand Answers, Big Score, Redirect Lightning and bargained Beseech interactions."
+    },
+    {
+      "name": "Big Score with attacking Azula",
+      "status": "PASS",
+      "conclusion": "Big Score discards one card as the original spell's additional cost. Azula copies it without another discard. If copy and original both resolve, the controller draws four cards total and creates four Treasure tokens total."
+    },
+    {
+      "name": "Demand Answers with attacking Azula",
+      "status": "PASS",
+      "conclusion": "Demand Answers pays its sacrifice-or-discard additional cost once for the original. Azula's copy is treated as having that additional cost paid; if both resolve, the controller draws four cards total."
+    },
+    {
+      "name": "Beseech the Mirror bargain copy",
+      "status": "PASS",
+      "conclusion": "Bargain is an optional additional cost, and the Beseech ruling states that a copy of a bargained spell is also bargained. If a bargained Beseech is cast while Azula attacks, one bargain payment can therefore produce two bargained Beseech resolutions."
+    },
+    {
+      "name": "Samut split second with Azula trigger",
+      "status": "PASS",
+      "conclusion": "Samut gives instant and sorcery spells split second. Reality Fracture release notes explicitly state that split second does not stop triggered abilities from triggering or being put on the stack. Azula therefore still triggers and copies an instant or sorcery cast while attacking. The spell copy has the copied spell's characteristics, including split second where applicable."
+    },
+    {
+      "name": "Azula + Narset's Reversal + Frantic Search loop",
+      "status": "PASS",
+      "conclusion": "Commander Spellbook verifies the loop with a nonsummoning-sick attacking Azula, Narset's Reversal and Frantic Search in hand, and sufficient blue-producing lands. Azula copies Frantic Search, then copies Narset's Reversal in a way that returns the original Reversal and Frantic Search to hand while repeated Frantic Search copies untap lands. The line yields repeatable looting/draw triggers and near-infinite mana/storm resources subject to its listed prerequisites."
+    },
+    {
+      "name": "Azula + Underworld Breach + Frantic Search",
+      "status": "PASS",
+      "conclusion": "Commander Spellbook verifies this commander-dependent recursive engine with attacking Azula, Underworld Breach, Frantic Search and the required mana/graveyard resources. Azula's Frantic Search copy untaps lands before the original resolves, enabling repeated escape/cast cycles and repeatable looting/draw/storm resources."
+    },
+    {
+      "name": "Underworld Breach + Lion's Eye Diamond + Brain Freeze",
+      "status": "PASS",
+      "conclusion": "Commander Spellbook verifies the standard Breach/LED/Brain Freeze recursive engine, subject to sufficient cards in graveyard to pay escape costs. It produces near-infinite storm/mana and self-mill/mill resources."
+    },
+    {
+      "name": "Thassa's Oracle + Demonic Consultation",
+      "status": "PASS",
+      "conclusion": "The standard compact Oracle/Consultation line is valid when Consultation exiles the library before the Oracle trigger resolves and the Oracle win condition is met."
+    },
+    {
+      "name": "Thassa's Oracle + Tainted Pact",
+      "status": "PASS",
+      "conclusion": "The exact candidate has 100 distinct card names. Tainted Pact therefore has no duplicate-name early-stop problem and can function as a compact Oracle enabler with correct sequencing."
+    },
+    {
+      "name": "Arena of Glory haste on Azula",
+      "status": "PASS",
+      "conclusion": "Arena of Glory's exert ability produces two red mana and grants haste to a creature spell if that mana is spent on it. Spending that mana on Fire Lord Azula can therefore allow Azula to attack the turn she enters, assuming normal timing and no other restriction prevents the attack."
+    },
+    {
+      "name": "Permanent spell copies",
+      "status": "PASS",
+      "conclusion": "Azula can copy permanent spells cast while she is attacking. A copied permanent spell becomes a token as it resolves. A token copy of a legendary permanent is then subject to the legend rule; nonlegendary copied permanents can remain as additional battlefield objects."
+    },
+    {
+      "name": "Mox Opal metalcraft structural support",
+      "status": "PASS",
+      "conclusion": "The exact candidate contains 15 artifacts including Mox Opal. Metalcraft is not guaranteed at every game state, but the deck has sufficient artifact density for Opal to be a deliberate cEDH acceleration slot rather than an unsupported inclusion."
+    },
+    {
+      "name": "Final Fortune exclusion",
+      "status": "PASS",
+      "conclusion": "Final Fortune was intentionally excluded. Casting it while Azula attacks creates an automatic copy; each resolved spell creates its own extra turn and delayed lose-the-game trigger. This is not safely equivalent to simply gaining two usable extra turns, so the slot was rejected as a poor Azula multiplier."
+    }
+  ]
+}
