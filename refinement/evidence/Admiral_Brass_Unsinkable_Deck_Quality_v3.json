@@ -1,0 +1,266 @@
+{
+  "deck_id": "Admiral_Brass__Unsinkable",
+  "hard_gates": {
+    "exact_100": true,
+    "singleton": true,
+    "color_identity": true,
+    "commander_legality_or_registered_exception": true,
+    "oracle_and_rules": true,
+    "strategic_coherence": true
+  },
+  "discovery_passes": 2,
+  "new_material_candidates_last_pass": 0,
+  "candidates": [
+    {
+      "card": "Power Conduit",
+      "impact": "HIGH",
+      "decision": "ACCEPT",
+      "reason": "Directly removes finality counters from Admiral Brass reanimation targets, allowing high-impact Pirates to die normally and become future targets; noncreature tap ability is usable the turn it enters.",
+      "evidence_refs": [
+        "Admiral_Brass_Unsinkable_v1",
+        "ABU-candidate-ledger"
+      ]
+    },
+    {
+      "card": "Soul Diviner",
+      "impact": "MEDIUM",
+      "decision": "REJECT",
+      "reason": "Can remove finality counters and draw, but summoning sickness delays a newly cast Diviner and it is a non-Pirate body competing with the same utility slot.",
+      "evidence_refs": [
+        "Admiral_Brass_Unsinkable_v1",
+        "ABU-candidate-ledger"
+      ]
+    },
+    {
+      "card": "The Grim Captain's Locker",
+      "impact": "MEDIUM",
+      "decision": "REJECT",
+      "reason": "Surveil/escape value overlaps an already dense recursion package and consumes four-mana setup before escape costs.",
+      "evidence_refs": [
+        "Admiral_Brass_Unsinkable_v1",
+        "ABU-candidate-ledger"
+      ]
+    },
+    {
+      "card": "Back in Town",
+      "impact": "MEDIUM",
+      "decision": "REJECT",
+      "reason": "Outlaw mass recursion overlaps Living Death, Patriarch's Bidding and Victimize rather than improving the commander's repeatable combat reanimation.",
+      "evidence_refs": [
+        "Admiral_Brass_Unsinkable_v1",
+        "ABU-candidate-ledger"
+      ]
+    },
+    {
+      "card": "Arm-Mounted Anchor",
+      "impact": "MEDIUM",
+      "decision": "REJECT",
+      "reason": "Combat filtering can seed Pirates but requires equipment/equip setup and is less direct than finality-counter management.",
+      "evidence_refs": [
+        "Admiral_Brass_Unsinkable_v1",
+        "ABU-candidate-ledger"
+      ]
+    },
+    {
+      "card": "Port of Karfell",
+      "impact": "LOW",
+      "decision": "REJECT",
+      "reason": "Utility recursion land imposes mana/tempo costs against a premium three-color mana base; no demonstrated need for another expensive recursion line.",
+      "evidence_refs": [
+        "Admiral_Brass_Unsinkable_v1",
+        "ABU-candidate-ledger"
+      ]
+    },
+    {
+      "card": "Nephalia Drownyard",
+      "impact": "LOW",
+      "decision": "REJECT",
+      "reason": "Repeatable self-mill is slow and colorless-intensive; commander, Entomb, Buried Alive and looting already provide stronger setup.",
+      "evidence_refs": [
+        "Admiral_Brass_Unsinkable_v1",
+        "ABU-candidate-ledger"
+      ]
+    },
+    {
+      "card": "Warkite Marauder",
+      "impact": "MEDIUM",
+      "decision": "REJECT",
+      "reason": "Evasive Pirate interaction is useful but does not outperform the existing high-impact reanimation targets or solve finality reuse.",
+      "evidence_refs": [
+        "Admiral_Brass_Unsinkable_v1",
+        "ABU-candidate-ledger"
+      ]
+    },
+    {
+      "card": "Kitesail Larcenist",
+      "impact": "MEDIUM",
+      "decision": "REJECT",
+      "reason": "Strong Pirate interaction but current removal/ETB Pirate suite is already dense; no defensible cut beats Power Conduit's unique commander synergy.",
+      "evidence_refs": [
+        "Admiral_Brass_Unsinkable_v1",
+        "ABU-candidate-ledger"
+      ]
+    },
+    {
+      "card": "Dire Fleet Ravager",
+      "impact": "MEDIUM",
+      "decision": "REJECT",
+      "reason": "ETB life loss and menace are relevant but do not improve the recurring graveyard loop enough to displace current top-end Pirates.",
+      "evidence_refs": [
+        "Admiral_Brass_Unsinkable_v1",
+        "ABU-candidate-ledger"
+      ]
+    }
+  ],
+  "testing_required": false,
+  "hypothesis_tests": [],
+  "red_team_findings": [
+    {
+      "category": "finality-counter overvaluation",
+      "claim": "Power Conduit can be dead without a Brass-reanimated creature carrying a finality counter.",
+      "material": true,
+      "resolved": true,
+      "resolution": "Its floor is narrow, but its ceiling uniquely converts one-shot commander recursion into repeatable graveyard access; only one slot is devoted to the effect."
+    },
+    {
+      "category": "alternate-win removal",
+      "claim": "Cutting Revel in Riches removes a Treasure engine and independent win condition.",
+      "material": true,
+      "resolved": true,
+      "resolution": "The project prioritizes commander identity; the deck retains multiple combat/reanimation conversion routes and Revel does not advance Brass's recursion engine."
+    },
+    {
+      "category": "graveyard hate exposure",
+      "claim": "Leaning harder on repeatable reanimation increases vulnerability to graveyard interaction.",
+      "material": true,
+      "resolved": true,
+      "resolution": "The swap does not reduce existing interaction/protection and only deepens a strategy the commander inherently requires; generic alternate wins are not retained solely to hedge identity."
+    },
+    {
+      "category": "Power Conduit timing",
+      "claim": "The returned Pirate does not exist with a finality counter until Brass's beginning-of-combat trigger resolves.",
+      "material": true,
+      "resolved": true,
+      "resolution": "Conduit is activated only after the reanimation trigger resolves; as a noncreature permanent its tap ability is not restricted by summoning sickness."
+    },
+    {
+      "category": "generic reanimator drift",
+      "claim": "Animate Dead, Reanimate, Victimize, Living Death and Patriarch's Bidding could eclipse the commander.",
+      "material": true,
+      "resolved": true,
+      "resolution": "Those effects are complementary recovery; blueprint and Pirate density retain Brass's beginning-of-combat Pirate reanimation as the defining repeatable engine."
+    }
+  ],
+  "commander_necessity": {
+    "thesis": "Admiral Brass mills four on entry and repeatedly turns graveyarded Pirates into hasty base-4/4 attackers at beginning of combat; finality-counter management allows selected targets to become reusable rather than one-shot.",
+    "material_dependencies": [
+      "Pirate creature density",
+      "graveyard setup",
+      "beginning-of-combat reanimation",
+      "finality-counter management",
+      "ETB and attack payoffs"
+    ],
+    "counterfactual_impact": "STRUCTURAL",
+    "evidence_refs": [
+      "Admiral_Brass_Unsinkable_v1"
+    ]
+  },
+  "evidence_dimensions": [
+    {
+      "name": "commander_identity",
+      "confidence": "HIGH_CONFIDENCE",
+      "rationale": "Power Conduit uniquely exploits the finality counter created by Admiral Brass.",
+      "evidence_refs": [
+        "Admiral-Brass-v3-review"
+      ]
+    },
+    {
+      "name": "engine",
+      "confidence": "HIGH_CONFIDENCE",
+      "rationale": "Pirate graveyard setup, beginning-of-combat recursion and high-impact Pirate targets remain coherent.",
+      "evidence_refs": [
+        "Admiral-Brass-v3-review"
+      ]
+    },
+    {
+      "name": "mana",
+      "confidence": "HIGH_CONFIDENCE",
+      "rationale": "Two-mana colorless replacement lowers the slot from Revel in Riches at five mana; mana base otherwise unchanged.",
+      "evidence_refs": [
+        "Admiral-Brass-v3-review"
+      ]
+    },
+    {
+      "name": "interaction",
+      "confidence": "HIGH_CONFIDENCE",
+      "rationale": "Existing premium interaction and interactive Pirate ETBs are unchanged.",
+      "evidence_refs": [
+        "Admiral-Brass-v3-review"
+      ]
+    },
+    {
+      "name": "resilience",
+      "confidence": "HIGH_CONFIDENCE",
+      "rationale": "Removing finality counters allows selected Pirates to return to the graveyard for reuse, improving engine resilience when Conduit survives.",
+      "evidence_refs": [
+        "Admiral-Brass-v3-review"
+      ]
+    },
+    {
+      "name": "conversion",
+      "confidence": "HIGH_CONFIDENCE",
+      "rationale": "Reanimated Pirates retain ETB/attack/combat value; broad recursion remains as recovery/closing support.",
+      "evidence_refs": [
+        "Admiral-Brass-v3-review"
+      ]
+    },
+    {
+      "name": "combo_integrity",
+      "confidence": "VERIFIED",
+      "rationale": "No infinite combo is asserted; finality-counter replacement and Power Conduit timing are bounded and explicitly described.",
+      "evidence_refs": [
+        "Admiral-Brass-v3-review"
+      ]
+    },
+    {
+      "name": "card_quality",
+      "confidence": "HIGH_CONFIDENCE",
+      "rationale": "Ten serious alternatives were dispositioned against the existing package.",
+      "evidence_refs": [
+        "Admiral-Brass-v3-review"
+      ]
+    },
+    {
+      "name": "candidate_exhaustion",
+      "confidence": "HIGH_CONFIDENCE",
+      "rationale": "Top direct commander-synergy and recursion alternatives have explicit decisions; no unresolved high-impact HOLD remains.",
+      "evidence_refs": [
+        "Admiral-Brass-v3-review"
+      ]
+    },
+    {
+      "name": "testing",
+      "confidence": "PROVISIONAL",
+      "rationale": "No fabricated multiplayer win-rate claim; one-slot identity upgrade is supported analytically.",
+      "evidence_refs": [
+        "Admiral-Brass-v3-review"
+      ]
+    },
+    {
+      "name": "rules_confidence",
+      "confidence": "VERIFIED",
+      "rationale": "Power Conduit/finality interaction and noncreature tap timing were previously checked and preserved.",
+      "evidence_refs": [
+        "Admiral-Brass-v3-review"
+      ]
+    },
+    {
+      "name": "source_freshness",
+      "confidence": "HIGH_CONFIDENCE",
+      "rationale": "Current-cycle review is anchored to the frozen source plus the Oct. 13 candidate/Oracle checkpoint.",
+      "evidence_refs": [
+        "Admiral-Brass-v3-review"
+      ]
+    }
+  ]
+}
