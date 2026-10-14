@@ -1,0 +1,23 @@
+{
+  "generated_at_utc": "2026-10-14T11:21:08.806685+00:00",
+  "deck_id": "Evelyn__the_Covetous",
+  "decklist_path": "refinement/decklists/Evelyn_the_Covetous_Approval_Candidate_2026-10-14.txt",
+  "deck_sha256": "1d602b5d9b2a370d3448816f593198212b2b83da74e92ccc3232798641b2588a",
+  "baseline_path": "refinement/decklists/Evelyn_the_Covetous_Current_Cycle_Baseline_2026-10-14.txt",
+  "baseline_source_sha256": "ad5d4297f3940ab174b5e214e7288c283cc58302f815996c050c05bc5e75fa62",
+  "count": 100,
+  "distinct_names": 100,
+  "commander_color_identity": [
+    "B",
+    "R",
+    "U"
+  ],
+  "cache_generated_at_utc": "2026-10-14T11:04:50.372747+00:00",
+  "cache_sha256": "159a5403617651f5043a3e94fc4586d98427d601e26faeaeabe5e78a1f2828d6",
+  "project_exceptions": [],
+  "rules_gate": "PASS",
+  "official_legality_gate": "PASS",
+  "errors": [],
+  "overall_result": "APPROVAL_READY",
+  "approval_state": "NOT_APPROVED — explicit user approval still required"
+}
