@@ -2,7 +2,7 @@
 
 **Deck #1 of 62 · Review date: 2026-10-13 · Status: APPROVED / LOCKED — FRESH RESTART REVIEW PASSED**
 
-Frozen source: October 12 authoritative CSV/TXT archives. Baseline normalized-list hash: `a58b6ad5499596eb64af79a83b210641e4e097c79803de87cca3ba2244fab91f`. Final exact list hash: `fd66ea20135a77322113f69cd6ac583fde381a1af08ffac348c9f1f4d8227e15`.
+Frozen source: October 12 authoritative CSV/TXT archives. Baseline normalized-list hash: `a58b6ad5499596eb64af79a83b210641e4e097c79803de87cca3ba2244fab91f`. Final exact list hash: `10c730fe3b1185c97e04abc8e354d59b132b8865081ee190b8981c55632d7e91`.
 
 ## Baseline and scope
 
@@ -73,7 +73,7 @@ Sources: [Ancient Cellarspawn Oracle/rulings/legal status](https://www.mtg.wtf/c
 - Lands: **34**, unchanged.
 - Color identity: **PASS**, all cards fit UBR.
 - Project exceptions: **none**.
-- Exact final list SHA-256 (UTF-8, LF, trailing newline): `fd66ea20135a77322113f69cd6ac583fde381a1af08ffac348c9f1f4d8227e15`.
+- Exact final list SHA-256 (UTF-8, LF, trailing newline): `10c730fe3b1185c97e04abc8e354d59b132b8865081ee190b8981c55632d7e91`.
 - Multiplayer performance: no qualified matched-start simulator was available; no unsupported win-rate or superiority claim is made. The prior Aurora Phoenix vs. Mind's Desire six-game test cast neither card and remains explicitly inconclusive; it was not used as performance evidence.
 
 ## Final disposition
