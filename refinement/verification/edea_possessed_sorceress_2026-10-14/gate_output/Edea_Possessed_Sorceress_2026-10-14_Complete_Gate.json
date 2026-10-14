@@ -1,0 +1,23 @@
+{
+  "generated_at_utc": "2026-10-14T09:35:40.555141+00:00",
+  "deck_id": "Edea__Possessed_Sorceress",
+  "decklist_path": "refinement/decklists/Edea_Possessed_Sorceress_Approval_Candidate_2026-10-14.txt",
+  "deck_sha256": "fd560a9b0777088b3ad1684ded030566c894faa206ddf6763b74d95d82c532e4",
+  "baseline_path": "refinement/decklists/Edea_Possessed_Sorceress_Current_Cycle_Baseline_2026-10-14.txt",
+  "baseline_source_sha256": "ae9ce6827012c97fc034a5d2fc95c808b034dc2a0c9de582536e0816225e2cd9",
+  "count": 100,
+  "distinct_names": 94,
+  "commander_color_identity": [
+    "B",
+    "R",
+    "U"
+  ],
+  "cache_generated_at_utc": "2026-10-14T09:32:52.182844+00:00",
+  "cache_sha256": "ddb452e54e3d7af82631fe25637586d0b5a652a850d1f1ddd1b5493cbc67f3f2",
+  "project_exceptions": [],
+  "rules_gate": "PASS",
+  "official_legality_gate": "PASS",
+  "errors": [],
+  "overall_result": "APPROVAL_READY",
+  "approval_state": "NOT_APPROVED — explicit user approval still required"
+}
