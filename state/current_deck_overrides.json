@@ -41,6 +41,16 @@
       "approved_list_sha256": "d19d94b8a96fb27a760c7b7d9181221f74bd61642d1d1dd7644fc1c59c09839e",
       "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit",
       "approval_basis": "Explicit user approval after full 99-slot audit, rules/combo verification, candidate exhaustion, red-team review, and zero-new-material-improvement closure."
+    },
+    "Ashad_the_Lone_Cyberman": {
+      "approval_status": "APPROVED",
+      "lock_status": "LOCKED",
+      "final_gate_passed": true,
+      "user_approval_date": "2026-10-13",
+      "current_stage": "LOCKED",
+      "approved_list_sha256": "087e34c2127859111fc08f8d9ec7d66cd3495537cc571d88e829fd27d2823e25",
+      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit",
+      "approval_basis": "Explicit user approval after corrected Oracle review, full 99-slot audit, candidate exhaustion, red-team review, and zero-new-material-improvement closure."
     }
   }
 }
