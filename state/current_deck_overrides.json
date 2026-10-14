@@ -117,6 +117,17 @@
       "approved_list_sha256": "80f4bdef2b8b140aeae23775cfdf87fda81e7215038b8db9b1746c806f366e0b",
       "quality_gate_version": "Complete Approval Gate v1 — fresh Oracle, legality, rules, and structural verification",
       "approval_basis": "Explicit user approval after the SHA-bound complete gate returned APPROVAL_READY: exactly 100 cards, 100 distinct names, Grixis color identity, fresh per-card Oracle verification, current official Commander legality, independent rules verification, zero project exceptions, and zero gate errors."
+    },
+    "Crosis__the_Purger": {
+      "approval_status": "APPROVED",
+      "lock_status": "LOCKED",
+      "final_gate_passed": true,
+      "user_approval_date": "2026-10-14",
+      "current_stage": "LOCKED",
+      "approved_list_sha256": "a59150c323aa1e21cbda65291a3b172d08ecc3b83266b708768f4e14f0b07ec1",
+      "quality_gate_version": "Complete Approval Gate v1 — fresh Oracle, legality, rules, and structural verification",
+      "approval_basis": "Explicit user approval after the SHA-bound complete gate returned APPROVAL_READY: exactly 100 cards, Grixis color identity, fresh per-card Oracle verification, current official Commander legality, independent rules verification, zero project exceptions, and zero unresolved gate errors.",
+      "complete_gate_artifact": "refinement/verification/crosis_2026-10-14/gate_output/Crosis_the_Purger_2026-10-14_Complete_Gate.json"
     }
   }
 }
