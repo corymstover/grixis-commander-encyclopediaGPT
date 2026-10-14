@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "deck_sha256": "80f4bdef2b8b140aeae23775cfdf87fda81e7215038b8db9b1746c806f366e0b",
+  "checked_at_utc": "2026-10-14T05:57:00+00:00",
+  "sources": [
+    "https://magic.wizards.com/en/banned-restricted-list",
+    "refinement/metadata_audit/Current_Cycle_Oracle_Cache.jsonl",
+    "refinement/metadata_audit/Current_Cycle_Oracle_Cache_Summary.json"
+  ],
+  "official_format": "Commander",
+  "unexpected_banned_cards": [],
+  "project_exceptions_used": [],
+  "notes": [
+    "The Wizards Commander banned-list checkpoint was re-read on 2026-10-14.",
+    "No card in the exact Cormela approval candidate appears on the current Commander banned list.",
+    "Format-specific bans outside Commander are not treated as Commander bans; for example, several candidate cards are restricted or banned in other formats but remain legal in Commander.",
+    "The current-cycle Scryfall cache supplies per-card Commander legality and canonical identity; the official Wizards list is the independent format-level reconciliation."
+  ],
+  "result_note": "Official legality attestation is bound to the exact candidate SHA. Any decklist change invalidates this PASS until rechecked."
+}
