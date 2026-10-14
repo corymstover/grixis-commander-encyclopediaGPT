@@ -12,7 +12,7 @@ The 2026-10-12 baseline remains frozen and structurally verified. All 62 CSV/TXT
 
 The active refinement branch now has a reproducible, CI-verified exact draw-density analysis for Abaddon. Forge test infrastructure has advanced beyond the original source-only probe: its pinned release and 95 card-script name mappings were verified, the exact baseline and isolated test variant loaded in Commander mode, and a bounded 3+3 fixed-opponent pilot completed. However, the candidate comparison was **INCONCLUSIVE** because neither Mind's Desire nor Aurora Phoenix was cast in any of the six registered games. Do not reuse those games as card-performance evidence or rerun the same AI comparison. The relevant workflow is now manual-dispatch only.
 
-**CURRENT ACTIVE STATE (restart review checkpoint 2026-10-13): 1 of 62 decks is approved/locked after a fresh full restart review; 61 remain unapproved/unlocked.** Deck #1, Abaddon the Despoiler, is approved at final-list SHA-256 `fd66ea20135a77322113f69cd6ac583fde381a1af08ffac348c9f1f4d8227e15`. Prior-cycle lock/hash entries are historical evidence only and do not count toward this campaign. Next in tracker order is #2, Admiral Beckett Brass.
+**CURRENT ACTIVE STATE (restart review checkpoint 2026-10-13): 1 of 62 decks is approved/locked after a fresh full restart review; 61 remain unapproved/unlocked.** Deck #1, Abaddon the Despoiler, is approved at final-list SHA-256 `10c730fe3b1185c97e04abc8e354d59b132b8865081ee190b8981c55632d7e91`. Prior-cycle lock/hash entries are historical evidence only and do not count toward this campaign. Next in tracker order is #2, Admiral Beckett Brass.
 
 ## Verified baseline and source integrity
 
@@ -264,6 +264,6 @@ At cycle launch, all 62 decks were unapproved and unlocked. Current per-deck app
 
 ## Full campaign restart and current checkpoint — 2026-10-13
 
-All previous-cycle approvals were reset to historical status. The fresh review of **Deck #1 — Abaddon the Despoiler** is now complete and **APPROVED / LOCKED** at exact final-list SHA-256 `fd66ea20135a77322113f69cd6ac583fde381a1af08ffac348c9f1f4d8227e15`. Its new list, full-list review matrix, candidate ledger, change ledger, verification certificate, and Ancient Cellarspawn Oracle correction are linked from the active tracker. The frozen 2026-10-12 source baselines and all prior-cycle artifacts remain immutable.
+All previous-cycle approvals were reset to historical status. The fresh review of **Deck #1 — Abaddon the Despoiler** is now complete and **APPROVED / LOCKED** at exact final-list SHA-256 `10c730fe3b1185c97e04abc8e354d59b132b8865081ee190b8981c55632d7e91`. Its new list, full-list review matrix, candidate ledger, change ledger, verification certificate, and Ancient Cellarspawn Oracle correction are linked from the active tracker. The frozen 2026-10-12 source baselines and all prior-cycle artifacts remain immutable.
 
 **Current active count: 1/62 approved and locked; 61 remain unapproved/unlocked. Next deck: #2 — Admiral Beckett Brass.** Do not begin substantive review of #2 until all Deck #1 artifacts and tracker fields are cross-checked. Continue strict one-deck-at-a-time in tracker order; a deck is auto-approved only after its fresh review passes every mandatory gate.
