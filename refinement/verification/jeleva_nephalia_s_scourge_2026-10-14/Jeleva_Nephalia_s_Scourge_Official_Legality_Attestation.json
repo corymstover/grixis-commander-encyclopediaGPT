@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "deck_sha256": "00e3f52118f5944684ebc49a5398acf8184f7ca878e861221e4c99931191bc2f",
+  "checked_at_utc": "2026-10-14T22:00:00Z",
+  "sources": [
+    "Wizards of the Coast Banned & Restricted list — Commander section, checked 2026-10-14",
+    "Wizards of the Coast Banned and Restricted Announcement — 2026-10-12; no paper Commander change applicable to this candidate",
+    "current Oracle/Commander-legality records for Jeleva and the exact candidate, including 2026 Hexing Squelcher and Arena of Glory printings",
+    "current project Oracle/Scryfall legality cache; exact candidate must be independently revalidated by the complete approval gate"
+  ],
+  "unexpected_banned_cards": [],
+  "project_exceptions": [],
+  "notes": "The exact SHA-bound Jeleva, Nephalia's Scourge candidate requires no project-specific legality exception. Named-ban screening against the current Wizards Commander banned list found no Commander-banned card in the candidate. Mana Crypt, Jeweled Lotus, Dockside Extortionist, and other current Commander-banned cards are absent. Ragavan, Nimble Pilferer is legal in paper Commander; the 2026 commander-only restriction cited in recent announcements applies to Competitive Brawl, not paper Commander. Final per-card Commander legality and B/R/U color identity remain fail-closed and must be independently confirmed against a freshly rebuilt current-cycle Oracle cache by the complete approval gate before APPROVAL_READY."
+}
