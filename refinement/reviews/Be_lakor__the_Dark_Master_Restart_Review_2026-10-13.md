@@ -1,56 +1,41 @@
-# Be'lakor, the Dark Master — Full Restart Review
+# Be'lakor, the Dark Master — Fresh Restart Review
 
-**Deck #7 of 62 · Review date: 2026-10-13 · Active status: TECHNICAL REVIEW COMPLETE; final hash/tracker gate pending independently verified digest.**
+**Deck #7 of 62 · Review date: 2026-10-13 · Technical review complete; exact-byte hash gate remains open.**
 
-Frozen normalized baseline hash in source certificate: `fe61e3a7d7bc5fc6d56a9c6a03b97f3986c606e3626a6a3839cdd91a7dfd9e0e`. The preserved current candidate build contains 100 copies, 94 unique names and 36 lands, with only basic lands repeating. Prior-cycle certification was treated as evidence, not new-cycle approval.
+Frozen normalized baseline SHA-256: `fe61e3a7d7bc5fc6d56a9c6a03b97f3986c606e3626a6a3839cdd91a7dfd9e0e`. The current restart list was re-fetched after writing and contains 100 copies, 94 unique names and 36 lands. Its membership is unchanged from the prior reviewed list; this restart review challenges and rechecks that decision rather than treating old approval status as current.
 
 ## Commander-first strategy
 
-Be'lakor draws and loses life equal to Demon count on entry, then each other Demon entry deals damage equal to that creature's power to any target. The list prioritizes dense Demon bodies, repeated Demon ETBs, token copies, blink effects, reanimation and cost-cheating. It does not force the deck into generic Grixis goodstuff or a spellslinger shell.
+Be'lakor draws and loses life equal to the Demon count on entry; each other Demon entry deals damage equal to that creature's power to any target. The current build emphasizes dense Demon bodies, repeated Demon entries, token copies, blink effects, reanimation and cost reductions. The two prior changes fit that plan without forcing a generic Grixis shell.
 
-## Fresh restart decisions
+## Reassessed paired changes
 
-The two previous swaps are retained after full re-evaluation:
-- **Demonic Covenant for Reaper from the Abyss.** Covenant is a Kindred Enchantment — Demon, contributes to Be'lakor's Demon count, creates a 5/5 flying Demon at each end step, and draws for each player you attack with Demons. Its own noncreature entry triggers Be'lakor but deals 0 because it has no power; its generated creature token can deal 5 if Be'lakor remains.
-- **Ardyn, the Usurper for Archfiend of Depravity.** Ardyn gives Demons menace, lifelink and haste, then at beginning of combat can create a 5/5 black Demon token copy of a creature card in any graveyard. It is not itself a Demon. Its cost of eight mana is real, but the list has Heartless Summoning, Urza's Incubator, Rakdos, Lord of Riots and Sneak Attack to mitigate deployment.
-
-The cuts are genuine trade-offs: Reaper's conditional end-step removal and Archfiend's opponent-creature suppression are powerful effects. Covenant and Ardyn instead emphasize recurring Demon entries, card flow and proactive board pressure.
-
-## Rules and interaction checks
-
-- Be'lakor's ETB draw count includes Demons already on the battlefield as it enters, including Demonic Covenant as a Demon permanent. It loses that much life as part of the same ability.
-- A noncreature permanent has no power; Be'lakor's “deals damage equal to its power” trigger for Demonic Covenant's own entry deals zero. The token Covenant creates is a 5/5 creature and deals 5 to a target through Be'lakor.
-- Ardyn's ability creates a token copy of a creature card in a graveyard, modified to a 5/5 black Demon. Copiable ETB abilities are retained; if the copied card has an ETB ability it triggers on the token's entry. This also creates a Be'lakor damage trigger.
-- Ardyn is not a Demon, so it doesn't increment Be'lakor's Demon count or trigger the “another Demon” ability when Ardyn itself enters.
-- Kindred Discovery, Panharmonicon, Roaming Throne, Molten Echoes and Reflections of Littjara affect different kinds of triggers/copies; they are not universally interchangeable. Legendary-token restrictions and the exact source of the trigger matter.
-- Demon ETB damage triggers require Be'lakor to remain on the battlefield as appropriate for the trigger's source/condition; removal and stack ordering still matter.
-- No deterministic infinite combo is added or claimed. High-end sequences depend on cost reducers, Sneak Attack, reanimation, token copies and sufficient board/graveyard resources.
+- **Demonic Covenant for Reaper from the Abyss:** Covenant is a Kindred Enchantment — Demon, so it increases Be'lakor's Demon count for the entry draw/life loss. It creates a 5/5 flying Demon at each end step and draws for each player attacked with Demons. Covenant's own entry triggers Be'lakor but has no power as a noncreature permanent, so the damage amount is zero. Its 5/5 token is a creature and can generate a 5-damage trigger. Reaper's morbid end-step removal is powerful but conditional; the swap favors recurring tokens and card flow over that control effect.
+- **Ardyn, the Usurper for Archfiend of Depravity:** Ardyn grants Demons menace, lifelink and haste, then at beginning of combat can create a 5/5 black Demon token copy of a creature card in any graveyard. Copied ETB abilities trigger on entry, and the token can deal damage through Be'lakor. Ardyn is not itself a Demon. Its eight-mana cost is substantial, but Heartless Summoning, Urza's Incubator, Rakdos, Lord of Riots and Sneak Attack mitigate deployment. Archfiend's opponent-creature suppression is a meaningful loss, not a weak-card claim.
 
 ## Candidate review
 
-The inherited candidate ledger assessed 16 candidates: two accepted swaps (Demonic Covenant and Ardyn), two baseline core cards retained (Heartless Summoning, Ancient Cellarspawn), and twelve rejected options. The rankings are supporting discovery data only.
+All 16 candidate decisions were reread. Demonic Covenant and Ardyn remain accepted; Heartless Summoning and Ancient Cellarspawn remain central baseline cards; the other twelve candidates remain rejected for reasons recorded in the ledger. Rankings and inclusion metrics are discovery evidence only.
 
-- **Varragoth, Bloodsky Sire rejected:** redundant tutor package; boast requires attacking and places the card on top.
-- **Dream Devourer rejected:** foretell setup is slower than existing cost reducers/Sneak Attack and it is not a Demon.
-- **Bloodcrusher of Khorne rejected:** marginal evasion improvement and no ETB/card advantage.
-- **Plague Drone rejected:** narrow lifegain hate and only a 3/3 trigger payoff.
-- **Ob Nixilis, Unshackled rejected:** meta-dependent search punishment without an ETB/card-advantage payoff.
-- **Bloodgift Demon rejected:** redundant, slower draw compared with Be'lakor ETBs, Vilis, Rakdos, Patron of Chaos, Unholy Annex and Kindred Discovery.
-- **Lord Xander, the Collector rejected:** another expensive top-end threat but less cleanly aligned to Demon engine density.
-- **Aspiring Champion rejected:** combat-dependent, random creature result.
-- **Venomcrawler rejected:** four-mana body with no immediate ETB, protection or card flow.
-- **Exalted Flamer of Tzeentch rejected:** pulls toward spellslinger and inconsistent graveyard recursion, away from Demon ETBs.
-- **Séance Board rejected:** delayed creature-death setup and restricted mana.
-- **Lord of the Void rejected:** seven-mana combat-damage-dependent payoff.
-- **Heartless Summoning retained:** core creature cost reduction; the -1/-1 drawback is monitored for small utility bodies/tokens.
-- **Ancient Cellarspawn retained:** synergizes with cost reducers and remains a targeted opponent life-loss trigger, not an all-opponent trigger.
+Varragoth is redundant with the tutor package and needs combat; Dream Devourer needs foretell setup and is not a Demon; Bloodcrusher adds marginal evasion without an ETB; Plague Drone is narrow hate; Ob Nixilis, Unshackled is search-meta-dependent; Bloodgift Demon is slower than existing draw; Lord Xander is another expensive top-end threat; Aspiring Champion requires combat and random outcome; Venomcrawler has low immediate impact; Exalted Flamer pushes toward spellslinger; Séance Board has delayed setup/restricted mana; Lord of the Void is combat-dependent at seven mana.
 
-## Legality, identity and integrity
+## Rules and interaction checks
 
-The prior active-cycle certificate documents current Scryfall name/Oracle/identity metadata refresh for all 94 baseline names and direct checks for both additions and cuts. Both additions and both cuts are Commander-legal and fit UBR. The official Commander banned-list checkpoint in the source certificate is dated 2026-10-13; no project exception applies.
+- Covenant's Demon subtype counts for Be'lakor's ETB draw. Its own noncreature entry trigger has no power to measure and deals zero.
+- Covenant's 5/5 token can trigger Be'lakor for five damage if Be'lakor remains present.
+- Ardyn's token copies a creature card's copiable values and abilities with the described 5/5 black Demon modification; ETB abilities trigger. Ardyn itself is not a Demon.
+- Copy/token engines, Panharmonicon, Roaming Throne, Molten Echoes, Reflections of Littjara and Ghostly Flicker have distinct timing and copy rules. No deterministic infinite combo is added or claimed.
+- The build's expensive Demon curve is supported by Heartless Summoning, Urza's Incubator, Rakdos, Lord of Riots and Sneak Attack, but no quantitative goldfish or representative multiplayer win-rate analysis is available.
 
-## Final structural gate
+## Verification record
 
-The decklist has 100 copies including commander, 94 unique names, and 36 lands. The only repeated names are Island ×3, Mountain ×2 and Swamp ×4. Singleton/copy and commander-first marker pass. The frozen baseline is preserved and the current final revision is a separate dated artifact. No matched-start multiplayer simulator or representative before/after game sample was available, so no win-rate claim is made.
+- 100 cards including commander; 94 unique names; 36 lands.
+- Commander appears first with one `[Commander]` marker.
+- Only repeat names: Island ×3, Mountain ×2, Swamp ×4.
+- Singleton/copy compliance and UBR identity pass.
+- The dated current-source refresh and direct card reference checks are documented in the prior-cycle sourced certificate; the official Commander ban-list checkpoint is also dated 2026-10-13. No new list changes have been introduced.
+- No qualified matched-start multiplayer simulator or representative before/after sample was available. No win-rate claim is made.
 
-**Technical review disposition:** all substantive card, strategy, rules and legality review sections pass; close only after re-fetching the exact restart TXT and confirming its content hash in the certificate and tracker.
+## Finalization gate
+
+The final TXT has been re-fetched after writing. The connected GitHub tooling returns Git blob SHA-1, not the required cryptographic SHA-256 of the exact UTF-8 text bytes; therefore the exact SHA-256 is **not yet independently verified**. The active tracker remains **UNAPPROVED / UNLOCKED** until that digest is computed outside the Git blob-SHA field, placed identically in the certificate and tracker, and re-fetched for consistency.
