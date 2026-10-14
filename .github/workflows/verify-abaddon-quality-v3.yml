@@ -23,7 +23,7 @@ jobs:
       - uses: actions/setup-python@v5
         with: {python-version: "3.12"}
       - name: Evaluate Abaddon v3 evidence packet
-        run: python scripts/evaluate_deck_quality_packet.py refinement/evidence/Abaddon_the_Despoiler_Deck_Quality_v3.json --output /tmp/abaddon-v3-report.json
+        run: PYTHONPATH=. python scripts/evaluate_deck_quality_packet.py refinement/evidence/Abaddon_the_Despoiler_Deck_Quality_v3.json --output /tmp/abaddon-v3-report.json
       - name: Run deck quality regression tests
         run: python -m unittest tests.test_epistemic_gates tests.test_generic_runner tests.test_dependency_invalidation -v
       - name: Verify frozen baseline
