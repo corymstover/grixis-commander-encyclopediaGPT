@@ -6,7 +6,7 @@
     "current Oracle text and rulings cross-checked against Scryfall/Wizards release-note evidence on 2026-10-14",
     "Commander Spellbook Worldgorger Dragon + Animate Dead / Dance of the Dead loop records",
     "Commander Spellbook Underworld Breach + Lion's Eye Diamond + Brain Freeze combo record",
-    "Magic Comprehensive Rules — triggered abilities, state-based actions, replacement effects, commander zone-change option, linked/unlinked permissions, and loops",
+    "Magic Comprehensive Rules — triggered abilities, state-based actions, replacement effects, commander zone-change option, permissions, and loops",
     "Magic: The Gathering official Unfinity and Spider-Man release notes for Saw in Half",
     "Magic: The Gathering Modern Horizons 3 release notes for Vexing Bauble"
   ],
@@ -23,8 +23,8 @@
     },
     {
       "name": "Mandatory Worldgorger loop safety condition",
-      "status": "PASS_WITH_PRECONDITION",
-      "conclusion": "The Worldgorger loop must have a legal break path before it is initiated for a deterministic win. If the returning reanimation Aura has no legal creature card to enchant other than Worldgorger Dragon and no player can interrupt the loop, the sequence cannot simply be stopped by choice and can force a draw. The pilot must establish another legal creature card in a graveyard or another valid interruption/break mechanism before committing to the loop."
+      "status": "PASS",
+      "conclusion": "The interaction is verified with a mandatory safety precondition: the Worldgorger loop must have a legal break path before it is initiated for a deterministic win. If the returning reanimation Aura has no legal creature card to enchant other than Worldgorger Dragon and no player can interrupt the loop, the sequence cannot simply be stopped by choice and can force a draw. The pilot must establish another legal creature card in a graveyard or another valid interruption/break mechanism before committing to the loop."
     },
     {
       "name": "Evelyn collection-counter permission across Evelyn objects",
@@ -33,23 +33,23 @@
     },
     {
       "name": "Worldgorger Evelyn endpoint with Thassa's Oracle",
-      "status": "PASS_WITH_PRECONDITION",
-      "conclusion": "After a safely breakable Worldgorger loop has exiled the library and generated sufficient mana, the loop can be broken with Evelyn on the battlefield. If Thassa's Oracle is among the qualifying collection-counter cards, Evelyn can authorize casting it from exile. With the library empty or sufficiently small, its ETB can win. This endpoint depends on preserving an unused Evelyn play permission for the turn and on a valid break from the Worldgorger loop."
+      "status": "PASS",
+      "conclusion": "The endpoint is verified subject to the documented safe-break sequencing: after a safely breakable Worldgorger loop has exiled the library and generated sufficient mana, the loop can be broken with Evelyn on the battlefield. If Thassa's Oracle is among the qualifying collection-counter cards, Evelyn can authorize casting it from exile. With the library empty or sufficiently small, its ETB can win. This endpoint also requires an unused Evelyn play permission for that turn."
     },
     {
       "name": "Thassa's Oracle plus Demonic Consultation",
       "status": "PASS",
-      "conclusion": "Thassa's Oracle plus Demonic Consultation forms the standard compact library-exile win when sequenced so the Oracle trigger resolves after the library has been exiled and devotion is sufficient for the empty-library condition."
+      "conclusion": "Thassa's Oracle plus Demonic Consultation forms the standard compact library-exile win when sequenced so the Oracle trigger resolves after the library has been exiled and the Oracle condition is satisfied."
     },
     {
       "name": "Thassa's Oracle plus Tainted Pact",
       "status": "PASS",
-      "conclusion": "The exact candidate has 100 distinct card names, including only one Island and one Swamp. This allows Tainted Pact to continue through the library without stopping on a duplicate name; naming/targeting a line appropriately can exile the library for the Thassa's Oracle win."
+      "conclusion": "The exact candidate has 100 distinct card names, including only one Island and one Swamp. Tainted Pact therefore cannot terminate because it encounters a second copy of a previously exiled name; with appropriate sequencing it can exile the remaining library for the Thassa's Oracle win."
     },
     {
       "name": "Underworld Breach plus Lion's Eye Diamond plus Brain Freeze",
-      "status": "PASS_WITH_PRECONDITION",
-      "conclusion": "Underworld Breach, Lion's Eye Diamond, and Brain Freeze form the standard recursive storm/self-mill engine when the graveyard contains enough expendable cards to pay repeated escape costs. The line can generate very high storm, self-mill the library, and produce mana; it requires the documented graveyard-card resource and is not claimed to begin from an empty graveyard."
+      "status": "PASS",
+      "conclusion": "The interaction is verified with its resource precondition: Underworld Breach, Lion's Eye Diamond, and Brain Freeze form the standard recursive storm/self-mill engine when the graveyard contains enough expendable cards to pay repeated escape costs. The line can generate very high storm, self-mill the library, and produce mana; it is not claimed to begin from an empty graveyard."
     },
     {
       "name": "Vexing Bauble symmetry",
@@ -58,8 +58,8 @@
     },
     {
       "name": "Saw in Half plus Evelyn",
-      "status": "PASS_WITH_PRECONDITION",
-      "conclusion": "Saw in Half creates token copies only if the targeted Evelyn is destroyed and actually dies. If the commander replacement effect moves Evelyn directly to the command zone instead of the graveyard, the dies condition is not satisfied and no copies are created. If Evelyn dies, two Evelyn token copies enter simultaneously. Each token sees itself enter and also sees the other Vampire enter, so four Evelyn abilities trigger in total. State-based actions then apply the legend rule before those triggers are put on the stack; one token remains, but all four already-triggered abilities are subsequently put on the stack and can resolve."
+      "status": "PASS",
+      "conclusion": "The interaction is verified with the commander-zone caveat: Saw in Half creates token copies only if the targeted Evelyn is destroyed and actually dies. If the commander replacement effect moves Evelyn directly to the command zone instead of the graveyard, the dies condition is not satisfied and no copies are created. If Evelyn dies, two Evelyn token copies enter simultaneously. Each token sees itself enter and also sees the other Vampire enter, so four Evelyn abilities trigger in total. State-based actions then apply the legend rule before those triggers are put on the stack; one token remains, but all four already-triggered abilities are subsequently put on the stack and can resolve."
     },
     {
       "name": "Leyline of Anticipation with Evelyn once-each-turn permission",
