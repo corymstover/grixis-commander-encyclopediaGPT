@@ -64,3 +64,17 @@ New current-cycle working changes:
 - Current official legality / exact Oracle: requires final metadata checkpoint before approval.
 - Candidate exhaustion / zero-improvement closure: OPEN.
 - Status remains UNLOCKED.
+
+
+## Critical Oracle correction — subsequent verification pass
+
+**This section supersedes conflicting assertions above.** Official card text changes the earlier candidate evaluation:
+
+1. **Twinning Staff DOES enhance Ashad's artifact spell copies.** Its first ability says 'If you would copy a spell one or more times, instead copy it that many times plus an additional time.' That replacement effect applies to *any spell*, including nonlegendary artifact spells copied via casualty. Only Twinning Staff's separate activated ability is restricted to instant/sorcery spells. The prior reasoning for cutting it was incorrect. **Restore Twinning Staff; do not add Canoptek Scarab Swarm for that slot.** Source: https://mtg.wtf/card/ncc/383/Twinning-Staff.
+2. **Canoptek Scarab Swarm is 1/1, not 4/4.** It cannot pay casualty 2 by itself; its 1/1 Insects also cannot. It is conditional on graveyard composition. Its previous characterization as a 4/4 fodder body was incorrect. Source: https://mtg.wtf/card/40k/150/Canoptek-Scarab-Swarm.
+3. **Poetic Ingenuity creates 3/1 Dinosaur tokens, not 3/3.** Crucially, 3/1 tokens *can pay casualty 2*. Its artifact-cast trigger occurs once each turn, fitting Ashad's multi-turn cadence, and it also produces Treasure when Dinosaurs attack. **Retain Poetic Ingenuity instead of Sai, Master Thopterist.** Sai's 1/1 Thopters cannot pay casualty 2 unassisted. Source: https://mtg.wtf/card/lci/377/Poetic-Ingenuity.
+4. **Ichor Wellspring** remains a viable replacement for Dalek Drone: it creates repeated ETB/death draw value with Ashad and sacrifice outlets. It is a noncreature artifact and requires a separate eligible 2-power creature to pay casualty. Source: https://mtg.wtf/card?q=%21ichor+wellspring.
+
+**Revised current-cycle working candidate vs frozen baseline:** Jadar → Solemn Simulacrum; Dalek Drone → Ichor Wellspring; Canoptek Spyder and Sai are not included, Twinning Staff and Poetic Ingenuity are retained. The prior-cycle Twinning Staff → Canoptek Spyder proposal is **rejected** upon correct Oracle review.
+
+**State:** 100 cards, structural check passed previously; not approved/locked. Final candidate-exhaustion and legality gates remain open. The errors above are a material reason not to prematurely lock this deck.
