@@ -1,0 +1,84 @@
+{
+  "status": "PASS",
+  "deck_sha256": "81333ac71d483b667af968bf2ab221e1fa0de6edd7c2395170d15786e5b15fa3",
+  "checked_at_utc": "2026-10-14T21:18:00Z",
+  "sources": [
+    "Magic Comprehensive Rules — triggered abilities, command-zone abilities, copying objects, state-based actions, haste, activated abilities, alternative/additional costs, casting during resolution, split second, convoke, and replacement effects",
+    "Current Oracle text and rulings for Inalla, Archmage Ritualist and every interaction named below",
+    "Commander Spellbook / EDHREC current Inalla Spellseeker and Bloodline Necromancer + Ruthless Technomancer combo references, checked 2026-10-14",
+    "Current 2026 tournament Inalla deck evidence used to red-team Apprentice Necromancer, Thundertrap Trainer, and the contemporary combo shell",
+    "Current project Oracle/Scryfall cache; exact candidate is independently revalidated by the complete approval gate"
+  ],
+  "interactions": [
+    {
+      "name": "Inalla Eminence functions from the command zone",
+      "status": "PASS",
+      "conclusion": "Whenever another nontoken Wizard enters under Inalla's controller's control, Inalla's Eminence ability can trigger while Inalla is either in the command zone or on the battlefield. The deck therefore does not need to cast Inalla to use its primary Wizard-copy engine. Each trigger can be paid only once and creates one token copy that gains haste and is exiled at the beginning of the next end step."
+    },
+    {
+      "name": "Spellseeker plus Scholar of the Ages one-card Inalla line",
+      "status": "PASS",
+      "conclusion": "With Spellseeker in hand and the required mana/life/library pieces available, Spellseeker's ETB and Inalla's Eminence trigger can be ordered so Spellseeker tutors Culling the Weak, the original Spellseeker is sacrificed, the Inalla copy tutors Unearth, and the returned Spellseeker plus its Inalla copy obtain Burnt Offering and Finale of Promise. Burnt Offering supplies the red mana for Finale; Finale with X=1 casts Culling the Weak and Unearth from the graveyard, allowing Spellseeker to be returned again and the ETB/copy triggers to obtain Entomb and Reanimate. Entomb puts Scholar of the Ages into the graveyard and Reanimate returns it. Scholar and its Inalla copy recover Burnt Offering, Entomb/Shallow Grave as required; sacrificing the nontoken Scholar and recurring it with Shallow Grave creates a repeatable loop with net positive mana and arbitrarily many hasty Scholar tokens. The line is commander-dependent because Inalla's command-zone copy triggers provide the additional Spellseeker and Scholar ETBs needed to progress and loop."
+    },
+    {
+      "name": "Finale of Promise casting during resolution",
+      "status": "PASS",
+      "conclusion": "Finale of Promise grants permission to cast the chosen instant and sorcery during Finale's resolution. In the exact candidate no static effect gives Finale split second, so those casts are legal subject to Finale's normal targeting and mana-value restrictions. This point is structural to the Spellseeker line."
+    },
+    {
+      "name": "Samut red-team exclusion",
+      "status": "PASS",
+      "conclusion": "Samut, Tyrant of Naktamun is intentionally absent from the final candidate. If Samut were on the battlefield, Finale of Promise would have split second; while Finale remained on the stack during its resolution, split second would prohibit casting the targeted spells that Finale instructs its controller to cast. A bargained Beseech the Mirror would have the same cast-during-resolution problem. Replacing Samut with Thundertrap Trainer removes this anti-synergy from the primary combo architecture."
+    },
+    {
+      "name": "Bloodline Necromancer plus Ruthless Technomancer loop",
+      "status": "PASS",
+      "conclusion": "With Ruthless Technomancer in the graveyard, Bloodline Necromancer in hand, Inalla in the command zone or battlefield, and the required mana, Bloodline returns Ruthless. Ruthless sacrifices Bloodline and creates Treasures; paying the pending Inalla triggers in the required order creates a Ruthless token and then a Bloodline token, allowing the nontoken creatures to be sacrificed/returned repeatedly. The loop generates arbitrarily many Treasures, colored mana, Wizard tokens, ETB/LTB/death/sacrifice events, and can ultimately support casting Inalla and repeatedly paying her five-Wizard activation to make opponents lose life."
+    },
+    {
+      "name": "Apprentice Necromancer plus Inalla haste",
+      "status": "PASS",
+      "conclusion": "Apprentice Necromancer is a Wizard, so its nontoken entry triggers Inalla. If the Inalla trigger is paid, the Apprentice token copy gains haste. Haste allows that token to immediately activate its {B}, tap, sacrifice-this-creature ability despite entering that turn, returning another target creature card from the graveyard with haste and a delayed sacrifice trigger. Apprentice cannot target itself because targets are chosen before the sacrifice cost is paid."
+    },
+    {
+      "name": "Thundertrap Trainer duplicated ETB",
+      "status": "PASS",
+      "conclusion": "Thundertrap Trainer is a Wizard. Its nontoken entry triggers both its own ETB and Inalla's Eminence ability. If the Inalla trigger is paid, the token copy enters and triggers its own top-four noncreature/nonland selection ability. The token was not cast, so its offspring ability is not paid or triggered, but the duplicated ETB selection is fully functional."
+    },
+    {
+      "name": "Kefka legendary-copy handling",
+      "status": "PASS",
+      "conclusion": "Kefka, Court Mage is a legendary Wizard. Its nontoken entry can trigger Inalla and Kefka's own ETB. If an Inalla token copy is created, the copy also triggers its own Kefka ETB, then the legend rule requires the controller to keep only one legendary permanent named Kefka, Court Mage. Triggered abilities already on the stack remain there. The deck does not rely on retaining two Kefkas simultaneously."
+    },
+    {
+      "name": "Thassa's Oracle plus Demonic Consultation",
+      "status": "PASS",
+      "conclusion": "With Thassa's Oracle's ETB trigger pending, Demonic Consultation can name a card absent from the library to exile the library, after which Oracle's devotion/library-size condition can cause its controller to win when the trigger resolves. Normal interaction windows and counterplay still apply."
+    },
+    {
+      "name": "Thassa's Oracle plus Tainted Pact and singleton structure",
+      "status": "PASS",
+      "conclusion": "The exact candidate has 100 distinct card names, including unique basic-land names. Tainted Pact can therefore continue exiling through the library without being forced to stop by a second card with a previously exiled name. This supports the standard Oracle/Pact library-exile line."
+    },
+    {
+      "name": "Underworld Breach plus Lion's Eye Diamond plus Brain Freeze",
+      "status": "PASS",
+      "conclusion": "Underworld Breach gives nonland cards in the graveyard escape equal to their mana cost plus exiling three other cards. With sufficient graveyard material, Lion's Eye Diamond and Brain Freeze can be repeatedly escaped so LED supplies mana and Brain Freeze's storm/mill replenishes graveyard resources, eventually milling the controller's library and enabling a Thassa's Oracle or equivalent finish. The line is conditional on adequate cards/mana and is treated as a secondary cEDH route, not the commander-identity centerpiece."
+    },
+    {
+      "name": "Hoarding Broodlord plus Saw in Half",
+      "status": "PASS",
+      "conclusion": "Hoarding Broodlord's ETB can exile a card face down and grants convoke to cards it exiles. Saw in Half can destroy Broodlord and create two token copies; each token copy enters and produces its own Broodlord tutor trigger. The candidate contains the ritual, reanimation, tutor, and win-condition infrastructure necessary for those additional searches to assemble high-leverage deterministic routes, but the approval does not depend on one undocumented fixed Broodlord pile."
+    },
+    {
+      "name": "Beseech the Mirror bargain casting",
+      "status": "PASS",
+      "conclusion": "When Beseech the Mirror is bargained, its resolution may exile a qualifying card and permit it to be cast without paying its mana cost. The exact candidate contains no Samut, Tyrant of Naktamun or other effect that automatically gives Beseech split second, so the normal cast-during-resolution permission remains usable."
+    },
+    {
+      "name": "Inalla five-Wizard activation and new tokens",
+      "status": "PASS",
+      "conclusion": "Inalla's activated ability taps five untapped Wizards the controller controls as a cost. This is not the tap-symbol ability of those five Wizards, so normal summoning-sickness restrictions on a creature's own tap-symbol ability do not prevent newly created untapped Wizard tokens from being tapped to pay Inalla's cost. Inalla herself must be on the battlefield to activate this ability."
+    }
+  ]
+}
