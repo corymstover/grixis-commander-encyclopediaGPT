@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "deck_sha256": "9f1e7753978f80aa2c37e5d1f073eda9f302cb02325d39828d24a770b126fd88",
+  "checked_at_utc": "2026-10-14T21:20:00Z",
+  "sources": [
+    "Magic Comprehensive Rules — activated abilities, tap-symbol activation restrictions, summoning sickness, copying activated abilities, shroud, replacement effects, discard events, and triggered abilities",
+    "Wizards of the Coast Oracle Changes 2021-02-02 — current Chains of Mephistopheles wording",
+    "Current Oracle text/rulings for Gwendlyn Di Corci, Illusionist's Bracers, Pemmin's Aura, Minamo, School at Water's Edge, Tinybones, Pocket Nuisance, Mind Twist, Chains of Mephistopheles, Notion Thief, Tergrid, and the exact SHA-bound candidate",
+    "Current project Oracle/Scryfall cache; exact candidate is independently revalidated by the complete approval gate"
+  ],
+  "interactions": [
+    {
+      "name": "Gwendlyn activation timing and summoning sickness",
+      "status": "PASS",
+      "conclusion": "Gwendlyn Di Corci's Oracle ability uses the tap symbol and may be activated only during its controller's turn. A creature normally cannot pay a tap-symbol activation cost unless it has been under its controller's control continuously since that player's most recent turn began or it has haste. Lightning Greaves grants haste, and Thousand-Year Elixir allows creature abilities to be activated as though those creatures had haste, so either can enable Gwendlyn on the turn she enters."
+    },
+    {
+      "name": "Illusionist's Bracers copies Gwendlyn",
+      "status": "PASS",
+      "conclusion": "Gwendlyn's discard ability is a nonmana activated ability. When the equipped Gwendlyn activates it, Illusionist's Bracers triggers and copies that ability. The copy does not require paying the original tap cost again and may choose a new legal target. The copied ability is not a new activation, so the original ability's activate-only-during-your-turn restriction is satisfied by the original activation."
+    },
+    {
+      "name": "Pemmin's Aura repeatable untap",
+      "status": "PASS",
+      "conclusion": "Pemmin's Aura can untap enchanted Gwendlyn for {U}. During the controller's turn, each successful untap can support another Gwendlyn activation as long as costs can be paid and legal targets exist. Pemmin's Aura can also give Gwendlyn shroud until end of turn for {U}."
+    },
+    {
+      "name": "Pemmin shroud and friendly targeting",
+      "status": "PASS",
+      "conclusion": "If Pemmin's Aura gives Gwendlyn shroud, Gwendlyn cannot be targeted by any player, including her controller. While shrouded, Minamo, Magewright's Stone, and Patriar's Seal therefore cannot target Gwendlyn. The Aura itself remains attached because an Aura targets while it is a spell, not merely because it remains attached after resolution. The shroud mode is accordingly best treated as reactive protection after or between desired friendly-targeting activations."
+    },
+    {
+      "name": "Minamo commander untap",
+      "status": "PASS",
+      "conclusion": "Minamo, School at Water's Edge is a legendary land that can tap for {U} or pay {U} and tap to untap target legendary permanent. Because Gwendlyn is legendary, Minamo can untap her after an activation and thereby enable another activation during the same turn. Minamo cannot simultaneously supply the blue mana and pay its own tap cost, so another blue source is required for that activation."
+    },
+    {
+      "name": "Magewright's Stone and Patriar's Seal",
+      "status": "PASS",
+      "conclusion": "Both cards can target and untap Gwendlyn after her tap ability has been activated, permitting another activation during the controller's turn. Patriar's Seal can alternatively be tapped for mana, but a single permanent cannot pay both incompatible tap costs at once."
+    },
+    {
+      "name": "Tinybones, Pocket Nuisance discard trigger",
+      "status": "PASS",
+      "conclusion": "Tinybones triggers when a player discards one or more cards. If one player discards multiple cards simultaneously as one discard event, Tinybones triggers once for that player's event rather than once per card. Separate discard events can trigger it separately. Gwendlyn's one-card random discard therefore produces a Tinybones trigger when it resolves and the targeted player actually discards a card."
+    },
+    {
+      "name": "Tinybones ETB",
+      "status": "PASS",
+      "conclusion": "When Tinybones enters, each opponent discards a card. Those discards feed the deck's discard-triggered payoff layer as applicable. Tinybones itself then remains a repeatable table-wide damage payoff for later qualifying discard events by any player."
+    },
+    {
+      "name": "Mind Twist random discard",
+      "status": "PASS",
+      "conclusion": "Mind Twist makes one target player discard X cards at random. This directly advances the deck's random-discard identity and can be replayed by the deck's recursion effects only when the specific recursion effect's timing, zone, and additional-cost rules allow it."
+    },
+    {
+      "name": "Chains of Mephistopheles and wheels",
+      "status": "PASS",
+      "conclusion": "Chains of Mephistopheles replaces each card draw other than the first card a player draws in each of their draw steps. The affected player discards a card instead; if they do, they then draw a card, and if they cannot discard that way, they mill a card instead. Wheel effects that first empty a hand and then attempt multiple draws can therefore be heavily suppressed by Chains, because the replacement can find no card to discard for those replaced draws."
+    },
+    {
+      "name": "Notion Thief and wheels",
+      "status": "PASS",
+      "conclusion": "Notion Thief replaces cards opponents would draw other than the first card they draw in each draw step with draws for its controller. A wheel that first makes opponents discard their hands and then draw can therefore leave those opponents without the replacement cards while its controller receives the redirected draws, subject to other applicable replacement effects."
+    },
+    {
+      "name": "Chains and Notion Thief replacement-effect ordering",
+      "status": "PASS",
+      "conclusion": "When multiple replacement effects are applicable to the same draw event, the affected player or the affected object's controller applies the applicable replacement effect as prescribed by the Comprehensive Rules, then the event is reevaluated. The deck must not assume one universal fixed ordering between Chains of Mephistopheles and Notion Thief for every draw."
+    },
+    {
+      "name": "Tergrid discard recovery",
+      "status": "PASS",
+      "conclusion": "Tergrid, God of Fright triggers when an opponent sacrifices a nontoken permanent or discards a permanent card. If the trigger resolves with that card still in the graveyard and it is a legal object for the effect, it can enter the battlefield under Tergrid's controller's control. Nonpermanent cards discarded to Gwendlyn or wheels are not returned by Tergrid."
+    },
+    {
+      "name": "Discard payoff granularity",
+      "status": "PASS",
+      "conclusion": "The deck contains payoffs with different trigger wording. Effects such as Liliana's Caress and Geth's Grimoire that trigger when a card is discarded can trigger for individual discarded cards, while Tinybones, Pocket Nuisance uses 'one or more cards' wording and triggers once for a given player's simultaneous discard event. These are not interchangeable trigger patterns."
+    },
+    {
+      "name": "Bloodchief Ascension remains noncombo here",
+      "status": "PASS",
+      "conclusion": "Bloodchief Ascension is present as a low-cost attrition payoff. Mindcrank is not in the exact candidate, so the familiar Bloodchief Ascension plus Mindcrank deterministic loop is not part of this deck's approved candidate strategy."
+    }
+  ]
+}
