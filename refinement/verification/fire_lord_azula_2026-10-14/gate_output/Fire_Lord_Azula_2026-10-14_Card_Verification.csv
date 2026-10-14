@@ -1,0 +1,177 @@
+card_name,quantity,role,canonical_name,scryfall_id,oracle_id,type_line,mana_cost,color_identity,commander_color_identity,commander_legality,project_exception,result,oracle_text,source
+Fire Lord Azula,1,Commander,Fire Lord Azula,bc6146bf-f0c6-4557-af6a-74c643d5fc01,2631130e-63e2-43a3-914a-648e76722203,Legendary Creature — Human Noble,,"B,R,U","B,R,U",legal,,PASS,"Firebending 2 (Whenever this creature attacks, add {R}{R}. This mana lasts until end of combat.)
+Whenever you cast a spell while Fire Lord Azula is attacking, copy that spell. You may choose new targets for the copy. (A copy of a permanent spell becomes a token.)",https://scryfall.com/card/bc6146bf-f0c6-4557-af6a-74c643d5fc01
+"Birgi, God of Storytelling // Harnfel, Horn of Bounty",1,,"Birgi, God of Storytelling // Harnfel, Horn of Bounty",44657ab1-0a6a-4a5f-9688-86f239083821,fb81e4d3-1d8c-4779-be62-87cf49277e51,Legendary Creature — God // Legendary Artifact,,R,"B,R,U",legal,,PASS,"Whenever you cast a spell, add {R}. Until end of turn, you don't lose this mana as steps and phases end.
+Creatures you control can boast twice during each of your turns rather than once.
+//
+Discard a card: Exile the top two cards of your library. You may play those cards this turn.",https://scryfall.com/card/44657ab1-0a6a-4a5f-9688-86f239083821
+Faerie Mastermind,1,,Faerie Mastermind,bc9a7599-3c7d-4b83-bff3-e3d1f20f1b0f,a984db23-40ea-428d-829f-e944267280f8,Creature — Faerie Rogue,{1}{U},U,"B,R,U",legal,,PASS,"Flash
+Flying
+Whenever an opponent draws their second card each turn, you draw a card.
+{3}{U}: Each player draws a card.",https://scryfall.com/card/soc/114/faerie-mastermind?utm_source=api
+Geist of Saint Thalia,1,,Geist of Saint Thalia,9c334530-0880-46b5-a358-9603eee3cecf,ef32a4a9-14e2-4738-b4c2-53ce5e1d2a53,Legendary Creature — Spirit Cleric,{1}{U},U,"B,R,U",legal,,PASS,"Flying
+Noncreature spells you cast cost {1} less to cast.",https://scryfall.com/card/fra/214/geist-of-saint-thalia?utm_source=api
+Hexing Squelcher,1,,Hexing Squelcher,674960ce-ff33-4d5e-a24a-a4582b2e9809,96c2d71e-0fc9-42aa-bc6b-6d0ae3f66f8b,Creature — Goblin Sorcerer,,R,"B,R,U",legal,,PASS,"This spell can't be countered.
+Ward—Pay 2 life.
+Spells you control can't be countered.
+Other creatures you control have ""Ward—Pay 2 life.""",https://scryfall.com/card/674960ce-ff33-4d5e-a24a-a4582b2e9809
+High Fae Trickster,1,,High Fae Trickster,7f1b93ea-1ec1-4010-9343-765742f5088b,28c1a4a0-f58c-4d07-a918-51ff8a74f050,Creature — Faerie Wizard,{3}{U},U,"B,R,U",legal,,PASS,"Flash (You may cast this spell any time you could cast an instant.)
+Flying
+You may cast spells as though they had flash.",https://scryfall.com/card/fdn/40/high-fae-trickster?utm_source=api
+Orcish Bowmasters,1,,Orcish Bowmasters,7c024bae-5631-4e20-ac69-df392ac9e109,ea5103f5-27e0-4eb1-902c-7f34652d6bf3,Creature — Orc Archer,,B,"B,R,U",legal,,PASS,"Flash
+When this creature enters and whenever an opponent draws a card except the first one they draw in each of their draw steps, this creature deals 1 damage to any target. Then amass Orcs 1.",https://scryfall.com/card/7c024bae-5631-4e20-ac69-df392ac9e109
+"Ragavan, Nimble Pilferer",1,,"Ragavan, Nimble Pilferer",8d27e717-8bda-44dc-90b9-a6f7029c7b93,37108cd4-bbab-4ce3-9ed6-f60e8422e703,Legendary Creature — Monkey Pirate,,R,"B,R,U",legal,,PASS,"Whenever Ragavan deals combat damage to a player, create a Treasure token and exile the top card of that player's library. Until end of turn, you may cast that card.
+Dash {1}{R} (You may cast this spell for its dash cost. If you do, it gains haste, and it's returned from the battlefield to its owner's hand at the beginning of the next end step.)",https://scryfall.com/card/8d27e717-8bda-44dc-90b9-a6f7029c7b93
+"Samut, Tyrant of Naktamun",1,,"Samut, Tyrant of Naktamun",6d7d8fa7-ce69-4a8c-9af0-55571393a244,a275f7ac-7dae-4422-875a-f34f24b6f28a,Legendary Creature — Human Wizard,,U,"B,R,U",legal,,PASS,"Instant and sorcery spells you control have split second. (As long as a spell with split second is on the stack, players can't cast spells or activate abilities that aren't mana abilities.)",https://scryfall.com/card/6d7d8fa7-ce69-4a8c-9af0-55571393a244
+Simian Spirit Guide,1,,Simian Spirit Guide,0e57335d-4066-4d73-83cd-67a215e01a4e,44e0ffa3-8915-4c1f-8f1a-4aeea1365f07,Creature — Ape Spirit,,R,"B,R,U",legal,,PASS,Exile this card from your hand: Add {R}.,https://scryfall.com/card/0e57335d-4066-4d73-83cd-67a215e01a4e
+Thassa's Oracle,1,,Thassa's Oracle,726e8b29-13e9-4138-b6a9-d2a0d8188d1c,1de1b591-a73f-4974-b507-8c63e07a0868,Creature — Merfolk Wizard,,U,"B,R,U",legal,,PASS,"When this creature enters, look at the top X cards of your library, where X is your devotion to blue. Put up to one of them on top of your library and the rest on the bottom of your library in a random order. If X is greater than or equal to the number of cards in your library, you win the game. (Each {U} in the mana costs of permanents you control counts toward your devotion to blue.)",https://scryfall.com/card/726e8b29-13e9-4138-b6a9-d2a0d8188d1c
+Valley Floodcaller,1,,Valley Floodcaller,90b12da0-f666-471d-95f5-15d8c9b31c92,4879c8f0-8832-4290-bc71-9838940f75cd,Creature — Otter Wizard,,U,"B,R,U",legal,,PASS,"Flash
+You may cast noncreature spells as though they had flash.
+Whenever you cast a noncreature spell, Birds, Frogs, Otters, and Rats you control get +1/+1 until end of turn. Untap them.",https://scryfall.com/card/90b12da0-f666-471d-95f5-15d8c9b31c92
+Vivi Ornitier,1,,Vivi Ornitier,ecc1027a-8c07-44a0-bdde-fa2844cff694,0452be2a-e97a-4269-a9e3-b616265ecb2e,Legendary Creature — Wizard,,"R,U","B,R,U",legal,,PASS,"{0}: Add X mana in any combination of {U} and/or {R}, where X is Vivi Ornitier's power. Activate only during your turn and only once each turn.
+Whenever you cast a noncreature spell, put a +1/+1 counter on Vivi Ornitier and it deals 1 damage to each opponent.",https://scryfall.com/card/ecc1027a-8c07-44a0-bdde-fa2844cff694
+"Wan Shi Tong, Librarian",1,,"Wan Shi Tong, Librarian",e20da6b5-1057-4a28-9e85-07de714e262f,2bace3ea-7d28-4a1c-857a-d3c3a1c11b59,Legendary Creature — Bird Spirit,{X}{U}{U},U,"B,R,U",legal,,PASS,"Flash
+Flying, vigilance
+When Wan Shi Tong enters, put X +1/+1 counters on him. Then draw half X cards, rounded down.
+Whenever an opponent searches their library, put a +1/+1 counter on Wan Shi Tong and draw a card.",https://scryfall.com/card/tla/78/wan-shi-tong-librarian?utm_source=api
+Ad Nauseam,1,,Ad Nauseam,a9f2c53e-ff58-4aa8-89a6-4f45628cc571,981b0e21-e5e6-4a1e-bfde-679d56623f7f,Instant,,B,"B,R,U",legal,,PASS,Reveal the top card of your library and put that card into your hand. You lose life equal to its mana value. You may repeat this process any number of times.,https://scryfall.com/card/a9f2c53e-ff58-4aa8-89a6-4f45628cc571
+An Offer You Can't Refuse,1,,An Offer You Can't Refuse,fe1023a2-c096-4c62-8627-e865b348ba02,234a734b-ba28-4f1b-9d01-3c3e7d516590,Instant,,U,"B,R,U",legal,,PASS,"Counter target noncreature spell. Its controller creates two Treasure tokens. (They're artifacts with ""{T}, Sacrifice this token: Add one mana of any color."")",https://scryfall.com/card/fe1023a2-c096-4c62-8627-e865b348ba02
+Big Score,1,,Big Score,3383a939-4ab3-4546-9995-6c65cd3f4441,a5cbd257-c836-493e-bb1a-76242619dea2,Instant,,R,"B,R,U",legal,,PASS,"As an additional cost to cast this spell, discard a card.
+Draw two cards and create two Treasure tokens. (They're artifacts with ""{T}, Sacrifice this token: Add one mana of any color."")",https://scryfall.com/card/3383a939-4ab3-4546-9995-6c65cd3f4441
+Borne Upon a Wind,1,,Borne Upon a Wind,a9379675-1a32-4e2b-8aaf-5f908c595f31,ce19962d-94f9-4b2b-b668-963c0acce308,Instant,,U,"B,R,U",legal,,PASS,"You may cast spells this turn as though they had flash.
+Draw a card.",https://scryfall.com/card/a9379675-1a32-4e2b-8aaf-5f908c595f31
+Brain Freeze,1,,Brain Freeze,bd880fc4-b298-416a-8f2f-a929cb41b33e,464c0150-3dbc-403b-9ada-fef25ab1f29d,Instant,,U,"B,R,U",legal,,PASS,"Target player mills three cards.
+Storm (When you cast this spell, copy it for each spell cast before it this turn. You may choose new targets for the copies.)",https://scryfall.com/card/bd880fc4-b298-416a-8f2f-a929cb41b33e
+Cabal Ritual,1,,Cabal Ritual,5403b49d-03a7-4cc3-af3c-df098c1c9c2e,5b5bf1fa-6502-4790-b66b-f0f8504ebc7c,Instant,,B,"B,R,U",legal,,PASS,"Add {B}{B}{B}.
+Threshold — Add {B}{B}{B}{B}{B} instead if there are seven or more cards in your graveyard.",https://scryfall.com/card/5403b49d-03a7-4cc3-af3c-df098c1c9c2e
+Chain of Vapor,1,,Chain of Vapor,38f741bf-13ee-4384-98ab-27833ebb9f6d,2167ac25-d042-4b48-b770-8b94acc1a965,Instant,,U,"B,R,U",legal,,PASS,"Return target nonland permanent to its owner's hand. Then that permanent's controller may sacrifice a land of their choice. If the player does, they may copy this spell and may choose a new target for that copy.",https://scryfall.com/card/38f741bf-13ee-4384-98ab-27833ebb9f6d
+Crimson Wisps,1,,Crimson Wisps,a65c81ff-fc5d-4191-93fb-52eb806457b7,e699d140-eb13-4f15-aecb-85c76e8b1b14,Instant,{R},R,"B,R,U",legal,,PASS,"Target creature becomes red and gains haste until end of turn. (It can attack and {T} this turn.)
+Draw a card.",https://scryfall.com/card/shm/88/crimson-wisps?utm_source=api
+Dark Ritual,1,,Dark Ritual,11e12a84-e7be-4afc-a230-c2e644743fa8,53f7c868-b03e-4fc2-8dcf-a75bbfa3272b,Instant,,B,"B,R,U",legal,,PASS,Add {B}{B}{B}.,https://scryfall.com/card/11e12a84-e7be-4afc-a230-c2e644743fa8
+Deflecting Swat,1,,Deflecting Swat,b4b36435-55b3-4615-8812-af41d4fc64d9,ae120613-97d6-4393-b39d-c3e6c076f5d6,Instant,,R,"B,R,U",legal,,PASS,"If you control a commander, you may cast this spell without paying its mana cost.
+You may choose new targets for target spell or ability.",https://scryfall.com/card/b4b36435-55b3-4615-8812-af41d4fc64d9
+Demand Answers,1,,Demand Answers,eca092fc-7c67-4a73-989e-5297bbaaea76,c11e84a1-dbda-429b-8cd6-fd0deaefc689,Instant,,R,"B,R,U",legal,,PASS,"As an additional cost to cast this spell, sacrifice an artifact or discard a card.
+Draw two cards.",https://scryfall.com/card/eca092fc-7c67-4a73-989e-5297bbaaea76
+Demonic Consultation,1,,Demonic Consultation,8d727b9b-6114-414d-9172-16b6e1db41cc,9a1412db-45ad-46ea-8f12-a85d203113d8,Instant,,B,"B,R,U",legal,,PASS,"Choose a card name. Exile the top six cards of your library, then reveal cards from the top of your library until you reveal a card with the chosen name. Put that card into your hand and exile all other cards revealed this way.",https://scryfall.com/card/8d727b9b-6114-414d-9172-16b6e1db41cc
+Expedite,1,,Expedite,b86c0628-0b61-44f2-91cc-1c3c309631ce,3501a839-eef5-44e4-8637-b5754780454e,Instant,{R},R,"B,R,U",legal,,PASS,"Target creature gains haste until end of turn.
+Draw a card.",https://scryfall.com/card/cmr/413/expedite?utm_source=api
+Fierce Guardianship,1,,Fierce Guardianship,f7f3dd95-bd14-4e0f-a388-444f9cf1b0dc,d09c9cba-fdd2-479b-ad5d-d05181c3e3f9,Instant,,U,"B,R,U",legal,,PASS,"If you control a commander, you may cast this spell without paying its mana cost.
+Counter target noncreature spell.",https://scryfall.com/card/f7f3dd95-bd14-4e0f-a388-444f9cf1b0dc
+Flusterstorm,1,,Flusterstorm,a3634cea-1f5e-4e22-a56b-6693eb8de1f6,86bf58f2-7f25-4e10-b797-25e0e8e67769,Instant,,U,"B,R,U",legal,,PASS,"Counter target instant or sorcery spell unless its controller pays {1}.
+Storm (When you cast this spell, copy it for each spell cast before it this turn. You may choose new targets for the copies.)",https://scryfall.com/card/a3634cea-1f5e-4e22-a56b-6693eb8de1f6
+Force of Negation,1,,Force of Negation,1825a719-1b2a-4af9-9cd2-7cb497cd0317,ac2173f9-f223-440a-9231-fd98762bdc6f,Instant,,U,"B,R,U",legal,,PASS,"If it's not your turn, you may exile a blue card from your hand rather than pay this spell's mana cost.
+Counter target noncreature spell. If that spell is countered this way, exile it instead of putting it into its owner's graveyard.",https://scryfall.com/card/1825a719-1b2a-4af9-9cd2-7cb497cd0317
+Force of Will,1,,Force of Will,89f612d6-7c59-4a7b-a87d-45f789e88ba5,956381ba-6d37-4a8a-846c-bad79222dbee,Instant,,U,"B,R,U",legal,,PASS,"You may pay 1 life and exile a blue card from your hand rather than pay this spell's mana cost.
+Counter target spell.",https://scryfall.com/card/89f612d6-7c59-4a7b-a87d-45f789e88ba5
+Frantic Search,1,,Frantic Search,d8c5e52d-57ae-464b-8860-7dd39ebfef64,16e015b2-f8a3-4b1a-80be-58a8f5fb5e8c,Instant,,U,"B,R,U",legal,,PASS,"Draw two cards, then discard two cards. Untap up to three lands.",https://scryfall.com/card/d8c5e52d-57ae-464b-8860-7dd39ebfef64
+Into the Flood Maw,1,,Into the Flood Maw,50b9575a-53d9-4df7-b86c-cda021107d3f,8cb36a67-9206-4665-a03f-64f52ba559c4,Instant,,U,"B,R,U",legal,,PASS,"Gift a tapped Fish (You may promise an opponent a gift as you cast this spell. If you do, they create a tapped 1/1 blue Fish creature token before its other effects.)
+Return target creature an opponent controls to its owner's hand. If the gift was promised, instead return target nonland permanent an opponent controls to its owner's hand.",https://scryfall.com/card/50b9575a-53d9-4df7-b86c-cda021107d3f
+Mental Misstep,1,,Mental Misstep,61e9c6df-1c84-4eab-9076-a4feb6347c10,1a0770e6-b093-4439-baff-6889a50ba12e,Instant,,U,"B,R,U",legal,,PASS,"({U/P} can be paid with either {U} or 2 life.)
+Counter target spell with mana value 1.",https://scryfall.com/card/61e9c6df-1c84-4eab-9076-a4feb6347c10
+Mindbreak Trap,1,,Mindbreak Trap,4f51140b-6254-431a-8810-94307bfdfbbe,48712d36-5c13-4ded-87a4-68106da4a5cd,Instant — Trap,,U,"B,R,U",legal,,PASS,"If an opponent cast three or more spells this turn, you may pay {0} rather than pay this spell's mana cost.
+Exile any number of target spells.",https://scryfall.com/card/4f51140b-6254-431a-8810-94307bfdfbbe
+Mystical Tutor,1,,Mystical Tutor,7331aade-3b7f-4b4d-b198-2e0b6b80895c,fb81f95c-70f8-4eb7-8d15-15d0ae23ec03,Instant,,U,"B,R,U",legal,,PASS,"Search your library for an instant or sorcery card, reveal it, then shuffle and put that card on top.",https://scryfall.com/card/7331aade-3b7f-4b4d-b198-2e0b6b80895c
+Narset's Reversal,1,,Narset's Reversal,4ede8d68-6870-445c-b140-da98adbc246a,d55f6c70-321f-4fb4-bd33-0850ae1a7c36,Instant,,U,"B,R,U",legal,,PASS,"Copy target instant or sorcery spell, then return it to its owner's hand. You may choose new targets for the copy.",https://scryfall.com/card/4ede8d68-6870-445c-b140-da98adbc246a
+Pact of Negation,1,,Pact of Negation,1ed4c0bb-b710-44a1-b8bc-6bd11c27b8b8,f3e213a4-ba5a-468a-93b3-c0a34e1bd725,Instant,,U,"B,R,U",legal,,PASS,"Counter target spell.
+At the beginning of your next upkeep, pay {3}{U}{U}. If you don't, you lose the game.",https://scryfall.com/card/1ed4c0bb-b710-44a1-b8bc-6bd11c27b8b8
+Pyroblast,1,,Pyroblast,b029eb9a-dd7a-40c2-96c4-0063d9cc002c,ecc435e2-deb1-420a-a79f-01dd08747314,Instant,,R,"B,R,U",legal,,PASS,"Choose one —
+• Counter target spell if it's blue.
+• Destroy target permanent if it's blue.",https://scryfall.com/card/b029eb9a-dd7a-40c2-96c4-0063d9cc002c
+Quicken,1,,Quicken,67751745-61c9-488f-b5b3-310c0bafdda7,cf188dd3-1927-481b-b8c0-93b1222dbf53,Instant,{U},U,"B,R,U",legal,,PASS,"The next sorcery spell you cast this turn can be cast as though it had flash. (It can be cast any time you could cast an instant.)
+Draw a card.",https://scryfall.com/card/rvr/57/quicken?utm_source=api
+Red Elemental Blast,1,,Red Elemental Blast,70a45e9b-699e-425a-9f3d-267274830d3e,bb329a5c-b9f9-4973-a53f-090024146325,Instant,,R,"B,R,U",legal,,PASS,"Choose one —
+• Counter target blue spell.
+• Destroy target blue permanent.",https://scryfall.com/card/70a45e9b-699e-425a-9f3d-267274830d3e
+Redirect Lightning,1,,Redirect Lightning,2b5b14a7-1fdd-4efc-b197-cadfa7f7c860,c62b5c22-e058-436f-9575-a01cb2112829,Instant — Lesson,{R},R,"B,R,U",legal,,PASS,"As an additional cost to cast this spell, pay 5 life or pay {2}.
+Change the target of target spell or ability with a single target.",https://scryfall.com/card/tla/151/redirect-lightning?utm_source=api
+Repeal,1,,Repeal,265b80cd-2e9c-4e4b-a065-eafb29b3e07a,b1f2b26c-91b2-4f3c-9f48-6429ec3fde48,Instant,{X}{U},U,"B,R,U",legal,,PASS,"Return target nonland permanent with mana value X to its owner's hand.
+Draw a card.",https://scryfall.com/card/clu/94/repeal?utm_source=api
+Snap,1,,Snap,f21a70d2-53ec-4fee-b7bc-b459309fe657,ac914d98-221e-426c-8a50-342896b15f9e,Instant,,U,"B,R,U",legal,,PASS,Return target creature to its owner's hand. Untap up to two lands.,https://scryfall.com/card/f21a70d2-53ec-4fee-b7bc-b459309fe657
+Strix Serenade,1,,Strix Serenade,42ac5ac7-b2f9-4e6f-af41-7e42ac816374,7ca3aa03-e62d-464a-9111-e754abe17f76,Instant,{U},U,"B,R,U",legal,,PASS,"Counter target artifact, creature, or planeswalker spell. Its controller creates a 2/2 blue Bird creature token with flying.",https://scryfall.com/card/mh3/71/strix-serenade?utm_source=api
+Swan Song,1,,Swan Song,83d0b761-d694-4232-9f40-5bd8c82a05f1,8ddfc283-c9b4-41a5-af88-cf0068e986cc,Instant,,U,"B,R,U",legal,,PASS,"Counter target enchantment, instant, or sorcery spell. Its controller creates a 2/2 blue Bird creature token with flying.",https://scryfall.com/card/83d0b761-d694-4232-9f40-5bd8c82a05f1
+Tainted Pact,1,,Tainted Pact,c513f51b-a0db-4c08-8acc-1e91060b93b7,1a85ba2b-ae10-4917-954a-7709b75a9740,Instant,,B,"B,R,U",legal,,PASS,"Exile the top card of your library. You may put that card into your hand unless it has the same name as another card exiled this way. Repeat this process until you put a card into your hand or you exile two cards with the same name, whichever comes first.",https://scryfall.com/card/c513f51b-a0db-4c08-8acc-1e91060b93b7
+Vampiric Tutor,1,,Vampiric Tutor,77ad722a-d6f3-483e-bd13-e0923cc8a265,ededbdae-d9dc-4206-9335-d7158f2d7700,Instant,,B,"B,R,U",legal,,PASS,"Search your library for a card, then shuffle and put that card on top. You lose 2 life.",https://scryfall.com/card/77ad722a-d6f3-483e-bd13-e0923cc8a265
+Beseech the Mirror,1,,Beseech the Mirror,18c59776-e1f1-4197-a128-db1d603f56b7,cbbe535b-12d6-4e6c-8b26-9220f06a1604,Sorcery,,B,"B,R,U",legal,,PASS,"Bargain (You may sacrifice an artifact, enchantment, or token as you cast this spell.)
+Search your library for a card, exile it face down, then shuffle. If this spell was bargained, you may cast the exiled card without paying its mana cost if that spell's mana value is 4 or less. Put the exiled card into your hand if it wasn't cast this way.",https://scryfall.com/card/18c59776-e1f1-4197-a128-db1d603f56b7
+Demonic Tutor,1,,Demonic Tutor,a24b4cb6-cebb-428b-8654-74347a6a8d63,82004860-e589-4e38-8d61-8c0210e4ea39,Sorcery,,B,"B,R,U",legal,,PASS,"Search your library for a card, put that card into your hand, then shuffle.",https://scryfall.com/card/a24b4cb6-cebb-428b-8654-74347a6a8d63
+Gamble,1,,Gamble,4fa5f934-5407-4844-9cd5-9ba5fa7c4748,a54f0869-94c8-42af-9080-166efb9486a4,Sorcery,,R,"B,R,U",legal,,PASS,"Search your library for a card, put that card into your hand, discard a card at random, then shuffle.",https://scryfall.com/card/4fa5f934-5407-4844-9cd5-9ba5fa7c4748
+Imperial Seal,1,,Imperial Seal,e71a6bd3-7478-4c3a-8ae0-98352ce28492,16cd0b90-f70c-4efa-b252-8de8784ef9a3,Sorcery,,B,"B,R,U",legal,,PASS,"Search your library for a card, then shuffle and put that card on top. You lose 2 life.",https://scryfall.com/card/e71a6bd3-7478-4c3a-8ae0-98352ce28492
+Jeska's Will,1,,Jeska's Will,99e0c371-1024-4432-9fd9-3bc29c8d38e4,0fd114c4-092b-4e28-b0dc-ef529f3bc73e,Sorcery,,R,"B,R,U",legal,,PASS,"Choose one. If you control a commander as you cast this spell, you may choose both instead.
+• Add {R} for each card in target opponent's hand.
+• Exile the top three cards of your library. You may play them this turn.",https://scryfall.com/card/99e0c371-1024-4432-9fd9-3bc29c8d38e4
+Rite of Flame,1,,Rite of Flame,c062caf7-f0eb-44db-9f74-e6711a13fada,8a2e53f9-8100-488f-8504-b59e9bd1cc29,Sorcery,,R,"B,R,U",legal,,PASS,"Add {R}{R}, then add {R} for each card named Rite of Flame in each graveyard.",https://scryfall.com/card/c062caf7-f0eb-44db-9f74-e6711a13fada
+Wheel of Fortune,1,,Wheel of Fortune,c14c07d4-6971-483a-add1-f3cdf18feae9,a8abd966-de7b-46a3-8ac7-8747ab35653a,Sorcery,,R,"B,R,U",legal,,PASS,"Each player discards their hand, then draws seven cards.",https://scryfall.com/card/c14c07d4-6971-483a-add1-f3cdf18feae9
+Mystic Remora,1,,Mystic Remora,40140991-cffa-4b52-9a25-37e9a8aa9ddd,8a52f3c0-2552-4425-b2e3-5496eb2232a7,Enchantment,,U,"B,R,U",legal,,PASS,"Cumulative upkeep {1} (At the beginning of your upkeep, put an age counter on this permanent, then sacrifice it unless you pay its upkeep cost for each age counter on it.)
+Whenever an opponent casts a noncreature spell, you may draw a card unless that player pays {4}.",https://scryfall.com/card/40140991-cffa-4b52-9a25-37e9a8aa9ddd
+Necropotence,1,,Necropotence,c89c6895-b0f8-444a-9c89-c6b4fd027b3e,94a844d2-0574-45a7-b347-e0e329767c42,Enchantment,,B,"B,R,U",legal,,PASS,"Skip your draw step.
+Whenever you discard a card, exile that card from your graveyard.
+Pay 1 life: Exile the top card of your library face down. Put that card into your hand at the beginning of your next end step.",https://scryfall.com/card/c89c6895-b0f8-444a-9c89-c6b4fd027b3e
+Rhystic Study,1,,Rhystic Study,9f37c5b6-a59c-45cd-9a99-e9357fe9ea1b,53236dd7-845a-444c-96d5-f41ed7325d8f,Enchantment,,U,"B,R,U",legal,,PASS,"Whenever an opponent casts a spell, you may draw a card unless that player pays {1}.",https://scryfall.com/card/9f37c5b6-a59c-45cd-9a99-e9357fe9ea1b
+Underworld Breach,1,,Underworld Breach,0e51d796-7279-4c06-87f0-37adbdaa41df,27e0948b-9916-473b-8d8c-a51bdfbc7457,Enchantment,,R,"B,R,U",legal,,PASS,"Each nonland card in your graveyard has escape. The escape cost is equal to the card's mana cost plus exile three other cards from your graveyard. (You may cast cards from your graveyard for their escape cost.)
+At the beginning of the end step, sacrifice this enchantment.",https://scryfall.com/card/0e51d796-7279-4c06-87f0-37adbdaa41df
+Arcane Signet,1,,Arcane Signet,c6b6117c-faab-4bbb-b851-07bd8061ef03,0bc7f093-bef0-4f1a-852c-4b75ebf54838,Artifact,,,"B,R,U",legal,,PASS,{T}: Add one mana of any color in your commander's color identity.,https://scryfall.com/card/c6b6117c-faab-4bbb-b851-07bd8061ef03
+Chrome Mox,1,,Chrome Mox,f340cbf7-5bbe-45b9-a4bf-d1caa500ff93,ec3d4466-547c-4e02-b1b5-a156ec4637e9,Artifact,,,"B,R,U",legal,,PASS,"Imprint — When this artifact enters, you may exile a nonartifact, nonland card from your hand.
+{T}: Add one mana of any of the exiled card's colors.",https://scryfall.com/card/f340cbf7-5bbe-45b9-a4bf-d1caa500ff93
+Fellwar Stone,1,,Fellwar Stone,bc99f300-29c0-44e7-9560-7bbd1dda7556,95560508-7ac9-4be9-8a3f-3c7d5b52807b,Artifact,,,"B,R,U",legal,,PASS,{T}: Add one mana of any color that a land an opponent controls could produce.,https://scryfall.com/card/bc99f300-29c0-44e7-9560-7bbd1dda7556
+Grim Monolith,1,,Grim Monolith,0ba4acad-31d4-497b-9b07-bf4beebf6647,229d6627-1292-4ae1-8849-b0f956fa6540,Artifact,,,"B,R,U",legal,,PASS,"This artifact doesn't untap during your untap step.
+{T}: Add {C}{C}{C}.
+{4}: Untap this artifact.",https://scryfall.com/card/0ba4acad-31d4-497b-9b07-bf4beebf6647
+Grinding Station,1,,Grinding Station,df1df511-b52c-45cd-9503-ffce4271a802,0fcd476f-4db8-4293-9388-1678a0043c9e,Artifact,,,"B,R,U",legal,,PASS,"{T}, Sacrifice an artifact: Target player mills three cards.
+Whenever an artifact enters, you may untap this artifact.",https://scryfall.com/card/df1df511-b52c-45cd-9503-ffce4271a802
+Lion's Eye Diamond,1,,Lion's Eye Diamond,63bacc32-d6ba-420c-9b49-299c08e5fb39,ee6099b0-fb1f-42f1-b862-7708c6e36d05,Artifact,,,"B,R,U",legal,,PASS,"Discard your hand, Sacrifice this artifact: Add three mana of any one color. Activate only as an instant.",https://scryfall.com/card/63bacc32-d6ba-420c-9b49-299c08e5fb39
+Lotus Petal,1,,Lotus Petal,153983dd-54dc-420d-9249-665b0d669614,32e5339e-9e4f-46f8-b305-f9d6d3ba8bb5,Artifact,,,"B,R,U",legal,,PASS,"{T}, Sacrifice this artifact: Add one mana of any color.",https://scryfall.com/card/153983dd-54dc-420d-9249-665b0d669614
+Mana Vault,1,,Mana Vault,c1a31d52-a407-4ded-bfca-cc812f11afa0,736892cb-a34b-4bb9-b56c-e26e3db207a2,Artifact,,,"B,R,U",legal,,PASS,"This artifact doesn't untap during your untap step.
+At the beginning of your upkeep, you may pay {4}. If you do, untap this artifact.
+At the beginning of your draw step, if this artifact is tapped, it deals 1 damage to you.
+{T}: Add {C}{C}{C}.",https://scryfall.com/card/c1a31d52-a407-4ded-bfca-cc812f11afa0
+Mox Diamond,1,,Mox Diamond,28028830-83ed-45e2-b495-3b9ad9d3e988,f3c5978a-70fa-431f-933b-b954bd0db0ea,Artifact,,,"B,R,U",legal,,PASS,"If this artifact would enter, you may discard a land card instead. If you do, put this artifact onto the battlefield. If you don't, put it into its owner's graveyard.
+{T}: Add one mana of any color.",https://scryfall.com/card/28028830-83ed-45e2-b495-3b9ad9d3e988
+Mox Opal,1,,Mox Opal,56001a36-126b-4c08-af98-a6cc4d84210e,de2440de-e948-4811-903c-0bbe376ff64d,Legendary Artifact,,,"B,R,U",legal,,PASS,Metalcraft — {T}: Add one mana of any color. Activate only if you control three or more artifacts.,https://scryfall.com/card/56001a36-126b-4c08-af98-a6cc4d84210e
+Sol Ring,1,,Sol Ring,8ee443cc-e17a-493b-9c93-1f9e141a30e4,6ad8011d-3471-4369-9d68-b264cc027487,Artifact,,,"B,R,U",legal,,PASS,{T}: Add {C}{C}.,https://scryfall.com/card/8ee443cc-e17a-493b-9c93-1f9e141a30e4
+Talisman of Creativity,1,,Talisman of Creativity,d4ba86c8-8052-4c9e-a0d0-ac6ad0b2679c,14d2979d-5728-42d7-a027-0eb1f754655d,Artifact,,"R,U","B,R,U",legal,,PASS,"{T}: Add {C}.
+{T}: Add {U} or {R}. This artifact deals 1 damage to you.",https://scryfall.com/card/d4ba86c8-8052-4c9e-a0d0-ac6ad0b2679c
+Talisman of Dominance,1,,Talisman of Dominance,78d5366f-eb6d-4ec1-880b-111872863766,4c0a0448-b9d6-43a0-8549-64066dac63f0,Artifact,,"B,U","B,R,U",legal,,PASS,"{T}: Add {C}.
+{T}: Add {U} or {B}. This artifact deals 1 damage to you.",https://scryfall.com/card/78d5366f-eb6d-4ec1-880b-111872863766
+Talisman of Indulgence,1,,Talisman of Indulgence,36bd614f-ab3b-4ad1-ab5c-a7ca0a641f32,1d9aeaaa-66f6-41cb-9bac-162d6fd8662c,Artifact,,"B,R","B,R,U",legal,,PASS,"{T}: Add {C}.
+{T}: Add {B} or {R}. This artifact deals 1 damage to you.",https://scryfall.com/card/36bd614f-ab3b-4ad1-ab5c-a7ca0a641f32
+Wishclaw Talisman,1,,Wishclaw Talisman,69d0f5bd-ccea-49b2-bd79-ad5e4d850cf5,81c70ae7-3c18-4c9b-8505-e4db9e0e6518,Artifact,,B,"B,R,U",legal,,PASS,"This artifact enters with three wish counters on it.
+{1}, {T}, Remove a wish counter from this artifact: Search your library for a card, put it into your hand, then shuffle. An opponent gains control of this artifact. Activate only during your turn.",https://scryfall.com/card/69d0f5bd-ccea-49b2-bd79-ad5e4d850cf5
+Ancient Tomb,1,,Ancient Tomb,2189b1cb-94c4-4477-a5ef-17a1ae2c6708,23467047-6dba-4498-b783-1ebc4f74b8c2,Land,,,"B,R,U",legal,,PASS,{T}: Add {C}{C}. This land deals 2 damage to you.,https://scryfall.com/card/2189b1cb-94c4-4477-a5ef-17a1ae2c6708
+Arena of Glory,1,,Arena of Glory,dd148edc-9e43-41aa-bb50-f912115d3e72,63dfe794-5f56-41ec-9883-5523b41cc3e0,Land,,R,"B,R,U",legal,,PASS,"This land enters tapped unless you control a Mountain.
+{T}: Add {R}.
+{R}, {T}, Exert this land: Add {R}{R}. If any of that mana is spent on a creature spell, it gains haste until end of turn. (An exerted permanent won't untap during your next untap step.)",https://scryfall.com/card/mh3/215/arena-of-glory?utm_source=api
+Arid Mesa,1,,Arid Mesa,716c415e-5eb8-4644-ac64-5ba7c3f0ea65,c5acf2a5-40f4-433d-a74d-1cb56c521464,Land,,,"B,R,U",legal,,PASS,"{T}, Pay 1 life, Sacrifice this land: Search your library for a Mountain or Plains card, put it onto the battlefield, then shuffle.",https://scryfall.com/card/716c415e-5eb8-4644-ac64-5ba7c3f0ea65
+Badlands,1,,Badlands,56058359-3c0b-49db-a0ce-9ded4c3f4372,13ff3222-91cb-4796-a34e-899ed817694c,Land — Swamp Mountain,,"B,R","B,R,U",legal,,PASS,({T}: Add {B} or {R}.),https://scryfall.com/card/56058359-3c0b-49db-a0ce-9ded4c3f4372
+Blood Crypt,1,,Blood Crypt,1b7eb998-3ec0-4cbc-a416-5a1e3e5a7316,43985bbc-a0f6-4812-984e-392bc8562633,Land — Swamp Mountain,,"B,R","B,R,U",legal,,PASS,"({T}: Add {B} or {R}.)
+As this land enters, you may pay 2 life. If you don't, it enters tapped.",https://scryfall.com/card/1b7eb998-3ec0-4cbc-a416-5a1e3e5a7316
+Bloodstained Mire,1,,Bloodstained Mire,579743fe-f71e-4cb2-8629-d6b02ed1591d,fc0707c7-d504-4ccf-a0d2-3eb6e26e7a57,Land,,,"B,R,U",legal,,PASS,"{T}, Pay 1 life, Sacrifice this land: Search your library for a Swamp or Mountain card, put it onto the battlefield, then shuffle.",https://scryfall.com/card/579743fe-f71e-4cb2-8629-d6b02ed1591d
+Cavern of Souls,1,,Cavern of Souls,3aad15a2-8a1b-4460-9b06-e85863081878,89ca686a-7c72-4d8f-9290-e89635624a83,Land,,,"B,R,U",legal,,PASS,"As this land enters, choose a creature type.
+{T}: Add {C}.
+{T}: Add one mana of any color. Spend this mana only to cast a creature spell of the chosen type, and that spell can't be countered.",https://scryfall.com/card/3aad15a2-8a1b-4460-9b06-e85863081878
+City of Brass,1,,City of Brass,c21565d0-fc40-4d89-9b27-87c03385e0af,f25351e3-539b-4bbc-b92d-6480acf4d722,Land,,,"B,R,U",legal,,PASS,"Whenever this land becomes tapped, it deals 1 damage to you.
+{T}: Add one mana of any color.",https://scryfall.com/card/c21565d0-fc40-4d89-9b27-87c03385e0af
+Command Tower,1,,Command Tower,1ac6cb62-45da-4e9a-84c6-09e6eacf0664,0895c9b7-ae7d-4bb3-af17-3b75deb50a25,Land,,,"B,R,U",legal,,PASS,{T}: Add one mana of any color in your commander's color identity.,https://scryfall.com/card/1ac6cb62-45da-4e9a-84c6-09e6eacf0664
+Emergence Zone,1,,Emergence Zone,ab95f6e7-b806-47fe-a071-6c38b3176d94,7536eb66-959d-4dca-9b75-895572ef733c,Land,,,"B,R,U",legal,,PASS,"{T}: Add {C}.
+{1}, {T}, Sacrifice this land: You may cast spells this turn as though they had flash.",https://scryfall.com/card/ab95f6e7-b806-47fe-a071-6c38b3176d94
+Exotic Orchard,1,,Exotic Orchard,cc14b1ee-5def-42df-8ef6-0d91dba39e3a,27b047e3-0d41-45e2-98e9-9391d7923a1e,Land,,,"B,R,U",legal,,PASS,{T}: Add one mana of any color that a land an opponent controls could produce.,https://scryfall.com/card/cc14b1ee-5def-42df-8ef6-0d91dba39e3a
+Flooded Strand,1,,Flooded Strand,d3016d92-a5ee-44d7-aa0a-775fa04a7c6a,f3c7af78-a77d-4134-82a2-a5ce84285a84,Land,,,"B,R,U",legal,,PASS,"{T}, Pay 1 life, Sacrifice this land: Search your library for a Plains or Island card, put it onto the battlefield, then shuffle.",https://scryfall.com/card/d3016d92-a5ee-44d7-aa0a-775fa04a7c6a
+Gemstone Caverns,1,,Gemstone Caverns,7f273641-c5f3-48bc-b89e-3cff52d26a0b,c0adbddc-b070-4c5f-afe0-0474c72a9251,Legendary Land,,,"B,R,U",legal,,PASS,"If this card is in your opening hand and you're not the starting player, you may begin the game with Gemstone Caverns on the battlefield with a luck counter on it. If you do, exile a card from your hand.
+{T}: Add {C}. If Gemstone Caverns has a luck counter on it, instead add one mana of any color.",https://scryfall.com/card/7f273641-c5f3-48bc-b89e-3cff52d26a0b
+Mana Confluence,1,,Mana Confluence,504a69eb-3c2d-4bb1-b117-252b15acf0c2,d0ee5bdc-2b69-4b73-9a20-ffcc18783b29,Land,,,"B,R,U",legal,,PASS,"{T}, Pay 1 life: Add one mana of any color.",https://scryfall.com/card/504a69eb-3c2d-4bb1-b117-252b15acf0c2
+Marsh Flats,1,,Marsh Flats,f19a6f20-8ca1-4a8b-8488-bcb5d86868dc,dab520d0-20b4-4273-ba6b-eb07f85ea433,Land,,,"B,R,U",legal,,PASS,"{T}, Pay 1 life, Sacrifice this land: Search your library for a Plains or Swamp card, put it onto the battlefield, then shuffle.",https://scryfall.com/card/f19a6f20-8ca1-4a8b-8488-bcb5d86868dc
+Misty Rainforest,1,,Misty Rainforest,c6cad746-a1dc-4739-9707-9c12c42e141a,09dd85aa-47bc-4713-a9b9-8b52ff2285ed,Land,,,"B,R,U",legal,,PASS,"{T}, Pay 1 life, Sacrifice this land: Search your library for a Forest or Island card, put it onto the battlefield, then shuffle.",https://scryfall.com/card/c6cad746-a1dc-4739-9707-9c12c42e141a
+"Otawara, Soaring City",1,,"Otawara, Soaring City",486d7edc-d983-41f0-8b78-c99aecd72996,e9b6a394-691c-425a-9307-76d8edc7375e,Legendary Land,,U,"B,R,U",legal,,PASS,"{T}: Add {U}.
+Channel — {3}{U}, Discard this card: Return target artifact, creature, enchantment, or planeswalker to its owner's hand. This ability costs {1} less to activate for each legendary creature you control.",https://scryfall.com/card/486d7edc-d983-41f0-8b78-c99aecd72996
+Polluted Delta,1,,Polluted Delta,6e288374-2b71-4ace-b1d2-a19fee6cb4af,ef86989d-ce80-4e55-aece-7d11710eeffa,Land,,,"B,R,U",legal,,PASS,"{T}, Pay 1 life, Sacrifice this land: Search your library for an Island or Swamp card, put it onto the battlefield, then shuffle.",https://scryfall.com/card/6e288374-2b71-4ace-b1d2-a19fee6cb4af
+Scalding Tarn,1,,Scalding Tarn,17c6ba55-2470-4dde-a7fa-137a60716c96,cb027150-848c-4a66-88ad-e20222304dd8,Land,,,"B,R,U",legal,,PASS,"{T}, Pay 1 life, Sacrifice this land: Search your library for an Island or Mountain card, put it onto the battlefield, then shuffle.",https://scryfall.com/card/17c6ba55-2470-4dde-a7fa-137a60716c96
+Starting Town,1,,Starting Town,fc7d1912-7e27-49ef-bd98-375d975a42b0,d04e0975-f401-41b8-a9db-9bcf9cbbce66,Land — Town,,,"B,R,U",legal,,PASS,"This land enters tapped unless it's your first, second, or third turn of the game.
+{T}: Add {C}.
+{T}, Pay 1 life: Add one mana of any color.",https://scryfall.com/card/fc7d1912-7e27-49ef-bd98-375d975a42b0
+Steam Vents,1,,Steam Vents,a83903c7-fd51-4526-aed2-359e946fea36,17039058-822d-409f-938c-b727a366ba63,Land — Island Mountain,,"R,U","B,R,U",legal,,PASS,"({T}: Add {U} or {R}.)
+As this land enters, you may pay 2 life. If you don't, it enters tapped.",https://scryfall.com/card/a83903c7-fd51-4526-aed2-359e946fea36
+Underground Sea,1,,Underground Sea,1f35877c-e66c-4ef0-842a-f68cd233ae4b,4b22be3a-8ce1-47d1-b82e-6c3ccfb0548b,Land — Island Swamp,,"B,U","B,R,U",legal,,PASS,({T}: Add {U} or {B}.),https://scryfall.com/card/1f35877c-e66c-4ef0-842a-f68cd233ae4b
+Verdant Catacombs,1,,Verdant Catacombs,981b3a2e-de94-428d-8e5d-5a7ba6afe4a2,67d60b24-d429-4ded-90d9-06e49f28c396,Land,,,"B,R,U",legal,,PASS,"{T}, Pay 1 life, Sacrifice this land: Search your library for a Swamp or Forest card, put it onto the battlefield, then shuffle.",https://scryfall.com/card/981b3a2e-de94-428d-8e5d-5a7ba6afe4a2
+Volcanic Island,1,,Volcanic Island,b12e5430-0e80-47dd-80ac-85728b656a24,c718911c-c955-4eb9-9e16-be4bd49a4e4e,Land — Island Mountain,,"R,U","B,R,U",legal,,PASS,({T}: Add {U} or {R}.),https://scryfall.com/card/b12e5430-0e80-47dd-80ac-85728b656a24
+Watery Grave,1,,Watery Grave,5525d6a6-e532-4047-9da4-bfae7927fecc,fc9ec820-4245-4a96-b009-5308a818ca58,Land — Island Swamp,,"B,U","B,R,U",legal,,PASS,"({T}: Add {U} or {B}.)
+As this land enters, you may pay 2 life. If you don't, it enters tapped.",https://scryfall.com/card/5525d6a6-e532-4047-9da4-bfae7927fecc
+Wooded Foothills,1,,Wooded Foothills,4e11ea8a-f895-438d-a3b7-f070238e4161,6587a463-a108-4854-b6d1-944e89b8c8a4,Land,,,"B,R,U",legal,,PASS,"{T}, Pay 1 life, Sacrifice this land: Search your library for a Mountain or Forest card, put it onto the battlefield, then shuffle.",https://scryfall.com/card/4e11ea8a-f895-438d-a3b7-f070238e4161

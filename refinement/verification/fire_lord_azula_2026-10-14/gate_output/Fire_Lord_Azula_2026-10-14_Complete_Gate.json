@@ -1,0 +1,23 @@
+{
+  "generated_at_utc": "2026-10-14T19:57:05.090361+00:00",
+  "deck_id": "Fire_Lord_Azula",
+  "decklist_path": "refinement/decklists/Fire_Lord_Azula_Approval_Candidate_2026-10-14.txt",
+  "deck_sha256": "b6ef396641f2b5cfac0eb81fb494f21f3745e2a3fd47fa75d2eaadbdc34ddee5",
+  "baseline_path": "refinement/decklists/Fire_Lord_Azula_Current_Cycle_Baseline_2026-10-14.txt",
+  "baseline_source_sha256": "2d83c6962c8aa6638b19bf248ddb88e2de977854e3737eb5b8f9c7497473ae7b",
+  "count": 100,
+  "distinct_names": 100,
+  "commander_color_identity": [
+    "B",
+    "R",
+    "U"
+  ],
+  "cache_generated_at_utc": "2026-10-14T19:46:00.509399+00:00",
+  "cache_sha256": "2fade01e144043451e60cbfa89a7f205ea8d065e3cccb5b34da4f00a24dbc713",
+  "project_exceptions": [],
+  "rules_gate": "PASS",
+  "official_legality_gate": "PASS",
+  "errors": [],
+  "overall_result": "APPROVAL_READY",
+  "approval_state": "NOT_APPROVED — explicit user approval still required"
+}
