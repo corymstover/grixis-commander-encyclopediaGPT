@@ -1,0 +1,97 @@
+{
+  "status": "PASS",
+  "deck_sha256": "ef34986253f71043e10c852b5f9f3ce79594fdfc1086b105f6744c3f639199c3",
+  "checked_at_utc": "2026-10-14T09:10:00Z",
+  "sources": [
+    "current Scryfall Oracle data / project current-cycle Oracle cache",
+    "Magic Comprehensive Rules effective 2026-09-25 — triggered abilities, copy effects, extra steps, casting versus putting onto the battlefield, and rule 701.55 Face a Villainous Choice",
+    "current Wizards card/release rulings where applicable"
+  ],
+  "interactions": [
+    {
+      "name": "Dr. Eggman villainous-choice sequencing",
+      "status": "PASS",
+      "conclusion": "Eggman's beginning-of-end-step ability first draws a card, then each opponent faces the villainous choice one at a time in APNAP order. For each opponent, the chosen option is performed before the next opponent makes their choice, so later opponents can see any Construct, Robot, or Vehicle already put onto the battlefield by earlier choices."
+    },
+    {
+      "name": "Impossible villainous-choice branch",
+      "status": "PASS",
+      "conclusion": "Under CR 701.55, an opponent may choose an option that is illegal or impossible and then does as much as possible. An opponent with an empty hand may choose Eggman's discard option and discard nothing; there is no fallback that forces Eggman's controller to put a card onto the battlefield."
+    },
+    {
+      "name": "Eggman placement is not casting",
+      "status": "PASS",
+      "conclusion": "Eggman's second villainous-choice option puts a qualifying Construct, Robot, or Vehicle card from hand directly onto the battlefield. It does not cast that card. Cast-only triggers such as Efficient Construction would not trigger from an Eggman placement, while enters-the-battlefield and artifact-enter triggers do."
+    },
+    {
+      "name": "The Valeyard with Dr. Eggman",
+      "status": "PASS",
+      "conclusion": "The Valeyard replaces each instruction for an opponent to face Eggman's villainous choice with that opponent facing the same choice an additional time. Each choice is performed separately and the opponent may choose the same or different option each time."
+    },
+    {
+      "name": "Roaming Throne naming Scientist",
+      "status": "PASS",
+      "conclusion": "Dr. Eggman is a Scientist. If Roaming Throne chooses Scientist, Eggman's beginning-of-end-step triggered ability triggers an additional time. The two instances resolve separately and each includes its own draw and complete sequence of villainous choices. This is an additional trigger, not a copy. The same chosen type also applies to Davros, Dalek Creator because Davros is a Scientist."
+    },
+    {
+      "name": "Spark Double copying Dr. Eggman",
+      "status": "PASS",
+      "conclusion": "Spark Double may enter as a copy of Dr. Eggman while its copy effect makes it nonlegendary. It can coexist with the legendary commander and has its own independent beginning-of-end-step Eggman trigger."
+    },
+    {
+      "name": "Strionic Resonator copying Dr. Eggman",
+      "status": "PASS",
+      "conclusion": "Strionic Resonator may copy Eggman's triggered ability on the stack. The copy resolves as a complete independent instance: its controller draws a card and each opponent then makes fresh villainous choices."
+    },
+    {
+      "name": "Y'shtola Rhul additional end step",
+      "status": "PASS",
+      "conclusion": "Y'shtola and Eggman both trigger at the beginning of the first end step. If Y'shtola's targeted ability resolves successfully during the first end step, it creates an additional end step after that step. Eggman and other beginning-of-end-step abilities trigger again at the beginning of the additional end step. If Y'shtola's only target is illegal when the ability would resolve, the entire targeted ability fails to resolve and does not create the additional end step."
+    },
+    {
+      "name": "Y'shtola blinking Eggman",
+      "status": "PASS",
+      "conclusion": "Blinking Dr. Eggman after Eggman's first-end-step trigger is already on the stack does not remove that triggered ability from the stack. The returned Eggman is a new object and, if an additional end step is created, that returned Eggman triggers at the beginning of the additional end step."
+    },
+    {
+      "name": "Multiple first-end-step Y'shtola effects",
+      "status": "PASS",
+      "conclusion": "If multiple Y'shtola abilities trigger in the first end step, including from a copy such as Spark Double, each resolving ability can create an additional end step because the abilities resolved during the first end step. This produces a finite number of additional end steps; Y'shtola abilities that trigger in those additional end steps do not satisfy the 'first end step of the turn' condition."
+    },
+    {
+      "name": "Thopter Fabricator and Eggman's draw",
+      "status": "PASS",
+      "conclusion": "On a normal turn where the draw step provides the first card drawn, Eggman's end-step draw is the second card drawn that turn and therefore triggers Thopter Fabricator once. Later draws that turn are not the second card and do not create additional Fabricator triggers from that wording."
+    },
+    {
+      "name": "Tinybones and actual Eggman discards",
+      "status": "PASS",
+      "conclusion": "Tinybones, Bauble Burglar triggers only when an opponent actually discards a card. If an opponent with an empty hand chooses Eggman's discard option, no card is discarded and Tinybones does not trigger. Cards actually discarded and moved to the graveyard can be exiled by Tinybones with stash counters subject to its normal rules."
+    },
+    {
+      "name": "Scrapyard Recombiner feeds Eggman targets",
+      "status": "PASS",
+      "conclusion": "Scrapyard Recombiner is an Artifact Creature — Construct and is itself a legal Eggman placement. Its activated ability can sacrifice an artifact to search the library for a Construct card and put that card into hand, directly replenishing future Eggman placement options."
+    },
+    {
+      "name": "Vision, Spectral Synthezoid",
+      "status": "PASS",
+      "conclusion": "Vision is an Artifact Creature — Robot and is a legal Eggman placement. Vision's own once-per-turn permission casts the selected noncreature or Robot spell without paying its mana cost; those spells are actually cast and therefore do trigger appropriate cast-trigger abilities, unlike cards put directly onto the battlefield by Eggman."
+    },
+    {
+      "name": "Ultron, Artificial Malevolence artifact-copy trigger",
+      "status": "PASS",
+      "conclusion": "Ultron, Artificial Malevolence triggers when another nontoken artifact you control enters, including an artifact put onto the battlefield by Eggman. Paying {2} creates a token copy; if that copy is not a creature, Ultron's effect makes it a 2/2 Robot Villain creature in addition to its other types."
+    },
+    {
+      "name": "One with the Machine draw scaling",
+      "status": "PASS",
+      "conclusion": "One with the Machine checks the greatest mana value among artifacts you control when it resolves and draws that many cards. High-mana-value artifact permanents deployed by Eggman therefore increase its draw count normally."
+    },
+    {
+      "name": "Master Transmuter and artifact-enter engines",
+      "status": "PASS",
+      "conclusion": "Master Transmuter returns an artifact to hand as part of its activation cost and puts an artifact from hand onto the battlefield on resolution. The new artifact was not cast, but it does enter the battlefield and therefore works with artifact-enter engines such as Mechan Assembler, Simulacrum Synthesizer, Weapons Manufacturing, and Ultron, Artificial Malevolence when their individual conditions are met."
+    }
+  ]
+}
