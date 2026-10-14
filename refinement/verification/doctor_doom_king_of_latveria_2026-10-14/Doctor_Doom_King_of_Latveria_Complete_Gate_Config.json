@@ -1,0 +1,14 @@
+{
+  "deck_id": "Doctor_Doom__King_of_Latveria",
+  "display_name": "Doctor Doom, King of Latveria",
+  "decklist_path": "refinement/decklists/Doctor_Doom_King_of_Latveria_Approval_Candidate_2026-10-14.txt",
+  "expected_deck_sha256": "c97bd448aa4b18d2f7ed15e5d67006ab320ed67ad3ed267e44150de472e1dc58",
+  "baseline_path": "refinement/decklists/Doctor_Doom_King_of_Latveria_Current_Cycle_Baseline_2026-10-14.txt",
+  "expected_baseline_sha256": "08825dee74f034bc38415fe7370cccc3fe69de7887769577dd32f98f5bbd4572",
+  "baseline_source_sha256": "08825dee74f034bc38415fe7370cccc3fe69de7887769577dd32f98f5bbd4572",
+  "rules_attestation_path": "refinement/verification/doctor_doom_king_of_latveria_2026-10-14/Doctor_Doom_King_of_Latveria_Rules_Attestation.json",
+  "official_legality_attestation_path": "refinement/verification/doctor_doom_king_of_latveria_2026-10-14/Doctor_Doom_King_of_Latveria_Official_Legality_Attestation.json",
+  "output_dir": "refinement/verification/doctor_doom_king_of_latveria_2026-10-14/gate_output",
+  "output_stem": "Doctor_Doom_King_of_Latveria_2026-10-14",
+  "max_cache_age_hours": 72
+}
