@@ -1,0 +1,89 @@
+{
+  "status": "PASS",
+  "deck_sha256": "c97bd448aa4b18d2f7ed15e5d67006ab320ed67ad3ed267e44150de472e1dc58",
+  "checked_at_utc": "2026-10-14T08:20:00+00:00",
+  "rules_checkpoint": "Magic Comprehensive Rules / current Oracle and Marvel Super Heroes release-note checkpoint as of 2026-10-14",
+  "sources": [
+    "https://magic.wizards.com/en/rules",
+    "https://magic.wizards.com/en/news/feature/marvel-super-heroes-release-notes",
+    "https://magic.wizards.com/en/news/announcements/marvel-super-heroes-commander-decklists",
+    "https://mtg.wtf/card/mh3/199/Psychic-Frog",
+    "https://mtg.wtf/card/uma/240/Dakmor-Salvage",
+    "https://mtg.wtf/card/c20/57/Surly-Badgersaur",
+    "https://mtg.wtf/card/c19/15/Bone-Miser",
+    "https://mtg.wtf/card/9ed/108/Trade-Routes",
+    "https://mtg.wtf/card/c20/162/Tectonic-Reformation",
+    "https://mtg.wtf/card/rvr/319/Spark-Double",
+    "https://mtg.wtf/card/mar/99/Roaming-Throne",
+    "https://mtg.wtf/card/msc/148/Chameleon-Master-of-Disguise",
+    "https://mtg.wtf/card/msc/31/Glorious-Purpose"
+  ],
+  "interactions": [
+    {
+      "name": "Doctor Doom land-discard trigger event granularity",
+      "status": "PASS",
+      "note": "Doctor Doom says 'Whenever you discard one or more land cards'. One event in which multiple land cards are discarded produces one Doom trigger, while multiple separate discard events produce multiple triggers. This is why repeatable one-at-a-time cycling/activated discard is strategically superior to a single mass-hand discard for Doom's own trigger."
+    },
+    {
+      "name": "Doctor Doom beginning-of-combat target legality",
+      "status": "PASS",
+      "note": "Doom's beginning-of-combat ability targets a Villain you control. The official Marvel Super Heroes release notes state that if the target is illegal when the ability resolves, none of the ability resolves and no card is drawn or discarded."
+    },
+    {
+      "name": "Chameleon, Master of Disguise entering as Doctor Doom",
+      "status": "PASS",
+      "note": "Chameleon may enter as a copy of a creature you control except its name remains Chameleon, Master of Disguise. Copying Doctor Doom therefore gives it Doom's copiable characteristics and triggered abilities while retaining a different name, so controlling the legendary original Doom and legendary Chameleon-copy does not create a same-name legend-rule conflict. Chameleon's mayhem ability matters while it is a Chameleon card/spell and can permit casting it from the graveyard after it was discarded that turn; once it enters as a Doom copy it does not retain printed abilities that were not specified as copy exceptions."
+    },
+    {
+      "name": "Spark Double entering as Doctor Doom",
+      "status": "PASS",
+      "note": "Spark Double may enter as a copy of Doctor Doom except it is not legendary and enters with an additional +1/+1 counter. It therefore coexists with the commander and supplies independent copies of Doom's land-discard and beginning-of-combat triggered abilities."
+    },
+    {
+      "name": "Roaming Throne choosing Villain",
+      "status": "PASS",
+      "note": "Doctor Doom is a Villain. With Villain chosen for Roaming Throne, each triggered ability of Doom (another creature of the chosen type) triggers an additional time. Doom's land-discard drain and beginning-of-combat connive ability are both triggered abilities. Each additional combat trigger chooses its target separately. Roaming Throne does not copy an ability; it causes it to trigger an additional time."
+    },
+    {
+      "name": "Glorious Purpose with repeated connive",
+      "status": "PASS",
+      "note": "Each time a creature controlled by the Doom player connives, Glorious Purpose triggers and puts a +1/+1 counter on that creature plus a plan counter on the enchantment. Multiple Doom combat triggers or other connive sources therefore advance Purpose separately. The official release notes confirm that when the sixth plan counter causes the final ability, eligible exiled spells are chosen and cast during resolution; normal card-type timing restrictions are ignored, alternative costs cannot be chosen, mandatory/additional costs still apply, and X is 0 when a spell is cast without paying its mana cost."
+    },
+    {
+      "name": "Psychic Frog as separable land-discard outlet",
+      "status": "PASS",
+      "note": "Psychic Frog has 'Discard a card: Put a +1/+1 counter on this creature' with no mana or tap component. Each activation is a separate discard event. If a land is discarded for each activation, each activation independently causes Doctor Doom to trigger. Triggered abilities caused by paying an activation cost are put onto the stack after the ability is activated and may resolve before the Frog ability."
+    },
+    {
+      "name": "Dakmor Salvage dredge replacement",
+      "status": "PASS",
+      "note": "Dakmor Salvage has dredge 2. Its dredge ability may replace any card draw, and it cannot be used if fewer than two cards remain in the library. This makes Dakmor renewable discard fuel but imposes a real library-size bound on repeatable lines."
+    },
+    {
+      "name": "Trade Routes + Bone Miser + Dakmor Salvage + Doctor Doom",
+      "status": "PASS",
+      "note": "After an initial {1} is available, activate Trade Routes by paying {1} and discarding Dakmor Salvage. Doom and Bone Miser trigger from the discard. Bone Miser's land-discard trigger is not a mana ability but resolves before the Trade Routes draw if ordered/stacked appropriately, adding {B}{B}. When Trade Routes resolves, replace its draw with dredge 2 to return Dakmor. One of the black mana can pay the next Trade Routes activation. Repeating produces another separate Doom trigger each iteration and mills two cards each iteration. The line is repeatable and can be lethal with sufficient library cards, but it is not unbounded/infinite because dredge cannot continue once the library has fewer than two cards. Bone Miser cannot fund the same activation whose cost caused its trigger; it funds subsequent activations."
+    },
+    {
+      "name": "Trade Routes + Surly Badgersaur + Dakmor Salvage + Doctor Doom",
+      "status": "PASS",
+      "note": "Discarding Dakmor as the cost of Trade Routes causes Surly Badgersaur's land-discard trigger to create a Treasure before the Trade Routes draw resolves. That Treasure can pay the next {1} activation after the draw is replaced by Dakmor's dredge. This likewise repeats Doom drain while the library supports dredge."
+    },
+    {
+      "name": "Tectonic Reformation + Surly Badgersaur + Dakmor Salvage + Doctor Doom",
+      "status": "PASS",
+      "note": "Tectonic Reformation gives land cards in hand cycling {R}. Cycling Dakmor discards it as a cost; Surly Badgersaur creates a Treasure before the cycling draw resolves, and the cycling draw may be replaced by dredge 2 to return Dakmor. The Treasure can supply {R} for the next cycle. Each cycle is a separate Doom-triggering land discard. The line is library-bounded and therefore is not described as infinite."
+    },
+    {
+      "name": "Cool but Rude versus Doctor Doom discard granularity",
+      "status": "PASS",
+      "note": "Cool but Rude at level 2 says 'Whenever you discard a card', so it triggers for discarded cards individually. Doctor Doom instead says 'one or more land cards', so a single mass-discard event involving several lands still creates only one Doom trigger. This distinction supports retaining Cool but Rude while cutting Dark Deal."
+    },
+    {
+      "name": "Wheel of Fortune and Windfall retained role",
+      "status": "PASS",
+      "note": "A resolving wheel that discards multiple lands in one hand-discard event supplies only one Doom land-discard trigger if at least one land was discarded, but other retained effects that trigger on each discarded card can trigger multiple times. Wheel and Windfall are retained primarily as efficient hand refills after deliberate self-discard, not as the deck's primary Doom trigger generators."
+    }
+  ],
+  "result_note": "Rules attestation is bound to the exact Doctor Doom approval-candidate SHA. Any decklist change invalidates this PASS until re-attested."
+}
