@@ -1,0 +1,15 @@
+{
+  "deck_id": "Jeleva__Nephalia_s_Scourge",
+  "display_name": "Jeleva, Nephalia's Scourge",
+  "decklist_path": "refinement/decklists/Jeleva_Nephalia_s_Scourge_Approval_Candidate_2026-10-14.txt",
+  "expected_deck_sha256": "00e3f52118f5944684ebc49a5398acf8184f7ca878e861221e4c99931191bc2f",
+  "baseline_path": "refinement/decklists/Jeleva_Nephalia_s_Scourge_Current_Cycle_Baseline_2026-10-14.txt",
+  "expected_baseline_sha256": "82a12467aa33a115e33f90e340148d611cb55398316c49de051cb54ff5017883",
+  "baseline_source_sha256": "d5c4b5dfb27a5721136e23912cfe79fc097707f2177a0dc78d7a2c1b49f50ce0",
+  "rules_attestation_path": "refinement/verification/jeleva_nephalia_s_scourge_2026-10-14/Jeleva_Nephalia_s_Scourge_Rules_Attestation.json",
+  "official_legality_attestation_path": "refinement/verification/jeleva_nephalia_s_scourge_2026-10-14/Jeleva_Nephalia_s_Scourge_Official_Legality_Attestation.json",
+  "output_dir": "refinement/verification/jeleva_nephalia_s_scourge_2026-10-14/gate_output",
+  "output_stem": "Jeleva_Nephalia_s_Scourge_2026-10-14",
+  "max_cache_age_hours": 72,
+  "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + Complete Approval Gate v1"
+}
