@@ -1,0 +1,15 @@
+{
+  "deck_id": "Goro_Goro_and_Satoru",
+  "display_name": "Goro-Goro and Satoru",
+  "decklist_path": "refinement/decklists/Goro_Goro_and_Satoru_Approval_Candidate_2026-10-14.txt",
+  "expected_deck_sha256": "2fd39e3b39afaeb1bf394a59b392d8a29f28645776fa0b13c5754df67ab85fdf",
+  "baseline_path": "refinement/decklists/Goro_Goro_and_Satoru_Current_Cycle_Baseline_2026-10-14.txt",
+  "expected_baseline_sha256": "4b00e2b196ffc5a9a625265bc81e5896d4fad913c54b1d7b431f19fafe86cf7d",
+  "baseline_source_sha256": "c9bc81909dba75925862c5aea21a4cb178180761cef0b3a5cf4437c24b6271e3",
+  "rules_attestation_path": "refinement/verification/goro_goro_and_satoru_2026-10-14/Goro_Goro_and_Satoru_Rules_Attestation.json",
+  "official_legality_attestation_path": "refinement/verification/goro_goro_and_satoru_2026-10-14/Goro_Goro_and_Satoru_Official_Legality_Attestation.json",
+  "output_dir": "refinement/verification/goro_goro_and_satoru_2026-10-14/gate_output",
+  "output_stem": "Goro_Goro_and_Satoru_2026-10-14",
+  "max_cache_age_hours": 72,
+  "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + Complete Approval Gate v1"
+}
