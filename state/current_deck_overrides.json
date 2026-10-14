@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "cycle_id": "global-restart-2026-10-13",
+  "decks": {
+    "Abaddon_the_Despoiler": {
+      "approval_status": "APPROVED",
+      "lock_status": "LOCKED",
+      "final_gate_passed": true,
+      "user_approval_date": "2026-10-13",
+      "current_stage": "LOCKED",
+      "approved_list_sha256": "2d6203d274c25e67fb93acf5e6784dce4ee1e8999844a6ab032d9b15995acfbf",
+      "quality_gate_version": "Deck Quality Gates v3",
+      "approval_basis": "Explicit user approval after successful current-cycle v3 re-verification."
+    }
+  }
+}
