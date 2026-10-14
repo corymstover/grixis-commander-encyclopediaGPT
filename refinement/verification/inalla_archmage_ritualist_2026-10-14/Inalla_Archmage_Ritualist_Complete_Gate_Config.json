@@ -1,0 +1,15 @@
+{
+  "deck_id": "Inalla__Archmage_Ritualist",
+  "display_name": "Inalla, Archmage Ritualist",
+  "decklist_path": "refinement/decklists/Inalla_Archmage_Ritualist_Approval_Candidate_2026-10-14.txt",
+  "expected_deck_sha256": "81333ac71d483b667af968bf2ab221e1fa0de6edd7c2395170d15786e5b15fa3",
+  "baseline_path": "refinement/decklists/Inalla_Archmage_Ritualist_Current_Cycle_Baseline_2026-10-14.txt",
+  "expected_baseline_sha256": "f842f8be78716026dce3b8d713c6cd9dd2bfc3d5358628832fd6e98ca5005439",
+  "baseline_source_sha256": "2ffc4b99b3aa6c1a910fdd7b667fa63708b831e6834662d0dce1504ddc41d922",
+  "rules_attestation_path": "refinement/verification/inalla_archmage_ritualist_2026-10-14/Inalla_Archmage_Ritualist_Rules_Attestation.json",
+  "official_legality_attestation_path": "refinement/verification/inalla_archmage_ritualist_2026-10-14/Inalla_Archmage_Ritualist_Official_Legality_Attestation.json",
+  "output_dir": "refinement/verification/inalla_archmage_ritualist_2026-10-14/gate_output",
+  "output_stem": "Inalla_Archmage_Ritualist_2026-10-14",
+  "max_cache_age_hours": 72,
+  "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + Complete Approval Gate v1"
+}
