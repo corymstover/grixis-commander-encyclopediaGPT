@@ -88,8 +88,7 @@ def main() -> int:
         report = validate_tracker_text(args.tracker.read_text(encoding="utf-8-sig"), expected_decks=args.expected_decks, validate_approval_metadata=not args.historical)
     except OSError as exc:
         report = {"validation": "FAIL", "errors": [str(exc)]}
-    encoded = json.dumps(report, indent=2, ensure_ascii=False) + "
-"
+    encoded = json.dumps(report, indent=2, ensure_ascii=False) + chr(10)
     print(encoded, end="")
     if args.report_output:
         args.report_output.parent.mkdir(parents=True, exist_ok=True)
