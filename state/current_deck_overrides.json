@@ -21,6 +21,16 @@
       "approved_list_sha256": "4ba5c483eb67b5f2647d375450adf9c2b7e79a036d0ba1866e58de8441bf3414",
       "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit",
       "approval_basis": "Explicit user approval after completed whole-list optimization, current legality/Oracle verification, red-team review, and zero-new-material-improvement closure."
+    },
+    "Admiral_Brass__Unsinkable": {
+      "approval_status": "APPROVED",
+      "lock_status": "LOCKED",
+      "final_gate_passed": true,
+      "user_approval_date": "2026-10-13",
+      "current_stage": "LOCKED",
+      "approved_list_sha256": "e66e3a59719401f41830e9938997a87a45a1b0dcaa0663b0ec7b44e10077dd39",
+      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit",
+      "approval_basis": "Explicit user approval of the whole-list approval candidate after structural, Oracle/rules/legality, strategic, candidate-exhaustion, and commander-identity review."
     }
   }
 }
