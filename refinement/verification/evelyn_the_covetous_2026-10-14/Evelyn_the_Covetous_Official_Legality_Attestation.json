@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "deck_sha256": "1d602b5d9b2a370d3448816f593198212b2b83da74e92ccc3232798641b2588a",
+  "checked_at_utc": "2026-10-14T10:45:00Z",
+  "sources": [
+    "Wizards of the Coast Banned & Restricted list — Commander section, checked 2026-10-14",
+    "Wizards Banned and Restricted Announcement — 2026-10-12",
+    "current project Oracle/Scryfall legality cache; exact candidate will be independently revalidated by the complete approval gate"
+  ],
+  "unexpected_banned_cards": [],
+  "project_exceptions": [],
+  "notes": "The exact SHA-bound Evelyn approval candidate requires no project-specific legality exception. Named-ban screening found no Commander-banned card in the candidate. The candidate intentionally excludes Dockside Extortionist, Jeweled Lotus, Mana Crypt, and other currently banned Commander cards. Final per-card official-legality and B/R/U color-identity status is fail-closed and must be independently confirmed against the refreshed current-cycle Oracle cache by the complete approval gate before the deck can become APPROVAL_READY."
+}
