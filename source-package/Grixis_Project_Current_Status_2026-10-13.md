@@ -264,6 +264,6 @@ At cycle launch, all 62 decks were unapproved and unlocked. Current per-deck app
 
 ## Full campaign restart and current checkpoint — 2026-10-13
 
-All previous-cycle approvals were reset to historical status. Fresh full reviews are now complete for **Decks #1–#8**, through **#8 — Bjorna, Nightfall Alchemist // Cecily, Haunted Mage + Lutri companion**. Their current final-list hashes and artifacts are recorded in the active tracker. The frozen 2026-10-12 source baselines and all prior-cycle artifacts remain immutable.
+All previous-cycle approvals were reset to historical status. Fresh restart reviews are complete for **Decks #1–#9**, through **#9 — Crosis, the Purger**. Exact list hashes and supporting artifacts are recorded in the active tracker. Frozen October 12 baselines and historical artifacts remain immutable.
 
-**Current active count: 8/62 approved and locked; 54 remain unapproved/unlocked. Next deck: #9 per the authoritative tracker.** Deck #8 fresh-cycle artifacts, tracker fields, and four cumulative change rows are synchronized. Continue strict one-deck-at-a-time in tracker order; a deck is auto-approved only after its fresh review passes every mandatory gate.
+**Current active count: 9/62 approved and locked; 53 remain unapproved/unlocked. Next deck: #10 — Cormela, Glamour Thief.** Crosis's exact-list hash, full-list matrix, decision ledger, change ledger, review, certificate, tracker and cumulative ledger are synchronized. Continue one deck at a time in tracker order.

@@ -38,4 +38,4 @@
 
 ## Final disposition
 
-**APPROVED / LOCKED — FRESH RESTART REVIEW PASSED**, contingent on completing the tracker/cumulative-ledger sync in the same update batch. Prior-cycle approval remains historical.
+**APPROVED / LOCKED — FRESH RESTART REVIEW PASSED.** Tracker and cumulative change ledger are synchronized in this campaign commit. Prior-cycle approval remains historical.

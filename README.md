@@ -142,3 +142,7 @@ Deck #12 Doctor Doom, King of Latveria: [final list](refinement/decklists/Doctor
 **Tracker-order correction (2026-10-13):** the authoritative order places Crosis, the Purger at #10 and Cult of Skaro at #11. The already verified/locked later decks retain their lists and locks but use the corrected tracker numbering: Davros #12, Doctor Doom #13, Don Andres #14, Dr. Eggman #15. Candidate and change-row identifiers and cumulative ledger deck numbers were aligned to that order. Next work resumes at Crosis #10.
 
 Deck #10 Crosis, the Purger: [final list](refinement/decklists/Crosis_Refined_2026-10-13.txt), [verification](refinement/verification/Crosis_Verification_2026-10-13.md); added Blizzard Specter and Recoil, cut Specter's Shroud and Chaos Warp. Current-cycle total: 14/62 locked; next is #11 Cult of Skaro.
+
+## Full restart campaign checkpoint — 2026-10-13 (active cycle)
+
+The current-cycle restart has completed **#1 Abaddon, #2 Admiral Beckett Brass, #3 Admiral Brass, Unsinkable, #4 Anhelo, #5 Ashad, #6 Ashnod, #7 Be'lakor, #8 Bjorna // Cecily + Lutri, and #9 Crosis, the Purger**. All eight except Crosis count note in earlier content is corrected here: **9/62 approved and locked; 53 remain unapproved/unlocked**. Current next deck in authoritative tracker order: **#10 Cormela, Glamour Thief**. Prior-cycle records elsewhere in this README are historical and do not override the active tracker.
