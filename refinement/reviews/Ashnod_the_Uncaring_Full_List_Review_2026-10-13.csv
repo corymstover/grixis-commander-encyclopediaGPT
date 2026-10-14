@@ -1,4 +1,5 @@
 "card_name","disposition","review_role","paired_card","individual_review_note"
+"Ashnod the Uncaring","RETAIN","Commander / activated-ability copy","","RETAIN: whenever you sacrifice one or more permanents, copies activated abilities you activate that are not mana abilities; the list emphasizes sacrifice-cost abilities and copyable value."
 "Academy Ruins","RETAIN","Land / artifact recursion","","RETAIN: supports the 33-land UBR mana base; color fixing and utility are balanced against artifact synergies."
 "Altar of Dementia","RETAIN","Sacrifice outlet / mill finisher","","RETAIN: activated ability can be copied when its cost sacrifices a permanent; its exact output, target rules and mana-ability status were reviewed for Ashnod interactions."
 "An Offer You Can't Refuse","RETAIN","Protection / counterspell","","RETAIN: provides interaction/protection needed to preserve engines and prevent opponents from stopping the activated-ability plan."
