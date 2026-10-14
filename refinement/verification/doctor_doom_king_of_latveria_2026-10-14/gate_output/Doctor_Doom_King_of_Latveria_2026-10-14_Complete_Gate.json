@@ -1,0 +1,23 @@
+{
+  "generated_at_utc": "2026-10-14T08:18:37.996963+00:00",
+  "deck_id": "Doctor_Doom__King_of_Latveria",
+  "decklist_path": "refinement/decklists/Doctor_Doom_King_of_Latveria_Approval_Candidate_2026-10-14.txt",
+  "deck_sha256": "c97bd448aa4b18d2f7ed15e5d67006ab320ed67ad3ed267e44150de472e1dc58",
+  "baseline_path": "refinement/decklists/Doctor_Doom_King_of_Latveria_Current_Cycle_Baseline_2026-10-14.txt",
+  "baseline_source_sha256": "08825dee74f034bc38415fe7370cccc3fe69de7887769577dd32f98f5bbd4572",
+  "count": 100,
+  "distinct_names": 100,
+  "commander_color_identity": [
+    "B",
+    "R",
+    "U"
+  ],
+  "cache_generated_at_utc": "2026-10-14T08:13:50.112519+00:00",
+  "cache_sha256": "68c1e0803402a7347c8c49a07fc7a048b49d7c6ac802a7e84dbc5953801d6252",
+  "project_exceptions": [],
+  "rules_gate": "PASS",
+  "official_legality_gate": "PASS",
+  "errors": [],
+  "overall_result": "APPROVAL_READY",
+  "approval_state": "NOT_APPROVED — explicit user approval still required"
+}
