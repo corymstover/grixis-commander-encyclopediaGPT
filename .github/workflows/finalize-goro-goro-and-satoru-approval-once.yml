@@ -1,0 +1,48 @@
+name: Finalize Goro-Goro and Satoru approval once
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "scripts/finalize_goro_goro_and_satoru_approval_once.py"
+      - ".github/workflows/finalize-goro-goro-and-satoru-approval-once.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Finalize exact approved candidate
+        run: python scripts/finalize_goro_goro_and_satoru_approval_once.py
+
+      - name: Commit approval state
+        shell: bash
+        env:
+          BRANCH_NAME: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state/current_deck_overrides.json \
+                  refinement/Deck_Refinement_Tracker_2026-10-12.csv \
+                  refinement/decklists/Goro_Goro_and_Satoru_Approved_2026-10-14.txt \
+                  refinement/approvals/Goro_Goro_and_Satoru_Approved_2026-10-14.md
+          if git diff --cached --quiet; then
+            echo "No Goro-Goro and Satoru approval changes to commit."
+            exit 0
+          fi
+          git commit -m "Approve and lock Goro-Goro and Satoru [skip ci]"
+          git pull --rebase origin "$BRANCH_NAME"
+          git push origin "HEAD:$BRANCH_NAME"
