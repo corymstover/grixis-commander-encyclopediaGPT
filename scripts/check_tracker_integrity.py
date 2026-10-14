@@ -47,7 +47,9 @@ def validate_tracker_text(content: str, *, expected_decks: int = 62, validate_ap
         if not deck_id:
             errors.append(f"blank deck_id on CSV line {line_number}")
         ids.append(deck_id)
-        if not validate_approval_metadata:\n            continue\n        gate = (row.get("final_gate_passed") or "").strip().upper()
+        if not validate_approval_metadata:
+            continue
+        gate = (row.get("final_gate_passed") or "").strip().upper()
         list_hash = (row.get("final_list_hash") or "").strip()
         approval_date = (row.get("user_approval_date") or "").strip()
         if gate == "YES" and (not list_hash or not approval_date):
@@ -79,13 +81,15 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--tracker", type=Path, default=TRACKER)
     parser.add_argument("--expected-decks", type=int, default=62)
-    parser.add_argument("--report-output", type=Path)\n    parser.add_argument("--historical", action="store_true", help="Validate legacy tracker structure/identity only; current approval state is canonical elsewhere.")
+    parser.add_argument("--report-output", type=Path)
+    parser.add_argument("--historical", action="store_true", help="Validate legacy tracker structure/identity only; current approval state is canonical elsewhere.")
     args = parser.parse_args()
     try:
         report = validate_tracker_text(args.tracker.read_text(encoding="utf-8-sig"), expected_decks=args.expected_decks, validate_approval_metadata=not args.historical)
     except OSError as exc:
         report = {"validation": "FAIL", "errors": [str(exc)]}
-    encoded = json.dumps(report, indent=2, ensure_ascii=False) + "\n"
+    encoded = json.dumps(report, indent=2, ensure_ascii=False) + "
+"
     print(encoded, end="")
     if args.report_output:
         args.report_output.parent.mkdir(parents=True, exist_ok=True)
