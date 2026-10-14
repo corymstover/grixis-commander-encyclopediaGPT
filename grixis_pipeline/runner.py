@@ -8,10 +8,17 @@ def stages_through(target):
     if target not in EXECUTABLE_STAGES: raise ValueError(f"target must be one of {EXECUTABLE_STAGES}")
     return EXECUTABLE_STAGES[:EXECUTABLE_STAGES.index(target)+1]
 
+def _require_finalize_quality_gate(upstream):
+    review=upstream.get("EVIDENCE_REVIEW",{})
+    gate=review.get("quality_gate",{}) if isinstance(review,dict) else {}
+    if not gate.get("pass") or gate.get("approval_status") != "REQUIRES_EXPLICIT_USER_APPROVAL":
+        raise ValueError("FINALIZE requires a passing EVIDENCE_REVIEW quality_gate and explicit-user-approval boundary")
+
 def run_deck(*,deck_id,target,base_inputs,stage_work,root=Path(".grixis")):
     results={}
     upstream={}
     for stage in stages_through(target):
+        if stage=="FINALIZE": _require_finalize_quality_gate(upstream)
         inputs={"base":base_inputs,"upstream":upstream}
         payload=run_cached_stage(deck_id=deck_id,stage=stage,inputs=inputs,work=lambda s=stage: stage_work(s,inputs),root=root)
         results[stage]=payload
