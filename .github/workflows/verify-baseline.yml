@@ -24,6 +24,8 @@ on:
       - "source-package/GrixisFINAL_62Decks_CSV_TXT_2026-10-12.tar.gz"
       - "source-package/Grixis_Independent_Deck_Hash_Manifest_2026-10-12.csv"
       - "refinement/Deck_Refinement_Tracker_2026-10-12.csv"
+      - "refinement/metadata_audit/REFRESH_REQUEST.md"
+      - "refinement/metadata_audit/REFRESH_REQUEST*.md"
   workflow_dispatch:
 
 permissions:
