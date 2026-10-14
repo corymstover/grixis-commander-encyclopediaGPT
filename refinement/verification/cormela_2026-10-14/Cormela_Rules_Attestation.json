@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "deck_sha256": "80f4bdef2b8b140aeae23775cfdf87fda81e7215038b8db9b1746c806f366e0b",
+  "checked_at_utc": "2026-10-14T05:56:00+00:00",
+  "rules_checkpoint": "Magic Comprehensive Rules effective 2026-09-25",
+  "sources": [
+    "https://media.wizards.com/2026/downloads/MagicCompRules%2020260925.txt",
+    "https://commanderspellbook.com/combo/2034-3599-4867/",
+    "https://commanderspellbook.com/combo/1893-2034-4867/",
+    "https://commanderspellbook.com/combo/392-4867-5487/",
+    "https://commanderspellbook.com/combo/147-5487/",
+    "https://commanderspellbook.com/combo/742-1295/",
+    "https://commanderspellbook.com/combo/1295-3093/"
+  ],
+  "interactions": [
+    {
+      "name": "Cormela + Saw in Half recursion engine",
+      "status": "PASS",
+      "note": "Saw in Half destroys Cormela and creates two legendary token copies; the original death trigger and legend-rule death of one token can recover instants/sorceries. The line is consistent with state-based actions, triggered abilities, token copying, and current Cormela/Saw Oracle records. The candidate retains the mana-positive ritual package needed for deterministic loops."
+    },
+    {
+      "name": "Cormela + Goryo's Vengeance + Ashnod's Altar / Phyrexian Altar",
+      "status": "PASS",
+      "note": "Cormela is legendary, so Goryo's Vengeance can return it; sacrificing Cormela triggers its graveyard return ability and allows Goryo's Vengeance to be recast with Cormela-generated restricted spell mana plus the altar resource. Commander Spellbook independently indexes the Ashnod's Altar version."
+    },
+    {
+      "name": "Cormela + Shallow Grave + Ashnod's Altar / Phyrexian Altar",
+      "status": "PASS",
+      "note": "With Cormela the top creature card of its controller's graveyard, Shallow Grave returns it with haste; the altar sacrifice triggers Cormela to recover Shallow Grave and repeats. Commander Spellbook independently indexes the Ashnod's Altar version."
+    },
+    {
+      "name": "Cormela + Birgi + Molten Duplication",
+      "status": "PASS",
+      "note": "Molten Duplication can copy Cormela; the legend rule puts one Cormela into the graveyard, its death trigger recovers Molten Duplication, and Birgi refunds red mana for the repeat. Commander Spellbook independently indexes this loop."
+    },
+    {
+      "name": "Dualcaster Mage + Molten Duplication",
+      "status": "PASS",
+      "note": "Casting Molten Duplication targeting a controlled creature and responding with Dualcaster Mage allows successive Dualcaster copies to copy the spell and target the newest Dualcaster, producing arbitrarily many hasty Dualcaster tokens. Commander Spellbook independently indexes this line."
+    },
+    {
+      "name": "Thassa's Oracle + Demonic Consultation",
+      "status": "PASS",
+      "note": "Demonic Consultation can exile the library by naming a card absent from it after Oracle is in hand; Thassa's Oracle then resolves its ETB win condition with devotion greater than or equal to cards remaining. Commander Spellbook independently indexes the Commander-legal two-card line."
+    },
+    {
+      "name": "Thassa's Oracle + Tainted Pact",
+      "status": "PASS",
+      "note": "The candidate has no repeated card names, satisfying Tainted Pact's practical full-library exile requirement; Thassa's Oracle then supplies the win condition. Commander Spellbook independently indexes the line and states the no-duplicate prerequisite."
+    },
+    {
+      "name": "Cormela restricted mana",
+      "status": "PASS",
+      "note": "Cormela's UBR mana may be spent only to cast instant and/or sorcery spells. All documented loops account for that restriction rather than treating it as unrestricted mana."
+    }
+  ],
+  "result_note": "Rules attestation is bound to the exact candidate SHA. Any decklist change invalidates this PASS until re-attested."
+}
