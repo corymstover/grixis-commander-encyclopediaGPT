@@ -1,0 +1,314 @@
+{
+  "deck_id": "Admiral_Beckett_Brass",
+  "hard_gates": {
+    "exact_100": true,
+    "singleton": true,
+    "color_identity": true,
+    "commander_legality_or_registered_exception": true,
+    "oracle_and_rules": true,
+    "strategic_coherence": true
+  },
+  "discovery_passes": 2,
+  "new_material_candidates_last_pass": 0,
+  "candidates": [
+    {
+      "card": "The Indomitable",
+      "impact": "HIGH",
+      "decision": "ACCEPT",
+      "reason": "Role-for-role combat draw plus conditional recursion and a trampling Vehicle; documented mandatory draw/artifact exposure.",
+      "evidence_refs": [
+        "Beckett-v3-review",
+        "candidate-ranking-v8.1.4"
+      ]
+    },
+    {
+      "card": "Zephyr Singer",
+      "impact": "HIGH",
+      "decision": "ACCEPT",
+      "reason": "Convoke gives permanent flying counters to multiple Pirates, materially improving subsequent three-Pirate connections.",
+      "evidence_refs": [
+        "Beckett-v3-review",
+        "candidate-ranking-v8.1.4"
+      ]
+    },
+    {
+      "card": "Jhoira, Weatherlight Corsair",
+      "impact": "MEDIUM",
+      "decision": "REJECT",
+      "reason": "Recent six-mana theft Pirate is powerful but does not improve early three-Pirate connection reliability.",
+      "evidence_refs": [
+        "Beckett-v3-review",
+        "candidate-ranking-v8.1.4"
+      ]
+    },
+    {
+      "card": "Slippery Scoundrel",
+      "impact": "MEDIUM",
+      "decision": "REJECT",
+      "reason": "Delayed ascend-dependent single-body evasion is narrower than Zephyr's team-wide flying counters.",
+      "evidence_refs": [
+        "Beckett-v3-review",
+        "candidate-ranking-v8.1.4"
+      ]
+    },
+    {
+      "card": "Open into Wonder",
+      "impact": "MEDIUM",
+      "decision": "REJECT",
+      "reason": "One-shot X-cost evasion/draw is less repeatable than persistent flying counters.",
+      "evidence_refs": [
+        "Beckett-v3-review",
+        "candidate-ranking-v8.1.4"
+      ]
+    },
+    {
+      "card": "Fell Flagship",
+      "impact": "MEDIUM",
+      "decision": "REJECT",
+      "reason": "Vehicle anthem overlaps current pumps but adds no Pirate body.",
+      "evidence_refs": [
+        "Beckett-v3-review",
+        "candidate-ranking-v8.1.4"
+      ]
+    },
+    {
+      "card": "Pirated Copy",
+      "impact": "MEDIUM",
+      "decision": "REJECT",
+      "reason": "Five-mana copy value has uncertain Pirate-count effect and weak immediate evasion.",
+      "evidence_refs": [
+        "Beckett-v3-review",
+        "candidate-ranking-v8.1.4"
+      ]
+    },
+    {
+      "card": "Protean Raider",
+      "impact": "MEDIUM",
+      "decision": "REJECT",
+      "reason": "Raid copy timing and copied types undermine reliable Pirate threshold.",
+      "evidence_refs": [
+        "Beckett-v3-review",
+        "candidate-ranking-v8.1.4"
+      ]
+    },
+    {
+      "card": "Kitesail Freebooter",
+      "impact": "MEDIUM",
+      "decision": "REJECT",
+      "reason": "Flying Pirate disruption is useful but less broadly impactful than persistent multi-Pirate evasion.",
+      "evidence_refs": [
+        "Beckett-v3-review",
+        "candidate-ranking-v8.1.4"
+      ]
+    },
+    {
+      "card": "Gemcutter Buccaneer",
+      "impact": "MEDIUM",
+      "decision": "REJECT",
+      "reason": "Four-mana Treasure value does not directly bypass blockers.",
+      "evidence_refs": [
+        "Beckett-v3-review",
+        "candidate-ranking-v8.1.4"
+      ]
+    },
+    {
+      "card": "Captain Storm, Cosmium Raider",
+      "impact": "MEDIUM",
+      "decision": "REJECT",
+      "reason": "Artifact-entry counters raise damage but do not guarantee three separate connections.",
+      "evidence_refs": [
+        "Beckett-v3-review",
+        "candidate-ranking-v8.1.4"
+      ]
+    },
+    {
+      "card": "Lookout's Dispersal",
+      "impact": "LOW",
+      "decision": "REJECT",
+      "reason": "Interaction upgrade not demonstrated against retained premium counters.",
+      "evidence_refs": [
+        "Beckett-v3-review",
+        "candidate-ranking-v8.1.4"
+      ]
+    },
+    {
+      "card": "Dire Fleet Daredevil",
+      "impact": "LOW",
+      "decision": "REJECT",
+      "reason": "Flexible theft/cast utility is meta-dependent and not essential to connection plan.",
+      "evidence_refs": [
+        "Beckett-v3-review",
+        "candidate-ranking-v8.1.4"
+      ]
+    },
+    {
+      "card": "Deadeye Brawler",
+      "impact": "LOW",
+      "decision": "REJECT",
+      "reason": "Combat value at four mana does not beat prioritized team evasion.",
+      "evidence_refs": [
+        "Beckett-v3-review",
+        "candidate-ranking-v8.1.4"
+      ]
+    },
+    {
+      "card": "Vanquisher's Banner",
+      "impact": "LOW",
+      "decision": "REJECT",
+      "reason": "Five-mana anthem/draw competes with faster existing tribal payoffs.",
+      "evidence_refs": [
+        "Beckett-v3-review",
+        "candidate-ranking-v8.1.4"
+      ]
+    }
+  ],
+  "testing_required": false,
+  "hypothesis_tests": [],
+  "red_team_findings": [
+    {
+      "category": "Zephyr convoke timing",
+      "claim": "Tapping Pirates to convoke may prevent same-turn attacks; flying counters mainly pay off in subsequent combats.",
+      "material": true,
+      "resolved": true,
+      "resolution": "Recorded as a genuine sequencing cost; use precombat convoke only when later connection payoff outweighs current attack."
+    },
+    {
+      "category": "The Indomitable mandatory draw",
+      "claim": "Mandatory triggers and artifact vulnerability can be worse than Coastal Piracy.",
+      "material": true,
+      "resolved": true,
+      "resolution": "Accept as a bounded role-for-role tradeoff because of 6/6 trample body and conditional graveyard recast."
+    },
+    {
+      "category": "Pirate density",
+      "claim": "A Vehicle replacing an enchantment could dilute the Pirate engine.",
+      "material": true,
+      "resolved": true,
+      "resolution": "Both original and replacement are non-Pirates; Pirate creature count is unchanged by either swap."
+    },
+    {
+      "category": "Generic staple drift",
+      "claim": "Tutors/free interaction might dominate the Pirate theft identity.",
+      "material": true,
+      "resolved": true,
+      "resolution": "Retained staples protect/enable the primary three-Pirate connection and theft strategy rather than substituting a generic combo finish."
+    },
+    {
+      "category": "Source freshness",
+      "claim": "The October 2026 Jhoira release was absent from older rankings.",
+      "material": true,
+      "resolved": true,
+      "resolution": "Reviewed current release and rejected for six-mana curve and poor threshold support."
+    }
+  ],
+  "commander_necessity": {
+    "thesis": "Beckett converts combat damage from three distinct Pirates to the same player into recurring permanent theft; the deck's token/evasion package exists to satisfy that condition.",
+    "material_dependencies": [
+      "three-Pirate combat damage connection",
+      "evasion and Pirate density",
+      "end-step theft trigger"
+    ],
+    "counterfactual_impact": "STRUCTURAL",
+    "evidence_refs": [
+      "Beckett-v3-review"
+    ]
+  },
+  "evidence_dimensions": [
+    {
+      "name": "commander_identity",
+      "confidence": "HIGH_CONFIDENCE",
+      "rationale": "Two swaps directly reinforce three-Pirate combat connection.",
+      "evidence_refs": [
+        "Beckett-v3-review"
+      ]
+    },
+    {
+      "name": "engine",
+      "confidence": "HIGH_CONFIDENCE",
+      "rationale": "Evasion, tokens, combat payoffs, theft and draw remain coherent.",
+      "evidence_refs": [
+        "Beckett-v3-review"
+      ]
+    },
+    {
+      "name": "mana",
+      "confidence": "PROVISIONAL",
+      "rationale": "Four-mana Zephyr has convoke; current land/ramp unchanged, but no controlled multiplayer curve comparison.",
+      "evidence_refs": [
+        "Beckett-v3-review"
+      ]
+    },
+    {
+      "name": "interaction",
+      "confidence": "HIGH_CONFIDENCE",
+      "rationale": "All premium interaction and protection retained.",
+      "evidence_refs": [
+        "Beckett-v3-review"
+      ]
+    },
+    {
+      "name": "resilience",
+      "confidence": "PROVISIONAL",
+      "rationale": "Indomitable graveyard recast improves recursion but no exhaustive matchup trials.",
+      "evidence_refs": [
+        "Beckett-v3-review"
+      ]
+    },
+    {
+      "name": "conversion",
+      "confidence": "HIGH_CONFIDENCE",
+      "rationale": "Flying counters improve likelihood of repeatable commander theft triggers.",
+      "evidence_refs": [
+        "Beckett-v3-review"
+      ]
+    },
+    {
+      "name": "combo_integrity",
+      "confidence": "VERIFIED",
+      "rationale": "No novel combo is asserted by the swaps; convoke and graveyard casting are interpreted conservatively.",
+      "evidence_refs": [
+        "Beckett-v3-review"
+      ]
+    },
+    {
+      "name": "card_quality",
+      "confidence": "HIGH_CONFIDENCE",
+      "rationale": "15 serious alternative candidates explicitly considered against existing slots.",
+      "evidence_refs": [
+        "Beckett-v3-review"
+      ]
+    },
+    {
+      "name": "candidate_exhaustion",
+      "confidence": "HIGH_CONFIDENCE",
+      "rationale": "Recent release checked and high-impact candidate dispositions closed.",
+      "evidence_refs": [
+        "Beckett-v3-review"
+      ]
+    },
+    {
+      "name": "testing",
+      "confidence": "PROVISIONAL",
+      "rationale": "No controlled multiplayer test claimed; swaps justified analytically, not by invented win rates.",
+      "evidence_refs": [
+        "Beckett-v3-review"
+      ]
+    },
+    {
+      "name": "rules_confidence",
+      "confidence": "VERIFIED",
+      "rationale": "Existing source audit plus targeted Oracle/legality checks of both additions.",
+      "evidence_refs": [
+        "Beckett-v3-review"
+      ]
+    },
+    {
+      "name": "source_freshness",
+      "confidence": "HIGH_CONFIDENCE",
+      "rationale": "2026-10-13 source snapshot and Oct 2026 Jhoira discovery cross-check.",
+      "evidence_refs": [
+        "Beckett-v3-review"
+      ]
+    }
+  ]
+}
