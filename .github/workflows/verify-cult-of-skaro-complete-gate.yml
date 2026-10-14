@@ -67,3 +67,5 @@ jobs:
           path: refinement/verification/cult_of_skaro_2026-10-14/gate_output/
           if-no-files-found: warn
           retention-days: 90
+
+# Verification trigger: run against the freshly refreshed Oracle cache.
