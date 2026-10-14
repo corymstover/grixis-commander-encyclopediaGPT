@@ -5,7 +5,11 @@ Version-controlled project records for the 62-deck Grixis Commander Encyclopedia
 ## Project operating rules
 
 - Each deck is commander-first and preserves that commander's identity and natural power ceiling.
-- **FULL RESTART REVIEW ACTIVE — 2026-10-13:** all prior-cycle approvals were reset to historical status. Deck #1, Abaddon the Despoiler, has now completed a fresh full-list review and is approved/locked at the new verified hash recorded in the active tracker. 61 decks remain unapproved/unlocked; next in authoritative tracker order is #2 Admiral Beckett Brass. Do not begin deck #2 until deck #1’s final artifacts and tracker status are verified. Continue one deck at a time.
+- **FULL RESTART REVIEW ACTIVE — 2026-10-13:** all prior-cycle approvals were reset to historical status. Decks #1 Abaddon the Despoiler and #2 Admiral Beckett Brass have now completed fresh full-list reviews and are approved/locked at their new hashes recorded in the active tracker. 60 decks remain unapproved/unlocked; next in authoritative tracker order is #3 Admiral Brass, Unsinkable. Earlier per-deck summaries below are historical records only; the active tracker defines current-cycle approval. Continue one deck at a time.
+
+**Historical status note (restart cycle):** The detailed per-deck approval summaries in this README reflect previous-cycle work and are not current approvals unless the active tracker marks that deck `APPROVED / LOCKED — FRESH RESTART REVIEW PASSED`. The fresh restart currently has #1 Abaddon and #2 Admiral Beckett Brass approved; all other prior approval labels are historical only.
+
+
 - The active cycle may revise any deck after whole-list review. Automatically approve and lock a deck only after all required technical verification gates pass; do not require an additional user approval step. A failed or incomplete gate means no lock.
 - The four `GrixisFINAL` archives dated 2026-10-12 are the current authoritative membership baseline; the `Updated-10-11-2026` archives are historical.
 - Candidate rankings are a research shortlist, not automatic card additions.
