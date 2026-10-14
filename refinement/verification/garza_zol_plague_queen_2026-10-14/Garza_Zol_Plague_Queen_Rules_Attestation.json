@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "deck_sha256": "32c0e8049a9c8a5d238048b4f774f0457908d724f23d4597b7da93a6cba0c16f",
+  "checked_at_utc": "2026-10-14T19:58:00Z",
+  "sources": [
+    "Magic Comprehensive Rules — deathtouch, lifelink, commander damage, infect, double strike, triggered abilities, phasing, counters, continuous effects and extra combat phases",
+    "Current Oracle text/rulings for Garza Zol, Plague Queen and every interaction card in the exact SHA-bound candidate",
+    "Current project Oracle/Scryfall cache; exact candidate is independently revalidated by the complete approval gate",
+    "Wizards of the Coast Commander rules and current card-specific Oracle/rulings where applicable"
+  ],
+  "interactions": [
+    {
+      "name": "Garza damage-and-death trigger scope",
+      "status": "PASS",
+      "conclusion": "Garza's first triggered ability looks for a creature that was dealt damage by Garza Zol earlier that turn and then dies. The qualifying damage can be combat or noncombat damage. If the condition is met, Garza gets one +1/+1 counter when that trigger resolves."
+    },
+    {
+      "name": "Basilisk Collar plus Thornbite Staff",
+      "status": "PASS",
+      "conclusion": "Thornbite Staff gives equipped Garza the activated ability to deal 1 damage to any target. If Garza also has deathtouch from Basilisk Collar, one point of Garza's damage to a creature is lethal under normal deathtouch rules. If that creature dies, Garza's own trigger can add a +1/+1 counter and Thornbite Staff's death trigger untaps Garza, allowing the engine to repeat when its 2-mana activation cost can be paid."
+    },
+    {
+      "name": "Deathtouch with Chandra's Ignition and Nova Flame",
+      "status": "PASS",
+      "conclusion": "Chandra's Ignition and Nova Flame cause the targeted creature, not the spell, to deal their specified damage. When Garza is the targeted creature, Garza is the damage source. If she has deathtouch, any positive damage she deals to a creature is lethal absent prevention or other replacement effects; creatures that die after being damaged by Garza can trigger her +1/+1-counter ability. Lifelink from Basilisk Collar likewise applies to damage Garza deals."
+    },
+    {
+      "name": "Scythe of the Wretched with Garza-sourced mass damage",
+      "status": "PASS",
+      "conclusion": "Scythe of the Wretched triggers for each creature dealt damage by equipped Garza that dies that turn. Multiple qualifying deaths create separate triggers. Each resolving trigger can return its creature under Garza's controller's control and attach Scythe to that creature; if several resolve, Scythe ultimately remains attached to the creature from the last applicable resolving trigger. The earlier triggers do not disappear merely because Scythe moved after they triggered."
+    },
+    {
+      "name": "Blade of the Bloodchief counter stacking",
+      "status": "PASS",
+      "conclusion": "Garza is a Vampire. When a creature dies while Blade of the Bloodchief is attached to Garza, Blade gives her two +1/+1 counters. If that same creature had also been dealt damage by Garza that turn, Garza's own ability separately triggers for another +1/+1 counter, for three total counters from the two independent triggers if both resolve."
+    },
+    {
+      "name": "Hatred commander-damage threshold",
+      "status": "PASS",
+      "conclusion": "Hatred's additional cost pays X life and gives the targeted creature +X/+0 until end of turn. An unmodified 5-power Garza that receives +16/+0 becomes 21 power, so one unblocked combat-damage event can deal 21 commander damage to that opponent if no prevention, reduction or other modification applies."
+    },
+    {
+      "name": "Grafted Exoskeleton infect multipliers",
+      "status": "PASS",
+      "conclusion": "Grafted Exoskeleton gives Garza +2/+2 and infect, making base Garza 7 power. Psychotic Fury gives the multicolored Garza double strike, so two unblocked combat-damage steps can deal 14 poison counters total. Jeska, Thrice Reborn can triple Garza's combat damage to opponents, making a 7-power infect hit 21 poison. Inquisitor's Flail doubles combat damage dealt by equipped Garza, making a 7-power infect hit 14 poison."
+    },
+    {
+      "name": "Jeska commander-damage threshold",
+      "status": "PASS",
+      "conclusion": "Jeska's zero-loyalty ability makes the chosen creature deal triple combat damage to opponents until the controller's next turn. Garza at 7 power therefore deals 21 combat damage in one unblocked hit, which is lethal commander damage to that opponent if no prevention or modification applies."
+    },
+    {
+      "name": "Sword of Feast and Famine plus Aggravated Assault",
+      "status": "PASS",
+      "conclusion": "If a creature equipped with Sword of Feast and Famine deals combat damage to a player, Sword's trigger can untap the controller's lands. If those lands can produce at least five mana including 3RR after combat, Aggravated Assault may be activated in the postcombat main phase to create another main phase and combat phase. Repeating successful Sword connections with sufficient mana yields arbitrarily many combat phases."
+    },
+    {
+      "name": "Robe of the Archmagi plus Garza combat trigger",
+      "status": "PASS",
+      "conclusion": "Robe of the Archmagi triggers when equipped Garza deals combat damage to a player and draws cards equal to that damage. Garza's own combat-damage trigger separately allows one additional card draw. At Garza's base 5 power, one unmodified hit therefore can produce five Robe draws plus Garza's optional draw, six cards total if both triggers resolve."
+    },
+    {
+      "name": "Kediss secondary damage",
+      "status": "PASS",
+      "conclusion": "After Garza deals combat damage to one opponent, Kediss causes Garza itself to deal that much noncombat damage to each other opponent. That secondary damage is Garza-sourced and can trigger Curiosity for each damaged opponent, but it is not combat damage and therefore is not commander damage to those other opponents."
+    },
+    {
+      "name": "The Ozolith and commander zone changes",
+      "status": "PASS",
+      "conclusion": "When Garza leaves the battlefield while she has counters, The Ozolith can trigger using the counters Garza had as she last existed on the battlefield and place equivalent counters on The Ozolith. Moving Garza to the command zone instead of another destination does not prevent that leaves-the-battlefield trigger. The Ozolith does not move the original counters; it creates equivalent counters on itself."
+    },
+    {
+      "name": "Slip Out the Back and attached permanents",
+      "status": "PASS",
+      "conclusion": "Slip Out the Back puts a +1/+1 counter on Garza and phases her out. Under phasing rules, Auras and Equipment attached to a permanent that phases out phase out indirectly with it, so Garza can be protected without permanently shedding her attached Voltron pieces."
+    },
+    {
+      "name": "Command Beacon commander-tax mitigation",
+      "status": "PASS",
+      "conclusion": "Command Beacon can be sacrificed to put Garza from the command zone into its owner's hand. Casting Garza from hand afterward is not a cast from the command zone, so commander tax does not apply to that cast."
+    },
+    {
+      "name": "Curiosity retained over redundant combat-only draw",
+      "status": "PASS",
+      "conclusion": "Curiosity triggers whenever enchanted Garza deals damage to an opponent, including noncombat damage. It therefore has additional commander-specific utility with Chandra's Ignition and Kediss that combat-damage-only draw engines do not share."
+    }
+  ]
+}
