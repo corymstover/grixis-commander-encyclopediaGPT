@@ -1,0 +1,15 @@
+{
+  "deck_id": "Evelyn__the_Covetous",
+  "display_name": "Evelyn, the Covetous",
+  "decklist_path": "refinement/decklists/Evelyn_the_Covetous_Approval_Candidate_2026-10-14.txt",
+  "expected_deck_sha256": "1d602b5d9b2a370d3448816f593198212b2b83da74e92ccc3232798641b2588a",
+  "baseline_path": "refinement/decklists/Evelyn_the_Covetous_Current_Cycle_Baseline_2026-10-14.txt",
+  "expected_baseline_sha256": "9be69c3ee143a9e109c341fdd7a2f5bf18446bafde92cf0af35afddea7df00ea",
+  "baseline_source_sha256": "ad5d4297f3940ab174b5e214e7288c283cc58302f815996c050c05bc5e75fa62",
+  "rules_attestation_path": "refinement/verification/evelyn_the_covetous_2026-10-14/Evelyn_the_Covetous_Rules_Attestation.json",
+  "official_legality_attestation_path": "refinement/verification/evelyn_the_covetous_2026-10-14/Evelyn_the_Covetous_Official_Legality_Attestation.json",
+  "output_dir": "refinement/verification/evelyn_the_covetous_2026-10-14/gate_output",
+  "output_stem": "Evelyn_the_Covetous_2026-10-14",
+  "max_cache_age_hours": 72,
+  "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit"
+}
