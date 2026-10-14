@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "deck_sha256": "fd560a9b0777088b3ad1684ded030566c894faa206ddf6763b74d95d82c532e4",
+  "checked_at_utc": "2026-10-14T09:34:00Z",
+  "sources": [
+    "Wizards of the Coast Banned & Restricted list — Commander section, checked 2026-10-14",
+    "Wizards of the Coast Banned and Restricted Announcement — 2026-10-12 (no tabletop Commander changes)",
+    "current Scryfall Commander legality data / project current-cycle Oracle cache generated 2026-10-14T09:32:52Z"
+  ],
+  "unexpected_banned_cards": [],
+  "project_exceptions": [],
+  "notes": "The exact SHA-bound Edea, Possessed Sorceress approval candidate requires no project-specific legality exception. The commander and all proposed additions are within Grixis color identity and are currently legal in tabletop Commander. Jabs, Mistress of Mockery was excluded because its release date is after this 2026-10-14 checkpoint and Edea has no project future-release exception. The October 12, 2026 B&R announcement made no tabletop Commander changes."
+}
