@@ -1,0 +1,105 @@
+name: Lock Don Andres Current Cycle
+
+on:
+  push:
+    paths:
+      - '.github/workflows/lock-don-andres-current-cycle.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  lock:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Lock Don Andres and reconcile tracker
+        shell: bash
+        run: |
+          python - <<'PY'
+          import csv
+          import hashlib
+          import json
+          from pathlib import Path
+
+          state_path = Path('state/current_deck_overrides.json')
+          tracker_path = Path('refinement/Deck_Refinement_Tracker_2026-10-12.csv')
+          approved_path = Path('refinement/decklists/Don_Andres_the_Renegade_Approved_2026-10-14.txt')
+          canonical_sha = 'a6022fddd295d7c671690fbce5e25dc6fed47ca7fa77bf1d8a86ebadb2d927bb'
+          approval_date = '2026-10-14'
+          deck_key = 'Don_Andres__the_Renegade'
+
+          actual_sha = hashlib.sha256(approved_path.read_bytes()).hexdigest()
+          if actual_sha != canonical_sha:
+              raise SystemExit(f'Approved list SHA mismatch: {actual_sha}')
+
+          state = json.loads(state_path.read_text(encoding='utf-8'))
+          state['decks'][deck_key] = {
+              'approval_status': 'APPROVED',
+              'lock_status': 'LOCKED',
+              'final_gate_passed': True,
+              'user_approval_date': approval_date,
+              'current_stage': 'LOCKED',
+              'approved_list_sha256': canonical_sha,
+              'quality_gate_version': 'Deck Quality Gates v3 + mandatory whole-list audit',
+              'approval_basis': 'Explicit user approval of the exact SHA-bound Don Andres approval candidate after mandatory 99-slot whole-list audit, candidate exhaustion, adversarial red-team review, zero-new-material-improvement closure, fresh Oracle/rules verification, current official Commander legality verification, and complete fail-closed gate PASS.',
+              'complete_gate_artifact': 'refinement/verification/don_andres_the_renegade_2026-10-14/gate_output/Don_Andres_the_Renegade_2026-10-14_Complete_Gate.json',
+              'whole_list_audit_artifact': 'refinement/verification/don_andres_the_renegade_2026-10-14/Don_Andres_the_Renegade_Whole_List_Audit_Closeout_2026-10-14.md',
+              'approved_list_artifact': 'refinement/decklists/Don_Andres_the_Renegade_Approved_2026-10-14.txt'
+          }
+          state_path.write_text(json.dumps(state, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
+
+          with tracker_path.open(newline='', encoding='utf-8-sig') as f:
+              reader = csv.DictReader(f)
+              fieldnames = reader.fieldnames
+              rows = list(reader)
+
+          found = False
+          for row in rows:
+              if row['deck_id'] != deck_key:
+                  continue
+              found = True
+              row['baseline_status'] = 'CURRENT APPROVED FINAL LIST — current-cycle canonical list locked; frozen source exports preserved unchanged.'
+              row['commander_blueprint_complete'] = 'PASS — commander-first Theft / Pirates / Treasure blueprint completed and audited.'
+              row['high_impact_candidate_triage_complete'] = 'PASS — project top-100 candidates and outside current alternatives reviewed; candidate exhaustion reached.'
+              row['swap_decision_ledger_complete'] = 'PASS — final 13-card current-cycle delta explicitly approved and frozen.'
+              row['combo_rules_interactions_verified'] = 'PASS — SHA-bound rules attestation and complete gate verified material theft, Pirate, Treasure, Roaming Throne, Thieving Amalgam, Jhoira, Arcane Heist, and opposing-graveyard interactions.'
+              row['consistency_test_complete'] = 'PASS — exact 100-card list, 99 distinct names, singleton compliance, whole-list audit, red-team review, and ZERO NEW MATERIAL IMPROVEMENTS closure verified.'
+              row['multiplayer_test_complete_or_reason_not_applicable'] = 'NOT APPLICABLE AS A FINALIZATION GATE — no gameplay win-rate claim required.'
+              row['final_gate_passed'] = 'YES'
+              row['final_list_hash'] = canonical_sha
+              row['user_approval_date'] = approval_date
+              row['refinement_status'] = 'APPROVED / LOCKED — current global-restart-2026-10-13 cycle'
+              note = (
+                  ' CURRENT-CYCLE RECONCILIATION 2026-10-14: authoritative state/current_deck_overrides.json records Don Andres APPROVED and LOCKED after explicit user approval. '
+                  f'Current-cycle canonical SHA-256: {canonical_sha}. Exact approved candidate: 100 cards, 99 distinct names, only Island repeats; B/R/U identity PASS; rules PASS; official Commander legality PASS; no project exceptions; complete gate errors 0. Frozen historical source exports remain unchanged.'
+              )
+              if canonical_sha not in (row.get('notes') or ''):
+                  row['notes'] = ((row.get('notes') or '').rstrip() + note).strip()
+              break
+          if not found:
+              raise SystemExit('Don Andres tracker row not found')
+
+          with tracker_path.open('w', newline='', encoding='utf-8') as f:
+              writer = csv.DictWriter(f, fieldnames=fieldnames, lineterminator='\n')
+              writer.writeheader()
+              writer.writerows(rows)
+          PY
+
+      - name: Commit lock state
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'grixis-lock-bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add state/current_deck_overrides.json refinement/Deck_Refinement_Tracker_2026-10-12.csv
+          if git diff --cached --quiet; then
+            echo 'State and tracker already synchronized.'
+            exit 0
+          fi
+          git commit -m 'Lock approved Don Andres deck in current cycle'
+          git push
