@@ -202,6 +202,19 @@
       "complete_gate_artifact": "refinement/verification/edea_possessed_sorceress_2026-10-14/gate_output/Edea_Possessed_Sorceress_2026-10-14_Complete_Gate.json",
       "whole_list_audit_artifact": "refinement/decisions/Edea_Possessed_Sorceress_Current_Cycle_Decisions_2026-10-14.md",
       "approved_list_artifact": "refinement/decklists/Edea_Possessed_Sorceress_Approved_2026-10-14.txt"
+    },
+    "Edward_Kenway": {
+      "approval_status": "APPROVED",
+      "lock_status": "LOCKED",
+      "final_gate_passed": true,
+      "user_approval_date": "2026-10-14",
+      "current_stage": "LOCKED",
+      "approved_list_sha256": "a08d3bc9c283415f1579c493eccb3febd7d10dea3777bf3dc50cfbc0dbed4019",
+      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit",
+      "approval_basis": "Explicit user approval of the exact SHA-bound Edward Kenway approval candidate after mandatory 99-slot whole-list audit, candidate exhaustion, adversarial red-team review, zero-new-material-improvement closure, fresh Oracle/rules verification, current official Commander legality verification, and complete fail-closed gate APPROVAL_READY with zero errors.",
+      "complete_gate_artifact": "refinement/verification/edward_kenway_2026-10-14/gate_output/Edward_Kenway_2026-10-14_Complete_Gate.json",
+      "whole_list_audit_artifact": "refinement/decisions/Edward_Kenway_Current_Cycle_Decisions_2026-10-14.md",
+      "approved_list_artifact": "refinement/decklists/Edward_Kenway_Approved_2026-10-14.txt"
     }
   }
 }
