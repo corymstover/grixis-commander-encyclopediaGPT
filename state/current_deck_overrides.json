@@ -229,6 +229,20 @@
       "whole_list_audit_artifact": "refinement/decisions/Evelyn_the_Covetous_Current_Cycle_Decisions_2026-10-14.md",
       "approval_record_artifact": "refinement/approvals/Evelyn_the_Covetous_Approved_2026-10-14.md",
       "approved_list_artifact": "refinement/decklists/Evelyn_the_Covetous_Approved_2026-10-14.txt"
+    },
+    "Fire_Lord_Azula": {
+      "approval_status": "APPROVED",
+      "lock_status": "LOCKED",
+      "final_gate_passed": true,
+      "user_approval_date": "2026-10-14",
+      "current_stage": "LOCKED",
+      "approved_list_sha256": "b6ef396641f2b5cfac0eb81fb494f21f3745e2a3fd47fa75d2eaadbdc34ddee5",
+      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + Complete Approval Gate v1",
+      "approval_basis": "Explicit user approval of the exact SHA-bound Fire Lord Azula approval candidate after mandatory 99-slot whole-list audit, cEDH natural-ceiling determination, candidate exhaustion, adversarial red-team review, zero-new-material-improvement closure, fresh Oracle/color-identity verification, current official Commander legality verification, independent rules verification, and complete fail-closed gate APPROVAL_READY with zero errors.",
+      "complete_gate_artifact": "refinement/verification/fire_lord_azula_2026-10-14/gate_output/Fire_Lord_Azula_2026-10-14_Complete_Gate.json",
+      "whole_list_audit_artifact": "refinement/decisions/Fire_Lord_Azula_Current_Cycle_Decisions_2026-10-14.md",
+      "approval_record_artifact": "refinement/approvals/Fire_Lord_Azula_Approved_2026-10-14.md",
+      "approved_list_artifact": "refinement/decklists/Fire_Lord_Azula_Approved_2026-10-14.txt"
     }
   }
 }
