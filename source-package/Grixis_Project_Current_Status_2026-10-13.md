@@ -1,6 +1,6 @@
 # Grixis Commander Encyclopedia — Current Status
 
-**Status snapshot:** 2026-10-13 UTC — FULL RESTART REVIEW: #1 ABADDON, #2 ADMIRAL BECKETT BRASS, #3 ADMIRAL BRASS, #4 ANHELO, #5 ASHAD AND #6 ASHNOD FRESHLY REVIEWED AND LOCKED; 56 DECKS REMAIN  
+**Status snapshot:** 2026-10-13 UTC — FULL RESTART REVIEW: DECKS #1–#7 FRESHLY REVIEWED AND LOCKED; 55 DECKS REMAIN  
 **Scope:** 62 commander-first Grixis decks  
 **Frozen authoritative list snapshot:** 2026-10-12  
 **Active work branch:** `refinement/campaign-2026-10-12`  
@@ -12,7 +12,7 @@ The 2026-10-12 baseline remains frozen and structurally verified. All 62 CSV/TXT
 
 The active refinement branch now has a reproducible, CI-verified exact draw-density analysis for Abaddon. Forge test infrastructure has advanced beyond the original source-only probe: its pinned release and 95 card-script name mappings were verified, the exact baseline and isolated test variant loaded in Commander mode, and a bounded 3+3 fixed-opponent pilot completed. However, the candidate comparison was **INCONCLUSIVE** because neither Mind's Desire nor Aurora Phoenix was cast in any of the six registered games. Do not reuse those games as card-performance evidence or rerun the same AI comparison. The relevant workflow is now manual-dispatch only.
 
-**CURRENT ACTIVE STATE (restart review checkpoint 2026-10-13): 6 of 62 decks are approved/locked after fresh full restart reviews; 56 remain unapproved/unlocked.** Deck #1 Abaddon the Despoiler hash `10c730fe3b1185c97e04abc8e354d59b132b8865081ee190b8981c55632d7e91`; Deck #2 Admiral Beckett Brass hash `af427fabb694276c5f72d1800d330f938642195fafec0b9894f5d948f9900f3d`; Deck #3 Admiral Brass, Unsinkable hash `a0ded044af9998345769af6ba1cf908c1ed4b46418df598ce6288e8b3f5aa942`; Deck #4 Anhelo, the Painter hash `7836e65849bd7e4847f452f016c2204b47289bd6fb86a08edbd53e9741c9c87b`; Deck #5 Ashad, the Lone Cyberman hash `3c53a84348f479371facae9ae6829c5389dc5cc2c700a33456e98b23e1950f1f`; Deck #6 Ashnod the Uncaring hash `25a17a39c0428e040a9b1014f853aec0c71ae785a53834ddcae229abe3699b01`. Prior-cycle lock/hash entries are historical evidence only and do not count toward this campaign. Next in tracker order is #7, Be'lakor, the Dark Master.
+**CURRENT ACTIVE STATE (restart review checkpoint 2026-10-13): 7 of 62 decks are approved/locked after fresh full restart reviews; 55 remain unapproved/unlocked.** Deck #1 Abaddon hash `10c730fe3b1185c97e04abc8e354d59b132b8865081ee190b8981c55632d7e91`; #2 Admiral Beckett Brass hash `af427fabb694276c5f72d1800d330f938642195fafec0b9894f5d948f9900f3d`; #3 Admiral Brass hash `a0ded044af9998345769af6ba1cf908c1ed4b46418df598ce6288e8b3f5aa942`; #4 Anhelo hash `7836e65849bd7e4847f452f016c2204b47289bd6fb86a08edbd53e9741c9c87b`; #5 Ashad hash `3c53a84348f479371facae9ae6829c5389dc5cc2c700a33456e98b23e1950f1f`; #6 Ashnod hash `25a17a39c0428e040a9b1014f853aec0c71ae785a53834ddcae229abe3699b01`; #7 Be'lakor hash `f48359f816498b386b085db60f0456576c8af9b055408685df71f0d1db448545`. Prior-cycle lock/hash entries are historical evidence only. Next in tracker order: #8, Bjorna // Cecily.
 
 ## Verified baseline and source integrity
 
@@ -264,6 +264,6 @@ At cycle launch, all 62 decks were unapproved and unlocked. Current per-deck app
 
 ## Full campaign restart and current checkpoint — 2026-10-13
 
-All previous-cycle approvals were reset to historical status. Fresh full reviews are now complete for **Deck #1 — Abaddon the Despoiler**, **Deck #2 — Admiral Beckett Brass**, **Deck #3 — Admiral Brass, Unsinkable**, **Deck #4 — Anhelo, the Painter**, **Deck #5 — Ashad, the Lone Cyberman**, and **Deck #6 — Ashnod the Uncaring**. Their current final-list hashes and artifacts are recorded in the active tracker. The frozen 2026-10-12 source baselines and all prior-cycle artifacts remain immutable.
+All previous-cycle approvals were reset to historical status. Fresh full reviews are now complete for **Decks #1–#7**, through **#7 — Be'lakor, the Dark Master**. Their current final-list hashes and artifacts are recorded in the active tracker. The frozen 2026-10-12 source baselines and all prior-cycle artifacts remain immutable.
 
-**Current active count: 6/62 approved and locked; 56 remain unapproved/unlocked. Next deck: #7 — Be'lakor, the Dark Master.** Do not begin substantive review of #7 until all Deck #6 artifacts and tracker fields are cross-checked. Continue strict one-deck-at-a-time in tracker order; a deck is auto-approved only after its fresh review passes every mandatory gate.
+**Current active count: 7/62 approved and locked; 55 remain unapproved/unlocked. Next deck: #8 — Bjorna, Nightfall Alchemist // Cecily, Haunted Mage.** Do not begin substantive review of #8 until all Deck #7 artifacts and tracker fields are cross-checked. Continue strict one-deck-at-a-time in tracker order; a deck is auto-approved only after its fresh review passes every mandatory gate.
