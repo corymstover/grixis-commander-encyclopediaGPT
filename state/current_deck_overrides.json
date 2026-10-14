@@ -10,7 +10,10 @@
       "current_stage": "LOCKED",
       "approved_list_sha256": "2d6203d274c25e67fb93acf5e6784dce4ee1e8999844a6ab032d9b15995acfbf",
       "quality_gate_version": "Deck Quality Gates v3",
-      "approval_basis": "Explicit user approval after successful current-cycle v3 re-verification."
+      "approval_basis": "Explicit user approval after successful current-cycle v3 re-verification.",
+      "retrospective_gate_status": "PASS",
+      "retrospective_gate_date": "2026-10-14",
+      "retrospective_gate_artifact": "refinement/verification/retrospective_1_to_8/Retrospective_1_to_8_Complete_Gate_Summary_2026-10-14.json"
     },
     "Admiral_Beckett_Brass": {
       "approval_status": "APPROVED",
@@ -20,7 +23,10 @@
       "current_stage": "LOCKED",
       "approved_list_sha256": "4ba5c483eb67b5f2647d375450adf9c2b7e79a036d0ba1866e58de8441bf3414",
       "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit",
-      "approval_basis": "Explicit user approval after completed whole-list optimization, current legality/Oracle verification, red-team review, and zero-new-material-improvement closure."
+      "approval_basis": "Explicit user approval after completed whole-list optimization, current legality/Oracle verification, red-team review, and zero-new-material-improvement closure.",
+      "retrospective_gate_status": "PASS",
+      "retrospective_gate_date": "2026-10-14",
+      "retrospective_gate_artifact": "refinement/verification/retrospective_1_to_8/Retrospective_1_to_8_Complete_Gate_Summary_2026-10-14.json"
     },
     "Admiral_Brass__Unsinkable": {
       "approval_status": "APPROVED",
@@ -30,7 +36,10 @@
       "current_stage": "LOCKED",
       "approved_list_sha256": "e66e3a59719401f41830e9938997a87a45a1b0dcaa0663b0ec7b44e10077dd39",
       "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit",
-      "approval_basis": "Explicit user approval of the whole-list approval candidate after structural, Oracle/rules/legality, strategic, candidate-exhaustion, and commander-identity review."
+      "approval_basis": "Explicit user approval of the whole-list approval candidate after structural, Oracle/rules/legality, strategic, candidate-exhaustion, and commander-identity review.",
+      "retrospective_gate_status": "PASS",
+      "retrospective_gate_date": "2026-10-14",
+      "retrospective_gate_artifact": "refinement/verification/retrospective_1_to_8/Retrospective_1_to_8_Complete_Gate_Summary_2026-10-14.json"
     },
     "Anhelo_the_Painter": {
       "approval_status": "APPROVED",
@@ -40,7 +49,10 @@
       "current_stage": "LOCKED",
       "approved_list_sha256": "d19d94b8a96fb27a760c7b7d9181221f74bd61642d1d1dd7644fc1c59c09839e",
       "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit",
-      "approval_basis": "Explicit user approval after full 99-slot audit, rules/combo verification, candidate exhaustion, red-team review, and zero-new-material-improvement closure."
+      "approval_basis": "Explicit user approval after full 99-slot audit, rules/combo verification, candidate exhaustion, red-team review, and zero-new-material-improvement closure.",
+      "retrospective_gate_status": "PASS",
+      "retrospective_gate_date": "2026-10-14",
+      "retrospective_gate_artifact": "refinement/verification/retrospective_1_to_8/Retrospective_1_to_8_Complete_Gate_Summary_2026-10-14.json"
     },
     "Ashad_the_Lone_Cyberman": {
       "approval_status": "APPROVED",
@@ -50,7 +62,10 @@
       "current_stage": "LOCKED",
       "approved_list_sha256": "087e34c2127859111fc08f8d9ec7d66cd3495537cc571d88e829fd27d2823e25",
       "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit",
-      "approval_basis": "Explicit user approval after corrected Oracle review, full 99-slot audit, candidate exhaustion, red-team review, and zero-new-material-improvement closure."
+      "approval_basis": "Explicit user approval after corrected Oracle review, full 99-slot audit, candidate exhaustion, red-team review, and zero-new-material-improvement closure.",
+      "retrospective_gate_status": "PASS",
+      "retrospective_gate_date": "2026-10-14",
+      "retrospective_gate_artifact": "refinement/verification/retrospective_1_to_8/Retrospective_1_to_8_Complete_Gate_Summary_2026-10-14.json"
     },
     "Ashnod_the_Uncaring": {
       "approval_status": "APPROVED",
@@ -60,7 +75,11 @@
       "current_stage": "LOCKED",
       "approved_list_sha256": "f574e4fad4749603294f53d2fe5536a159f884a8f1a8a7b6b1a22b3a637cf1cf",
       "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit",
-      "approval_basis": "Explicit user approval of the three current-cycle swaps and exact 100-card approved list; fresh retrospective Oracle/rules gate completed 2026-10-14 with stale Ashnod rules wording corrected separately."
+      "approval_basis": "Explicit user approval of the three current-cycle swaps and exact 100-card approved list; fresh retrospective Oracle/rules gate completed 2026-10-14 with stale Ashnod rules wording corrected separately.",
+      "retrospective_gate_status": "PASS",
+      "retrospective_gate_date": "2026-10-14",
+      "retrospective_gate_artifact": "refinement/verification/retrospective_1_to_8/Retrospective_1_to_8_Complete_Gate_Summary_2026-10-14.json",
+      "retrospective_gate_note": "PASS with documentation correction only; approved decklist unchanged."
     },
     "Be_lakor_the_Dark_Master": {
       "approval_status": "APPROVED",
@@ -70,7 +89,10 @@
       "current_stage": "LOCKED",
       "approved_list_sha256": "3abc951606a6db2b17ea2aceb471fc2ef4c55e2ef082d49d9140a83b2491155e",
       "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit",
-      "approval_basis": "Explicit user approval of Dream Devourer, Doom Whisperer, and Spark Double swaps; exact approved list preserved and fresh retrospective gate completed 2026-10-14."
+      "approval_basis": "Explicit user approval of Dream Devourer, Doom Whisperer, and Spark Double swaps; exact approved list preserved and fresh retrospective gate completed 2026-10-14.",
+      "retrospective_gate_status": "PASS",
+      "retrospective_gate_date": "2026-10-14",
+      "retrospective_gate_artifact": "refinement/verification/retrospective_1_to_8/Retrospective_1_to_8_Complete_Gate_Summary_2026-10-14.json"
     },
     "Cecily__Bjorna__Lutri": {
       "approval_status": "APPROVED",
@@ -80,7 +102,11 @@
       "current_stage": "LOCKED",
       "approved_list_sha256": "553838da88fe00974e74664633be5051c4f1a0879baa71de81ca9f880e5a6d28",
       "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit",
-      "approval_basis": "Explicit user approval of Reckless Fireweaver to Robe of the Archmagi; Lutri companion plus Trade Secrets and Yawgmoth's Bargain preserved as documented project exceptions; fresh retrospective gate completed 2026-10-14."
+      "approval_basis": "Explicit user approval of Reckless Fireweaver to Robe of the Archmagi; Lutri companion plus Trade Secrets and Yawgmoth's Bargain preserved as documented project exceptions; fresh retrospective gate completed 2026-10-14.",
+      "retrospective_gate_status": "PASS_PROJECT_EXCEPTION",
+      "retrospective_gate_date": "2026-10-14",
+      "retrospective_gate_artifact": "refinement/verification/retrospective_1_to_8/Retrospective_1_to_8_Complete_Gate_Summary_2026-10-14.json",
+      "retrospective_gate_note": "Project-valid under registered Lutri companion, Trade Secrets, and Yawgmoth's Bargain exceptions; not represented as officially Commander-legal without qualification."
     },
     "Cormela__Glamour_Thief": {
       "approval_status": "APPROVED",
