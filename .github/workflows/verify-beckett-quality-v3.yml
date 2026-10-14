@@ -1,16 +1,18 @@
 name: Verify Admiral Beckett Brass Deck Quality Gates v3
 on:
   push:
-    branches: ["refinement/beckett-v3-reverification-2026-10-13"]
+    branches: ["refinement/admiral-beckett-brass-v3-2026-10-13"]
     paths:
-      - "refinement/evidence/Admiral Beckett Brass_the_Despoiler_Deck_Quality_v3.json"
-      - "refinement/evidence/Admiral Beckett Brass_the_Despoiler_Deck_Quality_v3.md"
+      - "refinement/evidence/Admiral_Beckett_Brass_Deck_Quality_v3.json"
+      - "refinement/verification/Admiral_Beckett_Brass_v3_Review_2026-10-13.md"
+      - "refinement/decklists/Admiral_Beckett_Brass_v3_Proposed_2026-10-13.txt"
       - "grixis_pipeline/**"
       - "scripts/evaluate_deck_quality_packet.py"
   pull_request:
     paths:
-      - "refinement/evidence/Admiral Beckett Brass_the_Despoiler_Deck_Quality_v3.json"
-      - "refinement/evidence/Admiral Beckett Brass_the_Despoiler_Deck_Quality_v3.md"
+      - "refinement/evidence/Admiral_Beckett_Brass_Deck_Quality_v3.json"
+      - "refinement/verification/Admiral_Beckett_Brass_v3_Review_2026-10-13.md"
+      - "refinement/decklists/Admiral_Beckett_Brass_v3_Proposed_2026-10-13.txt"
       - "grixis_pipeline/**"
       - "scripts/evaluate_deck_quality_packet.py"
 permissions:
@@ -22,8 +24,8 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: {python-version: "3.12"}
-      - name: Evaluate Admiral Beckett Brass v3 evidence packet
-        run: PYTHONPATH=. python scripts/evaluate_deck_quality_packet.py refinement/evidence/Admiral Beckett Brass_the_Despoiler_Deck_Quality_v3.json --output /tmp/beckett-v3-report.json
+      - name: Evaluate Beckett v3 evidence packet
+        run: PYTHONPATH=. python scripts/evaluate_deck_quality_packet.py refinement/evidence/Admiral_Beckett_Brass_Deck_Quality_v3.json --output /tmp/beckett-v3-report.json
       - name: Run deck quality regression tests
         run: python -m unittest tests.test_epistemic_gates tests.test_generic_runner tests.test_dependency_invalidation -v
       - name: Verify frozen baseline
