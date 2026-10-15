@@ -1,0 +1,104 @@
+{
+  "status": "PASS",
+  "deck_sha256": "f36346d4ba965db1e098b0aa92d27a968ee3a14c74a2b9401c1a5357f83c025c",
+  "checked_at_utc": "2026-10-15T01:06:00Z",
+  "sources": [
+    "Current Oracle text for Kraum, Ludevic's Opus and Tevesh Szat, Doom of Fools",
+    "Current Oracle text for Contamination, Damping Sphere, Skullclamp, Phyrexian Tower, Necropotence, Overburden, Tangle Wire, Trinisphere, Chalice of the Void, Karn, the Great Creator, Helm of Obedience, Leyline of the Void, Dauthi Voidwalker, Underworld Breach, Lion's Eye Diamond, Brain Freeze, Tainted Pact, and the candidate's commander-dependent free spells",
+    "Magic Comprehensive Rules — partner commanders, replacement effects, state-based actions, triggered abilities, alternative costs, cost modification, mana abilities, and continuous effects",
+    "Current Commander rules concerning cards outside the game; Karn's -2 is not treated as a functional sideboard tutor in ordinary Commander",
+    "Fresh current-cycle Oracle cache and exact-list card verification are independently enforced by the complete approval gate"
+  ],
+  "interactions": [
+    {
+      "name": "Partner commanders and combined color identity",
+      "status": "PASS",
+      "conclusion": "Kraum and Tevesh Szat both have partner and may be the two commanders together. Their combined color identity is blue, black, and red, establishing the candidate's Grixis color identity."
+    },
+    {
+      "name": "Tevesh Szat plus Contamination",
+      "status": "PASS",
+      "conclusion": "Tevesh's +2 creates two 0/1 black Thrull creature tokens. A Thrull may be sacrificed to Contamination's upkeep requirement, allowing the lock to be sustained without consuming a nontoken card. Contamination changes mana produced by lands to black instead of the land's normal type and amount; artifact mana is unaffected, creating a deliberate parity break."
+    },
+    {
+      "name": "Tevesh Szat plus Skullclamp",
+      "status": "PASS",
+      "conclusion": "Equipping Skullclamp to a 0/1 Thrull gives it +1/-1, making it 1/0. It is put into its owner's graveyard as a state-based action, and Skullclamp's death trigger draws two cards. This is a direct commander-generated draw engine."
+    },
+    {
+      "name": "Tevesh Szat plus Phyrexian Tower / Culling the Weak / Diabolic Intent",
+      "status": "PASS",
+      "conclusion": "Tevesh's Thrulls are legal creature sacrifices for Phyrexian Tower, Culling the Weak, and Diabolic Intent. This converts the commander's token production into mana or tutoring and is a principal parity engine in the candidate."
+    },
+    {
+      "name": "Damping Sphere and Kraum's second-spell trigger",
+      "status": "PASS",
+      "conclusion": "Damping Sphere increases the cost of successive spells but does not prohibit a player from casting a second spell. If an opponent successfully casts their second spell in a turn, Kraum still triggers and draws a card. This preserves Kraum's text better than Arcane Laboratory's hard one-spell-per-turn cap."
+    },
+    {
+      "name": "Damping Sphere and Ancient Tomb",
+      "status": "PASS",
+      "conclusion": "While Damping Sphere is on the battlefield, a land tapped for two or more mana produces one colorless mana instead. Ancient Tomb therefore loses its normal two-mana output while Sphere remains; artifact mana is not affected by that ability. This is an acknowledged sequencing cost, not an overlooked nonbo."
+    },
+    {
+      "name": "Overburden and Tevesh tokens",
+      "status": "PASS",
+      "conclusion": "Overburden triggers when a player puts a nontoken creature onto the battlefield. Tevesh's Thrull tokens do not trigger it, so the commander produces board material without paying Overburden's land-return cost. Casting Kraum normally will trigger Overburden once, which is an accepted cost."
+    },
+    {
+      "name": "Tangle Wire with Tevesh tokens",
+      "status": "PASS",
+      "conclusion": "Tevesh's Thrulls can be tapped to satisfy Tangle Wire without spending mana or real cards. On the controller's upkeep, the controller also controls Tangle Wire's fading trigger and tap trigger and may order them so a fade counter is removed before the tap requirement resolves, reducing the number of permanents that must be tapped."
+    },
+    {
+      "name": "Trinisphere and free/alternative-cost interaction",
+      "status": "PASS",
+      "conclusion": "An untapped Trinisphere applies after alternative costs and other cost modifications and can require a spell to cost at least three mana even if it would otherwise be cast for no mana. The candidate therefore cannot assume Force of Will, Fierce Guardianship, Deadly Rollick, Deflecting Swat, Pact of Negation, Mindbreak Trap, or zero-mana artifacts remain mana-free through Trinisphere. This is an intentional prison sequencing constraint."
+    },
+    {
+      "name": "Chalice of the Void sequencing",
+      "status": "PASS",
+      "conclusion": "Chalice checks the mana value of a cast spell, not the amount of mana actually paid. Setting Chalice to zero or one can counter several of the candidate's own fast-mana, tutor, or interaction spells. The deck must deploy those pieces before the relevant Chalice value or choose a different counter count."
+    },
+    {
+      "name": "Karn, the Great Creator plus Wishclaw Talisman",
+      "status": "PASS",
+      "conclusion": "After Wishclaw Talisman's activated ability resolves, an opponent gains control of it. While Karn remains under our control, Karn's static ability prevents opponents from activating abilities of artifacts they control, so that opponent cannot activate Wishclaw. Karn's -2 outside-game ability is not relied upon because ordinary Commander provides no functional sideboard/wishboard by default."
+    },
+    {
+      "name": "Helm of Obedience plus Leyline of the Void or Dauthi Voidwalker",
+      "status": "PASS",
+      "conclusion": "Leyline of the Void and Dauthi Voidwalker replace an opponent's cards going to the graveyard with exile. With either replacement effect applying to the target opponent, Helm of Obedience does not satisfy its stop condition based on cards being put into that graveyard and can exile that opponent's entire library."
+    },
+    {
+      "name": "Underworld Breach plus Lion's Eye Diamond plus Brain Freeze",
+      "status": "PASS",
+      "conclusion": "With sufficient graveyard resources and no prohibitive prison piece stopping the sequence, Underworld Breach permits repeated escape of Lion's Eye Diamond and Brain Freeze; LED supplies mana and Brain Freeze's storm copies replenish graveyard resources. Damping Sphere, Trinisphere, Chalice at relevant values, or similar locks can impede this line, so the candidate must remove, sacrifice, or sequence around its own prison pieces before attempting the Breach finish. Grafdigger's Cage was cut specifically because it directly prohibited the Breach plan."
+    },
+    {
+      "name": "Contamination with Blood Moon and artifact mana",
+      "status": "PASS",
+      "conclusion": "Blood Moon can turn nonbasic lands into Mountains, but Contamination can still replace the mana those lands would produce with black mana. Contamination does not alter mana produced by artifacts, so the candidate's artifact acceleration remains a primary parity breaker."
+    },
+    {
+      "name": "Blood Moon plus Back to Basics",
+      "status": "PASS",
+      "conclusion": "Blood Moon changes nonbasic land types but does not grant the Basic supertype. Nonbasic lands that become Mountains therefore remain nonbasic and are still subject to Back to Basics's untap restriction. This can intensify the lock for both sides and must be sequenced around our own nonbasics."
+    },
+    {
+      "name": "Necropotence with commander draw and Breach",
+      "status": "PASS",
+      "conclusion": "Necropotence skips only the normal draw step; it does not prevent cards drawn from Kraum, Tevesh, Mystic Remora, Rhystic Study, Skullclamp, or other effects. Its discard replacement exiles discarded cards, which can reduce Underworld Breach fuel, so hand-size and wheel sequencing matter."
+    },
+    {
+      "name": "Tainted Pact singleton condition",
+      "status": "PASS",
+      "conclusion": "The exact candidate contains 100 distinct card names, including two distinct partner commanders, so Tainted Pact cannot be forced to stop because a second copy of a revealed card name appears in the deck."
+    },
+    {
+      "name": "Commander-dependent free spells and Mox Amber",
+      "status": "PASS",
+      "conclusion": "Controlling either partner satisfies effects that ask whether we control a commander, including Fierce Guardianship, Deflecting Swat, and Deadly Rollick. Mox Amber can produce a color represented among legendary creatures and planeswalkers we control: Kraum provides blue/red and Tevesh provides black."
+    }
+  ]
+}
