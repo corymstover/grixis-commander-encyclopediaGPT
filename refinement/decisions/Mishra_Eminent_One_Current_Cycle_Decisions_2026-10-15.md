@@ -3,7 +3,7 @@
 Date: 2026-10-15  
 Cycle: `global-restart-2026-10-13`  
 Candidate SHA-256: `ca94785fa43094a0053aac5c87e517c9cfaafb34c3baf9b3eccb067a167dd1a0`  
-Status: **APPROVAL_READY — NOT APPROVED / NOT LOCKED**
+Status: **APPROVED / LOCKED**
 
 ## Source reconciliation
 
@@ -93,4 +93,6 @@ Natural ceiling: **Power Bracket 4 — Optimized**. A small self-tagged cEDH pop
 
 ## Approval state
 
-This exact SHA-bound candidate is **APPROVAL_READY — NOT APPROVED / NOT LOCKED**. It must not be marked approved or locked until the user explicitly approves it.
+The user explicitly approved this exact SHA-bound candidate on 2026-10-15. The canonical approved artifact is `refinement/decklists/Mishra_Eminent_One_Approved_2026-10-15.txt` and the approval record is `refinement/approvals/Mishra_Eminent_One_Approved_2026-10-15.md`.
+
+This deck is **APPROVED / LOCKED** for the current refinement cycle and must not be revised, reopened, or replaced unless the user explicitly requests it.
