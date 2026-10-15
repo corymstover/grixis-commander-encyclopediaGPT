@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "deck_sha256": "65fbfe3eb64551ad6f5723243fcd62a286610c360e24bd700b584252e1da6365",
+  "checked_at_utc": "2026-10-15T21:57:33.943326+00:00",
+  "sources": [
+    "https://magic.wizards.com/en/banned-restricted-list — current Commander banned list",
+    "Current_Cycle_Oracle_Cache.jsonl generated/refreshed from current Scryfall metadata"
+  ],
+  "unexpected_banned_cards": [],
+  "project_exceptions_required": [],
+  "finding": "Every Sedris candidate card is officially Commander-legal in the refreshed current-cycle Oracle cache; no project exception is required."
+}

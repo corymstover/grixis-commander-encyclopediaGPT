@@ -1,0 +1,12 @@
+{
+  "deck_id": "Sedris__the_Traitor_King",
+  "display_name": "Sedris, the Traitor King",
+  "decklist_path": "refinement/decklists/Sedris_the_Traitor_King_Approval_Ready_2026-10-15.txt",
+  "expected_deck_sha256": "65fbfe3eb64551ad6f5723243fcd62a286610c360e24bd700b584252e1da6365",
+  "baseline_source_sha256": "d5ace1901781908b64e000c9de08f763548b9933958e7dfa6cd721892ad20192",
+  "output_dir": "refinement/verification/sedris_2026-10-15/gate_output",
+  "output_stem": "Sedris_the_Traitor_King_2026-10-15",
+  "rules_attestation_path": "refinement/verification/sedris_2026-10-15/gate_output/Sedris_the_Traitor_King_Rules_Attestation.json",
+  "official_legality_attestation_path": "refinement/verification/sedris_2026-10-15/gate_output/Sedris_the_Traitor_King_Official_Legality_Attestation.json",
+  "max_cache_age_hours": 72
+}

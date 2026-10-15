@@ -1,0 +1,23 @@
+{
+  "generated_at_utc": "2026-10-15T21:57:33.976780+00:00",
+  "deck_id": "Sedris__the_Traitor_King",
+  "decklist_path": "refinement/decklists/Sedris_the_Traitor_King_Approval_Ready_2026-10-15.txt",
+  "deck_sha256": "65fbfe3eb64551ad6f5723243fcd62a286610c360e24bd700b584252e1da6365",
+  "baseline_path": null,
+  "baseline_source_sha256": "d5ace1901781908b64e000c9de08f763548b9933958e7dfa6cd721892ad20192",
+  "count": 100,
+  "distinct_names": 99,
+  "commander_color_identity": [
+    "B",
+    "R",
+    "U"
+  ],
+  "cache_generated_at_utc": "2026-10-15T21:57:27.035481+00:00",
+  "cache_sha256": "f9dd36371174b8ff69db8076b16af93e5aad4bdef25fd46f91e3570025f54253",
+  "project_exceptions": [],
+  "rules_gate": "PASS",
+  "official_legality_gate": "PASS",
+  "errors": [],
+  "overall_result": "APPROVAL_READY",
+  "approval_state": "NOT_APPROVED — explicit user approval still required"
+}

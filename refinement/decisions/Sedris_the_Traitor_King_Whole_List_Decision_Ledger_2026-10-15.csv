@@ -1,0 +1,99 @@
+card,baseline_qty,keep_qty,cut_qty,decision,rationale
+Ancient Tomb,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Animate Dead,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Arcane Signet,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Archon of Cruelty,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Ashnod's Altar,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Blightstep Pathway // Searstep Pathway,1,0,1,CUT,CUT — replace with untapped typed BR dual Badlands.
+Blood Crypt,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Bloodstained Mire,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Bojuka Bog,1,0,1,CUT,CUT — replace tapped utility land with fetchable Island/Swamp that surveils to feed Sedris.
+Buried Alive,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Burning-Rune Demon,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+"Chainer, Nightmare Adept",1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+City of Brass,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Clearwater Pathway // Murkwater Pathway,1,0,1,CUT,CUT — replace with premium fetchland Flooded Strand.
+Command Tower,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Convergence of Dominion,1,1,0,KEEP,KEEP — reduces Sedris-granted {2}{B} unearth to {B}; one-mana floor makes extra generic reducers redundant.
+Corpse Connoisseur,1,1,0,KEEP,KEEP — creature tutor-to-graveyard that can itself be unearthed.
+Counterspell,1,0,1,CUT,CUT — Force of Will better protects tap-out Sedris and unearth/reanimation turns.
+Cyclonic Rift,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Deadeye Navigator,1,1,0,KEEP,KEEP — blink rescue for unearthed creatures plus retained Peregrine Drake mana engine.
+Deadly Rollick,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Deflecting Swat,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Demonic Tutor,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Dimir Signet,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Dread Return,1,1,0,KEEP,KEEP — can be milled and cast from the graveyard without Sedris; flashback converts spare/unearthed bodies into permanent reanimation.
+Entomb,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+"Etali, Primal Storm",1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Fabled Passage,1,0,1,CUT,CUT — basic-only fetch sequencing loses to Marsh Flats in the current typed-dual manabase.
+Faithless Looting,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Feed the Swarm,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Feldon of the Third Path,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Fellwar Stone,1,0,1,CUT,CUT — lowest-synergy generic rock; replace with burst commander acceleration while retaining dense colored rocks/fixing.
+Fierce Guardianship,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Flayer of the Hatebound,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Frantic Search,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Gamble,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Gifts Ungiven,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Goblin Bombardment,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Grave Titan,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Island,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Izzet Signet,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Jeska's Will,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+"Jin-Gitaxias, Core Augur",1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Lightning Greaves,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Likeness Looter,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Living Death,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Luxury Suite,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Mana Confluence,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Mana Drain,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Mana Vault,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Massacre Wurm,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Metamorphosis Fanatic,1,1,0,KEEP,KEEP — powerful reanimation ETB and excellent Sedris unearth target.
+Morphic Pool,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Mountain,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Mystic Remora,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Necromancy,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+"Obeka, Brute Chronologist",1,1,0,KEEP,KEEP — core end-the-turn protection against resolved unearth delayed exile triggers.
+"Otawara, Soaring City",1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Panharmonicon,1,1,0,KEEP,KEEP — doubles the deck's dense creature ETB tutor/removal/reanimation/value package.
+Peregrine Drake,1,1,0,KEEP,KEEP — part of retained Deadeye Navigator mana engine and valuable untap ETB.
+Phyrexian Tower,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Polluted Delta,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Rakdos Signet,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Raucous Theater,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Reanimate,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Rhystic Study,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+River Kelpie,1,1,0,KEEP,KEEP — draws whenever a permanent enters from a graveyard and when graveyard spells are cast.
+Riverglide Pathway // Lavaglide Pathway,1,0,1,CUT,CUT — replace with premium fetchland Misty Rainforest.
+Rune-Scarred Demon,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Scalding Tarn,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Sepulchral Primordial,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+"Sheoldred, Whispering One",1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Sneak Attack,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+"Sokenzan, Crucible of Defiance",1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Sol Ring,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Steam Vents,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Sundial of the Infinite,1,1,0,KEEP,KEEP — repeatable end-the-turn control for unearth delayed exile triggers.
+Swamp,2,2,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+"Takenuma, Abandoned Mire",1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Talisman of Creativity,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Talisman of Dominance,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Talisman of Indulgence,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Teferi's Veil,1,1,0,KEEP,KEEP — attacking unearthed creatures phase out before the next end-step exile can remove them.
+Terror of the Peaks,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Toxic Deluge,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Training Center,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Twilight Diviner,1,1,0,KEEP,KEEP — graveyard-entry payoff that creates one lasting creature-copy token each turn.
+Underground Sea,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Underworld Breach,1,0,1,CUT,CUT — generic recursion whose escape fuel consumes Sedris's graveyard resource; replace with repeatable self-mill/card selection.
+Unmarked Grave,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+"Urborg, Tomb of Yawgmoth",1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Vampiric Tutor,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Victimize,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Vile Entomber,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Volcanic Island,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Watery Grave,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Windfall,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."
+Xander's Lounge,1,1,0,KEEP,"KEEP — retained after commander-first unearth/reanimation, interaction, curve, mana and identity audit."

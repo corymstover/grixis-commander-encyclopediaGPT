@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "deck_sha256": "65fbfe3eb64551ad6f5723243fcd62a286610c360e24bd700b584252e1da6365",
+  "checked_at_utc": "2026-10-15T21:57:33.943326+00:00",
+  "sources": [
+    "Magic Comprehensive Rules — unearth, delayed triggered abilities, replacement effects, phasing, ending the turn, blink/new objects, triggered abilities and alternative costs (current 2026 rules)",
+    "Current Oracle text captured in refinement/metadata_audit/Current_Cycle_Oracle_Cache.jsonl",
+    "Current Wizards release-note rulings for unearth/end-the-turn interactions"
+  ],
+  "interactions": [
+    {
+      "name": "Sedris-granted unearth",
+      "status": "PASS",
+      "finding": "Each creature card in Sedris's controller's graveyard has unearth {2}{B}. Unearth is an activated ability usable only as a sorcery; it returns the card with haste and creates a delayed beginning-of-next-end-step exile instruction plus a leave-the-battlefield exile replacement effect."
+    },
+    {
+      "name": "Convergence of Dominion",
+      "status": "PASS",
+      "finding": "While Sedris is controlled, Convergence reduces activated abilities of cards in that player's graveyard by {2}. Sedris-granted unearth {2}{B} therefore costs {B}; the one-mana floor prevents Embalmer's Tools from reducing it further."
+    },
+    {
+      "name": "Obeka / Sundial timing",
+      "status": "PASS",
+      "finding": "If the unearth delayed exile trigger has already triggered at the beginning of the end step and is on the stack, ending the turn exiles that trigger from the stack. It does not trigger again on a later end step. Ending the turn before the delayed trigger exists would not accomplish the same thing."
+    },
+    {
+      "name": "Teferi's Veil",
+      "status": "PASS",
+      "finding": "An attacking creature phases out at end of combat. A phased-out unearthed permanent is unavailable to the delayed exile instruction when that instruction resolves later; lethal combat damage is dealt before the end-of-combat phase-out."
+    },
+    {
+      "name": "Deadeye Navigator rescue",
+      "status": "PASS",
+      "finding": "Deadeye can exile and immediately return a paired unearthed creature. Unearth's leave-the-battlefield replacement does not replace an effect already trying to exile the permanent; the returned card is a new object and is no longer tracked by the old unearth delayed trigger/replacement effect."
+    },
+    {
+      "name": "River Kelpie",
+      "status": "PASS",
+      "finding": "A creature returned by unearth enters the battlefield from a graveyard and therefore triggers River Kelpie's permanent-from-graveyard draw ability."
+    },
+    {
+      "name": "Twilight Diviner",
+      "status": "PASS",
+      "finding": "An unearthed creature entered from a graveyard, so Twilight Diviner can create a token copy of one qualifying creature, subject to its once-each-turn trigger restriction. The token is not the unearthed card and is not subject to that card's unearth exile instruction."
+    },
+    {
+      "name": "Ripples of Undeath",
+      "status": "PASS",
+      "finding": "At the beginning of the controller's first main phase it mills three cards, then the controller may pay {1} and 3 life to put one of those cards into hand. Cards not selected remain in the graveyard as Sedris resources."
+    },
+    {
+      "name": "Deadeye Navigator + Peregrine Drake",
+      "status": "PASS",
+      "finding": "With Deadeye paired to Peregrine Drake, paying {1}{U} blinks Drake and its ETB untaps up to five lands. With sufficient mana-producing lands this is a repeatable positive-mana loop; the existing combo package is preserved rather than replaced."
+    },
+    {
+      "name": "Panharmonicon ETB package",
+      "status": "PASS",
+      "finding": "The deck retains numerous creature ETB triggers—including tutor, removal, reanimation and value effects—that can trigger an additional time under Panharmonicon when applicable."
+    },
+    {
+      "name": "Grim Monolith role",
+      "status": "PASS",
+      "finding": "Grim Monolith supplies three colorless mana toward six-mana Sedris. No separate Power Artifact/Basalt/Rings-style Monolith combo package is introduced by this candidate."
+    },
+    {
+      "name": "Undercity Sewers",
+      "status": "PASS",
+      "finding": "Undercity Sewers has Island and Swamp land types, is fetchable by the candidate's relevant fetchlands, and surveils 1 when it enters, allowing a creature to be placed into the graveyard for Sedris."
+    }
+  ]
+}
