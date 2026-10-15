@@ -3,7 +3,7 @@
 Date: 2026-10-15  
 Cycle: `global-restart-2026-10-13`  
 Deck: #40 of 62  
-Status: working decision closeout; not user approval
+Status: **APPROVED / LOCKED** — explicit user approval received 2026-10-15
 
 ## Final 17-card delta from authoritative FINAL baseline
 
@@ -84,3 +84,12 @@ No challenger produced a material improvement without a larger opportunity cost 
 **ZERO NEW MATERIAL IMPROVEMENTS.**
 
 **Decision closeout: PASS — candidate is APPROVAL_READY evidence only, not approved/locked.**
+
+## Approval closeout
+
+- Explicit user approval received: **2026-10-15**
+- Canonical approved SHA-256: `bc36908fb2f848dfd69407a317d7da5811532dba7e3b4e7be89a2905d901c6f1`
+- Exact approved artifact: `refinement/decklists/Nekusar_the_Mindrazer_Approved_2026-10-15.txt`
+- Current-cycle state: **APPROVED / LOCKED**
+- Quality gate: **Deck Quality Gates v3 + mandatory whole-list audit + approval-ready verification**
+- Next unlocked deck in tracker order: **Nicol Bolas (index 40 / deck 41 of 62)**.

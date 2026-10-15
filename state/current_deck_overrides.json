@@ -530,6 +530,21 @@
       "decision_closeout_artifact": "refinement/decisions/Nathan_Drake_Treasure_Hunter_Candidate_Decisions_2026-10-15.md",
       "approval_record_artifact": "refinement/approvals/Nathan_Drake_Treasure_Hunter_Approved_2026-10-15.md",
       "approved_list_artifact": "refinement/decklists/Nathan_Drake_Treasure_Hunter_Approved_2026-10-15.txt"
+    },
+    "Nekusar__the_Mindrazer": {
+      "approval_status": "APPROVED",
+      "lock_status": "LOCKED",
+      "final_gate_passed": true,
+      "user_approval_date": "2026-10-15",
+      "current_stage": "LOCKED",
+      "approved_list_sha256": "bc36908fb2f848dfd69407a317d7da5811532dba7e3b4e7be89a2905d901c6f1",
+      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + approval-ready verification",
+      "approval_basis": "Explicit user approval of the exact SHA-bound Nekusar, the Mindrazer approval-ready candidate after authoritative FINAL baseline reconciliation, mandatory 99-slot whole-list audit, candidate exhaustion, commander-necessity review, adversarial Oracle/rules/trigger-arithmetic red-team, Ghyrson/Solphim correction, mana-base red-team, zero-new-material-improvement closure, exact structural verification, singleton/color-identity verification, and current official Commander legality checkpoint.",
+      "whole_list_audit_artifact": "refinement/verification/Nekusar_the_Mindrazer_Whole_List_Audit_2026-10-15.md",
+      "verification_artifact": "refinement/verification/Nekusar_the_Mindrazer_Approval_Ready_Verification_2026-10-15.md",
+      "decision_closeout_artifact": "refinement/decisions/Nekusar_the_Mindrazer_Candidate_Decisions_2026-10-15.md",
+      "approval_record_artifact": "refinement/approvals/Nekusar_the_Mindrazer_Approved_2026-10-15.md",
+      "approved_list_artifact": "refinement/decklists/Nekusar_the_Mindrazer_Approved_2026-10-15.txt"
     }
   }
 }
