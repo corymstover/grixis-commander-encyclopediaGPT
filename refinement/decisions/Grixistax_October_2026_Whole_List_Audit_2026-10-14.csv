@@ -1,0 +1,112 @@
+card_name,decision,whole_list_audit_reason
+Ancient Tomb,KEEP,"KEEP — two-mana acceleration powers early stax/commanders; Damping Sphere can temporarily reduce it, an acceptable sequencing cost."
+Arcane Laboratory,CUT,CUT — hard one-spell cap suppresses Kraum's opponent-second-spell draw trigger and makes the Breach/LED/Brain Freeze route nonfunctional while present. Damping Sphere preserves anti-storm pressure without a hard cap.
+"Ashiok, Dream Render",KEEP,KEEP — asymmetrical search denial plus graveyard reset; core prison interaction.
+Back to Basics,KEEP,KEEP — attacks greedy cEDH mana while artifact acceleration and basics provide parity tools.
+Badlands,KEEP,KEEP — premium fetchable Grixis fixing.
+Beseech the Mirror,KEEP,KEEP — compact tutor; bargain can consume expendable artifacts/tokens when advantageous.
+Black Market Connections,KEEP,KEEP — recurring cards/Treasure/creature production helps break resource locks and produces sacrifice fodder for Tevesh/Contamination.
+Blood Crypt,KEEP,KEEP — fetchable untapped fixing.
+Blood Moon,KEEP,KEEP — high-impact nonbasic denial; artifact mana and sequencing provide parity.
+Bloodstained Mire,KEEP,KEEP — premium fetch fixing and Breach graveyard fuel.
+Brain Freeze,KEEP,KEEP — compact Underworld Breach win piece and situational stack/graveyard tool.
+Chain of Vapor,KEEP,KEEP — one-mana catch-all release valve that can also remove our own lock before a winning turn when needed.
+Chalice of the Void,KEEP,KEEP — scalable stack lock; requires sequencing around our own low-cost spells but is identity-defining.
+Chrome Mox,KEEP,KEEP — fast colored mana that operates through land locks.
+City of Brass,KEEP,KEEP — unconditional Grixis fixing.
+Command Tower,KEEP,KEEP — unconditional commander-color fixing.
+Culling the Weak,KEEP,KEEP — Tevesh Thrulls convert directly into explosive black mana; strong commander-specific acceleration.
+Cursed Totem,KEEP,KEEP — shuts down creature activated abilities while neither commander relies on them.
+Cyclonic Rift,KEEP,KEEP — flexible emergency reset and asymmetrical late-game release valve.
+Dauthi Voidwalker,KEEP,KEEP — graveyard denial plus stolen-spell upside; also functions with Helm of Obedience as a void replacement effect.
+Deadly Rollick,KEEP,KEEP — free creature/planeswalker interaction when either commander is controlled.
+Defense Grid,CUT,CUT — generic combo-turn protection rather than a persistent commander-first prison piece; it also suppresses opponents' ability to police other players. Reallocated to flexible free interaction.
+Deflecting Swat,KEEP,KEEP — free protection/interaction with either commander.
+Demonic Tutor,KEEP,KEEP — best-rate unconditional tutor.
+Diabolic Intent,KEEP,KEEP — Tevesh Thrulls turn the sacrifice cost into commander-enabled tutoring.
+Exotic Orchard,CUT,"CUT — replaced by Flooded Strand for deterministic fetch fixing, graveyard fuel, and access to basics/typed duals before land locks."
+Fierce Guardianship,KEEP,KEEP — free stack protection with either commander.
+Flusterstorm,KEEP,KEEP — efficient protection against stack-based wins.
+Force of Will,KEEP,KEEP — essential free interaction at cEDH ceiling.
+Gamble,KEEP,KEEP — one-mana tutor; Breach can mitigate discard outcomes.
+Gemstone Caverns,KEEP,KEEP — pregame acceleration and color fixing.
+Grafdigger's Cage,CUT,CUT — directly prevents casting cards from graveyards and therefore shuts off our own Underworld Breach line; too severe an internal conflict.
+Grim Monolith,KEEP,KEEP — fast artifact mana that breaks parity under land denial.
+Helm of Obedience,KEEP,KEEP — prison-native compact win with Leyline of the Void/Dauthi Voidwalker.
+Imperial Seal,KEEP,KEEP — efficient tutor supporting lock or win assembly.
+Island,KEEP,KEEP — basic blue source remains functional under Back to Basics and pre-Blood Moon sequencing.
+Jeska's Will,KEEP,KEEP — commanders unlock both modes; mana burst helps deploy lock plus protection or pivot to a finish.
+"Karn, the Great Creator",KEEP,"KEEP — static ability turns off opposing artifact activated abilities. Official Commander does not provide a sideboard by default, so the -2 outside-game ability is not relied upon."
+Kederekt Parasite,CUT,CUT — conditional red-permanent requirement and damage-only payoff; does not deny resources or materially exploit either commander.
+"Kraum, Ludevic's Opus",KEEP,COMMANDER — Kraum supplies haste/evasive pressure and card advantage whenever an opponent manages a second spell; candidate favors taxes over hard one-spell caps so this trigger remains live.
+Leyline of the Void,KEEP,KEEP — zero-mana-start graveyard lock and Helm combo half.
+Lion's Eye Diamond,KEEP,KEEP — core Underworld Breach combo/acceleration piece.
+Lotus Petal,KEEP,KEEP — colored fast mana through land locks and Breach recursion utility.
+Luxury Suite,CUT,CUT — replaced by Marsh Flats; fetchland has broader color selection and improves Breach graveyard density.
+Magus of the Moon,KEEP,KEEP — redundant Blood Moon effect on a body Tevesh can cash in later if necessary.
+Mana Confluence,KEEP,KEEP — unconditional Grixis fixing.
+Mana Drain,KEEP,KEEP — hard counter plus mana swing that can accelerate commanders/locks.
+Mana Vault,KEEP,KEEP — fast artifact mana; critical parity breaker.
+Mental Misstep,KEEP,KEEP — free interaction against one-mana tutors/acceleration/protection.
+Misty Rainforest,KEEP,KEEP — fetch fixing; basic access; graveyard fuel.
+Morphic Pool,KEEP,KEEP — efficient multiplayer dual.
+Mountain,KEEP,KEEP — basic red source for post-lock sequencing.
+Mox Amber,KEEP,KEEP — either commander turns it into colored fast mana; strong partner-pair synergy.
+Mox Diamond,KEEP,KEEP — fast colored mana and land-to-graveyard conversion for Breach.
+Mox Opal,KEEP,KEEP — artifact density reliably supports metalcraft; operates through land locks.
+Mystic Remora,KEEP,KEEP — premier low-cost cEDH draw engine.
+Mystical Tutor,KEEP,KEEP — one-mana access to interaction; wheels; Breach support; tutors.
+"Narset, Parter of Veils",KEEP,KEEP — asymmetrical draw restriction plus Wheel/Windfall lock pressure.
+"Nekusar, the Mindrazer",CUT,CUT — five-mana symmetric extra-draw engine is slow at this ceiling and gives opponents cards before converting them into pressure.
+Notion Thief,KEEP,KEEP — asymmetrical draw replacement that converts Wheel/Windfall into hand denial plus cards.
+Opposition Agent,KEEP,KEEP — flash search punishment/denial aligned with the prison plan.
+Orcish Bowmasters,KEEP,KEEP — efficient draw punishment and interaction; Army token can become sacrifice/tap fodder.
+"Otawara, Soaring City",KEEP,KEEP — land-slot interaction and blue source with minimal opportunity cost.
+Overburden,KEEP,KEEP — triggers only on nontoken creatures; Tevesh's Thrulls bypass it; creature decks lose land tempo while our token engine does not.
+Pact of Negation,KEEP,KEEP — zero-mana protection for decisive windows; used with care under Chalice/Trinisphere.
+Phyrexian Tyranny,CUT,CUT — symmetrical trigger taxes our own Kraum/Tevesh/Rhystic/Remora draw plan; anti-commander despite wheel flavor.
+Polluted Delta,KEEP,KEEP — premium Grixis fetch fixing and graveyard fuel.
+Psychosis Crawler,CUT,CUT — five-mana payoff-only card with no lock function; immediate protection; or acceptable cEDH rate.
+Pyroblast,KEEP,KEEP — one-mana blue interaction.
+"Ragavan, Nimble Pilferer",KEEP,KEEP — early Treasure generation helps break mana locks and pressures life/tutors.
+Red Elemental Blast,KEEP,KEEP — one-mana blue interaction.
+Rhystic Study,KEEP,KEEP — premier cEDH card-advantage engine under constrained mana.
+Scalding Tarn,KEEP,KEEP — premium fetch fixing and graveyard fuel.
+"Sheoldred, the Apocalypse",KEEP,KEEP — compact draw punishment plus life stabilization; immediately synergizes with wheels without gifting cards.
+Sol Ring,KEEP,KEEP — premium artifact acceleration and parity breaker.
+Static Orb,KEEP,KEEP — severe untap denial; artifact mana/low curve and sequencing mitigate symmetry.
+Steam Vents,KEEP,KEEP — fetchable Grixis fixing.
+Swamp,KEEP,KEEP — basic black source remains functional through nonbasic hate.
+Swan Song,KEEP,KEEP — efficient one-mana protection against noncreature wins/removal.
+Tainted Pact,KEEP,KEEP — instant-speed tutor; 100 distinct names preserve full one-card-name uniqueness.
+Talisman of Creativity,KEEP,KEEP — colored artifact mana functions through land locks.
+Talisman of Dominance,KEEP,KEEP — colored artifact mana functions through land locks.
+Tangle Wire,KEEP,KEEP — early temporal lock; Tevesh Thrulls can absorb tap requirements without costing real cards.
+"Tevesh Szat, Doom of Fools",KEEP,COMMANDER — Tevesh is the principal parity engine: +2 makes two Thrulls for Contamination/Culling/Diabolic Intent/Skullclamp/Tangle Wire; +1 converts expendable permanents into cards.
+Torpor Orb,KEEP,KEEP — shuts down creature ETB engines while the commanders' principal abilities remain unaffected.
+Toxic Deluge,KEEP,KEEP — efficient scalable creature reset.
+Training Center,CUT,CUT — replaced by Arid Mesa; fetchland improves pre-lock sequencing and color access.
+Trinisphere,KEEP,KEEP — high-impact spell tax that does not hard-cap Kraum's trigger; sequencing required with our free/cheap spells.
+Underground Sea,KEEP,KEEP — premium fetchable Grixis fixing.
+Underworld Breach,KEEP,KEEP — compact secondary cEDH win/recursion engine; candidate removes Grafdigger's Cage; its clearest self-lock.
+"Urborg, Tomb of Yawgmoth",CUT,CUT — can improve opposing mana and becomes redundant with Contamination; Phyrexian Tower converts Tevesh Thrulls into BB.
+Vampiric Tutor,KEEP,KEEP — instant one-mana tutor.
+Verdant Catacombs,KEEP,KEEP — fetch fixing and graveyard fuel.
+Volcanic Island,KEEP,KEEP — premium fetchable Grixis fixing.
+Watery Grave,KEEP,KEEP — fetchable Grixis fixing.
+Wheel of Fortune,KEEP,KEEP — compact hand reset that becomes oppressive with Narset/Notion Thief/Bowmasters/Sheoldred.
+Windfall,KEEP,KEEP — wheel effect with the same asymmetrical denial package.
+Winter Orb,KEEP,KEEP — severe mana denial with artifact acceleration as a parity breaker.
+Wishclaw Talisman,KEEP,KEEP — low-cost tutor; Karn can prevent an opponent who receives it from activating it while Karn remains in play.
+Wooded Foothills,KEEP,KEEP — fetch fixing and graveyard fuel.
+An Offer You Can't Refuse,ADD,ADD — one-mana broad noncreature interaction; emergency flexibility outweighs the Treasure drawback and current exact-pair control/cEDH evidence supports the rate.
+Arid Mesa,ADD,ADD — fetches typed duals/basic Mountain as appropriate; improves pre-lock fixing and Breach fuel.
+Contamination,ADD,ADD — direct Tevesh engine. Thrulls pay the upkeep sacrifice while the enchantment converts land mana to black; artifact mana helps us break parity.
+Damping Sphere,ADD,ADD — replaces Arcane Laboratory with a cheaper anti-storm/second-spell tax. Opponents may still cast a second spell; Kraum's trigger remains live; unlike Arcane Lab it does not impose a hard one-spell cap.
+Dark Ritual,ADD,ADD — cEDH-rate acceleration into Tevesh; tutors; or prison pieces.
+Flooded Strand,ADD,ADD — fetch fixing; basic access; and graveyard fuel.
+Force of Negation,ADD,ADD — free protection against noncreature wins/removal on opponents' turns; improves survival without consuming prison slots.
+Marsh Flats,ADD,ADD — fetch fixing; basic access; and graveyard fuel.
+Mindbreak Trap,ADD,ADD — free answer to stack chains and counter-war situations; particularly valuable while playing a slower prison game.
+Phyrexian Tower,ADD,ADD — direct Tevesh parity engine; converts expendable Thrulls into BB while occupying a land slot.
+Skullclamp,ADD,ADD — direct Tevesh draw engine: equipping a 0/1 Thrull makes it 1/0; it dies to state-based actions; Clamp draws two cards.
