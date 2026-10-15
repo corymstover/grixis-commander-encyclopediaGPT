@@ -1,0 +1,92 @@
+{
+  "status": "PASS",
+  "deck_sha256": "f52cfc2043c5599ea5c35e553f06647bf018344ee73482b96e375122b9f29e8b",
+  "checked_at_utc": "2026-10-15T04:00:00Z",
+  "sources": [
+    "Current Oracle text and published rulings for Mai and Zuko, The Blue Spirit, Katara, Waterbending Master, Boiling Rock Rioter, Unwinding Clock, Thought Monitor, The Fire Nation Drill, Uthros Research Craft, Ally Encampment, Urza's Saga, Mana Vault, Basalt Monolith, Roaming Throne, and the retained combo pieces",
+    "Magic Comprehensive Rules — timing permissions, triggered abilities, firebending mana duration, affinity, Station, Aura/token/permanent-copy handling where relevant, and land/artifact search restrictions",
+    "Fresh current-cycle Oracle cache and exact-list verification are independently enforced by the complete approval gate"
+  ],
+  "interactions": [
+    {
+      "name": "Mai and Zuko flash permission",
+      "status": "PASS",
+      "conclusion": "While Mai and Zuko are on the battlefield, their controller may cast Ally spells and artifact spells as though those spells had flash. The permission changes timing only and does not reduce costs or bypass other casting restrictions."
+    },
+    {
+      "name": "Firebending 3 and combat casting",
+      "status": "PASS",
+      "conclusion": "Mai and Zuko's firebending 3 triggers when they attack and adds three red mana. That mana persists through the combat phase until combat ends. Because the commander grants flash to Ally and artifact spells, the firebending mana can be spent on those spells during combat."
+    },
+    {
+      "name": "The Blue Spirit combat draw",
+      "status": "PASS",
+      "conclusion": "The Blue Spirit draws when a nontoken creature controlled by its controller enters during combat. A normal Ally creature or artifact creature cast during combat through Mai and Zuko qualifies. A permanent-spell copy that resolves as a token does not qualify because the resulting permanent is a token."
+    },
+    {
+      "name": "Katara, Waterbending Master experience engine",
+      "status": "PASS",
+      "conclusion": "Katara gives its controller an experience counter whenever that player casts a spell during an opponent's turn. The counter is placed on the player and remains if Katara leaves. Mai and Zuko's flash permission for Allies and artifacts materially increases the number of spells that can trigger Katara."
+    },
+    {
+      "name": "Boiling Rock Rioter graveyard and attack permissions",
+      "status": "PASS",
+      "conclusion": "Boiling Rock Rioter may tap an untapped Ally its controller controls to exile any target card from a graveyard. Its attack trigger permits casting an Ally spell only from among cards its controller owns that were exiled with that specific Rioter. Its firebending 1 also produces combat-only red mana under the normal firebending rules."
+    },
+    {
+      "name": "Unwinding Clock with artifact mana",
+      "status": "PASS",
+      "conclusion": "Unwinding Clock untaps artifacts during each other player's untap step. Mana Vault and Basalt Monolith state that they do not untap during their controller's untap step; that restriction does not prohibit Unwinding Clock from untapping them during another player's untap step. This enables repeated opponent-turn artifact mana for the commander's flash plan."
+    },
+    {
+      "name": "Thought Monitor timing and affinity",
+      "status": "PASS",
+      "conclusion": "Thought Monitor is an artifact creature and therefore may be cast at flash timing through Mai and Zuko. Affinity for artifacts reduces only the generic portion of its casting cost; its blue mana requirement remains. Its enters ability draws two cards normally when it resolves and enters."
+    },
+    {
+      "name": "The Fire Nation Drill as flash interaction",
+      "status": "PASS",
+      "conclusion": "The Fire Nation Drill is an artifact spell, so Mai and Zuko can permit it to be cast at instant-speed timing. On entry its controller may tap it; when they do, its reflexive trigger can destroy a target creature with power 4 or less. Its activated ability can make opponents' permanents lose hexproof and indestructible until end of turn."
+    },
+    {
+      "name": "Uthros Research Craft station threshold",
+      "status": "PASS",
+      "conclusion": "Station may be activated only as a sorcery. Mai and Zuko are a 3/5 creature, so tapping them once to Station Uthros Research Craft adds three charge counters and immediately satisfies the 3+ threshold. Once active, Uthros triggers whenever its controller casts an artifact spell, including artifact spells cast on opponents' turns through Mai and Zuko."
+    },
+    {
+      "name": "Ally Encampment commander protection",
+      "status": "PASS",
+      "conclusion": "Ally Encampment may spend colored mana on Ally spells, including Mai and Zuko. Its activated ability can sacrifice the land to return target Ally its controller controls to its owner's hand. Returning the commander to hand this way is legal and can avoid a future command-zone tax if the card is later cast from hand."
+    },
+    {
+      "name": "Urza's Saga chapter III search restriction",
+      "status": "PASS",
+      "conclusion": "Urza's Saga chapter III searches for an artifact card with mana cost exactly {0} or {1}; it is not a generic mana-value-0-or-1 search. The exact eligible targets in the candidate are determined from current Oracle mana-cost data by the fresh gate/cache context."
+    },
+    {
+      "name": "Roaming Throne and Ally triggers",
+      "status": "PASS",
+      "conclusion": "Roaming Throne may choose Ally as it enters and becomes an Ally in addition to its other creature types. Its triggered-ability replacement causes qualifying triggered abilities of other Allies controlled by its controller to trigger an additional time; Mai and Zuko's firebending trigger is therefore doubled while both permanents are present."
+    },
+    {
+      "name": "Basalt Monolith plus Rings of Brighthearth",
+      "status": "PASS",
+      "conclusion": "With Basalt Monolith untapped and sufficient mana to begin the loop, activating its untap ability and copying that activated ability with Rings of Brighthearth allows the Monolith to be untapped twice while using an intermediate tap for three colorless mana, netting colorless mana across iterations. Walking Ballista converts arbitrarily large colorless mana into lethal damage."
+    },
+    {
+      "name": "Bolas's Citadel / Sensei's Divining Top / Aetherflux Reservoir",
+      "status": "PASS",
+      "conclusion": "The retained package supports repeated Top casting/drawing from the top of the library through Bolas's Citadel while Aetherflux Reservoir accumulates life from spells cast. The line is subject to normal life-payment, top-card, and interruption constraints and is not represented as unconditional without its stated pieces."
+    },
+    {
+      "name": "Underworld Breach / Lion's Eye Diamond / Brain Freeze",
+      "status": "PASS",
+      "conclusion": "The retained Breach line can repeatedly escape Lion's Eye Diamond and Brain Freeze when the graveyard and mana preconditions are met, using Brain Freeze to replenish cards and LED to supply mana. The line remains interaction-sensitive and requires sufficient graveyard material to continue."
+    },
+    {
+      "name": "Color identity and commander structure",
+      "status": "PASS",
+      "conclusion": "Mai and Zuko establish blue-black-red color identity. The candidate is constructed only from cards within U/B/R or colorless identity; exact current identities are independently resolved by the complete approval gate."
+    }
+  ]
+}
