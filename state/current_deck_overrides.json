@@ -313,6 +313,20 @@
       "whole_list_audit_artifact": "refinement/decisions/Jeleva_Nephalia_s_Scourge_Current_Cycle_Decisions_2026-10-14.md",
       "approval_record_artifact": "refinement/approvals/Jeleva_Nephalia_s_Scourge_Approved_2026-10-14.md",
       "approved_list_artifact": "refinement/decklists/Jeleva_Nephalia_s_Scourge_Approved_2026-10-14.txt"
+    },
+    "Kefka__Court_Mage": {
+      "approval_status": "APPROVED",
+      "lock_status": "LOCKED",
+      "final_gate_passed": true,
+      "user_approval_date": "2026-10-14",
+      "current_stage": "LOCKED",
+      "approved_list_sha256": "cd36192fedda7a4f54570fb8b8e4605147b40f9254e6985729097fc998f17b03",
+      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + Complete Approval Gate v1",
+      "approval_basis": "Explicit user approval of the exact SHA-bound revised Kefka candidate after mandatory 99-slot whole-list audit, contemporary cEDH comparison, adversarial second-pass review, three-card final correction, zero-new-material-improvement closure, fresh Oracle/color-identity verification, current official Commander legality verification, independent rules verification, and complete fail-closed gate APPROVAL_READY with zero errors.",
+      "complete_gate_artifact": "refinement/verification/kefka_court_mage_2026-10-14/gate_output/Kefka_Court_Mage_2026-10-14_Complete_Gate.json",
+      "whole_list_audit_artifact": "refinement/decisions/Kefka_Court_Mage_Current_Cycle_Decisions_2026-10-14.md",
+      "approval_record_artifact": "refinement/approvals/Kefka_Court_Mage_Approved_2026-10-14.md",
+      "approved_list_artifact": "refinement/decklists/Kefka_Court_Mage_Approved_2026-10-14.txt"
     }
   }
 }
