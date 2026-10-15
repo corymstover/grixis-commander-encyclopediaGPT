@@ -115,7 +115,7 @@
       "user_approval_date": "2026-10-14",
       "current_stage": "LOCKED",
       "approved_list_sha256": "80f4bdef2b8b140aeae23775cfdf87fda81e7215038b8db9b1746c806f366e0b",
-      "quality_gate_version": "Complete Approval Gate v1 — fresh Oracle, legality, rules, and structural verification",
+      "quality_gate_version": "Complete Approval Gate v1 \u2014 fresh Oracle, legality, rules, and structural verification",
       "approval_basis": "Explicit user approval after the SHA-bound complete gate returned APPROVAL_READY: exactly 100 cards, 100 distinct names, Grixis color identity, fresh per-card Oracle verification, current official Commander legality, independent rules verification, zero project exceptions, and zero gate errors."
     },
     "Crosis__the_Purger": {
@@ -125,7 +125,7 @@
       "user_approval_date": "2026-10-14",
       "current_stage": "LOCKED",
       "approved_list_sha256": "a59150c323aa1e21cbda65291a3b172d08ecc3b83266b708768f4e14f0b07ec1",
-      "quality_gate_version": "Complete Approval Gate v1 — fresh Oracle, legality, rules, and structural verification",
+      "quality_gate_version": "Complete Approval Gate v1 \u2014 fresh Oracle, legality, rules, and structural verification",
       "approval_basis": "Explicit user approval after the SHA-bound complete gate returned APPROVAL_READY: exactly 100 cards, Grixis color identity, fresh per-card Oracle verification, current official Commander legality, independent rules verification, zero project exceptions, and zero unresolved gate errors.",
       "complete_gate_artifact": "refinement/verification/crosis_2026-10-14/gate_output/Crosis_the_Purger_2026-10-14_Complete_Gate.json"
     },
@@ -136,7 +136,7 @@
       "user_approval_date": "2026-10-14",
       "current_stage": "LOCKED",
       "approved_list_sha256": "4c221e5be0439338823ef621cd91706da8d405129cf6f5a41de36a83b875ef3b",
-      "quality_gate_version": "Complete Approval Gate v1 — fresh Oracle, legality, rules, and structural verification",
+      "quality_gate_version": "Complete Approval Gate v1 \u2014 fresh Oracle, legality, rules, and structural verification",
       "approval_basis": "Explicit user approval after the SHA-bound complete gate returned APPROVAL_READY: exactly 100 cards, Grixis color identity, fresh per-card Oracle verification, current official Commander legality, independent rules verification, zero project exceptions, and zero unresolved gate errors.",
       "complete_gate_artifact": "refinement/verification/cult_of_skaro_2026-10-14/gate_output/Cult_of_Skaro_2026-10-14_Complete_Gate.json"
     },
@@ -350,7 +350,7 @@
       "current_stage": "LOCKED",
       "approved_list_sha256": "f36346d4ba965db1e098b0aa92d27a968ee3a14c74a2b9401c1a5357f83c025c",
       "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + Complete Approval Gate v1",
-      "approval_basis": "Explicit user approval of the exact SHA-bound Grixistax — Kraum, Ludevic's Opus // Tevesh Szat, Doom of Fools approval candidate after mandatory whole-list audit, contemporary cEDH ceiling review, candidate exhaustion, adversarial red-team review, zero-new-material-improvement closure, fresh Oracle/color-identity verification, current official Commander legality verification, independent rules verification, and complete fail-closed gate APPROVAL_READY with zero errors.",
+      "approval_basis": "Explicit user approval of the exact SHA-bound Grixistax \u2014 Kraum, Ludevic's Opus // Tevesh Szat, Doom of Fools approval candidate after mandatory whole-list audit, contemporary cEDH ceiling review, candidate exhaustion, adversarial red-team review, zero-new-material-improvement closure, fresh Oracle/color-identity verification, current official Commander legality verification, independent rules verification, and complete fail-closed gate APPROVAL_READY with zero errors.",
       "complete_gate_artifact": "refinement/verification/grixistax_october_2026_2026-10-14/gate_output/Grixistax_October_2026_2026-10-14_Complete_Gate.json",
       "whole_list_audit_artifact": "refinement/decisions/Grixistax_October_2026_Current_Cycle_Decisions_2026-10-14.md",
       "approval_record_artifact": "refinement/approvals/Grixistax_October_2026_Approved_2026-10-14.md",
@@ -678,7 +678,7 @@
       "current_stage": "LOCKED",
       "approved_list_sha256": "72a814e6ae1153507c9c1469a7792043b2e5c055d9e5fcd9f6cfcf7781e287b0",
       "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + targeted approval-ready verification",
-      "approval_basis": "Explicit user approval of the exact SHA-bound Sauron, Lord of the Rings approval-ready candidate after authoritative FINAL baseline reconciliation, mandatory 99-slot whole-list audit, commander-casting-speed review, reanimation-chain review, candidate exhaustion, adversarial red-team review, mana-base review, Ring/Nazgûl preservation check, targeted current Oracle refresh, rules-interaction verification, current official Commander legality verification, exact structural verification, singleton/deck-construction verification, and U/B/R color-identity verification.",
+      "approval_basis": "Explicit user approval of the exact SHA-bound Sauron, Lord of the Rings approval-ready candidate after authoritative FINAL baseline reconciliation, mandatory 99-slot whole-list audit, commander-casting-speed review, reanimation-chain review, candidate exhaustion, adversarial red-team review, mana-base review, Ring/Nazg\u00fbl preservation check, targeted current Oracle refresh, rules-interaction verification, current official Commander legality verification, exact structural verification, singleton/deck-construction verification, and U/B/R color-identity verification.",
       "whole_list_audit_artifact": "refinement/verification/Sauron_Lord_of_the_Rings_Whole_List_Audit_2026-10-15.md",
       "verification_artifact": "refinement/verification/Sauron_Lord_of_the_Rings_Approval_Ready_Verification_2026-10-15.md",
       "complete_gate_artifact": "refinement/verification/sauron_lotr_2026-10-15/gate_output/Sauron_Lord_of_the_Rings_2026-10-15_Complete_Gate.json",
@@ -694,7 +694,7 @@
       "current_stage": "LOCKED",
       "approved_list_sha256": "fab194f69a6e15b83679c1419f88ba6fdd56cd9527946cb94a6d8efe23a7dfc8",
       "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + targeted approval-ready verification",
-      "approval_basis": "Explicit user approval of the exact SHA-bound Sauron, the Dark Lord approval-ready candidate after authoritative FINAL baseline reconciliation, mandatory 99-slot whole-list audit, commander-first Army/Ring/Wraith review, candidate exhaustion, adversarial red-team review, mana-base review, targeted current Oracle refresh, rules-interaction verification, current official Commander legality verification, exact structural verification, Nazgûl deck-construction verification, and U/B/R color-identity verification.",
+      "approval_basis": "Explicit user approval of the exact SHA-bound Sauron, the Dark Lord approval-ready candidate after authoritative FINAL baseline reconciliation, mandatory 99-slot whole-list audit, commander-first Army/Ring/Wraith review, candidate exhaustion, adversarial red-team review, mana-base review, targeted current Oracle refresh, rules-interaction verification, current official Commander legality verification, exact structural verification, Nazg\u00fbl deck-construction verification, and U/B/R color-identity verification.",
       "whole_list_audit_artifact": "refinement/verification/Sauron_the_Dark_Lord_Whole_List_Audit_2026-10-15.md",
       "verification_artifact": "refinement/verification/Sauron_the_Dark_Lord_Approval_Ready_Verification_2026-10-15.md",
       "complete_gate_artifact": "refinement/verification/sauron_dark_lord_2026-10-15/gate_output/Sauron_the_Dark_Lord_2026-10-15_Complete_Gate.json",
@@ -733,6 +733,21 @@
       "decision_closeout_artifact": "refinement/decisions/Solkanar_the_Swamp_King_Candidate_Decisions_2026-10-15.md",
       "approval_record_artifact": "refinement/approvals/Solkanar_the_Swamp_King_Approved_2026-10-15.md",
       "approved_list_artifact": "refinement/decklists/Solkanar_the_Swamp_King_Approved_2026-10-15.txt"
+    },
+    "Sol_kanar_the_Tainted": {
+      "approval_status": "APPROVED",
+      "lock_status": "LOCKED",
+      "final_gate_passed": true,
+      "user_approval_date": "2026-10-15",
+      "current_stage": "LOCKED",
+      "approved_list_sha256": "72a3b14e93d884d98397e000fe45df430beb538a106097a69dfc2491da8d7a58",
+      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + targeted approval-ready verification",
+      "approval_basis": "Explicit user approval of exact SHA-bound approval-ready candidate after complete current-cycle verification.",
+      "verification_artifact": "refinement/verification/Solkanar_the_Tainted_Approval_Ready_Verification_2026-10-15.md",
+      "complete_gate_artifact": "refinement/verification/solkanar_tainted_2026-10-15/gate_output/Solkanar_the_Tainted_2026-10-15_Complete_Gate.json",
+      "decision_closeout_artifact": "refinement/decisions/Solkanar_the_Tainted_Candidate_Decisions_2026-10-15.md",
+      "approval_record_artifact": "refinement/approvals/Solkanar_the_Tainted_Approved_2026-10-15.md",
+      "approved_list_artifact": "refinement/decklists/Solkanar_the_Tainted_Approved_2026-10-15.txt"
     }
   }
 }

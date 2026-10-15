@@ -3,7 +3,7 @@
 Date: 2026-10-15  
 Cycle: `global-restart-2026-10-13`  
 Deck: #53 of 62  
-Status: working decision closeout; not user approval
+Status: **APPROVED / LOCKED** — explicit user approval received 2026-10-15
 
 Exact candidate SHA-256: `72a3b14e93d884d98397e000fe45df430beb538a106097a69dfc2491da8d7a58`
 
@@ -71,3 +71,10 @@ After the full baseline reconciliation, commander-first audit, current EDHREC co
 **ZERO NEW MATERIAL IMPROVEMENTS.**
 
 **Decision result: PASS — fresh Oracle/legality/rules complete gate and explicit user approval remain required.**
+
+## Approval closeout
+
+- Explicit user approval received: **2026-10-15**
+- Canonical approved SHA-256: `72a3b14e93d884d98397e000fe45df430beb538a106097a69dfc2491da8d7a58`
+- Current-cycle state: **APPROVED / LOCKED**
+- Next unlocked: **Tetsuo Umezawa (index 53 / deck 54 of 62)**.
