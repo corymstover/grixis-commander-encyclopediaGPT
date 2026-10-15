@@ -1,0 +1,15 @@
+{
+  "deck_id": "Grixistax___October_2026",
+  "display_name": "Grixistax — Kraum, Ludevic's Opus // Tevesh Szat, Doom of Fools",
+  "decklist_path": "refinement/decklists/Grixistax_October_2026_Approval_Candidate_2026-10-14.txt",
+  "expected_deck_sha256": "f36346d4ba965db1e098b0aa92d27a968ee3a14c74a2b9401c1a5357f83c025c",
+  "baseline_path": "refinement/verification/grixistax_october_2026_2026-10-14/Grixistax_October_2026_Current_Cycle_Baseline_2026-10-14.txt",
+  "expected_baseline_sha256": "79f7d444bea3616c497ddb922b350fc4cdbf51723bfe34fc601be1127f5ccf5e",
+  "baseline_source_sha256": "ac02379cf1803f317213db663129889ccae6dee9258f76607ec5420a03d1aacd",
+  "rules_attestation_path": "refinement/verification/grixistax_october_2026_2026-10-14/Grixistax_October_2026_Rules_Attestation.json",
+  "official_legality_attestation_path": "refinement/verification/grixistax_october_2026_2026-10-14/Grixistax_October_2026_Official_Legality_Attestation.json",
+  "output_dir": "refinement/verification/grixistax_october_2026_2026-10-14/gate_output",
+  "output_stem": "Grixistax_October_2026_2026-10-14",
+  "max_cache_age_hours": 72,
+  "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + Complete Approval Gate v1"
+}
