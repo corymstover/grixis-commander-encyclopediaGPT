@@ -545,6 +545,21 @@
       "decision_closeout_artifact": "refinement/decisions/Nekusar_the_Mindrazer_Candidate_Decisions_2026-10-15.md",
       "approval_record_artifact": "refinement/approvals/Nekusar_the_Mindrazer_Approved_2026-10-15.md",
       "approved_list_artifact": "refinement/decklists/Nekusar_the_Mindrazer_Approved_2026-10-15.txt"
+    },
+    "Nicol_Bolas": {
+      "approval_status": "APPROVED",
+      "lock_status": "LOCKED",
+      "final_gate_passed": true,
+      "user_approval_date": "2026-10-15",
+      "current_stage": "LOCKED",
+      "approved_list_sha256": "e47fdd5c31dce2d5b05e8fa8c217fe94caa16ef150057f98748254fc3c841617",
+      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + approval-ready verification",
+      "approval_basis": "Explicit user approval of exact SHA-bound Nicol Bolas candidate after full current-cycle gates passed.",
+      "whole_list_audit_artifact": "refinement/verification/Nicol_Bolas_Whole_List_Audit_2026-10-15.md",
+      "verification_artifact": "refinement/verification/Nicol_Bolas_Approval_Ready_Verification_2026-10-15.md",
+      "decision_closeout_artifact": "refinement/decisions/Nicol_Bolas_Candidate_Decisions_2026-10-15.md",
+      "approval_record_artifact": "refinement/approvals/Nicol_Bolas_Approved_2026-10-15.md",
+      "approved_list_artifact": "refinement/decklists/Nicol_Bolas_Approved_2026-10-15.txt"
     }
   }
 }

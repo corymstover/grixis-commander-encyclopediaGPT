@@ -3,7 +3,7 @@
 Date: 2026-10-15  
 Cycle: `global-restart-2026-10-13`  
 Deck: #41 of 62  
-Status: working decision closeout; not user approval
+Status: **APPROVED / LOCKED** — explicit user approval received 2026-10-15
 
 ## Final 29-card delta from authoritative FINAL baseline
 
@@ -90,3 +90,11 @@ No challenger produced a material improvement without a larger cost in commander
 **ZERO NEW MATERIAL IMPROVEMENTS.**
 
 **Decision closeout: PASS — candidate is APPROVAL_READY evidence only, not approved/locked.**
+
+## Approval closeout
+
+- Explicit user approval received: **2026-10-15**
+- Canonical approved SHA-256: `e47fdd5c31dce2d5b05e8fa8c217fe94caa16ef150057f98748254fc3c841617`
+- Exact approved artifact: `refinement/decklists/Nicol_Bolas_Approved_2026-10-15.txt`
+- Current-cycle state: **APPROVED / LOCKED**
+- Next unlocked deck: **Nicol Bolas, the Ravager // Nicol Bolas, the Arisen (#42)**.
