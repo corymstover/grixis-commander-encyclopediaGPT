@@ -1,0 +1,12 @@
+{
+  "deck_id": "Sol_kanar_the_Tainted",
+  "display_name": "Sol'Kanar the Tainted",
+  "decklist_path": "refinement/decklists/Solkanar_the_Tainted_Approval_Ready_2026-10-15.txt",
+  "expected_deck_sha256": "72a3b14e93d884d98397e000fe45df430beb538a106097a69dfc2491da8d7a58",
+  "baseline_source_sha256": "5abacbb9c53c8906a621feab900383e9892b6c43d6296b4e8db2af30ab74e68b",
+  "output_dir": "refinement/verification/solkanar_tainted_2026-10-15/gate_output",
+  "output_stem": "Solkanar_the_Tainted_2026-10-15",
+  "rules_attestation_path": "refinement/verification/solkanar_tainted_2026-10-15/gate_output/Solkanar_the_Tainted_Rules_Attestation.json",
+  "official_legality_attestation_path": "refinement/verification/solkanar_tainted_2026-10-15/gate_output/Solkanar_the_Tainted_Official_Legality_Attestation.json",
+  "max_cache_age_hours": 72
+}

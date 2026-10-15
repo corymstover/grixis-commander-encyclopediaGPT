@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "deck_sha256": "72a3b14e93d884d98397e000fe45df430beb538a106097a69dfc2491da8d7a58",
+  "checked_at_utc": "2026-10-15T22:21:18.170154+00:00",
+  "sources": [
+    "Magic Comprehensive Rules — modal triggered abilities, source self-reference, zone changes/new objects, control changes, targets, and state-triggered abilities (current 2026 rules)",
+    "Current Oracle text captured in refinement/metadata_audit/Current_Cycle_Oracle_Cache.jsonl",
+    "Current Wizards/Scryfall rulings for Sol'Kanar the Tainted, blink/control-change cards, and transferred losing-game permanents"
+  ],
+  "interactions": [
+    {
+      "name": "Sol'Kanar mode history and modal timing",
+      "status": "PASS",
+      "finding": "Sol'Kanar's beginning-of-end-step ability is modal; its mode is chosen as the triggered ability is put on the stack. The set of previously chosen modes is associated with that battlefield object. If Sol'Kanar leaves and returns, it is a new object with no modes previously chosen for its new existence."
+    },
+    {
+      "name": "Thassa / Conjurer's Closet — reuse first three modes",
+      "status": "PASS",
+      "finding": "At the beginning of the end step, Sol'Kanar and Thassa or Conjurer's Closet can trigger together. For a draw/drain/damage mode, put the blink trigger below Sol'Kanar's trigger: the chosen Sol'Kanar mode resolves first, then the blink returns Sol'Kanar as a new object with all modes available again."
+    },
+    {
+      "name": "Blinking before the fourth-mode trigger resolves",
+      "status": "PASS",
+      "finding": "When the fourth mode is chosen, putting a Thassa/Closet blink trigger above Sol'Kanar's trigger can exile and return Sol'Kanar first. The returned permanent is a new object. The older triggered ability's self-reference does not identify that new object, so it cannot exile and give away the returned Sol'Kanar."
+    },
+    {
+      "name": "Fourth mode itself resets Sol'Kanar",
+      "status": "PASS",
+      "finding": "If the fourth mode resolves normally, it exiles Sol'Kanar and returns it under an opponent's control. The returned permanent is a new object, so its chosen-mode history is reset even though an opponent controls it."
+    },
+    {
+      "name": "Planar Incision recovery",
+      "status": "PASS",
+      "finding": "Planar Incision can target an artifact or creature regardless of controller, then returns that card to the battlefield under its owner's control. It can therefore recover an opponent-controlled Sol'Kanar while also making it a new object with reset mode history."
+    },
+    {
+      "name": "Homeward Path and Coveted Falcon recovery",
+      "status": "PASS",
+      "finding": "A pure control change does not make a permanent a new object. Homeward Path or Coveted Falcon can regain an owned Sol'Kanar, but those control changes do not themselves reset modes. If Sol'Kanar had been transferred by its fourth mode, that exile-and-return already created a fresh object before the later recovery."
+    },
+    {
+      "name": "Immortal Coil gift kill",
+      "status": "PASS",
+      "finding": "Immortal Coil's current controller loses the game when that controller's graveyard is empty. After Coil is transferred to an opponent, Bojuka Bog or Rakdos Charm can exile that player's graveyard and cause Coil's state-triggered losing-game ability to trigger. Once that trigger is on the stack, adding a card to the graveyard does not remove that trigger."
+    },
+    {
+      "name": "Fateful Handoff + Immortal Coil",
+      "status": "PASS",
+      "finding": "Fateful Handoff targets an artifact or creature you control, draws cards equal to its mana value, then an opponent gains control of it. Immortal Coil has mana value 4, so a resolving Handoff targeting Coil draws four cards and then transfers Coil."
+    },
+    {
+      "name": "Demonic Pact transfer",
+      "status": "PASS",
+      "finding": "Demonic Pact's previously chosen modes remain associated with the same enchantment through ordinary control changes. The deck can take safe modes, then transfer that same object so the recipient inherits the remaining mode history, including the losing-game mode when it is the only choice left."
+    },
+    {
+      "name": "Captive Audience",
+      "status": "PASS",
+      "finding": "Captive Audience enters under the control of an opponent of its owner's choice. Its beginning-of-upkeep trigger is controlled by its current controller, who chooses one of the modes not previously chosen for that same enchantment object."
+    },
+    {
+      "name": "Greed's Gambit donation",
+      "status": "PASS",
+      "finding": "Greed's Gambit front-loads its entry value for its controller, while its later upkeep and leaves-the-battlefield liabilities are controlled by whoever controls it when those abilities trigger, making transfer effects strategically coherent with the deck."
+    },
+    {
+      "name": "Lightning Greaves exclusion",
+      "status": "PASS",
+      "finding": "Shroud prevents a permanent from being targeted even by its controller. Removing Lightning Greaves avoids blocking Thassa, Conjurer's Closet and Planar Incision from targeting Sol'Kanar; Deflecting Swat protects without imposing shroud."
+    },
+    {
+      "name": "Mana Vault role",
+      "status": "PASS",
+      "finding": "Mana Vault supplies three colorless mana toward Sol'Kanar's five-mana cost. The candidate does not add a separate Vault/Monolith combo package; the card is commander acceleration."
+    },
+    {
+      "name": "Withering Torment",
+      "status": "PASS",
+      "finding": "Withering Torment is instant-speed creature-or-enchantment removal in black and is used as a direct speed/efficiency upgrade over Feed the Swarm."
+    }
+  ]
+}

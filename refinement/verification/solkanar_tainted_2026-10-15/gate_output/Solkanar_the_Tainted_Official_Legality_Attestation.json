@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "deck_sha256": "72a3b14e93d884d98397e000fe45df430beb538a106097a69dfc2491da8d7a58",
+  "checked_at_utc": "2026-10-15T22:21:18.170154+00:00",
+  "sources": [
+    "https://magic.wizards.com/en/banned-restricted-list — current Commander banned list",
+    "Current_Cycle_Oracle_Cache.jsonl generated/refreshed from current Scryfall metadata"
+  ],
+  "unexpected_banned_cards": [],
+  "project_exceptions_required": [],
+  "finding": "Every Sol'Kanar the Tainted candidate card is officially Commander-legal in the refreshed current-cycle Oracle cache; no project exception is required."
+}

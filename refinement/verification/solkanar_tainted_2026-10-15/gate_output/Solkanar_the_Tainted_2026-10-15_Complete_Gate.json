@@ -1,0 +1,23 @@
+{
+  "generated_at_utc": "2026-10-15T22:21:18.230351+00:00",
+  "deck_id": "Sol_kanar_the_Tainted",
+  "decklist_path": "refinement/decklists/Solkanar_the_Tainted_Approval_Ready_2026-10-15.txt",
+  "deck_sha256": "72a3b14e93d884d98397e000fe45df430beb538a106097a69dfc2491da8d7a58",
+  "baseline_path": null,
+  "baseline_source_sha256": "5abacbb9c53c8906a621feab900383e9892b6c43d6296b4e8db2af30ab74e68b",
+  "count": 100,
+  "distinct_names": 93,
+  "commander_color_identity": [
+    "B",
+    "R",
+    "U"
+  ],
+  "cache_generated_at_utc": "2026-10-15T22:20:04.328207+00:00",
+  "cache_sha256": "fac489f784bdafbf0988fb5801b31ea8c16ce1c443e725ba432982e3e988967a",
+  "project_exceptions": [],
+  "rules_gate": "PASS",
+  "official_legality_gate": "PASS",
+  "errors": [],
+  "overall_result": "APPROVAL_READY",
+  "approval_state": "NOT_APPROVED — explicit user approval still required"
+}
