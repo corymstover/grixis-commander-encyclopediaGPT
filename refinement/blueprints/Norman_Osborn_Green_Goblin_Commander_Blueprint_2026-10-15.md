@@ -33,7 +33,7 @@ This evidence supports maximizing cEDH speed and compactness rather than artific
 
 ## Identity constraints
 
-- Do **not** restore Necropotence merely because it is a powerful Grixis cEDH staple. Its discard replacement exiles discarded cards instead of leaving them in the graveyard, directly obstructing Green Goblin's mayhem plan.
+- Do **not** restore Necropotence merely because it is a powerful Grixis cEDH staple. Whenever you discard, Necropotence triggers and attempts to exile that discarded card from the graveyard when its trigger resolves. Because mayhem still obeys timing rules, this sharply suppresses the deck's normal sorcery-speed discard-then-cast pattern; only spells that can legally be cast before the Necropotence trigger resolves can escape that tension. The card is therefore a poor fit for this commander-first build despite its generic power.
 - Do **not** replace commander-native discard engines solely because their global cEDH inclusion is lower. Green Goblin changes their effective costs and graveyard utility.
 - Do **not** overfill the deck with five-mana discard payoffs or combat-only value cards. The cEDH ceiling requires cheap setup and compact wins.
 - Preserve a real commander-native package even while retaining Oracle/Consultation and Breach lines.
