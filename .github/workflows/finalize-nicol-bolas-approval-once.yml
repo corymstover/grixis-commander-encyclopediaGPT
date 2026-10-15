@@ -1,0 +1,39 @@
+name: Finalize Nicol Bolas approval once
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - ".github/workflows/finalize-nicol-bolas-approval-once.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Finalize exact approved Nicol Bolas candidate
+        run: python scripts/finalize_nicol_bolas_approval_once.py
+
+      - name: Commit finalized approval state
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state/current_deck_overrides.json \
+                  refinement/Deck_Refinement_Tracker_2026-10-12.csv \
+                  refinement/decklists/Nicol_Bolas_Approved_2026-10-15.txt \
+                  refinement/approvals/Nicol_Bolas_Approved_2026-10-15.md \
+                  refinement/decisions/Nicol_Bolas_Candidate_Decisions_2026-10-15.md
+          git commit -m "Approve and lock Nicol Bolas [skip ci]"
+          git push origin HEAD:main
