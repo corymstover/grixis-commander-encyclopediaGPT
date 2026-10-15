@@ -3,7 +3,7 @@
 Date: 2026-10-15  
 Cycle: `global-restart-2026-10-13`  
 Deck: #45 of 62  
-Exact candidate SHA-256: `9846e43dbe74fe49a9d356e944dc0a05d7dee30015e0d36e667fdbd01cb1ee75`  
+Exact candidate SHA-256: `83062ff2dbc955c628f9a6df460cf72dd5d450b6685bc4b53f63894bc8c321fb`  
 Status: **APPROVAL_READY — NOT APPROVED / NOT LOCKED**
 
 ## 1. Current-state recovery
@@ -28,23 +28,24 @@ Authoritative membership source: October 12 FINAL exports.
 - Repeated names: **Island x4 / Mountain x3 / Swamp x2 only**
 - CSV/TXT membership reconciliation: **PASS**
 
-Older October 11 audit/tracker rows are historical evidence only. The October 12 FINAL exports control membership and already contain Jhoira of the Ghitu, Replicating Ring, Ring of Xathrid, Thopter Spy Network, and Time Sieve.
+Older October 11 tracker/audit rows are historical evidence only. The October 12 FINAL exports control membership.
 
 Result: **PASS**.
 
 ## 3. Commander-first blueprint / natural ceiling
 
-Current Oracle identity:
+Current commander identity:
 - `Obeka, Splitter of Seconds` — `{1}{U}{B}{R}`
 - Legendary Creature — Ogre Warlock
 - Menace
-- Whenever Obeka deals combat damage to a player, the controller gets that many additional upkeep steps after the current phase.
+- Whenever Obeka deals combat damage to a player, her controller gets that many additional upkeep steps after that phase.
 
-Official release-note rules establish that each added upkeep is contained in an additional beginning phase after combat with untap/draw skipped, and `at the beginning of your upkeep` abilities trigger in every added upkeep.
+Official release-note treatment establishes that these added upkeep steps occur in additional beginning phases after combat with untap and draw skipped. `At the beginning of your upkeep` abilities trigger during every added upkeep.
 
-Final architecture: **connect Obeka -> multiply actual combat damage / trigger instances -> convert added upkeeps into monarch, token, card, counter, drain, suspend, and artifact value -> leverage Time Sieve where artifact production supports repeated turns.**
+Final architecture:
+**connect Obeka -> increase actual combat damage / multiply trigger instances -> convert added upkeeps into cards, Treasures, Clues, counters, suspend acceleration, monarch pressure, artifact production, alternate wins, and Time Sieve turns.**
 
-Historical full-project reranking placed Obeka, Splitter of Seconds at approximately **685.66, Bracket 4 — Optimized**, with no usable tournament sample supporting a cEDH classification. Current optimized community evidence remains centered on Extra Upkeeps / Voltron / Extra Turns / Monarch rather than a stable cEDH shell.
+Project reranking places the deck at approximately **685.66, Power Bracket 4 — Optimized**, with very high commander synergy and no usable tournament sample supporting cEDH.
 
 Natural ceiling: **Power Bracket 4 — Optimized**.
 
@@ -57,8 +58,8 @@ Result: **PASS**.
 Artifact: `refinement/verification/Obeka_Splitter_of_Seconds_Whole_List_Audit_2026-10-15.md`
 
 - All baseline noncommander copies adjudicated: **99/99**
-- Weighted result: **82 KEEP / 17 CUT**
-- Strategic changes: **7**
+- Weighted result: **80 KEEP / 19 CUT**
+- Strategic changes: **9**
 - Mana-base changes: **10 card copies**
 - Candidate SHA binding: **PASS**
 
@@ -68,101 +69,103 @@ Result: **PASS**.
 
 Strategic:
 1. Blasphemous Act -> Roaming Throne
-2. Descent into Avernus -> Palace Siege
-3. Lizard Blades -> Mjölnir, Hammer of Thor
-4. Scrawling Crawler -> Hatred
-5. Skyline Despot -> Ginger, Queen of Sweets
-6. Strionic Resonator -> Wizard's Staff
-7. Winged Boots -> Dragonfire Blade
+2. Descent into Avernus -> Darksteel Reactor
+3. Generous Plunderer -> Smaug the Magnificent
+4. Lizard Blades -> Mjölnir, Hammer of Thor
+5. Mithril Coat -> Tamiyo's Journal
+6. Scrawling Crawler -> Hatred
+7. Skyline Despot -> Super Intelligence
+8. Strionic Resonator -> Wizard's Staff
+9. Winged Boots -> Dragonfire Blade
 
 Mana:
-8. Dragonskull Summit -> Arid Mesa
-9. Drowned Catacomb -> Flooded Strand
-10. Shipwreck Marsh -> Marsh Flats
-11. Stormcarved Coast -> Misty Rainforest
-12. Sulfur Falls -> Verdant Catacombs
-13. Exotic Orchard -> Wooded Foothills
-14. Reliquary Tower -> Mana Confluence
-15. 1x Island -> City of Brass
-16. 1x Mountain -> Reflecting Pool
-17. Rogue's Passage -> Arena of Glory
+10. Dragonskull Summit -> Arid Mesa
+11. Drowned Catacomb -> Flooded Strand
+12. Shipwreck Marsh -> Marsh Flats
+13. Stormcarved Coast -> Misty Rainforest
+14. Sulfur Falls -> Verdant Catacombs
+15. Exotic Orchard -> Wooded Foothills
+16. Reliquary Tower -> Mana Confluence
+17. 1x Island -> City of Brass
+18. 1x Mountain -> Reflecting Pool
+19. Rogue's Passage -> Arena of Glory
 
 Result: **PASS**.
 
 ## 6. Rules / interaction gate
 
-### Obeka additional-upkeep structure
-PASS. Additional upkeeps become additional beginning phases after combat; untap and draw are skipped; upkeep triggers still trigger.
+### Additional-upkeep structure
+PASS. Obeka-created upkeeps occur in additional beginning phases after combat; untap/draw are skipped and upkeep-triggered abilities still trigger.
 
-### Roaming Throne / Wizard's Staff
-PASS. Choose Ogre or Warlock for Roaming Throne. Both Throne and Staff cause Obeka's triggered ability to trigger one additional time. With both present, the original trigger plus one additional trigger from each effect yields **three total trigger instances** for one combat-damage event. Wizard's Staff uses normal equip `{3}` because Obeka is a Warlock, not a Wizard.
+### Actual damage controls upkeep count
+PASS. Obeka uses the combat damage actually dealt. Power increases and damage-doubling replacement effects therefore directly change the number of additional upkeeps.
 
-### Combat Research interaction
-PASS. Combat Research grants its combat-damage draw ability to Obeka. That means the draw trigger is a triggered ability of the equipped/enchanted Obeka and can itself be caused to trigger an additional time by Wizard's Staff and a correctly typed Roaming Throne. Combat Research also gives legendary Obeka +1/+1 and ward `{1}`.
-
-### Mjölnir
-PASS. Obeka is legendary, red among her colors, and not a Villain, so she is worthy. Equip worthy `{1}` is legal. Mjölnir doubles the damage the equipped creature would deal; Obeka therefore sees the modified combat-damage amount when determining additional upkeeps.
+### Mjölnir, Hammer of Thor
+PASS. Obeka is legendary, red, and not a Villain, so she is worthy and may use equip worthy `{1}`. Mjölnir doubles all damage equipped Obeka would deal. A base 2-power hit therefore deals 4 and produces four added upkeeps before other trigger multipliers are considered.
 
 ### Dragonfire Blade
-PASS. Obeka is three colors, so the equip `{4}` activation costs `{1}` when targeting her. +2/+2 turns her base 2 power into 4 and hexproof from monocolored improves protection.
+PASS. Obeka is three colors, so equip `{4}` costs `{1}` when targeting her. +2/+2 raises base power from 2 to 4 while hexproof from monocolored adds efficient protection.
 
 ### Hatred
-PASS. X life is paid as an additional cost and the target gets +X/+0 until end of turn. If Obeka connects, the increased actual combat damage increases her upkeep count.
+PASS. X life is paid as an additional casting cost and the target receives +X/+0 until end of turn. Successful combat damage converts that increased power into additional upkeeps.
+
+### Roaming Throne / Wizard's Staff
+PASS. Roaming Throne can choose Ogre or Warlock. Wizard's Staff uses normal equip `{3}` because Obeka is a Warlock, not a Wizard. Each effect causes the relevant triggered ability to trigger one additional time. With both applying, one combat-damage event generates **three total Obeka trigger instances**: original + Throne + Staff, not four.
+
+### Combat Research
+PASS. Combat Research gives legendary Obeka +1/+1 and a combat-damage draw trigger. The +1/+1 directly increases upkeep count. The granted triggered ability is an ability of the enchanted creature and is therefore also subject to applicable additional-trigger effects from Staff and correctly typed Roaming Throne.
 
 ### Double strike
-PASS. If Obeka deals combat damage in both first-strike and normal combat-damage steps, her ability triggers separately for each damage event.
+PASS. Embercleave can cause Obeka to deal combat damage in first-strike and regular combat-damage steps. Each separate damage event triggers Obeka independently; Throne/Staff apply to each event.
 
-### Palace Siege
-PASS. Dragons mode triggers at every controller upkeep: each opponent loses 2 life and the controller gains 2 life. Every Obeka-created upkeep generates another trigger.
+### Super Intelligence
+PASS. The Aura draws a card at the beginning of the enchanted creature controller's upkeep. Enchanting Obeka converts each normal and Obeka-created upkeep into another card while both permanents remain available.
 
-### Ginger
-PASS. Ginger, Queen of Sweets creates a Gingerbrute token at the beginning of **each upkeep** if its controller is the monarch. Obeka-created upkeeps therefore generate artifact creatures for Time Sieve as long as monarch is retained.
+### Smaug the Magnificent
+PASS. Smaug creates a Treasure at the beginning of each controller upkeep. Obeka-created upkeeps therefore generate one Treasure each. Smaug's attack trigger deals damage equal to the number of Treasures controlled to any target. Unlike Generous Plunderer, this upkeep engine does not also give an opponent a Treasure.
 
-### Time Sieve / Thopter Spy Network — corrected accounting
-PASS with established-board qualification. Thopter Spy Network triggers at the beginning of each controller upkeep if an artifact is controlled. **Time Sieve itself is an artifact**, so if Time Sieve and Network are already on the battlefield as the normal upkeep begins, Sieve satisfies Network's intervening-if clause and the normal upkeep produces the first Thopter.
+### Darksteel Reactor
+PASS. Reactor is indestructible, receives a charge-counter trigger during each controller upkeep, and wins once it has twenty or more charge counters. Every Obeka-created upkeep supplies another independent Reactor trigger.
 
-If Obeka then connects for at least **4 combat damage**, she creates four additional postcombat upkeeps and Network makes four more Thopters. That turn has generated **five expendable Thopters**: one in the normal upkeep plus four in the added upkeeps. Time Sieve can tap and sacrifice those five Thopters to take an extra turn while Sieve remains on the battlefield.
+### Tamiyo's Journal
+PASS. Journal investigates during each controller upkeep. Extra upkeeps therefore create extra Clues. Its tap ability sacrifices three Clues to tutor any card. A given Clue cannot pay both Journal and Time Sieve costs simultaneously; artifact accounting remains explicit.
 
-On that extra turn, the same established board repeats: one Thopter in the normal upkeep plus four after a 4-damage Obeka connection replenishes the five artifacts required for the next Sieve activation. Thus the established board supports repeatable extra turns while Obeka continues connecting for at least 4 damage and the permanents remain intact.
+### Time Sieve / Thopter Spy Network
+PASS with established-board qualification. Time Sieve itself is an artifact, so if Sieve and Thopter Spy Network are established before normal upkeep, Network's intervening-if condition is satisfied and the normal upkeep creates one Thopter.
 
-If Network or Sieve enters after the normal upkeep, if Obeka produces fewer than four added upkeeps, or if the board is otherwise disrupted, additional artifact material is required. No claim is made that the pieces generate repeatable turns from every starting board state.
+If Obeka later connects for at least 4 damage, the four added upkeeps create four more Thopters. Those five Thopters can be sacrificed to Sieve for an extra turn while Sieve itself remains. If the same board survives and Obeka connects for 4+ again, the cadence can repeat. This is a board-dependent repeatable-turn engine, not an unconditional loop from an empty board.
 
-Ginger can supply the same five-token cadence if Ginger, Sieve, and monarch are established before the normal upkeep: one Gingerbrute in the normal upkeep plus four from a 4-damage Obeka hit.
+Smaug and Journal supply additional artifact cadence, but Treasure/Clue expenditures must still be counted separately from Sieve or Journal activation costs.
 
 ### Arena of Glory
-PASS. It can enter untapped when a Mountain is controlled. Its exert ability produces `{R}{R}` after paying `{R}`; if any of that generated mana is spent on Obeka's creature spell, Obeka gains haste until end of turn.
+PASS. If any mana from the exert ability is spent to cast Obeka, the resulting creature gains haste until end of turn, giving an immediate combat window.
 
 Result: **PASS**.
 
-## 7. Candidate exhaustion / adversarial red-team
+## 7. Hybrid conflict reconciliation / candidate exhaustion
 
-The final pass challenged:
-- Bitterbloom Bearer
-- Genji Glove
-- Hall of Echoes
-- Aether Tunnel
-- Rilsa Rael, Kingpin
-- Darksteel Reactor
-- Tamiyo's Journal
-- Robe of the Archmagi
-- Blackblade Reforged
-- Sphinx of the Second Sun
-- The Ninth Doctor
-- Braid of Fire
-- generic fast mana
-- generic extra turns
-- generic cEDH finishes
-- all existing evasion/protection slots
-- all seven proposed strategic swaps
-- all 35 final lands
+Two different SHA-bound strategic concepts existed during this review. The first repository candidate (`9846e43d...`) used Ginger, Queen of Sweets and Palace Siege while retaining Generous Plunderer and Mithril Coat. A later independent challenger (`f1ce3365...`) used Smaug, Super Intelligence, Darksteel Reactor, Tamiyo's Journal, Aggravated Assault, and Blackblade Reforged but did not retain all of the stronger Mjölnir / Dragonfire Blade / Hatred package.
 
-Wizard's Staff materially beat the first working candidate's Strionic Resonator slot and was incorporated before final binding.
+The candidates were not silently reconciled. Every disputed slot was re-opened and compared head-to-head.
 
-The later challenger pass confirmed that Darksteel Reactor, Tamiyo's Journal, Robe of the Archmagi, Blackblade Reforged, and Rilsa Rael are legitimate high-synergy alternatives but do not produce a material net improvement over the finalized slots once mana cost, curve, immediate impact, damage multiplication, commander necessity, and existing redundancy are considered.
+Final hybrid decisions:
+- **KEEP/ADD:** Mjölnir, Dragonfire Blade, Hatred, Roaming Throne, Wizard's Staff.
+- **ADOPT:** Smaug, Super Intelligence, Darksteel Reactor, Tamiyo's Journal.
+- **REJECT:** Ginger, Palace Siege, Aggravated Assault, Blackblade Reforged.
 
-The Time Sieve recheck produced one **documentation correction only**: on an established Network + Sieve board, Time Sieve itself satisfies Network's artifact condition during the normal upkeep, so a 4-damage Obeka hit supplies the other four Thopters and no separate expendable seed artifact is needed. The 100-card candidate did not change.
+Why:
+- Smaug captures the controller-upkeep cadence at four mana without gifting resources to opponents and is cheaper than Ginger.
+- Super Intelligence is a one-mana draw engine for every extra upkeep; the final deck already has substantial direct life/damage upkeep pressure, so it beats five-mana Palace Siege on rate.
+- Darksteel Reactor is a resilient one-sided alternate win whose counter requirement scales exactly with Obeka's extra upkeeps.
+- Tamiyo's Journal converts the same upkeep volume into Clues plus unrestricted tutoring and reinforces Time Sieve.
+- Aggravated Assault is highly powerful with retained Sword of Feast and Famine but constitutes a generic two-card combat loop that functions without Obeka; no commander-native engine was weak enough to justify the slot.
+- Blackblade Reforged is strong pump but redundant after the final Mjölnir / Dragonfire / Hatred / Embercleave / Combat Research / Ring package.
 
-**ZERO NEW MATERIAL IMPROVEMENTS — RECONFIRMED.**
+Additional challengers rejected after full comparison include Robe of the Archmagi, The Ninth Doctor, Shadow of the Second Sun, Sphinx of the Second Sun, Bitterbloom Bearer, Genji Glove, Hall of Echoes, Aether Tunnel, Rilsa Rael, Braid of Fire, generic extra turns, generic fast mana, and Oracle/Consultation or unrelated Breach packages.
+
+The hybrid was the final material improvement discovered. After binding it, the final serious pass produced:
+
+**ZERO NEW MATERIAL IMPROVEMENTS.**
 
 Result: **PASS**.
 
@@ -177,17 +180,15 @@ Approval-ready candidate:
 - Singleton compliance: **PASS**
 - Color identity: **U/B/R — PASS**
 
-The exact candidate bytes were independently re-hashed during the final challenger pass.
-
-Candidate SHA-256: `9846e43dbe74fe49a9d356e944dc0a05d7dee30015e0d36e667fdbd01cb1ee75`
+Candidate SHA-256: `83062ff2dbc955c628f9a6df460cf72dd5d450b6685bc4b53f63894bc8c321fb`
 
 Result: **PASS**.
 
 ## 9. Current official Commander legality
 
-The current Wizards Commander banned list was checked on 2026-10-15. None of the candidate's cards appear on the Commander banned list. The October 12, 2026 general B&R announcement made Competitive Brawl changes and did not create a Commander legality issue for this candidate.
+The current Wizards Commander banned list was checked on 2026-10-15. None of the candidate cards are on the Commander banned list. The October 12, 2026 B&R announcement concerned Competitive Brawl and did not create a Commander legality issue for this candidate.
 
-New/current additions checked as Commander-legal include Ginger, Queen of Sweets; Mjölnir, Hammer of Thor; Wizard's Staff; Dragonfire Blade; Roaming Throne; Palace Siege; Hatred; and Arena of Glory.
+Current additions screened as Commander-legal include Roaming Throne, Mjölnir, Dragonfire Blade, Hatred, Wizard's Staff, Smaug the Magnificent, Super Intelligence, Darksteel Reactor, Tamiyo's Journal, and Arena of Glory.
 
 Project exception required: **NO**.
 
@@ -198,9 +199,10 @@ Result: **PASS**.
 - authoritative FINAL baseline: PASS
 - commander-first blueprint: PASS
 - 99/99 whole-list audit: PASS
+- conflicting-candidate reconciliation: PASS
 - candidate exhaustion: PASS
-- Oracle/rules interaction review: PASS
-- corrected Time Sieve/Network accounting: PASS
+- current Oracle/rules interaction review: PASS
+- Time Sieve artifact accounting: PASS
 - mana/curve red-team: PASS
 - exact 100-card structure: PASS
 - singleton: PASS
@@ -210,3 +212,5 @@ Result: **PASS**.
 - zero-new-material-improvement closure: PASS
 
 **FINAL RESULT: APPROVAL_READY — NOT APPROVED / NOT LOCKED.**
+
+The user's earlier `Approve` message was received **before** this exact hybrid candidate was presented and therefore is treated only as approval intent, not as approval of SHA `83062ff2...`. A new explicit approval of the exact presented candidate is required before lock/finalization.
