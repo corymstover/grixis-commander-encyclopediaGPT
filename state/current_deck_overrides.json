@@ -440,6 +440,21 @@
       "decision_closeout_artifact": "refinement/decisions/Mairsil_the_Pretender_Current_Cycle_Decisions_2026-10-14.md",
       "approval_record_artifact": "refinement/approvals/Mairsil_the_Pretender_Approved_2026-10-14.md",
       "approved_list_artifact": "refinement/decklists/Mairsil_the_Pretender_Approved_2026-10-14.txt"
+    },
+    "Marchesa__Dealer_of_Death": {
+      "approval_status": "APPROVED",
+      "lock_status": "LOCKED",
+      "final_gate_passed": true,
+      "user_approval_date": "2026-10-15",
+      "current_stage": "LOCKED",
+      "approved_list_sha256": "34a6a940c54aaebde612ae5d3a244e22931d3a977fa26e4c43f2a76aafc0f6b1",
+      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + approval-ready verification",
+      "approval_basis": "Explicit user approval of the exact SHA-bound Marchesa, Dealer of Death approval candidate after authoritative FINAL baseline reconciliation, mandatory 99-slot whole-list audit, contemporary cEDH ceiling review, candidate exhaustion, adversarial red-team review, zero-new-material-improvement closure, relevant Oracle/rules/combo verification, current official Commander legality checkpoint, singleton/color-identity verification, and exact 100-card structural verification.",
+      "whole_list_audit_artifact": "refinement/decisions/Marchesa_Dealer_of_Death_Whole_List_Audit_2026-10-15.csv",
+      "verification_artifact": "refinement/verification/Marchesa_Dealer_of_Death_Approval_Ready_Verification_2026-10-15.md",
+      "decision_closeout_artifact": "refinement/decisions/Marchesa_Dealer_of_Death_Current_Cycle_Decisions_2026-10-15.md",
+      "approval_record_artifact": "refinement/approvals/Marchesa_Dealer_of_Death_Approved_2026-10-15.md",
+      "approved_list_artifact": "refinement/decklists/Marchesa_Dealer_of_Death_Approved_2026-10-15.txt"
     }
   }
 }
