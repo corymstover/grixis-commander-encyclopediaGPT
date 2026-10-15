@@ -515,6 +515,21 @@
       "decision_closeout_artifact": "refinement/decisions/Missy_Candidate_Decisions_2026-10-15.md",
       "approval_record_artifact": "refinement/approvals/Missy_Approved_2026-10-15.md",
       "approved_list_artifact": "refinement/decklists/Missy_Approved_2026-10-15.txt"
+    },
+    "Nathan_Drake__Treasure_Hunter": {
+      "approval_status": "APPROVED",
+      "lock_status": "LOCKED",
+      "final_gate_passed": true,
+      "user_approval_date": "2026-10-15",
+      "current_stage": "LOCKED",
+      "approved_list_sha256": "a5d59afc3a78d7ff6454b1d011c82c2f732e11f4d4dd03256df1195a3abe9ba0",
+      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + approval-ready verification",
+      "approval_basis": "Explicit user approval of the exact SHA-bound Nathan Drake, Treasure Hunter approval-ready candidate after authoritative FINAL baseline reconciliation, mandatory 99-slot whole-list audit, candidate exhaustion, commander-necessity review, adversarial Oracle/rules/interactions red-team, mana-base red-team, zero-new-material-improvement closure, exact structural verification, singleton/color-identity verification, and current official Commander legality checkpoint.",
+      "whole_list_audit_artifact": "refinement/verification/Nathan_Drake_Treasure_Hunter_Whole_List_Audit_2026-10-15.md",
+      "verification_artifact": "refinement/verification/Nathan_Drake_Treasure_Hunter_Approval_Ready_Verification_2026-10-15.md",
+      "decision_closeout_artifact": "refinement/decisions/Nathan_Drake_Treasure_Hunter_Candidate_Decisions_2026-10-15.md",
+      "approval_record_artifact": "refinement/approvals/Nathan_Drake_Treasure_Hunter_Approved_2026-10-15.md",
+      "approved_list_artifact": "refinement/decklists/Nathan_Drake_Treasure_Hunter_Approved_2026-10-15.txt"
     }
   }
 }

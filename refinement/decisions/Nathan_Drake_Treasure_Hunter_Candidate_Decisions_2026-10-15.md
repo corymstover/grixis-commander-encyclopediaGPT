@@ -3,7 +3,7 @@
 Date: 2026-10-15  
 Cycle: `global-restart-2026-10-13`  
 Deck: #39 of 62  
-Status: working decision closeout; not user approval
+Status: **APPROVED / LOCKED** — explicit user approval received 2026-10-15
 
 ## Final 12-card delta from authoritative FINAL baseline
 
@@ -57,3 +57,12 @@ No alternative produced a material improvement without a larger opportunity cost
 **ZERO NEW MATERIAL IMPROVEMENTS.**
 
 **Decision closeout: PASS — candidate remains APPROVAL_READY evidence only, not approved/locked.**
+
+## Approval closeout
+
+- Explicit user approval received: **2026-10-15**
+- Canonical approved SHA-256: `a5d59afc3a78d7ff6454b1d011c82c2f732e11f4d4dd03256df1195a3abe9ba0`
+- Exact approved artifact: `refinement/decklists/Nathan_Drake_Treasure_Hunter_Approved_2026-10-15.txt`
+- Current-cycle state: **APPROVED / LOCKED**
+- Quality gate: **Deck Quality Gates v3 + mandatory whole-list audit + approval-ready verification**
+- Next unlocked deck in tracker order: **Nekusar, the Mindrazer (index 39 / deck 40 of 62)**.
