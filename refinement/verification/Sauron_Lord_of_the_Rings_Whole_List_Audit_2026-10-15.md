@@ -8,7 +8,7 @@ Status: working audit; not user approval
 Authoritative baseline: FINAL TXT member `Sauron__Lord_of_the_Rings.txt` from the frozen October 12 source package.
 
 Candidate: `refinement/decklists/Sauron_Lord_of_the_Rings_Approval_Ready_2026-10-15.txt`  
-Candidate SHA-256: `__CANDIDATE_SHA__`
+Candidate SHA-256: `72a814e6ae1153507c9c1469a7792043b2e5c055d9e5fcd9f6cfcf7781e287b0`
 
 ## Audit result
 

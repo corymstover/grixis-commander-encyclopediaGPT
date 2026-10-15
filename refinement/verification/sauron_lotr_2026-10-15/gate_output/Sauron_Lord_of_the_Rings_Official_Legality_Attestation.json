@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "deck_sha256": "72a814e6ae1153507c9c1469a7792043b2e5c055d9e5fcd9f6cfcf7781e287b0",
+  "checked_at_utc": "2026-10-15T21:12:12.045090+00:00",
+  "sources": [
+    "https://magic.wizards.com/en/banned-restricted-list — current Commander banned list",
+    "Current_Cycle_Oracle_Cache.jsonl generated/refreshed from current Scryfall metadata"
+  ],
+  "unexpected_banned_cards": [],
+  "project_exceptions_required": [],
+  "finding": "Every Sauron candidate card is officially Commander-legal in the refreshed current-cycle Oracle cache; no project exception is required."
+}

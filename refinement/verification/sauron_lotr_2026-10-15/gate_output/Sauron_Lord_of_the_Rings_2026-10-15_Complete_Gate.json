@@ -1,0 +1,23 @@
+{
+  "generated_at_utc": "2026-10-15T21:12:12.085390+00:00",
+  "deck_id": "Sauron__Lord_of_the_Rings",
+  "decklist_path": "refinement/decklists/Sauron_Lord_of_the_Rings_Approval_Ready_2026-10-15.txt",
+  "deck_sha256": "72a814e6ae1153507c9c1469a7792043b2e5c055d9e5fcd9f6cfcf7781e287b0",
+  "baseline_path": null,
+  "baseline_source_sha256": "0ad807e345aeee8fbf274c5de3b3caa48063f03390ec4011afa7a175c30bdf2b",
+  "count": 100,
+  "distinct_names": 96,
+  "commander_color_identity": [
+    "B",
+    "R",
+    "U"
+  ],
+  "cache_generated_at_utc": "2026-10-15T21:12:09.264133+00:00",
+  "cache_sha256": "e6ce928fed4c72cd33526addeccd7b1b059f1d42b924aba7fc599a56b02b3fed",
+  "project_exceptions": [],
+  "rules_gate": "PASS",
+  "official_legality_gate": "PASS",
+  "errors": [],
+  "overall_result": "APPROVAL_READY",
+  "approval_state": "NOT_APPROVED — explicit user approval still required"
+}

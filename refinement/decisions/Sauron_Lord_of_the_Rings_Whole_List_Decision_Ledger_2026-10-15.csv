@@ -1,0 +1,93 @@
+card,baseline_qty,keep_qty,cut_qty,decision,rationale
+Ancient Brass Dragon,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Ancient Tomb,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Anger,1,1,0,KEEP,KEEP — graveyard haste engine; revised mana base retains ample Mountain-typed lands.
+Animate Dead,1,1,0,KEEP,KEEP — efficient two-mana reanimation core.
+Arcane Signet,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Archon of Cruelty,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Badlands,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Barad-dûr,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Blasphemous Act,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Blood Crypt,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Bloodstained Mire,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Buried Alive,1,1,0,KEEP,KEEP — core graveyard setup that can seed Anger/Wonder plus a premium target.
+Call of the Ring,1,1,0,KEEP,KEEP — repeatable Ring temptation and card advantage that sustains the Nazgûl package.
+Cavern-Hoard Dragon,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Command Tower,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Counterspell,1,0,1,CUT,CUT — Force of Will better protects tap-out Sauron/reanimation turns.
+Crumbling Necropolis,1,0,1,CUT,CUT — always tapped; replace with premium untapped typed fixing.
+Cyclonic Rift,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Dark Ritual,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Deadly Rollick,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Deflecting Swat,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Demonic Tutor,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Drowned Catacomb,1,0,1,CUT,CUT — conditional dual; replace with unconditional three-color fixing.
+Entomb,1,1,0,KEEP,KEEP — best one-mana graveyard tutor; directly sets Sauron's cast-trigger reanimation.
+Exotic Orchard,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Faithless Looting,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Feed the Swarm,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Fellwar Stone,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Forbidden Alchemy,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Frantic Search,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Grave Researcher // Reanimate,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+In the Darkness Bind Them,1,0,1,CUT,CUT — flavorful but slow five-mana saga; Ring/Nazgûl identity remains dense without it.
+Island,2,1,1,PARTIAL,PARTIAL — reduce from two to one while retaining Island-typed duals for Wonder.
+Jeska's Will,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+"Jin-Gitaxias, Core Augur",1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Knollspine Dragon,1,0,1,CUT,CUT — conditional ETB draw needs prior opponent damage that turn; unreliable from Sauron's often-precombat cast-trigger reanimation.
+Lightning Greaves,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Living Death,1,1,0,KEEP,KEEP — mass reanimation/reset that strongly rewards intentional graveyard setup.
+Luxury Suite,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Mana Confluence,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Mana Drain,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Moria Scavenger,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Morphic Pool,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Mount Doom,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Mountain,2,1,1,PARTIAL,PARTIAL — reduce from two to one while retaining Mountain-typed duals for Anger.
+Mystic Remora,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Nazgûl,4,4,0,KEEP,KEEP — four copies are permitted by Nazgûl's deckbuilding text and directly reward Ring temptation.
+Necromancy,1,1,0,KEEP,KEEP — flexible reanimation core with emergency instant-speed mode.
+Notion Thief,1,0,1,CUT,CUT — generic Grixis wheel/value piece; replace with commander-specific acceleration.
+Orcish Bowmasters,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+"Otawara, Soaring City",1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Persist,1,1,0,KEEP,KEEP — efficient two-mana recursion for nonlegendary threats.
+Polluted Delta,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Reanimate,1,1,0,KEEP,KEEP — premier one-mana reanimation spell.
+Relic of Sauron,1,1,0,KEEP,KEEP — thematic ramp plus draw/discard outlet supporting both commander casting and graveyard setup.
+Rhystic Study,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Ripples of Undeath,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+"Saruman, the White Hand",1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+"Sauron, the Dark Lord",1,1,0,KEEP,KEEP — thematic high-impact threat; Ring temptation can refill while discarding reanimation targets.
+Scalding Tarn,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+"Sheoldred, Whispering One",1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Sneak Attack,1,1,0,KEEP,KEEP — cheats large threats into play and naturally stocks them for later recursion.
+Sol Ring,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Steam Vents,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Stitch Together,1,0,1,CUT,CUT — threshold-dependent battlefield recursion loses to deterministic two-mana Dance of the Dead.
+Sulfurous Springs,1,0,1,CUT,CUT — replace painland with fetchland for typed-land access.
+Summons of Saruman,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Swamp,3,2,1,PARTIAL,PARTIAL — reduce from three to two while preserving basic black access.
+Swan Song,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Talisman of Creativity,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Talisman of Dominance,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Talisman of Indulgence,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+The Balrog of Moria,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+The Black Gate,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+The Mouth of Sauron,1,1,0,KEEP,KEEP — thematic self-mill/amass engine that can target its controller to stock the graveyard.
+The One Ring,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Thrill of Possibility,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+"Too Greedily, Too Deep",1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Toxic Deluge,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Training Center,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Troll of Khazad-dûm,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Underground River,1,0,1,CUT,CUT — replace painland with fetchland for typed-land access.
+Underground Sea,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+"Urborg, Tomb of Yawgmoth",1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+"Valgavoth, Terror Eater",1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Vampiric Tutor,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Victimize,1,1,0,KEEP,KEEP — efficient two-creature recursion that converts expendable bodies into value.
+Voracious Fell Beast,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Watery Grave,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Windfall,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."
+Wonder,1,1,0,KEEP,KEEP — graveyard evasion engine; revised mana base retains ample Island-typed lands.
+Xander's Lounge,1,1,0,KEEP,"KEEP — retained after commander-first graveyard/reanimation, interaction, curve, and identity audit."

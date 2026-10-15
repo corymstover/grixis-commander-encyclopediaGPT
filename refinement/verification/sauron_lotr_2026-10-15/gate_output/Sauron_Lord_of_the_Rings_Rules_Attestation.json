@@ -1,0 +1,83 @@
+{
+  "status": "PASS",
+  "deck_sha256": "72a814e6ae1153507c9c1469a7792043b2e5c055d9e5fcd9f6cfcf7781e287b0",
+  "checked_at_utc": "2026-10-15T21:12:12.045090+00:00",
+  "sources": [
+    "Magic Comprehensive Rules — triggered abilities, commander additional costs, mana abilities, Aura/reanimation rules, Living Death sequencing, and deck-construction exceptions (current 2026 rules)",
+    "The Lord of the Rings: Tales of Middle-earth release notes — Sauron, Lord of the Rings and Ring/amass rulings",
+    "Current Oracle text captured in refinement/metadata_audit/Current_Cycle_Oracle_Cache.jsonl",
+    "Wizards current Commander banned/restricted list checked 2026-10-15"
+  ],
+  "interactions": [
+    {
+      "name": "Sauron cast-trigger independence",
+      "status": "PASS",
+      "finding": "Sauron's first ability triggers when the commander spell is cast. Once on the stack, the triggered ability exists independently of the Sauron spell; countering the commander spell does not counter or remove the trigger."
+    },
+    {
+      "name": "Sauron trigger sequencing",
+      "status": "PASS",
+      "finding": "On resolution the trigger amasses Orcs 5, mills five cards, then returns a creature card from the controller's graveyard to the battlefield. The creature is chosen during resolution and may be one of the five cards just milled."
+    },
+    {
+      "name": "Command Beacon and commander tax",
+      "status": "PASS",
+      "finding": "Command Beacon can move Sauron from the command zone to its owner's hand. Commander tax applies to casts from the command zone, so casting Sauron from hand avoids that additional cost while still being a cast that triggers Sauron's ability."
+    },
+    {
+      "name": "Metamorphosis Fanatic chain",
+      "status": "PASS",
+      "finding": "If Sauron's trigger returns Metamorphosis Fanatic, the Fanatic enters and its own ETB trigger can return up to one target creature card from its controller's graveyard with a lifelink counter, producing a second reanimation event."
+    },
+    {
+      "name": "Dance of the Dead",
+      "status": "PASS",
+      "finding": "Dance of the Dead enchants a creature card in a graveyard, returns it tapped, then becomes attached to that creature. The creature gets +1/+1, does not untap normally, and its controller may pay {1}{B} at upkeep to untap it."
+    },
+    {
+      "name": "Phyrexian Tower",
+      "status": "PASS",
+      "finding": "Phyrexian Tower's {T}, sacrifice-a-creature ability is a mana ability that adds {B}{B}. Sacrificing a creature can intentionally place it into the graveyard before Living Death or another recursion effect."
+    },
+    {
+      "name": "Nazgûl deck construction",
+      "status": "PASS",
+      "finding": "Nazgûl's Oracle text explicitly allows up to nine cards named Nazgûl in a deck. The candidate contains four, so the Commander singleton rule is satisfied by the card-specific permission."
+    },
+    {
+      "name": "Nazgûl and Ring temptation",
+      "status": "PASS",
+      "finding": "Each Nazgûl enters and causes the Ring to tempt its controller. Whenever the Ring tempts that player, each Nazgûl trigger puts a +1/+1 counter on each Wraith controlled by that player; the preserved Ring package therefore remains a real secondary engine."
+    },
+    {
+      "name": "Anger and Wonder land-type checks",
+      "status": "PASS",
+      "finding": "Anger grants haste while in the graveyard only if its controller controls a Mountain; Wonder grants flying only if its controller controls an Island. The revised mana base retains both basics and multiple typed duals with those land types."
+    },
+    {
+      "name": "Living Death sequencing",
+      "status": "PASS",
+      "finding": "Living Death exiles creature cards from graveyards, then each player sacrifices all creatures they control, then puts the cards they exiled this way onto the battlefield. Setup and sacrifice timing therefore matter."
+    },
+    {
+      "name": "Sneak Attack graveyard setup",
+      "status": "PASS",
+      "finding": "Sneak Attack's delayed sacrifice at the beginning of the next end step naturally places cheated creatures into the graveyard, where Sauron or another reanimation spell can use them later."
+    },
+    {
+      "name": "The Mouth of Sauron self-mill",
+      "status": "PASS",
+      "finding": "The Mouth of Sauron's enter-the-battlefield ability can target its controller. That player mills three cards and then the Mouth amasses Orcs X based on instant and sorcery cards in that player's graveyard, directly supporting setup plus Army growth."
+    },
+    {
+      "name": "Sauron opponent-commander death trigger",
+      "status": "PASS",
+      "finding": "Sauron's final ability triggers when a commander an opponent controls dies, even if that commander is then moved to the command zone; the Ring temptation supports the retained Nazgûl package."
+    },
+    {
+      "name": "Fast-mana role",
+      "status": "PASS",
+      "finding": "Mana Vault and Grim Monolith provide colorless acceleration toward Sauron's eight-mana casting cost. Their inclusion is commander-speed support, not a separate Monolith combo package in this candidate."
+    }
+  ]
+}

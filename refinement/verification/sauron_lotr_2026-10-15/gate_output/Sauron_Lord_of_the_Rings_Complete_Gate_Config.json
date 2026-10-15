@@ -1,0 +1,12 @@
+{
+  "deck_id": "Sauron__Lord_of_the_Rings",
+  "display_name": "Sauron, Lord of the Rings",
+  "decklist_path": "refinement/decklists/Sauron_Lord_of_the_Rings_Approval_Ready_2026-10-15.txt",
+  "expected_deck_sha256": "72a814e6ae1153507c9c1469a7792043b2e5c055d9e5fcd9f6cfcf7781e287b0",
+  "baseline_source_sha256": "0ad807e345aeee8fbf274c5de3b3caa48063f03390ec4011afa7a175c30bdf2b",
+  "output_dir": "refinement/verification/sauron_lotr_2026-10-15/gate_output",
+  "output_stem": "Sauron_Lord_of_the_Rings_2026-10-15",
+  "rules_attestation_path": "refinement/verification/sauron_lotr_2026-10-15/gate_output/Sauron_Lord_of_the_Rings_Rules_Attestation.json",
+  "official_legality_attestation_path": "refinement/verification/sauron_lotr_2026-10-15/gate_output/Sauron_Lord_of_the_Rings_Official_Legality_Attestation.json",
+  "max_cache_age_hours": 72
+}
