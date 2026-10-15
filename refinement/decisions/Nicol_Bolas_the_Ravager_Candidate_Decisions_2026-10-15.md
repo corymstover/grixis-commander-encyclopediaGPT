@@ -3,7 +3,7 @@
 Date: 2026-10-15  
 Cycle: `global-restart-2026-10-13`  
 Deck: #42 of 62  
-Status: working decision closeout; not user approval
+Status: **APPROVED / LOCKED** — explicit user approval received 2026-10-15
 
 Exact candidate SHA-256: `5a5fff7dcea61a8e1e0b5ea6da41f6158033bbd899088d7e6abbe6b7c52fb63e`
 
@@ -125,3 +125,12 @@ No challenger produced a material improvement without a larger opportunity cost 
 **ZERO NEW MATERIAL IMPROVEMENTS.**
 
 **Decision closeout: PASS — candidate is APPROVAL_READY evidence only, not approved/locked.**
+
+## Approval closeout
+
+- Explicit user approval received: **2026-10-15**
+- Canonical approved SHA-256: `5a5fff7dcea61a8e1e0b5ea6da41f6158033bbd899088d7e6abbe6b7c52fb63e`
+- Exact approved artifact: `refinement/decklists/Nicol_Bolas_the_Ravager_Approved_2026-10-15.txt`
+- Current-cycle state: **APPROVED / LOCKED**
+- Quality gate: **Deck Quality Gates v3 + mandatory whole-list audit + approval-ready verification**
+- Next unlocked deck in tracker order: **Norman Osborn // Green Goblin (index 42 / deck 43 of 62)**.

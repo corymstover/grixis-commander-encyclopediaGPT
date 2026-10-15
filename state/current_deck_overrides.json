@@ -560,6 +560,21 @@
       "decision_closeout_artifact": "refinement/decisions/Nicol_Bolas_Candidate_Decisions_2026-10-15.md",
       "approval_record_artifact": "refinement/approvals/Nicol_Bolas_Approved_2026-10-15.md",
       "approved_list_artifact": "refinement/decklists/Nicol_Bolas_Approved_2026-10-15.txt"
+    },
+    "Nicol_Bolas__the_Ravager": {
+      "approval_status": "APPROVED",
+      "lock_status": "LOCKED",
+      "final_gate_passed": true,
+      "user_approval_date": "2026-10-15",
+      "current_stage": "LOCKED",
+      "approved_list_sha256": "5a5fff7dcea61a8e1e0b5ea6da41f6158033bbd899088d7e6abbe6b7c52fb63e",
+      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + approval-ready verification",
+      "approval_basis": "Explicit user approval of the exact SHA-bound Nicol Bolas, the Ravager // Nicol Bolas, the Arisen approval-ready candidate after authoritative FINAL baseline reconciliation, mandatory 99-slot whole-list audit, candidate exhaustion, commander-necessity review, adversarial Oracle/rules/combo red-team, mana-base red-team, encyclopedia-differentiation review, zero-new-material-improvement closure, exact structural verification, singleton/color-identity verification, and current official Commander legality checkpoint.",
+      "whole_list_audit_artifact": "refinement/verification/Nicol_Bolas_the_Ravager_Whole_List_Audit_2026-10-15.md",
+      "verification_artifact": "refinement/verification/Nicol_Bolas_the_Ravager_Approval_Ready_Verification_2026-10-15.md",
+      "decision_closeout_artifact": "refinement/decisions/Nicol_Bolas_the_Ravager_Candidate_Decisions_2026-10-15.md",
+      "approval_record_artifact": "refinement/approvals/Nicol_Bolas_the_Ravager_Approved_2026-10-15.md",
+      "approved_list_artifact": "refinement/decklists/Nicol_Bolas_the_Ravager_Approved_2026-10-15.txt"
     }
   }
 }
