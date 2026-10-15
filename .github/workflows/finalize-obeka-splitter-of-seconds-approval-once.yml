@@ -21,8 +21,8 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Finalize exact approved Obeka Splitter candidate
-        run: python scripts/finalize_obeka_splitter_of_seconds_approval_once.py
+      - name: Reconcile SHA and finalize exact approved Obeka Splitter candidate
+        run: python scripts/reconcile_and_finalize_obeka_splitter_sha.py
 
       - name: Commit finalized approval state
         shell: bash
@@ -34,6 +34,9 @@ jobs:
                   refinement/Deck_Refinement_Tracker_2026-10-12.csv \
                   refinement/decklists/Obeka_Splitter_of_Seconds_Approved_2026-10-15.txt \
                   refinement/approvals/Obeka_Splitter_of_Seconds_Approved_2026-10-15.md \
-                  refinement/decisions/Obeka_Splitter_of_Seconds_Candidate_Decisions_2026-10-15.md
-          git commit -m "Approve and lock Obeka Splitter of Seconds [skip ci]"
+                  refinement/decisions/Obeka_Splitter_of_Seconds_Candidate_Decisions_2026-10-15.md \
+                  refinement/verification/Obeka_Splitter_of_Seconds_Whole_List_Audit_2026-10-15.md \
+                  refinement/verification/Obeka_Splitter_of_Seconds_Approval_Ready_Verification_2026-10-15.md \
+                  refinement/blueprints/Obeka_Splitter_of_Seconds_Commander_Blueprint_2026-10-15.md
+          git commit -m "Approve and lock Obeka Splitter of Seconds after SHA reconciliation [skip ci]"
           git push origin HEAD:main
