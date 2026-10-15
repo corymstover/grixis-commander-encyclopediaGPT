@@ -1,0 +1,101 @@
+baseline_card,decision,role_or_replacement,rationale
+Aetherling,KEEP,Cage payload / activated engine,Premium caged protection/reset ability; protects Mairsil and can create a fresh object while preserving cage cards in exile.
+An Offer You Can't Refuse,KEEP,Interaction / protection,Premium low-opportunity-cost interaction/protection appropriate to a Bracket 4 optimized shell; protects the commander-centric engine without displacing identity slots.
+Ancient Tomb,KEEP,Mana base,Functional untapped/fixing or utility land retained after the 32-land mana-base review; no material commander-first upgrade justifies replacing this slot.
+Anger,KEEP,Haste infrastructure,Graveyard haste is exactly where this deck wants it; tutors/setup naturally stock the graveyard and haste unlocks tap abilities immediately.
+Animate Dead,CUT,Essence Flux,"Second generic reanimation effect is less important because Mairsil wants payload cards in the graveyard to exile, not necessarily to reanimate. Essence Flux protects Mairsil, creates another cage ETB, and returns it as a fresh object."
+Aphetto Alchemist,KEEP,Cage payload / activated engine,Low-cost caged untap ability and part of activated-ability mana loops; survives comparison with slower untap artifacts.
+Arcane Signet,KEEP,Ramp / activation economy,Efficient acceleration or activation-cost support needed to cast Mairsil early and repeatedly activate the cage toolbox.
+Arcanis the Omnipotent,KEEP,Card advantage,Caged {T}: draw three is high-rate repeatable card advantage with the deck’s haste/untap infrastructure.
+Asmodeus the Archfiend,KEEP,Card advantage,"Mairsil gains the activated draw-seven ability but not Asmodeus’s static replacement effect, making this an exceptional cage payoff."
+Badlands,KEEP,Mana base,Functional untapped/fixing or utility land retained after the 32-land mana-base review; no material commander-first upgrade justifies replacing this slot.
+Blightstep Pathway // Searstep Pathway,KEEP,Mana base,Functional untapped/fixing or utility land retained after the 32-land mana-base review; no material commander-first upgrade justifies replacing this slot.
+Blood Crypt,KEEP,Mana base,Functional untapped/fixing or utility land retained after the 32-land mana-base review; no material commander-first upgrade justifies replacing this slot.
+Bloodstained Mire,KEEP,Mana base,Functional untapped/fixing or utility land retained after the 32-land mana-base review; no material commander-first upgrade justifies replacing this slot.
+Buried Alive,KEEP,Cage setup / tutor,"Finds Mairsil, protection, combo pieces, or—critically—places cage payloads into the graveyard for Mairsil to exile on entry."
+Cephalid Inkshrouder,KEEP,Cage payload / activated engine,Provides a zero-mana discard outlet plus evasion/shroud as an activated cage ability; converts dead high-MV payloads into graveyard setup while protecting Mairsil.
+Chaos Warp,KEEP,Interaction / protection,Premium low-opportunity-cost interaction/protection appropriate to a Bracket 4 optimized shell; protects the commander-centric engine without displacing identity slots.
+Chrome Mox,KEEP,Ramp / activation economy,Efficient acceleration or activation-cost support needed to cast Mairsil early and repeatedly activate the cage toolbox.
+City of Brass,KEEP,Mana base,Functional untapped/fixing or utility land retained after the 32-land mana-base review; no material commander-first upgrade justifies replacing this slot.
+Clearwater Pathway // Murkwater Pathway,KEEP,Mana base,Functional untapped/fixing or utility land retained after the 32-land mana-base review; no material commander-first upgrade justifies replacing this slot.
+Command Tower,KEEP,Mana base,Functional untapped/fixing or utility land retained after the 32-land mana-base review; no material commander-first upgrade justifies replacing this slot.
+Cyclonic Rift,KEEP,Interaction / protection,Premium low-opportunity-cost interaction/protection appropriate to a Bracket 4 optimized shell; protects the commander-centric engine without displacing identity slots.
+Deadly Rollick,KEEP,Interaction / protection,Premium low-opportunity-cost interaction/protection appropriate to a Bracket 4 optimized shell; protects the commander-centric engine without displacing identity slots.
+Deflecting Swat,KEEP,Interaction / protection,Premium low-opportunity-cost interaction/protection appropriate to a Bracket 4 optimized shell; protects the commander-centric engine without displacing identity slots.
+Demonic Tutor,KEEP,Cage setup / tutor,"Finds Mairsil, protection, combo pieces, or—critically—places cage payloads into the graveyard for Mairsil to exile on entry."
+Dimir Signet,KEEP,Ramp / activation economy,Efficient acceleration or activation-cost support needed to cast Mairsil early and repeatedly activate the cage toolbox.
+Eater of the Dead,KEEP,Cage payload / activated engine,Caged graveyard-exile untap can repeatedly untap Mairsil as long as creature cards are available in graveyards; commander-specific engine piece.
+Endling,KEEP,Cage payload / activated engine,"Multiple caged protection/combat abilities, especially undying, make it a flexible commander-protection payload without importing static drawbacks."
+Entomb,KEEP,Cage setup / tutor,"Finds Mairsil, protection, combo pieces, or—critically—places cage payloads into the graveyard for Mairsil to exile on entry."
+Fabled Passage,CUT,"Minamo, School at Water's Edge","With only three basics, Passage is a conditional tapped fixer before land four. Minamo enters untapped, produces blue, and directly untaps legendary Mairsil for another tap-ability activation."
+Fellwar Stone,KEEP,Ramp / activation economy,Efficient acceleration or activation-cost support needed to cast Mairsil early and repeatedly activate the cage toolbox.
+Fierce Guardianship,KEEP,Interaction / protection,Premium low-opportunity-cost interaction/protection appropriate to a Bracket 4 optimized shell; protects the commander-centric engine without displacing identity slots.
+Force of Will,KEEP,Interaction / protection,Premium low-opportunity-cost interaction/protection appropriate to a Bracket 4 optimized shell; protects the commander-centric engine without displacing identity slots.
+Frantic Search,KEEP,Cage setup / tutor,Draw/discard directly loads cage targets into the graveyard while effectively refunding mana; stronger fit than generic draw.
+Gamble,KEEP,Cage setup / tutor,"Finds Mairsil, protection, combo pieces, or—critically—places cage payloads into the graveyard for Mairsil to exile on entry."
+Gilded Lotus,KEEP,Ramp / activation economy,Five mana is justified because its caged mana ability is a deterministic engine component with Quicksilver Elemental plus Staff/Morphling/Horseshoe Crab lines.
+Hateflayer,KEEP,Cage payload / activated engine,Caged untap plus damage ability supplies both engine and payoff functions; notably stronger here than as a normal seven-mana creature.
+Haunted Ridge,KEEP,Mana base,Functional untapped/fixing or utility land retained after the 32-land mana-base review; no material commander-first upgrade justifies replacing this slot.
+Horseshoe Crab,KEEP,Cage payload / activated engine,One-mana self-untap is one of the cleanest cage abilities and participates directly in infinite-mana lines with Gilded Lotus and Quicksilver Elemental.
+Intuition,KEEP,Cage setup / tutor,"Finds Mairsil, protection, combo pieces, or—critically—places cage payloads into the graveyard for Mairsil to exile on entry."
+Island,KEEP,Mana base,Functional untapped/fixing or utility land retained after the 32-land mana-base review; no material commander-first upgrade justifies replacing this slot.
+Izzet Signet,KEEP,Ramp / activation economy,Efficient acceleration or activation-cost support needed to cast Mairsil early and repeatedly activate the cage toolbox.
+Lightning Greaves,KEEP,Commander protection / haste,Protects Mairsil and grants immediate access to tap abilities; shroud sequencing with blink/Minamo is manageable and does not invalidate the card.
+Lotus Petal,KEEP,Ramp / activation economy,Efficient acceleration or activation-cost support needed to cast Mairsil early and repeatedly activate the cage toolbox.
+Luxury Suite,KEEP,Mana base,Functional untapped/fixing or utility land retained after the 32-land mana-base review; no material commander-first upgrade justifies replacing this slot.
+"Mairsil, the Pretender",KEEP,Commander,"Commander defines the deck: a persistent exile-based activated-ability toolbox. All slot decisions are evaluated against making this engine faster, safer, or more decisive."
+Mana Confluence,KEEP,Mana base,Functional untapped/fixing or utility land retained after the 32-land mana-base review; no material commander-first upgrade justifies replacing this slot.
+Mana Vault,KEEP,Ramp / activation economy,Efficient acceleration or activation-cost support needed to cast Mairsil early and repeatedly activate the cage toolbox.
+"Marvin, Murderous Mimic",KEEP,Parallel activated-ability engine,"On the battlefield, Marvin inherits Mairsil’s acquired activated abilities while not inheriting Mairsil’s separate static once-per-turn restriction, giving powerful parallel redundancy."
+Minion of Leshrac,KEEP,Cage payload / activated engine,Mairsil gets the tap-to-destroy creature/land ability without Minion’s costly static/triggered drawbacks; high-impact cage payload.
+Mirror-Mad Phantasm,CUT,Displacer Kitten,"When Mairsil uses this acquired ability and no card named Mirror-Mad Phantasm can be found, the whole library mills. The current list lacks a dedicated deterministic payoff for that line; Kitten instead turns every noncreature spell into another Mairsil cage/reset trigger."
+Morphic Pool,KEEP,Mana base,Functional untapped/fixing or utility land retained after the 32-land mana-base review; no material commander-first upgrade justifies replacing this slot.
+Morphling,KEEP,Cage payload / activated engine,Core one-mana self-untap/protection payload and established infinite-mana partner with Gilded Lotus plus Quicksilver Elemental.
+Mountain,KEEP,Mana base,Functional untapped/fixing or utility land retained after the 32-land mana-base review; no material commander-first upgrade justifies replacing this slot.
+Mox Diamond,KEEP,Ramp / activation economy,Efficient acceleration or activation-cost support needed to cast Mairsil early and repeatedly activate the cage toolbox.
+Mystic Remora,KEEP,Card advantage,High-rate card advantage that keeps the setup-intensive activated-ability engine supplied.
+Mystical Tutor,KEEP,Cage setup / tutor,"Finds Mairsil, protection, combo pieces, or—critically—places cage payloads into the graveyard for Mairsil to exile on entry."
+Nevinyrral's Disk,KEEP,Cage payload / activated engine,Caged sweep ability gives Mairsil repeatable access to a board reset while avoiding Disk’s normal enters-tapped limitation on the artifact itself.
+Omen Hawker,KEEP,Ramp / activation economy,Efficient early accelerator for activated abilities and a cageable mana ability later; unusually aligned with the commander rather than generic ramp only.
+Oriq Loremage,KEEP,Cage setup / tutor,Repeatedly puts the exact creature/artifact cage payload into the graveyard; direct commander setup and one of the strongest commander-specific enablers.
+"Otawara, Soaring City",KEEP,Mana base,Functional untapped/fixing or utility land retained after the 32-land mana-base review; no material commander-first upgrade justifies replacing this slot.
+Patriar's Seal,KEEP,Ramp / activation economy,Two-mana rock that also untaps Mairsil; both halves are live and the untap mode is commander-specific.
+Polluted Delta,KEEP,Mana base,Functional untapped/fixing or utility land retained after the 32-land mana-base review; no material commander-first upgrade justifies replacing this slot.
+Puppet Strings,CUT,Pack Rat,"Its {2}, {T} untap is the weakest redundant untap effect. Pack Rat creates a Mairsil copy from a caged activated ability; the copy ETB still cages another card even if the legend rule immediately removes one Mairsil."
+Quicksilver Elemental,KEEP,Cage payload / activated engine,"Essential rules engine: Mairsil can use its ability to gain fresh instances of its own caged activated abilities, enabling established infinite-mana/draw loops."
+Rakdos Signet,KEEP,Ramp / activation economy,Efficient acceleration or activation-cost support needed to cast Mairsil early and repeatedly activate the cage toolbox.
+Reanimate,KEEP,Recursion / redundancy,Keep one efficient reanimation effect as emergency recovery/redundancy; it is substantially cheaper than the cut Animate Dead line and useful when a key battlefield creature matters.
+Rhystic Study,KEEP,Card advantage,High-rate card advantage that keeps the setup-intensive activated-ability engine supplied.
+Rings of Brighthearth,CUT,Spark Double,"Rings is strong and was specifically red-teamed, but it costs {2} for every copied nonmana activation and cannot copy Mairsil’s ETB trigger. Spark Double enters as a nonlegendary Mairsil copy, cages another card, and persistently gets its own once-per-turn access to every cage ability."
+Riverglide Pathway // Lavaglide Pathway,KEEP,Mana base,Functional untapped/fixing or utility land retained after the 32-land mana-base review; no material commander-first upgrade justifies replacing this slot.
+Scalding Tarn,KEEP,Mana base,Functional untapped/fixing or utility land retained after the 32-land mana-base review; no material commander-first upgrade justifies replacing this slot.
+"Shauku, Endbringer",KEEP,Cage payload / activated engine,Mairsil receives repeatable exile removal without Shauku’s static drawback; excellent cage conversion of a normally cumbersome creature.
+Shipwreck Marsh,KEEP,Mana base,Functional untapped/fixing or utility land retained after the 32-land mana-base review; no material commander-first upgrade justifies replacing this slot.
+"Sokenzan, Crucible of Defiance",KEEP,Mana base,Functional untapped/fixing or utility land retained after the 32-land mana-base review; no material commander-first upgrade justifies replacing this slot.
+Sol Ring,KEEP,Ramp / activation economy,Efficient acceleration or activation-cost support needed to cast Mairsil early and repeatedly activate the cage toolbox.
+Staff of Domination,KEEP,Cage payload / activated engine,Caged untap/draw/life suite and an established deterministic partner in Quicksilver Elemental + Gilded Lotus loops.
+Steam Vents,KEEP,Mana base,Functional untapped/fixing or utility land retained after the 32-land mana-base review; no material commander-first upgrade justifies replacing this slot.
+Stormcarved Coast,KEEP,Mana base,Functional untapped/fixing or utility land retained after the 32-land mana-base review; no material commander-first upgrade justifies replacing this slot.
+Sulfur Falls,KEEP,Mana base,Functional untapped/fixing or utility land retained after the 32-land mana-base review; no material commander-first upgrade justifies replacing this slot.
+Sulfurous Springs,KEEP,Mana base,Functional untapped/fixing or utility land retained after the 32-land mana-base review; no material commander-first upgrade justifies replacing this slot.
+Swamp,KEEP,Mana base,Functional untapped/fixing or utility land retained after the 32-land mana-base review; no material commander-first upgrade justifies replacing this slot.
+Swan Song,KEEP,Interaction / protection,Premium low-opportunity-cost interaction/protection appropriate to a Bracket 4 optimized shell; protects the commander-centric engine without displacing identity slots.
+"Takenuma, Abandoned Mire",KEEP,Mana base,Functional untapped/fixing or utility land retained after the 32-land mana-base review; no material commander-first upgrade justifies replacing this slot.
+Talisman of Creativity,KEEP,Ramp / activation economy,Efficient acceleration or activation-cost support needed to cast Mairsil early and repeatedly activate the cage toolbox.
+Talisman of Dominance,KEEP,Ramp / activation economy,Efficient acceleration or activation-cost support needed to cast Mairsil early and repeatedly activate the cage toolbox.
+Talisman of Indulgence,KEEP,Ramp / activation economy,Efficient acceleration or activation-cost support needed to cast Mairsil early and repeatedly activate the cage toolbox.
+Thousand-Year Elixir,KEEP,Cage payload / activated engine,Haste-equivalent for tap abilities plus an untap activation; both halves directly accelerate Mairsil’s cage engine.
+Torchling,KEEP,Cage payload / activated engine,Red one-mana self-untap plus protection/target-redirection and P/T manipulation; efficient multi-function cage payload.
+Toxic Deluge,KEEP,Interaction / protection,Premium low-opportunity-cost interaction/protection appropriate to a Bracket 4 optimized shell; protects the commander-centric engine without displacing identity slots.
+Training Center,KEEP,Mana base,Functional untapped/fixing or utility land retained after the 32-land mana-base review; no material commander-first upgrade justifies replacing this slot.
+Training Grounds,KEEP,Ramp / activation economy,Cuts the activation costs of the commander’s acquired nonmana abilities; unusually high leverage in an activated-ability toolbox.
+Tree of Perdition,KEEP,Cage payload / activated engine,Caged life-total exchange ability is a commander-specific finisher and pairs with power/toughness manipulation/damage infrastructure.
+Underground Sea,KEEP,Mana base,Functional untapped/fixing or utility land retained after the 32-land mana-base review; no material commander-first upgrade justifies replacing this slot.
+Underworld Breach,CUT,Faithless Looting,Powerful but generic here: the baseline lacks the compact Breach/LED/Brain Freeze package. Faithless Looting directly converts high-MV activated-ability cards in hand into graveyard cage targets and has flashback.
+Unmarked Grave,KEEP,Cage setup / tutor,"Finds Mairsil, protection, combo pieces, or—critically—places cage payloads into the graveyard for Mairsil to exile on entry."
+Vampiric Tutor,KEEP,Cage setup / tutor,"Finds Mairsil, protection, combo pieces, or—critically—places cage payloads into the graveyard for Mairsil to exile on entry."
+Volcanic Island,KEEP,Mana base,Functional untapped/fixing or utility land retained after the 32-land mana-base review; no material commander-first upgrade justifies replacing this slot.
+Walking Ballista,KEEP,Mana outlet / finisher,Retained as a clean outlet for infinite mana and as interaction; no need to force a generic Oracle/Breach finish package.
+Watery Grave,KEEP,Mana base,Functional untapped/fixing or utility land retained after the 32-land mana-base review; no material commander-first upgrade justifies replacing this slot.
+Wishclaw Talisman,KEEP,Cage setup / tutor,"Finds Mairsil, protection, combo pieces, or—critically—places cage payloads into the graveyard for Mairsil to exile on entry."
+Xander's Lounge,KEEP,Mana base,Functional untapped/fixing or utility land retained after the 32-land mana-base review; no material commander-first upgrade justifies replacing this slot.
