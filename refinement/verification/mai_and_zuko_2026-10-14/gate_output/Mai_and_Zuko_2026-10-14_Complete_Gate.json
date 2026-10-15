@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-10-15T04:05:32.275103+00:00",
+  "generated_at_utc": "2026-10-15T04:18:39.080753+00:00",
   "deck_id": "Mai_and_Zuko",
   "decklist_path": "refinement/decklists/Mai_and_Zuko_Approval_Candidate_2026-10-14.txt",
-  "deck_sha256": "f52cfc2043c5599ea5c35e553f06647bf018344ee73482b96e375122b9f29e8b",
+  "deck_sha256": "aa2036f49f38e6503734d99c852acdfa704aa1b27e44bb26d6e9566a73a0d4a2",
   "baseline_path": "refinement/verification/mai_and_zuko_2026-10-14/Mai_and_Zuko_Current_Cycle_Baseline_2026-10-14.txt",
   "baseline_source_sha256": "5ed4ca5a475f2472bf8679b07e2a2d3fc3caf68caf8ff34f550c21ad162ce34e",
   "count": 100,
@@ -12,8 +12,8 @@
     "R",
     "U"
   ],
-  "cache_generated_at_utc": "2026-10-15T03:58:57.320422+00:00",
-  "cache_sha256": "08551e50a9dedaa0f7959fd8e3779e53436290d52f1fe948e1389aa4b5e5e525",
+  "cache_generated_at_utc": "2026-10-15T04:13:16.073651+00:00",
+  "cache_sha256": "8c1c1eafd35a68ceb23c5a766f482e711b14335b8ba605310e9a4fc65465a5df",
   "project_exceptions": [],
   "rules_gate": "PASS",
   "official_legality_gate": "PASS",
