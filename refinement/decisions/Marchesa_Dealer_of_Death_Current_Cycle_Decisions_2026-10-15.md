@@ -3,11 +3,11 @@
 Date: 2026-10-15  
 Cycle: `global-restart-2026-10-13`  
 Candidate SHA-256: `34a6a940c54aaebde612ae5d3a244e22931d3a977fa26e4c43f2a76aafc0f6b1`  
-Status: **APPROVAL_READY — NOT APPROVED / NOT LOCKED**
+Status: **APPROVED / LOCKED**
 
 ## Decision
 
-Advance the exact 2026-10-11 Takeda Ryuhei tournament-winning Marchesa configuration as the current-cycle approval candidate.
+The user explicitly approved the exact 2026-10-11 Takeda Ryuhei tournament-winning Marchesa configuration as the current-cycle canonical list on 2026-10-15.
 
 This is a **48-card rebuild** from the frozen FINAL baseline, not a generic cEDH conversion. The rebuild is justified because Marchesa has current tournament evidence at genuine cEDH tables and the new architecture uses the commander's crime trigger as an active resource engine rather than treating Marchesa as a color-identity placeholder.
 
@@ -37,6 +37,10 @@ Rules/combo review: **PASS**
 Official Commander legality checkpoint: **PASS**  
 Singleton/color identity/count: **PASS**  
 Adversarial red-team: **COMPLETE**  
-Final serious pass: **ZERO NEW MATERIAL IMPROVEMENTS**
+Final serious pass: **ZERO NEW MATERIAL IMPROVEMENTS**  
+Explicit user approval: **RECEIVED 2026-10-15**
 
-No current-cycle approval or lock is written until explicit user approval.
+Canonical approved artifact: `refinement/decklists/Marchesa_Dealer_of_Death_Approved_2026-10-15.txt`  
+Approval record: `refinement/approvals/Marchesa_Dealer_of_Death_Approved_2026-10-15.md`
+
+The exact SHA-bound list is now frozen for the current cycle. Do not revise, reopen, or replace it unless the user explicitly requests that action.
