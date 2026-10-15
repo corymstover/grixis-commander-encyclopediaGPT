@@ -2,7 +2,7 @@
 
 Date: 2026-10-15  
 Cycle: `global-restart-2026-10-13`  
-Status: working decision closeout; not user approval
+Status: **APPROVED / LOCKED** — explicit user approval received 2026-10-15
 
 ## Final 16-card delta from authoritative FINAL baseline
 
@@ -57,3 +57,12 @@ Status: working decision closeout; not user approval
 A second serious candidate/role pass after the 16-card delta produced **ZERO NEW MATERIAL IMPROVEMENTS**. No additional change cleared the commander-identity, role-comparison, curve, mana, and opportunity-cost tests.
 
 **Decision closeout: PASS.**
+
+## Approval closeout
+
+- Explicit user approval received: **2026-10-15**
+- Canonical approved SHA-256: `9ee63d81c07c3b43163e1356cbf264deb9021d0b776daf0a91b85d071aed5aed`
+- Exact approved artifact: `refinement/decklists/Missy_Approved_2026-10-15.txt`
+- Current-cycle state: **APPROVED / LOCKED**
+- Quality gate: **Deck Quality Gates v3 + mandatory whole-list audit**
+- Next unlocked deck in tracker order: **Nathan Drake, Treasure Hunter (index 38 / deck 39 of 62)**.
