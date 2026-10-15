@@ -1,0 +1,39 @@
+name: Verify Mai and Zuko cached complete gate
+
+on:
+  push:
+    paths:
+      - '.github/workflows/verify-mai-and-zuko-fast-gate.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run complete fail-closed approval gate against fresh current-cycle cache
+        run: >-
+          python scripts/verify_complete_approval_gate.py
+          --config refinement/verification/mai_and_zuko_2026-10-14/Mai_and_Zuko_Complete_Gate_Config.json
+      - name: Commit successful gate evidence
+        if: success()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add refinement/verification/mai_and_zuko_2026-10-14/gate_output/
+          if git diff --cached --quiet; then
+            echo "No gate evidence changes to commit."
+          else
+            git commit -m "Persist Mai and Zuko cached complete gate [skip ci]"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
