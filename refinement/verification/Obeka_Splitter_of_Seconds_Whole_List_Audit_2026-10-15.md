@@ -8,14 +8,14 @@ Authoritative baseline: `GrixisFINALTXT60--2026.zip / Obeka__Splitter_of_Seconds
 ## Audit result
 
 - Noncommander copies adjudicated: **99/99**
-- Weighted result: **82 KEEP / 17 CUT**
+- Weighted result: **80 KEEP / 19 CUT**
 - Baseline: **100 cards / 94 distinct names / 35 lands**
 - Approval-ready candidate: **100 cards / 96 distinct names / 35 lands**
-- Candidate SHA-256: `9846e43dbe74fe49a9d356e944dc0a05d7dee30015e0d36e667fdbd01cb1ee75`
+- Candidate SHA-256: `83062ff2dbc955c628f9a6df460cf72dd5d450b6685bc4b53f63894bc8c321fb`
 - Candidate repeats: **Island x3 / Mountain x2 / Swamp x2 only**
-- This working audit does not constitute user approval.
+- This audit does not constitute user approval.
 
-## 82 KEEP copies
+## 80 KEEP copies
 
 - 1x An Offer You Can't Refuse
 - 1x Ancestral Vision
@@ -46,7 +46,6 @@ Authoritative baseline: `GrixisFINALTXT60--2026.zip / Obeka__Splitter_of_Seconds
 - 1x Extravagant Replication
 - 1x Fellwar Stone
 - 1x Fierce Guardianship
-- 1x Generous Plunderer
 - 1x Inspiring Refrain
 - 3x Island
 - 1x Jhoira of the Ghitu
@@ -54,7 +53,6 @@ Authoritative baseline: `GrixisFINALTXT60--2026.zip / Obeka__Splitter_of_Seconds
 - 1x Luxury Suite
 - 1x Mana Drain
 - 1x Mechanized Production
-- 1x Mithril Coat
 - 1x Morphic Pool
 - 2x Mountain
 - 1x Otawara, Soaring City
@@ -98,39 +96,68 @@ Authoritative baseline: `GrixisFINALTXT60--2026.zip / Obeka__Splitter_of_Seconds
 
 ### KEEP rationale groups
 
-- **Actual upkeep engines:** As Foretold, all six Courts, Creeping Bloodsucker, Dragonmaster Outcast, Extravagant Replication, Generous Plunderer, Mechanized Production, Phyrexian Arena, Plargg and Nassari, Replicating Ring, Twilight Prophet, Thopter Spy Network, Bonehoard Dracosaur, and Paradox Haze all materially improve when Obeka creates additional upkeeps.
-- **Suspend package:** Ancestral Vision, Inspiring Refrain, Profane Tutor, Rousing Refrain, Suspended Sentence, Jhoira, and As Foretold exploit repeated upkeep steps.
-- **Commander connection / damage:** Aqueous Form, Brotherhood Regalia, Combat Research, Embercleave, Greaves, Silver Shroud Costume, Swiftfoot Boots, Sword of Feast and Famine, Thassa, Shizo, and Silent Arbiter either force connection, protect Obeka, or increase actual combat damage.
-- **Time Sieve engine:** Thopter Spy Network, Time Sieve, Mechanized Production, Replicating Ring, Generous Plunderer, and the artifact/equipment density preserve the artifact-turn subengine.
-- **Interaction:** An Offer, Cyclonic Rift, Deadly Rollick, Deflecting Swat, Fierce Guardianship, Mana Drain, Swan Song, Toxic Deluge, Demonic Tutor, and Vampiric Tutor are efficient enough to protect or find the commander-native engines without consuming excessive identity slots.
-- **Mana:** retained sources provide premium fixing, utility, and sufficient basics to sustain the 35-land structure after fetch upgrades.
+- **Upkeep engines:** all six Courts, As Foretold, Bonehoard Dracosaur, Creeping Bloodsucker, Dragonmaster Outcast, Extravagant Replication, Mechanized Production, Phyrexian Arena, Plargg and Nassari, Replicating Ring, Twilight Prophet, Thopter Spy Network, Paradox Haze, and Thassa all materially improve when Obeka creates additional upkeep steps.
+- **Suspend/time-counter package:** Ancestral Vision, Inspiring Refrain, Profane Tutor, Rousing Refrain, Suspended Sentence, Jhoira, As Foretold, and Replicating Ring exploit repeated upkeep steps.
+- **Connection/damage:** Aqueous Form, Brotherhood Regalia, Combat Research, Embercleave, Lightning Greaves, Silver Shroud Costume, Swiftfoot Boots, Sword of Feast and Famine, Thassa, Shizo, Silent Arbiter, and the three Rings either force connection, protect Obeka, or increase future combat damage.
+- **Artifact/turn engine:** Time Sieve, Thopter Spy Network, Mechanized Production, Replicating Ring, Court of Vantress, and the retained artifact density remain because Obeka-created upkeeps can convert directly into artifact material and repeated turns.
+- **Interaction/protection:** An Offer, Cyclonic Rift, Deadly Rollick, Deflecting Swat, Fierce Guardianship, Mana Drain, Swan Song, Toxic Deluge, Demonic Tutor, and Vampiric Tutor retain enough efficient protection and answers without displacing the upkeep plan.
+- **Mana:** retained lands and rocks provide premium fixing, acceleration, utility, and the 35-land floor needed by the four-mana commander and multiple four-to-six-mana engines.
 
-## 17 CUT copies
+## 19 CUT copies
 
 | Card/copy | Decision basis |
 |---|---|
-| Blasphemous Act | Second mass-removal spell is less valuable than Roaming Throne, which directly doubles Obeka's combat-damage trigger while Toxic Deluge and Cyclonic Rift remain. |
-| Descent into Avernus | Extra upkeeps make its counter growth dangerously symmetrical: it can give opponents enormous Treasure bursts while dealing equally accelerating damage to its controller. Palace Siege turns upkeep volume into asymmetric pressure and life stabilization. |
-| Lizard Blades | Genuine double-strike synergy, but Mjölnir provides a stronger current damage multiplier for Obeka, an ETB removal mode, and equip worthy `{1}`. |
-| Scrawling Crawler | It scales with extra upkeeps, but every trigger also immediately refills all opponents. Hatred converts the slot into a commander-centric burst finisher without feeding opposing hands. |
-| Skyline Despot | Seven-mana monarch/upkeep payoff is replaced by six-mana Ginger, which establishes monarch and creates artifact Gingerbrutes at every upkeep while monarch, directly reinforcing Time Sieve. |
-| Strionic Resonator | It can copy Obeka's trigger but costs `{2}` on every use. Wizard's Staff costs one more mana to deploy/equip initially, then passively gives Obeka an additional trigger every time she connects while also granting prowess. |
-| Winged Boots | Flying + ward is redundant beside multiple cheaper/stronger unblockable and protection tools. Dragonfire Blade protects Obeka from monocolored interaction and increases her base combat damage from 2 to 4 for only `{1}` to equip to a three-color creature. |
+| Blasphemous Act | A second mass-removal spell is less valuable than Roaming Throne, which directly multiplies Obeka's defining combat-damage trigger. Toxic Deluge and Cyclonic Rift remain. |
+| Descent into Avernus | Extra upkeeps accelerate its symmetrical Treasure and damage output for everyone. Darksteel Reactor converts those same upkeeps into a resilient one-sided alternate win instead. |
+| Generous Plunderer | Every multiplied upkeep gives the controller a Treasure **and** gives an opponent a tapped Treasure. Smaug produces one-sided Treasures during the same Obeka-created upkeeps and adds flying/haste plus an attack-damage payoff. |
+| Lizard Blades | Double strike is real synergy, but Mjölnir produces comparable or better damage multiplication with worthy equip `{1}`, adds an ETB removal mode, and does not require a separate reconfigure creature to survive. |
+| Mithril Coat | Strong protection, but the final deck already has Greaves, Boots, Brotherhood Regalia, Silver Shroud Costume, Dragonfire Blade, countermagic/free interaction, and evasion. Tamiyo's Journal creates repeated Clues and unrestricted tutors from Obeka's extra upkeeps and has the higher engine ceiling. |
+| Scrawling Crawler | Scales with extra upkeeps but refills opponents immediately. Hatred converts the slot into an instant-speed commander-damage/upkeep-count finisher without feeding opposing hands. |
+| Skyline Despot | Seven mana is too slow. Super Intelligence costs `{U}` and converts every extra upkeep directly into another card while attached to Obeka or another creature. |
+| Strionic Resonator | Copies a trigger for `{2}` each use. Wizard's Staff requires higher initial equip but then passively causes Obeka's relevant triggers to trigger an additional time and also grants prowess. |
+| Winged Boots | Flying/ward is redundant beside multiple unblockable/protection routes. Dragonfire Blade is only `{1}` to equip to three-color Obeka, adds +2/+2, and grants hexproof from monocolored. |
 | Dragonskull Summit | Checkland becomes Arid Mesa for premium typed-dual/tri-land access. |
 | Drowned Catacomb | Checkland becomes Flooded Strand. |
 | Shipwreck Marsh | Conditional slowland becomes Marsh Flats. |
 | Stormcarved Coast | Conditional slowland becomes Misty Rainforest. |
 | Sulfur Falls | Checkland becomes Verdant Catacombs. |
-| Exotic Orchard | Variable fixing becomes Wooded Foothills and increases fetch density. |
-| Reliquary Tower | Colorless hand-size utility is lower priority than Mana Confluence in a color-intensive commander deck. |
+| Exotic Orchard | Opponent-dependent fixing becomes Wooded Foothills. |
+| Reliquary Tower | Colorless hand-size utility becomes Mana Confluence in a color-intensive three-color deck. |
 | 1x Island | Replaced by City of Brass while retaining three Islands. |
 | 1x Mountain | Replaced by Reflecting Pool while retaining two Mountains. |
-| Rogue's Passage | Four-mana evasion activation is redundant beside Aqueous Form, Brotherhood Regalia, Silver Shroud Costume, Thassa, menace, Shizo, and Silent Arbiter; Arena of Glory accelerates Obeka and can grant haste. |
+| Rogue's Passage | Four-mana evasion activation is redundant beside the existing connection package; Arena of Glory can accelerate Obeka and grant haste. |
+
+## 9 final strategic additions
+
+- Roaming Throne
+- Mjölnir, Hammer of Thor
+- Dragonfire Blade
+- Hatred
+- Wizard's Staff
+- Smaug the Magnificent
+- Super Intelligence
+- Darksteel Reactor
+- Tamiyo's Journal
+
+## Hybrid reconciliation closure
+
+The first SHA-bound candidate used Ginger, Queen of Sweets and Palace Siege and retained Generous Plunderer and Mithril Coat. A later challenger used Smaug, Super Intelligence, Darksteel Reactor, Tamiyo's Journal, Aggravated Assault, and Blackblade Reforged but did not preserve all of the stronger Mjölnir/Dragonfire/Hatred package.
+
+A direct head-to-head red-team produced the final hybrid represented by this audit:
+
+- **Smaug over Generous Plunderer/Ginger:** lower mana than Ginger, one-sided upkeep Treasure generation unlike Generous Plunderer, and an attack payoff.
+- **Super Intelligence over Palace Siege:** one mana for one card every added upkeep is the stronger rate in a list already containing multiple direct-damage upkeep engines.
+- **Darksteel Reactor over the symmetrical Descent:** one-sided indestructible alternate win that scales exactly with added upkeeps.
+- **Tamiyo's Journal over redundant Mithril Coat:** repeated Clues, artifact material, card draw, and a three-Clue unrestricted tutor convert upkeep volume into both resources and combo access.
+- **Aggravated Assault rejected:** strong with Sword of Feast and Famine and extra-combat synergy, but the two-card combat loop is substantially more generic than the retained commander-native upkeep engines.
+- **Blackblade Reforged rejected:** excellent raw pump but redundant after Mjölnir, Dragonfire Blade, Hatred, Embercleave, Combat Research, and all three scaling Rings.
+- **Ginger / Palace Siege rejected:** both remain valid synergy cards, but their six-/five-mana rates lost to Smaug / Super Intelligence in the final slot competition.
 
 ## Audit closure
 
-Every one of the **99 authoritative baseline noncommander copies** is accounted for as KEEP or CUT. Strategic delta is **7 cards**, mana-base delta is **10 card copies**, and land count remains **35**.
-
-Candidate challengers including Bitterbloom Bearer, Genji Glove, Hall of Echoes, Aether Tunnel, Rilsa Rael, Sphinx of the Second Sun, additional generic fast mana, generic extra turns, and generic cEDH finishers were tested against the finalized slots. Wizard's Staff did beat the first working candidate and was incorporated over Strionic Resonator before approval-ready binding. No remaining challenger produced a material net improvement without higher mana, redundancy, color strain, commander dilution, or a weaker current role.
-
-**Final serious strategic pass: ZERO NEW MATERIAL IMPROVEMENTS.**
+- Every one of the **99 authoritative baseline noncommander copies** is classified as KEEP or CUT.
+- Strategic delta: **9 cuts / 9 additions**.
+- Mana-base delta: **10 card-copy cuts / 10 additions**.
+- Land count remains **35**.
+- Final candidate has **100 cards / 96 distinct names**; only Island x3, Mountain x2, and Swamp x2 repeat.
+- Final serious strategic pass after reconciling both competing candidates: **ZERO NEW MATERIAL IMPROVEMENTS**.
