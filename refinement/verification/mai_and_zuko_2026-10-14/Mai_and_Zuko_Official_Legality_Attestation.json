@@ -1,13 +1,13 @@
 {
   "status": "PASS",
-  "deck_sha256": "f52cfc2043c5599ea5c35e553f06647bf018344ee73482b96e375122b9f29e8b",
-  "checked_at_utc": "2026-10-15T04:00:00Z",
+  "deck_sha256": "aa2036f49f38e6503734d99c852acdfa704aa1b27e44bb26d6e9566a73a0d4a2",
+  "checked_at_utc": "2026-10-15T04:05:00Z",
   "sources": [
     "Wizards of the Coast Commander Banned & Restricted status, with the February 9, 2026 Commander update and October 12, 2026 B&R announcement checkpoint",
-    "Current Oracle/legality data for Mai and Zuko, The Blue Spirit, Katara, Waterbending Master, Boiling Rock Rioter, The Fire Nation Drill, Uthros Research Craft, Unwinding Clock, Thought Monitor, Ally Encampment, Urza's Saga, Marsh Flats, Flooded Strand, and Misty Rainforest",
+    "Current Oracle/legality data for Mai and Zuko, The Blue Spirit, Katara, Waterbending Master, Boiling Rock Rioter, Tundra Tank, The Fire Nation Drill, Uthros Research Craft, Unwinding Clock, Thought Monitor, Ally Encampment, Urza's Saga, Marsh Flats, Flooded Strand, and Misty Rainforest",
     "Current-cycle Oracle/Scryfall legality cache; exact candidate is independently revalidated by the complete approval gate"
   ],
   "unexpected_banned_cards": [],
   "project_exceptions": [],
-  "notes": "The exact SHA-bound Mai and Zuko candidate requires no project-specific legality exception. The October 12, 2026 B&R announcement made Competitive Brawl changes and did not announce a paper Commander change. Final per-card Commander legality, exact Oracle resolution, singleton structure, and U/B/R color identity remain fail-closed in the complete approval gate before APPROVAL_READY."
+  "notes": "The exact SHA-bound Mai and Zuko candidate requires no project-specific legality exception. Tundra Tank is Commander-legal and has color identity within Mai and Zuko's U/B/R identity. The October 12, 2026 B&R announcement made Competitive Brawl changes and did not announce a paper Commander change. Final per-card Commander legality, exact Oracle resolution, singleton structure, and U/B/R color identity remain fail-closed in the complete approval gate before APPROVAL_READY."
 }

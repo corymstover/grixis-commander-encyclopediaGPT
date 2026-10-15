@@ -37,7 +37,6 @@
 1x Force of Will
 1x Foundry Inspector
 1x Jhoira, Weatherlight Captain
-1x Jwari Shapeshifter
 1x Katara, Waterbending Master
 1x Lightning Greaves
 1x Lion's Eye Diamond
@@ -84,6 +83,7 @@
 1x Toxic Deluge
 1x Training Center
 1x Tuktuk Scrapper
+1x Tundra Tank
 1x Ty Lee, Chi Blocker
 1x Underground Sea
 1x Underworld Breach

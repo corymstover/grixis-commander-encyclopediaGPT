@@ -1,10 +1,10 @@
 {
   "status": "PASS",
-  "deck_sha256": "f52cfc2043c5599ea5c35e553f06647bf018344ee73482b96e375122b9f29e8b",
-  "checked_at_utc": "2026-10-15T04:00:00Z",
+  "deck_sha256": "aa2036f49f38e6503734d99c852acdfa704aa1b27e44bb26d6e9566a73a0d4a2",
+  "checked_at_utc": "2026-10-15T04:05:00Z",
   "sources": [
-    "Current Oracle text and published rulings for Mai and Zuko, The Blue Spirit, Katara, Waterbending Master, Boiling Rock Rioter, Unwinding Clock, Thought Monitor, The Fire Nation Drill, Uthros Research Craft, Ally Encampment, Urza's Saga, Mana Vault, Basalt Monolith, Roaming Throne, and the retained combo pieces",
-    "Magic Comprehensive Rules — timing permissions, triggered abilities, firebending mana duration, affinity, Station, Aura/token/permanent-copy handling where relevant, and land/artifact search restrictions",
+    "Current Oracle text and published rulings for Mai and Zuko, The Blue Spirit, Katara, Waterbending Master, Boiling Rock Rioter, Tundra Tank, Unwinding Clock, Thought Monitor, The Fire Nation Drill, Uthros Research Craft, Ally Encampment, Urza's Saga, Mana Vault, Basalt Monolith, Roaming Throne, and the retained combo pieces",
+    "Magic Comprehensive Rules — timing permissions, triggered abilities, firebending mana duration, affinity, Station, Vehicles/crew, indestructible, and land/artifact search restrictions",
     "Fresh current-cycle Oracle cache and exact-list verification are independently enforced by the complete approval gate"
   ],
   "interactions": [
@@ -32,6 +32,11 @@
       "name": "Boiling Rock Rioter graveyard and attack permissions",
       "status": "PASS",
       "conclusion": "Boiling Rock Rioter may tap an untapped Ally its controller controls to exile any target card from a graveyard. Its attack trigger permits casting an Ally spell only from among cards its controller owns that were exiled with that specific Rioter. Its firebending 1 also produces combat-only red mana under the normal firebending rules."
+    },
+    {
+      "name": "Tundra Tank as commander-enabled protection",
+      "status": "PASS",
+      "conclusion": "Tundra Tank is an artifact spell, so Mai and Zuko allow it to be cast as though it had flash. Its enters ability can therefore give a target creature you control indestructible until end of turn in response to destroy effects or lethal damage. Indestructible does not stop exile, bounce, sacrifice, or toughness reduction to zero. Tundra Tank has crew 1; its firebending 1 produces mana only when the Tank is a creature and is declared as an attacker."
     },
     {
       "name": "Unwinding Clock with artifact mana",
