@@ -8,50 +8,74 @@ Deck: #45 of 62
 
 **Natural ceiling: Power Bracket 4 — Optimized.**
 
-Primary identity: **Extra Upkeeps / Combat Damage / Upkeep Engines**.
+Primary identity: **Extra Upkeeps / Combat Damage / Upkeep Triggers**.
 
-Obeka is a four-mana 2/5 with menace. Whenever she deals combat damage to a player, the amount of combat damage dealt becomes that many additional upkeep steps after that combat phase. Rules-wise, each added upkeep is housed in an additional beginning phase whose untap and draw steps are skipped. The deck therefore treats Obeka's actual combat-damage number as the principal resource multiplier.
+Obeka is a four-mana 2/5 Ogre Warlock with menace. Whenever she deals combat damage to a player, her controller gets that many additional upkeep steps after that combat phase. Under the official rules treatment, those upkeep steps occur in additional beginning phases whose untap and draw steps are skipped. The deck therefore treats **actual combat damage dealt by Obeka** and **additional instances of Obeka's combat-damage trigger** as its primary resource multipliers.
 
-The strongest commander-first sequence is:
+The commander-first sequence is:
 
-1. resolve/protect Obeka;
-2. guarantee combat connection;
-3. increase actual combat damage or create additional instances of Obeka's combat-damage trigger;
-4. convert the resulting additional upkeep steps into cards, tokens, counters, life drain, monarch value, suspend acceleration, or artifact production;
-5. use Thopter Spy Network / other artifact production plus Time Sieve as a repeatable extra-turn engine when enough artifacts are generated.
+1. resolve and protect Obeka;
+2. force combat connection;
+3. increase her actual combat damage and/or multiply her combat-damage trigger;
+4. convert the resulting additional upkeeps into cards, Treasures, Clues, counters, tokens, life pressure, monarch value, suspend acceleration, artifact production, and alternate wins;
+5. use Time Sieve when upkeep-generated artifacts support repeatable extra turns.
 
-## Priority engines
+## Final engine priorities
 
-- **Damage / trigger multipliers:** Mjölnir, Hammer of Thor; Dragonfire Blade; Embercleave; Sword of Feast and Famine; Combat Research; Roaming Throne; Wizard's Staff; Hatred; the three color Rings.
-- **Connection / protection:** Aqueous Form; Brotherhood Regalia; Lightning Greaves; Silver Shroud Costume; Swiftfoot Boots; Thassa, God of the Sea; Shizo, Death's Storehouse; Silent Arbiter.
-- **Upkeep payoffs:** all six retained Courts; As Foretold; Bonehoard Dracosaur; Creeping Bloodsucker; Dragonmaster Outcast; Extravagant Replication; Generous Plunderer; Ginger, Queen of Sweets; Mechanized Production; Palace Siege; Paradox Haze; Phyrexian Arena; Plargg and Nassari; Replicating Ring; Twilight Prophet; Thopter Spy Network.
-- **Suspend/time-counter leverage:** Ancestral Vision; Inspiring Refrain; Jhoira of the Ghitu; Profane Tutor; Rousing Refrain; Suspended Sentence; As Foretold; Replicating Ring.
-- **Artifact-turn engine:** Time Sieve remains because Thopter Spy Network and Ginger can create artifacts during Obeka-created upkeeps; other artifacts provide seed material when needed.
+### Damage and trigger multiplication
+- **Mjölnir, Hammer of Thor** — doubles damage Obeka would deal; Obeka is worthy, so equip worthy is `{1}`.
+- **Dragonfire Blade** — three-color Obeka reduces equip `{4}` to `{1}`; +2/+2 directly increases added-upkeep count while hexproof from monocolored protects the commander.
+- **Hatred** — converts life into +X/+0 at instant speed; every additional point that connects becomes another upkeep.
+- **Roaming Throne** — choose Ogre or Warlock; Obeka's combat-damage ability triggers an additional time.
+- **Wizard's Staff** — gives Obeka prowess and causes her triggered abilities to trigger an additional time; Obeka uses normal equip `{3}` because she is a Warlock, not a Wizard.
+- **Combat Research, Embercleave, Sword of Feast and Famine, Black-color Rings** and the retained equipment package continue to raise damage, create multiple damage events, or improve connection.
+
+### Efficient upkeep engines
+- **Super Intelligence** — one mana turns every upkeep of enchanted Obeka's controller into a card draw.
+- **Smaug the Magnificent** — each controller upkeep creates a Treasure; Obeka-created upkeeps therefore generate one-sided artifact acceleration, and Smaug's attack trigger converts accumulated Treasures into damage.
+- **Tamiyo's Journal** — each controller upkeep investigates; extra upkeeps generate Clues, which are card draw, tutor fuel, and Time Sieve material.
+- **Darksteel Reactor** — every controller upkeep can add a charge counter; twenty counters win the game. Obeka can compress many Reactor counters into a single postcombat sequence.
+- Retained engines include all six Courts, As Foretold, Bonehoard Dracosaur, Creeping Bloodsucker, Dragonmaster Outcast, Extravagant Replication, Mechanized Production, Phyrexian Arena, Plargg and Nassari, Replicating Ring, Thopter Spy Network, Thassa, and Twilight Prophet.
+
+### Suspend / time-counter leverage
+Ancestral Vision, Inspiring Refrain, Jhoira of the Ghitu, Profane Tutor, Rousing Refrain, Suspended Sentence, As Foretold, and Replicating Ring all improve when extra upkeeps rapidly advance time/counter-based engines.
+
+### Artifact extra-turn package
+Time Sieve remains commander-appropriate because Thopter Spy Network, Smaug, Tamiyo's Journal, Replicating Ring, Mechanized Production, Court of Vantress, and other artifacts can turn Obeka-created upkeeps into expendable artifacts. The deck does not treat Sieve as an unconditional three-card combo from an empty board; board state and artifact cadence matter.
 
 ## Identity constraints
 
-- Do not turn this deck into generic Grixis cEDH. Project power reranking and contemporary commander evidence support Bracket 4 rather than a natural cEDH ceiling.
-- Do not add generic extra turns merely because they are powerful. Obeka's own extra-upkeep engine must remain the defining axis.
-- Do not overload on evasion once connection is adequately supported; new slots should preferably increase damage, multiply the Obeka trigger, or produce meaningful upkeep value.
-- Keep land count at 35. The commander costs four and the deck retains multiple four-to-six-mana upkeep engines.
+- Do **not** convert this into generic Grixis cEDH. Project reranking and current evidence support Bracket 4, not a tournament-established cEDH ceiling.
+- Do **not** add generic extra turns or Oracle/Consultation/Breach packages merely because they raise abstract power.
+- Do not spend more slots on evasion once the commander already has menace plus Aqueous Form, Brotherhood Regalia, Silver Shroud Costume, Greaves, Boots, Thassa, Shizo, and Silent Arbiter.
+- Prefer cards whose output scales directly with **Obeka-created upkeeps** or **Obeka's damage**.
+- Keep **35 lands**; Obeka costs four and the deck retains several four-to-six-mana upkeep engines.
 
-## Key current-cycle upgrades
+## Final hybrid reconciliation
 
-- **Roaming Throne:** choose Ogre or Warlock; Obeka's combat-damage triggered ability triggers an additional time.
-- **Wizard's Staff:** Obeka is a Warlock rather than a Wizard, so equip costs `{3}`; once attached, Obeka has prowess and every trigger of her combat-damage ability triggers an additional time without the recurring `{2}` activation cost required by Strionic Resonator.
-- **Mjölnir, Hammer of Thor:** Obeka is a legendary non-Villain red creature and therefore worthy; equip worthy costs `{1}` and doubles the combat damage she actually deals, which doubles the number of upkeeps produced by that hit.
-- **Dragonfire Blade:** Obeka is three colors, reducing equip from `{4}` to `{1}`; +2/+2 changes the base hit from 2 to 4 while adding hexproof from monocolored.
-- **Hatred:** converts life into power at instant speed and therefore into additional upkeep steps if Obeka connects.
-- **Palace Siege:** Dragons mode converts each additional upkeep into 2 life lost by each opponent and 2 life gained by the controller.
-- **Ginger, Queen of Sweets:** establishes monarch and creates a Gingerbrute artifact token at the beginning of each upkeep while monarch, directly supporting the Time Sieve plan.
+Two serious working candidates existed during the current-cycle review. The earlier repository candidate emphasized Mjölnir / Dragonfire Blade / Hatred / Ginger / Palace Siege. A later challenger emphasized Smaug / Super Intelligence / Darksteel Reactor / Tamiyo's Journal / Aggravated Assault / Blackblade Reforged.
+
+The final adversarial comparison produced a hybrid:
+
+**Retained from the earlier candidate:** Mjölnir, Dragonfire Blade, Hatred, Roaming Throne, Wizard's Staff.  
+**Adopted from the challenger:** Smaug, Super Intelligence, Darksteel Reactor, Tamiyo's Journal.  
+**Rejected at final slot stage:** Ginger, Palace Siege, Aggravated Assault, Blackblade Reforged.
+
+Reasons:
+- Smaug is cheaper and one-sided compared with Ginger while generating the Treasures specifically during the controller's extra upkeeps.
+- Super Intelligence costs only one mana and converts each extra upkeep directly into another card, beating the five-mana Palace Siege on rate in the final shell.
+- Darksteel Reactor supplies a resilient commander-native alternate win whose counter clock is compressed by extra upkeeps.
+- Tamiyo's Journal supplies both artifact generation and unrestricted tutoring from the same upkeep engine.
+- Aggravated Assault + Sword of Feast and Famine is powerful but substantially more generic and did not beat a commander-native upkeep engine for the final slot.
+- Blackblade Reforged is a strong damage amplifier but redundant after Mjölnir, Dragonfire Blade, Hatred, Embercleave, Combat Research, and the three scaling Rings.
 
 ## Current-cycle structure
 
-- Baseline: 100 cards / 94 distinct names / 35 lands.
-- Candidate: 100 cards / 96 distinct names / 35 lands.
-- Candidate repeats: Island x3, Mountain x2, Swamp x2 only.
-- Whole-list result: 82 KEEP / 17 CUT across all 99 baseline noncommander copies.
+- Baseline: **100 cards / 94 distinct names / 35 lands**.
+- Final approval-ready candidate: **100 cards / 96 distinct names / 35 lands**.
+- Candidate repeats: **Island x3 / Mountain x2 / Swamp x2 only**.
+- Whole-list result: **80 KEEP / 19 CUT across all 99 baseline noncommander copies**.
 - No project legality exception required.
 - Recommended Archidekt tags: **Extra Upkeeps / Combat Damage / Upkeep Triggers**.
 
-Candidate SHA-256: `9846e43dbe74fe49a9d356e944dc0a05d7dee30015e0d36e667fdbd01cb1ee75`
+Candidate SHA-256: `83062ff2dbc955c628f9a6df460cf72dd5d450b6685bc4b53f63894bc8c321fb`
