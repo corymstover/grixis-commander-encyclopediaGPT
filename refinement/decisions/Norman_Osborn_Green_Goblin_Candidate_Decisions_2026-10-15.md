@@ -79,7 +79,7 @@ Grinding Station can sacrifice Mox Amber to mill three cards. Underworld Breach 
 
 ## Candidate exhaustion — notable rejected alternatives
 
-- **Necropotence — REJECT despite high generic cEDH inclusion.** Its discard replacement exiles discarded cards instead of leaving them in the graveyard, directly suppressing Green Goblin's mayhem plan. This is a commander-first anti-synergy and the historical project cut is upheld.
+- **Necropotence — REJECT despite high generic cEDH inclusion.** Whenever you discard, Necropotence triggers and attempts to exile that card from your graveyard when the trigger resolves. Because mayhem still obeys timing rules, this sharply interferes with the normal sorcery-speed discard-then-cast pattern: sorcery-speed mayhem cards usually cannot be cast while the Necropotence trigger is waiting on the stack. Instant-speed or flash-enabled lines can sometimes use the card before that trigger resolves, so the interaction is tension rather than an absolute prohibition. The commander-first build still rejects Necropotence because it systematically works against the intended graveyard resource loop.
 - **Skirge Familiar — REJECT at final slot stage.** It has genuine Norman-specific lift and becomes cheaper if itself discarded and mayhem-cast, but five mana from hand / three after Green Goblin is too slow once the final list has many cheaper discard outlets.
 - **Kefka, Court Mage — REJECT at final slot stage.** Tournament-playable and synergistic, but five mana loses the slot competition to one-/two-mana setup and compact cEDH infrastructure.
 - **Chainer, Nightmare Adept — REJECT.** Strong commander lift is acknowledged, but four-mana creature-only recursion is slower than the final graveyard plan.
