@@ -1,0 +1,83 @@
+{
+  "status": "PASS",
+  "deck_sha256": "39f02b53cda066484a0546803d8526564f351b65f857ea8a5b1b25703106872a",
+  "checked_at_utc": "2026-10-15T07:50:00+00:00",
+  "rules_checkpoint": "Magic Comprehensive Rules effective 2026-09-25",
+  "sources": [
+    "https://media.wizards.com/2026/downloads/MagicCompRules%2020260925.txt",
+    "https://scryfall.com/card/cns/49/marchesa-the-black-rose",
+    "https://commanderspellbook.com/search/?q=Marchesa%2C%20the%20Black%20Rose",
+    "https://commanderspellbook.com/search/?q=Glen%20Elendra%20Archmage%20Spark%20Double%20Ashnod%27s%20Altar",
+    "https://commanderspellbook.com/search/?q=Murderous%20Redcap%20Gev%2C%20Scaled%20Scorch",
+    "https://commanderspellbook.com/search/?q=Murderous%20Redcap%20Metallic%20Mimic",
+    "https://scryfall.com/search?q=%21%22Twilight+Diviner%22+or+%21%22Danny+Pink%22+or+%21%22Agatha%27s+Soul+Cauldron%22+or+%21%22Forge+of+Heroes%22+or+%21%22Flare+of+Denial%22"
+  ],
+  "interactions": [
+    {
+      "name": "Marchesa death trigger and delayed return",
+      "status": "PASS",
+      "note": "Marchesa creates a delayed trigger for the beginning of the next end step when a controlled creature with a +1/+1 counter dies. If that delayed trigger is created after an end step has already begun, it waits for the next turn's end step."
+    },
+    {
+      "name": "Persist plus +1/+1 counter support",
+      "status": "PASS",
+      "note": "Persist returns a creature with a -1/-1 counter if it died without one. +1/+1 and -1/-1 counters remove each other as a state-based action, allowing the persist creature to be reset for another loop when the deck supplies a +1/+1 counter."
+    },
+    {
+      "name": "Spark Double + Glen Elendra Archmage + Ashnod's Altar",
+      "status": "PASS",
+      "note": "The indexed loop uses Spark Double copying Glen Elendra Archmage and Ashnod's Altar; counter-state resetting and repeated sacrifice/return create repeatable mana/counterspell-engine functionality under the stated prerequisites."
+    },
+    {
+      "name": "Murderous Redcap + Gev, Scaled Scorch",
+      "status": "PASS",
+      "note": "After an opponent has lost life this turn, Gev causes returning creatures to enter with an additional +1/+1 counter; this offsets Redcap's persist -1/-1 counter and supports a repeatable death/ETB damage loop with a suitable sacrifice outlet."
+    },
+    {
+      "name": "Murderous Redcap + Metallic Mimic",
+      "status": "PASS",
+      "note": "Metallic Mimic naming Goblin causes Redcap to enter with a +1/+1 counter, allowing persist's -1/-1 counter to be canceled and enabling repeatable Redcap sacrifice/return with a free outlet."
+    },
+    {
+      "name": "Altar of Dementia as sacrifice outlet and payoff",
+      "status": "PASS",
+      "note": "Altar sacrifices creatures at no mana cost and mills based on sacrificed power, turning established repeatable creature loops into deterministic library depletion."
+    },
+    {
+      "name": "Satoru, the Infiltrator with Marchesa returns",
+      "status": "PASS",
+      "note": "Creatures returned by Marchesa or persist enter the battlefield without being cast, satisfying Satoru's trigger condition and converting recursion events into card draw."
+    },
+    {
+      "name": "Twilight Diviner with graveyard returns",
+      "status": "PASS",
+      "note": "Once each turn, qualifying other creatures entering from a graveyard can trigger Twilight Diviner to create a token copy, directly rewarding Marchesa/persist returns."
+    },
+    {
+      "name": "Danny Pink counter draw",
+      "status": "PASS",
+      "note": "Danny Pink triggers the first time one or more counters are put on a creature you control each turn; dethrone and the deck's dedicated +1/+1-counter engines can satisfy that condition."
+    },
+    {
+      "name": "Agatha's Soul Cauldron counter and ability sharing",
+      "status": "PASS",
+      "note": "The Cauldron can exile creature cards from graveyards, put a +1/+1 counter on a creature, and grant activated abilities of creature cards it exiled to creatures you control with +1/+1 counters, matching the deck's counter infrastructure."
+    },
+    {
+      "name": "Forge of Heroes on Marchesa",
+      "status": "PASS",
+      "note": "Forge can target a commander that entered the battlefield this turn and put a +1/+1 counter on it if it is a creature; it does not require that commander to have been cast from the command zone."
+    },
+    {
+      "name": "Sneak Attack and Marchesa end-step timing",
+      "status": "PASS",
+      "note": "Sneak Attack grants haste and creates an end-step sacrifice trigger. If that sacrifice occurs during the end step, Marchesa's newly created delayed return trigger waits until the following turn's end step because the current beginning-of-end-step event has already passed."
+    },
+    {
+      "name": "Flare of Denial alternate cost",
+      "status": "PASS",
+      "note": "Flare's alternate cost may sacrifice a nontoken blue creature. If that sacrificed creature has a +1/+1 counter while Marchesa is controlled, its death can create Marchesa's delayed return trigger."
+    }
+  ],
+  "result_note": "Rules attestation is bound to the exact candidate SHA. Any decklist change invalidates this PASS until re-attested."
+}
