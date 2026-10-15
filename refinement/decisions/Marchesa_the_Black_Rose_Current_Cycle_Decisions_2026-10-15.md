@@ -3,7 +3,7 @@
 Date: 2026-10-15  
 Cycle: `global-restart-2026-10-13`  
 Candidate SHA-256: `627b07f6466c0a48f16daea58ee9c01bba02c2b7fb4de76a37b14a7f75ad7f9b`  
-Status: **APPROVAL_READY — NOT APPROVED / NOT LOCKED**
+Status: **APPROVED / LOCKED**
 
 ## Source reconciliation
 
@@ -91,4 +91,8 @@ The candidate remains at **34 lands**. Premium duals, five-color lands, and thre
 - Current official Commander legality checkpoint: **PASS**
 - Project exceptions: **NONE**
 
-The exact SHA-bound candidate is approval-ready. No approval or lock may be written until the user explicitly approves it.
+## Approval
+
+The user explicitly approved this exact SHA-bound candidate on 2026-10-15. The canonical approved artifact is `refinement/decklists/Marchesa_the_Black_Rose_Approved_2026-10-15.txt` and the approval record is `refinement/approvals/Marchesa_the_Black_Rose_Approved_2026-10-15.md`.
+
+This deck is **APPROVED / LOCKED** for the current refinement cycle and must not be revised, reopened, or replaced unless the user explicitly requests it.
