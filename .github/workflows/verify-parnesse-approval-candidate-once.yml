@@ -1,0 +1,43 @@
+name: Verify Parnesse approval candidate once
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - ".github/workflows/verify-parnesse-approval-candidate-once.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Refresh current-cycle Oracle cache for candidate
+        run: python scripts/build_current_cycle_oracle_cache.py
+
+      - name: Verify Parnesse exact candidate
+        run: python scripts/verify_parnesse_approval_candidate_once.py
+
+      - name: Commit approval-ready evidence
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add refinement/metadata_audit/Current_Cycle_Oracle_Cache.jsonl \
+                  refinement/metadata_audit/Current_Cycle_Oracle_Cache_Summary.json \
+                  refinement/verification/Parnesse_the_Subtle_Brush_Whole_List_Audit_2026-10-15.md \
+                  refinement/decisions/Parnesse_the_Subtle_Brush_Candidate_Decisions_2026-10-15.md \
+                  refinement/verification/Parnesse_the_Subtle_Brush_Approval_Ready_Verification_2026-10-15.md \
+                  refinement/verification/parnesse_2026-10-15/gate_output
+          git commit -m "Verify Parnesse approval-ready candidate [skip ci]"
+          git push origin HEAD:main
