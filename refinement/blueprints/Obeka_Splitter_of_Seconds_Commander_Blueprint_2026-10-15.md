@@ -22,7 +22,7 @@ The strongest commander-first sequence is:
 
 ## Priority engines
 
-- **Damage / trigger multipliers:** Mjölnir, Hammer of Thor; Dragonfire Blade; Embercleave; Sword of Feast and Famine; Combat Research; Roaming Throne; Strionic Resonator; Hatred; the three color Rings.
+- **Damage / trigger multipliers:** Mjölnir, Hammer of Thor; Dragonfire Blade; Embercleave; Sword of Feast and Famine; Combat Research; Roaming Throne; Wizard's Staff; Hatred; the three color Rings.
 - **Connection / protection:** Aqueous Form; Brotherhood Regalia; Lightning Greaves; Silver Shroud Costume; Swiftfoot Boots; Thassa, God of the Sea; Shizo, Death's Storehouse; Silent Arbiter.
 - **Upkeep payoffs:** all six retained Courts; As Foretold; Bonehoard Dracosaur; Creeping Bloodsucker; Dragonmaster Outcast; Extravagant Replication; Generous Plunderer; Ginger, Queen of Sweets; Mechanized Production; Palace Siege; Paradox Haze; Phyrexian Arena; Plargg and Nassari; Replicating Ring; Twilight Prophet; Thopter Spy Network.
 - **Suspend/time-counter leverage:** Ancestral Vision; Inspiring Refrain; Jhoira of the Ghitu; Profane Tutor; Rousing Refrain; Suspended Sentence; As Foretold; Replicating Ring.
@@ -38,6 +38,7 @@ The strongest commander-first sequence is:
 ## Key current-cycle upgrades
 
 - **Roaming Throne:** choose Ogre or Warlock; Obeka's combat-damage triggered ability triggers an additional time.
+- **Wizard's Staff:** Obeka is a Warlock rather than a Wizard, so equip costs `{3}`; once attached, Obeka has prowess and every trigger of her combat-damage ability triggers an additional time without the recurring `{2}` activation cost required by Strionic Resonator.
 - **Mjölnir, Hammer of Thor:** Obeka is a legendary non-Villain red creature and therefore worthy; equip worthy costs `{1}` and doubles the combat damage she actually deals, which doubles the number of upkeeps produced by that hit.
 - **Dragonfire Blade:** Obeka is three colors, reducing equip from `{4}` to `{1}`; +2/+2 changes the base hit from 2 to 4 while adding hexproof from monocolored.
 - **Hatred:** converts life into power at instant speed and therefore into additional upkeep steps if Obeka connects.
@@ -49,8 +50,8 @@ The strongest commander-first sequence is:
 - Baseline: 100 cards / 94 distinct names / 35 lands.
 - Candidate: 100 cards / 96 distinct names / 35 lands.
 - Candidate repeats: Island x3, Mountain x2, Swamp x2 only.
-- Whole-list result: 83 KEEP / 16 CUT across all 99 baseline noncommander copies.
+- Whole-list result: 82 KEEP / 17 CUT across all 99 baseline noncommander copies.
 - No project legality exception required.
 - Recommended Archidekt tags: **Extra Upkeeps / Combat Damage / Upkeep Triggers**.
 
-Candidate SHA-256: `77902f5ba52f39b9a09a99658d4c98a4f3319f1ac99ea3247450ccb9300722f1`
+Candidate SHA-256: `9846e43dbe74fe49a9d356e944dc0a05d7dee30015e0d36e667fdbd01cb1ee75`
