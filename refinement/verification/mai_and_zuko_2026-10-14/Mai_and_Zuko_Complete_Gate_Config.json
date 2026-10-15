@@ -1,0 +1,15 @@
+{
+  "deck_id": "Mai_and_Zuko",
+  "display_name": "Mai and Zuko",
+  "decklist_path": "refinement/decklists/Mai_and_Zuko_Approval_Candidate_2026-10-14.txt",
+  "expected_deck_sha256": "f52cfc2043c5599ea5c35e553f06647bf018344ee73482b96e375122b9f29e8b",
+  "baseline_path": "refinement/verification/mai_and_zuko_2026-10-14/Mai_and_Zuko_Current_Cycle_Baseline_2026-10-14.txt",
+  "expected_baseline_sha256": "858911a2a55cbd51202f69a25ba2184815bb64519fe6418b37b85fd8fc53e23b",
+  "baseline_source_sha256": "5ed4ca5a475f2472bf8679b07e2a2d3fc3caf68caf8ff34f550c21ad162ce34e",
+  "rules_attestation_path": "refinement/verification/mai_and_zuko_2026-10-14/Mai_and_Zuko_Rules_Attestation.json",
+  "official_legality_attestation_path": "refinement/verification/mai_and_zuko_2026-10-14/Mai_and_Zuko_Official_Legality_Attestation.json",
+  "output_dir": "refinement/verification/mai_and_zuko_2026-10-14/gate_output",
+  "output_stem": "Mai_and_Zuko_2026-10-14",
+  "max_cache_age_hours": 72,
+  "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + Complete Approval Gate v1"
+}
