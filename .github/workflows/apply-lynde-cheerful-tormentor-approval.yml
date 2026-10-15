@@ -1,0 +1,114 @@
+name: Apply Lynde Cheerful Tormentor approval
+
+on:
+  push:
+    paths:
+      - '.github/workflows/apply-lynde-cheerful-tormentor-approval.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply-approval:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Verify exact approved candidate and update authoritative state
+        shell: python
+        run: |
+          import csv, hashlib, json, pathlib
+
+          EXPECTED_SHA = '05d1c4eea023d25e4308f78b109e80b78e0a3f4d655c3df36743ba3afbf04166'
+          DECK_ID = 'Lynde__Cheerful_Tormentor'
+          CYCLE = 'global-restart-2026-10-13'
+          APPROVED = pathlib.Path('refinement/decklists/Lynde_Cheerful_Tormentor_Approved_2026-10-14.txt')
+          GATE = pathlib.Path('refinement/verification/lynde_cheerful_tormentor_2026-10-14/gate_output/Lynde_Cheerful_Tormentor_2026-10-14_Complete_Gate.json')
+          STATE = pathlib.Path('state/current_deck_overrides.json')
+          TRACKER = pathlib.Path('refinement/Deck_Refinement_Tracker_2026-10-12.csv')
+
+          actual = hashlib.sha256(APPROVED.read_bytes()).hexdigest()
+          assert actual == EXPECTED_SHA, f'approved list SHA mismatch: {actual}'
+
+          gate = json.loads(GATE.read_text())
+          assert gate['deck_sha256'] == EXPECTED_SHA
+          assert gate['overall_result'] == 'APPROVAL_READY'
+          assert gate['errors'] == []
+          assert gate['count'] == 100
+          assert gate['rules_gate'] == 'PASS'
+          assert gate['official_legality_gate'] == 'PASS'
+          assert gate['project_exceptions'] == []
+
+          state = json.loads(STATE.read_text())
+          assert state['cycle_id'] == CYCLE
+          state.setdefault('decks', {})[DECK_ID] = {
+              'approval_status': 'APPROVED',
+              'lock_status': 'LOCKED',
+              'final_gate_passed': True,
+              'user_approval_date': '2026-10-14',
+              'current_stage': 'LOCKED',
+              'approved_list_sha256': EXPECTED_SHA,
+              'quality_gate_version': 'Deck Quality Gates v3 + mandatory whole-list audit + Complete Approval Gate v1',
+              'approval_basis': 'Explicit user approval of the exact SHA-bound Lynde approval candidate after mandatory whole-list audit, source reconciliation, candidate exhaustion, adversarial red-team review, zero-new-material-improvement closure, fresh Oracle/rules verification, current official Commander legality verification, and complete fail-closed gate PASS.',
+              'complete_gate_artifact': 'refinement/verification/lynde_cheerful_tormentor_2026-10-14/gate_output/Lynde_Cheerful_Tormentor_2026-10-14_Complete_Gate.json',
+              'whole_list_audit_artifact': 'refinement/decisions/Lynde_Cheerful_Tormentor_Current_Cycle_Decisions_2026-10-14.md',
+              'approval_record_artifact': 'refinement/approvals/Lynde_Cheerful_Tormentor_Approved_2026-10-14.md',
+              'approved_list_artifact': 'refinement/decklists/Lynde_Cheerful_Tormentor_Approved_2026-10-14.txt'
+          }
+          STATE.write_text(json.dumps(state, indent=2) + '\n')
+
+          with TRACKER.open(newline='', encoding='utf-8-sig') as f:
+              reader = csv.DictReader(f)
+              fields = reader.fieldnames
+              rows = list(reader)
+          assert fields
+          target = None
+          for row in rows:
+              vals = {str(v).strip() for v in row.values() if v is not None}
+              if DECK_ID in vals or 'Lynde, Cheerful Tormentor' in vals:
+                  target = row
+                  break
+          assert target is not None, 'Lynde tracker row not found'
+
+          norm = lambda s: ''.join(ch.lower() if ch.isalnum() else '_' for ch in s).strip('_')
+          bynorm = {norm(k): k for k in fields}
+          def set_if_present(names, value):
+              for n in names:
+                  key = bynorm.get(norm(n))
+                  if key:
+                      target[key] = value
+                      return key
+              return None
+
+          set_if_present(['baseline_status', 'baseline status'], 'CURRENT APPROVED FINAL LIST — current-cycle canonical list locked; frozen source exports preserved unchanged.')
+          set_if_present(['final_gate_passed', 'final gate passed'], 'YES')
+          set_if_present(['final_list_hash', 'final list hash'], EXPECTED_SHA)
+          set_if_present(['user_approval_date', 'user approval date'], '2026-10-14')
+          set_if_present(['refinement_status', 'refinement status'], 'APPROVED / LOCKED — current global-restart-2026-10-13 cycle')
+          note = ('Explicit user approval 2026-10-14. Exact approved SHA-256: ' + EXPECTED_SHA + '. '
+                  'Complete gate: refinement/verification/lynde_cheerful_tormentor_2026-10-14/gate_output/Lynde_Cheerful_Tormentor_2026-10-14_Complete_Gate.json. '
+                  'Decision closeout: refinement/decisions/Lynde_Cheerful_Tormentor_Current_Cycle_Decisions_2026-10-14.md. '
+                  'Approved list: refinement/decklists/Lynde_Cheerful_Tormentor_Approved_2026-10-14.txt. '
+                  'Approval record: refinement/approvals/Lynde_Cheerful_Tormentor_Approved_2026-10-14.md.')
+          set_if_present(['notes', 'refinement_notes', 'refinement notes'], note)
+
+          with TRACKER.open('w', newline='', encoding='utf-8') as f:
+              writer = csv.DictWriter(f, fieldnames=fields, lineterminator='\n')
+              writer.writeheader()
+              writer.writerows(rows)
+
+      - name: Commit authoritative approval state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state/current_deck_overrides.json refinement/Deck_Refinement_Tracker_2026-10-12.csv
+          if git diff --cached --quiet; then
+            echo "No state changes required"
+          else
+            git commit -m "Lock Lynde after explicit approval"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
