@@ -3,7 +3,7 @@
 Date: 2026-10-15  
 Cycle: `global-restart-2026-10-13`  
 Candidate SHA-256: `9210aefa423dbe9cc69d18422c0d594cad6e5d0ee475d687b9f2278a2ca3b79d`  
-Status: **APPROVAL_READY — NOT APPROVED / NOT LOCKED**
+Status: **APPROVED / LOCKED**
 
 ## Source reconciliation
 
@@ -19,7 +19,7 @@ This makes Blood Funnel, Nether Void, Nullstone Gargoyle, Possibility Storm, and
 
 Natural ceiling: **Power Bracket 5 — cEDH (fringe / commander-centric artifact stax-combo)**.
 
-## Exact proposed changes
+## Exact approved changes
 
 1. An Offer You Can't Refuse -> Swan Song
 2. Biotransference -> Force of Negation
@@ -78,4 +78,6 @@ Serious challengers reviewed and rejected include Ice Cave, Shimmer Myr, Liberat
 
 ## Approval state
 
-This exact SHA-bound candidate is **APPROVAL_READY — NOT APPROVED / NOT LOCKED**. It must not be marked approved or locked until the user explicitly approves it.
+The user explicitly approved this exact SHA-bound candidate on 2026-10-15. The canonical approved artifact is `refinement/decklists/Mishra_Artificer_Prodigy_Approved_2026-10-15.txt` and the approval record is `refinement/approvals/Mishra_Artificer_Prodigy_Approved_2026-10-15.md`.
+
+This deck is **APPROVED / LOCKED** for the current refinement cycle and must not be revised, reopened, or replaced unless the user explicitly requests it.
