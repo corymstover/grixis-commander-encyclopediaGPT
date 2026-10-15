@@ -1,0 +1,95 @@
+card,baseline_qty,keep_qty,cut_qty,decision,rationale
+Aetherflux Reservoir,1,1,0,KEEP,KEEP — converts repeated spell/lifegain sequences into a direct finisher.
+Alhammarret's Archive,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Ancient Tomb,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Arcane Signet,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Badlands,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Baleful Strix,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Beseech the Mirror,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Black Market Connections,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Blanket of Night,1,1,0,KEEP,KEEP — global Swamp conversion enables swampwalk and amplifies Coffers/Crypt Ghast/Dread Presence/Consuming Corruption.
+Blightstep Pathway // Searstep Pathway,1,0,1,CUT,CUT — Fell the Profane // Fell Mire preserves a land-capable slot while adding a black instant removal mode.
+Blood Crypt,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Bloodchief Ascension,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Bloodletter of Aclazotz,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Bloodstained Mire,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Bloodthirsty Conqueror,1,1,0,KEEP,KEEP — redundant Exquisite Blood effect on a threat body; preserves compact combo density.
+Bojuka Bog,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Bolas's Citadel,1,1,0,KEEP,KEEP — lifegain offsets life-paid spell velocity and black-spell casting advances the commander engine.
+Bontu's Monument,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Cabal Coffers,1,1,0,KEEP,KEEP — major mana engine with the deck's natural and global Swamp infrastructure.
+Chrome Mox,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+City of Brass,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Command Tower,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Consuming Corruption,1,1,0,KEEP,KEEP — Swamp-scaling black removal that also gains life.
+Counterspell,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Crypt Ghast,1,1,0,KEEP,KEEP — doubles black mana from Swamps and rewards the typed-land plan.
+Cyclonic Rift,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Dark Ritual,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Deadly Rollick,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Deflecting Swat,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Demon's Horn,1,1,0,KEEP,KEEP — parallel black-spell trigger to Sol'kanar; Painter's Servant naming black raises its ceiling dramatically.
+Demonic Tutor,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Dimir Signet,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Dragonskull Summit,1,0,1,CUT,CUT — Raucous Theater is a fetchable Swamp Mountain with surveil and direct Swamp-matters synergy.
+Dread Presence,1,1,0,KEEP,KEEP — Swamp-entry card selection/removal/lifegain engine.
+Drowned Catacomb,1,0,1,CUT,CUT — Undercity Sewers is a fetchable Island Swamp with surveil and direct Swamp-matters synergy.
+Enduring Tenacity,1,1,0,KEEP,KEEP — resilient gain-to-loss payoff and combo half.
+Exquisite Blood,1,1,0,KEEP,KEEP — core life-loss-to-life-gain engine and deterministic combo half with multiple gain-to-loss payoffs.
+Exsanguinate,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Feed the Swarm,1,0,1,CUT,CUT — Withering Torment preserves creature/enchantment coverage at instant speed with a fixed two-life cost and remains a black spell.
+Fellwar Stone,1,0,1,CUT,"CUT — The Soul Stone keeps the two-mana ramp slot while being a black spell, indestructible and a late-game reanimation engine."
+Fierce Guardianship,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Flooded Strand,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Gray Merchant of Asphodel,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Grindstone,1,1,0,KEEP,KEEP — compact secondary finish with Painter's Servant; Painter is independently commander-essential.
+Imperial Seal,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Jeska's Will,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Jet Medallion,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+"K'rrik, Son of Yawgmoth",1,1,0,KEEP,KEEP — turns black pips into life payments that the deck is built to recover.
+Lotus Petal,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Luxury Suite,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Mana Confluence,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Mana Drain,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Mana Vault,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Marauding Blight-Priest,1,1,0,KEEP,KEEP — each lifegain event drains every opponent; combos with Exquisite/Bloodthirsty engines.
+Marsh Flats,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Misty Rainforest,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Morphic Pool,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Mox Diamond,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Mystic Remora,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+"Otawara, Soaring City",1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Painter's Servant,1,1,0,KEEP,KEEP — naming black turns all spells black for Sol'kanar/Demon's Horn and remains part of Painter/Grindstone.
+Polluted Delta,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Rakdos Charm,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Rakdos Signet,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Rhystic Study,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Scalding Tarn,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Sensei's Divining Top,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+"Sheoldred, the Apocalypse",1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Smoldering Marsh,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Sol Ring,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Starscape Cleric,1,1,0,KEEP,KEEP — BLB #116 black Bat Cleric; low-cost gain-to-loss payoff with offspring redundancy.
+Steam Vents,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Sunken Hollow,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Swamp,6,6,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Swan Song,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+"Takenuma, Abandoned Mire",1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Talisman of Creativity,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Talisman of Dominance,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Talisman of Indulgence,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+The One Ring,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Torment of Hailfire,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Toxic Deluge,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Training Center,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Underground Sea,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Underworld Dreams,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+"Urborg, Tomb of Yawgmoth",1,1,0,KEEP,KEEP — second global Swamp-conversion engine and key Coffers/commander support.
+Vampiric Tutor,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+"Vito, Thorn of the Dusk Rose",1,1,0,KEEP,KEEP — efficient gain-to-loss payoff and Exquisite/Bloodthirsty combo half.
+Volcanic Island,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Watery Grave,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Wheel of Fortune,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Windfall,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Witch of the Moors,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."
+Xander's Lounge,1,1,0,KEEP,"KEEP — retained after commander-first black-spell/lifegain, Swamp infrastructure, interaction, curve, mana and identity audit."

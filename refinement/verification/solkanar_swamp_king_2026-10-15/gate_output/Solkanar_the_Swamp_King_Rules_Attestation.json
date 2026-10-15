@@ -1,0 +1,83 @@
+{
+  "status": "PASS",
+  "deck_sha256": "7d39fff42b91263e83415feef1e69d048c54f8b4e2226b8430fb584076d19106",
+  "checked_at_utc": "2026-10-15T22:08:38.570627+00:00",
+  "sources": [
+    "Magic Comprehensive Rules — spell colors, triggered abilities, life gain/loss, land subtypes, mana abilities, modal double-faced cards, replacement/continuous effects (current 2026 rules)",
+    "Current Oracle text captured in refinement/metadata_audit/Current_Cycle_Oracle_Cache.jsonl",
+    "Current Wizards Commander banned/restricted list checked 2026-10-15",
+    "Marvel's Spider-Man release notes — The Soul Stone harness designation"
+  ],
+  "interactions": [
+    {
+      "name": "Sol'kanar black-spell trigger",
+      "status": "PASS",
+      "finding": "Sol'kanar triggers whenever any player casts a black spell. Each qualifying spell creates a separate trigger that gains its controller 1 life when it resolves."
+    },
+    {
+      "name": "Demon's Horn parallel trigger",
+      "status": "PASS",
+      "finding": "Demon's Horn separately triggers when a player casts a black spell. A single black spell can therefore produce both the Sol'kanar trigger and the Horn trigger; each life-gain event resolves separately."
+    },
+    {
+      "name": "Painter's Servant naming black",
+      "status": "PASS",
+      "finding": "Painter's Servant makes cards, spells and permanents the chosen color in addition to their other colors. Naming black therefore makes spells cast by any player black for Sol'kanar and Demon's Horn while preserving the Painter/Grindstone line."
+    },
+    {
+      "name": "Repeated lifegain payoffs",
+      "status": "PASS",
+      "finding": "Each separate Sol'kanar/Horn or other life-gain event can independently trigger applicable gain-to-loss payoffs such as Vito, Starscape Cleric, Marauding Blight-Priest and Enduring Tenacity according to their Oracle text."
+    },
+    {
+      "name": "Exquisite Blood life loop",
+      "status": "PASS",
+      "finding": "Exquisite Blood (and the analogous Bloodthirsty Conqueror trigger) gains life when an opponent loses life. With a retained mandatory gain-to-loss payoff, an initial qualifying life-gain or opponent-life-loss event can create a repeating loss/gain loop unless interrupted."
+    },
+    {
+      "name": "Painter's Servant + Grindstone",
+      "status": "PASS",
+      "finding": "With Painter's Servant making all cards the same chosen color, Grindstone's repeated-color condition continues to repeat as it resolves and mills the targeted player's library absent an interruption/replacement effect."
+    },
+    {
+      "name": "Blanket of Night / Urborg",
+      "status": "PASS",
+      "finding": "Blanket of Night and Urborg each make affected lands Swamps in addition to their other land types. This enables Sol'kanar's swampwalk against an opponent controlling a Swamp and expands Swamp-counting/mana-doubling synergies."
+    },
+    {
+      "name": "Typed surveil Swamps",
+      "status": "PASS",
+      "finding": "Raucous Theater is a Swamp Mountain and Undercity Sewers is an Island Swamp. Both are fetchable by matching fetchlands, count as Swamps for Cabal Coffers and Consuming Corruption, work with Crypt Ghast when tapped for black mana, and trigger Dread Presence when entering under the controller's control."
+    },
+    {
+      "name": "The Soul Stone",
+      "status": "PASS",
+      "finding": "The Soul Stone costs {1}{B}, so it is a black spell while on the stack and triggers Sol'kanar/Demon's Horn when cast. It is indestructible, taps for {B}, and once harnessed its infinity ability triggers at upkeep to return a target creature card from its controller's graveyard to the battlefield."
+    },
+    {
+      "name": "Withering Torment",
+      "status": "PASS",
+      "finding": "Withering Torment is a black instant that destroys target creature or enchantment and causes its controller to lose 2 life. Casting it triggers Sol'kanar/Demon's Horn; if its target is illegal on resolution, the spell does not resolve and the life loss does not occur."
+    },
+    {
+      "name": "Fell the Profane // Fell Mire",
+      "status": "PASS",
+      "finding": "Casting Fell the Profane uses the black instant front and triggers Sol'kanar/Demon's Horn. Playing Fell Mire as a land is not casting a spell and does not trigger them. Fell Mire may enter untapped if its controller pays 3 life and taps for {B}."
+    },
+    {
+      "name": "Bontu's Monument",
+      "status": "PASS",
+      "finding": "Bontu's Monument reduces black creature spells and separately triggers when its controller casts a creature spell, draining each opponent and gaining life. Those events layer naturally with the deck's black-spell/lifegain plan."
+    },
+    {
+      "name": "K'rrik and Bolas's Citadel",
+      "status": "PASS",
+      "finding": "K'rrik can substitute life for black mana symbols where permitted, and Bolas's Citadel can pay life equal to mana value for top-library spells. The deck's repeated lifegain offsets those life-resource engines but does not remove their normal timing/cost restrictions."
+    },
+    {
+      "name": "Wheel pressure",
+      "status": "PASS",
+      "finding": "Wheel of Fortune and Windfall cause card draws that can trigger Sheoldred for its controller/opponents as applicable and Underworld Dreams for opponent draws; those are preserved secondary pressure lines rather than the primary commander identity."
+    }
+  ]
+}

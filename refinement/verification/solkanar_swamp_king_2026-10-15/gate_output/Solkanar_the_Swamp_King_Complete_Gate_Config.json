@@ -1,0 +1,12 @@
+{
+  "deck_id": "Sol_kanar_the_Swamp_King",
+  "display_name": "Sol'kanar the Swamp King",
+  "decklist_path": "refinement/decklists/Solkanar_the_Swamp_King_Approval_Ready_2026-10-15.txt",
+  "expected_deck_sha256": "7d39fff42b91263e83415feef1e69d048c54f8b4e2226b8430fb584076d19106",
+  "baseline_source_sha256": "5d21c6ba5e025473ea61951c870396fa1130516b78e46e50663a3efe154450ce",
+  "output_dir": "refinement/verification/solkanar_swamp_king_2026-10-15/gate_output",
+  "output_stem": "Solkanar_the_Swamp_King_2026-10-15",
+  "rules_attestation_path": "refinement/verification/solkanar_swamp_king_2026-10-15/gate_output/Solkanar_the_Swamp_King_Rules_Attestation.json",
+  "official_legality_attestation_path": "refinement/verification/solkanar_swamp_king_2026-10-15/gate_output/Solkanar_the_Swamp_King_Official_Legality_Attestation.json",
+  "max_cache_age_hours": 72
+}

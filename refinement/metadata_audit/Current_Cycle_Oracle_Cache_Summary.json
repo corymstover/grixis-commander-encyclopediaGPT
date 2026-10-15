@@ -1,10 +1,10 @@
 {
-  "generated_at_utc": "2026-10-15T21:57:27.035481+00:00",
+  "generated_at_utc": "2026-10-15T22:08:37.255375+00:00",
   "overlay_generated_at_utc": "2026-10-15T16:08:20.422925+00:00",
   "bulk_updated_at": "2026-10-15T09:05:41.246+00:00",
   "decklist_file_count": 114,
-  "distinct_names_requested": 1433,
-  "records_written": 1433,
+  "distinct_names_requested": 1452,
+  "records_written": 1452,
   "overlay_hits": 1153,
   "live_named_exact_lookups": 185,
   "exception_names_included": [
@@ -19,29 +19,34 @@
   "malformed_decklist_lines": [],
   "ambiguous_overlay_entries_rechecked_live": [],
   "unresolved": [],
-  "cache_sha256": "f9dd36371174b8ff69db8076b16af93e5aad4bdef25fd46f91e3570025f54253",
+  "cache_sha256": "3ed70f610c611003a21196c17a8ec7947495c5613c8894baad9e18f7c77caaf7",
   "overall_result": "PASS",
   "design_note": "Preferred verification cache for chat/container runs. Direct Scryfall access from chat is not required when this cache is fresh and complete.",
   "targeted_candidate_refresh": {
-    "deck": "Sedris, the Traitor King",
-    "candidate_path": "refinement/decklists/Sedris_the_Traitor_King_Approval_Ready_2026-10-15.txt",
-    "missing_names_resolved_live": [
-      "Chainer, Nightmare Adept",
-      "Convergence of Dominion",
-      "Corpse Connoisseur",
-      "Deadeye Navigator",
-      "Dread Return",
-      "Grave Titan",
-      "Likeness Looter",
-      "Massacre Wurm",
-      "Peregrine Drake",
-      "Raucous Theater",
-      "Sedris, the Traitor King",
-      "Sepulchral Primordial",
-      "Teferi's Veil",
-      "Vile Entomber"
+    "deck": "Sol'kanar the Swamp King",
+    "candidate_path": "refinement/decklists/Solkanar_the_Swamp_King_Approval_Ready_2026-10-15.txt",
+    "missing_or_forced_names_resolved_live": [
+      "Alhammarret's Archive",
+      "Blanket of Night",
+      "Bontu's Monument",
+      "Cabal Coffers",
+      "Consuming Corruption",
+      "Crypt Ghast",
+      "Demon's Horn",
+      "Dread Presence",
+      "Enduring Tenacity",
+      "Exquisite Blood",
+      "Exsanguinate",
+      "Fell the Profane // Fell Mire",
+      "Grindstone",
+      "K'rrik, Son of Yawgmoth",
+      "Marauding Blight-Priest",
+      "Sol'kanar the Swamp King",
+      "Starscape Cleric",
+      "Vito, Thorn of the Dusk Rose",
+      "Witch of the Moors"
     ],
-    "prior_cache_age_hours": 0.306,
-    "method": "reuse clean same-day cache; exact live Scryfall lookup only for candidate names absent from cache"
+    "prior_cache_age_hours": 0.186,
+    "method": "reuse clean same-day cache; exact live Scryfall lookup for absent candidate names; force BLB/116 for Starscape Cleric identity collision"
   }
 }

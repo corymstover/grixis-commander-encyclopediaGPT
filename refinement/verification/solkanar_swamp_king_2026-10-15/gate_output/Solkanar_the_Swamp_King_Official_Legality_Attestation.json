@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "deck_sha256": "7d39fff42b91263e83415feef1e69d048c54f8b4e2226b8430fb584076d19106",
+  "checked_at_utc": "2026-10-15T22:08:38.570627+00:00",
+  "sources": [
+    "https://magic.wizards.com/en/banned-restricted-list — current Commander banned list checked 2026-10-15",
+    "Current_Cycle_Oracle_Cache.jsonl generated/refreshed from current Scryfall metadata"
+  ],
+  "unexpected_banned_cards": [],
+  "project_exceptions_required": [],
+  "finding": "Every Sol'kanar candidate card is officially Commander-legal in the refreshed current-cycle Oracle cache and no card appears on the current Commander banned list; no project exception is required."
+}

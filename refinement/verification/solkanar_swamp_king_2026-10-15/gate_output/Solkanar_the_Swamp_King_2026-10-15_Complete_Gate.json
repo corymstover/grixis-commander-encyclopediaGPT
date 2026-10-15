@@ -1,0 +1,23 @@
+{
+  "generated_at_utc": "2026-10-15T22:08:38.625903+00:00",
+  "deck_id": "Sol_kanar_the_Swamp_King",
+  "decklist_path": "refinement/decklists/Solkanar_the_Swamp_King_Approval_Ready_2026-10-15.txt",
+  "deck_sha256": "7d39fff42b91263e83415feef1e69d048c54f8b4e2226b8430fb584076d19106",
+  "baseline_path": null,
+  "baseline_source_sha256": "5d21c6ba5e025473ea61951c870396fa1130516b78e46e50663a3efe154450ce",
+  "count": 100,
+  "distinct_names": 95,
+  "commander_color_identity": [
+    "B",
+    "R",
+    "U"
+  ],
+  "cache_generated_at_utc": "2026-10-15T22:08:37.255375+00:00",
+  "cache_sha256": "3ed70f610c611003a21196c17a8ec7947495c5613c8894baad9e18f7c77caaf7",
+  "project_exceptions": [],
+  "rules_gate": "PASS",
+  "official_legality_gate": "PASS",
+  "errors": [],
+  "overall_result": "APPROVAL_READY",
+  "approval_state": "NOT_APPROVED — explicit user approval still required"
+}
