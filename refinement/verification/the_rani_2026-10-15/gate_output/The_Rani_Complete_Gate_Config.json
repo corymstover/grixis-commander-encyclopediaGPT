@@ -1,0 +1,12 @@
+{
+  "deck_id": "The_Rani",
+  "display_name": "The Rani",
+  "decklist_path": "refinement/decklists/The_Rani_Approval_Ready_2026-10-15.txt",
+  "expected_deck_sha256": "7220937ed5817b4ef9cacd2463a3434b98ae58690ffa1d7ef440881ba97d729c",
+  "baseline_source_sha256": "5a832a8f2a2d14758a22ea0fa677b6a1bdc919454e6ffb63ac97d416479b4763",
+  "output_dir": "refinement/verification/the_rani_2026-10-15/gate_output",
+  "output_stem": "The_Rani_2026-10-15",
+  "rules_attestation_path": "refinement/verification/the_rani_2026-10-15/gate_output/The_Rani_Rules_Attestation.json",
+  "official_legality_attestation_path": "refinement/verification/the_rani_2026-10-15/gate_output/The_Rani_Official_Legality_Attestation.json",
+  "max_cache_age_hours": 72
+}

@@ -1,10 +1,10 @@
 {
-  "generated_at_utc": "2026-10-15T23:26:42.025515+00:00",
+  "generated_at_utc": "2026-10-15T23:43:12.812772+00:00",
   "overlay_generated_at_utc": "2026-10-15T22:40:08.693808+00:00",
   "bulk_updated_at": "2026-10-15T21:05:43.886+00:00",
   "decklist_file_count": 132,
   "distinct_names_requested": 1513,
-  "records_written": 1550,
+  "records_written": 1571,
   "overlay_hits": 1309,
   "live_named_exact_lookups": 204,
   "exception_names_included": [
@@ -19,112 +19,121 @@
   "malformed_decklist_lines": [],
   "ambiguous_overlay_entries_rechecked_live": [],
   "unresolved": [],
-  "cache_sha256": "8adf97db2ad5a750abf7d601979aa5391e308a40e7b9821e90050c33138455e0",
+  "cache_sha256": "01d4749e1d97f0f89efc073dbd911850b78fd15a797b2f07196e407c910ce41e",
   "overall_result": "PASS",
   "design_note": "Preferred verification cache for chat/container runs. Direct Scryfall access from chat is not required when this cache is fresh and complete.",
   "targeted_candidate_refresh": {
-    "deck": "The Madcap Jester",
-    "candidate_path": "refinement/decklists/The_Madcap_Jester_Approval_Ready_2026-10-15.txt",
+    "deck": "The Rani",
+    "candidate_path": "refinement/decklists/The_Rani_Approval_Ready_2026-10-15.txt",
     "records_refreshed_live": [
       {
-        "name": "The Madcap Jester",
-        "commander_legality": "not_legal",
-        "released_at": "2026-10-19"
+        "name": "The Rani",
+        "commander_legality": "legal"
       },
       {
-        "name": "Dragon's Smile",
-        "commander_legality": "not_legal",
-        "released_at": "2026-10-19"
+        "name": "The Master, Mesmerist",
+        "commander_legality": "legal"
       },
       {
-        "name": "Ashiok, Nightmare Weaver",
-        "commander_legality": "legal",
-        "released_at": "2013-09-27"
+        "name": "Thassa, Deep-Dwelling",
+        "commander_legality": "legal"
       },
       {
-        "name": "Dauthi Voidwalker",
-        "commander_legality": "legal",
-        "released_at": "2025-04-11"
+        "name": "Force of Will",
+        "commander_legality": "legal"
       },
       {
-        "name": "Demonic Consultation",
-        "commander_legality": "legal",
-        "released_at": "2008-09-22"
+        "name": "Incriminating Impetus",
+        "commander_legality": "legal"
       },
       {
-        "name": "Lightning Greaves",
-        "commander_legality": "legal",
-        "released_at": "2026-06-26"
+        "name": "Baeloth Barrityl, Entertainer",
+        "commander_legality": "legal"
       },
       {
-        "name": "Tainted Pact",
-        "commander_legality": "legal",
-        "released_at": "2001-10-01"
+        "name": "City of Brass",
+        "commander_legality": "legal"
+      },
+      {
+        "name": "Mana Confluence",
+        "commander_legality": "legal"
+      },
+      {
+        "name": "Flooded Strand",
+        "commander_legality": "legal"
       }
     ],
     "previously_missing_candidate_records_resolved_live": [
       {
-        "name": "Bilbo, Thief in the Night",
-        "commander_legality": "legal",
-        "released_at": "2026-08-14"
+        "name": "Coercive Impetus",
+        "commander_legality": "legal"
       },
       {
-        "name": "Bitter Ordeal",
-        "commander_legality": "legal",
-        "released_at": "2007-05-04"
+        "name": "Death Kiss",
+        "commander_legality": "legal"
       },
       {
-        "name": "Circu, Dimir Lobotomist",
-        "commander_legality": "legal",
-        "released_at": "2005-10-07"
+        "name": "Erdwal Illuminator",
+        "commander_legality": "legal"
       },
       {
-        "name": "Extract",
-        "commander_legality": "legal",
-        "released_at": "2001-10-01"
+        "name": "Eye of Nidhogg",
+        "commander_legality": "legal"
       },
       {
-        "name": "Inside Information",
-        "commander_legality": "legal",
-        "released_at": "2026-08-14"
+        "name": "Five Hundred Year Diary",
+        "commander_legality": "legal"
       },
       {
-        "name": "Jester's Cap",
-        "commander_legality": "legal",
-        "released_at": "2023-01-13"
+        "name": "Ghoulish Impetus",
+        "commander_legality": "legal"
       },
       {
-        "name": "Jester's Scepter",
-        "commander_legality": "legal",
-        "released_at": "2006-07-21"
+        "name": "Hateful Eidolon",
+        "commander_legality": "legal"
       },
       {
-        "name": "Psychic Surgery",
-        "commander_legality": "legal",
-        "released_at": "2011-05-13"
+        "name": "Hot Pursuit",
+        "commander_legality": "legal"
       },
       {
-        "name": "Sadistic Sacrament",
-        "commander_legality": "legal",
-        "released_at": "2009-10-02"
+        "name": "Inspiring Statuary",
+        "commander_legality": "legal"
       },
       {
-        "name": "Sire of Stagnation",
-        "commander_legality": "legal",
-        "released_at": "2015-10-02"
+        "name": "Maestros Confluence",
+        "commander_legality": "legal"
       },
       {
-        "name": "Tasha's Hideous Laughter",
-        "commander_legality": "legal",
-        "released_at": "2021-07-23"
+        "name": "Mocking Doppelganger",
+        "commander_legality": "legal"
+      },
+      {
+        "name": "Psychic Impetus",
+        "commander_legality": "legal"
+      },
+      {
+        "name": "Puppet Master, String Puller",
+        "commander_legality": "legal"
+      },
+      {
+        "name": "Slicer, Hired Muscle // Slicer, High-Speed Antagonist",
+        "commander_legality": "legal"
+      },
+      {
+        "name": "Spectacular Showdown",
+        "commander_legality": "legal"
+      },
+      {
+        "name": "Tangletrove Kelp",
+        "commander_legality": "legal"
+      },
+      {
+        "name": "The Sound of Drums",
+        "commander_legality": "legal"
       }
     ],
-    "project_future_release_exceptions": [
-      "Dragon's Smile",
-      "The Madcap Jester"
-    ],
-    "official_commander_legality_effective_date": "2026-11-13",
-    "prior_cache_age_hours": 0.387,
-    "method": "reuse clean same-day cache; exact live Scryfall refresh for material targets; exact live lookup for every candidate name absent from prior cache; project future-release status kept separate from official legality"
+    "prior_cache_age_hours": 0.275,
+    "method": "reuse clean same-day cache; exact live Scryfall refresh for commander/material targets; exact live lookup for any candidate name absent from prior cache"
   }
 }

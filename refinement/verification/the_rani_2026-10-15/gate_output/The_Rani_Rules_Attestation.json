@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "deck_sha256": "7220937ed5817b4ef9cacd2463a3434b98ae58690ffa1d7ef440881ba97d729c",
+  "checked_at_utc": "2026-10-15T23:44:17.258509+00:00",
+  "sources": [
+    "Current Oracle text in current-cycle Scryfall cache",
+    "Magic Comprehensive Rules — goad, investigate, Aura attachment, triggered abilities, replacement effects, phasing/blink/new objects"
+  ],
+  "interactions": [
+    {
+      "name": "Rani Mark trigger and target",
+      "status": "PASS",
+      "finding": "The Rani entering or attacking creates a Mark of the Rani Aura token attached to another target creature. Because the triggered ability itself targets, an illegal sole target on resolution prevents the ability from resolving and no Mark is created."
+    },
+    {
+      "name": "Own-creature Mark and goad",
+      "status": "PASS",
+      "finding": "Another target creature may be a creature you control. A creature goaded by a source you control must attack each combat if able and, if able, attack a player other than you; when that goaded creature deals combat damage to one of your opponents, The Rani investigates."
+    },
+    {
+      "name": "The Master Mesmerist plus Mark",
+      "status": "PASS",
+      "finding": "A Mark on The Master gives +2/+2, increasing his power and therefore the power ceiling for his tap ability. A creature he goads and gives skulk can trigger both The Rani investigate ability and The Master draw/counter ability when it deals combat damage to one of your opponents."
+    },
+    {
+      "name": "Baeloth plus Mark",
+      "status": "PASS",
+      "finding": "A Mark can make Baeloth 4 power, so his continuous ability goads opponent-controlled creatures with power less than 4 while the pump remains. Baeloth being goaded himself does not disable this static ability. His death trigger only rewards goaded creatures that die while attacking or blocking."
+    },
+    {
+      "name": "Thassa blink",
+      "status": "PASS",
+      "finding": "Thassa exiles The Rani at the beginning of your end step and returns it immediately as a new object; the returned Rani triggers its ETB Mark ability. Existing legal Mark Auras attached elsewhere are independent of the old Rani object and remain."
+    },
+    {
+      "name": "Displacer Kitten blink",
+      "status": "PASS",
+      "finding": "Casting a noncreature spell may blink The Rani through Displacer Kitten; the returned Rani is a new object and triggers another Mark creation."
+    },
+    {
+      "name": "Incriminating Impetus",
+      "status": "PASS",
+      "finding": "The Aura suspects the enchanted creature on entry, giving it menace and preventing it from blocking while suspected, and separately gives +2/+2 and goads it. These effects make forced attacks more likely to connect and generate Rani investigate triggers."
+    },
+    {
+      "name": "Academy Manufactor plus investigate",
+      "status": "PASS",
+      "finding": "Investigating would create a Clue; Academy Manufactor replaces that token-creation event with one Clue, one Food and one Treasure."
+    },
+    {
+      "name": "Erdwal Illuminator plus Manufactor",
+      "status": "PASS",
+      "finding": "The first investigate each turn triggers Erdwal Illuminator for an additional investigate. With Academy Manufactor, each investigate creates one Clue, Food and Treasure, so the two investigate events can create six artifact tokens total."
+    },
+    {
+      "name": "Time Sieve",
+      "status": "PASS",
+      "finding": "Time Sieve may sacrifice any five artifacts, so Clue/Food/Treasure output can fund extra turns. The reviewed list does not claim this is a deterministic infinite loop without an independent repeatable investigate/combat-damage setup."
+    },
+    {
+      "name": "Force of Will pitch support",
+      "status": "PASS",
+      "finding": "The candidate contains 28 other blue nonland cards that can support Force of Will alternate casting."
+    }
+  ]
+}
