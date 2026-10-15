@@ -1,0 +1,13 @@
+{
+  "deck_id": "Parnesse__the_Subtle_Brush",
+  "display_name": "Parnesse, the Subtle Brush",
+  "decklist_path": "refinement/decklists/Parnesse_the_Subtle_Brush_Approval_Ready_2026-10-15.txt",
+  "expected_deck_sha256": "8ff8c101d98e7de997c1de29973db2dd6a51ffdd7b44e4f34145bb1abf2d9e7c",
+  "baseline_source_sha256": "6684e82b73650d47f826e945cfb512b7e07193ce58218021c295c07f6a821b0e",
+  "baseline_source_member": "TXT/Parnesse__the_Subtle_Brush.txt",
+  "output_dir": "refinement/verification/parnesse_2026-10-15/gate_output",
+  "output_stem": "Parnesse_the_Subtle_Brush_2026-10-15",
+  "rules_attestation_path": "refinement/verification/parnesse_2026-10-15/gate_output/Parnesse_the_Subtle_Brush_Rules_Attestation.json",
+  "official_legality_attestation_path": "refinement/verification/parnesse_2026-10-15/gate_output/Parnesse_the_Subtle_Brush_Official_Legality_Attestation.json",
+  "max_cache_age_hours": 72
+}

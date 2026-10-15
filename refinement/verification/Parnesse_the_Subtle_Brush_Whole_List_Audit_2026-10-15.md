@@ -8,7 +8,7 @@ Status: working audit; not user approval
 Authoritative baseline: `source-package/GrixisFINAL_62Decks_CSV_TXT_2026-10-12.tar.gz`, FINAL TXT member `Parnesse__the_Subtle_Brush.txt`.
 
 Candidate: `refinement/decklists/Parnesse_the_Subtle_Brush_Approval_Ready_2026-10-15.txt`  
-Candidate SHA-256: `__CANDIDATE_SHA__`
+Candidate SHA-256: `8ff8c101d98e7de997c1de29973db2dd6a51ffdd7b44e4f34145bb1abf2d9e7c`
 
 ## Audit result
 

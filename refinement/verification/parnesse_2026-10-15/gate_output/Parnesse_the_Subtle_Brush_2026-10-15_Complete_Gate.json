@@ -1,0 +1,23 @@
+{
+  "generated_at_utc": "2026-10-15T17:19:08.071433+00:00",
+  "deck_id": "Parnesse__the_Subtle_Brush",
+  "decklist_path": "refinement/decklists/Parnesse_the_Subtle_Brush_Approval_Ready_2026-10-15.txt",
+  "deck_sha256": "8ff8c101d98e7de997c1de29973db2dd6a51ffdd7b44e4f34145bb1abf2d9e7c",
+  "baseline_path": null,
+  "baseline_source_sha256": "6684e82b73650d47f826e945cfb512b7e07193ce58218021c295c07f6a821b0e",
+  "count": 100,
+  "distinct_names": 96,
+  "commander_color_identity": [
+    "B",
+    "R",
+    "U"
+  ],
+  "cache_generated_at_utc": "2026-10-15T17:19:07.085998+00:00",
+  "cache_sha256": "221fd004050336af403322603b211d5817a0533047f19d52757e88b093383a9c",
+  "project_exceptions": [],
+  "rules_gate": "PASS",
+  "official_legality_gate": "PASS",
+  "errors": [],
+  "overall_result": "APPROVAL_READY",
+  "approval_state": "NOT_APPROVED — explicit user approval still required"
+}

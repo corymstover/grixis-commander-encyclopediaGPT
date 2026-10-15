@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "deck_sha256": "8ff8c101d98e7de997c1de29973db2dd6a51ffdd7b44e4f34145bb1abf2d9e7c",
+  "checked_at_utc": "2026-10-15T17:19:08.017014+00:00",
+  "sources": [
+    "https://magic.wizards.com/en/banned-restricted-list",
+    "Current_Cycle_Oracle_Cache.jsonl generated from validated current Scryfall metadata",
+    "Wizards Banned and Restricted Announcement — October 12, 2026 (Competitive Brawl changes; no paper Commander change)"
+  ],
+  "unexpected_banned_cards": [],
+  "project_exceptions_required": [],
+  "finding": "Every candidate card is officially Commander-legal in the fresh current-cycle Oracle cache; no Parnesse project exception is required."
+}

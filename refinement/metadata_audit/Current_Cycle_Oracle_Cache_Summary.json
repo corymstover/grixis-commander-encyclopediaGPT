@@ -1,10 +1,10 @@
 {
-  "generated_at_utc": "2026-10-15T16:08:20.789159+00:00",
+  "generated_at_utc": "2026-10-15T17:19:07.085998+00:00",
   "overlay_generated_at_utc": "2026-10-15T16:08:20.422925+00:00",
   "bulk_updated_at": "2026-10-15T09:05:41.246+00:00",
   "decklist_file_count": 114,
-  "distinct_names_requested": 1338,
-  "records_written": 1338,
+  "distinct_names_requested": 1356,
+  "records_written": 1356,
   "overlay_hits": 1153,
   "live_named_exact_lookups": 185,
   "exception_names_included": [
@@ -19,7 +19,33 @@
   "malformed_decklist_lines": [],
   "ambiguous_overlay_entries_rechecked_live": [],
   "unresolved": [],
-  "cache_sha256": "175aee025083f639b89881efeac11d0cef11388d036171d46b538577c31c2496",
+  "cache_sha256": "221fd004050336af403322603b211d5817a0533047f19d52757e88b093383a9c",
   "overall_result": "PASS",
-  "design_note": "Preferred verification cache for chat/container runs. Direct Scryfall access from chat is not required when this cache is fresh and complete."
+  "design_note": "Preferred verification cache for chat/container runs. Direct Scryfall access from chat is not required when this cache is fresh and complete.",
+  "targeted_candidate_refresh": {
+    "deck": "Parnesse, the Subtle Brush",
+    "candidate_path": "refinement/decklists/Parnesse_the_Subtle_Brush_Approval_Ready_2026-10-15.txt",
+    "missing_names_resolved_live": [
+      "Alania, Divergent Storm",
+      "Bonus Round",
+      "Chef's Kiss",
+      "Display of Power",
+      "Errant, Street Artist",
+      "Parnesse, the Subtle Brush",
+      "Prismari, the Inspiration",
+      "Professor Onyx",
+      "Pyromancer's Goggles",
+      "Replication Technique",
+      "Return the Favor",
+      "Reverberate",
+      "Sedgemoor Witch",
+      "Sunken Palace",
+      "Tempt with Mayhem",
+      "Thousand-Year Storm",
+      "Wandering Archaic // Explore the Vastlands",
+      "Zevlor, Elturel Exile"
+    ],
+    "prior_cache_age_hours": 1.18,
+    "method": "reuse clean same-day cache; exact live Scryfall lookup only for candidate names absent from cache"
+  }
 }
