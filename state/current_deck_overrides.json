@@ -411,6 +411,20 @@
       "whole_list_audit_artifact": "refinement/decisions/Lynde_Cheerful_Tormentor_Current_Cycle_Decisions_2026-10-14.md",
       "approval_record_artifact": "refinement/approvals/Lynde_Cheerful_Tormentor_Approved_2026-10-14.md",
       "approved_list_artifact": "refinement/decklists/Lynde_Cheerful_Tormentor_Approved_2026-10-14.txt"
+    },
+    "Mai_and_Zuko": {
+      "approval_status": "APPROVED",
+      "lock_status": "LOCKED",
+      "final_gate_passed": true,
+      "user_approval_date": "2026-10-14",
+      "current_stage": "LOCKED",
+      "approved_list_sha256": "aa2036f49f38e6503734d99c852acdfa704aa1b27e44bb26d6e9566a73a0d4a2",
+      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + Complete Approval Gate v1",
+      "approval_basis": "Explicit user approval of the exact SHA-bound Mai and Zuko approval candidate after authoritative baseline reconciliation, mandatory 99-slot whole-list audit, candidate exhaustion, adversarial red-team review, final Jwari Shapeshifter to Tundra Tank correction, fresh Oracle/rules verification, current official Commander legality verification, and complete fail-closed gate PASS.",
+      "complete_gate_artifact": "refinement/verification/mai_and_zuko_2026-10-14/gate_output/Mai_and_Zuko_2026-10-14_Complete_Gate.json",
+      "whole_list_audit_artifact": "refinement/decisions/Mai_and_Zuko_Current_Cycle_Decisions_2026-10-14.md",
+      "approval_record_artifact": "refinement/approvals/Mai_and_Zuko_Approved_2026-10-14.md",
+      "approved_list_artifact": "refinement/decklists/Mai_and_Zuko_Approved_2026-10-14.txt"
     }
   }
 }
