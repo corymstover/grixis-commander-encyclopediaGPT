@@ -21,7 +21,6 @@
 1x Deadly Rollick
 1x Deflecting Swat
 1x Demonic Tutor
-1x Dictate of Erebos
 1x Dimir Signet
 1x Diregraf Captain
 1x Dress Down
@@ -43,6 +42,7 @@
 1x Misty Rainforest
 1x Morphic Pool
 1x Mountain
+1x Muddle the Mixture
 1x Mystic Remora
 1x Nether Traitor
 1x Nightscape Familiar
