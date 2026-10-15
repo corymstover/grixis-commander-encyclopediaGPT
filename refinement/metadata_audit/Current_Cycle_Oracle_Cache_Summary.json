@@ -1,12 +1,12 @@
 {
-  "generated_at_utc": "2026-10-15T22:37:43.751487+00:00",
-  "overlay_generated_at_utc": "2026-10-15T16:08:20.422925+00:00",
-  "bulk_updated_at": "2026-10-15T09:05:41.246+00:00",
-  "decklist_file_count": 114,
-  "distinct_names_requested": 1486,
-  "records_written": 1512,
-  "overlay_hits": 1153,
-  "live_named_exact_lookups": 185,
+  "generated_at_utc": "2026-10-15T22:40:09.039522+00:00",
+  "overlay_generated_at_utc": "2026-10-15T22:40:08.693808+00:00",
+  "bulk_updated_at": "2026-10-15T21:05:43.886+00:00",
+  "decklist_file_count": 132,
+  "distinct_names_requested": 1513,
+  "records_written": 1513,
+  "overlay_hits": 1309,
+  "live_named_exact_lookups": 204,
   "exception_names_included": [
     "Dragon's Smile",
     "Lutri, the Spellchaser",
@@ -19,16 +19,7 @@
   "malformed_decklist_lines": [],
   "ambiguous_overlay_entries_rechecked_live": [],
   "unresolved": [],
-  "cache_sha256": "890fe98606352d333f2f1c6a840c7244e94906911f9eb8ab46c2705ec1462d45",
+  "cache_sha256": "e29cfa9039c13587f76715751043f570fe4e3525492a6a5b5df1570c75b30b8e",
   "overall_result": "PASS",
-  "design_note": "Preferred verification cache for chat/container runs. Direct Scryfall access from chat is not required when this cache is fresh and complete.",
-  "targeted_candidate_refresh": {
-    "deck": "Tetsuo Umezawa",
-    "candidate_path": "refinement/decklists/Tetsuo_Umezawa_Approval_Ready_2026-10-15.txt",
-    "missing_names_resolved_live": [
-      "Sting, the Glinting Dagger"
-    ],
-    "prior_cache_age_hours": 0.092,
-    "method": "reuse clean same-day cache; exact live Scryfall lookup for candidate names absent from cache"
-  }
+  "design_note": "Preferred verification cache for chat/container runs. Direct Scryfall access from chat is not required when this cache is fresh and complete."
 }
