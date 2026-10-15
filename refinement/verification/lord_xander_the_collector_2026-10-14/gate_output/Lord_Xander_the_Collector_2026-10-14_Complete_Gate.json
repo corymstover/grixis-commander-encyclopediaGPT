@@ -1,0 +1,23 @@
+{
+  "generated_at_utc": "2026-10-15T02:29:55.925989+00:00",
+  "deck_id": "Lord_Xander__the_Collector",
+  "decklist_path": "refinement/decklists/Lord_Xander_the_Collector_Approval_Candidate_2026-10-14.txt",
+  "deck_sha256": "92cdc2f9c1a3583ccf6a311679db66bef825dac2902761859e929f268b6b4787",
+  "baseline_path": "refinement/verification/lord_xander_the_collector_2026-10-14/Lord_Xander_the_Collector_Current_Cycle_Baseline_2026-10-14.txt",
+  "baseline_source_sha256": "6525dcb9e2165610e832998d94b1b929cd2b30e2701706ca91a77611bafa371c",
+  "count": 100,
+  "distinct_names": 97,
+  "commander_color_identity": [
+    "B",
+    "R",
+    "U"
+  ],
+  "cache_generated_at_utc": "2026-10-15T02:24:39.963537+00:00",
+  "cache_sha256": "1a5eebca6e7964732eacf7d4872eaa290ad232513f92b3bb670d65f106075113",
+  "project_exceptions": [],
+  "rules_gate": "PASS",
+  "official_legality_gate": "PASS",
+  "errors": [],
+  "overall_result": "APPROVAL_READY",
+  "approval_state": "NOT_APPROVED — explicit user approval still required"
+}
