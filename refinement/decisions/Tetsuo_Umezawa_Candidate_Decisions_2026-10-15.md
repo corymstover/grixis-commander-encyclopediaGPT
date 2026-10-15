@@ -2,7 +2,7 @@
 
 Date: 2026-10-15  
 Cycle: `global-restart-2026-10-13`  
-Candidate SHA-256: `6da2d254cf0cf4495e5a8de78fc63046b7cfb2ec52c12445ab28b10eab3dc8ab`
+Candidate SHA-256: `14ca66ceae4d634630a85aa1787731cfe840fd9fc2093bc37ad5dc17d1539ff6`
 
 Status: working decision closeout; not user approval
 
