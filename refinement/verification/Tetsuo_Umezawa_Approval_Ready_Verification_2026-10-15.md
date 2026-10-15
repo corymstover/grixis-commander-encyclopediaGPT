@@ -8,7 +8,7 @@ Deck: #54 of 62
 
 **APPROVAL_READY — NOT APPROVED / NOT LOCKED.**
 
-- Exact candidate SHA-256: `53215af902bfab2640d80c4abb733e6fb66ddaea2de183ae7635d3f197890e72`
+- Exact candidate SHA-256: `14ca66ceae4d634630a85aa1787731cfe840fd9fc2093bc37ad5dc17d1539ff6`
 - Cards: **100**
 - Distinct names: **87**
 - Front-face lands: **35**
@@ -22,7 +22,7 @@ Deck: #54 of 62
 - Project exceptions: **none**
 - Rules-interaction attestation: **PASS**
 - Force of Will blue-pitch pool: **25 other blue nonland cards**
-- Whole-list audit: **99/99 noncommander copies adjudicated; 86 KEEP / 13 CUT**
+- Whole-list audit: **99/99 noncommander copies adjudicated; 85 KEEP / 14 CUT**
 - Candidate exhaustion/red-team: **ZERO NEW MATERIAL IMPROVEMENTS**
 - Natural ceiling: **Power Bracket 4 — Optimized**
 - Proposed Archidekt tags: **Tap/Untap / Forced Combat / Activated Abilities**
@@ -36,11 +36,12 @@ Deck: #54 of 62
 5. Backlash -> Blustersquall
 6. Agitator Ant -> Flood
 7. Spectacular Showdown -> Retreat to Coralhelm
-8. Dragonskull Summit -> Badlands
-9. Drowned Catacomb -> Underground Sea
-10. Shivan Reef -> Flooded Strand
-11. Sulfurous Springs -> Marsh Flats
-12. Underground River -> Misty Rainforest
-13. Island -> Sink into Stupor // Soporific Springs
+8. Opposition Agent -> Sting, the Glinting Dagger
+9. Dragonskull Summit -> Badlands
+10. Drowned Catacomb -> Underground Sea
+11. Shivan Reef -> Flooded Strand
+12. Sulfurous Springs -> Marsh Flats
+13. Underground River -> Misty Rainforest
+14. Island -> Sink into Stupor // Soporific Springs
 
-The candidate remains unlocked until explicit user approval of this exact SHA-bound list.
+Supersedes prior 13-swap SHA `53215af902bfab2640d80c4abb733e6fb66ddaea2de183ae7635d3f197890e72`. The candidate remains unlocked until explicit user approval of this exact SHA-bound list.

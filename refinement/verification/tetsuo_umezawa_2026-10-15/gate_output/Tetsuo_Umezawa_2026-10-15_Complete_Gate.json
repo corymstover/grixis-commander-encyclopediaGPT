@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-10-15T22:33:14.228122+00:00",
+  "generated_at_utc": "2026-10-15T22:37:44.093267+00:00",
   "deck_id": "Tetsuo_Umezawa",
   "decklist_path": "refinement/decklists/Tetsuo_Umezawa_Approval_Ready_2026-10-15.txt",
-  "deck_sha256": "53215af902bfab2640d80c4abb733e6fb66ddaea2de183ae7635d3f197890e72",
+  "deck_sha256": "14ca66ceae4d634630a85aa1787731cfe840fd9fc2093bc37ad5dc17d1539ff6",
   "baseline_path": null,
   "baseline_source_sha256": "399e3e589027d96966fde23511e61ddd1b692c8c825db4ab9da41216c936f93b",
   "count": 100,
@@ -12,8 +12,8 @@
     "R",
     "U"
   ],
-  "cache_generated_at_utc": "2026-10-15T22:32:12.728173+00:00",
-  "cache_sha256": "1c0ae652449250a6d924c81527c0698e13d3bf458998074d4ec50ed6499e5c7b",
+  "cache_generated_at_utc": "2026-10-15T22:37:43.751487+00:00",
+  "cache_sha256": "890fe98606352d333f2f1c6a840c7244e94906911f9eb8ab46c2705ec1462d45",
   "project_exceptions": [],
   "rules_gate": "PASS",
   "official_legality_gate": "PASS",

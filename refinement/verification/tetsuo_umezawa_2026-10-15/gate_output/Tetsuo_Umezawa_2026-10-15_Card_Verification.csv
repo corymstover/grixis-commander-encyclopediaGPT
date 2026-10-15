@@ -78,9 +78,6 @@ Misty Rainforest,1,,Misty Rainforest,c6cad746-a1dc-4739-9707-9c12c42e141a,09dd85
 Mountain,5,,Mountain,85177bd7-6c50-48da-b692-ae5fe7bd357c,a3fb7228-e76b-4e96-a40e-20b5fed75685,Basic Land — Mountain,,R,"B,R,U",legal,,PASS,({T}: Add {R}.),https://scryfall.com/card/85177bd7-6c50-48da-b692-ae5fe7bd357c
 Mystic Remora,1,,Mystic Remora,40140991-cffa-4b52-9a25-37e9a8aa9ddd,8a52f3c0-2552-4425-b2e3-5496eb2232a7,Enchantment,,U,"B,R,U",legal,,PASS,"Cumulative upkeep {1} (At the beginning of your upkeep, put an age counter on this permanent, then sacrifice it unless you pay its upkeep cost for each age counter on it.)
 Whenever an opponent casts a noncreature spell, you may draw a card unless that player pays {4}.",https://scryfall.com/card/40140991-cffa-4b52-9a25-37e9a8aa9ddd
-Opposition Agent,1,,Opposition Agent,086f97e9-8b62-44f3-b467-149c2ac5ca78,1f438b8f-fe23-4f3b-ab2e-f6c33676c462,Creature — Human Rogue,,B,"B,R,U",legal,,PASS,"Flash
-You control your opponents while they're searching their libraries.
-While an opponent is searching their library, they exile each card they find. You may play those cards for as long as they remain exiled, and you may spend mana as though it were mana of any color to cast them.",https://scryfall.com/card/086f97e9-8b62-44f3-b467-149c2ac5ca78
 Patriar's Seal,1,,Patriar's Seal,37f920f0-4dfc-477b-af7e-a17dfc9ba455,ad95eac2-5b48-4102-9988-a6d7b1ec30e0,Artifact,,,"B,R,U",legal,,PASS,"{T}: Add one mana of any color.
 {1}, {T}: Untap target legendary creature you control.",https://scryfall.com/card/37f920f0-4dfc-477b-af7e-a17dfc9ba455
 Polluted Delta,1,,Polluted Delta,6e288374-2b71-4ace-b1d2-a19fee6cb4af,ef86989d-ce80-4e55-aece-7d11710eeffa,Land,,,"B,R,U",legal,,PASS,"{T}, Pay 1 life, Sacrifice this land: Search your library for an Island or Swamp card, put it onto the battlefield, then shuffle.",https://scryfall.com/card/6e288374-2b71-4ace-b1d2-a19fee6cb4af
@@ -109,6 +106,10 @@ Sly Instigator,1,,Sly Instigator,c9ed183a-a78a-4934-9317-9f16b29e69a2,8c2dd8dc-8
 Sol Ring,1,,Sol Ring,8ee443cc-e17a-493b-9c93-1f9e141a30e4,6ad8011d-3471-4369-9d68-b264cc027487,Artifact,,,"B,R,U",legal,,PASS,{T}: Add {C}{C}.,https://scryfall.com/card/8ee443cc-e17a-493b-9c93-1f9e141a30e4
 Steam Vents,1,,Steam Vents,a83903c7-fd51-4526-aed2-359e946fea36,17039058-822d-409f-938c-b727a366ba63,Land — Island Mountain,,"R,U","B,R,U",legal,,PASS,"({T}: Add {U} or {R}.)
 As this land enters, you may pay 2 life. If you don't, it enters tapped.",https://scryfall.com/card/a83903c7-fd51-4526-aed2-359e946fea36
+"Sting, the Glinting Dagger",1,,"Sting, the Glinting Dagger",afbec7e7-f5b9-407e-bf96-2e088710e791,973c49a1-8425-40b9-8bdc-2c2434222314,Legendary Artifact — Equipment,{2},,"B,R,U",legal,,PASS,"Equipped creature gets +1/+1 and has haste.
+At the beginning of each combat, untap equipped creature.
+Equipped creature has first strike as long as it's blocking or blocked by a Goblin or Orc.
+Equip {2}",https://scryfall.com/card/ltr/250/sting-the-glinting-dagger?utm_source=api
 Sulfur Falls,1,,Sulfur Falls,2b20fa73-c6de-49c1-b3d0-6ebd543a00d0,6a6c5e17-6465-4a1f-9d63-8a3ce2edc522,Land,,"R,U","B,R,U",legal,,PASS,"This land enters tapped unless you control an Island or a Mountain.
 {T}: Add {U} or {R}.",https://scryfall.com/card/2b20fa73-c6de-49c1-b3d0-6ebd543a00d0
 Swamp,6,,Swamp,b233b117-9369-45c1-80c5-cc857386b6be,56719f6a-1a6c-4c0a-8d21-18f7d7350b68,Basic Land — Swamp,,B,"B,R,U",legal,,PASS,({T}: Add {B}.),https://scryfall.com/card/b233b117-9369-45c1-80c5-cc857386b6be

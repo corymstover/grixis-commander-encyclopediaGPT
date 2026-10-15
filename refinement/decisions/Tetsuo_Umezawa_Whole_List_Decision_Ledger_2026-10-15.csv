@@ -26,7 +26,7 @@ Disrupt Decorum,1,1,0,KEEP,KEEP — mass goad is a high-impact forced-combat ena
 Dragonskull Summit,1,0,1,CUT,CUT — upgrade to Badlands.
 Drowned Catacomb,1,0,1,CUT,CUT — upgrade to Underground Sea.
 Exotic Orchard,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
-Fatestitcher,1,1,0,KEEP,KEEP — repeatable tap/untap permanent supports both target creation and commander reuse.
+Fatestitcher,1,1,0,KEEP,KEEP — repeatable tap/untap permanent supports target creation and commander reuse.
 Feed the Swarm,1,0,1,CUT,CUT — Withering Torment gives instant-speed creature/enchantment interaction.
 Fellwar Stone,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
 "Firkraag, Cunning Instigator",1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
@@ -50,7 +50,7 @@ Maze of Ith,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, force
 Mountain,5,5,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
 Mystic Remora,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
 Nightscape Familiar,1,0,1,CUT,CUT — does not reduce Tetsuo first cast UBR or UBBR activation because neither contains generic mana; replace with colored ramp plus untap.
-Opposition Agent,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Opposition Agent,1,0,1,CUT,"CUT — generic stax slot replaced by Sting, the Glinting Dagger as repeatable beginning-of-combat Tetsuo untap plus haste."
 Polluted Delta,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
 Propaganda,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
 Rakdos Charm,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."

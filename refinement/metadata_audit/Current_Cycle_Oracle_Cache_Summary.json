@@ -1,10 +1,10 @@
 {
-  "generated_at_utc": "2026-10-15T22:32:12.728173+00:00",
+  "generated_at_utc": "2026-10-15T22:37:43.751487+00:00",
   "overlay_generated_at_utc": "2026-10-15T16:08:20.422925+00:00",
   "bulk_updated_at": "2026-10-15T09:05:41.246+00:00",
   "decklist_file_count": 114,
   "distinct_names_requested": 1486,
-  "records_written": 1511,
+  "records_written": 1512,
   "overlay_hits": 1153,
   "live_named_exact_lookups": 185,
   "exception_names_included": [
@@ -19,40 +19,16 @@
   "malformed_decklist_lines": [],
   "ambiguous_overlay_entries_rechecked_live": [],
   "unresolved": [],
-  "cache_sha256": "1c0ae652449250a6d924c81527c0698e13d3bf458998074d4ec50ed6499e5c7b",
+  "cache_sha256": "890fe98606352d333f2f1c6a840c7244e94906911f9eb8ab46c2705ec1462d45",
   "overall_result": "PASS",
   "design_note": "Preferred verification cache for chat/container runs. Direct Scryfall access from chat is not required when this cache is fresh and complete.",
   "targeted_candidate_refresh": {
     "deck": "Tetsuo Umezawa",
     "candidate_path": "refinement/decklists/Tetsuo_Umezawa_Approval_Ready_2026-10-15.txt",
     "missing_names_resolved_live": [
-      "Bloodthirsty Blade",
-      "Blustersquall",
-      "Borrowing 100,000 Arrows",
-      "Bothersome Quasit",
-      "Disrupt Decorum",
-      "Fatestitcher",
-      "Firkraag, Cunning Instigator",
-      "Flood",
-      "Frozen Aether",
-      "Fumiko the Lowblood",
-      "Geode Rager",
-      "Hylda's Crown of Winter",
-      "Karazikar, the Eye Tyrant",
-      "Maze of Ith",
-      "Puppeteer",
-      "Rathi Trapper",
-      "Red Death, Shipwrecker",
-      "Retreat to Coralhelm",
-      "Royal Assassin",
-      "Shiny Impetus",
-      "Sly Instigator",
-      "Tetsuo Umezawa",
-      "Urabrask the Hidden",
-      "Vengeful Ancestor",
-      "Verity Circle"
+      "Sting, the Glinting Dagger"
     ],
-    "prior_cache_age_hours": 0.202,
+    "prior_cache_age_hours": 0.092,
     "method": "reuse clean same-day cache; exact live Scryfall lookup for candidate names absent from cache"
   }
 }
