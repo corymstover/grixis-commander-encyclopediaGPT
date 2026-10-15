@@ -63,9 +63,9 @@
 1x Pack Rat
 1x Quicksilver Elemental
 1x Rakdos Signet
-1x Reanimate
-1x Rhystic Study
 1x Spark Double
+1x Rhystic Study
+1x Rings of Brighthearth
 1x Riverglide Pathway // Lavaglide Pathway
 1x Scalding Tarn
 1x Shauku, Endbringer
