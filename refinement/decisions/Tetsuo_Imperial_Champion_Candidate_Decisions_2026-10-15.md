@@ -4,7 +4,7 @@ Date: 2026-10-15
 Cycle: `global-restart-2026-10-13`  
 Candidate SHA-256: `d6d7561f00cb56cfb86cd79024975130d718ddc7f3a1bddf0c62f61dc422822e`
 
-Status: working decision closeout; not user approval
+Status: **APPROVED / LOCKED** — explicit user approval received 2026-10-15
 
 ## Final proposed delta
 
@@ -54,3 +54,11 @@ Candidate exhaustion/red-team: **ZERO NEW MATERIAL IMPROVEMENTS**.
 Natural ceiling: **Power Bracket 4 — Optimized**.
 
 Proposed Archidekt tags: **Equipment / Free-Cast Spells / Extra Combats**.
+
+## Approval closeout
+
+- Explicit user approval received: **2026-10-15**
+- Canonical approved SHA-256: `d6d7561f00cb56cfb86cd79024975130d718ddc7f3a1bddf0c62f61dc422822e`
+- Exact approved artifact: `refinement/decklists/Tetsuo_Imperial_Champion_Approved_2026-10-15.txt`
+- Current-cycle state: **APPROVED / LOCKED**
+- Next unlocked: **The Madcap Jester (index 55 / deck 56 of 62)**.
