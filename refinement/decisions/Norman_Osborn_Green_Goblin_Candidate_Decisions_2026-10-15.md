@@ -31,7 +31,7 @@ Exact candidate SHA-256: `23168e59b7d359ecf24ed95065a5a4b50c978a8f441208d593207e
 | Skirge Familiar | Tolarian Winds | Five-mana discard outlet becomes two-mana instant-speed hand cycling with very high Norman-specific lift. |
 | Surly Badgersaur | Valley Floodcaller | Four-mana discard payoff becomes a three-mana flash creature that gives all noncreature spells flash, materially expanding mayhem timing. |
 | Ultimate Green Goblin | Arid Mesa | Slow upkeep engine becomes a premium typed-dual fetch while the land count is deliberately increased by one overall. |
-| Exotic Orchard | Cavern of Souls | Broad fixing becomes commander protection; naming Human covers Norman and Green Goblin. |
+| Exotic Orchard | Cavern of Souls | Broad fixing becomes commander protection; naming Human can make the front-face Norman Osborn creature spell uncounterable. |
 | Luxury Suite | City of Traitors | Multiplayer dual becomes explosive two-mana land for proactive cEDH sequencing. |
 | Morphic Pool | Flooded Strand | Multiplayer dual becomes premium typed-dual fetch. |
 | Oscorp Industries | Gemstone Caverns | Flavorful tapped land becomes high-ceiling pregame acceleration; Bracket-5 tempo outweighs Oscorp's unique Mayhem land recursion. |
@@ -126,7 +126,7 @@ Final lands:
 - Watery Grave
 - Wooded Foothills
 
-The mana package also adds Mox Amber, Grim Monolith, and Simian Spirit Guide while retaining the existing fast mana. Cavern of Souls naming **Human** can produce uncounterable colored mana for Norman Osborn and remains appropriate because both faces have Human among their creature types.
+The mana package also adds Mox Amber, Grim Monolith, and Simian Spirit Guide while retaining the existing fast mana. Cavern of Souls naming **Human** can make the front-face Norman Osborn creature spell uncounterable; the Green Goblin back face is not separately cast.
 
 ## Final red-team result
 
