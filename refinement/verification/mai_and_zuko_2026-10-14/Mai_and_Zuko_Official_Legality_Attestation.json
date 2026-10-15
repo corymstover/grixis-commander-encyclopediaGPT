@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "deck_sha256": "f52cfc2043c5599ea5c35e553f06647bf018344ee73482b96e375122b9f29e8b",
+  "checked_at_utc": "2026-10-15T04:00:00Z",
+  "sources": [
+    "Wizards of the Coast Commander Banned & Restricted status, with the February 9, 2026 Commander update and October 12, 2026 B&R announcement checkpoint",
+    "Current Oracle/legality data for Mai and Zuko, The Blue Spirit, Katara, Waterbending Master, Boiling Rock Rioter, The Fire Nation Drill, Uthros Research Craft, Unwinding Clock, Thought Monitor, Ally Encampment, Urza's Saga, Marsh Flats, Flooded Strand, and Misty Rainforest",
+    "Current-cycle Oracle/Scryfall legality cache; exact candidate is independently revalidated by the complete approval gate"
+  ],
+  "unexpected_banned_cards": [],
+  "project_exceptions": [],
+  "notes": "The exact SHA-bound Mai and Zuko candidate requires no project-specific legality exception. The October 12, 2026 B&R announcement made Competitive Brawl changes and did not announce a paper Commander change. Final per-card Commander legality, exact Oracle resolution, singleton structure, and U/B/R color identity remain fail-closed in the complete approval gate before APPROVAL_READY."
+}
