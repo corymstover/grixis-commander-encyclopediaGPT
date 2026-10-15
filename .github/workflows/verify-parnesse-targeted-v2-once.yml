@@ -23,8 +23,8 @@ jobs:
         run: python scripts/build_tetsuo_umezawa_decision_ledger.py
       - name: Targeted current Oracle refresh for Tetsuo Umezawa candidate
         run: python scripts/augment_tetsuo_umezawa_candidate_oracle_cache.py
-      - name: Verify exact Tetsuo Umezawa approval candidate
-        run: python scripts/verify_tetsuo_umezawa_approval_candidate_once.py
+      - name: Verify exact superseding Tetsuo Umezawa approval candidate
+        run: python scripts/verify_tetsuo_umezawa_approval_candidate_v2_once.py
       - name: Commit approval-ready evidence
         shell: bash
         run: |
@@ -38,5 +38,5 @@ jobs:
                   refinement/decisions/Tetsuo_Umezawa_Candidate_Decisions_2026-10-15.md \
                   refinement/verification/Tetsuo_Umezawa_Approval_Ready_Verification_2026-10-15.md \
                   refinement/verification/tetsuo_umezawa_2026-10-15/gate_output
-          git commit -m "Verify Tetsuo Umezawa approval-ready candidate [skip ci]"
+          git commit -m "Verify superseding Tetsuo Umezawa approval-ready candidate [skip ci]"
           git push origin HEAD:main
