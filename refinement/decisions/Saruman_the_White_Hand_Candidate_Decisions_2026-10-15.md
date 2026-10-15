@@ -3,7 +3,7 @@
 Date: 2026-10-15  
 Cycle: `global-restart-2026-10-13`  
 Deck: #48 of 62  
-Status: working decision closeout; not user approval
+Status: **APPROVED / LOCKED** — explicit user approval received 2026-10-15
 
 Exact candidate SHA-256: `4981499230898c8b36c6f46b0f60a5277630d92abe477d48ed77091e2203ffe2`
 
@@ -68,3 +68,12 @@ After the high-mana-value/low-actual-cost review, full 99-slot audit, current-ca
 **ZERO NEW MATERIAL IMPROVEMENTS.**
 
 **Decision result: PASS — fresh Oracle/legality/rules complete gate and explicit user approval remain required.**
+
+## Approval closeout
+
+- Explicit user approval received: **2026-10-15**
+- Canonical approved SHA-256: `4981499230898c8b36c6f46b0f60a5277630d92abe477d48ed77091e2203ffe2`
+- Exact approved artifact: `refinement/decklists/Saruman_the_White_Hand_Approved_2026-10-15.txt`
+- Current-cycle state: **APPROVED / LOCKED**
+- Quality gate: **Deck Quality Gates v3 + mandatory whole-list audit + targeted approval-ready verification**
+- Next unlocked deck in tracker order: **Sauron, Lord of the Rings (index 48 / deck 49 of 62)**.

@@ -653,6 +653,22 @@
       "decision_closeout_artifact": "refinement/decisions/RogSi_Candidate_Decisions_2026-10-15.md",
       "approval_record_artifact": "refinement/approvals/RogSi_Approved_2026-10-15.md",
       "approved_list_artifact": "refinement/decklists/RogSi_Approved_2026-10-15.txt"
+    },
+    "Saruman__the_White_Hand": {
+      "approval_status": "APPROVED",
+      "lock_status": "LOCKED",
+      "final_gate_passed": true,
+      "user_approval_date": "2026-10-15",
+      "current_stage": "LOCKED",
+      "approved_list_sha256": "4981499230898c8b36c6f46b0f60a5277630d92abe477d48ed77091e2203ffe2",
+      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + targeted approval-ready verification",
+      "approval_basis": "Explicit user approval of the exact SHA-bound Saruman, the White Hand approval-ready candidate after authoritative FINAL baseline reconciliation, mandatory 99-slot whole-list audit, high-mana-value/low-actual-cost commander-first review, candidate exhaustion, adversarial red-team review, mana-base/MDFC review, targeted current Oracle refresh, rules-interaction verification, current official Commander legality verification, exact structural verification, singleton compliance, and U/B/R color-identity verification.",
+      "whole_list_audit_artifact": "refinement/verification/Saruman_the_White_Hand_Whole_List_Audit_2026-10-15.md",
+      "verification_artifact": "refinement/verification/Saruman_the_White_Hand_Approval_Ready_Verification_2026-10-15.md",
+      "complete_gate_artifact": "refinement/verification/saruman_2026-10-15/gate_output/Saruman_the_White_Hand_2026-10-15_Complete_Gate.json",
+      "decision_closeout_artifact": "refinement/decisions/Saruman_the_White_Hand_Candidate_Decisions_2026-10-15.md",
+      "approval_record_artifact": "refinement/approvals/Saruman_the_White_Hand_Approved_2026-10-15.md",
+      "approved_list_artifact": "refinement/decklists/Saruman_the_White_Hand_Approved_2026-10-15.txt"
     }
   }
 }
