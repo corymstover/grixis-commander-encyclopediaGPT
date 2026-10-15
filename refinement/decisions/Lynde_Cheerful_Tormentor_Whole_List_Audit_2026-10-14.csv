@@ -1,0 +1,108 @@
+card_name,quantity,decision,audit_conclusion
+Accursed Witch // Infectious Curse,1,KEEP,Curse package; KEEP after impact/recursion audit.
+Ancient Tomb,1,KEEP,Mana/utility slot survived optimized mana audit; KEEP.
+Arcane Signet,1,KEEP,Acceleration/cost reduction; KEEP.
+Ashiok's Reaper,1,KEEP,Enchantment payoff/control engine; KEEP.
+Bitterheart Witch,1,KEEP,Consistency/tutor slot; KEEP.
+Blasphemous Act,1,KEEP,Premium interaction/protection; KEEP.
+Blood Crypt,1,KEEP,Mana/utility slot survived optimized mana audit; KEEP.
+Bloodstained Mire,1,KEEP,Mana/utility slot survived optimized mana audit; KEEP.
+Bojuka Bog,1,KEEP,Mana/utility slot survived optimized mana audit; KEEP.
+"Braids, Arisen Nightmare",1,KEEP,Direct Curse-to-graveyard engine; KEEP.
+Chaos Warp,1,KEEP,Premium interaction/protection; KEEP.
+Claws of Gix,1,KEEP,Direct Curse-to-graveyard engine; KEEP.
+Clever Impersonator,1,KEEP,High-leverage enchantment/Curse copy role; KEEP.
+Command Tower,1,KEEP,Mana/utility slot survived optimized mana audit; KEEP.
+Copy Enchantment,1,KEEP,High-leverage enchantment/Curse copy role; KEEP.
+Cruel Reality,1,KEEP,Curse package; KEEP after impact/recursion audit.
+Crumbling Necropolis,1,CUT,Always enters tapped; replaced by unconditional untapped rainbow source.
+Crystal Chimes,1,CUT,Slow broad recursion; Lynde already recurs Curses and the slot becomes a direct engine enabler.
+Curse of Bloodletting,1,KEEP,Curse package; KEEP after impact/recursion audit.
+Curse of Chaos,1,CUT,Low-impact political loot trigger; Hospitality creates materially stronger combat incentives and card advantage.
+Curse of Death's Hold,1,KEEP,Curse package; KEEP after impact/recursion audit.
+Curse of Disturbance,1,KEEP,Curse package; KEEP after impact/recursion audit.
+Curse of Fool's Wisdom,1,KEEP,Curse package; KEEP after impact/recursion audit.
+Curse of Misfortunes,1,KEEP,Curse package; KEEP after impact/recursion audit.
+Curse of Oblivion,1,CUT,Narrow four-mana graveyard pressure; Shaken Faith is cheaper and punishes optimized multi-spell/copy turns.
+Curse of Obsession,1,KEEP,Curse package; KEEP after impact/recursion audit.
+Curse of Opulence,1,KEEP,Curse package; KEEP after impact/recursion audit.
+Curse of Shallow Graves,1,CUT,Redundant with retained Curse of Disturbance; Echoes adds a distinct high-ceiling spell-copy pressure axis.
+Curse of Surveillance,1,KEEP,Curse package; KEEP after impact/recursion audit.
+Curse of the Restless Dead,1,KEEP,Curse package; KEEP after impact/recursion audit.
+Curse of Thirst,1,KEEP,Curse package; KEEP after impact/recursion audit.
+Curse of Unbinding,1,KEEP,Curse package; KEEP after impact/recursion audit.
+Curse of Verbosity,1,KEEP,Curse package; KEEP after impact/recursion audit.
+Cyclonic Rift,1,KEEP,Premium interaction/protection; KEEP.
+Damnation,1,KEEP,Premium interaction/protection; KEEP.
+Deadly Rollick,1,KEEP,Premium interaction/protection; KEEP.
+Deflecting Swat,1,KEEP,Premium interaction/protection; KEEP.
+Demon of Fate's Design,1,KEEP,Direct Curse-to-graveyard engine; KEEP.
+Demonic Tutor,1,KEEP,Consistency/tutor slot; KEEP.
+Dimir Signet,1,KEEP,Acceleration/cost reduction; KEEP.
+Doomwake Giant,1,KEEP,Enchantment payoff/control engine; KEEP.
+Dragonskull Summit,1,CUT,Check-land dependency; replaced by Badlands.
+Drowned Catacomb,1,CUT,Check-land dependency; replaced by three-color City of Brass.
+Entity Tracker,1,KEEP,Enchantment payoff/control engine; KEEP.
+Estrid's Invocation,1,KEEP,High-leverage enchantment/Curse copy role; KEEP.
+Exotic Orchard,1,KEEP,Mana/utility slot survived optimized mana audit; KEEP.
+Fierce Guardianship,1,KEEP,Premium interaction/protection; KEEP.
+Fraying Sanity,1,CUT,Legitimate Curse but low leverage without a dedicated mill plan; Vengeance is cheaper and more useful as repeatable Lynde fodder.
+Grim Guardian,1,KEEP,Enchantment payoff/control engine; KEEP.
+Haunted Ridge,1,CUT,Slow-land timing constraint; replaced by fetchland.
+Imperial Seal,1,KEEP,Consistency/tutor slot; KEEP.
+Island,4,KEEP,Mana/utility slot survived optimized mana audit; KEEP.
+Jeska's Will,1,KEEP,Acceleration/cost reduction; KEEP.
+Luxury Suite,1,KEEP,Mana/utility slot survived optimized mana audit; KEEP.
+"Lynde, Cheerful Tormentor",1,KEEP,Commander identity anchor; KEEP.
+Maddening Hex,1,KEEP,Curse package; KEEP after impact/recursion audit.
+Mana Drain,1,KEEP,Premium interaction/protection; KEEP.
+Mirrormade,1,KEEP,High-leverage enchantment/Curse copy role; KEEP.
+Morphic Pool,1,KEEP,Mana/utility slot survived optimized mana audit; KEEP.
+Mountain,3,KEEP,Mana/utility slot survived optimized mana audit; KEEP.
+Nightscape Familiar,1,KEEP,Acceleration/cost reduction; KEEP.
+"Obeka, Splitter of Seconds",1,KEEP,Extra-upkeep multiplier; KEEP.
+Paradox Haze,1,KEEP,Extra-upkeep multiplier; KEEP.
+Polluted Delta,1,KEEP,Mana/utility slot survived optimized mana audit; KEEP.
+Propaganda,1,KEEP,Premium interaction/protection; KEEP.
+Protean Thaumaturge,1,CUT,Copies creatures rather than Curses; least commander-specific member of the copy package.
+Rakdos Signet,1,KEEP,Acceleration/cost reduction; KEEP.
+Rhystic Study,1,KEEP,Card-advantage engine; KEEP.
+Riverglide Pathway // Lavaglide Pathway,1,KEEP,Mana/utility slot survived optimized mana audit; KEEP.
+Scalding Tarn,1,KEEP,Mana/utility slot survived optimized mana audit; KEEP.
+Shipwreck Marsh,1,CUT,Slow-land timing constraint; replaced by fetchland.
+Shivan Reef,1,KEEP,Mana/utility slot survived optimized mana audit; KEEP.
+Sol Ring,1,KEEP,Acceleration/cost reduction; KEEP.
+Sphinx of the Second Sun,1,CUT,Eight-mana upkeep engine; replaced by much cheaper Ninth Doctor.
+Steam Vents,1,KEEP,Mana/utility slot survived optimized mana audit; KEEP.
+Stormcarved Coast,1,CUT,Slow-land timing constraint; replaced by fetchland.
+Sulfur Falls,1,CUT,Check-land dependency; replaced by Volcanic Island.
+Sulfurous Springs,1,KEEP,Mana/utility slot survived optimized mana audit; KEEP.
+Swamp,3,KEEP,Mana/utility slot survived optimized mana audit; KEEP.
+Swan Song,1,KEEP,Premium interaction/protection; KEEP.
+Talisman of Creativity,1,KEEP,Acceleration/cost reduction; KEEP.
+Talisman of Dominance,1,KEEP,Acceleration/cost reduction; KEEP.
+Talisman of Indulgence,1,KEEP,Acceleration/cost reduction; KEEP.
+Torment of Scarabs,1,KEEP,Curse package; KEEP after impact/recursion audit.
+Toxic Deluge,1,KEEP,Premium interaction/protection; KEEP.
+Training Center,1,KEEP,Mana/utility slot survived optimized mana audit; KEEP.
+Trespasser's Curse,1,KEEP,Curse package; KEEP after impact/recursion audit.
+Underground Sea,1,KEEP,Mana/utility slot survived optimized mana audit; KEEP.
+Vampiric Tutor,1,KEEP,Consistency/tutor slot; KEEP.
+Watery Grave,1,KEEP,Mana/utility slot survived optimized mana audit; KEEP.
+Wicked Visitor,1,KEEP,Enchantment payoff/control engine; KEEP.
+Withering Torment,1,KEEP,Premium interaction/protection; KEEP.
+Xander's Lounge,1,KEEP,Mana/utility slot survived optimized mana audit; KEEP.
+Despotic Scepter,1,ADD,"One-mana repeatable way to destroy a Curse you own and trigger Lynde, including a Curse attached to an opponent."
+Curse of Hospitality,1,ADD,High-impact political Curse that grants trample and card access for creatures damaging the cursed player.
+Curse of Shaken Faith,1,ADD,Efficient two-mana Curse that punishes second-plus spells and spell copies.
+Curse of Echoes,1,ADD,High-ceiling Curse against instant/sorcery decks; differentiates the political-control package.
+Curse of Vengeance,1,ADD,One-mana Curse with accumulating payoff; excellent low-cost object to recycle through Lynde.
+Perilous Research,1,ADD,Instant-speed draw two plus a permanent sacrifice; sacrificing a Curse directly enables Lynde.
+The Ninth Doctor,1,ADD,Three-mana extra-upkeep engine; multiplies Lynde and Curse of Misfortunes upkeep triggers.
+Mana Confluence,1,ADD,Untapped three-color fixing.
+Badlands,1,ADD,Untapped fetchable B/R dual.
+City of Brass,1,ADD,Untapped three-color fixing.
+Marsh Flats,1,ADD,Untapped fetchland with multiple dual/shock targets.
+Flooded Strand,1,ADD,Untapped fetchland with multiple dual/shock targets.
+Misty Rainforest,1,ADD,Untapped fetchland with multiple dual/shock targets.
+Volcanic Island,1,ADD,Untapped fetchable U/R dual.
