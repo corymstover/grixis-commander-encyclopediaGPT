@@ -3,7 +3,7 @@
 Date: 2026-10-15  
 Cycle: `global-restart-2026-10-13`  
 Deck: #50 of 62  
-Status: working decision closeout; not user approval
+Status: **APPROVED / LOCKED** — explicit user approval received 2026-10-15
 
 Exact candidate SHA-256: `fab194f69a6e15b83679c1419f88ba6fdd56cd9527946cb94a6d8efe23a7dfc8`
 
@@ -64,3 +64,12 @@ After the commander-necessity review, full 99-copy audit, current-card challenge
 **ZERO NEW MATERIAL IMPROVEMENTS.**
 
 **Decision result: PASS — fresh Oracle/legality/rules complete gate and explicit user approval remain required.**
+
+## Approval closeout
+
+- Explicit user approval received: **2026-10-15**
+- Canonical approved SHA-256: `fab194f69a6e15b83679c1419f88ba6fdd56cd9527946cb94a6d8efe23a7dfc8`
+- Exact approved artifact: `refinement/decklists/Sauron_the_Dark_Lord_Approved_2026-10-15.txt`
+- Current-cycle state: **APPROVED / LOCKED**
+- Quality gate: **Deck Quality Gates v3 + mandatory whole-list audit + targeted approval-ready verification**
+- Next unlocked deck in tracker order: **Sedris, the Traitor King (index 50 / deck 51 of 62)**.

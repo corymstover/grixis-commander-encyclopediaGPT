@@ -685,6 +685,22 @@
       "decision_closeout_artifact": "refinement/decisions/Sauron_Lord_of_the_Rings_Candidate_Decisions_2026-10-15.md",
       "approval_record_artifact": "refinement/approvals/Sauron_Lord_of_the_Rings_Approved_2026-10-15.md",
       "approved_list_artifact": "refinement/decklists/Sauron_Lord_of_the_Rings_Approved_2026-10-15.txt"
+    },
+    "Sauron__the_Dark_Lord": {
+      "approval_status": "APPROVED",
+      "lock_status": "LOCKED",
+      "final_gate_passed": true,
+      "user_approval_date": "2026-10-15",
+      "current_stage": "LOCKED",
+      "approved_list_sha256": "fab194f69a6e15b83679c1419f88ba6fdd56cd9527946cb94a6d8efe23a7dfc8",
+      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + targeted approval-ready verification",
+      "approval_basis": "Explicit user approval of the exact SHA-bound Sauron, the Dark Lord approval-ready candidate after authoritative FINAL baseline reconciliation, mandatory 99-slot whole-list audit, commander-first Army/Ring/Wraith review, candidate exhaustion, adversarial red-team review, mana-base review, targeted current Oracle refresh, rules-interaction verification, current official Commander legality verification, exact structural verification, Nazgûl deck-construction verification, and U/B/R color-identity verification.",
+      "whole_list_audit_artifact": "refinement/verification/Sauron_the_Dark_Lord_Whole_List_Audit_2026-10-15.md",
+      "verification_artifact": "refinement/verification/Sauron_the_Dark_Lord_Approval_Ready_Verification_2026-10-15.md",
+      "complete_gate_artifact": "refinement/verification/sauron_dark_lord_2026-10-15/gate_output/Sauron_the_Dark_Lord_2026-10-15_Complete_Gate.json",
+      "decision_closeout_artifact": "refinement/decisions/Sauron_the_Dark_Lord_Candidate_Decisions_2026-10-15.md",
+      "approval_record_artifact": "refinement/approvals/Sauron_the_Dark_Lord_Approved_2026-10-15.md",
+      "approved_list_artifact": "refinement/decklists/Sauron_the_Dark_Lord_Approved_2026-10-15.txt"
     }
   }
 }
