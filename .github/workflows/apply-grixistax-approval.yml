@@ -1,0 +1,109 @@
+name: Apply Grixistax current-cycle approval
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - ".github/workflows/apply-grixistax-approval.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Apply exact approved state
+        shell: bash
+        run: |
+          python - <<'PY'
+          import csv, hashlib, json
+          from pathlib import Path
+
+          deck_id = "Grixistax___October_2026"
+          approved_hash = "f36346d4ba965db1e098b0aa92d27a968ee3a14c74a2b9401c1a5357f83c025c"
+          approved_path = Path("refinement/decklists/Grixistax_October_2026_Approved_2026-10-14.txt")
+          gate_path = "refinement/verification/grixistax_october_2026_2026-10-14/gate_output/Grixistax_October_2026_2026-10-14_Complete_Gate.json"
+          audit_path = "refinement/decisions/Grixistax_October_2026_Current_Cycle_Decisions_2026-10-14.md"
+          approval_record = "refinement/approvals/Grixistax_October_2026_Approved_2026-10-14.md"
+
+          actual_hash = hashlib.sha256(approved_path.read_bytes()).hexdigest()
+          if actual_hash != approved_hash:
+              raise SystemExit(f"Approved-list SHA mismatch: {actual_hash}")
+
+          gate = json.loads(Path(gate_path).read_text())
+          if gate.get("overall_result") != "APPROVAL_READY" or gate.get("deck_sha256") != approved_hash:
+              raise SystemExit("Complete gate is not APPROVAL_READY for the approved SHA")
+
+          state_path = Path("state/current_deck_overrides.json")
+          state = json.loads(state_path.read_text())
+          if state.get("cycle_id") != "global-restart-2026-10-13":
+              raise SystemExit("Unexpected refinement cycle")
+
+          state["decks"][deck_id] = {
+              "approval_status": "APPROVED",
+              "lock_status": "LOCKED",
+              "final_gate_passed": True,
+              "user_approval_date": "2026-10-14",
+              "current_stage": "LOCKED",
+              "approved_list_sha256": approved_hash,
+              "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + Complete Approval Gate v1",
+              "approval_basis": "Explicit user approval of the exact SHA-bound Grixistax — Kraum, Ludevic's Opus // Tevesh Szat, Doom of Fools approval candidate after mandatory whole-list audit, contemporary cEDH ceiling review, candidate exhaustion, adversarial red-team review, zero-new-material-improvement closure, fresh Oracle/color-identity verification, current official Commander legality verification, independent rules verification, and complete fail-closed gate APPROVAL_READY with zero errors.",
+              "complete_gate_artifact": gate_path,
+              "whole_list_audit_artifact": audit_path,
+              "approval_record_artifact": approval_record,
+              "approved_list_artifact": str(approved_path),
+          }
+          state_path.write_text(json.dumps(state, indent=2, ensure_ascii=False) + "\n")
+
+          tracker_path = Path("refinement/Deck_Refinement_Tracker_2026-10-12.csv")
+          with tracker_path.open(newline="", encoding="utf-8") as f:
+              reader = csv.DictReader(f)
+              fieldnames = reader.fieldnames
+              rows = list(reader)
+          found = False
+          for row in rows:
+              if row.get("deck_id") == deck_id:
+                  found = True
+                  row["baseline_status"] = "CURRENT APPROVED FINAL LIST — current-cycle canonical list locked; frozen source exports preserved unchanged."
+                  row["final_gate_passed"] = "YES"
+                  row["final_list_hash"] = approved_hash
+                  row["user_approval_date"] = "2026-10-14"
+                  row["refinement_status"] = "APPROVED / LOCKED — current global-restart-2026-10-13 cycle"
+                  note = row.get("notes", "")
+                  add = ("CURRENT-CYCLE APPROVAL 2026-10-14: exact SHA-bound Grixistax approval candidate explicitly approved and locked by user after complete fail-closed gate APPROVAL_READY with zero errors. "
+                         f"Canonical SHA-256: {approved_hash}. 100 cards / 100 distinct names / two legal Partner commanders / UBR color identity / official Commander legality PASS / rules PASS / no project exceptions. "
+                         f"Approved artifact: {approved_path}. Complete gate: {gate_path}. Whole-list closeout: {audit_path}.")
+                  row["notes"] = (note + " " + add).strip()
+                  break
+          if not found:
+              raise SystemExit(f"Tracker row not found: {deck_id}")
+          with tracker_path.open("w", newline="", encoding="utf-8") as f:
+              writer = csv.DictWriter(f, fieldnames=fieldnames)
+              writer.writeheader()
+              writer.writerows(rows)
+          PY
+
+      - name: Commit authoritative approval state
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state/current_deck_overrides.json refinement/Deck_Refinement_Tracker_2026-10-12.csv
+          if git diff --cached --quiet; then
+            echo "No state changes required."
+            exit 0
+          fi
+          git commit -m "Approve and lock Grixistax in authoritative state [skip ci]"
+          git pull --rebase origin main
+          git push origin HEAD:main
