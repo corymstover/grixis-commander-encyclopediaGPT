@@ -1,4 +1,4 @@
-name: Verify Sedris the Traitor King targeted approval candidate once
+name: Verify Solkanar the Swamp King targeted approval candidate once
 
 on:
   push:
@@ -21,14 +21,14 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Build exact Sedris whole-list decision ledger
-        run: python scripts/build_sedris_decision_ledger.py
+      - name: Build exact Solkanar whole-list decision ledger
+        run: python scripts/build_solkanar_swamp_king_decision_ledger.py
 
-      - name: Targeted current Oracle refresh for Sedris candidate
-        run: python scripts/augment_sedris_candidate_oracle_cache.py
+      - name: Targeted current Oracle refresh for Solkanar candidate
+        run: python scripts/augment_solkanar_swamp_king_candidate_oracle_cache.py
 
-      - name: Verify exact Sedris approval candidate
-        run: python scripts/verify_sedris_approval_candidate_once.py
+      - name: Verify exact Solkanar approval candidate
+        run: python scripts/verify_solkanar_swamp_king_approval_candidate_once.py
 
       - name: Commit approval-ready evidence
         shell: bash
@@ -38,10 +38,10 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add refinement/metadata_audit/Current_Cycle_Oracle_Cache.jsonl \
                   refinement/metadata_audit/Current_Cycle_Oracle_Cache_Summary.json \
-                  refinement/verification/Sedris_the_Traitor_King_Whole_List_Audit_2026-10-15.md \
-                  refinement/decisions/Sedris_the_Traitor_King_Whole_List_Decision_Ledger_2026-10-15.csv \
-                  refinement/decisions/Sedris_the_Traitor_King_Candidate_Decisions_2026-10-15.md \
-                  refinement/verification/Sedris_the_Traitor_King_Approval_Ready_Verification_2026-10-15.md \
-                  refinement/verification/sedris_2026-10-15/gate_output
-          git commit -m "Verify Sedris the Traitor King approval-ready candidate [skip ci]"
+                  refinement/verification/Solkanar_the_Swamp_King_Whole_List_Audit_2026-10-15.md \
+                  refinement/decisions/Solkanar_the_Swamp_King_Whole_List_Decision_Ledger_2026-10-15.csv \
+                  refinement/decisions/Solkanar_the_Swamp_King_Candidate_Decisions_2026-10-15.md \
+                  refinement/verification/Solkanar_the_Swamp_King_Approval_Ready_Verification_2026-10-15.md \
+                  refinement/verification/solkanar_swamp_king_2026-10-15/gate_output
+          git commit -m "Verify Solkanar the Swamp King approval-ready candidate [skip ci]"
           git push origin HEAD:main
