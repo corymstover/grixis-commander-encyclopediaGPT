@@ -3,7 +3,7 @@
 Cycle: `global-restart-2026-10-13`
 Tracker position: deck #33 of 62 (tracker index 32)
 Status: **APPROVAL_READY — NOT APPROVED / NOT LOCKED**
-Proposed-list SHA-256 (working candidate only): `6159d4c94b09f5e02fcc1102b23fb36494a3fd9aa6bab21dac5b74ba4ccb6af3`
+Proposed-list SHA-256 (working candidate only): `51e8fd18c7ded6744a4fa2f871925a0679f85dada3e6e517334bd13c07889ee5`
 
 ## Authoritative-state recovery
 
@@ -42,7 +42,7 @@ Natural ceiling: **Power Bracket 4 — Optimized**. The deck is lethal, tutor-de
 2. Underworld Breach -> Faithless Looting
 3. Animate Dead -> Essence Flux
 4. Mirror-Mad Phantasm -> Displacer Kitten
-5. Rings of Brighthearth -> Spark Double
+5. Reanimate -> Spark Double
 6. Fabled Passage -> Minamo, School at Water's Edge
 
 ## Rules / Oracle conclusions
@@ -55,6 +55,7 @@ Natural ceiling: **Power Bracket 4 — Optimized**. The deck is lethal, tutor-de
 - **Faithless Looting:** one-mana draw-two/discard-two plus flashback is direct cage setup because Mairsil may cage from the graveyard.
 - **Asmodeus retained:** Mairsil gains activated abilities, not Asmodeus's static Binding Contract replacement effect; the caged `{B}{B}{B}: Draw seven cards` therefore draws normally.
 - **Quicksilver Elemental retained:** established Mairsil combo engine that can create fresh instances of acquired activated abilities and enables infinite-mana/draw lines with Gilded Lotus plus Staff of Domination, Morphling, or Horseshoe Crab.
+- **Rings of Brighthearth retained:** copies Mairsil’s nonmana activated abilities. With Pack Rat caged, Rings can copy the Pack Rat activation; the copied ability does not require paying the discard cost again and creates another Mairsil-copy ETB/cage trigger.
 - **Marvin retained:** Marvin gains Mairsil's acquired activated abilities while its own ruling confirms it does not gain static abilities. Mairsil's separate once-per-turn restriction is static, so Marvin provides a parallel activated-ability engine without inheriting that restriction.
 - **Mirror-Mad removed:** its ruling confirms that if another creature gains its ability and no Mirror-Mad Phantasm is found, all cards in the library are milled. The proposed list does not rely on that unsafe self-mill route.
 
@@ -66,7 +67,7 @@ Natural ceiling: **Power Bracket 4 — Optimized**. The deck is lethal, tutor-de
 - Newer external challengers and generic cEDH packages were reviewed and rejected where they weakened commander necessity or shifted the shell toward generic Grixis combo.
 - Cavern Harpy was reconsidered because it appears in the stale audit; Pack Rat/Essence Flux/Displacer Kitten provide materially more efficient cage-reset functionality without repeatedly recasting Mairsil.
 - Planar Incision was compared directly to Essence Flux; the one-mana Flux is better for the commander-primary target.
-- Rings of Brighthearth was the strongest cut challenger. Its ability-copy and combo value are real, but Spark Double is more persistent, adds a cage ETB, and is more commander-specific.
+- Rings of Brighthearth was the strongest provisional cut challenger. Final red-team corrected that provisional cut: Rings has direct new synergy with caged Pack Rat and remains highly commander-specific. Reanimate is the weaker slot because generic creature recursion competes with Mairsil’s desire to leave cage payloads in the graveyard.
 
 ## Red-team / second-pass closure
 
@@ -83,11 +84,12 @@ Adversarial pass rechecked:
 - 32-land mana structure,
 - tutor/ramp/interaction density,
 - graveyard setup versus excessive generic recursion,
+- Rings + Pack Rat copied-activation interaction,
 - candidate-ranking bias,
 - current 2026 alternatives,
 - mana-base modernization versus commander-specific utility.
 
-The final serious pass produced **ZERO NEW MATERIAL IMPROVEMENTS**. Additional generic fetchland/dual-land substitutions were not manufactured because the existing 32-land shell is already highly fixed and only Minamo creates a material commander-specific improvement.
+A provisional Rings cut was overturned during the final adversarial pass in favor of cutting Reanimate. After applying that correction and rerunning the affected checks, the next serious pass produced **ZERO NEW MATERIAL IMPROVEMENTS**. Additional generic fetchland/dual-land substitutions were not manufactured because the existing 32-land shell is already highly fixed and only Minamo creates a material commander-specific improvement.
 
 ## Structural gate
 
