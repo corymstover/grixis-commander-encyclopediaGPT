@@ -24,8 +24,8 @@ jobs:
       - name: Targeted current Oracle refresh for Parnesse candidate
         run: python scripts/augment_parnesse_candidate_oracle_cache.py
 
-      - name: Verify Parnesse exact candidate
-        run: python scripts/verify_parnesse_approval_candidate_once.py
+      - name: Verify Parnesse exact candidate with front-face land counting
+        run: python scripts/verify_parnesse_approval_candidate_v2.py
 
       - name: Commit approval-ready evidence
         shell: bash
