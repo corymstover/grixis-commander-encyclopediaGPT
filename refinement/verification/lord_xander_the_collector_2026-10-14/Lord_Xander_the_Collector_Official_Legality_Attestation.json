@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "deck_sha256": "92cdc2f9c1a3583ccf6a311679db66bef825dac2902761859e929f268b6b4787",
+  "checked_at_utc": "2026-10-15T03:00:00Z",
+  "sources": [
+    "Wizards of the Coast current Commander Banned & Restricted list, checked 2026-10-14",
+    "Wizards Banned and Restricted Announcement — 2026-10-12; those changes were Competitive Brawl-specific and did not change paper Commander legality",
+    "Current Oracle/Scryfall legality data for Hall of Echoes, Cruel Calculations, Auton Soldier, Phantasmal Image, and the exact candidate",
+    "Current-cycle Oracle/Scryfall legality cache; exact candidate is independently revalidated by the complete approval gate"
+  ],
+  "unexpected_banned_cards": [],
+  "project_exceptions": [],
+  "notes": "The exact SHA-bound Lord Xander candidate requires no project-specific legality exception. Hall of Echoes and Cruel Calculations are released Reality Fracture cards and are Commander-legal; Auton Soldier and Phantasmal Image are Commander-legal. The candidate contains none of the current named Commander-banned cards. Final per-card legality, exact Oracle resolution, and U/B/R color identity remain fail-closed in the complete approval gate before APPROVAL_READY."
+}
