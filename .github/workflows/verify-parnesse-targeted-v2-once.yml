@@ -25,7 +25,7 @@ jobs:
         run: python scripts/augment_rogsi_candidate_oracle_cache.py
 
       - name: Verify exact RogSi approval candidate
-        run: python scripts/verify_rogsi_approval_candidate_once.py
+        run: python scripts/verify_rogsi_approval_candidate_v2.py
 
       - name: Commit approval-ready evidence
         shell: bash
@@ -36,6 +36,7 @@ jobs:
           git add refinement/metadata_audit/Current_Cycle_Oracle_Cache.jsonl \
                   refinement/metadata_audit/Current_Cycle_Oracle_Cache_Summary.json \
                   refinement/verification/RogSi_Whole_List_Audit_2026-10-15.md \
+                  refinement/decisions/RogSi_Whole_List_Decision_Ledger_2026-10-15.csv \
                   refinement/decisions/RogSi_Candidate_Decisions_2026-10-15.md \
                   refinement/verification/RogSi_Approval_Ready_Verification_2026-10-15.md \
                   refinement/verification/rogsi_2026-10-15/gate_output
