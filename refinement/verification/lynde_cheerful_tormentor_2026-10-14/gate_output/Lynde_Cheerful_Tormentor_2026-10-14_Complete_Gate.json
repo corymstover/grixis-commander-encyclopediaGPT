@@ -1,0 +1,23 @@
+{
+  "generated_at_utc": "2026-10-15T03:07:06.817584+00:00",
+  "deck_id": "Lynde__Cheerful_Tormentor",
+  "decklist_path": "refinement/decklists/Lynde_Cheerful_Tormentor_Approval_Candidate_2026-10-14.txt",
+  "deck_sha256": "05d1c4eea023d25e4308f78b109e80b78e0a3f4d655c3df36743ba3afbf04166",
+  "baseline_path": "refinement/verification/lynde_cheerful_tormentor_2026-10-14/Lynde_Cheerful_Tormentor_Current_Cycle_Baseline_2026-10-14.txt",
+  "baseline_source_sha256": "e72576fbc94bac2be7a043335397f958fa56e481908de53edbb23b5c1379a925",
+  "count": 100,
+  "distinct_names": 93,
+  "commander_color_identity": [
+    "B",
+    "R",
+    "U"
+  ],
+  "cache_generated_at_utc": "2026-10-15T03:01:44.575410+00:00",
+  "cache_sha256": "5eca76dbb052748c30ec57eb158688f5174a6b28aeb6875fd58cb7a74fd858f4",
+  "project_exceptions": [],
+  "rules_gate": "PASS",
+  "official_legality_gate": "PASS",
+  "errors": [],
+  "overall_result": "APPROVAL_READY",
+  "approval_state": "NOT_APPROVED — explicit user approval still required"
+}
