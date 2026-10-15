@@ -1,0 +1,120 @@
+{
+  "status": "PASS",
+  "deck_sha256": "95863276f38beff6b0cf7609041006a6f1de94d5e62c73d76551d6793ffa5b8e",
+  "checked_at_utc": "2026-10-15T02:00:00Z",
+  "sources": [
+    "Current Oracle text and rulings for Lord of Tresserhorn",
+    "Wizards of the Coast Reality Fracture Release Notes for Karn, Argent Defender",
+    "Wizards of the Coast Edge of Eternities Release Notes for Pain for All",
+    "Current Oracle text for Torpor Orb, Dress Down, Stifle, Tale's End, Tainted Strike, Phyresis, Kediss, Chandra's Ignition, Uncaged Fury, Brotherhood Regalia, Not of This World, Slip Out the Back, Anger, Arena of Glory, Muddle the Mixture, Rooftop Storm, Gravecrawler, Phyrexian Altar, Pitiless Plunderer, Warren Soultrader, Blood Artist, Zulaport Cutthroat, and regeneration-relevant sweepers",
+    "Magic Comprehensive Rules — triggered abilities, replacement/prevention effects, infect, commander damage, regeneration, phasing, alternative costs, transmute, sacrifice costs, and state-based actions",
+    "Fresh current-cycle Oracle cache and exact-list verification are independently enforced by the complete approval gate"
+  ],
+  "interactions": [
+    {
+      "name": "Lord of Tresserhorn enters trigger and sacrifice requirement",
+      "status": "PASS",
+      "conclusion": "Lord's drawback is a triggered ability beginning with 'When'. If it resolves, its controller loses 2 life, sacrifices two creatures if able, and the targeted opponent draws two cards. Lord itself is a creature that may have to be sacrificed when there are not two other creatures available. Regeneration cannot replace a sacrifice."
+    },
+    {
+      "name": "Torpor Orb and Karn, Argent Defender suppress Lord",
+      "status": "PASS",
+      "conclusion": "If Torpor Orb or Karn, Argent Defender is already on the battlefield as Lord enters, Lord entering does not cause its enters ability to trigger. No life loss, sacrifice, or opponent draw from that ability occurs because the trigger is never created. Karn is a current released Commander-legal Reality Fracture card whose static ability covers artifacts and creatures entering."
+    },
+    {
+      "name": "Dress Down suppresses Lord only when sequenced before entry",
+      "status": "PASS",
+      "conclusion": "If Dress Down is active as Lord enters, Lord has no abilities at that moment and its enters ability does not trigger. Casting Dress Down only after the Lord trigger is already on the stack does not remove that existing trigger. While Dress Down remains active it also removes Lord's regeneration ability and any granted creature abilities such as infect, haste, flying, or double strike, so kill turns must be sequenced around the end-step expiration."
+    },
+    {
+      "name": "Stifle and Tale's End counter Lord's triggered ability",
+      "status": "PASS",
+      "conclusion": "Lord's enters ability can be allowed to trigger and then targeted by Stifle or Tale's End. If countered, none of the trigger's effects occur. This permits same-turn haste/kill sequencing that permanent suppression and Dress Down may handle differently."
+    },
+    {
+      "name": "Regeneration limitations",
+      "status": "PASS",
+      "conclusion": "Lord's {B} ability creates a regeneration shield. It can replace destruction from lethal damage or effects that say destroy, but it cannot save Lord from sacrifice, toughness 0 or less, or lethal -X/-X such as Toxic Deluge."
+    },
+    {
+      "name": "Anger plus Lord's own sacrifice trigger",
+      "status": "PASS",
+      "conclusion": "If the Lord trigger resolves and Anger is one of the sacrificed creatures, Anger is in the graveyard after that sacrifice. If a Mountain is controlled, Anger's static ability then gives Lord haste, allowing Lord to attack that turn after the trigger has finished resolving."
+    },
+    {
+      "name": "Arena of Glory haste",
+      "status": "PASS",
+      "conclusion": "Arena of Glory's exert ability produces two red mana; if any of that mana is spent on Lord as a creature spell, Lord gains haste until end of turn. The candidate contains multiple Mountain-typed lands to reduce the chance Arena enters tapped."
+    },
+    {
+      "name": "Tainted Strike and Phyresis infect conversion",
+      "status": "PASS",
+      "conclusion": "Phyresis grants Lord infect continuously while attached. Tainted Strike gives +1/+0 and infect until end of turn, so base Lord becomes 11 power. Infect applies to all damage dealt by the creature while it has infect, not only combat damage. Ten or more poison counters cause a player to lose as a state-based action."
+    },
+    {
+      "name": "Kediss infect spread",
+      "status": "PASS",
+      "conclusion": "When Lord deals combat damage to an opponent, Kediss causes that same commander to deal that much damage to each other opponent. If Lord still has infect when the Kediss trigger resolves, those noncombat damage events are also dealt with infect. A base Phyresis Lord therefore can give ten poison to each other opponent after connecting for ten to one opponent; Tainted Strike raises the amount to eleven."
+    },
+    {
+      "name": "Chandra's Ignition with infect",
+      "status": "PASS",
+      "conclusion": "Chandra's Ignition instructs the targeted creature to deal damage equal to its power to each other creature and each opponent. With Phyresis, base Lord deals ten infect damage to every opponent. If Tainted Strike resolves on Lord before Ignition resolves, Lord has power 11 and infect and deals eleven infect damage instead."
+    },
+    {
+      "name": "Uncaged Fury commander-damage kill",
+      "status": "PASS",
+      "conclusion": "Uncaged Fury gives base Lord +1/+1 and double strike, making it 11/5. If both first-strike and regular combat-damage steps connect with the same opponent, Lord deals 22 combat damage from the commander, exceeding the 21 commander-damage loss threshold."
+    },
+    {
+      "name": "Brotherhood Regalia versus Whispersilk Cloak",
+      "status": "PASS",
+      "conclusion": "Brotherhood Regalia gives ward {2} and unblockable and equips a legendary creature for {1}; ward does not prevent the controller from targeting Lord. This avoids Whispersilk Cloak's shroud conflict with Tainted Strike, Chandra's Ignition, Pain for All, and Slip Out the Back. Lightning Greaves remains but must be moved off Lord before those own-target spells are cast."
+    },
+    {
+      "name": "Not of This World cost reduction",
+      "status": "PASS",
+      "conclusion": "Not of This World can counter a spell or ability targeting a permanent we control. If the targeted spell or ability targets Lord while his power is at least 7, Not of This World costs {7} less and therefore normally costs zero mana."
+    },
+    {
+      "name": "Slip Out the Back protection and counter retention",
+      "status": "PASS",
+      "conclusion": "Slip Out the Back first places a +1/+1 counter on Lord and then phases him out. The counter remains when he phases back in. Phasing does not cause a leave/enter event, and attached Auras/Equipment phase out with him. An attacking Lord phased out this way is removed from combat."
+    },
+    {
+      "name": "Pain for All immediate and reflected damage",
+      "status": "PASS",
+      "conclusion": "Pain for All is an Aura, so Karn/Torpor do not suppress its own Aura-enter trigger. When it enters attached to Lord, Lord deals damage equal to his current power to another target. If Lord has infect at resolution, that damage uses infect. When enchanted Lord is dealt damage, the Aura triggers even if that damage is lethal; Lord deals that much damage to each opponent when the trigger resolves. A pre-established regeneration shield can keep Lord through lethal damage such as Blasphemous Act, allowing the reflection line without losing him to damage."
+    },
+    {
+      "name": "Muddle the Mixture transmute",
+      "status": "PASS",
+      "conclusion": "Muddle the Mixture has mana value 2. Its transmute ability is activated only as a sorcery and searches for a card with the same mana value. In this candidate that includes key pieces such as Torpor Orb, Phyresis, Brotherhood Regalia, Nightscape Familiar, Arcane Signet, Dimir Signet, Rakdos Signet, Swiftfoot Boots, Bitterblossom, Blood Artist, Cover of Darkness, Jadar, and Zulaport Cutthroat. It remains a normal instant counterspell when cast rather than transmuted."
+    },
+    {
+      "name": "Rooftop Storm plus Gravecrawler",
+      "status": "PASS",
+      "conclusion": "Gravecrawler may be cast from the graveyard while another Zombie is controlled. Rooftop Storm permits paying {0} rather than the mana cost for Zombie creature spells, including Gravecrawler cast from the graveyard. With a free sacrifice outlet and another Zombie this creates repeatable death/cast loops; Goblin Bombardment kills directly, while Altars generate mana and drain permanents can kill through death triggers."
+    },
+    {
+      "name": "Rooftop Storm and commander tax",
+      "status": "PASS",
+      "conclusion": "Rooftop Storm supplies an alternative cost of {0} for Lord as a Zombie creature spell, but commander tax is an additional cost and still must be paid for prior command-zone casts."
+    },
+    {
+      "name": "Phyrexian Altar plus Pitiless Plunderer plus Gravecrawler",
+      "status": "PASS",
+      "conclusion": "With another Zombie controlled, sacrifice Gravecrawler to Phyrexian Altar for {B}; Pitiless Plunderer creates a Treasure because a nontoken creature died; spend the {B} to recast Gravecrawler. Each iteration nets one Treasure while repeating cast/death events, giving arbitrary Treasure and enabling retained death payoffs."
+    },
+    {
+      "name": "Warren Soultrader plus Gravecrawler drain loop",
+      "status": "PASS",
+      "conclusion": "With another Zombie controlled, Warren Soultrader can pay 1 life and sacrifice Gravecrawler to make a Treasure; that Treasure can make black mana to recast Gravecrawler. Blood Artist or Zulaport Cutthroat gains 1 life for each death while opponents lose life, offsetting the Soultrader payment and allowing a deterministic kill loop. Diregraf Captain supplies opponent life loss but not the life gain, so by itself it does not make the Soultrader loop life-neutral."
+    },
+    {
+      "name": "Torpor/Karn internal nonbo challenge",
+      "status": "PASS",
+      "conclusion": "The candidate deliberately removes Accursed Marauder, Fleshbag Marauder, Merciless Executioner, Plaguecrafter, and Woe Strider, which were the baseline creature-ETB cards most directly harmed by Torpor Orb/Karn. The retained token, death, upkeep, landfall, and graveyard engines do not depend on creature ETB triggers."
+    }
+  ]
+}
