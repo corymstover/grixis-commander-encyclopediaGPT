@@ -1,0 +1,23 @@
+{
+  "generated_at_utc": "2026-10-15T23:04:32.583663+00:00",
+  "deck_id": "Tetsuo__Imperial_Champion",
+  "decklist_path": "refinement/decklists/Tetsuo_Imperial_Champion_Approval_Ready_2026-10-15.txt",
+  "deck_sha256": "d6d7561f00cb56cfb86cd79024975130d718ddc7f3a1bddf0c62f61dc422822e",
+  "baseline_path": null,
+  "baseline_source_sha256": "3ec7a6acfa204b3809d936b944bfa80ed80d6fe46ccd45bdd62db06aae692c2c",
+  "count": 100,
+  "distinct_names": 91,
+  "commander_color_identity": [
+    "B",
+    "R",
+    "U"
+  ],
+  "cache_generated_at_utc": "2026-10-15T23:03:30.409245+00:00",
+  "cache_sha256": "f0ff162311c828cdd922e2582622b80e63b0633266b4acbd9463ae074dc80abf",
+  "project_exceptions": [],
+  "rules_gate": "PASS",
+  "official_legality_gate": "PASS",
+  "errors": [],
+  "overall_result": "APPROVAL_READY",
+  "approval_state": "NOT_APPROVED — explicit user approval still required"
+}

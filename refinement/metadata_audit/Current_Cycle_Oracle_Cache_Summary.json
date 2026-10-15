@@ -1,10 +1,10 @@
 {
-  "generated_at_utc": "2026-10-15T22:40:09.039522+00:00",
+  "generated_at_utc": "2026-10-15T23:03:30.409245+00:00",
   "overlay_generated_at_utc": "2026-10-15T22:40:08.693808+00:00",
   "bulk_updated_at": "2026-10-15T21:05:43.886+00:00",
   "decklist_file_count": 132,
   "distinct_names_requested": 1513,
-  "records_written": 1513,
+  "records_written": 1539,
   "overlay_hits": 1309,
   "live_named_exact_lookups": 204,
   "exception_names_included": [
@@ -19,7 +19,41 @@
   "malformed_decklist_lines": [],
   "ambiguous_overlay_entries_rechecked_live": [],
   "unresolved": [],
-  "cache_sha256": "e29cfa9039c13587f76715751043f570fe4e3525492a6a5b5df1570c75b30b8e",
+  "cache_sha256": "f0ff162311c828cdd922e2582622b80e63b0633266b4acbd9463ae074dc80abf",
   "overall_result": "PASS",
-  "design_note": "Preferred verification cache for chat/container runs. Direct Scryfall access from chat is not required when this cache is fresh and complete."
+  "design_note": "Preferred verification cache for chat/container runs. Direct Scryfall access from chat is not required when this cache is fresh and complete.",
+  "targeted_candidate_refresh": {
+    "deck": "Tetsuo, Imperial Champion",
+    "candidate_path": "refinement/decklists/Tetsuo_Imperial_Champion_Approval_Ready_2026-10-15.txt",
+    "missing_names_resolved_live": [
+      "Akki Battle Squad",
+      "Anchor to Reality",
+      "Argentum Armor",
+      "Blacksmith's Talent",
+      "Brass Squire",
+      "Buster Sword",
+      "Conqueror's Flail",
+      "Dalakos, Crafter of Wonders",
+      "Excalibur, Sword of Eden",
+      "Genji Glove",
+      "Gilgamesh, Master-at-Arms",
+      "Godo, Bandit Warlord",
+      "Hammer of Nazahn",
+      "Heiko Yamazaki, the General",
+      "Hexplate Wallbreaker",
+      "Kaldra Compleat",
+      "Leyline Axe",
+      "Oathkeeper, Takeno's Daisho",
+      "Savage Beating",
+      "Sword of the Animist",
+      "Swordsman's Steel",
+      "Tetsuo, Imperial Champion",
+      "Vorpal Sword",
+      "Wheel of Fate",
+      "Winged Boots",
+      "World at War"
+    ],
+    "prior_cache_age_hours": 0.389,
+    "method": "reuse clean same-day cache; exact live Scryfall lookup for candidate names absent from cache"
+  }
 }

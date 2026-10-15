@@ -1,0 +1,12 @@
+{
+  "deck_id": "Tetsuo__Imperial_Champion",
+  "display_name": "Tetsuo, Imperial Champion",
+  "decklist_path": "refinement/decklists/Tetsuo_Imperial_Champion_Approval_Ready_2026-10-15.txt",
+  "expected_deck_sha256": "d6d7561f00cb56cfb86cd79024975130d718ddc7f3a1bddf0c62f61dc422822e",
+  "baseline_source_sha256": "3ec7a6acfa204b3809d936b944bfa80ed80d6fe46ccd45bdd62db06aae692c2c",
+  "output_dir": "refinement/verification/tetsuo_imperial_champion_2026-10-15/gate_output",
+  "output_stem": "Tetsuo_Imperial_Champion_2026-10-15",
+  "rules_attestation_path": "refinement/verification/tetsuo_imperial_champion_2026-10-15/gate_output/Tetsuo_Imperial_Champion_Rules_Attestation.json",
+  "official_legality_attestation_path": "refinement/verification/tetsuo_imperial_champion_2026-10-15/gate_output/Tetsuo_Imperial_Champion_Official_Legality_Attestation.json",
+  "max_cache_age_hours": 72
+}

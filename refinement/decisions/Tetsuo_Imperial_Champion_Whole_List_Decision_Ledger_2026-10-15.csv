@@ -1,0 +1,91 @@
+card,baseline_qty,keep_qty,cut_qty,decision,rationale
+Academy Ruins,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Aggravated Assault,1,1,0,KEEP,KEEP — repeatable extra-combat engine; combines naturally with Sword of Feast and Famine.
+Akki Battle Squad,1,1,0,KEEP,KEEP — modified-creature extra-combat payoff tied directly to Equipment gameplay.
+Ancestral Vision,1,1,0,KEEP,KEEP — Tetsuo can cast this MV0/no-mana-cost spell through his attack-trigger permission.
+Anchor to Reality,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Ancient Tomb,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Arcane Signet,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Argentum Armor,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Badlands,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Basilisk Collar,1,1,0,KEEP,"KEEP — Tetsuo deals his damage-mode damage, so deathtouch/lifelink apply to it."
+Blackblade Reforged,1,0,1,CUT,CUT — Swiftfoot Boots improves commander recovery with tutor-able haste and hexproof.
+Blacksmith's Talent,1,1,0,KEEP,"KEEP — creates Equipment, auto-attaches at level 2, and grants equipped creatures double strike/haste at level 3."
+Blasphemous Act,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Blood Crypt,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Bloodstained Mire,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Brainstorm,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Brass Squire,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Buster Sword,1,1,0,KEEP,KEEP — combat-damage draw plus a second free-cast channel.
+Chandra's Ignition,1,1,0,KEEP,KEEP — tall-Tetsuo sweeper/finisher; reason to reject Sword of Wealth and Power self-interaction.
+Chaos Warp,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Command Tower,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Conqueror's Flail,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Counterspell,1,0,1,CUT,CUT — Force of Will protects mana-intensive Equipment/combat turns while tapped out.
+Crumbling Necropolis,1,0,1,CUT,CUT — always-tapped fixing upgraded to Volcanic Island.
+Cyclonic Rift,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+"Dalakos, Crafter of Wonders",1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Deflecting Swat,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Dimir Signet,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Drowned Catacomb,1,0,1,CUT,CUT — conditional fixing upgraded to Mana Confluence.
+Embercleave,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Enthusiastic Mechanaut,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Etherium Sculptor,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+"Excalibur, Sword of Eden",1,1,0,KEEP,KEEP — MV12 gives Tetsuo a massive damage/free-cast ceiling and equips legendary Tetsuo cheaply.
+Exotic Orchard,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Fabricate,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Feed the Swarm,1,0,1,CUT,CUT — Withering Torment upgrades the creature/enchantment slot to instant speed.
+Fierce Guardianship,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Frantic Search,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Genji Glove,1,1,0,KEEP,KEEP — MV5 Equipment with a commander-native extra-combat attack trigger.
+"Gilgamesh, Master-at-Arms",1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+"Godo, Bandit Warlord",1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Hammer of Nazahn,1,1,0,KEEP,KEEP — Equipment auto-attachment plus indestructible protection.
+"Heiko Yamazaki, the General",1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Hexplate Wallbreaker,1,1,0,KEEP,KEEP — MV5 Equipment enabling repeated combat from the first combat each turn.
+Inevitable Betrayal,1,1,0,KEEP,KEEP — Tetsuo can cast this MV0/no-mana-cost spell through his attack-trigger permission.
+Island,5,5,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Izzet Signet,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+"Jhoira, Weatherlight Captain",1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Kaldra Compleat,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+"Kediss, Emberclaw Familiar",1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Lizard Blades,1,0,1,CUT,"CUT — Leyline Axe preserves double strike while adding trample, +1/+1, MV4 and opening-hand deployment."
+Luxury Suite,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Mithril Coat,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Morphic Pool,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Mountain,4,4,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Mystic Remora,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+"Padeem, Consul of Innovation",1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Polluted Delta,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Profane Tutor,1,1,0,KEEP,KEEP — Tetsuo can cast this MV0/no-mana-cost spell through his attack-trigger permission.
+Rakdos Signet,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Relentless Assault,1,0,1,CUT,CUT — extra-combat clause only functions when resolving during a main phase; Tetsuo free-casts during combat.
+Rhystic Study,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Scalding Tarn,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Seize the Day,1,0,1,CUT,CUT — same main-phase dependency; replace with a combat-time-compatible extra-combat spell.
+Shivan Reef,1,0,1,CUT,CUT — painland upgraded to premium fetchland.
+Smoldering Marsh,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Sol Ring,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Steam Vents,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Sulfur Falls,1,0,1,CUT,CUT — conditional dual upgraded to premium fetchland.
+Sulfurous Springs,1,0,1,CUT,CUT — painland upgraded to premium fetchland.
+Sunken Hollow,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Swamp,3,3,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Sword of Feast and Famine,1,1,0,KEEP,"KEEP — untap engine, protection, and Aggravated Assault combat loop piece."
+Sword of Fire and Ice,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Sword of the Animist,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Swordsman's Steel,1,1,0,KEEP,KEEP — commander-focused Equipment density payoff and major Voltron scaling.
+Talisman of Creativity,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Talisman of Dominance,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Talisman of Indulgence,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Terminate,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+The Reality Chip,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+The Reaver Cleaver,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Thran Power Suit,1,0,1,CUT,"CUT — Oathkeeper, Takeno's Daisho is a more commander-specific Samurai resilience piece."
+Training Center,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Underground Sea,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Vorpal Sword,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Watery Grave,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Wheel of Fate,1,1,0,KEEP,KEEP — Tetsuo can cast this MV0/no-mana-cost spell through his attack-trigger permission.
+Winged Boots,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."
+Xander's Lounge,1,1,0,KEEP,"KEEP — retained after commander-first Equipment/free-cast/extra-combat, interaction, curve and mana audit."

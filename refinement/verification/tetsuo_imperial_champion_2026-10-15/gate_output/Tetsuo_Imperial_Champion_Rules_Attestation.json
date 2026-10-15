@@ -1,0 +1,107 @@
+{
+  "status": "PASS",
+  "deck_sha256": "d6d7561f00cb56cfb86cd79024975130d718ddc7f3a1bddf0c62f61dc422822e",
+  "checked_at_utc": "2026-10-15T23:04:32.525772+00:00",
+  "sources": [
+    "Current Oracle text in current-cycle Scryfall cache",
+    "Magic Comprehensive Rules — triggered abilities, intervening-if clauses, casting spells during resolution, alternative/additional costs, equipment, combat, rebound, protection, deathtouch/lifelink and commander zone changes (current 2026 rules)",
+    "Current Wizards release-note rulings for Seize the Day/Relentless Assault timing and relevant Equipment interactions"
+  ],
+  "interactions": [
+    {
+      "name": "Tetsuo attack trigger and equipped condition",
+      "status": "PASS",
+      "finding": "Tetsuo's ability triggers only if he is equipped as he attacks. Its intervening-if condition is checked again on resolution; if he is no longer equipped then, the ability does not resolve. The chosen mode and any target are selected as the trigger is put on the stack."
+    },
+    {
+      "name": "Greatest Equipment mana value",
+      "status": "PASS",
+      "finding": "The damage amount or free-cast ceiling uses the greatest mana value among Equipment attached to Tetsuo as the ability resolves. High-MV Equipment such as Excalibur, Kaldra Compleat, Argentum Armor, Embercleave, Genji Glove and Hexplate Wallbreaker therefore establish the spell ceiling."
+    },
+    {
+      "name": "Casting during trigger resolution",
+      "status": "PASS",
+      "finding": "Tetsuo explicitly permits casting an instant or sorcery from hand during resolution. This permission bypasses normal sorcery timing, while restrictions and required additional costs still apply. The spell is cast without paying its mana cost, not with another alternative cost."
+    },
+    {
+      "name": "No-mana-cost suspend spells",
+      "status": "PASS",
+      "finding": "Ancestral Vision, Profane Tutor, Wheel of Fate and Inevitable Betrayal have mana value 0 despite having no mana cost. Tetsuo can cast them from hand without paying their mana costs when his free-cast mode resolves."
+    },
+    {
+      "name": "Savage Beating",
+      "status": "PASS",
+      "finding": "Savage Beating may be cast only during combat on your turn, exactly the window in which Tetsuo resolves after attacking. With an Equipment ceiling of at least five, Tetsuo can cast it without paying its mana cost. Its additional-combat mode works immediately; entwine is an optional additional cost and may be paid separately."
+    },
+    {
+      "name": "World at War",
+      "status": "PASS",
+      "finding": "World at War does not require itself to resolve during a main phase. If Tetsuo casts it during the first combat, it schedules an additional combat after the second main phase. Because it was cast from hand, rebound can exile it as it resolves and allow another no-mana-cost cast at the next upkeep."
+    },
+    {
+      "name": "Historical Relentless Assault / Seize the Day correction",
+      "status": "PASS",
+      "finding": "Both outgoing spells create their additional combat after this main phase. Current rulings confirm that when cast outside a main phase, their extra-combat instruction does not create a combat. Tetsuo normally casts through his trigger during combat, so replacing them corrects a false synergy."
+    },
+    {
+      "name": "Repeated Tetsuo attacks",
+      "status": "PASS",
+      "finding": "Each additional combat in which Tetsuo attacks while equipped creates another independent commander trigger. Akki Battle Squad itself is limited to triggering only once each turn, but Tetsuo is not."
+    },
+    {
+      "name": "Genji Glove / Hexplate Wallbreaker",
+      "status": "PASS",
+      "finding": "Each retained Equipment creates an additional-combat line from combat/attack play while also carrying MV5, enough to free-cast Savage Beating or World at War through Tetsuo."
+    },
+    {
+      "name": "Godo and Samurai typing",
+      "status": "PASS",
+      "finding": "Tetsuo is a Human Samurai. Godo tutors Equipment on entry; when Godo attacks for the first time each turn, its Samurai untap clause includes Tetsuo and creates an additional combat."
+    },
+    {
+      "name": "Oathkeeper, Takenos Daisho",
+      "status": "PASS",
+      "finding": "Tetsuo is a Samurai, so if the equipped Tetsuo dies, Oathkeeper's trigger can return that card to the battlefield. If Oathkeeper itself goes to the graveyard from the battlefield while attached, its separate trigger exiles the equipped creature; normal commander zone-change rules remain available to the owner."
+    },
+    {
+      "name": "Leyline Axe",
+      "status": "PASS",
+      "finding": "Leyline Axe has mana value 4, can begin the game on the battlefield from the opening hand, and gives the equipped creature +1/+1, double strike and trample. Its MV4 raises Tetsuo’s damage/free-cast ceiling while improving combat connection."
+    },
+    {
+      "name": "Swiftfoot Boots",
+      "status": "PASS",
+      "finding": "Haste allows a newly controlled Tetsuo to attack immediately when otherwise able, enabling the attack trigger without waiting a turn. Hexproof protects him from opponents while still allowing the controller to target him."
+    },
+    {
+      "name": "Buster Sword",
+      "status": "PASS",
+      "finding": "When equipped Tetsuo deals combat damage to a player, Buster Sword draws a card and may cast a spell from hand with mana value no greater than that damage without paying its mana cost. Double strike can create separate combat-damage triggers in both damage steps."
+    },
+    {
+      "name": "Basilisk Collar and Tetsuo damage mode",
+      "status": "PASS",
+      "finding": "Tetsuo himself deals the commander-trigger damage. If he has deathtouch and lifelink from Basilisk Collar, those abilities apply to that noncombat damage."
+    },
+    {
+      "name": "Chandras Ignition",
+      "status": "PASS",
+      "finding": "Chandra's Ignition targets a creature you control and causes that creature to deal damage equal to its power to each other creature and opponent. A tall Tetsuo can therefore convert Equipment power into a board-wide finisher; this retained line is the reason Sword of Wealth and Power was rejected for its protection-from-sorceries conflict when attached to Tetsuo."
+    },
+    {
+      "name": "Aggravated Assault plus Sword of Feast and Famine",
+      "status": "PASS",
+      "finding": "Combat damage from a creature equipped with Sword of Feast and Famine untaps the controller’s lands. When that untap supplies at least the 3RR needed for Aggravated Assault, the deck can buy another combat/main phase and repeat while combat damage continues to connect."
+    },
+    {
+      "name": "Attachment engines",
+      "status": "PASS",
+      "finding": "Hammer of Nazahn can attach Equipment as they enter, Brass Squire can tap to attach Equipment at instant speed, and Blacksmith's Talent level 2 attaches an Equipment at beginning of combat. These effects reduce the equip-cost burden before Tetsuo attacks."
+    },
+    {
+      "name": "Mana-base revision",
+      "status": "PASS",
+      "finding": "Volcanic Island adds the missing premium UR typed dual; Flooded Strand, Marsh Flats and Misty Rainforest can access appropriate typed duals in the list; Mana Confluence supplies unconditional U/B/R fixing. Land count remains 35."
+    }
+  ]
+}

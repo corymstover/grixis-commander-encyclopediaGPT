@@ -1,0 +1,182 @@
+card_name,quantity,role,canonical_name,scryfall_id,oracle_id,type_line,mana_cost,color_identity,commander_color_identity,commander_legality,project_exception,result,oracle_text,source
+"Tetsuo, Imperial Champion",1,Commander,"Tetsuo, Imperial Champion",51c523cd-78b0-438f-bba5-19160f648d5f,1111e042-0bce-4819-ab42-9912aed4d930,Legendary Creature — Human Samurai,{U}{B}{R},"B,R,U","B,R,U",legal,,PASS,"Whenever Tetsuo attacks, if it's equipped, choose one —
+• Tetsuo deals damage equal to the greatest mana value among Equipment attached to it to any target.
+• You may cast an instant or sorcery spell from your hand with mana value less than or equal to the greatest mana value among Equipment attached to Tetsuo without paying its mana cost.",https://scryfall.com/card/dmc/44/tetsuo-imperial-champion?utm_source=api
+Academy Ruins,1,,Academy Ruins,128deed2-b9bc-4065-95c9-ccd7b08f1230,a3da7d5b-2c2b-45fe-b9c5-413b8c8fc0a2,Legendary Land,,U,"B,R,U",legal,,PASS,"{T}: Add {C}.
+{1}{U}, {T}: Put target artifact card from your graveyard on top of your library.",https://scryfall.com/card/128deed2-b9bc-4065-95c9-ccd7b08f1230
+Aggravated Assault,1,,Aggravated Assault,c99c5707-d5f2-4675-bfca-e801e6b0f627,20129459-a386-41eb-899d-1aede3427300,Enchantment,,R,"B,R,U",legal,,PASS,"{3}{R}{R}: Untap all creatures you control. After this main phase, there is an additional combat phase followed by an additional main phase. Activate only as a sorcery.",https://scryfall.com/card/c99c5707-d5f2-4675-bfca-e801e6b0f627
+Akki Battle Squad,1,,Akki Battle Squad,ca624ce6-5b99-41af-8e26-b952f5a30916,5bd81d2f-46a1-4536-92e7-28c7e1892735,Creature — Goblin Samurai,{5}{R},R,"B,R,U",legal,,PASS,"Whenever one or more modified creatures you control attack, untap all modified creatures you control. After this phase, there is an additional combat phase. This ability triggers only once each turn. (Equipment, Auras you control, and counters are modifications.)",https://scryfall.com/card/nec/18/akki-battle-squad?utm_source=api
+Ancestral Vision,1,,Ancestral Vision,9ec075ba-db56-4dcf-b1dc-fe6270b7ab36,9728dec9-d482-4c7a-8cdc-44d010dc878d,Sorcery,,U,"B,R,U",legal,,PASS,"Suspend 4—{U} (Rather than cast this card from your hand, pay {U} and exile it with four time counters on it. At the beginning of your upkeep, remove a time counter. When the last is removed, you may cast it without paying its mana cost.)
+Target player draws three cards.",https://scryfall.com/card/9ec075ba-db56-4dcf-b1dc-fe6270b7ab36
+Anchor to Reality,1,,Anchor to Reality,58141ad0-32ea-4e07-a133-ff7812d58c0e,6783f559-33d7-4b13-9a91-02b821e97163,Sorcery,{2}{U}{U},U,"B,R,U",legal,,PASS,"As an additional cost to cast this spell, sacrifice an artifact or creature.
+Search your library for an Equipment or Vehicle card, put that card onto the battlefield, then shuffle. If it has mana value less than the sacrificed permanent's mana value, scry 2.",https://scryfall.com/card/neo/45/anchor-to-reality?utm_source=api
+Ancient Tomb,1,,Ancient Tomb,2189b1cb-94c4-4477-a5ef-17a1ae2c6708,23467047-6dba-4498-b783-1ebc4f74b8c2,Land,,,"B,R,U",legal,,PASS,{T}: Add {C}{C}. This land deals 2 damage to you.,https://scryfall.com/card/2189b1cb-94c4-4477-a5ef-17a1ae2c6708
+Arcane Signet,1,,Arcane Signet,c6b6117c-faab-4bbb-b851-07bd8061ef03,0bc7f093-bef0-4f1a-852c-4b75ebf54838,Artifact,,,"B,R,U",legal,,PASS,{T}: Add one mana of any color in your commander's color identity.,https://scryfall.com/card/c6b6117c-faab-4bbb-b851-07bd8061ef03
+Argentum Armor,1,,Argentum Armor,fb1b7468-85f9-472e-9f7c-b268f84aea1c,d0a1f39b-cda4-4925-83f8-2161f575edfb,Artifact — Equipment,{6},,"B,R,U",legal,,PASS,"Equipped creature gets +6/+6.
+Whenever equipped creature attacks, destroy target permanent.
+Equip {6}",https://scryfall.com/card/afc/198/argentum-armor?utm_source=api
+Badlands,1,,Badlands,56058359-3c0b-49db-a0ce-9ded4c3f4372,13ff3222-91cb-4796-a34e-899ed817694c,Land — Swamp Mountain,,"B,R","B,R,U",legal,,PASS,({T}: Add {B} or {R}.),https://scryfall.com/card/56058359-3c0b-49db-a0ce-9ded4c3f4372
+Basilisk Collar,1,,Basilisk Collar,cd35c8ca-a456-45b5-b018-98027a56c719,f5f4dd28-f4ae-4d39-b9b8-6ebfd63c93fe,Artifact — Equipment,,,"B,R,U",legal,,PASS,"Equipped creature has deathtouch and lifelink. (Any amount of damage it deals to a creature is enough to destroy it. Damage dealt by this creature also causes you to gain that much life.)
+Equip {2} ({2}: Attach to target creature you control. Equip only as a sorcery.)",https://scryfall.com/card/cd35c8ca-a456-45b5-b018-98027a56c719
+Blacksmith's Talent,1,,Blacksmith's Talent,4bb318fa-481d-40a7-978e-f01b49101ae0,9fdad42a-9db5-4d91-9e80-9d5ce19038b8,Enchantment — Class,{R},R,"B,R,U",legal,,PASS,"(Gain the next level as a sorcery to add its ability.)
+When this Class enters, create a colorless Equipment artifact token named Sword with ""Equipped creature gets +1/+1"" and equip {2}.
+{2}{R}: Level 2
+At the beginning of combat on your turn, attach target Equipment you control to up to one target creature you control.
+{3}{R}: Level 3
+During your turn, equipped creatures you control have double strike and haste.",https://scryfall.com/card/blb/125/blacksmiths-talent?utm_source=api
+Blasphemous Act,1,,Blasphemous Act,7d4b1d44-126e-4987-9a9f-f0f9627a09cb,7a2484a9-04fd-41a0-8224-610c1c07ed10,Sorcery,,R,"B,R,U",legal,,PASS,"This spell costs {1} less to cast for each creature on the battlefield.
+Blasphemous Act deals 13 damage to each creature.",https://scryfall.com/card/7d4b1d44-126e-4987-9a9f-f0f9627a09cb
+Blood Crypt,1,,Blood Crypt,1b7eb998-3ec0-4cbc-a416-5a1e3e5a7316,43985bbc-a0f6-4812-984e-392bc8562633,Land — Swamp Mountain,,"B,R","B,R,U",legal,,PASS,"({T}: Add {B} or {R}.)
+As this land enters, you may pay 2 life. If you don't, it enters tapped.",https://scryfall.com/card/1b7eb998-3ec0-4cbc-a416-5a1e3e5a7316
+Bloodstained Mire,1,,Bloodstained Mire,579743fe-f71e-4cb2-8629-d6b02ed1591d,fc0707c7-d504-4ccf-a0d2-3eb6e26e7a57,Land,,,"B,R,U",legal,,PASS,"{T}, Pay 1 life, Sacrifice this land: Search your library for a Swamp or Mountain card, put it onto the battlefield, then shuffle.",https://scryfall.com/card/579743fe-f71e-4cb2-8629-d6b02ed1591d
+Brainstorm,1,,Brainstorm,ec7d6864-7b6b-4f74-8474-9b9ec96b1d33,36cd2364-d113-47d1-b2c4-b088d9eb88dd,Instant,,U,"B,R,U",legal,,PASS,"Draw three cards, then put two cards from your hand on top of your library in any order.",https://scryfall.com/card/ec7d6864-7b6b-4f74-8474-9b9ec96b1d33
+Brass Squire,1,,Brass Squire,48010648-6f68-41aa-93ae-e02a7de6abb8,5a10c3a5-6724-4e5a-ae4f-b27dde12735a,Artifact Creature — Myr,{3},,"B,R,U",legal,,PASS,{T}: Attach target Equipment you control to target creature you control.,https://scryfall.com/card/cmr/460/brass-squire?utm_source=api
+Buster Sword,1,,Buster Sword,374d7383-a1a7-4eea-91f7-290180e14cc9,5e060d58-4d6e-425c-b7d4-727669fcce5b,Artifact — Equipment,{3},,"B,R,U",legal,,PASS,"Equipped creature gets +3/+2.
+Whenever equipped creature deals combat damage to a player, draw a card, then you may cast a spell from your hand with mana value less than or equal to that damage without paying its mana cost.
+Equip {2}",https://scryfall.com/card/fin/255/buster-sword?utm_source=api
+Chandra's Ignition,1,,Chandra's Ignition,d9f011c7-6d90-4db8-a4b7-65010130762c,f61680da-606e-4d16-b0a0-361aa5210901,Sorcery,,R,"B,R,U",legal,,PASS,Target creature you control deals damage equal to its power to each other creature and each opponent.,https://scryfall.com/card/d9f011c7-6d90-4db8-a4b7-65010130762c
+Chaos Warp,1,,Chaos Warp,57f61970-382e-415c-868b-6bbb6c78825d,07a0cba9-8768-4fd9-a3d5-b0f83b4bf8e8,Instant,,R,"B,R,U",legal,,PASS,"The owner of target permanent shuffles it into their library, then reveals the top card of their library. If it's a permanent card, they put it onto the battlefield.",https://scryfall.com/card/57f61970-382e-415c-868b-6bbb6c78825d
+Command Tower,1,,Command Tower,1ac6cb62-45da-4e9a-84c6-09e6eacf0664,0895c9b7-ae7d-4bb3-af17-3b75deb50a25,Land,,,"B,R,U",legal,,PASS,{T}: Add one mana of any color in your commander's color identity.,https://scryfall.com/card/1ac6cb62-45da-4e9a-84c6-09e6eacf0664
+Conqueror's Flail,1,,Conqueror's Flail,d5f5399a-26c6-4ecd-9715-f6440f6958f1,9aace0d3-89e6-4254-b96f-ee3a878f2f91,Artifact — Equipment,{2},,"B,R,U",legal,,PASS,"Equipped creature gets +1/+1 for each color among permanents you control.
+As long as this Equipment is attached to a creature, your opponents can't cast spells during your turn.
+Equip {2}",https://scryfall.com/card/2x2/302/conquerors-flail?utm_source=api
+Cyclonic Rift,1,,Cyclonic Rift,dfb7c4b9-f2f4-4d4e-baf2-86551c8150fe,d75b9c82-1b49-4c3e-a1b5-aeef57d6644b,Instant,,U,"B,R,U",legal,,PASS,"Return target nonland permanent you don't control to its owner's hand.
+Overload {6}{U} (You may cast this spell for its overload cost. If you do, change ""target"" in its text to ""each."")",https://scryfall.com/card/dfb7c4b9-f2f4-4d4e-baf2-86551c8150fe
+"Dalakos, Crafter of Wonders",1,,"Dalakos, Crafter of Wonders",57ea0ba2-3ccf-4313-ad1d-161272c48851,211814a5-195d-41c6-b96c-4c26b2cbb33c,Legendary Creature — Merfolk Artificer,{1}{U}{R},"R,U","B,R,U",legal,,PASS,"{T}: Add {C}{C}. Spend this mana only to cast artifact spells or activate abilities of artifacts.
+Equipped creatures you control have flying and haste.",https://scryfall.com/card/thb/212/dalakos-crafter-of-wonders?utm_source=api
+Deflecting Swat,1,,Deflecting Swat,b4b36435-55b3-4615-8812-af41d4fc64d9,ae120613-97d6-4393-b39d-c3e6c076f5d6,Instant,,R,"B,R,U",legal,,PASS,"If you control a commander, you may cast this spell without paying its mana cost.
+You may choose new targets for target spell or ability.",https://scryfall.com/card/b4b36435-55b3-4615-8812-af41d4fc64d9
+Dimir Signet,1,,Dimir Signet,0862060d-3198-4eeb-af8c-efeb27f42a99,7d881c57-0bd9-4c57-aa4a-b10808b86143,Artifact,,"B,U","B,R,U",legal,,PASS,"{1}, {T}: Add {U}{B}.",https://scryfall.com/card/0862060d-3198-4eeb-af8c-efeb27f42a99
+Embercleave,1,,Embercleave,998aac7f-700e-48dd-81c3-3d8fed040c95,4d6120d6-fcce-40bc-9fc6-e1f5beb6c728,Legendary Artifact — Equipment,,R,"B,R,U",legal,,PASS,"Flash
+This spell costs {1} less to cast for each attacking creature you control.
+When Embercleave enters, attach it to target creature you control.
+Equipped creature gets +1/+1 and has double strike and trample.
+Equip {3}",https://scryfall.com/card/998aac7f-700e-48dd-81c3-3d8fed040c95
+Enthusiastic Mechanaut,1,,Enthusiastic Mechanaut,fbfcbfed-74c7-4b1e-897c-44f25e45a4a5,c9722086-23e8-43dc-8a8c-541ff6962318,Artifact Creature — Goblin Artificer,,"R,U","B,R,U",legal,,PASS,"Flying
+Artifact spells you cast cost {1} less to cast.",https://scryfall.com/card/fbfcbfed-74c7-4b1e-897c-44f25e45a4a5
+Etherium Sculptor,1,,Etherium Sculptor,b0556f20-1ea8-4ab5-9a09-dec9959f017b,96b87445-6362-4a17-91b2-cbf203fd03fd,Artifact Creature — Vedalken Artificer,,U,"B,R,U",legal,,PASS,Artifact spells you cast cost {1} less to cast.,https://scryfall.com/card/b0556f20-1ea8-4ab5-9a09-dec9959f017b
+"Excalibur, Sword of Eden",1,,"Excalibur, Sword of Eden",26dbf574-3193-413e-a982-4b9d27dafaf5,9fb6bd72-031b-40a1-83c5-8a1c82f84e12,Legendary Artifact — Equipment,{12},,"B,R,U",legal,,PASS,"This spell costs {X} less to cast, where X is the total mana value of historic permanents you control. (Artifacts, legendaries, and Sagas are historic.)
+Equipped creature gets +10/+0 and has vigilance.
+Equip legendary creature {2}",https://scryfall.com/card/acr/72/excalibur-sword-of-eden?utm_source=api
+Exotic Orchard,1,,Exotic Orchard,cc14b1ee-5def-42df-8ef6-0d91dba39e3a,27b047e3-0d41-45e2-98e9-9391d7923a1e,Land,,,"B,R,U",legal,,PASS,{T}: Add one mana of any color that a land an opponent controls could produce.,https://scryfall.com/card/cc14b1ee-5def-42df-8ef6-0d91dba39e3a
+Fabricate,1,,Fabricate,6f6fe03c-91b5-4555-a93f-39935f5fe881,422e1869-134f-463d-9fa1-86b66a998b3e,Sorcery,,U,"B,R,U",legal,,PASS,"Search your library for an artifact card, reveal it, put it into your hand, then shuffle.",https://scryfall.com/card/6f6fe03c-91b5-4555-a93f-39935f5fe881
+Fierce Guardianship,1,,Fierce Guardianship,f7f3dd95-bd14-4e0f-a388-444f9cf1b0dc,d09c9cba-fdd2-479b-ad5d-d05181c3e3f9,Instant,,U,"B,R,U",legal,,PASS,"If you control a commander, you may cast this spell without paying its mana cost.
+Counter target noncreature spell.",https://scryfall.com/card/f7f3dd95-bd14-4e0f-a388-444f9cf1b0dc
+Flooded Strand,1,,Flooded Strand,d3016d92-a5ee-44d7-aa0a-775fa04a7c6a,f3c7af78-a77d-4134-82a2-a5ce84285a84,Land,,,"B,R,U",legal,,PASS,"{T}, Pay 1 life, Sacrifice this land: Search your library for a Plains or Island card, put it onto the battlefield, then shuffle.",https://scryfall.com/card/d3016d92-a5ee-44d7-aa0a-775fa04a7c6a
+Force of Will,1,,Force of Will,89f612d6-7c59-4a7b-a87d-45f789e88ba5,956381ba-6d37-4a8a-846c-bad79222dbee,Instant,,U,"B,R,U",legal,,PASS,"You may pay 1 life and exile a blue card from your hand rather than pay this spell's mana cost.
+Counter target spell.",https://scryfall.com/card/89f612d6-7c59-4a7b-a87d-45f789e88ba5
+Frantic Search,1,,Frantic Search,d8c5e52d-57ae-464b-8860-7dd39ebfef64,16e015b2-f8a3-4b1a-80be-58a8f5fb5e8c,Instant,,U,"B,R,U",legal,,PASS,"Draw two cards, then discard two cards. Untap up to three lands.",https://scryfall.com/card/d8c5e52d-57ae-464b-8860-7dd39ebfef64
+Genji Glove,1,,Genji Glove,f724dde1-84b0-4e3b-a9b8-44cd22bb9f79,8242cd78-6675-43b5-8924-0a88c3aa6f76,Artifact — Equipment,{5},,"B,R,U",legal,,PASS,"Equipped creature has double strike.
+Whenever equipped creature attacks, if it's the first combat phase of the turn, untap it. After this phase, there is an additional combat phase.
+Equip {3}",https://scryfall.com/card/fin/258/genji-glove?utm_source=api
+"Gilgamesh, Master-at-Arms",1,,"Gilgamesh, Master-at-Arms",1eb81329-fb7a-4347-b96c-9960a5c48e87,c9432e87-38f6-4889-8f07-ae7cd045e532,Legendary Creature — Human Samurai,{4}{R}{R},R,"B,R,U",legal,,PASS,"Whenever Gilgamesh enters or attacks, look at the top six cards of your library. You may put any number of Equipment cards from among them onto the battlefield. Put the rest on the bottom of your library in a random order. When you put one or more Equipment onto the battlefield this way, you may attach one of them to a Samurai you control.",https://scryfall.com/card/fin/139/gilgamesh-master-at-arms?utm_source=api
+"Godo, Bandit Warlord",1,,"Godo, Bandit Warlord",01d566cf-cb32-461d-8afe-b0f3f4c24160,f890d51a-dc90-4179-8423-4738a72a527c,Legendary Creature — Human Barbarian,{5}{R},R,"B,R,U",legal,,PASS,"When Godo enters, you may search your library for an Equipment card, put it onto the battlefield, then shuffle.
+Whenever Godo attacks for the first time each turn, untap it and all Samurai you control. After this phase, there is an additional combat phase.",https://scryfall.com/card/cmm/227/godo-bandit-warlord?utm_source=api
+Hammer of Nazahn,1,,Hammer of Nazahn,e77a8ac1-f40d-423e-a0b3-0a8e236a6c1e,e3955573-3db5-490e-903e-65e0172a9202,Legendary Artifact — Equipment,{4},,"B,R,U",legal,,PASS,"Whenever Hammer of Nazahn or another Equipment you control enters, you may attach that Equipment to target creature you control.
+Equipped creature gets +2/+0 and has indestructible.
+Equip {4}",https://scryfall.com/card/cmm/388/hammer-of-nazahn?utm_source=api
+"Heiko Yamazaki, the General",1,,"Heiko Yamazaki, the General",9ea5e61c-d903-410b-9acf-96a917ce05cc,a4d67f2d-6b0f-4feb-bf7d-90ab4f2e46ab,Legendary Creature — Human Samurai,{3}{R},R,"B,R,U",legal,,PASS,"Trample
+Whenever a Samurai or Warrior you control attacks alone, you may cast target artifact card from your graveyard this turn.",https://scryfall.com/card/neo/146/heiko-yamazaki-the-general?utm_source=api
+Hexplate Wallbreaker,1,,Hexplate Wallbreaker,f75e6145-79a4-4400-8e0a-c334e4a780fb,f7f78825-10d6-441a-ae26-51b77cc271cd,Artifact — Equipment,{3}{R}{R},R,"B,R,U",legal,,PASS,"For Mirrodin! (When this Equipment enters, create a 2/2 red Rebel creature token, then attach this to it.)
+Equipped creature gets +2/+2.
+Whenever equipped creature attacks, if it's the first combat phase of the turn, untap each attacking creature. After this phase, there is an additional combat phase.
+Equip {3}{R}",https://scryfall.com/card/onc/14/hexplate-wallbreaker?utm_source=api
+Inevitable Betrayal,1,,Inevitable Betrayal,28c015a6-dc4c-49f6-8d39-4c7b598e5a61,aa5e9269-b1db-4bf0-a548-24f999f60e44,Sorcery,,U,"B,R,U",legal,,PASS,"Suspend 3—{1}{U}{U} (Rather than cast this card from your hand, pay {1}{U}{U} and exile it with three time counters on it. At the beginning of your upkeep, remove a time counter. When the last is removed, you may cast it without paying its mana cost.)
+Search target opponent's library for a creature card and put that card onto the battlefield under your control. Then that player shuffles.",https://scryfall.com/card/28c015a6-dc4c-49f6-8d39-4c7b598e5a61
+Island,5,,Island,1335d293-3dd2-4f13-bd2c-22181f4528ee,b2c6aa39-2d2a-459c-a555-fb48ba993373,Basic Land — Island,,U,"B,R,U",legal,,PASS,({T}: Add {U}.),https://scryfall.com/card/1335d293-3dd2-4f13-bd2c-22181f4528ee
+Izzet Signet,1,,Izzet Signet,d5e141ad-5cb8-416b-9acf-bce1baeb6b6b,2fda4fe7-8b0c-489c-a000-6d358e614e34,Artifact,,"R,U","B,R,U",legal,,PASS,"{1}, {T}: Add {U}{R}.",https://scryfall.com/card/d5e141ad-5cb8-416b-9acf-bce1baeb6b6b
+"Jhoira, Weatherlight Captain",1,,"Jhoira, Weatherlight Captain",776f490a-2f75-4c18-8164-56bd65bb09c6,c803b788-4213-4fab-b841-7e5bbf66088e,Legendary Creature — Human Artificer,,"R,U","B,R,U",legal,,PASS,"Whenever you cast a historic spell, draw a card. (Artifacts, legendaries, and Sagas are historic.)",https://scryfall.com/card/776f490a-2f75-4c18-8164-56bd65bb09c6
+Kaldra Compleat,1,,Kaldra Compleat,572fb0dc-d876-4e1b-91d1-9c595f6f6f04,7359e82b-db79-488d-a1d4-75a00f12a4cf,Legendary Artifact — Equipment,{7},,"B,R,U",legal,,PASS,"Living weapon
+Indestructible
+Equipped creature gets +5/+5 and has first strike, trample, indestructible, haste, and ""Whenever this creature deals combat damage to a creature, exile that creature.""
+Equip {7}",https://scryfall.com/card/cmm/958/kaldra-compleat?utm_source=api
+"Kediss, Emberclaw Familiar",1,,"Kediss, Emberclaw Familiar",f606ebf1-483d-4331-b16a-9fb6f591a39f,d9c87cc2-943e-49b6-becc-748857549617,Legendary Creature — Elemental Lizard,,R,"B,R,U",legal,,PASS,"Whenever a commander you control deals combat damage to an opponent, it deals that much damage to each other opponent.
+Partner (You can have two commanders if both have partner.)",https://scryfall.com/card/f606ebf1-483d-4331-b16a-9fb6f591a39f
+Leyline Axe,1,,Leyline Axe,b9c03336-a321-4c06-94d1-809f328fabd8,4f597675-0f6d-438c-990c-337171927a5e,Artifact — Equipment,{4},,"B,R,U",legal,,PASS,"If this card is in your opening hand, you may begin the game with it on the battlefield.
+Equipped creature gets +1/+1 and has double strike and trample.
+Equip {3} ({3}: Attach to target creature you control. Equip only as a sorcery.)",https://scryfall.com/card/fdn/129/leyline-axe?utm_source=api
+Luxury Suite,1,,Luxury Suite,3c409d1e-f634-44a2-8fcf-dcdcb0babc3f,819e1765-8325-4e6f-89c1-63ea86de369f,Land,,"B,R","B,R,U",legal,,PASS,"This land enters tapped unless you have two or more opponents.
+{T}: Add {B} or {R}.",https://scryfall.com/card/3c409d1e-f634-44a2-8fcf-dcdcb0babc3f
+Mana Confluence,1,,Mana Confluence,504a69eb-3c2d-4bb1-b117-252b15acf0c2,d0ee5bdc-2b69-4b73-9a20-ffcc18783b29,Land,,,"B,R,U",legal,,PASS,"{T}, Pay 1 life: Add one mana of any color.",https://scryfall.com/card/504a69eb-3c2d-4bb1-b117-252b15acf0c2
+Marsh Flats,1,,Marsh Flats,f19a6f20-8ca1-4a8b-8488-bcb5d86868dc,dab520d0-20b4-4273-ba6b-eb07f85ea433,Land,,,"B,R,U",legal,,PASS,"{T}, Pay 1 life, Sacrifice this land: Search your library for a Plains or Swamp card, put it onto the battlefield, then shuffle.",https://scryfall.com/card/f19a6f20-8ca1-4a8b-8488-bcb5d86868dc
+Misty Rainforest,1,,Misty Rainforest,c6cad746-a1dc-4739-9707-9c12c42e141a,09dd85aa-47bc-4713-a9b9-8b52ff2285ed,Land,,,"B,R,U",legal,,PASS,"{T}, Pay 1 life, Sacrifice this land: Search your library for a Forest or Island card, put it onto the battlefield, then shuffle.",https://scryfall.com/card/c6cad746-a1dc-4739-9707-9c12c42e141a
+Mithril Coat,1,,Mithril Coat,0fd1fc09-a09d-45e6-8a07-3a8a83b4e6ec,3dc364f3-3094-4660-80ca-9418588c7fde,Legendary Artifact — Equipment,,,"B,R,U",legal,,PASS,"Flash
+Indestructible
+When Mithril Coat enters, attach it to target legendary creature you control.
+Equipped creature has indestructible.
+Equip {3}",https://scryfall.com/card/0fd1fc09-a09d-45e6-8a07-3a8a83b4e6ec
+Morphic Pool,1,,Morphic Pool,48e40927-dd87-42ed-b805-0ae8ba81f5fb,bd004c9d-771e-4e63-a97d-a2259c096af8,Land,,"B,U","B,R,U",legal,,PASS,"This land enters tapped unless you have two or more opponents.
+{T}: Add {U} or {B}.",https://scryfall.com/card/48e40927-dd87-42ed-b805-0ae8ba81f5fb
+Mountain,4,,Mountain,85177bd7-6c50-48da-b692-ae5fe7bd357c,a3fb7228-e76b-4e96-a40e-20b5fed75685,Basic Land — Mountain,,R,"B,R,U",legal,,PASS,({T}: Add {R}.),https://scryfall.com/card/85177bd7-6c50-48da-b692-ae5fe7bd357c
+Mystic Remora,1,,Mystic Remora,40140991-cffa-4b52-9a25-37e9a8aa9ddd,8a52f3c0-2552-4425-b2e3-5496eb2232a7,Enchantment,,U,"B,R,U",legal,,PASS,"Cumulative upkeep {1} (At the beginning of your upkeep, put an age counter on this permanent, then sacrifice it unless you pay its upkeep cost for each age counter on it.)
+Whenever an opponent casts a noncreature spell, you may draw a card unless that player pays {4}.",https://scryfall.com/card/40140991-cffa-4b52-9a25-37e9a8aa9ddd
+"Oathkeeper, Takeno's Daisho",1,,"Oathkeeper, Takeno's Daisho",01b7c8e4-db88-48f3-bfd5-8d990f449b1c,7d58b478-a64b-46e9-b62a-08c6c1ca7c13,Legendary Artifact — Equipment,{3},,"B,R,U",legal,,PASS,"Equipped creature gets +3/+1.
+Whenever equipped creature dies, return that card to the battlefield under your control if it's a Samurai card.
+When Oathkeeper is put into a graveyard from the battlefield, exile equipped creature.
+Equip {2}",https://scryfall.com/card/chk/265/oathkeeper-takenos-daisho?utm_source=api
+"Padeem, Consul of Innovation",1,,"Padeem, Consul of Innovation",3aae2ff2-5bd3-4f8f-9726-c81035c16137,0c7ba712-6a99-4d2f-9242-a2163a11f69c,Legendary Creature — Vedalken Artificer,,U,"B,R,U",legal,,PASS,"Artifacts you control have hexproof. (They can't be the targets of spells or abilities your opponents control.)
+At the beginning of your upkeep, if you control the artifact with the greatest mana value or tied for the greatest mana value, draw a card.",https://scryfall.com/card/3aae2ff2-5bd3-4f8f-9726-c81035c16137
+Polluted Delta,1,,Polluted Delta,6e288374-2b71-4ace-b1d2-a19fee6cb4af,ef86989d-ce80-4e55-aece-7d11710eeffa,Land,,,"B,R,U",legal,,PASS,"{T}, Pay 1 life, Sacrifice this land: Search your library for an Island or Swamp card, put it onto the battlefield, then shuffle.",https://scryfall.com/card/6e288374-2b71-4ace-b1d2-a19fee6cb4af
+Profane Tutor,1,,Profane Tutor,0c7f7fdb-9c38-43f8-acb9-6ea1797387a6,27a1f42c-0b86-4609-9609-1fa9cab7e7c9,Sorcery,,B,"B,R,U",legal,,PASS,"Suspend 2—{1}{B} (Rather than cast this card from your hand, pay {1}{B} and exile it with two time counters on it. At the beginning of your upkeep, remove a time counter. When the last is removed, you may cast it without paying its mana cost.)
+Search your library for a card, put that card into your hand, then shuffle.",https://scryfall.com/card/0c7f7fdb-9c38-43f8-acb9-6ea1797387a6
+Rakdos Signet,1,,Rakdos Signet,a263e71d-953f-4648-b326-33133cfa7e00,3adb7681-977f-4a32-9ec8-51481b958268,Artifact,,"B,R","B,R,U",legal,,PASS,"{1}, {T}: Add {B}{R}.",https://scryfall.com/card/a263e71d-953f-4648-b326-33133cfa7e00
+Rhystic Study,1,,Rhystic Study,9f37c5b6-a59c-45cd-9a99-e9357fe9ea1b,53236dd7-845a-444c-96d5-f41ed7325d8f,Enchantment,,U,"B,R,U",legal,,PASS,"Whenever an opponent casts a spell, you may draw a card unless that player pays {1}.",https://scryfall.com/card/9f37c5b6-a59c-45cd-9a99-e9357fe9ea1b
+Savage Beating,1,,Savage Beating,3c979cab-3ae6-43b1-b067-1e5abfc2e2ed,89d1cd45-8148-4396-a9b8-e0f495e94b5b,Instant,{3}{R}{R},R,"B,R,U",legal,,PASS,"Cast this spell only during combat on your turn.
+Choose one —
+• Creatures you control gain double strike until end of turn.
+• Untap all creatures you control. After this phase, there is an additional combat phase.
+Entwine {1}{R} (Choose both if you pay the entwine cost.)",https://scryfall.com/card/cmm/252/savage-beating?utm_source=api
+Scalding Tarn,1,,Scalding Tarn,17c6ba55-2470-4dde-a7fa-137a60716c96,cb027150-848c-4a66-88ad-e20222304dd8,Land,,,"B,R,U",legal,,PASS,"{T}, Pay 1 life, Sacrifice this land: Search your library for an Island or Mountain card, put it onto the battlefield, then shuffle.",https://scryfall.com/card/17c6ba55-2470-4dde-a7fa-137a60716c96
+Smoldering Marsh,1,,Smoldering Marsh,d707c477-440f-417c-970a-0e7426a58045,390f1b56-264e-4336-83be-dc1fe79bfdcf,Land — Swamp Mountain,,"B,R","B,R,U",legal,,PASS,"({T}: Add {B} or {R}.)
+This land enters tapped unless you control two or more basic lands.",https://scryfall.com/card/d707c477-440f-417c-970a-0e7426a58045
+Sol Ring,1,,Sol Ring,8ee443cc-e17a-493b-9c93-1f9e141a30e4,6ad8011d-3471-4369-9d68-b264cc027487,Artifact,,,"B,R,U",legal,,PASS,{T}: Add {C}{C}.,https://scryfall.com/card/8ee443cc-e17a-493b-9c93-1f9e141a30e4
+Steam Vents,1,,Steam Vents,a83903c7-fd51-4526-aed2-359e946fea36,17039058-822d-409f-938c-b727a366ba63,Land — Island Mountain,,"R,U","B,R,U",legal,,PASS,"({T}: Add {U} or {R}.)
+As this land enters, you may pay 2 life. If you don't, it enters tapped.",https://scryfall.com/card/a83903c7-fd51-4526-aed2-359e946fea36
+Sunken Hollow,1,,Sunken Hollow,3a8eef9b-9b03-42cd-a27a-07021bf0b33f,cd2c90ac-2b04-461c-92f3-939871b6b6a3,Land — Island Swamp,,"B,U","B,R,U",legal,,PASS,"({T}: Add {U} or {B}.)
+This land enters tapped unless you control two or more basic lands.",https://scryfall.com/card/3a8eef9b-9b03-42cd-a27a-07021bf0b33f
+Swamp,3,,Swamp,b233b117-9369-45c1-80c5-cc857386b6be,56719f6a-1a6c-4c0a-8d21-18f7d7350b68,Basic Land — Swamp,,B,"B,R,U",legal,,PASS,({T}: Add {B}.),https://scryfall.com/card/b233b117-9369-45c1-80c5-cc857386b6be
+Swiftfoot Boots,1,,Swiftfoot Boots,6675632d-d74a-4b1e-8539-ac678d5545a5,c8b143ad-43ec-4e0d-a440-e348daa31391,Artifact — Equipment,,,"B,R,U",legal,,PASS,"Equipped creature has hexproof and haste. (It can't be the target of spells or abilities your opponents control. It can attack and {T} no matter when it came under your control.)
+Equip {1} ({1}: Attach to target creature you control. Equip only as a sorcery.)",https://scryfall.com/card/6675632d-d74a-4b1e-8539-ac678d5545a5
+Sword of Feast and Famine,1,,Sword of Feast and Famine,dfb6176a-3938-4c59-b485-8751969358ad,d0901053-6de0-46d0-9ee3-8d40510236c1,Artifact — Equipment,,,"B,R,U",legal,,PASS,"Equipped creature gets +2/+2 and has protection from black and from green.
+Whenever equipped creature deals combat damage to a player, that player discards a card and you untap all lands you control.
+Equip {2}",https://scryfall.com/card/dfb6176a-3938-4c59-b485-8751969358ad
+Sword of Fire and Ice,1,,Sword of Fire and Ice,2626d4c9-fcef-4057-a154-7d987a4a4b84,2ccdc60a-49a9-44b9-a7af-0ebf18b26785,Artifact — Equipment,,,"B,R,U",legal,,PASS,"Equipped creature gets +2/+2 and has protection from red and from blue.
+Whenever equipped creature deals combat damage to a player, this Equipment deals 2 damage to any target and you draw a card.
+Equip {2}",https://scryfall.com/card/2626d4c9-fcef-4057-a154-7d987a4a4b84
+Sword of the Animist,1,,Sword of the Animist,64401acc-d080-4763-b67a-95164c11c69e,d79cbc61-6c15-48ea-bbba-3cffb819ccba,Legendary Artifact — Equipment,{2},,"B,R,U",legal,,PASS,"Equipped creature gets +1/+1.
+Whenever equipped creature attacks, you may search your library for a basic land card, put it onto the battlefield tapped, then shuffle.
+Equip {2}",https://scryfall.com/card/cmm/413/sword-of-the-animist?utm_source=api
+Swordsman's Steel,1,,Swordsman's Steel,ae4ab04b-a3bd-40ea-9a71-df221cde4496,e36100d6-d9ae-454a-bba1-b50a69d5a28f,Artifact — Equipment,{4},,"B,R,U",legal,,PASS,"When this Equipment enters, draw a card for each Equipment you control.
+Equipped creature gets +2/+2 for each Equipment you control.
+Equip {3}",https://scryfall.com/card/msc/752/swordsmans-steel?utm_source=api
+Talisman of Creativity,1,,Talisman of Creativity,d4ba86c8-8052-4c9e-a0d0-ac6ad0b2679c,14d2979d-5728-42d7-a027-0eb1f754655d,Artifact,,"R,U","B,R,U",legal,,PASS,"{T}: Add {C}.
+{T}: Add {U} or {R}. This artifact deals 1 damage to you.",https://scryfall.com/card/d4ba86c8-8052-4c9e-a0d0-ac6ad0b2679c
+Talisman of Dominance,1,,Talisman of Dominance,78d5366f-eb6d-4ec1-880b-111872863766,4c0a0448-b9d6-43a0-8549-64066dac63f0,Artifact,,"B,U","B,R,U",legal,,PASS,"{T}: Add {C}.
+{T}: Add {U} or {B}. This artifact deals 1 damage to you.",https://scryfall.com/card/78d5366f-eb6d-4ec1-880b-111872863766
+Talisman of Indulgence,1,,Talisman of Indulgence,36bd614f-ab3b-4ad1-ab5c-a7ca0a641f32,1d9aeaaa-66f6-41cb-9bac-162d6fd8662c,Artifact,,"B,R","B,R,U",legal,,PASS,"{T}: Add {C}.
+{T}: Add {B} or {R}. This artifact deals 1 damage to you.",https://scryfall.com/card/36bd614f-ab3b-4ad1-ab5c-a7ca0a641f32
+Terminate,1,,Terminate,379ffc67-4142-4ead-a871-0f851523745e,6257c2fd-005f-41e3-8a72-af76df1eb134,Instant,,"B,R","B,R,U",legal,,PASS,Destroy target creature. It can't be regenerated.,https://scryfall.com/card/379ffc67-4142-4ead-a871-0f851523745e
+The Reality Chip,1,,The Reality Chip,d859de3a-0be1-4e66-b438-1c3d4ee756cd,751f22bc-bcea-4213-a37b-b5f72448a4c4,Legendary Artifact Creature — Equipment Jellyfish,,U,"B,R,U",legal,,PASS,"You may look at the top card of your library any time.
+As long as The Reality Chip is attached to a creature, you may play lands and cast spells from the top of your library.
+Reconfigure {2}{U} ({2}{U}: Attach to target creature you control; or unattach from a creature. Reconfigure only as a sorcery. While attached, this isn't a creature.)",https://scryfall.com/card/d859de3a-0be1-4e66-b438-1c3d4ee756cd
+The Reaver Cleaver,1,,The Reaver Cleaver,1d671d06-5881-41c4-a4ff-79c8733bebf5,37a2a31d-51e6-4c07-b4c2-b206ad40eb42,Legendary Artifact — Equipment,,R,"B,R,U",legal,,PASS,"Equipped creature gets +1/+1 and has trample and ""Whenever this creature deals combat damage to a player or planeswalker, create that many Treasure tokens.""
+Equip {3}",https://scryfall.com/card/1d671d06-5881-41c4-a4ff-79c8733bebf5
+Training Center,1,,Training Center,78a39d22-5e3b-4ba0-b728-dbf16b61fc8f,e3570ac7-c593-40e3-bbd6-ec3da6d8158d,Land,,"R,U","B,R,U",legal,,PASS,"This land enters tapped unless you have two or more opponents.
+{T}: Add {U} or {R}.",https://scryfall.com/card/78a39d22-5e3b-4ba0-b728-dbf16b61fc8f
+Underground Sea,1,,Underground Sea,1f35877c-e66c-4ef0-842a-f68cd233ae4b,4b22be3a-8ce1-47d1-b82e-6c3ccfb0548b,Land — Island Swamp,,"B,U","B,R,U",legal,,PASS,({T}: Add {U} or {B}.),https://scryfall.com/card/1f35877c-e66c-4ef0-842a-f68cd233ae4b
+Volcanic Island,1,,Volcanic Island,b12e5430-0e80-47dd-80ac-85728b656a24,c718911c-c955-4eb9-9e16-be4bd49a4e4e,Land — Island Mountain,,"R,U","B,R,U",legal,,PASS,({T}: Add {U} or {R}.),https://scryfall.com/card/b12e5430-0e80-47dd-80ac-85728b656a24
+Vorpal Sword,1,,Vorpal Sword,7adbe69f-326d-4b4f-850f-c57a1860d17c,61bfab3f-d8f0-4ff5-9ddf-3fd605070c8f,Artifact — Equipment,{B},B,"B,R,U",legal,,PASS,"Equipped creature gets +2/+0 and has deathtouch.
+{5}{B}{B}{B}: Until end of turn, this Equipment gains ""Whenever equipped creature deals combat damage to a player, that player loses the game.""
+Equip {B}{B}",https://scryfall.com/card/afr/124/vorpal-sword?utm_source=api
+Watery Grave,1,,Watery Grave,5525d6a6-e532-4047-9da4-bfae7927fecc,fc9ec820-4245-4a96-b009-5308a818ca58,Land — Island Swamp,,"B,U","B,R,U",legal,,PASS,"({T}: Add {U} or {B}.)
+As this land enters, you may pay 2 life. If you don't, it enters tapped.",https://scryfall.com/card/5525d6a6-e532-4047-9da4-bfae7927fecc
+Wheel of Fate,1,,Wheel of Fate,c7937e12-76d9-4030-a68c-7a93a3c852cb,15e4938d-1cd3-4670-9de5-2dc10abe4c19,Sorcery,,R,"B,R,U",legal,,PASS,"Suspend 4—{1}{R} (Rather than cast this card from your hand, pay {1}{R} and exile it with four time counters on it. At the beginning of your upkeep, remove a time counter. When the last is removed, you may cast it without paying its mana cost.)
+Each player discards their hand, then draws seven cards.",https://scryfall.com/card/tsr/198/wheel-of-fate?utm_source=api
+Winged Boots,1,,Winged Boots,116361c4-fddd-440a-ad02-8d71df733231,a178a789-1f5f-46ca-a90b-574bd236a671,Artifact — Equipment,{1}{U},U,"B,R,U",legal,,PASS,"Equipped creature has flying and ward {4}. (Whenever equipped creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays {4}.)
+Equip {1}",https://scryfall.com/card/otc/124/winged-boots?utm_source=api
+Withering Torment,1,,Withering Torment,06d44ada-f98e-405f-89d3-ac1002bfb854,ffce81c5-1b58-4882-a4e7-6f8d7cb170de,Instant,,B,"B,R,U",legal,,PASS,Destroy target creature or enchantment. You lose 2 life.,https://scryfall.com/card/06d44ada-f98e-405f-89d3-ac1002bfb854
+World at War,1,,World at War,a47a05ad-fe86-481e-b770-e1760be4f852,02a8a5cc-62ce-4ae5-aa7d-760124af7d7b,Sorcery,{3}{R}{R},R,"B,R,U",legal,,PASS,"After the second main phase this turn, there's an additional combat phase followed by an additional main phase. At the beginning of that combat, untap all creatures that attacked this turn.
+Rebound (If you cast this spell from your hand, exile it as it resolves. At the beginning of your next upkeep, you may cast this card from exile without paying its mana cost.)",https://scryfall.com/card/roe/172/world-at-war?utm_source=api
+Xander's Lounge,1,,Xander's Lounge,54f449ff-4025-465e-9ec5-a5cf42c4c9d3,8291543f-d086-48aa-b2b7-5481ca8c9198,Land — Island Swamp Mountain,,"B,R,U","B,R,U",legal,,PASS,"({T}: Add {U}, {B}, or {R}.)
+This land enters tapped.
+Cycling {3} ({3}, Discard this card: Draw a card.)",https://scryfall.com/card/54f449ff-4025-465e-9ec5-a5cf42c4c9d3
