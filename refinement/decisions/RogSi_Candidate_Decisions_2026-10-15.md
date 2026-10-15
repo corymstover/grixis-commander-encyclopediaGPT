@@ -3,7 +3,7 @@
 Date: 2026-10-15  
 Cycle: `global-restart-2026-10-13`  
 Deck: #47 of 62  
-Status: working decision closeout; not user approval
+Status: **APPROVED / LOCKED** — explicit user approval received 2026-10-15
 
 Exact candidate SHA-256: `06c9e22b5afc46bd58bbbfdef5c42a796d2a986a2972456107c29aee1b5f905c`
 
@@ -59,3 +59,12 @@ After the classic-turbo versus artifact-Monolith branch review, current tourname
 **ZERO NEW MATERIAL IMPROVEMENTS.**
 
 **Decision result: PASS — fresh Oracle/legality/rules complete gate and explicit user approval remain required.**
+
+## Approval closeout
+
+- Explicit user approval received: **2026-10-15**
+- Canonical approved SHA-256: `06c9e22b5afc46bd58bbbfdef5c42a796d2a986a2972456107c29aee1b5f905c`
+- Exact approved artifact: `refinement/decklists/RogSi_Approved_2026-10-15.txt`
+- Current-cycle state: **APPROVED / LOCKED**
+- Quality gate: **Deck Quality Gates v3 + mandatory partner-deck whole-list audit + targeted approval-ready verification**
+- Next unlocked deck in tracker order: **Saruman, the White Hand (index 47 / deck 48 of 62)**.

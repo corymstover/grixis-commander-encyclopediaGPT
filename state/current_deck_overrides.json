@@ -637,6 +637,22 @@
       "decision_closeout_artifact": "refinement/decisions/Parnesse_the_Subtle_Brush_Candidate_Decisions_2026-10-15.md",
       "approval_record_artifact": "refinement/approvals/Parnesse_the_Subtle_Brush_Approved_2026-10-15.md",
       "approved_list_artifact": "refinement/decklists/Parnesse_the_Subtle_Brush_Approved_2026-10-15.txt"
+    },
+    "RogSi": {
+      "approval_status": "APPROVED",
+      "lock_status": "LOCKED",
+      "final_gate_passed": true,
+      "user_approval_date": "2026-10-15",
+      "current_stage": "LOCKED",
+      "approved_list_sha256": "06c9e22b5afc46bd58bbbfdef5c42a796d2a986a2972456107c29aee1b5f905c",
+      "quality_gate_version": "Deck Quality Gates v3 + mandatory partner-deck whole-list audit + targeted approval-ready verification",
+      "approval_basis": "Explicit user approval of the exact SHA-bound Rograkh, Son of Rohgahh // Silas Renn, Seeker Adept approval-ready candidate after authoritative FINAL baseline reconciliation, mandatory 98-slot whole-list audit, classic turbo-naus/Breach versus artifact-Monolith branch review, candidate exhaustion, adversarial red-team review, targeted current Oracle refresh, rules-interaction verification, current official Commander legality verification, exact structural verification, singleton compliance, and U/B/R partner color-identity verification.",
+      "whole_list_audit_artifact": "refinement/verification/RogSi_Whole_List_Audit_2026-10-15.md",
+      "verification_artifact": "refinement/verification/RogSi_Approval_Ready_Verification_2026-10-15.md",
+      "complete_gate_artifact": "refinement/verification/rogsi_2026-10-15/gate_output/RogSi_2026-10-15_Complete_Gate.json",
+      "decision_closeout_artifact": "refinement/decisions/RogSi_Candidate_Decisions_2026-10-15.md",
+      "approval_record_artifact": "refinement/approvals/RogSi_Approved_2026-10-15.md",
+      "approved_list_artifact": "refinement/decklists/RogSi_Approved_2026-10-15.txt"
     }
   }
 }
