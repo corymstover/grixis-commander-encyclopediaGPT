@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "deck_sha256": "4981499230898c8b36c6f46b0f60a5277630d92abe477d48ed77091e2203ffe2",
+  "checked_at_utc": "2026-10-15T18:10:43.306058+00:00",
+  "sources": [
+    "Magic Comprehensive Rules — mana value, X, alternative/additional costs, triggered abilities, replacement effects, MDFCs and amass (current 2026 rules)",
+    "Current Oracle text captured in refinement/metadata_audit/Current_Cycle_Oracle_Cache.jsonl",
+    "Wizards current Commander banned/restricted list checked 2026-10-15"
+  ],
+  "interactions": [
+    {
+      "name": "Saruman mana-value engine",
+      "status": "PASS",
+      "finding": "Saruman triggers when its controller casts a noncreature spell and uses that spell's mana value. Cost reductions and alternative costs change what is paid, not mana value."
+    },
+    {
+      "name": "High-MV discounted spells",
+      "status": "PASS",
+      "finding": "Volcanic Salvo remains mana value 12 after its cost reduction; Treasure Cruise remains mana value 8 with delve; Force of Will remains mana value 5 when cast for its alternative cost. Existing Blasphemous Act, Dig Through Time, Blood for the Blood God!, Deadly Rollick, Fierce Guardianship and Deflecting Swat follow the same mana-value principle."
+    },
+    {
+      "name": "X spells",
+      "status": "PASS",
+      "finding": "For a spell on the stack, the chosen value of X contributes to mana value. Assault on Osgiliath, Summons of Saruman and Shatterskull Smashing therefore scale Saruman's trigger with the chosen X."
+    },
+    {
+      "name": "Soul's Fire / Chandra's Ignition",
+      "status": "PASS",
+      "finding": "Casting either noncreature spell triggers Saruman. The Saruman trigger is placed above the spell and resolves first, growing the Army before the damage spell resolves. Soul's Fire does not require sacrificing the Army."
+    },
+    {
+      "name": "Harmonic Prodigy / Wizard's Staff / Veyran",
+      "status": "PASS",
+      "finding": "Saruman is a Wizard. Harmonic Prodigy and Wizard's Staff each add an additional Saruman trigger when applicable. Veyran adds another when casting or copying an instant or sorcery causes Saruman's triggered ability to trigger. Multiple applicable effects are additive."
+    },
+    {
+      "name": "Mauhúr replacement",
+      "status": "PASS",
+      "finding": "When one or more +1/+1 counters would be put on an Army, Goblin or Orc controlled by the Saruman player, Mauhúr replaces that event with that many plus one counters, not one additional counter per counter."
+    },
+    {
+      "name": "The Great Goblin / All Will Be One",
+      "status": "PASS",
+      "finding": "Each separate event that puts one or more counters on an eligible Goblin, Orc or Army can trigger The Great Goblin once. All Will Be One uses the number of counters actually put on the permanent after applicable replacement effects."
+    },
+    {
+      "name": "Widespread Brutality",
+      "status": "PASS",
+      "finding": "Saruman's trigger from casting Widespread Brutality resolves before the spell. Widespread then amasses Orcs 2 and the chosen Army deals damage equal to its power to each non-Army creature; the Army is not a non-Army creature and is not damaged by that effect."
+    },
+    {
+      "name": "Fall of Cair Andros",
+      "status": "PASS",
+      "finding": "Each opposing creature dealt excess noncombat damage can cause a separate Fall of Cair Andros trigger. This can compound Army growth after effects such as Widespread Brutality, Blasphemous Act or Chandra's Ignition."
+    },
+    {
+      "name": "Bothersome Noisemaker",
+      "status": "PASS",
+      "finding": "Its noncreature-cast amass-Goblins trigger is separate from Saruman's amass-Orcs trigger. Saruman grants ward {2} to Goblins and Orcs controlled by its controller, including an Army carrying those creature types."
+    },
+    {
+      "name": "Mizzix's Mastery",
+      "status": "PASS",
+      "finding": "Mizzix's Mastery copies exiled instant/sorcery cards and permits casting the copies. Each copied card actually cast is a noncreature spell and can trigger Saruman."
+    },
+    {
+      "name": "Summons of Saruman",
+      "status": "PASS",
+      "finding": "The chosen X contributes to Summons' mana value on the stack, so its cast triggers Saruman for that full mana value. Summons then amasses/mills X and may cast an eligible milled instant or sorcery without paying its mana cost; such a spell is cast and can trigger Saruman separately."
+    },
+    {
+      "name": "MDFC spell/land package",
+      "status": "PASS",
+      "finding": "Playing an MDFC land back is a land play and does not trigger Saruman. Casting Kazuul's Fury, Sea Gate Restoration, Shatterskull Smashing or Sink into Stupor as the front spell is casting a noncreature spell and does trigger Saruman using the front spell's mana value."
+    },
+    {
+      "name": "The Black Gate",
+      "status": "PASS",
+      "finding": "The Black Gate's activated ability targets a creature and a player with the most life or tied for most life; creatures that chosen player controls cannot block the targeted creature that turn, providing Army evasion without changing Saruman's spell engine."
+    }
+  ]
+}

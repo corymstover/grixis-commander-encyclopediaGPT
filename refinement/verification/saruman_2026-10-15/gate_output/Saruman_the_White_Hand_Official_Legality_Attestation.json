@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "deck_sha256": "4981499230898c8b36c6f46b0f60a5277630d92abe477d48ed77091e2203ffe2",
+  "checked_at_utc": "2026-10-15T18:10:43.306058+00:00",
+  "sources": [
+    "https://magic.wizards.com/en/banned-restricted-list — current Commander banned list",
+    "Wizards Banned and Restricted Announcement — October 12, 2026 (no paper Commander change)",
+    "Current_Cycle_Oracle_Cache.jsonl generated/refreshed from current Scryfall metadata"
+  ],
+  "unexpected_banned_cards": [],
+  "project_exceptions_required": [],
+  "finding": "Every Saruman candidate card is officially Commander-legal in the refreshed current-cycle Oracle cache and no card appears on the current Commander banned list; no project exception is required."
+}

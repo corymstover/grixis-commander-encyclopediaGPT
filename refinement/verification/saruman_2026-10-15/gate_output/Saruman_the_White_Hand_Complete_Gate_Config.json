@@ -1,0 +1,12 @@
+{
+  "deck_id": "Saruman__the_White_Hand",
+  "display_name": "Saruman, the White Hand",
+  "decklist_path": "refinement/decklists/Saruman_the_White_Hand_Approval_Ready_2026-10-15.txt",
+  "expected_deck_sha256": "4981499230898c8b36c6f46b0f60a5277630d92abe477d48ed77091e2203ffe2",
+  "baseline_source_sha256": "cd619e2b24221d07b517954acf4703034d365e009670b8e2e94026b54512470d",
+  "output_dir": "refinement/verification/saruman_2026-10-15/gate_output",
+  "output_stem": "Saruman_the_White_Hand_2026-10-15",
+  "rules_attestation_path": "refinement/verification/saruman_2026-10-15/gate_output/Saruman_the_White_Hand_Rules_Attestation.json",
+  "official_legality_attestation_path": "refinement/verification/saruman_2026-10-15/gate_output/Saruman_the_White_Hand_Official_Legality_Attestation.json",
+  "max_cache_age_hours": 72
+}

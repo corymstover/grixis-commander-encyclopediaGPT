@@ -8,7 +8,7 @@ Status: working audit; not user approval
 Authoritative baseline: FINAL TXT member `Saruman__the_White_Hand.txt` from the frozen October 12 source package.
 
 Candidate: `refinement/decklists/Saruman_the_White_Hand_Approval_Ready_2026-10-15.txt`  
-Candidate SHA-256: `__CANDIDATE_SHA__`
+Candidate SHA-256: `4981499230898c8b36c6f46b0f60a5277630d92abe477d48ed77091e2203ffe2`
 
 ## Audit result
 

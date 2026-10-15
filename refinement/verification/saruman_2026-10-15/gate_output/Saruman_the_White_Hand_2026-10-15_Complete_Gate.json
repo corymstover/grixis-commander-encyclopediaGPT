@@ -1,0 +1,23 @@
+{
+  "generated_at_utc": "2026-10-15T18:10:43.369096+00:00",
+  "deck_id": "Saruman__the_White_Hand",
+  "decklist_path": "refinement/decklists/Saruman_the_White_Hand_Approval_Ready_2026-10-15.txt",
+  "deck_sha256": "4981499230898c8b36c6f46b0f60a5277630d92abe477d48ed77091e2203ffe2",
+  "baseline_path": null,
+  "baseline_source_sha256": "cd619e2b24221d07b517954acf4703034d365e009670b8e2e94026b54512470d",
+  "count": 100,
+  "distinct_names": 97,
+  "commander_color_identity": [
+    "B",
+    "R",
+    "U"
+  ],
+  "cache_generated_at_utc": "2026-10-15T18:09:41.286040+00:00",
+  "cache_sha256": "2b120e7088e7ffcd8c92747a776e3206682647ff3f23454098e6ccd73b8cf42c",
+  "project_exceptions": [],
+  "rules_gate": "PASS",
+  "official_legality_gate": "PASS",
+  "errors": [],
+  "overall_result": "APPROVAL_READY",
+  "approval_state": "NOT_APPROVED — explicit user approval still required"
+}
