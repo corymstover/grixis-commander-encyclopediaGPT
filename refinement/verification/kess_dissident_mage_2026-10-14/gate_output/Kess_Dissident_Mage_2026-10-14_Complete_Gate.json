@@ -1,0 +1,23 @@
+{
+  "generated_at_utc": "2026-10-15T00:46:02.158231+00:00",
+  "deck_id": "Kess__Dissident_Mage",
+  "decklist_path": "refinement/decklists/Kess_Dissident_Mage_Approval_Candidate_2026-10-14.txt",
+  "deck_sha256": "93d27d605bbdf0737ebe32c911fafe3a002b06d7d90f00b7bfc402cb1d3faccb",
+  "baseline_path": "refinement/decklists/Kess_Dissident_Mage_Current_Cycle_Baseline_2026-10-14.txt",
+  "baseline_source_sha256": "b6d42012e6c7c3f9d5143d7cdb3e3608e611ae56247f2b00d13f6e87549440c7",
+  "count": 100,
+  "distinct_names": 100,
+  "commander_color_identity": [
+    "B",
+    "R",
+    "U"
+  ],
+  "cache_generated_at_utc": "2026-10-15T00:41:43.916355+00:00",
+  "cache_sha256": "1d3d193f5dc4dbf680a145cafab5d6c27612ca892af5d6a5d945bd89c8bcc440",
+  "project_exceptions": [],
+  "rules_gate": "PASS",
+  "official_legality_gate": "PASS",
+  "errors": [],
+  "overall_result": "APPROVAL_READY",
+  "approval_state": "NOT_APPROVED — explicit user approval still required"
+}
