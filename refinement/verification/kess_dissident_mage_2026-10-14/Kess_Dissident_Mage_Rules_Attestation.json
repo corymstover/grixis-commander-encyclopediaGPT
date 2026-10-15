@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "deck_sha256": "93d27d605bbdf0737ebe32c911fafe3a002b06d7d90f00b7bfc402cb1d3faccb",
+  "checked_at_utc": "2026-10-14T23:58:00Z",
+  "sources": [
+    "Current Oracle text and official rulings for Kess, Dissident Mage",
+    "Magic Comprehensive Rules — casting permissions, replacement effects, triggered abilities, new objects, priority, graveyards, and resolving spells",
+    "Current Oracle/rulings for Demonic Consultation, Tainted Pact, Thassa's Oracle, Intuition, Gifts Ungiven, Reanimate, Displacer Kitten, Demonic Counsel, Valley Floodcaller, and Underworld Breach",
+    "Wizards Commander announcement unbanning Gifts Ungiven effective 2025-04-22",
+    "Current 2026 Kess tournament evidence used only for strategic red-team; final exact list is independently revalidated by the complete gate"
+  ],
+  "interactions": [
+    {
+      "name": "Kess graveyard-cast permission and timing",
+      "status": "PASS",
+      "conclusion": "Kess permits one instant or sorcery card to be cast from its controller's graveyard during each of that controller's turns. Normal timing permissions and restrictions still apply unless another effect changes them. A spell cast using Kess is exiled instead if it would go to the graveyard after resolving. Kess does not grant this permission during opponents' turns."
+    },
+    {
+      "name": "New Kess object resets once-per-turn permission",
+      "status": "PASS",
+      "conclusion": "Official Kess rulings state that if one instant or sorcery has been cast from the graveyard using Kess and a new Kess comes under that player's control in the same turn, another instant or sorcery may be cast from the graveyard that turn. Displacer Kitten can therefore blink Kess to create a new object and a fresh permission."
+    },
+    {
+      "name": "Displacer Kitten with a spell cast through Kess",
+      "status": "PASS",
+      "conclusion": "Casting a noncreature spell through Kess triggers Displacer Kitten. Blinking Kess before that spell resolves creates a new Kess permission, but the already-cast spell remains subject to the old Kess replacement effect and will still be exiled if it would be put into the graveyard."
+    },
+    {
+      "name": "Kess plus Demonic Consultation plus Thassa's Oracle",
+      "status": "PASS",
+      "conclusion": "With Kess on the battlefield and Demonic Consultation in hand, Consultation may first be cast normally to obtain Thassa's Oracle. Because Kess's graveyard permission was not used on that first cast, Oracle may then be cast and, with its triggered ability on the stack, Consultation may be cast from the graveyard using Kess while naming a card absent from the deck. Consultation exiles the remaining library and Oracle's trigger can then win the game if its condition is satisfied."
+    },
+    {
+      "name": "Kess plus Tainted Pact plus Thassa's Oracle",
+      "status": "PASS",
+      "conclusion": "The same two-cast structure works with Tainted Pact: Pact may be cast from hand to find Thassa's Oracle, then replayed from the graveyard through Kess after Oracle is cast. The exact candidate has 100 distinct card names, so Pact cannot be forced to stop by revealing a second card with the same name. The controller may decline to put revealed cards into hand while exiling through the library."
+    },
+    {
+      "name": "Intuition deterministic Kess pile",
+      "status": "PASS",
+      "conclusion": "If Intuition is cast from hand while Kess's graveyard permission is unused, the pile Thassa's Oracle / Reanimate / Demonic Consultation is deterministic with sufficient mana. If Oracle is given to hand, Kess can cast Consultation from the graveyard after Oracle is cast; if Reanimate is given to hand, Reanimate returns Oracle and Kess casts Consultation from the graveyard; if Consultation is given to hand, Kess casts Reanimate from the graveyard to return Oracle and Consultation is cast from hand in response to Oracle's trigger."
+    },
+    {
+      "name": "Gifts Ungiven deterministic Kess pile",
+      "status": "PASS",
+      "conclusion": "Gifts Ungiven is currently Commander-legal. If cast from hand while Kess's graveyard permission is unused, the four-card package Thassa's Oracle / Reanimate / Demonic Consultation / Tainted Pact leaves a winning configuration for every possible two-card graveyard assignment, subject to sufficient mana and opposing interaction. This statement does not apply if Kess's permission was already consumed to cast Gifts itself from the graveyard."
+    },
+    {
+      "name": "Entomb as Kess spell tutor",
+      "status": "PASS",
+      "conclusion": "Entomb may put any card into its controller's graveyard. With Kess available and permission unused, putting an instant or sorcery into the graveyard makes that card immediately castable through Kess during the same turn if normal timing and costs can be satisfied."
+    },
+    {
+      "name": "Demonic Counsel delirium limitation",
+      "status": "PASS",
+      "conclusion": "Demonic Counsel is a general tutor only if delirium is satisfied with four or more card types among cards in the graveyard. Without delirium it searches only for a Demon card; the candidate contains no dedicated Demon target. Strategic evaluation therefore treats pre-delirium Counsel as nonfunctional rather than assuming its delirium mode is always active."
+    },
+    {
+      "name": "Valley Floodcaller and Kess timing",
+      "status": "PASS",
+      "conclusion": "Valley Floodcaller allows noncreature spells to be cast as though they had flash, which can modify timing for an instant or sorcery cast through Kess. It does not override Kess's restriction to the controller's own turns and does not create additional graveyard-cast permissions."
+    },
+    {
+      "name": "Snapcaster Mage complement to Kess",
+      "status": "PASS",
+      "conclusion": "Snapcaster Mage can give an instant or sorcery in the graveyard flashback, including during an opponent's turn when legal. Casting a spell through flashback is a separate permission from Kess, so Kess's once-per-turn permission remains available on the controller's turn."
+    },
+    {
+      "name": "Underworld Breach plus Lion's Eye Diamond plus Brain Freeze",
+      "status": "PASS",
+      "conclusion": "With sufficient graveyard resources, Underworld Breach allows repeated escape of Lion's Eye Diamond and Brain Freeze. LED supplies mana while Brain Freeze's storm copies mill cards to replenish escape resources. The line can mill the controller's library and transition to Thassa's Oracle; it is treated as a compact secondary route rather than the commander-identity centerpiece."
+    },
+    {
+      "name": "Beseech the Mirror bargain",
+      "status": "PASS",
+      "conclusion": "If Beseech the Mirror is bargained, the searched card with mana value 4 or less may be cast without paying its mana cost as instructed during Beseech's resolution. The candidate contains no Samut, Tyrant of Naktamun or comparable split-second static effect that would prohibit that cast during resolution."
+    }
+  ]
+}
