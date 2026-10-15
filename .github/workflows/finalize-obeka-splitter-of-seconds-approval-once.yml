@@ -1,4 +1,4 @@
-name: Finalize Solkanar the Tainted approval once
+name: Finalize Tetsuo Umezawa approval once
 
 on:
   push:
@@ -19,9 +19,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Finalize exact approved candidate
-        run: python scripts/finalize_solkanar_tainted_approval_once.py
+      - name: Finalize exact approved Tetsuo Umezawa candidate
+        run: python scripts/finalize_tetsuo_umezawa_approval_once.py
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Approve and lock Solkanar the Tainted [skip ci]"
-          file_pattern: "state/current_deck_overrides.json refinement/Deck_Refinement_Tracker_2026-10-12.csv refinement/decklists/Solkanar_the_Tainted_Approved_2026-10-15.txt refinement/approvals/Solkanar_the_Tainted_Approved_2026-10-15.md refinement/decisions/Solkanar_the_Tainted_Candidate_Decisions_2026-10-15.md"
+          commit_message: "Approve and lock Tetsuo Umezawa [skip ci]"
+          file_pattern: "state/current_deck_overrides.json refinement/Deck_Refinement_Tracker_2026-10-12.csv refinement/decklists/Tetsuo_Umezawa_Approved_2026-10-15.txt refinement/approvals/Tetsuo_Umezawa_Approved_2026-10-15.md refinement/decisions/Tetsuo_Umezawa_Candidate_Decisions_2026-10-15.md"
