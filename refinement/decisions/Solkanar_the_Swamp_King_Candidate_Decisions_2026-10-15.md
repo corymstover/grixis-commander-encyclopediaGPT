@@ -3,7 +3,7 @@
 Date: 2026-10-15  
 Cycle: `global-restart-2026-10-13`  
 Deck: #52 of 62  
-Status: working decision closeout; not user approval
+Status: **APPROVED / LOCKED** — explicit user approval received 2026-10-15
 
 Exact candidate SHA-256: `7d39fff42b91263e83415feef1e69d048c54f8b4e2226b8430fb584076d19106`
 
@@ -62,3 +62,12 @@ After the full baseline reconciliation, commander-first audit, current optimized
 **ZERO NEW MATERIAL IMPROVEMENTS.**
 
 **Decision result: PASS — fresh Oracle/legality/rules complete gate and explicit user approval remain required.**
+
+## Approval closeout
+
+- Explicit user approval received: **2026-10-15**
+- Canonical approved SHA-256: `7d39fff42b91263e83415feef1e69d048c54f8b4e2226b8430fb584076d19106`
+- Exact approved artifact: `refinement/decklists/Solkanar_the_Swamp_King_Approved_2026-10-15.txt`
+- Current-cycle state: **APPROVED / LOCKED**
+- Quality gate: **Deck Quality Gates v3 + mandatory whole-list audit + targeted approval-ready verification**
+- Next unlocked deck in tracker order: **Sol'Kanar the Tainted (index 52 / deck 53 of 62)**.

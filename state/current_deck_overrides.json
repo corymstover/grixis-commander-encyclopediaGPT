@@ -717,6 +717,22 @@
       "decision_closeout_artifact": "refinement/decisions/Sedris_the_Traitor_King_Candidate_Decisions_2026-10-15.md",
       "approval_record_artifact": "refinement/approvals/Sedris_the_Traitor_King_Approved_2026-10-15.md",
       "approved_list_artifact": "refinement/decklists/Sedris_the_Traitor_King_Approved_2026-10-15.txt"
+    },
+    "Sol_kanar_the_Swamp_King": {
+      "approval_status": "APPROVED",
+      "lock_status": "LOCKED",
+      "final_gate_passed": true,
+      "user_approval_date": "2026-10-15",
+      "current_stage": "LOCKED",
+      "approved_list_sha256": "7d39fff42b91263e83415feef1e69d048c54f8b4e2226b8430fb584076d19106",
+      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + targeted approval-ready verification",
+      "approval_basis": "Explicit user approval of the exact SHA-bound Sol'kanar the Swamp King approval-ready candidate after authoritative FINAL baseline reconciliation, mandatory 99-slot whole-list audit, commander-first black-spell/lifegain/Swamp-matters review, candidate exhaustion, adversarial red-team review, mana-base and functional-land review, targeted current Oracle refresh, exact Starscape Cleric BLB #116 identity resolution, rules-interaction verification, current official Commander legality verification, exact structural verification, singleton verification, and U/B/R color-identity verification.",
+      "whole_list_audit_artifact": "refinement/verification/Solkanar_the_Swamp_King_Whole_List_Audit_2026-10-15.md",
+      "verification_artifact": "refinement/verification/Solkanar_the_Swamp_King_Approval_Ready_Verification_2026-10-15.md",
+      "complete_gate_artifact": "refinement/verification/solkanar_swamp_king_2026-10-15/gate_output/Solkanar_the_Swamp_King_2026-10-15_Complete_Gate.json",
+      "decision_closeout_artifact": "refinement/decisions/Solkanar_the_Swamp_King_Candidate_Decisions_2026-10-15.md",
+      "approval_record_artifact": "refinement/approvals/Solkanar_the_Swamp_King_Approved_2026-10-15.md",
+      "approved_list_artifact": "refinement/decklists/Solkanar_the_Swamp_King_Approved_2026-10-15.txt"
     }
   }
 }
