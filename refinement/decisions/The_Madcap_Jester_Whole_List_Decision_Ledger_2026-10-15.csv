@@ -1,0 +1,100 @@
+card,baseline_qty,keep_qty,cut_qty,decision,rationale
+Ancient Tomb,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Arcane Signet,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Arid Mesa,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+"Ashiok, Nightmare Muse",1,0,1,CUT,"CUT — five-mana token-mediated exile engine loses to three-mana Ashiok, Nightmare Weaver immediate +2 library exile."
+Badlands,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Beseech the Mirror,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+"Bilbo, Thief in the Night",1,1,0,KEEP,KEEP — discounts spells cast outside hand and supplies graveyard casting on attack.
+Bitter Ordeal,1,1,0,KEEP,KEEP — gravestorm can exile selected cards from opponent libraries and Jester turns those exiles into playable resources.
+Blazemire Verge,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Blood Crypt,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Bloodstained Mire,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Brain Freeze,1,1,0,KEEP,"KEEP — Breach win component and, against opponents while Dauthi is present, can become qualifying library exile via replacement."
+Brainstealer Dragon,1,0,1,CUT,CUT — seven-mana theft payoff is too slow at Jester’s natural cEDH ceiling; Dauthi Voidwalker provides two-mana graveyard hate and commander-specific replacement/exile utility.
+Cabal Ritual,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Chrome Mox,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+"Circu, Dimir Lobotomist",1,1,0,KEEP,KEEP — low-cost spellcasting turns into repeatable top-card library exile.
+City of Brass,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+City of Traitors,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Command Tower,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Counterspell,1,0,1,CUT,CUT — UU interaction is redundant beside the retained free/cheap protection suite; Lightning Greaves more directly unlocks the commander attack engine.
+Dark Ritual,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Deadly Rollick,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Deflecting Swat,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Demonic Tutor,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+"Don Andres, the Renegade",1,1,0,KEEP,KEEP — buffs and monetizes opponent-owned permanents cast through the theft engine.
+Dragon's Smile,1,1,0,KEEP,KEEP — registered future-release exception; free-casts one exile spell each turn and produces library exile on combat damage.
+Drowned Catacomb,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Ensnared by the Mara,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+"Etali, Primal Storm",1,0,1,CUT,CUT — six mana plus a separate attack step without native haste is slower than the commander’s own exile access and loses to compact Oracle infrastructure.
+Exotic Orchard,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Extract,1,1,0,KEEP,KEEP — one-mana opponent-library exile becomes commander-enabled access to the selected card.
+Fierce Guardianship,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Flooded Strand,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Force of Negation,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Force of Will,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Gamble,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Gemstone Caverns,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+"Gonti, Night Minister",1,1,0,KEEP,KEEP — Treasure payoff for spells not owned plus repeatable combat-driven opponent-library exile.
+Imperial Seal,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Inside Information,1,1,0,KEEP,KEEP — low-cost targeted library exile and life-based alternative casting remains highly commander-specific.
+Island,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Jeska's Will,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Jester's Cap,1,1,0,KEEP,"KEEP — searches and exiles three selected cards from an opponent library, becoming targeted theft with Jester."
+Jester's Scepter,1,1,0,KEEP,"KEEP — immediate five-card library exile; controller may look at the face-down exiled cards, supporting Jester play permission under current casting rules."
+Laughing Jasper Flint,1,1,0,KEEP,KEEP — repeatable opponent-library exile keyed to outlaw count and stolen-spell casting.
+Lion's Eye Diamond,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Lotus Petal,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Luxury Suite,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Mana Confluence,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Mana Drain,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Mana Vault,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Marsh Flats,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Misty Rainforest,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Morphic Pool,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Mox Diamond,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Mox Opal,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Mystic Remora,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Mystical Tutor,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Nalfeshnee,1,1,0,KEEP,"KEEP — copies spells cast from exile, multiplying Jester theft value."
+Necropotence,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+"Otawara, Soaring City",1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Pact of Negation,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Party Thrasher,1,1,0,KEEP,KEEP — convoke for noncreature spells from exile plus self-exile card selection.
+Passionate Archaeologist,1,1,0,KEEP,KEEP — commander-granted damage payoff for every spell cast from exile.
+Plargg and Nassari,1,1,0,KEEP,KEEP — repeatable multi-library exile and free casting if allowed to survive to upkeep.
+Polluted Delta,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Praetor's Grasp,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+"Prosper, Tome-Bound",1,1,0,KEEP,KEEP — cast-from-exile Treasure engine supports stolen-spell velocity.
+Psychic Surgery,1,1,0,KEEP,KEEP — repeatable library-control exile after opponent shuffles; direct Jester trigger engine.
+"Ragavan, Nimble Pilferer",1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Rhystic Study,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Rite of Flame,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Sadistic Sacrament,1,1,0,KEEP,KEEP — direct multi-card opponent-library exile scales with Jester permission.
+Scalding Tarn,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Shivan Reef,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Sire of Stagnation,1,1,0,KEEP,"KEEP — opponent landfall exiles library cards while drawing cards, creating repeated Jester access."
+Sol Ring,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Starting Town,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Steam Vents,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Sulfurous Springs,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Swan Song,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Talisman of Dominance,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Talisman of Indulgence,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Tasha's Hideous Laughter,1,1,0,KEEP,KEEP — signature burst library exile; with Jester it functions as a large temporary resource draw across opponents.
+Thassa's Oracle,1,1,0,KEEP,KEEP — existing compact cEDH finish now properly paired with Consultation/Pact.
+Thief of Sanity,1,0,1,CUT,CUT — fragile combat-damage theft is too slow; Tainted Pact completes the existing Oracle finish and doubles as flexible instant-speed selection.
+Thieving Varmint,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Toxic Deluge,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Training Center,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Undercity Sewers,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Underground Sea,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Underworld Breach,1,1,0,KEEP,KEEP — existing Breach/LED/Brain Freeze compact win engine.
+Vampiric Tutor,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Verdant Catacombs,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Volcanic Island,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Watery Grave,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Wild-Magic Sorcerer,1,1,0,KEEP,"KEEP — first spell cast from exile gains cascade, directly rewarding Jester’s core play pattern."
+Wooded Foothills,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."
+Xander's Lounge,1,1,0,KEEP,"KEEP — retained after commander-first exile-theft, cEDH-ceiling, interaction, curve and mana audit."

@@ -1,0 +1,12 @@
+{
+  "deck_id": "The_Madcap_Jester",
+  "display_name": "The Madcap Jester",
+  "decklist_path": "refinement/decklists/The_Madcap_Jester_Approval_Ready_2026-10-15.txt",
+  "expected_deck_sha256": "caeffc07503581cd3ecba798ebc4e09d48f07310f1f117ce3b90a04b5ca6bfa7",
+  "baseline_source_sha256": "5099da7f98248d0cf29b917e854734ca94b30f0217f1f31ad21ef323381508d5",
+  "output_dir": "refinement/verification/the_madcap_jester_2026-10-15/gate_output",
+  "output_stem": "The_Madcap_Jester_2026-10-15",
+  "rules_attestation_path": "refinement/verification/the_madcap_jester_2026-10-15/gate_output/The_Madcap_Jester_Rules_Attestation.json",
+  "official_legality_attestation_path": "refinement/verification/the_madcap_jester_2026-10-15/gate_output/The_Madcap_Jester_Official_Legality_Attestation.json",
+  "max_cache_age_hours": 72
+}

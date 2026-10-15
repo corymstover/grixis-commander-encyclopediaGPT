@@ -1,0 +1,34 @@
+{
+  "generated_at_utc": "2026-10-15T23:26:47.513432+00:00",
+  "deck_id": "The_Madcap_Jester",
+  "decklist_path": "refinement/decklists/The_Madcap_Jester_Approval_Ready_2026-10-15.txt",
+  "deck_sha256": "caeffc07503581cd3ecba798ebc4e09d48f07310f1f117ce3b90a04b5ca6bfa7",
+  "baseline_path": null,
+  "baseline_source_sha256": "5099da7f98248d0cf29b917e854734ca94b30f0217f1f31ad21ef323381508d5",
+  "count": 100,
+  "distinct_names": 100,
+  "commander_color_identity": [
+    "B",
+    "R",
+    "U"
+  ],
+  "cache_generated_at_utc": "2026-10-15T23:26:42.025515+00:00",
+  "cache_sha256": "8adf97db2ad5a750abf7d601979aa5391e308a40e7b9821e90050c33138455e0",
+  "project_exceptions": [
+    {
+      "card": "The Madcap Jester",
+      "official_status": "not_legal",
+      "type": "future-release commander"
+    },
+    {
+      "card": "Dragon's Smile",
+      "official_status": "not_legal",
+      "type": "future-release or project card"
+    }
+  ],
+  "rules_gate": "PASS",
+  "official_legality_gate": "PASS",
+  "errors": [],
+  "overall_result": "APPROVAL_READY",
+  "approval_state": "NOT_APPROVED — explicit user approval still required"
+}

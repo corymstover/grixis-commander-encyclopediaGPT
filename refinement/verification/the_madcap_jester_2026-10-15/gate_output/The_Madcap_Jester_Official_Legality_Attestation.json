@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "deck_sha256": "caeffc07503581cd3ecba798ebc4e09d48f07310f1f117ce3b90a04b5ca6bfa7",
+  "checked_at_utc": "2026-10-15T23:26:47.455539+00:00",
+  "sources": [
+    "Current_Cycle_Oracle_Cache.jsonl refreshed from current Scryfall metadata",
+    "Wizards — What’s Inside Mystery Booster Commander Edition? (updated legality date: new-to-Magic MBC cards legal in Commander 2026-11-13)",
+    "Current official Commander legality checkpoint"
+  ],
+  "unexpected_banned_cards": [],
+  "project_exceptions_required": [
+    {
+      "card": "The Madcap Jester",
+      "type": "future-release commander",
+      "official_status_on_2026-10-15": "not yet Commander-legal; effective 2026-11-13"
+    },
+    {
+      "card": "Dragon's Smile",
+      "type": "future-release or project card",
+      "official_status_on_2026-10-15": "not yet Commander-legal; effective 2026-11-13"
+    }
+  ],
+  "finding": "All 98 ordinary candidate cards resolve as currently Commander-legal. The Madcap Jester and Dragon’s Smile remain project-valid future-release exceptions only and are not represented as officially Commander-legal on 2026-10-15."
+}
