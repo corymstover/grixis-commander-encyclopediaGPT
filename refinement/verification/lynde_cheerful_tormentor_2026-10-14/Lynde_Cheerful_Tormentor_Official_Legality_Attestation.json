@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "deck_sha256": "05d1c4eea023d25e4308f78b109e80b78e0a3f4d655c3df36743ba3afbf04166",
+  "checked_at_utc": "2026-10-15T02:57:56Z",
+  "sources": [
+    "Wizards of the Coast current Commander Banned & Restricted list, checked 2026-10-14",
+    "Wizards Banned and Restricted Announcement — 2026-10-12; those changes are Competitive Brawl-specific and do not alter paper Commander legality",
+    "Current Oracle/legality data for Curse of Shaken Faith, Curse of Hospitality, Curse of Echoes, Curse of Vengeance, Despotic Scepter, Perilous Research, The Ninth Doctor, Badlands, City of Brass, Mana Confluence, Marsh Flats, Flooded Strand, Misty Rainforest, and Volcanic Island",
+    "Current-cycle Oracle/Scryfall legality cache; exact candidate is independently revalidated by the complete approval gate"
+  ],
+  "unexpected_banned_cards": [],
+  "project_exceptions": [],
+  "notes": "The exact SHA-bound Lynde candidate requires no project-specific legality exception. No unreleased Mystery Booster Commander Edition card is included. Final per-card Commander legality, exact Oracle resolution, singleton structure, and U/B/R color identity remain fail-closed in the complete approval gate before APPROVAL_READY."
+}
