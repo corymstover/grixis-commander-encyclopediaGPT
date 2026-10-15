@@ -701,6 +701,22 @@
       "decision_closeout_artifact": "refinement/decisions/Sauron_the_Dark_Lord_Candidate_Decisions_2026-10-15.md",
       "approval_record_artifact": "refinement/approvals/Sauron_the_Dark_Lord_Approved_2026-10-15.md",
       "approved_list_artifact": "refinement/decklists/Sauron_the_Dark_Lord_Approved_2026-10-15.txt"
+    },
+    "Sedris__the_Traitor_King": {
+      "approval_status": "APPROVED",
+      "lock_status": "LOCKED",
+      "final_gate_passed": true,
+      "user_approval_date": "2026-10-15",
+      "current_stage": "LOCKED",
+      "approved_list_sha256": "65fbfe3eb64551ad6f5723243fcd62a286610c360e24bd700b584252e1da6365",
+      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + targeted approval-ready verification",
+      "approval_basis": "Explicit user approval of the exact SHA-bound Sedris, the Traitor King approval-ready candidate after authoritative FINAL baseline reconciliation, mandatory 99-slot whole-list audit, commander-first unearth/reanimator review, candidate exhaustion, adversarial red-team review, graveyard-resource and mana-base review, targeted current Oracle refresh, rules-interaction verification, current official Commander legality verification, exact structural verification, singleton verification, and U/B/R color-identity verification.",
+      "whole_list_audit_artifact": "refinement/verification/Sedris_the_Traitor_King_Whole_List_Audit_2026-10-15.md",
+      "verification_artifact": "refinement/verification/Sedris_the_Traitor_King_Approval_Ready_Verification_2026-10-15.md",
+      "complete_gate_artifact": "refinement/verification/sedris_2026-10-15/gate_output/Sedris_the_Traitor_King_2026-10-15_Complete_Gate.json",
+      "decision_closeout_artifact": "refinement/decisions/Sedris_the_Traitor_King_Candidate_Decisions_2026-10-15.md",
+      "approval_record_artifact": "refinement/approvals/Sedris_the_Traitor_King_Approved_2026-10-15.md",
+      "approved_list_artifact": "refinement/decklists/Sedris_the_Traitor_King_Approved_2026-10-15.txt"
     }
   }
 }
