@@ -1,0 +1,15 @@
+{
+  "deck_id": "Lord_of_Tresserhorn",
+  "display_name": "Lord of Tresserhorn",
+  "decklist_path": "refinement/decklists/Lord_of_Tresserhorn_Approval_Candidate_2026-10-14.txt",
+  "expected_deck_sha256": "95863276f38beff6b0cf7609041006a6f1de94d5e62c73d76551d6793ffa5b8e",
+  "baseline_path": "refinement/verification/lord_of_tresserhorn_2026-10-14/Lord_of_Tresserhorn_Current_Cycle_Baseline_2026-10-14.txt",
+  "expected_baseline_sha256": "55fd1bdb746ad9604e9a23031d080d30b708e99716a96527f1a3c3769c16942a",
+  "baseline_source_sha256": "eec34e6514206af7c0ea5f6b4cec1e7ec0098a8a4c6f47d96c6fb6dae5f6009e",
+  "rules_attestation_path": "refinement/verification/lord_of_tresserhorn_2026-10-14/Lord_of_Tresserhorn_Rules_Attestation.json",
+  "official_legality_attestation_path": "refinement/verification/lord_of_tresserhorn_2026-10-14/Lord_of_Tresserhorn_Official_Legality_Attestation.json",
+  "output_dir": "refinement/verification/lord_of_tresserhorn_2026-10-14/gate_output",
+  "output_stem": "Lord_of_Tresserhorn_2026-10-14",
+  "max_cache_age_hours": 72,
+  "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + Complete Approval Gate v1"
+}
