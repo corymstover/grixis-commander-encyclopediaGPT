@@ -470,6 +470,21 @@
       "decision_closeout_artifact": "refinement/decisions/Marchesa_the_Black_Rose_Current_Cycle_Decisions_2026-10-15.md",
       "approval_record_artifact": "refinement/approvals/Marchesa_the_Black_Rose_Approved_2026-10-15.md",
       "approved_list_artifact": "refinement/decklists/Marchesa_the_Black_Rose_Approved_2026-10-15.txt"
+    },
+    "Mishra__Artificer_Prodigy": {
+      "approval_status": "APPROVED",
+      "lock_status": "LOCKED",
+      "final_gate_passed": true,
+      "user_approval_date": "2026-10-15",
+      "current_stage": "LOCKED",
+      "approved_list_sha256": "9210aefa423dbe9cc69d18422c0d594cad6e5d0ee475d687b9f2278a2ca3b79d",
+      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + approval-ready verification",
+      "approval_basis": "Explicit user approval of the exact SHA-bound Mishra, Artificer Prodigy approval candidate after authoritative FINAL baseline reconciliation, mandatory 99-slot whole-list audit, candidate exhaustion, commander-identity review, adversarial rules/combo red-team, mana-base red-team, zero-new-material-improvement closure, exact structural verification, current Oracle/rules verification, singleton/color-identity verification, and current official Commander legality checkpoint.",
+      "whole_list_audit_artifact": "refinement/decisions/Mishra_Artificer_Prodigy_Whole_List_Audit_2026-10-15.csv",
+      "verification_artifact": "refinement/verification/Mishra_Artificer_Prodigy_Approval_Ready_Verification_2026-10-15.md",
+      "decision_closeout_artifact": "refinement/decisions/Mishra_Artificer_Prodigy_Current_Cycle_Decisions_2026-10-15.md",
+      "approval_record_artifact": "refinement/approvals/Mishra_Artificer_Prodigy_Approved_2026-10-15.md",
+      "approved_list_artifact": "refinement/decklists/Mishra_Artificer_Prodigy_Approved_2026-10-15.txt"
     }
   }
 }
