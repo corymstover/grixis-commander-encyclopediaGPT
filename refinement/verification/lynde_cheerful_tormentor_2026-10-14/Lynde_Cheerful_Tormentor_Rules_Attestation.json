@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "deck_sha256": "05d1c4eea023d25e4308f78b109e80b78e0a3f4d655c3df36743ba3afbf04166",
+  "checked_at_utc": "2026-10-15T02:57:56Z",
+  "sources": [
+    "Current Oracle text and rulings for Lynde, Cheerful Tormentor, Curse of Misfortunes, Obeka, Splitter of Seconds, The Ninth Doctor, Despotic Scepter, Perilous Research, Curse of Bloodletting, Curse of Shaken Faith, Curse of Echoes, Curse of Hospitality, and Curse of Vengeance",
+    "Magic Comprehensive Rules — leaves-the-battlefield triggers, delayed triggered abilities, Aura attachment, ownership/control, beginning phases, extra upkeep steps, damage modification, and triggered-ability ordering",
+    "Fresh current-cycle Oracle cache and exact-list verification are independently enforced by the complete approval gate"
+  ],
+  "interactions": [
+    {
+      "name": "Lynde trigger condition and delayed return",
+      "status": "PASS",
+      "conclusion": "Lynde triggers when a permanent that is a Curse is put into your graveyard from the battlefield. A Curse discarded or milled from another zone does not satisfy that condition. Each qualifying battlefield-to-graveyard event creates a delayed return at the beginning of the next end step; the returned Curse enters attached to you."
+    },
+    {
+      "name": "Despotic Scepter as Curse reset engine",
+      "status": "PASS",
+      "conclusion": "Despotic Scepter can target a Curse you own even while that Aura is attached to an opponent because ownership does not change merely because an Aura enchants another player. Destroying that Curse normally puts it into your graveyard, which triggers Lynde. Scepter is tap-limited but requires no mana to activate after it is on the battlefield."
+    },
+    {
+      "name": "Claws of Gix, Braids, Demon of Fate's Design, and Perilous Research",
+      "status": "PASS",
+      "conclusion": "Each retained sacrifice effect can put a Curse you control from the battlefield into your graveyard and therefore enable Lynde when its own requirements are satisfied. Perilous Research draws two cards first and then sacrifices a permanent as it resolves; the Lynde trigger is put on the stack after the spell finishes resolving."
+    },
+    {
+      "name": "Lynde upkeep redeployment",
+      "status": "PASS",
+      "conclusion": "At the beginning of your upkeep Lynde may attach one Curse currently attached to you to one opponent and, if the move is made, you draw two cards. Lynde's Oracle text does not target the opponent, so hexproof does not stop that attachment."
+    },
+    {
+      "name": "Curse of Misfortunes plus Lynde on self",
+      "status": "PASS",
+      "conclusion": "If Curse of Misfortunes is attached to you, its upkeep trigger and Lynde's upkeep trigger are controlled by you and can be ordered. Resolving Misfortunes first can put a Curse from the library onto the battlefield attached to you; Lynde's already-triggered ability can then move a Curse attached to you when it resolves. A Curse entering during that upkeep does not retroactively trigger any of its own beginning-of-upkeep abilities for that same upkeep."
+    },
+    {
+      "name": "Paradox Haze and The Ninth Doctor",
+      "status": "PASS",
+      "conclusion": "An additional upkeep step causes beginning-of-upkeep abilities, including Lynde and Curse of Misfortunes, to trigger again. The Ninth Doctor triggers when it becomes untapped during your untap step and creates an additional upkeep after the current upkeep step, provided its trigger resolves."
+    },
+    {
+      "name": "Obeka, Splitter of Seconds",
+      "status": "PASS",
+      "conclusion": "When Obeka deals combat damage to a player, its controller gets that many additional upkeep steps after the combat phase. Each additional upkeep triggers Lynde and other beginning-of-upkeep abilities. The additional beginning phases contain the upkeep step but skip untap and draw."
+    },
+    {
+      "name": "Curse of Bloodletting plus Obeka",
+      "status": "PASS",
+      "conclusion": "Curse of Bloodletting doubles damage that would be dealt to its enchanted player. If Obeka deals combat damage to that player, Obeka's trigger uses the amount of combat damage actually dealt, so the damage-doubling replacement effect can increase the number of additional upkeep steps created."
+    },
+    {
+      "name": "Curse of Echoes and spell copies",
+      "status": "PASS",
+      "conclusion": "Curse of Echoes creates copies of the enchanted player's instant or sorcery spell for other players; those copies are not cast. This is relevant when evaluating cast-trigger interactions and means the copies themselves do not create cast triggers."
+    },
+    {
+      "name": "Curse of Vengeance and opponent departure",
+      "status": "PASS",
+      "conclusion": "Curse of Vengeance is a one-mana Aura Curse that accumulates spite counters as the enchanted player casts spells. Independently, Lynde's published ruling confirms that when a player enchanted by one of your Curses leaves the game, that Curse is put into your graveyard and can trigger Lynde."
+    },
+    {
+      "name": "Color identity and commander structure",
+      "status": "PASS",
+      "conclusion": "Lynde establishes a blue-black-red commander color identity. The candidate uses only cards whose color identities are within U/B/R or colorless; the complete approval gate independently resolves exact current Oracle identities for every card."
+    }
+  ]
+}
