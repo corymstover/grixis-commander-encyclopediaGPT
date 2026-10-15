@@ -1,0 +1,15 @@
+{
+  "deck_id": "Lynde__Cheerful_Tormentor",
+  "display_name": "Lynde, Cheerful Tormentor",
+  "decklist_path": "refinement/decklists/Lynde_Cheerful_Tormentor_Approval_Candidate_2026-10-14.txt",
+  "expected_deck_sha256": "05d1c4eea023d25e4308f78b109e80b78e0a3f4d655c3df36743ba3afbf04166",
+  "baseline_path": "refinement/verification/lynde_cheerful_tormentor_2026-10-14/Lynde_Cheerful_Tormentor_Current_Cycle_Baseline_2026-10-14.txt",
+  "expected_baseline_sha256": "aa021e7915d1a2f7cfb27c14bb4c47b4788b83a67b6f4e31dbf715f869fc88ef",
+  "baseline_source_sha256": "e72576fbc94bac2be7a043335397f958fa56e481908de53edbb23b5c1379a925",
+  "rules_attestation_path": "refinement/verification/lynde_cheerful_tormentor_2026-10-14/Lynde_Cheerful_Tormentor_Rules_Attestation.json",
+  "official_legality_attestation_path": "refinement/verification/lynde_cheerful_tormentor_2026-10-14/Lynde_Cheerful_Tormentor_Official_Legality_Attestation.json",
+  "output_dir": "refinement/verification/lynde_cheerful_tormentor_2026-10-14/gate_output",
+  "output_stem": "Lynde_Cheerful_Tormentor_2026-10-14",
+  "max_cache_age_hours": 72,
+  "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + Complete Approval Gate v1"
+}
