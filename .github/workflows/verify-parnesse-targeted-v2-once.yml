@@ -6,6 +6,7 @@ on:
     paths:
       - ".github/workflows/verify-parnesse-targeted-v2-once.yml"
 
+# Retry after fixing complete candidate cache coverage.
 permissions:
   contents: write
 
