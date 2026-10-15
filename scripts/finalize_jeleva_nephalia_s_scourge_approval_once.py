@@ -155,3 +155,7 @@ exec(Path("scripts/finalize_mairsil_pretender_approval_once.py").read_text(encod
 # Apply the next explicit approval transaction through the same already-
 # authorized write-enabled path without changing workflow permissions.
 exec(Path("scripts/finalize_marchesa_dealer_of_death_approval_once.py").read_text(encoding="utf-8"), {"__name__": "__main__"})
+
+# Apply the next explicit approval transaction through the same already-
+# authorized write-enabled path without changing workflow permissions.
+exec(Path("scripts/finalize_marchesa_the_black_rose_approval_once.py").read_text(encoding="utf-8"), {"__name__": "__main__"})
