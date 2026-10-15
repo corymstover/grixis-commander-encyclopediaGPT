@@ -8,7 +8,7 @@ Status: **APPROVAL_READY — NOT APPROVED / NOT LOCKED**
 
 ## 1. Current-state recovery
 
-Authoritative current-cycle repository state contains **44 APPROVED / LOCKED decks** through Obeka, Brute Chronologist. The tracker identifies **Obeka, Splitter of Seconds** as the next unlocked deck (tracker index 44 / deck 45 of 62).
+Authoritative current-cycle repository state contains **44 APPROVED / LOCKED decks** through Obeka, Brute Chronologist. The reconciled tracker identifies **Obeka, Splitter of Seconds** as the next unlocked deck (tracker index 44 / deck 45 of 62).
 
 No previously locked deck was modified during this refinement.
 
@@ -44,7 +44,7 @@ Official release-note rules establish that each added upkeep is contained in an 
 
 Final architecture: **connect Obeka -> multiply actual combat damage / trigger instances -> convert added upkeeps into monarch, token, card, counter, drain, suspend, and artifact value -> leverage Time Sieve where artifact production supports repeated turns.**
 
-Historical full-project reranking placed Obeka, Splitter of Seconds at approximately **685.66, Bracket 4 — Optimized**, with no usable tournament sample and very high commander-synergy/cohesion. Current optimized community evidence remains centered on Extra Upkeeps / Voltron / Extra Turns / Monarch rather than a stable cEDH shell.
+Historical full-project reranking placed Obeka, Splitter of Seconds at approximately **685.66, Bracket 4 — Optimized**, with no usable tournament sample supporting a cEDH classification. Current optimized community evidence remains centered on Extra Upkeeps / Voltron / Extra Turns / Monarch rather than a stable cEDH shell.
 
 Natural ceiling: **Power Bracket 4 — Optimized**.
 
@@ -95,10 +95,13 @@ Result: **PASS**.
 PASS. Additional upkeeps become additional beginning phases after combat; untap and draw are skipped; upkeep triggers still trigger.
 
 ### Roaming Throne / Wizard's Staff
-PASS. Choose Ogre or Warlock for Roaming Throne. Both Throne and Staff cause Obeka's triggered ability to trigger one additional time. With both present, the original trigger plus one additional trigger from each effect yields three total trigger instances for one combat-damage event. Wizard's Staff uses normal equip `{3}` because Obeka is a Warlock, not a Wizard.
+PASS. Choose Ogre or Warlock for Roaming Throne. Both Throne and Staff cause Obeka's triggered ability to trigger one additional time. With both present, the original trigger plus one additional trigger from each effect yields **three total trigger instances** for one combat-damage event. Wizard's Staff uses normal equip `{3}` because Obeka is a Warlock, not a Wizard.
+
+### Combat Research interaction
+PASS. Combat Research grants its combat-damage draw ability to Obeka. That means the draw trigger is a triggered ability of the equipped/enchanted Obeka and can itself be caused to trigger an additional time by Wizard's Staff and a correctly typed Roaming Throne. Combat Research also gives legendary Obeka +1/+1 and ward `{1}`.
 
 ### Mjölnir
-PASS. Obeka is legendary, red, and not a Villain, so she is worthy. Equip worthy `{1}` is legal. Mjölnir doubles the damage the equipped creature would deal; Obeka therefore sees the modified combat-damage amount when determining additional upkeeps.
+PASS. Obeka is legendary, red among her colors, and not a Villain, so she is worthy. Equip worthy `{1}` is legal. Mjölnir doubles the damage the equipped creature would deal; Obeka therefore sees the modified combat-damage amount when determining additional upkeeps.
 
 ### Dragonfire Blade
 PASS. Obeka is three colors, so the equip `{4}` activation costs `{1}` when targeting her. +2/+2 turns her base 2 power into 4 and hexproof from monocolored improves protection.
@@ -112,10 +115,19 @@ PASS. If Obeka deals combat damage in both first-strike and normal combat-damage
 ### Palace Siege
 PASS. Dragons mode triggers at every controller upkeep: each opponent loses 2 life and the controller gains 2 life. Every Obeka-created upkeep generates another trigger.
 
-### Ginger / Time Sieve / Thopter Spy Network
-PASS with resource qualification. Ginger creates a Gingerbrute artifact token at each upkeep while its controller is monarch. Thopter Spy Network creates a Thopter artifact creature at each controller upkeep if an artifact is controlled. Time Sieve requires tapping and sacrificing five artifacts for an extra turn.
+### Ginger
+PASS. Ginger, Queen of Sweets creates a Gingerbrute token at the beginning of **each upkeep** if its controller is the monarch. Obeka-created upkeeps therefore generate artifact creatures for Time Sieve as long as monarch is retained.
 
-A repeatable-turn engine is valid when Obeka can continue connecting for enough damage and artifact production can replace the five sacrificed artifacts. With a 4-damage Obeka connection, Network or Ginger can make four artifacts during the postcombat extra upkeeps; the normal upkeep of the next extra turn can supply a fifth. The first activation still requires sufficient seed artifacts unless at least five postcombat upkeep triggers are generated. No unconditional resource-free three-card infinite is claimed.
+### Time Sieve / Thopter Spy Network — corrected accounting
+PASS with established-board qualification. Thopter Spy Network triggers at the beginning of each controller upkeep if an artifact is controlled. **Time Sieve itself is an artifact**, so if Time Sieve and Network are already on the battlefield as the normal upkeep begins, Sieve satisfies Network's intervening-if clause and the normal upkeep produces the first Thopter.
+
+If Obeka then connects for at least **4 combat damage**, she creates four additional postcombat upkeeps and Network makes four more Thopters. That turn has generated **five expendable Thopters**: one in the normal upkeep plus four in the added upkeeps. Time Sieve can tap and sacrifice those five Thopters to take an extra turn while Sieve remains on the battlefield.
+
+On that extra turn, the same established board repeats: one Thopter in the normal upkeep plus four after a 4-damage Obeka connection replenishes the five artifacts required for the next Sieve activation. Thus the established board supports repeatable extra turns while Obeka continues connecting for at least 4 damage and the permanents remain intact.
+
+If Network or Sieve enters after the normal upkeep, if Obeka produces fewer than four added upkeeps, or if the board is otherwise disrupted, additional artifact material is required. No claim is made that the pieces generate repeatable turns from every starting board state.
+
+Ginger can supply the same five-token cadence if Ginger, Sieve, and monarch are established before the normal upkeep: one Gingerbrute in the normal upkeep plus four from a 4-damage Obeka hit.
 
 ### Arena of Glory
 PASS. It can enter untapped when a Mountain is controlled. Its exert ability produces `{R}{R}` after paying `{R}`; if any of that generated mana is spent on Obeka's creature spell, Obeka gains haste until end of turn.
@@ -130,6 +142,10 @@ The final pass challenged:
 - Hall of Echoes
 - Aether Tunnel
 - Rilsa Rael, Kingpin
+- Darksteel Reactor
+- Tamiyo's Journal
+- Robe of the Archmagi
+- Blackblade Reforged
 - Sphinx of the Second Sun
 - The Ninth Doctor
 - Braid of Fire
@@ -140,9 +156,13 @@ The final pass challenged:
 - all seven proposed strategic swaps
 - all 35 final lands
 
-Wizard's Staff materially beat the first working candidate's Strionic Resonator slot and was incorporated before final binding. After that correction, no challenger produced a material improvement without a larger cost in mana, redundancy, colored consistency, commander necessity, or natural-ceiling identity.
+Wizard's Staff materially beat the first working candidate's Strionic Resonator slot and was incorporated before final binding.
 
-**ZERO NEW MATERIAL IMPROVEMENTS.**
+The later challenger pass confirmed that Darksteel Reactor, Tamiyo's Journal, Robe of the Archmagi, Blackblade Reforged, and Rilsa Rael are legitimate high-synergy alternatives but do not produce a material net improvement over the finalized slots once mana cost, curve, immediate impact, damage multiplication, commander necessity, and existing redundancy are considered.
+
+The Time Sieve recheck produced one **documentation correction only**: on an established Network + Sieve board, Time Sieve itself satisfies Network's artifact condition during the normal upkeep, so a 4-damage Obeka hit supplies the other four Thopters and no separate expendable seed artifact is needed. The 100-card candidate did not change.
+
+**ZERO NEW MATERIAL IMPROVEMENTS — RECONFIRMED.**
 
 Result: **PASS**.
 
@@ -156,6 +176,8 @@ Approval-ready candidate:
 - Commander first: **PASS**
 - Singleton compliance: **PASS**
 - Color identity: **U/B/R — PASS**
+
+The exact candidate bytes were independently re-hashed during the final challenger pass.
 
 Candidate SHA-256: `9846e43dbe74fe49a9d356e944dc0a05d7dee30015e0d36e667fdbd01cb1ee75`
 
@@ -178,6 +200,7 @@ Result: **PASS**.
 - 99/99 whole-list audit: PASS
 - candidate exhaustion: PASS
 - Oracle/rules interaction review: PASS
+- corrected Time Sieve/Network accounting: PASS
 - mana/curve red-team: PASS
 - exact 100-card structure: PASS
 - singleton: PASS
