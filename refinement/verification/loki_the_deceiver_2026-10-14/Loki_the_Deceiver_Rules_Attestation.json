@@ -1,0 +1,65 @@
+{
+  "status": "PASS",
+  "deck_sha256": "5079291c08c5af212b3d90d63ac5b01849d45c7700b1d64100ef57fb13458062",
+  "checked_at_utc": "2026-10-15T01:30:00Z",
+  "sources": [
+    "Wizards of the Coast — Magic: The Gathering | Marvel Super Heroes Release Notes: Loki, the Deceiver and Red Ghost, Intangible Genius",
+    "Wizards of the Coast — Commander Masters Release Notes: Titan of Littjara",
+    "Wizards of the Coast — Reality Fracture Release Notes: Hall of Echoes",
+    "Current Oracle text for The Master, Multiplied; Sundial of the Infinite; Roaming Throne; Doctor Octopus, Master Planner; Loki's Scepter; Ultron, Unlimited; Killmonger, Ruthless Usurper; and other candidate interaction pieces",
+    "Magic Comprehensive Rules — attacking creatures, creatures put onto the battlefield attacking, copying objects, legend rule, summoning sickness, triggered abilities, delayed triggered abilities, and continuous effects",
+    "Fresh current-cycle Oracle cache and exact-list card verification are independently enforced by the complete approval gate"
+  ],
+  "interactions": [
+    {
+      "name": "Loki attack token and enters-attacking timing",
+      "status": "PASS",
+      "conclusion": "Loki's attack trigger creates the copy token tapped and attacking. That token was not declared as an attacker, so an ability of the copied creature that triggers specifically when that creature attacks does not trigger from entering this way. Enters-the-battlefield abilities, as-enters choices, static abilities, and later combat-damage triggers function normally."
+    },
+    {
+      "name": "Loki plus Titan of Littjara",
+      "status": "PASS",
+      "conclusion": "Titan of Littjara chooses a creature type as it enters and becomes that type in addition to its other types. A normally cast Titan may choose Villain and is then a legal Loki copy target. A Loki token entering as a copy of Titan also makes Titan's as-enters creature-type choice and triggers Titan's enters ability; choosing Villain lets that token count the other Villains for the draw-then-discard effect."
+    },
+    {
+      "name": "Loki plus Red Ghost, Intangible Genius",
+      "status": "PASS",
+      "conclusion": "Red Ghost is natively a Villain and cannot be blocked, making it a reliable contributor to Loki's combat-damage draw trigger. Its second-card trigger creates a 3/3 red Ape Villain token with haste. Loki's combat-damage draw can be the second card drawn in a turn and can therefore trigger Red Ghost after combat damage is dealt."
+    },
+    {
+      "name": "Hall of Echoes copying Loki before combat",
+      "status": "PASS",
+      "conclusion": "Hall of Echoes may become a copy of Loki until end of turn and its same resolving ability makes the legend rule not apply to permanents we control that turn, so the original Loki and Hall-Loki can coexist. If Hall has been under our control continuously since the beginning of our most recent turn, becoming a creature does not newly impose summoning sickness and it may attack. Declaring both Lokis as attackers produces one Loki attack trigger from each. Hall is not entering the battlefield when it becomes a copy, so Loki has no enters ability to trigger and Hall would not gain any copied creature's enters event merely by changing copiable values."
+    },
+    {
+      "name": "The Master, Multiplied and Loki's delayed sacrifice",
+      "status": "PASS",
+      "conclusion": "The Master, Multiplied prevents triggered abilities we control from causing us to sacrifice or exile creature tokens we control. Loki's instruction to sacrifice the created token at the beginning of the next end step is a delayed triggered ability we control, so while The Master applies, that sacrifice cannot occur and the copied Villain token remains."
+    },
+    {
+      "name": "Sundial of the Infinite and Loki's delayed sacrifice",
+      "status": "PASS",
+      "conclusion": "To preserve a Loki token with Sundial, allow the beginning-of-next-end-step sacrifice trigger to trigger and go on the stack, then activate Sundial. Ending the turn exiles that trigger from the stack; because that specific delayed trigger has already triggered, it does not trigger again on a later end step. Activating Sundial before the end step would not accomplish the same result."
+    },
+    {
+      "name": "Roaming Throne choosing Villain",
+      "status": "PASS",
+      "conclusion": "With Villain chosen, Roaming Throne causes triggered abilities of other Villains we control to trigger an additional time. If Throne is already on the battlefield when Loki attacks, Loki's attack ability triggers an additional time. A Throne token created by Loki enters after the original Loki attack trigger has already triggered, so it cannot retroactively double that initiating trigger, though it can affect qualifying triggered abilities that trigger later in combat."
+    },
+    {
+      "name": "Doctor Octopus copy token during combat and end step",
+      "status": "PASS",
+      "conclusion": "A Loki token copying Doctor Octopus immediately supplies Doctor Octopus's static Villain anthem during the remainder of combat. At the beginning of the end step, Doctor Octopus's qualifying end-step draw trigger and Loki's delayed sacrifice trigger are controlled by the same player; that player may order simultaneous triggers so the draw ability resolves before the token is sacrificed."
+    },
+    {
+      "name": "Loki's Scepter temporary Villain type and Loki copying",
+      "status": "PASS",
+      "conclusion": "Loki's Scepter can temporarily make a stolen creature a Villain, which can make that creature a legal target for Loki's attack trigger while the type-changing effect lasts. Loki's created token copies the source creature's copiable values rather than the Scepter's temporary type-changing effect, so a source that was not natively a Villain does not automatically make a Villain token merely because the source was temporarily a Villain."
+    },
+    {
+      "name": "Attack-trigger copy-target red-team",
+      "status": "PASS",
+      "conclusion": "Ultron, Unlimited; Killmonger, Ruthless Usurper; Vulture, Scheming Scavenger; Puppet Master, String Puller; and similar attack-trigger cards are not credited with a new attack trigger when a Loki copy of them enters tapped and attacking. They may still be useful for their other text, but candidate evaluation does not falsely count those attack triggers."
+    }
+  ]
+}
