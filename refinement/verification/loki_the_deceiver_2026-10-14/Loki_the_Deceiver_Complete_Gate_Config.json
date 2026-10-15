@@ -1,0 +1,15 @@
+{
+  "deck_id": "Loki__the_Deceiver",
+  "display_name": "Loki, the Deceiver",
+  "decklist_path": "refinement/decklists/Loki_the_Deceiver_Approval_Candidate_2026-10-14.txt",
+  "expected_deck_sha256": "5079291c08c5af212b3d90d63ac5b01849d45c7700b1d64100ef57fb13458062",
+  "baseline_path": "refinement/verification/loki_the_deceiver_2026-10-14/Loki_the_Deceiver_Current_Cycle_Baseline_2026-10-14.txt",
+  "expected_baseline_sha256": "fc260af83f9da4d5f0460f2e88b1cd8103f777c92366532a2800bfda149bc223",
+  "baseline_source_sha256": "21fbcd51f4798153c6d4cee4b63d9679589d943d75253273769a686199abf3f7",
+  "rules_attestation_path": "refinement/verification/loki_the_deceiver_2026-10-14/Loki_the_Deceiver_Rules_Attestation.json",
+  "official_legality_attestation_path": "refinement/verification/loki_the_deceiver_2026-10-14/Loki_the_Deceiver_Official_Legality_Attestation.json",
+  "output_dir": "refinement/verification/loki_the_deceiver_2026-10-14/gate_output",
+  "output_stem": "Loki_the_Deceiver_2026-10-14",
+  "max_cache_age_hours": 72,
+  "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + Complete Approval Gate v1"
+}
