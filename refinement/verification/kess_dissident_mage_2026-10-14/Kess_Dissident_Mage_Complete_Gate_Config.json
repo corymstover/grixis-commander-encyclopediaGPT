@@ -4,7 +4,7 @@
   "decklist_path": "refinement/decklists/Kess_Dissident_Mage_Approval_Candidate_2026-10-14.txt",
   "expected_deck_sha256": "93d27d605bbdf0737ebe32c911fafe3a002b06d7d90f00b7bfc402cb1d3faccb",
   "baseline_path": "refinement/decklists/Kess_Dissident_Mage_Current_Cycle_Baseline_2026-10-14.txt",
-  "expected_baseline_sha256": "49dd9a466452c2be53fa4143b0398276021c0bec22c5a9f9f5ce97a22ad5f7da",
+  "expected_baseline_sha256": "a36c08b80e153c5a0708f9031f81d2cc30d26674c5b8efc510319344926514b2",
   "baseline_source_sha256": "b6d42012e6c7c3f9d5143d7cdb3e3608e611ae56247f2b00d13f6e87549440c7",
   "rules_attestation_path": "refinement/verification/kess_dissident_mage_2026-10-14/Kess_Dissident_Mage_Rules_Attestation.json",
   "official_legality_attestation_path": "refinement/verification/kess_dissident_mage_2026-10-14/Kess_Dissident_Mage_Official_Legality_Attestation.json",
