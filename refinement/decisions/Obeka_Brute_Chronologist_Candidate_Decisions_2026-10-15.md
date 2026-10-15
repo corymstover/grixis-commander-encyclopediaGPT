@@ -3,7 +3,7 @@
 Date: 2026-10-15  
 Cycle: `global-restart-2026-10-13`  
 Deck: #44 of 62  
-Status: working decision closeout; not user approval
+Status: **APPROVED / LOCKED** — explicit user approval received 2026-10-15
 
 Exact candidate SHA-256: `31b6ff7f23effa78512c2a409a21440bccf457e6faece51d8db38b74102169a8`
 
@@ -154,3 +154,12 @@ No challenger produced a material improvement without a larger cost in commander
 **ZERO NEW MATERIAL IMPROVEMENTS.**
 
 **Decision closeout: PASS — candidate is APPROVAL_READY evidence only, not approved/locked.**
+
+## Approval closeout
+
+- Explicit user approval received: **2026-10-15**
+- Canonical approved SHA-256: `31b6ff7f23effa78512c2a409a21440bccf457e6faece51d8db38b74102169a8`
+- Exact approved artifact: `refinement/decklists/Obeka_Brute_Chronologist_Approved_2026-10-15.txt`
+- Current-cycle state: **APPROVED / LOCKED**
+- Quality gate: **Deck Quality Gates v3 + mandatory whole-list audit + approval-ready verification**
+- Next unlocked deck in tracker order: **Obeka, Splitter of Seconds (index 44 / deck 45 of 62)**.
