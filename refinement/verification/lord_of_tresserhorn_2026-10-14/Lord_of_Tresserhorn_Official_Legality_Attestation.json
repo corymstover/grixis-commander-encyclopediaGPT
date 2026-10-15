@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "deck_sha256": "95863276f38beff6b0cf7609041006a6f1de94d5e62c73d76551d6793ffa5b8e",
+  "checked_at_utc": "2026-10-15T02:00:00Z",
+  "sources": [
+    "Wizards of the Coast current Banned & Restricted list — Commander section, checked 2026-10-14",
+    "Wizards Commander Banned and Restricted Announcement — 2026-02-09",
+    "Wizards Banned and Restricted Announcement — 2026-10-12; changes in that announcement were Competitive Brawl-specific and did not alter paper Commander legality",
+    "Wizards Reality Fracture Release Notes — FRA cards, including Karn, Argent Defender, are Commander-permitted",
+    "Current-cycle Oracle/Scryfall legality cache; exact candidate is independently revalidated by the complete approval gate"
+  ],
+  "unexpected_banned_cards": [],
+  "project_exceptions": [],
+  "notes": "The exact SHA-bound Lord of Tresserhorn candidate requires no project-specific legality exception. Lord of Tresserhorn and all candidate cards are expected to be officially Commander-legal. Karn, Argent Defender is a released Reality Fracture card; Reality Fracture main-set cards are permitted in Commander. The candidate contains none of the current Commander-banned cards such as Mana Crypt, Jeweled Lotus, Dockside Extortionist, Hullbreacher, or other named banned cards. Final per-card legality and B/R/U color identity are fail-closed and must be independently confirmed against the freshly rebuilt current-cycle Oracle cache by the complete gate before APPROVAL_READY."
+}
