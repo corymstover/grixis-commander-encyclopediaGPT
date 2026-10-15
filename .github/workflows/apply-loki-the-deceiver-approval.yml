@@ -1,0 +1,118 @@
+name: Apply Loki the Deceiver current-cycle approval
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - ".github/workflows/apply-loki-the-deceiver-approval.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Apply exact approved state
+        shell: bash
+        run: |
+          python - <<'PY'
+          import csv, hashlib, json
+          from pathlib import Path
+
+          deck_id = "Loki__the_Deceiver"
+          approved_hash = "5079291c08c5af212b3d90d63ac5b01849d45c7700b1d64100ef57fb13458062"
+          approved_path = Path("refinement/decklists/Loki_the_Deceiver_Approved_2026-10-14.txt")
+          gate_path = "refinement/verification/loki_the_deceiver_2026-10-14/gate_output/Loki_the_Deceiver_2026-10-14_Complete_Gate.json"
+          audit_path = "refinement/decisions/Loki_the_Deceiver_Current_Cycle_Decisions_2026-10-14.md"
+          approval_record = "refinement/approvals/Loki_the_Deceiver_Approved_2026-10-14.md"
+
+          actual_hash = hashlib.sha256(approved_path.read_bytes()).hexdigest()
+          if actual_hash != approved_hash:
+              raise SystemExit(f"Approved-list SHA mismatch: {actual_hash}")
+
+          gate = json.loads(Path(gate_path).read_text())
+          if gate.get("overall_result") != "APPROVAL_READY" or gate.get("deck_sha256") != approved_hash:
+              raise SystemExit("Complete gate is not APPROVAL_READY for the approved SHA")
+          if gate.get("errors"):
+              raise SystemExit(f"Complete gate contains errors: {gate.get('errors')}")
+
+          state_path = Path("state/current_deck_overrides.json")
+          state = json.loads(state_path.read_text())
+          if state.get("cycle_id") != "global-restart-2026-10-13":
+              raise SystemExit("Unexpected refinement cycle")
+
+          state["decks"][deck_id] = {
+              "approval_status": "APPROVED",
+              "lock_status": "LOCKED",
+              "final_gate_passed": True,
+              "user_approval_date": "2026-10-14",
+              "current_stage": "LOCKED",
+              "approved_list_sha256": approved_hash,
+              "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + Complete Approval Gate v1",
+              "approval_basis": "Explicit user approval of the exact SHA-bound Loki, the Deceiver approval candidate after mandatory whole-list audit, commander-first Villain-copy refinement, candidate exhaustion, adversarial red-team review, zero-new-material-improvement closure, fresh Oracle/color-identity verification, current official Commander legality verification, independent rules verification, and complete fail-closed gate APPROVAL_READY with zero errors.",
+              "complete_gate_artifact": gate_path,
+              "whole_list_audit_artifact": audit_path,
+              "approval_record_artifact": approval_record,
+              "approved_list_artifact": str(approved_path),
+          }
+          state_path.write_text(json.dumps(state, indent=2, ensure_ascii=False) + "\n")
+
+          tracker_path = Path("refinement/Deck_Refinement_Tracker_2026-10-12.csv")
+          with tracker_path.open(newline="", encoding="utf-8") as f:
+              reader = csv.DictReader(f)
+              fieldnames = reader.fieldnames
+              rows = list(reader)
+          found = False
+          for row in rows:
+              if row.get("deck_id") == deck_id:
+                  found = True
+                  row["baseline_status"] = "CURRENT APPROVED FINAL LIST — current-cycle canonical list locked; frozen source exports preserved unchanged."
+                  row["commander_blueprint_complete"] = "PASS — current-cycle commander-first Villain-copy / combat-value blueprint and mandatory whole-list audit completed 2026-10-14."
+                  row["high_impact_candidate_triage_complete"] = "PASS — inherited candidates, fresh October card pool, commander-copy targets, tribal support, combat-conversion alternatives, and generic Grixis challengers exhausted; final serious pass produced ZERO NEW MATERIAL IMPROVEMENTS."
+                  row["swap_decision_ledger_complete"] = "PASS — exact three-swap Loki approval candidate explicitly approved by user on 2026-10-14."
+                  row["combo_rules_interactions_verified"] = "PASS — SHA-bound rules attestation covers Loki copy timing, ETB/as-enters behavior, entering-attacking limitations, Hall of Echoes timing, Titan of Littjara copy interaction, and commander-copy combat sequencing."
+                  row["consistency_test_complete"] = "PASS — exact approved artifact verified at 100 cards / 95 distinct names / 34 lands; repeated names are basics only; candidate and approved artifact byte-match SHA."
+                  row["multiplayer_test_complete_or_reason_not_applicable"] = "NOT APPLICABLE AS A FINALIZATION GATE — commander-first structural, rules, legality, and strategic verification passed; no unsupported gameplay win-rate claim is made."
+                  row["final_gate_passed"] = "YES"
+                  row["final_list_hash"] = approved_hash
+                  row["user_approval_date"] = "2026-10-14"
+                  row["refinement_status"] = "APPROVED / LOCKED — current global-restart-2026-10-13 cycle"
+                  note = row.get("notes", "")
+                  add = ("CURRENT-CYCLE APPROVAL 2026-10-14: exact SHA-bound Loki, the Deceiver approval candidate explicitly approved and locked by user after complete fail-closed gate APPROVAL_READY with zero errors. "
+                         f"Canonical SHA-256: {approved_hash}. 100 cards / 95 distinct names / 34 lands / UBR color identity / official Commander legality PASS / rules PASS / no project exceptions. "
+                         "Final swaps: Construct a Cosmic Cube -> Red Ghost, Intangible Genius; The Masters of Evil -> Titan of Littjara; Reliquary Tower -> Hall of Echoes. "
+                         f"Approved artifact: {approved_path}. Complete gate: {gate_path}. Whole-list closeout: {audit_path}.")
+                  row["notes"] = (note + " " + add).strip()
+                  break
+          if not found:
+              raise SystemExit(f"Tracker row not found: {deck_id}")
+          with tracker_path.open("w", newline="", encoding="utf-8") as f:
+              writer = csv.DictWriter(f, fieldnames=fieldnames)
+              writer.writeheader()
+              writer.writerows(rows)
+          PY
+
+      - name: Commit authoritative approval state
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state/current_deck_overrides.json refinement/Deck_Refinement_Tracker_2026-10-12.csv
+          if git diff --cached --quiet; then
+            echo "No state changes required."
+            exit 0
+          fi
+          git commit -m "Approve and lock Loki the Deceiver in authoritative state [skip ci]"
+          git pull --rebase origin main
+          git push origin HEAD:main
