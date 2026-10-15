@@ -3,7 +3,7 @@
 Date: 2026-10-15  
 Cycle: `global-restart-2026-10-13`  
 Deck: #46 of 62  
-Status: working decision closeout; not user approval
+Status: **APPROVED / LOCKED** — explicit user approval received 2026-10-15
 
 Exact candidate SHA-256: `8ff8c101d98e7de997c1de29973db2dd6a51ffdd7b44e4f34145bb1abf2d9e7c`
 
@@ -63,4 +63,13 @@ Candidate exhaustion after the final land and Tempt with Mayhem comparison produ
 
 **ZERO NEW MATERIAL IMPROVEMENTS.**
 
-**Decision result: PASS — complete Oracle/legality/rules gate and explicit user approval are still required.**
+**Decision closeout: PASS — complete Oracle/legality/rules gate passed and explicit user approval was received 2026-10-15.**
+
+## Approval closeout
+
+- Explicit user approval received: **2026-10-15**
+- Canonical approved SHA-256: `8ff8c101d98e7de997c1de29973db2dd6a51ffdd7b44e4f34145bb1abf2d9e7c`
+- Exact approved artifact: `refinement/decklists/Parnesse_the_Subtle_Brush_Approved_2026-10-15.txt`
+- Current-cycle state: **APPROVED / LOCKED**
+- Quality gate: **Deck Quality Gates v3 + mandatory whole-list audit + targeted approval-ready verification**
+- Next unlocked deck in tracker order: **Rograkh, Son of Rohgahh // Silas Renn, Seeker Adept (index 46 / deck 47 of 62)**.

@@ -621,6 +621,22 @@
       "approval_record_artifact": "refinement/approvals/Obeka_Splitter_of_Seconds_Approved_2026-10-15.md",
       "approved_list_artifact": "refinement/decklists/Obeka_Splitter_of_Seconds_Approved_2026-10-15.txt",
       "sha_reconciliation_note": "Prior documented hash 83062ff2dbc955c628f9a6df460cf72dd5d450b6685bc4b53f63894bc8c321fb was incorrect. GitHub Actions verified the unchanged raw candidate bytes as c7e855e69d6538d05eec2e4b3da98b0a5bdb057b19e2c672294b9ba3a60a4f63; no card content changed."
+    },
+    "Parnesse__the_Subtle_Brush": {
+      "approval_status": "APPROVED",
+      "lock_status": "LOCKED",
+      "final_gate_passed": true,
+      "user_approval_date": "2026-10-15",
+      "current_stage": "LOCKED",
+      "approved_list_sha256": "8ff8c101d98e7de997c1de29973db2dd6a51ffdd7b44e4f34145bb1abf2d9e7c",
+      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + targeted approval-ready verification",
+      "approval_basis": "Explicit user approval of the exact SHA-bound Parnesse, the Subtle Brush approval-ready candidate after authoritative FINAL baseline reconciliation, mandatory 99-slot whole-list audit, commander-first review, candidate exhaustion, adversarial red-team review, mana-base review, zero-new-material-improvement closure, targeted current Oracle refresh, rules-interaction verification, current official Commander legality verification, exact structural verification, singleton compliance, and U/B/R color-identity verification.",
+      "whole_list_audit_artifact": "refinement/verification/Parnesse_the_Subtle_Brush_Whole_List_Audit_2026-10-15.md",
+      "verification_artifact": "refinement/verification/Parnesse_the_Subtle_Brush_Approval_Ready_Verification_2026-10-15.md",
+      "complete_gate_artifact": "refinement/verification/parnesse_2026-10-15/gate_output/Parnesse_the_Subtle_Brush_2026-10-15_Complete_Gate.json",
+      "decision_closeout_artifact": "refinement/decisions/Parnesse_the_Subtle_Brush_Candidate_Decisions_2026-10-15.md",
+      "approval_record_artifact": "refinement/approvals/Parnesse_the_Subtle_Brush_Approved_2026-10-15.md",
+      "approved_list_artifact": "refinement/decklists/Parnesse_the_Subtle_Brush_Approved_2026-10-15.txt"
     }
   }
 }
