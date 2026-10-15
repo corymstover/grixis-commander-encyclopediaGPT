@@ -1,0 +1,23 @@
+{
+  "generated_at_utc": "2026-10-15T17:51:13.481969+00:00",
+  "deck_id": "RogSi",
+  "decklist_path": "refinement/decklists/RogSi_Approval_Ready_2026-10-15.txt",
+  "deck_sha256": "06c9e22b5afc46bd58bbbfdef5c42a796d2a986a2972456107c29aee1b5f905c",
+  "baseline_path": null,
+  "baseline_source_sha256": "d793f1495ddfc9b30409774c646dfaf328f1a3f075cc5f984608ddb2b958fb95",
+  "count": 100,
+  "distinct_names": 100,
+  "commander_color_identity": [
+    "B",
+    "R",
+    "U"
+  ],
+  "cache_generated_at_utc": "2026-10-15T17:51:12.822900+00:00",
+  "cache_sha256": "e6b6df1711a35b8da3709f686d308852ec989cd6300e29ca6596dd427236f39c",
+  "project_exceptions": [],
+  "rules_gate": "PASS",
+  "official_legality_gate": "PASS",
+  "errors": [],
+  "overall_result": "APPROVAL_READY",
+  "approval_state": "NOT_APPROVED — explicit user approval still required"
+}

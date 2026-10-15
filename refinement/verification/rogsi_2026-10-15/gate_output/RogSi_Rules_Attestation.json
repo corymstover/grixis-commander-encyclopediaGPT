@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "deck_sha256": "06c9e22b5afc46bd58bbbfdef5c42a796d2a986a2972456107c29aee1b5f905c",
+  "checked_at_utc": "2026-10-15T17:51:13.425260+00:00",
+  "sources": [
+    "Magic Comprehensive Rules — partner/color identity, casting, split second, delayed triggered abilities, and copy/cast rules (current 2026 rules)",
+    "Current Oracle text as captured in refinement/metadata_audit/Current_Cycle_Oracle_Cache.jsonl",
+    "Current Wizards Commander legality / banned-list checkpoint as cross-checked by the complete gate"
+  ],
+  "interactions": [
+    {
+      "name": "Partner color identity",
+      "status": "PASS",
+      "finding": "Rograkh is red and Silas Renn is blue-black; together the commanders establish U/B/R color identity for deck construction."
+    },
+    {
+      "name": "Rograkh zero-mana resource engine",
+      "status": "PASS",
+      "finding": "Rograkh can be cast for zero mana before commander tax and provides a legendary/red creature for Mox Amber, Springleaf Drum, Paradise Mantle, Culling the Weak, Infernal Plunge, Diabolic Intent, commander-presence free spells, Jeska's Will, and Flare of Duplication. Later commander-tax casts require the applicable additional cost."
+    },
+    {
+      "name": "Silas Renn artifact recursion",
+      "status": "PASS",
+      "finding": "After Silas deals combat damage to a player, his trigger targets an artifact card in its controller's graveyard and grants permission to cast that card that turn; normal timing restrictions still apply unless another effect changes them."
+    },
+    {
+      "name": "Thassa's Oracle + Demonic Consultation / Tainted Pact",
+      "status": "PASS",
+      "finding": "The candidate preserves the compact Oracle library-exhaustion wins. Tainted Pact's construction requirement is supported by 100 distinct card names."
+    },
+    {
+      "name": "Underworld Breach + Lion's Eye Diamond + Brain Freeze",
+      "status": "PASS",
+      "finding": "With sufficient graveyard material and spell count, LED supplies mana while Brain Freeze's storm copies replenish the graveyard, allowing repeated escapes that mill libraries and/or build a winning storm sequence."
+    },
+    {
+      "name": "Underworld Breach + Grinding Station + zero-mana artifact",
+      "status": "PASS",
+      "finding": "Grinding Station untaps when an artifact enters. With Breach and a reusable zero-mana artifact such as Mox Amber, the artifact can be used, sacrificed to Station, and escaped using cards milled by Station, producing repeated mill/storm; Rograkh enables Mox Amber to make red mana."
+    },
+    {
+      "name": "Final Fortune / Warrior's Oath",
+      "status": "PASS",
+      "finding": "Each creates an extra turn and a delayed triggered ability that causes its controller to lose at the beginning of that extra turn's end step. The line must win or otherwise answer/end around that trigger rather than treating the extra turn as consequence-free."
+    },
+    {
+      "name": "Samut, Tyrant of Naktamun split second",
+      "status": "PASS",
+      "finding": "Samut gives instant and sorcery spells its controller controls split second. While such a spell is on the stack, players cannot cast spells or activate nonmana abilities, but triggered abilities still trigger and resolve normally."
+    },
+    {
+      "name": "Vexing Bauble symmetry",
+      "status": "PASS",
+      "finding": "Bauble triggers on any spell cast without mana spent to cast it, including the controller's own zero-mana or free/alternate-cost spells. Spending commander tax on a later Rograkh cast counts as mana spent. Bauble can be sacrificed for its draw ability before a planned free-spell sequence."
+    },
+    {
+      "name": "Vexing Bauble + Hexing Squelcher",
+      "status": "PASS",
+      "finding": "Bauble may still trigger on a no-mana-spent spell controlled by the RogSi player, but Hexing Squelcher makes that player's spells unable to be countered, so Bauble cannot successfully counter them while Squelcher is active."
+    },
+    {
+      "name": "Vexing Bauble + Samut",
+      "status": "PASS",
+      "finding": "Split second does not suppress triggered abilities. Vexing Bauble therefore still triggers on a Samut-granted split-second instant or sorcery if no mana was spent to cast it."
+    },
+    {
+      "name": "Demonic Counsel",
+      "status": "PASS",
+      "finding": "Without delirium, Demonic Counsel searches only for a Demon card; this candidate contains no Demon card, so a pre-delirium search cannot find a card. With four or more card types in the graveyard, delirium replaces that restriction and it becomes an unrestricted tutor."
+    },
+    {
+      "name": "Mnemonic Betrayal",
+      "status": "PASS",
+      "finding": "Mnemonic Betrayal exiles cards from opponents' graveyards and permits casting those cards that turn with mana flexibility. It does not grant permission to play lands; uncast exiled cards return at the next end step, and Betrayal exiles itself."
+    },
+    {
+      "name": "Undercity Sewers",
+      "status": "PASS",
+      "finding": "Undercity Sewers is a front-face land with Island and Swamp types, enters tapped, and surveils 1; it is therefore fetchable by the candidate's appropriate fetchlands and counts as one of the 24 land slots."
+    }
+  ]
+}

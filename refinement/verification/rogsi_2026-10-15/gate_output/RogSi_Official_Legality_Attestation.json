@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "deck_sha256": "06c9e22b5afc46bd58bbbfdef5c42a796d2a986a2972456107c29aee1b5f905c",
+  "checked_at_utc": "2026-10-15T17:51:13.425260+00:00",
+  "sources": [
+    "https://magic.wizards.com/en/banned-restricted-list",
+    "Current_Cycle_Oracle_Cache.jsonl generated from validated current Scryfall metadata"
+  ],
+  "unexpected_banned_cards": [],
+  "project_exceptions_required": [],
+  "finding": "Every RogSi candidate card is officially Commander-legal in the refreshed current-cycle Oracle cache; no project exception is required."
+}

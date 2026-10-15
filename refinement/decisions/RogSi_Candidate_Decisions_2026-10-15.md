@@ -5,7 +5,7 @@ Cycle: `global-restart-2026-10-13`
 Deck: #47 of 62  
 Status: working decision closeout; not user approval
 
-Exact candidate SHA-256: `__CANDIDATE_SHA__`
+Exact candidate SHA-256: `06c9e22b5afc46bd58bbbfdef5c42a796d2a986a2972456107c29aee1b5f905c`
 
 ## Final seven-card delta from authoritative FINAL baseline
 

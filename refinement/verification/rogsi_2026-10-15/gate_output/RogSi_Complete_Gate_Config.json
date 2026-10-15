@@ -1,0 +1,13 @@
+{
+  "deck_id": "RogSi",
+  "display_name": "Rograkh, Son of Rohgahh // Silas Renn, Seeker Adept",
+  "decklist_path": "refinement/decklists/RogSi_Approval_Ready_2026-10-15.txt",
+  "expected_deck_sha256": "06c9e22b5afc46bd58bbbfdef5c42a796d2a986a2972456107c29aee1b5f905c",
+  "baseline_source_sha256": "d793f1495ddfc9b30409774c646dfaf328f1a3f075cc5f984608ddb2b958fb95",
+  "baseline_source_member": "TXT/RogSi.txt",
+  "output_dir": "refinement/verification/rogsi_2026-10-15/gate_output",
+  "output_stem": "RogSi_2026-10-15",
+  "rules_attestation_path": "refinement/verification/rogsi_2026-10-15/gate_output/RogSi_Rules_Attestation.json",
+  "official_legality_attestation_path": "refinement/verification/rogsi_2026-10-15/gate_output/RogSi_Official_Legality_Attestation.json",
+  "max_cache_age_hours": 72
+}

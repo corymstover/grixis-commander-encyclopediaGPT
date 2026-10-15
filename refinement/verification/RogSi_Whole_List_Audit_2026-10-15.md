@@ -8,7 +8,7 @@ Status: working audit; not user approval
 Authoritative baseline: `source-package/GrixisFINAL_62Decks_CSV_TXT_2026-10-12.tar.gz`, FINAL TXT member `RogSi.txt`.
 
 Candidate: `refinement/decklists/RogSi_Approval_Ready_2026-10-15.txt`  
-Candidate SHA-256: `__CANDIDATE_SHA__`
+Candidate SHA-256: `06c9e22b5afc46bd58bbbfdef5c42a796d2a986a2972456107c29aee1b5f905c`
 
 ## Audit result
 
