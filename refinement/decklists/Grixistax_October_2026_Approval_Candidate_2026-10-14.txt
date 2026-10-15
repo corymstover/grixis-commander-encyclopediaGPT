@@ -7,7 +7,6 @@
 1x Back to Basics
 1x Badlands
 1x Beseech the Mirror
-1x Black Market Connections
 1x Blood Crypt
 1x Blood Moon
 1x Bloodstained Mire
@@ -60,6 +59,7 @@
 1x Mystic Remora
 1x Mystical Tutor
 1x Narset, Parter of Veils
+1x Necropotence
 1x Notion Thief
 1x Opposition Agent
 1x Orcish Bowmasters
