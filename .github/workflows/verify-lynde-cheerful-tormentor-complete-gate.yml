@@ -1,0 +1,75 @@
+name: Verify Lynde Cheerful Tormentor complete approval gate
+
+on:
+  push:
+    branches: ["main", "refinement/**", "automation/**"]
+    paths:
+      - "scripts/build_current_cycle_oracle_cache.py"
+      - "scripts/verify_complete_approval_gate.py"
+      - ".github/workflows/verify-lynde-cheerful-tormentor-complete-gate.yml"
+      - "refinement/decklists/Lynde_Cheerful_Tormentor_Approval_Candidate_2026-10-14.txt"
+      - "refinement/verification/lynde_cheerful_tormentor_2026-10-14/Lynde_Cheerful_Tormentor_Current_Cycle_Baseline_2026-10-14.txt"
+      - "refinement/verification/lynde_cheerful_tormentor_2026-10-14/Lynde_Cheerful_Tormentor_Rules_Attestation.json"
+      - "refinement/verification/lynde_cheerful_tormentor_2026-10-14/Lynde_Cheerful_Tormentor_Official_Legality_Attestation.json"
+      - "refinement/verification/lynde_cheerful_tormentor_2026-10-14/Lynde_Cheerful_Tormentor_Complete_Gate_Config.json"
+      - "refinement/metadata_audit/Current_Scryfall_Metadata_Overlay.csv"
+      - "refinement/metadata_audit/Current_Scryfall_Metadata_Audit_Summary.json"
+      - "source-package/research/Project_Exceptions_Current_2026-10-12.csv"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: lynde-cheerful-tormentor-complete-gate-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Rebuild current-cycle Oracle cache
+        run: python scripts/build_current_cycle_oracle_cache.py
+
+      - name: Run complete fail-closed approval gate
+        run: >-
+          python scripts/verify_complete_approval_gate.py
+          --config refinement/verification/lynde_cheerful_tormentor_2026-10-14/Lynde_Cheerful_Tormentor_Complete_Gate_Config.json
+
+      - name: Commit successful gate evidence and refreshed cache
+        if: success()
+        env:
+          BRANCH_NAME: ${{ github.ref_name }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add refinement/metadata_audit/Current_Cycle_Oracle_Cache.jsonl \
+                  refinement/metadata_audit/Current_Cycle_Oracle_Cache_Summary.json \
+                  refinement/verification/lynde_cheerful_tormentor_2026-10-14/gate_output/
+          if git diff --cached --quiet; then
+            echo "No Lynde gate evidence changes to commit."
+            exit 0
+          fi
+          git commit -m "Persist Lynde complete approval gate [skip ci]"
+          git pull --rebase origin "$BRANCH_NAME"
+          git push origin "HEAD:$BRANCH_NAME"
+
+      - name: Preserve gate evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lynde-complete-gate-${{ github.run_id }}
+          path: refinement/verification/lynde_cheerful_tormentor_2026-10-14/gate_output/
+          if-no-files-found: warn
+          retention-days: 90
