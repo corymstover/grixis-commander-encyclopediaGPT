@@ -115,7 +115,7 @@
       "user_approval_date": "2026-10-14",
       "current_stage": "LOCKED",
       "approved_list_sha256": "80f4bdef2b8b140aeae23775cfdf87fda81e7215038b8db9b1746c806f366e0b",
-      "quality_gate_version": "Complete Approval Gate v1 — fresh Oracle, legality, rules, and structural verification",
+      "quality_gate_version": "Complete Approval Gate v1 \u2014 fresh Oracle, legality, rules, and structural verification",
       "approval_basis": "Explicit user approval after the SHA-bound complete gate returned APPROVAL_READY: exactly 100 cards, 100 distinct names, Grixis color identity, fresh per-card Oracle verification, current official Commander legality, independent rules verification, zero project exceptions, and zero gate errors."
     },
     "Crosis__the_Purger": {
@@ -125,7 +125,7 @@
       "user_approval_date": "2026-10-14",
       "current_stage": "LOCKED",
       "approved_list_sha256": "a59150c323aa1e21cbda65291a3b172d08ecc3b83266b708768f4e14f0b07ec1",
-      "quality_gate_version": "Complete Approval Gate v1 — fresh Oracle, legality, rules, and structural verification",
+      "quality_gate_version": "Complete Approval Gate v1 \u2014 fresh Oracle, legality, rules, and structural verification",
       "approval_basis": "Explicit user approval after the SHA-bound complete gate returned APPROVAL_READY: exactly 100 cards, Grixis color identity, fresh per-card Oracle verification, current official Commander legality, independent rules verification, zero project exceptions, and zero unresolved gate errors.",
       "complete_gate_artifact": "refinement/verification/crosis_2026-10-14/gate_output/Crosis_the_Purger_2026-10-14_Complete_Gate.json"
     },
@@ -136,7 +136,7 @@
       "user_approval_date": "2026-10-14",
       "current_stage": "LOCKED",
       "approved_list_sha256": "4c221e5be0439338823ef621cd91706da8d405129cf6f5a41de36a83b875ef3b",
-      "quality_gate_version": "Complete Approval Gate v1 — fresh Oracle, legality, rules, and structural verification",
+      "quality_gate_version": "Complete Approval Gate v1 \u2014 fresh Oracle, legality, rules, and structural verification",
       "approval_basis": "Explicit user approval after the SHA-bound complete gate returned APPROVAL_READY: exactly 100 cards, Grixis color identity, fresh per-card Oracle verification, current official Commander legality, independent rules verification, zero project exceptions, and zero unresolved gate errors.",
       "complete_gate_artifact": "refinement/verification/cult_of_skaro_2026-10-14/gate_output/Cult_of_Skaro_2026-10-14_Complete_Gate.json"
     },
@@ -350,7 +350,7 @@
       "current_stage": "LOCKED",
       "approved_list_sha256": "f36346d4ba965db1e098b0aa92d27a968ee3a14c74a2b9401c1a5357f83c025c",
       "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + Complete Approval Gate v1",
-      "approval_basis": "Explicit user approval of the exact SHA-bound Grixistax — Kraum, Ludevic's Opus // Tevesh Szat, Doom of Fools approval candidate after mandatory whole-list audit, contemporary cEDH ceiling review, candidate exhaustion, adversarial red-team review, zero-new-material-improvement closure, fresh Oracle/color-identity verification, current official Commander legality verification, independent rules verification, and complete fail-closed gate APPROVAL_READY with zero errors.",
+      "approval_basis": "Explicit user approval of the exact SHA-bound Grixistax \u2014 Kraum, Ludevic's Opus // Tevesh Szat, Doom of Fools approval candidate after mandatory whole-list audit, contemporary cEDH ceiling review, candidate exhaustion, adversarial red-team review, zero-new-material-improvement closure, fresh Oracle/color-identity verification, current official Commander legality verification, independent rules verification, and complete fail-closed gate APPROVAL_READY with zero errors.",
       "complete_gate_artifact": "refinement/verification/grixistax_october_2026_2026-10-14/gate_output/Grixistax_October_2026_2026-10-14_Complete_Gate.json",
       "whole_list_audit_artifact": "refinement/decisions/Grixistax_October_2026_Current_Cycle_Decisions_2026-10-14.md",
       "approval_record_artifact": "refinement/approvals/Grixistax_October_2026_Approved_2026-10-14.md",
@@ -383,6 +383,20 @@
       "whole_list_audit_artifact": "refinement/decisions/Lord_of_Tresserhorn_Current_Cycle_Decisions_2026-10-14.md",
       "approval_record_artifact": "refinement/approvals/Lord_of_Tresserhorn_Approved_2026-10-14.md",
       "approved_list_artifact": "refinement/decklists/Lord_of_Tresserhorn_Approved_2026-10-14.txt"
+    },
+    "Lord_Xander__the_Collector": {
+      "approval_status": "APPROVED",
+      "lock_status": "LOCKED",
+      "final_gate_passed": true,
+      "user_approval_date": "2026-10-14",
+      "current_stage": "LOCKED",
+      "approved_list_sha256": "92cdc2f9c1a3583ccf6a311679db66bef825dac2902761859e929f268b6b4787",
+      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + Complete Approval Gate v1",
+      "approval_basis": "Explicit user approval of the exact SHA-bound Lord Xander approval candidate after mandatory whole-list audit, candidate exhaustion, adversarial red-team review, zero-new-material-improvement closure, fresh Oracle/rules verification, current official Commander legality verification, and complete fail-closed gate PASS.",
+      "complete_gate_artifact": "refinement/verification/lord_xander_the_collector_2026-10-14/gate_output/Lord_Xander_the_Collector_2026-10-14_Complete_Gate.json",
+      "whole_list_audit_artifact": "refinement/decisions/Lord_Xander_the_Collector_Current_Cycle_Decisions_2026-10-14.md",
+      "approval_record_artifact": "refinement/approvals/Lord_Xander_the_Collector_Approved_2026-10-14.md",
+      "approved_list_artifact": "refinement/decklists/Lord_Xander_the_Collector_Approved_2026-10-14.txt"
     }
   }
 }
