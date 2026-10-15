@@ -1,0 +1,103 @@
+{
+  "status": "PASS",
+  "deck_sha256": "92cdc2f9c1a3583ccf6a311679db66bef825dac2902761859e929f268b6b4787",
+  "checked_at_utc": "2026-10-15T03:00:00Z",
+  "sources": [
+    "Current Oracle text for Lord Xander, the Collector and exact candidate cards",
+    "Current Oracle text and official rulings for Hall of Echoes, Auton Soldier, Phantasmal Image, Cruel Calculations, Blade of Selves, Helm of the Host, Molten Duplication, Saw in Half, Roaming Throne, Bruvac the Grandiloquent, Fraying Sanity, Riverchurn Monument, Feign Death, Tergrid, Aggravated Assault, Sword of Feast and Famine, Underworld Breach, Lion's Eye Diamond, Brain Freeze, Duskmantle Guildmage, and Mindcrank",
+    "Magic Comprehensive Rules — copy effects, legend rule, state-based actions, leaves-the-battlefield triggers, dies, myriad, entering attacking, replacement effects, commander zone changes, triggered abilities, and additional combats",
+    "Fresh current-cycle Oracle cache and exact-list verification are independently enforced by the complete approval gate"
+  ],
+  "interactions": [
+    {
+      "name": "Lord Xander trigger structure",
+      "status": "PASS",
+      "conclusion": "Lord Xander has three separate triggered abilities: an enters trigger that makes a targeted opponent discard half their hand rounded down, a declared-attack trigger that makes the defending player mill half their library rounded down, and a dies trigger that makes a targeted opponent sacrifice half their nonland permanents rounded down. Copy and recursion choices are evaluated by which of those actual triggers they create."
+    },
+    {
+      "name": "Phantasmal Image copying Lord Xander",
+      "status": "PASS",
+      "conclusion": "Phantasmal Image can enter as a copy of Lord Xander. Because it enters with Xander's characteristics, its Xander enters trigger triggers. State-based actions then apply the legend rule; if Image-Xander is put into its owner's graveyard while the original Xander remains, it died as a creature with Xander's dies ability, so that dies ability triggers using the permanent's last-known information. This produces an ETB trigger plus a dies trigger for two mana while preserving the original commander."
+    },
+    {
+      "name": "Auton Soldier copying Lord Xander",
+      "status": "PASS",
+      "conclusion": "Auton Soldier may enter as a copy of Xander except it is nonlegendary, is also an artifact, and has myriad. It therefore generates Xander's enters trigger without creating a legend-rule conflict. When Auton-Xander is declared as an attacker, both Xander's attack ability and myriad trigger. Myriad tokens enter tapped and attacking, so each token generates Xander's enters trigger, but those tokens were not declared as attackers and do not generate fresh Xander attack triggers from entering attacking. The myriad tokens are exiled at end of combat, so that exile is not a dies event."
+    },
+    {
+      "name": "Hall of Echoes copying Lord Xander",
+      "status": "PASS",
+      "conclusion": "Activating Hall of Echoes makes the land a copy of Xander until end of turn and causes the legend rule not to apply to permanents controlled that turn. Hall is not entering the battlefield when it becomes a copy, so Xander's enters ability does not trigger. If Hall has been continuously controlled since the beginning of the turn, it can be declared as an attacker after becoming Xander and then generates its own Xander attack trigger."
+    },
+    {
+      "name": "Cruel Calculations after Xander mill",
+      "status": "PASS",
+      "conclusion": "Cruel Calculations draws X cards where X is the number of cards actually put from the targeted player's library into their graveyard that turn. Cards milled by Xander's attack qualify. If Bruvac modifies the mill event, Cruel Calculations counts the increased number actually put into that graveyard. Replacement effects that move cards somewhere other than the graveyard can reduce or eliminate the count."
+    },
+    {
+      "name": "Bruvac plus Lord Xander attack",
+      "status": "PASS",
+      "conclusion": "Xander determines half the defending player's current library rounded down, then Bruvac's replacement effect doubles the number to be milled. From an even-sized library this mills the entire library; from an odd-sized library it leaves one card."
+    },
+    {
+      "name": "Fraying Sanity plus Lord Xander attack",
+      "status": "PASS",
+      "conclusion": "Cards milled by Xander are cards put into the enchanted player's graveyard that turn, so Fraying Sanity counts them at the beginning of the end step and mills that many again. This commonly empties the remainder of the library after a Xander half-library attack, subject to rounding and other graveyard-replacement effects."
+    },
+    {
+      "name": "Riverchurn Monument plus Lord Xander attack",
+      "status": "PASS",
+      "conclusion": "After Xander mills roughly half a library, Riverchurn Monument's exhaust ability can make that player mill cards equal to the number already in their graveyard. With any preexisting graveyard cards, or an even library size under the usual line, this is sufficient to mill the remaining library; odd/empty-graveyard edge cases can leave one card."
+    },
+    {
+      "name": "Blade of Selves on Lord Xander",
+      "status": "PASS",
+      "conclusion": "Declaring equipped Xander as an attacker creates Xander's normal attack trigger and myriad. Myriad tokens enter as legendary Xander copies tapped and attacking, so they generate Xander enters triggers but not attack triggers. After they enter, the legend rule causes all but one Xander with the same name to be put into the graveyard; each Xander-copy creature that dies this way generates a Xander dies trigger."
+    },
+    {
+      "name": "Helm of the Host on Lord Xander",
+      "status": "PASS",
+      "conclusion": "Helm of the Host creates a nonlegendary hasty Xander token at the beginning of combat. The token enters and generates Xander's enters trigger, then can be declared as an attacker that combat and generate its own Xander attack trigger."
+    },
+    {
+      "name": "Molten Duplication on Lord Xander",
+      "status": "PASS",
+      "conclusion": "Molten Duplication creates a legendary Xander token with haste, so the token generates Xander's enters trigger before the legend rule is applied. If the token is kept, the original Xander can die to the legend rule and trigger its dies ability, while the hasty token can attack and later its instructed end-step sacrifice creates another dies trigger. If the original is kept instead, the token dies to the legend rule and generates its own dies trigger."
+    },
+    {
+      "name": "Saw in Half on Lord Xander",
+      "status": "PASS",
+      "conclusion": "If Saw in Half destroys Xander, Xander's dies ability triggers. The two resulting tokens enter as Xander copies and each generates an enters trigger. Because the tokens are legendary unless another effect changes that, the legend rule then normally causes one of them to die, generating an additional Xander dies trigger."
+    },
+    {
+      "name": "Roaming Throne and Strionic Resonator",
+      "status": "PASS",
+      "conclusion": "Roaming Throne may choose Vampire, Demon, or Noble; Lord Xander has each of those creature types, so Xander's triggered abilities trigger an additional time. Strionic Resonator can separately copy an Xander triggered ability on the stack."
+    },
+    {
+      "name": "Feign Death and commander-zone sequencing",
+      "status": "PASS",
+      "conclusion": "If Feign Death has resolved on Xander and Xander dies, both Xander's dies trigger and the granted return trigger trigger. To return Xander with Feign Death, its owner must leave it in the graveyard rather than move it to the command zone before the return trigger resolves. Returning Xander creates another Xander enters trigger."
+    },
+    {
+      "name": "Tergrid with Xander discard and sacrifice",
+      "status": "PASS",
+      "conclusion": "Tergrid triggers for permanent cards opponents discard to Xander's enters ability and for nontoken permanents opponents sacrifice to Xander's dies ability, allowing those cards/permanents to be put onto the battlefield under the Xander player's control when the relevant Tergrid trigger resolves."
+    },
+    {
+      "name": "Aggravated Assault plus Sword of Feast and Famine",
+      "status": "PASS",
+      "conclusion": "If a creature equipped with Sword of Feast and Famine deals combat damage to a player and the Sword trigger untaps at least five lands capable of producing the required mana including red, Aggravated Assault can be activated in the following main phase to create another combat. Repeating the line creates repeated declared attacks; with Xander attacking, each combat creates another Xander mill trigger."
+    },
+    {
+      "name": "Underworld Breach, Lion's Eye Diamond, and Brain Freeze",
+      "status": "PASS",
+      "conclusion": "The retained compact Breach/LED/Brain Freeze line is functional with sufficient graveyard resources: Breach allows LED and Brain Freeze to be recast by escaping, LED provides mana, and increasing storm copies of Brain Freeze can replenish the graveyard and then mill opponents. Exact loop viability depends on starting graveyard size and sequencing, so the line is a backup combo rather than assumed deterministic from every board state."
+    },
+    {
+      "name": "Duskmantle Guildmage plus Mindcrank",
+      "status": "PASS",
+      "conclusion": "After Duskmantle Guildmage's first ability resolves for the turn, a card entering an opponent's graveyard causes that opponent to lose life; Mindcrank then mills for that life loss, creating another Guildmage trigger. With a legal starting mill/life-loss event, the loop continues until that opponent loses. Xander's attack mill can supply the starting graveyard event."
+    }
+  ]
+}
