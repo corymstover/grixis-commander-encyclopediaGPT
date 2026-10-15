@@ -780,6 +780,22 @@
       "decision_closeout_artifact": "refinement/decisions/Tetsuo_Imperial_Champion_Candidate_Decisions_2026-10-15.md",
       "approval_record_artifact": "refinement/approvals/Tetsuo_Imperial_Champion_Approved_2026-10-15.md",
       "approved_list_artifact": "refinement/decklists/Tetsuo_Imperial_Champion_Approved_2026-10-15.txt"
+    },
+    "The_Madcap_Jester": {
+      "approval_status": "APPROVED",
+      "lock_status": "LOCKED",
+      "final_gate_passed": true,
+      "user_approval_date": "2026-10-15",
+      "current_stage": "LOCKED",
+      "approved_list_sha256": "caeffc07503581cd3ecba798ebc4e09d48f07310f1f117ce3b90a04b5ca6bfa7",
+      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + targeted approval-ready verification",
+      "approval_basis": "Explicit user approval of the exact SHA-bound Madcap Jester approval-ready candidate after complete current-cycle verification; registered future-release exceptions preserved and distinguished from official legality.",
+      "whole_list_audit_artifact": "refinement/verification/The_Madcap_Jester_Whole_List_Audit_2026-10-15.md",
+      "verification_artifact": "refinement/verification/The_Madcap_Jester_Approval_Ready_Verification_2026-10-15.md",
+      "complete_gate_artifact": "refinement/verification/the_madcap_jester_2026-10-15/gate_output/The_Madcap_Jester_2026-10-15_Complete_Gate.json",
+      "decision_closeout_artifact": "refinement/decisions/The_Madcap_Jester_Candidate_Decisions_2026-10-15.md",
+      "approval_record_artifact": "refinement/approvals/The_Madcap_Jester_Approved_2026-10-15.md",
+      "approved_list_artifact": "refinement/decklists/The_Madcap_Jester_Approved_2026-10-15.txt"
     }
   }
 }

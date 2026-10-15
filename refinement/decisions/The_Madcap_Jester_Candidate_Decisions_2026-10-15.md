@@ -4,7 +4,7 @@ Date: 2026-10-15
 Cycle: `global-restart-2026-10-13`  
 Candidate SHA-256: `caeffc07503581cd3ecba798ebc4e09d48f07310f1f117ce3b90a04b5ca6bfa7`
 
-Status: working decision closeout; not user approval
+Status: **APPROVED / LOCKED** — explicit user approval received 2026-10-15
 
 ## Commander-first blueprint
 
@@ -65,3 +65,12 @@ Candidate exhaustion/red-team: **ZERO NEW MATERIAL IMPROVEMENTS** after the chal
 Natural ceiling: **Power Bracket 5 — cEDH**.
 
 Proposed Archidekt tags: **Exile Theft / Library Control / Grixis Combo**.
+
+## Approval closeout
+
+- Explicit user approval received: **2026-10-15**
+- Canonical approved SHA-256: `caeffc07503581cd3ecba798ebc4e09d48f07310f1f117ce3b90a04b5ca6bfa7`
+- Exact approved artifact: `refinement/decklists/The_Madcap_Jester_Approved_2026-10-15.txt`
+- Current-cycle state: **APPROVED / LOCKED**
+- Project exceptions preserved: The Madcap Jester / Dragon's Smile future-release treatment; not represented as officially legal before release.
+- Next unlocked: **The Rani (index 56 / deck 57 of 62)**.
