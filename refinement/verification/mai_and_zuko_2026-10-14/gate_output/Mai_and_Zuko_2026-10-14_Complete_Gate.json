@@ -1,0 +1,23 @@
+{
+  "generated_at_utc": "2026-10-15T04:04:19.876879+00:00",
+  "deck_id": "Mai_and_Zuko",
+  "decklist_path": "refinement/decklists/Mai_and_Zuko_Approval_Candidate_2026-10-14.txt",
+  "deck_sha256": "f52cfc2043c5599ea5c35e553f06647bf018344ee73482b96e375122b9f29e8b",
+  "baseline_path": "refinement/verification/mai_and_zuko_2026-10-14/Mai_and_Zuko_Current_Cycle_Baseline_2026-10-14.txt",
+  "baseline_source_sha256": "5ed4ca5a475f2472bf8679b07e2a2d3fc3caf68caf8ff34f550c21ad162ce34e",
+  "count": 100,
+  "distinct_names": 100,
+  "commander_color_identity": [
+    "B",
+    "R",
+    "U"
+  ],
+  "cache_generated_at_utc": "2026-10-15T03:58:57.320422+00:00",
+  "cache_sha256": "08551e50a9dedaa0f7959fd8e3779e53436290d52f1fe948e1389aa4b5e5e525",
+  "project_exceptions": [],
+  "rules_gate": "PASS",
+  "official_legality_gate": "PASS",
+  "errors": [],
+  "overall_result": "APPROVAL_READY",
+  "approval_state": "NOT_APPROVED — explicit user approval still required"
+}
