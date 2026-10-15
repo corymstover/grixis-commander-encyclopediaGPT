@@ -1,0 +1,100 @@
+card,decision,role,replacement_or_challenger,rationale
+Abrade,CUT,Replacement upgrade,Chain of Vapor / Into the Flood Maw,Slower/narrower removal in cEDH; the replacement package is cheaper and more flexible while still targeting opposing permanents to turn interaction into Marchesa crimes.
+An Offer You Can't Refuse,KEEP,Stack / efficient interaction,,"Retained as cEDH-rate interaction. Targeted interaction also frequently doubles as a Marchesa crime, converting necessary answers into card selection."
+Arcane Denial,CUT,Replacement upgrade,Mana Drain,Two-mana counterspell that gives an opponent cards is materially worse at this ceiling; Mana Drain preserves two-mana coverage without the card-advantage concession.
+Arcane Signet,KEEP,Fast mana / acceleration,,Retained for cEDH-speed deployment of Marchesa and for preserving mana to pay {1} on crime triggers or execute protected combo turns.
+Badlands,KEEP,Mana base,,Retained as efficient untapped/fetchable/fixing mana within the 29-land cEDH configuration; fetchlands also support Underworld Breach graveyard density.
+Bandit's Haul,CUT,Replacement upgrade,Bender's Waterskin,Too slow as setup; Waterskin supplies repeatable mana on opponents' turns and directly supports the Lapis/Marchesa multi-turn-cycle engine.
+Blood Crypt,KEEP,Mana base,,Retained as efficient untapped/fetchable/fixing mana within the 29-land cEDH configuration; fetchlands also support Underworld Breach graveyard density.
+Blood Hustler,CUT,Replacement upgrade,Hex Parasite,Crime payoff is lower impact than a one-mana repeatable targeted activated ability that can generate crimes on demand and manipulate counters.
+Bloodstained Mire,KEEP,Mana base,,Retained as efficient untapped/fetchable/fixing mana within the 29-land cEDH configuration; fetchlands also support Underworld Breach graveyard density.
+Chaos Warp,CUT,Replacement upgrade,Chain of Vapor / Into the Flood Maw,Three mana is inefficient at cEDH speed; cheaper bounce answers the same emergency permanent classes while preserving crime utility when aimed at opponents.
+Chrome Mox,KEEP,Fast mana / acceleration,,Retained for cEDH-speed deployment of Marchesa and for preserving mana to pay {1} on crime triggers or execute protected combo turns.
+City of Brass,KEEP,Mana base,,Retained as efficient untapped/fetchable/fixing mana within the 29-land cEDH configuration; fetchlands also support Underworld Breach graveyard density.
+Command Tower,KEEP,Mana base,,Retained as efficient untapped/fetchable/fixing mana within the 29-land cEDH configuration; fetchlands also support Underworld Breach graveyard density.
+Counterspell,CUT,Replacement upgrade,Mana Drain / Dispel,UU unconditional permission is serviceable but below the rate of the chosen cEDH interaction suite.
+Cyclonic Rift,CUT,Replacement upgrade,Chain of Vapor,Excellent casual/mid-power card but expensive as a seven-mana reset and inefficient at two mana relative to Chain in this fast shell.
+Dark Ritual,KEEP,Fast mana / acceleration,,Retained for cEDH-speed deployment of Marchesa and for preserving mana to pay {1} on crime triggers or execute protected combo turns.
+Deadly Rollick,KEEP,Stack / efficient interaction,,"Retained as cEDH-rate interaction. Targeted interaction also frequently doubles as a Marchesa crime, converting necessary answers into card selection."
+Deflecting Swat,KEEP,Stack / efficient interaction,,"Retained as cEDH-rate interaction. Targeted interaction also frequently doubles as a Marchesa crime, converting necessary answers into card selection."
+Demonic Consultation,CUT,Replacement upgrade,Underworld Breach / Brain Freeze package,Tainted Pact already supports Oracle; the second compact win package adds graveyard/storm resilience instead of redundant all-in consultation.
+Demonic Tutor,KEEP,Tutor,,"Retained as high-efficiency access to engine pieces, protection, or compact win conditions."
+Drown in the Loch,CUT,Replacement upgrade,Mindbreak Trap / Mana Drain,Conditional graveyard scaling is less reliable in early cEDH exchanges than unconditional/free stack interaction.
+Entomb,CUT,Replacement upgrade,Ad Nauseam / Breach resource engine,The final shell is not a dedicated reanimation deck; slot pressure favors broader card-advantage and deterministic storm infrastructure.
+Exotic Orchard,KEEP,Mana base,,Retained as efficient untapped/fetchable/fixing mana within the 29-land cEDH configuration; fetchlands also support Underworld Breach graveyard density.
+Fatal Push,CUT,Replacement upgrade,Into the Flood Maw / Chain of Vapor,Creature-only removal is narrower than one-mana bounce that answers a broader range of disruptive permanents.
+Feed the Swarm,CUT,Replacement upgrade,Into the Flood Maw,Sorcery speed and life loss are poor cEDH rates; Flood Maw provides one-mana nonland-permanent interaction.
+Fellwar Stone,KEEP,Fast mana / acceleration,,Retained for cEDH-speed deployment of Marchesa and for preserving mana to pay {1} on crime triggers or execute protected combo turns.
+Fierce Guardianship,KEEP,Stack / efficient interaction,,"Retained as cEDH-rate interaction. Targeted interaction also frequently doubles as a Marchesa crime, converting necessary answers into card selection."
+Flusterstorm,KEEP,Stack / efficient interaction,,"Retained as cEDH-rate interaction. Targeted interaction also frequently doubles as a Marchesa crime, converting necessary answers into card selection."
+Force of Negation,KEEP,Stack / efficient interaction,,"Retained as cEDH-rate interaction. Targeted interaction also frequently doubles as a Marchesa crime, converting necessary answers into card selection."
+Force of Will,KEEP,Stack / efficient interaction,,"Retained as cEDH-rate interaction. Targeted interaction also frequently doubles as a Marchesa crime, converting necessary answers into card selection."
+Gamble,CUT,Replacement upgrade,Imperial Seal,The discard failure mode is unnecessary when a deterministic one-mana tutor is available.
+Gemstone Caverns,KEEP,Mana base,,Retained as efficient untapped/fetchable/fixing mana within the 29-land cEDH configuration; fetchlands also support Underworld Breach graveyard density.
+Ghost Vacuum,CUT,Replacement upgrade,Spatial Binding / Spellskite,"Useful graveyard hate, but the final engine prioritizes repeatable low-cost crime production and protection that advances Marchesa continuously."
+"Gisa, the Hellraiser",CUT,Replacement upgrade,Storm-Kiln Artist,Four-mana crime payoff is too slow; Storm-Kiln converts the spell-dense plan into mana and supports deterministic storm turns.
+Infernal Grasp,CUT,Replacement upgrade,Into the Flood Maw,Two-mana creature-only removal is below the final interaction rate.
+Intimidation Campaign,CUT,Replacement upgrade,Spatial Binding,Four-mana value engine is too slow; Spatial Binding creates repeatable one-life targeted crime activations at negligible opportunity cost.
+Island,CUT,Replacement upgrade,Tolaria / Hammerheim / Urborg utility-land package,"A basic is safer, but the singleton cEDH shell gains more from utility lands that enter untapped and can function as repeatable crime sources."
+Jeska's Will,KEEP,Fast mana / acceleration,,Retained for cEDH-speed deployment of Marchesa and for preserving mana to pay {1} on crime triggers or execute protected combo turns.
+"Kaervek, the Punisher",CUT,Replacement upgrade,Spellskite,Three-mana value recursion is slower than a two-mana protection/redirect engine that can itself commit crimes.
+Laughing Jasper Flint,CUT,Replacement upgrade,"Wan Shi Tong, Librarian",Three-mana theft value is too slow; Wan Shi Tong is a cheap flash engine that punishes opposing searches and supplies cards.
+"Lazav, Familiar Stranger",CUT,Replacement upgrade,Aphetto Alchemist,Flavorful crime payoff but low ceiling; Aphetto is a one-card half of the Hawkeye's Bow deterministic damage loop.
+Lightning Bolt,CUT,Replacement upgrade,Stifle / Into the Flood Maw,Efficient but narrow; final slots favor interaction that answers combo infrastructure/abilities or a wider permanent range.
+Long Goodbye,CUT,Replacement upgrade,Dispel / Minor Misstep,Uncounterable removal is useful but two mana and creature/planeswalker-only; final suite prioritizes cheaper stack interaction.
+Lotus Petal,KEEP,Fast mana / acceleration,,Retained for cEDH-speed deployment of Marchesa and for preserving mana to pay {1} on crime triggers or execute protected combo turns.
+Luxury Suite,KEEP,Mana base,,Retained as efficient untapped/fetchable/fixing mana within the 29-land cEDH configuration; fetchlands also support Underworld Breach graveyard density.
+"Magda, the Hoardmaster",KEEP,Commander engine,,Turns crimes into tapped Treasures once each turn; converts Marchesa's normal interaction into mana development.
+Mana Confluence,KEEP,Mana base,,Retained as efficient untapped/fetchable/fixing mana within the 29-land cEDH configuration; fetchlands also support Underworld Breach graveyard density.
+Mana Vault,KEEP,Fast mana / acceleration,,Retained for cEDH-speed deployment of Marchesa and for preserving mana to pay {1} on crime triggers or execute protected combo turns.
+Misty Rainforest,KEEP,Mana base,,Retained as efficient untapped/fetchable/fixing mana within the 29-land cEDH configuration; fetchlands also support Underworld Breach graveyard density.
+Mnemonic Betrayal,CUT,Replacement upgrade,Ad Nauseam,Powerful ceiling card but situational and graveyard-dependent; Ad Nauseam is a more reliable primary refill/velocity engine.
+Morphic Pool,KEEP,Mana base,,Retained as efficient untapped/fetchable/fixing mana within the 29-land cEDH configuration; fetchlands also support Underworld Breach graveyard density.
+Mox Amber,KEEP,Fast mana / acceleration,,Retained for cEDH-speed deployment of Marchesa and for preserving mana to pay {1} on crime triggers or execute protected combo turns.
+Mox Diamond,KEEP,Fast mana / acceleration,,Retained for cEDH-speed deployment of Marchesa and for preserving mana to pay {1} on crime triggers or execute protected combo turns.
+Mystic Remora,KEEP,Card advantage,,Retained as elite multiplayer card advantage that keeps the interactive crime engine supplied.
+Mystical Tutor,KEEP,Tutor,,"Retained as high-efficiency access to engine pieces, protection, or compact win conditions."
+Notion Thief,CUT,Replacement upgrade,Necropotence,Four mana and fragile; Necropotence provides substantially higher deterministic card access for the same competitive role.
+Opposition Agent,CUT,Replacement upgrade,"Counterbalance / Wan Shi Tong, Librarian","Strong generic hate, but the three-mana creature is less efficient than the final shell's cheaper sustained search/spell pressure."
+Orcish Bowmasters,KEEP,Interaction / crime engine,,"Premium cEDH draw punishment; when its trigger targets an opponent or opposing permanent, that targeted trigger also qualifies as a crime."
+"Otawara, Soaring City",CUT,Replacement upgrade,Talon Gates of Madara,Talon Gates doubles as a land and instant-speed-from-hand phasing interaction; its ETB targeting can also commit a crime.
+Outrageous Robbery,CUT,Replacement upgrade,Praetor's Grasp,Variable theft spell is mana-intensive; Praetor's Grasp is a fixed three-mana tutor from an opponent and directly targets the competitive plan.
+Pact of Negation,KEEP,Stack / efficient interaction,,"Retained as cEDH-rate interaction. Targeted interaction also frequently doubles as a Marchesa crime, converting necessary answers into card selection."
+Polluted Delta,KEEP,Mana base,,Retained as efficient untapped/fetchable/fixing mana within the 29-land cEDH configuration; fetchlands also support Underworld Breach graveyard density.
+Pongify,CUT,Replacement upgrade,Into the Flood Maw / Chain of Vapor,"Excellent creature efficiency, but final bounce package answers noncreature hate pieces as well."
+Pyroblast,KEEP,Stack / efficient interaction,,"Retained as cEDH-rate interaction. Targeted interaction also frequently doubles as a Marchesa crime, converting necessary answers into card selection."
+"Ragavan, Nimble Pilferer",CUT,Replacement upgrade,"Birgi, God of Storytelling",Generic value creature is less reliable in multiplayer cEDH; Birgi is immediate storm mana and combo infrastructure.
+Rakdos Charm,CUT,Replacement upgrade,Borne Upon a Wind / Stifle,Flexible but reactive and two mana; final slots increase stack flexibility and protected instant-speed win windows.
+Raven of Fell Omens,CUT,Replacement upgrade,Hex Parasite / Spatial Binding,Crime payoff requires events to happen; final engines create crimes proactively and repeatedly at lower cost.
+Reanimate,CUT,Replacement upgrade,Displacer Kitten,"Without a dedicated reanimation package, Reanimate is opportunistic; Kitten turns the dense noncreature-spell count into repeatable ETB/planeswalker resets and combo utility."
+Red Elemental Blast,KEEP,Stack / efficient interaction,,"Retained as cEDH-rate interaction. Targeted interaction also frequently doubles as a Marchesa crime, converting necessary answers into card selection."
+Rhystic Study,KEEP,Card advantage,,Retained as elite multiplayer card advantage that keeps the interactive crime engine supplied.
+Scalding Tarn,KEEP,Mana base,,Retained as efficient untapped/fetchable/fixing mana within the 29-land cEDH configuration; fetchlands also support Underworld Breach graveyard density.
+Servant of the Stinger,CUT,Replacement upgrade,Hawkeye's Bow,Three-mana crime payoff/tutor setup is slow; Bow is a one-mana artifact and deterministic win component with Aphetto Alchemist.
+Shivan Reef,CUT,Replacement upgrade,Spire of Industry,Final artifact density makes Spire reliable fixing while preserving untapped cEDH mana.
+Shoot the Sheriff,CUT,Replacement upgrade,Into the Flood Maw,Two-mana creature-only removal is too narrow/slow for the final shell.
+Sink into Stupor // Soporific Springs,CUT,Replacement upgrade,Great Hall / utility-land suite,Flexible MDFC but enters tapped as a land; final mana base prioritizes untapped lands and repeatable crime/utility text.
+Siphon Insight,CUT,Replacement upgrade,Praetor's Grasp,Incremental two-mana value is too slow; Praetor's Grasp converts opponent libraries into a direct combo/resource tutor.
+Snap,CUT,Replacement upgrade,Valley Floodcaller,Tempo positive in spots but requires a creature target and two lands; Floodcaller provides flash timing plus repeated untap/haste utility for combo turns.
+Snuff Out,CUT,Replacement upgrade,Mindbreak Trap / Chain of Vapor,Free removal is strong but creature-only and life intensive; final free slot is more valuable as stack exile or universal bounce.
+Sol Ring,KEEP,Fast mana / acceleration,,Retained for cEDH-speed deployment of Marchesa and for preserving mana to pay {1} on crime triggers or execute protected combo turns.
+Spell Pierce,CUT,Replacement upgrade,Minor Misstep / Mental Misstep,Final permission suite gains zero/one-mana interaction with broader efficiency in the relevant cEDH windows.
+Steam Vents,KEEP,Mana base,,Retained as efficient untapped/fetchable/fixing mana within the 29-land cEDH configuration; fetchlands also support Underworld Breach graveyard density.
+Sulfurous Springs,CUT,Replacement upgrade,Forbidden Orchard,Orchard fixes every color and its token drawback is negligible; it improves color density.
+Swan Song,KEEP,Stack / efficient interaction,,"Retained as cEDH-rate interaction. Targeted interaction also frequently doubles as a Marchesa crime, converting necessary answers into card selection."
+Tainted Pact,KEEP,Compact win package,,Retained as the singleton-compatible Tainted Pact + Thassa's Oracle deterministic win package.
+Talisman of Creativity,KEEP,Fast mana / acceleration,,Retained for cEDH-speed deployment of Marchesa and for preserving mana to pay {1} on crime triggers or execute protected combo turns.
+Talisman of Dominance,KEEP,Fast mana / acceleration,,Retained for cEDH-speed deployment of Marchesa and for preserving mana to pay {1} on crime triggers or execute protected combo turns.
+Talisman of Indulgence,CUT,Replacement upgrade,Mox Opal,Two-mana rock is slower than zero-mana acceleration in an artifact-dense shell.
+Terminate,CUT,Replacement upgrade,Chain of Vapor / Into the Flood Maw,Two-mana creature-only answer is narrower than the chosen one-mana universal bounce.
+Thassa's Oracle,KEEP,Compact win package,,Retained as the singleton-compatible Tainted Pact + Thassa's Oracle deterministic win package.
+Thoughtseize,CUT,Replacement upgrade,Imperial Seal / stack-interaction density,One-for-one sorcery hand disruption is weaker in four-player cEDH than proactive tutoring and live stack interaction.
+Training Center,CUT,Replacement upgrade,Flooded Strand,"Fetchland improves color selection, graveyard count for Breach, and shuffle utility."
+Undercity Sewers,KEEP,Mana base,,Retained as efficient untapped/fetchable/fixing mana within the 29-land cEDH configuration; fetchlands also support Underworld Breach graveyard density.
+Underground Sea,KEEP,Mana base,,Retained as efficient untapped/fetchable/fixing mana within the 29-land cEDH configuration; fetchlands also support Underworld Breach graveyard density.
+"Vadmir, New Blood",CUT,Replacement upgrade,Storm-Kiln Artist / Hex Parasite,Efficient crime payoff but primarily combat scaling; final replacements directly produce mana/crimes and deterministic combo utility.
+Vampiric Tutor,KEEP,Tutor,,"Retained as high-efficiency access to engine pieces, protection, or compact win conditions."
+Verdant Catacombs,KEEP,Mana base,,Retained as efficient untapped/fetchable/fixing mana within the 29-land cEDH configuration; fetchlands also support Underworld Breach graveyard density.
+Volcanic Island,KEEP,Mana base,,Retained as efficient untapped/fetchable/fixing mana within the 29-land cEDH configuration; fetchlands also support Underworld Breach graveyard density.
+Watery Grave,KEEP,Mana base,,Retained as efficient untapped/fetchable/fixing mana within the 29-land cEDH configuration; fetchlands also support Underworld Breach graveyard density.
+Xander's Lounge,CUT,Replacement upgrade,Ancient Tomb,Tapped tri-land is too slow at this ceiling; Ancient Tomb materially accelerates commander/engine deployment.
