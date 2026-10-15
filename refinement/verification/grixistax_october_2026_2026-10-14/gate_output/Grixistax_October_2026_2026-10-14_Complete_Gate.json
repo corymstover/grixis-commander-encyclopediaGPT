@@ -1,0 +1,23 @@
+{
+  "generated_at_utc": "2026-10-15T01:11:47.159729+00:00",
+  "deck_id": "Grixistax___October_2026",
+  "decklist_path": "refinement/decklists/Grixistax_October_2026_Approval_Candidate_2026-10-14.txt",
+  "deck_sha256": "f36346d4ba965db1e098b0aa92d27a968ee3a14c74a2b9401c1a5357f83c025c",
+  "baseline_path": "refinement/verification/grixistax_october_2026_2026-10-14/Grixistax_October_2026_Current_Cycle_Baseline_2026-10-14.txt",
+  "baseline_source_sha256": "ac02379cf1803f317213db663129889ccae6dee9258f76607ec5420a03d1aacd",
+  "count": 100,
+  "distinct_names": 100,
+  "commander_color_identity": [
+    "B",
+    "R",
+    "U"
+  ],
+  "cache_generated_at_utc": "2026-10-15T01:07:31.777599+00:00",
+  "cache_sha256": "967f210b293574eed6193d957ec11a5ed858bb356ebda96c605586a24779ec80",
+  "project_exceptions": [],
+  "rules_gate": "PASS",
+  "official_legality_gate": "PASS",
+  "errors": [],
+  "overall_result": "APPROVAL_READY",
+  "approval_state": "NOT_APPROVED — explicit user approval still required"
+}
