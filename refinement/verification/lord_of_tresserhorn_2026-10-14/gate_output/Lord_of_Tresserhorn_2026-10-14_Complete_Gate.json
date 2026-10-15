@@ -1,0 +1,23 @@
+{
+  "generated_at_utc": "2026-10-15T02:03:16.181625+00:00",
+  "deck_id": "Lord_of_Tresserhorn",
+  "decklist_path": "refinement/decklists/Lord_of_Tresserhorn_Approval_Candidate_2026-10-14.txt",
+  "deck_sha256": "95863276f38beff6b0cf7609041006a6f1de94d5e62c73d76551d6793ffa5b8e",
+  "baseline_path": "refinement/verification/lord_of_tresserhorn_2026-10-14/Lord_of_Tresserhorn_Current_Cycle_Baseline_2026-10-14.txt",
+  "baseline_source_sha256": "eec34e6514206af7c0ea5f6b4cec1e7ec0098a8a4c6f47d96c6fb6dae5f6009e",
+  "count": 100,
+  "distinct_names": 98,
+  "commander_color_identity": [
+    "B",
+    "R",
+    "U"
+  ],
+  "cache_generated_at_utc": "2026-10-15T01:58:57.157593+00:00",
+  "cache_sha256": "62da8580882766356b3ab6d5f836bf6e6fb0b24029a9faf88595542caa1234b5",
+  "project_exceptions": [],
+  "rules_gate": "PASS",
+  "official_legality_gate": "PASS",
+  "errors": [],
+  "overall_result": "APPROVAL_READY",
+  "approval_state": "NOT_APPROVED — explicit user approval still required"
+}
