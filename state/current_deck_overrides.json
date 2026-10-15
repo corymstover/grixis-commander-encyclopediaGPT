@@ -369,6 +369,20 @@
       "whole_list_audit_artifact": "refinement/decisions/Loki_the_Deceiver_Current_Cycle_Decisions_2026-10-14.md",
       "approval_record_artifact": "refinement/approvals/Loki_the_Deceiver_Approved_2026-10-14.md",
       "approved_list_artifact": "refinement/decklists/Loki_the_Deceiver_Approved_2026-10-14.txt"
+    },
+    "Lord_of_Tresserhorn": {
+      "approval_status": "APPROVED",
+      "lock_status": "LOCKED",
+      "final_gate_passed": true,
+      "user_approval_date": "2026-10-14",
+      "current_stage": "LOCKED",
+      "approved_list_sha256": "95863276f38beff6b0cf7609041006a6f1de94d5e62c73d76551d6793ffa5b8e",
+      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + Complete Approval Gate v1",
+      "approval_basis": "Explicit user approval of the exact SHA-bound Lord of Tresserhorn approval candidate after mandatory whole-list audit, commander-first Voltron/Infect drawback-suppression refinement, candidate exhaustion, adversarial red-team review, zero-new-material-improvement closure, fresh Oracle/color-identity verification, current official Commander legality verification, independent rules verification, and complete fail-closed gate APPROVAL_READY with zero errors.",
+      "complete_gate_artifact": "refinement/verification/lord_of_tresserhorn_2026-10-14/gate_output/Lord_of_Tresserhorn_2026-10-14_Complete_Gate.json",
+      "whole_list_audit_artifact": "refinement/decisions/Lord_of_Tresserhorn_Current_Cycle_Decisions_2026-10-14.md",
+      "approval_record_artifact": "refinement/approvals/Lord_of_Tresserhorn_Approved_2026-10-14.md",
+      "approved_list_artifact": "refinement/decklists/Lord_of_Tresserhorn_Approved_2026-10-14.txt"
     }
   }
 }
