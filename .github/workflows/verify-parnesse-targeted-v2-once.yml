@@ -24,7 +24,7 @@ jobs:
       - name: Targeted current Oracle refresh for Tetsuo Umezawa candidate
         run: python scripts/augment_tetsuo_umezawa_candidate_oracle_cache.py
       - name: Verify exact superseding Tetsuo Umezawa approval candidate
-        run: python scripts/verify_tetsuo_umezawa_approval_candidate_v2_once.py
+        run: python scripts/verify_tetsuo_umezawa_approval_candidate_v3_once.py
       - name: Commit approval-ready evidence
         shell: bash
         run: |
