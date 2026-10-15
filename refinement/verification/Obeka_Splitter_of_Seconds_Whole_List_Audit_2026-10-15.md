@@ -8,14 +8,14 @@ Authoritative baseline: `GrixisFINALTXT60--2026.zip / Obeka__Splitter_of_Seconds
 ## Audit result
 
 - Noncommander copies adjudicated: **99/99**
-- Weighted result: **83 KEEP / 16 CUT**
+- Weighted result: **82 KEEP / 17 CUT**
 - Baseline: **100 cards / 94 distinct names / 35 lands**
 - Approval-ready candidate: **100 cards / 96 distinct names / 35 lands**
-- Candidate SHA-256: `77902f5ba52f39b9a09a99658d4c98a4f3319f1ac99ea3247450ccb9300722f1`
+- Candidate SHA-256: `9846e43dbe74fe49a9d356e944dc0a05d7dee30015e0d36e667fdbd01cb1ee75`
 - Candidate repeats: **Island x3 / Mountain x2 / Swamp x2 only**
 - This working audit does not constitute user approval.
 
-## 83 KEEP copies
+## 82 KEEP copies
 
 - 1x An Offer You Can't Refuse
 - 1x Ancestral Vision
@@ -75,7 +75,6 @@ Authoritative baseline: `GrixisFINALTXT60--2026.zip / Obeka__Splitter_of_Seconds
 - 1x Silver Shroud Costume
 - 1x Sol Ring
 - 1x Steam Vents
-- 1x Strionic Resonator
 - 1x Suspended Sentence
 - 2x Swamp
 - 1x Swan Song
@@ -100,22 +99,23 @@ Authoritative baseline: `GrixisFINALTXT60--2026.zip / Obeka__Splitter_of_Seconds
 ### KEEP rationale groups
 
 - **Actual upkeep engines:** As Foretold, all six Courts, Creeping Bloodsucker, Dragonmaster Outcast, Extravagant Replication, Generous Plunderer, Mechanized Production, Phyrexian Arena, Plargg and Nassari, Replicating Ring, Twilight Prophet, Thopter Spy Network, Bonehoard Dracosaur, and Paradox Haze all materially improve when Obeka creates additional upkeeps.
-- **Suspend package:** Ancestral Vision, Inspiring Refrain, Profane Tutor, Rousing Refrain, Suspended Sentence, Jhoira, and As Foretold exploit the unusual timing acceleration from repeated upkeeps.
-- **Commander connection / damage:** Aqueous Form, Brotherhood Regalia, Combat Research, Embercleave, Greaves, Silver Shroud Costume, Swiftfoot Boots, Sword of Feast and Famine, Thassa, Shizo, Silent Arbiter, and Strionic Resonator either force connection, protect Obeka, increase actual damage, or multiply her trigger.
-- **Time Sieve engine:** Thopter Spy Network, Time Sieve, Mechanized Production, Replicating Ring, Generous Plunderer, and the artifact/equipment density preserve the artifact-turn subengine rather than reducing the deck to generic upkeep value.
+- **Suspend package:** Ancestral Vision, Inspiring Refrain, Profane Tutor, Rousing Refrain, Suspended Sentence, Jhoira, and As Foretold exploit repeated upkeep steps.
+- **Commander connection / damage:** Aqueous Form, Brotherhood Regalia, Combat Research, Embercleave, Greaves, Silver Shroud Costume, Swiftfoot Boots, Sword of Feast and Famine, Thassa, Shizo, and Silent Arbiter either force connection, protect Obeka, or increase actual combat damage.
+- **Time Sieve engine:** Thopter Spy Network, Time Sieve, Mechanized Production, Replicating Ring, Generous Plunderer, and the artifact/equipment density preserve the artifact-turn subengine.
 - **Interaction:** An Offer, Cyclonic Rift, Deadly Rollick, Deflecting Swat, Fierce Guardianship, Mana Drain, Swan Song, Toxic Deluge, Demonic Tutor, and Vampiric Tutor are efficient enough to protect or find the commander-native engines without consuming excessive identity slots.
-- **Mana:** the retained sources either offer premium fixing, utility, or enough basics to sustain the 35-land structure after fetch upgrades.
+- **Mana:** retained sources provide premium fixing, utility, and sufficient basics to sustain the 35-land structure after fetch upgrades.
 
-## 16 CUT copies
+## 17 CUT copies
 
 | Card/copy | Decision basis |
 |---|---|
 | Blasphemous Act | Second mass-removal spell is less valuable than Roaming Throne, which directly doubles Obeka's combat-damage trigger while Toxic Deluge and Cyclonic Rift remain. |
-| Descent into Avernus | Extra upkeeps make its counter growth dangerously symmetrical: it can give opponents enormous Treasure bursts while dealing equally accelerating damage to its controller. Palace Siege converts the same upkeep volume into asymmetric pressure and life stabilization. |
+| Descent into Avernus | Extra upkeeps make its counter growth dangerously symmetrical: it can give opponents enormous Treasure bursts while dealing equally accelerating damage to its controller. Palace Siege turns upkeep volume into asymmetric pressure and life stabilization. |
 | Lizard Blades | Genuine double-strike synergy, but Mjölnir provides a stronger current damage multiplier for Obeka, an ETB removal mode, and equip worthy `{1}`. |
-| Scrawling Crawler | It scales with extra upkeeps, but every trigger also refills all opponents immediately. Hatred converts the slot into a commander-centric burst finisher that can create a decisive number of upkeeps without feeding opposing hands. |
+| Scrawling Crawler | It scales with extra upkeeps, but every trigger also immediately refills all opponents. Hatred converts the slot into a commander-centric burst finisher without feeding opposing hands. |
 | Skyline Despot | Seven-mana monarch/upkeep payoff is replaced by six-mana Ginger, which establishes monarch and creates artifact Gingerbrutes at every upkeep while monarch, directly reinforcing Time Sieve. |
-| Winged Boots | Flying + ward is redundant beside multiple cheaper/stronger unblockable and protection tools. Dragonfire Blade both protects Obeka from monocolored interaction and increases her base combat damage from 2 to 4 for only `{1}` to equip to a three-color creature. |
+| Strionic Resonator | It can copy Obeka's trigger but costs `{2}` on every use. Wizard's Staff costs one more mana to deploy/equip initially, then passively gives Obeka an additional trigger every time she connects while also granting prowess. |
+| Winged Boots | Flying + ward is redundant beside multiple cheaper/stronger unblockable and protection tools. Dragonfire Blade protects Obeka from monocolored interaction and increases her base combat damage from 2 to 4 for only `{1}` to equip to a three-color creature. |
 | Dragonskull Summit | Checkland becomes Arid Mesa for premium typed-dual/tri-land access. |
 | Drowned Catacomb | Checkland becomes Flooded Strand. |
 | Shipwreck Marsh | Conditional slowland becomes Marsh Flats. |
@@ -129,8 +129,8 @@ Authoritative baseline: `GrixisFINALTXT60--2026.zip / Obeka__Splitter_of_Seconds
 
 ## Audit closure
 
-Every one of the **99 authoritative baseline noncommander copies** is accounted for as KEEP or CUT. Strategic delta is **6 cards**, mana-base delta is **10 card copies**, and land count remains **35**.
+Every one of the **99 authoritative baseline noncommander copies** is accounted for as KEEP or CUT. Strategic delta is **7 cards**, mana-base delta is **10 card copies**, and land count remains **35**.
 
-Candidate challengers including Bitterbloom Bearer, Wizard's Staff, Genji Glove, Hall of Echoes, Aether Tunnel, Rilsa Rael, Sphinx of the Second Sun, additional generic fast mana, generic extra turns, and generic cEDH finishers were tested against the finalized slots. None produced a material net improvement over the final commander-native package without higher mana, redundancy, color strain, commander dilution, or a weaker current role.
+Candidate challengers including Bitterbloom Bearer, Genji Glove, Hall of Echoes, Aether Tunnel, Rilsa Rael, Sphinx of the Second Sun, additional generic fast mana, generic extra turns, and generic cEDH finishers were tested against the finalized slots. Wizard's Staff did beat the first working candidate and was incorporated over Strionic Resonator before approval-ready binding. No remaining challenger produced a material net improvement without higher mana, redundancy, color strain, commander dilution, or a weaker current role.
 
 **Final serious strategic pass: ZERO NEW MATERIAL IMPROVEMENTS.**
