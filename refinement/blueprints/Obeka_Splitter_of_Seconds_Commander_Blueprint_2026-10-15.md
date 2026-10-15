@@ -78,4 +78,4 @@ Reasons:
 - No project legality exception required.
 - Recommended Archidekt tags: **Extra Upkeeps / Combat Damage / Upkeep Triggers**.
 
-Candidate SHA-256: `83062ff2dbc955c628f9a6df460cf72dd5d450b6685bc4b53f63894bc8c321fb`
+Candidate SHA-256: `c7e855e69d6538d05eec2e4b3da98b0a5bdb057b19e2c672294b9ba3a60a4f63`

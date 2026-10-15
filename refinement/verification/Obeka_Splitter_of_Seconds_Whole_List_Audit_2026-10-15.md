@@ -11,7 +11,7 @@ Authoritative baseline: `GrixisFINALTXT60--2026.zip / Obeka__Splitter_of_Seconds
 - Weighted result: **80 KEEP / 19 CUT**
 - Baseline: **100 cards / 94 distinct names / 35 lands**
 - Approval-ready candidate: **100 cards / 96 distinct names / 35 lands**
-- Candidate SHA-256: `83062ff2dbc955c628f9a6df460cf72dd5d450b6685bc4b53f63894bc8c321fb`
+- Candidate SHA-256: `c7e855e69d6538d05eec2e4b3da98b0a5bdb057b19e2c672294b9ba3a60a4f63`
 - Candidate repeats: **Island x3 / Mountain x2 / Swamp x2 only**
 - This audit does not constitute user approval.
 

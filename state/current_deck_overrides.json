@@ -605,6 +605,22 @@
       "decision_closeout_artifact": "refinement/decisions/Obeka_Brute_Chronologist_Candidate_Decisions_2026-10-15.md",
       "approval_record_artifact": "refinement/approvals/Obeka_Brute_Chronologist_Approved_2026-10-15.md",
       "approved_list_artifact": "refinement/decklists/Obeka_Brute_Chronologist_Approved_2026-10-15.txt"
+    },
+    "Obeka__Splitter_of_Seconds": {
+      "approval_status": "APPROVED",
+      "lock_status": "LOCKED",
+      "final_gate_passed": true,
+      "user_approval_date": "2026-10-15",
+      "current_stage": "LOCKED",
+      "approved_list_sha256": "c7e855e69d6538d05eec2e4b3da98b0a5bdb057b19e2c672294b9ba3a60a4f63",
+      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + hybrid reconciliation + approval-ready verification",
+      "approval_basis": "Explicit user approval of the exact reconciled SHA-bound Obeka, Splitter of Seconds approval-ready candidate after authoritative FINAL baseline reconciliation, mandatory 99-slot whole-list audit, conflicting-candidate reconciliation, candidate exhaustion, commander-first review, adversarial Oracle/rules/interaction review, mana-base red team, zero-new-material-improvement closure, exact structural verification, singleton/color-identity verification, and current official Commander legality checkpoint.",
+      "whole_list_audit_artifact": "refinement/verification/Obeka_Splitter_of_Seconds_Whole_List_Audit_2026-10-15.md",
+      "verification_artifact": "refinement/verification/Obeka_Splitter_of_Seconds_Approval_Ready_Verification_2026-10-15.md",
+      "decision_closeout_artifact": "refinement/decisions/Obeka_Splitter_of_Seconds_Candidate_Decisions_2026-10-15.md",
+      "approval_record_artifact": "refinement/approvals/Obeka_Splitter_of_Seconds_Approved_2026-10-15.md",
+      "approved_list_artifact": "refinement/decklists/Obeka_Splitter_of_Seconds_Approved_2026-10-15.txt",
+      "sha_reconciliation_note": "Prior documented hash 83062ff2dbc955c628f9a6df460cf72dd5d450b6685bc4b53f63894bc8c321fb was incorrect. GitHub Actions verified the unchanged raw candidate bytes as c7e855e69d6538d05eec2e4b3da98b0a5bdb057b19e2c672294b9ba3a60a4f63; no card content changed."
     }
   }
 }

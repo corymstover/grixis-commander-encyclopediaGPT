@@ -3,9 +3,9 @@
 Date: 2026-10-15  
 Cycle: `global-restart-2026-10-13`  
 Deck: #45 of 62  
-Status: working decision closeout; not user approval
+Status: **APPROVED / LOCKED** — explicit user approval received 2026-10-15
 
-Exact candidate SHA-256: `83062ff2dbc955c628f9a6df460cf72dd5d450b6685bc4b53f63894bc8c321fb`
+Exact candidate SHA-256: `c7e855e69d6538d05eec2e4b3da98b0a5bdb057b19e2c672294b9ba3a60a4f63`
 
 ## Final 19-card delta from authoritative FINAL baseline
 
@@ -155,3 +155,12 @@ The material improvement discovered by the conflict review was the **final hybri
 **ZERO NEW MATERIAL IMPROVEMENTS.**
 
 **Decision closeout: PASS — candidate is APPROVAL_READY evidence only, not approved/locked.**
+
+## Approval closeout
+
+- Explicit user approval received: **2026-10-15**
+- Canonical approved SHA-256: `c7e855e69d6538d05eec2e4b3da98b0a5bdb057b19e2c672294b9ba3a60a4f63`
+- Exact approved artifact: `refinement/decklists/Obeka_Splitter_of_Seconds_Approved_2026-10-15.txt`
+- Current-cycle state: **APPROVED / LOCKED**
+- Quality gate: **Deck Quality Gates v3 + mandatory whole-list audit + hybrid reconciliation + approval-ready verification**
+- Next unlocked deck in tracker order: **Parnesse, the Subtle Brush (index 45 / deck 46 of 62)**.
