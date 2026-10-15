@@ -3,7 +3,7 @@
 Date: 2026-10-15  
 Cycle: `global-restart-2026-10-13`  
 Deck: #43 of 62  
-Status: working decision closeout; not user approval
+Status: **APPROVED / LOCKED** — explicit user approval received 2026-10-15
 
 Exact candidate SHA-256: `23168e59b7d359ecf24ed95065a5a4b50c978a8f441208d593207e2feacbdea2`
 
@@ -137,3 +137,12 @@ No challenger produced a material improvement without a greater cost in speed, c
 **ZERO NEW MATERIAL IMPROVEMENTS.**
 
 **Decision closeout: PASS — candidate is APPROVAL_READY evidence only, not approved/locked.**
+
+## Approval closeout
+
+- Explicit user approval received: **2026-10-15**
+- Canonical approved SHA-256: `23168e59b7d359ecf24ed95065a5a4b50c978a8f441208d593207e2feacbdea2`
+- Exact approved artifact: `refinement/decklists/Norman_Osborn_Green_Goblin_Approved_2026-10-15.txt`
+- Current-cycle state: **APPROVED / LOCKED**
+- Quality gate: **Deck Quality Gates v3 + mandatory whole-list audit + approval-ready verification**
+- Next unlocked deck in tracker order: **Obeka, Brute Chronologist (index 43 / deck 44 of 62)**.
