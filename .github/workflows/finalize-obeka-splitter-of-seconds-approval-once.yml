@@ -1,4 +1,4 @@
-name: Finalize Tetsuo Imperial Champion approval once
+name: Finalize Madcap Jester approval once
 
 on:
   push:
@@ -19,9 +19,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Finalize exact approved Tetsuo Imperial Champion candidate
-        run: python scripts/finalize_tetsuo_imperial_champion_approval_once.py
+      - name: Finalize exact approved Madcap Jester candidate
+        run: python scripts/finalize_madcap_jester_approval_once.py
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Approve and lock Tetsuo Imperial Champion [skip ci]"
-          file_pattern: "state/current_deck_overrides.json refinement/Deck_Refinement_Tracker_2026-10-12.csv refinement/decklists/Tetsuo_Imperial_Champion_Approved_2026-10-15.txt refinement/approvals/Tetsuo_Imperial_Champion_Approved_2026-10-15.md refinement/decisions/Tetsuo_Imperial_Champion_Candidate_Decisions_2026-10-15.md"
+          commit_message: "Approve and lock The Madcap Jester [skip ci]"
+          file_pattern: "state/current_deck_overrides.json refinement/Deck_Refinement_Tracker_2026-10-12.csv refinement/decklists/The_Madcap_Jester_Approved_2026-10-15.txt refinement/approvals/The_Madcap_Jester_Approved_2026-10-15.md refinement/decisions/The_Madcap_Jester_Candidate_Decisions_2026-10-15.md"
