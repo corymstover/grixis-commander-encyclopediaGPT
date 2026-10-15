@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "deck_sha256": "93d27d605bbdf0737ebe32c911fafe3a002b06d7d90f00b7bfc402cb1d3faccb",
+  "checked_at_utc": "2026-10-14T23:58:00Z",
+  "sources": [
+    "Wizards of the Coast current Banned & Restricted list — Commander section, checked 2026-10-14",
+    "Wizards Commander Banned and Restricted Announcement — 2025-04-22, which unbanned Gifts Ungiven",
+    "Wizards Commander Banned and Restricted Announcement — 2026-02-09",
+    "Wizards Banned and Restricted Announcement — 2026-10-12; changes were Competitive Brawl-specific and did not alter paper Commander legality for this candidate",
+    "Current-cycle Oracle/Scryfall legality cache; exact candidate must be independently revalidated by the complete approval gate"
+  ],
+  "unexpected_banned_cards": [],
+  "project_exceptions": [],
+  "notes": "The exact SHA-bound Kess candidate requires no project-specific legality exception. Gifts Ungiven is officially Commander-legal following its 2025-04-22 unban. The candidate excludes currently Commander-banned Mana Crypt, Jeweled Lotus, Dockside Extortionist, and other banned cards. Final per-card official legality and B/R/U color identity are fail-closed and must be independently confirmed against the freshly rebuilt current-cycle Oracle cache by the complete gate before APPROVAL_READY."
+}
