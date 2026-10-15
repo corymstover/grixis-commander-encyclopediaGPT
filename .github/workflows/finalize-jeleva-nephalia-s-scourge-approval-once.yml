@@ -5,6 +5,7 @@ on:
     branches: ["main"]
     paths:
       - "scripts/finalize_jeleva_nephalia_s_scourge_approval_once.py"
+      - "scripts/finalize_mishra_artificer_prodigy_approval_once.py"
       - ".github/workflows/finalize-jeleva-nephalia-s-scourge-approval-once.yml"
   workflow_dispatch:
 
@@ -25,7 +26,9 @@ jobs:
           python-version: "3.12"
 
       - name: Finalize exact approved candidate
-        run: python scripts/finalize_jeleva_nephalia_s_scourge_approval_once.py
+        run: |
+          python scripts/finalize_jeleva_nephalia_s_scourge_approval_once.py
+          python scripts/finalize_mishra_artificer_prodigy_approval_once.py
 
       - name: Commit approval state
         shell: bash
@@ -40,9 +43,9 @@ jobs:
                   refinement/decklists/Jeleva_Nephalia_s_Scourge_Approved_2026-10-14.txt \
                   refinement/approvals/Jeleva_Nephalia_s_Scourge_Approved_2026-10-14.md
           if git diff --cached --quiet; then
-            echo "No Jeleva approval changes to commit."
+            echo "No approval-state changes to commit."
             exit 0
           fi
-          git commit -m "Approve and lock Jeleva Nephalia's Scourge [skip ci]"
+          git commit -m "Approve and lock current explicit candidates [skip ci]"
           git pull --rebase origin "$BRANCH_NAME"
           git push origin "HEAD:$BRANCH_NAME"
