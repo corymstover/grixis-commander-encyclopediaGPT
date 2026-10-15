@@ -1,0 +1,101 @@
+baseline_card,decision,role_or_replacement,rationale
+Aetherflux Reservoir,KEEP,Win/Combo,Compact deterministic or storm package aligned with artifact engine.
+An Offer You Can't Refuse,KEEP,Interaction,Premium low-opportunity-cost interaction protects setup and stops faster decks.
+Ancient Tomb,KEEP,Mana base,Efficient fixing or high-value utility appropriate to the 31-land fast-mana shell.
+Arcane Signet,KEEP,Artifact engine,"Directly improves artifact density, flash value, mana, recursion, or card flow."
+"Avatar Roku, Firebender",KEEP,Commander identity,Ally/firebending piece that materially uses the commander's timing or combat-mana plan.
+Badlands,KEEP,Mana base,Efficient fixing or high-value utility appropriate to the 31-land fast-mana shell.
+Baleful Strix,KEEP,Artifact engine,"Directly improves artifact density, flash value, mana, recursion, or card flow."
+Basalt Monolith,KEEP,Win/Combo,Compact deterministic or storm package aligned with artifact engine.
+Bender's Waterskin,KEEP,Artifact engine,"Directly improves artifact density, flash value, mana, recursion, or card flow."
+Blightstep Pathway // Searstep Pathway,KEEP,Mana base,Efficient fixing or high-value utility appropriate to the 31-land fast-mana shell.
+Blood Crypt,KEEP,Mana base,Efficient fixing or high-value utility appropriate to the 31-land fast-mana shell.
+Bloodstained Mire,KEEP,Mana base,Efficient fixing or high-value utility appropriate to the 31-land fast-mana shell.
+Bojuka Bog,KEEP,Mana base,Efficient fixing or high-value utility appropriate to the 31-land fast-mana shell.
+Bolas's Citadel,KEEP,Win/Combo,Compact deterministic or storm package aligned with artifact engine.
+Brain Freeze,KEEP,Win/Combo,Compact deterministic or storm package aligned with artifact engine.
+Chaos Warp,KEEP,Interaction,Premium low-opportunity-cost interaction protects setup and stops faster decks.
+Chrome Mox,KEEP,Artifact engine,"Directly improves artifact density, flash value, mana, recursion, or card flow."
+City of Brass,KEEP,Mana base,Efficient fixing or high-value utility appropriate to the 31-land fast-mana shell.
+Clearwater Pathway // Murkwater Pathway,KEEP,Mana base,Efficient fixing or high-value utility appropriate to the 31-land fast-mana shell.
+Command Tower,KEEP,Mana base,Efficient fixing or high-value utility appropriate to the 31-land fast-mana shell.
+Cyclonic Rift,KEEP,Interaction,Premium low-opportunity-cost interaction protects setup and stops faster decks.
+Deadly Rollick,KEEP,Interaction,Premium low-opportunity-cost interaction protects setup and stops faster decks.
+Deflecting Swat,KEEP,Interaction,Premium low-opportunity-cost interaction protects setup and stops faster decks.
+Demonic Tutor,KEEP,Tutor,"Consistency for commander engines, interaction, and compact win packages."
+Dramatic Reversal,CUT,Unwinding Clock,No Isochron Scepter package; repeated opponent-turn artifact untaps better exploit artifact flash.
+"Emry, Lurker of the Loch",KEEP,Artifact engine,"Directly improves artifact density, flash value, mana, recursion, or card flow."
+Enthusiastic Mechanaut,KEEP,Artifact engine,"Directly improves artifact density, flash value, mana, recursion, or card flow."
+Etherium Sculptor,KEEP,Artifact engine,"Directly improves artifact density, flash value, mana, recursion, or card flow."
+Fabled Passage,CUT,Urza's Saga,"No basic lands exist in authoritative baseline, so Passage has no search target."
+Fellwar Stone,KEEP,Artifact engine,"Directly improves artifact density, flash value, mana, recursion, or card flow."
+Fierce Guardianship,KEEP,Interaction,Premium low-opportunity-cost interaction protects setup and stops faster decks.
+Fire Lord Azula,KEEP,Commander identity,Ally/firebending piece that materially uses the commander's timing or combat-mana plan.
+Fire Nation Occupation,KEEP,Commander identity,Ally/firebending piece that materially uses the commander's timing or combat-mana plan.
+Firebender Ascension,KEEP,Commander identity,Ally/firebending piece that materially uses the commander's timing or combat-mana plan.
+Firebending Student,CUT,Boiling Rock Rioter,Efficient firebending but neither Ally nor artifact; replacement keeps firebending and adds Ally flash/graveyard utility.
+Force of Will,KEEP,Interaction,Premium low-opportunity-cost interaction protects setup and stops faster decks.
+Foundry Inspector,KEEP,Artifact engine,"Directly improves artifact density, flash value, mana, recursion, or card flow."
+Haunted Ridge,CUT,Marsh Flats,Replace conditional/slow source with fetchland.
+"Iroh, Dragon of the West",CUT,Thought Monitor,Counter-dependent four-mana firebending support is slower than flashable affinity draw-two.
+"Jhoira, Weatherlight Captain",KEEP,Artifact engine,"Directly improves artifact density, flash value, mana, recursion, or card flow."
+Jwari Shapeshifter,KEEP,Commander identity,Ally/firebending piece that materially uses the commander's timing or combat-mana plan.
+Lightning Greaves,KEEP,Protection,Protects the four-mana commander and haste/timing-dependent engines.
+Lion's Eye Diamond,KEEP,Win/Combo,Compact deterministic or storm package aligned with artifact engine.
+"Longshot, Rebel Bowman",KEEP,Commander identity,Ally/firebending piece that materially uses the commander's timing or combat-mana plan.
+Lotus Petal,KEEP,Artifact engine,"Directly improves artifact density, flash value, mana, recursion, or card flow."
+Luxury Suite,KEEP,Mana base,Efficient fixing or high-value utility appropriate to the 31-land fast-mana shell.
+Mai and Zuko,KEEP,Commander,Primary artifact/Ally flash and firebending engine.
+"Mai, Scornful Striker",CUT,The Blue Spirit,Symmetrical noncreature-spell life loss is actively hostile to the artifact/storm plan.
+Mana Confluence,KEEP,Mana base,Efficient fixing or high-value utility appropriate to the 31-land fast-mana shell.
+Mana Drain,KEEP,Interaction,Premium low-opportunity-cost interaction protects setup and stops faster decks.
+Mana Vault,KEEP,Artifact engine,"Directly improves artifact density, flash value, mana, recursion, or card flow."
+Morphic Pool,KEEP,Mana base,Efficient fixing or high-value utility appropriate to the 31-land fast-mana shell.
+Mox Diamond,KEEP,Artifact engine,"Directly improves artifact density, flash value, mana, recursion, or card flow."
+Mox Opal,KEEP,Artifact engine,"Directly improves artifact density, flash value, mana, recursion, or card flow."
+Mystic Forge,KEEP,Artifact engine,"Directly improves artifact density, flash value, mana, recursion, or card flow."
+Mystic Remora,KEEP,Card advantage,High-rate card advantage needed to sustain an optimized setup-intensive engine.
+Mystical Tutor,KEEP,Tutor,"Consistency for commander engines, interaction, and compact win packages."
+"Otawara, Soaring City",KEEP,Mana base,Efficient fixing or high-value utility appropriate to the 31-land fast-mana shell.
+Path of Ancestry,KEEP,Mana base,Efficient fixing or high-value utility appropriate to the 31-land fast-mana shell.
+Phyrexian Metamorph,KEEP,Artifact engine,"Directly improves artifact density, flash value, mana, recursion, or card flow."
+Polluted Delta,KEEP,Mana base,Efficient fixing or high-value utility appropriate to the 31-land fast-mana shell.
+Rhystic Study,KEEP,Card advantage,High-rate card advantage needed to sustain an optimized setup-intensive engine.
+Rings of Brighthearth,KEEP,Win/Combo,Compact deterministic or storm package aligned with artifact engine.
+Riverglide Pathway // Lavaglide Pathway,KEEP,Mana base,Efficient fixing or high-value utility appropriate to the 31-land fast-mana shell.
+Roaming Throne,KEEP,Artifact engine,"Directly improves artifact density, flash value, mana, recursion, or card flow."
+"Sai, Master Thopterist",KEEP,Artifact engine,"Directly improves artifact density, flash value, mana, recursion, or card flow."
+Scalding Tarn,KEEP,Mana base,Efficient fixing or high-value utility appropriate to the 31-land fast-mana shell.
+Sensei's Divining Top,KEEP,Win/Combo,Compact deterministic or storm package aligned with artifact engine.
+Shipwreck Marsh,CUT,Flooded Strand,Replace conditional/slow source with fetchland.
+Skullclamp,CUT,Uthros Research Craft,Disposable 1-toughness density is insufficient; Uthros directly rewards artifact casting.
+"Smellerbee, Rebel Fighter",CUT,"Katara, Waterbending Master",Four-mana haste/wheel payoff is less direct than opponent-turn flash reward.
+"Sokenzan, Crucible of Defiance",KEEP,Mana base,Efficient fixing or high-value utility appropriate to the 31-land fast-mana shell.
+"Sokka, Bold Boomeranger",KEEP,Commander identity,Ally/firebending piece that materially uses the commander's timing or combat-mana plan.
+Sol Ring,KEEP,Artifact engine,"Directly improves artifact density, flash value, mana, recursion, or card flow."
+Sozin's Comet,CUT,The Fire Nation Drill,Board-dependent five-mana sorcery replaced by flashable artifact interaction.
+Steam Vents,KEEP,Mana base,Efficient fixing or high-value utility appropriate to the 31-land fast-mana shell.
+Stormcarved Coast,CUT,Misty Rainforest,Replace conditional/slow source with fetchland.
+Sulfur Falls,CUT,Ally Encampment,Replace checkland with commander-specific Ally fixing/protection utility.
+Sulfurous Springs,KEEP,Mana base,Efficient fixing or high-value utility appropriate to the 31-land fast-mana shell.
+Swan Song,KEEP,Interaction,Premium low-opportunity-cost interaction protects setup and stops faster decks.
+"Takenuma, Abandoned Mire",KEEP,Mana base,Efficient fixing or high-value utility appropriate to the 31-land fast-mana shell.
+Talisman of Creativity,KEEP,Artifact engine,"Directly improves artifact density, flash value, mana, recursion, or card flow."
+Talisman of Dominance,KEEP,Artifact engine,"Directly improves artifact density, flash value, mana, recursion, or card flow."
+Talisman of Indulgence,KEEP,Artifact engine,"Directly improves artifact density, flash value, mana, recursion, or card flow."
+"The Mechanist, Aerial Artisan",KEEP,Commander identity,Ally/firebending piece that materially uses the commander's timing or combat-mana plan.
+The One Ring,KEEP,Artifact engine,"Directly improves artifact density, flash value, mana, recursion, or card flow."
+Toxic Deluge,KEEP,Interaction,Premium low-opportunity-cost interaction protects setup and stops faster decks.
+Training Center,KEEP,Mana base,Efficient fixing or high-value utility appropriate to the 31-land fast-mana shell.
+Tuktuk Scrapper,KEEP,Commander identity,Ally/firebending piece that materially uses the commander's timing or combat-mana plan.
+"Ty Lee, Chi Blocker",KEEP,Commander identity,Ally/firebending piece that materially uses the commander's timing or combat-mana plan.
+Underground Sea,KEEP,Mana base,Efficient fixing or high-value utility appropriate to the 31-land fast-mana shell.
+Underworld Breach,KEEP,Win/Combo,Compact deterministic or storm package aligned with artifact engine.
+"Urza, Lord High Artificer",KEEP,Artifact engine,"Directly improves artifact density, flash value, mana, recursion, or card flow."
+Vampiric Tutor,KEEP,Tutor,"Consistency for commander engines, interaction, and compact win packages."
+Volcanic Island,KEEP,Mana base,Efficient fixing or high-value utility appropriate to the 31-land fast-mana shell.
+Walking Ballista,KEEP,Win/Combo,Compact deterministic or storm package aligned with artifact engine.
+Watery Grave,KEEP,Mana base,Efficient fixing or high-value utility appropriate to the 31-land fast-mana shell.
+Wishclaw Talisman,KEEP,Tutor,"Consistency for commander engines, interaction, and compact win packages."
+Xander's Lounge,KEEP,Mana base,Efficient fixing or high-value utility appropriate to the 31-land fast-mana shell.
+"Zuko, Firebending Master",KEEP,Commander identity,Ally/firebending piece that materially uses the commander's timing or combat-mana plan.
