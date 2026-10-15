@@ -23,6 +23,7 @@
 1x Court of Vantress
 1x Creeping Bloodsucker
 1x Cyclonic Rift
+1x Darksteel Reactor
 1x Deadly Rollick
 1x Deflecting Swat
 1x Demonic Tutor
@@ -33,8 +34,6 @@
 1x Fellwar Stone
 1x Fierce Guardianship
 1x Flooded Strand
-1x Generous Plunderer
-1x Ginger, Queen of Sweets
 1x Hatred
 1x Inspiring Refrain
 3x Island
@@ -46,12 +45,10 @@
 1x Marsh Flats
 1x Mechanized Production
 1x Misty Rainforest
-1x Mithril Coat
 1x Mjölnir, Hammer of Thor
 1x Morphic Pool
 2x Mountain
 1x Otawara, Soaring City
-1x Palace Siege
 1x Paradox Haze
 1x Phyrexian Arena
 1x Plargg and Nassari
@@ -69,8 +66,10 @@
 1x Shizo, Death's Storehouse
 1x Silent Arbiter
 1x Silver Shroud Costume
+1x Smaug the Magnificent
 1x Sol Ring
 1x Steam Vents
+1x Super Intelligence
 1x Suspended Sentence
 2x Swamp
 1x Swan Song
@@ -79,6 +78,7 @@
 1x Talisman of Creativity
 1x Talisman of Dominance
 1x Talisman of Indulgence
+1x Tamiyo's Journal
 1x Thassa, God of the Sea
 1x Thopter Spy Network
 1x Time Sieve
