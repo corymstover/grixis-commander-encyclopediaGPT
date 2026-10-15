@@ -3,7 +3,7 @@
 Date: 2026-10-15  
 Cycle: `global-restart-2026-10-13`  
 Deck: #49 of 62  
-Status: working decision closeout; not user approval
+Status: **APPROVED / LOCKED** — explicit user approval received 2026-10-15
 
 Exact candidate SHA-256: `72a814e6ae1153507c9c1469a7792043b2e5c055d9e5fcd9f6cfcf7781e287b0`
 
@@ -70,3 +70,12 @@ After the commander-casting-speed review, full 99-copy audit, current-card chall
 **ZERO NEW MATERIAL IMPROVEMENTS.**
 
 **Decision result: PASS — fresh Oracle/legality/rules complete gate and explicit user approval remain required.**
+
+## Approval closeout
+
+- Explicit user approval received: **2026-10-15**
+- Canonical approved SHA-256: `72a814e6ae1153507c9c1469a7792043b2e5c055d9e5fcd9f6cfcf7781e287b0`
+- Exact approved artifact: `refinement/decklists/Sauron_Lord_of_the_Rings_Approved_2026-10-15.txt`
+- Current-cycle state: **APPROVED / LOCKED**
+- Quality gate: **Deck Quality Gates v3 + mandatory whole-list audit + targeted approval-ready verification**
+- Next unlocked deck in tracker order: **Sauron, the Dark Lord (index 49 / deck 50 of 62)**.

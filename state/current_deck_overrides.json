@@ -669,6 +669,22 @@
       "decision_closeout_artifact": "refinement/decisions/Saruman_the_White_Hand_Candidate_Decisions_2026-10-15.md",
       "approval_record_artifact": "refinement/approvals/Saruman_the_White_Hand_Approved_2026-10-15.md",
       "approved_list_artifact": "refinement/decklists/Saruman_the_White_Hand_Approved_2026-10-15.txt"
+    },
+    "Sauron__Lord_of_the_Rings": {
+      "approval_status": "APPROVED",
+      "lock_status": "LOCKED",
+      "final_gate_passed": true,
+      "user_approval_date": "2026-10-15",
+      "current_stage": "LOCKED",
+      "approved_list_sha256": "72a814e6ae1153507c9c1469a7792043b2e5c055d9e5fcd9f6cfcf7781e287b0",
+      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + targeted approval-ready verification",
+      "approval_basis": "Explicit user approval of the exact SHA-bound Sauron, Lord of the Rings approval-ready candidate after authoritative FINAL baseline reconciliation, mandatory 99-slot whole-list audit, commander-casting-speed review, reanimation-chain review, candidate exhaustion, adversarial red-team review, mana-base review, Ring/Nazgûl preservation check, targeted current Oracle refresh, rules-interaction verification, current official Commander legality verification, exact structural verification, singleton/deck-construction verification, and U/B/R color-identity verification.",
+      "whole_list_audit_artifact": "refinement/verification/Sauron_Lord_of_the_Rings_Whole_List_Audit_2026-10-15.md",
+      "verification_artifact": "refinement/verification/Sauron_Lord_of_the_Rings_Approval_Ready_Verification_2026-10-15.md",
+      "complete_gate_artifact": "refinement/verification/sauron_lotr_2026-10-15/gate_output/Sauron_Lord_of_the_Rings_2026-10-15_Complete_Gate.json",
+      "decision_closeout_artifact": "refinement/decisions/Sauron_Lord_of_the_Rings_Candidate_Decisions_2026-10-15.md",
+      "approval_record_artifact": "refinement/approvals/Sauron_Lord_of_the_Rings_Approved_2026-10-15.md",
+      "approved_list_artifact": "refinement/decklists/Sauron_Lord_of_the_Rings_Approved_2026-10-15.txt"
     }
   }
 }
