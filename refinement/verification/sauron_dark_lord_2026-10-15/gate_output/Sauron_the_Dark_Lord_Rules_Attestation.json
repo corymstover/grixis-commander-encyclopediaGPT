@@ -1,0 +1,78 @@
+{
+  "status": "PASS",
+  "deck_sha256": "fab194f69a6e15b83679c1419f88ba6fdd56cd9527946cb94a6d8efe23a7dfc8",
+  "checked_at_utc": "2026-10-15T21:39:07.922958+00:00",
+  "sources": [
+    "Magic Comprehensive Rules — ward, triggered abilities, replacement effects, creature types, shadow, amass, Ring temptation, card-specific deck construction and alternative costs (current 2026 rules)",
+    "The Lord of the Rings: Tales of Middle-earth release notes — Sauron, Ring, amass and Minas Morgul rulings",
+    "The Lost Caverns of Ixalan release notes — Roaming Throne rulings",
+    "Current Oracle text captured in Current_Cycle_Oracle_Cache.jsonl"
+  ],
+  "interactions": [
+    {
+      "name": "Sauron ward",
+      "status": "PASS",
+      "finding": "When an opponent targets Sauron, ward requires that player to sacrifice a legendary artifact or legendary creature or the spell/ability is countered by ward."
+    },
+    {
+      "name": "Opponent-spell amass trigger",
+      "status": "PASS",
+      "finding": "Whenever an opponent casts a spell, Sauron triggers and amasses Orcs 1 on resolution. That triggered ability is independent of the opponent spell once triggered."
+    },
+    {
+      "name": "Army combat into Ring engine",
+      "status": "PASS",
+      "finding": "Whenever an Army controlled by the Sauron player deals combat damage to a player, the Ring tempts that player. Each Ring temptation separately triggers Sauron’s optional discard-hand/draw-four ability."
+    },
+    {
+      "name": "Nazgûl construction and Ring triggers",
+      "status": "PASS",
+      "finding": "Nazgûl explicitly permits up to nine copies; seven is legal. Each Nazgûl independently triggers whenever the Ring tempts its controller and puts a +1/+1 counter on each Wraith controlled by that player."
+    },
+    {
+      "name": "Mauhúr replacement",
+      "status": "PASS",
+      "finding": "If one or more +1/+1 counters would be put on an Army, Goblin, or Orc controlled by the player, Mauhúr replaces that event with that many plus one counters, not one extra counter per counter."
+    },
+    {
+      "name": "The Great Goblin counter trigger",
+      "status": "PASS",
+      "finding": "The Great Goblin triggers once for each event that puts one or more counters on a Goblin, Orc, or Army controlled by its controller, not once for each individual counter."
+    },
+    {
+      "name": "Great Goblin, Foul-Hearted",
+      "status": "PASS",
+      "finding": "Its enter/attack trigger amasses Goblins 3. Amassing onto an existing Army adds Goblin to that Army’s creature types, and its static ability gives Armies controlled by its controller trample."
+    },
+    {
+      "name": "Minas Morgul Army-Wraith bridge",
+      "status": "PASS",
+      "finding": "A shadow counter from Minas Morgul makes the target a Wraith in addition to its other types and gives it shadow while the counter remains. An Army made into a Wraith can then receive counters from each Nazgûl Ring trigger while remaining an Army for Sauron’s combat-damage trigger."
+    },
+    {
+      "name": "Roaming Throne — Avatar mode",
+      "status": "PASS",
+      "finding": "Choosing Avatar makes Roaming Throne an Avatar and causes triggered abilities of other Avatars controlled by its controller, including Sauron, to trigger an additional time. Each doubled Sauron trigger is a separate trigger."
+    },
+    {
+      "name": "Roaming Throne — Wraith mode",
+      "status": "PASS",
+      "finding": "Choosing Wraith instead causes each Nazgûl triggered ability to trigger an additional time because each Nazgûl is a Wraith. This does not simultaneously double Sauron because only one creature type is chosen."
+    },
+    {
+      "name": "Force of Will support",
+      "status": "PASS",
+      "finding": "The candidate retains 21 other blue nonland cards by current color-identity/type metadata, providing a sufficient functional pitch pool for Force of Will."
+    },
+    {
+      "name": "Wonder and Anger",
+      "status": "PASS",
+      "finding": "The revised mana base retains an Island basic plus Island-typed duals for Wonder and Mountain basics plus Mountain-typed duals for Anger."
+    },
+    {
+      "name": "Widespread Brutality",
+      "status": "PASS",
+      "finding": "The spell amasses first, then the chosen Army deals damage equal to its power to each non-Army creature; the Army itself is not a non-Army creature."
+    }
+  ]
+}

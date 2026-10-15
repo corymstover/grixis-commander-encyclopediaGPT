@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "deck_sha256": "fab194f69a6e15b83679c1419f88ba6fdd56cd9527946cb94a6d8efe23a7dfc8",
+  "checked_at_utc": "2026-10-15T21:39:07.922958+00:00",
+  "sources": [
+    "https://magic.wizards.com/en/banned-restricted-list — current Commander banned list",
+    "Current_Cycle_Oracle_Cache.jsonl refreshed from current Scryfall metadata"
+  ],
+  "unexpected_banned_cards": [],
+  "project_exceptions_required": [],
+  "finding": "Every candidate card is marked Commander-legal in the refreshed cache; no project legality exception is required."
+}
