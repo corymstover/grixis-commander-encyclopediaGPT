@@ -1,0 +1,15 @@
+{
+  "deck_id": "Lord_Xander__the_Collector",
+  "display_name": "Lord Xander, the Collector",
+  "decklist_path": "refinement/decklists/Lord_Xander_the_Collector_Approval_Candidate_2026-10-14.txt",
+  "expected_deck_sha256": "92cdc2f9c1a3583ccf6a311679db66bef825dac2902761859e929f268b6b4787",
+  "baseline_path": "refinement/verification/lord_xander_the_collector_2026-10-14/Lord_Xander_the_Collector_Current_Cycle_Baseline_2026-10-14.txt",
+  "expected_baseline_sha256": "f66d97734cf16799a569f44a00209e4981fc977538c07cc7b1fe0d3e01ba5960",
+  "baseline_source_sha256": "6525dcb9e2165610e832998d94b1b929cd2b30e2701706ca91a77611bafa371c",
+  "rules_attestation_path": "refinement/verification/lord_xander_the_collector_2026-10-14/Lord_Xander_the_Collector_Rules_Attestation.json",
+  "official_legality_attestation_path": "refinement/verification/lord_xander_the_collector_2026-10-14/Lord_Xander_the_Collector_Official_Legality_Attestation.json",
+  "output_dir": "refinement/verification/lord_xander_the_collector_2026-10-14/gate_output",
+  "output_stem": "Lord_Xander_the_Collector_2026-10-14",
+  "max_cache_age_hours": 72,
+  "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + Complete Approval Gate v1"
+}
