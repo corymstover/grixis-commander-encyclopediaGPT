@@ -1,100 +1,100 @@
-slot,card_name,decision,role,replacement_or_challenger,rationale
-1,An Offer You Can't Refuse,KEEP,interaction,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-2,Ancient Tomb,KEEP,mana / utility land,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-3,Animate Dead,CUT,recursion,Sneak Attack,"Sneak Attack better exploits Marchesa by granting haste, enabling dethrone attacks, and feeding end-step sacrifice/return sequencing."
-4,Arcane Denial,CUT,interaction,Flare of Denial,Flare of Denial preserves countermagic while its alternate cost can sacrifice a blue nontoken creature that Marchesa can later return.
-5,Arcane Signet,KEEP,mana / ramp,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-6,Ashnod's Altar,KEEP,sacrifice outlet / engine,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-7,Baleful Strix,KEEP,card advantage,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-8,Black Market Connections,CUT,generic value,Agatha's Soul Cauldron,"Agatha's Soul Cauldron is more commander-specific: instant-speed +1/+1 counters, graveyard interaction, and activated-ability reuse."
-9,Blasphemous Act,KEEP,interaction,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-10,Blood Artist,KEEP,death / damage payoff,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-11,Blood Crypt,KEEP,mana / utility land,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-12,Bloodghast,CUT,recursive body,Twilight Diviner,Twilight Diviner converts Marchesa/persist graveyard returns into additional token copies once each turn.
-13,Bloodstained Mire,KEEP,mana / utility land,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-14,"Braids, Arisen Nightmare",KEEP,card advantage,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-15,Carrion Feeder,KEEP,sacrifice outlet / engine,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-16,Cauldron of Souls,CUT,counter/recursion support,Sage of Fables,"Sage of Fables is a repeatable Wizard counter engine, cancels Glen Elendra persist counters, and turns counters into cards."
-17,Chaos Warp,KEEP,interaction,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-18,Command Tower,KEEP,mana / utility land,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-19,Crumbling Necropolis,CUT,land,Badlands,Badlands removes a tapped-land penalty while preserving black/red fixing and fetchability.
-20,Cyclonic Rift,KEEP,interaction,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-21,Deadly Dispute,KEEP,card advantage,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-22,Demonic Tutor,KEEP,tutor,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-23,Diabolic Intent,KEEP,tutor,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-24,"Drana, Liberator of Malakir",KEEP,+1/+1 counter engine,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-25,Drowned Catacomb,KEEP,mana / utility land,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-26,Exotic Orchard,KEEP,mana / utility land,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-27,Fabled Passage,CUT,land,City of Brass,City of Brass provides immediate untapped access to every Grixis color.
-28,Feed the Swarm,KEEP,interaction,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-29,Fellwar Stone,KEEP,mana / ramp,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-30,Fierce Guardianship,KEEP,interaction,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-31,Flayer of the Hatebound,KEEP,death / damage payoff,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-32,Fleshbag Marauder,KEEP,engine / synergy,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-33,Glen Elendra Archmage,KEEP,persist engine / combo,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-34,Goblin Bombardment,KEEP,sacrifice outlet / engine,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-35,Grave Pact,KEEP,engine / synergy,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-36,Gray Merchant of Asphodel,CUT,drain finisher,Spark Double,"Spark Double copies Marchesa or combo creatures, enters with a counter when copying a creature, and enables compact loops."
-37,Grim Haruspex,KEEP,card advantage,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-38,Haunted Ridge,CUT,land,Mana Confluence,Mana Confluence provides immediate untapped access to every Grixis color.
-39,Herald of Secret Streams,CUT,combat payoff,Danny Pink,"Danny Pink turns the deck's routine +1/+1 counter placement into draw while retaining a counter-granting mentor body."
-40,High Market,KEEP,sacrifice outlet / engine,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-41,Iron Apprentice,KEEP,+1/+1 counter engine,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-42,Island,KEEP,mana / utility land,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-43,Island,KEEP,mana / utility land,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-44,"Juri, Master of the Revue",KEEP,engine / synergy,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-45,Lightning Greaves,KEEP,engine / synergy,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-46,Luxury Suite,KEEP,mana / utility land,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-47,Marionette Apprentice,KEEP,death / damage payoff,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-48,Mayhem Devil,KEEP,death / damage payoff,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-49,Metallic Mimic,KEEP,+1/+1 counter engine,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-50,Midnight Reaper,CUT,death draw,"Satoru, the Infiltrator","Satoru draws from Marchesa and persist creatures entering without being cast, without requiring another death trigger."
-51,"Mikaeus, the Unhallowed",KEEP,engine / synergy,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-52,Morphic Pool,KEEP,mana / utility land,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-53,Mountain,KEEP,mana / utility land,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-54,Murderous Redcap,KEEP,persist engine / combo,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-55,"Otawara, Soaring City",KEEP,mana / utility land,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-56,Pawn of Ulamog,CUT,death mana,"Gev, Scaled Scorch",Gev proactively places +1/+1 counters on entering creatures after an opponent loses life and directly supports persist loops.
-57,Phyrexian Altar,KEEP,sacrifice outlet / engine,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-58,Phyrexian Tower,KEEP,sacrifice outlet / engine,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-59,Pitiless Plunderer,KEEP,mana / ramp,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-60,Polluted Delta,KEEP,mana / utility land,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-61,Puppeteer Clique,KEEP,persist engine / combo,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-62,Reanimate,KEEP,recursion,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-63,Reassembling Skeleton,CUT,recursive body,Imperial Recruiter,Imperial Recruiter tutors a large share of the deck's combo and engine creatures rather than being only a repeatable body.
-64,River Kelpie,KEEP,card advantage,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-65,Scalding Tarn,KEEP,mana / utility land,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-66,Scorn-Blade Berserker,KEEP,engine / synergy,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-67,Shipwreck Marsh,KEEP,mana / utility land,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-68,Shivan Reef,KEEP,mana / utility land,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-69,Skullclamp,KEEP,card advantage,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-70,Smoldering Marsh,CUT,land,Underground Sea,Underground Sea is an untapped fetchable blue/black source.
-71,Sol Ring,KEEP,mana / ramp,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-72,Steam Vents,KEEP,mana / utility land,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-73,Sulfur Falls,KEEP,mana / utility land,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-74,Sulfurous Springs,KEEP,mana / utility land,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-75,Sunken Hollow,CUT,land,Volcanic Island,Volcanic Island is an untapped fetchable blue/red source.
-76,Swamp,KEEP,mana / utility land,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-77,Swamp,KEEP,mana / utility land,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-78,Swamp,KEEP,mana / utility land,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-79,"Syr Konrad, the Grim",KEEP,death / damage payoff,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-80,"Takenuma, Abandoned Mire",KEEP,mana / utility land,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-81,Talisman of Creativity,KEEP,mana / ramp,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-82,Talisman of Dominance,KEEP,mana / ramp,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-83,Talisman of Indulgence,KEEP,mana / ramp,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-84,The Ozolith,CUT,counter storage,Altar of Dementia,Altar of Dementia is a free sacrifice outlet and deterministic mill payoff directly converting Marchesa loops into wins.
-85,Thran Vigil,KEEP,+1/+1 counter engine,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-86,Toxic Deluge,KEEP,interaction,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-87,Training Center,KEEP,mana / utility land,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-88,Uncivil Unrest,KEEP,+1/+1 counter engine,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-89,Underground River,KEEP,mana / utility land,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-90,Unspeakable Symbol,KEEP,+1/+1 counter engine,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-91,Victimize,KEEP,recursion,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-92,Village Rites,CUT,sacrifice draw,Vampiric Tutor,"Vampiric Tutor materially improves access to engines, sacrifice outlets, protection, and compact win pieces."
-93,Viscera Seer,KEEP,sacrifice outlet / engine,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-94,Warren Soultrader,KEEP,sacrifice outlet / engine,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-95,Watery Grave,KEEP,mana / utility land,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-96,Xander's Lounge,CUT,land,Forge of Heroes,Forge of Heroes is a commander-specific utility land that can immediately place a +1/+1 counter on Marchesa after she enters.
-97,"Yahenni, Undying Partisan",KEEP,sacrifice outlet / engine,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-98,"Yawgmoth, Thran Physician",KEEP,sacrifice outlet / engine,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
-99,Zulaport Cutthroat,KEEP,death / damage payoff,,"Retained after whole-list challenge: the card advances Marchesa's counter-sacrifice-return engine, protects it, supplies necessary interaction/mana, or supports a compact win line more efficiently than reviewed challengers."
+slot,card_name,decision,replacement_or_challenger
+1,An Offer You Can't Refuse,KEEP,
+2,Ancient Tomb,KEEP,
+3,Animate Dead,CUT,Sneak Attack
+4,Arcane Denial,CUT,Flare of Denial
+5,Arcane Signet,KEEP,
+6,Ashnod's Altar,KEEP,
+7,Baleful Strix,KEEP,
+8,Black Market Connections,CUT,Agatha's Soul Cauldron
+9,Blasphemous Act,KEEP,
+10,Blood Artist,KEEP,
+11,Blood Crypt,KEEP,
+12,Bloodghast,CUT,Twilight Diviner
+13,Bloodstained Mire,KEEP,
+14,"Braids, Arisen Nightmare",KEEP,
+15,Carrion Feeder,KEEP,
+16,Cauldron of Souls,CUT,Sage of Fables
+17,Chaos Warp,KEEP,
+18,Command Tower,KEEP,
+19,Crumbling Necropolis,CUT,Badlands
+20,Cyclonic Rift,KEEP,
+21,Deadly Dispute,KEEP,
+22,Demonic Tutor,KEEP,
+23,Diabolic Intent,KEEP,
+24,"Drana, Liberator of Malakir",CUT,Spark Double
+25,Drowned Catacomb,CUT,Flooded Strand
+26,Exotic Orchard,KEEP,
+27,Fabled Passage,CUT,City of Brass
+28,Feed the Swarm,KEEP,
+29,Fellwar Stone,KEEP,
+30,Fierce Guardianship,KEEP,
+31,Flayer of the Hatebound,KEEP,
+32,Fleshbag Marauder,KEEP,
+33,Glen Elendra Archmage,KEEP,
+34,Goblin Bombardment,KEEP,
+35,Grave Pact,KEEP,
+36,Gray Merchant of Asphodel,KEEP,
+37,Grim Haruspex,KEEP,
+38,Haunted Ridge,CUT,Mana Confluence
+39,Herald of Secret Streams,CUT,Danny Pink
+40,High Market,KEEP,
+41,Iron Apprentice,KEEP,
+42,Island,KEEP,
+43,Island,KEEP,
+44,"Juri, Master of the Revue",CUT,Imperial Recruiter
+45,Lightning Greaves,KEEP,
+46,Luxury Suite,KEEP,
+47,Marionette Apprentice,KEEP,
+48,Mayhem Devil,KEEP,
+49,Metallic Mimic,KEEP,
+50,Midnight Reaper,CUT,"Satoru, the Infiltrator"
+51,"Mikaeus, the Unhallowed",KEEP,
+52,Morphic Pool,KEEP,
+53,Mountain,KEEP,
+54,Murderous Redcap,KEEP,
+55,"Otawara, Soaring City",KEEP,
+56,Pawn of Ulamog,CUT,"Gev, Scaled Scorch"
+57,Phyrexian Altar,KEEP,
+58,Phyrexian Tower,KEEP,
+59,Pitiless Plunderer,KEEP,
+60,Polluted Delta,KEEP,
+61,Puppeteer Clique,KEEP,
+62,Reanimate,KEEP,
+63,Reassembling Skeleton,CUT,Altar of Dementia
+64,River Kelpie,KEEP,
+65,Scalding Tarn,KEEP,
+66,Scorn-Blade Berserker,KEEP,
+67,Shipwreck Marsh,CUT,Misty Rainforest
+68,Shivan Reef,KEEP,
+69,Skullclamp,KEEP,
+70,Smoldering Marsh,CUT,Underground Sea
+71,Sol Ring,KEEP,
+72,Steam Vents,KEEP,
+73,Sulfur Falls,CUT,Verdant Catacombs
+74,Sulfurous Springs,KEEP,
+75,Sunken Hollow,CUT,Volcanic Island
+76,Swamp,KEEP,
+77,Swamp,KEEP,
+78,Swamp,CUT,Forge of Heroes
+79,"Syr Konrad, the Grim",KEEP,
+80,"Takenuma, Abandoned Mire",KEEP,
+81,Talisman of Creativity,KEEP,
+82,Talisman of Dominance,KEEP,
+83,Talisman of Indulgence,KEEP,
+84,The Ozolith,KEEP,
+85,Thran Vigil,KEEP,
+86,Toxic Deluge,KEEP,
+87,Training Center,KEEP,
+88,Uncivil Unrest,KEEP,
+89,Underground River,KEEP,
+90,Unspeakable Symbol,KEEP,
+91,Victimize,KEEP,
+92,Village Rites,CUT,Vampiric Tutor
+93,Viscera Seer,KEEP,
+94,Warren Soultrader,KEEP,
+95,Watery Grave,KEEP,
+96,Xander's Lounge,KEEP,
+97,"Yahenni, Undying Partisan",KEEP,
+98,"Yawgmoth, Thran Physician",KEEP,
+99,Zulaport Cutthroat,KEEP,
