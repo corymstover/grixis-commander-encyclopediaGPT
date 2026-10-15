@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "deck_sha256": "f36346d4ba965db1e098b0aa92d27a968ee3a14c74a2b9401c1a5357f83c025c",
+  "checked_at_utc": "2026-10-15T01:06:00Z",
+  "sources": [
+    "Wizards of the Coast current Banned & Restricted list — Commander section, checked 2026-10-14",
+    "Wizards Commander Banned and Restricted Announcement — 2026-02-09",
+    "Wizards Banned and Restricted Announcement — 2026-10-12; its announced changes were Competitive Brawl-specific and did not alter paper Commander legality for this candidate",
+    "Current-cycle Oracle/Scryfall legality cache; exact candidate is independently revalidated by the complete approval gate"
+  ],
+  "unexpected_banned_cards": [],
+  "project_exceptions": [],
+  "notes": "The exact SHA-bound Grixistax candidate requires no project-specific legality exception. Neither commander nor any card in the candidate appears on the current official Commander banned list. The October 12, 2026 B&R announcement changed Competitive Brawl rather than paper Commander. The candidate excludes currently Commander-banned Mana Crypt, Jeweled Lotus, Dockside Extortionist, Hullbreacher, and other banned cards. Final per-card official Commander legality and combined U/B/R color identity are fail-closed and must be independently confirmed against the freshly rebuilt current-cycle Oracle cache by the complete gate before APPROVAL_READY."
+}
