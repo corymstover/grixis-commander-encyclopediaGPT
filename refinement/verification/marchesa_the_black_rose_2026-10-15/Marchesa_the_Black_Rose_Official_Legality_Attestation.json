@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "deck_sha256": "39f02b53cda066484a0546803d8526564f351b65f857ea8a5b1b25703106872a",
+  "checked_at_utc": "2026-10-15T07:52:00+00:00",
+  "sources": [
+    "https://magic.wizards.com/en/banned-restricted-list",
+    "https://magic.wizards.com/en/news/announcements/banned-and-restricted-october-12-2026",
+    "refinement/metadata_audit/Current_Cycle_Oracle_Cache.jsonl",
+    "refinement/metadata_audit/Current_Cycle_Oracle_Cache_Summary.json"
+  ],
+  "official_format": "Commander",
+  "unexpected_banned_cards": [],
+  "project_exceptions_used": [],
+  "notes": [
+    "The current official Wizards Commander banned list was checked on 2026-10-15.",
+    "No card in the exact Marchesa, the Black Rose candidate appears on the current Commander banned list.",
+    "The 2026-10-12 Banned & Restricted announcement affected Competitive Brawl and did not introduce a Commander ban affecting this candidate.",
+    "The current-cycle Oracle cache supplies per-card identity and Commander legality; the official Wizards list is the independent format-level checkpoint."
+  ],
+  "result_note": "Official legality attestation is bound to the exact candidate SHA. Any decklist change invalidates this PASS until rechecked."
+}
