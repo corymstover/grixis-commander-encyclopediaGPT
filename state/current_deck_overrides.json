@@ -485,6 +485,21 @@
       "decision_closeout_artifact": "refinement/decisions/Mishra_Artificer_Prodigy_Current_Cycle_Decisions_2026-10-15.md",
       "approval_record_artifact": "refinement/approvals/Mishra_Artificer_Prodigy_Approved_2026-10-15.md",
       "approved_list_artifact": "refinement/decklists/Mishra_Artificer_Prodigy_Approved_2026-10-15.txt"
+    },
+    "Mishra__Eminent_One": {
+      "approval_status": "APPROVED",
+      "lock_status": "LOCKED",
+      "final_gate_passed": true,
+      "user_approval_date": "2026-10-15",
+      "current_stage": "LOCKED",
+      "approved_list_sha256": "ca94785fa43094a0053aac5c87e517c9cfaafb34c3baf9b3eccb067a167dd1a0",
+      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + approval-ready verification",
+      "approval_basis": "Explicit user approval of the exact SHA-bound Mishra, Eminent One approval candidate after authoritative FINAL baseline reconciliation, mandatory 99-slot whole-list audit, candidate exhaustion, commander-identity review, adversarial rules/combo red-team, mana-base red-team, zero-new-material-improvement closure, exact structural verification, current Oracle/rules verification, singleton/color-identity verification, and current official Commander legality checkpoint.",
+      "whole_list_audit_artifact": "refinement/decisions/Mishra_Eminent_One_Whole_List_Audit_2026-10-15.csv",
+      "verification_artifact": "refinement/verification/Mishra_Eminent_One_Approval_Ready_Verification_2026-10-15.md",
+      "decision_closeout_artifact": "refinement/decisions/Mishra_Eminent_One_Current_Cycle_Decisions_2026-10-15.md",
+      "approval_record_artifact": "refinement/approvals/Mishra_Eminent_One_Approved_2026-10-15.md",
+      "approved_list_artifact": "refinement/decklists/Mishra_Eminent_One_Approved_2026-10-15.txt"
     }
   }
 }
