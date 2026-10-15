@@ -397,6 +397,20 @@
       "whole_list_audit_artifact": "refinement/decisions/Lord_Xander_the_Collector_Current_Cycle_Decisions_2026-10-14.md",
       "approval_record_artifact": "refinement/approvals/Lord_Xander_the_Collector_Approved_2026-10-14.md",
       "approved_list_artifact": "refinement/decklists/Lord_Xander_the_Collector_Approved_2026-10-14.txt"
+    },
+    "Lynde__Cheerful_Tormentor": {
+      "approval_status": "APPROVED",
+      "lock_status": "LOCKED",
+      "final_gate_passed": true,
+      "user_approval_date": "2026-10-14",
+      "current_stage": "LOCKED",
+      "approved_list_sha256": "05d1c4eea023d25e4308f78b109e80b78e0a3f4d655c3df36743ba3afbf04166",
+      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + Complete Approval Gate v1",
+      "approval_basis": "Explicit user approval of the exact SHA-bound Lynde approval candidate after mandatory whole-list audit, source reconciliation, candidate exhaustion, adversarial red-team review, zero-new-material-improvement closure, fresh Oracle/rules verification, current official Commander legality verification, and complete fail-closed gate PASS.",
+      "complete_gate_artifact": "refinement/verification/lynde_cheerful_tormentor_2026-10-14/gate_output/Lynde_Cheerful_Tormentor_2026-10-14_Complete_Gate.json",
+      "whole_list_audit_artifact": "refinement/decisions/Lynde_Cheerful_Tormentor_Current_Cycle_Decisions_2026-10-14.md",
+      "approval_record_artifact": "refinement/approvals/Lynde_Cheerful_Tormentor_Approved_2026-10-14.md",
+      "approved_list_artifact": "refinement/decklists/Lynde_Cheerful_Tormentor_Approved_2026-10-14.txt"
     }
   }
 }
