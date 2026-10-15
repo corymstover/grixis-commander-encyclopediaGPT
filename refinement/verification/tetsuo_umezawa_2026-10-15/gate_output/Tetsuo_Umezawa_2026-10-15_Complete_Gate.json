@@ -1,0 +1,23 @@
+{
+  "generated_at_utc": "2026-10-15T22:33:14.228122+00:00",
+  "deck_id": "Tetsuo_Umezawa",
+  "decklist_path": "refinement/decklists/Tetsuo_Umezawa_Approval_Ready_2026-10-15.txt",
+  "deck_sha256": "53215af902bfab2640d80c4abb733e6fb66ddaea2de183ae7635d3f197890e72",
+  "baseline_path": null,
+  "baseline_source_sha256": "399e3e589027d96966fde23511e61ddd1b692c8c825db4ab9da41216c936f93b",
+  "count": 100,
+  "distinct_names": 87,
+  "commander_color_identity": [
+    "B",
+    "R",
+    "U"
+  ],
+  "cache_generated_at_utc": "2026-10-15T22:32:12.728173+00:00",
+  "cache_sha256": "1c0ae652449250a6d924c81527c0698e13d3bf458998074d4ec50ed6499e5c7b",
+  "project_exceptions": [],
+  "rules_gate": "PASS",
+  "official_legality_gate": "PASS",
+  "errors": [],
+  "overall_result": "APPROVAL_READY",
+  "approval_state": "NOT_APPROVED — explicit user approval still required"
+}

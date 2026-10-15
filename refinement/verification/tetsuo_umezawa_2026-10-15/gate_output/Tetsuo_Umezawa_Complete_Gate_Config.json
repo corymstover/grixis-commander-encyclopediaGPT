@@ -1,0 +1,12 @@
+{
+  "deck_id": "Tetsuo_Umezawa",
+  "display_name": "Tetsuo Umezawa",
+  "decklist_path": "refinement/decklists/Tetsuo_Umezawa_Approval_Ready_2026-10-15.txt",
+  "expected_deck_sha256": "53215af902bfab2640d80c4abb733e6fb66ddaea2de183ae7635d3f197890e72",
+  "baseline_source_sha256": "399e3e589027d96966fde23511e61ddd1b692c8c825db4ab9da41216c936f93b",
+  "output_dir": "refinement/verification/tetsuo_umezawa_2026-10-15/gate_output",
+  "output_stem": "Tetsuo_Umezawa_2026-10-15",
+  "rules_attestation_path": "refinement/verification/tetsuo_umezawa_2026-10-15/gate_output/Tetsuo_Umezawa_Rules_Attestation.json",
+  "official_legality_attestation_path": "refinement/verification/tetsuo_umezawa_2026-10-15/gate_output/Tetsuo_Umezawa_Official_Legality_Attestation.json",
+  "max_cache_age_hours": 72
+}

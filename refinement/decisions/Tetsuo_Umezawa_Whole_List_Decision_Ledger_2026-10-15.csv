@@ -1,0 +1,86 @@
+card,baseline_qty,keep_qty,cut_qty,decision,rationale
+Agitator Ant,1,0,1,CUT,CUT — optional opponent participation is less reliable than Flood repeatable target creation.
+Aphetto Alchemist,1,1,0,KEEP,KEEP — direct untap engine for Tetsuo.
+Arcane Denial,1,0,1,CUT,CUT — Force of Will better protects a mana-intensive tap-ability commander while tapped out.
+Arcane Signet,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Backlash,1,0,1,CUT,CUT — Blustersquall is more efficient single-target tap and scales to mass tap.
+Baleful Strix,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Bedevil,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Blasphemous Act,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Blood Crypt,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Bloodstained Mire,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Bloodthirsty Blade,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Bojuka Bog,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+"Borrowing 100,000 Arrows",1,1,0,KEEP,KEEP — tapped-creature payoff/draw tied to deck state.
+Bothersome Quasit,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Brainstorm,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Chaos Warp,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Command Tower,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Counterspell,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Cyclonic Rift,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Damnation,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Dark Ritual,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Demonic Tutor,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Dimir Signet,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Disrupt Decorum,1,1,0,KEEP,KEEP — mass goad is a high-impact forced-combat enabler.
+Dragonskull Summit,1,0,1,CUT,CUT — upgrade to Badlands.
+Drowned Catacomb,1,0,1,CUT,CUT — upgrade to Underground Sea.
+Exotic Orchard,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Fatestitcher,1,1,0,KEEP,KEEP — repeatable tap/untap permanent supports both target creation and commander reuse.
+Feed the Swarm,1,0,1,CUT,CUT — Withering Torment gives instant-speed creature/enchantment interaction.
+Fellwar Stone,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+"Firkraag, Cunning Instigator",1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Frozen Aether,1,1,0,KEEP,KEEP — opposing creatures enter tapped and satisfy Tetsuo target condition.
+Fumiko the Lowblood,1,1,0,KEEP,"KEEP — forces opponent creatures to attack, naturally tapping non-vigilance attackers."
+Geode Rager,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+"Grenzo, Havoc Raiser",1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Hylda's Crown of Winter,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Illusionist's Bracers,1,1,0,KEEP,KEEP — copies equipped Tetsuo activated ability.
+Island,6,5,1,PARTIAL,PARTIAL CUT — convert one of six copies into land-capable Sink into Stupor // Soporific Springs while retaining five basics.
+Izzet Signet,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+"Karazikar, the Eye Tyrant",1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+"Kardur, Doomscourge",1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Lightning Greaves,1,1,0,KEEP,KEEP — haste lets Tetsuo activate immediately; shroud does not interfere because Tetsuo targets another creature.
+Luxury Suite,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+"Maeve, Insidious Singer",1,0,1,CUT,CUT — four-mana body plus three mana per goad loses to Puppeteer as direct tap/untap engine.
+Magewright's Stone,1,1,0,KEEP,KEEP — cheap repeatable Tetsuo untap.
+Mana Drain,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Maze of Ith,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+"Minamo, School at Water's Edge",1,1,0,KEEP,KEEP — land-slot untap for legendary Tetsuo.
+Mountain,5,5,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Mystic Remora,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Nightscape Familiar,1,0,1,CUT,CUT — does not reduce Tetsuo first cast UBR or UBBR activation because neither contains generic mana; replace with colored ramp plus untap.
+Opposition Agent,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Polluted Delta,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Propaganda,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Rakdos Charm,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Rakdos Signet,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Rathi Trapper,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+"Red Death, Shipwrecker",1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Rings of Brighthearth,1,1,0,KEEP,KEEP — copies Tetsuo activated ability for {2}.
+Royal Assassin,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Shiny Impetus,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Shivan Reef,1,0,1,CUT,CUT — upgrade to premium fetchland.
+Sly Instigator,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Sol Ring,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Spectacular Showdown,1,0,1,CUT,CUT — one-shot high-cost overload loses to repeatable Retreat to Coralhelm tap/untap engine.
+Steam Vents,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Sulfur Falls,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Sulfurous Springs,1,0,1,CUT,CUT — upgrade to premium fetchland.
+Swamp,6,6,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Swiftfoot Boots,1,1,0,KEEP,KEEP — haste/protection for immediate commander activation.
+Talisman of Creativity,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Talisman of Dominance,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Talisman of Indulgence,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Terminate,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Thousand-Year Elixir,1,1,0,KEEP,KEEP — haste-equivalent for tap abilities plus repeatable untap.
+Underground River,1,0,1,CUT,CUT — upgrade to premium fetchland.
+Urabrask the Hidden,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Vampiric Tutor,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Vandalblast,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Vengeful Ancestor,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Verity Circle,1,1,0,KEEP,KEEP — converts opposing nonattack tapping into card advantage.
+Volcanic Island,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Watery Grave,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+Xander's Lounge,1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
+"Xantcha, Sleeper Agent",1,1,0,KEEP,"KEEP — retained after commander-first tap/untap, forced-combat, interaction, curve and mana audit."
