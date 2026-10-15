@@ -4,7 +4,7 @@ Date: 2026-10-15
 Cycle: `global-restart-2026-10-13`  
 Candidate SHA-256: `14ca66ceae4d634630a85aa1787731cfe840fd9fc2093bc37ad5dc17d1539ff6`
 
-Status: working decision closeout; not user approval
+Status: **APPROVED / LOCKED** — explicit user approval received 2026-10-15
 
 ## Final proposed delta
 
@@ -80,3 +80,11 @@ Candidate exhaustion/red-team: **ZERO NEW MATERIAL IMPROVEMENTS**.
 Natural ceiling: **Power Bracket 4 — Optimized**.
 
 Proposed Archidekt tags: **Tap/Untap / Forced Combat / Activated Abilities**.
+
+## Approval closeout
+
+- Explicit user approval received: **2026-10-15**
+- Canonical approved SHA-256: `14ca66ceae4d634630a85aa1787731cfe840fd9fc2093bc37ad5dc17d1539ff6`
+- Exact approved artifact: `refinement/decklists/Tetsuo_Umezawa_Approved_2026-10-15.txt`
+- Current-cycle state: **APPROVED / LOCKED**
+- Next unlocked: **Tetsuo, Imperial Champion (index 54 / deck 55 of 62)**.
