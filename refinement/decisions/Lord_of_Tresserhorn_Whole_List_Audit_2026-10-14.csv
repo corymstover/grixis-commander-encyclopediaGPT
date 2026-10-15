@@ -1,0 +1,127 @@
+record_type,slot,card_name,decision,reason
+baseline_slot,1,Accursed Marauder,CUT,CUT — ETB edict is blanked by Torpor Orb/Karn and duplicates removal already retained; the optimized build should not load its suppression package with creature-ETB nonbos.
+baseline_slot,2,Arcane Signet,KEEP,KEEP — efficient three-color commander fixing.
+baseline_slot,3,Ashnod's Altar,KEEP,KEEP — free sacrifice outlet; with Rooftop Storm + Gravecrawler + another Zombie it produces arbitrary colorless mana/death/cast loops.
+baseline_slot,4,Bitterblossom,KEEP,KEEP — cheap recurring bodies pay Lord’s forced sacrifice when suppression is unavailable and feed sacrifice engines.
+baseline_slot,5,Blasphemous Act,KEEP,"KEEP — efficient reset; Lord can regenerate through damage, and Pain for All can convert the 13 damage dealt to Lord into table damage if sequenced with a regeneration shield."
+baseline_slot,6,Blood Artist,KEEP,KEEP — compact backup win payoff for Gravecrawler/Soultrader/altar loops and offsets Warren Soultrader life payments.
+baseline_slot,7,Blood Crypt,KEEP,KEEP — premium fetchable typed dual.
+baseline_slot,8,Bloodghast,KEEP,KEEP — recurring sacrifice fodder; fetchlands can create multiple landfall returns across a turn.
+baseline_slot,9,Bloodstained Mire,KEEP,KEEP — premium fetch fixing and Bloodghast recursion utility.
+baseline_slot,10,Bojuka Bog,KEEP,KEEP — land-slot graveyard interaction justifies entering tapped.
+baseline_slot,11,Carrion Feeder,KEEP,KEEP — one-mana Zombie and zero-mana sacrifice outlet; both pays Lord’s creature requirement and enables Gravecrawler lines.
+baseline_slot,12,Chaos Warp,KEEP,KEEP — broad answer to permanent types Grixis can otherwise struggle to remove.
+baseline_slot,13,Command Tower,KEEP,KEEP — perfect commander fixing.
+baseline_slot,14,Cover of Darkness,KEEP,KEEP — naming Zombie gives Lord fear and converts the commander’s 10 power into a reliable combat clock.
+baseline_slot,15,Crumbling Necropolis,CUT,CUT — always tapped; replaced by premium untapped/fetchable fixing.
+baseline_slot,16,Deadly Rollick,KEEP,KEEP — efficient free creature removal once Lord is controlled.
+baseline_slot,17,Demonic Tutor,KEEP,"KEEP — finds suppression, infect, evasion, protection, or compact backup combo pieces."
+baseline_slot,18,Dictate of Erebos,KEEP,KEEP — retain one mass-sacrifice payoff; flash and easier color requirements make it the preferable Grave Pact effect for the fodder engine.
+baseline_slot,19,Dimir Signet,KEEP,KEEP — efficient fixing/ramp.
+baseline_slot,20,Diregraf Captain,KEEP,"KEEP — Lord is a Zombie; Captain makes him 11/5, turning any double-strike effect into lethal commander damage, while also serving as a Zombie-loop drain payoff."
+baseline_slot,21,Dragonskull Summit,CUT,CUT — conditional checkland; replaced by stronger untapped/fetchable mana.
+baseline_slot,22,Dress Down,KEEP,KEEP — cantrip plus one-turn Lord ETB suppression. Must be sequenced knowing it also temporarily removes granted abilities such as infect/haste/regeneration.
+baseline_slot,23,Drowned Catacomb,CUT,CUT — conditional checkland; replaced by stronger untapped/fetchable mana.
+baseline_slot,24,Exotic Orchard,KEEP,KEEP — typically untapped three-color fixing in multiplayer.
+baseline_slot,25,Feed the Swarm,KEEP,KEEP — efficient answer to enchantments plus creatures.
+baseline_slot,26,Fellwar Stone,KEEP,KEEP — low-cost multiplayer fixing.
+baseline_slot,27,Fleshbag Marauder,CUT,CUT — same structural conflict with Torpor Orb/Karn; three-mana ETB edict is replaceable by interaction that advances Lord directly.
+baseline_slot,28,"Garna, the Bloodflame",CUT,CUT — five-mana reactive recursion is too slow for the optimized ceiling and does not materially improve Lord’s Voltron/Infect primary plan.
+baseline_slot,29,Goblin Bombardment,KEEP,KEEP — free outlet and direct kill with Rooftop Storm + Gravecrawler + another Zombie.
+baseline_slot,30,Grafted Exoskeleton,CUT,CUT — six total mana to deploy/equip plus the sacrifice-on-unattach liability is materially worse than two-mana Phyresis for the commander’s 10-power one-hit infect plan.
+baseline_slot,31,Grave Pact,CUT,CUT — powerful but {B}{B}{B}{B} and redundant with the retained flash Dictate of Erebos; slot is more valuable as stack interaction/protection.
+baseline_slot,32,Gravecrawler,KEEP,KEEP — central Zombie recursion/combo piece; Lord/Nightscape/Diregraf/Jadar/Headless Rider can satisfy the other-Zombie condition.
+baseline_slot,33,Hall of the Bandit Lord,CUT,CUT — enters tapped and costs 3 life per haste activation; Arena of Glory provides red mana and commander haste at materially lower opportunity cost.
+baseline_slot,34,Haunted Ridge,CUT,CUT — can enter tapped early; replaced by premium fixing that better supports an optimized four-color-symbol commander turn.
+baseline_slot,35,Headless Rider,KEEP,"KEEP — converts nontoken Zombie deaths into replacement bodies, sustaining Lord and sacrifice engines without relying on ETB triggers."
+baseline_slot,36,High Market,KEEP,KEEP — land-slot sacrifice outlet protects key creatures from theft/exile lines and converts fodder without consuming a spell slot.
+baseline_slot,37,Island,KEEP,KEEP — basic blue source improves resilience to nonbasic disruption and is required for Wonder.
+baseline_slot,38,"Jadar, Ghoulcaller of Nephalia",KEEP,KEEP — recurring Zombie fodder for Lord and sacrifice loops.
+baseline_slot,39,"Kediss, Emberclaw Familiar",KEEP,KEEP — commander-specific damage multiplier; when Lord has infect, Kediss causes Lord itself to deal matching infect damage to each other opponent after a combat connection.
+baseline_slot,40,Lightning Greaves,KEEP,KEEP — zero-equip haste/protection remains valuable; move it off Lord before casting our own targeted finishers because shroud blocks them.
+baseline_slot,41,Lord of Tresserhorn,COMMANDER,COMMANDER — primary plan is 10-power Voltron/Infect with ETB-drawback suppression; Zombie type also anchors the compact Gravecrawler sacrifice backup package.
+baseline_slot,42,Luxury Suite,KEEP,KEEP — usually untapped multiplayer dual.
+baseline_slot,43,Mayhem Devil,CUT,CUT — strong sacrifice payoff but redundant with Blood Artist/Zulaport/Diregraf/Bombardment backup kills; primary-plan cards take precedence.
+baseline_slot,44,Merciless Executioner,CUT,CUT — redundant three-mana ETB edict that becomes textless under the commander’s best drawback-suppression pieces.
+baseline_slot,45,Morphic Pool,KEEP,KEEP — usually untapped multiplayer dual.
+baseline_slot,46,Mountain,KEEP,KEEP — basic red source and enables Anger/Arena of Glory.
+baseline_slot,47,Nether Traitor,KEEP,KEEP — recursive low-cost fodder that can repeatedly feed Lord/sacrifice engines.
+baseline_slot,48,Ophiomancer,KEEP,KEEP — repeatable token production on each upkeep provides exceptional sacrifice parity.
+baseline_slot,49,"Otawara, Soaring City",KEEP,KEEP — colored land with channel interaction and very low opportunity cost.
+baseline_slot,50,Path of Ancestry,CUT,CUT — always tapped; Cavern of Souls supports the Zombie commander while making it uncounterable.
+baseline_slot,51,Pawn of Ulamog,CUT,CUT — redundant sacrifice-mana engine after Pitiless Plunderer, the Altars, Rooftop Storm, and Warren Soultrader are retained; lower marginal value than commander-specific interaction.
+baseline_slot,52,Phyrexian Altar,KEEP,KEEP — core free outlet; Rooftop Storm + Gravecrawler generates arbitrary colored mana, while Pitiless Plunderer variants also loop.
+baseline_slot,53,Pitiless Plunderer,KEEP,KEEP — converts nontoken deaths into Treasure and forms a deterministic Gravecrawler engine with Phyrexian Altar plus another Zombie.
+baseline_slot,54,Plaguecrafter,CUT,CUT — useful floor, but still an ETB creature whose principal effect is shut off by Torpor Orb/Karn; slot redirected to commander protection/suppression.
+baseline_slot,55,Polluted Delta,KEEP,KEEP — premium fetch fixing and Bloodghast utility.
+baseline_slot,56,Priest of Forgotten Gods,CUT,CUT — requires surviving a turn, tapping, and sacrificing two creatures for a capped effect; too slow relative to the candidate’s primary plan.
+baseline_slot,57,Rakdos Signet,KEEP,KEEP — efficient fixing/ramp.
+baseline_slot,58,Reanimate,CUT,CUT — premium generic rate but low dedicated reanimation density and little direct commander text leverage; identity slots are more valuable.
+baseline_slot,59,Reassembling Skeleton,KEEP,KEEP — reusable sacrifice fodder that stabilizes Lord’s ETB requirement and grind plan.
+baseline_slot,60,Reliquary Tower,CUT,CUT — colorless utility is unnecessary in a list without sustained oversized-hand pressure; this is the land-count reduction from 36 to 35.
+baseline_slot,61,Riverglide Pathway // Lavaglide Pathway,CUT,CUT — functional untapped source but less flexible than fetchland/true dual upgrades and cannot support both colors after being played.
+baseline_slot,62,Rogue's Passage,KEEP,KEEP — land-slot unconditional evasion; expensive activation is acceptable as redundancy for a 10-power commander.
+baseline_slot,63,Rooftop Storm,KEEP,KEEP — identity-relevant Zombie engine; lets Gravecrawler be recast for {0} and reduces Lord’s Zombie spell to commander tax/additional costs only.
+baseline_slot,64,Scalding Tarn,KEEP,KEEP — premium fetch fixing and Bloodghast utility.
+baseline_slot,65,Shadowspear,KEEP,KEEP — +1/+1 makes Lord 11 power, trample improves commander-damage reliability, lifelink offsets life costs, and its activated ability can strip opposing hexproof/indestructible.
+baseline_slot,66,Shambling Ghast,KEEP,KEEP — one-mana Zombie fodder that refunds mana or shrinks a blocker when sacrificed.
+baseline_slot,67,Sheoldred's Edict,KEEP,KEEP — instant-speed flexible sacrifice removal that does not conflict with Torpor Orb/Karn.
+baseline_slot,68,Shipwreck Marsh,CUT,CUT — conditional early tapland; replaced by premium/fetchable fixing.
+baseline_slot,69,Shivan Reef,KEEP,KEEP — untapped dual with low opportunity cost.
+baseline_slot,70,Sol Ring,KEEP,KEEP — premier acceleration.
+baseline_slot,71,Steam Vents,KEEP,KEEP — premium fetchable typed dual.
+baseline_slot,72,Stormcarved Coast,CUT,CUT — conditional early tapland; replaced by premium/fetchable fixing.
+baseline_slot,73,Sulfur Falls,CUT,CUT — checkland replaced by premium/fetchable fixing at no budget restriction.
+baseline_slot,74,Sulfurous Springs,KEEP,KEEP — untapped dual with low opportunity cost.
+baseline_slot,75,Swamp,KEEP,KEEP — basic black source; black is the deck’s deepest support color and basics improve resiliency.
+baseline_slot,76,Swamp,KEEP,KEEP — basic black source; black is the deck’s deepest support color and basics improve resiliency.
+baseline_slot,77,Swamp,KEEP,KEEP — basic black source; black is the deck’s deepest support color and basics improve resiliency.
+baseline_slot,78,Swiftfoot Boots,KEEP,KEEP — haste plus hexproof without blocking our own targeted spells.
+baseline_slot,79,Tainted Strike,KEEP,KEEP — one-mana +1/+0 infect turns Lord into an 11-power one-hit poison threat and enables lethal Chandra’s Ignition/Kediss lines.
+baseline_slot,80,"Takenuma, Abandoned Mire",KEEP,KEEP — black source with low-opportunity-cost recursion channel.
+baseline_slot,81,Talisman of Creativity,KEEP,KEEP — efficient untapped artifact fixing.
+baseline_slot,82,Talisman of Dominance,KEEP,KEEP — efficient untapped artifact fixing.
+baseline_slot,83,Talisman of Indulgence,KEEP,KEEP — efficient untapped artifact fixing.
+baseline_slot,84,Temur Battle Rage,CUT,CUT — base 10 power plus double strike is only 20 commander damage; Uncaged Fury supplies +1/+1 and double strike for a clean 22-damage one-combat kill.
+baseline_slot,85,Terminate,KEEP,KEEP — efficient instant creature removal.
+baseline_slot,86,Toxic Deluge,KEEP,KEEP — scalable board reset; note regeneration does not save Lord from lethal -X/-X, so sequence accordingly.
+baseline_slot,87,Training Center,KEEP,KEEP — usually untapped multiplayer dual.
+baseline_slot,88,Undead Augur,KEEP,KEEP — converts Zombie deaths into cards, supporting the retained Gravecrawler engine.
+baseline_slot,89,Underground River,KEEP,KEEP — untapped dual with low opportunity cost.
+baseline_slot,90,Vampiric Tutor,KEEP,"KEEP — one-mana access to suppression, infect, evasion, protection, or backup combo."
+baseline_slot,91,Viscera Seer,KEEP,KEEP — one-mana free sacrifice outlet; repeatable scry makes backup loops deterministic.
+baseline_slot,92,Warren Soultrader,KEEP,"KEEP — direct Gravecrawler engine; with another Zombie, each loop creates Treasure at 1 life, and Blood Artist/Zulaport can offset that life while killing opponents."
+baseline_slot,93,Watery Grave,KEEP,KEEP — premium fetchable typed dual.
+baseline_slot,94,Whispersilk Cloak,CUT,CUT — shroud blocks our own Tainted Strike, Chandra’s Ignition, Pain for All, and Slip Out the Back; Brotherhood Regalia preserves unblockability while using ward instead.
+baseline_slot,95,"Wilhelt, the Rotcleaver",KEEP,KEEP — Zombie death replacement bodies plus optional end-step sacrifice/draw reinforce the secondary engine without relying on ETBs.
+baseline_slot,96,Woe Strider,CUT,CUT — redundant three-mana sacrifice outlet; its Goat ETB is blanked by Torpor Orb/Karn, reducing its value further.
+baseline_slot,97,Wonder,KEEP,KEEP — sacrifice/discarding it turns the graveyard into global flying as long as an Island is controlled, giving Lord evasion.
+baseline_slot,98,Xander's Lounge,KEEP,KEEP — fetchable tri-land; entering tapped is acceptable for three-color density and cycling fallback.
+baseline_slot,99,"Yahenni, Undying Partisan",CUT,CUT — redundant three-mana sacrifice outlet once the lower-cost/core combo outlets are retained.
+baseline_slot,100,Zulaport Cutthroat,KEEP,KEEP — table-wide life-drain payoff that makes Warren Soultrader + Gravecrawler loops life-neutral and lethal.
+candidate_add,,Torpor Orb,ADD,ADD — the canonical two-mana Lord drawback suppressor; candidate deliberately removes most creature-ETB effects to make the symmetry favorable.
+candidate_add,,"Karn, Argent Defender",ADD,ADD — two-mana static ETB suppression that turns off Lord’s drawback while also taxing opposing artifact/creature ETB engines; candidate removes most own ETB creatures that would conflict.
+candidate_add,,Stifle,ADD,ADD — one mana counters Lord’s ETB trigger, converting the commander into a drawback-free 10/4 while remaining useful against opposing triggers/activated abilities.
+candidate_add,,Tale's End,ADD,ADD — second flexible Lord-trigger answer that also counters activated/triggered abilities and legendary spells.
+candidate_add,,Phyresis,ADD,ADD — two-mana permanent infect on a 10-power commander; far more efficient and safer than Grafted Exoskeleton.
+candidate_add,,Chandra's Ignition,ADD,ADD — Lord deals 10 to each opponent/other creature; with Phyresis it gives each opponent ten poison, and with Tainted Strike Lord becomes 11 power with infect for the same table-lethal line.
+candidate_add,,Uncaged Fury,ADD,ADD — gives Lord +1/+1 and double strike, making the base 10/4 into an 11/5 that deals 22 commander damage in one unblocked combat.
+candidate_add,,Brotherhood Regalia,ADD,ADD — equip legendary creature {1}, ward {2}, and unblockable; directly upgrades Whispersilk Cloak without shroud locking out our own finishers.
+candidate_add,,Not of This World,ADD,ADD — Lord’s 10 power makes this a zero-mana counter to a spell/ability targeting a permanent we control, providing unusually commander-specific protection.
+candidate_add,,Nightscape Familiar,ADD,ADD — cheap Zombie fodder that reduces Lord’s generic mana, supports Gravecrawler’s cast condition, and can regenerate itself.
+candidate_add,,Pain for All,ADD,ADD — converts Lord’s 10 power into immediate noncombat damage on Aura ETB; damage dealt to Lord can be reflected to every opponent, including a Blasphemous Act line when a regeneration shield is established.
+candidate_add,,Slip Out the Back,ADD,ADD — one-mana protection from targeted interaction and many wipes; the +1/+1 counter permanently makes Lord 11 power for later commander-damage lines.
+candidate_add,,Stubborn Denial,ADD,ADD — with Lord’s power 10, this is a one-mana hard counter for noncreature spells and efficient commander protection.
+candidate_add,,Anger,ADD,ADD — commander-first haste engine. Lord’s own ETB can sacrifice Anger; once the trigger finishes and a Mountain is controlled, Lord immediately has haste.
+candidate_add,,Mystic Remora,ADD,ADD — one-mana card-advantage engine needed after pruning slower sacrifice draw; supports optimized interaction density without changing the deck’s win plan.
+candidate_add,,Deflecting Swat,ADD,ADD — free protection/redirection while Lord is controlled; supports a combat commander that must survive targeted interaction.
+candidate_add,,Arena of Glory,ADD,ADD — red-producing haste land; its exert mana can cover Lord’s generic/red costs and grant haste without Hall of the Bandit Lord’s repeated 3-life payment.
+candidate_add,,Badlands,ADD,ADD — premium fetchable untapped black/red dual.
+candidate_add,,Cavern of Souls,ADD,ADD — naming Zombie fixes Lord and the recursion package while making the commander uncounterable.
+candidate_add,,Mana Confluence,ADD,ADD — unconditional untapped Grixis fixing.
+candidate_add,,Marsh Flats,ADD,ADD — fetches multiple typed Grixis duals/tri-land and doubles as Bloodghast recursion fuel.
+candidate_add,,Misty Rainforest,ADD,ADD — fetches Island-typed Grixis duals/tri-land and doubles as Bloodghast recursion fuel.
+candidate_add,,Phyrexian Tower,ADD,ADD — land-slot sacrifice outlet that turns expendable fodder into {B}{B}, helping cast Lord/engines while breaking parity.
+candidate_add,,"Shizo, Death's Storehouse",ADD,ADD — untapped black land whose low-cost fear activation directly enables a legendary 10-power commander.
+candidate_add,,Underground Sea,ADD,ADD — premium fetchable untapped blue/black dual.
+candidate_add,,Volcanic Island,ADD,ADD — premium fetchable untapped blue/red dual.
