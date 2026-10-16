@@ -1,0 +1,6133 @@
+===== 01/62 — Abaddon the Despoiler =====
+1x Abaddon the Despoiler
+1x Ancestral Vision
+1x Ancient Tomb
+1x Arcane Signet
+1x Badlands
+1x Birgi, God of Storytelling // Harnfel, Horn of Bounty
+1x Bituminous Blast
+1x Blasphemous Act
+1x Blood Crypt
+1x Bloodletter of Aclazotz
+1x Bloodstained Mire
+1x Boltwave
+1x Brain Freeze
+1x Brainstorm
+1x Cabal Ritual
+1x Call Forth the Tempest
+1x Chrome Mox
+1x City of Brass
+1x Command Tower
+1x Dark Ritual
+1x Deadly Rollick
+1x Deflecting Swat
+1x Delayed Blast Fireball
+1x Demonic Tutor
+1x Exalted Flamer of Tzeentch
+1x Exotic Orchard
+1x Fierce Guardianship
+1x Flame Rift
+1x Flooded Strand
+1x Flusterstorm
+1x Force of Negation
+1x Force of Will
+1x Gamble
+1x Imperial Seal
+1x Inevitable Betrayal
+3x Island
+1x Jeska's Will
+1x Keeper of Secrets
+1x Kessig Flamebreather
+1x Lion's Eye Diamond
+1x Lotus Petal
+1x Loyal Subordinate
+1x Luxury Suite
+1x Mana Confluence
+1x Mana Vault
+1x Marsh Flats
+1x Mind's Desire
+1x Misty Rainforest
+1x Morphic Pool
+3x Mountain
+1x Mystic Remora
+1x Mystical Tutor
+1x Nalfeshnee
+1x Neheb, the Eternal
+1x Nightscape Familiar
+1x Noise Marine
+1x Otawara, Soaring City
+1x Pact of Negation
+1x Passionate Archaeologist
+1x Polluted Delta
+1x Ponder
+1x Profane Tutor
+1x Prosper, Tome-Bound
+1x Pyroblast
+1x Rakdos, Lord of Riots
+1x Rhystic Study
+1x Rite of Flame
+1x Scalding Tarn
+1x Sol Ring
+1x Solphim, Mayhem Dominus
+1x Steam Vents
+1x Storm-Kiln Artist
+3x Swamp
+1x Swan Song
+1x Takenuma, Abandoned Mire
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x The Lost and the Damned
+1x The Ruinous Powers
+1x Thermo-Alchemist
+1x Training Center
+1x Underground Sea
+1x Underworld Breach
+1x Urborg, Tomb of Yawgmoth
+1x Vampiric Tutor
+1x Verdant Catacombs
+1x Vivi Ornitier
+1x Volcanic Island
+1x Watery Grave
+1x Wheel of Fortune
+1x Wild-Magic Sorcerer
+1x Windfall
+1x Xander's Lounge
+
+===== 02/62 — Admiral Beckett Brass =====
+1x Admiral Beckett Brass
+1x Admiral Brass, Unsinkable
+1x Ancient Tomb
+1x Arcane Signet
+1x Badlands
+1x Bident of Thassa
+1x Black Market Connections
+1x Blood Crypt
+1x Bloodstained Mire
+1x Breeches, Brazen Plunderer
+1x Breeches, Eager Pillager
+1x Captain Lannery Storm
+1x Kitesail Freebooter
+1x Cavern of Souls
+1x Changeling Outcast
+1x Chaos Warp
+1x The Indomitable
+1x Coercive Recruiter
+1x Command Tower
+1x Corsair Captain
+1x Counterspell
+1x Cover of Darkness
+1x Crumbling Necropolis
+1x Cyclonic Rift
+1x Daring Piracy
+1x Daring Saboteur
+1x Deflecting Swat
+1x Demonic Tutor
+1x Dimir Signet
+1x Dire Fleet Captain
+1x Kitesail Larcenist
+1x Dire Fleet Poisoner
+1x Don Andres, the Renegade
+1x Double Down
+1x Drowned Catacomb
+1x Edward Kenway
+1x Exotic Orchard
+1x Fathom Fleet Captain
+1x Feed the Swarm
+1x Fierce Guardianship
+1x Fiery Cannonade
+1x Forerunner of the Coalition
+1x Francisco, Fowl Marauder
+1x Zephyr Singer
+1x Spyglass Siren
+1x Hostage Taker
+3x Island
+1x Izzet Signet
+1x Jeska's Will
+1x Kari Zev, Skyship Raider
+1x Kindred Discovery
+1x Lightning Greaves
+1x Luxury Suite
+1x Malcolm, Alluring Scoundrel
+1x Malcolm, Keen-Eyed Navigator
+1x Mana Confluence
+1x Mana Drain
+1x March of the Drowned
+1x Merchant Raiders
+1x Morphic Pool
+2x Mountain
+1x Otawara, Soaring City
+1x Path of Ancestry
+1x Polluted Delta
+1x Port Razer
+1x Ragavan, Nimble Pilferer
+1x Raise the Palisade
+1x Rakdos Signet
+1x Ramirez DePietro, Pillager
+1x Roaming Throne
+1x Scalding Tarn
+1x Secluded Courtyard
+1x Open into Wonder
+1x Shipwreck Marsh
+1x Shivan Reef
+1x Siren Stormtamer
+1x Smoldering Marsh
+1x Sol Ring
+1x Steam Vents
+1x Storm Fleet Sprinter
+1x Spectral Sailor
+1x Stormcarved Coast
+1x Sulfur Falls
+1x Swamp
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Toxic Deluge
+1x Training Center
+1x Underground River
+1x Underground Sea
+1x Vampiric Tutor
+1x Volcanic Island
+1x Warkite Marauder
+1x Watery Grave
+1x Xander's Lounge
+1x Zara, Renegade Recruiter
+
+===== 03/62 — Admiral Brass, Unsinkable =====
+1x Admiral Brass, Unsinkable
+1x Admiral Beckett Brass
+1x Amphin Mutineer
+1x Ancient Tomb
+1x Angrath's Marauders
+1x Animate Dead
+1x Arcane Signet
+1x Badlands
+1x Black Market Connections
+1x Blood Crypt
+1x Bloodstained Mire
+1x Breeches, Brazen Plunderer
+1x Breeches, Eager Pillager
+1x Broadside Bombardiers
+1x Buried Alive
+1x Captain Lannery Storm
+1x Cavern of Souls
+1x Changeling Outcast
+1x Chaos Warp
+1x Coercive Recruiter
+1x Command Tower
+1x Corsair Captain
+1x Counterspell
+1x Crumbling Necropolis
+1x Cyclonic Rift
+1x Deadly Rollick
+1x Deflecting Swat
+1x Demonic Tutor
+1x Dimir Signet
+1x Dire Fleet Daredevil
+1x Drowned Catacomb
+1x Edward Kenway
+1x Enterprising Scallywag
+1x Entomb
+1x Exotic Orchard
+1x Faithless Looting
+1x Fathom Fleet Captain
+1x Feed the Swarm
+1x Fierce Guardianship
+1x Forerunner of the Coalition
+1x Francisco, Fowl Marauder
+1x Gemcutter Buccaneer
+1x Mary Read and Anne Bonny
+1x Hostage Taker
+2x Island
+1x Izzet Signet
+1x Jeska's Will
+1x Kindred Discovery
+1x Lightning Greaves
+1x Living Death
+1x Luxury Suite
+1x Malcolm, Alluring Scoundrel
+1x Malcolm, Keen-Eyed Navigator
+1x Mana Confluence
+1x Mana Drain
+1x Merchant Raiders
+1x Morphic Pool
+2x Mountain
+1x Otawara, Soaring City
+1x Path of Ancestry
+1x Patriarch's Bidding
+1x Pitiless Plunderer
+1x Polluted Delta
+1x Port Razer
+1x Power Conduit
+1x Rakdos Signet
+1x Ramirez DePietro, Pillager
+1x Reanimate
+1x Roaming Throne
+1x Scalding Tarn
+1x Secluded Courtyard
+1x Shared Animosity
+1x Shipwreck Marsh
+1x Siren Stormtamer
+1x Skeleton Crew
+1x Smoldering Marsh
+1x Sol Ring
+1x Steam Vents
+1x Stormcarved Coast
+1x Sulfur Falls
+2x Swamp
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x The Indomitable
+1x Toxic Deluge
+1x Training Center
+1x Underground River
+1x Underground Sea
+1x Vampiric Tutor
+1x Victimize
+1x Volcanic Island
+1x Watery Grave
+1x Brass's Tunnel-Grinder
+1x Wonder
+1x Xander's Lounge
+1x Zara, Renegade Recruiter
+
+===== 04/62 — Anhelo, the Painter =====
+1x Anhelo, the Painter
+1x A Little Chat
+1x An Offer You Can't Refuse
+1x Arcane Signet
+1x Archmage Emeritus
+1x Army of the Damned
+1x Badlands
+1x Baral and Kari Zev
+1x Big Score
+1x Black Market Connections
+1x Blood Crypt
+1x Bloodghast
+1x Bloodstained Mire
+1x Cascade Bluffs
+1x Chaos Warp
+1x Command Tower
+1x Cormela, Glamour Thief
+1x Counterspell
+1x Crackle with Power
+1x Cryptic Pursuit
+1x Cyclonic Rift
+1x Dark Ritual
+1x Deadly Rollick
+1x Deflecting Swat
+1x Demonic Tutor
+1x Dig Through Time
+1x Dimir Signet
+1x Deekah, Fractal Theorist
+1x Dualcaster Mage
+1x Exotic Orchard
+1x Feed the Swarm
+1x Fellwar Stone
+1x Fierce Guardianship
+1x Startle
+1x Frantic Search
+1x Jadar, Ghoulcaller of Nephalia
+1x Galvanic Iteration
+1x Ghoulish Procession
+1x Goblin Electromancer
+1x Haunted Ridge
+3x Island
+1x Izzet Signet
+1x Jeska's Will
+1x Judith, Carnage Connoisseur
+1x Kess, Dissident Mage
+1x Lagomos, Hand of Hatred
+1x Luxury Suite
+1x Maestros Ascendancy
+1x Maestros Charm
+1x Mana Confluence
+1x Mana Drain
+1x Mana Geyser
+1x Morphic Pool
+3x Mountain
+1x Mystical Tutor
+1x Narset's Reversal
+1x Otawara, Soaring City
+1x Polluted Delta
+1x Poppet Stitcher // Poppet Factory
+1x Preordain
+1x Primal Amulet // Primal Wellspring
+1x Rakdos Signet
+1x Ral, Storm Conduit
+1x Reiterate
+1x Scalding Tarn
+1x Shipwreck Marsh
+1x Shivan Reef
+1x Snapcaster Mage
+1x Sol Ring
+1x Steam Vents
+1x Storm-Kiln Artist
+1x Stormcarved Coast
+1x Sulfur Falls
+3x Swamp
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Talrand, Sky Summoner
+1x Thunderclap Drake
+1x Time Warp
+1x Torment of Hailfire
+1x Toxic Deluge
+1x Training Center
+1x Twinflame
+1x Twinning Staff
+1x Undercity Sewers
+1x Underground Sea
+1x Underworld Breach
+1x Urborg, Tomb of Yawgmoth
+1x Vampiric Tutor
+1x Veyran, Voice of Duality
+1x Volcanic Island
+1x Watery Grave
+1x Xander's Lounge
+
+===== 05/62 — Ashad, the Lone Cyberman =====
+1x Ashad, the Lone Cyberman
+1x Academy Ruins
+1x Arcane Denial
+1x Arcane Signet
+1x Artificer Class
+1x Ashnod's Altar
+1x Auton Soldier
+1x Baleful Strix
+1x Biotransference
+1x Blood Crypt
+1x Bloodstained Mire
+1x Brudiclad, Telchor Engineer
+1x Chaos Warp
+1x Command Tower
+1x Crumbling Necropolis
+1x Cursed Mirror
+1x Cyber Conversion
+1x Cyberdrive Awakener
+1x Cybermen Squadron
+1x Cyclonic Rift
+1x Ichor Wellspring
+1x Deflecting Swat
+1x Delete
+1x Demonic Tutor
+1x Disciple of the Vault
+1x Emry, Lurker of the Loch
+1x Enthusiastic Mechanaut
+1x Esoteric Duplicator
+1x Etherium Sculptor
+1x Exotic Orchard
+1x Fabricate
+1x Fellwar Stone
+1x Fierce Guardianship
+1x Foundry Inspector
+1x Goblin Welder
+1x Great Furnace
+1x Ingenious Artillerist
+1x Inventors' Fair
+1x Iron Man, Bleeding Edge
+3x Island
+1x Solemn Simulacrum
+1x Jhoira, Weatherlight Captain
+1x Kappa Cannoneer
+1x Krark-Clan Ironworks
+1x Lightning Greaves
+1x Luxury Suite
+1x Mana Drain
+1x Marionette Master
+1x Mayhem Devil
+1x Morphic Pool
+2x Mountain
+1x Mox Opal
+1x Mystic Forge
+1x Noxious Gearhulk
+1x Padeem, Consul of Innovation
+1x Phyrexian Altar
+1x Phyrexian Metamorph
+1x Pitiless Plunderer
+1x Poetic Ingenuity
+1x Polluted Delta
+1x Portal to Phyrexia
+1x Rakdos Signet
+1x Reckless Fireweaver
+1x Scrap Trawler
+1x Sculpting Steel
+1x Seat of the Synod
+1x Shimmer Myr
+1x Shipwreck Marsh
+1x Simulacrum Synthesizer
+1x Sol Ring
+1x Steam Vents
+1x Stormcarved Coast
+3x Swamp
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Tezzeret, Master of the Bridge
+1x The Cyber-Controller
+1x Their Name Is Death
+1x Thopter Spy Network
+1x Thought Monitor
+1x Thoughtcast
+1x Training Center
+1x Twinning Staff
+1x Underground Sea
+1x Unwinding Clock
+1x Urza, Lord High Artificer
+1x Urza's Saga
+1x Uthros Research Craft
+1x Vault of Whispers
+1x Volcanic Island
+1x Watery Grave
+1x Worldwalker Helm
+1x Wurmcoil Engine
+1x Xander's Lounge
+
+===== 06/62 — Ashnod the Uncaring =====
+1x Ashnod the Uncaring
+1x Academy Ruins
+1x Altar of Dementia
+1x An Offer You Can't Refuse
+1x Ancient Tomb
+1x Arcane Signet
+1x Arcbound Ravager
+1x Ashnod's Altar
+1x Oni-Cult Anvil
+1x Badlands
+1x Blasting Station
+1x Blood Crypt
+1x Bloodstained Mire
+1x Bolas's Citadel
+1x Buried Ruin
+1x Chaos Warp
+1x Clan Crafter
+1x Command Tower
+1x Trading Post
+1x Moonsilver Key
+1x Crime Novelist
+1x Cyclonic Rift
+1x Deflecting Swat
+1x Demonic Tutor
+1x Disciple of the Vault
+1x Dockside Chef
+1x Dross Scorpion
+1x Dross Skullbomb
+1x Emry, Lurker of the Loch
+1x Enthusiastic Mechanaut
+1x Esoteric Duplicator
+1x Etherium Sculptor
+1x Executioner's Capsule
+1x Exotic Orchard
+1x Farid, Enterprising Salvager
+1x Fellwar Stone
+1x Fierce Guardianship
+1x Forensic Gadgeteer
+1x Foundry Inspector
+1x Goblin Engineer
+1x Goblin Welder
+1x Great Furnace
+1x Grinding Station
+1x Inventors' Fair
+3x Island
+1x Jhoira, Weatherlight Captain
+1x Krark-Clan Ironworks
+1x Krark-Clan Shaman
+1x Kuldotha Forgemaster
+1x Lotus Petal
+1x Luxury Suite
+1x Mana Drain
+1x Marionette Apprentice
+1x Mayhem Devil
+1x Mind Stone
+1x Mishra's Bauble
+1x Mnemonic Sphere
+1x Morphic Pool
+2x Mountain
+1x Mox Opal
+1x Myr Retriever
+1x Nim Deathmantle
+1x Otawara, Soaring City
+1x Polluted Delta
+1x Pyrite Spellbomb
+1x Reckless Fireweaver
+1x Repurposing Bay
+1x Retrofitter Foundry
+1x Rings of Brighthearth
+1x Sai, Master Thopterist
+1x Scalding Tarn
+1x Scrap Trawler
+1x Scrap Welder
+1x Seat of the Synod
+1x Sol Ring
+1x Steam Vents
+3x Swamp
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Time Sieve
+1x Toxic Deluge
+1x Training Center
+1x Treasure Vault
+1x Underground Sea
+1x Urza, Lord High Artificer
+1x Urza's Saga
+1x Vampiric Tutor
+1x Vandalblast
+1x Vault of Whispers
+1x Volcanic Island
+1x Walking Ballista
+1x Watery Grave
+1x Wayfarer's Bauble
+1x Xander's Lounge
+
+===== 07/62 — Be'lakor, the Dark Master =====
+1x Be'lakor, the Dark Master
+1x Abyssal Harvester
+1x Ancient Cellarspawn
+1x Ancient Tomb
+1x Arcane Signet
+1x Archfiend of Depravity
+1x Archfiend of Despair
+1x Badlands
+1x Balor
+1x Bedevil
+1x Blasphemous Act
+1x Blood Crypt
+1x Bloodletter of Aclazotz
+1x Bloodstained Mire
+1x Bloodthirster
+1x Bojuka Bog
+1x Burning-Rune Demon
+1x Cavern of Souls
+1x Chaos Defiler
+1x Chaos Warp
+1x Command Tower
+1x Crumbling Necropolis
+1x Cyclonic Rift
+1x Dark Ritual
+1x Deadly Rollick
+1x Deflecting Swat
+1x Demon of Dark Schemes
+1x Demonic Counsel
+1x Demonic Tutor
+1x Spark Double
+1x Dragonskull Summit
+1x Drowned Catacomb
+1x Exotic Orchard
+1x Feed the Swarm
+1x Fellwar Stone
+1x Fierce Guardianship
+1x Foreboding Ruins
+1x Ghostly Flicker
+1x Great Unclean One
+1x Gyruda, Doom of Depths
+1x Heartless Summoning
+1x Herald of Slaanesh
+3x Island
+1x Kardur, Doomscourge
+1x Kindred Discovery
+1x Liliana's Contract
+1x Lord of Change
+1x Luxury Suite
+1x Mana Drain
+1x Molten Echoes
+1x Morphic Pool
+2x Mountain
+1x Orcus, Prince of Undeath
+1x Otawara, Soaring City
+1x Panharmonicon
+1x Path of Ancestry
+1x Patriarch's Bidding
+1x Polluted Delta
+1x Rakdos Signet
+1x Rakdos, Lord of Riots
+1x Rakdos, Patron of Chaos
+1x Rakdos, the Showstopper
+1x Dream Devourer
+1x Reanimate
+1x Doom Whisperer
+1x Reflections of Littjara
+1x Rite of Replication
+1x Roaming Throne
+1x Rune-Scarred Demon
+1x Scalding Tarn
+1x Sneak Attack
+1x Sol Ring
+1x Sower of Discord
+1x Steam Vents
+1x Sulfur Falls
+1x Sunken Hollow
+4x Swamp
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Toxic Deluge
+1x Training Center
+1x Underground Sea
+1x Unholy Annex // Ritual Chamber
+1x Urborg, Tomb of Yawgmoth
+1x Urza's Incubator
+1x Valgavoth, Terror Eater
+1x Vampiric Tutor
+1x Vilis, Broker of Blood
+1x Volcanic Island
+1x Warstorm Surge
+1x Watery Grave
+1x Whip of Erebos
+1x Xander's Lounge
+
+===== 08/62 — Bjorna, Nightfall Alchemist // Cecily, Haunted Mage =====
+1x Bjorna, Nightfall Alchemist
+1x Cecily, Haunted Mage
+1x Academy Manufactor
+1x Apex of Power
+1x Arcane Signet
+1x Archmage Emeritus
+1x Big Score
+1x Blightstep Pathway // Searstep Pathway
+1x Blood Crypt
+1x Bloodstained Mire
+1x Bojuka Bog
+1x Brainstorm
+1x Brass's Bounty
+1x Chaos Warp
+1x Clearwater Pathway // Murkwater Pathway
+1x Command Tower
+1x Cormela, Glamour Thief
+1x Counterspell
+1x Cruel Ultimatum
+1x Crumbling Necropolis
+1x Cyclonic Rift
+1x Dark Deal
+1x Deadly Dispute
+1x Demonic Tutor
+1x Dimir Signet
+1x Dragonskull Summit
+1x Drowned Catacomb
+1x Echo of Eons
+1x Emry, Lurker of the Loch
+1x Fabled Passage
+1x Feed the Swarm
+1x Fierce Guardianship
+1x Frantic Search
+1x Goblin Electromancer
+1x Goblin Engineer
+1x Harmonic Prodigy
+1x Haunted Ridge
+1x Hexing Squelcher
+1x Ichor Wellspring
+1x In Garruk's Wake
+2x Island
+1x Izzet Signet
+1x Jeska's Will
+1x Kess, Dissident Mage
+1x Lightning Greaves
+1x Luxury Suite
+1x Mana Geyser
+1x Mnemonic Deluge
+1x Morphic Pool
+1x Mountain
+1x Mystic Remora
+1x Mystical Tutor
+1x Niv-Mizzet, Parun
+1x Notion Thief
+1x Oni-Cult Anvil
+1x Otawara, Soaring City
+1x Peer into the Abyss
+1x Polluted Delta
+1x Psychosis Crawler
+1x Rakdos Signet
+1x Reforge the Soul
+1x Rhystic Study
+1x Riverglide Pathway // Lavaglide Pathway
+1x Robe of the Archmagi
+1x Sai, Master Thopterist
+1x Scalding Tarn
+1x Seething Song
+1x Shipwreck Marsh
+1x Shivan Reef
+1x Sokenzan, Crucible of Defiance
+1x Sol Ring
+1x Steam Vents
+1x Storm-Kiln Artist
+1x Stormcarved Coast
+1x Sulfur Falls
+1x Sulfurous Springs
+1x Swamp
+1x Takenuma, Abandoned Mire
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Teferi's Ageless Insight
+1x The One Ring
+1x Third Path Iconoclast
+1x Thought Vessel
+1x Toxic Deluge
+1x Trade Secrets
+1x Training Center
+1x Triskaidekaphile
+1x Underground River
+1x Underworld Breach
+1x Vampiric Tutor
+1x Watery Grave
+1x Wheel of Fortune
+1x Wheel of Misfortune
+1x Whispering Madness
+1x Windfall
+1x Xander's Lounge
+1x Yawgmoth's Bargain
+
+===== 09/62 — Cormela, Glamour Thief =====
+1x Cormela, Glamour Thief
+1x Ad Nauseam
+1x An Offer You Can't Refuse
+1x Ancient Tomb
+1x Ashnod's Altar
+1x Badlands
+1x Birgi, God of Storytelling // Harnfel, Horn of Bounty
+1x Blood Crypt
+1x Bloodstained Mire
+1x Borne Upon a Wind
+1x Brain Freeze
+1x Brainstorm
+1x Cabal Ritual
+1x Chain of Vapor
+1x Chrome Mox
+1x City of Brass
+1x Command Tower
+1x Culling the Weak
+1x Dark Ritual
+1x Deflecting Swat
+1x Demonic Gifts
+1x Demonic Tutor
+1x Diabolic Intent
+1x Dualcaster Mage
+1x Entomb
+1x Exotic Orchard
+1x Faithless Looting
+1x Fierce Guardianship
+1x Flusterstorm
+1x Goryo's Vengeance
+1x Force of Negation
+1x Force of Will
+1x Gamble
+1x Gemstone Caverns
+1x Gitaxian Probe
+1x Wishclaw Talisman
+1x Demonic Consultation
+1x Pyroblast
+1x Imperial Seal
+1x Intuition
+1x Island
+1x Jeska's Will
+1x Lion's Eye Diamond
+1x Lotus Petal
+1x Luxury Suite
+1x Mana Confluence
+1x Mindbreak Trap
+1x Mana Vault
+1x Marsh Flats
+1x Mental Misstep
+1x Misty Rainforest
+1x Rite of Flame
+1x Morphic Pool
+1x Mountain
+1x Arcane Signet
+1x Mox Diamond
+1x Mox Opal
+1x Mystic Remora
+1x Mystical Tutor
+1x Necropotence
+1x Thassa's Oracle
+1x Otawara, Soaring City
+1x Pact of Negation
+1x Phyrexian Altar
+1x Polluted Delta
+1x Ponder
+1x Preordain
+1x Shallow Grave
+1x Reanimate
+1x Red Elemental Blast
+1x Rhystic Study
+1x Saw in Half
+1x Scalding Tarn
+1x Seething Song
+1x Shivan Reef
+1x Simian Spirit Guide
+1x Sol Ring
+1x Steam Vents
+1x Tainted Pact
+1x Sulfurous Springs
+1x Swamp
+1x Swan Song
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Tendrils of Agony
+1x Training Center
+1x Molten Duplication
+1x Undercity Sewers
+1x Underground Sea
+1x Underworld Breach
+1x Phyrexian Tower
+1x Vampiric Tutor
+1x Orcish Bowmasters
+1x Volcanic Island
+1x Watery Grave
+1x Wheel of Fortune
+1x Windfall
+1x Wooded Foothills
+1x Flooded Strand
+
+===== 10/62 — Crosis, the Purger =====
+1x Crosis, the Purger
+1x Ancient Tomb
+1x Arcane Signet
+1x Badlands
+1x Bandit's Talent
+1x Black Market Connections
+1x Blizzard Specter
+1x Blood Crypt
+1x Bloodstained Mire
+1x Bottomless Pit
+1x Brotherhood Regalia
+1x Cavern of Souls
+1x Chaos Warp
+1x Chrome Mox
+1x City of Brass
+1x Command Tower
+1x Cyclonic Rift
+1x Damnation
+1x Dark Deal
+1x Dark Ritual
+1x Deflecting Swat
+1x Demonic Tutor
+1x Dimir Signet
+1x Dream Salvage
+1x Drown in the Loch
+1x Exotic Orchard
+1x Feed the Swarm
+1x Fell Specter
+1x Fierce Guardianship
+1x Force of Will
+1x Gamble
+1x Geier Reach Sanitarium
+1x Geth's Grimoire
+1x Hymn to Tourach
+4x Island
+1x Izzet Signet
+1x Jet Medallion
+1x Kroxa, Titan of Death's Hunger
+1x Lightning Greaves
+1x Liliana's Caress
+1x Lotus Petal
+1x Luxury Suite
+1x Mana Confluence
+1x Mana Drain
+1x Mana Vault
+1x Marsh Flats
+1x Mind Twist
+1x Misty Rainforest
+1x Morphic Pool
+3x Mountain
+1x Mox Diamond
+1x Mystical Tutor
+1x Notion Thief
+1x Oppression
+1x Orcish Bowmasters
+1x Painter's Servant
+1x Plaza of Heroes
+1x Polluted Delta
+1x Rakdos Signet
+1x Reanimate
+1x Recoil
+1x Scalding Tarn
+1x Sedraxis Specter
+1x Shizo, Death's Storehouse
+1x Sol Ring
+1x Steam Vents
+4x Swamp
+1x Swan Song
+1x Swiftfoot Boots
+1x Sword of Feast and Famine
+1x Syphon Mind
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Teferi's Puzzle Box
+1x Tergrid, God of Fright // Tergrid's Lantern
+1x The Raven Man
+1x Tinybones, Bauble Burglar
+1x Tinybones, Pocket Nuisance
+1x Tinybones, Trinket Thief
+1x Tourach, Dread Cantor
+1x Toxic Deluge
+1x Training Center
+1x Underground Sea
+1x Vampiric Tutor
+1x Verdant Catacombs
+1x Volcanic Island
+1x Waste Not
+1x Watery Grave
+1x Wheel of Fortune
+1x Windfall
+1x Xander's Lounge
+
+===== 11/62 — Cult of Skaro =====
+1x Cult of Skaro
+1x Academy Ruins
+1x Adaptive Omnitool
+1x Aggravated Assault
+1x Anrakyr the Traveller
+1x Mana Drain
+1x Arcane Signet
+1x Scientist Supreme of A.I.M.
+1x Ashad, the Lone Cyberman
+1x Auton Soldier
+1x Badlands
+1x Baleful Strix
+1x Biotransference
+1x Blood Crypt
+1x Bloodstained Mire
+1x Brudiclad, Telchor Engineer
+1x Canoptek Spyder
+1x Chaos Warp
+1x Command Tower
+1x Plaza of Heroes
+1x Great Train Heist
+1x Cyber Conversion
+1x Cyberman Patrol
+1x Cybermen Squadron
+1x Cyclonic Rift
+1x Dalek Drone
+1x Dalek Squadron
+1x Davros, Dalek Creator
+1x Deadly Rollick
+1x Deflecting Swat
+1x Delete
+1x Desynchronization
+1x Dimir Signet
+1x Doomsday Confluence
+1x Emry, Lurker of the Loch
+1x Enthusiastic Mechanaut
+1x Etherium Sculptor
+1x Exotic Orchard
+1x Exterminate!
+1x Fellwar Stone
+1x Fierce Guardianship
+1x Mana Vault
+1x Genesis of the Daleks
+1x Great Furnace
+1x Inventors' Fair
+1x Irenicus's Vile Duplication
+3x Island
+1x Lightning Greaves
+1x Luxury Suite
+1x Master of Etherium
+1x Helm of the Host
+1x Missy
+1x Morphic Pool
+3x Mountain
+1x Mox Opal
+1x Nanogene Conversion
+1x Padeem, Consul of Innovation
+1x Phyrexian Metamorph
+1x Polluted Delta
+1x Research Thief
+1x Roaming Throne
+1x Sai, Master Thopterist
+1x Sakashima of a Thousand Faces
+1x Scalding Tarn
+1x Seat of the Synod
+1x Spire of Industry
+1x Shuri, Wakandan Inventor
+1x Sol Ring
+1x Spark Double
+1x Steam Vents
+1x Steel Overseer
+1x Arena of Glory
+1x Strionic Resonator
+3x Swamp
+1x Swiftfoot Boots
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Sword of Feast and Famine
+1x The Cyber-Controller
+1x The Dalek Emperor
+1x The Master, Multiplied
+1x Their Name Is Death
+1x Thopter Spy Network
+1x Thought Monitor
+1x Training Center
+1x Underground Sea
+1x Full Throttle
+1x Urborg, Tomb of Yawgmoth
+1x Urza's Saga
+1x Vault of Whispers
+1x Volcanic Island
+1x Watery Grave
+1x Xander's Lounge
+
+===== 12/62 — Davros, Dalek Creator =====
+1x Davros, Dalek Creator
+1x Ancient Tomb
+1x Arcane Signet
+1x Ashad, the Lone Cyberman
+1x Badlands
+1x Blasphemous Act
+1x Blood Crypt
+1x Bloodstained Mire
+1x Boltwave
+1x Court of Ambition
+1x Command Tower
+1x Counterspell
+1x Cult of Skaro
+1x Cyber Conversion
+1x Cyberman Patrol
+1x Cybermen Squadron
+1x Cyclonic Rift
+1x Dalek Drone
+1x Dalek Squadron
+1x Dauthi Voidwalker
+1x Deadly Rollick
+1x Death in Heaven
+1x Deflecting Swat
+1x Delete
+1x Demonic Tutor
+1x Doomsday Confluence
+1x City of Brass
+1x Mana Confluence
+1x Ensnared by the Mara
+1x Enthusiastic Mechanaut
+1x Exotic Orchard
+1x Exterminate!
+1x Feed the Swarm
+1x Fellwar Stone
+1x Fierce Guardianship
+1x Fiery Islet
+1x Geier Reach Sanitarium
+1x Genesis of the Daleks
+1x Geth's Grimoire
+1x Maestros Charm
+1x Plaza of Heroes
+2x Island
+1x Jeska's Will
+1x Lightning Greaves
+1x Entropic Battlecruiser
+1x Loyal Subordinate
+1x Luxury Suite
+1x Mana Drain
+1x Missy
+1x Morphic Pool
+3x Mountain
+1x Mox Opal
+1x Scientist Supreme of A.I.M.
+1x Otawara, Soaring City
+1x Padeem, Consul of Innovation
+1x Perforating Artist
+1x Polluted Delta
+1x Roaming Throne
+1x Scalding Tarn
+1x Marsh Flats
+1x Snuff Out
+1x Sol Ring
+1x Steam Vents
+1x Misty Rainforest
+1x Strionic Resonator
+3x Swamp
+1x Swan Song
+1x Swiftfoot Boots
+1x Sycorax Commander
+1x Sygg, River Cutthroat
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Tezzeret, Master of the Bridge
+1x The Cyber-Controller
+1x The Dalek Emperor
+1x Labyrinth Raptor
+1x Auton Soldier
+1x The Valeyard
+1x Their Name Is Death
+1x This Is How It Ends
+1x Tinybones, Trinket Thief
+1x Torment of Hailfire
+1x Toxic Deluge
+1x Training Center
+1x Underground Sea
+1x Urborg, Tomb of Yawgmoth
+1x Urza's Saga
+1x Vandalblast
+1x Volcanic Island
+1x Waste Not
+1x Watery Grave
+1x Weeping Angel
+1x Wound Reflection
+1x Xander's Lounge
+
+===== 13/62 — Doctor Doom, King of Latveria =====
+1x Doctor Doom, King of Latveria
+1x Ancient Tomb
+1x Arcane Signet
+1x Archfiend of Ifnir
+1x Badlands
+1x Baron Strucker, HYDRA Overlord
+1x Big Score
+1x Black Market Connections
+1x Blood Crypt
+1x Bloodstained Mire
+1x Bone Miser
+1x Canyon Slough
+1x Change of Fortune
+1x Chaos Warp
+1x City of Brass
+1x Command Tower
+1x Containment Construct
+1x Cool but Rude
+1x Crucible of Worlds
+1x Currency Converter
+1x Cyclonic Rift
+1x Deflecting Swat
+1x Demand Answers
+1x Demonic Tutor
+1x Desolate Lighthouse
+1x Doctor Doom
+1x Doom Reigns Supreme
+1x Drowned Catacomb
+1x Exotic Orchard
+1x Fabled Passage
+1x Faithless Looting
+1x Feed the Swarm
+1x Fellwar Stone
+1x Fetid Pools
+1x Fierce Guardianship
+1x Frantic Search
+1x Geier Reach Sanitarium
+1x Green Goblin, Nemesis
+1x Green Goblin, Revenant
+1x Haunted Ridge
+1x Iron Monger, Sadistic Tycoon
+1x Island
+1x Jeska's Will
+1x Kang, Temporal Tyrant
+1x Leader, Super-Genius
+1x Lethal Scheme
+1x Loki, the Deceiver
+1x Luxury Suite
+1x M.O.D.O.K.
+1x Mana Confluence
+1x Monument to Endurance
+1x Moonstone, Harsh Mistress
+1x Morphic Pool
+1x Mountain
+1x Norman Osborn // Green Goblin
+1x Oscorp Industries
+1x Otawara, Soaring City
+1x Polluted Delta
+1x Prowler, Clawed Thief
+1x Reanimate
+1x Scalding Tarn
+1x Seismic Assault
+1x Shadow of the Grave
+1x Shipwreck Marsh
+1x Sol Ring
+1x Steam Vents
+1x Sulfur Falls
+1x Sulfurous Springs
+1x Sunken Hollow
+1x Surly Badgersaur
+1x Swamp
+1x Swan Song
+1x Takenuma, Abandoned Mire
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Tectonic Reformation
+1x The Soul Stone
+1x Tombstone, Career Criminal
+1x Toxic Deluge
+1x Trade Routes
+1x Training Center
+1x Ultron, Unlimited
+1x Underground River
+1x Underground Sea
+1x Unexpected Windfall
+1x Vampiric Tutor
+1x Vandalblast
+1x Villainous Hideout
+1x Volcanic Island
+1x Watery Grave
+1x Wheel of Fortune
+1x Windfall
+1x Xander's Lounge
+1x Glorious Purpose
+1x Chameleon, Master of Disguise
+1x Roaming Throne
+1x Psychic Frog
+1x Spark Double
+1x Dakmor Salvage
+
+===== 14/62 — Don Andres, the Renegade =====
+1x Don Andres, the Renegade
+1x Admiral Beckett Brass
+1x Ancient Tomb
+1x Animate Dead
+1x Arcane Heist
+1x Arcane Signet
+1x Badlands
+1x Black Market Connections
+1x Blasphemous Act
+1x Blood Crypt
+1x Bloodstained Mire
+1x Brainstealer Dragon
+1x Breeches, Brazen Plunderer
+1x Breeches, Eager Pillager
+1x Mana Drain
+1x Cavern of Souls
+1x Chaos Warp
+1x Coercive Recruiter
+1x Command Tower
+1x City of Brass
+1x Roaming Throne
+1x Cyclonic Rift
+1x Dauthi Voidwalker
+1x Deadly Rollick
+1x Deflecting Swat
+1x Dimir Signet
+1x Dire Fleet Daredevil
+1x Misty Rainforest
+1x Etali, Primal Storm
+1x Exotic Orchard
+1x Feed the Swarm
+1x Fellwar Stone
+1x Fierce Guardianship
+1x Gilded Drake
+1x Black Cat, Cunning Thief
+1x Gonti, Night Minister
+1x Grenzo, Havoc Raiser
+1x Marsh Flats
+1x Hostage Taker
+1x Hurl Through Hell
+1x Insurrection
+2x Island
+1x Izzet Signet
+1x Kindred Discovery
+1x Laughing Jasper Flint
+1x Lightning Greaves
+1x Thieving Amalgam
+1x Locke, Treasure Hunter
+1x Luxury Suite
+1x Malcolm, Keen-Eyed Navigator
+1x Mana Confluence
+1x Morphic Pool
+1x Mountain
+1x Opposition Agent
+1x Otawara, Soaring City
+1x Outrageous Robbery
+1x Path of Ancestry
+1x Plargg and Nassari
+1x Polluted Delta
+1x Praetor's Grasp
+1x Professional Face-Breaker
+1x Ragavan, Nimble Pilferer
+1x Rakdos Signet
+1x Ramirez DePietro, Pillager
+1x Reanimate
+1x Thieving Varmint
+1x Scalding Tarn
+1x Seize the Spotlight
+1x Court of Locthwain
+1x Shipwreck Marsh
+1x Shivan Reef
+1x Siphon Insight
+1x Smoldering Marsh
+1x Sol Ring
+1x Steam Vents
+1x Stolen Strategy
+1x Verdant Catacombs
+1x Sulfur Falls
+1x Sulfurous Springs
+1x Swamp
+1x Takenuma, Abandoned Mire
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Tasha, the Witch Queen
+1x Wand of Wonder
+1x Thief of Sanity
+1x Toxic Deluge
+1x Training Center
+1x Underground River
+1x Underground Sea
+1x Vaan, Street Thief
+1x Vampiric Tutor
+1x Decadent Dragon // Expensive Taste
+1x Volcanic Island
+1x Watery Grave
+1x Xander's Lounge
+1x You Find Some Prisoners
+1x Jhoira, Weatherlight Corsair
+
+===== 15/62 — Dr. Eggman =====
+1x Dr. Eggman
+1x Academy Ruins
+1x Ancient Tomb
+1x Arcane Signet
+1x Badlands
+1x Thopter Fabricator
+1x Blasphemous Act
+1x Blitzwing, Cruel Tormentor // Blitzwing, Adaptive Assailant
+1x Blood Crypt
+1x Bloodstained Mire
+1x Chaos Defiler
+1x Chaos Warp
+1x Cityscape Leveler
+1x Coalstoke Gearhulk
+1x Combustible Gearhulk
+1x Command Tower
+1x Cryptothrall
+1x Curie, Emergent Intelligence
+1x Cyberdrive Awakener
+1x Cybermen Squadron
+1x Cyclonic Rift
+1x Davros, Dalek Creator
+1x Deadly Rollick
+1x Deflecting Swat
+1x Demonic Junker
+1x Depthshaker Titan
+1x City of Brass
+1x Mana Confluence
+1x Strionic Resonator
+1x Entropic Battlecruiser
+1x Scrapyard Recombiner
+1x Exotic Orchard
+1x Fabricate
+1x Fellwar Stone
+1x Fierce Guardianship
+1x Foundry Inspector
+1x Geth's Grimoire
+1x Golbez, Crystal Collector
+1x Great Furnace
+1x Y'shtola Rhul
+1x Inventors' Fair
+2x Island
+1x Krang, Utrom Warlord
+1x Kuldotha Forgemaster
+1x Lightning Greaves
+1x Liliana's Caress
+1x Luxury Suite
+1x Mana Drain
+1x Master Transmuter
+1x Mechan Assembler
+1x Spark Double
+1x Tinybones, Bauble Burglar
+1x Metalwork Colossus
+1x Morphic Pool
+2x Mountain
+1x Mox Opal
+1x Myr Battlesphere
+1x Nautiloid Ship
+1x Noxious Gearhulk
+1x Oildeep Gearhulk
+1x Padeem, Consul of Innovation
+1x Polluted Delta
+1x Vision, Spectral Synthezoid
+1x Scalding Tarn
+1x Scrap Trawler
+1x Seat of the Synod
+1x Simulacrum Synthesizer
+1x Sol Ring
+1x Steam Vents
+1x Roaming Throne
+1x Spire of Industry
+2x Swamp
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Tezzeret, Master of the Bridge
+1x The Regalia
+1x The Valeyard
+1x Their Name Is Death
+1x One with the Machine
+1x Thought Monitor
+1x Thoughtcast
+1x Thunderhawk Gunship
+1x Toxic Deluge
+1x Training Center
+1x Ultron, Artificial Malevolence
+1x Ultron, Machine Overlord
+1x Underground Sea
+1x Unwinding Clock
+1x Urza's Saga
+1x Vault of Whispers
+1x Volcanic Island
+1x Waste Not
+1x Watery Grave
+1x Weapons Manufacturing
+1x Withering Torment
+1x Xander's Lounge
+
+===== 16/62 — Edea, Possessed Sorceress =====
+1x Edea, Possessed Sorceress
+1x An Offer You Can't Refuse
+1x Arcane Denial
+1x Arcane Signet
+1x Ashnod's Altar
+1x Ayara, Widow of the Realm // Ayara, Furnace Queen
+1x Badlands
+1x Blasphemous Act
+1x Blood Crypt
+1x Bloodstained Mire
+1x Braids, Arisen Nightmare
+1x Chaos Shrine's Black Crystal
+1x Chaos Warp
+1x Captivating Crew
+1x Command Tower
+1x Corrupted Conviction
+1x Deadly Dispute
+1x Deadly Rollick
+1x Deflecting Swat
+1x Demonic Tutor
+1x Diabolic Intent
+1x Full Throttle
+1x Disciple of Bolas
+1x Dominus of Fealty
+1x Don Andres, the Renegade
+1x City of Brass
+1x Mana Confluence
+1x Evereth, Viceroy of Plunder
+1x Exotic Orchard
+1x Fellwar Stone
+1x Fierce Guardianship
+1x Thassa, Deep-Dwelling
+1x Goblin Bombardment
+1x Gogo, Master of Mimicry
+1x Grave Pact
+1x Grim Haruspex
+1x Haunted Ridge
+1x High Market
+1x Illuminor Szeras
+1x Impostor Syndrome
+1x Industrial Advancement
+1x Insurrection
+1x Irma, Part-Time Mutant
+3x Island
+1x Karlach, Fury of Avernus
+1x Kethek, Crucible Goliath
+1x Lightning Greaves
+1x Luxury Suite
+1x Mana Drain
+1x Mayhem Devil
+1x Mob Rule
+1x Strionic Resonator
+1x Morphic Pool
+3x Mountain
+1x Nightmare Shepherd
+1x Otawara, Soaring City
+1x Phyrexian Altar
+1x Phyrexian Tower
+1x Pitiless Plunderer
+1x Polluted Delta
+1x Rakdos, the Muscle
+1x Reanimate
+1x Arcane Lighthouse
+1x Roaming Throne
+1x Sakashima of a Thousand Faces
+1x Saw in Half
+1x Scalding Tarn
+1x Seize the Spotlight
+1x Shipwreck Marsh
+1x Skullclamp
+1x Sol Ring
+1x Spark Double
+1x Steam Vents
+1x Stormcarved Coast
+1x Ancient Tomb
+3x Swamp
+1x Swan Song
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Mass Mutiny
+1x Toxic Deluge
+1x Training Center
+1x Underground Sea
+1x Urborg, Tomb of Yawgmoth
+1x Vandalblast
+1x Victimize
+1x Village Rites
+1x Viscera Seer
+1x Volcanic Island
+1x Warren Soultrader
+1x Watery Grave
+1x Xander's Lounge
+1x Zara, Renegade Recruiter
+
+===== 17/62 — Edward Kenway =====
+1x Edward Kenway
+1x Academy Manufactor
+1x Adéwalé, Breaker of Chains
+1x Admiral Brass, Unsinkable
+1x Adrestia
+1x An Offer You Can't Refuse
+1x Ancient Tomb
+1x Arcane Signet
+1x Arid Mesa
+1x Badlands
+1x Basim Ibn Ishaq
+1x Black Market Connections
+1x Blood Crypt
+1x Bloodstained Mire
+1x Breeches, Brazen Plunderer
+1x Breeches, Eager Pillager
+1x Captain Lannery Storm
+1x Captain Storm, Cosmium Raider
+1x Cavern of Souls
+1x Chrome Mox
+1x City of Brass
+1x Coastal Piracy
+1x Command Tower
+1x Cyclonic Rift
+1x Deadeye Quartermaster
+1x Deadly Rollick
+1x Deflecting Swat
+1x Deluxe Dragster
+1x Don Andres, the Renegade
+1x Exotic Orchard
+1x Fateful Discovery
+1x Fearless Swashbuckler
+1x Fellwar Stone
+1x Fierce Guardianship
+1x Flooded Strand
+1x Force of Will
+1x Gemcutter Buccaneer
+1x Hoard Hauler
+1x Hostage Taker
+1x Imperial Seal
+1x Imposter Mech
+2x Island
+1x Jackdaw
+1x Jeska's Will
+1x Kitesail Larcenist
+1x Lotus Petal
+1x Luxury Suite
+1x Malcolm, Keen-Eyed Navigator
+1x Mana Confluence
+1x Mana Drain
+1x Mana Vault
+1x Marsh Flats
+1x Mary Read and Anne Bonny
+1x Glint-Horn Buccaneer
+1x Misty Rainforest
+1x Morphic Pool
+1x Mountain
+1x Mox Diamond
+1x Mox Opal
+1x Nautiloid Ship
+1x Otawara, Soaring City
+1x Polluted Delta
+1x Port Razer
+1x Ragavan, Nimble Pilferer
+1x Luxurious Locomotive
+1x RMS Titanic
+1x Roaming Throne
+1x Scalding Tarn
+1x Ramirez DePietro, Pillager
+1x Shivan Reef
+1x Siren Stormtamer
+1x Skysovereign, Consul Flagship
+1x Smuggler's Copter
+1x Sol Ring
+1x Steam Vents
+1x Subterranean Schooner
+1x Underground River
+1x Sulfurous Springs
+2x Swamp
+1x Swan Song
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x The Belligerent
+1x The Indomitable
+1x The Reaver Cleaver
+1x Time Sieve
+1x Toxic Deluge
+1x Training Center
+1x Underground Sea
+1x Urza's Saga
+1x Vaan, Street Thief
+1x Vampiric Tutor
+1x Verdant Catacombs
+1x Volcanic Island
+1x Watery Grave
+1x Wooded Foothills
+1x Xander's Lounge
+
+===== 18/62 — Evelyn, the Covetous =====
+1x Evelyn, the Covetous
+1x Ancient Tomb
+1x Arid Mesa
+1x Badlands
+1x Blazemire Verge
+1x Blood Crypt
+1x Bloodstained Mire
+1x City of Brass
+1x City of Traitors
+1x Command Tower
+1x Exotic Orchard
+1x Flooded Strand
+1x Gemstone Caverns
+1x Island
+1x Mana Confluence
+1x Mistrise Village
+1x Misty Rainforest
+1x Mount Doom
+1x Polluted Delta
+1x Scalding Tarn
+1x Steam Vents
+1x Swamp
+1x Thundering Falls
+1x Underground Sea
+1x Volcanic Island
+1x Watery Grave
+1x Wooded Foothills
+1x Dauthi Voidwalker
+1x Faerie Mastermind
+1x Hexing Squelcher
+1x Saw in Half
+1x Notion Thief
+1x Opposition Agent
+1x Orcish Bowmasters
+1x Party Thrasher
+1x Ragavan, Nimble Pilferer
+1x Simian Spirit Guide
+1x Spellskite
+1x Thassa's Oracle
+1x Valley Floodcaller
+1x Wan Shi Tong, Librarian
+1x Worldgorger Dragon
+1x Ad Nauseam
+1x Borne Upon a Wind
+1x Brain Freeze
+1x Cabal Ritual
+1x Chain of Vapor
+1x Culling the Weak
+1x Dark Ritual
+1x Demonic Consultation
+1x Demonic Tutor
+1x Entomb
+1x Faithless Looting
+1x Final Fortune
+1x Flusterstorm
+1x Force of Negation
+1x Force of Will
+1x Gamble
+1x Gitaxian Probe
+1x Imperial Seal
+1x Mental Misstep
+1x Mindbreak Trap
+1x Mystical Tutor
+1x Pact of Negation
+1x Praetor's Grasp
+1x Pyroblast
+1x Reanimate
+1x Red Elemental Blast
+1x Redirect Lightning
+1x Rite of Flame
+1x Stifle
+1x Tainted Pact
+1x Unmarked Grave
+1x Vampiric Tutor
+1x Windfall
+1x Animate Dead
+1x Arcane Signet
+1x Chrome Mox
+1x Dance of the Dead
+1x Defense Grid
+1x Fellwar Stone
+1x An Offer You Can't Refuse
+1x Leyline of Anticipation
+1x Lion's Eye Diamond
+1x Lotus Petal
+1x Mana Vault
+1x Mox Diamond
+1x Mox Opal
+1x Mystic Remora
+1x Necromancy
+1x Necropotence
+1x Swan Song
+1x Rhystic Study
+1x Ripples of Undeath
+1x Sol Ring
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Underworld Breach
+1x Vexing Bauble
+1x Wishclaw Talisman
+
+===== 19/62 — Fire Lord Azula =====
+1x Fire Lord Azula
+1x Birgi, God of Storytelling // Harnfel, Horn of Bounty
+1x Faerie Mastermind
+1x Geist of Saint Thalia
+1x Hexing Squelcher
+1x High Fae Trickster
+1x Orcish Bowmasters
+1x Ragavan, Nimble Pilferer
+1x Samut, Tyrant of Naktamun
+1x Simian Spirit Guide
+1x Thassa's Oracle
+1x Valley Floodcaller
+1x Vivi Ornitier
+1x Wan Shi Tong, Librarian
+1x Ad Nauseam
+1x An Offer You Can't Refuse
+1x Big Score
+1x Borne Upon a Wind
+1x Brain Freeze
+1x Cabal Ritual
+1x Chain of Vapor
+1x Crimson Wisps
+1x Dark Ritual
+1x Deflecting Swat
+1x Demand Answers
+1x Demonic Consultation
+1x Expedite
+1x Fierce Guardianship
+1x Flusterstorm
+1x Force of Negation
+1x Force of Will
+1x Frantic Search
+1x Into the Flood Maw
+1x Mental Misstep
+1x Mindbreak Trap
+1x Mystical Tutor
+1x Narset's Reversal
+1x Pact of Negation
+1x Pyroblast
+1x Quicken
+1x Red Elemental Blast
+1x Redirect Lightning
+1x Repeal
+1x Snap
+1x Strix Serenade
+1x Swan Song
+1x Tainted Pact
+1x Vampiric Tutor
+1x Beseech the Mirror
+1x Demonic Tutor
+1x Gamble
+1x Imperial Seal
+1x Jeska's Will
+1x Rite of Flame
+1x Wheel of Fortune
+1x Mystic Remora
+1x Necropotence
+1x Rhystic Study
+1x Underworld Breach
+1x Arcane Signet
+1x Chrome Mox
+1x Fellwar Stone
+1x Grim Monolith
+1x Grinding Station
+1x Lion's Eye Diamond
+1x Lotus Petal
+1x Mana Vault
+1x Mox Diamond
+1x Mox Opal
+1x Sol Ring
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Wishclaw Talisman
+1x Ancient Tomb
+1x Arena of Glory
+1x Arid Mesa
+1x Badlands
+1x Blood Crypt
+1x Bloodstained Mire
+1x Cavern of Souls
+1x City of Brass
+1x Command Tower
+1x Emergence Zone
+1x Exotic Orchard
+1x Flooded Strand
+1x Gemstone Caverns
+1x Mana Confluence
+1x Marsh Flats
+1x Misty Rainforest
+1x Otawara, Soaring City
+1x Polluted Delta
+1x Scalding Tarn
+1x Starting Town
+1x Steam Vents
+1x Underground Sea
+1x Verdant Catacombs
+1x Volcanic Island
+1x Watery Grave
+1x Wooded Foothills
+
+===== 20/62 — Garza Zol, Plague Queen =====
+1x Garza Zol, Plague Queen
+1x Aggravated Assault
+1x An Offer You Can't Refuse
+1x Ancient Tomb
+1x Arcane Signet
+1x Arid Mesa
+1x Badlands
+1x Basilisk Collar
+1x Blackblade Reforged
+1x Blade of the Bloodchief
+1x Blood Crypt
+1x Bloodstained Mire
+1x Bojuka Bog
+1x Brotherhood Regalia
+1x Cavern of Souls
+1x Chandra's Ignition
+1x Chaos Warp
+1x City of Brass
+1x Command Beacon
+1x Command Tower
+1x Commander's Plate
+1x Counterspell
+1x Curiosity
+1x Cyclonic Rift
+1x Deadly Rollick
+1x Deflecting Swat
+1x Demonic Tutor
+1x Dimir Signet
+1x Exotic Orchard
+1x Fall of the Hammer
+1x Feed the Swarm
+1x Fellwar Stone
+1x Fierce Guardianship
+1x Flooded Strand
+1x Grafted Exoskeleton
+1x Grim Monolith
+1x Hatred
+1x Inquisitor's Flail
+1x Island
+1x Izzet Signet
+1x Jeska's Will
+1x Jeska, Thrice Reborn
+1x Kediss, Emberclaw Familiar
+1x Luxury Suite
+1x Mana Confluence
+1x Mana Drain
+1x Mana Vault
+1x Marsh Flats
+1x Mask of Memory
+1x Misty Rainforest
+1x Mithril Coat
+1x Morphic Pool
+1x Mountain
+1x Nova Flame
+1x Otawara, Soaring City
+1x Plaza of Heroes
+1x Polluted Delta
+1x Pongify
+1x Psychotic Fury
+1x Quietus Spike
+1x Rakdos Signet
+1x Rapid Hybridization
+1x Rhystic Study
+1x Robe of the Archmagi
+1x Rogue's Passage
+1x Scalding Tarn
+1x Scythe of the Wretched
+1x Shadowspear
+1x Sheoldred's Edict
+1x Shivan Reef
+1x Shizo, Death's Storehouse
+1x Slip Out the Back
+1x Sol Ring
+1x Soul's Fire
+1x Steam Vents
+1x Sulfurous Springs
+1x Swamp
+1x Swiftfoot Boots
+1x Sword of Feast and Famine
+1x Sword of Fire and Ice
+1x Takenuma, Abandoned Mire
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Tarrian's Soulcleaver
+1x Terminate
+1x The Ozolith
+1x The Reaver Cleaver
+1x Thornbite Staff
+1x Toxic Deluge
+1x Trailblazer's Boots
+1x Training Center
+1x Underground River
+1x Underground Sea
+1x Vampiric Tutor
+1x Verdant Catacombs
+1x Volcanic Island
+1x Watery Grave
+1x Wooded Foothills
+1x Xander's Lounge
+
+===== 21/62 — Goro-Goro and Satoru =====
+1x Goro-Goro and Satoru
+1x Aggravated Assault
+1x An Offer You Can't Refuse
+1x Ancient Tomb
+1x Arcane Denial
+1x Arcane Signet
+1x Badlands
+1x Bident of Thassa
+1x Blood Crypt
+1x Bloodstained Mire
+1x Breath of Fury
+1x Changeling Outcast
+1x Chaos Warp
+1x City of Brass
+1x Waterbender Ascension
+1x Command Tower
+1x Counterspell
+1x Crumbling Necropolis
+1x Cyclonic Rift
+1x Daring Piracy
+1x Deadly Rollick
+1x Deflecting Swat
+1x Demonic Tutor
+1x Determined Iteration
+1x Dragon Tempest
+1x Drowned Catacomb
+1x Enduring Curiosity
+1x Exotic Orchard
+1x Fabled Passage
+1x Fallen Shinobi
+1x Withering Torment
+1x Fellwar Stone
+1x Fierce Guardianship
+1x Frostcliff Siege
+1x Gingerbrute
+1x Grazilaxx, Illithid Scholar
+1x Great Train Heist
+1x Grim Hireling
+1x Raphael, the Nightwatcher
+1x Ingenious Infiltrator
+2x Island
+1x Jeska's Will
+1x Kaito, Bane of Nightmares
+1x Fire Navy Trebuchet
+1x Karlach, Fury of Avernus
+1x Lightning Greaves
+1x Loyal Apprentice
+1x Luxury Suite
+1x Mana Confluence
+1x Mana Drain
+1x Mist-Syndicate Naga
+1x Mistblade Shinobi
+1x Moon-Circuit Hacker
+1x Morphic Pool
+1x Mountain
+1x Nashi, Moon Sage's Scion
+1x Ninja of the Deep Hours
+1x Otawara, Soaring City
+1x Polluted Delta
+1x Professional Face-Breaker
+1x Prosperous Thief
+1x Ragavan, Nimble Pilferer
+1x Phoenix Chick
+1x Samut, Hazoret's Champion
+1x Rogue's Passage
+1x Sakashima's Student
+1x Satoru Umezawa
+1x Satoru, the Infiltrator
+1x Scalding Tarn
+1x Shipwreck Marsh
+1x Shivan Reef
+1x Silver-Fur Master
+1x Slither Blade
+1x Sol Ring
+1x Steam Vents
+1x Stormcarved Coast
+1x Sulfur Falls
+1x Sulfurous Springs
+1x Swamp
+1x Swan Song
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Terminate
+1x Terror of the Peaks
+1x Tetsuko Umezawa, Fugitive
+1x Thousand-Faced Shadow
+1x Toxic Deluge
+1x Training Center
+1x Triton Shorestalker
+1x Underground River
+1x Underground Sea
+1x Urabrask's Forge
+1x Vampiric Tutor
+1x Vandalblast
+1x Volcanic Island
+1x Watery Grave
+1x Xander's Lounge
+1x Yuriko, the Tiger's Shadow
+
+===== 22/62 — Gwendlyn Di Corci =====
+1x Gwendlyn Di Corci
+1x An Offer You Can't Refuse
+1x Ancient Tomb
+1x Anvil of Bogardan
+1x Arcane Signet
+1x Badlands
+1x Blood Crypt
+1x Bloodchief Ascension
+1x Bloodstained Mire
+1x Bojuka Bog
+1x Mind Twist
+1x Bottomless Pit
+1x Chains of Mephistopheles
+1x Chrome Mox
+1x City of Brass
+1x Command Tower
+1x Crumbling Necropolis
+1x Cyclonic Rift
+1x Dark Deal
+1x Dark Ritual
+1x Dauthi Voidwalker
+1x Deflecting Swat
+1x Demonic Tutor
+1x Dream Salvage
+1x Drowned Catacomb
+1x Exotic Orchard
+1x Withering Torment
+1x Illusionist's Bracers
+1x Fierce Guardianship
+1x Force of Negation
+1x Force of Will
+1x Gamble
+1x Geth's Grimoire
+1x Pemmin's Aura
+1x Imperial Seal
+2x Island
+1x Minamo, School at Water's Edge
+1x Jace's Archivist
+1x Kess, Dissident Mage
+1x Lightning Greaves
+1x Liliana's Caress
+1x Lion's Eye Diamond
+1x Lotus Petal
+1x Luxury Suite
+1x Magewright's Stone
+1x Magus of the Wheel
+1x Mana Confluence
+1x Mana Drain
+1x Morphic Pool
+2x Mountain
+1x Mystic Remora
+1x Mystical Tutor
+1x Notion Thief
+1x Opposition Agent
+1x Oppression
+1x Orcish Bowmasters
+1x Otawara, Soaring City
+1x Patriar's Seal
+1x Polluted Delta
+1x Reforge the Soul
+1x Rhystic Study
+1x Tinybones, Pocket Nuisance
+1x Scalding Tarn
+1x Sheoldred, the Apocalypse
+1x Sol Ring
+1x Steam Vents
+5x Swamp
+1x Swan Song
+1x Takenuma, Abandoned Mire
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Tergrid, God of Fright // Tergrid's Lantern
+1x The Raven Man
+1x Thousand-Year Elixir
+1x Timetwister
+1x Tinybones, Bauble Burglar
+1x Tinybones, Trinket Thief
+1x Tourach, Dread Cantor
+1x Toxic Deluge
+1x Training Center
+1x Underground River
+1x Underground Sea
+1x Underworld Breach
+1x Underworld Dreams
+1x Urborg, Tomb of Yawgmoth
+1x Vampiric Tutor
+1x Volcanic Island
+1x Waste Not
+1x Watery Grave
+1x Wheel of Fortune
+1x Wheel of Misfortune
+1x Windfall
+1x Xander's Lounge
+1x Yawgmoth's Will
+
+===== 23/62 — Inalla, Archmage Ritualist =====
+1x Inalla, Archmage Ritualist
+1x Blood Pet
+1x Bloodline Necromancer
+1x Hexing Squelcher
+1x Hoarding Broodlord
+1x Kefka, Court Mage // Kefka, Ruler of Ruin
+1x Ragavan, Nimble Pilferer
+1x Ruthless Technomancer
+1x Thundertrap Trainer
+1x Scholar of the Ages
+1x Simian Spirit Guide
+1x Spellseeker
+1x Thassa's Oracle
+1x Vedalken Aethermage
+1x Apprentice Necromancer
+1x Ad Nauseam
+1x An Offer You Can't Refuse
+1x Borne Upon a Wind
+1x Brain Freeze
+1x Burnt Offering
+1x Cabal Ritual
+1x Chain of Vapor
+1x Culling the Weak
+1x Dark Ritual
+1x Demonic Consultation
+1x Entomb
+1x Essence Flux
+1x Final Fortune
+1x Flusterstorm
+1x Force of Will
+1x Intuition
+1x Lim-Dûl's Vault
+1x Mental Misstep
+1x Mystical Tutor
+1x Pact of Negation
+1x Red Elemental Blast
+1x Sacrifice
+1x Saw in Half
+1x Shallow Grave
+1x Swan Song
+1x Tainted Pact
+1x Vampiric Tutor
+1x Beseech the Mirror
+1x Demonic Tutor
+1x Finale of Promise
+1x Gamble
+1x Imperial Seal
+1x Lively Dirge
+1x Persist
+1x Reanimate
+1x Rite of Flame
+1x Step Through
+1x Unearth
+1x Unmarked Grave
+1x Wheel of Fortune
+1x Arcane Signet
+1x Chrome Mox
+1x Fellwar Stone
+1x Grim Monolith
+1x Lion's Eye Diamond
+1x Lotus Petal
+1x Mana Vault
+1x Mox Diamond
+1x Mox Opal
+1x Sol Ring
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Wishclaw Talisman
+1x Animate Dead
+1x Mystic Remora
+1x Necropotence
+1x Rhystic Study
+1x Underworld Breach
+1x Ancient Tomb
+1x Arid Mesa
+1x Badlands
+1x Blood Crypt
+1x Bloodstained Mire
+1x Cavern of Souls
+1x City of Brass
+1x City of Traitors
+1x Command Tower
+1x Exotic Orchard
+1x Flooded Strand
+1x Gemstone Caverns
+1x Island
+1x Mana Confluence
+1x Marsh Flats
+1x Misty Rainforest
+1x Morphic Pool
+1x Otawara, Soaring City
+1x Polluted Delta
+1x Scalding Tarn
+1x Steam Vents
+1x Swamp
+1x Underground Sea
+1x Verdant Catacombs
+1x Volcanic Island
+1x Watery Grave
+1x Wooded Foothills
+
+===== 24/62 — Jeleva, Nephalia's Scourge =====
+1x Jeleva, Nephalia's Scourge
+1x Harmonic Prodigy
+1x Hexing Squelcher
+1x Opposition Agent
+1x Ragavan, Nimble Pilferer
+1x Simian Spirit Guide
+1x Thassa's Oracle
+1x Torch Courier
+1x Ad Nauseam
+1x An Offer You Can't Refuse
+1x Borne Upon a Wind
+1x Brain Freeze
+1x Brainstorm
+1x Cabal Ritual
+1x Chain of Vapor
+1x Dark Ritual
+1x Deflecting Swat
+1x Demonic Consultation
+1x Fierce Guardianship
+1x Final Fortune
+1x Flusterstorm
+1x Force of Negation
+1x Force of Will
+1x Into the Flood Maw
+1x Lim-Dûl's Vault
+1x Long-Term Plans
+1x Mental Misstep
+1x Mindbreak Trap
+1x Mystical Tutor
+1x Pact of Negation
+1x Pyroblast
+1x Red Elemental Blast
+1x Swan Song
+1x Tainted Pact
+1x Vampiric Tutor
+1x Demonic Tutor
+1x Doomsday
+1x Gamble
+1x Gitaxian Probe
+1x Imperial Seal
+1x Jeska's Will
+1x Mind's Desire
+1x Mnemonic Betrayal
+1x Peer into the Abyss
+1x Personal Tutor
+1x Ponder
+1x Preordain
+1x Rite of Flame
+1x Scheming Symmetry
+1x Toxic Deluge
+1x Wheel of Fortune
+1x Windfall
+1x Yawgmoth's Will
+1x Arcane Signet
+1x Chrome Mox
+1x Fellwar Stone
+1x Grim Monolith
+1x Lion's Eye Diamond
+1x Lightning Greaves
+1x Lotus Petal
+1x Mana Vault
+1x Mox Diamond
+1x Mox Opal
+1x Scroll Rack
+1x Sensei's Divining Top
+1x Sol Ring
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Wishclaw Talisman
+1x Mystic Remora
+1x Necropotence
+1x Rhystic Study
+1x Underworld Breach
+1x Ancient Tomb
+1x Arena of Glory
+1x Arid Mesa
+1x Badlands
+1x Blood Crypt
+1x Bloodstained Mire
+1x City of Brass
+1x City of Traitors
+1x Command Tower
+1x Exotic Orchard
+1x Flooded Strand
+1x Gemstone Caverns
+1x Island
+1x Mana Confluence
+1x Marsh Flats
+1x Misty Rainforest
+1x Morphic Pool
+1x Otawara, Soaring City
+1x Polluted Delta
+1x Scalding Tarn
+1x Steam Vents
+1x Swamp
+1x Underground Sea
+1x Verdant Catacombs
+1x Volcanic Island
+1x Watery Grave
+1x Wooded Foothills
+
+===== 25/62 — Kefka, Court Mage // Kefka, Ruler of Ruin =====
+1x Kefka, Court Mage // Kefka, Ruler of Ruin
+1x Ad Nauseam
+1x An Offer You Can't Refuse
+1x Ancient Tomb
+1x Anger
+1x Arcane Signet
+1x Arena of Glory
+1x Arid Mesa
+1x Badlands
+1x Beseech the Mirror
+1x Blood Crypt
+1x Bloodstained Mire
+1x Borne Upon a Wind
+1x Brain Freeze
+1x Cabal Ritual
+1x Cavern of Souls
+1x Chain of Vapor
+1x Chrome Mox
+1x City of Brass
+1x City of Traitors
+1x Command Tower
+1x Culling the Weak
+1x Valley Floodcaller
+1x Dark Ritual
+1x Deflecting Swat
+1x Demonic Consultation
+1x Demonic Tutor
+1x Diabolic Intent
+1x Displacer Kitten
+1x Essence Flux
+1x Fierce Guardianship
+1x Final Fortune
+1x Flooded Strand
+1x Flusterstorm
+1x Force of Negation
+1x Force of Will
+1x Gamble
+1x Gemstone Caverns
+1x Gogo, Mysterious Mime
+1x Grim Monolith
+1x Harmonic Prodigy
+1x Hexing Squelcher
+1x Imperial Seal
+1x Into the Flood Maw
+1x Island
+1x Jeska's Will
+1x Lion's Eye Diamond
+1x Lotus Petal
+1x Luxury Suite
+1x Mana Confluence
+1x Mana Vault
+1x Marsh Flats
+1x Mental Misstep
+1x Mindbreak Trap
+1x Misty Rainforest
+1x Mnemonic Betrayal
+1x Molten Duplication
+1x Morphic Pool
+1x Mox Diamond
+1x Mox Opal
+1x Mystic Remora
+1x Mystical Tutor
+1x Necropotence
+1x Demonic Counsel
+1x Orcish Bowmasters
+1x Otawara, Soaring City
+1x Pact of Negation
+1x Phantasmal Image
+1x Phyrexian Metamorph
+1x Polluted Delta
+1x Fellwar Stone
+1x Pyroblast
+1x Ragavan, Nimble Pilferer
+1x Reanimate
+1x Red Elemental Blast
+1x Rhystic Study
+1x Rite of Flame
+1x Saw in Half
+1x Scalding Tarn
+1x Simian Spirit Guide
+1x Sol Ring
+1x Starting Town
+1x Steam Vents
+1x Swan Song
+1x Tainted Pact
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Thassa's Oracle
+1x Tinybones, Bauble Burglar
+1x Toxic Deluge
+1x Underground Sea
+1x Underworld Breach
+1x Vampiric Tutor
+1x Verdant Catacombs
+1x Volcanic Island
+1x Waste Not
+1x Watery Grave
+1x Wheel of Fortune
+1x Wishclaw Talisman
+1x Wooded Foothills
+
+===== 26/62 — Kess, Dissident Mage =====
+1x Kess, Dissident Mage
+1x Dragon's Rage Channeler
+1x Ledger Shredder
+1x Orcish Bowmasters
+1x Ragavan, Nimble Pilferer
+1x Simian Spirit Guide
+1x Snapcaster Mage
+1x Spellseeker
+1x Thassa's Oracle
+1x Displacer Kitten
+1x Valley Floodcaller
+1x Faithless Looting
+1x Gamble
+1x Gitaxian Probe
+1x Imperial Seal
+1x Personal Tutor
+1x Ponder
+1x Reanimate
+1x Rite of Flame
+1x Demonic Tutor
+1x Demonic Counsel
+1x Toxic Deluge
+1x Wheel of Fortune
+1x Windfall
+1x Beseech the Mirror
+1x Pact of Negation
+1x An Offer You Can't Refuse
+1x Brainstorm
+1x Chain of Vapor
+1x Dark Ritual
+1x Demonic Consultation
+1x Entomb
+1x Flusterstorm
+1x Into the Flood Maw
+1x Mental Misstep
+1x Mystical Tutor
+1x Pyroblast
+1x Red Elemental Blast
+1x Swan Song
+1x Vampiric Tutor
+1x Borne Upon a Wind
+1x Brain Freeze
+1x Cabal Ritual
+1x Final Fortune
+1x Tainted Pact
+1x Deflecting Swat
+1x Fierce Guardianship
+1x Force of Negation
+1x Intuition
+1x Deadly Rollick
+1x Gifts Ungiven
+1x Mindbreak Trap
+1x Ad Nauseam
+1x Force of Will
+1x Chrome Mox
+1x Lion's Eye Diamond
+1x Lotus Petal
+1x Mox Diamond
+1x Mox Opal
+1x Mana Vault
+1x Sol Ring
+1x Arcane Signet
+1x Fellwar Stone
+1x Grim Monolith
+1x Grinding Station
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Wishclaw Talisman
+1x Mystic Remora
+1x Underworld Breach
+1x Necropotence
+1x Rhystic Study
+1x Ancient Tomb
+1x Arid Mesa
+1x Badlands
+1x Blood Crypt
+1x Bloodstained Mire
+1x City of Brass
+1x City of Traitors
+1x Command Tower
+1x Fiery Islet
+1x Flooded Strand
+1x Gemstone Caverns
+1x Luxury Suite
+1x Mana Confluence
+1x Marsh Flats
+1x Mistrise Village
+1x Misty Rainforest
+1x Morphic Pool
+1x Otawara, Soaring City
+1x Polluted Delta
+1x Scalding Tarn
+1x Steam Vents
+1x Training Center
+1x Underground Sea
+1x Verdant Catacombs
+1x Volcanic Island
+1x Watery Grave
+1x Wooded Foothills
+
+===== 27/62 — Kraum, Ludevic's Opus // Tevesh Szat, Doom of Fools =====
+1x Kraum, Ludevic's Opus
+1x Tevesh Szat, Doom of Fools
+1x An Offer You Can't Refuse
+1x Ancient Tomb
+1x Arid Mesa
+1x Ashiok, Dream Render
+1x Back to Basics
+1x Badlands
+1x Beseech the Mirror
+1x Blood Crypt
+1x Blood Moon
+1x Bloodstained Mire
+1x Brain Freeze
+1x Chain of Vapor
+1x Chalice of the Void
+1x Chrome Mox
+1x City of Brass
+1x Command Tower
+1x Contamination
+1x Culling the Weak
+1x Cursed Totem
+1x Cyclonic Rift
+1x Damping Sphere
+1x Dark Ritual
+1x Dauthi Voidwalker
+1x Deadly Rollick
+1x Deflecting Swat
+1x Demonic Tutor
+1x Diabolic Intent
+1x Fierce Guardianship
+1x Flooded Strand
+1x Flusterstorm
+1x Force of Negation
+1x Force of Will
+1x Gamble
+1x Gemstone Caverns
+1x Grim Monolith
+1x Helm of Obedience
+1x Imperial Seal
+1x Island
+1x Jeska's Will
+1x Karn, the Great Creator
+1x Leyline of the Void
+1x Lion's Eye Diamond
+1x Lotus Petal
+1x Magus of the Moon
+1x Mana Confluence
+1x Mana Drain
+1x Mana Vault
+1x Marsh Flats
+1x Mental Misstep
+1x Mindbreak Trap
+1x Misty Rainforest
+1x Morphic Pool
+1x Mountain
+1x Mox Amber
+1x Mox Diamond
+1x Mox Opal
+1x Mystic Remora
+1x Mystical Tutor
+1x Narset, Parter of Veils
+1x Necropotence
+1x Notion Thief
+1x Opposition Agent
+1x Orcish Bowmasters
+1x Otawara, Soaring City
+1x Overburden
+1x Pact of Negation
+1x Phyrexian Tower
+1x Polluted Delta
+1x Pyroblast
+1x Ragavan, Nimble Pilferer
+1x Red Elemental Blast
+1x Rhystic Study
+1x Scalding Tarn
+1x Sheoldred, the Apocalypse
+1x Skullclamp
+1x Sol Ring
+1x Static Orb
+1x Steam Vents
+1x Swamp
+1x Swan Song
+1x Tainted Pact
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Tangle Wire
+1x Torpor Orb
+1x Toxic Deluge
+1x Trinisphere
+1x Underground Sea
+1x Underworld Breach
+1x Vampiric Tutor
+1x Verdant Catacombs
+1x Volcanic Island
+1x Watery Grave
+1x Wheel of Fortune
+1x Windfall
+1x Winter Orb
+1x Wishclaw Talisman
+1x Wooded Foothills
+
+===== 28/62 — Loki, the Deceiver =====
+1x Loki, the Deceiver
+1x An Offer You Can't Refuse
+1x Arcane Signet
+1x Avengers: Under Siege
+1x Badlands
+1x Baron Strucker, HYDRA Overlord
+1x Black Cat, Cunning Thief
+1x Black Market Connections
+1x Blasphemous Act
+1x Blood Crypt
+1x Bloodstained Mire
+1x Carnage, Crimson Chaos
+1x Cavern of Souls
+1x Chameleon, Master of Disguise
+1x Chaos Warp
+1x Command Tower
+1x Cover of Darkness
+1x Crimson Cowl, Master of Evil
+1x Crossbones, Malicious Mercenary
+1x Cyclonic Rift
+1x Dark Ritual
+1x Deadly Rollick
+1x Deflecting Swat
+1x Demonic Tutor
+1x Doctor Doom
+1x Doctor Doom, King of Latveria
+1x Doctor Octopus, Master Planner
+1x Doom Reigns Supreme
+1x Dragonskull Summit
+1x Drowned Catacomb
+1x Exotic Orchard
+1x Fierce Guardianship
+1x Hall of Echoes
+1x Iron Monger, Sadistic Tycoon
+3x Island
+1x Jeska's Will
+1x Kang Prime
+1x Kang, Temporal Tyrant
+1x Killmonger, Ruthless Usurper
+1x Kindred Discovery
+1x Leader, Super-Genius
+1x Lightning Greaves
+1x Loki's Scepter
+1x Loki, God of Mischief
+1x Loki, Lord of Misrule
+1x Luxury Suite
+1x M.O.D.O.K.
+1x Madame Hydra
+1x Mana Confluence
+1x Mana Drain
+1x Morphic Pool
+2x Mountain
+1x Mysterio, Master of Illusion
+1x Norman Osborn // Green Goblin
+1x Oscorp Industries
+1x Otawara, Soaring City
+1x Patchwork Banner
+1x Path of Ancestry
+1x Polluted Delta
+1x Prowler, Clawed Thief
+1x Reanimate
+1x Red Ghost, Intangible Genius
+1x Rhystic Study
+1x Roaming Throne
+1x Scalding Tarn
+1x Sol Ring
+1x Spark Double
+1x Steam Vents
+1x Stilt-Man, Towering Terror
+1x Sulfur Falls
+1x Sundial of the Infinite
+3x Swamp
+1x Swiftfoot Boots
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Taskmaster, Mercenary Mimic
+1x The Master, Multiplied
+1x The Soul Stone
+1x The Squadron Sinister
+1x Thunderbolts Conspiracy
+1x Titan of Littjara
+1x Tombstone, Career Criminal
+1x Toxic Deluge
+1x Training Center
+1x Ultron, Unlimited
+1x Underground Sea
+1x Urborg, Tomb of Yawgmoth
+1x Urza's Incubator
+1x Vandalblast
+1x Venom, Eddie Brock
+1x Villainous Hideout
+1x Volcanic Island
+1x Watery Grave
+1x Xander's Lounge
+
+===== 29/62 — Lord of Tresserhorn =====
+1x Lord of Tresserhorn
+1x Anger
+1x Arcane Signet
+1x Arena of Glory
+1x Ashnod's Altar
+1x Badlands
+1x Bitterblossom
+1x Blasphemous Act
+1x Blood Artist
+1x Blood Crypt
+1x Bloodghast
+1x Bloodstained Mire
+1x Bojuka Bog
+1x Brotherhood Regalia
+1x Carrion Feeder
+1x Cavern of Souls
+1x Chandra's Ignition
+1x Chaos Warp
+1x Command Tower
+1x Cover of Darkness
+1x Deadly Rollick
+1x Deflecting Swat
+1x Demonic Tutor
+1x Dimir Signet
+1x Diregraf Captain
+1x Dress Down
+1x Exotic Orchard
+1x Feed the Swarm
+1x Fellwar Stone
+1x Goblin Bombardment
+1x Gravecrawler
+1x Headless Rider
+1x High Market
+1x Island
+1x Jadar, Ghoulcaller of Nephalia
+1x Karn, Argent Defender
+1x Kediss, Emberclaw Familiar
+1x Lightning Greaves
+1x Luxury Suite
+1x Mana Confluence
+1x Marsh Flats
+1x Misty Rainforest
+1x Morphic Pool
+1x Mountain
+1x Muddle the Mixture
+1x Mystic Remora
+1x Nether Traitor
+1x Nightscape Familiar
+1x Not of This World
+1x Ophiomancer
+1x Otawara, Soaring City
+1x Pain for All
+1x Phyresis
+1x Phyrexian Altar
+1x Phyrexian Tower
+1x Pitiless Plunderer
+1x Polluted Delta
+1x Rakdos Signet
+1x Reassembling Skeleton
+1x Rogue's Passage
+1x Rooftop Storm
+1x Scalding Tarn
+1x Shadowspear
+1x Shambling Ghast
+1x Sheoldred's Edict
+1x Shivan Reef
+1x Shizo, Death's Storehouse
+1x Slip Out the Back
+1x Sol Ring
+1x Steam Vents
+1x Stifle
+1x Stubborn Denial
+1x Sulfurous Springs
+3x Swamp
+1x Swiftfoot Boots
+1x Tainted Strike
+1x Takenuma, Abandoned Mire
+1x Tale's End
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Terminate
+1x Torpor Orb
+1x Toxic Deluge
+1x Training Center
+1x Uncaged Fury
+1x Undead Augur
+1x Underground River
+1x Underground Sea
+1x Vampiric Tutor
+1x Viscera Seer
+1x Volcanic Island
+1x Warren Soultrader
+1x Watery Grave
+1x Wilhelt, the Rotcleaver
+1x Wonder
+1x Xander's Lounge
+1x Zulaport Cutthroat
+
+===== 30/62 — Lord Xander, the Collector =====
+1x Lord Xander, the Collector
+1x Aggravated Assault
+1x Altar of Dementia
+1x An Offer You Can't Refuse
+1x Ancient Tomb
+1x Animate Dead
+1x Arcane Signet
+1x Auton Soldier
+1x Badlands
+1x Blade of Selves
+1x Blood Crypt
+1x Bloodstained Mire
+1x Bojuka Bog
+1x Brain Freeze
+1x Brainstorm
+1x Bruvac the Grandiloquent
+1x Chaos Warp
+1x City of Brass
+1x Command Tower
+1x Cruel Calculations
+1x Cyclonic Rift
+1x Dark Ritual
+1x Deadly Rollick
+1x Deflecting Swat
+1x Demonic Tutor
+1x Duskmantle Guildmage
+1x Entomb
+1x Feign Death
+1x Fierce Guardianship
+1x Flooded Strand
+1x Force of Negation
+1x Force of Will
+1x Fraying Sanity
+1x Gamble
+1x Grim Monolith
+1x Hall of Echoes
+1x Hall of the Bandit Lord
+1x Haunted Ridge
+1x Helm of the Host
+1x Imperial Seal
+2x Island
+1x Jeska's Will
+1x Karlach, Fury of Avernus
+1x Lightning Greaves
+1x Lion's Eye Diamond
+1x Lotus Petal
+1x Luxury Suite
+1x Maddening Cacophony
+1x Mana Confluence
+1x Mana Drain
+1x Mana Vault
+1x Marsh Flats
+1x Mindcrank
+1x Molten Duplication
+1x Morphic Pool
+2x Mountain
+1x Mystic Remora
+1x Mystical Tutor
+1x Notion Thief
+1x Opposition Agent
+1x Orcish Bowmasters
+1x Otawara, Soaring City
+1x Pact of Negation
+1x Persist
+1x Phantasmal Image
+1x Polluted Delta
+1x Prismatic Vista
+1x Reanimate
+1x Rhystic Study
+1x Riverchurn Monument
+1x Roaming Throne
+1x Sakashima of a Thousand Faces
+1x Saw in Half
+1x Scalding Tarn
+1x Sol Ring
+1x Spark Double
+1x Steam Vents
+1x Strionic Resonator
+2x Swamp
+1x Swan Song
+1x Sword of Feast and Famine
+1x Takenuma, Abandoned Mire
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Tergrid, God of Fright // Tergrid's Lantern
+1x The One Ring
+1x Toxic Deluge
+1x Training Center
+1x Underground Sea
+1x Underworld Breach
+1x Urza's Saga
+1x Vampiric Tutor
+1x Volcanic Island
+1x Watery Grave
+1x Wheel of Fortune
+1x Xander's Lounge
+
+===== 31/62 — Lynde, Cheerful Tormentor =====
+1x Lynde, Cheerful Tormentor
+1x Accursed Witch // Infectious Curse
+1x Ancient Tomb
+1x Arcane Signet
+1x Ashiok's Reaper
+1x Badlands
+1x Bitterheart Witch
+1x Blasphemous Act
+1x Blood Crypt
+1x Bloodstained Mire
+1x Bojuka Bog
+1x Braids, Arisen Nightmare
+1x Chaos Warp
+1x City of Brass
+1x Claws of Gix
+1x Clever Impersonator
+1x Command Tower
+1x Copy Enchantment
+1x Cruel Reality
+1x Curse of Bloodletting
+1x Curse of Death's Hold
+1x Curse of Disturbance
+1x Curse of Echoes
+1x Curse of Fool's Wisdom
+1x Curse of Hospitality
+1x Curse of Misfortunes
+1x Curse of Obsession
+1x Curse of Opulence
+1x Curse of Shaken Faith
+1x Curse of Surveillance
+1x Curse of Thirst
+1x Curse of Unbinding
+1x Curse of Vengeance
+1x Curse of Verbosity
+1x Curse of the Restless Dead
+1x Cyclonic Rift
+1x Damnation
+1x Deadly Rollick
+1x Deflecting Swat
+1x Demon of Fate's Design
+1x Demonic Tutor
+1x Despotic Scepter
+1x Dimir Signet
+1x Doomwake Giant
+1x Entity Tracker
+1x Estrid's Invocation
+1x Exotic Orchard
+1x Fierce Guardianship
+1x Flooded Strand
+1x Grim Guardian
+1x Imperial Seal
+4x Island
+1x Jeska's Will
+1x Luxury Suite
+1x Maddening Hex
+1x Mana Confluence
+1x Mana Drain
+1x Marsh Flats
+1x Mirrormade
+1x Misty Rainforest
+1x Morphic Pool
+3x Mountain
+1x Nightscape Familiar
+1x Obeka, Splitter of Seconds
+1x Paradox Haze
+1x Perilous Research
+1x Polluted Delta
+1x Propaganda
+1x Rakdos Signet
+1x Rhystic Study
+1x Riverglide Pathway // Lavaglide Pathway
+1x Scalding Tarn
+1x Shivan Reef
+1x Sol Ring
+1x Steam Vents
+1x Sulfurous Springs
+3x Swamp
+1x Swan Song
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x The Ninth Doctor
+1x Torment of Scarabs
+1x Toxic Deluge
+1x Training Center
+1x Trespasser's Curse
+1x Underground Sea
+1x Vampiric Tutor
+1x Volcanic Island
+1x Watery Grave
+1x Wicked Visitor
+1x Withering Torment
+1x Xander's Lounge
+
+===== 32/62 — Mai and Zuko =====
+1x Mai and Zuko
+1x Aetherflux Reservoir
+1x Ally Encampment
+1x An Offer You Can't Refuse
+1x Ancient Tomb
+1x Arcane Signet
+1x Avatar Roku, Firebender
+1x Badlands
+1x Baleful Strix
+1x Basalt Monolith
+1x Bender's Waterskin
+1x Blightstep Pathway // Searstep Pathway
+1x Blood Crypt
+1x Bloodstained Mire
+1x Boiling Rock Rioter
+1x Bojuka Bog
+1x Bolas's Citadel
+1x Brain Freeze
+1x Chaos Warp
+1x Chrome Mox
+1x City of Brass
+1x Clearwater Pathway // Murkwater Pathway
+1x Command Tower
+1x Cyclonic Rift
+1x Deadly Rollick
+1x Deflecting Swat
+1x Demonic Tutor
+1x Emry, Lurker of the Loch
+1x Enthusiastic Mechanaut
+1x Etherium Sculptor
+1x Fellwar Stone
+1x Fierce Guardianship
+1x Fire Lord Azula
+1x Fire Nation Occupation
+1x Firebender Ascension
+1x Flooded Strand
+1x Force of Will
+1x Foundry Inspector
+1x Jhoira, Weatherlight Captain
+1x Katara, Waterbending Master
+1x Lightning Greaves
+1x Lion's Eye Diamond
+1x Longshot, Rebel Bowman
+1x Lotus Petal
+1x Luxury Suite
+1x Mana Confluence
+1x Mana Drain
+1x Mana Vault
+1x Marsh Flats
+1x Misty Rainforest
+1x Morphic Pool
+1x Mox Diamond
+1x Mox Opal
+1x Mystic Forge
+1x Mystic Remora
+1x Mystical Tutor
+1x Otawara, Soaring City
+1x Path of Ancestry
+1x Phyrexian Metamorph
+1x Polluted Delta
+1x Rhystic Study
+1x Rings of Brighthearth
+1x Riverglide Pathway // Lavaglide Pathway
+1x Roaming Throne
+1x Sai, Master Thopterist
+1x Scalding Tarn
+1x Sensei's Divining Top
+1x Sokenzan, Crucible of Defiance
+1x Sokka, Bold Boomeranger
+1x Sol Ring
+1x Steam Vents
+1x Sulfurous Springs
+1x Swan Song
+1x Takenuma, Abandoned Mire
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x The Blue Spirit
+1x The Fire Nation Drill
+1x The Mechanist, Aerial Artisan
+1x The One Ring
+1x Thought Monitor
+1x Toxic Deluge
+1x Training Center
+1x Tuktuk Scrapper
+1x Tundra Tank
+1x Ty Lee, Chi Blocker
+1x Underground Sea
+1x Underworld Breach
+1x Unwinding Clock
+1x Urza's Saga
+1x Urza, Lord High Artificer
+1x Uthros Research Craft
+1x Vampiric Tutor
+1x Volcanic Island
+1x Walking Ballista
+1x Watery Grave
+1x Wishclaw Talisman
+1x Xander's Lounge
+1x Zuko, Firebending Master
+
+===== 33/62 — Mairsil, the Pretender =====
+1x Mairsil, the Pretender
+1x Aetherling
+1x An Offer You Can't Refuse
+1x Ancient Tomb
+1x Anger
+1x Essence Flux
+1x Aphetto Alchemist
+1x Arcane Signet
+1x Arcanis the Omnipotent
+1x Asmodeus the Archfiend
+1x Badlands
+1x Blightstep Pathway // Searstep Pathway
+1x Blood Crypt
+1x Bloodstained Mire
+1x Buried Alive
+1x Cephalid Inkshrouder
+1x Chaos Warp
+1x Chrome Mox
+1x City of Brass
+1x Clearwater Pathway // Murkwater Pathway
+1x Command Tower
+1x Cyclonic Rift
+1x Deadly Rollick
+1x Deflecting Swat
+1x Demonic Tutor
+1x Dimir Signet
+1x Eater of the Dead
+1x Endling
+1x Entomb
+1x Minamo, School at Water's Edge
+1x Fellwar Stone
+1x Fierce Guardianship
+1x Force of Will
+1x Frantic Search
+1x Gamble
+1x Gilded Lotus
+1x Hateflayer
+1x Haunted Ridge
+1x Horseshoe Crab
+1x Intuition
+1x Island
+1x Izzet Signet
+1x Lightning Greaves
+1x Lotus Petal
+1x Luxury Suite
+1x Mana Confluence
+1x Mana Vault
+1x Marvin, Murderous Mimic
+1x Minion of Leshrac
+1x Displacer Kitten
+1x Morphic Pool
+1x Morphling
+1x Mountain
+1x Mox Diamond
+1x Mystic Remora
+1x Mystical Tutor
+1x Nevinyrral's Disk
+1x Omen Hawker
+1x Oriq Loremage
+1x Otawara, Soaring City
+1x Patriar's Seal
+1x Polluted Delta
+1x Pack Rat
+1x Quicksilver Elemental
+1x Rakdos Signet
+1x Spark Double
+1x Rhystic Study
+1x Rings of Brighthearth
+1x Riverglide Pathway // Lavaglide Pathway
+1x Scalding Tarn
+1x Shauku, Endbringer
+1x Shipwreck Marsh
+1x Sokenzan, Crucible of Defiance
+1x Sol Ring
+1x Staff of Domination
+1x Steam Vents
+1x Stormcarved Coast
+1x Sulfur Falls
+1x Sulfurous Springs
+1x Swamp
+1x Swan Song
+1x Takenuma, Abandoned Mire
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Thousand-Year Elixir
+1x Torchling
+1x Toxic Deluge
+1x Training Center
+1x Training Grounds
+1x Tree of Perdition
+1x Underground Sea
+1x Faithless Looting
+1x Unmarked Grave
+1x Vampiric Tutor
+1x Volcanic Island
+1x Walking Ballista
+1x Watery Grave
+1x Wishclaw Talisman
+1x Xander's Lounge
+
+===== 34/62 — Marchesa, Dealer of Death =====
+1x Marchesa, Dealer of Death
+1x Aphetto Alchemist
+1x Birgi, God of Storytelling
+1x Displacer Kitten
+1x Hex Parasite
+1x Magda, the Hoardmaster
+1x Orcish Bowmasters
+1x Simian Spirit Guide
+1x Spellskite
+1x Storm-Kiln Artist
+1x Thassa's Oracle
+1x Valley Floodcaller
+1x Wan Shi Tong, Librarian
+1x Tezzeret, Cruel Captain
+1x Ad Nauseam
+1x An Offer You Can't Refuse
+1x Borne Upon a Wind
+1x Brain Freeze
+1x Cabal Ritual
+1x Chain of Vapor
+1x Dark Ritual
+1x Deadly Rollick
+1x Deflecting Swat
+1x Dispel
+1x Fierce Guardianship
+1x Final Fortune
+1x Flusterstorm
+1x Force of Negation
+1x Force of Will
+1x Into the Flood Maw
+1x Mana Drain
+1x Mental Misstep
+1x Mindbreak Trap
+1x Minor Misstep
+1x Mystical Tutor
+1x Pact of Negation
+1x Pyroblast
+1x Rain of Filth
+1x Red Elemental Blast
+1x Stifle
+1x Swan Song
+1x Tainted Pact
+1x Vampiric Tutor
+1x Demonic Tutor
+1x Imperial Seal
+1x Jeska's Will
+1x Last Chance
+1x Praetor's Grasp
+1x Rite of Flame
+1x Copy Enchantment
+1x Counterbalance
+1x Mystic Remora
+1x Necropotence
+1x Rhystic Study
+1x Spatial Binding
+1x Underworld Breach
+1x Arcane Signet
+1x Bender's Waterskin
+1x Chrome Mox
+1x Fellwar Stone
+1x Hawkeye's Bow
+1x Lapis Lazuli Talisman
+1x Lion's Eye Diamond
+1x Lotus Petal
+1x Mana Vault
+1x Mox Amber
+1x Mox Diamond
+1x Mox Opal
+1x Sol Ring
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Ancient Tomb
+1x Badlands
+1x Blood Crypt
+1x Bloodstained Mire
+1x City of Brass
+1x Command Tower
+1x Exotic Orchard
+1x Flooded Strand
+1x Forbidden Orchard
+1x Gemstone Caverns
+1x Great Hall of the Citadel
+1x Hammerheim
+1x Luxury Suite
+1x Mana Confluence
+1x Misty Rainforest
+1x Morphic Pool
+1x Polluted Delta
+1x Scalding Tarn
+1x Spire of Industry
+1x Steam Vents
+1x Talon Gates of Madara
+1x Tolaria
+1x Undercity Sewers
+1x Underground Sea
+1x Urborg
+1x Urza's Saga
+1x Verdant Catacombs
+1x Volcanic Island
+1x Watery Grave
+
+===== 35/62 — Marchesa, the Black Rose =====
+1x Marchesa, the Black Rose
+1x Agatha's Soul Cauldron
+1x Altar of Dementia
+1x An Offer You Can't Refuse
+1x Ancient Tomb
+1x Arcane Signet
+1x Ashnod's Altar
+1x Badlands
+1x Baleful Strix
+1x Blasphemous Act
+1x Blood Artist
+1x Blood Crypt
+1x Bloodstained Mire
+1x Braids, Arisen Nightmare
+1x Carrion Feeder
+1x Chaos Warp
+1x City of Brass
+1x Command Tower
+1x Cyclonic Rift
+1x Danny Pink
+1x Deadly Dispute
+1x Demonic Tutor
+1x Diabolic Intent
+1x Exotic Orchard
+1x Feed the Swarm
+1x Fellwar Stone
+1x Fierce Guardianship
+1x Flare of Denial
+1x Flayer of the Hatebound
+1x Fleshbag Marauder
+1x Flooded Strand
+1x Forge of Heroes
+1x Gev, Scaled Scorch
+1x Glen Elendra Archmage
+1x Goblin Bombardment
+1x Grave Pact
+1x Gray Merchant of Asphodel
+1x Grim Haruspex
+1x High Market
+1x Imperial Recruiter
+1x Iron Apprentice
+2x Island
+1x Lightning Greaves
+1x Luxury Suite
+1x Mana Confluence
+1x Marionette Apprentice
+1x Mayhem Devil
+1x Metallic Mimic
+1x Mikaeus, the Unhallowed
+1x Misty Rainforest
+1x Morphic Pool
+1x Mountain
+1x Murderous Redcap
+1x Otawara, Soaring City
+1x Phyrexian Altar
+1x Phyrexian Tower
+1x Pitiless Plunderer
+1x Polluted Delta
+1x Puppeteer Clique
+1x Reanimate
+1x River Kelpie
+1x Sage of Fables
+1x Satoru, the Infiltrator
+1x Scalding Tarn
+1x Scorn-Blade Berserker
+1x Shivan Reef
+1x Skullclamp
+1x Sneak Attack
+1x Sol Ring
+1x Spark Double
+1x Steam Vents
+1x Sulfurous Springs
+2x Swamp
+1x Syr Konrad, the Grim
+1x Takenuma, Abandoned Mire
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x The Ozolith
+1x Thran Vigil
+1x Toxic Deluge
+1x Training Center
+1x Twilight Diviner
+1x Uncivil Unrest
+1x Underground River
+1x Underground Sea
+1x Unspeakable Symbol
+1x Vampiric Tutor
+1x Verdant Catacombs
+1x Victimize
+1x Viscera Seer
+1x Volcanic Island
+1x Warren Soultrader
+1x Watery Grave
+1x Xander's Lounge
+1x Yahenni, Undying Partisan
+1x Yawgmoth, Thran Physician
+1x Zulaport Cutthroat
+
+===== 36/62 — Mishra, Artificer Prodigy =====
+1x Mishra, Artificer Prodigy
+1x Academy Ruins
+1x Aetherflux Reservoir
+1x Ancient Tomb
+1x Arcane Signet
+1x Badlands
+1x Blood Crypt
+1x Blood Funnel
+1x Bloodstained Mire
+1x Bolas's Citadel
+1x Chalice of the Void
+1x Chrome Mox
+1x City of Brass
+1x Cloud Key
+1x Command Tower
+1x Cyclonic Rift
+1x Demonic Tutor
+1x Dimir Signet
+1x Emry, Lurker of the Loch
+1x Encroaching Mycosynth
+1x Enthusiastic Mechanaut
+1x Etherium Sculptor
+1x Exotic Orchard
+1x Fabricate
+1x Fellwar Stone
+1x Fierce Guardianship
+1x Force of Negation
+1x Force of Will
+1x Foundry Inspector
+1x Gamble
+1x Goblin Engineer
+1x Goblin Welder
+1x Great Furnace
+1x Grim Monolith
+1x Inventors' Fair
+1x Island
+1x Izzet Signet
+1x Jhoira, Weatherlight Captain
+1x Junk Diver
+1x Karn, the Great Creator
+1x Krark-Clan Ironworks
+1x Lightning Greaves
+1x Luxury Suite
+1x Mana Confluence
+1x Mana Drain
+1x Mana Vault
+1x Metalworker
+1x Mishra's Workshop
+1x Morphic Pool
+1x Mountain
+1x Mox Amber
+1x Mox Diamond
+1x Mox Opal
+1x Mycosynth Lattice
+1x Myr Retriever
+1x Mystic Forge
+1x Mystic Remora
+1x Nether Void
+1x Nullstone Gargoyle
+1x Phyrexian Metamorph
+1x Planar Chaos
+1x Polluted Delta
+1x Possibility Storm
+1x Praetor's Grasp
+1x Rhystic Study
+1x Scalding Tarn
+1x Scrap Trawler
+1x Sculpting Steel
+1x Seat of the Synod
+1x Sensei's Divining Top
+1x Shivan Reef
+1x Sol Ring
+1x Spire of Industry
+1x Steam Vents
+1x Swamp
+1x Swan Song
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Tezzeret the Seeker
+1x Tezzeret, Cruel Captain
+1x The One Ring
+1x The Reality Chip
+1x Thought Monitor
+1x Toxic Deluge
+1x Training Center
+1x Transmute Artifact
+1x Underground Sea
+1x Urza's Saga
+1x Urza, Lord High Artificer
+1x Uthros Research Craft
+1x Vampiric Tutor
+1x Vandalblast
+1x Vault of Whispers
+1x Vexing Bauble
+1x Void Mirror
+1x Volcanic Island
+1x Watery Grave
+1x Whir of Invention
+1x Wishclaw Talisman
+
+===== 37/62 — Mishra, Eminent One =====
+1x Mishra, Eminent One
+1x Academy Ruins
+1x Aetherflux Reservoir
+1x An Offer You Can't Refuse
+1x Ancient Tomb
+1x Arcane Signet
+1x Arcum Dagsson
+1x Badlands
+1x Blood Crypt
+1x Bloodstained Mire
+1x Brudiclad, Telchor Engineer
+1x Chaos Warp
+1x Chrome Mox
+1x City of Brass
+1x Command Tower
+1x Coveted Jewel
+1x Cryogen Relic
+1x Cyclonic Rift
+1x Darksteel Citadel
+1x Deflecting Swat
+1x Demonic Tutor
+1x Determined Iteration
+1x Emry, Lurker of the Loch
+1x Enthusiastic Mechanaut
+1x Esoteric Duplicator
+1x Etherium Sculptor
+1x Fierce Guardianship
+1x Flooded Strand
+1x Force of Will
+1x Gamble
+1x Goblin Engineer
+1x Goblin Welder
+1x Gonti's Aether Heart
+1x Great Furnace
+1x Ichor Wellspring
+1x Imperial Seal
+1x Inventors' Fair
+1x Island
+1x Krark-Clan Ironworks
+1x Lich's Relic
+1x Lithoform Engine
+1x Lotus Petal
+1x Luxury Suite
+1x Machine God's Effigy
+1x Mana Confluence
+1x Mana Drain
+1x Mana Vault
+1x Master Transmuter
+1x Mindslaver
+1x Mishra's Workshop
+1x Misty Rainforest
+1x Morphic Pool
+1x Mountain
+1x Mox Diamond
+1x Mox Opal
+1x Myr Retriever
+1x Mystic Forge
+1x Mystic Remora
+1x Nihil Spellbomb
+1x Otawara, Soaring City
+1x Padeem, Consul of Innovation
+1x Polluted Delta
+1x Portal to Phyrexia
+1x Prized Statue
+1x Repurposing Bay
+1x Rhystic Study
+1x Scalding Tarn
+1x Scrap Trawler
+1x Seat of the Synod
+1x Sensei's Divining Top
+1x Simulacrum Synthesizer
+1x Smelting Vat
+1x Sol Ring
+1x Spine of Ish Sah
+1x Spire of Industry
+1x Steam Vents
+1x Strionic Resonator
+1x Swamp
+1x Takenuma, Abandoned Mire
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x The Mightstone and Weakstone
+1x The One Ring
+1x Thousand-Year Elixir
+1x Toxic Deluge
+1x Training Center
+1x Transmute Artifact
+1x Underground Sea
+1x Urza's Saga
+1x Urza, Lord High Artificer
+1x Uthros Research Craft
+1x Vampiric Tutor
+1x Vault of Whispers
+1x Verdant Catacombs
+1x Volcanic Island
+1x Watery Grave
+1x Whir of Invention
+1x Worldwalker Helm
+1x Xander's Lounge
+
+===== 38/62 — Missy =====
+1x Missy
+1x Accursed Marauder
+1x Altar of Dementia
+1x An Offer You Can't Refuse
+1x Ancient Tomb
+1x Aphetto Runecaster
+1x Arcane Signet
+1x Ashad, the Lone Cyberman
+1x Ashnod's Altar
+1x Badlands
+1x Bane of the Living
+1x Blood Artist
+1x Blood Crypt
+1x Bloodstained Mire
+1x Boltbender
+1x Braids, Arisen Nightmare
+1x Chaos Warp
+1x City of Brass
+1x Command Tower
+1x Cyber Conversion
+1x Cyberman Patrol
+1x Cybermen Squadron
+1x Cybership
+1x Cyclonic Rift
+1x Death in Heaven
+1x Delete
+1x Demonic Tutor
+1x Diabolic Intent
+1x Doomsday Confluence
+1x Dragon's Eye Savants
+1x Dragonskull Summit
+1x Drowned Catacomb
+1x Etrata, Deadly Fugitive
+1x Exotic Orchard
+1x Feed the Swarm
+1x Fellwar Stone
+1x Goblin Bombardment
+1x Grave Pact
+1x Grim Haruspex
+1x Haunted Ridge
+1x Horde Ambusher
+1x Inventors' Fair
+2x Island
+1x Ixidor, Reality Sculptor
+1x Kadena's Silencer
+1x Lightning Greaves
+1x Luxury Suite
+1x Mana Confluence
+1x Mana Vault
+1x Mayhem Devil
+1x Morphic Pool
+1x Mountain
+1x Mystic Remora
+1x Otawara, Soaring City
+1x Panoptic Projektor
+1x Phyrexian Altar
+1x Phyrexian Tower
+1x Pitiless Plunderer
+1x Plaguecrafter
+1x Polluted Delta
+1x Pyrotechnic Performer
+1x Reckless Fireweaver
+1x Rhystic Study
+1x Ruthless Ripper
+1x Scalding Tarn
+1x Shipwreck Marsh
+1x Skirk Alarmist
+1x Sol Ring
+1x Steam Vents
+1x Stormcarved Coast
+1x Stratus Dancer
+1x Sulfur Falls
+1x Sunken Hollow
+3x Swamp
+1x Swan Song
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Terminate
+1x The Cyber-Controller
+1x The Master, Gallifrey's End
+1x The One Ring
+1x The Valeyard
+1x Their Name Is Death
+1x They Came from the Pipes
+1x Toxic Deluge
+1x Training Center
+1x Ugin's Mastery
+1x Underground Sea
+1x Urborg, Tomb of Yawgmoth
+1x Vampiric Tutor
+1x Viscera Seer
+1x Volcanic Island
+1x Watery Grave
+1x Willbender
+1x Xander's Lounge
+1x Zulaport Cutthroat
+
+===== 39/62 — Nathan Drake, Treasure Hunter =====
+1x Nathan Drake, Treasure Hunter
+1x An Offer You Can't Refuse
+1x Ancient Tomb
+1x Arcane Signet
+1x Arena of Glory
+1x Arid Mesa
+1x Badlands
+1x Black Cat, Cunning Thief
+1x Black Market Connections
+1x Blasphemous Act
+1x Blood Crypt
+1x Bloodstained Mire
+1x Brotherhood Regalia
+1x Chaos Warp
+1x City of Brass
+1x Command Tower
+1x Court of Locthwain
+1x Cyclonic Rift
+1x Dark Ritual
+1x Dauthi Voidwalker
+1x Deadly Rollick
+1x Deflecting Swat
+1x Demonic Tutor
+1x Don Andres, the Renegade
+1x Dream-Thief's Bandana
+1x Etali, Primal Storm
+1x Exotic Orchard
+1x Fellwar Stone
+1x Fierce Guardianship
+1x Fire Lord Azula
+1x Fire Nation Palace
+1x Firebender Ascension
+1x Flooded Strand
+1x Force of Negation
+1x Gonti, Night Minister
+1x Grenzo, Havoc Raiser
+1x Gríma, Saruman's Footman
+1x Hostage Taker
+1x Interdimensional Web Watch
+2x Island
+1x Jeska's Will
+1x Karlach, Fury of Avernus
+1x Laughing Jasper Flint
+1x Lightning Greaves
+1x Locke, Treasure Hunter
+1x Lotus Petal
+1x Luxury Suite
+1x Mana Confluence
+1x Mana Drain
+1x Marsh Flats
+1x Misty Rainforest
+1x Morphic Pool
+2x Mountain
+1x Mystic Remora
+1x Nalfeshnee
+1x Notion Thief
+1x Opposition Agent
+1x Otawara, Soaring City
+1x Passionate Archaeologist
+1x Plargg and Nassari
+1x Polluted Delta
+1x Praetor's Grasp
+1x Professional Face-Breaker
+1x Prosper, Tome-Bound
+1x Ragavan, Nimble Pilferer
+1x Reanimate
+1x Rev, Tithe Extractor
+1x Rhystic Study
+1x Roaming Throne
+1x Robber of the Rich
+1x Scalding Tarn
+1x Shizo, Death's Storehouse
+1x Siphon Insight
+1x Sol Ring
+1x Steam Vents
+1x Stolen Strategy
+2x Swamp
+1x Swan Song
+1x Swiftfoot Boots
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Tasha, the Witch Queen
+1x Thief of Sanity
+1x Thieving Varmint
+1x Tinybones, the Pickpocket
+1x Training Center
+1x Underground Sea
+1x Vaan, Street Thief
+1x Vampiric Tutor
+1x Verdant Catacombs
+1x Volcanic Island
+1x Watery Grave
+1x Wild-Magic Sorcerer
+1x Wooded Foothills
+1x Xander's Lounge
+1x You Find Some Prisoners
+
+===== 40/62 — Nekusar, the Mindrazer =====
+1x Nekusar, the Mindrazer
+1x An Offer You Can't Refuse
+1x Ancient Tomb
+1x Anvil of Bogardan
+1x Arcane Denial
+1x Arcane Signet
+1x Arid Mesa
+1x Badlands
+1x Blood Crypt
+1x Bloodchief Ascension
+1x Bloodstained Mire
+1x Bojuka Bog
+1x Burning Inquiry
+1x Chaos Warp
+1x Chrome Mox
+1x City of Brass
+1x Command Tower
+1x Consecrated Sphinx
+1x Curiosity
+1x Cyclonic Rift
+1x Dark Deal
+1x Dark Ritual
+1x Deflecting Swat
+1x Demonic Tutor
+1x Echo of Eons
+1x Exotic Orchard
+1x Fate Unraveler
+1x Fevered Visions
+1x Fierce Guardianship
+1x Flooded Strand
+1x Force of Negation
+1x Force of Will
+1x Geier Reach Sanitarium
+1x Ghyrson Starn, Kelermorph
+1x Grim Monolith
+1x Harmonic Prodigy
+2x Island
+1x Jace's Archivist
+1x Jeska's Will
+1x Kami of the Crescent Moon
+1x Kederekt Parasite
+1x Krang, the All-Powerful
+1x Liliana's Caress
+1x Luxury Suite
+1x Magus of the Wheel
+1x Mana Confluence
+1x Mana Drain
+1x Mana Vault
+1x Marsh Flats
+1x Mikokoro, Center of the Sea
+1x Misty Rainforest
+1x Molten Psyche
+1x Morphic Pool
+2x Mountain
+1x Mystical Tutor
+1x Niv-Mizzet, Parun
+1x Orcish Bowmasters
+1x Otawara, Soaring City
+1x Peer into the Abyss
+1x Phyrexian Tyranny
+1x Polluted Delta
+1x Razorkin Needlehead
+1x Reforge the Soul
+1x Reliquary Tower
+1x Rhystic Study
+1x Scalding Tarn
+1x Scrawling Crawler
+1x Sheoldred, the Apocalypse
+1x Sol Ring
+1x Spiteful Visions
+1x Steam Vents
+1x Stormfist Crusader
+2x Swamp
+1x Swan Song
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Teferi's Puzzle Box
+1x Toxic Deluge
+1x Training Center
+1x Underground Sea
+1x Underworld Breach
+1x Underworld Dreams
+1x Vampiric Tutor
+1x Verdant Catacombs
+1x Volcanic Island
+1x Waste Not
+1x Watery Grave
+1x Wheel and Deal
+1x Wheel of Fortune
+1x Wheel of Misfortune
+1x Whispering Madness
+1x Windfall
+1x Winds of Change
+1x Wizard's Staff
+1x Wooded Foothills
+1x Xander's Lounge
+
+===== 41/62 — Nicol Bolas =====
+1x Nicol Bolas
+1x Aggravated Assault
+1x Ancient Tomb
+1x Arcane Signet
+1x Arena of Glory
+1x Arid Mesa
+1x Badlands
+1x Bedevil
+1x Blood Crypt
+1x Bloodstained Mire
+1x Bojuka Bog
+1x Brotherhood Regalia
+1x Cabal Ritual
+1x Cavern of Souls
+1x Chandra's Ignition
+1x Chaos Warp
+1x Chrome Mox
+1x City of Brass
+1x Command Beacon
+1x Command Tower
+1x Counterspell
+1x Court of Ambition
+1x Curiosity
+1x Cyclonic Rift
+1x Dark Ritual
+1x Deflecting Swat
+1x Demonic Tutor
+1x Dimir Signet
+1x Dragon Tempest
+1x Exotic Orchard
+1x Fellwar Stone
+1x Fierce Guardianship
+1x Flooded Strand
+1x Force of Will
+1x Geth's Grimoire
+1x Grim Monolith
+1x Hall of the Bandit Lord
+1x Hypnotic Specter
+1x Ingris Stingerquill
+2x Island
+1x Izzet Signet
+1x Jeska's Will
+1x Kediss, Emberclaw Familiar
+1x Lightning Greaves
+1x Liliana's Caress
+1x Luxury Suite
+1x Mana Confluence
+1x Mana Drain
+1x Mana Vault
+1x Marsh Flats
+1x Misty Rainforest
+1x Morphic Pool
+1x Mountain
+1x Mox Diamond
+1x Mystic Remora
+1x Nicol Bolas, the Ravager // Nicol Bolas, the Arisen
+1x Nightscape Familiar
+1x No Mercy
+1x Notion Thief
+1x Oppression
+1x Otawara, Soaring City
+1x Pain for All
+1x Polluted Delta
+1x Quicksilver Dagger
+1x Raiders' Wake
+1x Rakdos Signet
+1x Reflecting Pool
+1x Rhystic Study
+1x Sangromancer
+1x Scalding Tarn
+1x Seething Song
+1x Sheoldred's Edict
+1x Shizo, Death's Storehouse
+1x Sol Ring
+1x Steam Vents
+1x Swamp
+1x Swiftfoot Boots
+1x Sword of Feast and Famine
+1x Takenuma, Abandoned Mire
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Tergrid, God of Fright // Tergrid's Lantern
+1x Terminate
+1x The Eldest Reborn
+1x Tinybones, Bauble Burglar
+1x Tinybones, Trinket Thief
+1x Torment of Hailfire
+1x Toxic Deluge
+1x Training Center
+1x Underground Sea
+1x Vampiric Tutor
+1x Verdant Catacombs
+1x Viridian Longbow
+1x Volcanic Island
+1x Waste Not
+1x Watery Grave
+1x Wooded Foothills
+1x Xander's Lounge
+
+===== 42/62 — Nicol Bolas, the Ravager // Nicol Bolas, the Arisen =====
+1x Nicol Bolas, the Ravager // Nicol Bolas, the Arisen
+1x An Offer You Can't Refuse
+1x Ancient Tomb
+1x Arcane Signet
+1x Arid Mesa
+1x Badlands
+1x Blood Crypt
+1x Bloodstained Mire
+1x Bolas's Citadel
+1x Cavern of Souls
+1x Chrome Mox
+1x City of Brass
+1x Command Tower
+1x Cyclonic Rift
+1x Damnation
+1x Dark Intimations
+1x Deadly Rollick
+1x Deepglow Skate
+1x Deliver Unto Evil
+1x Demonic Tutor
+1x Dimir Signet
+1x Displacer Kitten
+1x Dreamtide Whale
+1x Fellwar Stone
+1x Fierce Guardianship
+1x Flooded Strand
+1x Flux Channeler
+1x Force of Will
+1x Gamble
+1x Ichormoon Gauntlet
+1x Inexorable Tide
+2x Island
+1x Izzet Signet
+1x Jaya's Phoenix
+1x Jeska's Will
+1x Karn's Bastion
+1x Liliana's Talent
+1x Liliana, Dreadhorde General
+1x Lotus Petal
+1x Luxury Suite
+1x Mana Confluence
+1x Mana Drain
+1x Mana Vault
+1x Marsh Flats
+1x Misty Rainforest
+1x Morphic Pool
+1x Mountain
+1x Mox Diamond
+1x Mox Opal
+1x Mystic Remora
+1x Mystical Tutor
+1x Narset, Parter of Veils
+1x Nicol Bolas, Dragon-God
+1x Nicol Bolas, God-Pharaoh
+1x Nicol Bolas, Planeswalker
+1x Nicol Bolas, the Deceiver
+1x Otawara, Soaring City
+1x Polluted Delta
+1x Rakdos Signet
+1x Reflecting Pool
+1x Rhystic Study
+1x Rings of Brighthearth
+1x Ripples of Potential
+1x Rowan's Talent
+1x Sanctum Lurker
+1x Scalding Tarn
+1x Sol Ring
+1x Spark Double
+1x Steam Vents
+2x Swamp
+1x Swan Song
+1x Takenuma, Abandoned Mire
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Teferi, Master of Time
+1x Teferi, Temporal Archmage
+1x Tekuthal, Inquiry Dominus
+1x Tergrid, God of Fright // Tergrid's Lantern
+1x Tezzeret the Seeker
+1x Tezzeret's Gambit
+1x The Chain Veil
+1x The Elderspell
+1x The Eldest Reborn
+1x The Theorist, Jace Beleren
+1x Tinybones, Bauble Burglar
+1x Toxic Deluge
+1x Training Center
+1x Training Grounds
+1x Underground Sea
+1x Urborg, Tomb of Yawgmoth
+1x Vampiric Tutor
+1x Verdant Catacombs
+1x Volcanic Island
+1x Vraska, Betrayal's Sting
+1x Watery Grave
+1x Wooded Foothills
+1x Xander's Lounge
+
+===== 43/62 — Norman Osborn // Green Goblin =====
+1x Norman Osborn // Green Goblin
+1x Ad Nauseam
+1x Ancient Tomb
+1x Arcane Signet
+1x Arid Mesa
+1x Artist's Talent
+1x Attunement
+1x Badlands
+1x Beseech the Mirror
+1x Big Score
+1x Birgi, God of Storytelling // Harnfel, Horn of Bounty
+1x Blood Crypt
+1x Bloodstained Mire
+1x Borne Upon a Wind
+1x Brain Freeze
+1x Breakthrough
+1x Cabal Ritual
+1x Careful Study
+1x Cavern of Souls
+1x Chain of Vapor
+1x Chrome Mox
+1x City of Brass
+1x City of Traitors
+1x Command Tower
+1x Culling the Weak
+1x Dark Deal
+1x Dark Ritual
+1x Defense Grid
+1x Deflecting Swat
+1x Demonic Consultation
+1x Demonic Counsel
+1x Demonic Tutor
+1x Faithless Looting
+1x Fellwar Stone
+1x Fierce Guardianship
+1x Final Fortune
+1x Flooded Strand
+1x Flusterstorm
+1x Force of Will
+1x Frantic Search
+1x Gamble
+1x Gemstone Caverns
+1x Ghostly Pilferer
+1x Gitaxian Probe
+1x Grim Monolith
+1x Grinding Station
+1x Hexing Squelcher
+1x Imperial Seal
+1x Into the Flood Maw
+1x Jeska's Will
+1x Lion's Eye Diamond
+1x Lotus Petal
+1x Mana Confluence
+1x Mana Vault
+1x Marsh Flats
+1x Mental Misstep
+1x Mindbreak Trap
+1x Misty Rainforest
+1x Mox Amber
+1x Mox Diamond
+1x Mox Opal
+1x Mystic Remora
+1x Mystical Tutor
+1x Orcish Bowmasters
+1x Otawara, Soaring City
+1x Pact of Negation
+1x Polluted Delta
+1x Psychic Frog
+1x Pyroblast
+1x Ragavan, Nimble Pilferer
+1x Reckless Handling
+1x Red Elemental Blast
+1x Rhystic Study
+1x Rite of Flame
+1x Scalding Tarn
+1x Shadow of the Goblin
+1x Simian Spirit Guide
+1x Sol Ring
+1x Steam Vents
+1x Swan Song
+1x Tainted Pact
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Thassa's Oracle
+1x Tolarian Winds
+1x Underground Sea
+1x Underworld Breach
+1x Unstable Experiment
+1x Valley Floodcaller
+1x Vampiric Tutor
+1x Verdant Catacombs
+1x Volcanic Island
+1x Watery Grave
+1x Wheel of Fortune
+1x Will of the Jeskai
+1x Windfall
+1x Wishclaw Talisman
+1x Wooded Foothills
+1x Yawgmoth's Will
+
+===== 44/62 — Obeka, Brute Chronologist =====
+1x Obeka, Brute Chronologist
+1x Alchemist's Gambit
+1x Ancient Tomb
+1x Animate Dead
+1x Apprentice Necromancer
+1x Arcane Signet
+1x Arena of Glory
+1x Arid Mesa
+1x Avaricious Dragon
+1x Badlands
+1x Blood Crypt
+1x Bloodstained Mire
+1x Bojuka Bog
+1x Chaos Warp
+1x Chrome Mox
+1x City of Brass
+1x Come Back Wrong
+1x Command Tower
+1x Counterspell
+1x Cyclonic Rift
+1x Deflecting Swat
+1x Delina, Wild Mage
+1x Demonic Tutor
+1x Discontinuity
+1x Dualcaster Mage
+1x Fable of the Mirror-Breaker // Reflection of Kiki-Jiki
+1x Feldon of the Third Path
+1x Fellwar Stone
+1x Fierce Guardianship
+1x Final Fortune
+1x Flameshadow Conjuring
+1x Flooded Strand
+1x Force of Will
+1x Frantic Search
+1x Gamble
+1x Glorious End
+1x Hate Mirage
+1x Hellkite Courser
+1x Ideas Unbound
+1x Identity Thief
+1x Ilharg, the Raze-Boar
+1x Island
+1x Isochron Scepter
+1x Izzet Signet
+1x Jaxis, the Troublemaker
+1x Jeska's Will
+1x Kiki-Jiki, Mirror Breaker
+1x Last Chance
+1x Lightning Greaves
+1x Lotus Petal
+1x Luxury Suite
+1x Mana Confluence
+1x Mana Drain
+1x Mana Vault
+1x Marsh Flats
+1x Minamo, School at Water's Edge
+1x Misty Rainforest
+1x Morphic Pool
+1x Mountain
+1x Mystic Remora
+1x Mystical Tutor
+1x Necromancy
+1x Otawara, Soaring City
+1x Polluted Delta
+1x Psychic Vortex
+1x Puppeteer Clique
+1x Purphoros, Bronze-Blooded
+1x Reanimate
+1x Reflecting Pool
+1x Rhystic Study
+1x Rionya, Fire Dancer
+1x Saheeli, the Sun's Brilliance
+1x Scalding Tarn
+1x Shivan Reef
+1x Sneak Attack
+1x Sol Ring
+1x Steam Vents
+1x Sulfurous Springs
+1x Sundial of the Infinite
+1x Swamp
+1x Swiftfoot Boots
+1x Takenuma, Abandoned Mire
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Thousand-Year Elixir
+1x Toxic Deluge
+1x Training Center
+1x Twinflame
+1x Underground Sea
+1x Underworld Breach
+1x Vampiric Tutor
+1x Venser, Fervent Forger
+1x Verdant Catacombs
+1x Volcanic Island
+1x Warrior's Oath
+1x Watery Grave
+1x Windfall
+1x Wooded Foothills
+1x Xander's Lounge
+
+===== 45/62 — Obeka, Splitter of Seconds =====
+1x Obeka, Splitter of Seconds
+1x An Offer You Can't Refuse
+1x Ancestral Vision
+1x Ancient Tomb
+1x Aqueous Form
+1x Arcane Signet
+1x Arena of Glory
+1x Arid Mesa
+1x As Foretold
+1x Badlands
+1x Blood Crypt
+1x Bloodstained Mire
+1x Bonehoard Dracosaur
+1x Brotherhood Regalia
+1x City of Brass
+1x Combat Research
+1x Command Tower
+1x Court of Ambition
+1x Court of Cunning
+1x Court of Embereth
+1x Court of Ire
+1x Court of Locthwain
+1x Court of Vantress
+1x Creeping Bloodsucker
+1x Cyclonic Rift
+1x Darksteel Reactor
+1x Deadly Rollick
+1x Deflecting Swat
+1x Demonic Tutor
+1x Dragonfire Blade
+1x Dragonmaster Outcast
+1x Embercleave
+1x Extravagant Replication
+1x Fellwar Stone
+1x Fierce Guardianship
+1x Flooded Strand
+1x Hatred
+1x Inspiring Refrain
+3x Island
+1x Jhoira of the Ghitu
+1x Lightning Greaves
+1x Luxury Suite
+1x Mana Confluence
+1x Mana Drain
+1x Marsh Flats
+1x Mechanized Production
+1x Misty Rainforest
+1x Mjölnir, Hammer of Thor
+1x Morphic Pool
+2x Mountain
+1x Otawara, Soaring City
+1x Paradox Haze
+1x Phyrexian Arena
+1x Plargg and Nassari
+1x Polluted Delta
+1x Profane Tutor
+1x Reflecting Pool
+1x Replicating Ring
+1x Rhystic Study
+1x Ring of Evos Isle
+1x Ring of Valkas
+1x Ring of Xathrid
+1x Roaming Throne
+1x Rousing Refrain
+1x Scalding Tarn
+1x Shizo, Death's Storehouse
+1x Silent Arbiter
+1x Silver Shroud Costume
+1x Smaug the Magnificent
+1x Sol Ring
+1x Steam Vents
+1x Super Intelligence
+1x Suspended Sentence
+2x Swamp
+1x Swan Song
+1x Swiftfoot Boots
+1x Sword of Feast and Famine
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Tamiyo's Journal
+1x Thassa, God of the Sea
+1x Thopter Spy Network
+1x Time Sieve
+1x Toxic Deluge
+1x Training Center
+1x Twilight Prophet
+1x Underground Sea
+1x Urborg, Tomb of Yawgmoth
+1x Vampiric Tutor
+1x Verdant Catacombs
+1x Volcanic Island
+1x Watery Grave
+1x Wizard's Staff
+1x Wooded Foothills
+1x Xander's Lounge
+
+===== 46/62 — Parnesse, the Subtle Brush =====
+1x Parnesse, the Subtle Brush
+1x Alania, Divergent Storm
+1x An Offer You Can't Refuse
+1x Arcane Signet
+1x Archmage Emeritus
+1x Arid Mesa
+1x Badlands
+1x Big Score
+1x Blasphemous Act
+1x Blood Crypt
+1x Bloodstained Mire
+1x Bonus Round
+1x Brainstorm
+1x Chaos Warp
+1x Chef's Kiss
+1x City of Brass
+1x Command Tower
+1x Cormela, Glamour Thief
+1x Counterspell
+1x Dark Ritual
+1x Deflecting Swat
+1x Demonic Tutor
+1x Display of Power
+1x Double Vision
+1x Dualcaster Mage
+1x Errant, Street Artist
+1x Exotic Orchard
+1x Feed the Swarm
+1x Fellwar Stone
+1x Flooded Strand
+1x Frantic Search
+1x Galvanic Iteration
+1x Goblin Electromancer
+1x Grapeshot
+1x Harmonic Prodigy
+1x Hexing Squelcher
+1x Increasing Vengeance
+2x Island
+1x Izzet Signet
+1x Jeska's Will
+1x Kess, Dissident Mage
+1x Luxury Suite
+1x Mana Confluence
+1x Mana Drain
+1x Mana Geyser
+1x Marsh Flats
+1x Misty Rainforest
+1x Mizzix's Mastery
+1x Morphic Pool
+3x Mountain
+1x Narset's Reversal
+1x Nightscape Familiar
+1x Otawara, Soaring City
+1x Polluted Delta
+1x Ponder
+1x Preordain
+1x Primal Amulet // Primal Wellspring
+1x Prismari, the Inspiration
+1x Professor Onyx
+1x Pyromancer's Goggles
+1x Rakdos Signet
+1x Ral, Storm Conduit
+1x Reflecting Pool
+1x Reiterate
+1x Replication Technique
+1x Return the Favor
+1x Reverberate
+1x Rhystic Study
+1x Scalding Tarn
+1x Sedgemoor Witch
+1x Shivan Reef
+1x Sol Ring
+1x Steam Vents
+1x Storm-Kiln Artist
+1x Sulfurous Springs
+1x Sunken Palace
+2x Swamp
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Tempt with Mayhem
+1x Thousand-Year Storm
+1x Thunderclap Drake
+1x Training Center
+1x Twinning Staff
+1x Underground Sea
+1x Urborg, Tomb of Yawgmoth
+1x Verdant Catacombs
+1x Veyran, Voice of Duality
+1x Volcanic Island
+1x Wandering Archaic // Explore the Vastlands
+1x Watery Grave
+1x Windfall
+1x Wizard's Staff
+1x Xander's Lounge
+1x Zevlor, Elturel Exile
+
+===== 47/62 — Rograkh, Son of Rohgahh // Silas Renn, Seeker Adept =====
+1x Rograkh, Son of Rohgahh
+1x Silas Renn, Seeker Adept
+1x Ad Nauseam
+1x An Offer You Can't Refuse
+1x Ancient Tomb
+1x Arcane Signet
+1x Arid Mesa
+1x Badlands
+1x Beseech the Mirror
+1x Birgi, God of Storytelling // Harnfel, Horn of Bounty
+1x Blood Crypt
+1x Bloodstained Mire
+1x Borne Upon a Wind
+1x Brain Freeze
+1x Cabal Ritual
+1x Chain of Vapor
+1x Chrome Mox
+1x City of Brass
+1x City of Traitors
+1x Command Tower
+1x Culling the Weak
+1x Dark Ritual
+1x Daze
+1x Deadly Rollick
+1x Defense Grid
+1x Deflecting Swat
+1x Demonic Consultation
+1x Demonic Counsel
+1x Demonic Tutor
+1x Diabolic Intent
+1x Fierce Guardianship
+1x Final Fortune
+1x Flare of Duplication
+1x Flooded Strand
+1x Flusterstorm
+1x Force of Negation
+1x Force of Will
+1x Gamble
+1x Gemstone Caverns
+1x Gitaxian Probe
+1x Grim Monolith
+1x Grinding Station
+1x Hexing Squelcher
+1x Imperial Seal
+1x Infernal Plunge
+1x Into the Flood Maw
+1x Jeska's Will
+1x Lion's Eye Diamond
+1x Lotus Petal
+1x Mana Confluence
+1x Mana Vault
+1x Marsh Flats
+1x Mental Misstep
+1x Mindbreak Trap
+1x Misty Rainforest
+1x Mnemonic Betrayal
+1x Mox Amber
+1x Mox Diamond
+1x Mox Opal
+1x Mystic Remora
+1x Mystical Tutor
+1x Necrodominance
+1x Necropotence
+1x Otawara, Soaring City
+1x Pact of Negation
+1x Paradise Mantle
+1x Phyrexian Tower
+1x Polluted Delta
+1x Praetor's Grasp
+1x Pyroblast
+1x Ragavan, Nimble Pilferer
+1x Rain of Filth
+1x Red Elemental Blast
+1x Rhystic Study
+1x Rite of Flame
+1x Samut, Tyrant of Naktamun
+1x Scalding Tarn
+1x Simian Spirit Guide
+1x Sol Ring
+1x Springleaf Drum
+1x Steam Vents
+1x Swan Song
+1x Tainted Pact
+1x Talisman of Dominance
+1x Thassa's Oracle
+1x Undercity Sewers
+1x Underground Sea
+1x Underworld Breach
+1x Valley Floodcaller
+1x Vampiric Tutor
+1x Verdant Catacombs
+1x Vexing Bauble
+1x Volcanic Island
+1x Warrior's Oath
+1x Watery Grave
+1x Wheel of Fortune
+1x Windfall
+1x Wishclaw Talisman
+1x Wooded Foothills
+1x Yawgmoth's Will
+
+===== 48/62 — Saruman, the White Hand =====
+1x Saruman, the White Hand
+1x All Will Be One
+1x Ancient Tomb
+1x Arcane Signet
+1x Archmage Emeritus
+1x Assault on Osgiliath
+1x Badlands
+1x Barad-dûr
+1x Black Waltz No. 3
+1x Blasphemous Act
+1x Blood Crypt
+1x Blood for the Blood God!
+1x Bloodstained Mire
+1x Bothersome Noisemaker
+1x Brainstorm
+1x Chandra's Ignition
+1x City of Brass
+1x Command Tower
+1x Commence the Endgame
+1x Counterspell
+1x Cyclonic Rift
+1x Deadly Rollick
+1x Deflecting Swat
+1x Demonic Tutor
+1x Dig Through Time
+1x Exotic Orchard
+1x Fall of Cair Andros
+1x Feed the Swarm
+1x Fellwar Stone
+1x Fierce Guardianship
+1x Flame of Anor
+1x Flooded Strand
+1x Foray of Orcs
+1x Force of Will
+1x Frantic Search
+1x Goblin Electromancer
+1x Harmonic Prodigy
+2x Island
+1x Jeska's Will
+1x Kazuul's Fury // Kazuul's Cliffs
+1x Luxury Suite
+1x Mana Confluence
+1x Mana Drain
+1x Mana Geyser
+1x Marsh Flats
+1x Mauhúr, Uruk-hai Captain
+1x Misty Rainforest
+1x Mizzix's Mastery
+1x Morphic Pool
+1x Mount Doom
+2x Mountain
+1x Mystic Remora
+1x Mystical Tutor
+1x Orcish Bowmasters
+1x Orcish Medicine
+1x Orcish Siegemaster
+1x Otawara, Soaring City
+1x Polluted Delta
+1x Ponder
+1x Rage into the Valley
+1x Rhystic Study
+1x Ringsight
+1x Saruman's Trickery
+1x Sauron, the Dark Lord
+1x Scalding Tarn
+1x Sea Gate Restoration // Sea Gate, Reborn
+1x Shatterskull Smashing // Shatterskull, the Hammer Pass
+1x Sink into Stupor // Soporific Springs
+1x Sol Ring
+1x Soul's Fire
+1x Steam Vents
+1x Storm-Kiln Artist
+1x Summons of Saruman
+2x Swamp
+1x Swan Song
+1x Swarming of Moria
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x The Black Gate
+1x The Great Goblin
+1x The One Ring
+1x The Ozolith
+1x Toxic Deluge
+1x Training Center
+1x Treason of Isengard
+1x Treasure Cruise
+1x Underground Sea
+1x Vampiric Tutor
+1x Veyran, Voice of Duality
+1x Volcanic Island
+1x Volcanic Salvo
+1x Watery Grave
+1x Widespread Brutality
+1x Windfall
+1x Wizard's Staff
+1x Xander's Lounge
+
+===== 49/62 — Sauron, Lord of the Rings =====
+1x Sauron, Lord of the Rings
+1x Ancient Brass Dragon
+1x Ancient Tomb
+1x Anger
+1x Animate Dead
+1x Arcane Signet
+1x Archon of Cruelty
+1x Badlands
+1x Barad-dûr
+1x Blasphemous Act
+1x Blood Crypt
+1x Bloodstained Mire
+1x Buried Alive
+1x Call of the Ring
+1x Cavern-Hoard Dragon
+1x City of Brass
+1x Command Beacon
+1x Command Tower
+1x Cyclonic Rift
+1x Dance of the Dead
+1x Dark Ritual
+1x Deadly Rollick
+1x Deflecting Swat
+1x Demonic Tutor
+1x Entomb
+1x Exotic Orchard
+1x Faithless Looting
+1x Feed the Swarm
+1x Fellwar Stone
+1x Flooded Strand
+1x Forbidden Alchemy
+1x Force of Will
+1x Frantic Search
+1x Grave Researcher // Reanimate
+1x Grim Monolith
+1x Island
+1x Jeska's Will
+1x Jin-Gitaxias, Core Augur
+1x Lightning Greaves
+1x Living Death
+1x Luxury Suite
+1x Mana Confluence
+1x Mana Drain
+1x Mana Vault
+1x Marsh Flats
+1x Metamorphosis Fanatic
+1x Misty Rainforest
+1x Moria Scavenger
+1x Morphic Pool
+1x Mount Doom
+1x Mountain
+1x Mystic Remora
+4x Nazgûl
+1x Necromancy
+1x Orcish Bowmasters
+1x Otawara, Soaring City
+1x Persist
+1x Phyrexian Tower
+1x Polluted Delta
+1x Reanimate
+1x Relic of Sauron
+1x Rhystic Study
+1x Ripples of Undeath
+1x Saruman, the White Hand
+1x Sauron, the Dark Lord
+1x Scalding Tarn
+1x Sheoldred, Whispering One
+1x Sneak Attack
+1x Sol Ring
+1x Steam Vents
+1x Summons of Saruman
+2x Swamp
+1x Swan Song
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x The Balrog of Moria
+1x The Black Gate
+1x The Mouth of Sauron
+1x The One Ring
+1x Thrill of Possibility
+1x Too Greedily, Too Deep
+1x Toxic Deluge
+1x Training Center
+1x Troll of Khazad-dûm
+1x Underground Sea
+1x Urborg, Tomb of Yawgmoth
+1x Valgavoth, Terror Eater
+1x Vampiric Tutor
+1x Victimize
+1x Volcanic Island
+1x Voracious Fell Beast
+1x Watery Grave
+1x Windfall
+1x Wonder
+1x Xander's Lounge
+
+===== 50/62 — Sauron, the Dark Lord =====
+1x Sauron, the Dark Lord
+1x Ancient Tomb
+1x Anger
+1x Animate Dead
+1x Arcane Signet
+1x Archfiend of Ifnir
+1x Badlands
+1x Barad-dûr
+1x Bilbo, Retired Burglar
+1x Black Market Connections
+1x Blasphemous Act
+1x Blood Crypt
+1x Bloodstained Mire
+1x Call of the Ring
+1x City of Brass
+1x Claim the Precious
+1x Command Tower
+1x Force of Will
+1x Cyclonic Rift
+1x Dark Ritual
+1x Deadly Rollick
+1x Deflecting Swat
+1x Demonic Tutor
+1x Minas Morgul, Dark Fortress
+1x Entomb
+1x Exotic Orchard
+1x Feed the Swarm
+1x Mana Vault
+1x Fierce Guardianship
+1x In the Darkness Bind Them
+1x Island
+1x Misty Rainforest
+1x Jeska's Will
+1x Living Death
+1x Luxury Suite
+1x Mana Confluence
+1x Mana Drain
+1x March from the Black Gate
+1x Marsh Flats
+1x Mauhúr, Uruk-hai Captain
+1x Moria Scavenger
+1x Morphic Pool
+1x Mount Doom
+2x Mountain
+1x Mystic Remora
+1x Mystical Tutor
+7x Nazgûl
+1x Roaming Throne
+1x Orcish Bowmasters
+1x Orcish Siegemaster
+1x Otawara, Soaring City
+1x Polluted Delta
+1x Reanimate
+1x Relic of Sauron
+1x Rhystic Study
+1x Ringsight
+1x Rogue's Passage
+1x Saruman, the White Hand
+1x Saruman's Trickery
+1x Sauron, Lord of the Rings
+1x Sauron's Ransom
+1x Scalding Tarn
+1x Sheoldred, the Apocalypse
+1x Sol Ring
+1x Steam Vents
+1x Volcanic Island
+1x Summons of Saruman
+3x Swamp
+1x Swan Song
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x The Black Gate
+1x The Great Goblin
+1x The One Ring
+1x The Ozolith
+1x Toxic Deluge
+1x Training Center
+1x Flooded Strand
+1x Underground Sea
+1x Urborg, Tomb of Yawgmoth
+1x Vampiric Tutor
+1x Victimize
+1x Great Goblin, Foul-Hearted
+1x Watery Grave
+1x Wheel of Fortune
+1x Widespread Brutality
+1x Windfall
+1x Witch-king of Angmar
+1x Wonder
+1x Xander's Lounge
+
+===== 51/62 — Sedris, the Traitor King =====
+1x Sedris, the Traitor King
+1x Ancient Tomb
+1x Animate Dead
+1x Arcane Signet
+1x Archon of Cruelty
+1x Ashnod's Altar
+1x Badlands
+1x Blood Crypt
+1x Bloodstained Mire
+1x Undercity Sewers
+1x Buried Alive
+1x Burning-Rune Demon
+1x Chainer, Nightmare Adept
+1x City of Brass
+1x Flooded Strand
+1x Command Tower
+1x Convergence of Dominion
+1x Corpse Connoisseur
+1x Force of Will
+1x Cyclonic Rift
+1x Deadeye Navigator
+1x Deadly Rollick
+1x Deflecting Swat
+1x Demonic Tutor
+1x Dimir Signet
+1x Dread Return
+1x Entomb
+1x Etali, Primal Storm
+1x Marsh Flats
+1x Faithless Looting
+1x Feed the Swarm
+1x Feldon of the Third Path
+1x Grim Monolith
+1x Fierce Guardianship
+1x Flayer of the Hatebound
+1x Frantic Search
+1x Gamble
+1x Gifts Ungiven
+1x Goblin Bombardment
+1x Grave Titan
+1x Island
+1x Izzet Signet
+1x Jeska's Will
+1x Jin-Gitaxias, Core Augur
+1x Lightning Greaves
+1x Likeness Looter
+1x Living Death
+1x Luxury Suite
+1x Mana Confluence
+1x Mana Drain
+1x Mana Vault
+1x Massacre Wurm
+1x Metamorphosis Fanatic
+1x Morphic Pool
+1x Mountain
+1x Mystic Remora
+1x Necromancy
+1x Obeka, Brute Chronologist
+1x Otawara, Soaring City
+1x Panharmonicon
+1x Peregrine Drake
+1x Phyrexian Tower
+1x Polluted Delta
+1x Rakdos Signet
+1x Raucous Theater
+1x Reanimate
+1x Rhystic Study
+1x River Kelpie
+1x Misty Rainforest
+1x Rune-Scarred Demon
+1x Scalding Tarn
+1x Sepulchral Primordial
+1x Sheoldred, Whispering One
+1x Sneak Attack
+1x Sokenzan, Crucible of Defiance
+1x Sol Ring
+1x Steam Vents
+1x Sundial of the Infinite
+2x Swamp
+1x Takenuma, Abandoned Mire
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Teferi's Veil
+1x Terror of the Peaks
+1x Toxic Deluge
+1x Training Center
+1x Twilight Diviner
+1x Underground Sea
+1x Ripples of Undeath
+1x Unmarked Grave
+1x Urborg, Tomb of Yawgmoth
+1x Vampiric Tutor
+1x Victimize
+1x Vile Entomber
+1x Volcanic Island
+1x Watery Grave
+1x Windfall
+1x Xander's Lounge
+
+===== 52/62 — Sol'kanar the Swamp King =====
+1x Sol'kanar the Swamp King
+1x Aetherflux Reservoir
+1x Alhammarret's Archive
+1x Ancient Tomb
+1x Arcane Signet
+1x Badlands
+1x Baleful Strix
+1x Beseech the Mirror
+1x Black Market Connections
+1x Blanket of Night
+1x Fell the Profane // Fell Mire
+1x Blood Crypt
+1x Bloodchief Ascension
+1x Bloodletter of Aclazotz
+1x Bloodstained Mire
+1x Bloodthirsty Conqueror
+1x Bojuka Bog
+1x Bolas's Citadel
+1x Bontu's Monument
+1x Cabal Coffers
+1x Chrome Mox
+1x City of Brass
+1x Command Tower
+1x Consuming Corruption
+1x Counterspell
+1x Crypt Ghast
+1x Cyclonic Rift
+1x Dark Ritual
+1x Deadly Rollick
+1x Deflecting Swat
+1x Demon's Horn
+1x Demonic Tutor
+1x Dimir Signet
+1x Raucous Theater
+1x Dread Presence
+1x Undercity Sewers
+1x Enduring Tenacity
+1x Exquisite Blood
+1x Exsanguinate
+1x Withering Torment
+1x The Soul Stone
+1x Fierce Guardianship
+1x Flooded Strand
+1x Gray Merchant of Asphodel
+1x Grindstone
+1x Imperial Seal
+1x Jeska's Will
+1x Jet Medallion
+1x K'rrik, Son of Yawgmoth
+1x Lotus Petal
+1x Luxury Suite
+1x Mana Confluence
+1x Mana Drain
+1x Mana Vault
+1x Marauding Blight-Priest
+1x Marsh Flats
+1x Misty Rainforest
+1x Morphic Pool
+1x Mox Diamond
+1x Mystic Remora
+1x Otawara, Soaring City
+1x Painter's Servant
+1x Polluted Delta
+1x Rakdos Charm
+1x Rakdos Signet
+1x Rhystic Study
+1x Scalding Tarn
+1x Sensei's Divining Top
+1x Sheoldred, the Apocalypse
+1x Smoldering Marsh
+1x Sol Ring
+1x Starscape Cleric
+1x Steam Vents
+1x Sunken Hollow
+6x Swamp
+1x Swan Song
+1x Takenuma, Abandoned Mire
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x The One Ring
+1x Torment of Hailfire
+1x Toxic Deluge
+1x Training Center
+1x Underground Sea
+1x Underworld Dreams
+1x Urborg, Tomb of Yawgmoth
+1x Vampiric Tutor
+1x Vito, Thorn of the Dusk Rose
+1x Volcanic Island
+1x Watery Grave
+1x Wheel of Fortune
+1x Windfall
+1x Witch of the Moors
+1x Xander's Lounge
+
+===== 53/62 — Sol'Kanar the Tainted =====
+1x Sol'Kanar the Tainted
+1x Arcane Signet
+1x Archfiend of the Dross
+1x Assault Suit
+1x Badlands
+1x Baleful Strix
+1x Bazaar Trader
+1x Blasphemous Act
+1x Blim, Comedic Genius
+1x Blood Crypt
+1x Bloodstained Mire
+1x Bojuka Bog
+1x Captive Audience
+1x Chaos Warp
+1x Command Tower
+1x Conjurer's Closet
+1x Coveted Falcon
+1x Cyclonic Rift
+1x Dark Ritual
+1x Deadly Rollick
+1x Deflecting Swat
+1x Demonic Pact
+1x Demonic Tutor
+1x Dimir Signet
+1x Donate
+1x Ertai Resurrected
+1x Exotic Orchard
+1x Fateful Handoff
+1x Fierce Guardianship
+1x Flooded Strand
+1x Forbidden Orchard
+1x Force of Will
+1x Gilded Drake
+1x Goblin Bombardment
+1x Greed's Gambit
+1x Harmless Offering
+1x Homeward Path
+1x Humble Defector
+1x Illusions of Grandeur
+1x Immortal Coil
+3x Island
+1x Izzet Signet
+1x Jon Irenicus, Shattered One
+1x Kain, Traitorous Dragoon
+1x Kardur, Doomscourge
+1x Khârn the Betrayer
+1x Luxury Suite
+1x Mana Drain
+1x Mana Vault
+1x Marsh Flats
+1x Misty Rainforest
+1x Morphic Pool
+3x Mountain
+1x Orcish Bowmasters
+1x Perplexing Chimera
+1x Plague Reaver
+1x Planar Incision
+1x Polluted Delta
+1x Propaganda
+1x Puca's Mischief
+1x Rakdos Charm
+1x Rakdos Signet
+1x Reins of Power
+1x Role Reversal
+1x Scalding Tarn
+1x Shifting Grift
+1x Shipwreck Marsh
+1x Sol Ring
+1x Spiteful Banditry
+1x Steam Vents
+1x Stormcarved Coast
+1x Sudden Substitution
+1x Sulfur Falls
+1x Sunken Hollow
+4x Swamp
+1x Swan Song
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Thassa, Deep-Dwelling
+1x The Trickster-God's Heist
+1x Toxic Deluge
+1x Training Center
+1x Underground Sea
+1x Vampiric Tutor
+1x Vandalblast
+1x Visions of Duplicity
+1x Volcanic Island
+1x Watery Grave
+1x Withering Torment
+1x Wrong Turn
+1x Xander's Lounge
+1x Xantcha, Sleeper Agent
+
+===== 54/62 — Tetsuo Umezawa =====
+1x Tetsuo Umezawa
+1x Aphetto Alchemist
+1x Arcane Signet
+1x Badlands
+1x Baleful Strix
+1x Bedevil
+1x Blasphemous Act
+1x Blood Crypt
+1x Bloodstained Mire
+1x Bloodthirsty Blade
+1x Blustersquall
+1x Bojuka Bog
+1x Borrowing 100,000 Arrows
+1x Bothersome Quasit
+1x Brainstorm
+1x Chaos Warp
+1x Command Tower
+1x Counterspell
+1x Cyclonic Rift
+1x Damnation
+1x Dark Ritual
+1x Demonic Tutor
+1x Dimir Signet
+1x Disrupt Decorum
+1x Exotic Orchard
+1x Fatestitcher
+1x Fellwar Stone
+1x Firkraag, Cunning Instigator
+1x Flood
+1x Flooded Strand
+1x Force of Will
+1x Frozen Aether
+1x Fumiko the Lowblood
+1x Geode Rager
+1x Grenzo, Havoc Raiser
+1x Hylda's Crown of Winter
+1x Illusionist's Bracers
+5x Island
+1x Izzet Signet
+1x Karazikar, the Eye Tyrant
+1x Kardur, Doomscourge
+1x Lightning Greaves
+1x Luxury Suite
+1x Magewright's Stone
+1x Mana Drain
+1x Marsh Flats
+1x Maze of Ith
+1x Minamo, School at Water's Edge
+1x Misty Rainforest
+5x Mountain
+1x Mystic Remora
+1x Patriar's Seal
+1x Polluted Delta
+1x Propaganda
+1x Puppeteer
+1x Rakdos Charm
+1x Rakdos Signet
+1x Rathi Trapper
+1x Red Death, Shipwrecker
+1x Retreat to Coralhelm
+1x Rings of Brighthearth
+1x Royal Assassin
+1x Shiny Impetus
+1x Sink into Stupor // Soporific Springs
+1x Sly Instigator
+1x Sol Ring
+1x Steam Vents
+1x Sting, the Glinting Dagger
+1x Sulfur Falls
+6x Swamp
+1x Swiftfoot Boots
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Terminate
+1x Thousand-Year Elixir
+1x Underground Sea
+1x Urabrask the Hidden
+1x Vampiric Tutor
+1x Vandalblast
+1x Vengeful Ancestor
+1x Verity Circle
+1x Volcanic Island
+1x Watery Grave
+1x Withering Torment
+1x Xander's Lounge
+1x Xantcha, Sleeper Agent
+
+===== 55/62 — Tetsuo, Imperial Champion =====
+1x Tetsuo, Imperial Champion
+1x Academy Ruins
+1x Aggravated Assault
+1x Akki Battle Squad
+1x Ancestral Vision
+1x Anchor to Reality
+1x Ancient Tomb
+1x Arcane Signet
+1x Argentum Armor
+1x Badlands
+1x Basilisk Collar
+1x Blacksmith's Talent
+1x Blasphemous Act
+1x Blood Crypt
+1x Bloodstained Mire
+1x Brainstorm
+1x Brass Squire
+1x Buster Sword
+1x Chandra's Ignition
+1x Chaos Warp
+1x Command Tower
+1x Conqueror's Flail
+1x Cyclonic Rift
+1x Dalakos, Crafter of Wonders
+1x Deflecting Swat
+1x Dimir Signet
+1x Embercleave
+1x Enthusiastic Mechanaut
+1x Etherium Sculptor
+1x Excalibur, Sword of Eden
+1x Exotic Orchard
+1x Fabricate
+1x Fierce Guardianship
+1x Flooded Strand
+1x Force of Will
+1x Frantic Search
+1x Genji Glove
+1x Gilgamesh, Master-at-Arms
+1x Godo, Bandit Warlord
+1x Hammer of Nazahn
+1x Heiko Yamazaki, the General
+1x Hexplate Wallbreaker
+1x Inevitable Betrayal
+5x Island
+1x Izzet Signet
+1x Jhoira, Weatherlight Captain
+1x Kaldra Compleat
+1x Kediss, Emberclaw Familiar
+1x Leyline Axe
+1x Luxury Suite
+1x Mana Confluence
+1x Marsh Flats
+1x Misty Rainforest
+1x Mithril Coat
+1x Morphic Pool
+4x Mountain
+1x Mystic Remora
+1x Oathkeeper, Takeno's Daisho
+1x Padeem, Consul of Innovation
+1x Polluted Delta
+1x Profane Tutor
+1x Rakdos Signet
+1x Rhystic Study
+1x Savage Beating
+1x Scalding Tarn
+1x Smoldering Marsh
+1x Sol Ring
+1x Steam Vents
+1x Sunken Hollow
+3x Swamp
+1x Swiftfoot Boots
+1x Sword of Feast and Famine
+1x Sword of Fire and Ice
+1x Sword of the Animist
+1x Swordsman's Steel
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Terminate
+1x The Reality Chip
+1x The Reaver Cleaver
+1x Training Center
+1x Underground Sea
+1x Volcanic Island
+1x Vorpal Sword
+1x Watery Grave
+1x Wheel of Fate
+1x Winged Boots
+1x Withering Torment
+1x World at War
+1x Xander's Lounge
+
+===== 56/62 — The Madcap Jester =====
+1x The Madcap Jester
+1x Ancient Tomb
+1x Arcane Signet
+1x Arid Mesa
+1x Ashiok, Nightmare Weaver
+1x Badlands
+1x Beseech the Mirror
+1x Bilbo, Thief in the Night
+1x Bitter Ordeal
+1x Blazemire Verge
+1x Blood Crypt
+1x Bloodstained Mire
+1x Brain Freeze
+1x Cabal Ritual
+1x Chrome Mox
+1x Circu, Dimir Lobotomist
+1x City of Brass
+1x City of Traitors
+1x Command Tower
+1x Dark Ritual
+1x Dauthi Voidwalker
+1x Deadly Rollick
+1x Deflecting Swat
+1x Demonic Consultation
+1x Demonic Tutor
+1x Don Andres, the Renegade
+1x Dragon's Smile
+1x Drowned Catacomb
+1x Ensnared by the Mara
+1x Exotic Orchard
+1x Extract
+1x Fierce Guardianship
+1x Flooded Strand
+1x Force of Negation
+1x Force of Will
+1x Gamble
+1x Gemstone Caverns
+1x Gonti, Night Minister
+1x Imperial Seal
+1x Inside Information
+1x Island
+1x Jeska's Will
+1x Jester's Cap
+1x Jester's Scepter
+1x Laughing Jasper Flint
+1x Lightning Greaves
+1x Lion's Eye Diamond
+1x Lotus Petal
+1x Luxury Suite
+1x Mana Confluence
+1x Mana Drain
+1x Mana Vault
+1x Marsh Flats
+1x Misty Rainforest
+1x Morphic Pool
+1x Mox Diamond
+1x Mox Opal
+1x Mystic Remora
+1x Mystical Tutor
+1x Nalfeshnee
+1x Necropotence
+1x Otawara, Soaring City
+1x Pact of Negation
+1x Party Thrasher
+1x Passionate Archaeologist
+1x Plargg and Nassari
+1x Polluted Delta
+1x Praetor's Grasp
+1x Prosper, Tome-Bound
+1x Psychic Surgery
+1x Ragavan, Nimble Pilferer
+1x Rhystic Study
+1x Rite of Flame
+1x Sadistic Sacrament
+1x Scalding Tarn
+1x Shivan Reef
+1x Sire of Stagnation
+1x Sol Ring
+1x Starting Town
+1x Steam Vents
+1x Sulfurous Springs
+1x Swan Song
+1x Tainted Pact
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Tasha's Hideous Laughter
+1x Thassa's Oracle
+1x Thieving Varmint
+1x Toxic Deluge
+1x Training Center
+1x Undercity Sewers
+1x Underground Sea
+1x Underworld Breach
+1x Vampiric Tutor
+1x Verdant Catacombs
+1x Volcanic Island
+1x Watery Grave
+1x Wild-Magic Sorcerer
+1x Wooded Foothills
+1x Xander's Lounge
+
+===== 57/62 — The Rani =====
+1x The Rani
+1x Academy Manufactor
+1x Arcane Signet
+1x Badlands
+1x Baeloth Barrityl, Entertainer
+1x Bjorna, Nightfall Alchemist
+1x Blasphemous Act
+1x Blood Crypt
+1x Bloodstained Mire
+1x Bloodthirsty Blade
+1x Bothersome Quasit
+1x Chaos Warp
+1x City of Brass
+1x Coercive Impetus
+1x Command Tower
+1x Curse of Opulence
+1x Cyclonic Rift
+1x Deadly Rollick
+1x Death Kiss
+1x Deflecting Swat
+1x Demonic Tutor
+1x Dimir Signet
+1x Displacer Kitten
+1x Disrupt Decorum
+1x Entity Tracker
+1x Erdwal Illuminator
+1x Exotic Orchard
+1x Eye of Nidhogg
+1x Fellwar Stone
+1x Fierce Guardianship
+1x Firkraag, Cunning Instigator
+1x Five Hundred Year Diary
+1x Flooded Strand
+1x Force of Will
+1x Forensic Gadgeteer
+1x Ghoulish Impetus
+1x Grenzo, Havoc Raiser
+1x Hateful Eidolon
+1x Haunted Ridge
+1x Hot Pursuit
+1x Incriminating Impetus
+1x Inspiring Statuary
+3x Island
+1x Izzet Signet
+1x Karazikar, the Eye Tyrant
+1x Kardur, Doomscourge
+1x Lightning Greaves
+1x Luxury Suite
+1x Maestros Confluence
+1x Mana Confluence
+1x Mana Drain
+1x Mocking Doppelganger
+1x Morphic Pool
+3x Mountain
+1x Mystic Remora
+1x Mystical Tutor
+1x Otawara, Soaring City
+1x Polluted Delta
+1x Psychic Impetus
+1x Puppet Master, String Puller
+1x Rakdos Charm
+1x Reanimate
+1x Red Death, Shipwrecker
+1x Reflecting Pool
+1x Rhystic Study
+1x Scalding Tarn
+1x Shiny Impetus
+1x Shipwreck Marsh
+1x Slicer, Hired Muscle // Slicer, High-Speed Antagonist
+1x Sol Ring
+1x Spectacular Showdown
+1x Steam Vents
+1x Stormcarved Coast
+3x Swamp
+1x Swan Song
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Tangletrove Kelp
+1x Thassa, Deep-Dwelling
+1x The Master, Mesmerist
+1x The One Ring
+1x The Sound of Drums
+1x Time Sieve
+1x Toxic Deluge
+1x Training Center
+1x Underground Sea
+1x Urborg, Tomb of Yawgmoth
+1x Urza, Lord High Artificer
+1x Vampiric Tutor
+1x Vengeful Ancestor
+1x Volcanic Island
+1x Watery Grave
+1x Xander's Lounge
+
+===== 58/62 — The Valeyard =====
+1x The Valeyard
+1x Arcane Denial
+1x Arcane Signet
+1x Arid Mesa
+1x Auton Soldier
+1x Badlands
+1x Bite of the Black Rose
+1x Blasphemous Act
+1x Blood Crypt
+1x Bloodstained Mire
+1x Brainstorm
+1x Capital Punishment
+1x Chaos Warp
+1x City of Brass
+1x Coercive Portal
+1x Command Tower
+1x Cult of Skaro
+1x Cyclonic Rift
+1x Damocles Base, Sword of Kang
+1x Dark Ritual
+1x Davros, Dalek Creator
+1x Deadly Rollick
+1x Deflecting Swat
+1x Demonic Tutor
+1x Dimir Signet
+1x Dr. Eggman
+1x Ensnared by the Mara
+1x Exotic Orchard
+1x Expropriate
+1x Fateful Tempest
+1x Feed the Swarm
+1x Fellwar Stone
+1x Fierce Guardianship
+1x Flooded Strand
+1x Force of Will
+1x Gallifrey Council Chamber
+1x Genesis of the Daleks
+1x Great Intelligence's Plan
+1x Grudge Keeper
+1x Haunted Ridge
+1x Hunted by The Family
+1x Illusion of Choice
+2x Island
+1x Izzet Signet
+1x Kess, Dissident Mage
+1x Lightning Greaves
+1x Luxury Suite
+1x Mana Confluence
+1x Mana Drain
+1x Marsh Flats
+1x Messenger Jays
+1x Midnight Crusader Shuttle
+1x Missy
+1x Misty Rainforest
+1x Mob Verdict
+1x Model of Unity
+1x Morphic Pool
+2x Mountain
+1x Mystic Remora
+1x Otawara, Soaring City
+1x Path of the Enigma
+1x Path of the Pyromancer
+1x Path of the Schemer
+1x Plea for Power
+1x Polluted Delta
+1x Quantum Misalignment
+1x Rakdos Signet
+1x Rhystic Study
+1x Sakashima of a Thousand Faces
+1x Scalding Tarn
+1x Shipwreck Marsh
+1x Sol Ring
+1x Spark Double
+1x Split Decision
+1x Steam Vents
+1x Stormcarved Coast
+1x Sulfur Falls
+3x Swamp
+1x Sycorax Commander
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x The Dalek Emperor
+1x The Master, Gallifrey's End
+1x This Is How It Ends
+1x Training Center
+1x Trap the Trespassers
+1x Truth or Consequences
+1x Tyrant's Choice
+1x Underground Sea
+1x Vampiric Tutor
+1x Verdant Catacombs
+1x Volcanic Island
+1x Watery Grave
+1x Wooded Foothills
+1x Xander's Lounge
+
+===== 59/62 — Thraximundar =====
+1x Thraximundar
+1x Accursed Marauder
+1x Altar of Dementia
+1x Ancient Tomb
+1x Arcane Signet
+1x Archfiend of Depravity
+1x Ashnod's Altar
+1x Badlands
+1x Black Market Connections
+1x Blood Artist
+1x Blood Crypt
+1x Bloodstained Mire
+1x Bojuka Bog
+1x Braids, Arisen Nightmare
+1x Cabal Coffers
+1x Call to the Grave
+1x Carrion Feeder
+1x Command Beacon
+1x Command Tower
+1x Cultist of the Absolute
+1x Cyclonic Rift
+1x Dark Ritual
+1x Deflecting Swat
+1x Demonic Tutor
+1x Diabolic Intent
+1x Dictate of Erebos
+1x Dimir Signet
+1x Diregraf Captain
+1x Dragonskull Summit
+1x Drowned Catacomb
+1x Exotic Orchard
+1x Feed the Swarm
+1x Fierce Guardianship
+1x Flare of Malice
+1x Fleshbag Marauder
+1x Goblin Bombardment
+1x Grave Pact
+1x Gravecrawler
+1x Grimgrin, Corpse-Born
+1x Innocent Blood
+3x Island
+1x Izzet Signet
+1x Lightning Greaves
+1x Liliana, Dreadhorde General
+1x Luxury Suite
+1x Mahadi, Emporium Master
+1x Mana Confluence
+1x Mana Drain
+1x Mana Vault
+1x Mayhem Devil
+1x Morphic Pool
+2x Mountain
+1x Necrotic Hex
+1x Phyrexian Altar
+1x Phyrexian Tower
+1x Pitiless Plunderer
+1x Plaguecrafter
+1x Polluted Delta
+1x Rakdos Signet
+1x Reanimate
+1x Reassembling Skeleton
+1x Rhystic Study
+1x Rooftop Storm
+1x Scalding Tarn
+1x Sheoldred's Edict
+1x Sheoldred, Whispering One
+1x Shizo, Death's Storehouse
+1x Skullclamp
+1x Sol Ring
+1x Steam Vents
+1x Sulfur Falls
+5x Swamp
+1x Swiftfoot Boots
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Tergrid, God of Fright // Tergrid's Lantern
+1x Toxic Deluge
+1x Training Center
+1x Underground Sea
+1x Urborg, Tomb of Yawgmoth
+1x Vampiric Tutor
+1x Vandalblast
+1x Victimize
+1x Volcanic Island
+1x Vona's Hunger
+1x Warren Soultrader
+1x Watery Grave
+1x Wilhelt, the Rotcleaver
+1x Winter, Tormented Loner
+1x Xander's Lounge
+1x Yawgmoth, Thran Physician
+1x Zulaport Cutthroat
+
+===== 60/62 — Tresserhorn's Lord, Returned =====
+1x Tresserhorn's Lord, Returned
+1x Accursed Marauder
+1x Arcane Signet
+1x Ashnod's Altar
+1x Badlands
+1x Bastion of Remembrance
+1x Bitterbloom Bearer
+1x Bitterblossom
+1x Black Market Connections
+1x Blasphemous Act
+1x Blood Artist
+1x Blood Crypt
+1x Bloodghast
+1x Bloodstained Mire
+1x Boggart Trawler // Boggart Bog
+1x Braids, Arisen Nightmare
+1x Carrion Feeder
+1x Cavern of Souls
+1x Chandra's Ignition
+1x Chaos Warp
+1x Chasm Skulker
+1x Chittering Witch
+1x Command Tower
+1x Dark Ritual
+1x Deadly Dispute
+1x Demonic Tutor
+1x Diabolic Intent
+1x Endrek Sahr, Master Breeder
+1x Exotic Orchard
+1x Feed the Swarm
+1x Fellwar Stone
+1x Goblin Bombardment
+1x Grave Pact
+1x Gravecrawler
+1x High Market
+1x Infantry Shield
+3x Island
+1x Jadar, Ghoulcaller of Nephalia
+1x Kher Keep
+1x Lagomos, Hand of Hatred
+1x Lightning Greaves
+1x Living Death
+1x Luxury Suite
+1x Mahadi, Emporium Master
+1x Marionette Apprentice
+1x Mayhem Devil
+1x Mogg War Marshal
+1x Morphic Pool
+3x Mountain
+1x My Precious // Allure of Power
+1x Nightscape Familiar
+1x Not of This World
+1x Ophiomancer
+1x Phyrexian Altar
+1x Phyrexian Tower
+1x Pitiless Plunderer
+1x Plumb the Forbidden
+1x Polluted Delta
+1x Reanimate
+1x Scalding Tarn
+1x Sephiroth, Fabled SOLDIER // Sephiroth, One-Winged Angel
+1x Shizo, Death's Storehouse
+1x Skullclamp
+1x Sol Ring
+1x Steam Vents
+1x Stubborn Denial
+1x Sulfurous Springs
+4x Swamp
+1x Swan Song
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Tempt with Vengeance
+1x The Locust God
+1x Blasphemous Edict
+1x Training Center
+1x Underground River
+1x Underground Sea
+1x Urborg, Tomb of Yawgmoth
+1x Vampiric Tutor
+1x Victimize
+1x Village Rites
+1x Viscera Seer
+1x Volcanic Island
+1x Wand of Orcus
+1x Warren Soultrader
+1x Watery Grave
+1x Weaponcraft Enthusiast
+1x Wilhelt, the Rotcleaver
+1x Woe Strider
+1x Xander's Lounge
+1x Yawgmoth, Thran Physician
+1x Zulaport Cutthroat
+
+===== 61/62 — Wick, the Whorled Mind =====
+1x Wick, the Whorled Mind
+1x Altar of Dementia
+1x An Offer You Can't Refuse
+1x Arcane Adaptation
+1x Arcane Signet
+1x Ashcoat of the Shadow Swarm
+1x Ashnod's Altar
+1x Badlands
+1x Black Market Connections
+1x Blade of the Bloodchief
+1x Blasphemous Act
+1x Blightstep Pathway // Searstep Pathway
+1x Blood Crypt
+1x Bloodstained Mire
+1x Boggart Trawler // Boggart Bog
+1x Bulk Up
+1x Carrion Feeder
+1x Cavern of Souls
+1x Chaos Warp
+1x Chittering Witch
+1x Clearwater Pathway // Murkwater Pathway
+1x Command Tower
+1x Cyclonic Rift
+1x Dark Ritual
+1x Deadly Rollick
+1x Deflecting Swat
+1x Demonic Tutor
+1x Diabolic Intent
+1x Exotic Orchard
+1x Feed the Swarm
+1x Fellwar Stone
+1x Fierce Guardianship
+1x Goblin Bombardment
+1x Haunted Ridge
+1x Impact Tremors
+1x Intruder Alarm
+2x Island
+1x Jeska's Will
+1x Karumonix, the Rat King
+1x Leyline of Transformation
+1x Lich's Relic
+1x Lord Skitter's Butcher
+1x Lord Skitter, Sewer King
+1x Luxury Suite
+1x Mana Confluence
+1x Mana Drain
+1x Marrow-Gnawer
+1x Marsh Flats
+1x Maskwood Nexus
+1x Mirkwood Bats
+1x Morphic Pool
+1x Mountain
+1x Mudflat Village
+1x Otawara, Soaring City
+1x Pack Rat
+1x Persistent Marshstalker
+1x Phyrexian Altar
+1x Phyrexian Tower
+1x Piper of the Swarm
+1x Pitiless Plunderer
+1x Plumb the Forbidden
+1x Polluted Delta
+1x Rat King, Pale Piper
+1x Rat King, Verminister
+1x Redcap Gutter-Dweller
+1x Riverglide Pathway // Lavaglide Pathway
+1x Roaming Throne
+1x Scalding Tarn
+1x Shipwreck Marsh
+1x Shivan Reef
+1x Skullclamp
+1x Sokenzan, Crucible of Defiance
+1x Sol Ring
+1x Song of Totentanz
+1x Steam Vents
+1x Stormcarved Coast
+1x Sulfurous Springs
+1x Swamp
+1x Swan Song
+1x Swarmyard
+1x Tainted Strike
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Tangled Colony
+1x The Ozolith
+1x Totentanz, Swarm Piper
+1x Toxic Deluge
+1x Training Center
+1x Underground Sea
+1x Valley Rotcaller
+1x Vampiric Tutor
+1x Viscera Seer
+1x Volcanic Island
+1x Voracious Vermin
+1x Vren, the Relentless
+1x Watery Grave
+1x Xander's Lounge
+1x Zulaport Cutthroat
+
+===== 62/62 — Zevlor, Elturel Exile =====
+1x Zevlor, Elturel Exile
+1x Abrade
+1x Acquire
+1x Ancient Tomb
+1x Arcane Signet
+1x Archmage Emeritus
+1x Arid Mesa
+1x Badlands
+1x Baral, Chief of Compliance
+1x Bedevil
+1x Blasphemous Act
+1x Blood Crypt
+1x Bloodstained Mire
+1x Blue Sun's Twilight
+1x Brainstorm
+1x Bribery
+1x Chaos Warp
+1x City of Brass
+1x Command Tower
+1x Cormela, Glamour Thief
+1x Counterspell
+1x Cruel Ultimatum
+1x Cyclonic Rift
+1x Dark Ritual
+1x Deadly Rollick
+1x Deflecting Swat
+1x Demonic Tutor
+1x Electrodominance
+1x Exotic Orchard
+1x Exterminator Magmarch
+1x Feed the Swarm
+1x Fierce Guardianship
+1x Flick a Coin
+1x Flooded Strand
+1x Force of Will
+1x Frantic Search
+1x Gamble
+1x Gitaxian Probe
+1x Goblin Electromancer
+1x Great Intelligence's Plan
+1x Hell to Pay
+1x Illusionist's Bracers
+2x Island
+1x Jeska's Will
+1x Kess, Dissident Mage
+1x Leadership Vacuum
+1x Luxury Suite
+1x Mana Confluence
+1x Mana Drain
+1x Mana Vault
+1x Marsh Flats
+1x Minamo, School at Water's Edge
+1x Misty Rainforest
+1x Morphic Pool
+2x Mountain
+1x Mystic Remora
+1x Mystical Tutor
+1x Omen Hawker
+1x Otawara, Soaring City
+1x Patriar's Seal
+1x Peek
+1x Pemmin's Aura
+1x Pilfered Plans
+1x Polluted Delta
+1x Portent
+1x Praetor's Grasp
+1x Rakdos Charm
+1x Rakdos's Return
+1x Rhystic Study
+1x River's Rebuke
+1x Scalding Tarn
+1x Sedgemoor Witch
+1x Siphon Insight
+1x Snap
+1x Snapcaster Mage
+1x Sokenzan, Crucible of Defiance
+1x Sol Ring
+1x Steam Vents
+1x Storm-Kiln Artist
+2x Swamp
+1x Swan Song
+1x Swiftfoot Boots
+1x Takenuma, Abandoned Mire
+1x Talent of the Telepath
+1x Terminate
+1x Thought Scour
+1x Training Center
+1x Training Grounds
+1x Twinning Staff
+1x Underground Sea
+1x Vampiric Tutor
+1x Verdant Catacombs
+1x Volcanic Island
+1x Watery Grave
+1x Wooded Foothills
+1x Worst Fears
+1x Xander's Lounge
+

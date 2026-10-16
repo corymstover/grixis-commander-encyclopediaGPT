@@ -1,0 +1,100 @@
+1x Mishra, Artificer Prodigy
+1x Academy Ruins
+1x Aetherflux Reservoir
+1x Ancient Tomb
+1x Arcane Signet
+1x Badlands
+1x Blood Crypt
+1x Blood Funnel
+1x Bloodstained Mire
+1x Bolas's Citadel
+1x Chalice of the Void
+1x Chrome Mox
+1x City of Brass
+1x Cloud Key
+1x Command Tower
+1x Cyclonic Rift
+1x Demonic Tutor
+1x Dimir Signet
+1x Emry, Lurker of the Loch
+1x Encroaching Mycosynth
+1x Enthusiastic Mechanaut
+1x Etherium Sculptor
+1x Exotic Orchard
+1x Fabricate
+1x Fellwar Stone
+1x Fierce Guardianship
+1x Force of Negation
+1x Force of Will
+1x Foundry Inspector
+1x Gamble
+1x Goblin Engineer
+1x Goblin Welder
+1x Great Furnace
+1x Grim Monolith
+1x Inventors' Fair
+1x Island
+1x Izzet Signet
+1x Jhoira, Weatherlight Captain
+1x Junk Diver
+1x Karn, the Great Creator
+1x Krark-Clan Ironworks
+1x Lightning Greaves
+1x Luxury Suite
+1x Mana Confluence
+1x Mana Drain
+1x Mana Vault
+1x Metalworker
+1x Mishra's Workshop
+1x Morphic Pool
+1x Mountain
+1x Mox Amber
+1x Mox Diamond
+1x Mox Opal
+1x Mycosynth Lattice
+1x Myr Retriever
+1x Mystic Forge
+1x Mystic Remora
+1x Nether Void
+1x Nullstone Gargoyle
+1x Phyrexian Metamorph
+1x Planar Chaos
+1x Polluted Delta
+1x Possibility Storm
+1x Praetor's Grasp
+1x Rhystic Study
+1x Scalding Tarn
+1x Scrap Trawler
+1x Sculpting Steel
+1x Seat of the Synod
+1x Sensei's Divining Top
+1x Shivan Reef
+1x Sol Ring
+1x Spire of Industry
+1x Steam Vents
+1x Swamp
+1x Swan Song
+1x Talisman of Creativity
+1x Talisman of Dominance
+1x Talisman of Indulgence
+1x Tezzeret the Seeker
+1x Tezzeret, Cruel Captain
+1x The One Ring
+1x The Reality Chip
+1x Thought Monitor
+1x Toxic Deluge
+1x Training Center
+1x Transmute Artifact
+1x Underground Sea
+1x Urza's Saga
+1x Urza, Lord High Artificer
+1x Uthros Research Craft
+1x Vampiric Tutor
+1x Vandalblast
+1x Vault of Whispers
+1x Vexing Bauble
+1x Void Mirror
+1x Volcanic Island
+1x Watery Grave
+1x Whir of Invention
+1x Wishclaw Talisman
