@@ -5,6 +5,7 @@ import hashlib
 import json
 import re
 import shutil
+import subprocess
 import zipfile
 from pathlib import Path
 
@@ -80,16 +81,24 @@ def load_tracker() -> list[dict[str, str]]:
         return list(csv.DictReader(fh))
 
 
-def scan_text_sources() -> dict[str, list[tuple[str, bytes]]]:
+def scan_text_sources(wanted_hashes: set[str]) -> dict[str, list[tuple[str, bytes]]]:
     found: dict[str, list[tuple[str, bytes]]] = {}
+
+    def add(label: str, data: bytes) -> None:
+        digest = sha256_bytes(data)
+        if digest in wanted_hashes:
+            found.setdefault(digest, []).append((label, data))
+
+    # Current working tree.
     for path in ROOT.rglob("*.txt"):
         if OUT_ROOT in path.parents:
             continue
         try:
-            data = path.read_bytes()
+            add(str(path.relative_to(ROOT)), path.read_bytes())
         except OSError:
             continue
-        found.setdefault(sha256_bytes(data), []).append((str(path.relative_to(ROOT)), data))
+
+    # Any ZIP snapshots committed to the repository.
     for zpath in ROOT.rglob("*.zip"):
         if zpath == ZIP_PATH or OUT_ROOT in zpath.parents:
             continue
@@ -97,11 +106,43 @@ def scan_text_sources() -> dict[str, list[tuple[str, bytes]]]:
             with zipfile.ZipFile(zpath) as zf:
                 for name in zf.namelist():
                     if name.lower().endswith(".txt"):
-                        data = zf.read(name)
-                        label = f"{zpath.relative_to(ROOT)}::{name}"
-                        found.setdefault(sha256_bytes(data), []).append((label, data))
+                        add(f"{zpath.relative_to(ROOT)}::{name}", zf.read(name))
         except (OSError, zipfile.BadZipFile):
             continue
+
+    # Some early current-cycle canonical SHA-bound lists were committed on prior
+    # branches/commits but are no longer present as files on main. Resolve those
+    # from Git object history by exact SHA-256 rather than substituting another list.
+    remaining = wanted_hashes.difference(found)
+    if remaining:
+        objects = subprocess.check_output(
+            ["git", "rev-list", "--objects", "--all"], cwd=ROOT, text=True
+        ).splitlines()
+        seen_blobs: set[str] = set()
+        for entry in objects:
+            if not remaining:
+                break
+            parts = entry.split(" ", 1)
+            obj_sha = parts[0]
+            path_hint = parts[1] if len(parts) > 1 else ""
+            if obj_sha in seen_blobs:
+                continue
+            if path_hint and not path_hint.lower().endswith(".txt"):
+                continue
+            try:
+                obj_type = subprocess.check_output(
+                    ["git", "cat-file", "-t", obj_sha], cwd=ROOT, text=True
+                ).strip()
+                if obj_type != "blob":
+                    continue
+                data = subprocess.check_output(["git", "cat-file", "-p", obj_sha], cwd=ROOT)
+            except subprocess.CalledProcessError:
+                continue
+            seen_blobs.add(obj_sha)
+            digest = sha256_bytes(data)
+            if digest in remaining:
+                found.setdefault(digest, []).append((f"git:{obj_sha}:{path_hint or '[blob]'}", data))
+                remaining.remove(digest)
     return found
 
 
@@ -117,6 +158,8 @@ def choose_source(matches: list[tuple[str, bytes]]) -> tuple[str, bytes]:
             score = 20
         elif "FINALTXT" in path:
             score = 30
+        elif path.startswith("git:"):
+            score = 40
         return score, path
     return sorted(matches, key=rank)[0]
 
@@ -161,7 +204,8 @@ def main() -> None:
     if missing_state:
         raise SystemExit("State gate failed:\n" + "\n".join(missing_state))
 
-    sources = scan_text_sources()
+    wanted = {info["approved_list_sha256"] for info in tracker_state.values()}
+    sources = scan_text_sources(wanted)
     unresolved: list[str] = []
     resolved: list[tuple[dict[str, str], dict, str, bytes]] = []
     for row in tracker:
