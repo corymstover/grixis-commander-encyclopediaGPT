@@ -854,6 +854,21 @@
       "decision_closeout_artifact": "refinement/decisions/Tresserhorn_s_Lord_Returned_Candidate_Decisions_2026-10-15.md",
       "approval_record_artifact": "refinement/approvals/Tresserhorn_s_Lord_Returned_Approved_2026-10-15.md",
       "approved_list_artifact": "refinement/decklists/Tresserhorn_s_Lord_Returned_Approved_2026-10-15.txt"
+    },
+    "Wick__the_Whorled_Mind": {
+      "approval_status": "APPROVED",
+      "lock_status": "LOCKED",
+      "final_gate_passed": true,
+      "user_approval_date": "2026-10-15",
+      "current_stage": "LOCKED",
+      "approved_list_sha256": "f4556840dc8f7a8e1d532b73652d0035592b52b86adbbad6ed8fbe4270341e98",
+      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit",
+      "approval_basis": "Explicit user approval of the exact SHA-bound Wick, the Whorled Mind approval-ready candidate after authoritative FINAL2 baseline reconciliation, mandatory 99-slot whole-list audit, commander-first Rat/Snail-counter/combo review, candidate exhaustion, adversarial Oracle/rules/combo and mana-base red-team, zero-new-material-improvement closure, exact structural verification, singleton/color-identity verification, and current official Commander legality verification.",
+      "whole_list_audit_artifact": "refinement/decisions/Wick_the_Whorled_Mind_Whole_List_Audit_2026-10-15.csv",
+      "verification_artifact": "refinement/verification/Wick_the_Whorled_Mind_Approval_Ready_Verification_2026-10-15.md",
+      "decision_closeout_artifact": "refinement/decisions/Wick_the_Whorled_Mind_Candidate_Decisions_2026-10-15.md",
+      "approval_record_artifact": "refinement/approvals/Wick_the_Whorled_Mind_Approved_2026-10-15.md",
+      "approved_list_artifact": "refinement/decklists/Wick_the_Whorled_Mind_Approved_2026-10-15.txt"
     }
   }
 }
