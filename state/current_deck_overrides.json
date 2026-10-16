@@ -824,6 +824,21 @@
       "decision_closeout_artifact": "refinement/decisions/The_Rani_Candidate_Decisions_2026-10-15.md",
       "approval_record_artifact": "refinement/approvals/The_Rani_Approved_2026-10-15.md",
       "approved_list_artifact": "refinement/decklists/The_Rani_Approved_2026-10-15.txt"
+    },
+    "Thraximundar": {
+      "approval_status": "APPROVED",
+      "lock_status": "LOCKED",
+      "final_gate_passed": true,
+      "user_approval_date": "2026-10-15",
+      "current_stage": "LOCKED",
+      "approved_list_sha256": "d4fa3421752a4d666528c5218aa18b240465c817dd160642c103b2de8c3f9442",
+      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + v2 adversarial red-team",
+      "approval_basis": "Explicit user approval of the exact SHA-bound Thraximundar v2 approval-ready candidate after authoritative FINAL baseline reconciliation, mandatory 99-slot whole-list audit, commander-first sacrifice/Zombie-aristocrats/commander-damage review, candidate exhaustion, adversarial red-team, mana-base review, current Oracle/color-identity verification, current official Commander legality verification, rules/combo verification, exact structural verification, singleton verification, and zero-new-material-improvement closure.",
+      "verification_artifact": "refinement/verification/Thraximundar_Approval_Ready_Verification_v2_2026-10-15.md",
+      "decision_closeout_artifact": "refinement/decisions/Thraximundar_Candidate_Decisions_v2_2026-10-15.md",
+      "whole_list_audit_artifact": "refinement/decisions/Thraximundar_Whole_List_Audit_v2_2026-10-15.csv",
+      "approval_record_artifact": "refinement/approvals/Thraximundar_Approved_2026-10-15.md",
+      "approved_list_artifact": "refinement/decklists/Thraximundar_Approved_2026-10-15.txt"
     }
   }
 }
