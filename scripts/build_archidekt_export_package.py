@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import csv
 import hashlib
-import io
 import json
 import re
 import shutil
@@ -31,6 +30,10 @@ def sha256_bytes(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
 
+def normalized_id(value: str) -> str:
+    return re.sub(r"_+", "_", value.strip()).casefold()
+
+
 def parse_line(raw: str) -> tuple[int, str, bool, bool] | None:
     raw = raw.strip()
     if not raw or raw.startswith("#"):
@@ -53,7 +56,7 @@ def parse_line(raw: str) -> tuple[int, str, bool, bool] | None:
     return qty, rest, is_commander, is_companion
 
 
-def normalize_deck(text: str) -> tuple[str, int, int, list[str]]:
+def normalize_deck(text: str) -> tuple[str, int, int]:
     parsed: list[tuple[int, str, bool, bool]] = []
     for line in text.splitlines():
         item = parse_line(line)
@@ -61,19 +64,15 @@ def normalize_deck(text: str) -> tuple[str, int, int, list[str]]:
             parsed.append(item)
     if not parsed:
         raise ValueError("No parseable card lines")
-
-    # Preserve explicit commander/companion metadata when present. Otherwise the
-    # project's standard format guarantees the commander is already first.
     if any(x[2] for x in parsed):
         commanders = [x for x in parsed if x[2]]
         normal = [x for x in parsed if not x[2] and not x[3]]
         companions = [x for x in parsed if x[3]]
         parsed = commanders + normal + companions
-
     lines = [f"{qty}x {name}" for qty, name, _, _ in parsed]
     quantity_total = sum(qty for qty, _, _, _ in parsed)
     distinct = len({name.casefold() for _, name, _, _ in parsed})
-    return "\n".join(lines) + "\n", quantity_total, distinct, lines
+    return "\n".join(lines) + "\n", quantity_total, distinct
 
 
 def load_tracker() -> list[dict[str, str]]:
@@ -91,20 +90,16 @@ def scan_text_sources() -> dict[str, list[tuple[str, bytes]]]:
         except OSError:
             continue
         found.setdefault(sha256_bytes(data), []).append((str(path.relative_to(ROOT)), data))
-
-    # Also scan any source ZIPs present in the repository so canonical hashes
-    # that intentionally point to a frozen TXT export can still resolve exactly.
     for zpath in ROOT.rglob("*.zip"):
         if zpath == ZIP_PATH or OUT_ROOT in zpath.parents:
             continue
         try:
             with zipfile.ZipFile(zpath) as zf:
                 for name in zf.namelist():
-                    if not name.lower().endswith(".txt"):
-                        continue
-                    data = zf.read(name)
-                    label = f"{zpath.relative_to(ROOT)}::{name}"
-                    found.setdefault(sha256_bytes(data), []).append((label, data))
+                    if name.lower().endswith(".txt"):
+                        data = zf.read(name)
+                        label = f"{zpath.relative_to(ROOT)}::{name}"
+                        found.setdefault(sha256_bytes(data), []).append((label, data))
         except (OSError, zipfile.BadZipFile):
             continue
     return found
@@ -136,18 +131,29 @@ def main() -> None:
     if state.get("cycle_id") != "global-restart-2026-10-13":
         raise SystemExit(f"Unexpected cycle: {state.get('cycle_id')}")
     decks_state = state.get("decks", {})
+    state_by_norm: dict[str, tuple[str, dict]] = {}
+    for key, value in decks_state.items():
+        nk = normalized_id(key)
+        if nk in state_by_norm:
+            raise SystemExit(f"Ambiguous normalized state key: {key}")
+        state_by_norm[nk] = (key, value)
+
     tracker = load_tracker()
     if len(tracker) != 62:
         raise SystemExit(f"Expected 62 tracker rows; got {len(tracker)}")
 
-    # Fail closed unless all 62 tracker decks are current-cycle locked and SHA-bound.
+    tracker_state: dict[str, dict] = {}
     missing_state: list[str] = []
     for row in tracker:
         deck_id = row["deck_id"]
         info = decks_state.get(deck_id)
+        if info is None:
+            pair = state_by_norm.get(normalized_id(deck_id))
+            info = pair[1] if pair else None
         if not info:
             missing_state.append(f"{deck_id}: missing state entry")
             continue
+        tracker_state[deck_id] = info
         if info.get("approval_status") != "APPROVED" or info.get("lock_status") != "LOCKED" or not info.get("final_gate_passed"):
             missing_state.append(f"{deck_id}: not APPROVED/LOCKED/final_gate_passed")
         if not info.get("approved_list_sha256"):
@@ -160,7 +166,7 @@ def main() -> None:
     resolved: list[tuple[dict[str, str], dict, str, bytes]] = []
     for row in tracker:
         deck_id = row["deck_id"]
-        info = decks_state[deck_id]
+        info = tracker_state[deck_id]
         expected = info["approved_list_sha256"]
         matches = sources.get(expected, [])
         if not matches:
@@ -185,24 +191,14 @@ def main() -> None:
     master_chunks: list[str] = []
 
     for n, (row, info, source_path, data) in enumerate(resolved, start=1):
-        text = data.decode("utf-8-sig")
-        normalized, card_count, distinct, lines = normalize_deck(text)
+        normalized, card_count, distinct = normalize_deck(data.decode("utf-8-sig"))
         commander_name = row["commander_names"]
         filename = safe_filename(n, commander_name)
-        out_path = DECK_DIR / filename
-        out_path.write_text(normalized, encoding="utf-8", newline="\n")
-
-        # Basic fail-closed checks. Companion deck may intentionally export one
-        # extra companion outside the 100-card library; every other deck must be 100.
+        (DECK_DIR / filename).write_text(normalized, encoding="utf-8", newline="\n")
         expected_count = 101 if row["deck_id"] == "Cecily__Bjorna__Lutri" and card_count == 101 else 100
         if card_count != expected_count:
-            raise SystemExit(f"Unexpected normalized count for {deck_id}: {card_count}")
-
-        master_chunks.append(
-            f"===== {n:02d}/62 — {commander_name} =====\n"
-            + normalized
-            + "\n"
-        )
+            raise SystemExit(f"Unexpected normalized count for {row['deck_id']}: {card_count}")
+        master_chunks.append(f"===== {n:02d}/62 — {commander_name} =====\n{normalized}\n")
         manifest_rows.append({
             "deck_number": n,
             "deck_id": row["deck_id"],
@@ -215,12 +211,8 @@ def main() -> None:
         })
 
     MASTER_PATH.write_text("".join(master_chunks), encoding="utf-8", newline="\n")
-
     with MANIFEST_PATH.open("w", encoding="utf-8", newline="") as fh:
-        fieldnames = [
-            "deck_number", "deck_id", "commander_names", "archidekt_file",
-            "card_quantity_total", "distinct_names", "canonical_sha256", "matched_source",
-        ]
+        fieldnames = ["deck_number", "deck_id", "commander_names", "archidekt_file", "card_quantity_total", "distinct_names", "canonical_sha256", "matched_source"]
         writer = csv.DictWriter(fh, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         writer.writerows(manifest_rows)
@@ -228,29 +220,19 @@ def main() -> None:
     README_PATH.write_text(
         "GRIXIS COMMANDER ENCYCLOPEDIA 2 — ARCHIDEKT IMPORT PACKAGE\n"
         "=========================================================\n\n"
-        "Cycle: global-restart-2026-10-13\n"
-        "Decks: 62/62 APPROVED + LOCKED\n\n"
-        "FASTEST USE\n"
-        "-----------\n"
-        "1. Open the decks folder.\n"
-        "2. Open the numbered TXT file for the deck you want.\n"
-        "3. Copy all lines.\n"
-        "4. In Archidekt, create/open a Commander deck and choose Import.\n"
-        "5. Paste the list and save/import.\n"
+        "Cycle: global-restart-2026-10-13\nDecks: 62/62 APPROVED + LOCKED\n\n"
+        "FASTEST USE\n-----------\n"
+        "1. Open the decks folder.\n2. Open the numbered TXT file for the deck you want.\n3. Copy all lines.\n"
+        "4. In Archidekt, create/open a Commander deck and choose Import.\n5. Paste the list and save/import.\n"
         "6. The commander line is first. Mark that card as Commander in Archidekt.\n"
-        "7. For the Bjorna/Cecily/Lutri project deck, also set the intended commanders/companion manually as appropriate.\n\n"
-        "FORMAT\n"
-        "------\n"
+        "7. For the Bjorna/Cecily/Lutri project deck, set the intended commanders/companion manually as appropriate.\n\n"
         "Each individual file uses simple Archidekt-friendly lines: 1x Card Name\n"
         "Set codes, collector numbers, and project role tags were intentionally removed.\n"
-        "The MASTER file is for convenient reference/copying deck by deck; do not paste the entire MASTER file into a single deck.\n\n"
-        "INTEGRITY\n"
-        "---------\n"
-        "Every deck was resolved by matching the authoritative current-cycle approved_list_sha256 in\n"
-        "state/current_deck_overrides.json to exact repository TXT bytes before normalization.\n"
+        "The MASTER file is for reference/copying deck by deck; do not paste the entire MASTER file into one deck.\n\n"
+        "INTEGRITY\n---------\n"
+        "Every deck was resolved by matching the authoritative current-cycle approved_list_sha256 to exact repository TXT bytes before normalization.\n"
         "Frozen source exports and approved lists were not modified.\n",
-        encoding="utf-8",
-        newline="\n",
+        encoding="utf-8", newline="\n"
     )
 
     if ZIP_PATH.exists():
@@ -260,7 +242,6 @@ def main() -> None:
             if path.is_file():
                 zf.write(path, path.relative_to(OUT_ROOT.parent))
 
-    # Post-build verification.
     deck_files = list(DECK_DIR.glob("*.txt"))
     if len(deck_files) != 62:
         raise SystemExit(f"Built {len(deck_files)} individual deck files, expected 62")
