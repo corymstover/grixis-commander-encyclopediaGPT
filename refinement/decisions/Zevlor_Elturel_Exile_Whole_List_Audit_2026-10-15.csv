@@ -1,0 +1,100 @@
+noncommander_slot,card_name,copy_index,baseline_role,decision,replacement_if_cut,audit_rationale
+1,Abrade,1,Removal,KEEP,,"Flexible low-cost interaction; its single-target modes can be Zevlor-multiplied when legal permanents exist across opponents, while the artifact mode covers an important axis."
+2,Ancient Tomb,1,Land,KEEP,,Two mana from a land materially accelerates Zevlor and expensive payloads; retained despite life cost because activation-plus-spell turns are mana intensive.
+3,Arcane Bombardment,1,Copy,CUT,Cruel Ultimatum,Six-mana generic copy engine is slow and overlaps the commander's native copying; Cruel Ultimatum is a uniquely high-impact single-opponent payload that Zevlor turns into one resolution per opponent.
+4,Arcane Denial,1,Removal,CUT,Force of Will,"Two-mana counter that repays the opponent is outclassed in the protection slot by Force of Will, which protects tap-out Zevlor turns for zero mana."
+5,Arcane Signet,1,Ramp,KEEP,,Efficient three-color fixing toward Zevlor and the mixed-color payload suite.
+6,Archmage Emeritus,1,Draw,KEEP,,"Magecraft triggers on both casting and copying instants/sorceries, so Zevlor-generated copies turn this into a commander-amplified draw engine."
+7,Badlands,1,Land,KEEP,,Fetchable untapped B/R source; optimal no-budget fixing.
+8,"Baral, Chief of Compliance",1,Ramp,KEEP,,Two-mana instant/sorcery cost reduction improves the critical activation-plus-payload turn while also rewarding counterspell interaction.
+9,Bedevil,1,Removal,KEEP,,Single-target instant that Zevlor can spread to one permanent per opponent; broad artifact/creature/planeswalker coverage justifies the color intensity.
+10,Blasphemous Act,1,Removal,KEEP,,"Efficient emergency sweeper; not Zevlor-dependent, but the deck needs a low-cost reset after committing a four-mana commander and engines."
+11,Blood Crypt,1,Land,KEEP,,Fetchable untapped B/R source.
+12,Bloodstained Mire,1,Land,KEEP,,Premium fetchland accessing multiple black/red typed sources and Xander's Lounge.
+13,Blue Sun's Twilight,1,Removal,KEEP,,"Excellent Zevlor payload: one target permanent, copied X, and at X≥5 each resolution also creates a token copy of the stolen creature."
+14,Brainstorm,1,Draw,KEEP,,One-mana selection that protects key cards from discard and improves fetchland quality; retained as efficient setup rather than a Zevlor payload.
+15,Bribery,1,Theft,KEEP,,One of the deck's defining target-opponent theft spells; Zevlor turns one cast into selecting a creature from each opponent's library.
+16,Chaos Warp,1,Removal,KEEP,,Broad permanent answer that qualifies for Zevlor and can remove one problematic permanent from each opponent.
+17,Command Tower,1,Land,KEEP,,Best unconditional three-color land.
+18,"Cormela, Glamour Thief",1,Ramp,KEEP,,Haste mana creature for instants/sorceries plus recursion on death; directly supports expensive Zevlor payload turns.
+19,Counterspell,1,Removal,KEEP,,Efficient unconditional counter remains justified even after Force of Will because the deck must protect commander-centric turns.
+20,Crumbling Necropolis,1,Land,CUT,City of Brass,Mandatory tapped tri-land is too slow for an optimized activation-plus-spell deck; City of Brass gives unconditional untapped access to all three colors.
+21,Cyclonic Rift,1,Removal,KEEP,,"Elite interaction; normal single-target mode can trigger Zevlor, while overload remains a powerful emergency asymmetrical reset even though it no longer targets."
+22,Dark Ritual,1,Ramp,KEEP,,One-mana burst mana enables early Zevlor or activation-plus-black-heavy payload turns.
+23,Dauthi Voidwalker,1,Stax,CUT,Rakdos Charm,"Powerful generic graveyard hate/stax, but Rakdos Charm preserves graveyard interaction while qualifying for Zevlor on its targeted modes and can scale across opponents."
+24,Deadly Rollick,1,Removal,KEEP,,Free commander-enabled exile removal; when cast with one target it can be copied by Zevlor to answer creatures across opponents.
+25,Deflecting Swat,1,Protection,KEEP,,Free commander-enabled protection and interaction; critical for protecting Zevlor and redirecting opposing targeted effects while tapped out.
+26,Demonic Tutor,1,Tutor,KEEP,,"Universal tutor finds the exact payload, untap engine, protection, or mana piece required for a commander-centric turn."
+27,Drowned Catacomb,1,Land,CUT,Marsh Flats,"Conditional untapped U/B source is upgraded to Marsh Flats, which finds the deck's typed black dual/shock/triome targets and improves shuffle/fixing quality."
+28,Dualcaster Mage,1,Copy,CUT,Illusionist's Bracers,"Generic spell-copy redundancy is less commander-specific than Illusionist's Bracers, which copies Zevlor's activated ability itself and creates an additional delayed trigger."
+29,Electrodominance,1,Removal,KEEP,,Single-target X spell whose copied X is preserved; every resolving copy also permits casting a spell from hand with mana value X or less.
+30,Exotic Orchard,1,Land,KEEP,,Usually unconditional three-color multiplayer fixing.
+31,Exterminator Magmarch,1,Copy,KEEP,,"Commander-specific redundancy: it independently copies qualifying single-target removal spells toward another opponent, stacking with Zevlor and Twinning Staff."
+32,Feed the Swarm,1,Removal,KEEP,,Necessary enchantment interaction in Grixis and a single-target spell that can be multiplied across opponents when legal targets exist.
+33,Fierce Guardianship,1,Removal,KEEP,,Free protection with Zevlor on battlefield; protects high-investment activation/payload turns without consuming spell mana.
+34,Flick a Coin,1,Draw,KEEP,,"Excellent low-cost payload: with legal targets across opponents, Zevlor can turn it into three damage events, three Treasures, and three cards."
+35,Frantic Search,1,Draw,KEEP,,Essentially mana-neutral selection on resolution and supports graveyard recursion; high tempo even though it is not a Zevlor target spell.
+36,Gamble,1,Tutor,KEEP,,One-mana tutor is worth the discard risk in an optimized deck with Kess/Snapcaster recursion and many interchangeable engine pieces.
+37,Gitaxian Probe,1,Draw,KEEP,,Qualifying target-player spell for zero/one mana; Zevlor can turn it into hand information on all opponents plus three total draws.
+38,Goblin Electromancer,1,Ramp,KEEP,,"Two-mana reducer covers blue, red, and black multicolor instant/sorcery payloads via generic-cost reduction and improves activation-plus-spell sequencing."
+39,Hell to Pay,1,Removal,KEEP,,"Scalable single-target removal that produces Treasures; Zevlor can copy X across opponents, potentially removing multiple creatures while generating a large mana refund."
+40,Increasing Vengeance,1,Copy,CUT,Omen Hawker,"Another generic copy spell is redundant; Omen Hawker is one mana and produces exactly two mana restricted to activated abilities, directly paying Zevlor's {2} activation."
+41,Ioreth of the Healing House,1,Untap,CUT,Pemmin's Aura,"Ioreth provides only one untap per turn cycle and costs three. Pemmin's Aura can untap Zevlor repeatedly for {U} in the same turn and also grants on-demand shroud, making it a materially stronger commander-specific engine."
+42,Island,1,Land,CUT,"Minamo, School at Water's Edge","One basic blue slot is upgraded to Minamo, School at Water's Edge, an untapped blue source that can untap the legendary commander for an additional activation."
+43,Island,2,Land,KEEP,,Basic blue source retained for resilience to nonbasic hate and because the deck remains blue-intensive for protection and payloads.
+44,Island,3,Land,KEEP,,Basic blue source retained for resilience to nonbasic hate and because the deck remains blue-intensive for protection and payloads.
+45,Izzet Signet,1,Ramp,CUT,Patriar's Seal,Generic two-mana fixing is expendable because ramp density remains sufficient; Patriar's Seal is both fixing and a repeatable Zevlor untap engine.
+46,Jeska's Will,1,Ramp,KEEP,,"With Zevlor as commander on battlefield both modes may be chosen while the spell still has one target opponent; Zevlor copies preserve modes, multiplying mana and exile-card advantage."
+47,"Kess, Dissident Mage",1,Recursion,KEEP,,Commander-adjacent recursion engine allowing a key instant/sorcery to be reused from graveyard each turn; high-value in a payload-dense list.
+48,Leadership Vacuum,1,Removal,KEEP,,"Near-perfect Zevlor spell: target player only, so copies can bounce every opponent's commander while each resolution draws a card."
+49,Lightning Greaves,1,Protection,CUT,Swiftfoot Boots,"Shroud blocks your own Minamo, Patriar's Seal, and Pemmin's Aura from targeting Zevlor as those effects are established; Swiftfoot Boots preserves protection via hexproof while allowing your own targeted untap/setup interactions."
+50,Luxury Suite,1,Land,KEEP,,Untapped-capable B/R multiplayer dual.
+51,Mana Confluence,1,Land,KEEP,,Unconditional untapped three-color source; activation-plus-payload turns need exact colors.
+52,Mana Drain,1,Removal,KEEP,,Premium unconditional counter that can convert protection into mana for the next Zevlor/payload turn.
+53,Mana Vault,1,Ramp,KEEP,,Fast mana materially accelerates a four-mana commander and high-end target-opponent sorceries.
+54,Morphic Pool,1,Land,KEEP,,Untapped-capable U/B multiplayer dual.
+55,Mountain,1,Land,KEEP,,Basic red source retained for resilience to nonbasic hate and to preserve enough untapped red sources after the fetch/dual upgrades.
+56,Mountain,2,Land,KEEP,,Basic red source retained for resilience to nonbasic hate and to preserve enough untapped red sources after the fetch/dual upgrades.
+57,Mystic Remora,1,Draw,KEEP,,One-mana high-ceiling card advantage that helps assemble commander turns and forces opponents to slow down.
+58,Mystical Tutor,1,Tutor,KEEP,,One-mana access to the exact qualifying payload or protection spell; highly synergistic with a spell-centric commander.
+59,Nightscape Familiar,1,Ramp,CUT,Acquire,Cost reduction is useful but weaker than adding another premier target-opponent payload; Acquire converts one Zevlor activation into stealing an artifact from every opponent.
+60,"Otawara, Soaring City",1,Land,KEEP,,Untapped blue source with channel interaction that is difficult to counter and occupies a land slot.
+61,Peek,1,Draw,KEEP,,One-mana target-player cantrip; Zevlor converts it into seeing all opponents' hands and drawing three cards total.
+62,Pilfered Plans,1,Draw,KEEP,,"One target opponent plus unconditional draw-two; Zevlor makes three resolutions, milling each opponent and drawing six cards total."
+63,Polluted Delta,1,Land,KEEP,,Premium fetchland accessing U/B typed sources and Xander's Lounge.
+64,Praetor's Grasp,1,Tutor,KEEP,,Target-opponent library theft/tutor that becomes one search of each opponent's library with Zevlor.
+65,Rakdos's Return,1,Discard,KEEP,,"Scalable target-opponent finisher; copied X is preserved, allowing table-wide hand destruction and life loss."
+66,Reverberate,1,Copy,CUT,Great Intelligence's Plan,"Generic copy redundancy loses to Great Intelligence's Plan, whose single target allows Zevlor to multiply both draw-three and villainous-choice pressure across the table."
+67,Rhystic Study,1,Draw,KEEP,,Powerful persistent card advantage needed to fuel multi-piece activation-plus-payload turns; generic but efficient enough to survive comparison.
+68,Scalding Tarn,1,Land,KEEP,,Premium fetchland accessing U/R typed sources and Xander's Lounge.
+69,Sedgemoor Witch,1,Tokens,KEEP,,"Magecraft triggers on cast or copy, so Zevlor's copies generate additional Pest tokens and resilient board presence."
+70,Shipwreck Marsh,1,Land,CUT,Misty Rainforest,Late-game untapped condition is not worth the early sequencing risk; Misty Rainforest fetches blue typed dual/shock/triome targets untapped when needed.
+71,Shivan Reef,1,Land,CUT,Arid Mesa,"The painland is reliable but Arid Mesa can fetch Volcanic Island/Steam Vents for blue-red, Badlands/Blood Crypt for black-red, or Xander's Lounge, while also improving Brainstorm and shuffle quality."
+72,Siphon Insight,1,Theft,KEEP,,Targets one opponent and steals selection from their library; flashback and Zevlor copies reinforce the deck's theft identity.
+73,Snap,1,Removal,KEEP,,"Exceptional Zevlor tempo spell: one creature per opponent can be bounced and each resolving copy untaps up to two lands, often refunding or profiting mana."
+74,Snapcaster Mage,1,Recursion,KEEP,,Low-cost instant/sorcery recursion that enables reuse of a premium qualifying spell without shutting off countermagic.
+75,"Sokenzan, Crucible of Defiance",1,Land,KEEP,,Untapped red source with channel utility; land-slot flexibility is preferable to another spell slot.
+76,Sol Ring,1,Ramp,KEEP,,Best generic acceleration for a four-mana commander plus repeated {2} activation.
+77,Steam Vents,1,Land,KEEP,,Fetchable untapped U/R source.
+78,Stolen Goods,1,Theft,CUT,River's Rebuke,"High variance theft is replaced by River's Rebuke, a deterministic target-player payload that Zevlor can copy to bounce all opponents' nonland permanents."
+79,Storm-Kiln Artist,1,Ramp,KEEP,,"Magecraft triggers on copies as well as casts, so Zevlor transforms each copied spell into additional Treasure and power."
+80,Stormcarved Coast,1,Land,CUT,Flooded Strand,Conditional dual is converted into Flooded Strand for stronger fetch access and color sequencing.
+81,Sulfur Falls,1,Land,CUT,Volcanic Island,Check-land dependency is unnecessary without a budget constraint; Volcanic Island is fetchable and unconditional.
+82,Sulfurous Springs,1,Land,CUT,Verdant Catacombs,"The painland is reliable but Verdant Catacombs accesses Underground Sea/Watery Grave, Badlands/Blood Crypt, or Xander's Lounge, providing broader no-budget fixing."
+83,Swamp,1,Land,KEEP,,Basic black source retained for resilience to nonbasic hate and to preserve clean fetchable/basic access.
+84,Swamp,2,Land,KEEP,,Basic black source retained for resilience to nonbasic hate and to preserve clean fetchable/basic access.
+85,Swan Song,1,Removal,KEEP,,"One-mana protection against many sweepers, interaction pieces, and opposing combos."
+86,"Takenuma, Abandoned Mire",1,Land,KEEP,,Untapped black source with channel recursion in a land slot.
+87,Talent of the Telepath,1,Theft,KEEP,,"Signature target-opponent theft spell; Zevlor expands it to every opponent, and spell mastery can double the theft from each library."
+88,Terminate,1,Removal,KEEP,,Efficient unconditional creature removal that qualifies for Zevlor and can answer one creature from each opponent.
+89,The One Ring,1,Draw,CUT,Portent,"Exceptional generic card advantage but commander-independent and four-mana intensive; Portent is one mana, qualifies for Zevlor, manipulates each opponent's top cards, and produces delayed draw from every copy."
+90,Thought Scour,1,Draw,KEEP,,One-mana target-player cantrip; Zevlor can mill each opponent and produce three total draws while remaining useful without commander.
+91,Training Center,1,Land,KEEP,,Untapped-capable U/R multiplayer dual.
+92,Training Grounds,1,Ramp,KEEP,,"Direct commander enabler: reduces Zevlor's {2} activated cost to {1}, enabling repeated activations and larger payload turns."
+93,Twinning Staff,1,Copy,KEEP,,Directly amplifies Zevlor's spell-copy events rather than functioning as generic card advantage; each copy effect gets an additional copy.
+94,Underground River,1,Land,CUT,Wooded Foothills,The painland is reliable but Wooded Foothills can fetch the red typed dual/shock suite or Xander's Lounge and gives more flexible color sequencing with the completed fetchland package.
+95,Underground Sea,1,Land,KEEP,,Fetchable unconditional U/B source.
+96,Vampiric Tutor,1,Tutor,KEEP,,"One-mana instant tutor for any activation enabler, payload, protection, or mana requirement."
+97,Watery Grave,1,Land,KEEP,,Fetchable untapped U/B source.
+98,Worst Fears,1,Finisher,KEEP,,Expensive but uniquely commander-defining target-opponent finisher: Zevlor can copy it to control each opponent's next turn.
+99,Xander's Lounge,1,Land,KEEP,,"One tapped land is justified as a fetchable U/B/R tri-land with cycling, substantially improving fetchland color coverage."
