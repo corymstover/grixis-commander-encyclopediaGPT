@@ -1,0 +1,100 @@
+copy_index,card_name,copy_number,decision,replacement_or_note,reason
+1,Accursed Marauder,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+2,Altar of Dementia,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+3,Ancient Tomb,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+4,Arcane Signet,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+5,Archfiend of Depravity,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+6,Ashnod's Altar,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+7,Badlands,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+8,Black Market Connections,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+9,Blasphemous Act,1,CUT,Call to the Grave,Replace generic sweeper with repeatable sacrifice engine that spares Zombie commander.
+10,Blood Artist,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+11,Blood Crypt,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+12,Bloodstained Mire,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+13,Bojuka Bog,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+14,"Braids, Arisen Nightmare",1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+15,Carrion Feeder,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+16,Command Tower,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+17,Crumbling Necropolis,1,CUT,Mana Confluence,Untapped unconditional three-color fixing.
+18,Cyclonic Rift,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+19,Damnation,1,CUT,Vona's Hunger,Replace symmetric sweeper with one-sided multi-opponent sacrifice scaling to city’s blessing.
+20,Dark Ritual,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+21,Deadly Dispute,1,CUT,Diabolic Intent,Convert sacrifice-for-value slot into exact tutor while preserving sacrifice action.
+22,Deathbringer Thoctar,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+23,Deflecting Swat,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+24,Demon's Disciple,1,CUT,"Winter, Tormented Loner",Same sacrifice axis with asymmetric opponent edict trigger and stronger commander synergy.
+25,Demonic Tutor,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+26,Dictate of Erebos,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+27,Dimir Signet,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+28,Diregraf Captain,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+29,Dragonskull Summit,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+30,Drowned Catacomb,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+31,Exotic Orchard,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+32,Feed the Swarm,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+33,Fierce Guardianship,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+34,Fleshbag Marauder,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+35,Force of Will,1,CUT,Mana Vault,Thin blue pitch pool; convert interaction slot into fast commander acceleration.
+36,Goblin Bombardment,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+37,Grave Pact,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+38,Grave Titan,1,CUT,Cultist of the Absolute,Replace generic token value with commander-damage evasion/protection and an upkeep sacrifice trigger.
+39,Gravecrawler,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+40,"Grimgrin, Corpse-Born",1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+41,Innocent Blood,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+42,Island,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+43,Island,2,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+44,Island,3,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+45,Izzet Signet,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+46,Lightning Greaves,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+47,"Liliana, Dreadhorde General",1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+48,Luxury Suite,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+49,"Mahadi, Emporium Master",1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+50,Mana Drain,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+51,Mayhem Devil,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+52,Morphic Pool,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+53,Mountain,1,CUT,Command Beacon,Commander-tax mitigation for a seven-mana commander.
+54,Mountain,2,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+55,Mountain,3,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+56,Necrotic Hex,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+57,Phyrexian Altar,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+58,Phyrexian Tower,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+59,Pitiless Plunderer,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+60,Plaguecrafter,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+61,Polluted Delta,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+62,Rakdos Signet,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+63,Reanimate,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+64,Reassembling Skeleton,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+65,Rhystic Study,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+66,Rogue's Passage,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+67,Rooftop Storm,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+68,Scalding Tarn,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+69,"Sheoldred, Whispering One",1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+70,Sheoldred's Edict,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+71,Skullclamp,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+72,Sol Ring,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+73,Steam Vents,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+74,Sulfur Falls,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+75,Swamp,1,CUT,Cabal Coffers,"High-ceiling black mana engine, especially with Urborg."
+76,Swamp,2,CUT,"Shizo, Death's Storehouse",Black-producing land that grants fear to legendary commander for damage pressure.
+77,Swamp,3,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+78,Swamp,4,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+79,Swamp,5,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+80,Swamp,6,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+81,Swiftfoot Boots,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+82,Talisman of Creativity,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+83,Talisman of Dominance,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+84,Talisman of Indulgence,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+85,"Tergrid, God of Fright // Tergrid's Lantern",1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+86,Terminate,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+87,Toxic Deluge,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+88,Training Center,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+89,Underground Sea,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+90,"Urborg, Tomb of Yawgmoth",1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+91,Vampiric Tutor,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+92,Vandalblast,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+93,Victimize,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+94,Volcanic Island,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+95,Warren Soultrader,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+96,Watery Grave,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+97,"Wilhelt, the Rotcleaver",1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+98,Xander's Lounge,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
+99,Zulaport Cutthroat,1,KEEP,,Retained in approval candidate after commander-first whole-list audit.
