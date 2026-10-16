@@ -839,6 +839,21 @@
       "whole_list_audit_artifact": "refinement/decisions/Thraximundar_Whole_List_Audit_v2_2026-10-15.csv",
       "approval_record_artifact": "refinement/approvals/Thraximundar_Approved_2026-10-15.md",
       "approved_list_artifact": "refinement/decklists/Thraximundar_Approved_2026-10-15.txt"
+    },
+    "Tresserhorn_s_Lord__Returned": {
+      "approval_status": "APPROVED",
+      "lock_status": "LOCKED",
+      "final_gate_passed": true,
+      "user_approval_date": "2026-10-15",
+      "current_stage": "LOCKED",
+      "approved_list_sha256": "8c802586a4742156fb96246f4f23331eb51d1a77d6717da63ceed2446e98adf8",
+      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit",
+      "approval_basis": "Explicit user approval of the exact SHA-bound Tresserhorn's Lord, Returned approval-ready candidate after authoritative FINAL baseline reconciliation, mandatory 99-slot whole-list audit, candidate exhaustion, commander-necessity and encyclopedia-differentiation review, adversarial Oracle/rules/combo and mana-base red-team, zero-new-material-improvement closure, exact structural verification, singleton/color-identity verification, current official Commander legality verification, and correction of the obsolete future-release exception following official 2026-08-03 Commander legality.",
+      "whole_list_audit_artifact": "refinement/decisions/Tresserhorn_s_Lord_Returned_Whole_List_Audit_2026-10-15.csv",
+      "verification_artifact": "refinement/verification/Tresserhorn_s_Lord_Returned_Approval_Ready_Verification_2026-10-15.md",
+      "decision_closeout_artifact": "refinement/decisions/Tresserhorn_s_Lord_Returned_Candidate_Decisions_2026-10-15.md",
+      "approval_record_artifact": "refinement/approvals/Tresserhorn_s_Lord_Returned_Approved_2026-10-15.md",
+      "approved_list_artifact": "refinement/decklists/Tresserhorn_s_Lord_Returned_Approved_2026-10-15.txt"
     }
   }
 }
