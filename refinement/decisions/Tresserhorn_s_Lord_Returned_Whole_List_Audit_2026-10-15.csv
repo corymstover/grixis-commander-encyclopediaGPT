@@ -1,0 +1,100 @@
+noncommander_slot,card_name,copy_index,baseline_role,decision,replacement_if_cut,audit_rationale
+1,Accursed Marauder,1,Removal,KEEP,,Two-mana Zombie interaction that also leaves a sacrifice body; retained over Fleshbag Marauder because it is cheaper and the nontoken clause is acceptable in a token-heavy shell.
+2,Arcane Denial,1,Removal,CUT,Stubborn Denial,Two mana and giving the countered player two replacement cards is a real liability when Tresserhorn already hands an opponent three cards; Stubborn Denial is one mana and becomes a hard noncreature counter with the 10-power commander.
+3,Arcane Signet,1,Ramp,KEEP,,Efficient fixing toward a five-mana three-color commander; survives the ramp audit because it fixes every commander color without setup.
+4,Ashnod's Altar,1,Ramp,KEEP,,Core free sacrifice outlet and combo engine; converts fodder into mana while Tresserhorn converts the same sacrifices into cards.
+5,Bitterbloom Bearer,1,Tokens,KEEP,,"At two mana with flash, it begins producing repeatable flying fodder early enough to help pay the commander ETB sacrifice requirement."
+6,Bitterblossom,1,Tokens,KEEP,,One of the lowest-cost repeatable token engines; a turn-two copy naturally supplies three bodies by the commander turn.
+7,Black Market Connections,1,Draw,KEEP,,"Multipurpose engine: card advantage, Treasure acceleration, and a Changeling body; each mode supports setup rather than duplicating commander-only draw."
+8,Blasphemous Act,1,Removal,KEEP,,Usually one mana and asymmetrical in practice with an indestructible 10/4 commander; clears blockers while preserving Tresserhorn.
+9,Blood Artist,1,Drain,KEEP,,Two-mana life-neutralizing drain piece for Soultrader/Gravecrawler and other sacrifice loops.
+10,Blood Crypt,1,Land,KEEP,,Untapped-capable fetchable B/R source.
+11,Bloodghast,1,Recursion,KEEP,,Low-friction recurring sacrifice material that returns from normal land drops and does not consume mana repeatedly.
+12,Bloodstained Mire,1,Land,KEEP,,Untapped fetchland that finds all three typed dual/shock targets across the mana base.
+13,"Braids, Arisen Nightmare",1,Draw,KEEP,,Repeatable sacrifice outlet/value engine that turns a voluntary sacrifice into an additional Tresserhorn draw and pressures opponents.
+14,Carrion Feeder,1,Sac Outlet,KEEP,,"One-mana, zero-mana-activation sacrifice outlet; Zombie typing also supports Gravecrawler lines."
+15,Chandra's Ignition,1,Removal,KEEP,,Commander-specific board control/finisher: a 10-power indestructible Tresserhorn can sweep opposing creatures and deal 10 to each opponent while surviving the damage.
+16,Chaos Warp,1,Removal,KEEP,,Retained as flexible Grixis catch-all interaction for permanent types black/red removal cannot otherwise answer cleanly.
+17,Chasm Skulker,1,Tokens,KEEP,,Tresserhorn’s sacrifice-trigger draw rapidly grows it; sacrificing it then converts stored draws into a large token reserve.
+18,Chittering Witch,1,Tokens,KEEP,,"In a four-player game it supplies three Rats plus its own body, exactly the density needed for the commander ETB, and later functions as a sacrifice outlet/removal engine."
+19,Command Tower,1,Land,KEEP,,Untapped all-color commander fixing.
+20,Counterspell,1,Removal,CUT,Not of This World,UU is unnecessarily color-intensive; Not of This World gives zero-mana commander protection against targeted interaction once Tresserhorn is online.
+21,Dark Ritual,1,Ramp,KEEP,,One-mana burst acceleration materially advances a five-mana commander or a setup-plus-commander turn.
+22,Deadly Dispute,1,Draw,KEEP,,Sacrifice is an additional value source with Tresserhorn; two cards plus Treasure makes it superior to generic draw in this shell.
+23,Demonic Tutor,1,Tutor,KEEP,,"Existing universal tutor remains justified because the deck has multiple commander-native engines/loops and needs to assemble fodder, outlet, or payoff pieces rather than one generic combo only."
+24,Dictate of Erebos,1,Removal,CUT,Diabolic Intent,"Five-mana redundancy beside Grave Pact; the slot is more valuable as Diabolic Intent, which converts fodder into a commander draw plus any needed engine piece."
+25,Dragonskull Summit,1,Land,CUT,Badlands,Check-land dependency is unnecessary without a budget constraint; Badlands is fetchable and always untapped.
+26,Drowned Catacomb,1,Land,CUT,Underground Sea,Check-land dependency is unnecessary without a budget constraint; Underground Sea is fetchable and always untapped.
+27,"Endrek Sahr, Master Breeder",1,Tokens,KEEP,,"Casting the five-mana commander while Endrek is in play creates five Thrulls before the commander resolves, directly paying Tresserhorn’s three-creature ETB requirement."
+28,Exotic Orchard,1,Land,KEEP,,Usually untapped three-color fixing in multiplayer.
+29,Feed the Swarm,1,Removal,KEEP,,Retained over Withering Torment for the one-mana discount; enchantment interaction is scarce in Grixis and this slot must cover that axis.
+30,Fellwar Stone,1,Ramp,KEEP,,Two-mana multicolor acceleration is still necessary after replacing Izzet Signet with a creature-based cost reducer.
+31,Goblin Bombardment,1,Sac Outlet,KEEP,,Free sacrifice outlet that turns every sacrifice into direct damage while Tresserhorn supplies cards; deterministic kill outlet for recursive loops.
+32,Grave Pact,1,Removal,KEEP,,"The cheaper retained Grave-Pact effect; every voluntary sacrifice becomes table-wide creature pressure, while five-mana Dictate is cut as redundant."
+33,Gravecrawler,1,Recursion,KEEP,,"Primary recursive combo body. Tresserhorn itself is a Zombie, satisfying Gravecrawler’s cast-from-graveyard condition while the commander is in play."
+34,Grim Haruspex,1,Draw,CUT,"Yawgmoth, Thran Physician","Nontoken-only death draw is redundant with the commander. Yawgmoth is a free sacrifice outlet, removal engine and draw source in one slot."
+35,Infantry Shield,1,Tokens,KEEP,,Signature commander payoff: 10 power means mobilize 10; the Warriors later sacrifice themselves and each sacrifice becomes a draw trigger.
+36,Island,1,Land,KEEP,,Basic blue source retained for resilience to nonbasic hate and fetch/Path-style effects.
+37,Island,2,Land,KEEP,,Basic blue source retained for resilience to nonbasic hate and fetch/Path-style effects.
+38,Island,3,Land,KEEP,,Basic blue source retained for resilience to nonbasic hate and fetch/Path-style effects.
+39,Izzet Signet,1,Ramp,CUT,Nightscape Familiar,"The deck already has abundant two-mana rocks. Nightscape Familiar still accelerates the commander by reducing its generic cost, while also being a Zombie/body that can be sacrificed."
+40,"Jadar, Ghoulcaller of Nephalia",1,Tokens,KEEP,,Two-mana recurring Zombie fodder engine; especially efficient at rebuilding the three-body commander requirement.
+41,"Lagomos, Hand of Hatred",1,Tokens,KEEP,,"Generates a haste token each combat that self-sacrifices, turning into a Tresserhorn draw; five deaths can also unlock a tutor."
+42,Lightning Greaves,1,Protection,KEEP,,Zero-equip haste/shroud is essential for a five-mana commander whose 10 power makes immediate combat meaningful.
+43,"Liliana, Dreadhorde General",1,Draw,CUT,Weaponcraft Enthusiast,"Six mana is too slow for redundant death-draw. Weaponcraft Enthusiast produces three bodies for three mana, exactly solving the commander ETB requirement."
+44,Living Death,1,Recursion,KEEP,,Mass recursion plus sweeper that rewards the deck’s sacrifice/graveyard plan and can rebuild after committing bodies to Tresserhorn.
+45,Luxury Suite,1,Land,KEEP,,Untapped-capable B/R multiplayer dual.
+46,"Mahadi, Emporium Master",1,Ramp,KEEP,,"After sacrifice-heavy turns, converts deaths into end-step Treasures; the commander ETB alone can bank three Treasures if three bodies die."
+47,Marionette Apprentice,1,Drain,KEEP,,"Two-mana drain payoff that can fabricate a Servo, so it is both payoff and fodder; artifact-sacrifice coverage also rewards Treasures."
+48,Mayhem Devil,1,Removal,KEEP,,"Turns every sacrifice—including Treasures and opponent sacrifices—into flexible damage, functioning as both payoff and board control."
+49,Mogg War Marshal,1,Tokens,KEEP,,"Two mana can yield three bodies across ETB/death/echo, one of the best commander-setup cards available."
+50,Morphic Pool,1,Land,KEEP,,Untapped-capable U/B multiplayer dual.
+51,Mountain,1,Land,CUT,Kher Keep,"One basic red slot is converted to Kher Keep, which still taps for mana while repeatedly producing expendable Kobolds."
+52,Mountain,2,Land,KEEP,,Basic red source retained for resilience to nonbasic hate; one of four baseline copies is upgraded to Kher Keep.
+53,Mountain,3,Land,KEEP,,Basic red source retained for resilience to nonbasic hate; one of four baseline copies is upgraded to Kher Keep.
+54,Mountain,4,Land,KEEP,,Basic red source retained for resilience to nonbasic hate; one of four baseline copies is upgraded to Kher Keep.
+55,Ophiomancer,1,Tokens,KEEP,,Repeatable Snake production each upkeep cycle provides resilient sacrifice material and discourages attacks.
+56,Pawn of Ulamog,1,Ramp,CUT,Plumb the Forbidden,"Only nontoken creature deaths trigger it, which misses a large share of this token-heavy deck. Plumb the Forbidden turns any number of expendable bodies into immediate cards at instant speed and doubles up with commander draw."
+57,Phyrexian Altar,1,Ramp,KEEP,,Free sacrifice outlet plus colored mana; with Gravecrawler and Tresserhorn it forms the core recursive draw engine.
+58,Phyrexian Tower,1,Land,KEEP,,Untapped mana source that is also a sacrifice outlet and burst-ramp piece; virtually no opportunity cost in this shell.
+59,Pitiless Plunderer,1,Ramp,KEEP,,"Each creature death refunds a Treasure; with Gravecrawler plus a free sacrifice outlet, the Treasure pays for recasting and Tresserhorn draws through the loop."
+60,Polluted Delta,1,Land,KEEP,,Untapped fetchland with broad U/B/R typed-land access.
+61,Psychosis Crawler,1,Burn,CUT,My Precious // Allure of Power,Five-mana draw payoff is slow and commander-independent. My Precious // Allure of Power is both a sacrifice-draw spell and later hexproof/unblockable protection/evasion for the 10-power commander.
+62,Reanimate,1,Recursion,KEEP,,One-mana recursion is too efficient to cut; restores a key engine creature after sacrifice or interaction.
+63,Reassembling Skeleton,1,Recursion,CUT,Vampiric Tutor,Two mana per recursion loop is inefficient compared with Gravecrawler/Bloodghast. Vampiric Tutor improves access to the deck’s commander-native engines and answers at one mana.
+64,Scalding Tarn,1,Land,KEEP,,Untapped fetchland with broad U/R/B typed-land access.
+65,"Sephiroth, Fabled SOLDIER // Sephiroth, One-Winged Angel",1,Drain,KEEP,,Commander-aligned sacrifice/drain engine that transforms after repeated deaths and can produce a persistent death-drain emblem.
+66,Shipwreck Marsh,1,Land,CUT,High Market,Can enter tapped early when setup tempo matters; High Market adds a free sacrifice outlet with minimal mana-base cost.
+67,Skullclamp,1,Draw,KEEP,,"Token and recursive-creature engine; despite commander draw redundancy, one mana to convert small fodder into two cards is still rate-efficient and works before Tresserhorn resolves."
+68,Sol Ring,1,Ramp,KEEP,,Best generic acceleration for a five-mana commander and expensive setup pieces; no identity cost beyond one slot.
+69,Steam Vents,1,Land,KEEP,,Untapped-capable fetchable U/R source.
+70,Stormcarved Coast,1,Land,CUT,"Shizo, Death's Storehouse","Can enter tapped late, exactly when commander/combo turns matter; Shizo is untapped black mana plus commander evasion."
+71,Sulfur Falls,1,Land,CUT,Volcanic Island,Check-land dependency is unnecessary without a budget constraint; Volcanic Island is fetchable and always untapped.
+72,Sulfurous Springs,1,Land,KEEP,,Untapped painland with two commander colors.
+73,Swamp,1,Land,CUT,Cavern of Souls,"Two basic black slots can carry more utility without compromising color density: Cavern of Souls protects the Zombie commander from counters, and Boggart Trawler is graveyard hate with a black land back face."
+74,Swamp,2,Land,CUT,Boggart Trawler // Boggart Bog,"Two basic black slots can carry more utility without compromising color density: Cavern of Souls protects the Zombie commander from counters, and Boggart Trawler is graveyard hate with a black land back face."
+75,Swamp,3,Land,KEEP,,Basic black source retained for resilience to nonbasic hate and Urborg synergy; two of six copies are upgraded to utility/fixing slots.
+76,Swamp,4,Land,KEEP,,Basic black source retained for resilience to nonbasic hate and Urborg synergy; two of six copies are upgraded to utility/fixing slots.
+77,Swamp,5,Land,KEEP,,Basic black source retained for resilience to nonbasic hate and Urborg synergy; two of six copies are upgraded to utility/fixing slots.
+78,Swamp,6,Land,KEEP,,Basic black source retained for resilience to nonbasic hate and Urborg synergy; two of six copies are upgraded to utility/fixing slots.
+79,Swan Song,1,Removal,KEEP,,"One-mana protection/interaction covering many sweepers, removal and combo spells; retained as the unconditional cheap stack piece."
+80,"Syr Konrad, the Grim",1,Drain,CUT,Bastion of Remembrance,"Powerful but five mana and redundant in a deck already dense with death/sacrifice payoffs. Bastion of Remembrance costs three, supplies a sacrifice body immediately, and provides life-neutralizing each-opponent drain."
+81,Talisman of Creativity,1,Ramp,KEEP,,Two-mana untapped fixing toward U/R while advancing the commander turn.
+82,Talisman of Dominance,1,Ramp,KEEP,,Two-mana untapped fixing toward U/B while advancing the commander turn.
+83,Talisman of Indulgence,1,Ramp,KEEP,,Two-mana untapped fixing toward B/R while advancing the commander turn.
+84,Tempt with Vengeance,1,Tokens,KEEP,,Scalable one-card source of sacrifice bodies; X=3 already fully pays the commander ETB body requirement and larger X creates explosive sacrifice turns.
+85,The Locust God,1,Tokens,KEEP,,"Commander-native combo engine: once a sacrifice causes a draw, each draw creates the next Insect, allowing a free sacrifice outlet to repeat the cycle."
+86,Toxic Deluge,1,Removal,CUT,Blasphemous Edict,"Efficient but generic and can kill the indestructible 10/4 through -X/-X. Blasphemous Edict is sacrifice-based, bypasses opposing indestructible, often costs B in multiplayer, and turns your own chosen sacrifices into Tresserhorn draws."
+87,Training Center,1,Land,KEEP,,Untapped-capable U/R multiplayer dual.
+88,Underground River,1,Land,KEEP,,Untapped painland with U/B fixing.
+89,"Urborg, Tomb of Yawgmoth",1,Land,KEEP,,Improves black production across utility/colorless lands without consuming a spell slot.
+90,Victimize,1,Recursion,KEEP,,Sacrifices one creature as part of resolution and returns two creatures; high card/tempo efficiency in a deck built to profit from both halves.
+91,Village Rites,1,Draw,KEEP,,One-mana sacrifice draw that becomes an additional Tresserhorn trigger when the commander is active; efficient enough to coexist with commander draw.
+92,Viscera Seer,1,Sac Outlet,KEEP,,One-mana free sacrifice outlet with selection; survives competition with Umbral Collar Zealot because it costs one less to deploy.
+93,Wand of Orcus,1,Tokens,KEEP,,A 10-power trampler with deathtouch assigns minimal lethal damage to blockers and can create a large Zombie army from player damage.
+94,Warren Soultrader,1,Sac Outlet,KEEP,,Free sacrifice outlet in mana terms that creates Treasures; with a life-gaining drain payoff it makes Gravecrawler loops self-sustaining.
+95,Watery Grave,1,Land,KEEP,,Untapped-capable fetchable U/B source.
+96,"Wilhelt, the Rotcleaver",1,Draw,KEEP,,Converts nontoken Zombie deaths into replacement Zombie bodies and offers a backup end-step sacrifice; strong with Gravecrawler and commander’s Zombie type.
+97,Woe Strider,1,Sac Outlet,KEEP,,Sacrifice outlet plus two bodies across creature/Goat and an escape recursion mode; retained over cheaper bare outlets because it helps satisfy the commander ETB body count.
+98,Xander's Lounge,1,Land,KEEP,,Fetchable tri-land fixes all three colors; entering tapped is acceptable for one slot because it materially improves three-color source density.
+99,Zulaport Cutthroat,1,Drain,KEEP,,Two-mana each-opponent drain plus life gain; deterministic payoff and life-neutralizer for recursive sacrifice loops.
