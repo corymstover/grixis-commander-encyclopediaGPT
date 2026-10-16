@@ -1,4 +1,4 @@
-name: Build Archidekt export package v2
+name: Build Archidekt export package v3
 
 on:
   push:
