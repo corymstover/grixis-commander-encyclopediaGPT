@@ -1,0 +1,100 @@
+noncommander_slot,card_name,copy_index,baseline_role,decision,replacement_if_cut,audit_rationale
+1,Arcane Adaptation,1,Tokens,KEEP,,"Core type-changing engine: choosing Rat makes the Snail also a Rat, so Rat-entry triggers plus a free sacrifice outlet can loop through Wick while the token remains a Snail."
+2,Arcane Signet,1,Ramp,KEEP,,Two-mana unconditional Grixis fixing is important because Wick's activated ability requires one mana of each of U/B/R.
+3,Ashcoat of the Shadow Swarm,1,Recursion,KEEP,,High-impact Rat recursion and scaling payoff that restores Rat material while keeping the deck Rat-centric.
+4,Ashnod's Altar,1,Ramp,KEEP,,Core zero-mana sacrifice outlet; with a Rat type-changer it supports infinite Snail ETB/death loops and produces colorless mana.
+5,Black Market Connections,1,Draw,KEEP,,"Flexible draw, Treasure fixing, and Changeling production; all three modes address Wick setup without requiring the commander."
+6,Blasphemous Act,1,Removal,KEEP,,Efficient sweeper that also synergizes with Tangled Colony by loading damage before its death trigger and can fuel death-based payoffs.
+7,Blightstep Pathway // Searstep Pathway,1,Land,KEEP,,Untapped modal B/R source; both colors are needed for Wick's activated ability.
+8,Blood Artist,1,Drain,CUT,Intruder Alarm,Target-one drain is the weakest redundant aristocrats payoff; Intruder Alarm adds a deterministic Marrow-Gnawer Rat-token engine and more commander-native combo density.
+9,Blood Crypt,1,Land,KEEP,,Fetchable untapped-capable B/R source for Wick casting and activation.
+10,Bloodstained Mire,1,Land,KEEP,,Untapped fetchland that accesses multiple typed dual/shock/triome colors.
+11,Bojuka Bog,1,Land,CUT,Boggart Trawler // Boggart Bog,Trawler preserves graveyard hate while the back face can function as an untapped black source for 3 life instead of always entering tapped.
+12,Carrion Feeder,1,Sac Outlet,KEEP,,One-mana free sacrifice outlet and creature body; directly supports type-changer Snail loops.
+13,Chaos Warp,1,Removal,KEEP,,Flexible Grixis answer to permanent types the colors otherwise struggle to remove.
+14,Chittering Witch,1,Tokens,KEEP,,Creates multiple Rat bodies and supplies a sacrifice/removal ability; both halves feed Wick's trigger pattern.
+15,Clearwater Pathway // Murkwater Pathway,1,Land,KEEP,,Untapped modal U/B source; both colors matter for Wick's activation and interaction.
+16,Command Tower,1,Land,KEEP,,Best unconditional untapped three-color source in the commander identity.
+17,Counterspell,1,Removal,CUT,Mana Drain,"Same {U}{U} interaction slot, but Mana Drain retains unconditional coverage while converting the countered spell's mana value into next-main-phase acceleration."
+18,Cyclonic Rift,1,Removal,KEEP,,Premium asymmetrical interaction; protects combo turns or clears the board without consuming Rat/Snail infrastructure.
+19,Dark Ritual,1,Ramp,KEEP,,"Efficient burst acceleration for Wick, type-changer setup, or a multi-piece combo turn."
+20,Deadly Rollick,1,Removal,KEEP,,Free creature interaction while Wick is present preserves mana for the U/B/R activation and protection.
+21,Deflecting Swat,1,Protection,KEEP,,Free protection/stack interaction with the commander in play; unusually valuable on all-in Snail activation turns.
+22,Demonic Tutor,1,Tutor,KEEP,,"Universal tutor efficiently locates whichever component—Rat engine, type changer, sacrifice outlet, or finisher—is missing."
+23,Dimir Signet,1,Ramp,CUT,Altar of Dementia,The list remains adequately ramped after the cut; Altar is a free sacrifice outlet and gives the type-changing Wick package a deterministic mill outlet.
+24,Dragonskull Summit,1,Land,CUT,Badlands,No-budget mana-base upgrade: fetchable B/R typed dual with no check-land condition.
+25,Drowned Catacomb,1,Land,CUT,Underground Sea,No-budget mana-base upgrade: fetchable U/B typed dual with no check-land condition.
+26,"Endrek Sahr, Master Breeder",1,Tokens,CUT,"Rat King, Verminister","Five-mana Thrull production only becomes Wick-relevant through a type changer; Verminister is a two-mana Rat, naturally triggers Wick, makes more Rats, and supplies Rat-based recursion."
+27,Exotic Orchard,1,Land,KEEP,,Usually untapped three-color fixing in multiplayer and directly supports U/B/R activation costs.
+28,Fabled Passage,1,Land,CUT,Marsh Flats,Marsh Flats immediately fetches Swamp-typed duals/shocks/triome without Fabled Passage's early tapped basic restriction.
+29,Feed the Swarm,1,Removal,KEEP,,Necessary black enchantment interaction plus creature removal; covers an otherwise weak axis.
+30,Fellwar Stone,1,Ramp,KEEP,,Two-mana acceleration/fixing remains efficient enough after trimming the Signets.
+31,Fierce Guardianship,1,Removal,KEEP,,Free noncreature stack protection when Wick is present; protects deterministic commander-native lines.
+32,Goblin Bombardment,1,Sac Outlet,KEEP,,Free sacrifice outlet and deterministic damage payoff for Arcane Adaptation/Leyline/Maskwood Snail loops.
+33,Haunted Ridge,1,Land,KEEP,,Untapped-capable B/R dual; black/red source density remains important after utility-land upgrades.
+34,High Market,1,Land,CUT,Phyrexian Tower,"Both are sacrifice lands, but Tower converts the sacrificed creature into {B}{B}, materially increasing combo-turn efficiency."
+35,Impact Tremors,1,Burn,KEEP,,Low-cost payoff that converts repeated Rat/Snail token entries from type-changing loops into table-wide damage.
+36,Island,1,Land,KEEP,,Basic blue source retained to preserve resilience against nonbasic hate and provide unrestricted blue for Wick's activation.
+37,Island,2,Land,KEEP,,Basic blue source retained to preserve resilience against nonbasic hate and provide unrestricted blue for Wick's activation.
+38,Jeska's Will,1,Ramp,KEEP,,High-ceiling red ritual/card-advantage spell that enables multi-piece optimized turns without requiring a generic cEDH shell.
+39,"Karumonix, the Rat King",1,Draw,KEEP,,A Rat that digs for more Rats and supplies toxic pressure; its entry naturally advances Wick's Snail.
+40,Kindred Discovery,1,Draw,CUT,Lich's Relic,Five-mana tribal draw is redundant with Wick's scalable draw engine; Lich's Relic is a one-mana Equipment that can remove a creature/planeswalker from each opponent and adds +2/+1 to the Snail before sacrifice.
+41,Leyline of Transformation,1,Anthem,KEEP,,"Redundant type-changing engine that adds Rat to all creatures, enabling Wick/Snail sacrifice loops while retaining Snail type."
+42,"Lord Skitter, Sewer King",1,Tokens,KEEP,,Three-mana Rat that produces repeatable Rat tokens and graveyard disruption; high-value natural Wick trigger density.
+43,Lord Skitter's Butcher,1,Tokens,KEEP,,Rat-tribal utility with token production/sacrifice flexibility; provides bodies and death synergies at an acceptable rate.
+44,Luxury Suite,1,Land,KEEP,,Usually untapped B/R multiplayer dual supporting commander and activation colors.
+45,Marrow-Gnawer,1,Tokens,KEEP,,Premier Rat engine; with Intruder Alarm and enough Rats it deterministically produces arbitrarily many Rat tokens while repeatedly untapping.
+46,Maskwood Nexus,1,Tokens,KEEP,,Type-changing redundancy plus token production; makes all creature cards/permanents Rats while preserving their existing types.
+47,Mirkwood Bats,1,Drain,KEEP,,"Every token creation or token sacrifice drains each opponent, making it a deterministic payoff for Wick's token-loop infrastructure."
+48,Morphic Pool,1,Land,KEEP,,Usually untapped U/B multiplayer dual supporting commander activation and interaction.
+49,Mountain,1,Land,CUT,Swarmyard,One basic red slot becomes an untapped utility land that can regenerate Wick and other Rats while retaining a mana function.
+50,Mountain,2,Land,KEEP,,One basic Mountain is retained for unconditional red production and resilience to nonbasic hate; the other becomes Swarmyard.
+51,Mudflat Village,1,Land,KEEP,,Black creature-casting source plus late-game Rat recursion; unusually on-plan utility land.
+52,Nadier's Nightblade,1,Drain,CUT,Tainted Strike,"Nightblade is another overlapping drain payoff; Tainted Strike on Wick turns Wick's noncombat damage into infect, allowing a 10-power Snail activation to give each opponent 10 poison counters."
+53,Ogre Slumlord,1,Tokens,CUT,Blade of the Bloodchief,Five-mana conditional Rat production loses to a one-mana/equip-one counter engine; Blade turns every creature death at the table into permanent Snail power.
+54,"Otawara, Soaring City",1,Land,KEEP,,Untapped blue source with channel interaction that is difficult to counter and costs no spell slot.
+55,Pack Rat,1,Discard,KEEP,,Repeatable Rat production and discard outlet; every copy entering advances Wick and scales the Rat board.
+56,Path of Ancestry,1,Land,CUT,Mana Confluence,Wick's activated ability specifically needs U/B/R; unconditional untapped any-color production is more valuable than a tapped tribal scry land.
+57,Persistent Marshstalker,1,Recursion,KEEP,,Low-cost Rat with graveyard recursion through Rat attacks; repeatable Rat entry is more useful than one-shot generic recursion.
+58,Phyrexian Altar,1,Ramp,KEEP,,Core free sacrifice outlet; with a Rat type-changer it makes infinite colored mana through repeated Snail creation and can pivot to Wick's lethal activation.
+59,Piper of the Swarm,1,Tokens,KEEP,,Cheap Rat plus repeatable Rat-token production and a relevant theft payoff; naturally triggers Wick.
+60,Pitiless Plunderer,1,Ramp,KEEP,,Turns creature deaths into colored-fixing Treasures and supports sacrifice-combo resource loops.
+61,Plague of Vermin,1,Tokens,CUT,Song of Totentanz,"Seven mana and symmetrical life-buying are too slow/risky; Song scales from {X}{R}, creates only your Rats, and gives your creatures haste, producing the same Wick Rat-entry growth at dramatically better rate."
+62,Plumb the Forbidden,1,Draw,KEEP,,Instant-speed mass-sacrifice/card engine; converts expendable Rats into cards and protects value from sweepers.
+63,Polluted Delta,1,Land,KEEP,,Untapped fetchland with broad U/B/R typed-land access.
+64,Rakdos Signet,1,Ramp,CUT,Diabolic Intent,"The deck can surrender one two-mana rock; Intent turns expendable Rats/Snails into the exact type-changer, outlet, payoff, or protection piece required."
+65,"Rat King, Pale Piper",1,Tokens,KEEP,,Natural Rat entry plus repeated Rat production when nontoken creatures leave; token-sacrifice draw is additional infrastructure.
+66,Redcap Gutter-Dweller,1,Tokens,KEEP,,Creates two Rat tokens on ETB and later converts spare bodies into counters and impulse cards; three relevant bodies/effects in one slot.
+67,Reflections of Littjara,1,Copy,CUT,The Ozolith,Five mana to copy cast tribal spells is slow and misses tokens; The Ozolith costs one and preserves the Snail's accumulated +1/+1 counters after it is sacrificed.
+68,Riverglide Pathway // Lavaglide Pathway,1,Land,KEEP,,Untapped modal U/R source for Wick activation and interaction.
+69,Roaming Throne,1,Copy,KEEP,,"Choose Rat: the Throne itself enters as a Rat and doubles triggered abilities of other Rats, including Wick's Rat-entry trigger, while ward improves resilience."
+70,Scalding Tarn,1,Land,KEEP,,Untapped fetchland with broad U/R/B typed-land access.
+71,Shared Animosity,1,Anthem,CUT,Bulk Up,Combat-wide Rat pump is secondary to Wick's signature Snail sacrifice; Bulk Up directly doubles Snail power before Wick's activation and can be flashed back.
+72,Shipwreck Marsh,1,Land,KEEP,,Untapped-capable U/B source retained after the mana-base upgrade because colored activation density is more important than another colorless utility land.
+73,Shivan Reef,1,Land,KEEP,,Untapped U/R painland; unrestricted colored mana can pay Wick's U/B/R activation unlike Cavern's tribal mana.
+74,Skullclamp,1,Draw,KEEP,,Exceptional low-cost draw with 1/1 Rat tokens and remains functional before Wick is established.
+75,Sling-Gang Lieutenant,1,Tokens,CUT,Voracious Vermin,"Four mana for Goblins and a Goblin-only outlet is less native; Voracious Vermin is a Rat and creates another Rat, producing two Wick Rat-entry triggers for three mana."
+76,"Sokenzan, Crucible of Defiance",1,Land,KEEP,,Untapped red source whose channel mode creates sacrifice/pressure bodies at low opportunity cost.
+77,Sol Ring,1,Ramp,KEEP,,Best legal generic acceleration into a four-mana commander and expensive engine turns.
+78,Steam Vents,1,Land,KEEP,,Fetchable untapped-capable U/R source.
+79,Stormcarved Coast,1,Land,KEEP,,Untapped-capable U/R source retained to keep activation-color density high after adding several utility lands.
+80,Sulfur Falls,1,Land,CUT,Volcanic Island,No-budget mana-base upgrade: fetchable U/R typed dual with no check-land condition.
+81,Sulfurous Springs,1,Land,KEEP,,Untapped B/R painland with unrestricted activation colors.
+82,Swamp,1,Land,CUT,Cavern of Souls,One basic black slot becomes Rat-tribal cast protection/fixing; Cavern makes Wick and other Rat creature spells of the chosen type uncounterable.
+83,Swamp,2,Land,KEEP,,One basic Swamp is retained for unconditional black production and resilience to nonbasic hate; the other becomes Cavern of Souls.
+84,Swan Song,1,Removal,KEEP,,"One-mana protection against many sweepers, removal spells, and combo pieces; essential efficiency for setup turns."
+85,Talisman of Creativity,1,Ramp,KEEP,,Two-mana untapped U/R fixing; pays two distinct Wick activation colors.
+86,Talisman of Dominance,1,Ramp,KEEP,,Two-mana untapped U/B fixing; pays two distinct Wick activation colors.
+87,Talisman of Indulgence,1,Ramp,KEEP,,Two-mana untapped B/R fixing; pays two distinct Wick activation colors.
+88,Terminate,1,Removal,CUT,An Offer You Can't Refuse,Creature removal remains deep; replacing the two-mana creature-only answer with a one-mana noncreature counter improves protection of the commander-native combo turns.
+89,"Totentanz, Swarm Piper",1,Tokens,KEEP,,Natural Rat that rewards creature deaths with Rat tokens and supplies additional sacrifice pressure; multiple Wick-relevant axes.
+90,Toxic Deluge,1,Removal,KEEP,,Three-mana scalable sweeper remains the fastest reset despite not being commander-specific; necessary defensive efficiency.
+91,Training Center,1,Land,KEEP,,Usually untapped U/R multiplayer dual.
+92,Valley Rotcaller,1,Drain,KEEP,,Rat-specific attack payoff that drains each opponent and gains life; natural tribal finisher rather than generic aristocrats redundancy.
+93,Vampiric Tutor,1,Tutor,KEEP,,One-mana universal tutor maximizes access to compact commander-native engines.
+94,Viscera Seer,1,Sac Outlet,KEEP,,One-mana free sacrifice outlet with card selection; key redundancy for type-changer Snail loops.
+95,"Vren, the Relentless",1,Tokens,KEEP,,Rat-specific exile/replacement engine that can generate a large Rat army from opposing deaths while advancing Wick.
+96,Watery Grave,1,Land,KEEP,,Fetchable untapped-capable U/B source.
+97,Wave of Rats,1,Draw,CUT,Tangled Colony,"Wave is a four-mana combat-conditional recursion body; Tangled Colony is a two-mana Rat whose death can create a burst of Rat entries, especially after damage-based sweepers."
+98,Xander's Lounge,1,Land,KEEP,,Fetchable tri-land fixes all Wick colors; one tapped tri-land is justified by three-color activation demands.
+99,Zulaport Cutthroat,1,Drain,KEEP,,Two-mana each-opponent drain payoff that turns repeated sacrifice loops into deterministic table kills.
