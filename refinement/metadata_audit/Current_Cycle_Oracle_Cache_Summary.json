@@ -1,12 +1,12 @@
 {
-  "generated_at_utc": "2026-10-15T23:43:12.812772+00:00",
-  "overlay_generated_at_utc": "2026-10-15T22:40:08.693808+00:00",
+  "generated_at_utc": "2026-10-16T01:56:14.069907+00:00",
+  "overlay_generated_at_utc": "2026-10-16T01:56:13.745589+00:00",
   "bulk_updated_at": "2026-10-15T21:05:43.886+00:00",
-  "decklist_file_count": 132,
-  "distinct_names_requested": 1513,
-  "records_written": 1571,
-  "overlay_hits": 1309,
-  "live_named_exact_lookups": 204,
+  "decklist_file_count": 143,
+  "distinct_names_requested": 1604,
+  "records_written": 1604,
+  "overlay_hits": 1386,
+  "live_named_exact_lookups": 218,
   "exception_names_included": [
     "Dragon's Smile",
     "Lutri, the Spellchaser",
@@ -19,121 +19,7 @@
   "malformed_decklist_lines": [],
   "ambiguous_overlay_entries_rechecked_live": [],
   "unresolved": [],
-  "cache_sha256": "01d4749e1d97f0f89efc073dbd911850b78fd15a797b2f07196e407c910ce41e",
+  "cache_sha256": "78fe27beefa1c0229c5fea4ff60cbee10c387aaaf8537717406ed3b80afcf769",
   "overall_result": "PASS",
-  "design_note": "Preferred verification cache for chat/container runs. Direct Scryfall access from chat is not required when this cache is fresh and complete.",
-  "targeted_candidate_refresh": {
-    "deck": "The Rani",
-    "candidate_path": "refinement/decklists/The_Rani_Approval_Ready_2026-10-15.txt",
-    "records_refreshed_live": [
-      {
-        "name": "The Rani",
-        "commander_legality": "legal"
-      },
-      {
-        "name": "The Master, Mesmerist",
-        "commander_legality": "legal"
-      },
-      {
-        "name": "Thassa, Deep-Dwelling",
-        "commander_legality": "legal"
-      },
-      {
-        "name": "Force of Will",
-        "commander_legality": "legal"
-      },
-      {
-        "name": "Incriminating Impetus",
-        "commander_legality": "legal"
-      },
-      {
-        "name": "Baeloth Barrityl, Entertainer",
-        "commander_legality": "legal"
-      },
-      {
-        "name": "City of Brass",
-        "commander_legality": "legal"
-      },
-      {
-        "name": "Mana Confluence",
-        "commander_legality": "legal"
-      },
-      {
-        "name": "Flooded Strand",
-        "commander_legality": "legal"
-      }
-    ],
-    "previously_missing_candidate_records_resolved_live": [
-      {
-        "name": "Coercive Impetus",
-        "commander_legality": "legal"
-      },
-      {
-        "name": "Death Kiss",
-        "commander_legality": "legal"
-      },
-      {
-        "name": "Erdwal Illuminator",
-        "commander_legality": "legal"
-      },
-      {
-        "name": "Eye of Nidhogg",
-        "commander_legality": "legal"
-      },
-      {
-        "name": "Five Hundred Year Diary",
-        "commander_legality": "legal"
-      },
-      {
-        "name": "Ghoulish Impetus",
-        "commander_legality": "legal"
-      },
-      {
-        "name": "Hateful Eidolon",
-        "commander_legality": "legal"
-      },
-      {
-        "name": "Hot Pursuit",
-        "commander_legality": "legal"
-      },
-      {
-        "name": "Inspiring Statuary",
-        "commander_legality": "legal"
-      },
-      {
-        "name": "Maestros Confluence",
-        "commander_legality": "legal"
-      },
-      {
-        "name": "Mocking Doppelganger",
-        "commander_legality": "legal"
-      },
-      {
-        "name": "Psychic Impetus",
-        "commander_legality": "legal"
-      },
-      {
-        "name": "Puppet Master, String Puller",
-        "commander_legality": "legal"
-      },
-      {
-        "name": "Slicer, Hired Muscle // Slicer, High-Speed Antagonist",
-        "commander_legality": "legal"
-      },
-      {
-        "name": "Spectacular Showdown",
-        "commander_legality": "legal"
-      },
-      {
-        "name": "Tangletrove Kelp",
-        "commander_legality": "legal"
-      },
-      {
-        "name": "The Sound of Drums",
-        "commander_legality": "legal"
-      }
-    ],
-    "prior_cache_age_hours": 0.275,
-    "method": "reuse clean same-day cache; exact live Scryfall refresh for commander/material targets; exact live lookup for any candidate name absent from prior cache"
-  }
+  "design_note": "Preferred verification cache for chat/container runs. Direct Scryfall access from chat is not required when this cache is fresh and complete."
 }
