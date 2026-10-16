@@ -1,4 +1,4 @@
-name: Build Archidekt export package v3
+name: Build final Archidekt export package
 
 on:
   push:
@@ -20,7 +20,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Build verified 62-deck Archidekt package
-        run: python scripts/build_archidekt_export_package.py
+        run: python scripts/build_archidekt_export_package_final.py
       - name: Commit export package
         shell: bash
         run: |
