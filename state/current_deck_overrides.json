@@ -869,6 +869,21 @@
       "decision_closeout_artifact": "refinement/decisions/Wick_the_Whorled_Mind_Candidate_Decisions_2026-10-15.md",
       "approval_record_artifact": "refinement/approvals/Wick_the_Whorled_Mind_Approved_2026-10-15.md",
       "approved_list_artifact": "refinement/decklists/Wick_the_Whorled_Mind_Approved_2026-10-15.txt"
+    },
+    "Zevlor__Elturel_Exile": {
+      "approval_status": "APPROVED",
+      "lock_status": "LOCKED",
+      "final_gate_passed": true,
+      "user_approval_date": "2026-10-15",
+      "current_stage": "LOCKED",
+      "approved_list_sha256": "d2ea6ed8e42ec512b6a6ae7162da8c17b26494b45a9ff6d0c38882c202a42dc9",
+      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit",
+      "approval_basis": "Explicit user approval of the exact SHA-bound Zevlor, Elturel Exile approval-ready candidate after authoritative FINAL2 baseline reconciliation, mandatory 99-slot whole-list audit, commander-first targeted-spell/copy/theft-control review, correction to Zevlor's current Oracle single-target restriction, activation/untap sequencing verification, candidate exhaustion, adversarial Oracle/rules/combo and mana-base red-team, zero-new-material-improvement closure, exact structural verification, singleton/color-identity verification, and current official Commander legality verification.",
+      "whole_list_audit_artifact": "refinement/decisions/Zevlor_Elturel_Exile_Whole_List_Audit_2026-10-15.csv",
+      "verification_artifact": "refinement/verification/Zevlor_Elturel_Exile_Approval_Ready_Verification_2026-10-15.md",
+      "decision_closeout_artifact": "refinement/decisions/Zevlor_Elturel_Exile_Candidate_Decisions_2026-10-15.md",
+      "approval_record_artifact": "refinement/approvals/Zevlor_Elturel_Exile_Approved_2026-10-15.md",
+      "approved_list_artifact": "refinement/decklists/Zevlor_Elturel_Exile_Approved_2026-10-15.txt"
     }
   }
 }
