@@ -4,7 +4,7 @@ Date: 2026-10-15
 Cycle: `global-restart-2026-10-13`  
 Candidate SHA-256: `4bef619a33d85eafaf194997924fc8378dd490f62c59d76bafccc4fa07ef821c`
 
-Status: **APPROVAL_READY — NOT APPROVED / NOT LOCKED**
+Status: **APPROVED / LOCKED** — explicit user approval received 2026-10-15
 
 ## Commander-first blueprint
 
@@ -87,4 +87,11 @@ Natural ceiling: **Power Bracket 4 — Optimized**.
 
 Proposed Archidekt tags: **Villainous Choice / Voting / Political Control**.
 
-The exact candidate remains unlocked until explicit user approval of SHA-256 `4bef619a33d85eafaf194997924fc8378dd490f62c59d76bafccc4fa07ef821c`.
+## Approval closeout
+
+- Explicit user approval received: **2026-10-15**
+- Canonical approved SHA-256: `4bef619a33d85eafaf194997924fc8378dd490f62c59d76bafccc4fa07ef821c`
+- Exact approved artifact: `refinement/decklists/The_Valeyard_Approved_2026-10-15.txt`
+- Current-cycle state: **APPROVED / LOCKED**
+- Project exceptions: **none**
+- Next unlocked: **Thraximundar (index 58 / deck 59 of 62)**.
