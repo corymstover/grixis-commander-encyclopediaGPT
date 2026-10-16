@@ -796,6 +796,20 @@
       "decision_closeout_artifact": "refinement/decisions/The_Madcap_Jester_Candidate_Decisions_2026-10-15.md",
       "approval_record_artifact": "refinement/approvals/The_Madcap_Jester_Approved_2026-10-15.md",
       "approved_list_artifact": "refinement/decklists/The_Madcap_Jester_Approved_2026-10-15.txt"
+    },
+    "The_Valeyard": {
+      "approval_status": "APPROVED",
+      "lock_status": "LOCKED",
+      "final_gate_passed": true,
+      "user_approval_date": "2026-10-15",
+      "current_stage": "LOCKED",
+      "approved_list_sha256": "4bef619a33d85eafaf194997924fc8378dd490f62c59d76bafccc4fa07ef821c",
+      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + targeted approval-ready verification",
+      "approval_basis": "Explicit user approval of the exact SHA-bound The Valeyard approval-ready candidate after authoritative FINAL baseline reconciliation, mandatory 99-slot whole-list audit, commander-first Villainous Choice/voting review, candidate exhaustion, adversarial red-team review, mana-base review, current Oracle/color-identity verification, current official Commander legality verification, rules-interaction verification, exact structural verification, singleton verification, and zero-new-material-improvement closure.",
+      "verification_artifact": "refinement/verification/The_Valeyard_Approval_Ready_Verification_2026-10-15.md",
+      "decision_closeout_artifact": "refinement/decisions/The_Valeyard_Candidate_Decisions_2026-10-15.md",
+      "approval_record_artifact": "refinement/approvals/The_Valeyard_Approved_2026-10-15.md",
+      "approved_list_artifact": "refinement/decklists/The_Valeyard_Approved_2026-10-15.txt"
     }
   }
 }
