@@ -810,6 +810,20 @@
       "decision_closeout_artifact": "refinement/decisions/The_Valeyard_Candidate_Decisions_2026-10-15.md",
       "approval_record_artifact": "refinement/approvals/The_Valeyard_Approved_2026-10-15.md",
       "approved_list_artifact": "refinement/decklists/The_Valeyard_Approved_2026-10-15.txt"
+    },
+    "The_Rani": {
+      "approval_status": "APPROVED",
+      "lock_status": "LOCKED",
+      "final_gate_passed": true,
+      "user_approval_date": "2026-10-15",
+      "current_stage": "LOCKED",
+      "approved_list_sha256": "7220937ed5817b4ef9cacd2463a3434b98ae58690ffa1d7ef440881ba97d729c",
+      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + targeted approval-ready verification",
+      "approval_basis": "Explicit user approval of the exact SHA-bound The Rani approval-ready candidate after authoritative FINAL baseline reconciliation, mandatory 99-slot whole-list audit, commander-first goad/Clue/forced-combat review, candidate exhaustion, adversarial red-team review, mana-base review, fresh Oracle/color-identity verification, current official Commander legality verification, rules-interaction verification, exact structural verification, singleton verification, and zero-new-material-improvement closure.",
+      "verification_artifact": "refinement/verification/The_Rani_Approval_Ready_Verification_2026-10-15.md",
+      "decision_closeout_artifact": "refinement/decisions/The_Rani_Candidate_Decisions_2026-10-15.md",
+      "approval_record_artifact": "refinement/approvals/The_Rani_Approved_2026-10-15.md",
+      "approved_list_artifact": "refinement/decklists/The_Rani_Approved_2026-10-15.txt"
     }
   }
 }
