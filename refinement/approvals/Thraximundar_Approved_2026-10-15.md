@@ -7,6 +7,7 @@ Cycle: `global-restart-2026-10-13`
 
 - Status: **APPROVED / LOCKED**
 - Explicit user approval received: **2026-10-15**
+- GitHub connector persistence check: **PASS — confirmed 2026-10-15**
 - Canonical approved SHA-256: `d4fa3421752a4d666528c5218aa18b240465c817dd160642c103b2de8c3f9442`
 - Exact approved artifact: `refinement/decklists/Thraximundar_Approved_2026-10-15.txt`
 - Verification artifact: `refinement/verification/Thraximundar_Approval_Ready_Verification_v2_2026-10-15.md`
