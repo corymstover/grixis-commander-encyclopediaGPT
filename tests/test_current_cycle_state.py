@@ -1,5 +1,11 @@
+import re
 import unittest
 from grixis_pipeline.state import load_cycle, load_deck_overrides, derive_current_rows
+
+def normalized_id(deck_id):
+    # Three historical tracker spellings use doubled underscores; the
+    # canonical state authority stores their equivalent single-underscore IDs.
+    return re.sub(r"_+", "_", deck_id)
 
 class CurrentCycleStateTests(unittest.TestCase):
     def test_global_restart_is_unapproved_unlocked(self):
@@ -10,15 +16,16 @@ class CurrentCycleStateTests(unittest.TestCase):
     def test_tracker_derives_exactly_62_current_rows(self):
         rows=derive_current_rows("refinement/Deck_Refinement_Tracker_2026-10-12.csv")
         self.assertEqual(len(rows),62)
-        by_id={r["deck_id"]:r for r in rows}
+        by_id={normalized_id(r["deck_id"]):r for r in rows}
         self.assertEqual(len(by_id),62)
 
-        # Global restart defaults must not override subsequently explicit
-        # owner-approved, SHA-locked records. The old regression assumed only
-        # Abaddon was approved even after all 62 had acquired valid locks.
+        # Global restart defaults do not override 62 explicit current-cycle
+        # approvals. Reconcile the original three legacy underscore aliases.
         authority=load_deck_overrides()
-        self.assertEqual(set(authority),set(by_id))
-        for deck_id,approved in authority.items():
+        authority_by_id={normalized_id(k):v for k,v in authority.items()}
+        self.assertEqual(len(authority_by_id),62)
+        self.assertEqual(set(authority_by_id),set(by_id))
+        for deck_id,approved in authority_by_id.items():
             with self.subTest(deck_id=deck_id):
                 current=by_id[deck_id]
                 self.assertEqual(current["approval_status"],approved["approval_status"])
