@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-23T01:52:01.773760+00:00",
+  "generated_at_utc": "2026-10-23T06:54:34.319060+00:00",
   "cache_generated_at_utc": "2026-10-22T08:58:16.121080+00:00",
   "bulk_updated_at": "2026-10-21T21:06:00.423+00:00",
   "cache_sha256": "8002fb617731acc7c95e7e1f5330c09c4eefee05ee91880b0eb7e65cd704eb3d",
@@ -12,7 +12,7 @@
       "approved_source": "refinement/decklists/Abaddon_the_Despoiler_Approved_2026-10-13.txt",
       "approval_evidence": "state/current_deck_overrides.json; refinement/verification/Abaddon_Approved_Source_SHA_Reconciled_2026-10-14.md",
       "approved_source_raw_sha256": "2d6203d274c25e67fb93acf5e6784dce4ee1e8999844a6ab032d9b15995acfbf",
-      "historical_state_approved_list_sha256": "0d9f6df80cafc2a380199b7aec8112e4e54ccfec70024679607032cdf10f5790",
+      "historical_state_approved_list_sha256": "5ab1a3628352016be52233917b27ce8cbb0a538916fe757a5384cd06ad3dee24",
       "main_deck_count": 100,
       "commander_count": 1,
       "distinct_names": 94,
