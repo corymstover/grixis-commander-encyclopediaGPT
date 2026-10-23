@@ -1,0 +1,30 @@
+name: Verify Admiral Brass Unsinkable M7 Rev3 Approval
+
+on:
+  pull_request:
+    paths:
+      - "refinement/decklists/Admiral_Brass_Unsinkable_M7_Rev3_Approved_2026-10-23.txt"
+      - "refinement/approvals/Admiral_Brass_Unsinkable_M7_Rev3_Approved_2026-10-23.md"
+      - "refinement/verification/Admiral_Brass_Unsinkable_M7_Rev3_Approved_2026-10-23_Verification.md"
+      - "state/current_deck_overrides.json"
+      - "refinement/Deck_Refinement_Tracker_2026-10-12.csv"
+      - "tests/test_admiral_brass_unsinkable_rev3_approval.py"
+      - ".github/workflows/verify-admiral-brass-unsinkable-m7-rev3-approval.yml"
+  push:
+    branches: ["main"]
+    paths:
+      - "refinement/decklists/Admiral_Brass_Unsinkable_M7_Rev3_Approved_2026-10-23.txt"
+permissions:
+  contents: read
+jobs:
+  exact-approval:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verify exact owner-approved 100 physical cards and untouched predecessor
+        run: python -m unittest discover -s tests -p 'test_admiral_brass_unsinkable_rev3_approval.py' -v
+      - name: Verify previously owner-locked Decks 1 and 2 are unchanged
+        run: python -m unittest discover -s tests -p 'test_abaddon_rev3_m7_approval.py' -v && python -m unittest discover -s tests -p 'test_admiral_m7_approval.py' -v
