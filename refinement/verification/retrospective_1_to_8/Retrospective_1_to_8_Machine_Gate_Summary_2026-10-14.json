@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-22T19:17:00.580854+00:00",
+  "generated_at_utc": "2026-10-23T01:52:01.773760+00:00",
   "cache_generated_at_utc": "2026-10-22T08:58:16.121080+00:00",
   "bulk_updated_at": "2026-10-21T21:06:00.423+00:00",
   "cache_sha256": "8002fb617731acc7c95e7e1f5330c09c4eefee05ee91880b0eb7e65cd704eb3d",
@@ -35,7 +35,7 @@
       "approved_source": "refinement/decklists/Admiral_Beckett_Brass_Approval_Ready_2026-10-13.txt",
       "approval_evidence": "state/current_deck_overrides.json; refinement/verification/Admiral_Beckett_Brass_Approval_Ready_Closeout_2026-10-13.md",
       "approved_source_raw_sha256": "4ba5c483eb67b5f2647d375450adf9c2b7e79a036d0ba1866e58de8441bf3414",
-      "historical_state_approved_list_sha256": "4ba5c483eb67b5f2647d375450adf9c2b7e79a036d0ba1866e58de8441bf3414",
+      "historical_state_approved_list_sha256": "ff5f54f9f608ab0facd62fd3b79df16a0255b4dbbc12d39154a127f27bb8c000",
       "main_deck_count": 100,
       "commander_count": 1,
       "distinct_names": 97,
