@@ -40,10 +40,10 @@ class CurrentCycleStateTests(unittest.TestCase):
 
         abaddon=by_id["Abaddon_the_Despoiler"]
         self.assertEqual(abaddon["approved_list_sha256"],
-            "0d9f6df80cafc2a380199b7aec8112e4e54ccfec70024679607032cdf10f5790")
-        self.assertEqual(abaddon["user_approval_date"],"2026-10-22")
+            "5ab1a3628352016be52233917b27ce8cbb0a538916fe757a5384cd06ad3dee24")
+        self.assertEqual(abaddon["user_approval_date"],"2026-10-23")
         self.assertEqual(abaddon["approved_list_artifact"],
-            "refinement/decklists/Abaddon_the_Despoiler_M7_Approved_2026-10-22.txt")
+            "refinement/decklists/Abaddon_the_Despoiler_M7_Rev3_Approved_2026-10-23.txt")
 
         admiral=by_id["Admiral_Beckett_Brass"]
         self.assertEqual(admiral["approved_list_sha256"],
