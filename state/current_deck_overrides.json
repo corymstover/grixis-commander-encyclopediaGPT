@@ -173,15 +173,34 @@
       "approval_status": "APPROVED",
       "lock_status": "LOCKED",
       "final_gate_passed": true,
-      "user_approval_date": "2026-10-13",
+      "user_approval_date": "2026-10-23",
       "current_stage": "LOCKED",
-      "approved_list_sha256": "553838da88fe00974e74664633be5051c4f1a0879baa71de81ca9f880e5a6d28",
-      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit",
-      "approval_basis": "Explicit user approval of Reckless Fireweaver to Robe of the Archmagi; Lutri companion plus Trade Secrets and Yawgmoth's Bargain preserved as documented project exceptions; fresh retrospective gate completed 2026-10-14.",
+      "approved_list_sha256": "e4028f06d2d928ad06fb8667ae4bba77c31b4f97c1d4fb5490f83b73eb6d6b5d",
+      "quality_gate_version": "Deck Quality Gates v3 + Cecily/Bjorna/Lutri independent M7 Rev2 ten-swap source-bound Oracle and companion-exception verification",
+      "approval_basis": "Cory explicitly replied 'Approve' to the complete Cecily/Bjorna/Lutri M7 Rev2 ten-swap proposal, including 100-card Commander list plus separately designated Lutri companion, exact raw 101-physical text SHA e4028f06d2d928ad06fb8667ae4bba77c31b4f97c1d4fb5490f83b73eb6d6b5d, after ChatGPT asked for canonical approval on 2026-10-23 America/Chicago. Only those exact bytes and this designated project's three recorded exceptions are approved; not an ordinary official-Commander-legal list nor aggregate M6/M7/M8 acceptance.",
       "retrospective_gate_status": "PASS_PROJECT_EXCEPTION",
       "retrospective_gate_date": "2026-10-14",
       "retrospective_gate_artifact": "refinement/verification/retrospective_1_to_8/Retrospective_1_to_8_Complete_Gate_Summary_2026-10-14.json",
-      "retrospective_gate_note": "Project-valid under registered Lutri companion, Trade Secrets, and Yawgmoth's Bargain exceptions; not represented as officially Commander-legal without qualification."
+      "retrospective_gate_note": "Project-valid under registered Lutri companion, Trade Secrets, and Yawgmoth's Bargain exceptions; not represented as officially Commander-legal without qualification.",
+      "m7_final_candidate_sha256": "e4028f06d2d928ad06fb8667ae4bba77c31b4f97c1d4fb5490f83b73eb6d6b5d",
+      "approved_list_artifact": "refinement/decklists/Cecily__Bjorna__Lutri_M7_Rev2_Approved_2026-10-23.txt",
+      "previous_approved_list_sha256": "553838da88fe00974e74664633be5051c4f1a0879baa71de81ca9f880e5a6d28",
+      "previous_approved_source_raw_sha256": "553838da88fe00974e74664633be5051c4f1a0879baa71de81ca9f880e5a6d28",
+      "previous_approved_list_artifact": "refinement/decklists/Cecily__Bjorna__Lutri_Approved_2026-10-13.txt",
+      "m7_owner_approval_date": "2026-10-23",
+      "m7_approval_source": "Engineering ChatGPT PR #683 exact head 1dc33504fc6c5d3c91b99c457d3a99ac0b9ddb96, exact-head Actions run #40051402695 SUCCESS for eight new ten-swap selected-source tests plus first-pass Grok tests; archived 2026-10-23 selected Oracle. Original first-pass sealed M6 I/J applies only to earlier research; not re-sealed for Rev2.",
+      "m7_archidekt_tags": [
+        "Spellslinger",
+        "Wheels",
+        "Hand Size Matters"
+      ],
+      "m7_power_bracket": "4 — Optimized",
+      "m7_companion_physical_convention": "Exact approved text: 100 Commander-deck physical (2 Friends Forever commanders + 98 library), plus 1 designated Lutri companion outside those 100; 101 total physical; 100 unique names/rows; Island x2 only duplicate.",
+      "m7_designated_project_exceptions": [
+        "Lutri, the Spellchaser — officially banned as companion",
+        "Trade Secrets — officially Commander-banned",
+        "Yawgmoth's Bargain — officially Commander-banned"
+      ]
     },
     "Cormela__Glamour_Thief": {
       "approval_status": "APPROVED",
