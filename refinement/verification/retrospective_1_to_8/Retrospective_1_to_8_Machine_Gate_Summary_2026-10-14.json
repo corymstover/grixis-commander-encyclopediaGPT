@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-24T01:42:42.506163+00:00",
+  "generated_at_utc": "2026-10-24T01:53:22.663489+00:00",
   "cache_generated_at_utc": "2026-10-23T08:55:05.508885+00:00",
   "bulk_updated_at": "2026-10-22T21:05:50.017+00:00",
   "cache_sha256": "a8fca65952ddd0ac39431b40224818bd4dcab86a28089d15483d69780e795fd7",
@@ -173,7 +173,7 @@
       "approved_source": "refinement/decklists/Cecily__Bjorna__Lutri_Approved_2026-10-13.txt",
       "approval_evidence": "refinement/approvals/Cecily__Bjorna__Lutri_Approved_2026-10-13.md",
       "approved_source_raw_sha256": "553838da88fe00974e74664633be5051c4f1a0879baa71de81ca9f880e5a6d28",
-      "historical_state_approved_list_sha256": "553838da88fe00974e74664633be5051c4f1a0879baa71de81ca9f880e5a6d28",
+      "historical_state_approved_list_sha256": "e4028f06d2d928ad06fb8667ae4bba77c31b4f97c1d4fb5490f83b73eb6d6b5d",
       "main_deck_count": 100,
       "commander_count": 2,
       "distinct_names": 99,
