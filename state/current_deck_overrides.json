@@ -257,12 +257,27 @@
       "approval_status": "APPROVED",
       "lock_status": "LOCKED",
       "final_gate_passed": true,
-      "user_approval_date": "2026-10-14",
+      "user_approval_date": "2026-10-23",
       "current_stage": "LOCKED",
-      "approved_list_sha256": "4c221e5be0439338823ef621cd91706da8d405129cf6f5a41de36a83b875ef3b",
-      "quality_gate_version": "Complete Approval Gate v1 — fresh Oracle, legality, rules, and structural verification",
-      "approval_basis": "Explicit user approval after the SHA-bound complete gate returned APPROVAL_READY: exactly 100 cards, Grixis color identity, fresh per-card Oracle verification, current official Commander legality, independent rules verification, zero project exceptions, and zero unresolved gate errors.",
-      "complete_gate_artifact": "refinement/verification/cult_of_skaro_2026-10-14/gate_output/Cult_of_Skaro_2026-10-14_Complete_Gate.json"
+      "approved_list_sha256": "e7c264409bd23bd6b3dc02548f555e3f64f2d2d11cc0430d61f49cbf452a1e3d",
+      "quality_gate_version": "Deck Quality Gates v3 + Cult of Skaro independent M7 Rev2 nine-swap source-bound Oracle, Myriad/Synth timing and owner exact-raw regression",
+      "approval_basis": "Cory expressly replied 'Approve' after the complete Cult of Skaro ChatGPT independent M7 Rev2 nine-swap 100-card list, raw SHA-256 e7c264409bd23bd6b3dc02548f555e3f64f2d2d11cc0430d61f49cbf452a1e3d, and exact approval protocol were presented on 2026-10-23 America/Chicago. Only those exact bytes are approved, not any next deck or blanket M6 I/J re-seal.",
+      "complete_gate_artifact": "refinement/verification/cult_of_skaro_2026-10-14/gate_output/Cult_of_Skaro_2026-10-14_Complete_Gate.json",
+      "m7_final_candidate_sha256": "e7c264409bd23bd6b3dc02548f555e3f64f2d2d11cc0430d61f49cbf452a1e3d",
+      "approved_list_artifact": "refinement/decklists/Cult_of_Skaro_M7_Rev2_Approved_2026-10-23.txt",
+      "previous_approved_list_sha256": "4c221e5be0439338823ef621cd91706da8d405129cf6f5a41de36a83b875ef3b",
+      "previous_approved_source_raw_sha256": "4c221e5be0439338823ef621cd91706da8d405129cf6f5a41de36a83b875ef3b",
+      "previous_approved_list_artifact": "refinement/decklists/Cult_of_Skaro_Approval_Candidate_2026-10-14.txt",
+      "m7_owner_approval_date": "2026-10-23",
+      "m7_approval_source": "Engineering independent PR #686 exact head 426d8afcd76924ee1c036d91a91dc33abd1d79f7. Four exact-head workflow runs #40055304492 (independent), #40055304455 (original), #40055304478 (M6 J provenance), #40055304482 (M7 decision) SUCCESS. Source-bound Oct23 210-name Cult Scryfall + canonical Crosis Oct23 selected live Scryfall for Otawara/Takenuma; preserved The Master, Multiplied and Etherium Sculptor; unmodified Grok six-swap formal I/J.",
+      "m7_archidekt_tags": [
+        "Artifacts",
+        "Extra Combats",
+        "Copies"
+      ],
+      "m7_power_bracket": "4 — Optimized",
+      "m7_project_exceptions": [],
+      "m7_verified_100_physical": true
     },
     "Davros__Dalek_Creator": {
       "approval_status": "APPROVED",
