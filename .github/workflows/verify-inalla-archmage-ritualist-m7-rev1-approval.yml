@@ -1,0 +1,42 @@
+name: Verify Inalla Archmage Ritualist M7 Rev1 Exact Owner Approval
+
+on:
+  pull_request:
+    paths:
+      - "refinement/decklists/Inalla_Archmage_Ritualist_M7_Rev1_Approved_2026-10-24.txt"
+      - "refinement/approvals/Inalla_Archmage_Ritualist_M7_Rev1_Approved_2026-10-24.md"
+      - "refinement/verification/Inalla_Archmage_Ritualist_M7_Rev1_Approved_2026-10-24_Verification.md"
+      - "refinement/verification/Inalla_Archmage_Ritualist_M7_Rev1_Scryfall_Selected_2026-10-24.json"
+      - "tests/test_inalla_archmage_ritualist_m7_rev1_approval.py"
+      - "tests/test_gwendlyn_di_corci_m7_rev1_approval.py"
+      - ".github/workflows/verify-inalla-archmage-ritualist-m7-rev1-approval.yml"
+      - "state/current_deck_overrides.json"
+      - "refinement/Deck_Refinement_Tracker_2026-10-12.csv"
+  push:
+    branches: ["main"]
+    paths:
+      - "refinement/decklists/Inalla_Archmage_Ritualist_M7_Rev1_Approved_2026-10-24.txt"
+      - "state/current_deck_overrides.json"
+      - "refinement/Deck_Refinement_Tracker_2026-10-12.csv"
+
+permissions:
+  contents: read
+
+jobs:
+  exact-inalla-m7-approval:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout exact GitHub Actions event head
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Report exact checked-out SHA
+        run: git rev-parse HEAD
+      - name: Exact Inalla owner SHA, 100 cards, five swaps, Oracle/rules, all 61 other registry locks
+        run: python -m unittest discover -s tests -p 'test_inalla_archmage_ritualist_m7_rev1_approval.py' -v
+      - name: Re-run predecessor Gwendlyn M7 Rev1 exact approval gate
+        run: python -m unittest discover -s tests -p 'test_gwendlyn_di_corci_m7_rev1_approval.py' -v
