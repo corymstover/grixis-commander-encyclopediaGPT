@@ -1,0 +1,52 @@
+name: Verify Don Andres M7 Rev2 Exact Owner Approval
+
+on:
+  pull_request:
+    paths:
+      - "refinement/decklists/Don_Andres_the_Renegade_M7_Rev2_Approved_2026-10-23.txt"
+      - "refinement/verification/Don_Andres_the_Renegade_M7_Rev2_Scryfall_Selected_2026-10-23.json"
+      - "refinement/approvals/Don_Andres_the_Renegade_M7_Rev2_Approved_2026-10-23.md"
+      - "refinement/verification/Don_Andres_the_Renegade_M7_Rev2_Approved_2026-10-23_Verification.md"
+      - "state/current_deck_overrides.json"
+      - "refinement/Deck_Refinement_Tracker_2026-10-12.csv"
+      - "tests/test_don_andres_rev2_m7_approval.py"
+      - ".github/workflows/verify-don-andres-m7-rev2-approval.yml"
+  push:
+    branches: ["main"]
+    paths:
+      - "refinement/decklists/Don_Andres_the_Renegade_M7_Rev2_Approved_2026-10-23.txt"
+      - "refinement/verification/Don_Andres_the_Renegade_M7_Rev2_Scryfall_Selected_2026-10-23.json"
+      - "refinement/approvals/Don_Andres_the_Renegade_M7_Rev2_Approved_2026-10-23.md"
+      - "refinement/verification/Don_Andres_the_Renegade_M7_Rev2_Approved_2026-10-23_Verification.md"
+      - "state/current_deck_overrides.json"
+      - "refinement/Deck_Refinement_Tracker_2026-10-12.csv"
+      - "tests/test_don_andres_rev2_m7_approval.py"
+      - ".github/workflows/verify-don-andres-m7-rev2-approval.yml"
+permissions:
+  contents: read
+jobs:
+  exact-don-andres-approval:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verify Don Andres exact 100 SHA ownership theft and corrected land rules
+        run: python -m unittest discover -s tests -p 'test_don_andres_rev2_m7_approval.py' -v
+      - name: Regression thirteen earlier immutable owner approved M7 locks
+        run: |
+          python -m unittest discover -s tests -p 'test_abaddon_rev3_m7_approval.py' -v
+          python -m unittest discover -s tests -p 'test_admiral_m7_approval.py' -v
+          python -m unittest discover -s tests -p 'test_admiral_brass_unsinkable_rev3_approval.py' -v
+          python -m unittest discover -s tests -p 'test_anhelo_rev2_m7_approval.py' -v
+          python -m unittest discover -s tests -p 'test_ashad_rev3_m7_approval.py' -v
+          python -m unittest discover -s tests -p 'test_ashnod_rev2_m7_approval.py' -v
+          python -m unittest discover -s tests -p 'test_belakor_rev2_m7_approval.py' -v
+          python -m unittest discover -s tests -p 'test_cecily_bjorna_lutri_rev2_m7_approval.py' -v
+          python -m unittest discover -s tests -p 'test_cormela_rev2_m7_approval.py' -v
+          python -m unittest discover -s tests -p 'test_crosis_rev2_m7_approval.py' -v
+          python -m unittest discover -s tests -p 'test_cult_rev2_m7_approval.py' -v
+          python -m unittest discover -s tests -p 'test_davros_rev2_m7_approval.py' -v
+          python -m unittest discover -s tests -p 'test_doctor_doom_rev2_m7_approval.py' -v
