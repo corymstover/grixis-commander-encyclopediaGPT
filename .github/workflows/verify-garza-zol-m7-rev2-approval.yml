@@ -1,0 +1,40 @@
+name: Verify Garza Zol M7 Rev2 Exact Owner Approval
+
+on:
+  pull_request:
+    paths:
+      - "refinement/decklists/Garza_Zol_Plague_Queen_M7_Rev2_Approved_2026-10-24.txt"
+      - "refinement/verification/Garza_Zol_Plague_Queen_M7_Rev2_Scryfall_Selected_2026-10-23.json"
+      - "refinement/approvals/Garza_Zol_Plague_Queen_M7_Rev2_Approved_2026-10-24.md"
+      - "refinement/verification/Garza_Zol_Plague_Queen_M7_Rev2_Approved_2026-10-24_Verification.md"
+      - "tests/test_garza_zol_m7_rev2_approval.py"
+      - ".github/workflows/verify-garza-zol-m7-rev2-approval.yml"
+      - "state/current_deck_overrides.json"
+      - "refinement/Deck_Refinement_Tracker_2026-10-12.csv"
+  push:
+    branches: ["main"]
+    paths:
+      - "refinement/decklists/Garza_Zol_Plague_Queen_M7_Rev2_Approved_2026-10-24.txt"
+      - "state/current_deck_overrides.json"
+      - "refinement/Deck_Refinement_Tracker_2026-10-12.csv"
+permissions:
+  contents: read
+
+jobs:
+  exact-garza-approval:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout exact GitHub Actions event head
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Record the exact checked out SHA
+        run: git rev-parse HEAD
+      - name: Verify exact 100, seven source-bound swaps, owner receipt, and prior nineteen raw SHA locks
+        run: python -m unittest discover -s tests -p 'test_garza_zol_m7_rev2_approval.py' -v
+      - name: Re-run immediately preceding Fire Lord Azula M7 Rev2 gate
+        run: python -m unittest discover -s tests -p 'test_fire_lord_azula_rev2_m7_approval.py' -v
