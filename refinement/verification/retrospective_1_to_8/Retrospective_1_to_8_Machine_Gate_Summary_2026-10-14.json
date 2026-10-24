@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-24T01:28:03.351993+00:00",
+  "generated_at_utc": "2026-10-24T01:42:42.506163+00:00",
   "cache_generated_at_utc": "2026-10-23T08:55:05.508885+00:00",
   "bulk_updated_at": "2026-10-22T21:05:50.017+00:00",
   "cache_sha256": "a8fca65952ddd0ac39431b40224818bd4dcab86a28089d15483d69780e795fd7",
@@ -150,7 +150,7 @@
       "approved_source": "refinement/decklists/Be_lakor_the_Dark_Master_Approved_2026-10-13.txt",
       "approval_evidence": "refinement/approvals/Be_lakor_the_Dark_Master_Approved_2026-10-13.md",
       "approved_source_raw_sha256": "3abc951606a6db2b17ea2aceb471fc2ef4c55e2ef082d49d9140a83b2491155e",
-      "historical_state_approved_list_sha256": "3abc951606a6db2b17ea2aceb471fc2ef4c55e2ef082d49d9140a83b2491155e",
+      "historical_state_approved_list_sha256": "2107f02e7a5303eef15b6720565d08dfe974b3d6fa57ea449440042cec1b4dd4",
       "main_deck_count": 100,
       "commander_count": 1,
       "distinct_names": 94,
