@@ -1,0 +1,46 @@
+name: Fail-Closed M7 M6/IJ Certification Transfer
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "state/current_deck_overrides.json"
+      - "refinement/decklists/**"
+      - "refinement/approvals/**"
+      - "refinement/verification/m7_certification_transfer/**"
+      - "scripts/verify_m7_certification_transfer.py"
+      - "tests/test_m7_certification_transfer.py"
+      - ".github/workflows/verify-m7-certification-transfer.yml"
+  push:
+    branches: [main]
+    paths:
+      - "state/current_deck_overrides.json"
+      - "refinement/decklists/**"
+      - "refinement/approvals/**"
+      - "refinement/verification/m7_certification_transfer/**"
+      - "scripts/verify_m7_certification_transfer.py"
+      - "tests/test_m7_certification_transfer.py"
+      - ".github/workflows/verify-m7-certification-transfer.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  exact-head-m6-m7-evidence-transfer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout exact candidate head
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Record checked head
+        run: git rev-parse HEAD
+      - name: Require P0 execution, P1 disposition, M6 I/J scoped transfer, M7 gate and exact owner SHA
+        run: python scripts/verify_m7_certification_transfer.py --check
+      - name: Run negative regression cases
+        run: python -m unittest discover -s tests -p 'test_m7_certification_transfer.py' -v
