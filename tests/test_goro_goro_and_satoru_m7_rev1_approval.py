@@ -72,7 +72,7 @@ OTHER_61_HEADER = {
     "Fire_Lord_Azula": ("77ac26a4f4ff70d0a7a666b07fa9fe051e52fe0547d8320d84490d088c0cc273", "refinement/decklists/Fire_Lord_Azula_M7_Rev2_Approved_2026-10-24.txt", "2026-10-24", "LOCKED"),
     "Garza_Zol__Plague_Queen": ("353381caa82e68049a878eefc9c97a5293790b892fda652c97ac63c938689244", "refinement/decklists/Garza_Zol_Plague_Queen_M7_Rev2_Approved_2026-10-24.txt", "2026-10-24", "LOCKED"),
     "Gwendlyn_Di_Corci": ("9a393cb7edf40f9bfb388d37dd657839cad851dc6a021440c7d1b239c1fd20a9", "refinement/decklists/Gwendlyn_Di_Corci_Approved_2026-10-14.txt", "2026-10-14", "LOCKED"),
-    "Inalla__Archmage_Ritualist": ("81333ac71d483b667af968bf2ab221e1fa0de6edd7c2395170d15786e5b15fa3", "refinement/decklists/Inalla_Archmage_Ritualist_Approved_2026-10-14.txt", "2026-10-14", "LOCKED"),
+    "Inalla__Archmage_Ritualist": ("c9f35cac41a7717ef49b4dd3cb4f6031c2795a0082b31b54a13e645652df9b69", "refinement/decklists/Inalla_Archmage_Ritualist_M7_Rev1_Approved_2026-10-24.txt", "2026-10-24", "LOCKED"),
     "Jeleva__Nephalia_s_Scourge": ("00e3f52118f5944684ebc49a5398acf8184f7ca878e861221e4c99931191bc2f", "refinement/decklists/Jeleva_Nephalia_s_Scourge_Approved_2026-10-14.txt", "2026-10-14", "LOCKED"),
     "Kefka__Court_Mage": ("cd36192fedda7a4f54570fb8b8e4605147b40f9254e6985729097fc998f17b03", "refinement/decklists/Kefka_Court_Mage_Approved_2026-10-14.txt", "2026-10-14", "LOCKED"),
     "Kess__Dissident_Mage": ("93d27d605bbdf0737ebe32c911fafe3a002b06d7d90f00b7bfc402cb1d3faccb", "refinement/decklists/Kess_Dissident_Mage_Approved_2026-10-14.txt", "2026-10-14", "LOCKED"),
