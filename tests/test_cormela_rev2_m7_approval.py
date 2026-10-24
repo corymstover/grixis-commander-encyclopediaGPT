@@ -112,7 +112,7 @@ class CormelaM7Rev2CanonicalApproval(unittest.TestCase):
         b=VERIFY.read_text(encoding="utf-8")
         for term in ("> Approve",RAW,"not a blanket approval","non-independent","six expressly approved"):
             self.assertIn(term.lower(),a.lower())
-        for term in ("25 existing", "not re-sealed", "Grok", "100 physical"):
+        for term in ("25 existing", "**not** re-sealed", "Grok", "100 physical"):
             self.assertIn(term.lower(),b.lower())
 
     def test_canonical_registry_prior_hash_and_current_metadata(self):
