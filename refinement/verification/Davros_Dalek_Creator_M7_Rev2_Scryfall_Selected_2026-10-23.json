@@ -1,0 +1,1650 @@
+{
+  "schema_version": 1,
+  "status": "OWNER_APPROVED_CANONICAL_M7_REV2_SELECTED_OCT23_SCRYFALL_AND_WIZARDS",
+  "deck_id": "Davros__Dalek_Creator",
+  "as_of": "2026-10-23 America/Chicago",
+  "candidate_sha256": "96c6b1cde56eb79db1527e64b82d218f341511a8de99c2395729c0388fd88cfc",
+  "baseline_sha256": "aa6d2d343c6c1f167de8d16b23951940f7d23810c6e7705a6fd0d539a7459adc",
+  "sources": {
+    "baseline": "canonical corymstover/grixis-commander-encyclopediaGPT main refinement/decklists/Davros_Dalek_Creator_Approved_2026-10-14.txt",
+    "grok": "corymstover/GrokBotMTGCompanion PR #660 exact head bb3be7d3acbd9422ea4291b3a0a9cc188ad9a0f1",
+    "cult": "corymstover/grixis-commander-encyclopediaGPT main refinement/verification/Cult_of_Skaro_M7_Rev2_Scryfall_Selected_2026-10-23.json",
+    "mechanized": "https://magic.wizards.com/en/news/feature/the-brothers-war-release-notes",
+    "oracle_id_mechanized_mirror": "https://www.spellbinder.gg/cards/bro/139/mechanized-warfare"
+  },
+  "physical_cards": 100,
+  "distinct_names": 95,
+  "land_count": 34,
+  "game_changers": [
+    "Ancient Tomb",
+    "Cyclonic Rift",
+    "Demonic Tutor",
+    "Fierce Guardianship",
+    "Jeska's Will",
+    "Tergrid, God of Fright"
+  ],
+  "color_identity_all_ubr": true,
+  "commander_legal_all": true,
+  "project_exceptions": [],
+  "cards": [
+    {
+      "cmc": 4,
+      "color_identity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{U}{B}{R}",
+      "name": "Davros, Dalek Creator",
+      "oracle_id": "25c0bbc8-b0c3-4166-967f-e8b096487a6c",
+      "oracle_text": "Menace\nAt the beginning of your end step, create a 3/3 black Dalek artifact creature token with menace if an opponent lost 3 or more life this turn. Then each opponent who lost 3 or more life this turn faces a villainous choice — You draw a card, or that player discards a card.",
+      "power": "3",
+      "toughness": "4",
+      "type_line": "Legendary Artifact Creature — Alien Scientist",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "",
+      "name": "Ancient Tomb",
+      "oracle_id": "23467047-6dba-4498-b783-1ebc4f74b8c2",
+      "oracle_text": "{T}: Add {C}{C}. This land deals 2 damage to you.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}",
+      "name": "Arcane Signet",
+      "oracle_id": "0bc7f093-bef0-4f1a-852c-4b75ebf54838",
+      "oracle_text": "{T}: Add one mana of any color in your commander's color identity.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 6,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{4}{U}{U}",
+      "name": "Auton Soldier",
+      "oracle_id": "94357494-4ccc-43d4-b2d4-351581cbf9b6",
+      "oracle_text": "You may have this creature enter as a copy of any creature on the battlefield, except it isn't legendary, is an artifact in addition to its other types, and has myriad. (Whenever it attacks, for each opponent other than defending player, you may create a token copy that's tapped and attacking that player or a planeswalker they control. Exile the tokens at end of combat.)",
+      "power": "0",
+      "toughness": "0",
+      "type_line": "Artifact Creature — Alien Soldier",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Badlands",
+      "oracle_id": "13ff3222-91cb-4796-a34e-899ed817694c",
+      "oracle_text": "({T}: Add {B} or {R}.)",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land — Swamp Mountain",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Blood Crypt",
+      "oracle_id": "43985bbc-a0f6-4812-984e-392bc8562633",
+      "oracle_text": "({T}: Add {B} or {R}.)\nAs this land enters, you may pay 2 life. If you don't, it enters tapped.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land — Swamp Mountain",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{B}{B}{B}",
+      "name": "Bloodletter of Aclazotz",
+      "oracle_id": "469956a2-7cd4-4695-b8f4-c841526f160d",
+      "oracle_text": "Flying\nIf an opponent would lose life during your turn, they lose twice that much life instead. (Damage causes loss of life.)",
+      "power": "2",
+      "toughness": "4",
+      "type_line": "Creature — Vampire Demon",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Bloodstained Mire",
+      "oracle_id": "fc0707c7-d504-4ccf-a0d2-3eb6e26e7a57",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for a Swamp or Mountain card, put it onto the battlefield, then shuffle.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 1,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{R}",
+      "name": "Boltwave",
+      "oracle_id": "bb8cccc8-e56f-42fa-a0d7-fc889b5e1c7b",
+      "oracle_text": "Boltwave deals 3 damage to each opponent.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Sorcery",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "City of Brass",
+      "oracle_id": "f25351e3-539b-4bbc-b92d-6480acf4d722",
+      "oracle_text": "Whenever this land becomes tapped, it deals 1 damage to you.\n{T}: Add one mana of any color.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Command Tower",
+      "oracle_id": "0895c9b7-ae7d-4bb3-af17-3b75deb50a25",
+      "oracle_text": "{T}: Add one mana of any color in your commander's color identity.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{U}{U}",
+      "name": "Counterspell",
+      "oracle_id": "cc187110-1148-4090-bbb8-e205694a39f5",
+      "oracle_text": "Counter target spell.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{B}{B}",
+      "name": "Court of Ambition",
+      "oracle_id": "652e71a9-e46f-41b3-8695-76b3606b1955",
+      "oracle_text": "When this enchantment enters, you become the monarch.\nAt the beginning of your upkeep, each opponent loses 3 life unless they discard a card. If you're the monarch, instead each opponent loses 6 life unless they discard two cards.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Enchantment",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{U}{B}{R}",
+      "name": "Cult of Skaro",
+      "oracle_id": "1cf40a30-5b42-4dce-ae4f-699bc879e180",
+      "oracle_text": "Whenever Cult of Skaro attacks, choose one at random —\n• Thay — Put a +1/+1 counter on each artifact creature you control.\n• Caan — Draw two cards.\n• Sec — Create a 3/3 black Dalek artifact creature token with menace.\n• Jast — Each opponent loses 4 life.",
+      "power": "4",
+      "toughness": "4",
+      "type_line": "Legendary Artifact Creature — Dalek",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{U}{U}",
+      "name": "Cyber Conversion",
+      "oracle_id": "33761c1a-9848-45bf-b934-123cebab566b",
+      "oracle_text": "Turn target creature face down. It's a 2/2 Cyberman artifact creature.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "{1}{U}",
+      "name": "Cyclonic Rift",
+      "oracle_id": "d75b9c82-1b49-4c3e-a1b5-aeef57d6644b",
+      "oracle_text": "Return target nonland permanent you don't control to its owner's hand.\nOverload {6}{U} (You may cast this spell for its overload cost. If you do, change \"target\" in its text to \"each.\")",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 5,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}{B}{B}",
+      "name": "Dalek Drone",
+      "oracle_id": "95d018f4-7f97-4b2c-abb4-cef69031caa1",
+      "oracle_text": "Flying, menace\nExterminate! — When this creature enters, destroy target creature an opponent controls. That player loses 3 life.",
+      "power": "3",
+      "toughness": "3",
+      "type_line": "Artifact Creature — Dalek",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{B}",
+      "name": "Dalek Squadron",
+      "oracle_id": "18ae6be7-cfb6-42e3-a04e-99e9c1471ecd",
+      "oracle_text": "Menace\nMyriad (Whenever this creature attacks, for each opponent other than defending player, you may create a token copy that's tapped and attacking that player or a planeswalker they control. Exile the tokens at end of combat.)",
+      "power": "3",
+      "toughness": "3",
+      "type_line": "Artifact Creature — Dalek",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{B}{B}",
+      "name": "Dauthi Voidwalker",
+      "oracle_id": "f1c2dbe2-fbe0-4058-bdf1-91d1b1832786",
+      "oracle_text": "Shadow (This creature can block or be blocked by only creatures with shadow.)\nIf a card would be put into an opponent's graveyard from anywhere, instead exile it with a void counter on it.\n{T}, Sacrifice this creature: Choose an exiled card an opponent owns with a void counter on it. You may play it this turn without paying its mana cost.",
+      "power": "3",
+      "toughness": "2",
+      "type_line": "Creature — Dauthi Rogue",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}{B}",
+      "name": "Deadly Rollick",
+      "oracle_id": "0456ec64-2c81-4763-a352-8ff64a4c3d6b",
+      "oracle_text": "If you control a commander, you may cast this spell without paying its mana cost.\nExile target creature.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{R}",
+      "name": "Deflecting Swat",
+      "oracle_id": "ae120613-97d6-4393-b39d-c3e6c076f5d6",
+      "oracle_text": "If you control a commander, you may cast this spell without paying its mana cost.\nYou may choose new targets for target spell or ability.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{X}{R}{R}",
+      "name": "Delete",
+      "oracle_id": "01d0156f-c26a-4668-a3a4-15ee0790d1b6",
+      "oracle_text": "Delete deals X damage to each nonartifact creature and each player.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Sorcery",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "{1}{B}",
+      "name": "Demonic Tutor",
+      "oracle_id": "82004860-e589-4e38-8d61-8c0210e4ea39",
+      "oracle_text": "Search your library for a card, put that card into your hand, then shuffle.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Sorcery",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 1,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{X}{X}{B}",
+      "name": "Doomsday Confluence",
+      "oracle_id": "01bc8bfa-2e46-4324-a848-cc68bc9330d0",
+      "oracle_text": "Choose X. You may choose the same mode more than once.\n• Each player sacrifices a nonartifact creature of their choice.\n• Create a 3/3 black Dalek artifact creature token with menace.\n• Each opponent discards a card.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Sorcery",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{R}{R}",
+      "name": "Ensnared by the Mara",
+      "oracle_id": "16090270-0ac5-404c-b0c8-a6c8a4b508a4",
+      "oracle_text": "Each opponent faces a villainous choice — They exile cards from the top of their library until they exile a nonland card, then you may cast that card without paying its mana cost, or that player exiles the top four cards of their library and Ensnared by the Mara deals damage equal to the total mana value of those exiled cards to that player.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Sorcery",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{U}{R}",
+      "name": "Enthusiastic Mechanaut",
+      "oracle_id": "c9722086-23e8-43dc-8a8c-541ff6962318",
+      "oracle_text": "Flying\nArtifact spells you cast cost {1} less to cast.",
+      "power": "2",
+      "toughness": "2",
+      "type_line": "Artifact Creature — Goblin Artificer",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}{B}",
+      "name": "Entropic Battlecruiser",
+      "oracle_id": "90c5ea2b-d004-4219-b60c-d51bc1a5ee6b",
+      "oracle_text": "Station (Tap another creature you control: Put charge counters equal to its power on this Spacecraft. Station only as a sorcery. It's an artifact creature at 8+.)\n1+ | Whenever an opponent discards a card, they lose 3 life.\n8+ | Flying, deathtouch\nWhenever this Spacecraft attacks, each opponent discards a card. Each opponent who can't loses 3 life.",
+      "power": "3",
+      "toughness": "10",
+      "type_line": "Artifact — Spacecraft",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Exotic Orchard",
+      "oracle_id": "27b047e3-0d41-45e2-98e9-9391d7923a1e",
+      "oracle_text": "{T}: Add one mana of any color that a land an opponent controls could produce.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{B}",
+      "name": "Exterminate!",
+      "oracle_id": "90b540ab-b05a-4d29-b896-7ff5da0b101d",
+      "oracle_text": "Replicate—Tap an untapped Dalek you control. (When you cast this spell, copy it for each time you paid its replicate cost. You may choose new targets for the copies.)\nDestroy target creature. Its controller loses 3 life.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Sorcery",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{B}",
+      "name": "Feed the Swarm",
+      "oracle_id": "5825997b-10d7-4a36-972c-a80ddd90b8ed",
+      "oracle_text": "Destroy target creature or enchantment an opponent controls. You lose life equal to that permanent's mana value.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Sorcery",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}",
+      "name": "Fellwar Stone",
+      "oracle_id": "95560508-7ac9-4be9-8a3f-3c7d5b52807b",
+      "oracle_text": "{T}: Add one mana of any color that a land an opponent controls could produce.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "{2}{U}",
+      "name": "Fierce Guardianship",
+      "oracle_id": "d09c9cba-fdd2-479b-ad5d-d05181c3e3f9",
+      "oracle_text": "If you control a commander, you may cast this spell without paying its mana cost.\nCounter target noncreature spell.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{R}{R}",
+      "name": "Fiery Confluence",
+      "oracle_id": "3c22e031-4804-4c31-bd3c-c3f29d456b34",
+      "oracle_text": "Choose three. You may choose the same mode more than once.\n• Fiery Confluence deals 1 damage to each creature.\n• Fiery Confluence deals 2 damage to each opponent.\n• Destroy target artifact.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Sorcery",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Fiery Islet",
+      "oracle_id": "026f4a4b-eedd-44e1-9d37-ca4fb8d6db98",
+      "oracle_text": "{T}, Pay 1 life: Add {U} or {R}.\n{1}, {T}, Sacrifice this land: Draw a card.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{R}",
+      "name": "Flame Rift",
+      "oracle_id": "28479aa8-d1cd-421a-8bbb-0594bb4dd410",
+      "oracle_text": "Flame Rift deals 4 damage to each player.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Sorcery",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Geier Reach Sanitarium",
+      "oracle_id": "7b9fafe7-d26a-4ed5-b4c4-ce13763770b5",
+      "oracle_text": "{T}: Add {C}.\n{2}, {T}: Each player draws a card, then discards a card.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Legendary Land",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 6,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{4}{B}{B}",
+      "name": "Genesis of the Daleks",
+      "oracle_id": "71ff4603-9f7a-459e-b5b3-9b39583f1dc7",
+      "oracle_text": "(As this Saga enters and after your draw step, add a lore counter. Sacrifice after IV.)\nI, II, III — Create a 3/3 black Dalek artifact creature token with menace for each lore counter on Genesis of the Daleks.\nIV — Target opponent faces a villainous choice — Destroy all Dalek creatures and each of your opponents loses life equal to the total power of Daleks that died this turn, or destroy all non-Dalek creatures.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Enchantment — Saga",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{4}",
+      "name": "Geth's Grimoire",
+      "oracle_id": "ef809e99-34a2-4471-8269-f56bf8037686",
+      "oracle_text": "Whenever an opponent discards a card, you may draw a card.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact — Book",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}{U}",
+      "name": "Irenicus's Vile Duplication",
+      "oracle_id": "a3faf698-1dac-45ef-9c43-c8cead489ffc",
+      "oracle_text": "Create a token that's a copy of target creature you control, except the token has flying and it isn't legendary.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Sorcery",
+      "quantity": 1,
+      "source": "Cult of Skaro 2026-10-23 210-name live Scryfall archived snapshot (canonical selected evidence)",
+      "project_exception": null
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Island",
+      "oracle_id": "b2c6aa39-2d2a-459c-a555-fb48ba993373",
+      "oracle_text": "({T}: Add {U}.)",
+      "power": null,
+      "toughness": null,
+      "type_line": "Basic Land — Island",
+      "quantity": 2,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "{2}{R}",
+      "name": "Jeska's Will",
+      "oracle_id": "0fd114c4-092b-4e28-b0dc-ef529f3bc73e",
+      "oracle_text": "Choose one. If you control a commander as you cast this spell, you may choose both instead.\n• Add {R} for each card in target opponent's hand.\n• Exile the top three cards of your library. You may play them this turn.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Sorcery",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}",
+      "name": "Lightning Greaves",
+      "oracle_id": "ca204b66-8d0c-431a-8d34-282f7c2d17da",
+      "oracle_text": "Equipped creature has haste and shroud. (It can't be the target of spells or abilities.)\nEquip {0}",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact — Equipment",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{B}",
+      "name": "Loyal Subordinate",
+      "oracle_id": "76f405a1-242a-47e6-9aa6-261e49a85b45",
+      "oracle_text": "Menace (This creature can't be blocked except by two or more creatures.)\nLieutenant — At the beginning of combat on your turn, if you control your commander, each opponent loses 3 life.",
+      "power": "3",
+      "toughness": "1",
+      "type_line": "Creature — Zombie",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Luxury Suite",
+      "oracle_id": "819e1765-8325-4e6f-89c1-63ea86de369f",
+      "oracle_text": "This land enters tapped unless you have two or more opponents.\n{T}: Add {B} or {R}.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{U}{B}{R}",
+      "name": "Maestros Charm",
+      "oracle_id": "3b207754-9172-426a-8efc-a9c3912d94bb",
+      "oracle_text": "Choose one —\n• Look at the top five cards of your library. Put one of those cards into your hand and the rest into your graveyard.\n• Each opponent loses 3 life and you gain 3 life.\n• Maestros Charm deals 5 damage to target creature or planeswalker.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Mana Confluence",
+      "oracle_id": "d0ee5bdc-2b69-4b73-9a20-ffcc18783b29",
+      "oracle_text": "{T}, Pay 1 life: Add one mana of any color.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{U}{U}",
+      "name": "Mana Drain",
+      "oracle_id": "74d3277a-38e5-4732-afed-084a56148f20",
+      "oracle_text": "Counter target spell. At the beginning of your next main phase, add an amount of {C} equal to that spell's mana value.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Marsh Flats",
+      "oracle_id": "dab520d0-20b4-4273-ba6b-eb07f85ea433",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for a Plains or Swamp card, put it onto the battlefield, then shuffle.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "name": "Mechanized Warfare",
+      "oracle_id": "c912a43b-8994-434e-84c0-f4cf58abbd42",
+      "oracle_text": "If a red or artifact source you control would deal damage to an opponent or a permanent an opponent controls, it deals that much damage plus 1 instead.",
+      "mana_cost": "{1}{R}{R}",
+      "cmc": 3,
+      "type_line": "Enchantment",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "quantity": 1,
+      "source": "Wizards of the Coast official The Brothers' War release notes (2022-11-07), Gatherer BRO #139; Scryfall mirrored Oracle ID (cross-reference)"
+    },
+    {
+      "cmc": 6,
+      "color_identity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}{U}{B}{R}",
+      "name": "Missy",
+      "oracle_id": "905610cd-1461-4f5a-b9c8-19b193b9d513",
+      "oracle_text": "Whenever another nonartifact creature dies, return it to the battlefield under your control face down and tapped. It's a 2/2 Cyberman artifact creature.\nAt the beginning of your end step, each opponent faces a villainous choice — Each artifact creature you control deals 1 damage to that opponent, or you draw a card and chaos ensues.",
+      "power": "4",
+      "toughness": "5",
+      "type_line": "Legendary Creature — Time Lord Rogue",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Misty Rainforest",
+      "oracle_id": "09dd85aa-47bc-4713-a9b9-8b52ff2285ed",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for a Forest or Island card, put it onto the battlefield, then shuffle.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Morphic Pool",
+      "oracle_id": "bd004c9d-771e-4e63-a97d-a2259c096af8",
+      "oracle_text": "This land enters tapped unless you have two or more opponents.\n{T}: Add {U} or {B}.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Mountain",
+      "oracle_id": "a3fb7228-e76b-4e96-a40e-20b5fed75685",
+      "oracle_text": "({T}: Add {R}.)",
+      "power": null,
+      "toughness": null,
+      "type_line": "Basic Land — Mountain",
+      "quantity": 3,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{0}",
+      "name": "Mox Opal",
+      "oracle_id": "de2440de-e948-4811-903c-0bbe376ff64d",
+      "oracle_text": "Metalcraft — {T}: Add one mana of any color. Activate only if you control three or more artifacts.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Legendary Artifact",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Otawara, Soaring City",
+      "oracle_id": "e9b6a394-691c-425a-9307-76d8edc7375e",
+      "oracle_text": "{T}: Add {U}.\nChannel — {3}{U}, Discard this card: Return target artifact, creature, enchantment, or planeswalker to its owner's hand. This ability costs {1} less to activate for each legendary creature you control.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Legendary Land",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}{U}",
+      "name": "Padeem, Consul of Innovation",
+      "oracle_id": "0c7ba712-6a99-4d2f-9242-a2163a11f69c",
+      "oracle_text": "Artifacts you control have hexproof. (They can't be the targets of spells or abilities your opponents control.)\nAt the beginning of your upkeep, if you control the artifact with the greatest mana value or tied for the greatest mana value, draw a card.",
+      "power": "1",
+      "toughness": "4",
+      "type_line": "Legendary Creature — Vedalken Artificer",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{B}{R}",
+      "name": "Perforating Artist",
+      "oracle_id": "a3643f66-dfa2-4275-a093-23e162496354",
+      "oracle_text": "Deathtouch (Any amount of damage this deals to a creature is enough to destroy it.)\nRaid — At the beginning of your end step, if you attacked this turn, each opponent loses 3 life unless that player sacrifices a nonland permanent of their choice or discards a card.",
+      "power": "3",
+      "toughness": "2",
+      "type_line": "Creature — Devil",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Plaza of Heroes",
+      "oracle_id": "9c58d241-4d9f-4b46-b8ee-f4587f9acfd6",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add one mana of any color. Spend this mana only to cast a legendary spell.\n{T}: Add one mana of any color among legendary permanents you control.\n{3}, {T}, Exile this land: Target legendary creature gains hexproof and indestructible until end of turn.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Polluted Delta",
+      "oracle_id": "ef86989d-ce80-4e55-aece-7d11710eeffa",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for an Island or Swamp card, put it onto the battlefield, then shuffle.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}{R}",
+      "name": "Purphoros, God of the Forge",
+      "oracle_id": "4fdbbec2-e921-4b63-958d-f9ba1e417197",
+      "oracle_text": "Indestructible\nAs long as your devotion to red is less than five, Purphoros isn't a creature.\nWhenever another creature you control enters, Purphoros deals 2 damage to each opponent.\n{2}{R}: Creatures you control get +1/+0 until end of turn.",
+      "power": "6",
+      "toughness": "5",
+      "type_line": "Legendary Enchantment Creature — God",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 5,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{4}{U}",
+      "name": "Quantum Misalignment",
+      "oracle_id": "197582b9-4c86-41a3-ad0c-789a0db8e087",
+      "oracle_text": "Create a token that's a copy of target creature you control, except it isn't legendary.\nRebound (If you cast this spell from your hand, exile it as it resolves. At the beginning of your next upkeep, you may cast this card from exile without paying its mana cost.)",
+      "power": null,
+      "toughness": null,
+      "type_line": "Sorcery",
+      "quantity": 1,
+      "source": "Cult of Skaro 2026-10-23 210-name live Scryfall archived snapshot (canonical selected evidence)",
+      "project_exception": null
+    },
+    {
+      "cmc": 4,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{4}",
+      "name": "Roaming Throne",
+      "oracle_id": "3640c29b-1534-4952-b297-619ade948431",
+      "oracle_text": "Ward {2}\nAs this creature enters, choose a creature type.\nThis creature is the chosen type in addition to its other types.\nIf a triggered ability of another creature you control of the chosen type triggers, it triggers an additional time.",
+      "power": "4",
+      "toughness": "4",
+      "type_line": "Artifact Creature — Golem",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Scalding Tarn",
+      "oracle_id": "cb027150-848c-4a66-88ad-e20222304dd8",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for an Island or Mountain card, put it onto the battlefield, then shuffle.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{U}{B}",
+      "name": "Scientist Supreme of A.I.M.",
+      "oracle_id": "c09c424b-6aba-4190-9f55-f0307d746386",
+      "oracle_text": "Pay 2 life: Copy target activated or triggered ability you control from an artifact source. You may choose new targets for the copy. Activate only during your turn and only once each turn. (Mana abilities can't be targeted.)",
+      "power": "2",
+      "toughness": "2",
+      "type_line": "Legendary Creature — Human Scientist Villain",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}{B}",
+      "name": "Snuff Out",
+      "oracle_id": "324824cb-f938-401c-b9b5-d8908b431ef0",
+      "oracle_text": "If you control a Swamp, you may pay 4 life rather than pay this spell's mana cost.\nDestroy target nonblack creature. It can't be regenerated.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 1,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}",
+      "name": "Sol Ring",
+      "oracle_id": "6ad8011d-3471-4369-9d68-b264cc027487",
+      "oracle_text": "{T}: Add {C}{C}.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}{U}",
+      "name": "Spark Double",
+      "oracle_id": "8dcb35e5-ae44-455f-86e3-4a77d496ff34",
+      "oracle_text": "You may have this creature enter as a copy of a creature or planeswalker you control, except it enters with an additional +1/+1 counter on it if it's a creature, it enters with an additional loyalty counter on it if it's a planeswalker, and it isn't legendary.",
+      "power": "0",
+      "toughness": "0",
+      "type_line": "Creature — Illusion",
+      "quantity": 1,
+      "source": "Cult of Skaro 2026-10-23 210-name live Scryfall archived snapshot (canonical selected evidence)",
+      "project_exception": null
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Steam Vents",
+      "oracle_id": "17039058-822d-409f-938c-b727a366ba63",
+      "oracle_text": "({T}: Add {U} or {R}.)\nAs this land enters, you may pay 2 life. If you don't, it enters tapped.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land — Island Mountain",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}",
+      "name": "Strionic Resonator",
+      "oracle_id": "cf751552-156f-4f81-ac94-9814dce099f9",
+      "oracle_text": "{2}, {T}: Copy target triggered ability you control. You may choose new targets for the copy. (A triggered ability uses the words \"when,\" \"whenever,\" or \"at.\")",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Swamp",
+      "oracle_id": "56719f6a-1a6c-4c0a-8d21-18f7d7350b68",
+      "oracle_text": "({T}: Add {B}.)",
+      "power": null,
+      "toughness": null,
+      "type_line": "Basic Land — Swamp",
+      "quantity": 3,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 1,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{U}",
+      "name": "Swan Song",
+      "oracle_id": "8ddfc283-c9b4-41a5-af88-cf0068e986cc",
+      "oracle_text": "Counter target enchantment, instant, or sorcery spell. Its controller creates a 2/2 blue Bird creature token with flying.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}",
+      "name": "Swiftfoot Boots",
+      "oracle_id": "c8b143ad-43ec-4e0d-a440-e348daa31391",
+      "oracle_text": "Equipped creature has hexproof and haste. (It can't be the target of spells or abilities your opponents control. It can attack and {T} no matter when it came under your control.)\nEquip {1} ({1}: Attach to target creature you control. Equip only as a sorcery.)",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact — Equipment",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{B}{R}",
+      "name": "Sycorax Commander",
+      "oracle_id": "78ed3e01-6d22-429a-a9db-baff38d7bc03",
+      "oracle_text": "First strike, haste\nSanctified Rules of Combat — When this creature enters, each opponent faces a villainous choice — That opponent discards all the cards in their hand, then draws that many cards minus one, or this creature deals damage to that player equal to the number of cards in their hand.",
+      "power": "4",
+      "toughness": "2",
+      "type_line": "Creature — Alien Soldier",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{U/B}{U/B}",
+      "name": "Sygg, River Cutthroat",
+      "oracle_id": "cd4db500-0017-46c6-be94-1bf48f686b6a",
+      "oracle_text": "At the beginning of each end step, if an opponent lost 3 or more life this turn, you may draw a card. (Damage causes loss of life.)",
+      "power": "1",
+      "toughness": "3",
+      "type_line": "Legendary Creature — Merfolk Rogue",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}",
+      "name": "Talisman of Creativity",
+      "oracle_id": "14d2979d-5728-42d7-a027-0eb1f754655d",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {U} or {R}. This artifact deals 1 damage to you.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}",
+      "name": "Talisman of Dominance",
+      "oracle_id": "4c0a0448-b9d6-43a0-8549-64066dac63f0",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {U} or {B}. This artifact deals 1 damage to you.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}",
+      "name": "Talisman of Indulgence",
+      "oracle_id": "1d9aeaaa-66f6-41cb-9bac-162d6fd8662c",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {B} or {R}. This artifact deals 1 damage to you.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 5,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "{3}{B}{B}",
+      "name": "Tergrid, God of Fright",
+      "oracle_id": "8485cfaa-1dbf-432b-b5d0-92a6aa6a329b",
+      "oracle_text": "Menace\nWhenever an opponent sacrifices a nontoken permanent or discards a permanent card, you may put that card from a graveyard onto the battlefield under your control.\n//\n{T}: Target player loses 3 life unless they sacrifice a nonland permanent of their choice or discard a card.\n{3}{B}: Untap Tergrid's Lantern.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Legendary Creature — God // Legendary Artifact",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 6,
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{4}{U}{B}",
+      "name": "Tezzeret, Master of the Bridge",
+      "oracle_id": "d097991c-41df-47de-a439-57a0693b9581",
+      "oracle_text": "Creature and planeswalker spells you cast have affinity for artifacts. (They cost {1} less to cast for each artifact you control.)\n+2: Tezzeret deals X damage to each opponent, where X is the number of artifacts you control. You gain X life.\n−3: Return target artifact card from your graveyard to your hand.\n−8: Exile the top ten cards of your library. Put all artifact cards from among them onto the battlefield.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Legendary Planeswalker — Tezzeret",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 7,
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{5}{B}{R}",
+      "name": "The Dalek Emperor",
+      "oracle_id": "07799012-7051-400e-adde-b54b41b80c70",
+      "oracle_text": "Affinity for Daleks (This spell costs {1} less to cast for each Dalek you control.)\nOther Daleks you control have haste.\nAt the beginning of combat on your turn, each opponent faces a villainous choice — That player sacrifices a creature of their choice, or you create a 3/3 black Dalek artifact creature token with menace.",
+      "power": "6",
+      "toughness": "6",
+      "type_line": "Legendary Artifact Creature — Dalek",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 5,
+      "color_identity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{U}{B}{R}",
+      "name": "The Valeyard",
+      "oracle_id": "ed202f1d-3511-45f4-bfbc-e6b76d4311d1",
+      "oracle_text": "If an opponent would face a villainous choice, they face that choice an additional time. (They can make the same or different choices.)\nWhile voting, you may vote an additional time.",
+      "power": "4",
+      "toughness": "5",
+      "type_line": "Legendary Creature — Time Lord Noble",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 6,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}{B}{B}{B}",
+      "name": "Their Name Is Death",
+      "oracle_id": "97f9aa5e-e34d-4029-9213-b32ebaf9859c",
+      "oracle_text": "Destroy all nonartifact creatures.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Sorcery",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{B}",
+      "name": "Tinybones, Trinket Thief",
+      "oracle_id": "008eda1f-b913-4f04-8c29-5e87c270149e",
+      "oracle_text": "At the beginning of each end step, if an opponent discarded a card this turn, you draw a card and you lose 1 life.\n{4}{B}{B}: Each opponent with no cards in hand loses 10 life.",
+      "power": "1",
+      "toughness": "2",
+      "type_line": "Legendary Creature — Skeleton Rogue",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{X}{B}{B}",
+      "name": "Torment of Hailfire",
+      "oracle_id": "30a0a6c2-1fbb-4784-ab96-22611d57e62c",
+      "oracle_text": "Repeat the following process X times. Each opponent loses 3 life unless that player sacrifices a nonland permanent of their choice or discards a card.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Sorcery",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{B}",
+      "name": "Toxic Deluge",
+      "oracle_id": "afaef788-34d1-460b-b884-9d7ae6ddeb18",
+      "oracle_text": "As an additional cost to cast this spell, pay X life.\nAll creatures get -X/-X until end of turn.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Sorcery",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Training Center",
+      "oracle_id": "e3570ac7-c593-40e3-bbd6-ec3da6d8158d",
+      "oracle_text": "This land enters tapped unless you have two or more opponents.\n{T}: Add {U} or {R}.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Underground Sea",
+      "oracle_id": "4b22be3a-8ce1-47d1-b82e-6c3ccfb0548b",
+      "oracle_text": "({T}: Add {U} or {B}.)",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land — Island Swamp",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Urborg, Tomb of Yawgmoth",
+      "oracle_id": "db6174d7-211d-4817-b8e4-8384594c83f9",
+      "oracle_text": "Each land is a Swamp in addition to its other land types.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Legendary Land",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Urza's Saga",
+      "oracle_id": "4c6a0c30-b547-4eff-8ff4-0ca25803c076",
+      "oracle_text": "(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)\nI — This Saga gains \"{T}: Add {C}.\"\nII — This Saga gains \"{2}, {T}: Create a 0/0 colorless Construct artifact creature token with 'This token gets +1/+1 for each artifact you control.'\"\nIII — Search your library for an artifact card with mana cost {0} or {1}, put it onto the battlefield, then shuffle.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Enchantment Land — Urza's Saga",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 1,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{R}",
+      "name": "Vandalblast",
+      "oracle_id": "3567c3c8-b3c7-45b7-935b-b1fdbc973720",
+      "oracle_text": "Destroy target artifact you don't control.\nOverload {4}{R} (You may cast this spell for its overload cost. If you do, change \"target\" in its text to \"each.\")",
+      "power": null,
+      "toughness": null,
+      "type_line": "Sorcery",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Volcanic Island",
+      "oracle_id": "c718911c-c955-4eb9-9e16-be4bd49a4e4e",
+      "oracle_text": "({T}: Add {U} or {R}.)",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land — Island Mountain",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{B}",
+      "name": "Waste Not",
+      "oracle_id": "00fdcc19-88ed-46c3-91f0-095806228105",
+      "oracle_text": "Whenever an opponent discards a creature card, create a 2/2 black Zombie creature token.\nWhenever an opponent discards a land card, add {B}{B}.\nWhenever an opponent discards a noncreature, nonland card, draw a card.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Enchantment",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Watery Grave",
+      "oracle_id": "fc9ec820-4245-4a96-b009-5308a818ca58",
+      "oracle_text": "({T}: Add {U} or {B}.)\nAs this land enters, you may pay 2 life. If you don't, it enters tapped.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land — Island Swamp",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 6,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{5}{B}",
+      "name": "Wound Reflection",
+      "oracle_id": "b09206a4-8b73-4125-8b79-53f6fd511b16",
+      "oracle_text": "At the beginning of each end step, each opponent loses life equal to the life they lost this turn. (Damage causes loss of life.)",
+      "power": null,
+      "toughness": null,
+      "type_line": "Enchantment",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Xander's Lounge",
+      "oracle_id": "8291543f-d086-48aa-b2b7-5481ca8c9198",
+      "oracle_text": "({T}: Add {U}, {B}, or {R}.)\nThis land enters tapped.\nCycling {3} ({3}, Discard this card: Draw a card.)",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land — Island Swamp Mountain",
+      "quantity": 1,
+      "source": "GrokBot PR #660 2026-10-23 live Scryfall 177-name archived Oracle snapshot"
+    }
+  ],
+  "candidate_path": "refinement/decklists/Davros_Dalek_Creator_M7_Rev2_Approved_2026-10-23.txt",
+  "candidate_raw_sha256": "96c6b1cde56eb79db1527e64b82d218f341511a8de99c2395729c0388fd88cfc",
+  "approved_list_artifact": "refinement/decklists/Davros_Dalek_Creator_M7_Rev2_Approved_2026-10-23.txt",
+  "owner_approved_exact_sha256": "96c6b1cde56eb79db1527e64b82d218f341511a8de99c2395729c0388fd88cfc",
+  "owner_approval_date": "2026-10-23",
+  "governance": {
+    "owner": "Cory Stover",
+    "owner_exact_reply": "Approve",
+    "source_approval_context": "Full 100-card Davros M7 Rev2 nine-swap list plus raw SHA supplied in prior assistant answer; owner subsequent explicit reply Approve.",
+    "engineering_review_pr": 687,
+    "engineering_head": "f9608321853a1a90cd0f4882d1227a255301355a",
+    "engineering_workflow_run": 40056636170,
+    "engineering_workflow_conclusion": "success",
+    "prior_grok_six_m6_j_not_resealed": true,
+    "previous_approved_source_unchanged": true
+  },
+  "canonical_approval_is_separate_from_candidate_research": true
+}
