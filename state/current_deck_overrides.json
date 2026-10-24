@@ -283,12 +283,27 @@
       "approval_status": "APPROVED",
       "lock_status": "LOCKED",
       "final_gate_passed": true,
-      "user_approval_date": "2026-10-14",
+      "user_approval_date": "2026-10-23",
       "current_stage": "LOCKED",
-      "approved_list_sha256": "aa6d2d343c6c1f167de8d16b23951940f7d23810c6e7705a6fd0d539a7459adc",
-      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit",
-      "approval_basis": "Explicit user approval of the exact SHA-bound Davros approval candidate after mandatory 99-slot whole-list audit, candidate exhaustion, red-team review, zero-new-material-improvement closure, fresh Oracle/rules verification, official Commander legality verification, and complete structural gate PASS.",
-      "complete_gate_artifact": "refinement/verification/davros_dalek_creator_2026-10-14/gate_output/Davros_Dalek_Creator_2026-10-14_Complete_Gate.json"
+      "approved_list_sha256": "96c6b1cde56eb79db1527e64b82d218f341511a8de99c2395729c0388fd88cfc",
+      "quality_gate_version": "Deck Quality Gates v3 + Davros ChatGPT independent M7 Rev2 nine-swap source-bound 95-name Oracle, exact SHA, commander-copy/threshold bounded mechanics and 11 prior-lock regression",
+      "approval_basis": "Cory explicitly replied 'Approve' to the complete independently verified Davros, Dalek Creator M7 Rev2 100-card list and raw SHA-256 96c6b1cde56eb79db1527e64b82d218f341511a8de99c2395729c0388fd88cfc on 2026-10-23 America/Chicago. This authorizes only these exact 100 UTF-8 bytes and subsequent canonical merge, not blanket approval for Deck #13 or any later deck.",
+      "complete_gate_artifact": "refinement/verification/davros_dalek_creator_2026-10-14/gate_output/Davros_Dalek_Creator_2026-10-14_Complete_Gate.json",
+      "m7_final_candidate_sha256": "96c6b1cde56eb79db1527e64b82d218f341511a8de99c2395729c0388fd88cfc",
+      "approved_list_artifact": "refinement/decklists/Davros_Dalek_Creator_M7_Rev2_Approved_2026-10-23.txt",
+      "previous_approved_list_sha256": "aa6d2d343c6c1f167de8d16b23951940f7d23810c6e7705a6fd0d539a7459adc",
+      "previous_approved_source_raw_sha256": "aa6d2d343c6c1f167de8d16b23951940f7d23810c6e7705a6fd0d539a7459adc",
+      "previous_approved_list_artifact": "refinement/decklists/Davros_Dalek_Creator_Approved_2026-10-14.txt",
+      "m7_owner_approval_date": "2026-10-23",
+      "m7_approval_source": "ChatGPT independent engineering PR #687 exact head f9608321853a1a90cd0f4882d1227a255301355a; exact-head workflow #40056636170 SUCCESS; original Grok #660 first-pass six-swap and M6 I/J evidence unchanged. 95-name source-bound Oracle from Grok Oct23 Scryfall snapshot, approved Cult Oct23 selected Scryfall archive for 3 commander-clone cards, official Wizards BRO release notes for Mechanized Warfare and Scryfall-mirrored Oracle ID.",
+      "m7_archidekt_tags": [
+        "Daleks",
+        "Villainous Choice",
+        "Group Slug"
+      ],
+      "m7_power_bracket": "4 — Optimized",
+      "m7_project_exceptions": [],
+      "m7_verified_100_physical": true
     },
     "Doctor_Doom__King_of_Latveria": {
       "approval_status": "APPROVED",
