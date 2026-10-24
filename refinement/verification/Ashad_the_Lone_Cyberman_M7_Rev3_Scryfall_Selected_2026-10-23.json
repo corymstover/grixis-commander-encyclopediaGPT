@@ -1,0 +1,1597 @@
+{
+  "schema_version": 1,
+  "deck_id": "Ashad_the_Lone_Cyberman",
+  "scope": "Exact 95 selected names/100 physical cards approved by Cory 2026-10-23; no ineligible research-only candidates present.",
+  "candidate_raw_sha256": "352911498345e78bd55773f4c9d1c49d05599610d5fc806f7b779c85eb5f6267",
+  "candidate_logical_hash": "lh1:9ebaa891f2ff0e7af81ff2856b54a012c915f8d5cb1936a8ca579579aa8cb8c9",
+  "engineering_source_ref": "corymstover/GrokBotMTGCompanion@ef7a1f726f26648886cf9b44069f2c8e205df189:data/grixis/m6/oracle_snapshots/Ashad__the_Lone_Cyberman_M7_Rev3_118_Scryfall_20261023.json",
+  "engineering_source_raw_sha256": "1c989cb1f72eea444a02b22084700be260aea92b5935126a8b8fcf33deb8d5a7",
+  "source_date": "2026-10-23 America/Chicago",
+  "exact_selected_unique_names": 95,
+  "physical_cards": 100,
+  "all_selected_commander_legal": true,
+  "all_selected_grixis_identity": true,
+  "project_exceptions": [],
+  "rejected_research_only": [
+    "Bio-Asset Allocator",
+    "Golos, Tireless Pilgrim"
+  ],
+  "cards": [
+    {
+      "cmc": 4,
+      "color_identity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{U}{B}{R}",
+      "name": "Ashad, the Lone Cyberman",
+      "oracle_id": "f3902dfd-6d09-425f-8446-a68cae2eea50",
+      "oracle_text": "The first nonlegendary artifact spell you cast each turn has casualty 2. (As you cast it, you may sacrifice a creature with power 2 or greater. When you do, copy it. A copy of an artifact spell becomes a token.)\nWhenever you sacrifice another creature, put a +1/+1 counter on Ashad.",
+      "power": "3",
+      "toughness": "3",
+      "type_line": "Legendary Artifact Creature — Cyberman",
+      "quantity": 1,
+      "zone": "commander"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Academy Ruins",
+      "oracle_id": "a3da7d5b-2c2b-45fe-b9c5-413b8c8fc0a2",
+      "oracle_text": "{T}: Add {C}.\n{1}{U}, {T}: Put target artifact card from your graveyard on top of your library.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Legendary Land",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{U}",
+      "name": "Arcane Denial",
+      "oracle_id": "ab1cc360-b9de-48d9-9983-4dfe4a7d2a37",
+      "oracle_text": "Counter target spell. Its controller may draw up to two cards at the beginning of the next turn's upkeep.\nYou draw a card at the beginning of the next turn's upkeep.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}",
+      "name": "Arcane Signet",
+      "oracle_id": "0bc7f093-bef0-4f1a-852c-4b75ebf54838",
+      "oracle_text": "{T}: Add one mana of any color in your commander's color identity.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{U}",
+      "name": "Artificer Class",
+      "oracle_id": "6dccf583-1045-4058-86cc-ebbcc8de080e",
+      "oracle_text": "(Gain the next level as a sorcery to add its ability.)\nThe first artifact spell you cast each turn costs {1} less to cast.\n{1}{U}: Level 2\nWhen this Class becomes level 2, reveal cards from the top of your library until you reveal an artifact card. Put that card into your hand and the rest on the bottom of your library in a random order.\n{5}{U}: Level 3\nAt the beginning of your end step, create a token that's a copy of target artifact you control.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Enchantment — Class",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}",
+      "name": "Ashnod's Altar",
+      "oracle_id": "4d18bcba-a346-445e-a182-6cc30b7e066d",
+      "oracle_text": "Sacrifice a creature: Add {C}{C}.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 6,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{4}{U}{U}",
+      "name": "Auton Soldier",
+      "oracle_id": "94357494-4ccc-43d4-b2d4-351581cbf9b6",
+      "oracle_text": "You may have this creature enter as a copy of any creature on the battlefield, except it isn't legendary, is an artifact in addition to its other types, and has myriad. (Whenever it attacks, for each opponent other than defending player, you may create a token copy that's tapped and attacking that player or a planeswalker they control. Exile the tokens at end of combat.)",
+      "power": "0",
+      "toughness": "0",
+      "type_line": "Artifact Creature — Alien Soldier",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{U}{B}",
+      "name": "Baleful Strix",
+      "oracle_id": "37688720-03de-4eca-a82d-a0afe8d58adc",
+      "oracle_text": "Flying, deathtouch\nWhen this creature enters, draw a card.",
+      "power": "1",
+      "toughness": "1",
+      "type_line": "Artifact Creature — Bird",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{B}{B}",
+      "name": "Biotransference",
+      "oracle_id": "5443557e-440f-4fdd-a29b-7740d7cec085",
+      "oracle_text": "Creatures you control are artifacts in addition to their other types. The same is true for creature spells you control and creature cards you own that aren't on the battlefield.\nWhenever you cast an artifact spell, you lose 1 life and create a 2/2 black Necron Warrior artifact creature token.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Enchantment",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Blood Crypt",
+      "oracle_id": "43985bbc-a0f6-4812-984e-392bc8562633",
+      "oracle_text": "({T}: Add {B} or {R}.)\nAs this land enters, you may pay 2 life. If you don't, it enters tapped.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land — Swamp Mountain",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Bloodstained Mire",
+      "oracle_id": "fc0707c7-d504-4ccf-a0d2-3eb6e26e7a57",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for a Swamp or Mountain card, put it onto the battlefield, then shuffle.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 6,
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{4}{U}{R}",
+      "name": "Brudiclad, Telchor Engineer",
+      "oracle_id": "a7ac5d98-805e-4212-be94-333a0c0c44a7",
+      "oracle_text": "Creature tokens you control have haste.\nAt the beginning of combat on your turn, create a 2/1 blue Phyrexian Myr artifact creature token. Then you may choose a token you control. If you do, each other token you control becomes a copy of that token.",
+      "power": "4",
+      "toughness": "4",
+      "type_line": "Legendary Artifact Creature — Phyrexian Artificer",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{R}",
+      "name": "Chaos Warp",
+      "oracle_id": "07a0cba9-8768-4fd9-a3d5-b0f83b4bf8e8",
+      "oracle_text": "The owner of target permanent shuffles it into their library, then reveals the top card of their library. If it's a permanent card, they put it onto the battlefield.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Command Tower",
+      "oracle_id": "0895c9b7-ae7d-4bb3-af17-3b75deb50a25",
+      "oracle_text": "{T}: Add one mana of any color in your commander's color identity.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "City of Brass",
+      "oracle_id": "f25351e3-539b-4bbc-b92d-6480acf4d722",
+      "oracle_text": "Whenever this land becomes tapped, it deals 1 damage to you.\n{T}: Add one mana of any color.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{R}",
+      "name": "Cursed Mirror",
+      "oracle_id": "4d67e2a7-4aa7-44cc-853b-500d7aac046d",
+      "oracle_text": "{T}: Add {R}.\nAs this artifact enters, you may have it become a copy of any creature on the battlefield until end of turn, except it has haste.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{U}{U}",
+      "name": "Cyber Conversion",
+      "oracle_id": "33761c1a-9848-45bf-b934-123cebab566b",
+      "oracle_text": "Turn target creature face down. It's a 2/2 Cyberman artifact creature.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 6,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{5}{U}",
+      "name": "Cyberdrive Awakener",
+      "oracle_id": "126a5d0b-e7d6-458e-87af-47d845678014",
+      "oracle_text": "Flying\nOther artifact creatures you control have flying.\nWhen this creature enters, each noncreature artifact you control becomes a 4/4 artifact creature until end of turn.",
+      "power": "4",
+      "toughness": "4",
+      "type_line": "Artifact Creature — Construct",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 7,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{7}",
+      "name": "Cybermen Squadron",
+      "oracle_id": "8d035688-089f-4d5c-bcad-9140a6c1681b",
+      "oracle_text": "Nonlegendary artifact creatures you control have myriad. (Whenever a creature with myriad attacks, for each opponent other than defending player, you may create a token copy that's tapped and attacking that player or a planeswalker they control. Exile the tokens at end of combat.)",
+      "power": "5",
+      "toughness": "5",
+      "type_line": "Artifact Creature — Cyberman",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "{1}{U}",
+      "name": "Cyclonic Rift",
+      "oracle_id": "d75b9c82-1b49-4c3e-a1b5-aeef57d6644b",
+      "oracle_text": "Return target nonland permanent you don't control to its owner's hand.\nOverload {6}{U} (You may cast this spell for its overload cost. If you do, change \"target\" in its text to \"each.\")",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}",
+      "name": "Ichor Wellspring",
+      "oracle_id": "5b5ef43b-13fd-4461-8d2d-18be65e9a790",
+      "oracle_text": "When this artifact enters or is put into a graveyard from the battlefield, draw a card.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{R}",
+      "name": "Deflecting Swat",
+      "oracle_id": "ae120613-97d6-4393-b39d-c3e6c076f5d6",
+      "oracle_text": "If you control a commander, you may cast this spell without paying its mana cost.\nYou may choose new targets for target spell or ability.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "",
+      "name": "Ancient Tomb",
+      "oracle_id": "23467047-6dba-4498-b783-1ebc4f74b8c2",
+      "oracle_text": "{T}: Add {C}{C}. This land deals 2 damage to you.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "{1}{B}",
+      "name": "Demonic Tutor",
+      "oracle_id": "82004860-e589-4e38-8d61-8c0210e4ea39",
+      "oracle_text": "Search your library for a card, put that card into your hand, then shuffle.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Sorcery",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 1,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{B}",
+      "name": "Disciple of the Vault",
+      "oracle_id": "c8625113-0ce4-4454-83a1-25c31b8bfb9a",
+      "oracle_text": "Whenever an artifact is put into a graveyard from the battlefield, you may have target opponent lose 1 life.",
+      "power": "1",
+      "toughness": "1",
+      "type_line": "Creature — Human Cleric",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{U}",
+      "name": "Emry, Lurker of the Loch",
+      "oracle_id": "da3e7d3d-2ca0-40c3-9602-fca37c92f507",
+      "oracle_text": "Affinity for artifacts (This spell costs {1} less to cast for each artifact you control.)\nWhen Emry enters, mill four cards.\n{T}: Choose target artifact card in your graveyard. You may cast that card this turn. (You still pay its costs. Timing rules still apply.)",
+      "power": "1",
+      "toughness": "2",
+      "type_line": "Legendary Creature — Merfolk Wizard",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{U}{R}",
+      "name": "Enthusiastic Mechanaut",
+      "oracle_id": "c9722086-23e8-43dc-8a8c-541ff6962318",
+      "oracle_text": "Flying\nArtifact spells you cast cost {1} less to cast.",
+      "power": "2",
+      "toughness": "2",
+      "type_line": "Artifact Creature — Goblin Artificer",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{U}",
+      "name": "Esoteric Duplicator",
+      "oracle_id": "0752fe67-9b8a-42c0-90e3-087d426b2f3b",
+      "oracle_text": "Whenever you sacrifice this artifact or another artifact, you may pay {2}. If you do, at the beginning of the next end step, create a token that's a copy of that artifact.\n{2}, Sacrifice this artifact: Draw a card.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact — Clue",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{U}",
+      "name": "Etherium Sculptor",
+      "oracle_id": "96b87445-6362-4a17-91b2-cbf203fd03fd",
+      "oracle_text": "Artifact spells you cast cost {1} less to cast.",
+      "power": "1",
+      "toughness": "2",
+      "type_line": "Artifact Creature — Vedalken Artificer",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Exotic Orchard",
+      "oracle_id": "27b047e3-0d41-45e2-98e9-9391d7923a1e",
+      "oracle_text": "{T}: Add one mana of any color that a land an opponent controls could produce.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{U}",
+      "name": "Fabricate",
+      "oracle_id": "422e1869-134f-463d-9fa1-86b66a998b3e",
+      "oracle_text": "Search your library for an artifact card, reveal it, put it into your hand, then shuffle.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Sorcery",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 1,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}",
+      "name": "Skullclamp",
+      "oracle_id": "65986c1b-8e51-4604-b685-d82fa7d1263a",
+      "oracle_text": "Equipped creature gets +1/-1.\nWhenever equipped creature dies, draw two cards.\nEquip {1}",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact — Equipment",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "{2}{U}",
+      "name": "Fierce Guardianship",
+      "oracle_id": "d09c9cba-fdd2-479b-ad5d-d05181c3e3f9",
+      "oracle_text": "If you control a commander, you may cast this spell without paying its mana cost.\nCounter target noncreature spell.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}",
+      "name": "Foundry Inspector",
+      "oracle_id": "18f22960-87ec-43cd-82ea-ec5cabf49ad3",
+      "oracle_text": "Artifact spells you cast cost {1} less to cast.",
+      "power": "3",
+      "toughness": "2",
+      "type_line": "Artifact Creature — Construct",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 1,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{R}",
+      "name": "Goblin Welder",
+      "oracle_id": "9fc28e1f-f4ea-4bf8-9442-a36dba3b3b29",
+      "oracle_text": "{T}: Choose target artifact a player controls and target artifact card in that player's graveyard. If both targets are still legal as this ability resolves, that player simultaneously sacrifices the artifact and returns the artifact card to the battlefield.",
+      "power": "1",
+      "toughness": "1",
+      "type_line": "Creature — Goblin Artificer",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Great Furnace",
+      "oracle_id": "f4819061-b0b5-48ab-af7b-6525c3d2eab7",
+      "oracle_text": "{T}: Add {R}.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact Land",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{R}",
+      "name": "Ingenious Artillerist",
+      "oracle_id": "752c7723-90f8-4e3a-8266-f251ee0dadd8",
+      "oracle_text": "Whenever one or more artifacts you control enter, this creature deals that much damage to each opponent.",
+      "power": "3",
+      "toughness": "1",
+      "type_line": "Creature — Human Artificer",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Inventors' Fair",
+      "oracle_id": "91d4a5fe-fd6d-4b14-a63f-61b4d0ecd9c4",
+      "oracle_text": "At the beginning of your upkeep, if you control three or more artifacts, you gain 1 life.\n{T}: Add {C}.\n{4}, {T}, Sacrifice Inventors' Fair: Search your library for an artifact card, reveal it, put it into your hand, then shuffle. Activate only if you control three or more artifacts.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Legendary Land",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 5,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}{U}{U}",
+      "name": "Iron Man, Bleeding Edge",
+      "oracle_id": "fc6e170c-820c-48bb-95c7-ee79fba634de",
+      "oracle_text": "Flying\nWhenever you cast an artifact spell, you may copy it, except the copy isn't legendary. Do this only once each turn. (The copy becomes a token.)",
+      "power": "3",
+      "toughness": "5",
+      "type_line": "Legendary Artifact Creature — Human Hero",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Island",
+      "oracle_id": "b2c6aa39-2d2a-459c-a555-fb48ba993373",
+      "oracle_text": "({T}: Add {U}.)",
+      "power": null,
+      "toughness": null,
+      "type_line": "Basic Land — Island",
+      "quantity": 3,
+      "zone": "main"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{4}",
+      "name": "Solemn Simulacrum",
+      "oracle_id": "00c0543c-2a1f-4425-8283-4062d74a1637",
+      "oracle_text": "When this creature enters, you may search your library for a basic land card, put that card onto the battlefield tapped, then shuffle.\nWhen this creature dies, you may draw a card.",
+      "power": "2",
+      "toughness": "2",
+      "type_line": "Artifact Creature — Golem",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{U}{R}",
+      "name": "Jhoira, Weatherlight Captain",
+      "oracle_id": "c803b788-4213-4fab-b841-7e5bbf66088e",
+      "oracle_text": "Whenever you cast a historic spell, draw a card. (Artifacts, legendaries, and Sagas are historic.)",
+      "power": "3",
+      "toughness": "3",
+      "type_line": "Legendary Creature — Human Artificer",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "name": "Liberator, Urza's Battlethopter",
+      "oracle_id": "798a4a6f-7443-4e8e-afcb-0a694fdfcbb3",
+      "oracle_text": "Flash\nFlying\nYou may cast colorless spells and artifact spells as though they had flash.\nWhenever you cast a spell, if the amount of mana spent to cast that spell is greater than Liberator's power, put a +1/+1 counter on Liberator.",
+      "mana_cost": "{3}",
+      "cmc": 3,
+      "type_line": "Legendary Artifact Creature — Thopter",
+      "power": "1",
+      "toughness": "2",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{4}",
+      "name": "Krark-Clan Ironworks",
+      "oracle_id": "68e1f7e0-a9b3-437f-8086-0c0cb85f2880",
+      "oracle_text": "Sacrifice an artifact: Add {C}{C}.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}",
+      "name": "Lightning Greaves",
+      "oracle_id": "ca204b66-8d0c-431a-8d34-282f7c2d17da",
+      "oracle_text": "Equipped creature has haste and shroud. (It can't be the target of spells or abilities.)\nEquip {0}",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact — Equipment",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Luxury Suite",
+      "oracle_id": "819e1765-8325-4e6f-89c1-63ea86de369f",
+      "oracle_text": "This land enters tapped unless you have two or more opponents.\n{T}: Add {B} or {R}.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{U}{U}",
+      "name": "Mana Drain",
+      "oracle_id": "74d3277a-38e5-4732-afed-084a56148f20",
+      "oracle_text": "Counter target spell. At the beginning of your next main phase, add an amount of {C} equal to that spell's mana value.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 6,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{4}{B}{B}",
+      "name": "Marionette Master",
+      "oracle_id": "dabbf796-3b88-499e-8839-06fa36fe01ac",
+      "oracle_text": "Fabricate 3 (When this creature enters, put three +1/+1 counters on it or create three 1/1 colorless Servo artifact creature tokens.)\nWhenever an artifact you control is put into a graveyard from the battlefield, target opponent loses life equal to this creature's power.",
+      "power": "1",
+      "toughness": "3",
+      "type_line": "Creature — Human Artificer",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{B}{R}",
+      "name": "Mayhem Devil",
+      "oracle_id": "4709f11c-aef8-45ac-b2bf-e640c568dfac",
+      "oracle_text": "Whenever a player sacrifices a permanent, this creature deals 1 damage to any target.",
+      "power": "3",
+      "toughness": "3",
+      "type_line": "Creature — Devil",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Morphic Pool",
+      "oracle_id": "bd004c9d-771e-4e63-a97d-a2259c096af8",
+      "oracle_text": "This land enters tapped unless you have two or more opponents.\n{T}: Add {U} or {B}.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Mountain",
+      "oracle_id": "a3fb7228-e76b-4e96-a40e-20b5fed75685",
+      "oracle_text": "({T}: Add {R}.)",
+      "power": null,
+      "toughness": null,
+      "type_line": "Basic Land — Mountain",
+      "quantity": 2,
+      "zone": "main"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{0}",
+      "name": "Mox Opal",
+      "oracle_id": "de2440de-e948-4811-903c-0bbe376ff64d",
+      "oracle_text": "Metalcraft — {T}: Add one mana of any color. Activate only if you control three or more artifacts.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Legendary Artifact",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{4}",
+      "name": "Mystic Forge",
+      "oracle_id": "994bc16d-fdc6-475c-96df-beeb4d5aa03e",
+      "oracle_text": "You may look at the top card of your library any time.\nYou may cast artifact spells and colorless spells from the top of your library.\n{T}, Pay 1 life: Exile the top card of your library.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 5,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}{B}{B}",
+      "name": "Necron Deathmark",
+      "oracle_id": "45866598-4ee4-46b6-ade2-ffcdbe98e58f",
+      "oracle_text": "Flash\nSynaptic Disintegrator — When this creature enters, destroy up to one target creature and target player mills three cards.",
+      "power": "5",
+      "toughness": "3",
+      "type_line": "Artifact Creature — Necron",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}{U}",
+      "name": "Padeem, Consul of Innovation",
+      "oracle_id": "0c7ba712-6a99-4d2f-9242-a2163a11f69c",
+      "oracle_text": "Artifacts you control have hexproof. (They can't be the targets of spells or abilities your opponents control.)\nAt the beginning of your upkeep, if you control the artifact with the greatest mana value or tied for the greatest mana value, draw a card.",
+      "power": "1",
+      "toughness": "4",
+      "type_line": "Legendary Creature — Vedalken Artificer",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}",
+      "name": "Phyrexian Altar",
+      "oracle_id": "8d02b297-97c4-4379-9862-0a462400f66f",
+      "oracle_text": "Sacrifice a creature: Add one mana of any color.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}{U/P}",
+      "name": "Phyrexian Metamorph",
+      "oracle_id": "340bbe8b-e987-4c3e-ab4e-9dee63e57d4f",
+      "oracle_text": "({U/P} can be paid with either {U} or 2 life.)\nYou may have this creature enter as a copy of any artifact or creature on the battlefield, except it's an artifact in addition to its other types.",
+      "power": "0",
+      "toughness": "0",
+      "type_line": "Artifact Creature — Phyrexian Shapeshifter",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}{B}",
+      "name": "Pitiless Plunderer",
+      "oracle_id": "a784481f-eccb-4112-bb38-04a659319660",
+      "oracle_text": "Whenever another creature you control dies, create a Treasure token. (It's an artifact with \"{T}, Sacrifice this token: Add one mana of any color.\")",
+      "power": "1",
+      "toughness": "4",
+      "type_line": "Creature — Human Pirate",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{R}",
+      "name": "Poetic Ingenuity",
+      "oracle_id": "9780d975-acbe-40c6-b444-1e1e6b772788",
+      "oracle_text": "Whenever one or more Dinosaurs you control attack, create that many Treasure tokens.\nWhenever you cast an artifact spell, create a 3/1 red Dinosaur creature token. This ability triggers only once each turn.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Enchantment",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Polluted Delta",
+      "oracle_id": "ef86989d-ce80-4e55-aece-7d11710eeffa",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for an Island or Swamp card, put it onto the battlefield, then shuffle.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 9,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{9}",
+      "name": "Portal to Phyrexia",
+      "oracle_id": "301d1d8e-d3fc-4010-8b29-4724fa0b31cd",
+      "oracle_text": "When this artifact enters, each opponent sacrifices three creatures of their choice.\nAt the beginning of your upkeep, put target creature card from a graveyard onto the battlefield under your control. It's a Phyrexian in addition to its other types.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}",
+      "name": "Rakdos Signet",
+      "oracle_id": "3adb7681-977f-4a32-9ec8-51481b958268",
+      "oracle_text": "{1}, {T}: Add {B}{R}.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{R}",
+      "name": "Piggy Bank",
+      "oracle_id": "a13f4095-300b-434f-aa9a-3608aaae5163",
+      "oracle_text": "When this creature dies, create a Treasure token. (It's an artifact with \"{T}, Sacrifice this token: Add one mana of any color.\")",
+      "power": "3",
+      "toughness": "2",
+      "type_line": "Artifact Creature — Boar Toy",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}",
+      "name": "Scrap Trawler",
+      "oracle_id": "164f3f85-21fc-40b7-9871-4f303ba98428",
+      "oracle_text": "Whenever this creature dies or another artifact you control is put into a graveyard from the battlefield, return to your hand target artifact card in your graveyard with lesser mana value.",
+      "power": "3",
+      "toughness": "2",
+      "type_line": "Artifact Creature — Construct",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}",
+      "name": "Sculpting Steel",
+      "oracle_id": "6c85271c-c711-49b0-a72e-9e576c33714d",
+      "oracle_text": "You may have this artifact enter as a copy of any artifact on the battlefield.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Seat of the Synod",
+      "oracle_id": "39451b4d-cd7a-40da-b457-cb51b609173f",
+      "oracle_text": "{T}: Add {U}.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact Land",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}",
+      "name": "Shimmer Myr",
+      "oracle_id": "e110ee80-37af-4989-a5fb-95d51dc7f102",
+      "oracle_text": "Flash\nYou may cast artifact spells as though they had flash.",
+      "power": "2",
+      "toughness": "2",
+      "type_line": "Artifact Creature — Myr",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Mana Confluence",
+      "oracle_id": "d0ee5bdc-2b69-4b73-9a20-ffcc18783b29",
+      "oracle_text": "{T}, Pay 1 life: Add one mana of any color.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{U}",
+      "name": "Simulacrum Synthesizer",
+      "oracle_id": "eb7a1f21-a66d-415b-8520-710b44890bb6",
+      "oracle_text": "When this artifact enters, scry 2.\nWhenever another artifact you control with mana value 3 or greater enters, create a 0/0 colorless Construct artifact creature token with \"This token gets +1/+1 for each artifact you control.\"",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 1,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}",
+      "name": "Sol Ring",
+      "oracle_id": "6ad8011d-3471-4369-9d68-b264cc027487",
+      "oracle_text": "{T}: Add {C}{C}.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Steam Vents",
+      "oracle_id": "17039058-822d-409f-938c-b727a366ba63",
+      "oracle_text": "({T}: Add {U} or {R}.)\nAs this land enters, you may pay 2 life. If you don't, it enters tapped.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land — Island Mountain",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Stormcarved Coast",
+      "oracle_id": "4722105b-0085-4bb8-bca1-9de0d3eb5600",
+      "oracle_text": "This land enters tapped unless you control two or more other lands.\n{T}: Add {U} or {R}.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Swamp",
+      "oracle_id": "56719f6a-1a6c-4c0a-8d21-18f7d7350b68",
+      "oracle_text": "({T}: Add {B}.)",
+      "power": null,
+      "toughness": null,
+      "type_line": "Basic Land — Swamp",
+      "quantity": 3,
+      "zone": "main"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}",
+      "name": "Talisman of Creativity",
+      "oracle_id": "14d2979d-5728-42d7-a027-0eb1f754655d",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {U} or {R}. This artifact deals 1 damage to you.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}",
+      "name": "Talisman of Dominance",
+      "oracle_id": "4c0a0448-b9d6-43a0-8549-64066dac63f0",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {U} or {B}. This artifact deals 1 damage to you.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}",
+      "name": "Talisman of Indulgence",
+      "oracle_id": "1d9aeaaa-66f6-41cb-9bac-162d6fd8662c",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {B} or {R}. This artifact deals 1 damage to you.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "",
+      "name": "Mishra's Workshop",
+      "oracle_id": "ba284fe6-bb29-455c-8321-9714a0cdc05e",
+      "oracle_text": "{T}: Add {C}{C}{C}. Spend this mana only to cast artifact spells.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{X}{U}{U}{B}",
+      "name": "The Cyber-Controller",
+      "oracle_id": "06c25d71-f3f4-4089-b9bc-de96fbad73a5",
+      "oracle_text": "When The Cyber-Controller enters, each opponent mills X cards. Put all creature cards milled this way onto the battlefield face down under your control. They're 2/2 Cyberman artifact creatures.\nOther artifact creatures you control get +1/+1.",
+      "power": "3",
+      "toughness": "3",
+      "type_line": "Legendary Artifact Creature — Cyberman",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 6,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}{B}{B}{B}",
+      "name": "Their Name Is Death",
+      "oracle_id": "97f9aa5e-e34d-4029-9213-b32ebaf9859c",
+      "oracle_text": "Destroy all nonartifact creatures.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Sorcery",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 5,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}{B}{B}",
+      "name": "Royal Warden",
+      "oracle_id": "0192ba05-6144-4fec-a803-462ecdf64195",
+      "oracle_text": "Phalanx Commander — When this creature enters, create two tapped 2/2 black Necron Warrior artifact creature tokens.\nUnearth {3}{B} ({3}{B}: Return this card from your graveyard to the battlefield. It gains haste. Exile it at the beginning of the next end step or if it would leave the battlefield. Unearth only as a sorcery.)",
+      "power": "3",
+      "toughness": "2",
+      "type_line": "Artifact Creature — Necron",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 7,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{6}{U}",
+      "name": "Thought Monitor",
+      "oracle_id": "9deded8b-cec4-4ede-a50b-131404d456d4",
+      "oracle_text": "Affinity for artifacts (This spell costs {1} less to cast for each artifact you control.)\nFlying\nWhen this creature enters, draw two cards.",
+      "power": "2",
+      "toughness": "2",
+      "type_line": "Artifact Creature — Construct",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}",
+      "name": "Razorlash Transmogrant",
+      "oracle_id": "580996d4-db9a-4b57-a0e1-a2dbb524121a",
+      "oracle_text": "This creature can't block.\n{4}{B}{B}: Return this card from your graveyard to the battlefield with a +1/+1 counter on it. This ability costs {4} less to activate if an opponent controls four or more nonbasic lands.",
+      "power": "3",
+      "toughness": "1",
+      "type_line": "Artifact Creature — Zombie",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Training Center",
+      "oracle_id": "e3570ac7-c593-40e3-bbd6-ec3da6d8158d",
+      "oracle_text": "This land enters tapped unless you have two or more opponents.\n{T}: Add {U} or {R}.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}",
+      "name": "Twinning Staff",
+      "oracle_id": "3ca8113b-f5b8-41a7-aae6-ebb32554dfe3",
+      "oracle_text": "If you would copy a spell one or more times, instead copy it that many times plus an additional time. You may choose new targets for the additional copy.\n{7}, {T}: Copy target instant or sorcery spell you control. You may choose new targets for the copy.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Underground Sea",
+      "oracle_id": "4b22be3a-8ce1-47d1-b82e-6c3ccfb0548b",
+      "oracle_text": "({T}: Add {U} or {B}.)",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land — Island Swamp",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{4}",
+      "name": "Unwinding Clock",
+      "oracle_id": "153fac93-5d2b-4348-a468-a5eef6a12da3",
+      "oracle_text": "Untap all artifacts you control during each other player's untap step.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{U}{U}",
+      "name": "Urza, Lord High Artificer",
+      "oracle_id": "e87906d2-db1a-4e19-b910-adb4eb339945",
+      "oracle_text": "When Urza enters, create a 0/0 colorless Construct artifact creature token with \"This token gets +1/+1 for each artifact you control.\"\nTap an untapped artifact you control: Add {U}.\n{5}: Shuffle your library, then exile the top card. Until end of turn, you may play that card without paying its mana cost.",
+      "power": "1",
+      "toughness": "4",
+      "type_line": "Legendary Creature — Human Artificer",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Urza's Saga",
+      "oracle_id": "4c6a0c30-b547-4eff-8ff4-0ca25803c076",
+      "oracle_text": "(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)\nI — This Saga gains \"{T}: Add {C}.\"\nII — This Saga gains \"{2}, {T}: Create a 0/0 colorless Construct artifact creature token with 'This token gets +1/+1 for each artifact you control.'\"\nIII — Search your library for an artifact card with mana cost {0} or {1}, put it onto the battlefield, then shuffle.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Enchantment Land — Urza's Saga",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{U}",
+      "name": "Uthros Research Craft",
+      "oracle_id": "e1c9783a-1d1b-40d7-872e-0ca11b229ce6",
+      "oracle_text": "Station (Tap another creature you control: Put charge counters equal to its power on this Spacecraft. Station only as a sorcery. It's an artifact creature at 12+.)\n3+ | Whenever you cast an artifact spell, draw a card. Put a charge counter on this Spacecraft.\n12+ | Flying\nThis Spacecraft gets +1/+0 for each artifact you control.",
+      "power": "0",
+      "toughness": "8",
+      "type_line": "Artifact — Spacecraft",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Vault of Whispers",
+      "oracle_id": "09496421-74e4-466a-9546-56f2a0c8eef4",
+      "oracle_text": "{T}: Add {B}.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact Land",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Volcanic Island",
+      "oracle_id": "c718911c-c955-4eb9-9e16-be4bd49a4e4e",
+      "oracle_text": "({T}: Add {U} or {R}.)",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land — Island Mountain",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Watery Grave",
+      "oracle_id": "fc9ec820-4245-4a96-b009-5308a818ca58",
+      "oracle_text": "({T}: Add {U} or {B}.)\nAs this land enters, you may pay 2 life. If you don't, it enters tapped.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land — Island Swamp",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{U}",
+      "name": "Worldwalker Helm",
+      "oracle_id": "9573c85a-e574-4b4e-aae0-2165c45fd27e",
+      "oracle_text": "If you would create one or more artifact tokens, instead create those tokens plus an additional Map token. (It's an artifact with \"{1}, {T}, Sacrifice this token: Target creature you control explores. Activate only as a sorcery.\")\n{1}{U}, {T}: Create a token that's a copy of target artifact token you control.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 6,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{6}",
+      "name": "Wurmcoil Engine",
+      "oracle_id": "d1a60f44-7696-49ee-91fb-cab5b3102962",
+      "oracle_text": "Deathtouch, lifelink\nWhen this creature dies, create a 3/3 colorless Phyrexian Wurm artifact creature token with deathtouch and a 3/3 colorless Phyrexian Wurm artifact creature token with lifelink.",
+      "power": "6",
+      "toughness": "6",
+      "type_line": "Artifact Creature — Phyrexian Wurm",
+      "quantity": 1,
+      "zone": "main"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Xander's Lounge",
+      "oracle_id": "8291543f-d086-48aa-b2b7-5481ca8c9198",
+      "oracle_text": "({T}: Add {U}, {B}, or {R}.)\nThis land enters tapped.\nCycling {3} ({3}, Discard this card: Draw a card.)",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land — Island Swamp Mountain",
+      "quantity": 1,
+      "zone": "main"
+    }
+  ]
+}

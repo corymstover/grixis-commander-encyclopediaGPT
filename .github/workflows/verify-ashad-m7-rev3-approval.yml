@@ -1,0 +1,35 @@
+name: Verify Ashad M7 Rev3 Exact Owner Approval
+
+on:
+  pull_request:
+    paths:
+      - "refinement/decklists/Ashad_the_Lone_Cyberman_M7_Rev3_Approved_2026-10-23.txt"
+      - "refinement/approvals/Ashad_the_Lone_Cyberman_M7_Rev3_Approved_2026-10-23.md"
+      - "refinement/verification/Ashad_the_Lone_Cyberman_M7_Rev3_Approved_2026-10-23_Verification.md"
+      - "refinement/verification/Ashad_the_Lone_Cyberman_M7_Rev3_Scryfall_Selected_2026-10-23.json"
+      - "state/current_deck_overrides.json"
+      - "refinement/Deck_Refinement_Tracker_2026-10-12.csv"
+      - "tests/test_ashad_rev3_m7_approval.py"
+      - ".github/workflows/verify-ashad-m7-rev3-approval.yml"
+  push:
+    branches: ["main"]
+    paths:
+      - "refinement/decklists/Ashad_the_Lone_Cyberman_M7_Rev3_Approved_2026-10-23.txt"
+permissions:
+  contents: read
+jobs:
+  exact-approval:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verify Ashad M7 Rev3 exact owner-approved 100, source, state and tracker
+        run: python -m unittest discover -s tests -p 'test_ashad_rev3_m7_approval.py' -v
+      - name: Regress all four preceding immutable M7 locks
+        run: |
+          python -m unittest discover -s tests -p 'test_abaddon_rev3_m7_approval.py' -v
+          python -m unittest discover -s tests -p 'test_admiral_m7_approval.py' -v
+          python -m unittest discover -s tests -p 'test_admiral_brass_unsinkable_rev3_approval.py' -v
+          python -m unittest discover -s tests -p 'test_anhelo_rev2_m7_approval.py' -v
