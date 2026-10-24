@@ -1,6 +1,6 @@
 # Fresh Oracle/legality gate — #3 Admiral Brass, Unsinkable
 
-- Generated UTC: `2026-10-24T02:53:11.749581+00:00`
+- Generated UTC: `2026-10-24T03:07:34.374088+00:00`
 - Approved source: `refinement/decklists/Admiral_Brass_Unsinkable_Whole_List_Approval_Candidate_2026-10-13.txt`
 - Approved source SHA-256 (raw bytes): `056f0369bc4b11967365eef65d15a806b2d0f673ecf8097b028ffcdfd472f5cc`
 - Approval evidence: state/current_deck_overrides.json; refinement/verification/Admiral_Brass_Unsinkable_Whole_List_Closeout_2026-10-13.md
