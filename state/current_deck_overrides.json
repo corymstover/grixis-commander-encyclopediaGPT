@@ -390,14 +390,28 @@
       "approval_status": "APPROVED",
       "lock_status": "LOCKED",
       "final_gate_passed": true,
-      "user_approval_date": "2026-10-14",
+      "user_approval_date": "2026-10-23",
       "current_stage": "LOCKED",
-      "approved_list_sha256": "fd560a9b0777088b3ad1684ded030566c894faa206ddf6763b74d95d82c532e4",
-      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit",
-      "approval_basis": "Explicit user approval of the exact SHA-bound Edea approval candidate after mandatory 99-slot whole-list audit, candidate exhaustion, adversarial red-team review, zero-new-material-improvement closure, fresh Oracle/rules verification, current official Commander legality verification, and complete fail-closed gate PASS.",
+      "approved_list_sha256": "a039a79c6205c3dc61e0e237816d0d6b0168061b850cb8ca4a598483150b3f54",
+      "quality_gate_version": "Deck Quality Gates v3 + independent Edea M7 Rev2 owner approval, 94-name archived Oracle, fifteen prior lock regression",
+      "approval_basis": "Cory was shown the entire 100-card Edea M7 Rev2 list, five explicit additions/cuts, exact raw SHA-256 a039a79c6205c3dc61e0e237816d0d6b0168061b850cb8ca4a598483150b3f54, complete verification, power bracket and tags; replied 'Approved' on 2026-10-23. His October 14 KEEP decisions for Evereth and High Market and the recurring Ayara sacrifice outlet remain respected. Owner approval applies solely to this exact Edea list and supersedes its Oct14 canonical baseline, which remains preserved.",
       "complete_gate_artifact": "refinement/verification/edea_possessed_sorceress_2026-10-14/gate_output/Edea_Possessed_Sorceress_2026-10-14_Complete_Gate.json",
       "whole_list_audit_artifact": "refinement/decisions/Edea_Possessed_Sorceress_Current_Cycle_Decisions_2026-10-14.md",
-      "approved_list_artifact": "refinement/decklists/Edea_Possessed_Sorceress_Approved_2026-10-14.txt"
+      "approved_list_artifact": "refinement/decklists/Edea_Possessed_Sorceress_M7_Rev2_Approved_2026-10-23.txt",
+      "m7_final_candidate_sha256": "a039a79c6205c3dc61e0e237816d0d6b0168061b850cb8ca4a598483150b3f54",
+      "previous_approved_list_sha256": "fd560a9b0777088b3ad1684ded030566c894faa206ddf6763b74d95d82c532e4",
+      "previous_approved_source_raw_sha256": "fd560a9b0777088b3ad1684ded030566c894faa206ddf6763b74d95d82c532e4",
+      "previous_approved_list_artifact": "refinement/decklists/Edea_Possessed_Sorceress_Approved_2026-10-14.txt",
+      "m7_owner_approval_date": "2026-10-23",
+      "m7_approval_source": "ChatGPT independent engineering PR #691 head 734f2c2b18697e3b420697ac8c3a9bc134b183f1, successful exact-head focused GitHub Actions #40062061450 and #40062034383; archived live 2026-10-23 Scryfall 94 selected cards from GrokBot source PR #664.",
+      "m7_archidekt_tags": [
+        "Theft",
+        "Extra Combats",
+        "Aristocrats"
+      ],
+      "m7_power_bracket": "4 — Optimized",
+      "m7_project_exceptions": [],
+      "m7_verified_100_physical": true
     },
     "Edward_Kenway": {
       "approval_status": "APPROVED",
