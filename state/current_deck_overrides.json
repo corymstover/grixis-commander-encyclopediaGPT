@@ -147,14 +147,27 @@
       "approval_status": "APPROVED",
       "lock_status": "LOCKED",
       "final_gate_passed": true,
-      "user_approval_date": "2026-10-13",
+      "user_approval_date": "2026-10-23",
       "current_stage": "LOCKED",
-      "approved_list_sha256": "3abc951606a6db2b17ea2aceb471fc2ef4c55e2ef082d49d9140a83b2491155e",
-      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit",
-      "approval_basis": "Explicit user approval of Dream Devourer, Doom Whisperer, and Spark Double swaps; exact approved list preserved and fresh retrospective gate completed 2026-10-14.",
+      "approved_list_sha256": "2107f02e7a5303eef15b6720565d08dfe974b3d6fa57ea449440042cec1b4dd4",
+      "quality_gate_version": "Deck Quality Gates v3 + Be'lakor independent M7 Rev2 eight-swap selected 94-name current Oracle and exact-source bounded checks",
+      "approval_basis": "Cory explicitly replied 'Approve' directly to full 100-card Be'lakor M7 Rev2 eight-swap list, raw SHA-256 2107f02e7a5303eef15b6720565d08dfe974b3d6fa57ea449440042cec1b4dd4, engineering PR #682, and explicit request for exact candidate canonical approval in ChatGPT on 2026-10-23 America/Chicago. This approval covers only those exact bytes, not aggregate M6.10/M7/M8, and does not imply a new formal sealed I/J certificate.",
       "retrospective_gate_status": "PASS",
       "retrospective_gate_date": "2026-10-14",
-      "retrospective_gate_artifact": "refinement/verification/retrospective_1_to_8/Retrospective_1_to_8_Complete_Gate_Summary_2026-10-14.json"
+      "retrospective_gate_artifact": "refinement/verification/retrospective_1_to_8/Retrospective_1_to_8_Complete_Gate_Summary_2026-10-14.json",
+      "m7_final_candidate_sha256": "2107f02e7a5303eef15b6720565d08dfe974b3d6fa57ea449440042cec1b4dd4",
+      "approved_list_artifact": "refinement/decklists/Be_lakor_the_Dark_Master_M7_Rev2_Approved_2026-10-23.txt",
+      "previous_approved_list_sha256": "3abc951606a6db2b17ea2aceb471fc2ef4c55e2ef082d49d9140a83b2491155e",
+      "previous_approved_source_raw_sha256": "3abc951606a6db2b17ea2aceb471fc2ef4c55e2ef082d49d9140a83b2491155e",
+      "previous_approved_list_artifact": "refinement/decklists/Be_lakor_the_Dark_Master_Approved_2026-10-13.txt",
+      "m7_owner_approval_date": "2026-10-23",
+      "m7_approval_source": "Engineering ChatGPT PR #682 exact head bcf3e8fc40f1084c0a612c368b1ecba5899be884; workflow run #40050434686 success (7/7 new Rev2 and 4/4 prior first-pass focused tests), 94-name selected Scryfall archived Oracle. First-pass M6 J remains five-swap scoped and not automatically re-sealed.",
+      "m7_archidekt_tags": [
+        "Demon Tribal",
+        "ETB Damage",
+        "Reanimator"
+      ],
+      "m7_power_bracket": "4 — Optimized"
     },
     "Cecily__Bjorna__Lutri": {
       "approval_status": "APPROVED",
