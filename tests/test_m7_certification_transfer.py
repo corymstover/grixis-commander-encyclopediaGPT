@@ -161,10 +161,12 @@ class TransferEvidenceTests(unittest.TestCase):
 
 
 class CompleteRegistryGateTests(unittest.TestCase):
-    def test_frozen_actual_24_new_m7_locks_remain_unchanged(self):
+    def test_current_62_lock_registry_requires_evidence_for_any_new_sha(self):
         result = validate_live_state(ROOT)
         self.assertEqual(61, result["source_plans"])
-        self.assertEqual([], result["new_or_revised_approvals_with_case_evidence"])
+        self.assertGreaterEqual(result["historical_locks_preserved"], 0)
+        self.assertEqual(62, result["historical_locks_preserved"] +
+                         len(result["new_or_revised_approvals_with_case_evidence"]))
 
     def test_new_kefka_approval_without_evidence_fails(self):
         with tempfile.TemporaryDirectory() as temp:
@@ -179,6 +181,17 @@ class CompleteRegistryGateTests(unittest.TestCase):
             target.parent.mkdir(parents=True, exist_ok=True)
             target.write_text(json.dumps(reg), encoding="utf-8")
             with self.assertRaisesRegex(EvidenceError, "Missing evidence file"):
+                validate_live_state(root)
+
+    def test_owner_approval_snapshot_cannot_be_silently_rewritten(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            for rel in (FROZEN, PLANS):
+                target = root / rel
+                target.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(ROOT / rel, target)
+            (root / FROZEN).write_text((root / FROZEN).read_text() + "\n")
+            with self.assertRaisesRegex(EvidenceError, "authority snapshot changed"):
                 validate_live_state(root)
 
 

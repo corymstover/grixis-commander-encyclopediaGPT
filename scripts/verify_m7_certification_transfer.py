@@ -18,6 +18,11 @@ REGISTRY = Path("state/current_deck_overrides.json")
 FROZEN = Path("refinement/verification/m7_certification_transfer/frozen_approval_snapshot_2026-10-24.json")
 PLANS = Path("refinement/verification/m7_certification_transfer/m6_required_cases_2026-10-24.json")
 ATTESTATIONS = Path("refinement/verification/m7_certification_transfer")
+# Immutable source-bound authority snapshots. Moving the baseline forward to
+# conceal a new approval is forbidden; an explicit Cory-approved governance
+# revision must change both these pins and document why.
+SNAPSHOT_SHA256 = "821468502031359c24ab92acb235ccce22c31299a0fff16a43b3bced6da491b5"
+PLAN_MANIFEST_SHA256 = "195e2dd6f15aed70cc4384e68d33e200623e34e8f088da939752ea28216dcac8"
 HEX64 = re.compile(r"^[0-9a-f]{64}$")
 HEX40 = re.compile(r"^[0-9a-f]{40}$")
 CI_URL = re.compile(r"^https://github\.com/corymstover/GrokBotMTGCompanion/actions/runs/[0-9]+(?:/job/[0-9]+)?$")
@@ -145,6 +150,11 @@ def validate_attestation(root: Path, deck_id: str, approved: dict, required: dic
 
 
 def validate_live_state(root: Path) -> dict:
+    for rel, expected_hash in ((FROZEN, SNAPSHOT_SHA256), (PLANS, PLAN_MANIFEST_SHA256)):
+        path = root / rel
+        require(path.is_file(), f"Immutable authority snapshot missing: {rel}")
+        require(hashlib.sha256(path.read_bytes()).hexdigest() == expected_hash,
+                f"Immutable authority snapshot changed without owner authorization: {rel}")
     snapshot = load_json(root, FROZEN)
     plans = load_json(root, PLANS)
     registry = load_json(root, REGISTRY)
