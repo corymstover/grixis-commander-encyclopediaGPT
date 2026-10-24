@@ -1,0 +1,41 @@
+name: Verify Goro-Goro and Satoru M7 Rev1 Exact Owner Approval
+
+on:
+  pull_request:
+    paths:
+      - "refinement/decklists/Goro_Goro_and_Satoru_M7_Rev1_Approved_2026-10-24.txt"
+      - "refinement/verification/Goro_Goro_and_Satoru_M7_Rev1_Scryfall_Selected_2026-10-24.json"
+      - "refinement/approvals/Goro_Goro_and_Satoru_M7_Rev1_Approved_2026-10-24.md"
+      - "refinement/verification/Goro_Goro_and_Satoru_M7_Rev1_Approved_2026-10-24_Verification.md"
+      - "tests/test_goro_goro_and_satoru_m7_rev1_approval.py"
+      - ".github/workflows/verify-goro-goro-and-satoru-m7-rev1-approval.yml"
+      - "state/current_deck_overrides.json"
+      - "refinement/Deck_Refinement_Tracker_2026-10-12.csv"
+  push:
+    branches: ["main"]
+    paths:
+      - "refinement/decklists/Goro_Goro_and_Satoru_M7_Rev1_Approved_2026-10-24.txt"
+      - "state/current_deck_overrides.json"
+      - "refinement/Deck_Refinement_Tracker_2026-10-12.csv"
+
+permissions:
+  contents: read
+
+jobs:
+  exact-goro-m7-approval:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout exact GitHub Actions event head
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Report exact checked out SHA
+        run: git rev-parse HEAD
+      - name: Verify owner hash, whole 100, Five source-bound swaps, approval metadata, and 20 prior M7 raw locks
+        run: python -m unittest discover -s tests -p 'test_goro_goro_and_satoru_m7_rev1_approval.py' -v
+      - name: Re-run immediately preceding Garza Zol M7 Rev2 approval gate
+        run: python -m unittest discover -s tests -p 'test_garza_zol_m7_rev2_approval.py' -v
