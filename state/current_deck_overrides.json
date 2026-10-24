@@ -417,14 +417,28 @@
       "approval_status": "APPROVED",
       "lock_status": "LOCKED",
       "final_gate_passed": true,
-      "user_approval_date": "2026-10-14",
+      "user_approval_date": "2026-10-23",
       "current_stage": "LOCKED",
-      "approved_list_sha256": "a08d3bc9c283415f1579c493eccb3febd7d10dea3777bf3dc50cfbc0dbed4019",
-      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit",
-      "approval_basis": "Explicit user approval of the exact SHA-bound Edward Kenway approval candidate after mandatory 99-slot whole-list audit, candidate exhaustion, adversarial red-team review, zero-new-material-improvement closure, fresh Oracle/rules verification, current official Commander legality verification, and complete fail-closed gate APPROVAL_READY with zero errors.",
+      "approved_list_sha256": "8c01f2be6190be3e3af0fc5ba45eca16faa1b9346981f840811e4b63822c5ee1",
+      "quality_gate_version": "Deck Quality Gates v3 + independent Edward M7 Rev2 owner approval, 98-name archived Oracle, sixteen prior lock regression",
+      "approval_basis": "Cory reviewed the entire 100-card Edward Kenway M7 Rev2 list, five specific additions/cuts and rationales, exact raw SHA 8c01f2be6190be3e3af0fc5ba45eca16faa1b9346981f840811e4b63822c5ee1, archived Oracle legality, bracket/tags and GitHub engineering PR #692; replied 'Approve' on 2026-10-23. Fateful Discovery, Imperial Seal, Time Sieve and Academy Manufactor retained; Fellwar Stone and Captain Lannery Storm preserved from first-pass overcuts. This approval only authorizes exact Edward list.",
       "complete_gate_artifact": "refinement/verification/edward_kenway_2026-10-14/gate_output/Edward_Kenway_2026-10-14_Complete_Gate.json",
       "whole_list_audit_artifact": "refinement/decisions/Edward_Kenway_Current_Cycle_Decisions_2026-10-14.md",
-      "approved_list_artifact": "refinement/decklists/Edward_Kenway_Approved_2026-10-14.txt"
+      "approved_list_artifact": "refinement/decklists/Edward_Kenway_M7_Rev2_Approved_2026-10-23.txt",
+      "m7_final_candidate_sha256": "8c01f2be6190be3e3af0fc5ba45eca16faa1b9346981f840811e4b63822c5ee1",
+      "previous_approved_list_sha256": "a08d3bc9c283415f1579c493eccb3febd7d10dea3777bf3dc50cfbc0dbed4019",
+      "previous_approved_source_raw_sha256": "a08d3bc9c283415f1579c493eccb3febd7d10dea3777bf3dc50cfbc0dbed4019",
+      "previous_approved_list_artifact": "refinement/decklists/Edward_Kenway_Approved_2026-10-14.txt",
+      "m7_owner_approval_date": "2026-10-23",
+      "m7_approval_source": "ChatGPT independent engineering PR #692 head fb13316667f4f8ccf48407a273a7be7bd0bdda87, focused exact-head CI SUCCESS #40062823155 and #40062810628; archived live 2026-10-23 Scryfall Edward pool of 98 names, Grok initial PR #665.",
+      "m7_archidekt_tags": [
+        "Vehicles",
+        "Pirates",
+        "Treasure"
+      ],
+      "m7_power_bracket": "4 — Optimized",
+      "m7_project_exceptions": [],
+      "m7_verified_100_physical": true
     },
     "Evelyn__the_Covetous": {
       "approval_status": "APPROVED",
