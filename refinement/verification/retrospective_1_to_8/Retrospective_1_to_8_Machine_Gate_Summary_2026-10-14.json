@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-24T00:52:27.612449+00:00",
+  "generated_at_utc": "2026-10-24T01:28:03.351993+00:00",
   "cache_generated_at_utc": "2026-10-23T08:55:05.508885+00:00",
   "bulk_updated_at": "2026-10-22T21:05:50.017+00:00",
   "cache_sha256": "a8fca65952ddd0ac39431b40224818bd4dcab86a28089d15483d69780e795fd7",
@@ -127,7 +127,7 @@
       "approved_source": "refinement/decklists/Ashnod_the_Uncaring_Approved_2026-10-13.txt",
       "approval_evidence": "refinement/approvals/Ashnod_the_Uncaring_Approved_2026-10-13.md",
       "approved_source_raw_sha256": "f574e4fad4749603294f53d2fe5536a159f884a8f1a8a7b6b1a22b3a637cf1cf",
-      "historical_state_approved_list_sha256": "f574e4fad4749603294f53d2fe5536a159f884a8f1a8a7b6b1a22b3a637cf1cf",
+      "historical_state_approved_list_sha256": "a045579b6f9d21f50c47da0096cb0dfc0dee772493eb522186944f61cb6c4761",
       "main_deck_count": 100,
       "commander_count": 1,
       "distinct_names": 95,
