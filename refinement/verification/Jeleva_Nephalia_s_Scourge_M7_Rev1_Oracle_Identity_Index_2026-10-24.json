@@ -1,0 +1,971 @@
+{
+  "schema_version": 1,
+  "deck_id": "Jeleva__Nephalia_s_Scourge",
+  "candidate_version": "M7 Rev1",
+  "candidate_raw_sha256": "6f2cdafa089c3e923104429f764bed66e500fe20cafb3b00dd4d29488bd52cac",
+  "research_source_snapshot": "data/grixis/m6/oracle_snapshots/Jeleva__Nephalia_s_Scourge_M7_Scryfall_20261023.json",
+  "source_date": "2026-10-23",
+  "source_card_count": 204,
+  "source_bound_note": "99 candidate names verified against the already-frozen Scryfall 204-card snapshot. The only absent candidate name, Cavern of Souls, is manually corroborated against Wizards official card release notes and official Commander banned list dated/accessed October 24 2026. This is not a freshly repeated 100-card Scryfall API query or independent rules engine.",
+  "external_card": {
+    "name": "Cavern of Souls",
+    "type_line": "Land",
+    "color_identity": [],
+    "commander_legality": "legal",
+    "game_changer": false,
+    "official_oracle_text": "As Cavern of Souls enters the battlefield, choose a creature type.\n{T}: Add {C}.\n{T}: Add one mana of any color. Spend this mana only to cast a creature spell of the chosen type, and that spell can't be countered.",
+    "official_oracle_url": "https://magic.wizards.com/en/news/feature/the-lost-caverns-of-ixalan-release-notes",
+    "official_bans_url": "https://magic.wizards.com/en/banned-restricted-list",
+    "caveat": "Making the creature spell uncounterable requires actually spending mana produced by Cavern's second ability on that spell; abilities on the stack remain counterable."
+  },
+  "cards": [
+    {
+      "name": "Jeleva, Nephalia's Scourge",
+      "oracle_id": "a014f283-c531-415c-ac00-e6773ea5d64d",
+      "type_line": "Legendary Creature — Vampire Wizard",
+      "color_identity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Harmonic Prodigy",
+      "oracle_id": "2e2ace5b-4018-43af-8e72-ebafec1a7739",
+      "type_line": "Creature — Human Wizard",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Hexing Squelcher",
+      "oracle_id": "96c2d71e-0fc9-42aa-bc6b-6d0ae3f66f8b",
+      "type_line": "Creature — Goblin Sorcerer",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Opposition Agent",
+      "oracle_id": "1f438b8f-fe23-4f3b-ab2e-f6c33676c462",
+      "type_line": "Creature — Human Rogue",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true
+    },
+    {
+      "name": "Ragavan, Nimble Pilferer",
+      "oracle_id": "37108cd4-bbab-4ce3-9ed6-f60e8422e703",
+      "type_line": "Legendary Creature — Monkey Pirate",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Simian Spirit Guide",
+      "oracle_id": "44e0ffa3-8915-4c1f-8f1a-4aeea1365f07",
+      "type_line": "Creature — Ape Spirit",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Thassa's Oracle",
+      "oracle_id": "1de1b591-a73f-4974-b507-8c63e07a0868",
+      "type_line": "Creature — Merfolk Wizard",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true
+    },
+    {
+      "name": "Torch Courier",
+      "oracle_id": "34e2d6eb-aad4-4776-872e-cebab3938aa0",
+      "type_line": "Creature — Goblin",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Ad Nauseam",
+      "oracle_id": "981b0e21-e5e6-4a1e-bfde-679d56623f7f",
+      "type_line": "Instant",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true
+    },
+    {
+      "name": "An Offer You Can't Refuse",
+      "oracle_id": "234a734b-ba28-4f1b-9d01-3c3e7d516590",
+      "type_line": "Instant",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Borne Upon a Wind",
+      "oracle_id": "ce19962d-94f9-4b2b-b668-963c0acce308",
+      "type_line": "Instant",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Brain Freeze",
+      "oracle_id": "464c0150-3dbc-403b-9ada-fef25ab1f29d",
+      "type_line": "Instant",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Brainstorm",
+      "oracle_id": "36cd2364-d113-47d1-b2c4-b088d9eb88dd",
+      "type_line": "Instant",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Cabal Ritual",
+      "oracle_id": "5b5bf1fa-6502-4790-b66b-f0f8504ebc7c",
+      "type_line": "Instant",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Chain of Vapor",
+      "oracle_id": "2167ac25-d042-4b48-b770-8b94acc1a965",
+      "type_line": "Instant",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Dark Ritual",
+      "oracle_id": "53f7c868-b03e-4fc2-8dcf-a75bbfa3272b",
+      "type_line": "Instant",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Deflecting Swat",
+      "oracle_id": "ae120613-97d6-4393-b39d-c3e6c076f5d6",
+      "type_line": "Instant",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Demonic Consultation",
+      "oracle_id": "9a1412db-45ad-46ea-8f12-a85d203113d8",
+      "type_line": "Instant",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Fierce Guardianship",
+      "oracle_id": "d09c9cba-fdd2-479b-ad5d-d05181c3e3f9",
+      "type_line": "Instant",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true
+    },
+    {
+      "name": "Fire Covenant",
+      "oracle_id": "025939a0-424a-41bf-8fc9-2ef9ea5485f7",
+      "type_line": "Instant",
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Final Fortune",
+      "oracle_id": "8d0adc5c-3fdd-4e22-b783-5651f8e57b65",
+      "type_line": "Instant",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Flusterstorm",
+      "oracle_id": "86bf58f2-7f25-4e10-b797-25e0e8e67769",
+      "type_line": "Instant",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Force of Negation",
+      "oracle_id": "ac2173f9-f223-440a-9231-fd98762bdc6f",
+      "type_line": "Instant",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Force of Will",
+      "oracle_id": "956381ba-6d37-4a8a-846c-bad79222dbee",
+      "type_line": "Instant",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true
+    },
+    {
+      "name": "Into the Flood Maw",
+      "oracle_id": "8cb36a67-9206-4665-a03f-64f52ba559c4",
+      "type_line": "Instant",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Lim-Dûl's Vault",
+      "oracle_id": "3f8e7a45-4c6e-4ee6-93d0-b7de9715ec97",
+      "type_line": "Instant",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Long-Term Plans",
+      "oracle_id": "d1dfb359-d8f9-491e-88f7-95193b220200",
+      "type_line": "Instant",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Mental Misstep",
+      "oracle_id": "1a0770e6-b093-4439-baff-6889a50ba12e",
+      "type_line": "Instant",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Mindbreak Trap",
+      "oracle_id": "48712d36-5c13-4ded-87a4-68106da4a5cd",
+      "type_line": "Instant — Trap",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Mystical Tutor",
+      "oracle_id": "fb81f95c-70f8-4eb7-8d15-15d0ae23ec03",
+      "type_line": "Instant",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true
+    },
+    {
+      "name": "Pact of Negation",
+      "oracle_id": "f3e213a4-ba5a-468a-93b3-c0a34e1bd725",
+      "type_line": "Instant",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Pyroblast",
+      "oracle_id": "ecc435e2-deb1-420a-a79f-01dd08747314",
+      "type_line": "Instant",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Red Elemental Blast",
+      "oracle_id": "bb329a5c-b9f9-4973-a53f-090024146325",
+      "type_line": "Instant",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Swan Song",
+      "oracle_id": "8ddfc283-c9b4-41a5-af88-cf0068e986cc",
+      "type_line": "Instant",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Tainted Pact",
+      "oracle_id": "1a85ba2b-ae10-4917-954a-7709b75a9740",
+      "type_line": "Instant",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Vampiric Tutor",
+      "oracle_id": "ededbdae-d9dc-4206-9335-d7158f2d7700",
+      "type_line": "Instant",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true
+    },
+    {
+      "name": "Demonic Tutor",
+      "oracle_id": "82004860-e589-4e38-8d61-8c0210e4ea39",
+      "type_line": "Sorcery",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true
+    },
+    {
+      "name": "Doomsday",
+      "oracle_id": "721eb5a2-d7cf-4db0-8013-ef3f596c52a5",
+      "type_line": "Sorcery",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Gamble",
+      "oracle_id": "a54f0869-94c8-42af-9080-166efb9486a4",
+      "type_line": "Sorcery",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true
+    },
+    {
+      "name": "Gitaxian Probe",
+      "oracle_id": "1d67f5ff-1fce-45e5-b6a1-416c569351e2",
+      "type_line": "Sorcery",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Imperial Seal",
+      "oracle_id": "16cd0b90-f70c-4efa-b252-8de8784ef9a3",
+      "type_line": "Sorcery",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true
+    },
+    {
+      "name": "Jeska's Will",
+      "oracle_id": "0fd114c4-092b-4e28-b0dc-ef529f3bc73e",
+      "type_line": "Sorcery",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true
+    },
+    {
+      "name": "Mind's Desire",
+      "oracle_id": "b3739b5a-5731-4c64-a244-815a363b0d5c",
+      "type_line": "Sorcery",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Mnemonic Betrayal",
+      "oracle_id": "aa41e0e6-d04e-48d6-8450-02b972dd0bb1",
+      "type_line": "Sorcery",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Peer into the Abyss",
+      "oracle_id": "21fa2442-6eac-4dce-a9cc-76f0053fdb8f",
+      "type_line": "Sorcery",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Personal Tutor",
+      "oracle_id": "90f54959-2c9b-4b8a-84c9-d6893eb43553",
+      "type_line": "Sorcery",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Ponder",
+      "oracle_id": "02090581-61aa-4348-ad57-451be8ee91c2",
+      "type_line": "Sorcery",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Preordain",
+      "oracle_id": "ac641490-ca14-48d7-8cc4-b69ce984befa",
+      "type_line": "Sorcery",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Rite of Flame",
+      "oracle_id": "8a2e53f9-8100-488f-8504-b59e9bd1cc29",
+      "type_line": "Sorcery",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Scheming Symmetry",
+      "oracle_id": "6dfb50d7-359b-4644-90e3-7ecdacee7c12",
+      "type_line": "Sorcery",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Wheel of Fortune",
+      "oracle_id": "a8abd966-de7b-46a3-8ac7-8747ab35653a",
+      "type_line": "Sorcery",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Windfall",
+      "oracle_id": "08becc07-28bc-4a2f-a6b0-28a2998d2f50",
+      "type_line": "Sorcery",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Yawgmoth's Will",
+      "oracle_id": "322f0459-f394-44f0-977b-55fd0cbe0712",
+      "type_line": "Sorcery",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Arcane Signet",
+      "oracle_id": "0bc7f093-bef0-4f1a-852c-4b75ebf54838",
+      "type_line": "Artifact",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Chrome Mox",
+      "oracle_id": "ec3d4466-547c-4e02-b1b5-a156ec4637e9",
+      "type_line": "Artifact",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": true
+    },
+    {
+      "name": "Fellwar Stone",
+      "oracle_id": "95560508-7ac9-4be9-8a3f-3c7d5b52807b",
+      "type_line": "Artifact",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Grim Monolith",
+      "oracle_id": "229d6627-1292-4ae1-8849-b0f956fa6540",
+      "type_line": "Artifact",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": true
+    },
+    {
+      "name": "Lion's Eye Diamond",
+      "oracle_id": "ee6099b0-fb1f-42f1-b862-7708c6e36d05",
+      "type_line": "Artifact",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": true
+    },
+    {
+      "name": "Lightning Greaves",
+      "oracle_id": "ca204b66-8d0c-431a-8d34-282f7c2d17da",
+      "type_line": "Artifact — Equipment",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Lotus Petal",
+      "oracle_id": "32e5339e-9e4f-46f8-b305-f9d6d3ba8bb5",
+      "type_line": "Artifact",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Mana Vault",
+      "oracle_id": "736892cb-a34b-4bb9-b56c-e26e3db207a2",
+      "type_line": "Artifact",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": true
+    },
+    {
+      "name": "Mox Diamond",
+      "oracle_id": "f3c5978a-70fa-431f-933b-b954bd0db0ea",
+      "type_line": "Artifact",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": true
+    },
+    {
+      "name": "Mox Opal",
+      "oracle_id": "de2440de-e948-4811-903c-0bbe376ff64d",
+      "type_line": "Legendary Artifact",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Scroll Rack",
+      "oracle_id": "648bd03d-247e-4d6f-87a9-12a67688cbf5",
+      "type_line": "Artifact",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Sensei's Divining Top",
+      "oracle_id": "13575cf9-65c1-4861-b21e-eb2155e07766",
+      "type_line": "Artifact",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Sol Ring",
+      "oracle_id": "6ad8011d-3471-4369-9d68-b264cc027487",
+      "type_line": "Artifact",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Talisman of Creativity",
+      "oracle_id": "14d2979d-5728-42d7-a027-0eb1f754655d",
+      "type_line": "Artifact",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Talisman of Dominance",
+      "oracle_id": "4c0a0448-b9d6-43a0-8549-64066dac63f0",
+      "type_line": "Artifact",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Wishclaw Talisman",
+      "oracle_id": "81c70ae7-3c18-4c9b-8505-e4db9e0e6518",
+      "type_line": "Artifact",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Mystic Remora",
+      "oracle_id": "8a52f3c0-2552-4425-b2e3-5496eb2232a7",
+      "type_line": "Enchantment",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Necropotence",
+      "oracle_id": "94a844d2-0574-45a7-b347-e0e329767c42",
+      "type_line": "Enchantment",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true
+    },
+    {
+      "name": "Rhystic Study",
+      "oracle_id": "53236dd7-845a-444c-96d5-f41ed7325d8f",
+      "type_line": "Enchantment",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true
+    },
+    {
+      "name": "Underworld Breach",
+      "oracle_id": "27e0948b-9916-473b-8d8c-a51bdfbc7457",
+      "type_line": "Enchantment",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true
+    },
+    {
+      "name": "Ancient Tomb",
+      "oracle_id": "23467047-6dba-4498-b783-1ebc4f74b8c2",
+      "type_line": "Land",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": true
+    },
+    {
+      "name": "Arena of Glory",
+      "oracle_id": "63dfe794-5f56-41ec-9883-5523b41cc3e0",
+      "type_line": "Land",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Arid Mesa",
+      "oracle_id": "c5acf2a5-40f4-433d-a74d-1cb56c521464",
+      "type_line": "Land",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Badlands",
+      "oracle_id": "13ff3222-91cb-4796-a34e-899ed817694c",
+      "type_line": "Land — Swamp Mountain",
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Blood Crypt",
+      "oracle_id": "43985bbc-a0f6-4812-984e-392bc8562633",
+      "type_line": "Land — Swamp Mountain",
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Bloodstained Mire",
+      "oracle_id": "fc0707c7-d504-4ccf-a0d2-3eb6e26e7a57",
+      "type_line": "Land",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "City of Brass",
+      "oracle_id": "f25351e3-539b-4bbc-b92d-6480acf4d722",
+      "type_line": "Land",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Command Tower",
+      "oracle_id": "0895c9b7-ae7d-4bb3-af17-3b75deb50a25",
+      "type_line": "Land",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Exotic Orchard",
+      "oracle_id": "27b047e3-0d41-45e2-98e9-9391d7923a1e",
+      "type_line": "Land",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Flooded Strand",
+      "oracle_id": "f3c7af78-a77d-4134-82a2-a5ce84285a84",
+      "type_line": "Land",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Gemstone Caverns",
+      "oracle_id": "c0adbddc-b070-4c5f-afe0-0474c72a9251",
+      "type_line": "Legendary Land",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Island",
+      "oracle_id": "b2c6aa39-2d2a-459c-a555-fb48ba993373",
+      "type_line": "Basic Land — Island",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Mana Confluence",
+      "oracle_id": "d0ee5bdc-2b69-4b73-9a20-ffcc18783b29",
+      "type_line": "Land",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Marsh Flats",
+      "oracle_id": "dab520d0-20b4-4273-ba6b-eb07f85ea433",
+      "type_line": "Land",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Misty Rainforest",
+      "oracle_id": "09dd85aa-47bc-4713-a9b9-8b52ff2285ed",
+      "type_line": "Land",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Morphic Pool",
+      "oracle_id": "bd004c9d-771e-4e63-a97d-a2259c096af8",
+      "type_line": "Land",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Otawara, Soaring City",
+      "oracle_id": "e9b6a394-691c-425a-9307-76d8edc7375e",
+      "type_line": "Legendary Land",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Polluted Delta",
+      "oracle_id": "ef86989d-ce80-4e55-aece-7d11710eeffa",
+      "type_line": "Land",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Scalding Tarn",
+      "oracle_id": "cb027150-848c-4a66-88ad-e20222304dd8",
+      "type_line": "Land",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Steam Vents",
+      "oracle_id": "17039058-822d-409f-938c-b727a366ba63",
+      "type_line": "Land — Island Mountain",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Swamp",
+      "oracle_id": "56719f6a-1a6c-4c0a-8d21-18f7d7350b68",
+      "type_line": "Basic Land — Swamp",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Underground Sea",
+      "oracle_id": "4b22be3a-8ce1-47d1-b82e-6c3ccfb0548b",
+      "type_line": "Land — Island Swamp",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Verdant Catacombs",
+      "oracle_id": "67d60b24-d429-4ded-90d9-06e49f28c396",
+      "type_line": "Land",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Volcanic Island",
+      "oracle_id": "c718911c-c955-4eb9-9e16-be4bd49a4e4e",
+      "type_line": "Land — Island Mountain",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Watery Grave",
+      "oracle_id": "fc9ec820-4245-4a96-b009-5308a818ca58",
+      "type_line": "Land — Island Swamp",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false
+    },
+    {
+      "name": "Wooded Foothills",
+      "oracle_id": "6587a463-a108-4854-b6d1-944e89b8c8a4",
+      "type_line": "Land",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false
+    }
+  ]
+}

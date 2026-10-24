@@ -1,0 +1,41 @@
+name: Verify Jeleva Nephalia's Scourge M7 Rev1 Exact Owner Approval
+
+on:
+  pull_request:
+    paths:
+      - "refinement/decklists/Jeleva_Nephalia_s_Scourge_M7_Rev1_Approved_2026-10-24.txt"
+      - "refinement/approvals/Jeleva_Nephalia_s_Scourge_M7_Rev1_Approved_2026-10-24.md"
+      - "refinement/verification/Jeleva_Nephalia_s_Scourge_M7_Rev1_Approved_2026-10-24_Verification.md"
+      - "refinement/verification/Jeleva_Nephalia_s_Scourge_M7_Rev1_Oracle_Identity_Index_2026-10-24.json"
+      - "tests/test_jeleva_nephalia_s_scourge_m7_rev1_approval.py"
+      - ".github/workflows/verify-jeleva-nephalia-s-scourge-m7-rev1-approval.yml"
+      - "state/current_deck_overrides.json"
+      - "refinement/Deck_Refinement_Tracker_2026-10-12.csv"
+  push:
+    branches: ["main"]
+    paths:
+      - "refinement/decklists/Jeleva_Nephalia_s_Scourge_M7_Rev1_Approved_2026-10-24.txt"
+      - "state/current_deck_overrides.json"
+      - "refinement/Deck_Refinement_Tracker_2026-10-12.csv"
+
+permissions:
+  contents: read
+
+jobs:
+  exact-jeleva-m7-approval:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout exact GitHub Actions head
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Report exact checked-out commit
+        run: git rev-parse HEAD
+      - name: Verify owner two-swap waiver, exact SHA, full 100, Oracle, rules and 23 prior M7 locks
+        run: python -m unittest discover -s tests -p 'test_jeleva_nephalia_s_scourge_m7_rev1_approval.py' -v
+      - name: Recheck predecessor Inalla M7 exact approval and forward-compatible Jeleva successor
+        run: python -m unittest discover -s tests -p 'test_inalla_archmage_ritualist_m7_rev1_approval.py' -v

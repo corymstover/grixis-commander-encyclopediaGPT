@@ -618,6 +618,19 @@ class CanonicalGwendlynM7Rev1(unittest.TestCase):
         self.assertEqual(set(entries)-{D},set(OTHER_61))
         for deck_id, (sha,artifact,date,lock) in OTHER_61.items():
             other=entries[deck_id]
+            # Jeleva is the subsequent independently owner-approved M7 lock.
+            # Retain its prior October 14 bytes rather than weakening this regression.
+            if deck_id == "Jeleva__Nephalia_s_Scourge" and other.get("m7_owner_approval_date") == "2026-10-24":
+                expected_sha = "6f2cdafa089c3e923104429f764bed66e500fe20cafb3b00dd4d29488bd52cac"
+                expected_path = "refinement/decklists/Jeleva_Nephalia_s_Scourge_M7_Rev1_Approved_2026-10-24.txt"
+                self.assertEqual(other["previous_approved_source_raw_sha256"], sha)
+                self.assertEqual(other["previous_approved_list_artifact"], artifact)
+                self.assertEqual(digest(ROOT/artifact), sha)
+                self.assertEqual((other["approved_list_sha256"], other["approved_list_artifact"],
+                                  other["user_approval_date"], other["lock_status"]),
+                                 (expected_sha, expected_path, "2026-10-24", "LOCKED"))
+                self.assertEqual(digest(ROOT/expected_path), expected_sha)
+                continue
             self.assertEqual((other["approved_list_sha256"],
                               other["approved_list_artifact"],
                               other["user_approval_date"],
