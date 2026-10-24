@@ -161,7 +161,7 @@ class EggmanM7Rev2ExactApproval(unittest.TestCase):
             self.assertIn("Artifact Creature",self.cards[n]["type_line"])
         self.assertIn("empty hand",self.verification)
         self.assertIn("Put",self.verification)
-        self.assertIn("turn-five win rate",self.verification)
+        self.assertIn("no gameplay win rate",self.verification)
 
     def test_registry_tracker_owner_and_original_sources(self):
         self.assertEqual(len(self.registry["decks"]),62)
