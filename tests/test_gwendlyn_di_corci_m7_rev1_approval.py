@@ -620,6 +620,17 @@ class CanonicalGwendlynM7Rev1(unittest.TestCase):
             other=entries[deck_id]
             # Jeleva is the subsequent independently owner-approved M7 lock.
             # Retain its prior October 14 bytes rather than weakening this regression.
+            # Deck #26 later advanced by Cory's separate exact five-swap M7 approval.
+            # Retain and hash the original October 14 source, as with Jeleva.
+            if deck_id == "Kess__Dissident_Mage" and other.get("m7_owner_approval_date") == "2026-10-24":
+                self.assertEqual(other["previous_approved_source_raw_sha256"], sha)
+                self.assertEqual(other["previous_approved_list_artifact"], artifact)
+                self.assertEqual(digest(ROOT / artifact), sha)
+                self.assertEqual((other["approved_list_sha256"], other["approved_list_artifact"],
+                                  other["user_approval_date"], other["lock_status"]),
+                                 ("11415352a453e52afe4b1cc6881061e0d255e8403f8d5af5a24f9803c004fde4", "refinement/decklists/Kess_Dissident_Mage_M7_Rev1_Approved_2026-10-24.txt", "2026-10-24", "LOCKED"))
+                self.assertEqual(digest(ROOT / "refinement/decklists/Kess_Dissident_Mage_M7_Rev1_Approved_2026-10-24.txt"), "11415352a453e52afe4b1cc6881061e0d255e8403f8d5af5a24f9803c004fde4")
+                continue
             if deck_id == "Jeleva__Nephalia_s_Scourge" and other.get("m7_owner_approval_date") == "2026-10-24":
                 expected_sha = "6f2cdafa089c3e923104429f764bed66e500fe20cafb3b00dd4d29488bd52cac"
                 expected_path = "refinement/decklists/Jeleva_Nephalia_s_Scourge_M7_Rev1_Approved_2026-10-24.txt"
