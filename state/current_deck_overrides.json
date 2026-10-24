@@ -120,15 +120,28 @@
       "approval_status": "APPROVED",
       "lock_status": "LOCKED",
       "final_gate_passed": true,
-      "user_approval_date": "2026-10-13",
+      "user_approval_date": "2026-10-23",
       "current_stage": "LOCKED",
-      "approved_list_sha256": "f574e4fad4749603294f53d2fe5536a159f884a8f1a8a7b6b1a22b3a637cf1cf",
-      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit",
-      "approval_basis": "Explicit user approval of the three current-cycle swaps and exact 100-card approved list; fresh retrospective Oracle/rules gate completed 2026-10-14 with stale Ashnod rules wording corrected separately.",
+      "approved_list_sha256": "a045579b6f9d21f50c47da0096cb0dfc0dee772493eb522186944f61cb6c4761",
+      "quality_gate_version": "Deck Quality Gates v3 + Ashnod independent M7 Rev2 nine-swap 95-name current Oracle and scoped M6 I/J verification",
+      "approval_basis": "Cory explicitly replied 'I approve' immediately after the full verified Ashnod M7 Rev2 nine-swap 100-card list, exact raw SHA-256 a045579b6f9d21f50c47da0096cb0dfc0dee772493eb522186944f61cb6c4761, engineering PR #681 and explicit canonical lock authorization question in ChatGPT on 2026-10-23 America/Chicago. Only these exact bytes are approved; no aggregate M6.10/M7/M8 milestone acceptance.",
       "retrospective_gate_status": "PASS",
       "retrospective_gate_date": "2026-10-14",
       "retrospective_gate_artifact": "refinement/verification/retrospective_1_to_8/Retrospective_1_to_8_Complete_Gate_Summary_2026-10-14.json",
-      "retrospective_gate_note": "PASS with documentation correction only; approved decklist unchanged."
+      "retrospective_gate_note": "PASS with documentation correction only; approved decklist unchanged.",
+      "m7_final_candidate_sha256": "a045579b6f9d21f50c47da0096cb0dfc0dee772493eb522186944f61cb6c4761",
+      "approved_list_artifact": "refinement/decklists/Ashnod_the_Uncaring_M7_Rev2_Approved_2026-10-23.txt",
+      "previous_approved_list_sha256": "f574e4fad4749603294f53d2fe5536a159f884a8f1a8a7b6b1a22b3a637cf1cf",
+      "previous_approved_source_raw_sha256": "f574e4fad4749603294f53d2fe5536a159f884a8f1a8a7b6b1a22b3a637cf1cf",
+      "previous_approved_list_artifact": "refinement/decklists/Ashnod_the_Uncaring_Approved_2026-10-13.txt",
+      "m7_owner_approval_date": "2026-10-23",
+      "m7_approval_source": "Engineering PR #681 exact head c7b907d4aecc97513a6ce3c28ed107aecd5a3be9; exact-head workflow run #40048290216 success: nine new + 29 historical focused tests PASS; eight full-100 bounded alternatives and scoped independent M6 I/J bundle.",
+      "m7_archidekt_tags": [
+        "Ability Copy",
+        "Artifact Sacrifice",
+        "Artifact Combo"
+      ],
+      "m7_power_bracket": "4 — Optimized"
     },
     "Be_lakor_the_Dark_Master": {
       "approval_status": "APPROVED",
