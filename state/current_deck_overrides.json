@@ -309,14 +309,28 @@
       "approval_status": "APPROVED",
       "lock_status": "LOCKED",
       "final_gate_passed": true,
-      "user_approval_date": "2026-10-14",
+      "user_approval_date": "2026-10-23",
       "current_stage": "LOCKED",
-      "approved_list_sha256": "c97bd448aa4b18d2f7ed15e5d67006ab320ed67ad3ed267e44150de472e1dc58",
-      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit",
-      "approval_basis": "Explicit user approval of the exact SHA-bound Doctor Doom approval candidate after mandatory 99-slot whole-list audit, candidate exhaustion, red-team review, zero-new-material-improvement closure, fresh Oracle/rules verification, current official Commander legality verification, and complete structural gate PASS.",
+      "approved_list_sha256": "7f74aa25cbbc47d46198f585b379b355cbeb10105ab374f883d2b8b9777a2d20",
+      "quality_gate_version": "Deck Quality Gates v3 + Doctor Doom ChatGPT independent M7 Rev2 nine-swap 100-card Oracle, exact SHA, repeat-discard finite mechanics and 12 prior M7 lock regression",
+      "approval_basis": "Cory explicitly replied 'Approved' to the complete Doctor Doom, King of Latveria M7 Rev2 nine-swap, 100-card list and raw SHA-256 7f74aa25cbbc47d46198f585b379b355cbeb10105ab374f883d2b8b9777a2d20 on 2026-10-23 America/Chicago, after ChatGPT engineering PR #688 exact-head CI success. This authorizes only this exact list and its canonical lock, not any later deck.",
       "complete_gate_artifact": "refinement/verification/doctor_doom_king_of_latveria_2026-10-14/gate_output/Doctor_Doom_King_of_Latveria_2026-10-14_Complete_Gate.json",
       "whole_list_audit_artifact": "refinement/decisions/Doctor_Doom_King_of_Latveria_Current_Cycle_Decisions_2026-10-14.md",
-      "approved_list_artifact": "refinement/decklists/Doctor_Doom_King_of_Latveria_Approved_2026-10-14.txt"
+      "approved_list_artifact": "refinement/decklists/Doctor_Doom_King_of_Latveria_M7_Rev2_Approved_2026-10-23.txt",
+      "m7_final_candidate_sha256": "7f74aa25cbbc47d46198f585b379b355cbeb10105ab374f883d2b8b9777a2d20",
+      "previous_approved_list_sha256": "c97bd448aa4b18d2f7ed15e5d67006ab320ed67ad3ed267e44150de472e1dc58",
+      "previous_approved_source_raw_sha256": "c97bd448aa4b18d2f7ed15e5d67006ab320ed67ad3ed267e44150de472e1dc58",
+      "previous_approved_list_artifact": "refinement/decklists/Doctor_Doom_King_of_Latveria_Approved_2026-10-14.txt",
+      "m7_owner_approval_date": "2026-10-23",
+      "m7_approval_source": "ChatGPT independent engineering PR #688 exact head 0a20ca02ecb680f9230fc5fcae7eda1f8ae5195d; exact-head workflow #40057650413 SUCCESS; archival Grok #661 first-pass remains separate. 98 source-bound cards from Grok Oct23 231-name live Scryfall archive and two independent direct Scryfall named API records Molten Vortex / Tolaria West.",
+      "m7_archidekt_tags": [
+        "Land Discard",
+        "Villains",
+        "Connive"
+      ],
+      "m7_power_bracket": "4 — Optimized",
+      "m7_project_exceptions": [],
+      "m7_verified_100_physical": true
     },
     "Don_Andres__the_Renegade": {
       "approval_status": "APPROVED",
