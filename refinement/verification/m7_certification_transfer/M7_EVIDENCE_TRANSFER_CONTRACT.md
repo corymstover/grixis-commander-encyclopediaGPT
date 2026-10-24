@@ -6,6 +6,7 @@ This is a canonical **provenance and approval-safety** gate, not a new independe
 
 - `frozen_approval_snapshot_2026-10-24.json` contains the 62 canonical raw hashes as observed on October 24, including the first 24 newly M7-approved lists. Any unchanged hash passes through without retrospectively pretending it was fully recertified. The 20 documented transfer gaps remain visible, and **none** authorizes an unlock, card replacement or withdrawal.
 - `m6_required_cases_2026-10-24.json` records the exact 61 committed commander test plans from engineering PR #535: **882 designed cases, 308 P0 and 574 P1**. Its Git blob SHA and original ID are retained; the plan is a specification, **not evidence that those cases executed**.
+- Both authority manifests are byte-SHA-256 pinned in the verifier. A new deck cannot evade evidence requirements by silently changing the historical approved-hash snapshot or the required case inventory. Updating those pins is a documented owner-level governance change, not routine certification repair.
 - Abaddon is excluded from that 61-deck inventory and must explicitly bind its own existing P0/I/J evidence if reopened.
 - The Goben/Norman identity discrepancy remains a hard source exception requiring owner-level resolution.
 
