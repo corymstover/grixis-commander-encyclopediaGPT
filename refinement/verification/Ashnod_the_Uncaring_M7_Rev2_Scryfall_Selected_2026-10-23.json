@@ -1,0 +1,1508 @@
+{
+  "schema_version": 1,
+  "deck_id": "Ashnod_the_Uncaring",
+  "stage": "CHATGPT_M7_REV2_NINE_SELECTED_CURRENT_ORACLE_SNAPSHOT_NOT_APPROVAL",
+  "candidate_path": "data/grixis/m7/candidate_lists/Ashnod_the_Uncaring_ChatGPT_M7_Rev2_Nine_Approval_Candidate.txt",
+  "candidate_raw_sha256": "a045579b6f9d21f50c47da0096cb0dfc0dee772493eb522186944f61cb6c4761",
+  "candidate_logical_hash": "lh1:bd81a60cfbd2728705bfe2e14bd32f56a4081b51cf72b46a7d6cb057e9a30140",
+  "baseline_path": "data/grixis/m7/baseline_sources/Ashnod_the_Uncaring_approved_source_2026-10-13.txt",
+  "baseline_raw_sha256": "f574e4fad4749603294f53d2fe5536a159f884a8f1a8a7b6b1a22b3a637cf1cf",
+  "physical_cards": 100,
+  "distinct_card_names": 95,
+  "land_count": 33,
+  "static_rock_count": 8,
+  "game_changers_count": 6,
+  "retrieved_at": "2026-10-23 source-bound prior live Scryfall evidence (no new pipeline run)",
+  "source_inputs": [
+    {
+      "path": "data/grixis/m7/research_challengers/Ashnod_the_Uncaring_Scryfall_live_20261023.json",
+      "sha256": "2797a6009556630c46fed442fd8e56d8d05b781ee7cac9261fa86c5fd06bccc0"
+    },
+    {
+      "repository": "corymstover/grixis-commander-encyclopediaGPT",
+      "ref": "2b9d7ace7a611b16383c28319dda046509344dd8",
+      "path": "refinement/verification/Ashad_the_Lone_Cyberman_M7_Rev3_Scryfall_Selected_2026-10-23.json",
+      "cards_borrowed": [
+        "City of Brass",
+        "Mana Confluence"
+      ]
+    }
+  ],
+  "game_changers": [
+    "Ancient Tomb",
+    "Bolas's Citadel",
+    "Cyclonic Rift",
+    "Demonic Tutor",
+    "Fierce Guardianship",
+    "Vampiric Tutor"
+  ],
+  "project_exceptions": [],
+  "all_selected_commander_legal": true,
+  "all_selected_grixis_identity": true,
+  "notes": "Cory has NOT reviewed or approved this candidate; a source-bound engineering second pass only. Commander Ashnod is a single 5-MV card. All baseline approvals and registry untouched. Rejected research cards not included.",
+  "cards": [
+    {
+      "name": "Ashnod the Uncaring",
+      "quantity": 1,
+      "zone": "commander",
+      "oracle_id": "dcd5ab1b-adc5-486e-a1e0-636af6ee9470",
+      "oracle_text": "Deathtouch\nWhenever you activate an ability of an artifact or creature that isn't a mana ability, if one or more permanents were sacrificed to activate it, you may copy that ability. You may choose new targets for the copy. (Sacrificing an artifact for mana to activate an ability doesn't count.)",
+      "mana_cost": "{2}{U}{B}{R}",
+      "cmc": 5,
+      "type_line": "Legendary Creature — Human Artificer",
+      "color_identity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Academy Ruins",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "a3da7d5b-2c2b-45fe-b9c5-413b8c8fc0a2",
+      "oracle_text": "{T}: Add {C}.\n{1}{U}, {T}: Put target artifact card from your graveyard on top of your library.",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Legendary Land",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Altar of Dementia",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "d64e9152-ef24-4394-aeb0-9c3befc56549",
+      "oracle_text": "Sacrifice a creature: Target player mills cards equal to the sacrificed creature's power.",
+      "mana_cost": "{2}",
+      "cmc": 2,
+      "type_line": "Artifact",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "An Offer You Can't Refuse",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "234a734b-ba28-4f1b-9d01-3c3e7d516590",
+      "oracle_text": "Counter target noncreature spell. Its controller creates two Treasure tokens. (They're artifacts with \"{T}, Sacrifice this token: Add one mana of any color.\")",
+      "mana_cost": "{U}",
+      "cmc": 1,
+      "type_line": "Instant",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Ancient Tomb",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "23467047-6dba-4498-b783-1ebc4f74b8c2",
+      "oracle_text": "{T}: Add {C}{C}. This land deals 2 damage to you.",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Arcane Signet",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "0bc7f093-bef0-4f1a-852c-4b75ebf54838",
+      "oracle_text": "{T}: Add one mana of any color in your commander's color identity.",
+      "mana_cost": "{2}",
+      "cmc": 2,
+      "type_line": "Artifact",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Arcbound Ravager",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "62e7e7b1-9887-4d15-b0e5-a8ddc711bd88",
+      "oracle_text": "Sacrifice an artifact: Put a +1/+1 counter on this creature.\nModular 1 (This creature enters with a +1/+1 counter on it. When it dies, you may put its +1/+1 counters on target artifact creature.)",
+      "mana_cost": "{2}",
+      "cmc": 2,
+      "type_line": "Artifact Creature — Beast",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Ashnod's Altar",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "4d18bcba-a346-445e-a182-6cc30b7e066d",
+      "oracle_text": "Sacrifice a creature: Add {C}{C}.",
+      "mana_cost": "{3}",
+      "cmc": 3,
+      "type_line": "Artifact",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Oni-Cult Anvil",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "c018f072-8f6d-4835-a717-ed4ecba70d97",
+      "oracle_text": "Whenever one or more artifacts you control leave the battlefield during your turn, create a 1/1 colorless Construct artifact creature token. This ability triggers only once each turn.\n{T}, Sacrifice an artifact: This artifact deals 1 damage to each opponent. You gain 1 life.",
+      "mana_cost": "{B}{R}",
+      "cmc": 2,
+      "type_line": "Artifact",
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Badlands",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "13ff3222-91cb-4796-a34e-899ed817694c",
+      "oracle_text": "({T}: Add {B} or {R}.)",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Swamp Mountain",
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Blasting Station",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "3a38d2d1-c4ff-4088-b1df-5feb9602ee2e",
+      "oracle_text": "{T}, Sacrifice a creature: This artifact deals 1 damage to any target.\nWhenever a creature enters, you may untap this artifact.",
+      "mana_cost": "{3}",
+      "cmc": 3,
+      "type_line": "Artifact",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Blood Crypt",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "43985bbc-a0f6-4812-984e-392bc8562633",
+      "oracle_text": "({T}: Add {B} or {R}.)\nAs this land enters, you may pay 2 life. If you don't, it enters tapped.",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Swamp Mountain",
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Bloodstained Mire",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "fc0707c7-d504-4ccf-a0d2-3eb6e26e7a57",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for a Swamp or Mountain card, put it onto the battlefield, then shuffle.",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Bolas's Citadel",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "2bd111bb-ce02-414c-b5b7-e0e037d8d96b",
+      "oracle_text": "You may look at the top card of your library any time.\nYou may play lands and cast spells from the top of your library. If you cast a spell this way, pay life equal to its mana value rather than pay its mana cost.\n{T}, Sacrifice ten nonland permanents: Each opponent loses 10 life.",
+      "mana_cost": "{3}{B}{B}{B}",
+      "cmc": 6,
+      "type_line": "Legendary Artifact",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Buried Ruin",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "3644f316-f9a3-46c9-9b1e-747f86cf4ead",
+      "oracle_text": "{T}: Add {C}.\n{2}, {T}, Sacrifice this land: Return target artifact card from your graveyard to your hand.",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Chaos Warp",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "07a0cba9-8768-4fd9-a3d5-b0f83b4bf8e8",
+      "oracle_text": "The owner of target permanent shuffles it into their library, then reveals the top card of their library. If it's a permanent card, they put it onto the battlefield.",
+      "mana_cost": "{2}{R}",
+      "cmc": 3,
+      "type_line": "Instant",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Clan Crafter",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "6ebd4b3f-246e-475f-8cec-838eaaf597e2",
+      "oracle_text": "Commander creatures you own have \"{2}, Sacrifice an artifact: Put a +1/+1 counter on this creature and draw a card.\"",
+      "mana_cost": "{1}{U}",
+      "cmc": 2,
+      "type_line": "Legendary Enchantment — Background",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Command Tower",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "0895c9b7-ae7d-4bb3-af17-3b75deb50a25",
+      "oracle_text": "{T}: Add one mana of any color in your commander's color identity.",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Trading Post",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "63788566-e25a-44bb-bb55-197e1b93b3e8",
+      "oracle_text": "{1}, {T}, Discard a card: You gain 4 life.\n{1}, {T}, Pay 1 life: Create a 0/1 white Goat creature token.\n{1}, {T}, Sacrifice a creature: Return target artifact card from your graveyard to your hand.\n{1}, {T}, Sacrifice an artifact: Draw a card.",
+      "mana_cost": "{4}",
+      "cmc": 4,
+      "type_line": "Artifact",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Moonsilver Key",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "373395b2-f04b-46c9-b9f4-4f6815b71009",
+      "oracle_text": "{1}, {T}, Sacrifice this artifact: Search your library for an artifact card with a mana ability or a basic land card, reveal it, put it into your hand, then shuffle.",
+      "mana_cost": "{2}",
+      "cmc": 2,
+      "type_line": "Artifact",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Crime Novelist",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "5996b1d0-7fe3-4fec-8730-9db901d887b1",
+      "oracle_text": "Whenever you sacrifice an artifact, put a +1/+1 counter on this creature and add {R}.",
+      "mana_cost": "{2}{R}",
+      "cmc": 3,
+      "type_line": "Creature — Goblin Bard",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Cyclonic Rift",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "d75b9c82-1b49-4c3e-a1b5-aeef57d6644b",
+      "oracle_text": "Return target nonland permanent you don't control to its owner's hand.\nOverload {6}{U} (You may cast this spell for its overload cost. If you do, change \"target\" in its text to \"each.\")",
+      "mana_cost": "{1}{U}",
+      "cmc": 2,
+      "type_line": "Instant",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Deflecting Swat",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "ae120613-97d6-4393-b39d-c3e6c076f5d6",
+      "oracle_text": "If you control a commander, you may cast this spell without paying its mana cost.\nYou may choose new targets for target spell or ability.",
+      "mana_cost": "{2}{R}",
+      "cmc": 3,
+      "type_line": "Instant",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Demonic Tutor",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "82004860-e589-4e38-8d61-8c0210e4ea39",
+      "oracle_text": "Search your library for a card, put that card into your hand, then shuffle.",
+      "mana_cost": "{1}{B}",
+      "cmc": 2,
+      "type_line": "Sorcery",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Disciple of the Vault",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "c8625113-0ce4-4454-83a1-25c31b8bfb9a",
+      "oracle_text": "Whenever an artifact is put into a graveyard from the battlefield, you may have target opponent lose 1 life.",
+      "mana_cost": "{B}",
+      "cmc": 1,
+      "type_line": "Creature — Human Cleric",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Dockside Chef",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "fed12a16-8920-403c-be63-0601a9d864b0",
+      "oracle_text": "{1}{B}, Sacrifice an artifact or creature: Draw a card.",
+      "mana_cost": "{B}",
+      "cmc": 1,
+      "type_line": "Enchantment Creature — Human Citizen",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Dross Scorpion",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "132786bb-157c-4e2c-8f82-13df6a667448",
+      "oracle_text": "Whenever this creature or another artifact creature dies, you may untap target artifact.",
+      "mana_cost": "{4}",
+      "cmc": 4,
+      "type_line": "Artifact Creature — Scorpion",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Dross Skullbomb",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "0c43e9b4-013a-47ee-9805-f41afb0a3bde",
+      "oracle_text": "{1}, Sacrifice this artifact: Draw a card.\n{2}{B}, Sacrifice this artifact: Return target creature card from your graveyard to your hand. Draw a card. Activate only as a sorcery.",
+      "mana_cost": "{1}",
+      "cmc": 1,
+      "type_line": "Artifact",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Emry, Lurker of the Loch",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "da3e7d3d-2ca0-40c3-9602-fca37c92f507",
+      "oracle_text": "Affinity for artifacts (This spell costs {1} less to cast for each artifact you control.)\nWhen Emry enters, mill four cards.\n{T}: Choose target artifact card in your graveyard. You may cast that card this turn. (You still pay its costs. Timing rules still apply.)",
+      "mana_cost": "{2}{U}",
+      "cmc": 3,
+      "type_line": "Legendary Creature — Merfolk Wizard",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Enthusiastic Mechanaut",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "c9722086-23e8-43dc-8a8c-541ff6962318",
+      "oracle_text": "Flying\nArtifact spells you cast cost {1} less to cast.",
+      "mana_cost": "{U}{R}",
+      "cmc": 2,
+      "type_line": "Artifact Creature — Goblin Artificer",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Spawning Pit",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "ea7b0704-7715-4f8a-b32f-d2d2f3b36054",
+      "oracle_text": "Sacrifice a creature: Put a charge counter on this artifact.\n{1}, Remove two charge counters from this artifact: Create a 2/2 colorless Spawn artifact creature token.",
+      "mana_cost": "{2}",
+      "cmc": 2,
+      "type_line": "Artifact",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Etherium Sculptor",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "96b87445-6362-4a17-91b2-cbf203fd03fd",
+      "oracle_text": "Artifact spells you cast cost {1} less to cast.",
+      "mana_cost": "{1}{U}",
+      "cmc": 2,
+      "type_line": "Artifact Creature — Vedalken Artificer",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Executioner's Capsule",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "c9cd266c-7ecf-4beb-b9da-69b88f33abd3",
+      "oracle_text": "{1}{B}, {T}, Sacrifice this artifact: Destroy target nonblack creature.",
+      "mana_cost": "{B}",
+      "cmc": 1,
+      "type_line": "Artifact",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Mana Confluence",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "d0ee5bdc-2b69-4b73-9a20-ffcc18783b29",
+      "oracle_text": "{T}, Pay 1 life: Add one mana of any color.",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "canonical Ashad M7 Rev3 selected card Scryfall snapshot, main merge 2b9d7ace7a611b16383c28319dda046509344dd8"
+    },
+    {
+      "name": "Ruthless Knave",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "00225c40-27ff-410f-a591-5c788c6a2bd6",
+      "oracle_text": "{2}{B}, Sacrifice a creature: Create two Treasure tokens. (They're artifacts with \"{T}, Sacrifice this token: Add one mana of any color.\")\nSacrifice three Treasures: Draw a card.",
+      "mana_cost": "{2}{B}",
+      "cmc": 3,
+      "type_line": "Creature — Orc Pirate",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Basalt Monolith",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "6b8cf2a0-b045-4d91-9d91-c602d40c6237",
+      "oracle_text": "This artifact doesn't untap during your untap step.\n{T}: Add {C}{C}{C}.\n{3}: Untap this artifact.",
+      "mana_cost": "{3}",
+      "cmc": 3,
+      "type_line": "Artifact",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Fierce Guardianship",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "d09c9cba-fdd2-479b-ad5d-d05181c3e3f9",
+      "oracle_text": "If you control a commander, you may cast this spell without paying its mana cost.\nCounter target noncreature spell.",
+      "mana_cost": "{2}{U}",
+      "cmc": 3,
+      "type_line": "Instant",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Forensic Gadgeteer",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "9d5917d5-4fb3-4f37-9278-e08c1f73aae5",
+      "oracle_text": "Whenever you cast an artifact spell, investigate. (Create a Clue token. It's an artifact with \"{2}, Sacrifice this token: Draw a card.\")\nActivated abilities of artifacts you control cost {1} less to activate. This effect can't reduce the mana in that cost to less than one mana.",
+      "mana_cost": "{2}{U}",
+      "cmc": 3,
+      "type_line": "Creature — Vedalken Artificer Detective",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Corridor Monitor",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "07b6ee55-a77e-4ba7-9ab7-8a8375c7acc9",
+      "oracle_text": "When this creature enters, untap target artifact or creature you control.",
+      "mana_cost": "{1}{U}",
+      "cmc": 2,
+      "type_line": "Artifact Creature — Construct",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Goblin Engineer",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "c1d6cce8-085f-42cb-8b0c-b6fbbf88b16a",
+      "oracle_text": "When this creature enters, you may search your library for an artifact card, put it into your graveyard, then shuffle.\n{R}, {T}, Sacrifice an artifact: Return target artifact card with mana value 3 or less from your graveyard to the battlefield.",
+      "mana_cost": "{1}{R}",
+      "cmc": 2,
+      "type_line": "Creature — Goblin Artificer",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Goblin Welder",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "9fc28e1f-f4ea-4bf8-9442-a36dba3b3b29",
+      "oracle_text": "{T}: Choose target artifact a player controls and target artifact card in that player's graveyard. If both targets are still legal as this ability resolves, that player simultaneously sacrifices the artifact and returns the artifact card to the battlefield.",
+      "mana_cost": "{R}",
+      "cmc": 1,
+      "type_line": "Creature — Goblin Artificer",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Great Furnace",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "f4819061-b0b5-48ab-af7b-6525c3d2eab7",
+      "oracle_text": "{T}: Add {R}.",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Artifact Land",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Grinding Station",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "0fcd476f-4db8-4293-9388-1678a0043c9e",
+      "oracle_text": "{T}, Sacrifice an artifact: Target player mills three cards.\nWhenever an artifact enters, you may untap this artifact.",
+      "mana_cost": "{2}",
+      "cmc": 2,
+      "type_line": "Artifact",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Inventors' Fair",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "91d4a5fe-fd6d-4b14-a63f-61b4d0ecd9c4",
+      "oracle_text": "At the beginning of your upkeep, if you control three or more artifacts, you gain 1 life.\n{T}: Add {C}.\n{4}, {T}, Sacrifice Inventors' Fair: Search your library for an artifact card, reveal it, put it into your hand, then shuffle. Activate only if you control three or more artifacts.",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Legendary Land",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Island",
+      "quantity": 3,
+      "zone": "main",
+      "oracle_id": "b2c6aa39-2d2a-459c-a555-fb48ba993373",
+      "oracle_text": "({T}: Add {U}.)",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Basic Land — Island",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Priest of Forgotten Gods",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "2ad8ff62-d090-4835-9274-3b755ba0f8e6",
+      "oracle_text": "{T}, Sacrifice two other creatures: Any number of target players each lose 2 life and sacrifice a creature of their choice. You add {B}{B} and draw a card. (Activate only as an instant.)",
+      "mana_cost": "{1}{B}",
+      "cmc": 2,
+      "type_line": "Creature — Human Cleric",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Krark-Clan Ironworks",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "68e1f7e0-a9b3-437f-8086-0c0cb85f2880",
+      "oracle_text": "Sacrifice an artifact: Add {C}{C}.",
+      "mana_cost": "{4}",
+      "cmc": 4,
+      "type_line": "Artifact",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Krark-Clan Shaman",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "198d1792-d638-4760-a476-7ec3af495610",
+      "oracle_text": "Sacrifice an artifact: This creature deals 1 damage to each creature without flying.",
+      "mana_cost": "{R}",
+      "cmc": 1,
+      "type_line": "Creature — Goblin Shaman",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Kuldotha Forgemaster",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "b0f99367-4313-4bb1-a9fd-7711bc4ce40e",
+      "oracle_text": "{T}, Sacrifice three artifacts: Search your library for an artifact card, put it onto the battlefield, then shuffle.",
+      "mana_cost": "{5}",
+      "cmc": 5,
+      "type_line": "Artifact Creature — Construct",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Lotus Petal",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "32e5339e-9e4f-46f8-b305-f9d6d3ba8bb5",
+      "oracle_text": "{T}, Sacrifice this artifact: Add one mana of any color.",
+      "mana_cost": "{0}",
+      "cmc": 0,
+      "type_line": "Artifact",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Luxury Suite",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "819e1765-8325-4e6f-89c1-63ea86de369f",
+      "oracle_text": "This land enters tapped unless you have two or more opponents.\n{T}: Add {B} or {R}.",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Mana Drain",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "74d3277a-38e5-4732-afed-084a56148f20",
+      "oracle_text": "Counter target spell. At the beginning of your next main phase, add an amount of {C} equal to that spell's mana value.",
+      "mana_cost": "{U}{U}",
+      "cmc": 2,
+      "type_line": "Instant",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Marionette Apprentice",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "726d9d2c-736a-4852-9938-a0f50d8fd89f",
+      "oracle_text": "Fabricate 1 (When this creature enters, put a +1/+1 counter on it or create a 1/1 colorless Servo artifact creature token.)\nWhenever another creature or artifact you control is put into a graveyard from the battlefield, each opponent loses 1 life.",
+      "mana_cost": "{1}{B}",
+      "cmc": 2,
+      "type_line": "Creature — Human Artificer",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Mayhem Devil",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "4709f11c-aef8-45ac-b2bf-e640c568dfac",
+      "oracle_text": "Whenever a player sacrifices a permanent, this creature deals 1 damage to any target.",
+      "mana_cost": "{1}{B}{R}",
+      "cmc": 3,
+      "type_line": "Creature — Devil",
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Mind Stone",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "c97361b5-af16-4a7b-af85-a429dbaf4ad2",
+      "oracle_text": "{T}: Add {C}.\n{1}, {T}, Sacrifice this artifact: Draw a card.",
+      "mana_cost": "{2}",
+      "cmc": 2,
+      "type_line": "Artifact",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Mishra's Bauble",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "63afc3d1-7653-476e-838f-fc18d4a62a21",
+      "oracle_text": "{T}, Sacrifice this artifact: Look at the top card of target player's library. Draw a card at the beginning of the next turn's upkeep.",
+      "mana_cost": "{0}",
+      "cmc": 0,
+      "type_line": "Artifact",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Mnemonic Sphere",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "53bfffae-b99e-44bd-8954-6cf236f93f26",
+      "oracle_text": "{1}{U}, Sacrifice this artifact: Draw two cards.\nChannel — {U}, Discard this card: Draw a card.",
+      "mana_cost": "{1}{U}",
+      "cmc": 2,
+      "type_line": "Artifact",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Morphic Pool",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "bd004c9d-771e-4e63-a97d-a2259c096af8",
+      "oracle_text": "This land enters tapped unless you have two or more opponents.\n{T}: Add {U} or {B}.",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Mountain",
+      "quantity": 2,
+      "zone": "main",
+      "oracle_id": "a3fb7228-e76b-4e96-a40e-20b5fed75685",
+      "oracle_text": "({T}: Add {R}.)",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Basic Land — Mountain",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Mox Opal",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "de2440de-e948-4811-903c-0bbe376ff64d",
+      "oracle_text": "Metalcraft — {T}: Add one mana of any color. Activate only if you control three or more artifacts.",
+      "mana_cost": "{0}",
+      "cmc": 0,
+      "type_line": "Legendary Artifact",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Myr Retriever",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "d07d3be3-f69d-4484-8467-cffd43871788",
+      "oracle_text": "When this creature dies, return another target artifact card from your graveyard to your hand.",
+      "mana_cost": "{2}",
+      "cmc": 2,
+      "type_line": "Artifact Creature — Myr",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Nim Deathmantle",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "66d41377-626d-4ae6-ba86-17bf0c8b3362",
+      "oracle_text": "Equipped creature gets +2/+2, has intimidate, and is a black Zombie. (A creature with intimidate can't be blocked except by artifact creatures and/or creatures that share a color with it.)\nWhenever a nontoken creature is put into your graveyard from the battlefield, you may pay {4}. If you do, return that card to the battlefield and attach this Equipment to it.\nEquip {4}",
+      "mana_cost": "{2}",
+      "cmc": 2,
+      "type_line": "Artifact — Equipment",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Otawara, Soaring City",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "e9b6a394-691c-425a-9307-76d8edc7375e",
+      "oracle_text": "{T}: Add {U}.\nChannel — {3}{U}, Discard this card: Return target artifact, creature, enchantment, or planeswalker to its owner's hand. This ability costs {1} less to activate for each legendary creature you control.",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Legendary Land",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Polluted Delta",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "ef86989d-ce80-4e55-aece-7d11710eeffa",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for an Island or Swamp card, put it onto the battlefield, then shuffle.",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Pyrite Spellbomb",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "2c10cae2-951a-4f4f-94e4-8713b58d07dd",
+      "oracle_text": "{R}, Sacrifice this artifact: It deals 2 damage to any target.\n{1}, Sacrifice this artifact: Draw a card.",
+      "mana_cost": "{1}",
+      "cmc": 1,
+      "type_line": "Artifact",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Animation Module",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "af42079b-a3c0-448c-9bb2-b915252e87a9",
+      "oracle_text": "Whenever one or more +1/+1 counters are put on a permanent you control, you may pay {1}. If you do, create a 1/1 colorless Servo artifact creature token.\n{3}, {T}: Choose a counter on target permanent or player. Give that permanent or player another counter of that kind.",
+      "mana_cost": "{1}",
+      "cmc": 1,
+      "type_line": "Artifact",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Repurposing Bay",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "1787ac2f-762d-4f3a-b7e5-12db6d3d470d",
+      "oracle_text": "{2}, {T}, Sacrifice another artifact: Search your library for an artifact card with mana value equal to 1 plus the sacrificed artifact's mana value, put that card onto the battlefield, then shuffle. Activate only as a sorcery.",
+      "mana_cost": "{2}{U}",
+      "cmc": 3,
+      "type_line": "Artifact",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Retrofitter Foundry",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "aaadfe41-b2be-4183-b45e-a70e53a59d2e",
+      "oracle_text": "{3}: Untap this artifact.\n{2}, {T}: Create a 1/1 colorless Servo artifact creature token.\n{1}, {T}, Sacrifice a Servo: Create a 1/1 colorless Thopter artifact creature token with flying.\n{T}, Sacrifice a Thopter: Create a 4/4 colorless Construct artifact creature token.",
+      "mana_cost": "{1}",
+      "cmc": 1,
+      "type_line": "Artifact",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Rings of Brighthearth",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "bbf9494c-c4bb-4d36-98fe-8387846b342e",
+      "oracle_text": "Whenever you activate an ability, if it isn't a mana ability, you may pay {2}. If you do, copy that ability. You may choose new targets for the copy.",
+      "mana_cost": "{3}",
+      "cmc": 3,
+      "type_line": "Artifact",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Sai, Master Thopterist",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "52241b9c-7a69-4176-9234-8bdab09d8e64",
+      "oracle_text": "Whenever you cast an artifact spell, create a 1/1 colorless Thopter artifact creature token with flying.\n{1}{U}, Sacrifice two artifacts: Draw a card.",
+      "mana_cost": "{2}{U}",
+      "cmc": 3,
+      "type_line": "Legendary Creature — Human Artificer",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Scalding Tarn",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "cb027150-848c-4a66-88ad-e20222304dd8",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for an Island or Mountain card, put it onto the battlefield, then shuffle.",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Scrap Trawler",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "164f3f85-21fc-40b7-9871-4f303ba98428",
+      "oracle_text": "Whenever this creature dies or another artifact you control is put into a graveyard from the battlefield, return to your hand target artifact card in your graveyard with lesser mana value.",
+      "mana_cost": "{3}",
+      "cmc": 3,
+      "type_line": "Artifact Creature — Construct",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Scrap Welder",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "4ebce651-ef95-4a96-b720-a23757d641c8",
+      "oracle_text": "{T}, Sacrifice an artifact with mana value X: Return target artifact card with mana value less than X from your graveyard to the battlefield. It gains haste until end of turn.",
+      "mana_cost": "{2}{R}",
+      "cmc": 3,
+      "type_line": "Creature — Goblin Artificer",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Seat of the Synod",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "39451b4d-cd7a-40da-b457-cb51b609173f",
+      "oracle_text": "{T}: Add {U}.",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Artifact Land",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Sol Ring",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "6ad8011d-3471-4369-9d68-b264cc027487",
+      "oracle_text": "{T}: Add {C}{C}.",
+      "mana_cost": "{1}",
+      "cmc": 1,
+      "type_line": "Artifact",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Steam Vents",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "17039058-822d-409f-938c-b727a366ba63",
+      "oracle_text": "({T}: Add {U} or {R}.)\nAs this land enters, you may pay 2 life. If you don't, it enters tapped.",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Island Mountain",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Swamp",
+      "quantity": 3,
+      "zone": "main",
+      "oracle_id": "56719f6a-1a6c-4c0a-8d21-18f7d7350b68",
+      "oracle_text": "({T}: Add {B}.)",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Basic Land — Swamp",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Talisman of Creativity",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "14d2979d-5728-42d7-a027-0eb1f754655d",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {U} or {R}. This artifact deals 1 damage to you.",
+      "mana_cost": "{2}",
+      "cmc": 2,
+      "type_line": "Artifact",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Talisman of Dominance",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "4c0a0448-b9d6-43a0-8549-64066dac63f0",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {U} or {B}. This artifact deals 1 damage to you.",
+      "mana_cost": "{2}",
+      "cmc": 2,
+      "type_line": "Artifact",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Aether Spellbomb",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "4b033a0a-c1ae-44d7-9662-72cbbfda024b",
+      "oracle_text": "{U}, Sacrifice this artifact: Return target creature to its owner's hand.\n{1}, Sacrifice this artifact: Draw a card.",
+      "mana_cost": "{1}",
+      "cmc": 1,
+      "type_line": "Artifact",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Time Sieve",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "3da5977a-36d4-4f32-ab9b-8b93809d818d",
+      "oracle_text": "{T}, Sacrifice five artifacts: Take an extra turn after this one.",
+      "mana_cost": "{U}{B}",
+      "cmc": 2,
+      "type_line": "Artifact",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Toxic Deluge",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "afaef788-34d1-460b-b884-9d7ae6ddeb18",
+      "oracle_text": "As an additional cost to cast this spell, pay X life.\nAll creatures get -X/-X until end of turn.",
+      "mana_cost": "{2}{B}",
+      "cmc": 3,
+      "type_line": "Sorcery",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Training Center",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "e3570ac7-c593-40e3-bbd6-ec3da6d8158d",
+      "oracle_text": "This land enters tapped unless you have two or more opponents.\n{T}: Add {U} or {R}.",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Treasure Vault",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "3c43efd6-b1a8-452c-ae20-9a936c3340ab",
+      "oracle_text": "{T}: Add {C}.\n{X}{X}, {T}, Sacrifice this land: Create X Treasure tokens.",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Artifact Land",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Underground Sea",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "4b22be3a-8ce1-47d1-b82e-6c3ccfb0548b",
+      "oracle_text": "({T}: Add {U} or {B}.)",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Island Swamp",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Urza, Lord High Artificer",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "e87906d2-db1a-4e19-b910-adb4eb339945",
+      "oracle_text": "When Urza enters, create a 0/0 colorless Construct artifact creature token with \"This token gets +1/+1 for each artifact you control.\"\nTap an untapped artifact you control: Add {U}.\n{5}: Shuffle your library, then exile the top card. Until end of turn, you may play that card without paying its mana cost.",
+      "mana_cost": "{2}{U}{U}",
+      "cmc": 4,
+      "type_line": "Legendary Creature — Human Artificer",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Urza's Saga",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "4c6a0c30-b547-4eff-8ff4-0ca25803c076",
+      "oracle_text": "(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)\nI — This Saga gains \"{T}: Add {C}.\"\nII — This Saga gains \"{2}, {T}: Create a 0/0 colorless Construct artifact creature token with 'This token gets +1/+1 for each artifact you control.'\"\nIII — Search your library for an artifact card with mana cost {0} or {1}, put it onto the battlefield, then shuffle.",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Enchantment Land — Urza's Saga",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Vampiric Tutor",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "ededbdae-d9dc-4206-9335-d7158f2d7700",
+      "oracle_text": "Search your library for a card, then shuffle and put that card on top. You lose 2 life.",
+      "mana_cost": "{B}",
+      "cmc": 1,
+      "type_line": "Instant",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Vandalblast",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "3567c3c8-b3c7-45b7-935b-b1fdbc973720",
+      "oracle_text": "Destroy target artifact you don't control.\nOverload {4}{R} (You may cast this spell for its overload cost. If you do, change \"target\" in its text to \"each.\")",
+      "mana_cost": "{R}",
+      "cmc": 1,
+      "type_line": "Sorcery",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Vault of Whispers",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "09496421-74e4-466a-9546-56f2a0c8eef4",
+      "oracle_text": "{T}: Add {B}.",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Artifact Land",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Volcanic Island",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "c718911c-c955-4eb9-9e16-be4bd49a4e4e",
+      "oracle_text": "({T}: Add {U} or {R}.)",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Island Mountain",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Walking Ballista",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "4b515bb0-f275-4400-8032-3173b799ab40",
+      "oracle_text": "This creature enters with X +1/+1 counters on it.\n{4}: Put a +1/+1 counter on this creature.\nRemove a +1/+1 counter from this creature: It deals 1 damage to any target.",
+      "mana_cost": "{X}{X}",
+      "cmc": 0,
+      "type_line": "Artifact Creature — Construct",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Watery Grave",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "fc9ec820-4245-4a96-b009-5308a818ca58",
+      "oracle_text": "({T}: Add {U} or {B}.)\nAs this land enters, you may pay 2 life. If you don't, it enters tapped.",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Island Swamp",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "Wayfarer's Bauble",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "31f15274-301b-47c5-ba19-0ced04520878",
+      "oracle_text": "{2}, {T}, Sacrifice this artifact: Search your library for a basic land card, put that card onto the battlefield tapped, then shuffle.",
+      "mana_cost": "{1}",
+      "cmc": 1,
+      "type_line": "Artifact",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "engineering Ashnod 2026-10-23 live /cards/collection snapshot"
+    },
+    {
+      "name": "City of Brass",
+      "quantity": 1,
+      "zone": "main",
+      "oracle_id": "f25351e3-539b-4bbc-b92d-6480acf4d722",
+      "oracle_text": "Whenever this land becomes tapped, it deals 1 damage to you.\n{T}: Add one mana of any color.",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source": "canonical Ashad M7 Rev3 selected card Scryfall snapshot, main merge 2b9d7ace7a611b16383c28319dda046509344dd8"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+name: Verify Ashnod M7 Rev2 Exact Owner Approval
+
+on:
+  pull_request:
+    paths:
+      - "refinement/decklists/Ashnod_the_Uncaring_M7_Rev2_Approved_2026-10-23.txt"
+      - "refinement/verification/Ashnod_the_Uncaring_M7_Rev2_Scryfall_Selected_2026-10-23.json"
+      - "refinement/approvals/Ashnod_the_Uncaring_M7_Rev2_Approved_2026-10-23.md"
+      - "refinement/verification/Ashnod_the_Uncaring_M7_Rev2_Approved_2026-10-23_Verification.md"
+      - "state/current_deck_overrides.json"
+      - "refinement/Deck_Refinement_Tracker_2026-10-12.csv"
+      - "tests/test_ashnod_rev2_m7_approval.py"
+      - ".github/workflows/verify-ashnod-m7-rev2-approval.yml"
+  push:
+    branches: ["main"]
+    paths:
+      - "refinement/decklists/Ashnod_the_Uncaring_M7_Rev2_Approved_2026-10-23.txt"
+permissions:
+  contents: read
+jobs:
+  exact-approval:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verify Ashnod M7 Rev2 exact Cory approval, 100, source, state and tracker
+        run: python -m unittest discover -s tests -p 'test_ashnod_rev2_m7_approval.py' -v
+      - name: Regress five preceding immutable new-cycle M7 locks
+        run: |
+          python -m unittest discover -s tests -p 'test_abaddon_rev3_m7_approval.py' -v
+          python -m unittest discover -s tests -p 'test_admiral_m7_approval.py' -v
+          python -m unittest discover -s tests -p 'test_admiral_brass_unsinkable_rev3_approval.py' -v
+          python -m unittest discover -s tests -p 'test_anhelo_rev2_m7_approval.py' -v
+          python -m unittest discover -s tests -p 'test_ashad_rev3_m7_approval.py' -v
