@@ -1,0 +1,1603 @@
+{
+  "schema_version": 1,
+  "status": "CORY_APPROVED_GORO_GORO_AND_SATORU_M7_REV1_CANONICAL_SOURCE_BOUND",
+  "deck_id": "Goro_Goro_and_Satoru",
+  "date": "2026-10-24",
+  "baseline_raw_sha256": "2fd39e3b39afaeb1bf394a59b392d8a29f28645776fa0b13c5754df67ab85fdf",
+  "candidate_raw_sha256": "36b71b76f913c38503f6cd1a59ba9e29a5aab48d1d6b9fd4c29eba5b69775d5c",
+  "physical_cards": 100,
+  "distinct_names": 99,
+  "source": "96 of 99 distinct proposed card names source-bound to frozen Scryfall Oct23 215-card collection; 3 manually checked published Scryfall Oct24 Roaming Throne, Misty Rainforest, Marsh Flats. No fabricated Oracle IDs or new live full-100 API requery.",
+  "frozen_snapshot_origin": "data/grixis/m6/oracle_snapshots/Goro_Goro_and_Satoru_M7_Scryfall_20261023.json",
+  "published_addendum_origin": "data/grixis/m7/independent_reviews/Goro_Goro_and_Satoru_Oracle_Addendum_20261024.json",
+  "power_bracket": "4 — Optimized",
+  "archidekt_tags": [
+    "Ninjas",
+    "Dragons",
+    "Extra Combats"
+  ],
+  "project_exceptions": [],
+  "cards": [
+    {
+      "name": "Goro-Goro and Satoru",
+      "quantity": 1,
+      "oracle_id": "854bdd4a-d549-41d5-af43-0e2154ed017e",
+      "mana_cost": "{U}{B}{R}",
+      "cmc": 3,
+      "type_line": "Legendary Creature — Goblin Human",
+      "oracle_text": "Whenever one or more creatures you control that entered this turn deal combat damage to a player, create a 5/5 red Dragon Spirit creature token with flying.\n{1}{R}: Creatures you control gain haste until end of turn.",
+      "color_identity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Aggravated Assault",
+      "quantity": 1,
+      "oracle_id": "20129459-a386-41eb-899d-1aede3427300",
+      "mana_cost": "{2}{R}",
+      "cmc": 3,
+      "type_line": "Enchantment",
+      "oracle_text": "{3}{R}{R}: Untap all creatures you control. After this main phase, there is an additional combat phase followed by an additional main phase. Activate only as a sorcery.",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "An Offer You Can't Refuse",
+      "quantity": 1,
+      "oracle_id": "234a734b-ba28-4f1b-9d01-3c3e7d516590",
+      "mana_cost": "{U}",
+      "cmc": 1,
+      "type_line": "Instant",
+      "oracle_text": "Counter target noncreature spell. Its controller creates two Treasure tokens. (They're artifacts with \"{T}, Sacrifice this token: Add one mana of any color.\")",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Ancient Tomb",
+      "quantity": 1,
+      "oracle_id": "23467047-6dba-4498-b783-1ebc4f74b8c2",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {C}{C}. This land deals 2 damage to you.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Arcane Denial",
+      "quantity": 1,
+      "oracle_id": "ab1cc360-b9de-48d9-9983-4dfe4a7d2a37",
+      "mana_cost": "{1}{U}",
+      "cmc": 2,
+      "type_line": "Instant",
+      "oracle_text": "Counter target spell. Its controller may draw up to two cards at the beginning of the next turn's upkeep.\nYou draw a card at the beginning of the next turn's upkeep.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Arcane Signet",
+      "quantity": 1,
+      "oracle_id": "0bc7f093-bef0-4f1a-852c-4b75ebf54838",
+      "mana_cost": "{2}",
+      "cmc": 2,
+      "type_line": "Artifact",
+      "oracle_text": "{T}: Add one mana of any color in your commander's color identity.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Badlands",
+      "quantity": 1,
+      "oracle_id": "13ff3222-91cb-4796-a34e-899ed817694c",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Swamp Mountain",
+      "oracle_text": "({T}: Add {B} or {R}.)",
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Bident of Thassa",
+      "quantity": 1,
+      "oracle_id": "e1afaef7-9fa3-4662-a95f-adfb0da9fd11",
+      "mana_cost": "{2}{U}{U}",
+      "cmc": 4,
+      "type_line": "Legendary Enchantment Artifact",
+      "oracle_text": "Whenever a creature you control deals combat damage to a player, you may draw a card.\n{1}{U}, {T}: Creatures your opponents control attack this turn if able.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Bitterblossom",
+      "quantity": 1,
+      "oracle_id": "fb868840-09fa-49b1-85cb-b08ad065e972",
+      "mana_cost": "{1}{B}",
+      "cmc": 2,
+      "type_line": "Kindred Enchantment — Faerie",
+      "oracle_text": "At the beginning of your upkeep, you lose 1 life and create a 1/1 black Faerie Rogue creature token with flying.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Blood Crypt",
+      "quantity": 1,
+      "oracle_id": "43985bbc-a0f6-4812-984e-392bc8562633",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Swamp Mountain",
+      "oracle_text": "({T}: Add {B} or {R}.)\nAs this land enters, you may pay 2 life. If you don't, it enters tapped.",
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Bloodstained Mire",
+      "quantity": 1,
+      "oracle_id": "fc0707c7-d504-4ccf-a0d2-3eb6e26e7a57",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for a Swamp or Mountain card, put it onto the battlefield, then shuffle.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Breath of Fury",
+      "quantity": 1,
+      "oracle_id": "fdaa0faf-e7ee-48b3-9330-de0fc3792ad3",
+      "mana_cost": "{2}{R}{R}",
+      "cmc": 4,
+      "type_line": "Enchantment — Aura",
+      "oracle_text": "Enchant creature you control\nWhen enchanted creature deals combat damage to a player, sacrifice it and attach this Aura to a creature you control. If you do, untap all creatures you control and after this phase, there is an additional combat phase.",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Changeling Outcast",
+      "quantity": 1,
+      "oracle_id": "a61ef0cc-1da9-49f9-b0dc-01cf9f6205be",
+      "mana_cost": "{B}",
+      "cmc": 1,
+      "type_line": "Creature — Shapeshifter",
+      "oracle_text": "Changeling (This card is every creature type.)\nThis creature can't block and can't be blocked.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Chaos Warp",
+      "quantity": 1,
+      "oracle_id": "07a0cba9-8768-4fd9-a3d5-b0f83b4bf8e8",
+      "mana_cost": "{2}{R}",
+      "cmc": 3,
+      "type_line": "Instant",
+      "oracle_text": "The owner of target permanent shuffles it into their library, then reveals the top card of their library. If it's a permanent card, they put it onto the battlefield.",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "City of Brass",
+      "quantity": 1,
+      "oracle_id": "f25351e3-539b-4bbc-b92d-6480acf4d722",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "Whenever this land becomes tapped, it deals 1 damage to you.\n{T}: Add one mana of any color.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Command Tower",
+      "quantity": 1,
+      "oracle_id": "0895c9b7-ae7d-4bb3-af17-3b75deb50a25",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add one mana of any color in your commander's color identity.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Counterspell",
+      "quantity": 1,
+      "oracle_id": "cc187110-1148-4090-bbb8-e205694a39f5",
+      "mana_cost": "{U}{U}",
+      "cmc": 2,
+      "type_line": "Instant",
+      "oracle_text": "Counter target spell.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Cyclonic Rift",
+      "quantity": 1,
+      "oracle_id": "d75b9c82-1b49-4c3e-a1b5-aeef57d6644b",
+      "mana_cost": "{1}{U}",
+      "cmc": 2,
+      "type_line": "Instant",
+      "oracle_text": "Return target nonland permanent you don't control to its owner's hand.\nOverload {6}{U} (You may cast this spell for its overload cost. If you do, change \"target\" in its text to \"each.\")",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Daring Piracy",
+      "quantity": 1,
+      "oracle_id": "ae74efc6-4649-4783-a3a5-7a34d4667f64",
+      "mana_cost": "{2}{R}",
+      "cmc": 3,
+      "type_line": "Enchantment",
+      "oracle_text": "At the beginning of combat on your turn, create a 1/1 red Pirate creature token with menace and haste. Exile it at the beginning of the next end step.",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Deadly Rollick",
+      "quantity": 1,
+      "oracle_id": "0456ec64-2c81-4763-a352-8ff64a4c3d6b",
+      "mana_cost": "{3}{B}",
+      "cmc": 4,
+      "type_line": "Instant",
+      "oracle_text": "If you control a commander, you may cast this spell without paying its mana cost.\nExile target creature.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Deflecting Swat",
+      "quantity": 1,
+      "oracle_id": "ae120613-97d6-4393-b39d-c3e6c076f5d6",
+      "mana_cost": "{2}{R}",
+      "cmc": 3,
+      "type_line": "Instant",
+      "oracle_text": "If you control a commander, you may cast this spell without paying its mana cost.\nYou may choose new targets for target spell or ability.",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Demonic Tutor",
+      "quantity": 1,
+      "oracle_id": "82004860-e589-4e38-8d61-8c0210e4ea39",
+      "mana_cost": "{1}{B}",
+      "cmc": 2,
+      "type_line": "Sorcery",
+      "oracle_text": "Search your library for a card, put that card into your hand, then shuffle.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Determined Iteration",
+      "quantity": 1,
+      "oracle_id": "e4ed7935-0263-4cde-8118-ac18fffce3ef",
+      "mana_cost": "{1}{R}",
+      "cmc": 2,
+      "type_line": "Enchantment",
+      "oracle_text": "At the beginning of combat on your turn, populate. The token created this way gains haste. Sacrifice it at the beginning of the next end step. (To populate, create a token that's a copy of a creature token you control.)",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Dragon Tempest",
+      "quantity": 1,
+      "oracle_id": "b9bacb46-fd1d-459b-81c2-d7d08fe73848",
+      "mana_cost": "{1}{R}",
+      "cmc": 2,
+      "type_line": "Enchantment",
+      "oracle_text": "Whenever a creature you control with flying enters, it gains haste until end of turn.\nWhenever a Dragon you control enters, it deals X damage to any target, where X is the number of Dragons you control.",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Drowned Catacomb",
+      "quantity": 1,
+      "oracle_id": "819fc966-434e-470f-91e9-a38df974ad17",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped unless you control an Island or a Swamp.\n{T}: Add {U} or {B}.",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Enduring Curiosity",
+      "quantity": 1,
+      "oracle_id": "9d2460c3-8eeb-4f35-b6f6-748c478664c7",
+      "mana_cost": "{2}{U}{U}",
+      "cmc": 4,
+      "type_line": "Enchantment Creature — Cat Glimmer",
+      "oracle_text": "Flash\nWhenever a creature you control deals combat damage to a player, draw a card.\nWhen Enduring Curiosity dies, if it was a creature, return it to the battlefield under its owner's control. It's an enchantment. (It's not a creature.)",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Exotic Orchard",
+      "quantity": 1,
+      "oracle_id": "27b047e3-0d41-45e2-98e9-9391d7923a1e",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add one mana of any color that a land an opponent controls could produce.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Fallen Shinobi",
+      "quantity": 1,
+      "oracle_id": "4fc5f871-a809-4a4a-adfb-eb4cd52837c8",
+      "mana_cost": "{3}{U}{B}",
+      "cmc": 5,
+      "type_line": "Creature — Zombie Ninja",
+      "oracle_text": "Ninjutsu {2}{U}{B} ({2}{U}{B}, Return an unblocked attacker you control to hand: Put this card onto the battlefield from your hand tapped and attacking.)\nWhenever this creature deals combat damage to a player, that player exiles the top two cards of their library. Until end of turn, you may play those cards without paying their mana costs.",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Fellwar Stone",
+      "quantity": 1,
+      "oracle_id": "95560508-7ac9-4be9-8a3f-3c7d5b52807b",
+      "mana_cost": "{2}",
+      "cmc": 2,
+      "type_line": "Artifact",
+      "oracle_text": "{T}: Add one mana of any color that a land an opponent controls could produce.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Fierce Guardianship",
+      "quantity": 1,
+      "oracle_id": "d09c9cba-fdd2-479b-ad5d-d05181c3e3f9",
+      "mana_cost": "{2}{U}",
+      "cmc": 3,
+      "type_line": "Instant",
+      "oracle_text": "If you control a commander, you may cast this spell without paying its mana cost.\nCounter target noncreature spell.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Fire Navy Trebuchet",
+      "quantity": 1,
+      "oracle_id": "1f018a8c-6ceb-4d03-94a7-8713467c9cf5",
+      "mana_cost": "{2}{B}",
+      "cmc": 3,
+      "type_line": "Artifact Creature — Wall",
+      "oracle_text": "Defender, reach\nWhenever you attack, create a 2/1 colorless Construct artifact creature token with flying named Ballistic Boulder that's tapped and attacking. Sacrifice that token at the beginning of the next end step.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Frostcliff Siege",
+      "quantity": 1,
+      "oracle_id": "e7af31ff-fa1b-4225-b3bc-fde80ac72d0a",
+      "mana_cost": "{1}{U}{R}",
+      "cmc": 3,
+      "type_line": "Enchantment",
+      "oracle_text": "As this enchantment enters, choose Jeskai or Temur.\n• Jeskai — Whenever one or more creatures you control deal combat damage to a player, draw a card.\n• Temur — Creatures you control get +1/+0 and have trample and haste.",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Gingerbrute",
+      "quantity": 1,
+      "oracle_id": "10b8d4c7-7553-4d76-b643-d98b80701e13",
+      "mana_cost": "{1}",
+      "cmc": 1,
+      "type_line": "Artifact Creature — Food Golem",
+      "oracle_text": "Haste (This creature can attack and {T} as soon as it comes under your control.)\n{1}: This creature can't be blocked this turn except by creatures with haste.\n{2}, {T}, Sacrifice this creature: You gain 3 life.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Grazilaxx, Illithid Scholar",
+      "quantity": 1,
+      "oracle_id": "d22ff377-d282-4a28-9dce-96f25913dc96",
+      "mana_cost": "{1}{U}{U}",
+      "cmc": 3,
+      "type_line": "Legendary Creature — Horror",
+      "oracle_text": "Whenever a creature you control becomes blocked, you may return it to its owner's hand.\nWhenever one or more creatures you control deal combat damage to a player, draw a card.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Great Train Heist",
+      "quantity": 1,
+      "oracle_id": "afe2f7a4-9440-4d93-801f-a18b627efb21",
+      "mana_cost": "{R}",
+      "cmc": 1,
+      "type_line": "Instant",
+      "oracle_text": "Spree (Choose one or more additional costs.)\n+ {2}{R} — Untap all creatures you control. If it's your combat phase, there is an additional combat phase after this phase.\n+ {2} — Creatures you control get +1/+0 and gain first strike until end of turn.\n+ {R} — Choose target opponent. Whenever a creature you control deals combat damage to that player this turn, create a tapped Treasure token.",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Hanweir Garrison",
+      "quantity": 1,
+      "oracle_id": "7cb29569-48e1-4782-9906-fad155ebfafe",
+      "mana_cost": "{2}{R}",
+      "cmc": 3,
+      "type_line": "Creature — Human Soldier",
+      "oracle_text": "Whenever this creature attacks, create two 1/1 red Human creature tokens that are tapped and attacking.\n(Melds with Hanweir Battlements.)",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Ingenious Infiltrator",
+      "quantity": 1,
+      "oracle_id": "354defd2-f63f-4a48-9fd4-2526b3878a84",
+      "mana_cost": "{2}{U}{B}",
+      "cmc": 4,
+      "type_line": "Creature — Vedalken Ninja",
+      "oracle_text": "Ninjutsu {U}{B} ({U}{B}, Return an unblocked attacker you control to hand: Put this card onto the battlefield from your hand tapped and attacking.)\nWhenever a Ninja you control deals combat damage to a player, draw a card.",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Island",
+      "quantity": 2,
+      "oracle_id": "b2c6aa39-2d2a-459c-a555-fb48ba993373",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Basic Land — Island",
+      "oracle_text": "({T}: Add {U}.)",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Jeska's Will",
+      "quantity": 1,
+      "oracle_id": "0fd114c4-092b-4e28-b0dc-ef529f3bc73e",
+      "mana_cost": "{2}{R}",
+      "cmc": 3,
+      "type_line": "Sorcery",
+      "oracle_text": "Choose one. If you control a commander as you cast this spell, you may choose both instead.\n• Add {R} for each card in target opponent's hand.\n• Exile the top three cards of your library. You may play them this turn.",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Karlach, Fury of Avernus",
+      "quantity": 1,
+      "oracle_id": "037355be-71e7-4866-80a6-80352c304970",
+      "mana_cost": "{4}{R}",
+      "cmc": 5,
+      "type_line": "Legendary Creature — Tiefling Barbarian",
+      "oracle_text": "Whenever you attack, if it's the first combat phase of the turn, untap all attacking creatures. They gain first strike until end of turn. After this phase, there is an additional combat phase.\nChoose a Background (You can have a Background as a second commander.)",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Lightning Greaves",
+      "quantity": 1,
+      "oracle_id": "ca204b66-8d0c-431a-8d34-282f7c2d17da",
+      "mana_cost": "{2}",
+      "cmc": 2,
+      "type_line": "Artifact — Equipment",
+      "oracle_text": "Equipped creature has haste and shroud. (It can't be the target of spells or abilities.)\nEquip {0}",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Loyal Apprentice",
+      "quantity": 1,
+      "oracle_id": "7f268b15-ac92-4e98-821b-78d15d9285d9",
+      "mana_cost": "{1}{R}",
+      "cmc": 2,
+      "type_line": "Creature — Human Artificer",
+      "oracle_text": "Haste\nLieutenant — At the beginning of combat on your turn, if you control your commander, create a 1/1 colorless Thopter artifact creature token with flying. That token gains haste until end of turn.",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Luxury Suite",
+      "quantity": 1,
+      "oracle_id": "819e1765-8325-4e6f-89c1-63ea86de369f",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped unless you have two or more opponents.\n{T}: Add {B} or {R}.",
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Mana Confluence",
+      "quantity": 1,
+      "oracle_id": "d0ee5bdc-2b69-4b73-9a20-ffcc18783b29",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}, Pay 1 life: Add one mana of any color.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Mana Drain",
+      "quantity": 1,
+      "oracle_id": "74d3277a-38e5-4732-afed-084a56148f20",
+      "mana_cost": "{U}{U}",
+      "cmc": 2,
+      "type_line": "Instant",
+      "oracle_text": "Counter target spell. At the beginning of your next main phase, add an amount of {C} equal to that spell's mana value.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Marsh Flats",
+      "quantity": 1,
+      "oracle_id": null,
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for a Plains or Swamp card, put it onto the battlefield, then shuffle.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "published_scryfall_page_manual_review",
+      "source_url": "https://scryfall.com/card/spg/115/marsh-flats"
+    },
+    {
+      "name": "Mistblade Shinobi",
+      "quantity": 1,
+      "oracle_id": "16856e22-6f9e-4f8e-b4ee-622a7c2ee453",
+      "mana_cost": "{2}{U}",
+      "cmc": 3,
+      "type_line": "Creature — Human Ninja",
+      "oracle_text": "Ninjutsu {U} ({U}, Return an unblocked attacker you control to hand: Put this card onto the battlefield from your hand tapped and attacking.)\nWhenever this creature deals combat damage to a player, you may return target creature that player controls to its owner's hand.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Misty Rainforest",
+      "quantity": 1,
+      "oracle_id": null,
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for a Forest or Island card, put it onto the battlefield, then shuffle.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "published_scryfall_page_manual_review",
+      "source_url": "https://scryfall.com/card/spg/116/misty-rainforest"
+    },
+    {
+      "name": "Moon-Circuit Hacker",
+      "quantity": 1,
+      "oracle_id": "7cd8b017-8d59-4b55-bb9a-8d8e492ef1ac",
+      "mana_cost": "{1}{U}",
+      "cmc": 2,
+      "type_line": "Enchantment Creature — Human Ninja",
+      "oracle_text": "Ninjutsu {U} ({U}, Return an unblocked attacker you control to hand: Put this card onto the battlefield from your hand tapped and attacking.)\nWhenever this creature deals combat damage to a player, you may draw a card. If you do, discard a card unless this creature entered this turn.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Morphic Pool",
+      "quantity": 1,
+      "oracle_id": "bd004c9d-771e-4e63-a97d-a2259c096af8",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped unless you have two or more opponents.\n{T}: Add {U} or {B}.",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Mountain",
+      "quantity": 1,
+      "oracle_id": "a3fb7228-e76b-4e96-a40e-20b5fed75685",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Basic Land — Mountain",
+      "oracle_text": "({T}: Add {R}.)",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Nashi, Moon Sage's Scion",
+      "quantity": 1,
+      "oracle_id": "d04b6c2c-50fc-464d-9991-230efec70d2b",
+      "mana_cost": "{1}{B}{B}",
+      "cmc": 3,
+      "type_line": "Legendary Creature — Rat Ninja",
+      "oracle_text": "Ninjutsu {3}{B} ({3}{B}, Return an unblocked attacker you control to hand: Put this card onto the battlefield from your hand tapped and attacking.)\nWhenever Nashi deals combat damage to a player, exile the top card of each player's library. Until end of turn, you may play one of those cards. If you cast a spell this way, pay life equal to its mana value rather than paying its mana cost.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Ninja of the Deep Hours",
+      "quantity": 1,
+      "oracle_id": "1f3c2b00-0000-4ae1-9650-9553accac52e",
+      "mana_cost": "{3}{U}",
+      "cmc": 4,
+      "type_line": "Creature — Human Ninja",
+      "oracle_text": "Ninjutsu {1}{U} ({1}{U}, Return an unblocked attacker you control to hand: Put this card onto the battlefield from your hand tapped and attacking.)\nWhenever this creature deals combat damage to a player, you may draw a card.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Otawara, Soaring City",
+      "quantity": 1,
+      "oracle_id": "e9b6a394-691c-425a-9307-76d8edc7375e",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Legendary Land",
+      "oracle_text": "{T}: Add {U}.\nChannel — {3}{U}, Discard this card: Return target artifact, creature, enchantment, or planeswalker to its owner's hand. This ability costs {1} less to activate for each legendary creature you control.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Phoenix Chick",
+      "quantity": 1,
+      "oracle_id": "40bb7b6b-a75d-4b59-ba45-a5801dcd59a1",
+      "mana_cost": "{R}",
+      "cmc": 1,
+      "type_line": "Creature — Phoenix",
+      "oracle_text": "Flying, haste\nThis creature can't block.\nWhenever you attack with three or more creatures, you may pay {R}{R}. If you do, return this card from your graveyard to the battlefield tapped and attacking with a +1/+1 counter on it.",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Polluted Delta",
+      "quantity": 1,
+      "oracle_id": "ef86989d-ce80-4e55-aece-7d11710eeffa",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for an Island or Swamp card, put it onto the battlefield, then shuffle.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Professional Face-Breaker",
+      "quantity": 1,
+      "oracle_id": "04152e7a-969c-4858-841b-0a569a9fc1bf",
+      "mana_cost": "{2}{R}",
+      "cmc": 3,
+      "type_line": "Creature — Human Warrior",
+      "oracle_text": "Menace\nWhenever one or more creatures you control deal combat damage to a player, create a Treasure token.\nSacrifice a Treasure: Exile the top card of your library. You may play that card this turn.",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Prosperous Thief",
+      "quantity": 1,
+      "oracle_id": "6d03971a-8365-449a-8fbe-07b5b9bb42dc",
+      "mana_cost": "{2}{U}",
+      "cmc": 3,
+      "type_line": "Creature — Human Ninja",
+      "oracle_text": "Ninjutsu {1}{U} ({1}{U}, Return an unblocked attacker you control to hand: Put this card onto the battlefield from your hand tapped and attacking.)\nWhenever one or more Ninja or Rogue creatures you control deal combat damage to a player, create a Treasure token. (It's an artifact with \"{T}, Sacrifice this token: Add one mana of any color.\")",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Ragavan, Nimble Pilferer",
+      "quantity": 1,
+      "oracle_id": "37108cd4-bbab-4ce3-9ed6-f60e8422e703",
+      "mana_cost": "{R}",
+      "cmc": 1,
+      "type_line": "Legendary Creature — Monkey Pirate",
+      "oracle_text": "Whenever Ragavan deals combat damage to a player, create a Treasure token and exile the top card of that player's library. Until end of turn, you may cast that card.\nDash {1}{R} (You may cast this spell for its dash cost. If you do, it gains haste, and it's returned from the battlefield to its owner's hand at the beginning of the next end step.)",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Raphael, the Nightwatcher",
+      "quantity": 1,
+      "oracle_id": "8c1e5b25-ee5a-4ea9-a715-08dd1a4f51c4",
+      "mana_cost": "{2}{R}{R}",
+      "cmc": 4,
+      "type_line": "Legendary Creature — Mutant Ninja Turtle",
+      "oracle_text": "Sneak {1}{R}{R} (You may cast this spell for {1}{R}{R} if you also return an unblocked attacker you control to hand during the declare blockers step. He enters tapped and attacking.)\nAttacking creatures you control have double strike.",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Roaming Throne",
+      "quantity": 1,
+      "oracle_id": null,
+      "mana_cost": "{4}",
+      "cmc": 4,
+      "type_line": "Artifact Creature — Golem",
+      "oracle_text": "Ward {2}\nAs Roaming Throne enters the battlefield, choose a creature type.\nRoaming Throne is the chosen type in addition to its other types.\nIf a triggered ability of another creature you control of the chosen type triggers, it triggers an additional time.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "published_scryfall_page_manual_review",
+      "source_url": "https://scryfall.com/card/lci/258/roaming-throne"
+    },
+    {
+      "name": "Rogue's Passage",
+      "quantity": 1,
+      "oracle_id": "f29dc596-2121-4421-8463-15f6c2e8b9b3",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {C}.\n{4}, {T}: Target creature can't be blocked this turn.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Sakashima's Student",
+      "quantity": 1,
+      "oracle_id": "afcc68e2-3634-43ce-ae99-dd2ec735d146",
+      "mana_cost": "{2}{U}{U}",
+      "cmc": 4,
+      "type_line": "Creature — Human Ninja",
+      "oracle_text": "Ninjutsu {1}{U} ({1}{U}, Return an unblocked attacker you control to hand: Put this card onto the battlefield from your hand tapped and attacking.)\nYou may have this creature enter as a copy of any creature on the battlefield, except it's a Ninja in addition to its other creature types.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Samut, Hazoret's Champion",
+      "quantity": 1,
+      "oracle_id": "add02a36-8811-438b-a8e1-f5c8a8146b4e",
+      "mana_cost": "{1}{R}",
+      "cmc": 2,
+      "type_line": "Legendary Creature — Human Warrior Cleric",
+      "oracle_text": "Creatures you control have haste.",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Satoru Umezawa",
+      "quantity": 1,
+      "oracle_id": "ed1d21ba-ddfe-4f82-9e37-93f9e2c7ba33",
+      "mana_cost": "{1}{U}{B}",
+      "cmc": 3,
+      "type_line": "Legendary Creature — Human Ninja",
+      "oracle_text": "Whenever you activate a ninjutsu ability, look at the top three cards of your library. Put one of them into your hand and the rest on the bottom of your library in any order. This ability triggers only once each turn.\nEach creature card in your hand has ninjutsu {2}{U}{B}.",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Satoru, the Infiltrator",
+      "quantity": 1,
+      "oracle_id": "7555c429-5f2d-4171-b6b0-8e3c8da7f314",
+      "mana_cost": "{U}{B}",
+      "cmc": 2,
+      "type_line": "Legendary Creature — Human Ninja Rogue",
+      "oracle_text": "Menace\nWhenever Satoru and/or one or more other nontoken creatures you control enter, if none of them were cast or no mana was spent to cast them, draw a card.",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Scalding Tarn",
+      "quantity": 1,
+      "oracle_id": "cb027150-848c-4a66-88ad-e20222304dd8",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for an Island or Mountain card, put it onto the battlefield, then shuffle.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Shipwreck Marsh",
+      "quantity": 1,
+      "oracle_id": "5f42b67f-87fd-4f98-a0e8-0c8313f4bbc8",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped unless you control two or more other lands.\n{T}: Add {U} or {B}.",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Shivan Reef",
+      "quantity": 1,
+      "oracle_id": "0fe16212-66c3-4e45-a641-7391e9b2e304",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {U} or {R}. This land deals 1 damage to you.",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Silver-Fur Master",
+      "quantity": 1,
+      "oracle_id": "60ec735d-c9be-4776-beb7-f603ae22edbf",
+      "mana_cost": "{U}{B}",
+      "cmc": 2,
+      "type_line": "Creature — Rat Ninja",
+      "oracle_text": "Ninjutsu {U}{B} ({U}{B}, Return an unblocked attacker you control to hand: Put this card onto the battlefield from your hand tapped and attacking.)\nNinjutsu abilities you activate cost {1} less to activate.\nOther Ninja and Rogue creatures you control get +1/+1.",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Slither Blade",
+      "quantity": 1,
+      "oracle_id": "5a55641b-0818-4418-a2e5-44157056353c",
+      "mana_cost": "{U}",
+      "cmc": 1,
+      "type_line": "Creature — Snake Rogue",
+      "oracle_text": "This creature can't be blocked.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Sol Ring",
+      "quantity": 1,
+      "oracle_id": "6ad8011d-3471-4369-9d68-b264cc027487",
+      "mana_cost": "{1}",
+      "cmc": 1,
+      "type_line": "Artifact",
+      "oracle_text": "{T}: Add {C}{C}.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Steam Vents",
+      "quantity": 1,
+      "oracle_id": "17039058-822d-409f-938c-b727a366ba63",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Island Mountain",
+      "oracle_text": "({T}: Add {U} or {R}.)\nAs this land enters, you may pay 2 life. If you don't, it enters tapped.",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Stormcarved Coast",
+      "quantity": 1,
+      "oracle_id": "4722105b-0085-4bb8-bca1-9de0d3eb5600",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped unless you control two or more other lands.\n{T}: Add {U} or {R}.",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Sulfur Falls",
+      "quantity": 1,
+      "oracle_id": "6a6c5e17-6465-4a1f-9d63-8a3ce2edc522",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped unless you control an Island or a Mountain.\n{T}: Add {U} or {R}.",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Sulfurous Springs",
+      "quantity": 1,
+      "oracle_id": "f5c38c01-4a40-469f-91a0-7479daf4e8e7",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {B} or {R}. This land deals 1 damage to you.",
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Swamp",
+      "quantity": 1,
+      "oracle_id": "56719f6a-1a6c-4c0a-8d21-18f7d7350b68",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Basic Land — Swamp",
+      "oracle_text": "({T}: Add {B}.)",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Swan Song",
+      "quantity": 1,
+      "oracle_id": "8ddfc283-c9b4-41a5-af88-cf0068e986cc",
+      "mana_cost": "{U}",
+      "cmc": 1,
+      "type_line": "Instant",
+      "oracle_text": "Counter target enchantment, instant, or sorcery spell. Its controller creates a 2/2 blue Bird creature token with flying.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Talisman of Creativity",
+      "quantity": 1,
+      "oracle_id": "14d2979d-5728-42d7-a027-0eb1f754655d",
+      "mana_cost": "{2}",
+      "cmc": 2,
+      "type_line": "Artifact",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {U} or {R}. This artifact deals 1 damage to you.",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Talisman of Dominance",
+      "quantity": 1,
+      "oracle_id": "4c0a0448-b9d6-43a0-8549-64066dac63f0",
+      "mana_cost": "{2}",
+      "cmc": 2,
+      "type_line": "Artifact",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {U} or {B}. This artifact deals 1 damage to you.",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Talisman of Indulgence",
+      "quantity": 1,
+      "oracle_id": "1d9aeaaa-66f6-41cb-9bac-162d6fd8662c",
+      "mana_cost": "{2}",
+      "cmc": 2,
+      "type_line": "Artifact",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {B} or {R}. This artifact deals 1 damage to you.",
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Terminate",
+      "quantity": 1,
+      "oracle_id": "6257c2fd-005f-41e3-8a72-af76df1eb134",
+      "mana_cost": "{B}{R}",
+      "cmc": 2,
+      "type_line": "Instant",
+      "oracle_text": "Destroy target creature. It can't be regenerated.",
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Terror of the Peaks",
+      "quantity": 1,
+      "oracle_id": "f8e17f4f-080d-4bba-bd05-ca27e94ccecc",
+      "mana_cost": "{3}{R}{R}",
+      "cmc": 5,
+      "type_line": "Creature — Dragon",
+      "oracle_text": "Flying\nSpells your opponents cast that target this creature cost an additional 3 life to cast.\nWhenever another creature you control enters, this creature deals damage equal to that creature's power to any target.",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Tetsuko Umezawa, Fugitive",
+      "quantity": 1,
+      "oracle_id": "ceeeacbc-01b0-4421-aaca-2ce6cdbe45d7",
+      "mana_cost": "{1}{U}",
+      "cmc": 2,
+      "type_line": "Legendary Creature — Human Rogue",
+      "oracle_text": "Creatures you control with power or toughness 1 or less can't be blocked.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Thousand-Faced Shadow",
+      "quantity": 1,
+      "oracle_id": "98636623-bbc6-4935-a2bb-2234691eb6d8",
+      "mana_cost": "{U}",
+      "cmc": 1,
+      "type_line": "Creature — Human Ninja",
+      "oracle_text": "Ninjutsu {2}{U}{U} ({2}{U}{U}, Return an unblocked attacker you control to hand: Put this card onto the battlefield from your hand tapped and attacking.)\nFlying\nWhen this creature enters from your hand, if it's attacking, create a token that's a copy of another target attacking creature. The token enters tapped and attacking.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Toxic Deluge",
+      "quantity": 1,
+      "oracle_id": "afaef788-34d1-460b-b884-9d7ae6ddeb18",
+      "mana_cost": "{2}{B}",
+      "cmc": 3,
+      "type_line": "Sorcery",
+      "oracle_text": "As an additional cost to cast this spell, pay X life.\nAll creatures get -X/-X until end of turn.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Training Center",
+      "quantity": 1,
+      "oracle_id": "e3570ac7-c593-40e3-bbd6-ec3da6d8158d",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped unless you have two or more opponents.\n{T}: Add {U} or {R}.",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Triton Shorestalker",
+      "quantity": 1,
+      "oracle_id": "71a60247-17e5-44bd-9fed-f7d550b09ef3",
+      "mana_cost": "{U}",
+      "cmc": 1,
+      "type_line": "Creature — Merfolk Rogue",
+      "oracle_text": "This creature can't be blocked.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Underground River",
+      "quantity": 1,
+      "oracle_id": "857febd9-cdd7-4f8e-a852-d88084b0cfbc",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {U} or {B}. This land deals 1 damage to you.",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Underground Sea",
+      "quantity": 1,
+      "oracle_id": "4b22be3a-8ce1-47d1-b82e-6c3ccfb0548b",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Island Swamp",
+      "oracle_text": "({T}: Add {U} or {B}.)",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Urabrask's Forge",
+      "quantity": 1,
+      "oracle_id": "7c4b2203-a937-4d91-8e39-2283fe686b45",
+      "mana_cost": "{2}{R}",
+      "cmc": 3,
+      "type_line": "Artifact",
+      "oracle_text": "At the beginning of combat on your turn, put an oil counter on this artifact, then create an X/1 red Phyrexian Horror creature token with trample and haste, where X is the number of oil counters on this artifact. Sacrifice that token at the beginning of the next end step.",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Vampiric Tutor",
+      "quantity": 1,
+      "oracle_id": "ededbdae-d9dc-4206-9335-d7158f2d7700",
+      "mana_cost": "{B}",
+      "cmc": 1,
+      "type_line": "Instant",
+      "oracle_text": "Search your library for a card, then shuffle and put that card on top. You lose 2 life.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Vandalblast",
+      "quantity": 1,
+      "oracle_id": "3567c3c8-b3c7-45b7-935b-b1fdbc973720",
+      "mana_cost": "{R}",
+      "cmc": 1,
+      "type_line": "Sorcery",
+      "oracle_text": "Destroy target artifact you don't control.\nOverload {4}{R} (You may cast this spell for its overload cost. If you do, change \"target\" in its text to \"each.\")",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Volcanic Island",
+      "quantity": 1,
+      "oracle_id": "c718911c-c955-4eb9-9e16-be4bd49a4e4e",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Island Mountain",
+      "oracle_text": "({T}: Add {U} or {R}.)",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Waterbender Ascension",
+      "quantity": 1,
+      "oracle_id": "aeddfdc2-149b-4703-ba57-8d844b25ef08",
+      "mana_cost": "{1}{U}",
+      "cmc": 2,
+      "type_line": "Enchantment",
+      "oracle_text": "Whenever a creature you control deals combat damage to a player, put a quest counter on this enchantment. Then if it has four or more quest counters on it, draw a card.\nWaterbend {4}: Target creature can't be blocked this turn. (While paying a waterbend cost, you can tap your artifacts and creatures to help. Each one pays for {1}.)",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Watery Grave",
+      "quantity": 1,
+      "oracle_id": "fc9ec820-4245-4a96-b009-5308a818ca58",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Island Swamp",
+      "oracle_text": "({T}: Add {U} or {B}.)\nAs this land enters, you may pay 2 life. If you don't, it enters tapped.",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Withering Torment",
+      "quantity": 1,
+      "oracle_id": "ffce81c5-1b58-4882-a4e7-6f8d7cb170de",
+      "mana_cost": "{2}{B}",
+      "cmc": 3,
+      "type_line": "Instant",
+      "oracle_text": "Destroy target creature or enchantment. You lose 2 life.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Xander's Lounge",
+      "quantity": 1,
+      "oracle_id": "8291543f-d086-48aa-b2b7-5481ca8c9198",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Island Swamp Mountain",
+      "oracle_text": "({T}: Add {U}, {B}, or {R}.)\nThis land enters tapped.\nCycling {3} ({3}, Discard this card: Draw a card.)",
+      "color_identity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Yuriko, the Tiger's Shadow",
+      "quantity": 1,
+      "oracle_id": "a7043fbd-1dfd-42cf-be4b-cc343d0949e5",
+      "mana_cost": "{1}{U}{B}",
+      "cmc": 3,
+      "type_line": "Legendary Creature — Human Ninja",
+      "oracle_text": "Commander ninjutsu {U}{B} ({U}{B}, Return an unblocked attacker you control to hand: Put this card onto the battlefield from your hand or the command zone tapped and attacking.)\nWhenever a Ninja you control deals combat damage to a player, reveal the top card of your library and put that card into your hand. Each opponent loses life equal to that card's mana value.",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    }
+  ]
+}
