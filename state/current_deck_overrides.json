@@ -206,11 +206,26 @@
       "approval_status": "APPROVED",
       "lock_status": "LOCKED",
       "final_gate_passed": true,
-      "user_approval_date": "2026-10-14",
+      "user_approval_date": "2026-10-23",
       "current_stage": "LOCKED",
-      "approved_list_sha256": "80f4bdef2b8b140aeae23775cfdf87fda81e7215038b8db9b1746c806f366e0b",
-      "quality_gate_version": "Complete Approval Gate v1 — fresh Oracle, legality, rules, and structural verification",
-      "approval_basis": "Explicit user approval after the SHA-bound complete gate returned APPROVAL_READY: exactly 100 cards, 100 distinct names, Grixis color identity, fresh per-card Oracle verification, current official Commander legality, independent rules verification, zero project exceptions, and zero gate errors."
+      "approved_list_sha256": "d91ac1ab1dc543ee9fe93c69978c33966a8e9578bc46935e65d5d3b7139c46fd",
+      "quality_gate_version": "Deck Quality Gates v3 + Cormela independent M7 Rev2 six-swap exact selected 100-name Oracle and bounded cEDH rules regression",
+      "approval_basis": "Cory explicitly replied 'Approve' to the complete ChatGPT independently reviewed Cormela, Glamour Thief M7 Rev2 six-swap 100-card list, raw SHA-256 d91ac1ab1dc543ee9fe93c69978c33966a8e9578bc46935e65d5d3b7139c46fd, after exact candidate presentation and canonical lock request on 2026-10-23 America/Chicago. Only these exact bytes are approved. No aggregate M6/M7/M8 certification, automatic future approvals or updated formal I/J seal.",
+      "m7_final_candidate_sha256": "d91ac1ab1dc543ee9fe93c69978c33966a8e9578bc46935e65d5d3b7139c46fd",
+      "approved_list_artifact": "refinement/decklists/Cormela_Glamour_Thief_M7_Rev2_Approved_2026-10-23.txt",
+      "previous_approved_list_sha256": "80f4bdef2b8b140aeae23775cfdf87fda81e7215038b8db9b1746c806f366e0b",
+      "previous_approved_source_raw_sha256": "80f4bdef2b8b140aeae23775cfdf87fda81e7215038b8db9b1746c806f366e0b",
+      "previous_approved_list_artifact": "refinement/decklists/Cormela_Glamour_Thief_Approved_2026-10-14.txt",
+      "m7_owner_approval_date": "2026-10-23",
+      "m7_approval_source": "Engineering ChatGPT PR #684 exact head 6a267c9f38f8e8d610e1ac8f2f7bc69dbe0bb56b, Actions run #40052202543 SUCCESS (eight new candidate-source checks, original first-pass test, finite rules and historically scoped M6 I/J regressions). GrokBot firstpass PR #657 had five swaps; ChatGPT added Into the Flood Maw over Preordain based on archived Oct23 Scryfall targeting and stax resilience. Firstpass sealed M6 J not re-sealed for six swap.",
+      "m7_archidekt_tags": [
+        "Storm",
+        "Aristocrats",
+        "Combo"
+      ],
+      "m7_power_bracket": "5 — cEDH",
+      "m7_project_exceptions": [],
+      "m7_verified_100_physical": true
     },
     "Crosis__the_Purger": {
       "approval_status": "APPROVED",
