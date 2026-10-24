@@ -1,0 +1,1971 @@
+{
+  "schema_version": 1,
+  "status": "CHATGPT_EDWARD_M7_REV2_RESEARCH_NOT_OWNER_APPROVED_NOT_CANONICAL",
+  "deck_id": "Edward_Kenway",
+  "as_of": "2026-10-23",
+  "baseline_raw_sha256": "a08d3bc9c283415f1579c493eccb3febd7d10dea3777bf3dc50cfbc0dbed4019",
+  "candidate_raw_sha256": "8c01f2be6190be3e3af0fc5ba45eca16faa1b9346981f840811e4b63822c5ee1",
+  "source": "GrokBot PR #665 archived 2026-10-23 live Scryfall pool selected from baseline+160 candidate cards",
+  "physical_cards": 100,
+  "distinct_names": 98,
+  "lands": 35,
+  "game_changers": [
+    "Ancient Tomb",
+    "Chrome Mox",
+    "Cyclonic Rift",
+    "Fierce Guardianship",
+    "Force of Will",
+    "Imperial Seal",
+    "Jeska's Will",
+    "Mana Vault",
+    "Mox Diamond",
+    "Vampiric Tutor"
+  ],
+  "project_exceptions": [],
+  "cards": [
+    {
+      "quantity": 1,
+      "cmc": 5,
+      "color_identity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [
+        "Treasure"
+      ],
+      "mana_cost": "{2}{U}{B}{R}",
+      "name": "Edward Kenway",
+      "oracle_id": "b2fe6d17-d045-45c6-9ca2-21e73d2e38d2",
+      "oracle_text": "At the beginning of your end step, create a Treasure token for each tapped Assassin, Pirate, and/or Vehicle you control.\nWhenever a Vehicle you control deals combat damage to a player, look at the top card of that player's library, then exile it face down. You may play that card for as long as it remains exiled.",
+      "power": "5",
+      "released_at": "2024-07-05",
+      "set": "acr",
+      "toughness": "5",
+      "type_line": "Legendary Creature — Human Assassin Pirate"
+    },
+    {
+      "quantity": 1,
+      "cmc": 3,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [
+        "Treasure",
+        "Food"
+      ],
+      "mana_cost": "{3}",
+      "name": "Academy Manufactor",
+      "oracle_id": "f36d1d8b-8303-44a9-ab56-531931641ea2",
+      "oracle_text": "If you would create a Clue, Food, or Treasure token, instead create one of each.",
+      "power": "1",
+      "released_at": "2024-04-19",
+      "set": "otc",
+      "toughness": "3",
+      "type_line": "Artifact Creature — Assembly-Worker"
+    },
+    {
+      "quantity": 1,
+      "cmc": 3,
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "{1}{U}{B}",
+      "name": "Adéwalé, Breaker of Chains",
+      "oracle_id": "e30d9e08-cf88-4e2d-95e1-7144d8fea5c7",
+      "oracle_text": "When Adéwalé enters, reveal the top six cards of your library. Put an Assassin, Pirate, or Vehicle card from among them into your hand and the rest on the bottom of your library in a random order.\nWhenever a Vehicle you control deals combat damage to a player, you may return this card from your graveyard to your hand.",
+      "power": "4",
+      "released_at": "2024-07-05",
+      "set": "acr",
+      "toughness": "1",
+      "type_line": "Legendary Creature — Human Assassin Pirate"
+    },
+    {
+      "quantity": 1,
+      "cmc": 5,
+      "color_identity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [
+        "Mill"
+      ],
+      "mana_cost": "{2}{U}{B}{R}",
+      "name": "Admiral Brass, Unsinkable",
+      "oracle_id": "4df179b4-7c6b-4e63-9d7d-62f4df377989",
+      "oracle_text": "When Admiral Brass enters, mill four cards.\nAt the beginning of combat on your turn, you may return target Pirate creature card from your graveyard to the battlefield with a finality counter on it. It has base power and toughness 4/4. It gains haste until end of turn. (If a creature with a finality counter on it would die, exile it instead.)",
+      "power": "3",
+      "released_at": "2023-11-17",
+      "set": "lcc",
+      "toughness": "3",
+      "type_line": "Legendary Creature — Human Pirate"
+    },
+    {
+      "quantity": 1,
+      "cmc": 3,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [
+        "Landwalk",
+        "Crew",
+        "Islandwalk"
+      ],
+      "mana_cost": "{3}",
+      "name": "Adrestia",
+      "oracle_id": "94779ca4-c202-4163-9c77-1036921a34bc",
+      "oracle_text": "Islandwalk (This creature can't be blocked as long as defending player controls an Island.)\nWhenever Adrestia attacks, if an Assassin crewed it this turn, draw a card. Adrestia becomes an Assassin in addition to its other types until end of turn.\nCrew 1",
+      "power": "4",
+      "released_at": "2024-07-05",
+      "set": "acr",
+      "toughness": "3",
+      "type_line": "Legendary Artifact — Vehicle"
+    },
+    {
+      "quantity": 1,
+      "cmc": 1,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [
+        "Treasure"
+      ],
+      "mana_cost": "{U}",
+      "name": "An Offer You Can't Refuse",
+      "oracle_id": "234a734b-ba28-4f1b-9d01-3c3e7d516590",
+      "oracle_text": "Counter target noncreature spell. Its controller creates two Treasure tokens. (They're artifacts with \"{T}, Sacrifice this token: Add one mana of any color.\")",
+      "power": null,
+      "released_at": "2024-11-15",
+      "set": "fdn",
+      "toughness": null,
+      "type_line": "Instant"
+    },
+    {
+      "quantity": 1,
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "keywords": [],
+      "mana_cost": "",
+      "name": "Ancient Tomb",
+      "oracle_id": "23467047-6dba-4498-b783-1ebc4f74b8c2",
+      "oracle_text": "{T}: Add {C}{C}. This land deals 2 damage to you.",
+      "power": null,
+      "released_at": "2018-12-07",
+      "set": "uma",
+      "toughness": null,
+      "type_line": "Land"
+    },
+    {
+      "quantity": 1,
+      "cmc": 2,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "{2}",
+      "name": "Arcane Signet",
+      "oracle_id": "0bc7f093-bef0-4f1a-852c-4b75ebf54838",
+      "oracle_text": "{T}: Add one mana of any color in your commander's color identity.",
+      "power": null,
+      "released_at": "2026-10-02",
+      "set": "frc",
+      "toughness": null,
+      "type_line": "Artifact"
+    },
+    {
+      "quantity": 1,
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "",
+      "name": "Arid Mesa",
+      "oracle_id": "c5acf2a5-40f4-433d-a74d-1cb56c521464",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for a Mountain or Plains card, put it onto the battlefield, then shuffle.",
+      "power": null,
+      "released_at": "2021-06-18",
+      "set": "mh2",
+      "toughness": null,
+      "type_line": "Land"
+    },
+    {
+      "quantity": 1,
+      "cmc": 0,
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "",
+      "name": "Badlands",
+      "oracle_id": "13ff3222-91cb-4796-a34e-899ed817694c",
+      "oracle_text": "({T}: Add {B} or {R}.)",
+      "power": null,
+      "released_at": "2014-06-16",
+      "set": "vma",
+      "toughness": null,
+      "type_line": "Land — Swamp Mountain"
+    },
+    {
+      "quantity": 1,
+      "cmc": 2,
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "{U}{B}",
+      "name": "Basim Ibn Ishaq",
+      "oracle_id": "8a70bde5-c514-4dcf-919a-48bdd1c17768",
+      "oracle_text": "Whenever you cast a historic spell, draw a card. Basim Ibn Ishaq can't be blocked this turn. This ability triggers only once each turn. (Artifacts, legendaries, and Sagas are historic.)\nWhenever Basim Ibn Ishaq deals combat damage to a player, put a +1/+1 counter on it.",
+      "power": "2",
+      "released_at": "2024-07-05",
+      "set": "acr",
+      "toughness": "2",
+      "type_line": "Legendary Creature — Human Assassin"
+    },
+    {
+      "quantity": 1,
+      "cmc": 3,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [
+        "Hire a Mercenary",
+        "Treasure",
+        "Sell Contraband",
+        "Buy Information"
+      ],
+      "mana_cost": "{2}{B}",
+      "name": "Black Market Connections",
+      "oracle_id": "d2664f28-49e1-46f8-a863-b217e961a57c",
+      "oracle_text": "At the beginning of your first main phase, choose one or more —\n• Sell Contraband — Create a Treasure token. You lose 1 life.\n• Buy Information — Draw a card. You lose 2 life.\n• Hire a Mercenary — Create a 3/2 colorless Shapeshifter creature token with changeling. You lose 3 life. (It is every creature type.)",
+      "power": null,
+      "released_at": "2026-06-26",
+      "set": "msc",
+      "toughness": null,
+      "type_line": "Enchantment"
+    },
+    {
+      "quantity": 1,
+      "cmc": 0,
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "",
+      "name": "Blood Crypt",
+      "oracle_id": "43985bbc-a0f6-4812-984e-392bc8562633",
+      "oracle_text": "({T}: Add {B} or {R}.)\nAs this land enters, you may pay 2 life. If you don't, it enters tapped.",
+      "power": null,
+      "released_at": "2026-11-13",
+      "set": "trk",
+      "toughness": null,
+      "type_line": "Land — Swamp Mountain"
+    },
+    {
+      "quantity": 1,
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "",
+      "name": "Bloodstained Mire",
+      "oracle_id": "fc0707c7-d504-4ccf-a0d2-3eb6e26e7a57",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for a Swamp or Mountain card, put it onto the battlefield, then shuffle.",
+      "power": null,
+      "released_at": "2024-06-14",
+      "set": "mh3",
+      "toughness": null,
+      "type_line": "Land"
+    },
+    {
+      "quantity": 1,
+      "cmc": 3,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [
+        "First strike",
+        "Treasure"
+      ],
+      "mana_cost": "{2}{R}",
+      "name": "Breeches, Eager Pillager",
+      "oracle_id": "15361770-c6dc-4db7-b745-aa03e4b866ea",
+      "oracle_text": "First strike\nWhenever a Pirate you control attacks, choose one that hasn't been chosen this turn —\n• Create a Treasure token.\n• Target creature can't block this turn.\n• Exile the top card of your library. You may play it this turn.",
+      "power": "3",
+      "released_at": "2023-11-17",
+      "set": "lci",
+      "toughness": "3",
+      "type_line": "Legendary Creature — Goblin Pirate"
+    },
+    {
+      "quantity": 1,
+      "cmc": 3,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [
+        "Flying",
+        "Crew"
+      ],
+      "mana_cost": "{3}",
+      "name": "Brotherhood Vertibird",
+      "oracle_id": "3b000071-3768-44cf-8957-180d0e94c988",
+      "oracle_text": "Flying\nBrotherhood Vertibird's power is equal to the number of artifacts you control.\nCrew 2 (Tap any number of creatures you control with total power 2 or greater: This Vehicle becomes an artifact creature until end of turn.)",
+      "power": "*",
+      "released_at": "2024-03-08",
+      "set": "pip",
+      "toughness": "4",
+      "type_line": "Artifact — Vehicle"
+    },
+    {
+      "quantity": 1,
+      "cmc": 3,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [
+        "Treasure",
+        "Haste"
+      ],
+      "mana_cost": "{2}{R}",
+      "name": "Captain Lannery Storm",
+      "oracle_id": "235bf0ba-658c-463f-b112-7478ba27bd7b",
+      "oracle_text": "Haste\nWhenever Captain Lannery Storm attacks, create a Treasure token. (It's an artifact with \"{T}, Sacrifice this token: Add one mana of any color.\")\nWhenever you sacrifice a Treasure, Captain Lannery Storm gets +1/+0 until end of turn.",
+      "power": "2",
+      "released_at": "2024-04-19",
+      "set": "otc",
+      "toughness": "2",
+      "type_line": "Legendary Creature — Human Pirate"
+    },
+    {
+      "quantity": 1,
+      "cmc": 2,
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "{U}{R}",
+      "name": "Captain Storm, Cosmium Raider",
+      "oracle_id": "431e85e3-15e6-471b-ba71-6058394c9a96",
+      "oracle_text": "Whenever an artifact you control enters, put a +1/+1 counter on target Pirate you control.",
+      "power": "2",
+      "released_at": "2023-11-17",
+      "set": "lci",
+      "toughness": "2",
+      "type_line": "Legendary Creature — Human Pirate"
+    },
+    {
+      "quantity": 1,
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "",
+      "name": "Cavern of Souls",
+      "oracle_id": "89ca686a-7c72-4d8f-9290-e89635624a83",
+      "oracle_text": "As this land enters, choose a creature type.\n{T}: Add {C}.\n{T}: Add one mana of any color. Spend this mana only to cast a creature spell of the chosen type, and that spell can't be countered.",
+      "power": null,
+      "released_at": "2023-11-17",
+      "set": "lci",
+      "toughness": null,
+      "type_line": "Land"
+    },
+    {
+      "quantity": 1,
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "keywords": [
+        "Imprint"
+      ],
+      "mana_cost": "{0}",
+      "name": "Chrome Mox",
+      "oracle_id": "ec3d4466-547c-4e02-b1b5-a156ec4637e9",
+      "oracle_text": "Imprint — When this artifact enters, you may exile a nonartifact, nonland card from your hand.\n{T}: Add one mana of any of the exiled card's colors.",
+      "power": null,
+      "released_at": "2020-08-07",
+      "set": "2xm",
+      "toughness": null,
+      "type_line": "Artifact"
+    },
+    {
+      "quantity": 1,
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "",
+      "name": "City of Brass",
+      "oracle_id": "f25351e3-539b-4bbc-b92d-6480acf4d722",
+      "oracle_text": "Whenever this land becomes tapped, it deals 1 damage to you.\n{T}: Add one mana of any color.",
+      "power": null,
+      "released_at": "2026-03-06",
+      "set": "tmc",
+      "toughness": null,
+      "type_line": "Land"
+    },
+    {
+      "quantity": 1,
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "",
+      "name": "Command Tower",
+      "oracle_id": "0895c9b7-ae7d-4bb3-af17-3b75deb50a25",
+      "oracle_text": "{T}: Add one mana of any color in your commander's color identity.",
+      "power": null,
+      "released_at": "2026-10-02",
+      "set": "frc",
+      "toughness": null,
+      "type_line": "Land"
+    },
+    {
+      "quantity": 1,
+      "cmc": 2,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "keywords": [
+        "Overload"
+      ],
+      "mana_cost": "{1}{U}",
+      "name": "Cyclonic Rift",
+      "oracle_id": "d75b9c82-1b49-4c3e-a1b5-aeef57d6644b",
+      "oracle_text": "Return target nonland permanent you don't control to its owner's hand.\nOverload {6}{U} (You may cast this spell for its overload cost. If you do, change \"target\" in its text to \"each.\")",
+      "power": null,
+      "released_at": "2024-01-12",
+      "set": "rvr",
+      "toughness": null,
+      "type_line": "Instant"
+    },
+    {
+      "quantity": 1,
+      "cmc": 4,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "{3}{U}",
+      "name": "Deadeye Quartermaster",
+      "oracle_id": "40abba38-533b-4f51-99e9-a2b337d65171",
+      "oracle_text": "When this creature enters, you may search your library for an Equipment or Vehicle card, reveal it, put it into your hand, then shuffle.",
+      "power": "2",
+      "released_at": "2017-09-29",
+      "set": "xln",
+      "toughness": "2",
+      "type_line": "Creature — Human Pirate"
+    },
+    {
+      "quantity": 1,
+      "cmc": 4,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "{3}{B}",
+      "name": "Deadly Rollick",
+      "oracle_id": "0456ec64-2c81-4763-a352-8ff64a4c3d6b",
+      "oracle_text": "If you control a commander, you may cast this spell without paying its mana cost.\nExile target creature.",
+      "power": null,
+      "released_at": "2023-08-04",
+      "set": "cmm",
+      "toughness": null,
+      "type_line": "Instant"
+    },
+    {
+      "quantity": 1,
+      "cmc": 3,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "{2}{R}",
+      "name": "Deflecting Swat",
+      "oracle_id": "ae120613-97d6-4393-b39d-c3e6c076f5d6",
+      "oracle_text": "If you control a commander, you may cast this spell without paying its mana cost.\nYou may choose new targets for target spell or ability.",
+      "power": null,
+      "released_at": "2023-08-04",
+      "set": "cmm",
+      "toughness": null,
+      "type_line": "Instant"
+    },
+    {
+      "quantity": 1,
+      "cmc": 5,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [
+        "Crew"
+      ],
+      "mana_cost": "{4}{U}",
+      "name": "Deluxe Dragster",
+      "oracle_id": "56ba8fe5-8693-4783-8406-9ced99de0b2a",
+      "oracle_text": "This Vehicle can't be blocked except by Vehicles.\nWhenever this Vehicle deals combat damage to a player, you may cast target instant or sorcery card from that player's graveyard without paying its mana cost. If that spell would be put into a graveyard, exile it instead.\nCrew 2",
+      "power": "4",
+      "released_at": "2023-04-21",
+      "set": "moc",
+      "toughness": "3",
+      "type_line": "Artifact — Vehicle"
+    },
+    {
+      "quantity": 1,
+      "cmc": 4,
+      "color_identity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [
+        "Treasure"
+      ],
+      "mana_cost": "{1}{U}{B}{R}",
+      "name": "Don Andres, the Renegade",
+      "oracle_id": "060ef981-db05-436b-b1c1-f55071375344",
+      "oracle_text": "Each creature you control but don't own gets +2/+2, has menace and deathtouch, and is a Pirate in addition to its other types.\nWhenever you cast a noncreature spell you don't own, create two tapped Treasure tokens.",
+      "power": "4",
+      "released_at": "2023-11-17",
+      "set": "lcc",
+      "toughness": "3",
+      "type_line": "Legendary Creature — Vampire Pirate"
+    },
+    {
+      "quantity": 1,
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "",
+      "name": "Exotic Orchard",
+      "oracle_id": "27b047e3-0d41-45e2-98e9-9391d7923a1e",
+      "oracle_text": "{T}: Add one mana of any color that a land an opponent controls could produce.",
+      "power": null,
+      "released_at": "2026-10-19",
+      "set": "mbc",
+      "toughness": null,
+      "type_line": "Land"
+    },
+    {
+      "quantity": 1,
+      "cmc": 5,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "{3}{U}{U}",
+      "name": "Fateful Discovery",
+      "oracle_id": "72c6174c-fa2c-4ff2-b76e-eb6e890e97c9",
+      "oracle_text": "Whenever an artifact you control enters, draw a card.",
+      "power": null,
+      "released_at": "2026-08-14",
+      "set": "hob",
+      "toughness": null,
+      "type_line": "Enchantment"
+    },
+    {
+      "quantity": 1,
+      "cmc": 3,
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [
+        "Haste"
+      ],
+      "mana_cost": "{1}{U}{R}",
+      "name": "Fearless Swashbuckler",
+      "oracle_id": "6a6cdb3e-c850-4b3c-bf4b-c53dd4eaf56e",
+      "oracle_text": "Haste\nVehicles you control have haste.\nWhenever you attack, if a Pirate and a Vehicle attacked this combat, draw three cards, then discard two cards.",
+      "power": "3",
+      "released_at": "2025-02-14",
+      "set": "dft",
+      "toughness": "3",
+      "type_line": "Creature — Fish Pirate"
+    },
+    {
+      "quantity": 1,
+      "cmc": 2,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "{2}",
+      "name": "Fellwar Stone",
+      "oracle_id": "95560508-7ac9-4be9-8a3f-3c7d5b52807b",
+      "oracle_text": "{T}: Add one mana of any color that a land an opponent controls could produce.",
+      "power": null,
+      "released_at": "2026-10-19",
+      "set": "mbc",
+      "toughness": null,
+      "type_line": "Artifact"
+    },
+    {
+      "quantity": 1,
+      "cmc": 3,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "keywords": [],
+      "mana_cost": "{2}{U}",
+      "name": "Fierce Guardianship",
+      "oracle_id": "d09c9cba-fdd2-479b-ad5d-d05181c3e3f9",
+      "oracle_text": "If you control a commander, you may cast this spell without paying its mana cost.\nCounter target noncreature spell.",
+      "power": null,
+      "released_at": "2023-08-04",
+      "set": "cmm",
+      "toughness": null,
+      "type_line": "Instant"
+    },
+    {
+      "quantity": 1,
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "",
+      "name": "Flooded Strand",
+      "oracle_id": "f3c7af78-a77d-4134-82a2-a5ce84285a84",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for a Plains or Island card, put it onto the battlefield, then shuffle.",
+      "power": null,
+      "released_at": "2024-06-14",
+      "set": "mh3",
+      "toughness": null,
+      "type_line": "Land"
+    },
+    {
+      "quantity": 1,
+      "cmc": 5,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "keywords": [],
+      "mana_cost": "{3}{U}{U}",
+      "name": "Force of Will",
+      "oracle_id": "956381ba-6d37-4a8a-846c-bad79222dbee",
+      "oracle_text": "You may pay 1 life and exile a blue card from your hand rather than pay this spell's mana cost.\nCounter target spell.",
+      "power": null,
+      "released_at": "2023-01-13",
+      "set": "dmr",
+      "toughness": null,
+      "type_line": "Instant"
+    },
+    {
+      "quantity": 1,
+      "cmc": 4,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [
+        "Treasure"
+      ],
+      "mana_cost": "{3}{R}",
+      "name": "Gemcutter Buccaneer",
+      "oracle_id": "68e45c07-96c5-4f87-a816-d9fa4f119740",
+      "oracle_text": "Whenever this creature or another Pirate you control enters, create a tapped Treasure token.\nTreasures you control are Equipment in addition to their other types and have \"Equipped creature gets +2/+0,\" equip Pirate {1}, and equip {3}.",
+      "power": "1",
+      "released_at": "2023-11-17",
+      "set": "lcc",
+      "toughness": "3",
+      "type_line": "Creature — Orc Pirate Artificer"
+    },
+    {
+      "quantity": 1,
+      "cmc": 3,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [
+        "Haste"
+      ],
+      "mana_cost": "{1}{R}{R}",
+      "name": "Glint-Horn Buccaneer",
+      "oracle_id": "64ad5657-78e9-4f34-8877-18c4f51fff9a",
+      "oracle_text": "Haste\nWhenever you discard a card, this creature deals 1 damage to each opponent.\n{1}{R}, Discard a card: Draw a card. Activate only if this creature is attacking.",
+      "power": "2",
+      "released_at": "2019-07-12",
+      "set": "m20",
+      "toughness": "4",
+      "type_line": "Creature — Minotaur Pirate"
+    },
+    {
+      "quantity": 1,
+      "cmc": 4,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [
+        "Treasure",
+        "Crew",
+        "Trample"
+      ],
+      "mana_cost": "{3}{R}",
+      "name": "Hoard Hauler",
+      "oracle_id": "2578e8e4-a93c-4904-9037-92a1529c2c67",
+      "oracle_text": "Trample\nWhenever this Vehicle deals combat damage to a player, create a Treasure token for each artifact they control.\nCrew 3",
+      "power": "5",
+      "released_at": "2022-04-29",
+      "set": "snc",
+      "toughness": "5",
+      "type_line": "Artifact — Vehicle"
+    },
+    {
+      "quantity": 1,
+      "cmc": 4,
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "{2}{U}{B}",
+      "name": "Hostage Taker",
+      "oracle_id": "c5c2d209-e3ef-4b0d-85f5-e7402dcf09eb",
+      "oracle_text": "When this creature enters, exile another target creature or artifact until this creature leaves the battlefield. You may cast that card for as long as it remains exiled, and mana of any type can be spent to cast that spell.",
+      "power": "2",
+      "released_at": "2024-04-19",
+      "set": "otc",
+      "toughness": "3",
+      "type_line": "Creature — Human Pirate"
+    },
+    {
+      "quantity": 1,
+      "cmc": 1,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "keywords": [],
+      "mana_cost": "{B}",
+      "name": "Imperial Seal",
+      "oracle_id": "16cd0b90-f70c-4efa-b252-8de8784ef9a3",
+      "oracle_text": "Search your library for a card, then shuffle and put that card on top. You lose 2 life.",
+      "power": null,
+      "released_at": "2022-07-08",
+      "set": "2x2",
+      "toughness": null,
+      "type_line": "Sorcery"
+    },
+    {
+      "quantity": 2,
+      "cmc": 0,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "",
+      "name": "Island",
+      "oracle_id": "b2c6aa39-2d2a-459c-a555-fb48ba993373",
+      "oracle_text": "({T}: Add {U}.)",
+      "power": null,
+      "released_at": "2027-04-09",
+      "set": "mdd",
+      "toughness": null,
+      "type_line": "Basic Land — Island"
+    },
+    {
+      "quantity": 1,
+      "cmc": 3,
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [
+        "Crew"
+      ],
+      "mana_cost": "{1}{U}{R}",
+      "name": "Jackdaw",
+      "oracle_id": "ac161100-46b7-4f0f-a72b-84aaa45980ad",
+      "oracle_text": "Whenever Jackdaw deals combat damage to a player, you may discard your hand. If you do, draw a card for each artifact you control.\nCrew 3",
+      "power": "4",
+      "released_at": "2024-07-05",
+      "set": "acr",
+      "toughness": "4",
+      "type_line": "Legendary Artifact — Vehicle"
+    },
+    {
+      "quantity": 1,
+      "cmc": 3,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "keywords": [],
+      "mana_cost": "{2}{R}",
+      "name": "Jeska's Will",
+      "oracle_id": "0fd114c4-092b-4e28-b0dc-ef529f3bc73e",
+      "oracle_text": "Choose one. If you control a commander as you cast this spell, you may choose both instead.\n• Add {R} for each card in target opponent's hand.\n• Exile the top three cards of your library. You may play them this turn.",
+      "power": null,
+      "released_at": "2024-02-09",
+      "set": "mkc",
+      "toughness": null,
+      "type_line": "Sorcery"
+    },
+    {
+      "quantity": 1,
+      "cmc": 3,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [
+        "Flying",
+        "Ward"
+      ],
+      "mana_cost": "{2}{U}",
+      "name": "Kitesail Larcenist",
+      "oracle_id": "2452be47-cc23-47f7-a3a1-fec900bb0119",
+      "oracle_text": "Flying, ward {1}\nWhen this creature enters, for each player, choose up to one other target artifact or creature that player controls. For as long as this creature remains on the battlefield, the chosen permanents become Treasure artifacts with \"{T}, Sacrifice this artifact: Add one mana of any color\" and lose all other abilities.",
+      "power": "2",
+      "released_at": "2023-11-17",
+      "set": "lci",
+      "toughness": "3",
+      "type_line": "Creature — Human Pirate"
+    },
+    {
+      "quantity": 1,
+      "cmc": 5,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [
+        "Treasure",
+        "Crew"
+      ],
+      "mana_cost": "{5}",
+      "name": "Luxurious Locomotive",
+      "oracle_id": "c68c2a98-9a6d-4199-af3a-78eb92beda48",
+      "oracle_text": "Whenever this Vehicle attacks, create a Treasure token for each creature that crewed it this turn. (They're artifacts with \"{T}, Sacrifice this token: Add one mana of any color.\")\nCrew 1. Activate only once each turn. (Tap any number of creatures you control with total power 1 or more: This Vehicle becomes an artifact creature until end of turn.)",
+      "power": "6",
+      "released_at": "2024-04-19",
+      "set": "otj",
+      "toughness": "5",
+      "type_line": "Artifact — Vehicle"
+    },
+    {
+      "quantity": 1,
+      "cmc": 0,
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "",
+      "name": "Luxury Suite",
+      "oracle_id": "819e1765-8325-4e6f-89c1-63ea86de369f",
+      "oracle_text": "This land enters tapped unless you have two or more opponents.\n{T}: Add {B} or {R}.",
+      "power": null,
+      "released_at": "2026-06-26",
+      "set": "msc",
+      "toughness": null,
+      "type_line": "Land"
+    },
+    {
+      "quantity": 1,
+      "cmc": 3,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [
+        "Flying",
+        "Treasure",
+        "Partner"
+      ],
+      "mana_cost": "{2}{U}",
+      "name": "Malcolm, Keen-Eyed Navigator",
+      "oracle_id": "a66f8b44-0163-4456-b152-4acefab896a4",
+      "oracle_text": "Flying\nWhenever one or more Pirates you control deal damage to your opponents, you create a Treasure token for each opponent dealt damage. (It's an artifact with \"{T}, Sacrifice this token: Add one mana of any color.\")\nPartner (You can have two commanders if both have partner.)",
+      "power": "2",
+      "released_at": "2023-11-17",
+      "set": "lcc",
+      "toughness": "2",
+      "type_line": "Legendary Creature — Siren Pirate"
+    },
+    {
+      "quantity": 1,
+      "cmc": 2,
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [
+        "Flying",
+        "Investigate",
+        "Haste"
+      ],
+      "mana_cost": "{U}{R}",
+      "name": "Malcolm, the Eyes",
+      "oracle_id": "7932ab35-39dc-4500-aa44-2ad7228f0d2a",
+      "oracle_text": "Flying, haste\nWhenever you cast your second spell each turn, investigate. (Create a Clue token. It's an artifact with \"{2}, Sacrifice this token: Draw a card.\")",
+      "power": "2",
+      "released_at": "2024-04-19",
+      "set": "otj",
+      "toughness": "2",
+      "type_line": "Legendary Creature — Siren Pirate"
+    },
+    {
+      "quantity": 1,
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "",
+      "name": "Mana Confluence",
+      "oracle_id": "d0ee5bdc-2b69-4b73-9a20-ffcc18783b29",
+      "oracle_text": "{T}, Pay 1 life: Add one mana of any color.",
+      "power": null,
+      "released_at": "2014-05-02",
+      "set": "jou",
+      "toughness": null,
+      "type_line": "Land"
+    },
+    {
+      "quantity": 1,
+      "cmc": 2,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "{U}{U}",
+      "name": "Mana Drain",
+      "oracle_id": "74d3277a-38e5-4732-afed-084a56148f20",
+      "oracle_text": "Counter target spell. At the beginning of your next main phase, add an amount of {C} equal to that spell's mana value.",
+      "power": null,
+      "released_at": "2022-07-08",
+      "set": "2x2",
+      "toughness": null,
+      "type_line": "Instant"
+    },
+    {
+      "quantity": 1,
+      "cmc": 1,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "keywords": [],
+      "mana_cost": "{1}",
+      "name": "Mana Vault",
+      "oracle_id": "736892cb-a34b-4bb9-b56c-e26e3db207a2",
+      "oracle_text": "This artifact doesn't untap during your untap step.\nAt the beginning of your upkeep, you may pay {4}. If you do, untap this artifact.\nAt the beginning of your draw step, if this artifact is tapped, it deals 1 damage to you.\n{T}: Add {C}{C}{C}.",
+      "power": null,
+      "released_at": "2022-07-08",
+      "set": "2x2",
+      "toughness": null,
+      "type_line": "Artifact"
+    },
+    {
+      "quantity": 1,
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "",
+      "name": "Marsh Flats",
+      "oracle_id": "dab520d0-20b4-4273-ba6b-eb07f85ea433",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for a Plains or Swamp card, put it onto the battlefield, then shuffle.",
+      "power": null,
+      "released_at": "2021-06-18",
+      "set": "mh2",
+      "toughness": null,
+      "type_line": "Land"
+    },
+    {
+      "quantity": 1,
+      "cmc": 3,
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [
+        "Treasure",
+        "Haste"
+      ],
+      "mana_cost": "{1}{U}{R}",
+      "name": "Mary Read and Anne Bonny",
+      "oracle_id": "5182de2d-aceb-450e-bd20-8bc7db124334",
+      "oracle_text": "Haste\n{T}: Draw a card, then discard a card.\nWhenever you discard an Island, Pirate, or Vehicle card, create a tapped Treasure token.",
+      "power": "3",
+      "released_at": "2024-07-05",
+      "set": "acr",
+      "toughness": "3",
+      "type_line": "Legendary Creature — Human Assassin Pirate"
+    },
+    {
+      "quantity": 1,
+      "cmc": 4,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [
+        "Flying"
+      ],
+      "mana_cost": "{3}{B}",
+      "name": "Mirkwood Bats",
+      "oracle_id": "0636b6c3-0662-420a-b30d-f0a14e7c512d",
+      "oracle_text": "Flying\nWhenever you create or sacrifice a token, each opponent loses 1 life.",
+      "power": "2",
+      "released_at": "2023-06-23",
+      "set": "ltr",
+      "toughness": "3",
+      "type_line": "Creature — Bat"
+    },
+    {
+      "quantity": 1,
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "",
+      "name": "Misty Rainforest",
+      "oracle_id": "09dd85aa-47bc-4713-a9b9-8b52ff2285ed",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for a Forest or Island card, put it onto the battlefield, then shuffle.",
+      "power": null,
+      "released_at": "2021-06-18",
+      "set": "mh2",
+      "toughness": null,
+      "type_line": "Land"
+    },
+    {
+      "quantity": 1,
+      "cmc": 0,
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "",
+      "name": "Morphic Pool",
+      "oracle_id": "bd004c9d-771e-4e63-a97d-a2259c096af8",
+      "oracle_text": "This land enters tapped unless you have two or more opponents.\n{T}: Add {U} or {B}.",
+      "power": null,
+      "released_at": "2022-06-10",
+      "set": "clb",
+      "toughness": null,
+      "type_line": "Land"
+    },
+    {
+      "quantity": 1,
+      "cmc": 0,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "",
+      "name": "Mountain",
+      "oracle_id": "a3fb7228-e76b-4e96-a40e-20b5fed75685",
+      "oracle_text": "({T}: Add {R}.)",
+      "power": null,
+      "released_at": "2027-04-09",
+      "set": "mdd",
+      "toughness": null,
+      "type_line": "Basic Land — Mountain"
+    },
+    {
+      "quantity": 1,
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "keywords": [],
+      "mana_cost": "{0}",
+      "name": "Mox Diamond",
+      "oracle_id": "f3c5978a-70fa-431f-933b-b954bd0db0ea",
+      "oracle_text": "If this artifact would enter, you may discard a land card instead. If you do, put this artifact onto the battlefield. If you don't, put it into its owner's graveyard.\n{T}: Add one mana of any color.",
+      "power": null,
+      "released_at": "2015-05-06",
+      "set": "tpr",
+      "toughness": null,
+      "type_line": "Artifact"
+    },
+    {
+      "quantity": 1,
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [
+        "Metalcraft"
+      ],
+      "mana_cost": "{0}",
+      "name": "Mox Opal",
+      "oracle_id": "de2440de-e948-4811-903c-0bbe376ff64d",
+      "oracle_text": "Metalcraft — {T}: Add one mana of any color. Activate only if you control three or more artifacts.",
+      "power": null,
+      "released_at": "2020-08-07",
+      "set": "2xm",
+      "toughness": null,
+      "type_line": "Legendary Artifact"
+    },
+    {
+      "quantity": 1,
+      "cmc": 4,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "{2}{U}{U}",
+      "name": "Mu Yanling, Wind Rider",
+      "oracle_id": "aaafcd69-6295-4d79-8e67-98df0c9bae88",
+      "oracle_text": "When Mu Yanling enters, create a 3/2 colorless Vehicle artifact token with crew 1.\nVehicles you control have flying.\nWhenever one or more creatures you control with flying deal combat damage to a player, draw a card.",
+      "power": "2",
+      "released_at": "2025-02-14",
+      "set": "dft",
+      "toughness": "4",
+      "type_line": "Legendary Creature — Human Wizard Pilot"
+    },
+    {
+      "quantity": 1,
+      "cmc": 4,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [
+        "Flying",
+        "Crew"
+      ],
+      "mana_cost": "{4}",
+      "name": "Nautiloid Ship",
+      "oracle_id": "613a8774-165e-4cf6-ad43-124f9ffc9980",
+      "oracle_text": "Flying\nWhen this Vehicle enters, exile target player's graveyard.\nWhenever this Vehicle deals combat damage to a player, you may put a creature card exiled with this Vehicle onto the battlefield under your control.\nCrew 3",
+      "power": "5",
+      "released_at": "2022-06-10",
+      "set": "clb",
+      "toughness": "5",
+      "type_line": "Artifact — Vehicle"
+    },
+    {
+      "quantity": 1,
+      "cmc": 0,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [
+        "Channel"
+      ],
+      "mana_cost": "",
+      "name": "Otawara, Soaring City",
+      "oracle_id": "e9b6a394-691c-425a-9307-76d8edc7375e",
+      "oracle_text": "{T}: Add {U}.\nChannel — {3}{U}, Discard this card: Return target artifact, creature, enchantment, or planeswalker to its owner's hand. This ability costs {1} less to activate for each legendary creature you control.",
+      "power": null,
+      "released_at": "2022-02-18",
+      "set": "neo",
+      "toughness": null,
+      "type_line": "Legendary Land"
+    },
+    {
+      "quantity": 1,
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "",
+      "name": "Polluted Delta",
+      "oracle_id": "ef86989d-ce80-4e55-aece-7d11710eeffa",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for an Island or Swamp card, put it onto the battlefield, then shuffle.",
+      "power": null,
+      "released_at": "2024-06-14",
+      "set": "mh3",
+      "toughness": null,
+      "type_line": "Land"
+    },
+    {
+      "quantity": 1,
+      "cmc": 5,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "{3}{R}{R}",
+      "name": "Port Razer",
+      "oracle_id": "653e4b68-3184-4352-ac91-127f7e6d7c12",
+      "oracle_text": "Whenever this creature deals combat damage to a player, untap each creature you control. After this phase, there is an additional combat phase.\nThis creature can't attack a player it has already attacked this turn.",
+      "power": "4",
+      "released_at": "2023-11-17",
+      "set": "lcc",
+      "toughness": "4",
+      "type_line": "Creature — Orc Pirate"
+    },
+    {
+      "quantity": 1,
+      "cmc": 1,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [
+        "Treasure",
+        "Dash"
+      ],
+      "mana_cost": "{R}",
+      "name": "Ragavan, Nimble Pilferer",
+      "oracle_id": "37108cd4-bbab-4ce3-9ed6-f60e8422e703",
+      "oracle_text": "Whenever Ragavan deals combat damage to a player, create a Treasure token and exile the top card of that player's library. Until end of turn, you may cast that card.\nDash {1}{R} (You may cast this spell for its dash cost. If you do, it gains haste, and it's returned from the battlefield to its owner's hand at the beginning of the next end step.)",
+      "power": "2",
+      "released_at": "2021-06-18",
+      "set": "mh2",
+      "toughness": "1",
+      "type_line": "Legendary Creature — Monkey Pirate"
+    },
+    {
+      "quantity": 1,
+      "cmc": 4,
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [
+        "Treasure"
+      ],
+      "mana_cost": "{2}{U}{B}",
+      "name": "Ramirez DePietro, Pillager",
+      "oracle_id": "a3b8690e-ac47-444f-924e-ab2a12a85431",
+      "oracle_text": "When Ramirez DePietro enters, you lose 2 life and create two Treasure tokens.\nWhenever one or more Pirates you control deal combat damage to a player, exile the top card of that player's library. You may cast that card for as long as it remains exiled.",
+      "power": "4",
+      "released_at": "2023-11-17",
+      "set": "lcc",
+      "toughness": "3",
+      "type_line": "Legendary Creature — Human Pirate"
+    },
+    {
+      "quantity": 1,
+      "cmc": 4,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [
+        "Flying",
+        "Treasure",
+        "Crew",
+        "Trample"
+      ],
+      "mana_cost": "{3}{R}",
+      "name": "RMS Titanic",
+      "oracle_id": "6754753d-790e-4a95-a150-76741c4a02d4",
+      "oracle_text": "Flying, trample\nWhen RMS Titanic deals combat damage to a player, sacrifice it and create that many Treasure tokens.\nCrew 3 (Tap any number of creatures you control with total power 3 or more: This Vehicle becomes an artifact creature until end of turn.)",
+      "power": "7",
+      "released_at": "2023-10-13",
+      "set": "who",
+      "toughness": "1",
+      "type_line": "Legendary Artifact — Vehicle"
+    },
+    {
+      "quantity": 1,
+      "cmc": 4,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [
+        "Ward"
+      ],
+      "mana_cost": "{4}",
+      "name": "Roaming Throne",
+      "oracle_id": "3640c29b-1534-4952-b297-619ade948431",
+      "oracle_text": "Ward {2}\nAs this creature enters, choose a creature type.\nThis creature is the chosen type in addition to its other types.\nIf a triggered ability of another creature you control of the chosen type triggers, it triggers an additional time.",
+      "power": "4",
+      "released_at": "2023-11-17",
+      "set": "lci",
+      "toughness": "4",
+      "type_line": "Artifact Creature — Golem"
+    },
+    {
+      "quantity": 1,
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "",
+      "name": "Scalding Tarn",
+      "oracle_id": "cb027150-848c-4a66-88ad-e20222304dd8",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for an Island or Mountain card, put it onto the battlefield, then shuffle.",
+      "power": null,
+      "released_at": "2021-06-18",
+      "set": "mh2",
+      "toughness": null,
+      "type_line": "Land"
+    },
+    {
+      "quantity": 1,
+      "cmc": 0,
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "",
+      "name": "Shivan Reef",
+      "oracle_id": "0fe16212-66c3-4e45-a641-7391e9b2e304",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {U} or {R}. This land deals 1 damage to you.",
+      "power": null,
+      "released_at": "2026-10-02",
+      "set": "frc",
+      "toughness": null,
+      "type_line": "Land"
+    },
+    {
+      "quantity": 1,
+      "cmc": 1,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [
+        "Flying"
+      ],
+      "mana_cost": "{U}",
+      "name": "Siren Stormtamer",
+      "oracle_id": "59c7496b-19a2-478b-b28f-6f153c2458ae",
+      "oracle_text": "Flying\n{U}, Sacrifice this creature: Counter target spell or ability that targets you or a creature you control.",
+      "power": "1",
+      "released_at": "2023-11-17",
+      "set": "lcc",
+      "toughness": "1",
+      "type_line": "Creature — Siren Pirate Wizard"
+    },
+    {
+      "quantity": 1,
+      "cmc": 5,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [
+        "Flying",
+        "Crew"
+      ],
+      "mana_cost": "{5}",
+      "name": "Skysovereign, Consul Flagship",
+      "oracle_id": "50b14338-9318-4327-a1dd-c0ef38903cc4",
+      "oracle_text": "Flying\nWhenever Skysovereign enters or attacks, it deals 3 damage to target creature or planeswalker an opponent controls.\nCrew 3 (Tap any number of creatures you control with total power 3 or more: This Vehicle becomes an artifact creature until end of turn.)",
+      "power": "6",
+      "released_at": "2022-02-18",
+      "set": "nec",
+      "toughness": "5",
+      "type_line": "Legendary Artifact — Vehicle"
+    },
+    {
+      "quantity": 1,
+      "cmc": 2,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [
+        "Flying",
+        "Crew"
+      ],
+      "mana_cost": "{2}",
+      "name": "Smuggler's Copter",
+      "oracle_id": "49136bdc-bc50-49a2-999a-1ef9c16ea130",
+      "oracle_text": "Flying\nWhenever this Vehicle attacks or blocks, you may draw a card. If you do, discard a card.\nCrew 1 (Tap any number of creatures you control with total power 1 or more: This Vehicle becomes an artifact creature until end of turn.)",
+      "power": "3",
+      "released_at": "2022-02-18",
+      "set": "nec",
+      "toughness": "3",
+      "type_line": "Artifact — Vehicle"
+    },
+    {
+      "quantity": 1,
+      "cmc": 1,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "{1}",
+      "name": "Sol Ring",
+      "oracle_id": "6ad8011d-3471-4369-9d68-b264cc027487",
+      "oracle_text": "{T}: Add {C}{C}.",
+      "power": null,
+      "released_at": "2026-10-02",
+      "set": "frc",
+      "toughness": null,
+      "type_line": "Artifact"
+    },
+    {
+      "quantity": 1,
+      "cmc": 1,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [
+        "Flying",
+        "Flash"
+      ],
+      "mana_cost": "{U}",
+      "name": "Spectral Sailor",
+      "oracle_id": "a8fdbcdf-479d-4582-9ad5-9fbd4c740c29",
+      "oracle_text": "Flash (You may cast this spell any time you could cast an instant.)\nFlying\n{3}{U}: Draw a card.",
+      "power": "1",
+      "released_at": "2026-04-24",
+      "set": "fdn",
+      "toughness": "1",
+      "type_line": "Creature — Spirit Pirate"
+    },
+    {
+      "quantity": 1,
+      "cmc": 0,
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "",
+      "name": "Steam Vents",
+      "oracle_id": "17039058-822d-409f-938c-b727a366ba63",
+      "oracle_text": "({T}: Add {U} or {R}.)\nAs this land enters, you may pay 2 life. If you don't, it enters tapped.",
+      "power": null,
+      "released_at": "2026-11-13",
+      "set": "trk",
+      "toughness": null,
+      "type_line": "Land — Island Mountain"
+    },
+    {
+      "quantity": 1,
+      "cmc": 2,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [
+        "Crew",
+        "Explore"
+      ],
+      "mana_cost": "{1}{U}",
+      "name": "Subterranean Schooner",
+      "oracle_id": "7f82bae3-feaa-4967-a843-32a4f72806d5",
+      "oracle_text": "Whenever this Vehicle attacks, target creature that crewed it this turn explores. (Reveal the top card of your library. Put that card into your hand if it's a land. Otherwise, put a +1/+1 counter on that creature, then put the card back or put it into your graveyard.)\nCrew 1",
+      "power": "3",
+      "released_at": "2023-11-17",
+      "set": "lci",
+      "toughness": "4",
+      "type_line": "Artifact — Vehicle"
+    },
+    {
+      "quantity": 1,
+      "cmc": 0,
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "",
+      "name": "Sulfurous Springs",
+      "oracle_id": "f5c38c01-4a40-469f-91a0-7479daf4e8e7",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {B} or {R}. This land deals 1 damage to you.",
+      "power": null,
+      "released_at": "2026-10-02",
+      "set": "frc",
+      "toughness": null,
+      "type_line": "Land"
+    },
+    {
+      "quantity": 2,
+      "cmc": 0,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "",
+      "name": "Swamp",
+      "oracle_id": "56719f6a-1a6c-4c0a-8d21-18f7d7350b68",
+      "oracle_text": "({T}: Add {B}.)",
+      "power": null,
+      "released_at": "2027-04-09",
+      "set": "mdd",
+      "toughness": null,
+      "type_line": "Basic Land — Swamp"
+    },
+    {
+      "quantity": 1,
+      "cmc": 1,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "{U}",
+      "name": "Swan Song",
+      "oracle_id": "8ddfc283-c9b4-41a5-af88-cf0068e986cc",
+      "oracle_text": "Counter target enchantment, instant, or sorcery spell. Its controller creates a 2/2 blue Bird creature token with flying.",
+      "power": null,
+      "released_at": "2025-08-01",
+      "set": "eoc",
+      "toughness": null,
+      "type_line": "Instant"
+    },
+    {
+      "quantity": 1,
+      "cmc": 2,
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "{2}",
+      "name": "Talisman of Creativity",
+      "oracle_id": "14d2979d-5728-42d7-a027-0eb1f754655d",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {U} or {R}. This artifact deals 1 damage to you.",
+      "power": null,
+      "released_at": "2026-10-02",
+      "set": "frc",
+      "toughness": null,
+      "type_line": "Artifact"
+    },
+    {
+      "quantity": 1,
+      "cmc": 2,
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "{2}",
+      "name": "Talisman of Dominance",
+      "oracle_id": "4c0a0448-b9d6-43a0-8549-64066dac63f0",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {U} or {B}. This artifact deals 1 damage to you.",
+      "power": null,
+      "released_at": "2026-10-02",
+      "set": "frc",
+      "toughness": null,
+      "type_line": "Artifact"
+    },
+    {
+      "quantity": 1,
+      "cmc": 2,
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "{2}",
+      "name": "Talisman of Indulgence",
+      "oracle_id": "1d9aeaaa-66f6-41cb-9bac-162d6fd8662c",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {B} or {R}. This artifact deals 1 damage to you.",
+      "power": null,
+      "released_at": "2026-10-02",
+      "set": "frc",
+      "toughness": null,
+      "type_line": "Artifact"
+    },
+    {
+      "quantity": 1,
+      "cmc": 4,
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [
+        "Treasure",
+        "Crew"
+      ],
+      "mana_cost": "{2}{U}{R}",
+      "name": "The Belligerent",
+      "oracle_id": "9a0c9023-9431-4f98-b167-ab4c7215319c",
+      "oracle_text": "Whenever The Belligerent attacks, create a Treasure token. Until end of turn, you may look at the top card of your library any time, and you may play lands and cast spells from the top of your library.\nCrew 3",
+      "power": "5",
+      "released_at": "2023-11-17",
+      "set": "lci",
+      "toughness": "5",
+      "type_line": "Legendary Artifact — Vehicle"
+    },
+    {
+      "quantity": 1,
+      "cmc": 4,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [
+        "Crew",
+        "Trample"
+      ],
+      "mana_cost": "{2}{U}{U}",
+      "name": "The Indomitable",
+      "oracle_id": "276dc5c8-c8cf-4b9c-ad75-31876e6e040a",
+      "oracle_text": "Trample\nWhenever a creature you control deals combat damage to a player, draw a card.\nCrew 3\nYou may cast this card from your graveyard as long as you control three or more tapped Pirates and/or Vehicles.",
+      "power": "6",
+      "released_at": "2023-11-17",
+      "set": "lcc",
+      "toughness": "6",
+      "type_line": "Legendary Artifact — Vehicle"
+    },
+    {
+      "quantity": 1,
+      "cmc": 3,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [
+        "Treasure",
+        "Equip"
+      ],
+      "mana_cost": "{2}{R}",
+      "name": "The Reaver Cleaver",
+      "oracle_id": "37a2a31d-51e6-4c07-b4c2-b206ad40eb42",
+      "oracle_text": "Equipped creature gets +1/+1 and has trample and \"Whenever this creature deals combat damage to a player or planeswalker, create that many Treasure tokens.\"\nEquip {3}",
+      "power": null,
+      "released_at": "2022-09-09",
+      "set": "dmc",
+      "toughness": null,
+      "type_line": "Legendary Artifact — Equipment"
+    },
+    {
+      "quantity": 1,
+      "cmc": 2,
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "{U}{B}",
+      "name": "Time Sieve",
+      "oracle_id": "3da5977a-36d4-4f32-ab9b-8b93809d818d",
+      "oracle_text": "{T}, Sacrifice five artifacts: Take an extra turn after this one.",
+      "power": null,
+      "released_at": "2020-08-07",
+      "set": "2xm",
+      "toughness": null,
+      "type_line": "Artifact"
+    },
+    {
+      "quantity": 1,
+      "cmc": 3,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "{2}{B}",
+      "name": "Toxic Deluge",
+      "oracle_id": "afaef788-34d1-460b-b884-9d7ae6ddeb18",
+      "oracle_text": "As an additional cost to cast this spell, pay X life.\nAll creatures get -X/-X until end of turn.",
+      "power": null,
+      "released_at": "2026-06-26",
+      "set": "msc",
+      "toughness": null,
+      "type_line": "Sorcery"
+    },
+    {
+      "quantity": 1,
+      "cmc": 0,
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "",
+      "name": "Training Center",
+      "oracle_id": "e3570ac7-c593-40e3-bbd6-ec3da6d8158d",
+      "oracle_text": "This land enters tapped unless you have two or more opponents.\n{T}: Add {U} or {R}.",
+      "power": null,
+      "released_at": "2023-08-04",
+      "set": "cmm",
+      "toughness": null,
+      "type_line": "Land"
+    },
+    {
+      "quantity": 1,
+      "cmc": 0,
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "",
+      "name": "Underground River",
+      "oracle_id": "857febd9-cdd7-4f8e-a852-d88084b0cfbc",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {U} or {B}. This land deals 1 damage to you.",
+      "power": null,
+      "released_at": "2026-10-02",
+      "set": "frc",
+      "toughness": null,
+      "type_line": "Land"
+    },
+    {
+      "quantity": 1,
+      "cmc": 0,
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "",
+      "name": "Underground Sea",
+      "oracle_id": "4b22be3a-8ce1-47d1-b82e-6c3ccfb0548b",
+      "oracle_text": "({T}: Add {U} or {B}.)",
+      "power": null,
+      "released_at": "2014-06-16",
+      "set": "vma",
+      "toughness": null,
+      "type_line": "Land — Island Swamp"
+    },
+    {
+      "quantity": 1,
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "",
+      "name": "Urza's Saga",
+      "oracle_id": "4c6a0c30-b547-4eff-8ff4-0ca25803c076",
+      "oracle_text": "(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)\nI — This Saga gains \"{T}: Add {C}.\"\nII — This Saga gains \"{2}, {T}: Create a 0/0 colorless Construct artifact creature token with 'This token gets +1/+1 for each artifact you control.'\"\nIII — Search your library for an artifact card with mana cost {0} or {1}, put it onto the battlefield, then shuffle.",
+      "power": null,
+      "released_at": "2021-06-18",
+      "set": "mh2",
+      "toughness": null,
+      "type_line": "Enchantment Land — Urza's Saga"
+    },
+    {
+      "quantity": 1,
+      "cmc": 1,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "keywords": [],
+      "mana_cost": "{B}",
+      "name": "Vampiric Tutor",
+      "oracle_id": "ededbdae-d9dc-4206-9335-d7158f2d7700",
+      "oracle_text": "Search your library for a card, then shuffle and put that card on top. You lose 2 life.",
+      "power": null,
+      "released_at": "2023-01-13",
+      "set": "dmr",
+      "toughness": null,
+      "type_line": "Instant"
+    },
+    {
+      "quantity": 1,
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "",
+      "name": "Verdant Catacombs",
+      "oracle_id": "67d60b24-d429-4ded-90d9-06e49f28c396",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for a Swamp or Forest card, put it onto the battlefield, then shuffle.",
+      "power": null,
+      "released_at": "2021-06-18",
+      "set": "mh2",
+      "toughness": null,
+      "type_line": "Land"
+    },
+    {
+      "quantity": 1,
+      "cmc": 0,
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "",
+      "name": "Volcanic Island",
+      "oracle_id": "c718911c-c955-4eb9-9e16-be4bd49a4e4e",
+      "oracle_text": "({T}: Add {U} or {R}.)",
+      "power": null,
+      "released_at": "2014-06-16",
+      "set": "vma",
+      "toughness": null,
+      "type_line": "Land — Island Mountain"
+    },
+    {
+      "quantity": 1,
+      "cmc": 0,
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "",
+      "name": "Watery Grave",
+      "oracle_id": "fc9ec820-4245-4a96-b009-5308a818ca58",
+      "oracle_text": "({T}: Add {U} or {B}.)\nAs this land enters, you may pay 2 life. If you don't, it enters tapped.",
+      "power": null,
+      "released_at": "2026-11-13",
+      "set": "trk",
+      "toughness": null,
+      "type_line": "Land — Island Swamp"
+    },
+    {
+      "quantity": 1,
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [],
+      "mana_cost": "",
+      "name": "Wooded Foothills",
+      "oracle_id": "6587a463-a108-4854-b6d1-944e89b8c8a4",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for a Mountain or Forest card, put it onto the battlefield, then shuffle.",
+      "power": null,
+      "released_at": "2024-06-14",
+      "set": "mh3",
+      "toughness": null,
+      "type_line": "Land"
+    },
+    {
+      "quantity": 1,
+      "cmc": 0,
+      "color_identity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "keywords": [
+        "Cycling"
+      ],
+      "mana_cost": "",
+      "name": "Xander's Lounge",
+      "oracle_id": "8291543f-d086-48aa-b2b7-5481ca8c9198",
+      "oracle_text": "({T}: Add {U}, {B}, or {R}.)\nThis land enters tapped.\nCycling {3} ({3}, Discard this card: Draw a card.)",
+      "power": null,
+      "released_at": "2022-04-29",
+      "set": "snc",
+      "toughness": null,
+      "type_line": "Land — Island Swamp Mountain"
+    }
+  ]
+}
