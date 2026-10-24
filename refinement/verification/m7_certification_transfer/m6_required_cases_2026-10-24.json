@@ -1,0 +1,1508 @@
+{
+  "schema_version": 1,
+  "source_repository": "corymstover/GrokBotMTGCompanion",
+  "source_ref": "chatgpt-cycle76-m6-refinement",
+  "source_tree_sha": "b6b40ac87a40977341853ac03573b10fcef25960",
+  "source_planning_pr": 535,
+  "case_totals": {
+    "P0": 308,
+    "P1": 574
+  },
+  "case_count": 882,
+  "designs_are_not_execution_receipts": true,
+  "unresolved_roster_identity": "Canonical Goben__Gene_Splice_Savant differs from engineering Norman_Osborn_Green_Goblin; never silently alias.",
+  "decks": {
+    "Admiral_Beckett_Brass": {
+      "plan_deck_id": "Admiral_Beckett_Brass",
+      "plan_blob_sha": "9c7925ee5722e3376087490c8d557c17ab489417",
+      "source_path": "data/grixis/m6/test_blueprints/Admiral_Beckett_Brass.json",
+      "required_P0": [
+        "C01",
+        "K01",
+        "K02",
+        "K03",
+        "F01"
+      ],
+      "required_P1": [
+        "K04",
+        "K05",
+        "E01",
+        "E02",
+        "W01",
+        "W02",
+        "F02",
+        "F03"
+      ],
+      "all_cases": 13
+    },
+    "Admiral_Brass__Unsinkable": {
+      "plan_deck_id": "Admiral_Brass__Unsinkable",
+      "plan_blob_sha": "5a22190fe930bd80df349232bf8ac6e904b2ef9e",
+      "source_path": "data/grixis/m6/test_blueprints/Admiral_Brass__Unsinkable.json",
+      "required_P0": [
+        "C01",
+        "K01",
+        "K02",
+        "K03",
+        "F01"
+      ],
+      "required_P1": [
+        "K04",
+        "K05",
+        "E01",
+        "E02",
+        "W01",
+        "W02",
+        "F02",
+        "F03"
+      ],
+      "all_cases": 13
+    },
+    "Anhelo_the_Painter": {
+      "plan_deck_id": "Anhelo__the_Painter",
+      "plan_blob_sha": "15e00871f50bd9dc99aa31634815c799a1169f3c",
+      "source_path": "data/grixis/m6/test_blueprints/Anhelo__the_Painter.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "W3",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 14
+    },
+    "Ashad_the_Lone_Cyberman": {
+      "plan_deck_id": "Ashad__the_Lone_Cyberman",
+      "plan_blob_sha": "172220f0d9123668da81e48420dd6bf168ac20a0",
+      "source_path": "data/grixis/m6/test_blueprints/Ashad__the_Lone_Cyberman.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "W3",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 14
+    },
+    "Ashnod_the_Uncaring": {
+      "plan_deck_id": "Ashnod_the_Uncaring",
+      "plan_blob_sha": "e6a856cfe30beaca46e039e3d1cf5f4731696fc7",
+      "source_path": "data/grixis/m6/test_blueprints/Ashnod_the_Uncaring.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "W3",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 14
+    },
+    "Be_lakor_the_Dark_Master": {
+      "plan_deck_id": "Be_lakor__the_Dark_Master",
+      "plan_blob_sha": "56397b08dd99e0a0beb855dde8b59967e2eb4721",
+      "source_path": "data/grixis/m6/test_blueprints/Be_lakor__the_Dark_Master.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "W3",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 14
+    },
+    "Cecily__Bjorna__Lutri": {
+      "plan_deck_id": "Cecily__Bjorna__Lutri",
+      "plan_blob_sha": "1cbc658328e8fbb7e6460c669169b4e3e435d942",
+      "source_path": "data/grixis/m6/test_blueprints/Cecily__Bjorna__Lutri.json",
+      "required_P0": [
+        "C1",
+        "C2",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "W3",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 15
+    },
+    "Cormela__Glamour_Thief": {
+      "plan_deck_id": "Cormela__Glamour_Thief",
+      "plan_blob_sha": "b4a20c69f38c568558324ac9f32aecf8a67004a7",
+      "source_path": "data/grixis/m6/test_blueprints/Cormela__Glamour_Thief.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "W3",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 13
+    },
+    "Crosis__the_Purger": {
+      "plan_deck_id": "Crosis__the_Purger",
+      "plan_blob_sha": "a910e6fce76c025101f9627b882a825f40da31ac",
+      "source_path": "data/grixis/m6/test_blueprints/Crosis__the_Purger.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "W3",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 14
+    },
+    "Cult_of_Skaro": {
+      "plan_deck_id": "Cult_of_Skaro",
+      "plan_blob_sha": "60468e3ed2fbc3fb3782fb8b5ba72ed68678622a",
+      "source_path": "data/grixis/m6/test_blueprints/Cult_of_Skaro.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "W3",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 13
+    },
+    "Davros__Dalek_Creator": {
+      "plan_deck_id": "Davros__Dalek_Creator",
+      "plan_blob_sha": "993aee05487bb0fe5361518d1c83b06fe237a799",
+      "source_path": "data/grixis/m6/test_blueprints/Davros__Dalek_Creator.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 13
+    },
+    "Doctor_Doom__King_of_Latveria": {
+      "plan_deck_id": "Doctor_Doom__King_of_Latveria",
+      "plan_blob_sha": "f89deeb84ad6c97eca98cb0c05a6d557e64a2bff",
+      "source_path": "data/grixis/m6/test_blueprints/Doctor_Doom__King_of_Latveria.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "W3",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 14
+    },
+    "Don_Andres__the_Renegade": {
+      "plan_deck_id": "Don_Andres__the_Renegade",
+      "plan_blob_sha": "3e33d81999fd534a0b55d5d591af33b7c37444e5",
+      "source_path": "data/grixis/m6/test_blueprints/Don_Andres__the_Renegade.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "W3",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 14
+    },
+    "Dr__Eggman": {
+      "plan_deck_id": "Dr__Eggman",
+      "plan_blob_sha": "bcf938407dec2dc6cf3e9971fe330e26e37d667f",
+      "source_path": "data/grixis/m6/test_blueprints/Dr__Eggman.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 13
+    },
+    "Edea__Possessed_Sorceress": {
+      "plan_deck_id": "Edea__Possessed_Sorceress",
+      "plan_blob_sha": "42118d6fcb82e6bd9d08c258885f4c8451e12563",
+      "source_path": "data/grixis/m6/test_blueprints/Edea__Possessed_Sorceress.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "E1",
+        "E2",
+        "E3",
+        "W1",
+        "W2",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 14
+    },
+    "Edward_Kenway": {
+      "plan_deck_id": "Edward_Kenway",
+      "plan_blob_sha": "f57874809605bf962df63b4a79df4b99f6c68e00",
+      "source_path": "data/grixis/m6/test_blueprints/Edward_Kenway.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "W3",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 14
+    },
+    "Evelyn__the_Covetous": {
+      "plan_deck_id": "Evelyn__the_Covetous",
+      "plan_blob_sha": "53de466680f567008cc3e6bc28d3bd8ddae21fb5",
+      "source_path": "data/grixis/m6/test_blueprints/Evelyn__the_Covetous.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "W3",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 14
+    },
+    "Fire_Lord_Azula": {
+      "plan_deck_id": "Fire_Lord_Azula",
+      "plan_blob_sha": "68ebac8da78485ddc7424f92842adc70d9b55466",
+      "source_path": "data/grixis/m6/test_blueprints/Fire_Lord_Azula.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "W3",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 14
+    },
+    "Garza_Zol__Plague_Queen": {
+      "plan_deck_id": "Garza_Zol__Plague_Queen",
+      "plan_blob_sha": "0076cbf56216b2d8e85498647d76a29db6dd9b6c",
+      "source_path": "data/grixis/m6/test_blueprints/Garza_Zol__Plague_Queen.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "W3",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 14
+    },
+    "Goro_Goro_and_Satoru": {
+      "plan_deck_id": "Goro_Goro_and_Satoru",
+      "plan_blob_sha": "41827cd0be0e3248ece9dbf539470b8778c2ac97",
+      "source_path": "data/grixis/m6/test_blueprints/Goro_Goro_and_Satoru.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "W3",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 14
+    },
+    "Grixistax___October_2026": {
+      "plan_deck_id": "Grixistax___October_2026",
+      "plan_blob_sha": "a4039f31c23f8304e34dcd5f9e04c7690733e562",
+      "source_path": "data/grixis/m6/test_blueprints/Grixistax___October_2026.json",
+      "required_P0": [
+        "C1",
+        "C2",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "W3",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 15
+    },
+    "Gwendlyn_Di_Corci": {
+      "plan_deck_id": "Gwendlyn_Di_Corci",
+      "plan_blob_sha": "22eedb273e9781228b4bfe87ca895c52e29306dd",
+      "source_path": "data/grixis/m6/test_blueprints/Gwendlyn_Di_Corci.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "W3",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 14
+    },
+    "Inalla__Archmage_Ritualist": {
+      "plan_deck_id": "Inalla__Archmage_Ritualist",
+      "plan_blob_sha": "dd0fdd6d35bdcccab81cb7778b30a4b113734ac4",
+      "source_path": "data/grixis/m6/test_blueprints/Inalla__Archmage_Ritualist.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "W3",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 14
+    },
+    "Jeleva__Nephalia_s_Scourge": {
+      "plan_deck_id": "Jeleva__Nephalia_s_Scourge",
+      "plan_blob_sha": "dd432454cd5cef6c97a18bdf3215011e943b9c59",
+      "source_path": "data/grixis/m6/test_blueprints/Jeleva__Nephalia_s_Scourge.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "W3",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 14
+    },
+    "Kefka__Court_Mage": {
+      "plan_deck_id": "Kefka__Court_Mage",
+      "plan_blob_sha": "07efd24960263757e3dbc9177127554ce3539f14",
+      "source_path": "data/grixis/m6/test_blueprints/Kefka__Court_Mage.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "W3",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 14
+    },
+    "Kess__Dissident_Mage": {
+      "plan_deck_id": "Kess__Dissident_Mage",
+      "plan_blob_sha": "760769aa9320e8c3440b7f64904bc0d7e2c8edc8",
+      "source_path": "data/grixis/m6/test_blueprints/Kess__Dissident_Mage.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "W3",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 14
+    },
+    "Loki__the_Deceiver": {
+      "plan_deck_id": "Loki__the_Deceiver",
+      "plan_blob_sha": "433087cbef9301fb362e48e85d081b5392221e73",
+      "source_path": "data/grixis/m6/test_blueprints/Loki__the_Deceiver.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 13
+    },
+    "Lord_of_Tresserhorn": {
+      "plan_deck_id": "Lord_of_Tresserhorn",
+      "plan_blob_sha": "c2ad4427d02175afeac570be8aedb93fe561b1f8",
+      "source_path": "data/grixis/m6/test_blueprints/Lord_of_Tresserhorn.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "W3",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 14
+    },
+    "Lord_Xander__the_Collector": {
+      "plan_deck_id": "Lord_Xander__the_Collector",
+      "plan_blob_sha": "10b65033d40482c27ed23d8b074739db2b532aa6",
+      "source_path": "data/grixis/m6/test_blueprints/Lord_Xander__the_Collector.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "W3",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 14
+    },
+    "Lynde__Cheerful_Tormentor": {
+      "plan_deck_id": "Lynde__Cheerful_Tormentor",
+      "plan_blob_sha": "ed5dd106ce079cfd55f5c75f104fa9f928f11ab3",
+      "source_path": "data/grixis/m6/test_blueprints/Lynde__Cheerful_Tormentor.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 13
+    },
+    "Mai_and_Zuko": {
+      "plan_deck_id": "Mai_and_Zuko",
+      "plan_blob_sha": "a59e35a8474cfdd91cdfff4ea05aedc1a696cdc8",
+      "source_path": "data/grixis/m6/test_blueprints/Mai_and_Zuko.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "W3",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 14
+    },
+    "Mairsil__the_Pretender": {
+      "plan_deck_id": "Mairsil__the_Pretender",
+      "plan_blob_sha": "e696c3c125ec11578a32b17e6859750d82a1845f",
+      "source_path": "data/grixis/m6/test_blueprints/Mairsil__the_Pretender.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "K6",
+        "K7",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "W3",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 16
+    },
+    "Marchesa__Dealer_of_Death": {
+      "plan_deck_id": "Marchesa__Dealer_of_Death",
+      "plan_blob_sha": "03736d6379f1d8f55299118f8dac2e9ff2515e25",
+      "source_path": "data/grixis/m6/test_blueprints/Marchesa__Dealer_of_Death.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "K6",
+        "K7",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "W3",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 16
+    },
+    "Marchesa__the_Black_Rose": {
+      "plan_deck_id": "Marchesa__the_Black_Rose",
+      "plan_blob_sha": "7d8c894c23bbcf7a6cd5adc361023ba2014ec9ad",
+      "source_path": "data/grixis/m6/test_blueprints/Marchesa__the_Black_Rose.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "K6",
+        "K7",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "W3",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 16
+    },
+    "Mishra__Artificer_Prodigy": {
+      "plan_deck_id": "Mishra__Artificer_Prodigy",
+      "plan_blob_sha": "7528365f27f59d296b0426e5c45e7d247005fbdd",
+      "source_path": "data/grixis/m6/test_blueprints/Mishra__Artificer_Prodigy.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "K6",
+        "K7",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "W3",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 16
+    },
+    "Mishra__Eminent_One": {
+      "plan_deck_id": "Mishra__Eminent_One",
+      "plan_blob_sha": "ce67d40eb242741e235f6366caa438053683e8de",
+      "source_path": "data/grixis/m6/test_blueprints/Mishra__Eminent_One.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "K6",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "W3",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 15
+    },
+    "Missy": {
+      "plan_deck_id": "Missy",
+      "plan_blob_sha": "e4ff09fac5154ceb8ecf7e38b2b83f2e15dd8ce2",
+      "source_path": "data/grixis/m6/test_blueprints/Missy.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "K6",
+        "K7",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "W3",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 16
+    },
+    "Nathan_Drake__Treasure_Hunter": {
+      "plan_deck_id": "Nathan_Drake__Treasure_Hunter",
+      "plan_blob_sha": "b16c6a340de8a638eec0cdc4e838663e6de5931a",
+      "source_path": "data/grixis/m6/test_blueprints/Nathan_Drake__Treasure_Hunter.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "K6",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 14
+    },
+    "Nekusar__the_Mindrazer": {
+      "plan_deck_id": "Nekusar__the_Mindrazer",
+      "plan_blob_sha": "a6fba2244e45bfd57b98e8c94ae073059bd2c013",
+      "source_path": "data/grixis/m6/test_blueprints/Nekusar__the_Mindrazer.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "K6",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "W3",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 15
+    },
+    "Nicol_Bolas": {
+      "plan_deck_id": "Nicol_Bolas",
+      "plan_blob_sha": "fb8641de923796d2b3b4b9de1eb76cd02367bc9d",
+      "source_path": "data/grixis/m6/test_blueprints/Nicol_Bolas.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "K6",
+        "K7",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 15
+    },
+    "Nicol_Bolas__the_Ravager": {
+      "plan_deck_id": "Nicol_Bolas__the_Ravager",
+      "plan_blob_sha": "15450a891569966fdec582e4a905ce21f739b3c8",
+      "source_path": "data/grixis/m6/test_blueprints/Nicol_Bolas__the_Ravager.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "K6",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "W3",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 15
+    },
+    "Norman_Osborn_Green_Goblin": {
+      "plan_deck_id": "Norman_Osborn_Green_Goblin",
+      "plan_blob_sha": "24c7b78a1548c7f0c9cf40931d06b13286cf0f6c",
+      "source_path": "data/grixis/m6/test_blueprints/Norman_Osborn_Green_Goblin.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "K6",
+        "K7",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "W3",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 16
+    },
+    "Obeka__Brute_Chronologist": {
+      "plan_deck_id": "Obeka__Brute_Chronologist",
+      "plan_blob_sha": "7c09ca5670d51600b2a8e74afe96275b621cb31c",
+      "source_path": "data/grixis/m6/test_blueprints/Obeka__Brute_Chronologist.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "K6",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "W3",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 15
+    },
+    "Obeka__Splitter_of_Seconds": {
+      "plan_deck_id": "Obeka__Splitter_of_Seconds",
+      "plan_blob_sha": "e3d991092b39c957fe9114fb0ed34f3db4556e61",
+      "source_path": "data/grixis/m6/test_blueprints/Obeka__Splitter_of_Seconds.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "K6",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "W3",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 15
+    },
+    "Parnesse__the_Subtle_Brush": {
+      "plan_deck_id": "Parnesse__the_Subtle_Brush",
+      "plan_blob_sha": "d4e18342ded198de1c9faccb21251df2580f387f",
+      "source_path": "data/grixis/m6/test_blueprints/Parnesse__the_Subtle_Brush.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "K6",
+        "K7",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "W3",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 16
+    },
+    "RogSi": {
+      "plan_deck_id": "RogSi",
+      "plan_blob_sha": "8b07274e5120b105c8fcf68c98635105448a29cf",
+      "source_path": "data/grixis/m6/test_blueprints/RogSi.json",
+      "required_P0": [
+        "C1",
+        "C2",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "K6",
+        "K7",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "W3",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 17
+    },
+    "Saruman__the_White_Hand": {
+      "plan_deck_id": "Saruman__the_White_Hand",
+      "plan_blob_sha": "4b0910b7ab8366f4851d877f53e73b1d3aacb621",
+      "source_path": "data/grixis/m6/test_blueprints/Saruman__the_White_Hand.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "K6",
+        "K7",
+        "K8",
+        "K9",
+        "K10",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 18
+    },
+    "Sauron__Lord_of_the_Rings": {
+      "plan_deck_id": "Sauron__Lord_of_the_Rings",
+      "plan_blob_sha": "f156344c744b0448f3e91e69552d8f0ffd37393f",
+      "source_path": "data/grixis/m6/test_blueprints/Sauron__Lord_of_the_Rings.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "K6",
+        "K7",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 15
+    },
+    "Sauron__the_Dark_Lord": {
+      "plan_deck_id": "Sauron__the_Dark_Lord",
+      "plan_blob_sha": "648980601b4186f48ab35dfcea89db9ef5d1ae47",
+      "source_path": "data/grixis/m6/test_blueprints/Sauron__the_Dark_Lord.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "K6",
+        "K7",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 15
+    },
+    "Sedris__the_Traitor_King": {
+      "plan_deck_id": "Sedris__the_Traitor_King",
+      "plan_blob_sha": "c99c62c7049458cc932e6895b1185c8bd8fec02d",
+      "source_path": "data/grixis/m6/test_blueprints/Sedris__the_Traitor_King.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "K6",
+        "K7",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 15
+    },
+    "Sol_kanar_the_Swamp_King": {
+      "plan_deck_id": "Sol_kanar_the_Swamp_King",
+      "plan_blob_sha": "bacc66959952f4ce0310200ea8444c2a054d9b67",
+      "source_path": "data/grixis/m6/test_blueprints/Sol_kanar_the_Swamp_King.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "W3",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 14
+    },
+    "Sol_kanar_the_Tainted": {
+      "plan_deck_id": "Sol_kanar_the_Tainted",
+      "plan_blob_sha": "9d6ec5503320f21971d7ccb95477b56657dbf839",
+      "source_path": "data/grixis/m6/test_blueprints/Sol_kanar_the_Tainted.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "K6",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "W3",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 15
+    },
+    "Tetsuo__Imperial_Champion": {
+      "plan_deck_id": "Tetsuo__Imperial_Champion",
+      "plan_blob_sha": "804d107de392bc8496b10c9b6a9aa37dc8164ba9",
+      "source_path": "data/grixis/m6/test_blueprints/Tetsuo__Imperial_Champion.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "K6",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 14
+    },
+    "Tetsuo_Umezawa": {
+      "plan_deck_id": "Tetsuo_Umezawa",
+      "plan_blob_sha": "2a3cf8a6a3dd1c0927eca18933a7e019685326c1",
+      "source_path": "data/grixis/m6/test_blueprints/Tetsuo_Umezawa.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "E1",
+        "E2",
+        "E3",
+        "W1",
+        "W2",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 14
+    },
+    "The_Madcap_Jester": {
+      "plan_deck_id": "The_Madcap_Jester",
+      "plan_blob_sha": "3a065adefc6aebb3409810ed9d40b5e8b5a0b7a1",
+      "source_path": "data/grixis/m6/test_blueprints/The_Madcap_Jester.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "K6",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "W3",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 15
+    },
+    "The_Rani": {
+      "plan_deck_id": "The_Rani",
+      "plan_blob_sha": "65b91c7eec13c7fc4494662576b5ebf16c8a8c9e",
+      "source_path": "data/grixis/m6/test_blueprints/The_Rani.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "E1",
+        "E2",
+        "E3",
+        "W1",
+        "W2",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 14
+    },
+    "The_Valeyard": {
+      "plan_deck_id": "The_Valeyard",
+      "plan_blob_sha": "4fb843c4ecf0383a8569f1ee505fa676cbcfe070",
+      "source_path": "data/grixis/m6/test_blueprints/The_Valeyard.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "E1",
+        "E2",
+        "E3",
+        "W1",
+        "W2",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 14
+    },
+    "Thraximundar": {
+      "plan_deck_id": "Thraximundar",
+      "plan_blob_sha": "ee410cdca6d22af61e6e1603b941cc3e7204b89c",
+      "source_path": "data/grixis/m6/test_blueprints/Thraximundar.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 13
+    },
+    "Tresserhorn_s_Lord__Returned": {
+      "plan_deck_id": "Tresserhorn_s_Lord__Returned",
+      "plan_blob_sha": "35debbc170ac89ea9b5ea5192600edf7aee19d31",
+      "source_path": "data/grixis/m6/test_blueprints/Tresserhorn_s_Lord__Returned.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "K6",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "W3",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 15
+    },
+    "Wick__the_Whorled_Mind": {
+      "plan_deck_id": "Wick__the_Whorled_Mind",
+      "plan_blob_sha": "f1c22505ea4afed4914167c0fb83ae14cc13b884",
+      "source_path": "data/grixis/m6/test_blueprints/Wick__the_Whorled_Mind.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "W3",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 14
+    },
+    "Zevlor__Elturel_Exile": {
+      "plan_deck_id": "Zevlor__Elturel_Exile",
+      "plan_blob_sha": "c439684d4a28eb91198e72ab400fd60ed3f7fb86",
+      "source_path": "data/grixis/m6/test_blueprints/Zevlor__Elturel_Exile.json",
+      "required_P0": [
+        "C1",
+        "K1",
+        "K2",
+        "K3",
+        "F1"
+      ],
+      "required_P1": [
+        "K4",
+        "K5",
+        "K6",
+        "K7",
+        "E1",
+        "E2",
+        "W1",
+        "W2",
+        "W3",
+        "F2",
+        "F3"
+      ],
+      "all_cases": 16
+    }
+  }
+}
