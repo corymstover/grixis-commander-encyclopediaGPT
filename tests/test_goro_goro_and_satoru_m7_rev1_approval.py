@@ -277,6 +277,21 @@ class CanonicalGoroM7Rev1(unittest.TestCase):
         for d, (sha, path, date, stage) in OTHER_61_HEADER.items():
             with self.subTest(deck=d):
                 e = self.registry["decks"][d]
+                # A later, independently owner-approved M7 lock may supersede only
+                # Gwendlyn's historical registry pointer. Preserve its old raw
+                # artifact and verify the explicitly approved new hash. Goro
+                # and all remaining registry records stay guarded as before.
+                if d == "Gwendlyn_Di_Corci" and e.get("m7_owner_approval_date") == "2026-10-24":
+                    newsha = "36b76cbe47a04b7492007103e4baaad50324b3e72fb2067b28aa8bb9da70e355"
+                    newpath = "refinement/decklists/Gwendlyn_Di_Corci_M7_Rev1_Approved_2026-10-24.txt"
+                    self.assertEqual(e["previous_approved_source_raw_sha256"], sha)
+                    self.assertEqual(e["previous_approved_list_artifact"], path)
+                    self.assertEqual(digest(ROOT / path), sha)
+                    self.assertEqual((e["approved_list_sha256"], e["approved_list_artifact"],
+                                      e["user_approval_date"], e["current_stage"]),
+                                     (newsha, newpath, "2026-10-24", "LOCKED"))
+                    self.assertEqual(digest(ROOT / newpath), newsha)
+                    continue
                 self.assertEqual((e["approved_list_sha256"], e["approved_list_artifact"],
                                   e["user_approval_date"], e["current_stage"]),
                                  (sha, path, date, stage))
