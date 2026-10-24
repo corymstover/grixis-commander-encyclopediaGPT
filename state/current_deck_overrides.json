@@ -336,14 +336,28 @@
       "approval_status": "APPROVED",
       "lock_status": "LOCKED",
       "final_gate_passed": true,
-      "user_approval_date": "2026-10-14",
+      "user_approval_date": "2026-10-23",
       "current_stage": "LOCKED",
-      "approved_list_sha256": "a6022fddd295d7c671690fbce5e25dc6fed47ca7fa77bf1d8a86ebadb2d927bb",
-      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit",
-      "approval_basis": "Explicit user approval of the exact SHA-bound Don Andres approval candidate after mandatory 99-slot whole-list audit, candidate exhaustion, adversarial red-team review, zero-new-material-improvement closure, fresh Oracle/rules verification, current official Commander legality verification, and complete fail-closed gate PASS.",
+      "approved_list_sha256": "59c62e50874816a434e0198e272084a3aad619a4eff2e374fc9b38fbdaf62f8f",
+      "quality_gate_version": "Deck Quality Gates v3 + independent Don Andres M7 Rev2 seven-swap 99-name Oracle, corrected Shipwreck Marsh, legal Background timing and 13 earlier M7 locks regression",
+      "approval_basis": "Cory expressly replied 'Approve' to the entire Don Andres, the Renegade M7 Rev2 100-card seven-swap list, raw SHA-256 59c62e50874816a434e0198e272084a3aad619a4eff2e374fc9b38fbdaf62f8f and engineering PR #689 after exact-head CI SUCCESS on 2026-10-23 America/Chicago. Only these exact deck bytes are authorized for canonical locking; not Deck #15 or any prior lock.",
       "complete_gate_artifact": "refinement/verification/don_andres_the_renegade_2026-10-14/gate_output/Don_Andres_the_Renegade_2026-10-14_Complete_Gate.json",
       "whole_list_audit_artifact": "refinement/verification/don_andres_the_renegade_2026-10-14/Don_Andres_the_Renegade_Whole_List_Audit_Closeout_2026-10-14.md",
-      "approved_list_artifact": "refinement/decklists/Don_Andres_the_Renegade_Approved_2026-10-14.txt"
+      "approved_list_artifact": "refinement/decklists/Don_Andres_the_Renegade_M7_Rev2_Approved_2026-10-23.txt",
+      "m7_final_candidate_sha256": "59c62e50874816a434e0198e272084a3aad619a4eff2e374fc9b38fbdaf62f8f",
+      "previous_approved_list_sha256": "a6022fddd295d7c671690fbce5e25dc6fed47ca7fa77bf1d8a86ebadb2d927bb",
+      "previous_approved_source_raw_sha256": "a6022fddd295d7c671690fbce5e25dc6fed47ca7fa77bf1d8a86ebadb2d927bb",
+      "previous_approved_list_artifact": "refinement/decklists/Don_Andres_the_Renegade_Approved_2026-10-14.txt",
+      "m7_owner_approval_date": "2026-10-23",
+      "m7_approval_source": "ChatGPT independent engineering PR #689 exact head 3fc6011ec261e6ecc4f9365b503633b7559a7ab1, workflow #40058523937 SUCCESS; 98 source records from Grok PR #662 archived Scryfall Oct23 246-name snapshot and direct Scryfall named API Passionate Archaeologist with official Wizards Background rules. Grok erroneous Shipwreck Marsh two-basics claim explicitly corrected.",
+      "m7_archidekt_tags": [
+        "Theft",
+        "Pirates",
+        "Treasure"
+      ],
+      "m7_power_bracket": "4 — Optimized",
+      "m7_project_exceptions": [],
+      "m7_verified_100_physical": true
     },
     "Dr__Eggman": {
       "approval_status": "APPROVED",
