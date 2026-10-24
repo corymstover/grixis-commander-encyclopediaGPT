@@ -1,0 +1,1513 @@
+{
+  "schema_version": 1,
+  "status": "CORY_APPROVED_GWENDLYN_DI_CORCI_M7_REV1_CANONICAL_SOURCE_BOUND",
+  "deck_id": "Gwendlyn_Di_Corci",
+  "date": "2026-10-24",
+  "baseline_raw_sha256": "9a393cb7edf40f9bfb388d37dd657839cad851dc6a021440c7d1b239c1fd20a9",
+  "candidate_raw_sha256": "36b76cbe47a04b7492007103e4baaad50324b3e72fb2067b28aa8bb9da70e355",
+  "physical_cards": 100,
+  "distinct_names": 95,
+  "source": "93 of 95 distinct proposed card names source-bound to frozen October 23 Scryfall 208-name collection; 2 manually checked published Scryfall October 24 Sting, the Glinting Dagger and Misty Rainforest. No fabricated Oracle IDs or new live full-100 API request.",
+  "frozen_snapshot_origin": "data/grixis/m6/oracle_snapshots/Gwendlyn_Di_Corci_M7_Scryfall_20261023.json",
+  "published_addendum_origin": "data/grixis/m7/independent_reviews/Gwendlyn_Di_Corci_Oracle_Addendum_20261024.json",
+  "power_bracket": "4 — Optimized",
+  "archidekt_tags": [
+    "Discard",
+    "Wheels",
+    "Untap"
+  ],
+  "project_exceptions": [],
+  "cards": [
+    {
+      "name": "Gwendlyn Di Corci",
+      "quantity": 1,
+      "oracle_id": "de44e7c8-01f9-44f9-9716-9e8a5b82b1ff",
+      "mana_cost": "{U}{B}{B}{R}",
+      "cmc": 4,
+      "type_line": "Legendary Creature — Human Rogue",
+      "oracle_text": "{T}: Target player discards a card at random. Activate only during your turn.",
+      "color_identity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "An Offer You Can't Refuse",
+      "quantity": 1,
+      "oracle_id": "234a734b-ba28-4f1b-9d01-3c3e7d516590",
+      "mana_cost": "{U}",
+      "cmc": 1,
+      "type_line": "Instant",
+      "oracle_text": "Counter target noncreature spell. Its controller creates two Treasure tokens. (They're artifacts with \"{T}, Sacrifice this token: Add one mana of any color.\")",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Ancient Tomb",
+      "quantity": 1,
+      "oracle_id": "23467047-6dba-4498-b783-1ebc4f74b8c2",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {C}{C}. This land deals 2 damage to you.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Anvil of Bogardan",
+      "quantity": 1,
+      "oracle_id": "9deb2a0b-f40c-4d13-8321-41dc41448d24",
+      "mana_cost": "{2}",
+      "cmc": 2,
+      "type_line": "Artifact",
+      "oracle_text": "Players have no maximum hand size.\nAt the beginning of each player's draw step, that player draws an additional card, then discards a card.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Arcane Signet",
+      "quantity": 1,
+      "oracle_id": "0bc7f093-bef0-4f1a-852c-4b75ebf54838",
+      "mana_cost": "{2}",
+      "cmc": 2,
+      "type_line": "Artifact",
+      "oracle_text": "{T}: Add one mana of any color in your commander's color identity.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Badlands",
+      "quantity": 1,
+      "oracle_id": "13ff3222-91cb-4796-a34e-899ed817694c",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Swamp Mountain",
+      "oracle_text": "({T}: Add {B} or {R}.)",
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Blood Crypt",
+      "quantity": 1,
+      "oracle_id": "43985bbc-a0f6-4812-984e-392bc8562633",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Swamp Mountain",
+      "oracle_text": "({T}: Add {B} or {R}.)\nAs this land enters, you may pay 2 life. If you don't, it enters tapped.",
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Bloodchief Ascension",
+      "quantity": 1,
+      "oracle_id": "d5ea905b-4bb6-48d0-9082-c472703db550",
+      "mana_cost": "{B}",
+      "cmc": 1,
+      "type_line": "Enchantment",
+      "oracle_text": "At the beginning of each end step, if an opponent lost 2 or more life this turn, you may put a quest counter on this enchantment. (Damage causes loss of life.)\nWhenever a card is put into an opponent's graveyard from anywhere, if this enchantment has three or more quest counters on it, you may have that player lose 2 life. If you do, you gain 2 life.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Bloodstained Mire",
+      "quantity": 1,
+      "oracle_id": "fc0707c7-d504-4ccf-a0d2-3eb6e26e7a57",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for a Swamp or Mountain card, put it onto the battlefield, then shuffle.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Bojuka Bog",
+      "quantity": 1,
+      "oracle_id": "04b7362d-0490-4cb0-b5d7-2a7732f659ce",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped.\nWhen this land enters, exile target player's graveyard.\n{T}: Add {B}.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Bottomless Pit",
+      "quantity": 1,
+      "oracle_id": "91e6fb47-59e4-4616-b8dd-3a7e30070074",
+      "mana_cost": "{1}{B}{B}",
+      "cmc": 3,
+      "type_line": "Enchantment",
+      "oracle_text": "At the beginning of each player's upkeep, that player discards a card at random.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Chains of Mephistopheles",
+      "quantity": 1,
+      "oracle_id": "eae87919-6322-4bd2-ae9c-b1ce25d686da",
+      "mana_cost": "{1}{B}",
+      "cmc": 2,
+      "type_line": "Enchantment",
+      "oracle_text": "If a player would draw a card except the first one they draw in each of their draw steps, that player discards a card instead. If the player discards a card this way, they draw a card. If the player doesn't discard a card this way, they mill a card.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Chrome Mox",
+      "quantity": 1,
+      "oracle_id": "ec3d4466-547c-4e02-b1b5-a156ec4637e9",
+      "mana_cost": "{0}",
+      "cmc": 0,
+      "type_line": "Artifact",
+      "oracle_text": "Imprint — When this artifact enters, you may exile a nonartifact, nonland card from your hand.\n{T}: Add one mana of any of the exiled card's colors.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "City of Brass",
+      "quantity": 1,
+      "oracle_id": "f25351e3-539b-4bbc-b92d-6480acf4d722",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "Whenever this land becomes tapped, it deals 1 damage to you.\n{T}: Add one mana of any color.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Command Tower",
+      "quantity": 1,
+      "oracle_id": "0895c9b7-ae7d-4bb3-af17-3b75deb50a25",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add one mana of any color in your commander's color identity.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Cyclonic Rift",
+      "quantity": 1,
+      "oracle_id": "d75b9c82-1b49-4c3e-a1b5-aeef57d6644b",
+      "mana_cost": "{1}{U}",
+      "cmc": 2,
+      "type_line": "Instant",
+      "oracle_text": "Return target nonland permanent you don't control to its owner's hand.\nOverload {6}{U} (You may cast this spell for its overload cost. If you do, change \"target\" in its text to \"each.\")",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Dark Deal",
+      "quantity": 1,
+      "oracle_id": "c527eb80-ccac-40b8-8377-c31121613128",
+      "mana_cost": "{2}{B}",
+      "cmc": 3,
+      "type_line": "Sorcery",
+      "oracle_text": "Each player discards all the cards in their hand, then draws that many cards minus one.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Dark Ritual",
+      "quantity": 1,
+      "oracle_id": "53f7c868-b03e-4fc2-8dcf-a75bbfa3272b",
+      "mana_cost": "{B}",
+      "cmc": 1,
+      "type_line": "Instant",
+      "oracle_text": "Add {B}{B}{B}.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Deflecting Swat",
+      "quantity": 1,
+      "oracle_id": "ae120613-97d6-4393-b39d-c3e6c076f5d6",
+      "mana_cost": "{2}{R}",
+      "cmc": 3,
+      "type_line": "Instant",
+      "oracle_text": "If you control a commander, you may cast this spell without paying its mana cost.\nYou may choose new targets for target spell or ability.",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Demonic Tutor",
+      "quantity": 1,
+      "oracle_id": "82004860-e589-4e38-8d61-8c0210e4ea39",
+      "mana_cost": "{1}{B}",
+      "cmc": 2,
+      "type_line": "Sorcery",
+      "oracle_text": "Search your library for a card, put that card into your hand, then shuffle.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Dream Salvage",
+      "quantity": 1,
+      "oracle_id": "a05d478c-a703-4fc4-9496-2894a6acdaef",
+      "mana_cost": "{U/B}",
+      "cmc": 1,
+      "type_line": "Instant",
+      "oracle_text": "Draw cards equal to the number of cards target opponent discarded this turn.",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Exotic Orchard",
+      "quantity": 1,
+      "oracle_id": "27b047e3-0d41-45e2-98e9-9391d7923a1e",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add one mana of any color that a land an opponent controls could produce.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Fierce Guardianship",
+      "quantity": 1,
+      "oracle_id": "d09c9cba-fdd2-479b-ad5d-d05181c3e3f9",
+      "mana_cost": "{2}{U}",
+      "cmc": 3,
+      "type_line": "Instant",
+      "oracle_text": "If you control a commander, you may cast this spell without paying its mana cost.\nCounter target noncreature spell.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Force of Negation",
+      "quantity": 1,
+      "oracle_id": "ac2173f9-f223-440a-9231-fd98762bdc6f",
+      "mana_cost": "{1}{U}{U}",
+      "cmc": 3,
+      "type_line": "Instant",
+      "oracle_text": "If it's not your turn, you may exile a blue card from your hand rather than pay this spell's mana cost.\nCounter target noncreature spell. If that spell is countered this way, exile it instead of putting it into its owner's graveyard.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Force of Will",
+      "quantity": 1,
+      "oracle_id": "956381ba-6d37-4a8a-846c-bad79222dbee",
+      "mana_cost": "{3}{U}{U}",
+      "cmc": 5,
+      "type_line": "Instant",
+      "oracle_text": "You may pay 1 life and exile a blue card from your hand rather than pay this spell's mana cost.\nCounter target spell.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Gamble",
+      "quantity": 1,
+      "oracle_id": "a54f0869-94c8-42af-9080-166efb9486a4",
+      "mana_cost": "{R}",
+      "cmc": 1,
+      "type_line": "Sorcery",
+      "oracle_text": "Search your library for a card, put that card into your hand, discard a card at random, then shuffle.",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Geth's Grimoire",
+      "quantity": 1,
+      "oracle_id": "ef809e99-34a2-4471-8269-f56bf8037686",
+      "mana_cost": "{4}",
+      "cmc": 4,
+      "type_line": "Artifact — Book",
+      "oracle_text": "Whenever an opponent discards a card, you may draw a card.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Hymn to Tourach",
+      "quantity": 1,
+      "oracle_id": "992d9a72-d34d-47d7-96fb-37f0efb515ef",
+      "mana_cost": "{B}{B}",
+      "cmc": 2,
+      "type_line": "Sorcery",
+      "oracle_text": "Target player discards two cards at random.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Illusionist's Bracers",
+      "quantity": 1,
+      "oracle_id": "1d1d78af-7982-419d-b9be-2bf4c149d97d",
+      "mana_cost": "{2}",
+      "cmc": 2,
+      "type_line": "Artifact — Equipment",
+      "oracle_text": "Whenever an ability of equipped creature is activated, if it isn't a mana ability, copy that ability. You may choose new targets for the copy.\nEquip {3}",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Imperial Seal",
+      "quantity": 1,
+      "oracle_id": "16cd0b90-f70c-4efa-b252-8de8784ef9a3",
+      "mana_cost": "{B}",
+      "cmc": 1,
+      "type_line": "Sorcery",
+      "oracle_text": "Search your library for a card, then shuffle and put that card on top. You lose 2 life.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Island",
+      "quantity": 2,
+      "oracle_id": "b2c6aa39-2d2a-459c-a555-fb48ba993373",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Basic Land — Island",
+      "oracle_text": "({T}: Add {U}.)",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Jace's Archivist",
+      "quantity": 1,
+      "oracle_id": "b6c8ac69-daa7-4e2e-a1d9-439731a81870",
+      "mana_cost": "{1}{U}{U}",
+      "cmc": 3,
+      "type_line": "Creature — Vedalken Wizard",
+      "oracle_text": "{U}, {T}: Each player discards their hand, then draws cards equal to the greatest number of cards a player discarded this way.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Kess, Dissident Mage",
+      "quantity": 1,
+      "oracle_id": "f5092c14-eec4-472c-999c-ba96c36b2fbb",
+      "mana_cost": "{1}{U}{B}{R}",
+      "cmc": 4,
+      "type_line": "Legendary Creature — Human Wizard",
+      "oracle_text": "Flying\nOnce during each of your turns, you may cast an instant or sorcery spell from your graveyard. If a spell cast this way would be put into your graveyard, exile it instead.",
+      "color_identity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Lightning Greaves",
+      "quantity": 1,
+      "oracle_id": "ca204b66-8d0c-431a-8d34-282f7c2d17da",
+      "mana_cost": "{2}",
+      "cmc": 2,
+      "type_line": "Artifact — Equipment",
+      "oracle_text": "Equipped creature has haste and shroud. (It can't be the target of spells or abilities.)\nEquip {0}",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Liliana's Caress",
+      "quantity": 1,
+      "oracle_id": "a4aec0d6-13fa-4709-b1a9-2f483f032744",
+      "mana_cost": "{1}{B}",
+      "cmc": 2,
+      "type_line": "Enchantment",
+      "oracle_text": "Whenever an opponent discards a card, that player loses 2 life.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Lion's Eye Diamond",
+      "quantity": 1,
+      "oracle_id": "ee6099b0-fb1f-42f1-b862-7708c6e36d05",
+      "mana_cost": "{0}",
+      "cmc": 0,
+      "type_line": "Artifact",
+      "oracle_text": "Discard your hand, Sacrifice this artifact: Add three mana of any one color. Activate only as an instant.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Lotus Petal",
+      "quantity": 1,
+      "oracle_id": "32e5339e-9e4f-46f8-b305-f9d6d3ba8bb5",
+      "mana_cost": "{0}",
+      "cmc": 0,
+      "type_line": "Artifact",
+      "oracle_text": "{T}, Sacrifice this artifact: Add one mana of any color.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Luxury Suite",
+      "quantity": 1,
+      "oracle_id": "819e1765-8325-4e6f-89c1-63ea86de369f",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped unless you have two or more opponents.\n{T}: Add {B} or {R}.",
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Magewright's Stone",
+      "quantity": 1,
+      "oracle_id": "9e500094-c430-4c10-89cc-97f4f18b08bc",
+      "mana_cost": "{2}",
+      "cmc": 2,
+      "type_line": "Artifact",
+      "oracle_text": "{1}, {T}: Untap target creature that has an activated ability with {T} in its cost.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Magus of the Wheel",
+      "quantity": 1,
+      "oracle_id": "df13dafb-f82e-42ac-b6dc-efe82af5db58",
+      "mana_cost": "{2}{R}",
+      "cmc": 3,
+      "type_line": "Creature — Human Wizard",
+      "oracle_text": "{1}{R}, {T}, Sacrifice this creature: Each player discards their hand, then draws seven cards.",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Mana Confluence",
+      "quantity": 1,
+      "oracle_id": "d0ee5bdc-2b69-4b73-9a20-ffcc18783b29",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}, Pay 1 life: Add one mana of any color.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Mana Drain",
+      "quantity": 1,
+      "oracle_id": "74d3277a-38e5-4732-afed-084a56148f20",
+      "mana_cost": "{U}{U}",
+      "cmc": 2,
+      "type_line": "Instant",
+      "oracle_text": "Counter target spell. At the beginning of your next main phase, add an amount of {C} equal to that spell's mana value.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Marsh Flats",
+      "quantity": 1,
+      "oracle_id": "dab520d0-20b4-4273-ba6b-eb07f85ea433",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for a Plains or Swamp card, put it onto the battlefield, then shuffle.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Minamo, School at Water's Edge",
+      "quantity": 1,
+      "oracle_id": "17784f90-89a1-47a5-83ef-ae60dfc30bd1",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Legendary Land",
+      "oracle_text": "{T}: Add {U}.\n{U}, {T}: Untap target legendary permanent.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Mind Twist",
+      "quantity": 1,
+      "oracle_id": "78f9c223-9982-4282-a496-a6f892f0a5bf",
+      "mana_cost": "{X}{B}",
+      "cmc": 1,
+      "type_line": "Sorcery",
+      "oracle_text": "Target player discards X cards at random.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Misty Rainforest",
+      "quantity": 1,
+      "oracle_id": null,
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for a Forest or Island card, put it onto the battlefield, then shuffle.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "published_scryfall_page_manual_review",
+      "source_url": "https://scryfall.com/card/spg/116/misty-rainforest"
+    },
+    {
+      "name": "Morphic Pool",
+      "quantity": 1,
+      "oracle_id": "bd004c9d-771e-4e63-a97d-a2259c096af8",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped unless you have two or more opponents.\n{T}: Add {U} or {B}.",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Mountain",
+      "quantity": 1,
+      "oracle_id": "a3fb7228-e76b-4e96-a40e-20b5fed75685",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Basic Land — Mountain",
+      "oracle_text": "({T}: Add {R}.)",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Mystic Remora",
+      "quantity": 1,
+      "oracle_id": "8a52f3c0-2552-4425-b2e3-5496eb2232a7",
+      "mana_cost": "{U}",
+      "cmc": 1,
+      "type_line": "Enchantment",
+      "oracle_text": "Cumulative upkeep {1} (At the beginning of your upkeep, put an age counter on this permanent, then sacrifice it unless you pay its upkeep cost for each age counter on it.)\nWhenever an opponent casts a noncreature spell, you may draw a card unless that player pays {4}.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Mystical Tutor",
+      "quantity": 1,
+      "oracle_id": "fb81f95c-70f8-4eb7-8d15-15d0ae23ec03",
+      "mana_cost": "{U}",
+      "cmc": 1,
+      "type_line": "Instant",
+      "oracle_text": "Search your library for an instant or sorcery card, reveal it, then shuffle and put that card on top.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Notion Thief",
+      "quantity": 1,
+      "oracle_id": "f8dab16e-1d50-443e-9431-8b6f1cf61c9c",
+      "mana_cost": "{2}{U}{B}",
+      "cmc": 4,
+      "type_line": "Creature — Human Rogue",
+      "oracle_text": "Flash\nIf an opponent would draw a card except the first one they draw in each of their draw steps, instead that player skips that draw and you draw a card.",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Opposition Agent",
+      "quantity": 1,
+      "oracle_id": "1f438b8f-fe23-4f3b-ab2e-f6c33676c462",
+      "mana_cost": "{2}{B}",
+      "cmc": 3,
+      "type_line": "Creature — Human Rogue",
+      "oracle_text": "Flash\nYou control your opponents while they're searching their libraries.\nWhile an opponent is searching their library, they exile each card they find. You may play those cards for as long as they remain exiled, and you may spend mana as though it were mana of any color to cast them.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Oppression",
+      "quantity": 1,
+      "oracle_id": "f488f679-f5d5-4e61-b0c8-0b0eb622df0d",
+      "mana_cost": "{1}{B}{B}",
+      "cmc": 3,
+      "type_line": "Enchantment",
+      "oracle_text": "Whenever a player casts a spell, that player discards a card.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Orcish Bowmasters",
+      "quantity": 1,
+      "oracle_id": "ea5103f5-27e0-4eb1-902c-7f34652d6bf3",
+      "mana_cost": "{1}{B}",
+      "cmc": 2,
+      "type_line": "Creature — Orc Archer",
+      "oracle_text": "Flash\nWhen this creature enters and whenever an opponent draws a card except the first one they draw in each of their draw steps, this creature deals 1 damage to any target. Then amass Orcs 1.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Otawara, Soaring City",
+      "quantity": 1,
+      "oracle_id": "e9b6a394-691c-425a-9307-76d8edc7375e",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Legendary Land",
+      "oracle_text": "{T}: Add {U}.\nChannel — {3}{U}, Discard this card: Return target artifact, creature, enchantment, or planeswalker to its owner's hand. This ability costs {1} less to activate for each legendary creature you control.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Patriar's Seal",
+      "quantity": 1,
+      "oracle_id": "ad95eac2-5b48-4102-9988-a6d7b1ec30e0",
+      "mana_cost": "{3}",
+      "cmc": 3,
+      "type_line": "Artifact",
+      "oracle_text": "{T}: Add one mana of any color.\n{1}, {T}: Untap target legendary creature you control.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Pemmin's Aura",
+      "quantity": 1,
+      "oracle_id": "ada2f380-bca7-4d64-9587-bab11c776ba8",
+      "mana_cost": "{1}{U}{U}",
+      "cmc": 3,
+      "type_line": "Enchantment — Aura",
+      "oracle_text": "Enchant creature\n{U}: Untap enchanted creature.\n{U}: Enchanted creature gains flying until end of turn.\n{U}: Enchanted creature gains shroud until end of turn. (It can't be the target of spells or abilities.)\n{1}: Enchanted creature gets +1/-1 or -1/+1 until end of turn.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Polluted Delta",
+      "quantity": 1,
+      "oracle_id": "ef86989d-ce80-4e55-aece-7d11710eeffa",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for an Island or Swamp card, put it onto the battlefield, then shuffle.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Reforge the Soul",
+      "quantity": 1,
+      "oracle_id": "ece854f8-8c60-4f30-894f-2286d3dd61b9",
+      "mana_cost": "{3}{R}{R}",
+      "cmc": 5,
+      "type_line": "Sorcery",
+      "oracle_text": "Each player discards their hand, then draws seven cards.\nMiracle {1}{R} (You may cast this card for its miracle cost when you draw it if it's the first card you drew this turn.)",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Rhystic Study",
+      "quantity": 1,
+      "oracle_id": "53236dd7-845a-444c-96d5-f41ed7325d8f",
+      "mana_cost": "{2}{U}",
+      "cmc": 3,
+      "type_line": "Enchantment",
+      "oracle_text": "Whenever an opponent casts a spell, you may draw a card unless that player pays {1}.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Rings of Brighthearth",
+      "quantity": 1,
+      "oracle_id": "bbf9494c-c4bb-4d36-98fe-8387846b342e",
+      "mana_cost": "{3}",
+      "cmc": 3,
+      "type_line": "Artifact",
+      "oracle_text": "Whenever you activate an ability, if it isn't a mana ability, you may pay {2}. If you do, copy that ability. You may choose new targets for the copy.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Scalding Tarn",
+      "quantity": 1,
+      "oracle_id": "cb027150-848c-4a66-88ad-e20222304dd8",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for an Island or Mountain card, put it onto the battlefield, then shuffle.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Sheoldred, the Apocalypse",
+      "quantity": 1,
+      "oracle_id": "34f34409-326d-4994-a0ea-1a69aa278f03",
+      "mana_cost": "{2}{B}{B}",
+      "cmc": 4,
+      "type_line": "Legendary Creature — Phyrexian Praetor",
+      "oracle_text": "Deathtouch\nWhenever you draw a card, you gain 2 life.\nWhenever an opponent draws a card, they lose 2 life.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Shivan Reef",
+      "quantity": 1,
+      "oracle_id": "0fe16212-66c3-4e45-a641-7391e9b2e304",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {U} or {R}. This land deals 1 damage to you.",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Sol Ring",
+      "quantity": 1,
+      "oracle_id": "6ad8011d-3471-4369-9d68-b264cc027487",
+      "mana_cost": "{1}",
+      "cmc": 1,
+      "type_line": "Artifact",
+      "oracle_text": "{T}: Add {C}{C}.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Steam Vents",
+      "quantity": 1,
+      "oracle_id": "17039058-822d-409f-938c-b727a366ba63",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Island Mountain",
+      "oracle_text": "({T}: Add {U} or {R}.)\nAs this land enters, you may pay 2 life. If you don't, it enters tapped.",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Sting, the Glinting Dagger",
+      "quantity": 1,
+      "oracle_id": null,
+      "mana_cost": "{2}",
+      "cmc": 2,
+      "type_line": "Legendary Artifact — Equipment",
+      "oracle_text": "Equipped creature gets +1/+1 and has haste.\nAt the beginning of each combat, untap equipped creature.\nEquipped creature has first strike as long as it's blocking or blocked by a Goblin or Orc.\nEquip {2}",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "published_scryfall_page_manual_review",
+      "source_url": "https://scryfall.com/card/ltr/250/sting-the-glinting-dagger"
+    },
+    {
+      "name": "Swamp",
+      "quantity": 5,
+      "oracle_id": "56719f6a-1a6c-4c0a-8d21-18f7d7350b68",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Basic Land — Swamp",
+      "oracle_text": "({T}: Add {B}.)",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Swan Song",
+      "quantity": 1,
+      "oracle_id": "8ddfc283-c9b4-41a5-af88-cf0068e986cc",
+      "mana_cost": "{U}",
+      "cmc": 1,
+      "type_line": "Instant",
+      "oracle_text": "Counter target enchantment, instant, or sorcery spell. Its controller creates a 2/2 blue Bird creature token with flying.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Takenuma, Abandoned Mire",
+      "quantity": 1,
+      "oracle_id": "ac2dd694-d2f1-4025-8400-12332bdc882a",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Legendary Land",
+      "oracle_text": "{T}: Add {B}.\nChannel — {3}{B}, Discard this card: Mill three cards, then return a creature or planeswalker card from your graveyard to your hand. This ability costs {1} less to activate for each legendary creature you control.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Talisman of Dominance",
+      "quantity": 1,
+      "oracle_id": "4c0a0448-b9d6-43a0-8549-64066dac63f0",
+      "mana_cost": "{2}",
+      "cmc": 2,
+      "type_line": "Artifact",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {U} or {B}. This artifact deals 1 damage to you.",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Talisman of Indulgence",
+      "quantity": 1,
+      "oracle_id": "1d9aeaaa-66f6-41cb-9bac-162d6fd8662c",
+      "mana_cost": "{2}",
+      "cmc": 2,
+      "type_line": "Artifact",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {B} or {R}. This artifact deals 1 damage to you.",
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Tergrid, God of Fright // Tergrid's Lantern",
+      "quantity": 1,
+      "oracle_id": "8485cfaa-1dbf-432b-b5d0-92a6aa6a329b",
+      "mana_cost": "{3}{B}{B}",
+      "cmc": 5,
+      "type_line": "Legendary Creature — God // Legendary Artifact",
+      "oracle_text": "Menace\nWhenever an opponent sacrifices a nontoken permanent or discards a permanent card, you may put that card from a graveyard onto the battlefield under your control.\n//\n{T}: Target player loses 3 life unless they sacrifice a nonland permanent of their choice or discard a card.\n{3}{B}: Untap Tergrid's Lantern.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Thousand-Year Elixir",
+      "quantity": 1,
+      "oracle_id": "4dc5726e-2f7e-4c2b-9616-c3301d212f78",
+      "mana_cost": "{3}",
+      "cmc": 3,
+      "type_line": "Artifact",
+      "oracle_text": "You may activate abilities of creatures you control as though those creatures had haste.\n{1}, {T}: Untap target creature.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Timetwister",
+      "quantity": 1,
+      "oracle_id": "c823e687-6311-4c99-974b-fd77d204141a",
+      "mana_cost": "{2}{U}",
+      "cmc": 3,
+      "type_line": "Sorcery",
+      "oracle_text": "Each player shuffles their hand and graveyard into their library, then draws seven cards. (Then put Timetwister into its owner's graveyard.)",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Tinybones, Bauble Burglar",
+      "quantity": 1,
+      "oracle_id": "fd335b2f-e6a2-45ac-949e-a67278b21cb6",
+      "mana_cost": "{1}{B}",
+      "cmc": 2,
+      "type_line": "Legendary Creature — Skeleton Rogue",
+      "oracle_text": "Whenever an opponent discards a card, exile it from their graveyard with a stash counter on it.\nDuring your turn, you may play cards you don't own with stash counters on them from exile, and mana of any type can be spent to cast those spells.\n{3}{B}, {T}: Each opponent discards a card. Activate only as a sorcery.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Tinybones, Pocket Nuisance",
+      "quantity": 1,
+      "oracle_id": "97dcf9fb-3f2f-4aa6-959a-e3c4889c1673",
+      "mana_cost": "{2}{B}",
+      "cmc": 3,
+      "type_line": "Legendary Creature — Skeleton Rogue",
+      "oracle_text": "When Tinybones enters, each opponent discards a card.\nWhenever a player discards one or more cards, Tinybones deals 1 damage to each opponent.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Tinybones, Trinket Thief",
+      "quantity": 1,
+      "oracle_id": "008eda1f-b913-4f04-8c29-5e87c270149e",
+      "mana_cost": "{1}{B}",
+      "cmc": 2,
+      "type_line": "Legendary Creature — Skeleton Rogue",
+      "oracle_text": "At the beginning of each end step, if an opponent discarded a card this turn, you draw a card and you lose 1 life.\n{4}{B}{B}: Each opponent with no cards in hand loses 10 life.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Tourach, Dread Cantor",
+      "quantity": 1,
+      "oracle_id": "0c952586-e522-4982-bebd-96f1db73053d",
+      "mana_cost": "{1}{B}",
+      "cmc": 2,
+      "type_line": "Legendary Creature — Human Cleric",
+      "oracle_text": "Kicker {B}{B} (You may pay an additional {B}{B} as you cast this spell.)\nProtection from white\nWhenever an opponent discards a card, put a +1/+1 counter on Tourach.\nWhen Tourach enters, if it was kicked, target opponent discards two cards at random.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Toxic Deluge",
+      "quantity": 1,
+      "oracle_id": "afaef788-34d1-460b-b884-9d7ae6ddeb18",
+      "mana_cost": "{2}{B}",
+      "cmc": 3,
+      "type_line": "Sorcery",
+      "oracle_text": "As an additional cost to cast this spell, pay X life.\nAll creatures get -X/-X until end of turn.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Training Center",
+      "quantity": 1,
+      "oracle_id": "e3570ac7-c593-40e3-bbd6-ec3da6d8158d",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped unless you have two or more opponents.\n{T}: Add {U} or {R}.",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Underground River",
+      "quantity": 1,
+      "oracle_id": "857febd9-cdd7-4f8e-a852-d88084b0cfbc",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {U} or {B}. This land deals 1 damage to you.",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Underground Sea",
+      "quantity": 1,
+      "oracle_id": "4b22be3a-8ce1-47d1-b82e-6c3ccfb0548b",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Island Swamp",
+      "oracle_text": "({T}: Add {U} or {B}.)",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Underworld Breach",
+      "quantity": 1,
+      "oracle_id": "27e0948b-9916-473b-8d8c-a51bdfbc7457",
+      "mana_cost": "{1}{R}",
+      "cmc": 2,
+      "type_line": "Enchantment",
+      "oracle_text": "Each nonland card in your graveyard has escape. The escape cost is equal to the card's mana cost plus exile three other cards from your graveyard. (You may cast cards from your graveyard for their escape cost.)\nAt the beginning of the end step, sacrifice this enchantment.",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Urborg, Tomb of Yawgmoth",
+      "quantity": 1,
+      "oracle_id": "db6174d7-211d-4817-b8e4-8384594c83f9",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Legendary Land",
+      "oracle_text": "Each land is a Swamp in addition to its other land types.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Vampiric Tutor",
+      "quantity": 1,
+      "oracle_id": "ededbdae-d9dc-4206-9335-d7158f2d7700",
+      "mana_cost": "{B}",
+      "cmc": 1,
+      "type_line": "Instant",
+      "oracle_text": "Search your library for a card, then shuffle and put that card on top. You lose 2 life.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Volcanic Island",
+      "quantity": 1,
+      "oracle_id": "c718911c-c955-4eb9-9e16-be4bd49a4e4e",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Island Mountain",
+      "oracle_text": "({T}: Add {U} or {R}.)",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Waste Not",
+      "quantity": 1,
+      "oracle_id": "00fdcc19-88ed-46c3-91f0-095806228105",
+      "mana_cost": "{1}{B}",
+      "cmc": 2,
+      "type_line": "Enchantment",
+      "oracle_text": "Whenever an opponent discards a creature card, create a 2/2 black Zombie creature token.\nWhenever an opponent discards a land card, add {B}{B}.\nWhenever an opponent discards a noncreature, nonland card, draw a card.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Watery Grave",
+      "quantity": 1,
+      "oracle_id": "fc9ec820-4245-4a96-b009-5308a818ca58",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Island Swamp",
+      "oracle_text": "({T}: Add {U} or {B}.)\nAs this land enters, you may pay 2 life. If you don't, it enters tapped.",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Wheel of Fortune",
+      "quantity": 1,
+      "oracle_id": "a8abd966-de7b-46a3-8ac7-8747ab35653a",
+      "mana_cost": "{2}{R}",
+      "cmc": 3,
+      "type_line": "Sorcery",
+      "oracle_text": "Each player discards their hand, then draws seven cards.",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Wheel of Misfortune",
+      "quantity": 1,
+      "oracle_id": "10aff3f6-8347-4e1b-b8e7-c204c9e46657",
+      "mana_cost": "{2}{R}",
+      "cmc": 3,
+      "type_line": "Sorcery",
+      "oracle_text": "Each player secretly chooses a number 0 or greater, then all players reveal those numbers simultaneously and determine the highest and lowest numbers revealed this way. Wheel of Misfortune deals damage equal to the highest number to each player who chose that number. Each player who didn't choose the lowest number discards their hand, then draws seven cards.",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Windfall",
+      "quantity": 1,
+      "oracle_id": "08becc07-28bc-4a2f-a6b0-28a2998d2f50",
+      "mana_cost": "{2}{U}",
+      "cmc": 3,
+      "type_line": "Sorcery",
+      "oracle_text": "Each player discards their hand, then draws cards equal to the greatest number of cards a player discarded this way.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Withering Torment",
+      "quantity": 1,
+      "oracle_id": "ffce81c5-1b58-4882-a4e7-6f8d7cb170de",
+      "mana_cost": "{2}{B}",
+      "cmc": 3,
+      "type_line": "Instant",
+      "oracle_text": "Destroy target creature or enchantment. You lose 2 life.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Xander's Lounge",
+      "quantity": 1,
+      "oracle_id": "8291543f-d086-48aa-b2b7-5481ca8c9198",
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Island Swamp Mountain",
+      "oracle_text": "({T}: Add {U}, {B}, or {R}.)\nThis land enters tapped.\nCycling {3} ({3}, Discard this card: Draw a card.)",
+      "color_identity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    },
+    {
+      "name": "Yawgmoth's Will",
+      "quantity": 1,
+      "oracle_id": "322f0459-f394-44f0-977b-55fd0cbe0712",
+      "mana_cost": "{2}{B}",
+      "cmc": 3,
+      "type_line": "Sorcery",
+      "oracle_text": "Until end of turn, you may play lands and cast spells from your graveyard.\nIf a card would be put into your graveyard from anywhere this turn, exile that card instead.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "source_kind": "oct23_frozen_scryfall_snapshot",
+      "source_url": "https://scryfall.com"
+    }
+  ]
+}
