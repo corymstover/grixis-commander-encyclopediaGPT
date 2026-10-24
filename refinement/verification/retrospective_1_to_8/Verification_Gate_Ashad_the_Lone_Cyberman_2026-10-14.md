@@ -1,6 +1,6 @@
 # Fresh Oracle/legality gate — #5 Ashad, the Lone Cyberman
 
-- Generated UTC: `2026-10-24T03:07:34.374088+00:00`
+- Generated UTC: `2026-10-24T03:22:12.553818+00:00`
 - Approved source: `refinement/decklists/Ashad_the_Lone_Cyberman_Approval_Ready_2026-10-13.txt`
 - Approved source SHA-256 (raw bytes): `087e34c2127859111fc08f8d9ec7d66cd3495537cc571d88e829fd27d2823e25`
 - Approval evidence: state/current_deck_overrides.json; refinement/verification/Ashad_the_Lone_Cyberman_Approval_Ready_Closeout_2026-10-13.md
