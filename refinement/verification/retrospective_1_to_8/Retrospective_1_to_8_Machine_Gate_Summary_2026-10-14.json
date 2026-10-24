@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-24T00:17:10.269768+00:00",
+  "generated_at_utc": "2026-10-24T00:52:27.612449+00:00",
   "cache_generated_at_utc": "2026-10-23T08:55:05.508885+00:00",
   "bulk_updated_at": "2026-10-22T21:05:50.017+00:00",
   "cache_sha256": "a8fca65952ddd0ac39431b40224818bd4dcab86a28089d15483d69780e795fd7",
@@ -104,7 +104,7 @@
       "approved_source": "refinement/decklists/Ashad_the_Lone_Cyberman_Approval_Ready_2026-10-13.txt",
       "approval_evidence": "state/current_deck_overrides.json; refinement/verification/Ashad_the_Lone_Cyberman_Approval_Ready_Closeout_2026-10-13.md",
       "approved_source_raw_sha256": "087e34c2127859111fc08f8d9ec7d66cd3495537cc571d88e829fd27d2823e25",
-      "historical_state_approved_list_sha256": "087e34c2127859111fc08f8d9ec7d66cd3495537cc571d88e829fd27d2823e25",
+      "historical_state_approved_list_sha256": "352911498345e78bd55773f4c9d1c49d05599610d5fc806f7b779c85eb5f6267",
       "main_deck_count": 100,
       "commander_count": 1,
       "distinct_names": 95,
