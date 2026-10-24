@@ -363,14 +363,28 @@
       "approval_status": "APPROVED",
       "lock_status": "LOCKED",
       "final_gate_passed": true,
-      "user_approval_date": "2026-10-14",
+      "user_approval_date": "2026-10-23",
       "current_stage": "LOCKED",
-      "approved_list_sha256": "ef34986253f71043e10c852b5f9f3ce79594fdfc1086b105f6744c3f639199c3",
-      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit",
-      "approval_basis": "Explicit user approval of the exact SHA-bound Dr. Eggman approval candidate after mandatory 99-slot whole-list audit, candidate exhaustion, adversarial red-team review, zero-new-material-improvement closure, fresh Oracle/rules verification, current official Commander legality verification, and complete fail-closed gate PASS.",
+      "approved_list_sha256": "3ef9dc5bcda84834ccea2f13c1227b6bffda8f4bd914754894ae508adcc404ec",
+      "quality_gate_version": "Deck Quality Gates v3 + ChatGPT independent M7 Rev2 exact owner approval, 97-name selected Oracle, 14 prior lock regression",
+      "approval_basis": "Cory expressly replied 'Okay you can approve that deck' on 2026-10-23 after being shown the complete 100-card Dr. Eggman M7 Rev2 list, five explicit substitutions, raw SHA-256 3ef9dc5bcda84834ccea2f13c1227b6bffda8f4bd914754894ae508adcc404ec, archived Oracle/legal verification, and successful exact-head engineering PR #690 run #40059287946. The approval explicitly supersedes Oct14 requested retention of Blasphemous Act; Foundry Inspector and Unwinding Clock remain.",
       "complete_gate_artifact": "refinement/verification/dr_eggman_2026-10-14/gate_output/Dr_Eggman_2026-10-14_Complete_Gate.json",
       "whole_list_audit_artifact": "refinement/verification/dr_eggman_2026-10-14/Dr_Eggman_Approval_Ready_Closeout_2026-10-14.md",
-      "approved_list_artifact": "refinement/decklists/Dr_Eggman_Approved_2026-10-14.txt"
+      "approved_list_artifact": "refinement/decklists/Dr_Eggman_M7_Rev2_Approved_2026-10-23.txt",
+      "m7_final_candidate_sha256": "3ef9dc5bcda84834ccea2f13c1227b6bffda8f4bd914754894ae508adcc404ec",
+      "previous_approved_list_sha256": "ef34986253f71043e10c852b5f9f3ce79594fdfc1086b105f6744c3f639199c3",
+      "previous_approved_source_raw_sha256": "ef34986253f71043e10c852b5f9f3ce79594fdfc1086b105f6744c3f639199c3",
+      "previous_approved_list_artifact": "refinement/decklists/Dr_Eggman_Approved_2026-10-14.txt",
+      "m7_owner_approval_date": "2026-10-23",
+      "m7_approval_source": "ChatGPT independent engineering PR #690 head b48cf6302e5a6bc9bc6f8823b6c4202cd88d5494, exact-head run #40059287946 SUCCESS; Oracle from archived 2026-10-23 live Scryfall Eggman pool and Gloomlake Verge sourced from canonical Don Andres M7 Rev2 selected same-day live Scryfall snapshot.",
+      "m7_archidekt_tags": [
+        "Villainous Choice",
+        "Robots",
+        "Artifact Cheat"
+      ],
+      "m7_power_bracket": "4 — Optimized",
+      "m7_project_exceptions": [],
+      "m7_verified_100_physical": true
     },
     "Edea__Possessed_Sorceress": {
       "approval_status": "APPROVED",

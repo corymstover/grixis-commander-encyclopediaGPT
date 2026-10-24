@@ -1,0 +1,1455 @@
+{
+  "schema_version": 1,
+  "status": "EXACT_OWNER_APPROVED_CANONICAL_LOCKED_EGGMAN_M7_REV2",
+  "deck_id": "Dr__Eggman",
+  "as_of": "2026-10-23",
+  "canonical_baseline_sha256": "ef34986253f71043e10c852b5f9f3ce79594fdfc1086b105f6744c3f639199c3",
+  "candidate_raw_sha256": "3ef9dc5bcda84834ccea2f13c1227b6bffda8f4bd914754894ae508adcc404ec",
+  "sources": [
+    "data/grixis/m7/research_challengers/Dr__Eggman_Scryfall_live_20261023.json",
+    "corymstover/grixis-commander-encyclopediaGPT/refinement/verification/Don_Andres_the_Renegade_M7_Rev2_Scryfall_Selected_2026-10-23.json",
+    "magic.wizards.com/en/news/feature/magic-the-gathering-doctor-who-mechanics"
+  ],
+  "physical_cards": 100,
+  "distinct_names": 97,
+  "lands": 32,
+  "payloads": 31,
+  "project_exceptions": [],
+  "cards": [
+    {
+      "quantity": 1,
+      "name": "Dr. Eggman",
+      "type_line": "Legendary Creature — Human Scientist",
+      "oracle_text": "Flying\nAt the beginning of your end step, draw a card. Then each opponent faces a villainous choice — That player discards a card, or you may put a Construct, Robot, or Vehicle card from your hand onto the battlefield.",
+      "color_identity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{U}{B}{R}",
+      "cmc": 5,
+      "oracle_id": "fb68c1ae-a129-4c17-81fa-be5da2c32ec5",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Academy Ruins",
+      "type_line": "Legendary Land",
+      "oracle_text": "{T}: Add {C}.\n{1}{U}, {T}: Put target artifact card from your graveyard on top of your library.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "oracle_id": "a3da7d5b-2c2b-45fe-b9c5-413b8c8fc0a2",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Ancient Tomb",
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {C}{C}. This land deals 2 damage to you.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "",
+      "cmc": 0,
+      "oracle_id": "23467047-6dba-4498-b783-1ebc4f74b8c2",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Arcane Signet",
+      "type_line": "Artifact",
+      "oracle_text": "{T}: Add one mana of any color in your commander's color identity.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}",
+      "cmc": 2,
+      "oracle_id": "0bc7f093-bef0-4f1a-852c-4b75ebf54838",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Badlands",
+      "type_line": "Land — Swamp Mountain",
+      "oracle_text": "({T}: Add {B} or {R}.)",
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "oracle_id": "13ff3222-91cb-4796-a34e-899ed817694c",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Behemoth of Vault 0",
+      "type_line": "Artifact Creature — Robot",
+      "oracle_text": "Trample\nWhen this creature enters, you get {E}{E}{E}{E} (four energy counters).\nWhen this creature dies, you may pay an amount of {E} equal to target nonland permanent's mana value. When you do, destroy that permanent.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{6}",
+      "cmc": 6,
+      "oracle_id": "7d05ffe2-e52b-42af-87ca-6aae488b9f41",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Blitzwing, Cruel Tormentor // Blitzwing, Adaptive Assailant",
+      "type_line": "Legendary Artifact Creature — Robot // Legendary Artifact — Vehicle",
+      "oracle_text": "More Than Meets the Eye {3}{B} (You may cast this card converted for {3}{B}.)\nAt the beginning of your end step, target opponent loses life equal to the life that player lost this turn. If no life is lost this way, convert Blitzwing.\n//\nLiving metal (During your turn, this Vehicle is also a creature.)\nAt the beginning of combat on your turn, choose flying or indestructible at random. Blitzwing gains that ability until end of turn.\nWhenever Blitzwing deals combat damage to a player, convert it.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{5}{B}",
+      "cmc": 6,
+      "oracle_id": "9a10668a-df42-40c2-88d1-ad3b2aba5b03",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Blood Crypt",
+      "type_line": "Land — Swamp Mountain",
+      "oracle_text": "({T}: Add {B} or {R}.)\nAs this land enters, you may pay 2 life. If you don't, it enters tapped.",
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "oracle_id": "43985bbc-a0f6-4812-984e-392bc8562633",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Bloodstained Mire",
+      "type_line": "Land",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for a Swamp or Mountain card, put it onto the battlefield, then shuffle.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "oracle_id": "fc0707c7-d504-4ccf-a0d2-3eb6e26e7a57",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Chaos Defiler",
+      "type_line": "Artifact Creature — Demon Construct",
+      "oracle_text": "Trample\nBattle Cannon — When this creature enters or dies, for each opponent, choose a nonland permanent that player controls. Destroy one of them chosen at random.",
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}{B}{R}",
+      "cmc": 5,
+      "oracle_id": "eba7ef08-f444-4d23-92b8-29d2ac08b156",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Chaos Warp",
+      "type_line": "Instant",
+      "oracle_text": "The owner of target permanent shuffles it into their library, then reveals the top card of their library. If it's a permanent card, they put it onto the battlefield.",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{R}",
+      "cmc": 3,
+      "oracle_id": "07a0cba9-8768-4fd9-a3d5-b0f83b4bf8e8",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "City of Brass",
+      "type_line": "Land",
+      "oracle_text": "Whenever this land becomes tapped, it deals 1 damage to you.\n{T}: Add one mana of any color.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "oracle_id": "f25351e3-539b-4bbc-b92d-6480acf4d722",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Cityscape Leveler",
+      "type_line": "Artifact Creature — Construct",
+      "oracle_text": "Trample\nWhen you cast this spell and whenever this creature attacks, destroy up to one target nonland permanent. Its controller creates a tapped Powerstone token.\nUnearth {8}",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{8}",
+      "cmc": 8,
+      "oracle_id": "d4d65797-2b92-4265-9169-133120c86c7f",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Coalstoke Gearhulk",
+      "type_line": "Artifact Creature — Construct",
+      "oracle_text": "Menace, deathtouch\nWhen this creature enters, put target creature card with mana value 4 or less from a graveyard onto the battlefield under your control with a finality counter on it. That creature gains menace, deathtouch, and haste. At the beginning of your next end step, exile that creature.",
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{B}{B}{R}{R}",
+      "cmc": 5,
+      "oracle_id": "2cdbaa4e-8907-49dc-9fa9-0df70db3bf23",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Combustible Gearhulk",
+      "type_line": "Artifact Creature — Construct",
+      "oracle_text": "First strike\nWhen this creature enters, target opponent may have you draw three cards. If the player doesn't, you mill three cards, then this creature deals damage to that player equal to the total mana value of those cards.",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{4}{R}{R}",
+      "cmc": 6,
+      "oracle_id": "3494a575-f68e-4e78-9f6b-142cd8a0edea",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Command Tower",
+      "type_line": "Land",
+      "oracle_text": "{T}: Add one mana of any color in your commander's color identity.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "oracle_id": "0895c9b7-ae7d-4bb3-af17-3b75deb50a25",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Curie, Emergent Intelligence",
+      "type_line": "Legendary Artifact Creature — Robot",
+      "oracle_text": "Whenever Curie deals combat damage to a player, draw cards equal to its base power.\n{1}{U}, Exile another nontoken artifact creature you control: Curie becomes a copy of the exiled creature, except it has \"Whenever this creature deals combat damage to a player, draw cards equal to its base power.\"",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{U}",
+      "cmc": 2,
+      "oracle_id": "48cf6b88-6bca-49d4-9951-36d98befa588",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Cyberdrive Awakener",
+      "type_line": "Artifact Creature — Construct",
+      "oracle_text": "Flying\nOther artifact creatures you control have flying.\nWhen this creature enters, each noncreature artifact you control becomes a 4/4 artifact creature until end of turn.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{5}{U}",
+      "cmc": 6,
+      "oracle_id": "126a5d0b-e7d6-458e-87af-47d845678014",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Cyclonic Rift",
+      "type_line": "Instant",
+      "oracle_text": "Return target nonland permanent you don't control to its owner's hand.\nOverload {6}{U} (You may cast this spell for its overload cost. If you do, change \"target\" in its text to \"each.\")",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "{1}{U}",
+      "cmc": 2,
+      "oracle_id": "d75b9c82-1b49-4c3e-a1b5-aeef57d6644b",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Davros, Dalek Creator",
+      "type_line": "Legendary Artifact Creature — Alien Scientist",
+      "oracle_text": "Menace\nAt the beginning of your end step, create a 3/3 black Dalek artifact creature token with menace if an opponent lost 3 or more life this turn. Then each opponent who lost 3 or more life this turn faces a villainous choice — You draw a card, or that player discards a card.",
+      "color_identity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{U}{B}{R}",
+      "cmc": 4,
+      "oracle_id": "25c0bbc8-b0c3-4166-967f-e8b096487a6c",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Deadly Rollick",
+      "type_line": "Instant",
+      "oracle_text": "If you control a commander, you may cast this spell without paying its mana cost.\nExile target creature.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}{B}",
+      "cmc": 4,
+      "oracle_id": "0456ec64-2c81-4763-a352-8ff64a4c3d6b",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Deflecting Swat",
+      "type_line": "Instant",
+      "oracle_text": "If you control a commander, you may cast this spell without paying its mana cost.\nYou may choose new targets for target spell or ability.",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{R}",
+      "cmc": 3,
+      "oracle_id": "ae120613-97d6-4393-b39d-c3e6c076f5d6",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Demonic Junker",
+      "type_line": "Artifact — Vehicle",
+      "oracle_text": "Affinity for artifacts (This spell costs {1} less to cast for each artifact you control.)\nWhen this Vehicle enters, for each player, destroy up to one target creature that player controls. If a creature you controlled was destroyed this way, put two +1/+1 counters on this Vehicle.\nCrew 2",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{6}{B}",
+      "cmc": 7,
+      "oracle_id": "88075828-a76e-412d-b738-182f50e3a133",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Depthshaker Titan",
+      "type_line": "Artifact Creature — Robot",
+      "oracle_text": "When this creature enters, any number of target noncreature artifacts you control become 3/3 artifact creatures. Sacrifice them at the beginning of the next end step.\nEach artifact creature you control has melee, trample, and haste. (Whenever a creature with melee attacks, it gets +1/+1 until end of turn for each opponent you attacked this combat.)",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{5}{R}{R}",
+      "cmc": 7,
+      "oracle_id": "23bf0648-7097-41df-a539-1d36ac42cf9c",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Entropic Battlecruiser",
+      "type_line": "Artifact — Spacecraft",
+      "oracle_text": "Station (Tap another creature you control: Put charge counters equal to its power on this Spacecraft. Station only as a sorcery. It's an artifact creature at 8+.)\n1+ | Whenever an opponent discards a card, they lose 3 life.\n8+ | Flying, deathtouch\nWhenever this Spacecraft attacks, each opponent discards a card. Each opponent who can't loses 3 life.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}{B}",
+      "cmc": 4,
+      "oracle_id": "90c5ea2b-d004-4219-b60c-d51bc1a5ee6b",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Exotic Orchard",
+      "type_line": "Land",
+      "oracle_text": "{T}: Add one mana of any color that a land an opponent controls could produce.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "oracle_id": "27b047e3-0d41-45e2-98e9-9391d7923a1e",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Fabricate",
+      "type_line": "Sorcery",
+      "oracle_text": "Search your library for an artifact card, reveal it, put it into your hand, then shuffle.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{U}",
+      "cmc": 3,
+      "oracle_id": "422e1869-134f-463d-9fa1-86b66a998b3e",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Fellwar Stone",
+      "type_line": "Artifact",
+      "oracle_text": "{T}: Add one mana of any color that a land an opponent controls could produce.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}",
+      "cmc": 2,
+      "oracle_id": "95560508-7ac9-4be9-8a3f-3c7d5b52807b",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Fierce Guardianship",
+      "type_line": "Instant",
+      "oracle_text": "If you control a commander, you may cast this spell without paying its mana cost.\nCounter target noncreature spell.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "{2}{U}",
+      "cmc": 3,
+      "oracle_id": "d09c9cba-fdd2-479b-ad5d-d05181c3e3f9",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Foundry Inspector",
+      "type_line": "Artifact Creature — Construct",
+      "oracle_text": "Artifact spells you cast cost {1} less to cast.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}",
+      "cmc": 3,
+      "oracle_id": "18f22960-87ec-43cd-82ea-ec5cabf49ad3",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Geth's Grimoire",
+      "type_line": "Artifact — Book",
+      "oracle_text": "Whenever an opponent discards a card, you may draw a card.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{4}",
+      "cmc": 4,
+      "oracle_id": "ef809e99-34a2-4471-8269-f56bf8037686",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Gloomlake Verge",
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {U}.\n{T}: Add {B}. Activate only if you control an Island or a Swamp.",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "oracle_id": "d71bda4c-3dee-4398-8fd0-f77d8743b887",
+      "source": "canonical Don Andres M7 Rev2 Scryfall selected snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Golbez, Crystal Collector",
+      "type_line": "Legendary Creature — Human Wizard",
+      "oracle_text": "Whenever an artifact you control enters, surveil 1.\nAt the beginning of your end step, if you control four or more artifacts, return target creature card from your graveyard to your hand. Then if you control eight or more artifacts, each opponent loses life equal to that card's power.",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{U}{B}",
+      "cmc": 2,
+      "oracle_id": "533d5bf9-0912-451f-a3f4-3842b0a75b1d",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Great Furnace",
+      "type_line": "Artifact Land",
+      "oracle_text": "{T}: Add {R}.",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "oracle_id": "f4819061-b0b5-48ab-af7b-6525c3d2eab7",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Interceptor Mechan",
+      "type_line": "Artifact Creature — Robot",
+      "oracle_text": "Flying\nWhen this creature enters, return target artifact or creature card from your graveyard to your hand.\nVoid — At the beginning of your end step, if a nonland permanent left the battlefield this turn or a spell was warped this turn, put a +1/+1 counter on this creature.",
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{B}{R}",
+      "cmc": 4,
+      "oracle_id": "ded2b1b7-8c12-4f6f-a3be-a8f7b62b0819",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Inventors' Fair",
+      "type_line": "Legendary Land",
+      "oracle_text": "At the beginning of your upkeep, if you control three or more artifacts, you gain 1 life.\n{T}: Add {C}.\n{4}, {T}, Sacrifice Inventors' Fair: Search your library for an artifact card, reveal it, put it into your hand, then shuffle. Activate only if you control three or more artifacts.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "oracle_id": "91d4a5fe-fd6d-4b14-a63f-61b4d0ecd9c4",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 2,
+      "name": "Island",
+      "type_line": "Basic Land — Island",
+      "oracle_text": "({T}: Add {U}.)",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "oracle_id": "b2c6aa39-2d2a-459c-a555-fb48ba993373",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Krang, Utrom Warlord",
+      "type_line": "Legendary Artifact Creature — Utrom Robot",
+      "oracle_text": "Flying, trample, indestructible, haste\nOther artifact creatures you control have flying, trample, indestructible, and haste.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{9}",
+      "cmc": 9,
+      "oracle_id": "2d56a491-b3eb-4f3e-82ab-981d3036c45d",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Kuldotha Forgemaster",
+      "type_line": "Artifact Creature — Construct",
+      "oracle_text": "{T}, Sacrifice three artifacts: Search your library for an artifact card, put it onto the battlefield, then shuffle.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{5}",
+      "cmc": 5,
+      "oracle_id": "b0f99367-4313-4bb1-a9fd-7711bc4ce40e",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Lightning Greaves",
+      "type_line": "Artifact — Equipment",
+      "oracle_text": "Equipped creature has haste and shroud. (It can't be the target of spells or abilities.)\nEquip {0}",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}",
+      "cmc": 2,
+      "oracle_id": "ca204b66-8d0c-431a-8d34-282f7c2d17da",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Liliana's Caress",
+      "type_line": "Enchantment",
+      "oracle_text": "Whenever an opponent discards a card, that player loses 2 life.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{B}",
+      "cmc": 2,
+      "oracle_id": "a4aec0d6-13fa-4709-b1a9-2f483f032744",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Luxury Suite",
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped unless you have two or more opponents.\n{T}: Add {B} or {R}.",
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "oracle_id": "819e1765-8325-4e6f-89c1-63ea86de369f",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Mana Confluence",
+      "type_line": "Land",
+      "oracle_text": "{T}, Pay 1 life: Add one mana of any color.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "oracle_id": "d0ee5bdc-2b69-4b73-9a20-ffcc18783b29",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Mana Drain",
+      "type_line": "Instant",
+      "oracle_text": "Counter target spell. At the beginning of your next main phase, add an amount of {C} equal to that spell's mana value.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{U}{U}",
+      "cmc": 2,
+      "oracle_id": "74d3277a-38e5-4732-afed-084a56148f20",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Master Transmuter",
+      "type_line": "Artifact Creature — Human Artificer",
+      "oracle_text": "{U}, {T}, Return an artifact you control to its owner's hand: You may put an artifact card from your hand onto the battlefield.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}{U}",
+      "cmc": 4,
+      "oracle_id": "da46786e-28df-4638-ab3d-121011d2f150",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Mechan Assembler",
+      "type_line": "Artifact Creature — Robot Artificer",
+      "oracle_text": "Whenever another artifact you control enters, create a 2/2 colorless Robot artifact creature token. This ability triggers only once each turn.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{4}{U}",
+      "cmc": 5,
+      "oracle_id": "2c2ef1ed-2f93-48c5-bf86-e46318599aeb",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Metalwork Colossus",
+      "type_line": "Artifact Creature — Construct",
+      "oracle_text": "This spell costs {X} less to cast, where X is the total mana value of noncreature artifacts you control.\nSacrifice two artifacts: Return this card from your graveyard to your hand.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{11}",
+      "cmc": 11,
+      "oracle_id": "64ffe529-ba53-48ec-8af1-b046fbd1f0cc",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Morphic Pool",
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped unless you have two or more opponents.\n{T}: Add {U} or {B}.",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "oracle_id": "bd004c9d-771e-4e63-a97d-a2259c096af8",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 2,
+      "name": "Mountain",
+      "type_line": "Basic Land — Mountain",
+      "oracle_text": "({T}: Add {R}.)",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "oracle_id": "a3fb7228-e76b-4e96-a40e-20b5fed75685",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Mox Opal",
+      "type_line": "Legendary Artifact",
+      "oracle_text": "Metalcraft — {T}: Add one mana of any color. Activate only if you control three or more artifacts.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{0}",
+      "cmc": 0,
+      "oracle_id": "de2440de-e948-4811-903c-0bbe376ff64d",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Myr Battlesphere",
+      "type_line": "Artifact Creature — Myr Construct",
+      "oracle_text": "When this creature enters, create four 1/1 colorless Myr artifact creature tokens.\nWhenever this creature attacks, you may tap X untapped Myr you control. If you do, this creature gets +X/+0 until end of turn and deals X damage to the player or planeswalker it's attacking.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{7}",
+      "cmc": 7,
+      "oracle_id": "c53ba31a-ba27-4e17-9a92-311acb1cab29",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Nautiloid Ship",
+      "type_line": "Artifact — Vehicle",
+      "oracle_text": "Flying\nWhen this Vehicle enters, exile target player's graveyard.\nWhenever this Vehicle deals combat damage to a player, you may put a creature card exiled with this Vehicle onto the battlefield under your control.\nCrew 3",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{4}",
+      "cmc": 4,
+      "oracle_id": "613a8774-165e-4cf6-ad43-124f9ffc9980",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Noxious Gearhulk",
+      "type_line": "Artifact Creature — Construct",
+      "oracle_text": "Menace\nWhen this creature enters, you may destroy another target creature. If a creature is destroyed this way, you gain life equal to its toughness.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{4}{B}{B}",
+      "cmc": 6,
+      "oracle_id": "a77b5be2-f361-4135-ba25-670a74d268ac",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Oildeep Gearhulk",
+      "type_line": "Artifact Creature — Construct",
+      "oracle_text": "Lifelink, ward {1}\nWhen this creature enters, look at target player's hand. You may choose a card from it. If you do, that player discards that card, then draws a card.",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{U}{U}{B}{B}",
+      "cmc": 4,
+      "oracle_id": "aff0740f-51d5-41c7-ac13-97c298cfd743",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "One with the Machine",
+      "type_line": "Sorcery",
+      "oracle_text": "Draw cards equal to the greatest mana value among artifacts you control.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}{U}",
+      "cmc": 4,
+      "oracle_id": "757eadac-dd29-4a7f-8683-5bc823168326",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Padeem, Consul of Innovation",
+      "type_line": "Legendary Creature — Vedalken Artificer",
+      "oracle_text": "Artifacts you control have hexproof. (They can't be the targets of spells or abilities your opponents control.)\nAt the beginning of your upkeep, if you control the artifact with the greatest mana value or tied for the greatest mana value, draw a card.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}{U}",
+      "cmc": 4,
+      "oracle_id": "0c7ba712-6a99-4d2f-9242-a2163a11f69c",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Polluted Delta",
+      "type_line": "Land",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for an Island or Swamp card, put it onto the battlefield, then shuffle.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "oracle_id": "ef86989d-ce80-4e55-aece-7d11710eeffa",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Possession Engine",
+      "type_line": "Artifact — Vehicle",
+      "oracle_text": "When this Vehicle enters, gain control of target creature an opponent controls for as long as you control this Vehicle. That creature can't attack or block for as long as you control this Vehicle.\nCrew 3",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}{U}{U}",
+      "cmc": 5,
+      "oracle_id": "ab7c0256-eea9-4e0d-932d-c25460eed836",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Roaming Throne",
+      "type_line": "Artifact Creature — Golem",
+      "oracle_text": "Ward {2}\nAs this creature enters, choose a creature type.\nThis creature is the chosen type in addition to its other types.\nIf a triggered ability of another creature you control of the chosen type triggers, it triggers an additional time.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{4}",
+      "cmc": 4,
+      "oracle_id": "3640c29b-1534-4952-b297-619ade948431",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Scalding Tarn",
+      "type_line": "Land",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for an Island or Mountain card, put it onto the battlefield, then shuffle.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "oracle_id": "cb027150-848c-4a66-88ad-e20222304dd8",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Scrap Trawler",
+      "type_line": "Artifact Creature — Construct",
+      "oracle_text": "Whenever this creature dies or another artifact you control is put into a graveyard from the battlefield, return to your hand target artifact card in your graveyard with lesser mana value.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}",
+      "cmc": 3,
+      "oracle_id": "164f3f85-21fc-40b7-9871-4f303ba98428",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Scrapyard Recombiner",
+      "type_line": "Artifact Creature — Construct",
+      "oracle_text": "Modular 2 (This creature enters with two +1/+1 counters on it. When it dies, you may put its +1/+1 counters on target artifact creature.)\n{T}, Sacrifice an artifact: Search your library for a Construct card, reveal it, put it into your hand, then shuffle.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}",
+      "cmc": 3,
+      "oracle_id": "ecf09f2d-a886-4ec8-8ff6-fe15d87b1375",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Seat of the Synod",
+      "type_line": "Artifact Land",
+      "oracle_text": "{T}: Add {U}.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "oracle_id": "39451b4d-cd7a-40da-b457-cb51b609173f",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Simulacrum Synthesizer",
+      "type_line": "Artifact",
+      "oracle_text": "When this artifact enters, scry 2.\nWhenever another artifact you control with mana value 3 or greater enters, create a 0/0 colorless Construct artifact creature token with \"This token gets +1/+1 for each artifact you control.\"",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{U}",
+      "cmc": 3,
+      "oracle_id": "eb7a1f21-a66d-415b-8520-710b44890bb6",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Skysovereign, Consul Flagship",
+      "type_line": "Legendary Artifact — Vehicle",
+      "oracle_text": "Flying\nWhenever Skysovereign enters or attacks, it deals 3 damage to target creature or planeswalker an opponent controls.\nCrew 3 (Tap any number of creatures you control with total power 3 or more: This Vehicle becomes an artifact creature until end of turn.)",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{5}",
+      "cmc": 5,
+      "oracle_id": "50b14338-9318-4327-a1dd-c0ef38903cc4",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Sol Ring",
+      "type_line": "Artifact",
+      "oracle_text": "{T}: Add {C}{C}.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}",
+      "cmc": 1,
+      "oracle_id": "6ad8011d-3471-4369-9d68-b264cc027487",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Spark Double",
+      "type_line": "Creature — Illusion",
+      "oracle_text": "You may have this creature enter as a copy of a creature or planeswalker you control, except it enters with an additional +1/+1 counter on it if it's a creature, it enters with an additional loyalty counter on it if it's a planeswalker, and it isn't legendary.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}{U}",
+      "cmc": 4,
+      "oracle_id": "8dcb35e5-ae44-455f-86e3-4a77d496ff34",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Spire of Industry",
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {C}.\n{T}, Pay 1 life: Add one mana of any color. Activate only if you control an artifact.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "oracle_id": "55a519b4-61cb-448a-875b-4d6dbe00580f",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Steam Vents",
+      "type_line": "Land — Island Mountain",
+      "oracle_text": "({T}: Add {U} or {R}.)\nAs this land enters, you may pay 2 life. If you don't, it enters tapped.",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "oracle_id": "17039058-822d-409f-938c-b727a366ba63",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Strionic Resonator",
+      "type_line": "Artifact",
+      "oracle_text": "{2}, {T}: Copy target triggered ability you control. You may choose new targets for the copy. (A triggered ability uses the words \"when,\" \"whenever,\" or \"at.\")",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}",
+      "cmc": 2,
+      "oracle_id": "cf751552-156f-4f81-ac94-9814dce099f9",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 2,
+      "name": "Swamp",
+      "type_line": "Basic Land — Swamp",
+      "oracle_text": "({T}: Add {B}.)",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "oracle_id": "56719f6a-1a6c-4c0a-8d21-18f7d7350b68",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Talisman of Creativity",
+      "type_line": "Artifact",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {U} or {R}. This artifact deals 1 damage to you.",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}",
+      "cmc": 2,
+      "oracle_id": "14d2979d-5728-42d7-a027-0eb1f754655d",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Talisman of Dominance",
+      "type_line": "Artifact",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {U} or {B}. This artifact deals 1 damage to you.",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}",
+      "cmc": 2,
+      "oracle_id": "4c0a0448-b9d6-43a0-8549-64066dac63f0",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Talisman of Indulgence",
+      "type_line": "Artifact",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {B} or {R}. This artifact deals 1 damage to you.",
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}",
+      "cmc": 2,
+      "oracle_id": "1d9aeaaa-66f6-41cb-9bac-162d6fd8662c",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Tezzeret, Master of the Bridge",
+      "type_line": "Legendary Planeswalker — Tezzeret",
+      "oracle_text": "Creature and planeswalker spells you cast have affinity for artifacts. (They cost {1} less to cast for each artifact you control.)\n+2: Tezzeret deals X damage to each opponent, where X is the number of artifacts you control. You gain X life.\n−3: Return target artifact card from your graveyard to your hand.\n−8: Exile the top ten cards of your library. Put all artifact cards from among them onto the battlefield.",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{4}{U}{B}",
+      "cmc": 6,
+      "oracle_id": "d097991c-41df-47de-a439-57a0693b9581",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "The Regalia",
+      "type_line": "Legendary Artifact — Vehicle",
+      "oracle_text": "Haste\nWhenever The Regalia attacks, reveal cards from the top of your library until you reveal a land card. Put that card onto the battlefield tapped and the rest on the bottom of your library in a random order.\nCrew 1",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{4}",
+      "cmc": 4,
+      "oracle_id": "27a7610e-acbe-4a2b-9f61-81b383eb20a5",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "The Valeyard",
+      "type_line": "Legendary Creature — Time Lord Noble",
+      "oracle_text": "If an opponent would face a villainous choice, they face that choice an additional time. (They can make the same or different choices.)\nWhile voting, you may vote an additional time.",
+      "color_identity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{U}{B}{R}",
+      "cmc": 5,
+      "oracle_id": "ed202f1d-3511-45f4-bfbc-e6b76d4311d1",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Their Name Is Death",
+      "type_line": "Sorcery",
+      "oracle_text": "Destroy all nonartifact creatures.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}{B}{B}{B}",
+      "cmc": 6,
+      "oracle_id": "97f9aa5e-e34d-4029-9213-b32ebaf9859c",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Thopter Fabricator",
+      "type_line": "Artifact — Vehicle",
+      "oracle_text": "Flying\nWhenever you draw your second card each turn, create a 1/1 colorless Thopter artifact creature token with flying.\nCrew 2",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{U}",
+      "cmc": 3,
+      "oracle_id": "8aab9181-c306-471a-8061-9a7a7654dab5",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Thought Monitor",
+      "type_line": "Artifact Creature — Construct",
+      "oracle_text": "Affinity for artifacts (This spell costs {1} less to cast for each artifact you control.)\nFlying\nWhen this creature enters, draw two cards.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{6}{U}",
+      "cmc": 7,
+      "oracle_id": "9deded8b-cec4-4ede-a50b-131404d456d4",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Thoughtcast",
+      "type_line": "Sorcery",
+      "oracle_text": "Affinity for artifacts (This spell costs {1} less to cast for each artifact you control.)\nDraw two cards.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{4}{U}",
+      "cmc": 5,
+      "oracle_id": "cce9bbff-82dc-4b2f-addd-d6715588de20",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Thunderhawk Gunship",
+      "type_line": "Artifact — Vehicle",
+      "oracle_text": "Flying\nWhen this Vehicle enters, create two 2/2 white Astartes Warrior creature tokens with vigilance.\nWhenever this Vehicle attacks, attacking creatures you control gain flying until end of turn.\nCrew 2",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{6}",
+      "cmc": 6,
+      "oracle_id": "d64a4ad2-c80e-4a7f-93f2-b702916dba07",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Tinybones, Bauble Burglar",
+      "type_line": "Legendary Creature — Skeleton Rogue",
+      "oracle_text": "Whenever an opponent discards a card, exile it from their graveyard with a stash counter on it.\nDuring your turn, you may play cards you don't own with stash counters on them from exile, and mana of any type can be spent to cast those spells.\n{3}{B}, {T}: Each opponent discards a card. Activate only as a sorcery.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{B}",
+      "cmc": 2,
+      "oracle_id": "fd335b2f-e6a2-45ac-949e-a67278b21cb6",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Toxic Deluge",
+      "type_line": "Sorcery",
+      "oracle_text": "As an additional cost to cast this spell, pay X life.\nAll creatures get -X/-X until end of turn.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{B}",
+      "cmc": 3,
+      "oracle_id": "afaef788-34d1-460b-b884-9d7ae6ddeb18",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Training Center",
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped unless you have two or more opponents.\n{T}: Add {U} or {R}.",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "oracle_id": "e3570ac7-c593-40e3-bbd6-ec3da6d8158d",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Ultron, Artificial Malevolence",
+      "type_line": "Legendary Artifact Creature — Robot Villain",
+      "oracle_text": "Whenever another nontoken artifact you control enters, you may pay {2}. If you do, create a token that's a copy of it. If the token isn't a creature, it becomes a 2/2 Robot Villain creature in addition to its other types.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}",
+      "cmc": 3,
+      "oracle_id": "a8f25e67-2112-4355-9298-363ed04a5cb8",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Ultron, Machine Overlord",
+      "type_line": "Legendary Artifact Creature — Robot Villain",
+      "oracle_text": "Flying\nOther Robots and Constructs you control get +2/+2.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{5}",
+      "cmc": 5,
+      "oracle_id": "19fd953c-b6d4-457f-b85f-b681c5b0e341",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Underground Sea",
+      "type_line": "Land — Island Swamp",
+      "oracle_text": "({T}: Add {U} or {B}.)",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "oracle_id": "4b22be3a-8ce1-47d1-b82e-6c3ccfb0548b",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Unwinding Clock",
+      "type_line": "Artifact",
+      "oracle_text": "Untap all artifacts you control during each other player's untap step.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{4}",
+      "cmc": 4,
+      "oracle_id": "153fac93-5d2b-4348-a468-a5eef6a12da3",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Urza's Saga",
+      "type_line": "Enchantment Land — Urza's Saga",
+      "oracle_text": "(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)\nI — This Saga gains \"{T}: Add {C}.\"\nII — This Saga gains \"{2}, {T}: Create a 0/0 colorless Construct artifact creature token with 'This token gets +1/+1 for each artifact you control.'\"\nIII — Search your library for an artifact card with mana cost {0} or {1}, put it onto the battlefield, then shuffle.",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "oracle_id": "4c6a0c30-b547-4eff-8ff4-0ca25803c076",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Vault of Whispers",
+      "type_line": "Artifact Land",
+      "oracle_text": "{T}: Add {B}.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "oracle_id": "09496421-74e4-466a-9546-56f2a0c8eef4",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Vision, Spectral Synthezoid",
+      "type_line": "Legendary Artifact Creature — Robot Hero",
+      "oracle_text": "Flying\nOnce during each of your turns, you may cast a noncreature or Robot spell from your hand without paying its mana cost.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{6}{U}{U}",
+      "cmc": 8,
+      "oracle_id": "1a44261a-2b6a-45dc-91a4-b2eb219ba6fb",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Volcanic Island",
+      "type_line": "Land — Island Mountain",
+      "oracle_text": "({T}: Add {U} or {R}.)",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "oracle_id": "c718911c-c955-4eb9-9e16-be4bd49a4e4e",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Waste Not",
+      "type_line": "Enchantment",
+      "oracle_text": "Whenever an opponent discards a creature card, create a 2/2 black Zombie creature token.\nWhenever an opponent discards a land card, add {B}{B}.\nWhenever an opponent discards a noncreature, nonland card, draw a card.",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{B}",
+      "cmc": 2,
+      "oracle_id": "00fdcc19-88ed-46c3-91f0-095806228105",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Watery Grave",
+      "type_line": "Land — Island Swamp",
+      "oracle_text": "({T}: Add {U} or {B}.)\nAs this land enters, you may pay 2 life. If you don't, it enters tapped.",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "oracle_id": "fc9ec820-4245-4a96-b009-5308a818ca58",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Xander's Lounge",
+      "type_line": "Land — Island Swamp Mountain",
+      "oracle_text": "({T}: Add {U}, {B}, or {R}.)\nThis land enters tapped.\nCycling {3} ({3}, Discard this card: Draw a card.)",
+      "color_identity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "oracle_id": "8291543f-d086-48aa-b2b7-5481ca8c9198",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    },
+    {
+      "quantity": 1,
+      "name": "Y'shtola Rhul",
+      "type_line": "Legendary Creature — Cat Druid",
+      "oracle_text": "At the beginning of your end step, exile target creature you control, then return it to the battlefield under its owner's control. Then if it's the first end step of the turn, there is an additional end step after this step.",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{4}{U}{U}",
+      "cmc": 6,
+      "oracle_id": "a6a7bf77-0560-4572-a826-3bc9df1f78d1",
+      "source": "GrokBot Dr Eggman live Scryfall research snapshot 2026-10-23"
+    }
+  ],
+  "owner_approved_exact_sha256": "3ef9dc5bcda84834ccea2f13c1227b6bffda8f4bd914754894ae508adcc404ec",
+  "owner_approval_date": "2026-10-23",
+  "owner_approval_quote": "Okay you can approve that deck",
+  "canonical_approval_baseline_source": "refinement/decklists/Dr_Eggman_Approved_2026-10-14.txt",
+  "canonical_approval_candidate_source": "refinement/decklists/Dr_Eggman_M7_Rev2_Approved_2026-10-23.txt",
+  "owner_approved_swap_count": 5,
+  "mana_rocks": [
+    "Arcane Signet",
+    "Fellwar Stone",
+    "Mox Opal",
+    "Sol Ring",
+    "Talisman of Creativity",
+    "Talisman of Dominance",
+    "Talisman of Indulgence"
+  ],
+  "game_changers": [
+    "Ancient Tomb",
+    "Cyclonic Rift",
+    "Fierce Guardianship"
+  ],
+  "commander_legal_all": true,
+  "color_identity_all_ubr": true,
+  "provenance_note": "Archived live Scryfall 2026-10-23 Eggman 239-name source, plus Gloomlake Verge same-day archived current Oracle from Don Andres selected evidence; not a new independent Scryfall pull. Focused exact-head GitHub engineering PR #690 run #40059287946 SUCCESS."
+}
