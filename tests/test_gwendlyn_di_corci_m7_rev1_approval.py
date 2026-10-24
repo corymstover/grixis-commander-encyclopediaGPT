@@ -250,9 +250,9 @@ OTHER_61 = json.loads(r'''{
     "LOCKED"
   ],
   "Inalla__Archmage_Ritualist": [
-    "81333ac71d483b667af968bf2ab221e1fa0de6edd7c2395170d15786e5b15fa3",
-    "refinement/decklists/Inalla_Archmage_Ritualist_Approved_2026-10-14.txt",
-    "2026-10-14",
+    "c9f35cac41a7717ef49b4dd3cb4f6031c2795a0082b31b54a13e645652df9b69",
+    "refinement/decklists/Inalla_Archmage_Ritualist_M7_Rev1_Approved_2026-10-24.txt",
+    "2026-10-24",
     "LOCKED"
   ],
   "Jeleva__Nephalia_s_Scourge": [
@@ -649,7 +649,7 @@ class CanonicalGwendlynM7Rev1(unittest.TestCase):
         nxt=[z for z in self.tracker if z["index"]=="22"]
         self.assertEqual(len(nxt),1)
         self.assertEqual(nxt[0]["deck_id"],"Inalla__Archmage_Ritualist")
-        self.assertEqual(nxt[0]["user_approval_date"],"2026-10-14")
+        self.assertEqual(nxt[0]["user_approval_date"],"2026-10-24")
 
 if __name__=="__main__":
     unittest.main()
