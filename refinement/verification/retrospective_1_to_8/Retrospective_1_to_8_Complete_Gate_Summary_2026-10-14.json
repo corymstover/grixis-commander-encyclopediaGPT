@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at_utc": "2026-10-24T04:41:20.428471+00:00",
+  "generated_at_utc": "2026-10-24T05:10:07.139725+00:00",
   "cycle_id": "global-restart-2026-10-13",
   "authoritative_final_status": true,
   "machine_gate_result": "PASS",
@@ -8,9 +8,9 @@
   "overall_result": "PASS",
   "rules_attestation_source": "refinement/verification/retrospective_1_to_8/Retrospective_1_to_8_Rules_Attestation_2026-10-14.md",
   "rules_attestation_source_git_blob_sha1": "24a0fddd74f399170a5f9e8bded1b8a85f774630",
-  "oracle_cache_generated_at_utc": "2026-10-24T03:36:28.648882+00:00",
+  "oracle_cache_generated_at_utc": "2026-10-24T04:45:50.764679+00:00",
   "oracle_bulk_updated_at": "2026-10-23T21:05:45.137+00:00",
-  "oracle_cache_sha256": "8ce119b87416d08bf9c068cf195ed8434e1dd76bd510d43fd16cedef37b0982a",
+  "oracle_cache_sha256": "ea91cfcd4b5ed2b0a7a0fc937929d4b8d23ca4a2fc558599a603551bca8f0e16",
   "official_banlist_checkpoint": "refinement/verification/Retrospective_1_to_8_Official_Banlist_Checkpoint_2026-10-14.md",
   "decks": [
     {
