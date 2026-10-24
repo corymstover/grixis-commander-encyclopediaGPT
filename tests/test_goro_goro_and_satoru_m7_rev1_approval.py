@@ -281,6 +281,17 @@ class CanonicalGoroM7Rev1(unittest.TestCase):
                 # Gwendlyn's historical registry pointer. Preserve its old raw
                 # artifact and verify the explicitly approved new hash. Goro
                 # and all remaining registry records stay guarded as before.
+                # Deck #26 later advanced by Cory's separate exact five-swap M7 approval.
+                # Retain and hash the original October 14 source, as with Jeleva.
+                if d == "Kess__Dissident_Mage" and e.get("m7_owner_approval_date") == "2026-10-24":
+                    self.assertEqual(e["previous_approved_source_raw_sha256"], sha)
+                    self.assertEqual(e["previous_approved_list_artifact"], path)
+                    self.assertEqual(digest(ROOT / path), sha)
+                    self.assertEqual((e["approved_list_sha256"], e["approved_list_artifact"],
+                                      e["user_approval_date"], e["current_stage"]),
+                                     ("11415352a453e52afe4b1cc6881061e0d255e8403f8d5af5a24f9803c004fde4", "refinement/decklists/Kess_Dissident_Mage_M7_Rev1_Approved_2026-10-24.txt", "2026-10-24", "LOCKED"))
+                    self.assertEqual(digest(ROOT / "refinement/decklists/Kess_Dissident_Mage_M7_Rev1_Approved_2026-10-24.txt"), "11415352a453e52afe4b1cc6881061e0d255e8403f8d5af5a24f9803c004fde4")
+                    continue
                 if d == "Jeleva__Nephalia_s_Scourge" and e.get("m7_owner_approval_date") == "2026-10-24":
                     newsha = "6f2cdafa089c3e923104429f764bed66e500fe20cafb3b00dd4d29488bd52cac"
                     newpath = "refinement/decklists/Jeleva_Nephalia_s_Scourge_M7_Rev1_Approved_2026-10-24.txt"

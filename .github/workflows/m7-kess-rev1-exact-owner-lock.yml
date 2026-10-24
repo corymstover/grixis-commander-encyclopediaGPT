@@ -1,0 +1,45 @@
+name: M7 Deck 26 Kess Exact Owner Lock
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - ".github/workflows/m7-kess-rev1-exact-owner-lock.yml"
+      - "refinement/decklists/Kess_Dissident_Mage_M7_Rev1_Approved_2026-10-24.txt"
+      - "refinement/approvals/Kess_Dissident_Mage_M7_Rev1_Approved_2026-10-24.md"
+      - "refinement/verification/Kess_Dissident_Mage_M7_Rev1*"
+      - "refinement/verification/m7_certification_transfer/Kess__Dissident_Mage_11415352a453e52a.json"
+      - "state/current_deck_overrides.json"
+      - "refinement/Deck_Refinement_Tracker_2026-10-12.csv"
+      - "tests/test_m7_kess_rev1_owner_lock.py"
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/m7-kess-rev1-exact-owner-lock.yml"
+      - "state/current_deck_overrides.json"
+      - "refinement/verification/m7_certification_transfer/Kess__Dissident_Mage_11415352a453e52a.json"
+
+permissions:
+  contents: read
+
+jobs:
+  exact-100-owner-approved-and-prior-61-preserved:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    steps:
+      - name: Checkout exact PR head
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Record exact head
+        run: git rev-parse HEAD
+      - name: Verify Kess owner's exact 100, previous 61 unchanged, historical October 14, Oracle and scoped cases
+        run: python -m unittest discover -s tests -p test_m7_kess_rev1_owner_lock.py -v
+      - name: Enforce original M6 P0/P1 plan and exact new M7 approval transfer evidence
+        run: python scripts/verify_m7_certification_transfer.py --check
+      - name: Reject missing or fabricated case transfer evidence
+        run: python -m unittest discover -s tests -p test_m7_certification_transfer.py -v
