@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-23T23:55:58.538774+00:00",
+  "generated_at_utc": "2026-10-24T00:17:10.269768+00:00",
   "cache_generated_at_utc": "2026-10-23T08:55:05.508885+00:00",
   "bulk_updated_at": "2026-10-22T21:05:50.017+00:00",
   "cache_sha256": "a8fca65952ddd0ac39431b40224818bd4dcab86a28089d15483d69780e795fd7",
@@ -81,7 +81,7 @@
       "approved_source": "refinement/decklists/Anhelo_the_Painter_Approval_Ready_2026-10-13.txt",
       "approval_evidence": "state/current_deck_overrides.json; refinement/verification/Anhelo_the_Painter_Approval_Ready_Closeout_2026-10-13.md",
       "approved_source_raw_sha256": "8d5f8a9bd4fcdcd164aab63150c14dc69a814a4d9fd764876de3214d3adf9972",
-      "historical_state_approved_list_sha256": "d19d94b8a96fb27a760c7b7d9181221f74bd61642d1d1dd7644fc1c59c09839e",
+      "historical_state_approved_list_sha256": "865b3a16567f1cb888305184f297755d550d3d864214ffbb0e780168315b6c77",
       "main_deck_count": 100,
       "commander_count": 1,
       "distinct_names": 94,
