@@ -1,10 +1,10 @@
 # Fresh Oracle/legality gate — #1 Abaddon the Despoiler
 
-- Generated UTC: `2026-10-24T07:15:57.347824+00:00`
+- Generated UTC: `2026-10-24T11:02:10.154374+00:00`
 - Approved source: `refinement/decklists/Abaddon_the_Despoiler_Approved_2026-10-13.txt`
 - Approved source SHA-256 (raw bytes): `2d6203d274c25e67fb93acf5e6784dce4ee1e8999844a6ab032d9b15995acfbf`
 - Approval evidence: state/current_deck_overrides.json; refinement/verification/Abaddon_Approved_Source_SHA_Reconciled_2026-10-14.md
-- Oracle cache generated UTC: `2026-10-24T04:45:50.764679+00:00`
+- Oracle cache generated UTC: `2026-10-24T08:51:51.010299+00:00`
 - Scryfall bulk updated UTC: `2026-10-23T21:05:45.137+00:00`
 - 100-card count: **PASS** (100)
 - Singleton: **PASS**
