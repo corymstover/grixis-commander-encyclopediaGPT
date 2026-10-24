@@ -1,0 +1,56 @@
+name: Verify Evelyn M7 Rev2 Exact Owner Approval
+
+on:
+  pull_request:
+    paths:
+      - "refinement/decklists/Evelyn_the_Covetous_M7_Rev2_Approved_2026-10-23.txt"
+      - "refinement/verification/Evelyn_the_Covetous_M7_Rev2_Scryfall_Selected_2026-10-23.json"
+      - "refinement/approvals/Evelyn_the_Covetous_M7_Rev2_Approved_2026-10-23.md"
+      - "refinement/verification/Evelyn_the_Covetous_M7_Rev2_Approved_2026-10-23_Verification.md"
+      - "tests/test_evelyn_rev2_m7_approval.py"
+      - ".github/workflows/verify-evelyn-m7-rev2-approval.yml"
+      - "state/current_deck_overrides.json"
+      - "refinement/Deck_Refinement_Tracker_2026-10-12.csv"
+  push:
+    branches: ["main"]
+    paths:
+      - "refinement/decklists/Evelyn_the_Covetous_M7_Rev2_Approved_2026-10-23.txt"
+      - "refinement/verification/Evelyn_the_Covetous_M7_Rev2_Scryfall_Selected_2026-10-23.json"
+      - "refinement/approvals/Evelyn_the_Covetous_M7_Rev2_Approved_2026-10-23.md"
+      - "refinement/verification/Evelyn_the_Covetous_M7_Rev2_Approved_2026-10-23_Verification.md"
+      - "tests/test_evelyn_rev2_m7_approval.py"
+      - ".github/workflows/verify-evelyn-m7-rev2-approval.yml"
+      - "state/current_deck_overrides.json"
+      - "refinement/Deck_Refinement_Tracker_2026-10-12.csv"
+permissions:
+  contents: read
+jobs:
+  exact-evelyn-approval:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Exact Evelyn 100 unique cEDH cards and owner SHA archived Oracle source preservation
+        run: python -m unittest discover -s tests -p 'test_evelyn_rev2_m7_approval.py' -v
+      - name: Regression seventeen prior owner-approved M7 locks
+        run: |
+          python -m unittest discover -s tests -p 'test_edward_rev2_m7_approval.py' -v
+          python -m unittest discover -s tests -p 'test_edea_rev2_m7_approval.py' -v
+          python -m unittest discover -s tests -p 'test_abaddon_rev3_m7_approval.py' -v
+          python -m unittest discover -s tests -p 'test_admiral_m7_approval.py' -v
+          python -m unittest discover -s tests -p 'test_admiral_brass_unsinkable_rev3_approval.py' -v
+          python -m unittest discover -s tests -p 'test_anhelo_rev2_m7_approval.py' -v
+          python -m unittest discover -s tests -p 'test_ashad_rev3_m7_approval.py' -v
+          python -m unittest discover -s tests -p 'test_ashnod_rev2_m7_approval.py' -v
+          python -m unittest discover -s tests -p 'test_belakor_rev2_m7_approval.py' -v
+          python -m unittest discover -s tests -p 'test_cecily_bjorna_lutri_rev2_m7_approval.py' -v
+          python -m unittest discover -s tests -p 'test_cormela_rev2_m7_approval.py' -v
+          python -m unittest discover -s tests -p 'test_crosis_rev2_m7_approval.py' -v
+          python -m unittest discover -s tests -p 'test_cult_rev2_m7_approval.py' -v
+          python -m unittest discover -s tests -p 'test_davros_rev2_m7_approval.py' -v
+          python -m unittest discover -s tests -p 'test_doctor_doom_rev2_m7_approval.py' -v
+          python -m unittest discover -s tests -p 'test_don_andres_rev2_m7_approval.py' -v
+          python -m unittest discover -s tests -p 'test_dr_eggman_rev2_m7_approval.py' -v
