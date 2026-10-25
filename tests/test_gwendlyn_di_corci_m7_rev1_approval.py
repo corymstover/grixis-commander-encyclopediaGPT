@@ -624,6 +624,16 @@ class CanonicalGwendlynM7Rev1(unittest.TestCase):
             # Retain and hash the original October 14 source, as with Jeleva.
             # Cory's subsequent explicit Deck #27 M7 Rev1 approval supersedes
             # only the registry pointer; the original 2026-10-14 file is immutable.
+            # Deck #29's later exact owner-approved M7 replacement; preserve Oct14 bytes.
+            if deck_id == "Lord_of_Tresserhorn" and other.get("m7_owner_approval_date") == "2026-10-25":
+                self.assertEqual(other["previous_approved_list_sha256"], sha)
+                self.assertEqual(other["previous_approved_list_artifact"], artifact)
+                self.assertEqual(digest(ROOT / artifact), sha)
+                self.assertEqual((other["approved_list_sha256"], other["approved_list_artifact"],
+                                  other["user_approval_date"], other["lock_status"]),
+                                 ("fd09cb267660206b834257e5c455259985b0e53316743835f679760b11200f85", "refinement/decklists/Lord_of_Tresserhorn_M7_Rev1_Approved_2026-10-25.txt", "2026-10-25", "LOCKED"))
+                self.assertEqual(digest(ROOT / "refinement/decklists/Lord_of_Tresserhorn_M7_Rev1_Approved_2026-10-25.txt"), "fd09cb267660206b834257e5c455259985b0e53316743835f679760b11200f85")
+                continue
             if deck_id == "Grixistax___October_2026" and other.get("m7_owner_approval_date") == "2026-10-25":
                 self.assertEqual(sha, "f36346d4ba965db1e098b0aa92d27a968ee3a14c74a2b9401c1a5357f83c025c")
                 self.assertEqual(other["previous_approved_list_sha256"], sha)

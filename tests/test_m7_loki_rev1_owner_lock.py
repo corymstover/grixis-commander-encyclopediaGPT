@@ -154,11 +154,11 @@ class LokiRev1OwnerLock(unittest.TestCase):
         self.assertEqual(entry["m7_power_bracket"], "4 — Optimized")
         self.assertEqual(entry["m7_archidekt_tags"], ["Villain Copies", "Combat Value", "Connive"])
         self.assertEqual(entry["m7_project_exceptions"], [])
-        self.assertEqual(sum(bool(d.get("m7_final_candidate_sha256")) for d in self.registry.values()), 27)
+        self.assertEqual(sum(bool(d.get("m7_final_candidate_sha256")) for d in self.registry.values()), 28)
         changed_since_snapshot = {n for n, d in self.registry.items()
                                   if d["approved_list_sha256"] != self.snapshot[n]}
         self.assertEqual(changed_since_snapshot,
-                         {"Kess__Dissident_Mage", "Grixistax___October_2026", DECK})
+                         {"Kess__Dissident_Mage", "Grixistax___October_2026", DECK, "Lord_of_Tresserhorn"})
         for n, d in self.registry.items():
             with self.subTest(locked=n):
                 self.assertEqual(sha(ROOT / d["approved_list_artifact"]), d["approved_list_sha256"])
