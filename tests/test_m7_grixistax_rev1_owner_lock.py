@@ -102,13 +102,13 @@ class GrixistaxM7Rev1ExactOwnerLock(unittest.TestCase):
             self.assertIn(SHA, body)
             self.assertIn(OLD_SHA, body)
             self.assertIn("#705", body)
-            self.assertIn("15", body)
             self.assertIn("100", body)
         self.assertIn("“Approve”", receipt)
         self.assertIn("Damping Sphere", receipt)
         self.assertIn("Sheoldred", receipt)
         self.assertIn("not", verification.lower())
-        self.assertIn("no empirical", receipt.lower())
+        self.assertIn("does not establish empirical", receipt.lower())
+        self.assertIn("15", verification)
 
     def test_only_target_registry_change_after_prior_kess_snapshot_and_tracker_reconciled(self):
         self.assertEqual(len(self.registry), 62)
