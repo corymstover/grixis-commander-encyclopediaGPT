@@ -1,0 +1,1660 @@
+{
+  "schema_version": 1,
+  "deck_id": "Grixistax___October_2026",
+  "candidate_raw_sha256": "70b48148409e849e38d7189bcda032d1c98d74329302563a005f86a86b81279e",
+  "source_date": "2026-10-25",
+  "source_card_count": 214,
+  "archive_ref": "corymstover/GrokBotMTGCompanion PR #675, data/grixis/m6/oracle_snapshots/Grixistax___October_2026_M7_Scryfall_20261023.json; archived live Scryfall 2026-10-23",
+  "archived_selected_count": 98,
+  "new_scryfall_page_selected_count": 2,
+  "limitations": "98 archived live Oracle records + 2 current Scryfall card-page records, no fabricated oracle IDs or new claim of all-100 live API collection call; current Wizards banned list cross-check October 25.",
+  "cards": [
+    {
+      "cmc": 5,
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}{U}{R}",
+      "name": "Kraum, Ludevic's Opus",
+      "oracle_id": "5f694f2d-9349-4988-b2b4-788136d4293e",
+      "oracle_text": "Flying, haste\nWhenever an opponent casts their second spell each turn, draw a card.\nPartner (You can have two commanders if both have partner.)",
+      "power": "4",
+      "toughness": "4",
+      "type_line": "Legendary Creature — Zombie Horror",
+      "released_at": "2016-11-11",
+      "set": "c16"
+    },
+    {
+      "cmc": 5,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{4}{B}",
+      "name": "Tevesh Szat, Doom of Fools",
+      "oracle_id": "79a1783f-ea7e-4cdf-95f5-53b383d38c66",
+      "oracle_text": "+2: Create two 0/1 black Thrull creature tokens.\n+1: You may sacrifice another creature or planeswalker. If you do, draw two cards, then draw another card if the sacrificed permanent was a commander.\n−10: Gain control of all commanders. Put all commanders from the command zone onto the battlefield under your control.\nTevesh Szat, Doom of Fools can be your commander.\nPartner",
+      "power": null,
+      "toughness": null,
+      "type_line": "Legendary Planeswalker — Szat",
+      "released_at": "2020-11-20",
+      "set": "cmr"
+    },
+    {
+      "cmc": 1,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{U}",
+      "name": "An Offer You Can't Refuse",
+      "oracle_id": "234a734b-ba28-4f1b-9d01-3c3e7d516590",
+      "oracle_text": "Counter target noncreature spell. Its controller creates two Treasure tokens. (They're artifacts with \"{T}, Sacrifice this token: Add one mana of any color.\")",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "released_at": "2024-11-15",
+      "set": "fdn"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "",
+      "name": "Ancient Tomb",
+      "oracle_id": "23467047-6dba-4498-b783-1ebc4f74b8c2",
+      "oracle_text": "{T}: Add {C}{C}. This land deals 2 damage to you.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "released_at": "2018-12-07",
+      "set": "uma"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}",
+      "name": "Arcane Signet",
+      "oracle_id": "0bc7f093-bef0-4f1a-852c-4b75ebf54838",
+      "oracle_text": "{T}: Add one mana of any color in your commander's color identity.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "released_at": "2026-10-02",
+      "set": "frc"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Arid Mesa",
+      "oracle_id": "c5acf2a5-40f4-433d-a74d-1cb56c521464",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for a Mountain or Plains card, put it onto the battlefield, then shuffle.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "released_at": "2021-06-18",
+      "set": "mh2"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{U}",
+      "name": "Back to Basics",
+      "oracle_id": "05c2dec2-d2f7-4036-b91f-4fccba10a8bb",
+      "oracle_text": "Nonbasic lands don't untap during their controllers' untap steps.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Enchantment",
+      "released_at": "2018-12-07",
+      "set": "uma"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Badlands",
+      "oracle_id": "13ff3222-91cb-4796-a34e-899ed817694c",
+      "oracle_text": "({T}: Add {B} or {R}.)",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land — Swamp Mountain",
+      "released_at": "2014-06-16",
+      "set": "vma"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{B}{B}{B}",
+      "name": "Beseech the Mirror",
+      "oracle_id": "cbbe535b-12d6-4e6c-8b26-9220f06a1604",
+      "oracle_text": "Bargain (You may sacrifice an artifact, enchantment, or token as you cast this spell.)\nSearch your library for a card, exile it face down, then shuffle. If this spell was bargained, you may cast the exiled card without paying its mana cost if that spell's mana value is 4 or less. Put the exiled card into your hand if it wasn't cast this way.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Sorcery",
+      "released_at": "2023-09-08",
+      "set": "woe"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{B}",
+      "name": "Bitterblossom",
+      "oracle_id": "fb868840-09fa-49b1-85cb-b08ad065e972",
+      "oracle_text": "At the beginning of your upkeep, you lose 1 life and create a 1/1 black Faerie Rogue creature token with flying.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Kindred Enchantment — Faerie",
+      "released_at": "2022-07-08",
+      "set": "2x2"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Blood Crypt",
+      "oracle_id": "43985bbc-a0f6-4812-984e-392bc8562633",
+      "oracle_text": "({T}: Add {B} or {R}.)\nAs this land enters, you may pay 2 life. If you don't, it enters tapped.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land — Swamp Mountain",
+      "released_at": "2026-11-13",
+      "set": "trk"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{R}",
+      "name": "Blood Moon",
+      "oracle_id": "94fac5fe-97d5-4c12-a80c-8efff9d853ae",
+      "oracle_text": "Nonbasic lands are Mountains.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Enchantment",
+      "released_at": "2020-08-07",
+      "set": "2xm"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Bloodstained Mire",
+      "oracle_id": "fc0707c7-d504-4ccf-a0d2-3eb6e26e7a57",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for a Swamp or Mountain card, put it onto the battlefield, then shuffle.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "released_at": "2024-06-14",
+      "set": "mh3"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{U}",
+      "name": "Brain Freeze",
+      "oracle_id": "464c0150-3dbc-403b-9ada-fef25ab1f29d",
+      "oracle_text": "Target player mills three cards.\nStorm (When you cast this spell, copy it for each spell cast before it this turn. You may choose new targets for the copies.)",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "released_at": "2014-06-16",
+      "set": "vma"
+    },
+    {
+      "cmc": 1,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{U}",
+      "name": "Chain of Vapor",
+      "oracle_id": "2167ac25-d042-4b48-b770-8b94acc1a965",
+      "oracle_text": "Return target nonland permanent to its owner's hand. Then that permanent's controller may sacrifice a land of their choice. If the player does, they may copy this spell and may choose a new target for that copy.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "released_at": "2016-11-11",
+      "set": "c16"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{X}{X}",
+      "name": "Chalice of the Void",
+      "oracle_id": "74027ba4-a6ba-4696-baf1-60ef0b27ee0a",
+      "oracle_text": "This artifact enters with X charge counters on it.\nWhenever a player casts a spell with mana value equal to the number of charge counters on this artifact, counter that spell.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "released_at": "2018-03-16",
+      "set": "a25"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "{0}",
+      "name": "Chrome Mox",
+      "oracle_id": "ec3d4466-547c-4e02-b1b5-a156ec4637e9",
+      "oracle_text": "Imprint — When this artifact enters, you may exile a nonartifact, nonland card from your hand.\n{T}: Add one mana of any of the exiled card's colors.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "released_at": "2020-08-07",
+      "set": "2xm"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "City of Brass",
+      "oracle_id": "f25351e3-539b-4bbc-b92d-6480acf4d722",
+      "oracle_text": "Whenever this land becomes tapped, it deals 1 damage to you.\n{T}: Add one mana of any color.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "released_at": "2026-03-06",
+      "set": "tmc"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Command Tower",
+      "oracle_id": "0895c9b7-ae7d-4bb3-af17-3b75deb50a25",
+      "oracle_text": "{T}: Add one mana of any color in your commander's color identity.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "released_at": "2026-10-02",
+      "set": "frc"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{B}",
+      "name": "Contamination",
+      "oracle_id": "4013b4c2-c9ed-4d14-90f0-97214ec1fded",
+      "oracle_text": "At the beginning of your upkeep, sacrifice this enchantment unless you sacrifice a creature.\nIf a land is tapped for mana, it produces {B} instead of any other type and amount.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Enchantment",
+      "released_at": "1998-10-12",
+      "set": "usg"
+    },
+    {
+      "cmc": 1,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{B}",
+      "name": "Culling the Weak",
+      "oracle_id": "6385fd0d-256d-4400-9319-afa8170024db",
+      "oracle_text": "As an additional cost to cast this spell, sacrifice a creature.\nAdd {B}{B}{B}{B}.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "released_at": "1998-06-15",
+      "set": "exo"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}",
+      "name": "Cursed Totem",
+      "oracle_id": "6225a704-430a-4f56-ad87-0e8d87f285f5",
+      "oracle_text": "Activated abilities of creatures can't be activated.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "released_at": "2021-06-18",
+      "set": "mh2"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "{1}{U}",
+      "name": "Cyclonic Rift",
+      "oracle_id": "d75b9c82-1b49-4c3e-a1b5-aeef57d6644b",
+      "oracle_text": "Return target nonland permanent you don't control to its owner's hand.\nOverload {6}{U} (You may cast this spell for its overload cost. If you do, change \"target\" in its text to \"each.\")",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "released_at": "2024-01-12",
+      "set": "rvr"
+    },
+    {
+      "cmc": 1,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{B}",
+      "name": "Dark Ritual",
+      "oracle_id": "53f7c868-b03e-4fc2-8dcf-a75bbfa3272b",
+      "oracle_text": "Add {B}{B}{B}.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "released_at": "2026-06-26",
+      "set": "msc"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{B}{B}",
+      "name": "Dauthi Voidwalker",
+      "oracle_id": "f1c2dbe2-fbe0-4058-bdf1-91d1b1832786",
+      "oracle_text": "Shadow (This creature can block or be blocked by only creatures with shadow.)\nIf a card would be put into an opponent's graveyard from anywhere, instead exile it with a void counter on it.\n{T}, Sacrifice this creature: Choose an exiled card an opponent owns with a void counter on it. You may play it this turn without paying its mana cost.",
+      "power": "3",
+      "toughness": "2",
+      "type_line": "Creature — Dauthi Rogue",
+      "released_at": "2025-04-11",
+      "set": "tdc"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}{B}",
+      "name": "Deadly Rollick",
+      "oracle_id": "0456ec64-2c81-4763-a352-8ff64a4c3d6b",
+      "oracle_text": "If you control a commander, you may cast this spell without paying its mana cost.\nExile target creature.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "released_at": "2023-08-04",
+      "set": "cmm"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{R}",
+      "name": "Deflecting Swat",
+      "oracle_id": "ae120613-97d6-4393-b39d-c3e6c076f5d6",
+      "oracle_text": "If you control a commander, you may cast this spell without paying its mana cost.\nYou may choose new targets for target spell or ability.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "released_at": "2023-08-04",
+      "set": "cmm"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "{1}{B}",
+      "name": "Demonic Tutor",
+      "oracle_id": "82004860-e589-4e38-8d61-8c0210e4ea39",
+      "oracle_text": "Search your library for a card, put that card into your hand, then shuffle.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Sorcery",
+      "released_at": "2023-08-04",
+      "set": "cmm"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{B}",
+      "name": "Diabolic Intent",
+      "oracle_id": "038519b9-bca8-4b27-b5ac-2409595469d0",
+      "oracle_text": "As an additional cost to cast this spell, sacrifice a creature.\nSearch your library for a card, put that card into your hand, then shuffle.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Sorcery",
+      "released_at": "2022-11-18",
+      "set": "bro"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "{2}{U}",
+      "name": "Fierce Guardianship",
+      "oracle_id": "d09c9cba-fdd2-479b-ad5d-d05181c3e3f9",
+      "oracle_text": "If you control a commander, you may cast this spell without paying its mana cost.\nCounter target noncreature spell.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "released_at": "2023-08-04",
+      "set": "cmm"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Flooded Strand",
+      "oracle_id": "f3c7af78-a77d-4134-82a2-a5ce84285a84",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for a Plains or Island card, put it onto the battlefield, then shuffle.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "released_at": "2024-06-14",
+      "set": "mh3"
+    },
+    {
+      "cmc": 1,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{U}",
+      "name": "Flusterstorm",
+      "oracle_id": "86bf58f2-7f25-4e10-b797-25e0e8e67769",
+      "oracle_text": "Counter target instant or sorcery spell unless its controller pays {1}.\nStorm (When you cast this spell, copy it for each spell cast before it this turn. You may choose new targets for the copies.)",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "released_at": "2017-11-17",
+      "set": "ima"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{U}{U}",
+      "name": "Force of Negation",
+      "oracle_id": "ac2173f9-f223-440a-9231-fd98762bdc6f",
+      "oracle_text": "If it's not your turn, you may exile a blue card from your hand rather than pay this spell's mana cost.\nCounter target noncreature spell. If that spell is countered this way, exile it instead of putting it into its owner's graveyard.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "released_at": "2022-07-08",
+      "set": "2x2"
+    },
+    {
+      "cmc": 5,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "{3}{U}{U}",
+      "name": "Force of Will",
+      "oracle_id": "956381ba-6d37-4a8a-846c-bad79222dbee",
+      "oracle_text": "You may pay 1 life and exile a blue card from your hand rather than pay this spell's mana cost.\nCounter target spell.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "released_at": "2023-01-13",
+      "set": "dmr"
+    },
+    {
+      "cmc": 1,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "{R}",
+      "name": "Gamble",
+      "oracle_id": "a54f0869-94c8-42af-9080-166efb9486a4",
+      "oracle_text": "Search your library for a card, put that card into your hand, discard a card at random, then shuffle.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Sorcery",
+      "released_at": "2023-01-13",
+      "set": "dmr"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Gemstone Caverns",
+      "oracle_id": "c0adbddc-b070-4c5f-afe0-0474c72a9251",
+      "oracle_text": "If this card is in your opening hand and you're not the starting player, you may begin the game with Gemstone Caverns on the battlefield with a luck counter on it. If you do, exile a card from your hand.\n{T}: Add {C}. If Gemstone Caverns has a luck counter on it, instead add one mana of any color.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Legendary Land",
+      "released_at": "2021-03-19",
+      "set": "tsr"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "{2}",
+      "name": "Grim Monolith",
+      "oracle_id": "229d6627-1292-4ae1-8849-b0f956fa6540",
+      "oracle_text": "This artifact doesn't untap during your untap step.\n{T}: Add {C}{C}{C}.\n{4}: Untap this artifact.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "released_at": "1999-02-15",
+      "set": "ulg"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{4}",
+      "name": "Helm of Obedience",
+      "oracle_id": "16cadebf-c484-41f8-9e38-5c2c528f5b54",
+      "oracle_text": "{X}, {T}: Target opponent mills a card, then repeats this process until a creature card or X cards have been put into their graveyard this way, whichever comes first. If one or more creature cards were put into that graveyard this way, sacrifice this artifact and put one of them onto the battlefield under your control. X can't be 0.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "released_at": "2008-09-22",
+      "set": "me2"
+    },
+    {
+      "cmc": 1,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "{B}",
+      "name": "Imperial Seal",
+      "oracle_id": "16cd0b90-f70c-4efa-b252-8de8784ef9a3",
+      "oracle_text": "Search your library for a card, then shuffle and put that card on top. You lose 2 life.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Sorcery",
+      "released_at": "2022-07-08",
+      "set": "2x2"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Island",
+      "oracle_id": "b2c6aa39-2d2a-459c-a555-fb48ba993373",
+      "oracle_text": "({T}: Add {U}.)",
+      "power": null,
+      "toughness": null,
+      "type_line": "Basic Land — Island",
+      "released_at": "2027-04-09",
+      "set": "mdd"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "{2}{R}",
+      "name": "Jeska's Will",
+      "oracle_id": "0fd114c4-092b-4e28-b0dc-ef529f3bc73e",
+      "oracle_text": "Choose one. If you control a commander as you cast this spell, you may choose both instead.\n• Add {R} for each card in target opponent's hand.\n• Exile the top three cards of your library. You may play them this turn.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Sorcery",
+      "released_at": "2024-02-09",
+      "set": "mkc"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{4}",
+      "name": "Karn, the Great Creator",
+      "oracle_id": "a20dd48d-d344-4db1-b0e9-a2b71c3cc9d1",
+      "oracle_text": "Activated abilities of artifacts your opponents control can't be activated.\n+1: Until your next turn, up to one target noncreature artifact becomes an artifact creature with power and toughness each equal to its mana value.\n−2: You may reveal an artifact card you own from outside the game or choose a face-up artifact card you own in exile. Put that card into your hand.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Legendary Planeswalker — Karn",
+      "released_at": "2024-01-12",
+      "set": "rvr"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{B}{B}",
+      "name": "Leyline of the Void",
+      "oracle_id": "f4e32fc1-1b8d-441e-8e76-71f19f98e925",
+      "oracle_text": "If this card is in your opening hand, you may begin the game with it on the battlefield.\nIf a card would be put into an opponent's graveyard from anywhere, exile it instead.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Enchantment",
+      "released_at": "2024-09-27",
+      "set": "dsk"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "{0}",
+      "name": "Lion's Eye Diamond",
+      "oracle_id": "ee6099b0-fb1f-42f1-b862-7708c6e36d05",
+      "oracle_text": "Discard your hand, Sacrifice this artifact: Add three mana of any one color. Activate only as an instant.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "released_at": "2014-06-16",
+      "set": "vma"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{0}",
+      "name": "Lotus Petal",
+      "oracle_id": "32e5339e-9e4f-46f8-b305-f9d6d3ba8bb5",
+      "oracle_text": "{T}, Sacrifice this artifact: Add one mana of any color.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "released_at": "2015-05-06",
+      "set": "tpr"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Mana Confluence",
+      "oracle_id": "d0ee5bdc-2b69-4b73-9a20-ffcc18783b29",
+      "oracle_text": "{T}, Pay 1 life: Add one mana of any color.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "released_at": "2014-05-02",
+      "set": "jou"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{U}{U}",
+      "name": "Mana Drain",
+      "oracle_id": "74d3277a-38e5-4732-afed-084a56148f20",
+      "oracle_text": "Counter target spell. At the beginning of your next main phase, add an amount of {C} equal to that spell's mana value.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "released_at": "2022-07-08",
+      "set": "2x2"
+    },
+    {
+      "cmc": 1,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "{1}",
+      "name": "Mana Vault",
+      "oracle_id": "736892cb-a34b-4bb9-b56c-e26e3db207a2",
+      "oracle_text": "This artifact doesn't untap during your untap step.\nAt the beginning of your upkeep, you may pay {4}. If you do, untap this artifact.\nAt the beginning of your draw step, if this artifact is tapped, it deals 1 damage to you.\n{T}: Add {C}{C}{C}.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "released_at": "2022-07-08",
+      "set": "2x2"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Marsh Flats",
+      "oracle_id": "dab520d0-20b4-4273-ba6b-eb07f85ea433",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for a Plains or Swamp card, put it onto the battlefield, then shuffle.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "released_at": "2021-06-18",
+      "set": "mh2"
+    },
+    {
+      "cmc": 1,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{U/P}",
+      "name": "Mental Misstep",
+      "oracle_id": "1a0770e6-b093-4439-baff-6889a50ba12e",
+      "oracle_text": "({U/P} can be paid with either {U} or 2 life.)\nCounter target spell with mana value 1.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "released_at": "2011-05-13",
+      "set": "nph"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{U}{U}",
+      "name": "Mindbreak Trap",
+      "oracle_id": "48712d36-5c13-4ded-87a4-68106da4a5cd",
+      "oracle_text": "If an opponent cast three or more spells this turn, you may pay {0} rather than pay this spell's mana cost.\nExile any number of target spells.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant — Trap",
+      "released_at": "2009-10-02",
+      "set": "zen"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Misty Rainforest",
+      "oracle_id": "09dd85aa-47bc-4713-a9b9-8b52ff2285ed",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for a Forest or Island card, put it onto the battlefield, then shuffle.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "released_at": "2021-06-18",
+      "set": "mh2"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Morphic Pool",
+      "oracle_id": "bd004c9d-771e-4e63-a97d-a2259c096af8",
+      "oracle_text": "This land enters tapped unless you have two or more opponents.\n{T}: Add {U} or {B}.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "released_at": "2022-06-10",
+      "set": "clb"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Mountain",
+      "oracle_id": "a3fb7228-e76b-4e96-a40e-20b5fed75685",
+      "oracle_text": "({T}: Add {R}.)",
+      "power": null,
+      "toughness": null,
+      "type_line": "Basic Land — Mountain",
+      "released_at": "2027-04-09",
+      "set": "mdd"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "{0}",
+      "name": "Mox Diamond",
+      "oracle_id": "f3c5978a-70fa-431f-933b-b954bd0db0ea",
+      "oracle_text": "If this artifact would enter, you may discard a land card instead. If you do, put this artifact onto the battlefield. If you don't, put it into its owner's graveyard.\n{T}: Add one mana of any color.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "released_at": "2015-05-06",
+      "set": "tpr"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{0}",
+      "name": "Mox Opal",
+      "oracle_id": "de2440de-e948-4811-903c-0bbe376ff64d",
+      "oracle_text": "Metalcraft — {T}: Add one mana of any color. Activate only if you control three or more artifacts.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Legendary Artifact",
+      "released_at": "2020-08-07",
+      "set": "2xm"
+    },
+    {
+      "cmc": 1,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{U}",
+      "name": "Mystic Remora",
+      "oracle_id": "8a52f3c0-2552-4425-b2e3-5496eb2232a7",
+      "oracle_text": "Cumulative upkeep {1} (At the beginning of your upkeep, put an age counter on this permanent, then sacrifice it unless you pay its upkeep cost for each age counter on it.)\nWhenever an opponent casts a noncreature spell, you may draw a card unless that player pays {4}.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Enchantment",
+      "released_at": "2023-01-13",
+      "set": "dmr"
+    },
+    {
+      "cmc": 1,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "{U}",
+      "name": "Mystical Tutor",
+      "oracle_id": "fb81f95c-70f8-4eb7-8d15-15d0ae23ec03",
+      "oracle_text": "Search your library for an instant or sorcery card, reveal it, then shuffle and put that card on top.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "released_at": "2023-01-13",
+      "set": "dmr"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "{1}{U}{U}",
+      "name": "Narset, Parter of Veils",
+      "oracle_id": "ab26fbe2-e808-48b9-8d0d-3fbb6c3d554f",
+      "oracle_text": "Each opponent can't draw more than one card each turn.\n−2: Look at the top four cards of your library. You may reveal a noncreature, nonland card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Legendary Planeswalker — Narset",
+      "released_at": "2023-08-04",
+      "set": "cmm"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "{B}{B}{B}",
+      "name": "Necropotence",
+      "oracle_id": "94a844d2-0574-45a7-b347-e0e329767c42",
+      "oracle_text": "Skip your draw step.\nWhenever you discard a card, exile that card from your graveyard.\nPay 1 life: Exile the top card of your library face down. Put that card into your hand at the beginning of your next end step.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Enchantment",
+      "released_at": "2017-11-17",
+      "set": "ima"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "{2}{U}{B}",
+      "name": "Notion Thief",
+      "oracle_id": "f8dab16e-1d50-443e-9431-8b6f1cf61c9c",
+      "oracle_text": "Flash\nIf an opponent would draw a card except the first one they draw in each of their draw steps, instead that player skips that draw and you draw a card.",
+      "power": "3",
+      "toughness": "1",
+      "type_line": "Creature — Human Rogue",
+      "released_at": "2020-09-25",
+      "set": "znc"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{B}",
+      "name": "Ophiomancer",
+      "oracle_id": null,
+      "oracle_text": "At the beginning of each upkeep, if you control no Snakes, create a 1/1 black Snake creature token with deathtouch.",
+      "power": "2",
+      "toughness": "2",
+      "type_line": "Creature — Human Shaman",
+      "released_at": "2024-06-14",
+      "set": "mh3",
+      "oracle_source_url": "https://scryfall.com/card/mh3/276/ophiomancer",
+      "source_method": "Current Scryfall card page verified 2026-10-25; oracle_id not asserted"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{U}{U}",
+      "name": "Opposition",
+      "oracle_id": "bf0b252d-1295-44e4-bac3-113b5732a2a9",
+      "oracle_text": "Tap an untapped creature you control: Tap target artifact, creature, or land.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Enchantment",
+      "released_at": "2023-01-13",
+      "set": "dmr"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "{2}{B}",
+      "name": "Opposition Agent",
+      "oracle_id": "1f438b8f-fe23-4f3b-ab2e-f6c33676c462",
+      "oracle_text": "Flash\nYou control your opponents while they're searching their libraries.\nWhile an opponent is searching their library, they exile each card they find. You may play those cards for as long as they remain exiled, and you may spend mana as though it were mana of any color to cast them.",
+      "power": "3",
+      "toughness": "2",
+      "type_line": "Creature — Human Rogue",
+      "released_at": "2020-11-20",
+      "set": "cmr"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "{1}{B}",
+      "name": "Orcish Bowmasters",
+      "oracle_id": "ea5103f5-27e0-4eb1-902c-7f34652d6bf3",
+      "oracle_text": "Flash\nWhen this creature enters and whenever an opponent draws a card except the first one they draw in each of their draw steps, this creature deals 1 damage to any target. Then amass Orcs 1.",
+      "power": "1",
+      "toughness": "1",
+      "type_line": "Creature — Orc Archer",
+      "released_at": "2023-06-23",
+      "set": "ltr"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Otawara, Soaring City",
+      "oracle_id": "e9b6a394-691c-425a-9307-76d8edc7375e",
+      "oracle_text": "{T}: Add {U}.\nChannel — {3}{U}, Discard this card: Return target artifact, creature, enchantment, or planeswalker to its owner's hand. This ability costs {1} less to activate for each legendary creature you control.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Legendary Land",
+      "released_at": "2022-02-18",
+      "set": "neo"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{U}",
+      "name": "Overburden",
+      "oracle_id": "8104e454-77f5-4d38-894e-41ed0d74c17c",
+      "oracle_text": "Whenever a player puts a nontoken creature onto the battlefield, that player returns a land they control to its owner's hand.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Enchantment",
+      "released_at": "2000-06-05",
+      "set": "pcy"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{0}",
+      "name": "Pact of Negation",
+      "oracle_id": "f3e213a4-ba5a-468a-93b3-c0a34e1bd725",
+      "oracle_text": "Counter target spell.\nAt the beginning of your next upkeep, pay {3}{U}{U}. If you don't, you lose the game.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "released_at": "2021-03-19",
+      "set": "tsr"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}",
+      "name": "Phyrexian Altar",
+      "oracle_id": null,
+      "oracle_text": "Sacrifice a creature: Add one mana of any color.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "released_at": "2022-07-08",
+      "set": "2x2",
+      "oracle_source_url": "https://scryfall.com/card/2x2/311/phyrexian-altar",
+      "source_method": "Current Scryfall card page verified 2026-10-25; oracle_id not asserted"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Phyrexian Tower",
+      "oracle_id": "1861e642-21d5-4232-89f3-b5557f2946c1",
+      "oracle_text": "{T}: Add {C}.\n{T}, Sacrifice a creature: Add {B}{B}.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Legendary Land",
+      "released_at": "2024-06-14",
+      "set": "mh3"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Polluted Delta",
+      "oracle_id": "ef86989d-ce80-4e55-aece-7d11710eeffa",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for an Island or Swamp card, put it onto the battlefield, then shuffle.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "released_at": "2024-06-14",
+      "set": "mh3"
+    },
+    {
+      "cmc": 1,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{R}",
+      "name": "Pyroblast",
+      "oracle_id": "ecc435e2-deb1-420a-a79f-01dd08747314",
+      "oracle_text": "Choose one —\n• Counter target spell if it's blue.\n• Destroy target permanent if it's blue.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "released_at": "2016-06-10",
+      "set": "ema"
+    },
+    {
+      "cmc": 1,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{R}",
+      "name": "Ragavan, Nimble Pilferer",
+      "oracle_id": "37108cd4-bbab-4ce3-9ed6-f60e8422e703",
+      "oracle_text": "Whenever Ragavan deals combat damage to a player, create a Treasure token and exile the top card of that player's library. Until end of turn, you may cast that card.\nDash {1}{R} (You may cast this spell for its dash cost. If you do, it gains haste, and it's returned from the battlefield to its owner's hand at the beginning of the next end step.)",
+      "power": "2",
+      "toughness": "1",
+      "type_line": "Legendary Creature — Monkey Pirate",
+      "released_at": "2021-06-18",
+      "set": "mh2"
+    },
+    {
+      "cmc": 1,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{R}",
+      "name": "Red Elemental Blast",
+      "oracle_id": "bb329a5c-b9f9-4973-a53f-090024146325",
+      "oracle_text": "Choose one —\n• Counter target blue spell.\n• Destroy target blue permanent.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "released_at": "2018-03-16",
+      "set": "a25"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "{2}{U}",
+      "name": "Rhystic Study",
+      "oracle_id": "53236dd7-845a-444c-96d5-f41ed7325d8f",
+      "oracle_text": "Whenever an opponent casts a spell, you may draw a card unless that player pays {1}.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Enchantment",
+      "released_at": "2022-12-02",
+      "set": "j22"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Scalding Tarn",
+      "oracle_id": "cb027150-848c-4a66-88ad-e20222304dd8",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for an Island or Mountain card, put it onto the battlefield, then shuffle.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "released_at": "2021-06-18",
+      "set": "mh2"
+    },
+    {
+      "cmc": 1,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}",
+      "name": "Skullclamp",
+      "oracle_id": "65986c1b-8e51-4604-b685-d82fa7d1263a",
+      "oracle_text": "Equipped creature gets +1/-1.\nWhenever equipped creature dies, draw two cards.\nEquip {1}",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact — Equipment",
+      "released_at": "2026-06-26",
+      "set": "msc"
+    },
+    {
+      "cmc": 1,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}",
+      "name": "Sol Ring",
+      "oracle_id": "6ad8011d-3471-4369-9d68-b264cc027487",
+      "oracle_text": "{T}: Add {C}{C}.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "released_at": "2026-10-02",
+      "set": "frc"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}",
+      "name": "Static Orb",
+      "oracle_id": "0004ebd0-dfd6-4276-b4a6-de0003e94237",
+      "oracle_text": "As long as this artifact is untapped, players can't untap more than two permanents during their untap steps.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "released_at": "2001-04-11",
+      "set": "7ed"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Steam Vents",
+      "oracle_id": "17039058-822d-409f-938c-b727a366ba63",
+      "oracle_text": "({T}: Add {U} or {R}.)\nAs this land enters, you may pay 2 life. If you don't, it enters tapped.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land — Island Mountain",
+      "released_at": "2026-11-13",
+      "set": "trk"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Swamp",
+      "oracle_id": "56719f6a-1a6c-4c0a-8d21-18f7d7350b68",
+      "oracle_text": "({T}: Add {B}.)",
+      "power": null,
+      "toughness": null,
+      "type_line": "Basic Land — Swamp",
+      "released_at": "2027-04-09",
+      "set": "mdd"
+    },
+    {
+      "cmc": 1,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{U}",
+      "name": "Swan Song",
+      "oracle_id": "8ddfc283-c9b4-41a5-af88-cf0068e986cc",
+      "oracle_text": "Counter target enchantment, instant, or sorcery spell. Its controller creates a 2/2 blue Bird creature token with flying.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "released_at": "2025-08-01",
+      "set": "eoc"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{B}",
+      "name": "Tainted Pact",
+      "oracle_id": "1a85ba2b-ae10-4917-954a-7709b75a9740",
+      "oracle_text": "Exile the top card of your library. You may put that card into your hand unless it has the same name as another card exiled this way. Repeat this process until you put a card into your hand or you exile two cards with the same name, whichever comes first.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "released_at": "2001-10-01",
+      "set": "ody"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}",
+      "name": "Talisman of Creativity",
+      "oracle_id": "14d2979d-5728-42d7-a027-0eb1f754655d",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {U} or {R}. This artifact deals 1 damage to you.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "released_at": "2026-10-02",
+      "set": "frc"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}",
+      "name": "Talisman of Dominance",
+      "oracle_id": "4c0a0448-b9d6-43a0-8549-64066dac63f0",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {U} or {B}. This artifact deals 1 damage to you.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "released_at": "2026-10-02",
+      "set": "frc"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}",
+      "name": "Tangle Wire",
+      "oracle_id": "c4ea0931-43e0-4214-9e0b-213eee3a7e69",
+      "oracle_text": "Fading 4 (This artifact enters with four fade counters on it. At the beginning of your upkeep, remove a fade counter from it. If you can't, sacrifice it.)\nAt the beginning of each player's upkeep, that player taps an untapped artifact, creature, or land they control for each fade counter on this artifact.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "released_at": "2000-02-14",
+      "set": "nem"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}",
+      "name": "Torpor Orb",
+      "oracle_id": "97326cad-b13c-4e52-82ce-850a39e5ff08",
+      "oracle_text": "Creatures entering don't cause abilities to trigger.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "released_at": "2024-04-19",
+      "set": "big"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{B}",
+      "name": "Toxic Deluge",
+      "oracle_id": "afaef788-34d1-460b-b884-9d7ae6ddeb18",
+      "oracle_text": "As an additional cost to cast this spell, pay X life.\nAll creatures get -X/-X until end of turn.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Sorcery",
+      "released_at": "2026-06-26",
+      "set": "msc"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}",
+      "name": "Trinisphere",
+      "oracle_id": "69d994f2-b8f6-425f-9655-977c2144d40c",
+      "oracle_text": "As long as this artifact is untapped, each spell that would cost less than three mana to cast costs three mana to cast. (Additional mana in the cost may be paid with any color of mana or colorless mana. For example, a spell that would cost {1}{B} to cast costs {2}{B} to cast instead.)",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "released_at": "2020-08-07",
+      "set": "2xm"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Underground Sea",
+      "oracle_id": "4b22be3a-8ce1-47d1-b82e-6c3ccfb0548b",
+      "oracle_text": "({T}: Add {U} or {B}.)",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land — Island Swamp",
+      "released_at": "2014-06-16",
+      "set": "vma"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "{1}{R}",
+      "name": "Underworld Breach",
+      "oracle_id": "27e0948b-9916-473b-8d8c-a51bdfbc7457",
+      "oracle_text": "Each nonland card in your graveyard has escape. The escape cost is equal to the card's mana cost plus exile three other cards from your graveyard. (You may cast cards from your graveyard for their escape cost.)\nAt the beginning of the end step, sacrifice this enchantment.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Enchantment",
+      "released_at": "2020-01-24",
+      "set": "thb"
+    },
+    {
+      "cmc": 1,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "{B}",
+      "name": "Vampiric Tutor",
+      "oracle_id": "ededbdae-d9dc-4206-9335-d7158f2d7700",
+      "oracle_text": "Search your library for a card, then shuffle and put that card on top. You lose 2 life.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "released_at": "2023-01-13",
+      "set": "dmr"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Verdant Catacombs",
+      "oracle_id": "67d60b24-d429-4ded-90d9-06e49f28c396",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for a Swamp or Forest card, put it onto the battlefield, then shuffle.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "released_at": "2021-06-18",
+      "set": "mh2"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Volcanic Island",
+      "oracle_id": "c718911c-c955-4eb9-9e16-be4bd49a4e4e",
+      "oracle_text": "({T}: Add {U} or {R}.)",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land — Island Mountain",
+      "released_at": "2014-06-16",
+      "set": "vma"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Watery Grave",
+      "oracle_id": "fc9ec820-4245-4a96-b009-5308a818ca58",
+      "oracle_text": "({T}: Add {U} or {B}.)\nAs this land enters, you may pay 2 life. If you don't, it enters tapped.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land — Island Swamp",
+      "released_at": "2026-11-13",
+      "set": "trk"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{R}",
+      "name": "Wheel of Fortune",
+      "oracle_id": "a8abd966-de7b-46a3-8ac7-8747ab35653a",
+      "oracle_text": "Each player discards their hand, then draws seven cards.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Sorcery",
+      "released_at": "2014-06-16",
+      "set": "vma"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{U}",
+      "name": "Windfall",
+      "oracle_id": "08becc07-28bc-4a2f-a6b0-28a2998d2f50",
+      "oracle_text": "Each player discards their hand, then draws cards equal to the greatest number of cards a player discarded this way.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Sorcery",
+      "released_at": "2024-04-19",
+      "set": "otc"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}",
+      "name": "Winter Orb",
+      "oracle_id": "1dcbd583-3388-4b34-a7cd-131648aa6abd",
+      "oracle_text": "As long as this artifact is untapped, players can't untap more than one land during their untap steps.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "released_at": "2016-06-10",
+      "set": "ema"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{B}",
+      "name": "Wishclaw Talisman",
+      "oracle_id": "81c70ae7-3c18-4c9b-8505-e4db9e0e6518",
+      "oracle_text": "This artifact enters with three wish counters on it.\n{1}, {T}, Remove a wish counter from this artifact: Search your library for a card, put it into your hand, then shuffle. An opponent gains control of this artifact. Activate only during your turn.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "released_at": "2024-11-15",
+      "set": "fdn"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Wooded Foothills",
+      "oracle_id": "6587a463-a108-4854-b6d1-944e89b8c8a4",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for a Mountain or Forest card, put it onto the battlefield, then shuffle.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "released_at": "2024-06-14",
+      "set": "mh3"
+    }
+  ]
+}

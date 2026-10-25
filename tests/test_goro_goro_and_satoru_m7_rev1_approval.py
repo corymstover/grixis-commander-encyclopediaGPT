@@ -283,6 +283,18 @@ class CanonicalGoroM7Rev1(unittest.TestCase):
                 # and all remaining registry records stay guarded as before.
                 # Deck #26 later advanced by Cory's separate exact five-swap M7 approval.
                 # Retain and hash the original October 14 source, as with Jeleva.
+                # Cory's subsequent explicit Deck #27 M7 Rev1 approval supersedes
+                # only the registry pointer; the original 2026-10-14 file is immutable.
+                if d == "Grixistax___October_2026" and e.get("m7_owner_approval_date") == "2026-10-25":
+                    self.assertEqual(sha, "f36346d4ba965db1e098b0aa92d27a968ee3a14c74a2b9401c1a5357f83c025c")
+                    self.assertEqual(e["previous_approved_list_sha256"], sha)
+                    self.assertEqual(e["previous_approved_list_artifact"], path)
+                    self.assertEqual(digest(ROOT / path), sha)
+                    self.assertEqual((e["approved_list_sha256"], e["approved_list_artifact"],
+                                      e["user_approval_date"], e["current_stage"]),
+                                     ("70b48148409e849e38d7189bcda032d1c98d74329302563a005f86a86b81279e", "refinement/decklists/Grixistax_October_2026_M7_Rev1_Approved_2026-10-25.txt", "2026-10-25", "LOCKED"))
+                    self.assertEqual(digest(ROOT / "refinement/decklists/Grixistax_October_2026_M7_Rev1_Approved_2026-10-25.txt"), "70b48148409e849e38d7189bcda032d1c98d74329302563a005f86a86b81279e")
+                    continue
                 if d == "Kess__Dissident_Mage" and e.get("m7_owner_approval_date") == "2026-10-24":
                     self.assertEqual(e["previous_approved_source_raw_sha256"], sha)
                     self.assertEqual(e["previous_approved_list_artifact"], path)
