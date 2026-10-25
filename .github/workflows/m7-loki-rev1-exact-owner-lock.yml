@@ -1,0 +1,46 @@
+name: M7 Deck 28 Loki Rev1 Exact Owner Lock
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - ".github/workflows/m7-loki-rev1-exact-owner-lock.yml"
+      - "refinement/decklists/Loki_the_Deceiver_M7_Rev1_Approved_2026-10-25.txt"
+      - "refinement/approvals/Loki_the_Deceiver_M7_Rev1_Approved_2026-10-25.md"
+      - "refinement/verification/Loki_the_Deceiver_M7_Rev1*"
+      - "refinement/verification/m7_certification_transfer/Loki__the_Deceiver_919734ad1f60e56a.json"
+      - "state/current_deck_overrides.json"
+      - "refinement/Deck_Refinement_Tracker_2026-10-12.csv"
+      - "tests/test_m7_loki_rev1_owner_lock.py"
+      - "tests/test_m7_grixistax_rev1_owner_lock.py"
+      - "tests/test_m7_kess_rev1_owner_lock.py"
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/m7-loki-rev1-exact-owner-lock.yml"
+      - "state/current_deck_overrides.json"
+      - "refinement/verification/m7_certification_transfer/Loki__the_Deceiver_919734ad1f60e56a.json"
+permissions:
+  contents: read
+jobs:
+  exact-sha-owner-lock-and-all-previous-decks:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Print tested PR head
+        run: git rev-parse HEAD
+      - name: Verify Loki exact owner approved source, legality, 13 cases and 61 other locks
+        run: python -m unittest discover -s tests -p test_m7_loki_rev1_owner_lock.py -v
+      - name: Ensure Kess and Grixistax approvals remain intact
+        run: |
+          python -m unittest discover -s tests -p test_m7_kess_rev1_owner_lock.py -v
+          python -m unittest discover -s tests -p test_m7_grixistax_rev1_owner_lock.py -v
+      - name: Enforce canonical M6 exact-case transfer gate
+        run: python scripts/verify_m7_certification_transfer.py --check
+      - name: Confirm no forged or missing M6 case provenance can pass
+        run: python -m unittest discover -s tests -p test_m7_certification_transfer.py -v
