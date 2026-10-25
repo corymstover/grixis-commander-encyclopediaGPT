@@ -1,0 +1,45 @@
+name: M7 Deck 27 Grixistax Exact Owner Lock
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - ".github/workflows/m7-grixistax-rev1-exact-owner-lock.yml"
+      - "refinement/decklists/Grixistax_October_2026_M7_Rev1_Approved_2026-10-25.txt"
+      - "refinement/approvals/Grixistax_October_2026_M7_Rev1_Approved_2026-10-25.md"
+      - "refinement/verification/Grixistax_October_2026_M7_Rev1*"
+      - "refinement/verification/m7_certification_transfer/Grixistax___October_2026_70b48148409e849e.json"
+      - "state/current_deck_overrides.json"
+      - "refinement/Deck_Refinement_Tracker_2026-10-12.csv"
+      - "tests/test_m7_grixistax_rev1_owner_lock.py"
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/m7-grixistax-rev1-exact-owner-lock.yml"
+      - "state/current_deck_overrides.json"
+      - "refinement/verification/m7_certification_transfer/Grixistax___October_2026_70b48148409e849e.json"
+
+permissions:
+  contents: read
+
+jobs:
+  exact-100-owner-approved-and-prior-61-preserved:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    steps:
+      - name: Checkout exact PR head
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Record exact head
+        run: git rev-parse HEAD
+      - name: Verify Grixistax owner approved 100 and other deck locks
+        run: python -m unittest discover -s tests -p test_m7_grixistax_rev1_owner_lock.py -v
+      - name: Enforce all M6 P0 and P1 case-source transfer receipts
+        run: python scripts/verify_m7_certification_transfer.py --check
+      - name: Reject missing or fabricated M6 case-transfer provenance
+        run: python -m unittest discover -s tests -p test_m7_certification_transfer.py -v
