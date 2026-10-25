@@ -654,6 +654,17 @@ class CanonicalGwendlynM7Rev1(unittest.TestCase):
                                  (expected_sha, expected_path, "2026-10-24", "LOCKED"))
                 self.assertEqual(digest(ROOT/expected_path), expected_sha)
                 continue
+            if deck_id == "Loki__the_Deceiver" and other.get("m7_owner_approval_date") == "2026-10-25":
+                newsha = "919734ad1f60e56a636561815d319ec1eb0fbd0c233265ad5e85064f589c7185"
+                newpath = "refinement/decklists/Loki_the_Deceiver_M7_Rev1_Approved_2026-10-25.txt"
+                self.assertEqual(other["previous_approved_list_sha256"], sha)
+                self.assertEqual(other["previous_approved_list_artifact"], artifact)
+                self.assertEqual(digest(ROOT / artifact), sha)
+                self.assertEqual((other["approved_list_sha256"], other["approved_list_artifact"],
+                                  other["user_approval_date"], other["lock_status"]),
+                                 (newsha, newpath, "2026-10-25", "LOCKED"))
+                self.assertEqual(digest(ROOT / newpath), newsha)
+                continue
             self.assertEqual((other["approved_list_sha256"],
                               other["approved_list_artifact"],
                               other["user_approval_date"],
