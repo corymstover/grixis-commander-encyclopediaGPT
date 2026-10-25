@@ -111,10 +111,12 @@ class KessM7Rev1ExactOwnerLock(unittest.TestCase):
         self.assertEqual(e["m7_archidekt_tags"], ["cEDH","Spellslinger","Combo"])
         self.assertEqual(e["m7_power_bracket"], "5 — fringe cEDH")
         self.assertEqual(e["m7_project_exceptions"], [])
-        self.assertEqual(sum(bool(v.get("m7_final_candidate_sha256")) for v in self.registry.values()),25)
+        self.assertEqual(sum(bool(v.get("m7_final_candidate_sha256")) for v in self.registry.values()),26)
         differences = {k for k,v in self.registry.items()
                        if v["approved_list_sha256"] != self.snapshot[k]}
-        self.assertEqual(differences, {ID})
+        self.assertEqual(differences, {ID, "Grixistax___October_2026"})
+        # Deck #27 is a later, independent owner approval; its exact approval,
+        # historical source, and other 61 locks have separate fail-closed tests.
         for k,e in self.registry.items():
             with self.subTest(deck=k):
                 self.assertEqual(digest(ROOT / e["approved_list_artifact"]), e["approved_list_sha256"])
