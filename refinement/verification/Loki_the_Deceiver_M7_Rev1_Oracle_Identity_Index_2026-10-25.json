@@ -1,0 +1,1628 @@
+{
+  "schema_version": 1,
+  "deck_id": "Loki__the_Deceiver",
+  "candidate_raw_sha256": "919734ad1f60e56a636561815d319ec1eb0fbd0c233265ad5e85064f589c7185",
+  "source_date": "2026-10-23",
+  "source_repository": "corymstover/GrokBotMTGCompanion",
+  "source_snapshot_path": "data/grixis/m6/oracle_snapshots/Loki__the_Deceiver_M7_Scryfall_20261023.json",
+  "source_snapshot_at_commit": "211c53a12e7b195d7a0397e1f7569296e3f76fc0",
+  "archive_snapshot_retrieved_at": "Scryfall 2026-10-23T15:45:32-0500 (live /cards/collection batches, America/Chicago; see research_challengers Scryfall_live snapshot)",
+  "selected_names_count": 95,
+  "physical_count": 100,
+  "selected_card_release_note": "Source is an Oct23 live Scryfall archive of 450 names, not an Oct25 95-name fresh live request. Some cards have future-dated reprints; pre-existing Commander-legal names are not made illegal by future reprint dates. Seven newly added names have released printings by Oct25.",
+  "all_commander_legal": true,
+  "all_in_grixis": true,
+  "cards": [
+    {
+      "cmc": 1,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{U}",
+      "name": "An Offer You Can't Refuse",
+      "oracle_id": "234a734b-ba28-4f1b-9d01-3c3e7d516590",
+      "oracle_text": "Counter target noncreature spell. Its controller creates two Treasure tokens. (They're artifacts with \"{T}, Sacrifice this token: Add one mana of any color.\")",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "released_at": "2024-11-15",
+      "set": "fdn"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}",
+      "name": "Arcane Signet",
+      "oracle_id": "0bc7f093-bef0-4f1a-852c-4b75ebf54838",
+      "oracle_text": "{T}: Add one mana of any color in your commander's color identity.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "released_at": "2026-10-02",
+      "set": "frc"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{B}{R}",
+      "name": "Avengers: Under Siege",
+      "oracle_id": "d911cf65-7273-4162-a766-7d4107699dc2",
+      "oracle_text": "(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)\nI — Create two 2/1 black Villain creature tokens with menace.\nII — This Saga deals 2 damage to each non-Villain creature and each opponent.\nIII — Create a Treasure token for each Villain you control.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Enchantment — Saga",
+      "released_at": "2026-06-26",
+      "set": "msh"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Badlands",
+      "oracle_id": "13ff3222-91cb-4796-a34e-899ed817694c",
+      "oracle_text": "({T}: Add {B} or {R}.)",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land — Swamp Mountain",
+      "released_at": "2014-06-16",
+      "set": "vma"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{B}",
+      "name": "Baron Strucker, HYDRA Overlord",
+      "oracle_id": "c91e64d4-e687-4ccd-a56e-796cff6e052c",
+      "oracle_text": "Villain spells you cast cost {1} less to cast.\nWhenever another Villain you control enters, you may have it connive. Do this only once each turn. (Draw a card, then discard a card. If you discarded a nonland card, put a +1/+1 counter on that creature.)",
+      "power": "2",
+      "toughness": "2",
+      "type_line": "Legendary Creature — Human Villain",
+      "released_at": "2026-06-26",
+      "set": "msh"
+    },
+    {
+      "cmc": 5,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}{B}{B}",
+      "name": "Black Cat, Cunning Thief",
+      "oracle_id": "f5cdb413-2b72-4dc6-b93d-2532ac2ae568",
+      "oracle_text": "When Black Cat enters, look at the top nine cards of target opponent's library, exile two of them face down, then put the rest on the bottom of their library in a random order. You may play the exiled cards for as long as they remain exiled. Mana of any type can be spent to cast spells this way.",
+      "power": "2",
+      "toughness": "3",
+      "type_line": "Legendary Creature — Human Rogue Villain",
+      "released_at": "2025-09-26",
+      "set": "spm"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{B}",
+      "name": "Black Market Connections",
+      "oracle_id": "d2664f28-49e1-46f8-a863-b217e961a57c",
+      "oracle_text": "At the beginning of your first main phase, choose one or more —\n• Sell Contraband — Create a Treasure token. You lose 1 life.\n• Buy Information — Draw a card. You lose 2 life.\n• Hire a Mercenary — Create a 3/2 colorless Shapeshifter creature token with changeling. You lose 3 life. (It is every creature type.)",
+      "power": null,
+      "toughness": null,
+      "type_line": "Enchantment",
+      "released_at": "2026-06-26",
+      "set": "msc"
+    },
+    {
+      "cmc": 9,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{8}{R}",
+      "name": "Blasphemous Act",
+      "oracle_id": "7a2484a9-04fd-41a0-8224-610c1c07ed10",
+      "oracle_text": "This spell costs {1} less to cast for each creature on the battlefield.\nBlasphemous Act deals 13 damage to each creature.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Sorcery",
+      "released_at": "2026-06-26",
+      "set": "msc"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Blood Crypt",
+      "oracle_id": "43985bbc-a0f6-4812-984e-392bc8562633",
+      "oracle_text": "({T}: Add {B} or {R}.)\nAs this land enters, you may pay 2 life. If you don't, it enters tapped.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land — Swamp Mountain",
+      "released_at": "2026-11-13",
+      "set": "trk"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Bloodstained Mire",
+      "oracle_id": "fc0707c7-d504-4ccf-a0d2-3eb6e26e7a57",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for a Swamp or Mountain card, put it onto the battlefield, then shuffle.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "released_at": "2024-06-14",
+      "set": "mh3"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{B}{R}",
+      "name": "Carnage, Crimson Chaos",
+      "oracle_id": "c0efafc6-8ffb-4908-ae64-3f391722370a",
+      "oracle_text": "Trample\nWhen Carnage enters, return target creature card with mana value 3 or less from your graveyard to the battlefield. It gains \"This creature attacks each combat if able\" and \"When this creature deals combat damage to a player, sacrifice it.\"\nMayhem {B}{R}",
+      "power": "4",
+      "toughness": "3",
+      "type_line": "Legendary Creature — Symbiote Villain",
+      "released_at": "2025-09-26",
+      "set": "spm"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Cavern of Souls",
+      "oracle_id": "89ca686a-7c72-4d8f-9290-e89635624a83",
+      "oracle_text": "As this land enters, choose a creature type.\n{T}: Add {C}.\n{T}: Add one mana of any color. Spend this mana only to cast a creature spell of the chosen type, and that spell can't be countered.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "released_at": "2023-11-17",
+      "set": "lci"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}{U}",
+      "name": "Chameleon, Master of Disguise",
+      "oracle_id": "1ce239f2-79ad-4a30-8e8f-f985045f78dc",
+      "oracle_text": "You may have Chameleon enter as a copy of a creature you control, except his name is Chameleon, Master of Disguise.\nMayhem {2}{U} (You may cast this card from your graveyard for {2}{U} if you discarded it this turn. Timing rules still apply.)",
+      "power": "2",
+      "toughness": "3",
+      "type_line": "Legendary Creature — Human Shapeshifter Villain",
+      "released_at": "2026-06-26",
+      "set": "msc"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{R}",
+      "name": "Chaos Warp",
+      "oracle_id": "07a0cba9-8768-4fd9-a3d5-b0f83b4bf8e8",
+      "oracle_text": "The owner of target permanent shuffles it into their library, then reveals the top card of their library. If it's a permanent card, they put it onto the battlefield.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "released_at": "2026-10-19",
+      "set": "mbc"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "City of Brass",
+      "oracle_id": "f25351e3-539b-4bbc-b92d-6480acf4d722",
+      "oracle_text": "Whenever this land becomes tapped, it deals 1 damage to you.\n{T}: Add one mana of any color.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "released_at": "2026-03-06",
+      "set": "tmc"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Command Tower",
+      "oracle_id": "0895c9b7-ae7d-4bb3-af17-3b75deb50a25",
+      "oracle_text": "{T}: Add one mana of any color in your commander's color identity.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "released_at": "2026-10-02",
+      "set": "frc"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{B}",
+      "name": "Cover of Darkness",
+      "oracle_id": "d78654fc-7d90-40ce-9c36-a211424d1a88",
+      "oracle_text": "As this enchantment enters, choose a creature type.\nCreatures of the chosen type have fear. (They can't be blocked except by artifact creatures and/or black creatures.)",
+      "power": null,
+      "toughness": null,
+      "type_line": "Enchantment",
+      "released_at": "2002-10-07",
+      "set": "ons"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{B}",
+      "name": "Crimson Cowl, Master of Evil",
+      "oracle_id": "2962cfc6-6557-4aee-a95a-8ca3bb06eb29",
+      "oracle_text": "Whenever one or more nontoken Villains you control attack a player, you create a 2/1 black Villain creature token with menace. (It can't be blocked except by two or more creatures.)",
+      "power": "1",
+      "toughness": "3",
+      "type_line": "Legendary Creature — Human Villain",
+      "released_at": "2026-06-26",
+      "set": "msc"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}{B}",
+      "name": "Crossbones, Malicious Mercenary",
+      "oracle_id": "ac950d10-e373-42d3-907b-ee56e45a2084",
+      "oracle_text": "Deathtouch\nWhenever another Villain you control enters, put a +1/+1 counter on Crossbones. He deals 2 damage to each opponent. This ability triggers only once each turn.",
+      "power": "3",
+      "toughness": "3",
+      "type_line": "Legendary Creature — Human Mercenary Villain",
+      "released_at": "2026-06-26",
+      "set": "msh"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "{1}{U}",
+      "name": "Cyclonic Rift",
+      "oracle_id": "d75b9c82-1b49-4c3e-a1b5-aeef57d6644b",
+      "oracle_text": "Return target nonland permanent you don't control to its owner's hand.\nOverload {6}{U} (You may cast this spell for its overload cost. If you do, change \"target\" in its text to \"each.\")",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "released_at": "2024-01-12",
+      "set": "rvr"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}{B}",
+      "name": "Deadly Rollick",
+      "oracle_id": "0456ec64-2c81-4763-a352-8ff64a4c3d6b",
+      "oracle_text": "If you control a commander, you may cast this spell without paying its mana cost.\nExile target creature.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "released_at": "2023-08-04",
+      "set": "cmm"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{R}",
+      "name": "Deflecting Swat",
+      "oracle_id": "ae120613-97d6-4393-b39d-c3e6c076f5d6",
+      "oracle_text": "If you control a commander, you may cast this spell without paying its mana cost.\nYou may choose new targets for target spell or ability.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "released_at": "2023-08-04",
+      "set": "cmm"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "{1}{B}",
+      "name": "Demonic Tutor",
+      "oracle_id": "82004860-e589-4e38-8d61-8c0210e4ea39",
+      "oracle_text": "Search your library for a card, put that card into your hand, then shuffle.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Sorcery",
+      "released_at": "2023-08-04",
+      "set": "cmm"
+    },
+    {
+      "cmc": 6,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{4}{B}{B}",
+      "name": "Doctor Doom",
+      "oracle_id": "9e4fa592-71f8-4c71-8c91-78e6326cd736",
+      "oracle_text": "When Doctor Doom enters, create two 3/3 colorless Robot Villain artifact creature tokens named Doombot.\nAs long as you control an artifact creature or a Plan, Doctor Doom has indestructible.\nAt the beginning of your end step, you draw a card and lose 1 life.",
+      "power": "3",
+      "toughness": "3",
+      "type_line": "Legendary Creature — Human Scientist Villain",
+      "released_at": "2026-06-26",
+      "set": "msh"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{U}{B}{R}",
+      "name": "Doctor Doom, King of Latveria",
+      "oracle_id": "9c9cd0fd-bfe9-409c-a9a9-146f5f4a2ef4",
+      "oracle_text": "Whenever you discard one or more land cards, each opponent loses 2 life.\nAt the beginning of combat on your turn, target Villain you control gains menace until end of turn. It connives. (Draw a card, then discard a card. If you discarded a nonland card, put a +1/+1 counter on that creature.)",
+      "power": "3",
+      "toughness": "3",
+      "type_line": "Legendary Creature — Human Noble Villain",
+      "released_at": "2026-12-18",
+      "set": "pmei"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{B}",
+      "name": "Doom Reigns Supreme",
+      "oracle_id": "f398a742-22c1-4da9-9d49-fdce2eb93d01",
+      "oracle_text": "Whenever a Villain you control enters, each opponent loses 1 life and you gain 1 life. Put a plan counter on this enchantment.\nWhen the fifth plan counter is put on this enchantment, sacrifice it. When you do, target opponent exiles the top five cards of their library. You may cast up to two spells from among the exiled cards without paying their mana costs.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Enchantment — Plan",
+      "released_at": "2026-06-26",
+      "set": "msh"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Dragonskull Summit",
+      "oracle_id": "63398c02-6fb1-481d-9d9f-81063532fbc0",
+      "oracle_text": "This land enters tapped unless you control a Swamp or a Mountain.\n{T}: Add {B} or {R}.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "released_at": "2026-06-26",
+      "set": "msc"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Drowned Catacomb",
+      "oracle_id": "819fc966-434e-470f-91e9-a38df974ad17",
+      "oracle_text": "This land enters tapped unless you control an Island or a Swamp.\n{T}: Add {U} or {B}.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "released_at": "2026-10-02",
+      "set": "frc"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{B}{B}",
+      "name": "Elektra, Daughter of the Hand",
+      "oracle_id": "b46647a1-0c91-451b-8c0b-be8fe02faee2",
+      "oracle_text": "Sneak {1}{B}{B} (You may cast this spell for {1}{B}{B} if you also return an unblocked attacker you control to hand during the declare blockers step. She enters tapped and attacking.)\nWhen Elektra enters, destroy target creature an opponent controls with power 3 or less.",
+      "power": "3",
+      "toughness": "3",
+      "type_line": "Legendary Creature — Human Ninja Villain",
+      "released_at": "2026-06-26",
+      "set": "msh"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Exotic Orchard",
+      "oracle_id": "27b047e3-0d41-45e2-98e9-9391d7923a1e",
+      "oracle_text": "{T}: Add one mana of any color that a land an opponent controls could produce.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "released_at": "2026-10-19",
+      "set": "mbc"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "{2}{U}",
+      "name": "Fierce Guardianship",
+      "oracle_id": "d09c9cba-fdd2-479b-ad5d-d05181c3e3f9",
+      "oracle_text": "If you control a commander, you may cast this spell without paying its mana cost.\nCounter target noncreature spell.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "released_at": "2023-08-04",
+      "set": "cmm"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Hall of Echoes",
+      "oracle_id": "dc0a51d4-5b7e-4987-b1fe-349fd118a625",
+      "oracle_text": "{T}: Add {C}.\n{5}: This land becomes a copy of target creature you control until end of turn. The \"legend rule\" doesn't apply to permanents you control this turn.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "released_at": "2026-10-02",
+      "set": "fra"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{B}",
+      "name": "Iron Monger, Sadistic Tycoon",
+      "oracle_id": "7324d8c0-3a30-452b-b05d-ec7b6a98666c",
+      "oracle_text": "Flying\nWhenever a creature you control connives, put a +1/+1 counter on each Villain you control.",
+      "power": "2",
+      "toughness": "2",
+      "type_line": "Legendary Artifact Creature — Human Villain",
+      "released_at": "2026-06-26",
+      "set": "msc"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Island",
+      "oracle_id": "b2c6aa39-2d2a-459c-a555-fb48ba993373",
+      "oracle_text": "({T}: Add {U}.)",
+      "power": null,
+      "toughness": null,
+      "type_line": "Basic Land — Island",
+      "released_at": "2027-04-09",
+      "set": "mdd"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "{2}{R}",
+      "name": "Jeska's Will",
+      "oracle_id": "0fd114c4-092b-4e28-b0dc-ef529f3bc73e",
+      "oracle_text": "Choose one. If you control a commander as you cast this spell, you may choose both instead.\n• Add {R} for each card in target opponent's hand.\n• Exile the top three cards of your library. You may play them this turn.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Sorcery",
+      "released_at": "2024-02-09",
+      "set": "mkc"
+    },
+    {
+      "cmc": 1,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{U}",
+      "name": "Kid Loki",
+      "oracle_id": "19ef0329-08de-4835-8079-2e791e19f3a6",
+      "oracle_text": "Each creature you control that you've put one or more +1/+1 counters on this turn has hexproof.\nWhenever you draw your second card each turn, put a +1/+1 counter on Kid Loki.",
+      "power": "1",
+      "toughness": "1",
+      "type_line": "Legendary Creature — God Hero Villain",
+      "released_at": "2026-06-26",
+      "set": "msh"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{R}",
+      "name": "Killmonger, Ruthless Usurper",
+      "oracle_id": "aff21bd1-87b0-409c-bfad-08f3690ef220",
+      "oracle_text": "Trample\nWhenever Killmonger attacks, he gets +1/+0 until end of turn for each artifact defending player controls.\nWhenever Killmonger deals combat damage to a player, that player sacrifices an artifact of their choice and you create a Treasure token.",
+      "power": "3",
+      "toughness": "3",
+      "type_line": "Legendary Creature — Human Villain",
+      "released_at": "2026-06-26",
+      "set": "msc"
+    },
+    {
+      "cmc": 5,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}{U}{U}",
+      "name": "Kindred Discovery",
+      "oracle_id": "005ee549-1bf5-478f-bc3f-3e791bd7eecf",
+      "oracle_text": "As this enchantment enters, choose a creature type.\nWhenever a creature you control of the chosen type enters or attacks, draw a card.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Enchantment",
+      "released_at": "2026-06-26",
+      "set": "msc"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{U}{U}",
+      "name": "Leader, Super-Genius",
+      "oracle_id": "bec686dd-a9ea-4db5-bc20-8e40420b9a9b",
+      "oracle_text": "If a creature you control would connive, instead you draw a card, then that creature connives.\nAt the beginning of combat on your turn, target creature you control connives. (Draw a card, then discard a card. If you discarded a nonland card, put a +1/+1 counter on that creature.)",
+      "power": "1",
+      "toughness": "3",
+      "type_line": "Legendary Creature — Gamma Scientist Villain",
+      "released_at": "2026-06-26",
+      "set": "msh"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}",
+      "name": "Lightning Greaves",
+      "oracle_id": "ca204b66-8d0c-431a-8d34-282f7c2d17da",
+      "oracle_text": "Equipped creature has haste and shroud. (It can't be the target of spells or abilities.)\nEquip {0}",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact — Equipment",
+      "released_at": "2026-06-26",
+      "set": "msc"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{U}",
+      "name": "Living Lies of Loki",
+      "oracle_id": "cbbf61b0-5dd2-4643-8857-b7a10ec76ec8",
+      "oracle_text": "This creature gets +1/+0 for each other Illusion you control.\nWhen this creature dies, draw a card.",
+      "power": "1",
+      "toughness": "3",
+      "type_line": "Creature — Illusion Villain",
+      "released_at": "2026-06-26",
+      "set": "msc"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{R}",
+      "name": "Loki's Scepter",
+      "oracle_id": "5f8941d8-f8f7-4ec3-86c3-88af8829080b",
+      "oracle_text": "When Loki's Scepter enters, gain control of target creature until end of turn. Untap that creature. Until end of turn, it becomes a Villain in addition to its other types and gains haste.\n{T}: Add one mana of any color.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Legendary Artifact",
+      "released_at": "2026-06-26",
+      "set": "msc"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{U}",
+      "name": "Loki, God of Mischief",
+      "oracle_id": "c112852f-61d5-4b94-b864-c7d0b5333b29",
+      "oracle_text": "Whenever a player or permanent becomes the target of an ability you control, draw a card. This ability triggers only once each turn.",
+      "power": "2",
+      "toughness": "1",
+      "type_line": "Legendary Creature — God Sorcerer Villain",
+      "released_at": "2026-06-26",
+      "set": "msh"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}{U}",
+      "name": "Loki, Lord of Misrule",
+      "oracle_id": "20ec130f-05b4-4fbf-a54f-5874ae7ef90f",
+      "oracle_text": "{U}, {T}: Choose target creature you control. Each creature you control other than the chosen creature becomes a copy of that creature until end of turn, except it isn't legendary. Activate only as a sorcery.",
+      "power": "3",
+      "toughness": "4",
+      "type_line": "Legendary Creature — God Sorcerer Villain",
+      "released_at": "2026-06-26",
+      "set": "msc"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{U}{B}{R}",
+      "name": "Loki, the Deceiver",
+      "oracle_id": "17e45fd8-c924-4b42-87ad-189469a8dd18",
+      "oracle_text": "Whenever Loki attacks, create a tapped and attacking token that's a copy of another target Villain you control, except it isn't legendary and it's an Illusion in addition to its other types. Sacrifice that token at the beginning of the next end step.\nWhenever one or more Villains you control deal combat damage to a player, draw a card.",
+      "power": "4",
+      "toughness": "4",
+      "type_line": "Legendary Creature — God Sorcerer Villain",
+      "released_at": "2026-06-26",
+      "set": "msc"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Luxury Suite",
+      "oracle_id": "819e1765-8325-4e6f-89c1-63ea86de369f",
+      "oracle_text": "This land enters tapped unless you have two or more opponents.\n{T}: Add {B} or {R}.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "released_at": "2026-06-26",
+      "set": "msc"
+    },
+    {
+      "cmc": 5,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}{B}{B}",
+      "name": "M.O.D.O.K.",
+      "oracle_id": "fe7cc414-42d0-4dad-8516-7a0be0860a67",
+      "oracle_text": "Flying, lifelink\nMental Organism — Pay 3 life: M.O.D.O.K. connives. Activate only during your turn. (Draw a card, then discard a card. If you discarded a nonland card, put a +1/+1 counter on this creature.)\nDesigned Only for Killing — Creatures your opponents control get -1/-1.",
+      "power": "2",
+      "toughness": "2",
+      "type_line": "Legendary Artifact Creature — Villain",
+      "released_at": "2026-06-26",
+      "set": "msh"
+    },
+    {
+      "cmc": 5,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}{B}{B}",
+      "name": "M.O.D.O.K., Evil Intellect",
+      "oracle_id": "59f75a19-95cd-4ac8-94f1-27c1f915c34a",
+      "oracle_text": "Flying\nWhenever you draw your second card each turn, target opponent sacrifices a nontoken creature of their choice.",
+      "power": "3",
+      "toughness": "5",
+      "type_line": "Legendary Artifact Creature — Villain",
+      "released_at": "2026-06-26",
+      "set": "msc"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{B}{R}",
+      "name": "Madame Hydra",
+      "oracle_id": "d812c8e3-a475-4ad2-a93f-7208ad873676",
+      "oracle_text": "Whenever you cast a Villain spell, create a 2/1 black Villain creature token with menace. (It can't be blocked except by two or more creatures.)",
+      "power": "2",
+      "toughness": "3",
+      "type_line": "Legendary Creature — Human Villain",
+      "released_at": "2026-06-26",
+      "set": "msh"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Mana Confluence",
+      "oracle_id": "d0ee5bdc-2b69-4b73-9a20-ffcc18783b29",
+      "oracle_text": "{T}, Pay 1 life: Add one mana of any color.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "released_at": "2014-05-02",
+      "set": "jou"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{U}{U}",
+      "name": "Mana Drain",
+      "oracle_id": "74d3277a-38e5-4732-afed-084a56148f20",
+      "oracle_text": "Counter target spell. At the beginning of your next main phase, add an amount of {C} equal to that spell's mana value.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Instant",
+      "released_at": "2022-07-08",
+      "set": "2x2"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Morphic Pool",
+      "oracle_id": "bd004c9d-771e-4e63-a97d-a2259c096af8",
+      "oracle_text": "This land enters tapped unless you have two or more opponents.\n{T}: Add {U} or {B}.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "released_at": "2022-06-10",
+      "set": "clb"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Mountain",
+      "oracle_id": "a3fb7228-e76b-4e96-a40e-20b5fed75685",
+      "oracle_text": "({T}: Add {R}.)",
+      "power": null,
+      "toughness": null,
+      "type_line": "Basic Land — Mountain",
+      "released_at": "2027-04-09",
+      "set": "mdd"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}{U}",
+      "name": "Mysterio, Master of Illusion",
+      "oracle_id": "40f664d8-4c73-44aa-8fb1-d38771a42520",
+      "oracle_text": "When Mysterio enters, create a 3/3 blue Illusion Villain creature token for each nontoken Villain you control. Exile those tokens when Mysterio leaves the battlefield.",
+      "power": "3",
+      "toughness": "3",
+      "type_line": "Legendary Creature — Human Villain",
+      "released_at": "2025-09-26",
+      "set": "spm"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{U} // {1}{U}{B}{R}",
+      "name": "Norman Osborn // Green Goblin",
+      "oracle_id": "aa5b06a4-90c3-45e7-ab83-cb5c96ded21d",
+      "oracle_text": "Norman Osborn can't be blocked.\nWhenever Norman Osborn deals combat damage to a player, he connives. (Draw a card, then discard a card. If you discarded a nonland card, put a +1/+1 counter on this creature.)\n{1}{U}{B}{R}: Transform Norman Osborn. Activate only as a sorcery.\n//\nFlying, menace\nSpells you cast from your graveyard cost {2} less to cast.\nGoblin Formula — Each nonland card in your graveyard has mayhem. The mayhem cost is equal to its mana cost. (You may cast a card from your graveyard for its mayhem cost if you discarded it this turn. Timing rules still apply.)",
+      "power": "1",
+      "toughness": "1",
+      "type_line": "Legendary Creature — Human Scientist Villain // Legendary Creature — Goblin Human Villain",
+      "released_at": "2025-09-26",
+      "set": "spm"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Oscorp Industries",
+      "oracle_id": "f432eb6a-f1bf-4ce7-b915-1488dccb4bb9",
+      "oracle_text": "This land enters tapped.\nWhen this land enters from a graveyard, you lose 2 life.\n{T}: Add {U}, {B}, or {R}.\nMayhem (You may play this card from your graveyard if you discarded it this turn. Timing rules still apply.)",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "released_at": "2025-09-26",
+      "set": "spm"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Otawara, Soaring City",
+      "oracle_id": "e9b6a394-691c-425a-9307-76d8edc7375e",
+      "oracle_text": "{T}: Add {U}.\nChannel — {3}{U}, Discard this card: Return target artifact, creature, enchantment, or planeswalker to its owner's hand. This ability costs {1} less to activate for each legendary creature you control.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Legendary Land",
+      "released_at": "2022-02-18",
+      "set": "neo"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}",
+      "name": "Patchwork Banner",
+      "oracle_id": "4fb00dbe-1f82-4ba6-b18c-97e816d10d3a",
+      "oracle_text": "As this artifact enters, choose a creature type.\nCreatures you control of the chosen type get +1/+1.\n{T}: Add one mana of any color.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "released_at": "2026-06-26",
+      "set": "msc"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Polluted Delta",
+      "oracle_id": "ef86989d-ce80-4e55-aece-7d11710eeffa",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for an Island or Swamp card, put it onto the battlefield, then shuffle.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "released_at": "2024-06-14",
+      "set": "mh3"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{U}{B}",
+      "name": "Prowler, Clawed Thief",
+      "oracle_id": "76742bfc-ae99-4b06-b29d-e0e41d92ae14",
+      "oracle_text": "Menace (This creature can't be blocked except by two or more creatures.)\nWhenever another Villain you control enters, Prowler connives. (Draw a card, then discard a card. If you discarded a nonland card, put a +1/+1 counter on this creature.)",
+      "power": "2",
+      "toughness": "3",
+      "type_line": "Legendary Creature — Human Rogue Villain",
+      "released_at": "2026-06-26",
+      "set": "msc"
+    },
+    {
+      "cmc": 1,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{B}",
+      "name": "Reanimate",
+      "oracle_id": "a044474a-cd72-4e9d-bd8d-a08f2de9cdc0",
+      "oracle_text": "Put target creature card from a graveyard onto the battlefield under your control. You lose life equal to that card's mana value.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Sorcery",
+      "released_at": "2024-09-27",
+      "set": "dsc"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{U}{R}",
+      "name": "Red Ghost, Intangible Genius",
+      "oracle_id": "9984d950-29dc-4d6b-8750-8d1bf86ea98f",
+      "oracle_text": "Ward {2}\nRed Ghost can't be blocked.\nWhenever you draw your second card each turn, create a 3/3 red Ape Villain creature token with haste.",
+      "power": "2",
+      "toughness": "3",
+      "type_line": "Legendary Creature — Human Scientist Villain",
+      "released_at": "2026-06-26",
+      "set": "msc"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "{2}{U}",
+      "name": "Rhystic Study",
+      "oracle_id": "53236dd7-845a-444c-96d5-f41ed7325d8f",
+      "oracle_text": "Whenever an opponent casts a spell, you may draw a card unless that player pays {1}.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Enchantment",
+      "released_at": "2022-12-02",
+      "set": "j22"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{4}",
+      "name": "Roaming Throne",
+      "oracle_id": "3640c29b-1534-4952-b297-619ade948431",
+      "oracle_text": "Ward {2}\nAs this creature enters, choose a creature type.\nThis creature is the chosen type in addition to its other types.\nIf a triggered ability of another creature you control of the chosen type triggers, it triggers an additional time.",
+      "power": "4",
+      "toughness": "4",
+      "type_line": "Artifact Creature — Golem",
+      "released_at": "2023-11-17",
+      "set": "lci"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}{U}",
+      "name": "Sakashima of a Thousand Faces",
+      "oracle_id": "8ecdaf4b-4442-42da-9714-4257a83faf50",
+      "oracle_text": "You may have Sakashima enter as a copy of another creature you control, except it has Sakashima's other abilities.\nThe \"legend rule\" doesn't apply to permanents you control.\nPartner (You can have two commanders if both have partner.)",
+      "power": "3",
+      "toughness": "1",
+      "type_line": "Legendary Creature — Human Rogue",
+      "released_at": "2020-11-20",
+      "set": "cmr"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Scalding Tarn",
+      "oracle_id": "cb027150-848c-4a66-88ad-e20222304dd8",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for an Island or Mountain card, put it onto the battlefield, then shuffle.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "released_at": "2021-06-18",
+      "set": "mh2"
+    },
+    {
+      "cmc": 1,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}",
+      "name": "Sol Ring",
+      "oracle_id": "6ad8011d-3471-4369-9d68-b264cc027487",
+      "oracle_text": "{T}: Add {C}{C}.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "released_at": "2026-10-02",
+      "set": "frc"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}{U}",
+      "name": "Spark Double",
+      "oracle_id": "8dcb35e5-ae44-455f-86e3-4a77d496ff34",
+      "oracle_text": "You may have this creature enter as a copy of a creature or planeswalker you control, except it enters with an additional +1/+1 counter on it if it's a creature, it enters with an additional loyalty counter on it if it's a planeswalker, and it isn't legendary.",
+      "power": "0",
+      "toughness": "0",
+      "type_line": "Creature — Illusion",
+      "released_at": "2024-01-12",
+      "set": "rvr"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Steam Vents",
+      "oracle_id": "17039058-822d-409f-938c-b727a366ba63",
+      "oracle_text": "({T}: Add {U} or {R}.)\nAs this land enters, you may pay 2 life. If you don't, it enters tapped.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land — Island Mountain",
+      "released_at": "2026-11-13",
+      "set": "trk"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{R}",
+      "name": "Stilt-Man, Towering Terror",
+      "oracle_id": "8ae1bda5-8f70-48ec-9df0-89e58a4ab21c",
+      "oracle_text": "Reach\nWhenever one or more Villains you control deal combat damage to a player, gain control of target noncreature, nonland permanent that player controls until the end of your next turn. It gains \"This permanent can't be sacrificed\" until the end of your next turn.",
+      "power": "4",
+      "toughness": "2",
+      "type_line": "Legendary Creature — Human Rogue Villain",
+      "released_at": "2026-06-26",
+      "set": "msc"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Sulfur Falls",
+      "oracle_id": "6a6c5e17-6465-4a1f-9d63-8a3ce2edc522",
+      "oracle_text": "This land enters tapped unless you control an Island or a Mountain.\n{T}: Add {U} or {R}.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "released_at": "2026-10-02",
+      "set": "frc"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}",
+      "name": "Sundial of the Infinite",
+      "oracle_id": "79d46e09-2548-440f-9c02-3c3dc39a0cd1",
+      "oracle_text": "{1}, {T}: End the turn. Activate only during your turn. (Exile all spells and abilities from the stack. Discard down to your maximum hand size. Damage wears off, and \"this turn\" and \"until end of turn\" effects end.)",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "released_at": "2011-07-15",
+      "set": "m12"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Swamp",
+      "oracle_id": "56719f6a-1a6c-4c0a-8d21-18f7d7350b68",
+      "oracle_text": "({T}: Add {B}.)",
+      "power": null,
+      "toughness": null,
+      "type_line": "Basic Land — Swamp",
+      "released_at": "2027-04-09",
+      "set": "mdd"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}",
+      "name": "Swiftfoot Boots",
+      "oracle_id": "c8b143ad-43ec-4e0d-a440-e348daa31391",
+      "oracle_text": "Equipped creature has hexproof and haste. (It can't be the target of spells or abilities your opponents control. It can attack and {T} no matter when it came under your control.)\nEquip {1} ({1}: Attach to target creature you control. Equip only as a sorcery.)",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact — Equipment",
+      "released_at": "2026-10-19",
+      "set": "mbc"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}",
+      "name": "Talisman of Creativity",
+      "oracle_id": "14d2979d-5728-42d7-a027-0eb1f754655d",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {U} or {R}. This artifact deals 1 damage to you.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "released_at": "2026-10-02",
+      "set": "frc"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}",
+      "name": "Talisman of Dominance",
+      "oracle_id": "4c0a0448-b9d6-43a0-8549-64066dac63f0",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {U} or {B}. This artifact deals 1 damage to you.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "released_at": "2026-10-02",
+      "set": "frc"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}",
+      "name": "Talisman of Indulgence",
+      "oracle_id": "1d9aeaaa-66f6-41cb-9bac-162d6fd8662c",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {B} or {R}. This artifact deals 1 damage to you.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "released_at": "2026-10-02",
+      "set": "frc"
+    },
+    {
+      "cmc": 4,
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{U}{B}",
+      "name": "Taskmaster, Mercenary Mimic",
+      "oracle_id": "dcd97730-b793-4c0c-b158-625ac3656b4a",
+      "oracle_text": "Photographic Reflexes — At the beginning of your first main phase, until your next turn, Taskmaster becomes a copy of up to one target creature on the battlefield or creature card in a graveyard, except his name is Taskmaster, Mercenary Mimic and he's a legendary Human Mercenary Villain creature.",
+      "power": "3",
+      "toughness": "5",
+      "type_line": "Legendary Creature — Human Mercenary Villain",
+      "released_at": "2026-06-26",
+      "set": "msh"
+    },
+    {
+      "cmc": 6,
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{4}{B}{R}",
+      "name": "The Master, Multiplied",
+      "oracle_id": "0741e5b5-35c8-4f4d-b49f-c53e960240b9",
+      "oracle_text": "Myriad\nThe \"legend rule\" doesn't apply to creature tokens you control.\nTriggered abilities you control can't cause you to sacrifice or exile creature tokens you control.",
+      "power": "4",
+      "toughness": "3",
+      "type_line": "Legendary Creature — Time Lord Rogue",
+      "released_at": "2023-10-13",
+      "set": "who"
+    },
+    {
+      "cmc": 2,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{B}",
+      "name": "The Soul Stone",
+      "oracle_id": "92cfba68-12f6-4f97-9187-0f6a39656a0f",
+      "oracle_text": "Indestructible\n{T}: Add {B}.\n{6}{B}, {T}, Exile a creature you control: Harness The Soul Stone. (Once harnessed, its ∞ ability is active.)\n∞ — At the beginning of your upkeep, return target creature card from your graveyard to the battlefield.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Legendary Artifact — Infinity Stone",
+      "released_at": "2025-09-26",
+      "set": "spm"
+    },
+    {
+      "cmc": 7,
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{5}{U}{R}",
+      "name": "The Squadron Sinister",
+      "oracle_id": "3b7352e6-6508-491c-9935-426a6eebb429",
+      "oracle_text": "Flying, haste\nOther Villains you control get +2/+2 and have flying and haste.\nMayhem {3}{U}{R} (You may cast this card from your graveyard for {3}{U}{R} if you discarded it this turn. Timing rules still apply.)",
+      "power": "5",
+      "toughness": "5",
+      "type_line": "Legendary Creature — Human Villain",
+      "released_at": "2026-06-26",
+      "set": "msc"
+    },
+    {
+      "cmc": 6,
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{4}{U}{U}",
+      "name": "Titan of Littjara",
+      "oracle_id": "f62250c6-0832-46c8-a800-806589504f5f",
+      "oracle_text": "As this creature enters, choose a creature type.\nThis creature is the chosen type in addition to its other types.\nWhenever this creature enters or attacks, you may draw a card for each other creature you control that shares a creature type with it. If you do, discard a card.",
+      "power": "6",
+      "toughness": "6",
+      "type_line": "Creature — Illusion",
+      "released_at": "2023-08-04",
+      "set": "cmm"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{B}",
+      "name": "Tombstone, Career Criminal",
+      "oracle_id": "6ad2cbb6-2291-420c-bfc8-ed3f079b59bf",
+      "oracle_text": "When Tombstone enters, return target Villain card from your graveyard to your hand.\nVillain spells you cast cost {1} less to cast.",
+      "power": "2",
+      "toughness": "2",
+      "type_line": "Legendary Creature — Human Villain",
+      "released_at": "2026-06-26",
+      "set": "msc"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{B}",
+      "name": "Toxic Deluge",
+      "oracle_id": "afaef788-34d1-460b-b884-9d7ae6ddeb18",
+      "oracle_text": "As an additional cost to cast this spell, pay X life.\nAll creatures get -X/-X until end of turn.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Sorcery",
+      "released_at": "2026-06-26",
+      "set": "msc"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Training Center",
+      "oracle_id": "e3570ac7-c593-40e3-bbd6-ec3da6d8158d",
+      "oracle_text": "This land enters tapped unless you have two or more opponents.\n{T}: Add {U} or {R}.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "released_at": "2023-08-04",
+      "set": "cmm"
+    },
+    {
+      "cmc": 6,
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{4}{B}{B}",
+      "name": "Ultimo, Civilization's End",
+      "oracle_id": "43d79ee6-8ba1-4ec9-9bb2-907ed8401a2f",
+      "oracle_text": "Menace (This creature can't be blocked except by two or more creatures.)\nWhen Ultimo enters, each opponent sacrifices a creature of their choice.\n{2}{B}, Discard this card: Each opponent sacrifices a creature of their choice.",
+      "power": "6",
+      "toughness": "5",
+      "type_line": "Legendary Artifact Creature — Robot Villain",
+      "released_at": "2026-06-26",
+      "set": "msc"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{U}{B}",
+      "name": "Ultron, Unlimited",
+      "oracle_id": "436501ca-0998-43fc-975f-87c2d34caab3",
+      "oracle_text": "Flying\nWhenever Ultron attacks, he connives. (Draw a card, then discard a card. If you discarded a nonland card, put a +1/+1 counter on this creature.)\nWhenever a creature you control connives, you may pay {1}. If you do, create a 2/2 colorless Robot Villain artifact creature token.",
+      "power": "2",
+      "toughness": "2",
+      "type_line": "Legendary Artifact Creature — Robot Villain",
+      "released_at": "2026-06-26",
+      "set": "msc"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Underground Sea",
+      "oracle_id": "4b22be3a-8ce1-47d1-b82e-6c3ccfb0548b",
+      "oracle_text": "({T}: Add {U} or {B}.)",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land — Island Swamp",
+      "released_at": "2014-06-16",
+      "set": "vma"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Urborg, Tomb of Yawgmoth",
+      "oracle_id": "db6174d7-211d-4817-b8e4-8384594c83f9",
+      "oracle_text": "Each land is a Swamp in addition to its other land types.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Legendary Land",
+      "released_at": "2021-03-19",
+      "set": "tsr"
+    },
+    {
+      "cmc": 3,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}",
+      "name": "Urza's Incubator",
+      "oracle_id": "b380c04b-0bce-4328-8f0a-1425e48bee72",
+      "oracle_text": "As this artifact enters, choose a creature type.\nCreature spells of the chosen type cost {2} less to cast.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Artifact",
+      "released_at": "2024-06-14",
+      "set": "mh3"
+    },
+    {
+      "cmc": 1,
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{R}",
+      "name": "Vandalblast",
+      "oracle_id": "3567c3c8-b3c7-45b7-935b-b1fdbc973720",
+      "oracle_text": "Destroy target artifact you don't control.\nOverload {4}{R} (You may cast this spell for its overload cost. If you do, change \"target\" in its text to \"each.\")",
+      "power": null,
+      "toughness": null,
+      "type_line": "Sorcery",
+      "released_at": "2026-06-26",
+      "set": "msc"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Villainous Hideout",
+      "oracle_id": "cd2888aa-71f3-47ee-ba33-7bb95d5bc836",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add one mana of any color. Spend this mana only to cast a Villain spell or to activate an ability of a Villain source.\n{3}, {T}: Target Villain you control connives. Activate only as a sorcery. (Draw a card, then discard a card. If you discarded a nonland card, put a +1/+1 counter on that creature.)",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land",
+      "released_at": "2026-06-26",
+      "set": "msh"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Volcanic Island",
+      "oracle_id": "c718911c-c955-4eb9-9e16-be4bd49a4e4e",
+      "oracle_text": "({T}: Add {U} or {R}.)",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land — Island Mountain",
+      "released_at": "2014-06-16",
+      "set": "vma"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Watery Grave",
+      "oracle_id": "fc9ec820-4245-4a96-b009-5308a818ca58",
+      "oracle_text": "({T}: Add {U} or {B}.)\nAs this land enters, you may pay 2 life. If you don't, it enters tapped.",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land — Island Swamp",
+      "released_at": "2026-11-13",
+      "set": "trk"
+    },
+    {
+      "cmc": 0,
+      "color_identity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "name": "Xander's Lounge",
+      "oracle_id": "8291543f-d086-48aa-b2b7-5481ca8c9198",
+      "oracle_text": "({T}: Add {U}, {B}, or {R}.)\nThis land enters tapped.\nCycling {3} ({3}, Discard this card: Draw a card.)",
+      "power": null,
+      "toughness": null,
+      "type_line": "Land — Island Swamp Mountain",
+      "released_at": "2022-04-29",
+      "set": "snc"
+    }
+  ]
+}
