@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-10-25T08:24:23.879668+00:00",
-  "cache_generated_at_utc": "2026-10-24T08:51:51.010299+00:00",
-  "bulk_updated_at": "2026-10-23T21:05:45.137+00:00",
-  "cache_sha256": "f5c1ac57a84d3d0f15909800ff2d9efeb68c731a4838647e53e4e98a8983df4b",
+  "generated_at_utc": "2026-10-25T09:06:56.594079+00:00",
+  "cache_generated_at_utc": "2026-10-25T08:51:14.630404+00:00",
+  "bulk_updated_at": "2026-10-24T21:05:46.836+00:00",
+  "cache_sha256": "3eb310c3d16388e9c7ae18bd82fb884aca4a4953b7cb5a90c8845584b64f9146",
   "official_banlist_checkpoint": "refinement/verification/Retrospective_1_to_8_Official_Banlist_Checkpoint_2026-10-14.md",
   "decks": [
     {
