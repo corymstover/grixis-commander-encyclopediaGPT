@@ -107,7 +107,7 @@ class GrixistaxM7Rev1ExactOwnerLock(unittest.TestCase):
         self.assertIn("Damping Sphere", receipt)
         self.assertIn("Sheoldred", receipt)
         self.assertIn("not", verification.lower())
-        self.assertIn("does not establish empirical", receipt.lower())
+        self.assertIn("establish empirical multiplayer win rates", receipt.lower())
         self.assertIn("15", verification)
 
     def test_only_target_registry_change_after_prior_kess_snapshot_and_tracker_reconciled(self):
