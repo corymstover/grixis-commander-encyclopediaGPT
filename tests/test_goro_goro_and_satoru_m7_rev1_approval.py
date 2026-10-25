@@ -347,6 +347,17 @@ class CanonicalGoroM7Rev1(unittest.TestCase):
                                      (newsha, newpath, "2026-10-25", "LOCKED"))
                     self.assertEqual(digest(ROOT / newpath), newsha)
                     continue
+                if d == "Lord_Xander__the_Collector" and e.get("m7_owner_approval_date") == "2026-10-25":
+                    newsha = "de348618961269083a44a3f3e05a7f0be7ddbd7e943da0ac82a115e5e4aeb6cd"
+                    newpath = "refinement/decklists/Lord_Xander_the_Collector_M7_Rev1_Approved_2026-10-25.txt"
+                    self.assertEqual(e["previous_approved_list_sha256"], sha)
+                    self.assertEqual(e["previous_approved_list_artifact"], path)
+                    self.assertEqual(digest(ROOT / path), sha)
+                    self.assertEqual((e["approved_list_sha256"], e["approved_list_artifact"],
+                                      e["user_approval_date"], e["current_stage"]),
+                                     (newsha, newpath, "2026-10-25", "LOCKED"))
+                    self.assertEqual(digest(ROOT / newpath), newsha)
+                    continue
                 self.assertEqual((e["approved_list_sha256"], e["approved_list_artifact"],
                                   e["user_approval_date"], e["current_stage"]),
                                  (sha, path, date, stage))

@@ -675,6 +675,17 @@ class CanonicalGwendlynM7Rev1(unittest.TestCase):
                                  (newsha, newpath, "2026-10-25", "LOCKED"))
                 self.assertEqual(digest(ROOT / newpath), newsha)
                 continue
+            if deck_id == "Lord_Xander__the_Collector" and other.get("m7_owner_approval_date") == "2026-10-25":
+                newsha = "de348618961269083a44a3f3e05a7f0be7ddbd7e943da0ac82a115e5e4aeb6cd"
+                newpath = "refinement/decklists/Lord_Xander_the_Collector_M7_Rev1_Approved_2026-10-25.txt"
+                self.assertEqual(other["previous_approved_list_sha256"], sha)
+                self.assertEqual(other["previous_approved_list_artifact"], artifact)
+                self.assertEqual(digest(ROOT / artifact), sha)
+                self.assertEqual((other["approved_list_sha256"], other["approved_list_artifact"],
+                                  other["user_approval_date"], other["lock_status"]),
+                                 (newsha, newpath, "2026-10-25", "LOCKED"))
+                self.assertEqual(digest(ROOT / newpath), newsha)
+                continue
             self.assertEqual((other["approved_list_sha256"],
                               other["approved_list_artifact"],
                               other["user_approval_date"],
