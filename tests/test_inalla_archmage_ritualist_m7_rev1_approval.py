@@ -603,6 +603,18 @@ class InallaM7Rev1Approval(unittest.TestCase):
                                      (newsha, newpath, "2026-10-25", "LOCKED"))
                     self.assertEqual(digest(ROOT / newpath), newsha)
                     continue
+                if deckid == "Lord_Xander__the_Collector" and r.get("m7_owner_approval_date") == "2026-10-25":
+                    newsha = "de348618961269083a44a3f3e05a7f0be7ddbd7e943da0ac82a115e5e4aeb6cd"
+                    newpath = "refinement/decklists/Lord_Xander_the_Collector_M7_Rev1_Approved_2026-10-25.txt"
+                    self.assertEqual(r["previous_approved_list_sha256"], sha)
+                    self.assertEqual(r["previous_approved_list_artifact"], path)
+                    self.assertEqual(digest(ROOT / path), sha)
+                    self.assertEqual(r["approved_list_sha256"], newsha)
+                    self.assertEqual(r["approved_list_artifact"], newpath)
+                    self.assertEqual(r["user_approval_date"], "2026-10-25")
+                    self.assertEqual(r["lock_status"], "LOCKED")
+                    self.assertEqual(digest(ROOT / newpath), newsha)
+                    continue
                 self.assertEqual(r["approved_list_sha256"], sha)
                 self.assertEqual(r["approved_list_artifact"], path)
                 self.assertEqual(r["user_approval_date"], approved_date)
