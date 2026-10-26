@@ -32,7 +32,7 @@
         "payable_fixture": "Beginning of own combat with Mishra on battlefield and owned noncreature artifact in play as valid target; source retains MV six.",
         "positive_assertion": "A hasty 4/4 Mishra's Warform artifact creature with copied MV and delayed sacrifice is created.",
         "adversarial_assertion": "Invalid timing, absent Mishra, opponent-controlled source, creature source or removal before resolution rejects the copy.",
-        "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40314618872",
+        "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40314824792",
         "scope": "EXACT_APPROVED_100",
         "tested_raw_sha256": "0fa7b00d9d74b208f3fd5783b30aa190c4e5b17e72ea64851f895315f05083a0",
         "coverage_note": "Finite source-mapped positive/adversarial predicate tests, not general Magic simulation."
@@ -46,7 +46,7 @@
         "payable_fixture": "Mishra and Determined Iteration both present, own beginning of combat; controller orders Mishra first.",
         "positive_assertion": "Warform exists when Iteration populate resolves and gets copied.",
         "adversarial_assertion": "Reversed trigger order with no preexisting token gives no Iteration-populated Warform.",
-        "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40314618872",
+        "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40314824792",
         "scope": "EXACT_APPROVED_100",
         "tested_raw_sha256": "0fa7b00d9d74b208f3fd5783b30aa190c4e5b17e72ea64851f895315f05083a0",
         "coverage_note": "Finite source-mapped positive/adversarial predicate tests, not general Magic simulation."
@@ -60,7 +60,7 @@
         "payable_fixture": "Five-MV copied artifact remains until postcombat, available as sacrifice to Bay; Transmute checks sacrificed/source and searched MV.",
         "positive_assertion": "Copy retains MV 5, Bay can seek MV 6 after cost; Transmute higher MV requires difference payment.",
         "adversarial_assertion": "Bay cannot seek MV 7 from 5-MV source or sacrifice already absent source; Transmute has no negative mana payment.",
-        "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40314618872",
+        "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40314824792",
         "scope": "EXACT_APPROVED_100",
         "tested_raw_sha256": "0fa7b00d9d74b208f3fd5783b30aa190c4e5b17e72ea64851f895315f05083a0",
         "coverage_note": "Finite source-mapped positive/adversarial predicate tests, not general Magic simulation."
@@ -74,7 +74,7 @@
         "payable_fixture": "Machine God's Effigy chose Master Transmuter on entry, is a noncreature artifact with copied abilities and added blue tap ability.",
         "positive_assertion": "Mishra may target noncreature Effigy; resulting hasty Warform has copied creature abilities plus tap for blue.",
         "adversarial_assertion": "Effigy that is itself a creature is not a legal Mishra noncreature-artifact target.",
-        "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40314618872",
+        "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40314824792",
         "scope": "EXACT_APPROVED_100",
         "tested_raw_sha256": "0fa7b00d9d74b208f3fd5783b30aa190c4e5b17e72ea64851f895315f05083a0",
         "coverage_note": "Finite source-mapped positive/adversarial predicate tests, not general Magic simulation."
@@ -88,7 +88,7 @@
         "payable_fixture": "Controlled Mishra triggers at beginning of combat with valid source target; opponent removes commander after ability on stack.",
         "positive_assertion": "Removal after trigger creation does not remove ability, and source still valid allows resolution.",
         "adversarial_assertion": "Removal before combat trigger or removal of target before resolution means no Warform.",
-        "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40314618872",
+        "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40314824792",
         "scope": "EXACT_APPROVED_100",
         "tested_raw_sha256": "0fa7b00d9d74b208f3fd5783b30aa190c4e5b17e72ea64851f895315f05083a0",
         "coverage_note": "Finite source-mapped positive/adversarial predicate tests, not general Magic simulation."
@@ -211,6 +211,8 @@
       "F2",
       "F3"
     ],
-    "m6_blueprint_historical_status": "DESIGN_ONLY_UNIMPLEMENTED_NOT_RUN"
+    "m6_blueprint_historical_status": "DESIGN_ONLY_UNIMPLEMENTED_NOT_RUN",
+    "canonical_exact_p0_regression_success_run": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40314824792",
+    "canonical_transfer_success_run": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40314826984"
   }
 }
