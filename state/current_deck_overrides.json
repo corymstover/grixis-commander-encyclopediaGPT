@@ -1092,7 +1092,7 @@
       "m7_project_exceptions": [],
       "m7_verified_100_physical": true,
       "m7_verification_artifact": "refinement/verification/Missy_M7_Rev1_Approved_2026-10-26_Verification.md",
-      "m7_certification_transfer_artifact": "refinement/verification/m7_certification_transfer/Missy_f3f8ffa671cef5df9.json",
+      "m7_certification_transfer_artifact": "refinement/verification/m7_certification_transfer/Missy_f3f8ffa671cef5df.json",
       "historical_decision_closeout_artifact": "refinement/decisions/Missy_Candidate_Decisions_2026-10-15.md"
     },
     "Nathan_Drake__Treasure_Hunter": {
