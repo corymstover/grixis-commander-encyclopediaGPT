@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "deck_id": "Mairsil__the_Pretender",
+  "approved_raw_sha256": "fd5e44773c829311254193d5c6d4433676e787743249451cc37a7345b0cf83ad",
+  "approved_artifact": "refinement/decklists/Mairsil_the_Pretender_M7_Rev1_Approved_2026-10-25.txt",
+  "owner_approval_receipt": "refinement/approvals/Mairsil_the_Pretender_M7_Rev1_Approved_2026-10-25.md",
+  "engineering": {
+    "pr_url": "https://github.com/corymstover/GrokBotMTGCompanion/pull/713",
+    "head_sha": "6f82a3635a5f84c1c6a081831348b41addd266e3",
+    "grok_first_pass_ref": "data/grixis/m6/review_packets/mairsil-the-pretender.json",
+    "independent_review_ref": "data/grixis/m6/owner_pass_c_substitute/Mairsil__the_Pretender/final_disposition.md (owner-equivalent but non-independent under documented waiver)",
+    "m7_decision_packet_ref": "data/grixis/m7/decision_reviews/Mairsil__the_Pretender_rev1.json",
+    "m7_decision_gate_command": "python scripts/grixis_m7_decision_gate.py --check --file data/grixis/m7/decision_reviews/Mairsil__the_Pretender_rev1.json",
+    "m7_decision_gate_ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40271014484",
+    "oracle_legality_ref": "data/grixis/m7/oracle_snapshots/Mairsil_the_Pretender_Rev1_P0_Scryfall_20261026.json (10 P0 card records); previous exact-100 Oct14 canonical legality audit"
+  },
+  "m6_transfer": {
+    "plan_source_path": "data/grixis/m6/test_blueprints/Mairsil__the_Pretender.json",
+    "plan_blob_sha": "e696c3c125ec11578a32b17e6859750d82a1845f",
+    "ij_receipt_ref": "data/grixis/m6/ij/input_receipts/mairsil-the-pretender.json; retrospective exact P0 run https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40277714756",
+    "ij_scope": "TRANSFERRED_WITH_CASE_MAPPING",
+    "revision_diff_and_validity_reason": "The historical I/J source receipt only attested bytes and marks phase_b_replayed=false, and cannot by itself be called certified gameplay. The owner-approved M7 Rev1 100 changes exactly six cards versus Oct14; the first #713 review only ran five structural/decision tests. A new evidence-only PR #715, merged squash 88fee83d85072744b9a90da12192ad777f85e897, executed all five source-defined P0 cases C1/K1/K2/K3/F1 with full exact-100 candidate SHA, ten relevant fresh Oracle card records and source-payable positive/adversarial finite fixtures. The eleven P1 source cases remain explicitly deferred with individual scope consequences; no historical generator rerun, global I/J seal or multiplayer win probability is manufactured. Canonical Mairsil list and its owner approval were NOT altered.",
+    "P0": [
+      {
+        "case_id": "C1",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_mairsil_rev1_case_transfer.py::TestMairsilExactM7P0.test_C1_own_artifact_creature_cage_hand_grave_and_invalid_object",
+        "execution_command": "python -m unittest discover -s tests -p test_m7_mairsil_rev1_case_transfer.py -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Mairsil_the_Pretender_Rev1_P0_Scryfall_20261026.json",
+        "payable_fixture": "Mairsil enters: cage owner's Asmodeus creature from hand and Displacer Kitten creature from graveyard, moving actual objects to owner's exile.",
+        "positive_assertion": "Both source objects leave originating zones, gain cage counters, and are available to Mairsil as owned exiled abilities.",
+        "adversarial_assertion": "Rhystic Study enchantment in hand and opponent-owned Pack Rat/grave cannot be selected as valid Mairsil cage sources.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40277714756",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "fd5e44773c829311254193d5c6d4433676e787743249451cc37a7345b0cf83ad"
+      },
+      {
+        "case_id": "K1",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_mairsil_rev1_case_transfer.py::TestMairsilExactM7P0.test_K1_once_per_object_essence_flux_kitten_and_missing_blink",
+        "execution_command": "python -m unittest discover -s tests -p test_m7_mairsil_rev1_case_transfer.py -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Mairsil_the_Pretender_Rev1_P0_Scryfall_20261026.json",
+        "payable_fixture": "Mairsil owns caged Asmodeus; one acquired draw-seven use, then legal Essence Flux or Kitten noncreature spell blink produces a distinct object ID.",
+        "positive_assertion": "The new Mairsil object can use the same caged ability once on its own activation set and the owned exile remains caged.",
+        "adversarial_assertion": "Second use on same Mairsil object is rejected; missing legal blink/precondition does not reset once-per-turn accounting.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40277714756",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "fd5e44773c829311254193d5c6d4433676e787743249451cc37a7345b0cf83ad"
+      },
+      {
+        "case_id": "K2",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_mairsil_rev1_case_transfer.py::TestMairsilExactM7P0.test_K2_asmodeus_black_cost_draw_seven_without_static_replacement",
+        "execution_command": "python -m unittest discover -s tests -p test_m7_mairsil_rev1_case_transfer.py -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Mairsil_the_Pretender_Rev1_P0_Scryfall_20261026.json",
+        "payable_fixture": "Mairsil with caged Asmodeus pays {B}{B}{B}, reads nine-card library and performs seven draw effects.",
+        "positive_assertion": "Exactly seven cards move library-to-hand and two remain; Asmodeus static exile-draw replacement is not inherited from a caged activated ability.",
+        "adversarial_assertion": "Missing triple black prevents source payment; no extra same-object use and no erroneous replacement to exile for Mairsil.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40277714756",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "fd5e44773c829311254193d5c6d4433676e787743249451cc37a7345b0cf83ad"
+      },
+      {
+        "case_id": "K3",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_mairsil_rev1_case_transfer.py::TestMairsilExactM7P0.test_K3_pack_rat_rings_paid_copy_legend_and_no_free_discard",
+        "execution_command": "python -m unittest discover -s tests -p test_m7_mairsil_rev1_case_transfer.py -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Mairsil_the_Pretender_Rev1_P0_Scryfall_20261026.json",
+        "payable_fixture": "Caged Pack Rat activation pays {2}{B}, discards one actual hand card, then Rings optional {2} copies activated ability without a second discard.",
+        "positive_assertion": "Original and paid Rings copied activation make two token-copy entries and corresponding entering-source triggers; legend rule allows at most one legendary Mairsil persist.",
+        "adversarial_assertion": "Without source mana/discard ability cannot activate; same-object second use blocked; copied ability does not create permanent unrestricted multiple legendary Mairsils.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40277714756",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "fd5e44773c829311254193d5c6d4433676e787743249451cc37a7345b0cf83ad"
+      },
+      {
+        "case_id": "F1",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_mairsil_rev1_case_transfer.py::TestMairsilExactM7P0.test_F1_caged_exile_persists_but_removed_mairsil_has_no_abilities",
+        "execution_command": "python -m unittest discover -s tests -p test_m7_mairsil_rev1_case_transfer.py -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Mairsil_the_Pretender_Rev1_P0_Scryfall_20261026.json",
+        "payable_fixture": "Mairsil owned Asmodeus card in exile with cage; remove Mairsil from battlefield, then separately cast a fresh Mairsil object.",
+        "positive_assertion": "Owned exiled caged card stays in exile; fresh Mairsil can again access its activated ability.",
+        "adversarial_assertion": "While Mairsil is absent the player cannot activate its inherited draw ability despite caged card remaining in exile.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40277714756",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "fd5e44773c829311254193d5c6d4433676e787743249451cc37a7345b0cf83ad"
+      }
+    ],
+    "P1": [
+      {
+        "case_id": "K4",
+        "status": "DEFERRED",
+        "specific_reason": "The Marvin copied-ability restriction is documented from current rules research but not separately executed in a payable source-bound fixture.",
+        "coverage_consequence": "No assertion that Marvin grants unrestricted repeated Mairsil cage abilities; separate once-per-object copied restrictions need execution.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "K5",
+        "status": "DEFERRED",
+        "specific_reason": "Spark Double nonlegendary copy and independent entering cage trigger are retained but not executed with actual trigger ordering and copy-zone counters in the retrospective P0 suite.",
+        "coverage_consequence": "Nonlegendary parallel Mairsil copy mechanics and multiple cage ETBs are not certified by this transfer.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "K6",
+        "status": "DEFERRED",
+        "specific_reason": "Quicksilver Elemental/Gilded Lotus repeated acquired-ability engine was preserved from approved source but no real paid unbounded loop with adversarial interaction was executed in new suite.",
+        "coverage_consequence": "Do not cite this revision's retrospective receipt as proof of unconditional infinite colored mana or actions.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "K7",
+        "status": "DEFERRED",
+        "specific_reason": "Thousand-Year Elixir haste/tap permissions and Wishclaw caged activation limitation are documented but not separately exercised under a priority/timing state kernel.",
+        "coverage_consequence": "No certified test of Wishclaw caged operation or summoning-sick Mairsil tapping under Elixir.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "E1",
+        "status": "DEFERRED",
+        "specific_reason": "Mairsil new-object case K1 is executed, but full multiple recage patterns with Spark Double, Pack Rat, Rings and opposing response stacks have not been jointly executed.",
+        "coverage_consequence": "No claim of exhaustive repeated cage trigger count or universal board sequence for all copy/recage combinations.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "E2",
+        "status": "DEFERRED",
+        "specific_reason": "Individual source Oracle and static/activation costs are researched, but representative payable opening hands with full Arcanis/Asmodeus/Minamo/Patriar's Seal/Anger/Training Grounds effect interactions were not jointly simulated.",
+        "coverage_consequence": "No measured average turn to caged tap engine, color-pip opening probability or statistical consistency conclusion.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "W1",
+        "status": "DEFERRED",
+        "specific_reason": "Quicksilver Elemental/Gilded Lotus plus Staff/Horseshoe/Morphling/Walking Ballista line was not mechanically unrolled from an exact finite starting board with full costs and opponent responses.",
+        "coverage_consequence": "No transfer claim that an unbounded win is independently tested as payable across adversarial board states.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "W2",
+        "status": "DEFERRED",
+        "specific_reason": "Rings+Aphetto Alchemist+Gilded Lotus engine lacks a new explicit source-paid activation and copy priority loop fixture.",
+        "coverage_consequence": "No newly certified infinite mana line; old approval's strategic inclusion remains intact but cannot masquerade as a reproduced P1 test.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "W3",
+        "status": "DEFERRED",
+        "specific_reason": "Hateflayer/Tree of Perdition and Aetherling/Anger/Disk packages have not been executed together with timing, exiled zones, lethal-damage and adversarial target windows.",
+        "coverage_consequence": "No claimed exact-game deterministic damage/board reset win from the retrospective receipt.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "F2",
+        "status": "DEFERRED",
+        "specific_reason": "Graveyard hate preventing a cage source from entering exile was not tested with actual opponent interaction prior to Mairsil's ETB trigger resolution.",
+        "coverage_consequence": "Do not infer resistance to all opponent graveyard interruption.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "F3",
+        "status": "DEFERRED",
+        "specific_reason": "Mirror-Mad Phantasm historical unsafe mill removal is visible in prior decision lists, but no standalone source-paid hazardous self-mill test was executed for this retrospective exact candidate.",
+        "coverage_consequence": "Historical omitted unsafe line is not asserted as a newly executed live alternative.",
+        "owner_visible_unresolved": true
+      }
+    ]
+  },
+  "record_kind": "RETROSPECTIVE_EVIDENCE_ONLY_NO_CARD_OR_APPROVAL_CHANGE",
+  "evidence_limits": "Current snapshot covers ten case-relevant cards, not new 100/100 audit. All P1 are reported as DEFERRED. Local and GitHub finite examples are not a general Magic engine and do not revoke original owner's lock."
+}
