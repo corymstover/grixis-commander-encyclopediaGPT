@@ -29,7 +29,7 @@ Cory was shown the complete Archidekt-ready Missy M7 Rev1 100-physical-card list
 - [M7 contract CI](https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40395748220) SUCCESS; exact focused candidate tests are in `tests/test_m7_missy_rev1.py` and Scryfall snapshot `data/grixis/m7/oracle_snapshots/Missy_Rev1_Scryfall_20261026.json`.
 - 100 physical cards / 97 distinct names / 35 lands; Island twice and Swamp three times, all other names once; 97/97 current Scryfall names and Commander-legal Grixis identities; no project exceptions.
 - Commander-first nonartifact-death-to-Cyberman conversion, reusable face-up morph creatures, sacrifice-trigger/drain engine, and villainous choices retained. Generic non-Missy consultation/breach lines not added.
-- Six exact-candidate finite test methods PASS. Historical M6 preimplementation source-case blueprint was **design-only**; it has not become a general game-state simulation, independent I/J seal, or matchup win-rate claim. The scoped transfer artifact records exact coverage and deferrals.
+- Six exact-candidate finite test methods PASS. The historical M6 blueprint was originally **design-only**. Five required P0 cases now have bounded positive/adversarial source-mapped tests under the exact owner-approved SHA; 11 P1 source scenarios are explicitly deferred in the transfer artifact. This is **not** a broad independent I/J game-state suite or a simulated win-rate claim.
 - **Power Bracket 4 — Optimized**; Archidekt tags **Cybermen / Morph Recursion / Aristocrats Combo**.
 
 Supersede only Missy's current October 15 canonical pointer while preserving its historic list, approvals and reviews byte-for-byte. Do not infer a blanket approval for any other deck or milestone.
