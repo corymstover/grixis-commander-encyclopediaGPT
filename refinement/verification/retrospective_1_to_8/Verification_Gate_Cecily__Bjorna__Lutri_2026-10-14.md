@@ -1,11 +1,11 @@
 # Fresh Oracle/legality gate — #8 Bjorna, Nightfall Alchemist // Cecily, Haunted Mage + Lutri companion
 
-- Generated UTC: `2026-10-26T20:46:02.721737+00:00`
+- Generated UTC: `2026-10-26T21:34:03.685363+00:00`
 - Approved source: `refinement/decklists/Cecily__Bjorna__Lutri_Approved_2026-10-13.txt`
 - Approved source SHA-256 (raw bytes): `553838da88fe00974e74664633be5051c4f1a0879baa71de81ca9f880e5a6d28`
 - Approval evidence: refinement/approvals/Cecily__Bjorna__Lutri_Approved_2026-10-13.md
-- Oracle cache generated UTC: `2026-10-26T09:03:51.239240+00:00`
-- Scryfall bulk updated UTC: `2026-10-25T21:05:44.018+00:00`
+- Oracle cache generated UTC: `2026-10-26T20:46:17.019038+00:00`
+- Scryfall bulk updated UTC: `2026-10-26T09:05:45.439+00:00`
 - 100-card count: **PASS** (100)
 - Singleton: **PASS**
 - Commander color identity: `B,R,U`
