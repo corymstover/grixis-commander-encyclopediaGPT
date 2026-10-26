@@ -25,7 +25,7 @@ SNAPSHOT_SHA256 = "821468502031359c24ab92acb235ccce22c31299a0fff16a43b3bced6da49
 PLAN_MANIFEST_SHA256 = "195e2dd6f15aed70cc4384e68d33e200623e34e8f088da939752ea28216dcac8"
 HEX64 = re.compile(r"^[0-9a-f]{64}$")
 HEX40 = re.compile(r"^[0-9a-f]{40}$")
-CI_URL = re.compile(r"^https://github\.com/corymstover/GrokBotMTGCompanion/actions/runs/[0-9]+(?:/job/[0-9]+)?$")
+CI_URL = re.compile(r"^https://github\.com/corymstover/(?:GrokBotMTGCompanion|grixis-commander-encyclopediaGPT)/actions/runs/[0-9]+(?:/job/[0-9]+)?$")
 PR_URL = re.compile(r"^https://github\.com/corymstover/GrokBotMTGCompanion/pull/[0-9]+$")
 
 
