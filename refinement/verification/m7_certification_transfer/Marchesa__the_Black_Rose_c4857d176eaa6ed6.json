@@ -6,19 +6,168 @@
   "owner_approval_receipt": "refinement/approvals/Marchesa_the_Black_Rose_M7_Rev1_Approved_2026-10-26.md",
   "engineering": {
     "pr_url": "https://github.com/corymstover/GrokBotMTGCompanion/pull/716",
-    "pr_head_sha": "043646be33f37d43bb2cb4b8cabc92d6be10a8a8",
-    "merged_squash_sha": "1ebe3f1e21da36d11c43cf9aacf3a9768a103a3b",
+    "head_sha": "043646be33f37d43bb2cb4b8cabc92d6be10a8a8",
+    "grok_first_pass_ref": "data/grixis/m6/review_packets/marchesa-the-black-rose.json",
+    "independent_review_ref": "data/grixis/m6/owner_pass_c_substitute/Marchesa__the_Black_Rose/final_disposition.md (explicitly non-independent owner-equivalent waiver)",
     "m7_decision_packet_ref": "data/grixis/m7/decision_reviews/Marchesa__the_Black_Rose_rev1.json",
+    "m7_decision_gate_command": "python scripts/grixis_m7_decision_gate.py --check --file data/grixis/m7/decision_reviews/Marchesa__the_Black_Rose_rev1.json",
+    "m7_decision_gate_ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40283561444",
     "oracle_legality_ref": "data/grixis/m7/oracle_snapshots/Marchesa__the_Black_Rose_Rev1_Scryfall_20261026.json",
-    "targeted_test_ref": "tests/test_m7_marchesa_black_rose_rev1.py",
-    "targeted_ci_run": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40283561444",
+    "merged_squash_sha": "1ebe3f1e21da36d11c43cf9aacf3a9768a103a3b",
     "m7_contract_run": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40283561282"
   },
   "m6_transfer": {
     "plan_source_path": "data/grixis/m6/test_blueprints/Marchesa__the_Black_Rose.json",
-    "case_group_count": 16,
-    "disposition": "FOCUSED_SOURCE_BOUND_VALIDATION_ONLY",
-    "scope_note": "Focused finite assertions checked structural, Oracle and selected C/K/E/W/F interactions of new exact candidate. No blanket M6 I/J replay or complete game-engine simulation claimed."
+    "plan_blob_sha": "7d8c894c23bbcf7a6cd5adc361023ba2014ec9ad",
+    "ij_receipt_ref": "data/grixis/m7/decision_reviews/Marchesa__the_Black_Rose_chatgpt_rev1_review.md (focused source-bound transfer; historical global I/J NOT replayed)",
+    "ij_scope": "TRANSFERRED_WITH_CASE_MAPPING",
+    "revision_diff_and_validity_reason": "Previous Oct15 approved list had a historical M6 design-only / limited finite analysis, not a formal complete I/J execution. Seven one-for-one changes include new +1 counter sources The Ooze and Madame Null, Aether Channeler for River Kelpie, and new edict/damage/tutor/removal bodies. Five P0 case concepts were mapped to explicit exact-head finite source-backed tests; eleven P1 cases retain explicit unresolved scoped deferrals because tests do not execute full paid game-state sequences and some source scenario premises include removed River Kelpie. This is transparent bounded transfer, NOT global rules engine or sealed full I/J replay.",
+    "P0": [
+      {
+        "case_id": "C1",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_marchesa_black_rose_rev1.py::TestMarchesaBlackRoseRev1.test_C1_K1_K2_E1_F2_marchesa_trigger_timing",
+        "execution_command": "python -m unittest discover -s tests -p 'test_m7_marchesa_black_rose_rev1.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Marchesa__the_Black_Rose_Rev1_Scryfall_20261026.json",
+        "payable_fixture": "Marchesa present in legal zone, one controlled countered creature dies before end step; compare removed Marchesa and absent counter.",
+        "positive_assertion": "Current Oracle has death-counter condition and next-end-step return; finite pending trigger predicate true when all preconditions hold.",
+        "adversarial_assertion": "No counter, no commander, or no death prevents the bounded delayed trigger; not a full priority/stack simulation.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40283561444",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "c4857d176eaa6ed682da7cab974014d393fce2efe698bdca6994d77bb27ddf02"
+      },
+      {
+        "case_id": "K1",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_marchesa_black_rose_rev1.py::TestMarchesaBlackRoseRev1.test_C1_K1_K2_E1_F2_marchesa_trigger_timing",
+        "execution_command": "python -m unittest discover -s tests -p 'test_m7_marchesa_black_rose_rev1.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Marchesa__the_Black_Rose_Rev1_Scryfall_20261026.json",
+        "payable_fixture": "Countered vs uncountered controlled creature dies with Marchesa present in finite source-bound predicate.",
+        "positive_assertion": "Only the countered death sets the pending delayed end-step return.",
+        "adversarial_assertion": "No counter, commander absent, or missing death produces no return; graveyard exile separately guarded.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40283561444",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "c4857d176eaa6ed682da7cab974014d393fce2efe698bdca6994d77bb27ddf02"
+      },
+      {
+        "case_id": "K2",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_marchesa_black_rose_rev1.py::TestMarchesaBlackRoseRev1.test_C1_K1_K2_E1_F2_marchesa_trigger_timing",
+        "execution_command": "python -m unittest discover -s tests -p 'test_m7_marchesa_black_rose_rev1.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Marchesa__the_Black_Rose_Rev1_Scryfall_20261026.json",
+        "payable_fixture": "Dethrone attacking a 42-life player with 35- and 32-life opponents; compare lower-life and not attacking a player.",
+        "positive_assertion": "Dethrone predicate permits the highest-life defending player target.",
+        "adversarial_assertion": "Attack against 35-life opponent while 42 exists, or not against a player, does not meet dethrone predicate.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40283561444",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "c4857d176eaa6ed682da7cab974014d393fce2efe698bdca6994d77bb27ddf02"
+      },
+      {
+        "case_id": "K3",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_marchesa_black_rose_rev1.py::TestMarchesaBlackRoseRev1.test_K3_K4_K5_W1_W2_persist_reset_guards",
+        "execution_command": "python -m unittest discover -s tests -p 'test_m7_marchesa_black_rose_rev1.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Marchesa__the_Black_Rose_Rev1_Scryfall_20261026.json",
+        "payable_fixture": "Persist Murderous Redcap with one -1/-1 counter and +1/+1 counter reset by relevant on-board source; check zero/one state-bound values.",
+        "positive_assertion": "Positive predicate: with zero -1/-1 counters persist is eligible; paired +1/+1 and -1/-1 counters net to zero.",
+        "adversarial_assertion": "Persist is blocked when -1/-1 remains; undying is blocked when +1/+1 remains; no full loop/finitude simulation.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40283561444",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "c4857d176eaa6ed682da7cab974014d393fce2efe698bdca6994d77bb27ddf02"
+      },
+      {
+        "case_id": "F1",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_marchesa_black_rose_rev1.py::TestMarchesaBlackRoseRev1.test_F1_F3_and_new_counter_engines_with_adversaries",
+        "execution_command": "python -m unittest discover -s tests -p 'test_m7_marchesa_black_rose_rev1.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Marchesa__the_Black_Rose_Rev1_Scryfall_20261026.json",
+        "payable_fixture": "Countered dead creature with delayed Marchesa return, but opponent exiles the precise graveyard card first.",
+        "positive_assertion": "Source-bound caveat and predicate correctly reject returning a card that is not in graveyard.",
+        "adversarial_assertion": "Adversarial graveyard exile leaves graveyard_object_present=false; cannot return missing object. No full game-engine board replay.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40283561444",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "c4857d176eaa6ed682da7cab974014d393fce2efe698bdca6994d77bb27ddf02"
+      }
+    ],
+    "P1": [
+      {
+        "case_id": "K4",
+        "status": "DEFERRED",
+        "specific_reason": "Gary/Yawgmoth/Mikaeus prerequisite presence and a second sacrificial body are checked, but a fully paid repeating stack/life/drain engine is not simulated.",
+        "coverage_consequence": "Full paid/priority-aware Magic rules-engine proof and exact multi-turn outcome not certified for K4; only bounded source-/Oracle-anchored checks are claimed.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "K5",
+        "status": "DEFERRED",
+        "specific_reason": "Redcap and counter-seeding permanents are present; automatic loop timing and repeatable action accounting across multiple recursions remain unexecuted.",
+        "coverage_consequence": "Full paid/priority-aware Magic rules-engine proof and exact multi-turn outcome not certified for K5; only bounded source-/Oracle-anchored checks are claimed.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "K6",
+        "status": "DEFERRED",
+        "specific_reason": "Sneak Attack end-step timing has a bounded predicate; no full stack/turn-priority fixture and delayed return board resolution.",
+        "coverage_consequence": "Full paid/priority-aware Magic rules-engine proof and exact multi-turn outcome not certified for K6; only bounded source-/Oracle-anchored checks are claimed.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "K7",
+        "status": "DEFERRED",
+        "specific_reason": "River Kelpie was removed in approved seven swaps; Flare/blue creature substitution with Aether Channeler has type/identity checks but no full cost-paid stack counter/removal case.",
+        "coverage_consequence": "Full paid/priority-aware Magic rules-engine proof and exact multi-turn outcome not certified for K7; only bounded source-/Oracle-anchored checks are claimed.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "E1",
+        "status": "DEFERRED",
+        "specific_reason": "Dethrone, counters and Marchesa source fixtures validated narrowly; no full two-cycle physical-zone game-state replay.",
+        "coverage_consequence": "Full paid/priority-aware Magic rules-engine proof and exact multi-turn outcome not certified for E1; only bounded source-/Oracle-anchored checks are claimed.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "E2",
+        "status": "DEFERRED",
+        "specific_reason": "All core sacrifice outlets and payoff cards preserved; no complete multi-source resource, trigger and card-object conservation test.",
+        "coverage_consequence": "Full paid/priority-aware Magic rules-engine proof and exact multi-turn outcome not certified for E2; only bounded source-/Oracle-anchored checks are claimed.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "W1",
+        "status": "DEFERRED",
+        "specific_reason": "Persist counter arithmetic and Redcap/source inventory checked; unbounded damage loop has no executed finite trace or negated component demonstration.",
+        "coverage_consequence": "Full paid/priority-aware Magic rules-engine proof and exact multi-turn outcome not certified for W1; only bounded source-/Oracle-anchored checks are claimed.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "W2",
+        "status": "DEFERRED",
+        "specific_reason": "Mikaeus/undying eligibility and Gary prerequisites guarded; a complete alternating-body life/mana/drain trace was not executed.",
+        "coverage_consequence": "Full paid/priority-aware Magic rules-engine proof and exact multi-turn outcome not certified for W2; only bounded source-/Oracle-anchored checks are claimed.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "W3",
+        "status": "DEFERRED",
+        "specific_reason": "Spark Double, Flayer, Sage and outlets exist, but copied persist states and stack order over two repetitions were not executed; River Kelpie absent.",
+        "coverage_consequence": "Full paid/priority-aware Magic rules-engine proof and exact multi-turn outcome not certified for W3; only bounded source-/Oracle-anchored checks are claimed.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "F2",
+        "status": "DEFERRED",
+        "specific_reason": "Absent-Marchesa case suppresses her trigger in finite guard; exact commander-free recovery matchups are not simulated.",
+        "coverage_consequence": "Full paid/priority-aware Magic rules-engine proof and exact multi-turn outcome not certified for F2; only bounded source-/Oracle-anchored checks are claimed.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "F3",
+        "status": "DEFERRED",
+        "specific_reason": "New counter engines' Oracle caveats are asserted; an opposing counter-hate board test with conservation remains unimplemented.",
+        "coverage_consequence": "Full paid/priority-aware Magic rules-engine proof and exact multi-turn outcome not certified for F3; only bounded source-/Oracle-anchored checks are claimed.",
+        "owner_visible_unresolved": true
+      }
+    ]
   },
   "verification": {
     "physical_cards": 100,
