@@ -883,7 +883,8 @@
       "m7_project_exceptions": [],
       "m7_verified_100_physical": true,
       "m7_verification_artifact": "refinement/verification/Mai_and_Zuko_M7_Rev1_Approved_2026-10-25_Verification.md",
-      "m7_scryfall_selected_artifact": "refinement/verification/Mai_and_Zuko_M7_Rev1_Oracle_Identity_Index_2026-10-25.json"
+      "m7_scryfall_selected_artifact": "refinement/verification/Mai_and_Zuko_M7_Rev1_Oracle_Identity_Index_2026-10-25.json",
+      "m7_m6_certification_transfer_artifact": "refinement/verification/m7_certification_transfer/Mai_and_Zuko_8cdf614e47eadf3e.json"
     },
     "Mairsil__the_Pretender": {
       "approval_status": "APPROVED",
