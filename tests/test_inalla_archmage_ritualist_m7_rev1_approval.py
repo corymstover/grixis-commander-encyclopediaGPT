@@ -615,6 +615,15 @@ class InallaM7Rev1Approval(unittest.TestCase):
                     self.assertEqual(r["lock_status"], "LOCKED")
                     self.assertEqual(digest(ROOT / newpath), newsha)
                     continue
+                # A later, separately owner-approved M7 SHA may supersede this
+                # historical pointer only when prior exact bytes and the new receipt verify.
+                if r.get("previous_approved_list_sha256") == sha and r.get("previous_approved_list_artifact") == path and r.get("m7_owner_approval_date", "") > approved_date:
+                    self.assertEqual(digest(ROOT / path), sha)
+                    fresh = r["approved_list_sha256"]
+                    self.assertEqual(digest(ROOT / r["approved_list_artifact"]), fresh)
+                    self.assertIn(fresh, (ROOT / r["approval_record_artifact"]).read_text(encoding="utf-8"))
+                    self.assertEqual(r["lock_status"], "LOCKED")
+                    continue
                 self.assertEqual(r["approved_list_sha256"], sha)
                 self.assertEqual(r["approved_list_artifact"], path)
                 self.assertEqual(r["user_approval_date"], approved_date)

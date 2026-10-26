@@ -111,10 +111,14 @@ class KessM7Rev1ExactOwnerLock(unittest.TestCase):
         self.assertEqual(e["m7_archidekt_tags"], ["cEDH","Spellslinger","Combo"])
         self.assertEqual(e["m7_power_bracket"], "5 — fringe cEDH")
         self.assertEqual(e["m7_project_exceptions"], [])
-        self.assertEqual(sum(bool(v.get("m7_final_candidate_sha256")) for v in self.registry.values()),30)
+        self.assertGreaterEqual(sum(bool(v.get("m7_final_candidate_sha256")) for v in self.registry.values()),30)
         differences = {k for k,v in self.registry.items()
                        if v["approved_list_sha256"] != self.snapshot[k]}
-        self.assertEqual(differences, {ID, "Grixistax___October_2026", "Loki__the_Deceiver", "Lord_of_Tresserhorn", "Lord_Xander__the_Collector", "Lynde__Cheerful_Tormentor"})
+        required_prior = {ID, "Grixistax___October_2026", "Loki__the_Deceiver", "Lord_of_Tresserhorn", "Lord_Xander__the_Collector", "Lynde__Cheerful_Tormentor"}
+        self.assertTrue(required_prior.issubset(differences))
+        for later in differences - required_prior:
+            self.assertEqual(self.registry[later].get("previous_approved_list_sha256"), self.snapshot[later], later)
+            self.assertTrue(self.registry[later].get("m7_owner_approval_date"), later)
         # Deck #27 is a later, independent owner approval; its exact approval,
         # historical source, and other 61 locks have separate fail-closed tests.
         for k,e in self.registry.items():

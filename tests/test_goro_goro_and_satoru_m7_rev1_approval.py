@@ -358,6 +358,15 @@ class CanonicalGoroM7Rev1(unittest.TestCase):
                                      (newsha, newpath, "2026-10-25", "LOCKED"))
                     self.assertEqual(digest(ROOT / newpath), newsha)
                     continue
+                # A later, separately owner-approved M7 SHA may supersede this
+                # historical pointer only when prior exact bytes and the new receipt verify.
+                if e.get("previous_approved_list_sha256") == sha and e.get("previous_approved_list_artifact") == path and e.get("m7_owner_approval_date", "") > date:
+                    self.assertEqual(digest(ROOT / path), sha)
+                    fresh = e["approved_list_sha256"]
+                    self.assertEqual(digest(ROOT / e["approved_list_artifact"]), fresh)
+                    self.assertIn(fresh, (ROOT / e["approval_record_artifact"]).read_text(encoding="utf-8"))
+                    self.assertEqual(e["lock_status"], "LOCKED")
+                    continue
                 self.assertEqual((e["approved_list_sha256"], e["approved_list_artifact"],
                                   e["user_approval_date"], e["current_stage"]),
                                  (sha, path, date, stage))

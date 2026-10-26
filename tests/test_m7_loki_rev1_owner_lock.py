@@ -154,11 +154,14 @@ class LokiRev1OwnerLock(unittest.TestCase):
         self.assertEqual(entry["m7_power_bracket"], "4 — Optimized")
         self.assertEqual(entry["m7_archidekt_tags"], ["Villain Copies", "Combat Value", "Connive"])
         self.assertEqual(entry["m7_project_exceptions"], [])
-        self.assertEqual(sum(bool(d.get("m7_final_candidate_sha256")) for d in self.registry.values()), 30)
+        self.assertGreaterEqual(sum(bool(d.get("m7_final_candidate_sha256")) for d in self.registry.values()), 30)
         changed_since_snapshot = {n for n, d in self.registry.items()
                                   if d["approved_list_sha256"] != self.snapshot[n]}
-        self.assertEqual(changed_since_snapshot,
-                         {"Kess__Dissident_Mage", "Grixistax___October_2026", DECK, "Lord_of_Tresserhorn", "Lord_Xander__the_Collector", "Lynde__Cheerful_Tormentor"})
+        required_prior = {"Kess__Dissident_Mage", "Grixistax___October_2026", DECK, "Lord_of_Tresserhorn", "Lord_Xander__the_Collector", "Lynde__Cheerful_Tormentor"}
+        self.assertTrue(required_prior.issubset(changed_since_snapshot))
+        for later in changed_since_snapshot - required_prior:
+            self.assertEqual(self.registry[later].get("previous_approved_list_sha256"), self.snapshot[later], later)
+            self.assertTrue(self.registry[later].get("m7_owner_approval_date"), later)
         for n, d in self.registry.items():
             with self.subTest(locked=n):
                 self.assertEqual(sha(ROOT / d["approved_list_artifact"]), d["approved_list_sha256"])
