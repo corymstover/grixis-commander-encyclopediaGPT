@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "deck_id": "Marchesa__the_Black_Rose",
+  "approved_raw_sha256": "c4857d176eaa6ed682da7cab974014d393fce2efe698bdca6994d77bb27ddf02",
+  "approved_artifact": "refinement/decklists/Marchesa_the_Black_Rose_M7_Rev1_Approved_2026-10-26.txt",
+  "owner_approval_receipt": "refinement/approvals/Marchesa_the_Black_Rose_M7_Rev1_Approved_2026-10-26.md",
+  "engineering": {
+    "pr_url": "https://github.com/corymstover/GrokBotMTGCompanion/pull/716",
+    "pr_head_sha": "043646be33f37d43bb2cb4b8cabc92d6be10a8a8",
+    "merged_squash_sha": "1ebe3f1e21da36d11c43cf9aacf3a9768a103a3b",
+    "m7_decision_packet_ref": "data/grixis/m7/decision_reviews/Marchesa__the_Black_Rose_rev1.json",
+    "oracle_legality_ref": "data/grixis/m7/oracle_snapshots/Marchesa__the_Black_Rose_Rev1_Scryfall_20261026.json",
+    "targeted_test_ref": "tests/test_m7_marchesa_black_rose_rev1.py",
+    "targeted_ci_run": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40283561444",
+    "m7_contract_run": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40283561282"
+  },
+  "m6_transfer": {
+    "plan_source_path": "data/grixis/m6/test_blueprints/Marchesa__the_Black_Rose.json",
+    "case_group_count": 16,
+    "disposition": "FOCUSED_SOURCE_BOUND_VALIDATION_ONLY",
+    "scope_note": "Focused finite assertions checked structural, Oracle and selected C/K/E/W/F interactions of new exact candidate. No blanket M6 I/J replay or complete game-engine simulation claimed."
+  },
+  "verification": {
+    "physical_cards": 100,
+    "distinct_names": 98,
+    "basic_islands": 2,
+    "basic_swamps": 2,
+    "lands": 34,
+    "scryfall_resolved_distinct": 98,
+    "commander_legal_distinct": 98,
+    "color_identity_ok_distinct": 98,
+    "project_exceptions": [],
+    "bracket": "4 — Optimized",
+    "archidekt_tags": [
+      "+1/+1 Counters",
+      "Aristocrats",
+      "Combo"
+    ]
+  }
+}
