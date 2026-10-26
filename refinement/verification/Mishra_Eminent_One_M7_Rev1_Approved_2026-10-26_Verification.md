@@ -17,10 +17,11 @@ Date: October 26, 2026, America/Chicago.
 ## Engineering proof and owner receipt
 
 - [Engineering PR #718](https://github.com/corymstover/GrokBotMTGCompanion/pull/718) merged `27b30297a7c7753a6a6ad889460c114813ef42ab`; tested head `670f0cecf0812583a880d02135752c1aee40e19b`.
-- [Exact candidate tests](https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40312936555) **SUCCESS**, seven focused test methods with both positive and adversarial bounded conditions.
+- [Exact engineering candidate tests](https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40312936555) **SUCCESS**, seven focused finite test methods. The canonical branch additionally implements five source-mapped finite P0 tests in `tests/test_deck37_m7_p0_source_cases.py` with positive and adverse preconditions (C1, K1, K2, K3, F1). They are bounded predicates, not a complete Magic simulation.
 - [Global M7 decision gate](https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40312936783) **SUCCESS**.
 - Evidence: `data/grixis/m7/oracle_snapshots/Mishra__Eminent_One_Rev1_Scryfall_20261026.json`, `data/grixis/m7/decision_reviews/Mishra__Eminent_One_rev1.json`, `tests/test_m7_mishra_eminent_rev1.py`.
 - Owner replied **“Approve”** to the fully displayed exact Deck #37 list on October 26; one approval, not a second confirmation. Receipt `refinement/approvals/Mishra_Eminent_One_M7_Rev1_Approved_2026-10-26.md`.
+- Canonical M6 transfer: P0 5/5 bounded finite PASS; P1 2/10 bounded PASS (K5 and W1), 8/10 source-specific **DEFERRED** (K4, K6, E1, E2, W2, W3, F2, F3). These include unsimulated full turn-control, token-chain, win-loop and artifact-hate/speed game-state scenarios, not hidden failures or simulated win-rate evidence. A fresh whole-engine I/J rerun is NOT claimed. The exact P1 deferrals are disclosed as limitations in owner receipt and attestation.
 
 **Power Bracket 4 — Optimized. Tags: Artifacts / Warform Tokens / Combo.**
 
