@@ -298,9 +298,9 @@ OTHER_61 = json.loads(r'''{
     "LOCKED"
   ],
   "Lynde__Cheerful_Tormentor": [
-    "05d1c4eea023d25e4308f78b109e80b78e0a3f4d655c3df36743ba3afbf04166",
-    "refinement/decklists/Lynde_Cheerful_Tormentor_Approved_2026-10-14.txt",
-    "2026-10-14",
+    "6e088891b3c92b632d95e4b6dbd83ffedb06834f812e6728cc5bfa7bdc13556e",
+    "refinement/decklists/Lynde_Cheerful_Tormentor_M7_Rev1_Approved_2026-10-25.txt",
+    "2026-10-25",
     "LOCKED"
   ],
   "Mai_and_Zuko": [

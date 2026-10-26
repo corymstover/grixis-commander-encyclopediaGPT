@@ -1,0 +1,13 @@
+# Deck #31 Lynde M7 Rev1 — canonical exact-100 verification
+
+Date October 25, 2026 (America/Chicago). Exact approved raw SHA `6e088891b3c92b632d95e4b6dbd83ffedb06834f812e6728cc5bfa7bdc13556e`.
+
+- **PASS — physical list**: 100 total, commander first, 96 distinct names, only Island ×3, Mountain ×2, Swamp ×2 repeat. 35 lands and 17 cards with a Curse face/type. October 14 source `05d1c4eea023d25e4308f78b109e80b78e0a3f4d655c3df36743ba3afbf04166` preserved.
+- **PASS — eight real swaps**: Court of Vantress / Cruel Reality, Extravagant Replication / Curse of Death's Hold, Barrin / Torment of Scarabs, Into the Pit / Curse of the Restless Dead, Staff of Compleation / Nightscape Familiar, Saga / Mountain, Otawara / Island, Shizo / Swamp. Full review in `refinement/decisions/Lynde_Cheerful_Tormentor_M7_Rev1_Whole99_Review_2026-10-25.md`.
+- **PASS — Oracle, identity, legality**: 96 selected names have Oracle IDs and text/legality evidence; all officially Commander-legal and within UBR. Sources: Scryfall October 23 collection and October 25-specific checks for utility lands; this is not claimed as a fresh October 25 batch for all 96 names. No project exceptions.
+- **PASS — rules**: Next-end-step return only from battlefield to your graveyard; one Curse per upkeep and two cards; enchanted-player upkeep effects; token copies do not persist in graveyard; Barrin pays {2} plus sacrifice and needs target, Into the Pit needs normal spell cost and nonland sacrifice, Staff spends life and tap, Court depends on monarchy, Saga has a short lifetime, Otawara bounces rather than destroys. Thirteen exact P0/P1 case groups, 25+ bounded assertions.
+- **PASS — certification**: [Engineering PR #710 merged](https://github.com/corymstover/GrokBotMTGCompanion/pull/710), exact head `5afa197e915137837e54e828e62d4e6950980a67`, [Deck #31 CI PASS](https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40255939513), [M7 structural gate PASS](https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40255939483), [M6 provenance guard PASS](https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40255939485).
+- **PASS — historical provenance preserved**: source-only Stage A exact byte discrepancy annotated in [PR #711](https://github.com/corymstover/GrokBotMTGCompanion/pull/711), preserving all original bytes, initial reviewer technically independent=false.
+- **PASS — owner authority**: Cory's one “Approved” following the complete exact Archidekt list is the canonical lock instruction; no redundant reapproval.
+
+Bracket 4 — Optimized. Tags Curses / Enchantress / Control. This does not claim measured multiplayer outcomes or the completion of global 62-deck milestones.

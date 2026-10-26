@@ -126,12 +126,12 @@ class GrixistaxM7Rev1ExactOwnerLock(unittest.TestCase):
         self.assertEqual(entry["previous_approved_list_artifact"], HISTORICAL.relative_to(ROOT).as_posix())
         self.assertEqual(entry["m7_archidekt_tags"], ["Grixis Stax", "Thrull Sacrifice", "Helm–Breach Combo"])
         self.assertEqual(entry["m7_project_exceptions"], [])
-        self.assertEqual(sum(bool(e.get("m7_final_candidate_sha256")) for e in self.registry.values()), 29)
+        self.assertEqual(sum(bool(e.get("m7_final_candidate_sha256")) for e in self.registry.values()), 30)
         differences = {
             name for name, value in self.registry.items()
             if value["approved_list_sha256"] != self.snapshot[name]
         }
-        self.assertEqual(differences, {"Kess__Dissident_Mage", DECK, "Loki__the_Deceiver", "Lord_of_Tresserhorn", "Lord_Xander__the_Collector"})
+        self.assertEqual(differences, {"Kess__Dissident_Mage", DECK, "Loki__the_Deceiver", "Lord_of_Tresserhorn", "Lord_Xander__the_Collector", "Lynde__Cheerful_Tormentor"})
         for name, e in self.registry.items():
             with self.subTest(deck=name):
                 self.assertEqual(digest(ROOT / e["approved_list_artifact"]), e["approved_list_sha256"])

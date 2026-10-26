@@ -1,0 +1,1537 @@
+{
+  "schema_version": 1,
+  "deck_id": "Lynde__Cheerful_Tormentor",
+  "status": "PREAPPROVAL_CANDIDATE_SOURCE_INDEX_NOT_FINAL_CERTIFICATION",
+  "candidate_raw_sha256": "6e088891b3c92b632d95e4b6dbd83ffedb06834f812e6728cc5bfa7bdc13556e",
+  "baseline_sha256": "05d1c4eea023d25e4308f78b109e80b78e0a3f4d655c3df36743ba3afbf04166",
+  "source_date": "2026-10-23 full live Scryfall source snapshot for 93 canonical names and 5 new nonlands; October 25 card-page confirmations for 3 newly added lands",
+  "limitation": "Two utility-land Oracle IDs and full texts recovered from the live Scryfall October 23 Lord Xander evidence packet; Shizo's Oracle text and all-printings ID corroborated by Scryfall's indexed card page and multiple Scryfall-derived sources on October 25. No new full 96-name live API batch was obtained on October 25. The historical Lynde Stage A seal mismatch remains a separate hard M6 certification blocker.",
+  "cards": [
+    {
+      "name": "Lynde, Cheerful Tormentor",
+      "oracle_id": "dc386f6c-bd4a-462a-8d42-0e7a552a4f17",
+      "oracle_text": "Deathtouch\nWhenever a Curse is put into your graveyard from the battlefield, return it to the battlefield attached to you at the beginning of the next end step.\nAt the beginning of your upkeep, you may attach a Curse attached to you to one of your opponents. If you do, draw two cards.",
+      "oracle_excerpt": null,
+      "type_line": "Legendary Creature — Human Warlock",
+      "color_identity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{U}{B}{R}",
+      "cmc": 4,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Accursed Witch // Infectious Curse",
+      "oracle_id": "80b07882-e144-4815-8b6f-04b3ab343d97",
+      "oracle_text": "Spells your opponents cast that target this creature cost {1} less to cast.\nWhen this creature dies, return it to the battlefield transformed under your control attached to target opponent.\n//\nEnchant player\nSpells you cast that target enchanted player cost {1} less to cast.\nAt the beginning of enchanted player's upkeep, that player loses 1 life and you gain 1 life.",
+      "oracle_excerpt": null,
+      "type_line": "Creature — Human Shaman // Enchantment — Aura Curse",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}{B} // ",
+      "cmc": 4,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Ancient Tomb",
+      "oracle_id": "23467047-6dba-4498-b783-1ebc4f74b8c2",
+      "oracle_text": "{T}: Add {C}{C}. This land deals 2 damage to you.",
+      "oracle_excerpt": null,
+      "type_line": "Land",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "",
+      "cmc": 0,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Arcane Signet",
+      "oracle_id": "0bc7f093-bef0-4f1a-852c-4b75ebf54838",
+      "oracle_text": "{T}: Add one mana of any color in your commander's color identity.",
+      "oracle_excerpt": null,
+      "type_line": "Artifact",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}",
+      "cmc": 2,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Ashiok's Reaper",
+      "oracle_id": "6f1e5571-ddda-4cea-84ef-36a571d8fd51",
+      "oracle_text": "Whenever an enchantment you control is put into a graveyard from the battlefield, draw a card.",
+      "oracle_excerpt": null,
+      "type_line": "Creature — Nightmare",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}{B}",
+      "cmc": 4,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Badlands",
+      "oracle_id": "13ff3222-91cb-4796-a34e-899ed817694c",
+      "oracle_text": "({T}: Add {B} or {R}.)",
+      "oracle_excerpt": null,
+      "type_line": "Land — Swamp Mountain",
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Barrin, Master Wizard",
+      "oracle_id": "8c6d6684-1943-4af3-98da-951604193911",
+      "oracle_text": "{2}, Sacrifice a permanent: Return target creature to its owner's hand.",
+      "oracle_excerpt": null,
+      "type_line": "Legendary Creature — Human Wizard",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{U}{U}",
+      "cmc": 3,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Bitterheart Witch",
+      "oracle_id": "67466d56-9f28-4bbe-ae54-6fd834581e77",
+      "oracle_text": "Deathtouch\nWhen this creature dies, you may search your library for a Curse card, put it onto the battlefield attached to target player, then shuffle.",
+      "oracle_excerpt": null,
+      "type_line": "Creature — Human Shaman",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{4}{B}",
+      "cmc": 5,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Blasphemous Act",
+      "oracle_id": "7a2484a9-04fd-41a0-8224-610c1c07ed10",
+      "oracle_text": "This spell costs {1} less to cast for each creature on the battlefield.\nBlasphemous Act deals 13 damage to each creature.",
+      "oracle_excerpt": null,
+      "type_line": "Sorcery",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{8}{R}",
+      "cmc": 9,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Blood Crypt",
+      "oracle_id": "43985bbc-a0f6-4812-984e-392bc8562633",
+      "oracle_text": "({T}: Add {B} or {R}.)\nAs this land enters, you may pay 2 life. If you don't, it enters tapped.",
+      "oracle_excerpt": null,
+      "type_line": "Land — Swamp Mountain",
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Bloodstained Mire",
+      "oracle_id": "fc0707c7-d504-4ccf-a0d2-3eb6e26e7a57",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for a Swamp or Mountain card, put it onto the battlefield, then shuffle.",
+      "oracle_excerpt": null,
+      "type_line": "Land",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Bojuka Bog",
+      "oracle_id": "04b7362d-0490-4cb0-b5d7-2a7732f659ce",
+      "oracle_text": "This land enters tapped.\nWhen this land enters, exile target player's graveyard.\n{T}: Add {B}.",
+      "oracle_excerpt": null,
+      "type_line": "Land",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Braids, Arisen Nightmare",
+      "oracle_id": "e0445c80-fa53-4c3e-881e-940e9fce7f57",
+      "oracle_text": "At the beginning of your end step, you may sacrifice an artifact, creature, enchantment, land, or planeswalker. If you do, each opponent may sacrifice a permanent of their choice that shares a card type with it. For each opponent who doesn't, that player loses 2 life and you draw a card.",
+      "oracle_excerpt": null,
+      "type_line": "Legendary Creature — Nightmare",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{B}{B}",
+      "cmc": 3,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Chaos Warp",
+      "oracle_id": "07a0cba9-8768-4fd9-a3d5-b0f83b4bf8e8",
+      "oracle_text": "The owner of target permanent shuffles it into their library, then reveals the top card of their library. If it's a permanent card, they put it onto the battlefield.",
+      "oracle_excerpt": null,
+      "type_line": "Instant",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{R}",
+      "cmc": 3,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "City of Brass",
+      "oracle_id": "f25351e3-539b-4bbc-b92d-6480acf4d722",
+      "oracle_text": "Whenever this land becomes tapped, it deals 1 damage to you.\n{T}: Add one mana of any color.",
+      "oracle_excerpt": null,
+      "type_line": "Land",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Claws of Gix",
+      "oracle_id": "c4d384d7-f294-4b2d-9971-a4689c150255",
+      "oracle_text": "{1}, Sacrifice a permanent: You gain 1 life.",
+      "oracle_excerpt": null,
+      "type_line": "Artifact",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{0}",
+      "cmc": 0,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Clever Impersonator",
+      "oracle_id": "d4ec0df9-a4a3-48cf-a0aa-b1aea5c49142",
+      "oracle_text": "You may have this creature enter as a copy of any nonland permanent on the battlefield.",
+      "oracle_excerpt": null,
+      "type_line": "Creature — Shapeshifter",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{U}{U}",
+      "cmc": 4,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Command Tower",
+      "oracle_id": "0895c9b7-ae7d-4bb3-af17-3b75deb50a25",
+      "oracle_text": "{T}: Add one mana of any color in your commander's color identity.",
+      "oracle_excerpt": null,
+      "type_line": "Land",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Copy Enchantment",
+      "oracle_id": "87bc0b1f-49ef-4c06-9049-2c148b467882",
+      "oracle_text": "You may have this enchantment enter as a copy of any enchantment on the battlefield.",
+      "oracle_excerpt": null,
+      "type_line": "Enchantment",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{U}",
+      "cmc": 3,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Court of Vantress",
+      "oracle_id": "ad82b43b-b15e-48f4-86ab-5ee2c448cf14",
+      "oracle_text": "When this enchantment enters, you become the monarch.\nAt the beginning of your upkeep, choose up to one other target enchantment or artifact. If you're the monarch, you may create a token that's a copy of it. If you're not the monarch, you may have this enchantment become a copy of it, except it has this ability.",
+      "oracle_excerpt": null,
+      "type_line": "Enchantment",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{U}{U}",
+      "cmc": 4,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Curse of Bloodletting",
+      "oracle_id": "3383a72f-fb83-4b9a-aca6-b736ed929c2e",
+      "oracle_text": "Enchant player\nIf a source would deal damage to enchanted player, it deals double that damage to that player instead.",
+      "oracle_excerpt": null,
+      "type_line": "Enchantment — Aura Curse",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}{R}{R}",
+      "cmc": 5,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Curse of Disturbance",
+      "oracle_id": "6cbd36d9-de47-41b0-9ef4-a72ca01adccd",
+      "oracle_text": "Enchant player\nWhenever enchanted player is attacked, create a 2/2 black Zombie creature token. Each opponent attacking that player does the same.",
+      "oracle_excerpt": null,
+      "type_line": "Enchantment — Aura Curse",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{B}",
+      "cmc": 3,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Curse of Echoes",
+      "oracle_id": "c99bac4b-7eec-4fdf-b344-0cf9639ff073",
+      "oracle_text": "Enchant player\nWhenever enchanted player casts an instant or sorcery spell, each other player may copy that spell and may choose new targets for the copy they control.",
+      "oracle_excerpt": null,
+      "type_line": "Enchantment — Aura Curse",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{4}{U}",
+      "cmc": 5,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Curse of Fool's Wisdom",
+      "oracle_id": "93b2a685-8267-4cbd-ac55-db6ff95fe98d",
+      "oracle_text": "Enchant player\nWhenever enchanted player draws a card, they lose 2 life and you gain 2 life.\nMadness {3}{B} (If you discard this card, discard it into exile. When you do, cast it for its madness cost or put it into your graveyard.)",
+      "oracle_excerpt": null,
+      "type_line": "Enchantment — Aura Curse",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{4}{B}{B}",
+      "cmc": 6,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Curse of Hospitality",
+      "oracle_id": "0fb70b94-0847-4155-8953-cb53fef82ef1",
+      "oracle_text": "Enchant player\nCreatures attacking enchanted player have trample.\nWhenever a creature deals combat damage to enchanted player, that player exiles the top card of their library. Until end of turn, that creature's controller may play that card and they may spend mana as though it were mana of any color to cast that spell.",
+      "oracle_excerpt": null,
+      "type_line": "Enchantment — Aura Curse",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{R}",
+      "cmc": 3,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Curse of Misfortunes",
+      "oracle_id": "b03c7c8d-8206-45cd-8ead-8f7b35c03a7a",
+      "oracle_text": "Enchant player\nAt the beginning of your upkeep, you may search your library for a Curse card that doesn't have the same name as a Curse attached to enchanted player, put it onto the battlefield attached to that player, then shuffle.",
+      "oracle_excerpt": null,
+      "type_line": "Enchantment — Aura Curse",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{4}{B}",
+      "cmc": 5,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Curse of Obsession",
+      "oracle_id": "ca4b4bf2-ed34-444c-9088-dd1ea488ec4e",
+      "oracle_text": "Enchant player\nAt the beginning of enchanted player's draw step, that player draws two additional cards.\nAt the beginning of enchanted player's end step, that player discards their hand.",
+      "oracle_excerpt": null,
+      "type_line": "Enchantment — Aura Curse",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{4}{R}",
+      "cmc": 5,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Curse of Opulence",
+      "oracle_id": "ba0d3df2-3acf-46d7-8d64-8d67d1579adc",
+      "oracle_text": "Enchant player\nWhenever enchanted player is attacked, create a Gold token. Each opponent attacking that player does the same. (A Gold token is an artifact with \"Sacrifice this token: Add one mana of any color.\")",
+      "oracle_excerpt": null,
+      "type_line": "Enchantment — Aura Curse",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{R}",
+      "cmc": 1,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Curse of Shaken Faith",
+      "oracle_id": "297494f0-1f79-4f77-b68b-6ed858e21f4e",
+      "oracle_text": "Enchant player\nWhenever enchanted player casts a spell other than the first spell they cast each turn or copies a spell, this Aura deals 2 damage to them.",
+      "oracle_excerpt": null,
+      "type_line": "Enchantment — Aura Curse",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{R}",
+      "cmc": 2,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Curse of Surveillance",
+      "oracle_id": "4fd061f2-7269-4eea-bc7c-95a123893efa",
+      "oracle_text": "Enchant player\nAt the beginning of enchanted player's upkeep, any number of target players other than that player each draw cards equal to the number of Curses attached to that player.",
+      "oracle_excerpt": null,
+      "type_line": "Enchantment — Aura Curse",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{4}{U}",
+      "cmc": 5,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Curse of Thirst",
+      "oracle_id": "ffe3ad06-50d8-4ca3-a1f7-aa31dc2c486e",
+      "oracle_text": "Enchant player\nAt the beginning of enchanted player's upkeep, this Aura deals damage to that player equal to the number of Curses attached to them.",
+      "oracle_excerpt": null,
+      "type_line": "Enchantment — Aura Curse",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{4}{B}",
+      "cmc": 5,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Curse of Unbinding",
+      "oracle_id": "7e79cb6c-df9a-46d1-b3c6-240297e7d47d",
+      "oracle_text": "Enchant player\nAt the beginning of enchanted player's upkeep, that player reveals cards from the top of their library until they reveal a creature card. Put that card onto the battlefield under your control. That player puts the rest of the revealed cards into their graveyard.",
+      "oracle_excerpt": null,
+      "type_line": "Enchantment — Aura Curse",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{6}{U}",
+      "cmc": 7,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Curse of Vengeance",
+      "oracle_id": "b9b1c644-041a-4b61-9d6d-bc73a3a95bb8",
+      "oracle_text": "Enchant player\nWhenever enchanted player casts a spell, put a spite counter on this Aura.\nWhen enchanted player loses the game, you gain X life and draw X cards, where X is the number of spite counters on this Aura.",
+      "oracle_excerpt": null,
+      "type_line": "Enchantment — Aura Curse",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{B}",
+      "cmc": 1,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Curse of Verbosity",
+      "oracle_id": "c6f76fa7-095e-4bfe-a38c-5c4531880880",
+      "oracle_text": "Enchant player\nWhenever enchanted player is attacked, you draw a card. Each opponent attacking that player does the same.",
+      "oracle_excerpt": null,
+      "type_line": "Enchantment — Aura Curse",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{U}",
+      "cmc": 3,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Cyclonic Rift",
+      "oracle_id": "d75b9c82-1b49-4c3e-a1b5-aeef57d6644b",
+      "oracle_text": "Return target nonland permanent you don't control to its owner's hand.\nOverload {6}{U} (You may cast this spell for its overload cost. If you do, change \"target\" in its text to \"each.\")",
+      "oracle_excerpt": null,
+      "type_line": "Instant",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "{1}{U}",
+      "cmc": 2,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Damnation",
+      "oracle_id": "d57a8f0b-7989-4db5-8756-6f2690097252",
+      "oracle_text": "Destroy all creatures. They can't be regenerated.",
+      "oracle_excerpt": null,
+      "type_line": "Sorcery",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{B}{B}",
+      "cmc": 4,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Deadly Rollick",
+      "oracle_id": "0456ec64-2c81-4763-a352-8ff64a4c3d6b",
+      "oracle_text": "If you control a commander, you may cast this spell without paying its mana cost.\nExile target creature.",
+      "oracle_excerpt": null,
+      "type_line": "Instant",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}{B}",
+      "cmc": 4,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Deflecting Swat",
+      "oracle_id": "ae120613-97d6-4393-b39d-c3e6c076f5d6",
+      "oracle_text": "If you control a commander, you may cast this spell without paying its mana cost.\nYou may choose new targets for target spell or ability.",
+      "oracle_excerpt": null,
+      "type_line": "Instant",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{R}",
+      "cmc": 3,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Demon of Fate's Design",
+      "oracle_id": "53716e0b-4d4e-40b0-8370-38e11f73d195",
+      "oracle_text": "Flying, trample\nOnce during each of your turns, you may cast an enchantment spell by paying life equal to its mana value rather than paying its mana cost.\n{2}{B}, Sacrifice another enchantment: This creature gets +X/+0 until end of turn, where X is the sacrificed enchantment's mana value.",
+      "oracle_excerpt": null,
+      "type_line": "Enchantment Creature — Demon",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{4}{B}{B}",
+      "cmc": 6,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Demonic Tutor",
+      "oracle_id": "82004860-e589-4e38-8d61-8c0210e4ea39",
+      "oracle_text": "Search your library for a card, put that card into your hand, then shuffle.",
+      "oracle_excerpt": null,
+      "type_line": "Sorcery",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "{1}{B}",
+      "cmc": 2,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Despotic Scepter",
+      "oracle_id": "34a85d7f-d4ea-4a0f-aa4c-bf0b0f4987bf",
+      "oracle_text": "{T}: Destroy target permanent you own. It can't be regenerated.",
+      "oracle_excerpt": null,
+      "type_line": "Artifact",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}",
+      "cmc": 1,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Dimir Signet",
+      "oracle_id": "7d881c57-0bd9-4c57-aa4a-b10808b86143",
+      "oracle_text": "{1}, {T}: Add {U}{B}.",
+      "oracle_excerpt": null,
+      "type_line": "Artifact",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}",
+      "cmc": 2,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Doomwake Giant",
+      "oracle_id": "ba069664-9f92-47c7-b556-9e5143a22579",
+      "oracle_text": "Constellation — Whenever this creature or another enchantment you control enters, creatures your opponents control get -1/-1 until end of turn.",
+      "oracle_excerpt": null,
+      "type_line": "Enchantment Creature — Giant",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{4}{B}",
+      "cmc": 5,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Entity Tracker",
+      "oracle_id": "c9db5293-4866-46ec-9ae8-059d27bd50fc",
+      "oracle_text": "Flash\nEerie — Whenever an enchantment you control enters and whenever you fully unlock a Room, draw a card.",
+      "oracle_excerpt": null,
+      "type_line": "Creature — Human Scout",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{U}",
+      "cmc": 3,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Estrid's Invocation",
+      "oracle_id": "7f5f10ee-6428-4053-8824-3bc70420ec2c",
+      "oracle_text": "You may have this enchantment enter as a copy of an enchantment you control, except it has \"At the beginning of your upkeep, you may exile this enchantment. If you do, return it to the battlefield under its owner's control.\"",
+      "oracle_excerpt": null,
+      "type_line": "Enchantment",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{U}",
+      "cmc": 3,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Exotic Orchard",
+      "oracle_id": "27b047e3-0d41-45e2-98e9-9391d7923a1e",
+      "oracle_text": "{T}: Add one mana of any color that a land an opponent controls could produce.",
+      "oracle_excerpt": null,
+      "type_line": "Land",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Extravagant Replication",
+      "oracle_id": "3a646245-b8b7-4f91-a312-d5eea9a9e49a",
+      "oracle_text": "At the beginning of your upkeep, create a token that's a copy of another target nonland permanent you control.",
+      "oracle_excerpt": null,
+      "type_line": "Enchantment",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{4}{U}{U}",
+      "cmc": 6,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Fierce Guardianship",
+      "oracle_id": "d09c9cba-fdd2-479b-ad5d-d05181c3e3f9",
+      "oracle_text": "If you control a commander, you may cast this spell without paying its mana cost.\nCounter target noncreature spell.",
+      "oracle_excerpt": null,
+      "type_line": "Instant",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "{2}{U}",
+      "cmc": 3,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Flooded Strand",
+      "oracle_id": "f3c7af78-a77d-4134-82a2-a5ce84285a84",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for a Plains or Island card, put it onto the battlefield, then shuffle.",
+      "oracle_excerpt": null,
+      "type_line": "Land",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Grim Guardian",
+      "oracle_id": "c1f1babf-13d0-4fc4-b192-127d2d5db7f1",
+      "oracle_text": "Constellation — Whenever this creature or another enchantment you control enters, each opponent loses 1 life.",
+      "oracle_excerpt": null,
+      "type_line": "Enchantment Creature — Zombie",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{B}",
+      "cmc": 3,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Imperial Seal",
+      "oracle_id": "16cd0b90-f70c-4efa-b252-8de8784ef9a3",
+      "oracle_text": "Search your library for a card, then shuffle and put that card on top. You lose 2 life.",
+      "oracle_excerpt": null,
+      "type_line": "Sorcery",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "{B}",
+      "cmc": 1,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Into the Pit",
+      "oracle_id": "e330412f-46a1-4e7c-8766-f644606049e0",
+      "oracle_text": "You may look at the top card of your library any time.\nYou may cast spells from the top of your library by sacrificing a nonland permanent in addition to paying their other costs.",
+      "oracle_excerpt": null,
+      "type_line": "Enchantment",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{B}",
+      "cmc": 3,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Island",
+      "oracle_id": "b2c6aa39-2d2a-459c-a555-fb48ba993373",
+      "oracle_text": "({T}: Add {U}.)",
+      "oracle_excerpt": null,
+      "type_line": "Basic Land — Island",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Jeska's Will",
+      "oracle_id": "0fd114c4-092b-4e28-b0dc-ef529f3bc73e",
+      "oracle_text": "Choose one. If you control a commander as you cast this spell, you may choose both instead.\n• Add {R} for each card in target opponent's hand.\n• Exile the top three cards of your library. You may play them this turn.",
+      "oracle_excerpt": null,
+      "type_line": "Sorcery",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "{2}{R}",
+      "cmc": 3,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Luxury Suite",
+      "oracle_id": "819e1765-8325-4e6f-89c1-63ea86de369f",
+      "oracle_text": "This land enters tapped unless you have two or more opponents.\n{T}: Add {B} or {R}.",
+      "oracle_excerpt": null,
+      "type_line": "Land",
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Maddening Hex",
+      "oracle_id": "5d96170f-14dd-496e-a485-bd3b9eedfe02",
+      "oracle_text": "Enchant player\nWhenever enchanted player casts a noncreature spell, roll a d6. This Aura deals damage to that player equal to the result. Then attach this Aura to another one of your opponents chosen at random.",
+      "oracle_excerpt": null,
+      "type_line": "Enchantment — Aura Curse",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{R}{R}",
+      "cmc": 3,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Mana Confluence",
+      "oracle_id": "d0ee5bdc-2b69-4b73-9a20-ffcc18783b29",
+      "oracle_text": "{T}, Pay 1 life: Add one mana of any color.",
+      "oracle_excerpt": null,
+      "type_line": "Land",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Mana Drain",
+      "oracle_id": "74d3277a-38e5-4732-afed-084a56148f20",
+      "oracle_text": "Counter target spell. At the beginning of your next main phase, add an amount of {C} equal to that spell's mana value.",
+      "oracle_excerpt": null,
+      "type_line": "Instant",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{U}{U}",
+      "cmc": 2,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Marsh Flats",
+      "oracle_id": "dab520d0-20b4-4273-ba6b-eb07f85ea433",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for a Plains or Swamp card, put it onto the battlefield, then shuffle.",
+      "oracle_excerpt": null,
+      "type_line": "Land",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Mirrormade",
+      "oracle_id": "79a71fe5-38ce-4bb5-aea0-c9b9a856d397",
+      "oracle_text": "You may have this enchantment enter as a copy of any artifact or enchantment on the battlefield.",
+      "oracle_excerpt": null,
+      "type_line": "Enchantment",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{U}{U}",
+      "cmc": 3,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Misty Rainforest",
+      "oracle_id": "09dd85aa-47bc-4713-a9b9-8b52ff2285ed",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for a Forest or Island card, put it onto the battlefield, then shuffle.",
+      "oracle_excerpt": null,
+      "type_line": "Land",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Morphic Pool",
+      "oracle_id": "bd004c9d-771e-4e63-a97d-a2259c096af8",
+      "oracle_text": "This land enters tapped unless you have two or more opponents.\n{T}: Add {U} or {B}.",
+      "oracle_excerpt": null,
+      "type_line": "Land",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Mountain",
+      "oracle_id": "a3fb7228-e76b-4e96-a40e-20b5fed75685",
+      "oracle_text": "({T}: Add {R}.)",
+      "oracle_excerpt": null,
+      "type_line": "Basic Land — Mountain",
+      "color_identity": [
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Obeka, Splitter of Seconds",
+      "oracle_id": "1d15a06f-5471-48f2-8c4a-9b0886bef5af",
+      "oracle_text": "Menace\nWhenever Obeka deals combat damage to a player, you get that many additional upkeep steps after this phase.",
+      "oracle_excerpt": null,
+      "type_line": "Legendary Creature — Ogre Warlock",
+      "color_identity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{U}{B}{R}",
+      "cmc": 4,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Otawara, Soaring City",
+      "oracle_id": "e9b6a394-691c-425a-9307-76d8edc7375e",
+      "oracle_text": "{T}: Add {U}.\nChannel — {3}{U}, Discard this card: Return target artifact, creature, enchantment, or planeswalker to its owner's hand. This ability costs {1} less to activate for each legendary creature you control.",
+      "oracle_excerpt": "Channel — {3}{U}, Discard Otawara, Soaring City: Return target artifact, creature, enchantment, or planeswalker to its owner's hand.",
+      "type_line": "Legendary Land",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "source": "https://scryfall.com/card/neo/271/otawara-soaring-city",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Paradox Haze",
+      "oracle_id": "daff0e7b-08f2-435f-97b9-9b000e94ffa8",
+      "oracle_text": "Enchant player\nAt the beginning of enchanted player's first upkeep each turn, that player gets an additional upkeep step after this step.",
+      "oracle_excerpt": null,
+      "type_line": "Enchantment — Aura",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{U}",
+      "cmc": 3,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Perilous Research",
+      "oracle_id": "9243b539-5f9e-4bb3-9973-3d48366aa7cc",
+      "oracle_text": "Draw two cards, then sacrifice a permanent.",
+      "oracle_excerpt": null,
+      "type_line": "Instant",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{U}",
+      "cmc": 2,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Polluted Delta",
+      "oracle_id": "ef86989d-ce80-4e55-aece-7d11710eeffa",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for an Island or Swamp card, put it onto the battlefield, then shuffle.",
+      "oracle_excerpt": null,
+      "type_line": "Land",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Propaganda",
+      "oracle_id": "ea9709b6-4c37-4d5a-b04d-cd4c42e4f9dd",
+      "oracle_text": "Creatures can't attack you unless their controller pays {2} for each creature they control that's attacking you.",
+      "oracle_excerpt": null,
+      "type_line": "Enchantment",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{U}",
+      "cmc": 3,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Rakdos Signet",
+      "oracle_id": "3adb7681-977f-4a32-9ec8-51481b958268",
+      "oracle_text": "{1}, {T}: Add {B}{R}.",
+      "oracle_excerpt": null,
+      "type_line": "Artifact",
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}",
+      "cmc": 2,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Rhystic Study",
+      "oracle_id": "53236dd7-845a-444c-96d5-f41ed7325d8f",
+      "oracle_text": "Whenever an opponent casts a spell, you may draw a card unless that player pays {1}.",
+      "oracle_excerpt": null,
+      "type_line": "Enchantment",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "{2}{U}",
+      "cmc": 3,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Riverglide Pathway // Lavaglide Pathway",
+      "oracle_id": "4924b3a4-a218-4783-8a4d-82361fdecc78",
+      "oracle_text": "{T}: Add {U}.\n//\n{T}: Add {R}.",
+      "oracle_excerpt": null,
+      "type_line": "Land // Land",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": " // ",
+      "cmc": 0,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Scalding Tarn",
+      "oracle_id": "cb027150-848c-4a66-88ad-e20222304dd8",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for an Island or Mountain card, put it onto the battlefield, then shuffle.",
+      "oracle_excerpt": null,
+      "type_line": "Land",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Shivan Reef",
+      "oracle_id": "0fe16212-66c3-4e45-a641-7391e9b2e304",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {U} or {R}. This land deals 1 damage to you.",
+      "oracle_excerpt": null,
+      "type_line": "Land",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Shizo, Death's Storehouse",
+      "oracle_id": "008f2698-1721-45a3-8353-10f2f400dc8f",
+      "oracle_text": "{T}: Add {B}.\n{B}, {T}: Target legendary creature gains fear until end of turn. (It can't be blocked except by artifact creatures and/or black creatures.)",
+      "oracle_excerpt": "{T}: Add {B}. {B}, {T}: Target legendary creature gains fear until end of turn.",
+      "type_line": "Legendary Land",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "source": "https://scryfall.com/card/chk/283/shizo-deaths-storehouse",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Sol Ring",
+      "oracle_id": "6ad8011d-3471-4369-9d68-b264cc027487",
+      "oracle_text": "{T}: Add {C}{C}.",
+      "oracle_excerpt": null,
+      "type_line": "Artifact",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}",
+      "cmc": 1,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Staff of Compleation",
+      "oracle_id": "11c7662f-e688-40a6-98fd-6ae89d231b44",
+      "oracle_text": "{T}, Pay 1 life: Destroy target permanent you own.\n{T}, Pay 2 life: Add one mana of any color.\n{T}, Pay 3 life: Proliferate.\n{T}, Pay 4 life: Draw a card.\n{5}: Untap this artifact.",
+      "oracle_excerpt": null,
+      "type_line": "Artifact",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{3}",
+      "cmc": 3,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Steam Vents",
+      "oracle_id": "17039058-822d-409f-938c-b727a366ba63",
+      "oracle_text": "({T}: Add {U} or {R}.)\nAs this land enters, you may pay 2 life. If you don't, it enters tapped.",
+      "oracle_excerpt": null,
+      "type_line": "Land — Island Mountain",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Sulfurous Springs",
+      "oracle_id": "f5c38c01-4a40-469f-91a0-7479daf4e8e7",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {B} or {R}. This land deals 1 damage to you.",
+      "oracle_excerpt": null,
+      "type_line": "Land",
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Swamp",
+      "oracle_id": "56719f6a-1a6c-4c0a-8d21-18f7d7350b68",
+      "oracle_text": "({T}: Add {B}.)",
+      "oracle_excerpt": null,
+      "type_line": "Basic Land — Swamp",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Swan Song",
+      "oracle_id": "8ddfc283-c9b4-41a5-af88-cf0068e986cc",
+      "oracle_text": "Counter target enchantment, instant, or sorcery spell. Its controller creates a 2/2 blue Bird creature token with flying.",
+      "oracle_excerpt": null,
+      "type_line": "Instant",
+      "color_identity": [
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{U}",
+      "cmc": 1,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Talisman of Creativity",
+      "oracle_id": "14d2979d-5728-42d7-a027-0eb1f754655d",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {U} or {R}. This artifact deals 1 damage to you.",
+      "oracle_excerpt": null,
+      "type_line": "Artifact",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}",
+      "cmc": 2,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Talisman of Dominance",
+      "oracle_id": "4c0a0448-b9d6-43a0-8549-64066dac63f0",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {U} or {B}. This artifact deals 1 damage to you.",
+      "oracle_excerpt": null,
+      "type_line": "Artifact",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}",
+      "cmc": 2,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Talisman of Indulgence",
+      "oracle_id": "1d9aeaaa-66f6-41cb-9bac-162d6fd8662c",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {B} or {R}. This artifact deals 1 damage to you.",
+      "oracle_excerpt": null,
+      "type_line": "Artifact",
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}",
+      "cmc": 2,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "The Ninth Doctor",
+      "oracle_id": "c99f59c0-5cce-41a4-908f-d34e2c697419",
+      "oracle_text": "Haste\nInto the TARDIS — Whenever The Ninth Doctor becomes untapped during your untap step, you get an additional upkeep step after this step.",
+      "oracle_excerpt": null,
+      "type_line": "Legendary Creature — Time Lord Doctor",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{U}{R}",
+      "cmc": 3,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Toxic Deluge",
+      "oracle_id": "afaef788-34d1-460b-b884-9d7ae6ddeb18",
+      "oracle_text": "As an additional cost to cast this spell, pay X life.\nAll creatures get -X/-X until end of turn.",
+      "oracle_excerpt": null,
+      "type_line": "Sorcery",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{B}",
+      "cmc": 3,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Training Center",
+      "oracle_id": "e3570ac7-c593-40e3-bbd6-ec3da6d8158d",
+      "oracle_text": "This land enters tapped unless you have two or more opponents.\n{T}: Add {U} or {R}.",
+      "oracle_excerpt": null,
+      "type_line": "Land",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Trespasser's Curse",
+      "oracle_id": "2769751d-ca67-4d6e-93c9-9587367ae8ab",
+      "oracle_text": "Enchant player\nWhenever a creature enchanted player controls enters, that player loses 1 life and you gain 1 life.",
+      "oracle_excerpt": null,
+      "type_line": "Enchantment — Aura Curse",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{B}",
+      "cmc": 2,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Underground Sea",
+      "oracle_id": "4b22be3a-8ce1-47d1-b82e-6c3ccfb0548b",
+      "oracle_text": "({T}: Add {U} or {B}.)",
+      "oracle_excerpt": null,
+      "type_line": "Land — Island Swamp",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Urza's Saga",
+      "oracle_id": "4c6a0c30-b547-4eff-8ff4-0ca25803c076",
+      "oracle_text": "(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)\nI — This Saga gains \"{T}: Add {C}.\"\nII — This Saga gains \"{2}, {T}: Create a 0/0 colorless Construct artifact creature token with 'This token gets +1/+1 for each artifact you control.'\"\nIII — Search your library for an artifact card with mana cost {0} or {1}, put it onto the battlefield, then shuffle.",
+      "oracle_excerpt": "III — Search your library for an artifact card with mana cost {0} or {1}, put it onto the battlefield, then shuffle.",
+      "type_line": "Enchantment Land — Urza's Saga",
+      "color_identity": [],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "source": "https://scryfall.com/card/mh2/259/urzas-saga",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Vampiric Tutor",
+      "oracle_id": "ededbdae-d9dc-4206-9335-d7158f2d7700",
+      "oracle_text": "Search your library for a card, then shuffle and put that card on top. You lose 2 life.",
+      "oracle_excerpt": null,
+      "type_line": "Instant",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": true,
+      "mana_cost": "{B}",
+      "cmc": 1,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Volcanic Island",
+      "oracle_id": "c718911c-c955-4eb9-9e16-be4bd49a4e4e",
+      "oracle_text": "({T}: Add {U} or {R}.)",
+      "oracle_excerpt": null,
+      "type_line": "Land — Island Mountain",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Watery Grave",
+      "oracle_id": "fc9ec820-4245-4a96-b009-5308a818ca58",
+      "oracle_text": "({T}: Add {U} or {B}.)\nAs this land enters, you may pay 2 life. If you don't, it enters tapped.",
+      "oracle_excerpt": null,
+      "type_line": "Land — Island Swamp",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Wicked Visitor",
+      "oracle_id": "10330a79-a416-40da-bf5a-8b7cbd9a0498",
+      "oracle_text": "Whenever an enchantment you control is put into a graveyard from the battlefield, each opponent loses 1 life.",
+      "oracle_excerpt": null,
+      "type_line": "Creature — Nightmare",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{1}{B}",
+      "cmc": 2,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Withering Torment",
+      "oracle_id": "ffce81c5-1b58-4882-a4e7-6f8d7cb170de",
+      "oracle_text": "Destroy target creature or enchantment. You lose 2 life.",
+      "oracle_excerpt": null,
+      "type_line": "Instant",
+      "color_identity": [
+        "B"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "{2}{B}",
+      "cmc": 3,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    },
+    {
+      "name": "Xander's Lounge",
+      "oracle_id": "8291543f-d086-48aa-b2b7-5481ca8c9198",
+      "oracle_text": "({T}: Add {U}, {B}, or {R}.)\nThis land enters tapped.\nCycling {3} ({3}, Discard this card: Draw a card.)",
+      "oracle_excerpt": null,
+      "type_line": "Land — Island Swamp Mountain",
+      "color_identity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "commander_legality": "legal",
+      "game_changer": false,
+      "mana_cost": "",
+      "cmc": 0,
+      "source": "https://api.scryfall.com/cards/collection (live 2026-10-23 receipt in GrokBot PR 679)",
+      "oracle_text_verified_excerpts_only": false
+    }
+  ]
+}

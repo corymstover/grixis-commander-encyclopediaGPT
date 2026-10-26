@@ -80,7 +80,7 @@ OTHER_61_HEADER = {
     "Loki__the_Deceiver": ("5079291c08c5af212b3d90d63ac5b01849d45c7700b1d64100ef57fb13458062", "refinement/decklists/Loki_the_Deceiver_Approved_2026-10-14.txt", "2026-10-14", "LOCKED"),
     "Lord_of_Tresserhorn": ("95863276f38beff6b0cf7609041006a6f1de94d5e62c73d76551d6793ffa5b8e", "refinement/decklists/Lord_of_Tresserhorn_Approved_2026-10-14.txt", "2026-10-14", "LOCKED"),
     "Lord_Xander__the_Collector": ("92cdc2f9c1a3583ccf6a311679db66bef825dac2902761859e929f268b6b4787", "refinement/decklists/Lord_Xander_the_Collector_Approved_2026-10-14.txt", "2026-10-14", "LOCKED"),
-    "Lynde__Cheerful_Tormentor": ("05d1c4eea023d25e4308f78b109e80b78e0a3f4d655c3df36743ba3afbf04166", "refinement/decklists/Lynde_Cheerful_Tormentor_Approved_2026-10-14.txt", "2026-10-14", "LOCKED"),
+    "Lynde__Cheerful_Tormentor": ("6e088891b3c92b632d95e4b6dbd83ffedb06834f812e6728cc5bfa7bdc13556e", "refinement/decklists/Lynde_Cheerful_Tormentor_M7_Rev1_Approved_2026-10-25.txt", "2026-10-25", "LOCKED"),
     "Mai_and_Zuko": ("aa2036f49f38e6503734d99c852acdfa704aa1b27e44bb26d6e9566a73a0d4a2", "refinement/decklists/Mai_and_Zuko_Approved_2026-10-14.txt", "2026-10-14", "LOCKED"),
     "Mairsil__the_Pretender": ("51e8fd18c7ded6744a4fa2f871925a0679f85dada3e6e517334bd13c07889ee5", "refinement/decklists/Mairsil_the_Pretender_Approved_2026-10-14.txt", "2026-10-14", "LOCKED"),
     "Marchesa__Dealer_of_Death": ("34a6a940c54aaebde612ae5d3a244e22931d3a977fa26e4c43f2a76aafc0f6b1", "refinement/decklists/Marchesa_Dealer_of_Death_Approved_2026-10-15.txt", "2026-10-15", "LOCKED"),
