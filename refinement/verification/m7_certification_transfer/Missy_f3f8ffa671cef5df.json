@@ -1,0 +1,192 @@
+{
+  "schema_version": 1,
+  "deck_id": "Missy",
+  "approved_raw_sha256": "f3f8ffa671cef5df9612a52ab0a5003931f2b71110f6d7fef45906b4f052f83d",
+  "approved_artifact": "refinement/decklists/Missy_M7_Rev1_Approved_2026-10-26.txt",
+  "owner_approval_receipt": "refinement/approvals/Missy_M7_Rev1_Approved_2026-10-26.md",
+  "engineering": {
+    "pr_url": "https://github.com/corymstover/GrokBotMTGCompanion/pull/719",
+    "tested_head_sha": "0afd9afc474880769c28fbe6cbc461d35d56f930",
+    "merged_commit_sha": "d63a00b183f7119f590fbb85b1ac7fd8d758614b",
+    "m7_decision_packet_ref": "data/grixis/m7/decision_reviews/Missy_rev1.json",
+    "oracle_legality_ref": "data/grixis/m7/oracle_snapshots/Missy_Rev1_Scryfall_20261026.json",
+    "exact_test_ref": "tests/test_m7_missy_rev1.py",
+    "shared_m7_contract_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40395748220",
+    "head_sha": "0afd9afc474880769c28fbe6cbc461d35d56f930",
+    "grok_first_pass_ref": "data/grixis/m6/review_packets/missy.json",
+    "independent_review_ref": "data/grixis/m6/owner_pass_c_substitute/Missy/final_disposition.md (owner-equivalent, expressly NON-independent; source outcome NEEDS TESTING)",
+    "m7_decision_gate_command": "python scripts/grixis_m7_decision_gate.py --check --file data/grixis/m7/decision_reviews/Missy_rev1.json",
+    "m7_decision_gate_ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40395748220"
+  },
+  "m6_transfer": {
+    "plan_source_path": "data/grixis/m6/test_blueprints/Missy.json",
+    "plan_blob_sha": "e4ff09fac5154ceb8ecf7e38b2b83f2e15dd8ce2",
+    "ij_receipt_ref": "data/grixis/m7/decision_reviews/Missy_chatgpt_rev1_review.md (exact-source M7 bounded review, NOT independently executed broad M6 I/J)",
+    "ij_scope": "TRANSFERRED_WITH_CASE_MAPPING",
+    "revision_diff_and_validity_reason": "Owner approved twelve exact M7 replacements; source cases K5,E1,W3 refer to removed Aphetto Runecaster, Their Name Is Death, Cybermen Squadron / Ashad. Historical M6 blueprint DESIGN_ONLY_UNIMPLEMENTED_NOT_RUN. All five required P0 are now mapped to exact-SHA-bounded executable finite source fixtures with normal and adversarial predicates; other game-state P1 scenarios remain DEFERRED, not secretly certified. Six engineering exact-list Oracle checks plus these five source-mapped bounded methods. No general independent I/J seal or simulated win rate.",
+    "P0": [
+      {
+        "case_id": "C1",
+        "status": "PASSED",
+        "test_ref": "tests/test_deck38_m7_p0_source_cases.py::Deck38M7SourceCases.test_C1_missy_nonartifact_death_and_end_step_condition",
+        "execution_command": "python -m unittest discover -s tests -p 'test_deck38_m7_p0_source_cases.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Missy_Rev1_Scryfall_20261026.json (engineering PR #719; pinned source oracle for finite source-model fixtures)",
+        "payable_fixture": "Missy on battlefield, another nonartifact creature dies, three artifact creatures at own end step.",
+        "positive_assertion": "Return its card tapped, face down under us as 2/2 Cyberman; end-step damage option counts artifact creatures.",
+        "adversarial_assertion": "Artifact dies, Missy herself dies, or Missy is absent prevents conversion; nonartifact bodies do not increase option damage.",
+        "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40398297196",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "f3f8ffa671cef5df9612a52ab0a5003931f2b71110f6d7fef45906b4f052f83d",
+        "coverage_note": "Finite source-bound positive/adversarial predicates, not full Magic rules engine, full I/J, or win-rate simulation. Current branch exact candidate file and oracle text contract."
+      },
+      {
+        "case_id": "K1",
+        "status": "PASSED",
+        "test_ref": "tests/test_deck38_m7_p0_source_cases.py::Deck38M7SourceCases.test_K1_face_down_colorless_and_morph_restriction",
+        "execution_command": "python -m unittest discover -s tests -p 'test_deck38_m7_p0_source_cases.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Missy_Rev1_Scryfall_20261026.json (engineering PR #719; pinned source oracle for finite source-model fixtures)",
+        "payable_fixture": "Missy returns printed Ruthless Ripper face-down as 2/2 colorless Cyberman artifact, player reveals black card.",
+        "positive_assertion": "Printed morph reveal-black creature turns face up to its printed nonartifact identity.",
+        "adversarial_assertion": "Wrong revealed color or a creature without morph cannot use the same turn-up shortcut.",
+        "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40398297196",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "f3f8ffa671cef5df9612a52ab0a5003931f2b71110f6d7fef45906b4f052f83d",
+        "coverage_note": "Finite source-bound positive/adversarial predicates, not full Magic rules engine, full I/J, or win-rate simulation. Current branch exact candidate file and oracle text contract."
+      },
+      {
+        "case_id": "K2",
+        "status": "PASSED",
+        "test_ref": "tests/test_deck38_m7_p0_source_cases.py::Deck38M7SourceCases.test_K2_turn_up_reset_reenables_nonartifact_death",
+        "execution_command": "python -m unittest discover -s tests -p 'test_deck38_m7_p0_source_cases.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Missy_Rev1_Scryfall_20261026.json (engineering PR #719; pinned source oracle for finite source-model fixtures)",
+        "payable_fixture": "Missy converted Ruthless Ripper, Dragon's Eye Savants, and Horde Ambusher, matching reveal-color payment available.",
+        "positive_assertion": "Each may turn face up as a printed nonartifact and its subsequent death triggers fresh Missy conversion.",
+        "adversarial_assertion": "Still-facedown artifact death does not re-trigger Missy; no correct reveal-color cannot activate the corresponding morph.",
+        "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40398297196",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "f3f8ffa671cef5df9612a52ab0a5003931f2b71110f6d7fef45906b4f052f83d",
+        "coverage_note": "Finite source-bound positive/adversarial predicates, not full Magic rules engine, full I/J, or win-rate simulation. Current branch exact candidate file and oracle text contract."
+      },
+      {
+        "case_id": "K3",
+        "status": "PASSED",
+        "test_ref": "tests/test_deck38_m7_p0_source_cases.py::Deck38M7SourceCases.test_K3_opponent_died_nonartifact_returns_to_missy_controller",
+        "execution_command": "python -m unittest discover -s tests -p 'test_deck38_m7_p0_source_cases.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Missy_Rev1_Scryfall_20261026.json (engineering PR #719; pinned source oracle for finite source-model fixtures)",
+        "payable_fixture": "Opponent's another nonartifact creature dies while Missy is present.",
+        "positive_assertion": "Creature returns tapped, face-down under Missy controller (us), regardless of opposing prior controller.",
+        "adversarial_assertion": "Opponent's artifact creature dying, or a nondying permanent, is not converted.",
+        "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40398297196",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "f3f8ffa671cef5df9612a52ab0a5003931f2b71110f6d7fef45906b4f052f83d",
+        "coverage_note": "Finite source-bound positive/adversarial predicates, not full Magic rules engine, full I/J, or win-rate simulation. Current branch exact candidate file and oracle text contract."
+      },
+      {
+        "case_id": "F1",
+        "status": "PASSED",
+        "test_ref": "tests/test_deck38_m7_p0_source_cases.py::Deck38M7SourceCases.test_F1_six_mana_commander_colored_source_and_acceleration",
+        "execution_command": "python -m unittest discover -s tests -p 'test_deck38_m7_p0_source_cases.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Missy_Rev1_Scryfall_20261026.json (engineering PR #719; pinned source oracle for finite source-model fixtures)",
+        "payable_fixture": "Cast Missy with six available mana including one each U/B/R, from named legal artifact acceleration and mana sources present in exact list.",
+        "positive_assertion": "Six mana with three colored requirements meets {3}{U}{B}{R} commander casting cost.",
+        "adversarial_assertion": "Nine generic mana missing red cannot cast; five mana with all colors cannot cast; lots of mana with missing blue cannot cast.",
+        "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40398297196",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "f3f8ffa671cef5df9612a52ab0a5003931f2b71110f6d7fef45906b4f052f83d",
+        "coverage_note": "Finite source-bound positive/adversarial predicates, not full Magic rules engine, full I/J, or win-rate simulation. Current branch exact candidate file and oracle text contract."
+      }
+    ],
+    "P1": [
+      {
+        "case_id": "K4",
+        "status": "DEFERRED",
+        "specific_reason": "Source blueprint unimplemented; current finite Oracle/rules-presence checks are not a full source-mapped positive/adversarial game-state fixture.",
+        "coverage_consequence": "villainous-choice-rules remains unexecuted as a full adversarial game-state source case; only current Scryfall/strategic review and six exact candidate finite checks inform it.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "K5",
+        "status": "DEFERRED",
+        "specific_reason": "Source fixture includes prior-version card removed in M7; must remap, then implement positive/adversarial executable game-state tests.",
+        "coverage_consequence": "face-up-multipliers remains unexecuted as a full adversarial game-state source case; only current Scryfall/strategic review and six exact candidate finite checks inform it.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "K6",
+        "status": "DEFERRED",
+        "specific_reason": "Source blueprint unimplemented; current finite Oracle/rules-presence checks are not a full source-mapped positive/adversarial game-state fixture.",
+        "coverage_consequence": "pipes-draw remains unexecuted as a full adversarial game-state source case; only current Scryfall/strategic review and six exact candidate finite checks inform it.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "K7",
+        "status": "DEFERRED",
+        "specific_reason": "Source blueprint unimplemented; current finite Oracle/rules-presence checks are not a full source-mapped positive/adversarial game-state fixture.",
+        "coverage_consequence": "no-chaos-payoff remains unexecuted as a full adversarial game-state source case; only current Scryfall/strategic review and six exact candidate finite checks inform it.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "E1",
+        "status": "DEFERRED",
+        "specific_reason": "Source fixture includes prior-version card removed in M7; must remap, then implement positive/adversarial executable game-state tests.",
+        "coverage_consequence": "cyberman-conversion remains unexecuted as a full adversarial game-state source case; only current Scryfall/strategic review and six exact candidate finite checks inform it.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "E2",
+        "status": "DEFERRED",
+        "specific_reason": "Source blueprint unimplemented; current finite Oracle/rules-presence checks are not a full source-mapped positive/adversarial game-state fixture.",
+        "coverage_consequence": "aristocrats remains unexecuted as a full adversarial game-state source case; only current Scryfall/strategic review and six exact candidate finite checks inform it.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "W1",
+        "status": "DEFERRED",
+        "specific_reason": "Source blueprint unimplemented; current finite Oracle/rules-presence checks are not a full source-mapped positive/adversarial game-state fixture.",
+        "coverage_consequence": "missy-morph-loop remains unexecuted as a full adversarial game-state source case; only current Scryfall/strategic review and six exact candidate finite checks inform it.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "W2",
+        "status": "DEFERRED",
+        "specific_reason": "Source blueprint unimplemented; current finite Oracle/rules-presence checks are not a full source-mapped positive/adversarial game-state fixture.",
+        "coverage_consequence": "haruspex-ixidor remains unexecuted as a full adversarial game-state source case; only current Scryfall/strategic review and six exact candidate finite checks inform it.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "W3",
+        "status": "DEFERRED",
+        "specific_reason": "Source fixture includes prior-version card removed in M7; must remap, then implement positive/adversarial executable game-state tests.",
+        "coverage_consequence": "villainous-choice remains unexecuted as a full adversarial game-state source case; only current Scryfall/strategic review and six exact candidate finite checks inform it.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "F2",
+        "status": "DEFERRED",
+        "specific_reason": "Source blueprint unimplemented; current finite Oracle/rules-presence checks are not a full source-mapped positive/adversarial game-state fixture.",
+        "coverage_consequence": "graveyard-exile remains unexecuted as a full adversarial game-state source case; only current Scryfall/strategic review and six exact candidate finite checks inform it.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "F3",
+        "status": "DEFERRED",
+        "specific_reason": "Source blueprint unimplemented; current finite Oracle/rules-presence checks are not a full source-mapped positive/adversarial game-state fixture.",
+        "coverage_consequence": "nonartifact-only remains unexecuted as a full adversarial game-state source case; only current Scryfall/strategic review and six exact candidate finite checks inform it.",
+        "owner_visible_unresolved": true
+      }
+    ],
+    "candidate_scoped_passed_checks": [
+      "exact SHA 100 physical and 97 named singleton structure",
+      "full 97-name current Scryfall Commander legal Grixis identity snapshot",
+      "Missy nonartifact Cyberman conversion / face-down morph printed traits",
+      "no-mana reveal morphs and actual sacrifice/ETB payoffs",
+      "Yawgmoth life payment, Sharpshooter timing and protection conditions",
+      "retained Cyberman and villainous-choice identity"
+    ],
+    "unverified_claims": [
+      "source P1 deferred; no complete historical M6 suite",
+      "no actual multiplayer simulation or win-rate evidence",
+      "no blanket M6/M7/M8 certification beyond scoped deck evidence"
+    ]
+  }
+}
