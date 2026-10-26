@@ -12,166 +12,176 @@
     "oracle_legality_ref": "data/grixis/m7/oracle_snapshots/Mishra__Eminent_One_Rev1_Scryfall_20261026.json",
     "exact_test_ref": "tests/test_m7_mishra_eminent_rev1.py",
     "exact_ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40312936555",
-    "shared_m7_contract_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40312936783"
+    "shared_m7_contract_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40312936783",
+    "grok_first_pass_ref": "data/grixis/m6/review_packets/mishra-eminent-one.json",
+    "independent_review_ref": "data/grixis/m6/owner_pass_c_substitute/Mishra__Eminent_One/final_disposition.md (owner-equivalent Pass C, expressly non-independent)",
+    "m7_decision_gate_command": "python scripts/grixis_m7_decision_gate.py --check --file data/grixis/m7/decision_reviews/Mishra__Eminent_One_rev1.json",
+    "m7_decision_gate_ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40312936555"
   },
   "m6_transfer": {
     "plan_source_path": "data/grixis/m6/test_blueprints/Mishra__Eminent_One.json",
-    "ij_scope": "SCOPED_EXACT_CANDIDATE_FINITE_TESTS_AND_HISTORICAL_MANUAL_REVIEW_NOT_INDEPENDENT_GLOBAL_IJ",
-    "revision_diff_and_validity_reason": "Six exact owner-approved swaps replace Smelting Vat, The Mightstone and Weakstone, Uthros Research Craft, Padeem, Lich's Relic and Enthusiastic Mechanaut. M6 blueprint was DESIGN_ONLY_UNIMPLEMENTED_NOT_RUN, therefore no claim that unexecuted full game-state cases passed. Current M7 exact list passes seven finite unit methods plus 100/100 Oracle legality and whole-list strategic review. Some source scenarios use cards removed from M7 (E1, E2), so are remapped or deferred explicitly.",
+    "ij_scope": "TRANSFERRED_WITH_CASE_MAPPING",
+    "revision_diff_and_validity_reason": "Six exact owner-approved swaps replace Smelting Vat, The Mightstone and Weakstone, Uthros Research Craft, Padeem, Lich's Relic and Enthusiastic Mechanaut. M6 blueprint was DESIGN_ONLY_UNIMPLEMENTED_NOT_RUN, therefore no claim that unexecuted full game-state cases passed. Current M7 exact list passes seven finite unit methods plus 100/100 Oracle legality and whole-list strategic review. Some source scenarios use cards removed from M7 (E1, E2), so are remapped or deferred explicitly. Five required P0 finite model tests authored and source-mapped in canonical PR #84 after original M7 research PR #718; all include explicit normal and adversarial inputs, anchored to SHA. P1 full game-state cases DEFERRED and owner-visible; no global independent I/J seal.",
     "P0": [
       {
         "case_id": "C1",
-        "priority": "P0",
-        "status": "BOUNDED_PASS",
-        "test_ref": "tests/test_m7_mishra_eminent_rev1.py::MishraEminentRev1.test_mishra_gontis_heart_panharmonicon_energy",
-        "source_blueprint": "data/grixis/m6/test_blueprints/Mishra__Eminent_One.json",
-        "evidence_notes": "Current Oracle and two positive/adversarial combat-trigger energy lines source-checked; not a full Magic rules simulator.",
-        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40312936555",
-        "exact_tested_raw_sha256": "0fa7b00d9d74b208f3fd5783b30aa190c4e5b17e72ea64851f895315f05083a0"
+        "status": "PASSED",
+        "test_ref": "tests/test_deck37_m7_p0_source_cases.py::Deck37M7SourceCases.test_C1_mishra_trigger_target_and_next_end_step",
+        "execution_command": "python -m unittest discover -s tests -p 'test_deck37_m7_p0_source_cases.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Mishra__Eminent_One_Rev1_Scryfall_20261026.json",
+        "payable_fixture": "Beginning of own combat with Mishra on battlefield and owned noncreature artifact in play as valid target; source retains MV six.",
+        "positive_assertion": "A hasty 4/4 Mishra's Warform artifact creature with copied MV and delayed sacrifice is created.",
+        "adversarial_assertion": "Invalid timing, absent Mishra, opponent-controlled source, creature source or removal before resolution rejects the copy.",
+        "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40314618872",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "0fa7b00d9d74b208f3fd5783b30aa190c4e5b17e72ea64851f895315f05083a0",
+        "coverage_note": "Finite source-mapped positive/adversarial predicate tests, not general Magic simulation."
       },
       {
         "case_id": "K1",
-        "priority": "P0",
-        "status": "HISTORICAL_MANUAL_REVIEW_NOT_REEXECUTED",
-        "test_ref": null,
-        "source_blueprint": "data/grixis/m6/test_blueprints/Mishra__Eminent_One.json",
-        "evidence_notes": "Mishra and Determined Iteration combat trigger ordering documented in Oct15 approved verification; exact M7 suite does not independently execute this two-trigger sequence.",
-        "ci_run_url": null,
-        "exact_tested_raw_sha256": null
+        "status": "PASSED",
+        "test_ref": "tests/test_deck37_m7_p0_source_cases.py::Deck37M7SourceCases.test_K1_iteration_beginning_combat_ordering",
+        "execution_command": "python -m unittest discover -s tests -p 'test_deck37_m7_p0_source_cases.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Mishra__Eminent_One_Rev1_Scryfall_20261026.json",
+        "payable_fixture": "Mishra and Determined Iteration both present, own beginning of combat; controller orders Mishra first.",
+        "positive_assertion": "Warform exists when Iteration populate resolves and gets copied.",
+        "adversarial_assertion": "Reversed trigger order with no preexisting token gives no Iteration-populated Warform.",
+        "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40314618872",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "0fa7b00d9d74b208f3fd5783b30aa190c4e5b17e72ea64851f895315f05083a0",
+        "coverage_note": "Finite source-mapped positive/adversarial predicate tests, not general Magic simulation."
       },
       {
         "case_id": "K2",
-        "priority": "P0",
-        "status": "BOUNDED_PASS",
-        "test_ref": "tests/test_m7_mishra_eminent_rev1.py::MishraEminentRev1.test_simulacrum_mv_copy_and_mana_value",
-        "source_blueprint": "data/grixis/m6/test_blueprints/Mishra__Eminent_One.json",
-        "evidence_notes": "Warform mana value and Simulacrum condition finite-checked; Repurposing Bay/Transmute Artifact opportunity documented in Oct15 manual verification but not newly finite-executed.",
-        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40312936555",
-        "exact_tested_raw_sha256": "0fa7b00d9d74b208f3fd5783b30aa190c4e5b17e72ea64851f895315f05083a0"
+        "status": "PASSED",
+        "test_ref": "tests/test_deck37_m7_p0_source_cases.py::Deck37M7SourceCases.test_K2_warform_mana_value_bay_and_transmute",
+        "execution_command": "python -m unittest discover -s tests -p 'test_deck37_m7_p0_source_cases.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Mishra__Eminent_One_Rev1_Scryfall_20261026.json",
+        "payable_fixture": "Five-MV copied artifact remains until postcombat, available as sacrifice to Bay; Transmute checks sacrificed/source and searched MV.",
+        "positive_assertion": "Copy retains MV 5, Bay can seek MV 6 after cost; Transmute higher MV requires difference payment.",
+        "adversarial_assertion": "Bay cannot seek MV 7 from 5-MV source or sacrifice already absent source; Transmute has no negative mana payment.",
+        "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40314618872",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "0fa7b00d9d74b208f3fd5783b30aa190c4e5b17e72ea64851f895315f05083a0",
+        "coverage_note": "Finite source-mapped positive/adversarial predicate tests, not general Magic simulation."
       },
       {
         "case_id": "K3",
-        "priority": "P0",
-        "status": "HISTORICAL_MANUAL_REVIEW_NOT_REEXECUTED",
-        "test_ref": null,
-        "source_blueprint": "data/grixis/m6/test_blueprints/Mishra__Eminent_One.json",
-        "evidence_notes": "Machine God's Effigy copy-as-artifact and copied creature characteristics documented under Oct15 verification; no new complete copiable-values finite run.",
-        "ci_run_url": null,
-        "exact_tested_raw_sha256": null
+        "status": "PASSED",
+        "test_ref": "tests/test_deck37_m7_p0_source_cases.py::Deck37M7SourceCases.test_K3_machine_gods_effigy_copiable_values",
+        "execution_command": "python -m unittest discover -s tests -p 'test_deck37_m7_p0_source_cases.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Mishra__Eminent_One_Rev1_Scryfall_20261026.json",
+        "payable_fixture": "Machine God's Effigy chose Master Transmuter on entry, is a noncreature artifact with copied abilities and added blue tap ability.",
+        "positive_assertion": "Mishra may target noncreature Effigy; resulting hasty Warform has copied creature abilities plus tap for blue.",
+        "adversarial_assertion": "Effigy that is itself a creature is not a legal Mishra noncreature-artifact target.",
+        "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40314618872",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "0fa7b00d9d74b208f3fd5783b30aa190c4e5b17e72ea64851f895315f05083a0",
+        "coverage_note": "Finite source-mapped positive/adversarial predicate tests, not general Magic simulation."
       },
       {
         "case_id": "F1",
-        "priority": "P0",
-        "status": "PARTIAL_BOUNDED_PASS",
-        "test_ref": "tests/test_m7_mishra_eminent_rev1.py::MishraEminentRev1.test_greaves_protection_not_equivalent_to_padeem",
-        "source_blueprint": "data/grixis/m6/test_blueprints/Mishra__Eminent_One.json",
-        "evidence_notes": "Greaves shroud and commander protection distinguished from Padeem; full remove-Mishra-before-vs-after-trigger outcome not simulated.",
-        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40312936555",
-        "exact_tested_raw_sha256": "0fa7b00d9d74b208f3fd5783b30aa190c4e5b17e72ea64851f895315f05083a0"
+        "status": "PASSED",
+        "test_ref": "tests/test_deck37_m7_p0_source_cases.py::Deck37M7SourceCases.test_F1_mishra_removed_before_vs_after_combat_trigger",
+        "execution_command": "python -m unittest discover -s tests -p 'test_deck37_m7_p0_source_cases.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Mishra__Eminent_One_Rev1_Scryfall_20261026.json",
+        "payable_fixture": "Controlled Mishra triggers at beginning of combat with valid source target; opponent removes commander after ability on stack.",
+        "positive_assertion": "Removal after trigger creation does not remove ability, and source still valid allows resolution.",
+        "adversarial_assertion": "Removal before combat trigger or removal of target before resolution means no Warform.",
+        "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40314618872",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "0fa7b00d9d74b208f3fd5783b30aa190c4e5b17e72ea64851f895315f05083a0",
+        "coverage_note": "Finite source-mapped positive/adversarial predicate tests, not general Magic simulation."
       }
     ],
     "P1": [
       {
         "case_id": "K4",
-        "priority": "P1",
-        "status": "HISTORICAL_MANUAL_REVIEW_NOT_REEXECUTED",
-        "test_ref": null,
-        "source_blueprint": "data/grixis/m6/test_blueprints/Mishra__Eminent_One.json",
-        "evidence_notes": "Mindslaver tap/Warform and copying effects historically documented; exact M7 does not execute full control turn.",
-        "ci_run_url": null,
-        "exact_tested_raw_sha256": null
+        "status": "DEFERRED",
+        "specific_reason": "Full Mindslaver/resonator control-turn stack sequencing not executed.",
+        "coverage_consequence": "Historical October 15 manually reasoned interaction is retained where applicable but is not represented as independently passed exact-100 M6 I/J for this P1; no mathematical win rate or full engine claim.",
+        "owner_visible_unresolved": true
       },
       {
         "case_id": "K5",
-        "priority": "P1",
-        "status": "BOUNDED_PASS",
+        "status": "PASSED",
         "test_ref": "tests/test_m7_mishra_eminent_rev1.py::MishraEminentRev1.test_roaming_throne_double_mishra_trigger_and_energy",
-        "source_blueprint": "data/grixis/m6/test_blueprints/Mishra__Eminent_One.json",
-        "evidence_notes": "Actual beginning-of-combat and second Warform count checked with Throne; this is not a full permanent-state engine.",
+        "execution_command": "python -m unittest discover -s tests -p 'test_m7_mishra_eminent_rev1.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Mishra__Eminent_One_Rev1_Scryfall_20261026.json",
+        "payable_fixture": "Mishra and Roaming Throne choosing Human or Artificer; targeted noncreature Hearts present.",
+        "positive_assertion": "Two combat-triggered Warforms are produced; Heart entry arithmetic produces ten energy.",
+        "adversarial_assertion": "Only the proper creature type can double Mishra; no auto-doubling without Throne and legal source.",
         "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40312936555",
-        "exact_tested_raw_sha256": "0fa7b00d9d74b208f3fd5783b30aa190c4e5b17e72ea64851f895315f05083a0"
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "0fa7b00d9d74b208f3fd5783b30aa190c4e5b17e72ea64851f895315f05083a0",
+        "coverage_note": "Finite oracle-derived fixture, not comprehensive random outcome."
       },
       {
         "case_id": "K6",
-        "priority": "P1",
-        "status": "HISTORICAL_MANUAL_REVIEW_NOT_REEXECUTED",
-        "test_ref": null,
-        "source_blueprint": "data/grixis/m6/test_blueprints/Mishra__Eminent_One.json",
-        "evidence_notes": "Helm / Urza / Thousand-Year Elixir interactions retained from old manual verification, no newly sealed finite loop.",
-        "ci_run_url": null,
-        "exact_tested_raw_sha256": null
+        "status": "DEFERRED",
+        "specific_reason": "Full Helm/Urza/Elixir repeatable token/mana engine not rerun as independently source-executable fixture.",
+        "coverage_consequence": "Historical October 15 manually reasoned interaction is retained where applicable but is not represented as independently passed exact-100 M6 I/J for this P1; no mathematical win rate or full engine claim.",
+        "owner_visible_unresolved": true
       },
       {
         "case_id": "E1",
-        "priority": "P1",
-        "status": "PARTIAL_BOUNDED_PASS",
-        "test_ref": "tests/test_m7_mishra_eminent_rev1.py::MishraEminentRev1.test_idol_copy_haste_and_token_precondition",
-        "source_blueprint": "data/grixis/m6/test_blueprints/Mishra__Eminent_One.json",
-        "evidence_notes": "Idol/token predicate checked; historic source E1 Lich's Relic and Mightstone are removed, so cannot claim that old E1 complete scenario still matches current exact 100.",
-        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40312936555",
-        "exact_tested_raw_sha256": "0fa7b00d9d74b208f3fd5783b30aa190c4e5b17e72ea64851f895315f05083a0"
+        "status": "DEFERRED",
+        "specific_reason": "Full preimplementation E1 target inventory includes Lich's Relic and Mightstone removed by M7; a revised all-target fixture not performed.",
+        "coverage_consequence": "Historical October 15 manually reasoned interaction is retained where applicable but is not represented as independently passed exact-100 M6 I/J for this P1; no mathematical win rate or full engine claim.",
+        "owner_visible_unresolved": true
       },
       {
         "case_id": "E2",
-        "priority": "P1",
-        "status": "HISTORICAL_MANUAL_REVIEW_NOT_REEXECUTED",
-        "test_ref": null,
-        "source_blueprint": "data/grixis/m6/test_blueprints/Mishra__Eminent_One.json",
-        "evidence_notes": "Historical Smelting Vat removed; retained KCI, Bay, Transmute, Transmuter reviewed as strategic roles; no exact fresh multi-source finite game-state test.",
-        "ci_run_url": null,
-        "exact_tested_raw_sha256": null
+        "status": "DEFERRED",
+        "specific_reason": "Original case includes Smelting Vat cut by M7; rebuilt conversion-engine finite test not executed.",
+        "coverage_consequence": "Historical October 15 manually reasoned interaction is retained where applicable but is not represented as independently passed exact-100 M6 I/J for this P1; no mathematical win rate or full engine claim.",
+        "owner_visible_unresolved": true
       },
       {
         "case_id": "W1",
-        "priority": "P1",
-        "status": "BOUNDED_PASS",
+        "status": "PASSED",
         "test_ref": "tests/test_m7_mishra_eminent_rev1.py::MishraEminentRev1.test_mishra_gontis_heart_panharmonicon_energy",
-        "source_blueprint": "data/grixis/m6/test_blueprints/Mishra__Eminent_One.json",
-        "evidence_notes": "Heart energy with original plus Warform and Panharmonicon exact math checked, with Throne branch in second test. Historical Resonator/Iteration variants remain manual review, not full turn-loop simulator.",
+        "execution_command": "python -m unittest discover -s tests -p 'test_m7_mishra_eminent_rev1.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Mishra__Eminent_One_Rev1_Scryfall_20261026.json",
+        "payable_fixture": "Mishra, source Heart and Panharmonicon enter combat with actual legal Warform target.",
+        "positive_assertion": "Original Heart plus first copy with doubled triggers creates eight energy for one qualifying extra turn.",
+        "adversarial_assertion": "Without doubled ETB trigger source or valid target, cannot assert eight energy or an unconditional repeatable turn loop.",
         "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40312936555",
-        "exact_tested_raw_sha256": "0fa7b00d9d74b208f3fd5783b30aa190c4e5b17e72ea64851f895315f05083a0"
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "0fa7b00d9d74b208f3fd5783b30aa190c4e5b17e72ea64851f895315f05083a0",
+        "coverage_note": "Finite oracle-derived fixture, not comprehensive random outcome."
       },
       {
         "case_id": "W2",
-        "priority": "P1",
-        "status": "HISTORICAL_MANUAL_REVIEW_NOT_REEXECUTED",
-        "test_ref": null,
-        "source_blueprint": "data/grixis/m6/test_blueprints/Mishra__Eminent_One.json",
-        "evidence_notes": "Urza, Helm, Elixir commander loop described in Oct15 approval-ready evidence and retained; not an independent bounded recertification in exact M7 suite.",
-        "ci_run_url": null,
-        "exact_tested_raw_sha256": null
+        "status": "DEFERRED",
+        "specific_reason": "Complete Urza/Worldwalker Helm/Elixir repeat-loop stack and summoning-sickness fixtures not independently executed.",
+        "coverage_consequence": "Historical October 15 manually reasoned interaction is retained where applicable but is not represented as independently passed exact-100 M6 I/J for this P1; no mathematical win rate or full engine claim.",
+        "owner_visible_unresolved": true
       },
       {
         "case_id": "W3",
-        "priority": "P1",
-        "status": "PARTIAL_BOUNDED_PASS",
-        "test_ref": "tests/test_m7_mishra_eminent_rev1.py::MishraEminentRev1.test_grinding_station_and_marionette_exact_limits",
-        "source_blueprint": "data/grixis/m6/test_blueprints/Mishra__Eminent_One.json",
-        "evidence_notes": "New Station/Marionette limits source-checked. No unconditional Aetherflux/KCI deterministic kill or full storm-count gameplay asserted.",
-        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40312936555",
-        "exact_tested_raw_sha256": "0fa7b00d9d74b208f3fd5783b30aa190c4e5b17e72ea64851f895315f05083a0"
+        "status": "DEFERRED",
+        "specific_reason": "Full Reservoir/KCI loop win-condition source-count and intervening hate simulation not independently executed.",
+        "coverage_consequence": "Historical October 15 manually reasoned interaction is retained where applicable but is not represented as independently passed exact-100 M6 I/J for this P1; no mathematical win rate or full engine claim.",
+        "owner_visible_unresolved": true
       },
       {
         "case_id": "F2",
-        "priority": "P1",
         "status": "DEFERRED",
-        "test_ref": null,
-        "source_blueprint": "data/grixis/m6/test_blueprints/Mishra__Eminent_One.json",
-        "evidence_notes": "Opponent multi-piece artifact hate game-state matchup not tested; no false win-rate claims.",
-        "ci_run_url": null,
-        "exact_tested_raw_sha256": null
+        "specific_reason": "Complete opponent artifact-wipe/lockout matchup and recovery sampling not executed.",
+        "coverage_consequence": "Historical October 15 manually reasoned interaction is retained where applicable but is not represented as independently passed exact-100 M6 I/J for this P1; no mathematical win rate or full engine claim.",
+        "owner_visible_unresolved": true
       },
       {
         "case_id": "F3",
-        "priority": "P1",
         "status": "DEFERRED",
-        "test_ref": null,
-        "source_blueprint": "data/grixis/m6/test_blueprints/Mishra__Eminent_One.json",
-        "evidence_notes": "Representative turn-to-kill matchup samples not executed; bracket derived from commander five-mana/combat engine and available interaction.",
-        "ci_run_url": null,
-        "exact_tested_raw_sha256": null
+        "specific_reason": "Representative speed goldfish distribution and opponent interaction timing not sampled.",
+        "coverage_consequence": "Historical October 15 manually reasoned interaction is retained where applicable but is not represented as independently passed exact-100 M6 I/J for this P1; no mathematical win rate or full engine claim.",
+        "owner_visible_unresolved": true
       }
-    ]
+    ],
+    "plan_blob_sha": "ce67d40eb242741e235f6366caa438053683e8de",
+    "ij_receipt_ref": "data/grixis/m7/decision_reviews/Mishra__Eminent_One_chatgpt_rev1_review.md (scoped exact-source review, NOT global independent I/J certification)"
   },
   "verification": {
     "physical_cards": 100,
@@ -188,6 +198,19 @@
       "Combo"
     ],
     "focused_test_methods_passed": 7,
-    "source_M6_cases_not_conflated_with_full_IJ": true
+    "source_M6_cases_not_conflated_with_full_IJ": true,
+    "P0_exact_source_finite_passes": 5,
+    "P1_exact_finite_passes": 2,
+    "P1_deferred_case_ids": [
+      "K4",
+      "K6",
+      "E1",
+      "E2",
+      "W2",
+      "W3",
+      "F2",
+      "F3"
+    ],
+    "m6_blueprint_historical_status": "DESIGN_ONLY_UNIMPLEMENTED_NOT_RUN"
   }
 }
