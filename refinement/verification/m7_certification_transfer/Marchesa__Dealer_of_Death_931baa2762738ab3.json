@@ -1,0 +1,223 @@
+{
+  "schema_version": 1,
+  "deck_id": "Marchesa__Dealer_of_Death",
+  "approved_raw_sha256": "931baa2762738ab32cd274ae8e128d0e3cd1aa85e81e51c2faa4934c1c70f363",
+  "approved_artifact": "refinement/decklists/Marchesa_Dealer_of_Death_M7_Rev1_Approved_2026-10-26.txt",
+  "owner_approval_receipt": "refinement/approvals/Marchesa_Dealer_of_Death_M7_Rev1_Approved_2026-10-26.md",
+  "engineering": {
+    "pr_url": "https://github.com/corymstover/GrokBotMTGCompanion/pull/714",
+    "head_sha": "1b66b2dfb0bec32a2ec78d029c5cad0450f9372f",
+    "grok_first_pass_ref": "data/grixis/m6/review_packets/marchesa-dealer-of-death.json",
+    "independent_review_ref": "data/grixis/m6/owner_pass_c_substitute/Marchesa__Dealer_of_Death/final_disposition.md (owner-equivalent non-independent waiver, not a third model)",
+    "m7_decision_packet_ref": "data/grixis/m7/decision_reviews/Marchesa__Dealer_of_Death_rev1.json",
+    "m7_decision_gate_command": "python scripts/grixis_m7_decision_gate.py --check --file data/grixis/m7/decision_reviews/Marchesa__Dealer_of_Death_rev1.json",
+    "m7_decision_gate_ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40276023583",
+    "oracle_legality_ref": "data/grixis/m7/oracle_snapshots/Marchesa_Dealer_of_Death_Rev1_Scryfall_20261026.json"
+  },
+  "m6_transfer": {
+    "plan_source_path": "data/grixis/m6/test_blueprints/Marchesa__Dealer_of_Death.json",
+    "plan_blob_sha": "03736d6379f1d8f55299118f8dac2e9ff2515e25",
+    "ij_receipt_ref": "data/grixis/m7/verification/Marchesa_Dealer_of_Death_Rev1_Scoped_M6_IJ_20261026.json",
+    "ij_scope": "TRANSFERRED_WITH_CASE_MAPPING",
+    "revision_diff_and_validity_reason": "Original historical M6 I/J input receipt reports phase_b_replayed=false and does not certify the final exact approved 100. The October15 locked list changed in exactly eight commander-first one-for-one swaps: Consultation/Minor Misstep, Drake/Counterbalance, Opposition Agent/Last Chance, Devil/Storm-Kiln Artist, Claws/Copy Enchantment, Snuff Out/Dispel, Marsh Flats/Great Hall, Sink MDFC/Tolaria; Birgi front/full face is the same Oracle card. All five P0 blueprint IDs and relevant P1 bounded predicates were re-executed on final exact SHA with current 100/100 Scryfall snapshot and GitHub Actions. Historical global I/J replay and comprehensive game-engine test are not invented; K6, E2 and W2 are explicit source-specific P1 deferrals with limited coverage, not passing simulations.",
+    "P0": [
+      {
+        "case_id": "C1",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_marchesa_dealer_rev1_exact.py::TestMarchesaRev1.test_C1_commander_paid_selection_and_removed_negation",
+        "execution_command": "python -m unittest discover -s tests -p 'test_m7_marchesa_dealer_rev1*.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Marchesa_Dealer_of_Death_Rev1_Scryfall_20261026.json",
+        "payable_fixture": "Marchesa present, targeted opposing permanent, one colorless mana in pool, actual four-card library.",
+        "positive_assertion": "One paid trigger spends {1}, moves one top-two card to hand and one to graveyard, conserving card objects.",
+        "adversarial_assertion": "Zero mana declines resolution choice and removed commander prevents trigger.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40276023583",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "931baa2762738ab32cd274ae8e128d0e3cd1aa85e81e51c2faa4934c1c70f363"
+      },
+      {
+        "case_id": "K1",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_marchesa_dealer_rev1_exact.py::TestMarchesaRev1.test_K1_target_definition_and_one_crime_per_ability",
+        "execution_command": "python -m unittest discover -s tests -p 'test_m7_marchesa_dealer_rev1*.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Marchesa_Dealer_of_Death_Rev1_Scryfall_20261026.json",
+        "payable_fixture": "Target one or multiple opponent/opp-owned objects with a single spell or activation; Marchesa present with {1}.",
+        "positive_assertion": "Several targets within one event commit one crime; one optional {1} may select top two.",
+        "adversarial_assertion": "Self targeting and no-target events do not count; no multiplication of trigger for multi-target spell.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40276023583",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "931baa2762738ab32cd274ae8e128d0e3cd1aa85e81e51c2faa4934c1c70f363"
+      },
+      {
+        "case_id": "K2",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_marchesa_dealer_rev1_exact.py::TestMarchesaRev1.test_K2_hex_parasite_x_zero_source_paid",
+        "execution_command": "python -m unittest discover -s tests -p 'test_m7_marchesa_dealer_rev1*.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Marchesa_Dealer_of_Death_Rev1_Scryfall_20261026.json",
+        "payable_fixture": "Hex Parasite with X=0, opponent permanent target, pay phyrexian symbol as two life from ten life, plus {1} Marchesa.",
+        "positive_assertion": "X=0 leaves zero counters removed but target exists; player pays 2 life, separate {1}, and gets Marchesa selection.",
+        "adversarial_assertion": "Target own permanent gives no crime; no free unpaid selection.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40276023583",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "931baa2762738ab32cd274ae8e128d0e3cd1aa85e81e51c2faa4934c1c70f363"
+      },
+      {
+        "case_id": "K3",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_marchesa_dealer_rev1_exact.py::TestMarchesaRev1.test_K3_spatial_binding_life_and_repeat",
+        "execution_command": "python -m unittest discover -s tests -p 'test_m7_marchesa_dealer_rev1*.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Marchesa_Dealer_of_Death_Rev1_Scryfall_20261026.json",
+        "payable_fixture": "Two independent Spatial Binding activations target opposing permanent, 1 life each from ten plus separate Marchesa {1} each.",
+        "positive_assertion": "Two source-paid activations yield two crimes and two paid selections, leaving 8 life and zero of two mana.",
+        "adversarial_assertion": "Target own permanent gives no crime/selection; 1 life remains a required cost.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40276023583",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "931baa2762738ab32cd274ae8e128d0e3cd1aa85e81e51c2faa4934c1c70f363"
+      },
+      {
+        "case_id": "F1",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_marchesa_dealer_rev1_exact.py::TestMarchesaRev1.test_F1_graveyard_hate_and_counterplay",
+        "execution_command": "python -m unittest discover -s tests -p 'test_m7_marchesa_dealer_rev1*.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Marchesa_Dealer_of_Death_Rev1_Scryfall_20261026.json",
+        "payable_fixture": "Scrabbling Claws exact target card in opponent grave, one mana available for Marchesa; explicit Brain Freeze target.",
+        "positive_assertion": "Targeted Claws grave-card exile commits a crime and removes exact card from grave; paid Marchesa selection available.",
+        "adversarial_assertion": "If grave card leaves before resolution, it cannot be exiled twice and Breach recursion line cannot simply ignore hate.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40276023583",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "931baa2762738ab32cd274ae8e128d0e3cd1aa85e81e51c2faa4934c1c70f363"
+      }
+    ],
+    "P1": [
+      {
+        "case_id": "K4",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_marchesa_dealer_rev1_exact.py::TestMarchesaRev1.test_K4_lapis_trigger_targets_even_if_optional_three_declined",
+        "execution_command": "python -m unittest discover -s tests -p 'test_m7_marchesa_dealer_rev1*.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Marchesa_Dealer_of_Death_Rev1_Scryfall_20261026.json",
+        "payable_fixture": "Blue spell cast by any player; Lapis Lazuli Talisman trigger targets an opponent permanent, separate {1} for Marchesa.",
+        "positive_assertion": "Declining optional {3} to untap target does not erase initial targeting crime; pays Marchesa {1}.",
+        "adversarial_assertion": "No blue spell yields no Lapis triggered target; optional {3} not confused with commander cost.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40276023583",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "931baa2762738ab32cd274ae8e128d0e3cd1aa85e81e51c2faa4934c1c70f363"
+      },
+      {
+        "case_id": "K5",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_marchesa_dealer_rev1_exact.py::TestMarchesaRev1.test_K5_tezzeret_kitten_new_object_and_priority_window",
+        "execution_command": "python -m unittest discover -s tests -p 'test_m7_marchesa_dealer_rev1*.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Marchesa_Dealer_of_Death_Rev1_Scryfall_20261026.json",
+        "payable_fixture": "Tezzeret zero loyalty targets opposing artifact/creature; legal noncreature spell triggers Kitten blink into a new object.",
+        "positive_assertion": "First object and new object each can activate its own once-per-turn loyalty ability, each targeted crime separately paid.",
+        "adversarial_assertion": "Without new object/Kitten legal trigger, same planeswalker object cannot activate twice in that turn.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40276023583",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "931baa2762738ab32cd274ae8e128d0e3cd1aa85e81e51c2faa4934c1c70f363"
+      },
+      {
+        "case_id": "K7",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_marchesa_dealer_rev1_exact.py::TestMarchesaRev1.test_K7_mox_amber_and_magda_tapped_treasure",
+        "execution_command": "python -m unittest discover -s tests -p 'test_m7_marchesa_dealer_rev1*.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Marchesa_Dealer_of_Death_Rev1_Scryfall_20261026.json",
+        "payable_fixture": "Magda legendary red, Marchesa legendary UBR, Amber activation, first crime produces Magda Treasure tapped.",
+        "positive_assertion": "Amber colors are derived from controlled legendary permanents; Magda's Treasure is tapped and once per turn.",
+        "adversarial_assertion": "No legendary permanent means Amber produces no mana; second same-turn crime produces no second Magda Treasure.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40276023583",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "931baa2762738ab32cd274ae8e128d0e3cd1aa85e81e51c2faa4934c1c70f363"
+      },
+      {
+        "case_id": "E1",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_marchesa_dealer_rev1_exact.py::TestMarchesaRev1.test_E1_claws_devils_and_drake_paid_new_crimes",
+        "execution_command": "python -m unittest discover -s tests -p 'test_m7_marchesa_dealer_rev1*.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Marchesa_Dealer_of_Death_Rev1_Scryfall_20261026.json",
+        "payable_fixture": "Marchesa in play, three {1} mana, Claws opponent target, Devil sacrifice trigger opposing target, Drake opposing creature ETB target.",
+        "positive_assertion": "Three independent crimes can pay Marchesa three times, moving three hand cards and three grave cards from six top cards.",
+        "adversarial_assertion": "Drake without opposing legal creature cannot claim crime; source activation and creature presence matter.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40276023583",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "931baa2762738ab32cd274ae8e128d0e3cd1aa85e81e51c2faa4934c1c70f363"
+      },
+      {
+        "case_id": "W1",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_marchesa_dealer_rev1_exact.py::TestMarchesaRev1.test_W1_oracle_consult_source_paid_and_stack_disruption",
+        "execution_command": "python -m unittest discover -s tests -p 'test_m7_marchesa_dealer_rev1*.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Marchesa_Dealer_of_Death_Rev1_Scryfall_20261026.json",
+        "payable_fixture": "Oracle ETB trigger on stack, paid Demonic Consultation names absent card, library emptied, devotion at least cards remaining.",
+        "positive_assertion": "Oracle trigger after paid library exile sees zero library with qualifying devotion and may win.",
+        "adversarial_assertion": "Opponent counters Oracle trigger or prevents actual exile; invalid stack/window does not claim win.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40276023583",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "931baa2762738ab32cd274ae8e128d0e3cd1aa85e81e51c2faa4934c1c70f363"
+      },
+      {
+        "case_id": "W3",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_marchesa_dealer_rev1_exact.py::TestMarchesaRev1.test_W3_bow_alchemist_three_finite_tap_cycles_and_tomem",
+        "execution_command": "python -m unittest discover -s tests -p 'test_m7_marchesa_dealer_rev1*.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Marchesa_Dealer_of_Death_Rev1_Scryfall_20261026.json",
+        "payable_fixture": "Equipped Aphetto Alchemist untapped and able to tap (not summoning sick); Bow tapped trigger and untap ability.",
+        "positive_assertion": "Three sequential tap/untap cycles deal three damage to each opponent under the bounded example.",
+        "adversarial_assertion": "Cursed Totem shutting off Alchemist or summoning sickness/no equip prevents that example; Bow damage is not a crime.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40276023583",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "931baa2762738ab32cd274ae8e128d0e3cd1aa85e81e51c2faa4934c1c70f363"
+      },
+      {
+        "case_id": "F2",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_marchesa_dealer_rev1_exact.py::TestMarchesaRev1.test_F2_removed_commander_gives_no_selection",
+        "execution_command": "python -m unittest discover -s tests -p 'test_m7_marchesa_dealer_rev1*.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Marchesa_Dealer_of_Death_Rev1_Scryfall_20261026.json",
+        "payable_fixture": "Marchesa absent from battlefield; opposing spell targeted, five generic mana in pool.",
+        "positive_assertion": "Target event is still a crime, but no Marchesa trigger is generated and no mana spent.",
+        "adversarial_assertion": "Cannot treat a removed Marchesa as an on-board source of top-two selection.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40276023583",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "931baa2762738ab32cd274ae8e128d0e3cd1aa85e81e51c2faa4934c1c70f363"
+      },
+      {
+        "case_id": "F3",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_marchesa_dealer_rev1_exact.py::TestMarchesaRev1.test_F3_historical_baseline_is_not_the_M7_source",
+        "execution_command": "python -m unittest discover -s tests -p 'test_m7_marchesa_dealer_rev1*.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Marchesa_Dealer_of_Death_Rev1_Scryfall_20261026.json",
+        "payable_fixture": "Historic approved October15 100 vs current exact 100, normalize Birgi full/front face Oracle identity.",
+        "positive_assertion": "Preserve 92 actual strategic names, exchange exactly eight; do not revive obsolete historical 48-card rebuild.",
+        "adversarial_assertion": "Do not claim original M5 reconstruction or long-past case oracle as newly executed wins.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40276023583",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "931baa2762738ab32cd274ae8e128d0e3cd1aa85e81e51c2faa4934c1c70f363"
+      },
+      {
+        "case_id": "K6",
+        "status": "DEFERRED",
+        "specific_reason": "Last Chance is no longer in the exact approved 100, so the historic two-extra-turn creation-order interaction is absent; Final Fortune survives as a single extra-turn card. An old synthetic ordering assertion is not a second payable game-line test.",
+        "coverage_consequence": "No claim that current list supports two simultaneous extra turns or that the obsolete Last Chance case was mechanically executed as an included-card combo.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "E2",
+        "status": "DEFERRED",
+        "specific_reason": "Static UBR pip/fast-mana checks and full current 100 legality ran, but no full seven-card hand sampled probability or exhaustive source-paid first-three-turn ramp/draw simulation was executed.",
+        "coverage_consequence": "No quantitative Marchesa turn-three cast probability, colored-pip consistency percentage or measured cEDH advantage is certified.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "W2",
+        "status": "DEFERRED",
+        "specific_reason": "Current Oracle of Breach/LED/Brain Freeze and a bounded graveyard-hate negative assertion are checked, but full payable recursive escape/storm stack, card-zone conservation across a terminal multiplayer kill and opponent response windows are not executed in a general rules engine.",
+        "coverage_consequence": "The Breach win is a legal known synergy and remains in the deck, but this revision's test suite does not certify a fully reconstructed end-to-end payable loop under arbitrary table interaction.",
+        "owner_visible_unresolved": true
+      }
+    ]
+  },
+  "evidence_boundaries": {
+    "snapshot_date_utc": "2026-10-26",
+    "owner_one_approval": "Cory approved exact 100 and raw SHA October26 before canonical PR. No second approval sought.",
+    "scope_note": "Bounded authored finite fixtures + source text check. The transfer validator checks provenance, not the truth of gameplay, so P1 deferrals and lack of end-to-end random multiplayer modeling remain explicit."
+  }
+}
