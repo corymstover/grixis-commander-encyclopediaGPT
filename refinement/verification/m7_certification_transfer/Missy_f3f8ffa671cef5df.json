@@ -34,7 +34,7 @@
         "payable_fixture": "Missy on battlefield, another nonartifact creature dies, three artifact creatures at own end step.",
         "positive_assertion": "Return its card tapped, face down under us as 2/2 Cyberman; end-step damage option counts artifact creatures.",
         "adversarial_assertion": "Artifact dies, Missy herself dies, or Missy is absent prevents conversion; nonartifact bodies do not increase option damage.",
-        "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40397938168",
+        "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40398297196",
         "scope": "EXACT_APPROVED_100",
         "tested_raw_sha256": "f3f8ffa671cef5df9612a52ab0a5003931f2b71110f6d7fef45906b4f052f83d",
         "coverage_note": "Finite source-bound positive/adversarial predicates, not full Magic rules engine, full I/J, or win-rate simulation. Current branch exact candidate file and oracle text contract."
@@ -48,7 +48,7 @@
         "payable_fixture": "Missy returns printed Ruthless Ripper face-down as 2/2 colorless Cyberman artifact, player reveals black card.",
         "positive_assertion": "Printed morph reveal-black creature turns face up to its printed nonartifact identity.",
         "adversarial_assertion": "Wrong revealed color or a creature without morph cannot use the same turn-up shortcut.",
-        "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40397938168",
+        "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40398297196",
         "scope": "EXACT_APPROVED_100",
         "tested_raw_sha256": "f3f8ffa671cef5df9612a52ab0a5003931f2b71110f6d7fef45906b4f052f83d",
         "coverage_note": "Finite source-bound positive/adversarial predicates, not full Magic rules engine, full I/J, or win-rate simulation. Current branch exact candidate file and oracle text contract."
@@ -62,7 +62,7 @@
         "payable_fixture": "Missy converted Ruthless Ripper, Dragon's Eye Savants, and Horde Ambusher, matching reveal-color payment available.",
         "positive_assertion": "Each may turn face up as a printed nonartifact and its subsequent death triggers fresh Missy conversion.",
         "adversarial_assertion": "Still-facedown artifact death does not re-trigger Missy; no correct reveal-color cannot activate the corresponding morph.",
-        "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40397938168",
+        "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40398297196",
         "scope": "EXACT_APPROVED_100",
         "tested_raw_sha256": "f3f8ffa671cef5df9612a52ab0a5003931f2b71110f6d7fef45906b4f052f83d",
         "coverage_note": "Finite source-bound positive/adversarial predicates, not full Magic rules engine, full I/J, or win-rate simulation. Current branch exact candidate file and oracle text contract."
@@ -76,7 +76,7 @@
         "payable_fixture": "Opponent's another nonartifact creature dies while Missy is present.",
         "positive_assertion": "Creature returns tapped, face-down under Missy controller (us), regardless of opposing prior controller.",
         "adversarial_assertion": "Opponent's artifact creature dying, or a nondying permanent, is not converted.",
-        "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40397938168",
+        "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40398297196",
         "scope": "EXACT_APPROVED_100",
         "tested_raw_sha256": "f3f8ffa671cef5df9612a52ab0a5003931f2b71110f6d7fef45906b4f052f83d",
         "coverage_note": "Finite source-bound positive/adversarial predicates, not full Magic rules engine, full I/J, or win-rate simulation. Current branch exact candidate file and oracle text contract."
@@ -90,7 +90,7 @@
         "payable_fixture": "Cast Missy with six available mana including one each U/B/R, from named legal artifact acceleration and mana sources present in exact list.",
         "positive_assertion": "Six mana with three colored requirements meets {3}{U}{B}{R} commander casting cost.",
         "adversarial_assertion": "Nine generic mana missing red cannot cast; five mana with all colors cannot cast; lots of mana with missing blue cannot cast.",
-        "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40397938168",
+        "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40398297196",
         "scope": "EXACT_APPROVED_100",
         "tested_raw_sha256": "f3f8ffa671cef5df9612a52ab0a5003931f2b71110f6d7fef45906b4f052f83d",
         "coverage_note": "Finite source-bound positive/adversarial predicates, not full Magic rules engine, full I/J, or win-rate simulation. Current branch exact candidate file and oracle text contract."
