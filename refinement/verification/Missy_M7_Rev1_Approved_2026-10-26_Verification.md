@@ -30,6 +30,6 @@
 
 ## Evidence boundaries
 
-Engineering M7 decision `data/grixis/m7/decision_reviews/Missy_rev1.json`; Oracle snapshot `data/grixis/m7/oracle_snapshots/Missy_Rev1_Scryfall_20261026.json`; source-scoped tests `tests/test_m7_missy_rev1.py`, merged engineering PR #719, M7 CI SUCCESS. These are finite mechanical assertions and Oracle checks, **not** an independently completed broad M6 I/J simulation. All outstanding source-blueprint game-state cases are separately itemized as deferred in the certification transfer.
+Engineering M7 decision `data/grixis/m7/decision_reviews/Missy_rev1.json`; Oracle snapshot `data/grixis/m7/oracle_snapshots/Missy_Rev1_Scryfall_20261026.json`; source-scoped tests `tests/test_m7_missy_rev1.py`, merged engineering PR #719, M7 CI SUCCESS. These are finite mechanical assertions and Oracle checks, **not** an independently completed broad M6 I/J simulation. All five required P0 source cases now have separately executed bounded positive/adversarial fixtures linked to the exact SHA; 11 P1 game-state scenarios remain owner-visible deferred in the certification transfer.
 
 The October 15 list, hash and owner approval remain immutable historical evidence, while the state pointer now identifies the exact October 26 owner-approved M7 list.
