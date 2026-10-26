@@ -1,0 +1,253 @@
+{
+  "schema_version": 1,
+  "deck_id": "Mishra__Artificer_Prodigy",
+  "approved_raw_sha256": "45c0d559f0aa859b84e2fb52baf31fdbb683de3e7bc7f211821b50420dee9761",
+  "approved_artifact": "refinement/decklists/Mishra_Artificer_Prodigy_M7_Rev1_Approved_2026-10-26.txt",
+  "owner_approval_receipt": "refinement/approvals/Mishra_Artificer_Prodigy_M7_Rev1_Approved_2026-10-26.md",
+  "engineering": {
+    "pr_url": "https://github.com/corymstover/GrokBotMTGCompanion/pull/717",
+    "head_sha": "cc12a8179ba560a4f2409c22790b648ad45f9f57",
+    "grok_first_pass_ref": "data/grixis/m6/review_packets/mishra-artificer-prodigy.json",
+    "independent_review_ref": "data/grixis/m6/owner_pass_c_substitute/Mishra__Artificer_Prodigy/final_disposition.md (owner-equivalent formal Pass C; explicitly non-independent)",
+    "m7_decision_packet_ref": "data/grixis/m7/decision_reviews/Mishra__Artificer_Prodigy_rev1.json",
+    "m7_decision_gate_command": "python scripts/grixis_m7_decision_gate.py --check --file data/grixis/m7/decision_reviews/Mishra__Artificer_Prodigy_rev1.json",
+    "m7_decision_gate_ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40308662195",
+    "oracle_legality_ref": "data/grixis/m7/oracle_snapshots/Mishra__Artificer_Prodigy_Rev1_Scryfall_20261026.json",
+    "merged_squash_sha": "b83122766268451adc679f3a0f0d6859be402343",
+    "m7_contract_run": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40308662192"
+  },
+  "m6_transfer": {
+    "plan_source_path": "data/grixis/m6/test_blueprints/Mishra__Artificer_Prodigy.json",
+    "plan_blob_sha": "7528365f27f59d296b0426e5c45e7d247005fbdd",
+    "ij_receipt_ref": "data/grixis/m7/verification/Mishra__Artificer_Prodigy_M7_Rev1_Case_Transfer_20261026.json (bounded source-mapped transfer; historic global I/J not replayed)",
+    "ij_scope": "TRANSFERRED_WITH_CASE_MAPPING",
+    "revision_diff_and_validity_reason": "Baseline October 15 Mishra list and source-bound M6 plan have seven historic self-counter axes. M7 six one-for-one changes removed Nullstone Gargoyle, Praetor's Grasp, Fabricate, Academy Ruins, Mana Drain, Thought Monitor and added Lotus Petal, Deflecting Swat, Imperial Seal, Otawara, Flusterstorm and Grinding Station. Five mandatory P0 exact candidate finite examples were executed with both positive/negative paths. Ten P1 bounded fixtures executed and F2 complete artifact-hate game-state simulation explicitly deferred. K6/E1's removed Nullstone branch NOT re-certified; focus remapped to surviving artifacts. Historic M6 design-only specs and non-independent Pass C are not a sealed full independent I/J test. 12/12 exact-head source-bound finite unit methods pass, not randomized multiplayer win-rate or complete game-engine execution.",
+    "P0": [
+      {
+        "case_id": "C1",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_mishra_artificer_rev1.py::MishraRev1.test_C1_commander_cast_trigger_same_name_zones",
+        "execution_command": "python -m unittest discover -s tests -p 'test_m7_mishra_artificer_rev1.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Mishra__Artificer_Prodigy_Rev1_Scryfall_20261026.json",
+        "payable_fixture": "Mishra is on battlefield, a real artifact cast generates the ability, and the singleton original is in stack or graveyard.",
+        "positive_assertion": "Mishra trigger recognizes an artifact cast and can find exactly the same named object only in graveyard, hand, or library after zone movement.",
+        "adversarial_assertion": "A nonartifact spell or artifact still stranded on stack cannot be located by Mishra's search.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40308662195",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "45c0d559f0aa859b84e2fb52baf31fdbb683de3e7bc7f211821b50420dee9761"
+      },
+      {
+        "case_id": "K1",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_mishra_artificer_rev1.py::MishraRev1.test_K1_paid_counter_first_and_response_loss",
+        "execution_command": "python -m unittest discover -s tests -p 'test_m7_mishra_artificer_rev1.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Mishra__Artificer_Prodigy_Rev1_Scryfall_20261026.json",
+        "payable_fixture": "A legally paid artifact spell under Blood Funnel / Nether Void / Chalice / Void Mirror, controlled self-counter trigger ordered first.",
+        "positive_assertion": "Counter puts the actual spell card into graveyard before Mishra's triggered search; that original may enter battlefield.",
+        "adversarial_assertion": "Without cast trigger, or with opponent exiling the graveyard object in response, Mishra cannot recover it.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40308662195",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "45c0d559f0aa859b84e2fb52baf31fdbb683de3e7bc7f211821b50420dee9761"
+      },
+      {
+        "case_id": "K2",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_mishra_artificer_rev1.py::MishraRev1.test_K2_possibility_storm_hand_only_bottom_search",
+        "execution_command": "python -m unittest discover -s tests -p 'test_m7_mishra_artificer_rev1.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Mishra__Artificer_Prodigy_Rev1_Scryfall_20261026.json",
+        "payable_fixture": "Mishra, Possibility Storm, hand-cast original artifact; follow Storm trigger's exile then bottom-of-library sequence.",
+        "positive_assertion": "Original ends in library and is available to Mishra's later same-name search.",
+        "adversarial_assertion": "Original is never eligible while exiled; a graveyard cast does not satisfy Possibility Storm from-hand trigger.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40308662195",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "45c0d559f0aa859b84e2fb52baf31fdbb683de3e7bc7f211821b50420dee9761"
+      },
+      {
+        "case_id": "K3",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_mishra_artificer_rev1.py::MishraRev1.test_K3_bauble_mirror_free_spell_and_legal_escape",
+        "execution_command": "python -m unittest discover -s tests -p 'test_m7_mishra_artificer_rev1.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Mishra__Artificer_Prodigy_Rev1_Scryfall_20261026.json",
+        "payable_fixture": "Vexing Bauble and Void Mirror with zero-mana-spent free spell and normally paid or additional-colored-mana spell.",
+        "positive_assertion": "Bauble/Mirror counter zero-spent and zero-colored-spent spells in their actual conditions; pilot's free Swat is vulnerable.",
+        "adversarial_assertion": "Pay mana for Swat or include colored mana spent to avoid respective triggers; lock is not unconditional.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40308662195",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "45c0d559f0aa859b84e2fb52baf31fdbb683de3e7bc7f211821b50420dee9761"
+      },
+      {
+        "case_id": "F1",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_mishra_artificer_rev1.py::MishraRev1.test_F1_mishra_removed_before_vs_after_cast",
+        "execution_command": "python -m unittest discover -s tests -p 'test_m7_mishra_artificer_rev1.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Mishra__Artificer_Prodigy_Rev1_Scryfall_20261026.json",
+        "payable_fixture": "Opponent removes Mishra either before the artifact spell is cast or after Mishra's trigger already exists.",
+        "positive_assertion": "Pre-cast removal prevents rescue ability; post-trigger removal does not erase triggered ability.",
+        "adversarial_assertion": "Exiling the original before search prevents recovering the artifact even when a Mishra trigger exists.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40308662195",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "45c0d559f0aa859b84e2fb52baf31fdbb683de3e7bc7f211821b50420dee9761"
+      }
+    ],
+    "P1": [
+      {
+        "case_id": "K4",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_mishra_artificer_rev1.py::MishraRev1.test_C1_commander_cast_trigger_same_name_zones",
+        "execution_command": "python -m unittest discover -s tests -p 'test_m7_mishra_artificer_rev1.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Mishra__Artificer_Prodigy_Rev1_Scryfall_20261026.json",
+        "payable_fixture": "Mishra ability, one legal singleton artifact object moving from stack to graveyard.",
+        "positive_assertion": "Original alone is found in a permitted zone; no duplicate artifact card is conjured.",
+        "adversarial_assertion": "Search before stack exit or for absent same-name object yields nothing.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40308662195",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "45c0d559f0aa859b84e2fb52baf31fdbb683de3e7bc7f211821b50420dee9761"
+      },
+      {
+        "case_id": "K5",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_mishra_artificer_rev1.py::MishraRev1.test_K4_K5_K6_K7_E1_commander_parity_and_self_hate",
+        "execution_command": "python -m unittest discover -s tests -p 'test_m7_mishra_artificer_rev1.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Mishra__Artificer_Prodigy_Rev1_Scryfall_20261026.json",
+        "payable_fixture": "Chalice cast originally with mana X versus one put directly onto battlefield by Mishra.",
+        "positive_assertion": "Chalice put into play without being cast has chosen X=0 for counters.",
+        "adversarial_assertion": "Cannot treat the Mishra-deployed Chalice as arbitrarily X>0.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40308662195",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "45c0d559f0aa859b84e2fb52baf31fdbb683de3e7bc7f211821b50420dee9761"
+      },
+      {
+        "case_id": "K6",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_mishra_artificer_rev1.py::MishraRev1.test_K4_K5_K6_K7_E1_commander_parity_and_self_hate",
+        "execution_command": "python -m unittest discover -s tests -p 'test_m7_mishra_artificer_rev1.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Mishra__Artificer_Prodigy_Rev1_Scryfall_20261026.json",
+        "payable_fixture": "Retained Blood Funnel, Nether Void, Planar Chaos and Possibility Storm alongside newly selected nonartifact interaction.",
+        "positive_assertion": "Pilot's own nonartifact spells remain exposed to actual symmetrical taxes/counters and Storm from hand.",
+        "adversarial_assertion": "Old Nullstone Gargoyle branch is removed and not transferred; nonartifact protection cannot be assumed exempt.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40308662195",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "45c0d559f0aa859b84e2fb52baf31fdbb683de3e7bc7f211821b50420dee9761"
+      },
+      {
+        "case_id": "K7",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_mishra_artificer_rev1.py::MishraRev1.test_K4_K5_K6_K7_E1_commander_parity_and_self_hate",
+        "execution_command": "python -m unittest discover -s tests -p 'test_m7_mishra_artificer_rev1.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Mishra__Artificer_Prodigy_Rev1_Scryfall_20261026.json",
+        "payable_fixture": "Pilot casts a free/zero-cost Top-like artifact under Vexing Bauble or Void Mirror with and without Mishra.",
+        "positive_assertion": "Mishra's already-created cast trigger can recover countered original in eligible zone.",
+        "adversarial_assertion": "Without Mishra ability the own counter prevents the attempted repeated Top spell loop.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40308662195",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "45c0d559f0aa859b84e2fb52baf31fdbb683de3e7bc7f211821b50420dee9761"
+      },
+      {
+        "case_id": "E1",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_mishra_artificer_rev1.py::MishraRev1.test_K4_K5_K6_K7_E1_commander_parity_and_self_hate",
+        "execution_command": "python -m unittest discover -s tests -p 'test_m7_mishra_artificer_rev1.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Mishra__Artificer_Prodigy_Rev1_Scryfall_20261026.json",
+        "payable_fixture": "Pilot casts artifact into the preserved self-counter engines while Mishra trigger is present.",
+        "positive_assertion": "Source-bound graveyard or library recovery is available after proper ordering across retained lock axes.",
+        "adversarial_assertion": "Removed Nullstone is not an eligible fixture and an absent Mishra trigger leaves artifact countered.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40308662195",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "45c0d559f0aa859b84e2fb52baf31fdbb683de3e7bc7f211821b50420dee9761"
+      },
+      {
+        "case_id": "E2",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_mishra_artificer_rev1.py::MishraRev1.test_E2_color_exact_petal_and_workshop_restriction",
+        "execution_command": "python -m unittest discover -s tests -p 'test_m7_mishra_artificer_rev1.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Mishra__Artificer_Prodigy_Rev1_Scryfall_20261026.json",
+        "payable_fixture": "Finite Badlands, Island, Ancient Tomb colored-pip fixture plus optional Lotus Petal; Mishra cost 1UBR.",
+        "positive_assertion": "Additional Petal any-color source makes exact UBR plus generic payment possible; Workshop only pays artifact spells.",
+        "adversarial_assertion": "Same specific fixture without Petal lacks all three pips; Workshop cannot fund Mishra's creature spell.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40308662195",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "45c0d559f0aa859b84e2fb52baf31fdbb683de3e7bc7f211821b50420dee9761"
+      },
+      {
+        "case_id": "W1",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_mishra_artificer_rev1.py::MishraRev1.test_W1_W2_top_reservoir_cost_accounting",
+        "execution_command": "python -m unittest discover -s tests -p 'test_m7_mishra_artificer_rev1.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Mishra__Artificer_Prodigy_Rev1_Scryfall_20261026.json",
+        "payable_fixture": "Mystic Forge / The Reality Chip, Sensei's Divining Top 1 cost and named one-mana artifact reducer.",
+        "positive_assertion": "A validated artifact reducer makes Top's cast payment 0; Forge permission can cast Top from top of library.",
+        "adversarial_assertion": "Does not prove draw entire library without actual source, reset and object-loop conditions.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40308662195",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "45c0d559f0aa859b84e2fb52baf31fdbb683de3e7bc7f211821b50420dee9761"
+      },
+      {
+        "case_id": "W2",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_mishra_artificer_rev1.py::MishraRev1.test_W1_W2_top_reservoir_cost_accounting",
+        "execution_command": "python -m unittest discover -s tests -p 'test_m7_mishra_artificer_rev1.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Mishra__Artificer_Prodigy_Rev1_Scryfall_20261026.json",
+        "payable_fixture": "Aetherflux Reservoir with finite five successive spell casts, life gain 1+2+3+4+5, 50-life activation.",
+        "positive_assertion": "Bounded accounting yields 15 life; Reservoir pays 50 per actual activation to deal 50.",
+        "adversarial_assertion": "Cannot assert lethal without sufficient life and legal target; spells/trigger sequencing still needed.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40308662195",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "45c0d559f0aa859b84e2fb52baf31fdbb683de3e7bc7f211821b50420dee9761"
+      },
+      {
+        "case_id": "W3",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_mishra_artificer_rev1.py::MishraRev1.test_W3_new_grinding_station_kci_cycle_paid_and_adversarial",
+        "execution_command": "python -m unittest discover -s tests -p 'test_m7_mishra_artificer_rev1.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Mishra__Artificer_Prodigy_Rev1_Scryfall_20261026.json",
+        "payable_fixture": "KCI + Scrap Trawler + Myr Retriever + Junk Diver + one reducer plus Grinding Station in finite paid cycles.",
+        "positive_assertion": "Five KCI paired-sac cycles bank 5 generic; five alternate Station sacrifice cycles consume 5 generic and mill 15.",
+        "adversarial_assertion": "Without one reducer the repeated cast cycle loses mana; no free artifact or free mill is assumed.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40308662195",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "45c0d559f0aa859b84e2fb52baf31fdbb683de3e7bc7f211821b50420dee9761"
+      },
+      {
+        "case_id": "F2",
+        "status": "DEFERRED",
+        "specific_reason": "The exact-source bounded test checks response-zone graveyard exile, basic artifact-presence guards and own spells; it does not run an entire Collector Ouphe/Stony Silence/opponent artifact-wipe board-state matchup with actual priority, cost and end-state conservation.",
+        "coverage_consequence": "Full opponent artifact-hate/resilience recovery across turns not certified by an executed playable multi-card game-state fixture; only narrow source conditions were tested.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "F3",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_mishra_artificer_rev1.py::MishraRev1.test_F2_F3_opponent_interference_and_new_spells",
+        "execution_command": "python -m unittest discover -s tests -p 'test_m7_mishra_artificer_rev1.py' -v",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Mishra__Artificer_Prodigy_Rev1_Scryfall_20261026.json",
+        "payable_fixture": "Pilot's Deflecting Swat free cast, Otawara channel, Flusterstorm, and Grinding Station activated cost.",
+        "positive_assertion": "Source guard recognizes Swat own free counter, Otawara channel as ability and Station requiring artifact sacrifice.",
+        "adversarial_assertion": "No Station milling without artifact to sacrifice; prison effects have escape/uncounterable ability windows.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40308662195",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "45c0d559f0aa859b84e2fb52baf31fdbb683de3e7bc7f211821b50420dee9761"
+      }
+    ]
+  },
+  "verification": {
+    "physical_cards": 100,
+    "distinct_names": 100,
+    "lands": 29,
+    "scryfall_resolved_distinct": 100,
+    "commander_legal_distinct": 100,
+    "color_identity_ok_distinct": 100,
+    "project_exceptions": [],
+    "bracket": "5 — Fringe cEDH",
+    "archidekt_tags": [
+      "Artifacts",
+      "Stax",
+      "Combo"
+    ],
+    "focused_test_methods_passed": 12,
+    "P0_finite_passes": 5,
+    "P1_finite_passes": 10,
+    "P1_case_deferred": [
+      "F2"
+    ]
+  }
+}
