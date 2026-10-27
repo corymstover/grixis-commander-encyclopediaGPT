@@ -1298,10 +1298,10 @@
       "user_approval_date": "2026-10-27",
       "current_stage": "LOCKED",
       "approved_list_sha256": "63b605a2c36ec81ab7a5a48770ac2b96b7994daf38546aba7b6bc6bd7597928c",
-      "quality_gate_version": "M7 Rev1 7-swap commander-first review + previous 2026-10-15 whole-list audit; fresh complete-list Oracle refresh not independently evidenced",
+      "quality_gate_version": "Deck Quality Gates v3 + M7 Rev1 owner-approved 7-swap source-composite Oracle/legality/rules certification 2026-10-27 (no fresh 100/100 Scryfall API response)",
       "approval_basis": "Owner explicitly approved Parnesse M7 Rev1 seven-swap 100-card candidate on 2026-10-27; prior October 15 approval retained in history. This approval applies only to the exact SHA-bound candidate. No aggregate milestone acceptance.",
       "whole_list_audit_artifact": "refinement/verification/Parnesse_the_Subtle_Brush_Whole_List_Audit_2026-10-15.md",
-      "verification_artifact": "refinement/verification/Parnesse_the_Subtle_Brush_Approval_Ready_Verification_2026-10-15.md",
+      "verification_artifact": "refinement/verification/Parnesse_the_Subtle_Brush_M7_Rev1_Oracle_Certification_2026-10-27.md",
       "complete_gate_artifact": "refinement/verification/parnesse_2026-10-15/gate_output/Parnesse_the_Subtle_Brush_2026-10-15_Complete_Gate.json",
       "decision_closeout_artifact": "refinement/decisions/Parnesse_the_Subtle_Brush_Candidate_Decisions_2026-10-15.md",
       "approval_record_artifact": "refinement/approvals/Parnesse_the_Subtle_Brush_Approved_2026-10-15.md",
@@ -1309,7 +1309,10 @@
       "m7_final_candidate_sha256": "63b605a2c36ec81ab7a5a48770ac2b96b7994daf38546aba7b6bc6bd7597928c",
       "m7_owner_approval_date": "2026-10-27",
       "previous_approved_list_sha256": "8ff8c101d98e7de997c1de29973db2dd6a51ffdd7b44e4f34145bb1abf2d9e7c",
-      "previous_approved_list_artifact": "refinement/decklists/Parnesse_the_Subtle_Brush_Approved_2026-10-15.txt"
+      "previous_approved_list_artifact": "refinement/decklists/Parnesse_the_Subtle_Brush_Approved_2026-10-15.txt",
+      "oracle_certification_status": "PASS — source-composite; refreshed seven additions and official Commander banlist; prior audited retained cards",
+      "oracle_certification_date": "2026-10-27",
+      "oracle_certification_scope": "100-card composite coverage; automated 100/100 Scryfall collection API not executed"
     },
     "RogSi": {
       "approval_status": "APPROVED",
