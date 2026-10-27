@@ -1,6 +1,6 @@
 # Fresh Oracle/legality gate — #4 Anhelo, the Painter
 
-- Generated UTC: `2026-10-27T11:00:37.548046+00:00`
+- Generated UTC: `2026-10-27T18:05:45.141872+00:00`
 - Approved source: `refinement/decklists/Anhelo_the_Painter_Approval_Ready_2026-10-13.txt`
 - Approved source SHA-256 (raw bytes): `8d5f8a9bd4fcdcd164aab63150c14dc69a814a4d9fd764876de3214d3adf9972`
 - Approval evidence: state/current_deck_overrides.json; refinement/verification/Anhelo_the_Painter_Approval_Ready_Closeout_2026-10-13.md
