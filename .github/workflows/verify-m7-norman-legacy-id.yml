@@ -1,0 +1,33 @@
+name: "M7 Norman legacy ID — narrowly authorized mapping only"
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/verify-m7-norman-legacy-id.yml"
+      - "scripts/verify_m7_certification_transfer.py"
+      - "tests/test_m7_certification_transfer.py"
+      - "refinement/verification/m7_certification_transfer/Goben_Norman_owner_identity_resolution_2026-10-27.json"
+      - "refinement/verification/m7_certification_transfer/M7_EVIDENCE_TRANSFER_CONTRACT.md"
+      - "AGENTS.md"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  owner-bound-source-plan-alias-only:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: "Pin historical Norman physical 100, exact owner SHA and immutable plan lookup"
+        run: |
+          python3 -m unittest \
+            tests.test_m7_certification_transfer.TransferEvidenceTests \
+            tests.test_m7_certification_transfer.LegacyNormanIdentityMappingTests -v
+      - name: "Explicitly disclaim full M7 case certification"
+        run: |
+          echo "PASS is ONLY for one source-bound identity alias."
+          echo "It does not certify missing M6 P0/P1, the red historical canonical gate, or Deck 56 locking."
