@@ -1,0 +1,204 @@
+{
+  "schema_version": 1,
+  "deck_id": "The_Madcap_Jester",
+  "approved_raw_sha256": "643eb1cc4827c1dd95485e9922506b514746e6bbc5b4b8a4cfff0f44b1007e43",
+  "approved_artifact": "refinement/decklists/The_Madcap_Jester_M7_Rev1_Approved_2026-10-27.txt",
+  "owner_approval_receipt": "refinement/approvals/The_Madcap_Jester_M7_Rev1_Approved_2026-10-27.md",
+  "engineering": {
+    "pr_url": "https://github.com/corymstover/GrokBotMTGCompanion/pull/740",
+    "head_sha": "df803bccfda2d2cffb88161b3a991b64b97d1be5",
+    "merge_commit_sha": "d4c765bd0fc5f7ecefdf232605d47bc007a4985c",
+    "grok_first_pass_ref": "data/grixis/m6/grokbot_pass_c_advisory/The_Madcap_Jester.md — original historical advisory, not new live independent review",
+    "independent_review_ref": "data/grixis/m6/owner_pass_c_substitute/The_Madcap_Jester/final_disposition.md — owner-equivalent historical source, non-independent",
+    "m7_decision_packet_ref": "data/grixis/m7/decision_reviews/The_Madcap_Jester_rev1.json",
+    "m7_decision_gate_command": "python3 scripts/grixis_m7_decision_gate.py --check --file data/grixis/m7/decision_reviews/The_Madcap_Jester_rev1.json",
+    "m7_decision_gate_ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40592714914",
+    "oracle_legality_ref": "data/grixis/m7/madcap_jester_rev1/verify.py::scan_oracle and m6_p0_followup.py::scan_oracle_bulk; two documented future-release cards are NOT official Commander legal until release"
+  },
+  "m6_transfer": {
+    "plan_source_path": "data/grixis/m6/test_blueprints/The_Madcap_Jester.json",
+    "plan_blob_sha": "3a065adefc6aebb3409810ed9d40b5e8b5a0b7a1",
+    "ij_receipt_ref": "data/grixis/m6/ij/input_receipts/the-madcap-jester.json — I/J inputs attested only; Phase B incomplete",
+    "ij_scope": "TRANSFERRED_WITH_CASE_MAPPING",
+    "revision_diff_and_validity_reason": "The exact Oct27 M7 Rev1 replaces seven one-for-one items in the preserved Oct15 approved 100, leaving a new raw byte SHA and upgraded response density. Historical M6 plan was DESIGN_ONLY. Source-anchored five named M6 P0 finite cases were implemented and exact-head CI run after candidate freeze in engineering PR #740; earlier candidate 24 finite tests support five P1 cases. Five P1 coverage gaps remain DEFERRED, visible, not silently certified. The tests are bounded modeled rules claims, not independent I/J Phase B gameplay validation.",
+    "P0": [
+      {
+        "case_id": "C1",
+        "status": "PASSED",
+        "test_ref": "data/grixis/m7/madcap_jester_rev1/m6_p0_followup.py::OriginalM6P0Followup.test_P0_C1_attack_trigger_and_live_source_window",
+        "execution_command": "python3 data/grixis/m7/madcap_jester_rev1/m6_p0_followup.py",
+        "oracle_source": "Pinned Scryfall Oracle bulk 2026-10-27; seven source-name texts checked against compressed SHA256 2f8afacba1b8f5375723cdeec3bc00adb3c6b97d038acc6406fa774129d7cf0a; CR 614.6 replacement attribution modeled, not judge ruling",
+        "payable_fixture": "Commander attacks, exiles three opponents' distinct top cards, then compares removing Jester before source exile.",
+        "positive_assertion": "Controlled Jester attack exiles top cards and creates permission for qualifying controlled exile events while present.",
+        "adversarial_assertion": "Removal before the distinct later exile denies new permission; neither exile source nor per-opponent object is fabricated.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40598728699",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "643eb1cc4827c1dd95485e9922506b514746e6bbc5b4b8a4cfff0f44b1007e43",
+        "coverage_note": "Executed bounded source-identity/cost/zone unit case. Not an independent judge ruling, full game simulation or completion of M6 I/J Phase B."
+      },
+      {
+        "case_id": "K1",
+        "status": "PASSED",
+        "test_ref": "data/grixis/m7/madcap_jester_rev1/m6_p0_followup.py::OriginalM6P0Followup.test_P0_K1_any_mana_type_does_not_waive_costs_or_timing",
+        "execution_command": "python3 data/grixis/m7/madcap_jester_rev1/m6_p0_followup.py",
+        "oracle_source": "Pinned Scryfall Oracle bulk 2026-10-27; seven source-name texts checked against compressed SHA256 2f8afacba1b8f5375723cdeec3bc00adb3c6b97d038acc6406fa774129d7cf0a; CR 614.6 replacement attribution modeled, not judge ruling",
+        "payable_fixture": "Off-color stolen mana-value-3 card, 2 red plus 1 colorless and no green; compare only two mana and no sorcery/land window.",
+        "positive_assertion": "Any mana type may pay colored symbols of a stolen legal spell when full cost is paid.",
+        "adversarial_assertion": "The permission does not waive cost, sorcery timing or normal land quota.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40598728699",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "643eb1cc4827c1dd95485e9922506b514746e6bbc5b4b8a4cfff0f44b1007e43",
+        "coverage_note": "Executed bounded source-identity/cost/zone unit case. Not an independent judge ruling, full game simulation or completion of M6 I/J Phase B."
+      },
+      {
+        "case_id": "K2",
+        "status": "PASSED",
+        "test_ref": "data/grixis/m7/madcap_jester_rev1/m6_p0_followup.py::OriginalM6P0Followup.test_P0_K2_dauthi_modified_mill_preserves_causing_spell_identity",
+        "execution_command": "python3 data/grixis/m7/madcap_jester_rev1/m6_p0_followup.py",
+        "oracle_source": "Pinned Scryfall Oracle bulk 2026-10-27; seven source-name texts checked against compressed SHA256 2f8afacba1b8f5375723cdeec3bc00adb3c6b97d038acc6406fa774129d7cf0a; CR 614.6 replacement attribution modeled, not judge ruling",
+        "payable_fixture": "Our Brain Freeze mills opponent while Dauthi replaces movement; contrast opponent-controlled mill and absent Dauthi.",
+        "positive_assertion": "Changed exile event retains controlled Brain Freeze as causing spell; finite source model recognizes Jester permission.",
+        "adversarial_assertion": "Opponent-controlled source remains opponent-controlled and no replacing effect means no exile; no independent Dauthi-induced Jester trigger asserted.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40598728699",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "643eb1cc4827c1dd95485e9922506b514746e6bbc5b4b8a4cfff0f44b1007e43",
+        "coverage_note": "Executed bounded source-identity/cost/zone unit case. Not an independent judge ruling, full game simulation or completion of M6 I/J Phase B."
+      },
+      {
+        "case_id": "K3",
+        "status": "PASSED",
+        "test_ref": "data/grixis/m7/madcap_jester_rev1/m6_p0_followup.py::OriginalM6P0Followup.test_P0_K3_uba_mask_alone_is_not_controlled_cause",
+        "execution_command": "python3 data/grixis/m7/madcap_jester_rev1/m6_p0_followup.py",
+        "oracle_source": "Pinned Scryfall Oracle bulk 2026-10-27; seven source-name texts checked against compressed SHA256 2f8afacba1b8f5375723cdeec3bc00adb3c6b97d038acc6406fa774129d7cf0a; CR 614.6 replacement attribution modeled, not judge ruling",
+        "payable_fixture": "Hypothetical cut Uba Mask plus opponent natural draw, our Wheel effect, opponent's Wheel and our own draw.",
+        "positive_assertion": "Our controlled spell causing an opponent's draw-to-exile event under Uba qualifies in the bounded CR614.6 source model.",
+        "adversarial_assertion": "Natural turn draw and opponent-controlled spell do not become our effects; our own library cards are ineligible.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40598728699",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "643eb1cc4827c1dd95485e9922506b514746e6bbc5b4b8a4cfff0f44b1007e43",
+        "coverage_note": "Executed bounded source-identity/cost/zone unit case. Not an independent judge ruling, full game simulation or completion of M6 I/J Phase B."
+      },
+      {
+        "case_id": "F1",
+        "status": "PASSED",
+        "test_ref": "data/grixis/m7/madcap_jester_rev1/m6_p0_followup.py::OriginalM6P0Followup.test_P0_F1_slow_sire_vs_agent_cost_response_and_not_auto_jester",
+        "execution_command": "python3 data/grixis/m7/madcap_jester_rev1/m6_p0_followup.py",
+        "oracle_source": "Pinned Scryfall Oracle bulk 2026-10-27; seven source-name texts checked against compressed SHA256 2f8afacba1b8f5375723cdeec3bc00adb3c6b97d038acc6406fa774129d7cf0a; CR 614.6 replacement attribution modeled, not judge ruling",
+        "payable_fixture": "Three-mana Opposition Agent vs cut six-mana Sire of Stagnation at tutor response; three mana accessible.",
+        "positive_assertion": "Selected agent can respond in finite window and improve low-mana interaction.",
+        "adversarial_assertion": "Agent does not automatically make an opponent-controlled search into our exile source for Jester.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40598728699",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "643eb1cc4827c1dd95485e9922506b514746e6bbc5b4b8a4cfff0f44b1007e43",
+        "coverage_note": "Executed bounded source-identity/cost/zone unit case. Not an independent judge ruling, full game simulation or completion of M6 I/J Phase B."
+      }
+    ],
+    "P1": [
+      {
+        "case_id": "K4",
+        "status": "PASSED",
+        "test_ref": "data/grixis/m7/madcap_jester_rev1/verify.py::FiniteCases.test_K4_pact_never_duplicate_stops",
+        "execution_command": "python3 data/grixis/m7/madcap_jester_rev1/verify.py",
+        "oracle_source": "Current public Scryfall bulk pinned in Deck56 exact-head workflow; future exceptions explicitly separate from official Commander legality",
+        "payable_fixture": "Current approved full 100 unique names and Tainted Pact duplicate stopping rule.",
+        "positive_assertion": "No duplicate names in candidate's 100-card file.",
+        "adversarial_assertion": "Cannot assume stopping on repeated card names in this exact list.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40592714973",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "643eb1cc4827c1dd95485e9922506b514746e6bbc5b4b8a4cfff0f44b1007e43",
+        "coverage_note": "Executed bounded source-identity/cost/zone unit case. Not an independent judge ruling, full game simulation or completion of M6 I/J Phase B."
+      },
+      {
+        "case_id": "K5",
+        "status": "PASSED",
+        "test_ref": "data/grixis/m7/madcap_jester_rev1/verify.py::FiniteCases.test_K5_brain_freeze_storm_copies_not_cast",
+        "execution_command": "python3 data/grixis/m7/madcap_jester_rev1/verify.py",
+        "oracle_source": "Current public Scryfall bulk pinned in Deck56 exact-head workflow; future exceptions explicitly separate from official Commander legality",
+        "payable_fixture": "Four spells previously cast, one Brain Freeze plus four copies.",
+        "positive_assertion": "Five resolutions can mill fifteen cards before replacements.",
+        "adversarial_assertion": "Copies do not themselves increment spells-cast storm count.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40592714973",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "643eb1cc4827c1dd95485e9922506b514746e6bbc5b4b8a4cfff0f44b1007e43",
+        "coverage_note": "Executed bounded source-identity/cost/zone unit case. Not an independent judge ruling, full game simulation or completion of M6 I/J Phase B."
+      },
+      {
+        "case_id": "K6",
+        "status": "PASSED",
+        "test_ref": "data/grixis/m7/madcap_jester_rev1/verify.py::FiniteCases.test_K6_named_future_only_exceptions",
+        "execution_command": "python3 data/grixis/m7/madcap_jester_rev1/verify.py",
+        "oracle_source": "Current public Scryfall bulk pinned in Deck56 exact-head workflow; future exceptions explicitly separate from official Commander legality",
+        "payable_fixture": "Exact candidate list, Jester and Dragon's Smile named future cards.",
+        "positive_assertion": "Only the two documented cards remain project-exception inclusions.",
+        "adversarial_assertion": "Does not label either card officially Commander legal on October 27.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40592714973",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "643eb1cc4827c1dd95485e9922506b514746e6bbc5b4b8a4cfff0f44b1007e43",
+        "coverage_note": "Executed bounded source-identity/cost/zone unit case. Not an independent judge ruling, full game simulation or completion of M6 I/J Phase B."
+      },
+      {
+        "case_id": "E1",
+        "status": "PASSED",
+        "test_ref": "data/grixis/m7/madcap_jester_rev1/verify.py::FiniteCases.test_E1_extract_search_one_card_and_pay_ordinary_cost",
+        "execution_command": "python3 data/grixis/m7/madcap_jester_rev1/verify.py",
+        "oracle_source": "Current public Scryfall bulk pinned in Deck56 exact-head workflow; future exceptions explicitly separate from official Commander legality",
+        "payable_fixture": "One Extract-controlled exile of an opponent card, seven-mana stolen spell and only three mana available.",
+        "positive_assertion": "Controlled source exiles opponent library card and creates future Jester permission.",
+        "adversarial_assertion": "Permission cannot pay seven-mana spell with only three mana.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40592714973",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "643eb1cc4827c1dd95485e9922506b514746e6bbc5b4b8a4cfff0f44b1007e43",
+        "coverage_note": "Executed bounded source-identity/cost/zone unit case. Not an independent judge ruling, full game simulation or completion of M6 I/J Phase B."
+      },
+      {
+        "case_id": "E2",
+        "status": "PASSED",
+        "test_ref": "data/grixis/m7/madcap_jester_rev1/verify.py::FiniteCases.test_E2_haste_from_greaves_then_attack_event",
+        "execution_command": "python3 data/grixis/m7/madcap_jester_rev1/verify.py",
+        "oracle_source": "Current public Scryfall bulk pinned in Deck56 exact-head workflow; future exceptions explicitly separate from official Commander legality",
+        "payable_fixture": "Jester cast this turn equipped with Lightning Greaves.",
+        "positive_assertion": "Haste enables commander attack this turn, producing its exile trigger.",
+        "adversarial_assertion": "Without haste/new legal attack window it cannot attack immediately.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40592714973",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "643eb1cc4827c1dd95485e9922506b514746e6bbc5b4b8a4cfff0f44b1007e43",
+        "coverage_note": "Executed bounded source-identity/cost/zone unit case. Not an independent judge ruling, full game simulation or completion of M6 I/J Phase B."
+      },
+      {
+        "case_id": "W1",
+        "status": "DEFERRED",
+        "specific_reason": "The finite candidate test only checks exact pieces and exclusion of own-library exile from Jester; no playable Oracle + Consultation/Pact stack-to-win trace including opponent responses was executed.",
+        "coverage_consequence": "Oracle combo victory and response resilience remain unverified, so no guaranteed kill is certified.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "W2",
+        "status": "DEFERRED",
+        "specific_reason": "The finite test checks insufficient Breach escape fodder but does not trace repeated Underworld Breach / LED / Brain Freeze iterations, storm growth or entire table mill.",
+        "coverage_consequence": "No infinite storm or deterministic Breach win is certified.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "W3",
+        "status": "DEFERRED",
+        "specific_reason": "The finite Dragon's Smile test verifies once-per-turn limitations, not an adversarial sequence of stolen-card casts and net resource advantage.",
+        "coverage_consequence": "Value engine dominance is a strategic hypothesis, not a validated result.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "F2",
+        "status": "DEFERRED",
+        "specific_reason": "No source-named scenario tested graveyard-hate response to Breach with Oracle/Consult/Pact as unaffected alternate path; the prior F2 fixture concerns Arena of Glory.",
+        "coverage_consequence": "Graveyard-hate resilience and exact backup line are not certified by a matching executed finite test.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "F3",
+        "status": "DEFERRED",
+        "specific_reason": "Generic Jester removal was tested but not specific stax, Oracle ETB/trigger suppression and consultation stack counterplay.",
+        "coverage_consequence": "Cannot claim Oracle combo is robust through those hate effects without new tests.",
+        "owner_visible_unresolved": true
+      }
+    ]
+  }
+}

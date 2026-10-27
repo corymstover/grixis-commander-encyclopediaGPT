@@ -1,0 +1,37 @@
+name: "M7 Deck 56 source-bound case transfer — focused only"
+
+on:
+  pull_request:
+    paths:
+      - "refinement/verification/m7_certification_transfer/The_Madcap_Jester_643eb1cc4827c1dd.json"
+      - "state/current_deck_overrides.json"
+      - "refinement/decklists/The_Madcap_Jester_M7_Rev1_Approved_2026-10-27.txt"
+      - ".github/workflows/verify-m7-deck56-transfer.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-exact-jester-owner-case-record:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: "Check exact approved raw 100, source plan, owner receipt, five P0 and five deferred P1"
+        run: |
+          python3 - <<'PY'
+          import json
+          from scripts.verify_m7_certification_transfer import ROOT, validate_attestation
+          n = "The_Madcap_Jester"
+          r = json.loads((ROOT / "state/current_deck_overrides.json").read_text())["decks"][n]
+          p = json.loads((ROOT / "refinement/verification/m7_certification_transfer/m6_required_cases_2026-10-24.json").read_text())["decks"][n]
+          a = json.loads((ROOT / "refinement/verification/m7_certification_transfer/The_Madcap_Jester_643eb1cc4827c1dd.json").read_text())
+          validate_attestation(ROOT, n, r, p, a)
+          assert sum(c["status"] == "PASSED" for c in a["m6_transfer"]["P0"]) == 5
+          assert sum(c["status"] == "DEFERRED" for c in a["m6_transfer"]["P1"]) == 5
+          print("PASS Deck56 owner-approved exact-100 transfer provenance — five P0 bounded, five P1 bounded, five P1 honestly deferred")
+          print("Not the whole-registry gate; not an independent I/J gameplay certificate")
+          PY
