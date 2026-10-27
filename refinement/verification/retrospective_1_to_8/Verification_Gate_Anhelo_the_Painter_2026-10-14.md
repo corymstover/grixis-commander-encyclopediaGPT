@@ -1,11 +1,11 @@
 # Fresh Oracle/legality gate — #4 Anhelo, the Painter
 
-- Generated UTC: `2026-10-27T09:20:29.070332+00:00`
+- Generated UTC: `2026-10-27T10:26:19.008990+00:00`
 - Approved source: `refinement/decklists/Anhelo_the_Painter_Approval_Ready_2026-10-13.txt`
 - Approved source SHA-256 (raw bytes): `8d5f8a9bd4fcdcd164aab63150c14dc69a814a4d9fd764876de3214d3adf9972`
 - Approval evidence: state/current_deck_overrides.json; refinement/verification/Anhelo_the_Painter_Approval_Ready_Closeout_2026-10-13.md
-- Oracle cache generated UTC: `2026-10-27T07:46:40.307625+00:00`
-- Scryfall bulk updated UTC: `2026-10-26T21:05:59.438+00:00`
+- Oracle cache generated UTC: `2026-10-27T09:36:33.089952+00:00`
+- Scryfall bulk updated UTC: `2026-10-27T09:05:57.864+00:00`
 - 100-card count: **PASS** (100)
 - Singleton: **PASS**
 - Commander color identity: `B,R,U`

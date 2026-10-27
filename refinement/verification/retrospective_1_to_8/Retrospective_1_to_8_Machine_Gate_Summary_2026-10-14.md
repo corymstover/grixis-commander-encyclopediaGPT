@@ -1,6 +1,6 @@
 # Retrospective decks #1–8 — machine gate summary
 
-Generated UTC: `2026-10-27T09:20:29.070332+00:00`
+Generated UTC: `2026-10-27T10:26:19.008990+00:00`
 
 | # | Deck | Count | Singleton | Oracle / CI / legality | Exceptions |
 |---:|---|---:|---|---|---|
