@@ -1,0 +1,36 @@
+name: "M7 Deck 54 source-bound case transfer — focused only"
+
+on:
+  pull_request:
+    paths:
+      - "refinement/verification/m7_certification_transfer/Tetsuo_Umezawa_e00196135931bde6.json"
+      - ".github/workflows/verify-m7-deck54-transfer.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-exact-tetsuo-umezawa-case-record:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: "Check exact 100, original plan IDs, five P0 bounded cases and honest P1 deferral"
+        run: |
+          python3 - <<'PY'
+          import json
+          from scripts.verify_m7_certification_transfer import ROOT, validate_attestation
+
+          n = "Tetsuo_Umezawa"
+          d = json.loads((ROOT / "state/current_deck_overrides.json").read_text())["decks"][n]
+          p = json.loads((ROOT / "refinement/verification/m7_certification_transfer/m6_required_cases_2026-10-24.json").read_text())["decks"][n]
+          a = json.loads((ROOT / "refinement/verification/m7_certification_transfer/Tetsuo_Umezawa_e00196135931bde6.json").read_text())
+          validate_attestation(ROOT, n, d, p, a)
+          assert all(c['status'] == 'PASSED' for c in a['m6_transfer']['P0'])
+          assert sum(c['status'] == 'DEFERRED' for c in a['m6_transfer']['P1']) == 1
+          print("PASS Deck54 exact-approved-source transfer: 5 P0 executed bounded; 8 P1 bounded; 1 P1 explicitly deferred")
+          print("Not the entire registry gate, independent M6 I/J, or a new canonical card approval")
+          PY
