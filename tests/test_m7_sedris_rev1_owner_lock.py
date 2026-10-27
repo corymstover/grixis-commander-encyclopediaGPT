@@ -50,7 +50,7 @@ class SedrisExactOwnerLock(unittest.TestCase):
         self.assertEqual(sum(q for q, _ in rows), 100)
         self.assertEqual(len(rows), 99)
         self.assertEqual(len(current), 99)
-        self.assertEqual({n: q for n, q in rows if q > 1}, {"Swamp": 2})
+        self.assertEqual({name: qty for qty, name in rows if qty > 1}, {"Swamp": 2})
         self.assertEqual(set(prior) - set(current), set(SWAPS))
         self.assertEqual(set(current) - set(prior), set(SWAPS.values()))
         self.assertEqual(set((prior-current).elements()), set(SWAPS))
