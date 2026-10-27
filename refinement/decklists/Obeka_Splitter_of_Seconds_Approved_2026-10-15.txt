@@ -1,4 +1,6 @@
 1x Obeka, Splitter of Seconds [Commander]
+1x Academy Manufactor
+1x Aggravated Assault
 1x An Offer You Can't Refuse
 1x Ancestral Vision
 1x Ancient Tomb
@@ -8,6 +10,7 @@
 1x Arid Mesa
 1x As Foretold
 1x Badlands
+1x Blackblade Reforged
 1x Blood Crypt
 1x Bloodstained Mire
 1x Bonehoard Dracosaur
@@ -23,7 +26,6 @@
 1x Court of Vantress
 1x Creeping Bloodsucker
 1x Cyclonic Rift
-1x Darksteel Reactor
 1x Deadly Rollick
 1x Deflecting Swat
 1x Demonic Tutor
@@ -37,7 +39,8 @@
 1x Hatred
 1x Inspiring Refrain
 3x Island
-1x Jhoira of the Ghitu
+1x Jeska, Thrice Reborn
+1x Karlach, Fury of Avernus
 1x Lightning Greaves
 1x Luxury Suite
 1x Mana Confluence
@@ -49,7 +52,6 @@
 1x Morphic Pool
 2x Mountain
 1x Otawara, Soaring City
-1x Paradox Haze
 1x Phyrexian Arena
 1x Plargg and Nassari
 1x Polluted Delta
@@ -58,10 +60,8 @@
 1x Replicating Ring
 1x Rhystic Study
 1x Ring of Evos Isle
-1x Ring of Valkas
-1x Ring of Xathrid
+1x Rising of the Day
 1x Roaming Throne
-1x Rousing Refrain
 1x Scalding Tarn
 1x Shizo, Death's Storehouse
 1x Silent Arbiter
