@@ -6,7 +6,6 @@
 1x Arcane Signet
 1x Arena of Glory
 1x Arid Mesa
-1x Avaricious Dragon
 1x Badlands
 1x Blood Crypt
 1x Bloodstained Mire
@@ -19,10 +18,10 @@
 1x Counterspell
 1x Cyclonic Rift
 1x Deflecting Swat
-1x Delina, Wild Mage
 1x Demonic Tutor
 1x Discontinuity
 1x Dualcaster Mage
+1x Entomb
 1x Fable of the Mirror-Breaker // Reflection of Kiki-Jiki
 1x Feldon of the Third Path
 1x Fellwar Stone
@@ -30,15 +29,14 @@
 1x Final Fortune
 1x Flameshadow Conjuring
 1x Flooded Strand
+1x Footsteps of the Goryo
 1x Force of Will
 1x Frantic Search
 1x Gamble
 1x Glorious End
-1x Hate Mirage
 1x Hellkite Courser
 1x Ideas Unbound
 1x Identity Thief
-1x Ilharg, the Raze-Boar
 1x Island
 1x Isochron Scepter
 1x Izzet Signet
@@ -53,6 +51,7 @@
 1x Mana Drain
 1x Mana Vault
 1x Marsh Flats
+1x Mimic Vat
 1x Minamo, School at Water's Edge
 1x Misty Rainforest
 1x Morphic Pool
@@ -64,7 +63,6 @@
 1x Polluted Delta
 1x Psychic Vortex
 1x Puppeteer Clique
-1x Purphoros, Bronze-Blooded
 1x Reanimate
 1x Reflecting Pool
 1x Rhystic Study
@@ -74,6 +72,8 @@
 1x Shivan Reef
 1x Sneak Attack
 1x Sol Ring
+1x Spellseeker
+1x Splinter Twin
 1x Steam Vents
 1x Sulfurous Springs
 1x Sundial of the Infinite
@@ -95,6 +95,6 @@
 1x Volcanic Island
 1x Warrior's Oath
 1x Watery Grave
-1x Windfall
 1x Wooded Foothills
 1x Xander's Lounge
+1x Zealous Conscripts
