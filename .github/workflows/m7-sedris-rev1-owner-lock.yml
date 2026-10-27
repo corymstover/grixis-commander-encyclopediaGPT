@@ -1,0 +1,36 @@
+name: M7 Deck 51 Sedris Rev1 exact canonical owner lock
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/m7-sedris-rev1-owner-lock.yml'
+      - 'tests/test_m7_sedris_rev1_owner_lock.py'
+      - 'refinement/decklists/Sedris_the_Traitor_King_M7_Rev1_Approved_2026-10-27.txt'
+      - 'refinement/approvals/Sedris_the_Traitor_King_M7_Rev1_Approved_2026-10-27.md'
+      - 'refinement/verification/Sedris_the_Traitor_King_M7_Rev1_Approval_Verification_2026-10-27.md'
+      - 'state/current_deck_overrides.json'
+      - 'refinement/Deck_Refinement_Tracker_2026-10-12.csv'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  exact-owner-lock:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Checkout exact PR head plus base history
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          fetch-depth: 0
+      - name: Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify exact Sedris 100 hash approvals tracker old source and other 61 unchanged
+        env:
+          BASE_REF_SHA: ${{ github.event.pull_request.base.sha }}
+        run: python -m unittest discover -s tests -p 'test_m7_sedris_rev1_owner_lock.py' -v
