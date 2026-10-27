@@ -1,11 +1,11 @@
 # Fresh Oracle/legality gate — #6 Ashnod the Uncaring
 
-- Generated UTC: `2026-10-27T01:15:46.871935+00:00`
+- Generated UTC: `2026-10-27T07:46:22.532731+00:00`
 - Approved source: `refinement/decklists/Ashnod_the_Uncaring_Approved_2026-10-13.txt`
 - Approved source SHA-256 (raw bytes): `f574e4fad4749603294f53d2fe5536a159f884a8f1a8a7b6b1a22b3a637cf1cf`
 - Approval evidence: refinement/approvals/Ashnod_the_Uncaring_Approved_2026-10-13.md
-- Oracle cache generated UTC: `2026-10-26T20:46:17.019038+00:00`
-- Scryfall bulk updated UTC: `2026-10-26T09:05:45.439+00:00`
+- Oracle cache generated UTC: `2026-10-27T03:08:58.375882+00:00`
+- Scryfall bulk updated UTC: `2026-10-26T21:05:59.438+00:00`
 - 100-card count: **PASS** (100)
 - Singleton: **PASS**
 - Commander color identity: `B,R,U`
