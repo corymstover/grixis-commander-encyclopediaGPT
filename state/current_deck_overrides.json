@@ -1637,15 +1637,16 @@
       "approval_status": "APPROVED",
       "lock_status": "LOCKED",
       "final_gate_passed": true,
-      "user_approval_date": "2026-10-15",
+      "user_approval_date": "2026-10-27",
       "current_stage": "LOCKED",
-      "approved_list_sha256": "7220937ed5817b4ef9cacd2463a3434b98ae58690ffa1d7ef440881ba97d729c",
-      "quality_gate_version": "Deck Quality Gates v3 + mandatory whole-list audit + targeted approval-ready verification",
-      "approval_basis": "Explicit user approval of the exact SHA-bound The Rani approval-ready candidate after authoritative FINAL baseline reconciliation, mandatory 99-slot whole-list audit, commander-first goad/Clue/forced-combat review, candidate exhaustion, adversarial red-team review, mana-base review, fresh Oracle/color-identity verification, current official Commander legality verification, rules-interaction verification, exact structural verification, singleton verification, and zero-new-material-improvement closure.",
-      "verification_artifact": "refinement/verification/The_Rani_Approval_Ready_Verification_2026-10-15.md",
+      "approved_list_sha256": "924296ed24fdc5e79431821d31a77134c5ed5c089a92cb5e69c78f78bde4fe27",
+      "quality_gate_version": "Deck Quality Gates v3 + M7 exact-source legal/Oracle/finite P0 follow-up + mandatory M7 61-plan certification transfer (global CI merge gate)",
+      "approval_basis": "Cory explicitly approved Deck #57 The Rani M7 Rev1 exact raw SHA 924296ed24fdc5e79431821d31a77134c5ed5c089a92cb5e69c78f78bde4fe27 and authorized engineering merge and canonical locking only after required certification; exact-head engineering PR #741 and exact-100 M6 P0 follow-up PR #742 merged with successful dedicated CI; nine M6 P1 cases explicitly deferred and historical I/J Phase B not silently certified.",
+      "verification_artifact": "refinement/verification/The_Rani_M7_Rev1_Approval_Verification_2026-10-27.md",
       "decision_closeout_artifact": "refinement/decisions/The_Rani_Candidate_Decisions_2026-10-15.md",
-      "approval_record_artifact": "refinement/approvals/The_Rani_Approved_2026-10-15.md",
-      "approved_list_artifact": "refinement/decklists/The_Rani_Approved_2026-10-15.txt"
+      "approval_record_artifact": "refinement/approvals/The_Rani_M7_Rev1_Approved_2026-10-27.md",
+      "approved_list_artifact": "refinement/decklists/The_Rani_M7_Rev1_Approved_2026-10-27.txt",
+      "m7_certification_transfer_artifact": "refinement/verification/m7_certification_transfer/The_Rani_924296ed24fdc5e7.json"
     },
     "Thraximundar": {
       "approval_status": "APPROVED",
