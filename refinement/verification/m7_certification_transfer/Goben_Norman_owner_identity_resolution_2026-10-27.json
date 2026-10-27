@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "historical_registry_id": "Goben__Gene_Splice_Savant",
+  "actual_commander_deck_id": "Norman_Osborn_Green_Goblin",
+  "approved_raw_sha256": "c002a49243bd54780bb0f4a36a3c239a00e042defa1d0c6c4b891c3c8060eef9",
+  "approved_artifact": "refinement/decklists/Norman_Osborn_Green_Goblin_M7_Rev1_Approved_2026-10-26.txt",
+  "commander_line": "1x Norman Osborn // Green Goblin [Commander]",
+  "plan_source_path": "data/grixis/m6/test_blueprints/Norman_Osborn_Green_Goblin.json",
+  "plan_blob_sha": "24c7b78a1548c7f0c9cf40931d06b13286cf0f6c",
+  "owner_authorization_receipt": "2026-10-27 America/Chicago, ChatGPT Grixis Commander Encyclopedia: After the assistant asked Cory whether to authorize a documented legacy-ID mapping from Goben__Gene_Splice_Savant to Norman_Osborn_Green_Goblin, explicitly preserving the historical manifests and evidence, Cory replied 'Sure.' This is identity-mapping authority only, not authorization to change the 100 cards, the approval SHA, case results, frozen snapshot or aggregate milestones.",
+  "historical_approval_receipt": "refinement/approvals/Norman_Osborn_Green_Goblin_M7_Rev1_Approved_2026-10-26.md",
+  "source_rationale": "The historical 62-key registry uses Goben__Gene_Splice_Savant at the Deck 43 position even though its Oct26 owner-approved exact 100 and commander line are Norman Osborn // Green Goblin. The fixed Oct24 61-plan manifest instead carries Norman_Osborn_Green_Goblin. This document provides one versioned, immutable-content-bound source-plan alias, not a new commander or fabricated case execution.",
+  "immutability_policy": "Preserve both frozen source manifests, legacy registry key, exact Norman 100-card approval and all prior evidence. Any future revision of the approved raw SHA, source card identity or resolved plan requires a separate explicit owner-approved mapping update."
+}

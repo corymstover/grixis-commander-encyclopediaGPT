@@ -18,6 +18,7 @@ REGISTRY = Path("state/current_deck_overrides.json")
 FROZEN = Path("refinement/verification/m7_certification_transfer/frozen_approval_snapshot_2026-10-24.json")
 PLANS = Path("refinement/verification/m7_certification_transfer/m6_required_cases_2026-10-24.json")
 ATTESTATIONS = Path("refinement/verification/m7_certification_transfer")
+NORMAN_LEGACY_ID_RESOLUTION = ATTESTATIONS / "Goben_Norman_owner_identity_resolution_2026-10-27.json"
 # Immutable source-bound authority snapshots. Moving the baseline forward to
 # conceal a new approval is forbidden; an explicit Cory-approved governance
 # revision must change both these pins and document why.
@@ -53,6 +54,51 @@ def inside_repo(root: Path, relative: str) -> Path:
     p = Path(relative)
     require(not p.is_absolute() and ".." not in p.parts, f"Unsafe path: {relative}")
     return root / p
+
+
+def resolve_required_plan(root: Path, deck_id: str, approved: dict, plans: dict):
+    """Resolve the *one* owner-approved historical roster alias, fail closed.
+
+    The Oct24 frozen 62-key registry and pinned 61-plan manifest remain
+    immutable. This only supplies Norman's preexisting plan to the legacy
+    Goben registry key for a case-by-case future attestation, not a pass.
+    """
+    if deck_id != "Goben__Gene_Splice_Savant":
+        return plans.get(deck_id)
+    resolution = load_json(root, NORMAN_LEGACY_ID_RESOLUTION)
+    expected = {
+        "schema_version": 1,
+        "historical_registry_id": "Goben__Gene_Splice_Savant",
+        "actual_commander_deck_id": "Norman_Osborn_Green_Goblin",
+        "approved_raw_sha256": "c002a49243bd54780bb0f4a36a3c239a00e042defa1d0c6c4b891c3c8060eef9",
+        "approved_artifact": "refinement/decklists/Norman_Osborn_Green_Goblin_M7_Rev1_Approved_2026-10-26.txt",
+        "commander_line": "1x Norman Osborn // Green Goblin [Commander]",
+        "plan_source_path": "data/grixis/m6/test_blueprints/Norman_Osborn_Green_Goblin.json",
+        "plan_blob_sha": "24c7b78a1548c7f0c9cf40931d06b13286cf0f6c",
+    }
+    for field, value in expected.items():
+        require(resolution.get(field) == value,
+                f"Goben/Norman identity resolution changed {field}; owner authorization required")
+    require("2026-10-27" in str(resolution.get("owner_authorization_receipt", ""))
+            and "Sure" in str(resolution.get("owner_authorization_receipt", "")),
+            "Goben/Norman identity resolution lacks the exact owner authorization")
+    require(approved.get("approved_list_sha256") == expected["approved_raw_sha256"]
+            and approved.get("approved_list_artifact") == expected["approved_artifact"],
+            "Goben/Norman alias cannot transfer to a different approved 100")
+    source = inside_repo(root, expected["approved_artifact"])
+    require(source.is_file(), "Goben/Norman approved Norman source file missing")
+    require(hashlib.sha256(source.read_bytes()).hexdigest() == expected["approved_raw_sha256"]
+            and source.read_text(encoding="utf-8").splitlines()[0] == expected["commander_line"],
+            "Goben/Norman approved list bytes or commander identity changed")
+    require(deck_id not in plans,
+            "Goben now has a distinct source plan; do not silently use the Norman alias")
+    plan = require(plans.get(expected["actual_commander_deck_id"]),
+                   "Norman source plan absent from immutable 61-plan manifest")
+    require(plan.get("plan_deck_id") == expected["actual_commander_deck_id"]
+            and plan.get("source_path") == expected["plan_source_path"]
+            and plan.get("plan_blob_sha") == expected["plan_blob_sha"],
+            "Goben/Norman alias does not match immutable Norman case inventory")
+    return plan
 
 
 def valid_ci(value: str, label: str):
@@ -174,7 +220,8 @@ def validate_live_state(root: Path) -> dict:
             continue  # historical owner approval immutable; no retroactive silent invalidation
         rel = ATTESTATIONS / f"{deck_id}_{sha[:16]}.json"
         attestation = load_json(root, rel)
-        validate_attestation(root, deck_id, deck, plans["decks"].get(deck_id), attestation)
+        required = resolve_required_plan(root, deck_id, deck, plans["decks"])
+        validate_attestation(root, deck_id, deck, required, attestation)
         changed.append(deck_id)
     return {"historical_locks_preserved": len(actual) - len(changed),
             "new_or_revised_approvals_with_case_evidence": changed,

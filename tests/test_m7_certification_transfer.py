@@ -7,8 +7,9 @@ import tempfile
 import unittest
 from pathlib import Path
 from scripts.verify_m7_certification_transfer import (
-    ATTESTATIONS, FROZEN, PLANS, REGISTRY, ROOT,
-    EvidenceError, validate_attestation, validate_case_records, validate_live_state,
+    ATTESTATIONS, FROZEN, NORMAN_LEGACY_ID_RESOLUTION, PLANS, REGISTRY, ROOT,
+    EvidenceError, resolve_required_plan, validate_attestation, validate_case_records,
+    validate_live_state,
 )
 
 
@@ -158,6 +159,67 @@ class TransferEvidenceTests(unittest.TestCase):
         records = [self.passed_case("C1"), self.passed_case("C1")]
         with self.assertRaisesRegex(EvidenceError, "duplicate P0"):
             validate_case_records("P0", records, ["C1"], "Kefka", self.sha)
+
+
+class LegacyNormanIdentityMappingTests(unittest.TestCase):
+    """Cory's one SHA-bound Goben/Norman identity resolution; no M6 waiver."""
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.tmp.cleanup)
+        self.root = Path(self.tmp.name)
+        for rel in (NORMAN_LEGACY_ID_RESOLUTION,
+                    Path("refinement/decklists/Norman_Osborn_Green_Goblin_M7_Rev1_Approved_2026-10-26.txt")):
+            path = self.root / rel
+            path.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(ROOT / rel, path)
+        self.approved = json.loads((ROOT / REGISTRY).read_text())["decks"]["Goben__Gene_Splice_Savant"]
+        self.plans = json.loads((ROOT / PLANS).read_text())["decks"]
+
+    def resolve(self, approved=None, plans=None):
+        return resolve_required_plan(
+            self.root, "Goben__Gene_Splice_Savant",
+            self.approved if approved is None else approved,
+            self.plans if plans is None else plans,
+        )
+
+    def test_owner_approved_legacy_key_maps_to_pinned_norman_plan(self):
+        plan = self.resolve()
+        self.assertEqual("Norman_Osborn_Green_Goblin", plan["plan_deck_id"])
+        self.assertEqual(["C1", "K1", "K2", "K3", "F1"], plan["required_P0"])
+        self.assertEqual(11, len(plan["required_P1"]))
+
+    def test_wrong_approved_sha_cannot_reuse_legacy_mapping(self):
+        approved = dict(self.approved)
+        approved["approved_list_sha256"] = "f" * 64
+        with self.assertRaisesRegex(EvidenceError, "different approved 100"):
+            self.resolve(approved=approved)
+
+    def test_unknown_or_repurposed_mapping_is_rejected(self):
+        path = self.root / NORMAN_LEGACY_ID_RESOLUTION
+        doc = json.loads(path.read_text())
+        doc["actual_commander_deck_id"] = "Goben__Gene_Splice_Savant"
+        path.write_text(json.dumps(doc))
+        with self.assertRaisesRegex(EvidenceError, "identity resolution changed"):
+            self.resolve()
+
+    def test_original_commander_line_is_required(self):
+        path = self.root / "refinement/decklists/Norman_Osborn_Green_Goblin_M7_Rev1_Approved_2026-10-26.txt"
+        path.write_text(path.read_text().replace("Norman Osborn", "Goben", 1))
+        with self.assertRaisesRegex(EvidenceError, "approved list bytes or commander"):
+            self.resolve()
+
+    def test_no_silent_mapping_to_changed_m6_case_manifest(self):
+        plans = copy.deepcopy(self.plans)
+        plans["Norman_Osborn_Green_Goblin"]["plan_blob_sha"] = "a" * 40
+        with self.assertRaisesRegex(EvidenceError, "immutable Norman case inventory"):
+            self.resolve(plans=plans)
+
+    def test_new_distinct_goben_plan_requires_new_owner_resolution(self):
+        plans = copy.deepcopy(self.plans)
+        plans["Goben__Gene_Splice_Savant"] = copy.deepcopy(plans["Norman_Osborn_Green_Goblin"])
+        with self.assertRaisesRegex(EvidenceError, "distinct source plan"):
+            self.resolve(plans=plans)
 
 
 class CompleteRegistryGateTests(unittest.TestCase):

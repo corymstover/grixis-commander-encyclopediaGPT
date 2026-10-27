@@ -8,7 +8,7 @@ This is a canonical **provenance and approval-safety** gate, not a new independe
 - `m6_required_cases_2026-10-24.json` records the exact 61 committed commander test plans from engineering PR #535: **882 designed cases, 308 P0 and 574 P1**. Its Git blob SHA and original ID are retained; the plan is a specification, **not evidence that those cases executed**.
 - Both authority manifests are byte-SHA-256 pinned in the verifier. A new deck cannot evade evidence requirements by silently changing the historical approved-hash snapshot or the required case inventory. Updating those pins is a documented owner-level governance change, not routine certification repair.
 - Abaddon is excluded from that 61-deck inventory and must explicitly bind its own existing P0/I/J evidence if reopened.
-- The Goben/Norman identity discrepancy remains a hard source exception requiring owner-level resolution.
+- **Owner-resolved Goben/Norman historical ID discrepancy (2026-10-27):** Cory replied "Sure" to a narrowly documented plan mapping for the former `Goben__Gene_Splice_Savant` frozen registry key, whose approved Deck #43 physical commander is Norman Osborn // Green Goblin. `Goben_Norman_owner_identity_resolution_2026-10-27.json` pins the exact approved SHA, commander line, source artifact and Norman blueprint SHA. The verifier applies this alias to **plan lookup only**; it never changes the immutable 62-key snapshot, 61-plan manifest, decklist, lock, or status of P0/P1 tests. A changed SHA or a different actual commander fails closed and requires renewed owner authority.
 
 ## Canonical PR attestation
 
