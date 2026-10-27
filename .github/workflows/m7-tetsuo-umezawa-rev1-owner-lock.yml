@@ -1,0 +1,36 @@
+name: M7 Deck 54 Tetsuo Umezawa Rev1 exact canonical owner lock
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/m7-tetsuo-umezawa-rev1-owner-lock.yml'
+      - 'tests/test_m7_tetsuo_umezawa_rev1_owner_lock.py'
+      - 'refinement/decklists/Tetsuo_Umezawa_M7_Rev1_Approved_2026-10-27.txt'
+      - 'refinement/approvals/Tetsuo_Umezawa_M7_Rev1_Approved_2026-10-27.md'
+      - 'refinement/verification/Tetsuo_Umezawa_M7_Rev1_Approval_Verification_2026-10-27.md'
+      - 'refinement/Deck_Refinement_Tracker_2026-10-12.csv'
+      - 'state/current_deck_overrides.json'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  exact-owner-lock:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Checkout exact PR head plus base history
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          fetch-depth: 0
+      - name: Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify exact Tetsuo 100 hash tracker authority original source and 61 other unchanged
+        env:
+          BASE_REF_SHA: ${{ github.event.pull_request.base.sha }}
+        run: python -m unittest discover -s tests -p 'test_m7_tetsuo_umezawa_rev1_owner_lock.py' -v
