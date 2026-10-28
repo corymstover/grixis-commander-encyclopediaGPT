@@ -27,8 +27,8 @@ class CurrentSHAReleaseGate(unittest.TestCase):
         self.assertEqual(self.report["original_deferred_P1"], 180)
         self.assertEqual(self.report["current_sha_case_dispositions"], 12)
         self.assertEqual(self.report["P1_pending_current_disposition"], 168)
-        self.assertEqual(self.report["current_sha_commander_first_attestations"], 39)
-        self.assertEqual(self.report["quality_attestations_pending"], 23)
+        self.assertEqual(self.report["current_sha_commander_first_attestations"], 40)
+        self.assertEqual(self.report["quality_attestations_pending"], 22)
         self.assertEqual(self.report["transferred_P0_passed"], 192)
         self.assertEqual(self.report["transferred_P1_passed"], 193)
         self.assertFalse(self.report["ready_for_final_release"])
@@ -201,6 +201,36 @@ class CurrentSHAReleaseGate(unittest.TestCase):
             with self.subTest(field=field):
                 invalid = copy.deepcopy(original)
                 invalid[field] = value
+                with self.assertRaisesRegex(gate.CertificationError, message):
+                    gate.validate_deck_attestations([invalid], approved)
+
+    def test_unsinkable_original_cases_and_99_ledger_are_distinct_from_beckett(self):
+        approved = gate.read_current()
+        original = next(row for row in self.base["deck_quality_attestations"]
+                        if row["deck_id"] == "Admiral_Brass__Unsinkable")
+        self.assertEqual(gate.validate_deck_attestations([original], approved),
+                         {"Admiral_Brass__Unsinkable"})
+        current = next(x for x in approved if x["id"] == "Admiral_Brass__Unsinkable")
+        scoped = gate.repo_file(original["review_path"]).read_text(encoding="utf-8")
+        self.assertIn(current["sha256"], scoped)
+        self.assertIn("five original P0", scoped)
+        self.assertIn("eight original P1", scoped)
+        counted = Counter()
+        for quantity, name in re.findall(r"^- (\d+)x (.+)$", scoped, re.MULTILINE):
+            counted[name] += int(quantity)
+        approved_pool = Counter({name: qty for qty, name, zone in current["cards"]
+                                 if zone == "Main"})
+        self.assertEqual(sum(counted.values()), 99)
+        self.assertEqual(counted, approved_pool)
+        self.assertNotIn("Admiral Brass, Unsinkable", counted)
+        for field, bad, message in (
+            ("approved_raw_sha256", "0" * 64, "not for current 100"),
+            ("grandfathered_case_scope_sha256", "0" * 64, "Evidence SHA drift"),
+            ("grandfathered_case_scope_outcome", "INCOMPLETE", "scope remains unverified"),
+        ):
+            with self.subTest(field=field):
+                invalid = copy.deepcopy(original)
+                invalid[field] = bad
                 with self.assertRaisesRegex(gate.CertificationError, message):
                     gate.validate_deck_attestations([invalid], approved)
 
