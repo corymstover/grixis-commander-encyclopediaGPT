@@ -27,8 +27,8 @@ class CurrentSHAReleaseGate(unittest.TestCase):
         self.assertEqual(self.report["original_deferred_P1"], 180)
         self.assertEqual(self.report["current_sha_case_dispositions"], 12)
         self.assertEqual(self.report["P1_pending_current_disposition"], 168)
-        self.assertEqual(self.report["current_sha_commander_first_attestations"], 38)
-        self.assertEqual(self.report["quality_attestations_pending"], 24)
+        self.assertEqual(self.report["current_sha_commander_first_attestations"], 39)
+        self.assertEqual(self.report["quality_attestations_pending"], 23)
         self.assertEqual(self.report["transferred_P0_passed"], 192)
         self.assertEqual(self.report["transferred_P1_passed"], 193)
         self.assertFalse(self.report["ready_for_final_release"])
@@ -114,6 +114,27 @@ class CurrentSHAReleaseGate(unittest.TestCase):
                 invalid[field] = wrong
                 with self.assertRaisesRegex(gate.CertificationError, message):
                     gate.validate_dispositions([invalid], deferred, decks)
+
+    def test_parnesse_whole99_quality_is_distinct_from_unfinished_p1(self):
+        decks = gate.read_current()
+        row = next(row for row in self.base["deck_quality_attestations"]
+                   if row["deck_id"] == "Parnesse__the_Subtle_Brush")
+        self.assertEqual(gate.validate_deck_attestations([row], decks),
+                         {"Parnesse__the_Subtle_Brush"})
+        report = gate.repo_file(row["review_path"]).read_text(encoding="utf-8")
+        self.assertIn(row["approved_raw_sha256"], report)
+        self.assertIn("five still deferred", report)
+        self.assertIn("35 lands", report)
+        for field, bad, message in (
+            ("approved_raw_sha256", "0" * 64, "not for current 100"),
+            ("review_sha256", "0" * 64, "Evidence SHA drift"),
+            ("engineering_review_blob_sha", "unverified", "Missing Git blob commitment"),
+        ):
+            with self.subTest(field=field):
+                invalid = copy.deepcopy(row)
+                invalid[field] = bad
+                with self.assertRaisesRegex(gate.CertificationError, message):
+                    gate.validate_deck_attestations([invalid], decks)
 
     def test_fake_quality_review_cannot_be_counted(self):
         invalid = copy.deepcopy(self.base)
