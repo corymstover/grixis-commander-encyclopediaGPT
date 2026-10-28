@@ -1,0 +1,32 @@
+name: M8 Marchesa Black Rose original P1 payable finite traces
+
+on:
+  pull_request:
+    paths:
+      - 'tests/test_m8_marchesa_black_rose_p1_trace.py'
+      - 'architecture/M8_MARCHESA_BLACK_ROSE_P1_TRACE.md'
+      - '.github/workflows/verify-m8-marchesa-black-rose-p1.yml'
+      - 'refinement/verification/m8_current_release_evidence_v1.json'
+  push:
+    branches: [main]
+    paths:
+      - 'tests/test_m8_marchesa_black_rose_p1_trace.py'
+      - 'refinement/verification/m8_current_release_evidence_v1.json'
+  workflow_dispatch:
+
+jobs:
+  original-marchesa-finite-traces:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Execute ten original P1 source-bound positive/adverse traces
+        run: python -m unittest discover -s tests -p test_m8_marchesa_black_rose_p1_trace.py -v
+      - name: Verify fail-closed M8 current release gate
+        run: python scripts/verify_m8_current_certification.py --check
+      - name: Verify immutable M7 approvals and original transfer
+        run: python scripts/verify_m7_certification_transfer.py --check
