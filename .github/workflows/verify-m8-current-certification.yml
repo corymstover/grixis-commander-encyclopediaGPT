@@ -10,9 +10,15 @@ on:
       - 'tests/test_m8_admiral_brass_unsinkable_current.py'
       - 'tests/test_m8_anhelo_painter_current.py'
       - 'tests/test_m8_ashad_lone_cyberman_current.py'
+      - 'tests/test_m8_batch6_to_10_current_quality.py'
       - 'refinement/verification/m8_quality_scope/Admiral_Brass__Unsinkable_dfa192cce0d92562.md'
       - 'refinement/verification/m8_quality_scope/Anhelo__the_Painter_865b3a16567f1cb8.md'
       - 'refinement/verification/m8_quality_scope/Ashad__the_Lone_Cyberman_352911498345e78b.md'
+      - 'refinement/verification/m8_quality_scope/Ashnod_the_Uncaring_a045579b6f9d21f5.md'
+      - 'refinement/verification/m8_quality_scope/Be_lakor_the_Dark_Master_2107f02e7a5303ee.md'
+      - 'refinement/verification/m8_quality_scope/Cecily__Bjorna__Lutri_e4028f06d2d928ad.md'
+      - 'refinement/verification/m8_quality_scope/Cormela__Glamour_Thief_d91ac1ab1dc543ee.md'
+      - 'refinement/verification/m8_quality_scope/Crosis__the_Purger_a2f842355958dc85.md'
       - '.github/workflows/verify-m8-current-certification.yml'
   push:
     branches: [main]
@@ -41,6 +47,8 @@ jobs:
         run: python -m unittest discover -s tests -p test_m8_anhelo_painter_current.py -v
       - name: Verify Ashad Lone Cyberman exact Rev3 99 and original bounded cases
         run: python -m unittest discover -s tests -p test_m8_ashad_lone_cyberman_current.py -v
+      - name: Verify five exact-current decks 6-10 with 70 original adversarial case scopes
+        run: python -m unittest discover -s tests -p test_m8_batch6_to_10_current_quality.py -v
       - name: Recheck original exact M7 certification transfers
         run: python scripts/verify_m7_certification_transfer.py --check
       - name: Confirm that the prior archive remains an explicitly unaccepted candidate
