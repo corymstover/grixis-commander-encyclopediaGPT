@@ -12,7 +12,9 @@
       "reason": "The old K4 card-specific Demonic Counsel delirium tutor assertion cannot occur because Cory approved the exact list replacing Demonic Counsel with Step Through.",
       "evidence_path": "refinement/verification/m7_certification_transfer/Kefka__Court_Mage_14277f6e9774c5ef.json",
       "evidence_sha256": "bf8d815ecc213f63b423efe7060afa0215240372f4ecb5efec0991922023779c",
-      "removed_source_cards": ["Demonic Counsel"],
+      "removed_source_cards": [
+        "Demonic Counsel"
+      ],
       "surviving_line_disposition": "The current wizardcycling Step Through and independent tutor package are separately scoped; there is no claim of Demonic Counsel delirium tutoring in this exact 100. This is a retired K4 claim, not a test pass."
     },
     {
@@ -23,7 +25,9 @@
       "reason": "Historical F3 examined the failure of a Demonic Counsel tutor without the relevant Demon/delirium condition. There is no Demonic Counsel in the approved final list.",
       "evidence_path": "refinement/verification/m7_certification_transfer/Kefka__Court_Mage_14277f6e9774c5ef.json",
       "evidence_sha256": "bf8d815ecc213f63b423efe7060afa0215240372f4ecb5efec0991922023779c",
-      "removed_source_cards": ["Demonic Counsel"],
+      "removed_source_cards": [
+        "Demonic Counsel"
+      ],
       "surviving_line_disposition": "Current tutor failures remain worth assessing in the overall commander-first review; they are not a transferable Counsel-specific F3 result."
     },
     {
@@ -34,7 +38,10 @@
       "reason": "Original K5 warned that the old Krang draw modifier with Spiteful Visions or Phyrexian Tyranny could hurt the controller. Both named self-punish cards are absent from the current locked list.",
       "evidence_path": "refinement/verification/m7_certification_transfer/Nekusar__the_Mindrazer_043d2521cec1e82d.json",
       "evidence_sha256": "5e1751b9263afde58c21815ca23c1efd4d36afc4367f0dde699d89ff0276c965",
-      "removed_source_cards": ["Spiteful Visions", "Phyrexian Tyranny"],
+      "removed_source_cards": [
+        "Spiteful Visions",
+        "Phyrexian Tyranny"
+      ],
       "surviving_line_disposition": "Other opponent-draw and replacement-effect cases remain relevant and deferred separately. K5's old self-punisher branch is retired, not proven in the revised 100."
     },
     {
@@ -45,7 +52,9 @@
       "reason": "The original specific Peer into the Abyss opponent-draw lethal line is not a legal play from this deck because Peer into the Abyss was removed before the final approved list.",
       "evidence_path": "refinement/verification/m7_certification_transfer/Nekusar__the_Mindrazer_043d2521cec1e82d.json",
       "evidence_sha256": "5e1751b9263afde58c21815ca23c1efd4d36afc4367f0dde699d89ff0276c965",
-      "removed_source_cards": ["Peer into the Abyss"],
+      "removed_source_cards": [
+        "Peer into the Abyss"
+      ],
       "surviving_line_disposition": "Wheel-based draw punishment, Underworld Breach, and opponent-relative Narset/Notion Thief cases are independent surviving claims; no Peer-specific win assertion transfers."
     },
     {
@@ -56,7 +65,9 @@
       "reason": "The original K5 pre-delirium restriction is specific to Demonic Counsel, a card absent from the locked Rograkh/Silas list. The old Demon-only lookup cannot occur in this build.",
       "evidence_path": "refinement/verification/m7_certification_transfer/RogSi_97f3c0ca70303b44.json",
       "evidence_sha256": "75f4760dae28498d62224447f09ff2dc1bd679a4b9e23331588f1198f51d0645",
-      "removed_source_cards": ["Demonic Counsel"],
+      "removed_source_cards": [
+        "Demonic Counsel"
+      ],
       "surviving_line_disposition": "Existing black tutors and combo-search consistency remain separate exact-list concerns; retirement of K5 does not certify them or a Demon-search line."
     },
     {
@@ -67,7 +78,9 @@
       "reason": "The original W3 infinite-Dualcaster token line specifically requires Replication Technique, which was removed before Cory approved the final Parnesse list.",
       "evidence_path": "refinement/verification/m7_certification_transfer/Parnesse__the_Subtle_Brush_63b605a2c36ec81a.json",
       "evidence_sha256": "8d953f60940bcffde2d1ed32f700082da022d67b567fc64bf935a026365cb050",
-      "removed_source_cards": ["Replication Technique"],
+      "removed_source_cards": [
+        "Replication Technique"
+      ],
       "surviving_line_disposition": "Other copy loops, mana lines and finishers must stand on their own existing Parnesse case evidence. There is no legal W3 Replication Technique loop in the current 100."
     },
     {
@@ -148,7 +161,9 @@
       "reason": "The original K7 scenario described No Mercy's retaliation and own-creature damage edge cases. The exact approved Nicol Bolas 100 does not contain No Mercy.",
       "evidence_path": "refinement/verification/m7_certification_transfer/Nicol_Bolas_a6079935a50b9469.json",
       "evidence_sha256": "448c5afbcd7f733cb6f2255f878ba2a6759def930dbc78af9b32b96b6c3c328b",
-      "removed_source_cards": ["No Mercy"],
+      "removed_source_cards": [
+        "No Mercy"
+      ],
       "surviving_line_disposition": "Nicol Bolas's actual combat-damage, discard and Curiosity interactions remain separately accountable; this only retires the absent No Mercy-specific effect."
     },
     {
@@ -640,6 +655,437 @@
       "positive_assertion": "A ten-mana resource pool can pay a five-mana commander and separate five-mana engine in sequence.",
       "adversarial_assertion": "A five-mana resource pool paying commander cannot also pay the separate engine for free.",
       "limitations": "Finite Python model of representative prerequisite and counterexample states, pinned to exact owner-approved source and original deferred case. It is not a full Magic stack engine, arbitrary multiplayer response proof, independent J replay, actual combo-victory W-case proof, or observed win-rate measurement. See architecture/M8_ORIGINAL_P1_BATCH_A_BOUNDARIES.md."
+    },
+    {
+      "deck_id": "Sauron__Lord_of_the_Rings",
+      "case_id": "K4",
+      "approved_raw_sha256": "c427805f78f7aca7384db56022868a2e7cb7d01eeeabbb280a18e77e538a8159",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "The original deferred K4 case is now exercised against the exact current deck source SHA and required-card inventory with both opposite finite mechanics witnesses in the independently merged, exact-head CI batch. Sauron cast reanimates Fanatic and Fanatic ETB can return a second actual grave target. This is deliberately a narrowed source-bound predicate, not proof of an exhaustive multiplayer game or complete win line.",
+      "engineering_commit_sha": "a11db76dc6ef2d842c424293ce87ea8ab9497c99",
+      "test_blob_sha": "471212d7599c832c01fb93cf83ca8385c8fd349c",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40672818902",
+      "test_ref": "tests/test_m8_original_p1_batch_b_bounded.py::OriginalP1BatchBTests.test_sauron_K4",
+      "positive_assertion": "Fanatic itself returns from graveyard on Sauron's cast and its ETB then retrieves a second graveyard creature.",
+      "adversarial_assertion": "No second return happens when Fanatic enters but another legal creature is not in graveyard.",
+      "limitations": "Finite Python model of source-present and explicitly negated state predicates only. Does not run a full Oracle priority/stack/zone engine, multiple players' responses, mana availability over turns, probabilistic games or automatic infinite-win proof. Any original W cases remain deferred."
+    },
+    {
+      "deck_id": "Sauron__Lord_of_the_Rings",
+      "case_id": "K5",
+      "approved_raw_sha256": "c427805f78f7aca7384db56022868a2e7cb7d01eeeabbb280a18e77e538a8159",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "The original deferred K5 case is now exercised against the exact current deck source SHA and required-card inventory with both opposite finite mechanics witnesses in the independently merged, exact-head CI batch. Official Nazgul deck-construction exception allows up to nine, exact current source has four. This is deliberately a narrowed source-bound predicate, not proof of an exhaustive multiplayer game or complete win line.",
+      "engineering_commit_sha": "a11db76dc6ef2d842c424293ce87ea8ab9497c99",
+      "test_blob_sha": "471212d7599c832c01fb93cf83ca8385c8fd349c",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40672818902",
+      "test_ref": "tests/test_m8_original_p1_batch_b_bounded.py::OriginalP1BatchBTests.test_sauron_K5",
+      "positive_assertion": "Current list's four Nazgûl copies fit the card's at-most-nine singleton exemption.",
+      "adversarial_assertion": "A proposed ten Nazgûl copies is capped at nine and is not a legal tenth exemption.",
+      "limitations": "Finite Python model of source-present and explicitly negated state predicates only. Does not run a full Oracle priority/stack/zone engine, multiple players' responses, mana availability over turns, probabilistic games or automatic infinite-win proof. Any original W cases remain deferred."
+    },
+    {
+      "deck_id": "Sauron__Lord_of_the_Rings",
+      "case_id": "K6",
+      "approved_raw_sha256": "c427805f78f7aca7384db56022868a2e7cb7d01eeeabbb280a18e77e538a8159",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "The original deferred K6 case is now exercised against the exact current deck source SHA and required-card inventory with both opposite finite mechanics witnesses in the independently merged, exact-head CI batch. Anger in graveyard needs Mountain; Wonder needs Island, and each condition is independent. This is deliberately a narrowed source-bound predicate, not proof of an exhaustive multiplayer game or complete win line.",
+      "engineering_commit_sha": "a11db76dc6ef2d842c424293ce87ea8ab9497c99",
+      "test_blob_sha": "471212d7599c832c01fb93cf83ca8385c8fd349c",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40672818902",
+      "test_ref": "tests/test_m8_original_p1_batch_b_bounded.py::OriginalP1BatchBTests.test_sauron_K6",
+      "positive_assertion": "Both Anger and Wonder in the graveyard with an Island and a Mountain meet their respective keywords' enabling conditions.",
+      "adversarial_assertion": "Removing the Island disables Wonder's flying grant even if both cards are in graveyard and a Mountain remains.",
+      "limitations": "Finite Python model of source-present and explicitly negated state predicates only. Does not run a full Oracle priority/stack/zone engine, multiple players' responses, mana availability over turns, probabilistic games or automatic infinite-win proof. Any original W cases remain deferred."
+    },
+    {
+      "deck_id": "Sauron__Lord_of_the_Rings",
+      "case_id": "K7",
+      "approved_raw_sha256": "c427805f78f7aca7384db56022868a2e7cb7d01eeeabbb280a18e77e538a8159",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "The original deferred K7 case is now exercised against the exact current deck source SHA and required-card inventory with both opposite finite mechanics witnesses in the independently merged, exact-head CI batch. Living Death reanimates pre-exiled grave cards, not creature tokens just sacrificed. This is deliberately a narrowed source-bound predicate, not proof of an exhaustive multiplayer game or complete win line.",
+      "engineering_commit_sha": "a11db76dc6ef2d842c424293ce87ea8ab9497c99",
+      "test_blob_sha": "471212d7599c832c01fb93cf83ca8385c8fd349c",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40672818902",
+      "test_ref": "tests/test_m8_original_p1_batch_b_bounded.py::OriginalP1BatchBTests.test_sauron_K7",
+      "positive_assertion": "Three preexisting creature cards return from Living Death's exiled graveyard even after two battlefield creatures are sacrificed.",
+      "adversarial_assertion": "With no initial graveyard cards, sacrificing two creatures plus a token creates no returnable pre-exiled cards.",
+      "limitations": "Finite Python model of source-present and explicitly negated state predicates only. Does not run a full Oracle priority/stack/zone engine, multiple players' responses, mana availability over turns, probabilistic games or automatic infinite-win proof. Any original W cases remain deferred."
+    },
+    {
+      "deck_id": "Sauron__Lord_of_the_Rings",
+      "case_id": "E1",
+      "approved_raw_sha256": "c427805f78f7aca7384db56022868a2e7cb7d01eeeabbb280a18e77e538a8159",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "The original deferred E1 case is now exercised against the exact current deck source SHA and required-card inventory with both opposite finite mechanics witnesses in the independently merged, exact-head CI batch. Sauron triggers on casting eight-mana spell; countering body doesn't counter cast trigger. This is deliberately a narrowed source-bound predicate, not proof of an exhaustive multiplayer game or complete win line.",
+      "engineering_commit_sha": "a11db76dc6ef2d842c424293ce87ea8ab9497c99",
+      "test_blob_sha": "471212d7599c832c01fb93cf83ca8385c8fd349c",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40672818902",
+      "test_ref": "tests/test_m8_original_p1_batch_b_bounded.py::OriginalP1BatchBTests.test_sauron_E1",
+      "positive_assertion": "Casting Sauron with a valid returnable creature triggers even when the Sauron spell is countered after casting.",
+      "adversarial_assertion": "Not actually casting Sauron produces no cast trigger even if a graveyard creature is present.",
+      "limitations": "Finite Python model of source-present and explicitly negated state predicates only. Does not run a full Oracle priority/stack/zone engine, multiple players' responses, mana availability over turns, probabilistic games or automatic infinite-win proof. Any original W cases remain deferred."
+    },
+    {
+      "deck_id": "Sauron__Lord_of_the_Rings",
+      "case_id": "E2",
+      "approved_raw_sha256": "c427805f78f7aca7384db56022868a2e7cb7d01eeeabbb280a18e77e538a8159",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "The original deferred E2 case is now exercised against the exact current deck source SHA and required-card inventory with both opposite finite mechanics witnesses in the independently merged, exact-head CI batch. Sauron casting mills then can return a real eligible grave creature; no target means none. This is deliberately a narrowed source-bound predicate, not proof of an exhaustive multiplayer game or complete win line.",
+      "engineering_commit_sha": "a11db76dc6ef2d842c424293ce87ea8ab9497c99",
+      "test_blob_sha": "471212d7599c832c01fb93cf83ca8385c8fd349c",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40672818902",
+      "test_ref": "tests/test_m8_original_p1_batch_b_bounded.py::OriginalP1BatchBTests.test_sauron_E2",
+      "positive_assertion": "Sauron's cast trigger can return an available creature card after milling and amassing.",
+      "adversarial_assertion": "With no eligible graveyard creature, that return component cannot reanimate anything.",
+      "limitations": "Finite Python model of source-present and explicitly negated state predicates only. Does not run a full Oracle priority/stack/zone engine, multiple players' responses, mana availability over turns, probabilistic games or automatic infinite-win proof. Any original W cases remain deferred."
+    },
+    {
+      "deck_id": "Sauron__Lord_of_the_Rings",
+      "case_id": "F2",
+      "approved_raw_sha256": "c427805f78f7aca7384db56022868a2e7cb7d01eeeabbb280a18e77e538a8159",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "The original deferred F2 case is now exercised against the exact current deck source SHA and required-card inventory with both opposite finite mechanics witnesses in the independently merged, exact-head CI batch. Graveyard replacement hate blocks reanimation even when Sauron cast trigger exists. This is deliberately a narrowed source-bound predicate, not proof of an exhaustive multiplayer game or complete win line.",
+      "engineering_commit_sha": "a11db76dc6ef2d842c424293ce87ea8ab9497c99",
+      "test_blob_sha": "471212d7599c832c01fb93cf83ca8385c8fd349c",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40672818902",
+      "test_ref": "tests/test_m8_original_p1_batch_b_bounded.py::OriginalP1BatchBTests.test_sauron_F2",
+      "positive_assertion": "A real returnable creature plus live reanimation effects can form a bounded graveyard follow-up.",
+      "adversarial_assertion": "Removing the returnable creature from the graveyard defeats the witness, illustrating grave-hate exposure.",
+      "limitations": "Finite Python model of source-present and explicitly negated state predicates only. Does not run a full Oracle priority/stack/zone engine, multiple players' responses, mana availability over turns, probabilistic games or automatic infinite-win proof. Any original W cases remain deferred."
+    },
+    {
+      "deck_id": "Sauron__Lord_of_the_Rings",
+      "case_id": "F3",
+      "approved_raw_sha256": "c427805f78f7aca7384db56022868a2e7cb7d01eeeabbb280a18e77e538a8159",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "The original deferred F3 case is now exercised against the exact current deck source SHA and required-card inventory with both opposite finite mechanics witnesses in the independently merged, exact-head CI batch. Living Death applies to every player's prior graveyard symmetrically; no unilateral return. This is deliberately a narrowed source-bound predicate, not proof of an exhaustive multiplayer game or complete win line.",
+      "engineering_commit_sha": "a11db76dc6ef2d842c424293ce87ea8ab9497c99",
+      "test_blob_sha": "471212d7599c832c01fb93cf83ca8385c8fd349c",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40672818902",
+      "test_ref": "tests/test_m8_original_p1_batch_b_bounded.py::OriginalP1BatchBTests.test_sauron_F3",
+      "positive_assertion": "Living Death's two preexisting exiled creature cards return regardless of battlefield sacrifice counts.",
+      "adversarial_assertion": "No preexisting creature card in graveyard means no such creature can return; opponent graveyards likewise matter.",
+      "limitations": "Finite Python model of source-present and explicitly negated state predicates only. Does not run a full Oracle priority/stack/zone engine, multiple players' responses, mana availability over turns, probabilistic games or automatic infinite-win proof. Any original W cases remain deferred."
+    },
+    {
+      "deck_id": "Obeka__Splitter_of_Seconds",
+      "case_id": "K4",
+      "approved_raw_sha256": "f80d882944d5e39f3c6661da4dcdce3ec6eead577cd981dc54f7dc522be50859",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "The original deferred K4 case is now exercised against the exact current deck source SHA and required-card inventory with both opposite finite mechanics witnesses in the independently merged, exact-head CI batch. Throne choosing Ogre/Warlock adds one Obeka trigger: three damage gives six upkeeps. This is deliberately a narrowed source-bound predicate, not proof of an exhaustive multiplayer game or complete win line.",
+      "engineering_commit_sha": "a11db76dc6ef2d842c424293ce87ea8ab9497c99",
+      "test_blob_sha": "471212d7599c832c01fb93cf83ca8385c8fd349c",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40672818902",
+      "test_ref": "tests/test_m8_original_p1_batch_b_bounded.py::OriginalP1BatchBTests.test_obeka_K4",
+      "positive_assertion": "Three Obeka combat damage with a correctly named Roaming Throne gives two triggers, each making three upkeeps.",
+      "adversarial_assertion": "Without a matching Throne, three actual combat damage yields just three additional upkeeps.",
+      "limitations": "Finite Python model of source-present and explicitly negated state predicates only. Does not run a full Oracle priority/stack/zone engine, multiple players' responses, mana availability over turns, probabilistic games or automatic infinite-win proof. Any original W cases remain deferred."
+    },
+    {
+      "deck_id": "Obeka__Splitter_of_Seconds",
+      "case_id": "K5",
+      "approved_raw_sha256": "f80d882944d5e39f3c6661da4dcdce3ec6eead577cd981dc54f7dc522be50859",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "The original deferred K5 case is now exercised against the exact current deck source SHA and required-card inventory with both opposite finite mechanics witnesses in the independently merged, exact-head CI batch. Sieve requires five actual expendable artifacts; upkeep token makers not automatic. This is deliberately a narrowed source-bound predicate, not proof of an exhaustive multiplayer game or complete win line.",
+      "engineering_commit_sha": "a11db76dc6ef2d842c424293ce87ea8ab9497c99",
+      "test_blob_sha": "471212d7599c832c01fb93cf83ca8385c8fd349c",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40672818902",
+      "test_ref": "tests/test_m8_original_p1_batch_b_bounded.py::OriginalP1BatchBTests.test_obeka_K5",
+      "positive_assertion": "Five artifact permanents can satisfy the sacrifice-five-artifacts Time Sieve activation.",
+      "adversarial_assertion": "Four artifacts cannot pay Sieve; repeated extra upkeeps do not alone supply the missing object.",
+      "limitations": "Finite Python model of source-present and explicitly negated state predicates only. Does not run a full Oracle priority/stack/zone engine, multiple players' responses, mana availability over turns, probabilistic games or automatic infinite-win proof. Any original W cases remain deferred."
+    },
+    {
+      "deck_id": "Obeka__Splitter_of_Seconds",
+      "case_id": "K6",
+      "approved_raw_sha256": "f80d882944d5e39f3c6661da4dcdce3ec6eead577cd981dc54f7dc522be50859",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "The original deferred K6 case is now exercised against the exact current deck source SHA and required-card inventory with both opposite finite mechanics witnesses in the independently merged, exact-head CI batch. Mechanized Production checks eight matching-name artifacts at upkeep; Reactor absent. This is deliberately a narrowed source-bound predicate, not proof of an exhaustive multiplayer game or complete win line.",
+      "engineering_commit_sha": "a11db76dc6ef2d842c424293ce87ea8ab9497c99",
+      "test_blob_sha": "471212d7599c832c01fb93cf83ca8385c8fd349c",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40672818902",
+      "test_ref": "tests/test_m8_original_p1_batch_b_bounded.py::OriginalP1BatchBTests.test_obeka_K6",
+      "positive_assertion": "A live enchanted artifact and eight equal-name controlled artifacts at upkeep satisfy Mechanized Production.",
+      "adversarial_assertion": "Only seven equal-name artifacts at upkeep do not meet the alternative win condition.",
+      "limitations": "Finite Python model of source-present and explicitly negated state predicates only. Does not run a full Oracle priority/stack/zone engine, multiple players' responses, mana availability over turns, probabilistic games or automatic infinite-win proof. Any original W cases remain deferred."
+    },
+    {
+      "deck_id": "Obeka__Splitter_of_Seconds",
+      "case_id": "E1",
+      "approved_raw_sha256": "f80d882944d5e39f3c6661da4dcdce3ec6eead577cd981dc54f7dc522be50859",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "The original deferred E1 case is now exercised against the exact current deck source SHA and required-card inventory with both opposite finite mechanics witnesses in the independently merged, exact-head CI batch. Obeka needs actual combat damage to player; blocked/no-damage provides zero upkeeps. This is deliberately a narrowed source-bound predicate, not proof of an exhaustive multiplayer game or complete win line.",
+      "engineering_commit_sha": "a11db76dc6ef2d842c424293ce87ea8ab9497c99",
+      "test_blob_sha": "471212d7599c832c01fb93cf83ca8385c8fd349c",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40672818902",
+      "test_ref": "tests/test_m8_original_p1_batch_b_bounded.py::OriginalP1BatchBTests.test_obeka_E1",
+      "positive_assertion": "Obeka dealing four combat damage to an actual player creates four extra upkeep steps.",
+      "adversarial_assertion": "Damage not dealt to a player produces no combat-damage-to-player trigger or extra upkeep.",
+      "limitations": "Finite Python model of source-present and explicitly negated state predicates only. Does not run a full Oracle priority/stack/zone engine, multiple players' responses, mana availability over turns, probabilistic games or automatic infinite-win proof. Any original W cases remain deferred."
+    },
+    {
+      "deck_id": "Obeka__Splitter_of_Seconds",
+      "case_id": "E2",
+      "approved_raw_sha256": "f80d882944d5e39f3c6661da4dcdce3ec6eead577cd981dc54f7dc522be50859",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "The original deferred E2 case is now exercised against the exact current deck source SHA and required-card inventory with both opposite finite mechanics witnesses in the independently merged, exact-head CI batch. Only actual combat damage amount, after pumps/prevention, determines extra upkeep steps. This is deliberately a narrowed source-bound predicate, not proof of an exhaustive multiplayer game or complete win line.",
+      "engineering_commit_sha": "a11db76dc6ef2d842c424293ce87ea8ab9497c99",
+      "test_blob_sha": "471212d7599c832c01fb93cf83ca8385c8fd349c",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40672818902",
+      "test_ref": "tests/test_m8_original_p1_batch_b_bounded.py::OriginalP1BatchBTests.test_obeka_E2",
+      "positive_assertion": "Five actual player combat damage produces five additional upkeep steps.",
+      "adversarial_assertion": "Reducing the actual damage to two reduces the step count to two; damage bonuses cannot be assumed.",
+      "limitations": "Finite Python model of source-present and explicitly negated state predicates only. Does not run a full Oracle priority/stack/zone engine, multiple players' responses, mana availability over turns, probabilistic games or automatic infinite-win proof. Any original W cases remain deferred."
+    },
+    {
+      "deck_id": "Obeka__Splitter_of_Seconds",
+      "case_id": "F2",
+      "approved_raw_sha256": "f80d882944d5e39f3c6661da4dcdce3ec6eead577cd981dc54f7dc522be50859",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "The original deferred F2 case is now exercised against the exact current deck source SHA and required-card inventory with both opposite finite mechanics witnesses in the independently merged, exact-head CI batch. Artifact removal or unavailable fodder stops next Sieve activation. This is deliberately a narrowed source-bound predicate, not proof of an exhaustive multiplayer game or complete win line.",
+      "engineering_commit_sha": "a11db76dc6ef2d842c424293ce87ea8ab9497c99",
+      "test_blob_sha": "471212d7599c832c01fb93cf83ca8385c8fd349c",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40672818902",
+      "test_ref": "tests/test_m8_original_p1_batch_b_bounded.py::OriginalP1BatchBTests.test_obeka_F2",
+      "positive_assertion": "Five available artifact permanents can pay a new Time Sieve activation.",
+      "adversarial_assertion": "After artifact removal or zero available sacrifice fodder, a Sieve extra turn cannot be activated.",
+      "limitations": "Finite Python model of source-present and explicitly negated state predicates only. Does not run a full Oracle priority/stack/zone engine, multiple players' responses, mana availability over turns, probabilistic games or automatic infinite-win proof. Any original W cases remain deferred."
+    },
+    {
+      "deck_id": "Obeka__Splitter_of_Seconds",
+      "case_id": "F3",
+      "approved_raw_sha256": "f80d882944d5e39f3c6661da4dcdce3ec6eead577cd981dc54f7dc522be50859",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "The original deferred F3 case is now exercised against the exact current deck source SHA and required-card inventory with both opposite finite mechanics witnesses in the independently merged, exact-head CI batch. Extravagant Replication costs 4UU; extra upkeeps do not fund missing blue mana. This is deliberately a narrowed source-bound predicate, not proof of an exhaustive multiplayer game or complete win line.",
+      "engineering_commit_sha": "a11db76dc6ef2d842c424293ce87ea8ab9497c99",
+      "test_blob_sha": "471212d7599c832c01fb93cf83ca8385c8fd349c",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40672818902",
+      "test_ref": "tests/test_m8_original_p1_batch_b_bounded.py::OriginalP1BatchBTests.test_obeka_F3",
+      "positive_assertion": "Four generic and two blue mana pay Extravagant Replication's actual {4}{U}{U} cost.",
+      "adversarial_assertion": "Five generic and just one blue cannot pay that spell despite totaling six mana.",
+      "limitations": "Finite Python model of source-present and explicitly negated state predicates only. Does not run a full Oracle priority/stack/zone engine, multiple players' responses, mana availability over turns, probabilistic games or automatic infinite-win proof. Any original W cases remain deferred."
+    },
+    {
+      "deck_id": "The_Rani",
+      "case_id": "K4",
+      "approved_raw_sha256": "924296ed24fdc5e79431821d31a77134c5ed5c089a92cb5e69c78f78bde4fe27",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "The original deferred K4 case is now exercised against the exact current deck source SHA and required-card inventory with both opposite finite mechanics witnesses in the independently merged, exact-head CI batch. Five expendable artifacts can buy one turn, not guarantee five the next turn. This is deliberately a narrowed source-bound predicate, not proof of an exhaustive multiplayer game or complete win line.",
+      "engineering_commit_sha": "a11db76dc6ef2d842c424293ce87ea8ab9497c99",
+      "test_blob_sha": "471212d7599c832c01fb93cf83ca8385c8fd349c",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40672818902",
+      "test_ref": "tests/test_m8_original_p1_batch_b_bounded.py::OriginalP1BatchBTests.test_rani_K4",
+      "positive_assertion": "Five expendable artifact permanents allow one Time Sieve extra-turn activation.",
+      "adversarial_assertion": "Three artifact permanents cannot pay even that one activation; future repeatability is not presumed.",
+      "limitations": "Finite Python model of source-present and explicitly negated state predicates only. Does not run a full Oracle priority/stack/zone engine, multiple players' responses, mana availability over turns, probabilistic games or automatic infinite-win proof. Any original W cases remain deferred."
+    },
+    {
+      "deck_id": "The_Rani",
+      "case_id": "K5",
+      "approved_raw_sha256": "924296ed24fdc5e79431821d31a77134c5ed5c089a92cb5e69c78f78bde4fe27",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "The original deferred K5 case is now exercised against the exact current deck source SHA and required-card inventory with both opposite finite mechanics witnesses in the independently merged, exact-head CI batch. Only goaded creatures truly damaging other opponents trigger investigate. This is deliberately a narrowed source-bound predicate, not proof of an exhaustive multiplayer game or complete win line.",
+      "engineering_commit_sha": "a11db76dc6ef2d842c424293ce87ea8ab9497c99",
+      "test_blob_sha": "471212d7599c832c01fb93cf83ca8385c8fd349c",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40672818902",
+      "test_ref": "tests/test_m8_original_p1_batch_b_bounded.py::OriginalP1BatchBTests.test_rani_K5",
+      "positive_assertion": "Two goaded creatures connecting with eligible opponents while Rani is present cause two investigations.",
+      "adversarial_assertion": "Without goaded combat damage to our opponents, two attackers alone cause no investigate trigger.",
+      "limitations": "Finite Python model of source-present and explicitly negated state predicates only. Does not run a full Oracle priority/stack/zone engine, multiple players' responses, mana availability over turns, probabilistic games or automatic infinite-win proof. Any original W cases remain deferred."
+    },
+    {
+      "deck_id": "The_Rani",
+      "case_id": "E1",
+      "approved_raw_sha256": "924296ed24fdc5e79431821d31a77134c5ed5c089a92cb5e69c78f78bde4fe27",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "The original deferred E1 case is now exercised against the exact current deck source SHA and required-card inventory with both opposite finite mechanics witnesses in the independently merged, exact-head CI batch. Rani ETB/attack creates Mark only with another legal target creature. This is deliberately a narrowed source-bound predicate, not proof of an exhaustive multiplayer game or complete win line.",
+      "engineering_commit_sha": "a11db76dc6ef2d842c424293ce87ea8ab9497c99",
+      "test_blob_sha": "471212d7599c832c01fb93cf83ca8385c8fd349c",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40672818902",
+      "test_ref": "tests/test_m8_original_p1_batch_b_bounded.py::OriginalP1BatchBTests.test_rani_E1",
+      "positive_assertion": "Rani entering or attacking with another eligible creature creates one attached Mark of the Rani.",
+      "adversarial_assertion": "Without another legal target creature there can be no Mark attached through that trigger.",
+      "limitations": "Finite Python model of source-present and explicitly negated state predicates only. Does not run a full Oracle priority/stack/zone engine, multiple players' responses, mana availability over turns, probabilistic games or automatic infinite-win proof. Any original W cases remain deferred."
+    },
+    {
+      "deck_id": "The_Rani",
+      "case_id": "E2",
+      "approved_raw_sha256": "924296ed24fdc5e79431821d31a77134c5ed5c089a92cb5e69c78f78bde4fe27",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "The original deferred E2 case is now exercised against the exact current deck source SHA and required-card inventory with both opposite finite mechanics witnesses in the independently merged, exact-head CI batch. Investigate with Manufactor gives one each Clue/Food/Treasure, not three Clues. This is deliberately a narrowed source-bound predicate, not proof of an exhaustive multiplayer game or complete win line.",
+      "engineering_commit_sha": "a11db76dc6ef2d842c424293ce87ea8ab9497c99",
+      "test_blob_sha": "471212d7599c832c01fb93cf83ca8385c8fd349c",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40672818902",
+      "test_ref": "tests/test_m8_original_p1_batch_b_bounded.py::OriginalP1BatchBTests.test_rani_E2",
+      "positive_assertion": "Two investigations under Academy Manufactor generate two each of Clue, Food and Treasure, six objects total.",
+      "adversarial_assertion": "Without Manufactor, two investigations generate only the two ordinary Clues.",
+      "limitations": "Finite Python model of source-present and explicitly negated state predicates only. Does not run a full Oracle priority/stack/zone engine, multiple players' responses, mana availability over turns, probabilistic games or automatic infinite-win proof. Any original W cases remain deferred."
+    },
+    {
+      "deck_id": "The_Rani",
+      "case_id": "E3",
+      "approved_raw_sha256": "924296ed24fdc5e79431821d31a77134c5ed5c089a92cb5e69c78f78bde4fe27",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "The original deferred E3 case is now exercised against the exact current deck source SHA and required-card inventory with both opposite finite mechanics witnesses in the independently merged, exact-head CI batch. Real blink reentry can create another Mark, without pretending a static Rani generates it. This is deliberately a narrowed source-bound predicate, not proof of an exhaustive multiplayer game or complete win line.",
+      "engineering_commit_sha": "a11db76dc6ef2d842c424293ce87ea8ab9497c99",
+      "test_blob_sha": "471212d7599c832c01fb93cf83ca8385c8fd349c",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40672818902",
+      "test_ref": "tests/test_m8_original_p1_batch_b_bounded.py::OriginalP1BatchBTests.test_rani_E3",
+      "positive_assertion": "A real blink exit and return creates a fresh Rani entry and hence a new Mark trigger with a legal target.",
+      "adversarial_assertion": "Rani remaining static without entry or attack generates no new Mark from that trigger.",
+      "limitations": "Finite Python model of source-present and explicitly negated state predicates only. Does not run a full Oracle priority/stack/zone engine, multiple players' responses, mana availability over turns, probabilistic games or automatic infinite-win proof. Any original W cases remain deferred."
+    },
+    {
+      "deck_id": "The_Rani",
+      "case_id": "F3",
+      "approved_raw_sha256": "924296ed24fdc5e79431821d31a77134c5ed5c089a92cb5e69c78f78bde4fe27",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "The original deferred F3 case is now exercised against the exact current deck source SHA and required-card inventory with both opposite finite mechanics witnesses in the independently merged, exact-head CI batch. Rani's colored UBR cost needs real U/B/R, not only generic fast artifact mana. This is deliberately a narrowed source-bound predicate, not proof of an exhaustive multiplayer game or complete win line.",
+      "engineering_commit_sha": "a11db76dc6ef2d842c424293ce87ea8ab9497c99",
+      "test_blob_sha": "471212d7599c832c01fb93cf83ca8385c8fd349c",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40672818902",
+      "test_ref": "tests/test_m8_original_p1_batch_b_bounded.py::OriginalP1BatchBTests.test_rani_F3",
+      "positive_assertion": "One generic plus one each blue, black and red meets the commander's actual {1}{U}{B}{R} cost.",
+      "adversarial_assertion": "Any quantity of generic mana and red without blue or black cannot pay those colored pips.",
+      "limitations": "Finite Python model of source-present and explicitly negated state predicates only. Does not run a full Oracle priority/stack/zone engine, multiple players' responses, mana availability over turns, probabilistic games or automatic infinite-win proof. Any original W cases remain deferred."
+    },
+    {
+      "deck_id": "Sol_kanar_the_Swamp_King",
+      "case_id": "K4",
+      "approved_raw_sha256": "2bd99c569df4a86897bca0164d2a1fa309b92f8b721e406b8394dfb04b1239e3",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "The original deferred K4 case is now exercised against the exact current deck source SHA and required-card inventory with both opposite finite mechanics witnesses in the independently merged, exact-head CI batch. Actual first life gain plus drain-on-gain and loss-to-gain sources can feed recurring trigger chain. This is deliberately a narrowed source-bound predicate, not proof of an exhaustive multiplayer game or complete win line.",
+      "engineering_commit_sha": "a11db76dc6ef2d842c424293ce87ea8ab9497c99",
+      "test_blob_sha": "471212d7599c832c01fb93cf83ca8385c8fd349c",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40672818902",
+      "test_ref": "tests/test_m8_original_p1_batch_b_bounded.py::OriginalP1BatchBTests.test_solkanar_K4",
+      "positive_assertion": "An actual seed life gain plus both Vito gain-to-loss and Exquisite Blood loss-to-gain pieces enables a next feedback trigger.",
+      "adversarial_assertion": "With gain-to-loss piece absent, life gain cannot initiate the claimed two-direction feedback sequence.",
+      "limitations": "Finite Python model of source-present and explicitly negated state predicates only. Does not run a full Oracle priority/stack/zone engine, multiple players' responses, mana availability over turns, probabilistic games or automatic infinite-win proof. Any original W cases remain deferred."
+    },
+    {
+      "deck_id": "Sol_kanar_the_Swamp_King",
+      "case_id": "K5",
+      "approved_raw_sha256": "2bd99c569df4a86897bca0164d2a1fa309b92f8b721e406b8394dfb04b1239e3",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "The original deferred K5 case is now exercised against the exact current deck source SHA and required-card inventory with both opposite finite mechanics witnesses in the independently merged, exact-head CI batch. Top/Citadel repeated casts require payable life, legal top-of-library and live Citadel. This is deliberately a narrowed source-bound predicate, not proof of an exhaustive multiplayer game or complete win line.",
+      "engineering_commit_sha": "a11db76dc6ef2d842c424293ce87ea8ab9497c99",
+      "test_blob_sha": "471212d7599c832c01fb93cf83ca8385c8fd349c",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40672818902",
+      "test_ref": "tests/test_m8_original_p1_batch_b_bounded.py::OriginalP1BatchBTests.test_solkanar_K5",
+      "positive_assertion": "A live Top, Citadel and life strictly above paid cost permit one modeled top-of-library recast step.",
+      "adversarial_assertion": "Removing Bolas's Citadel prevents the modeled life-paid recast even when Top and life remain.",
+      "limitations": "Finite Python model of source-present and explicitly negated state predicates only. Does not run a full Oracle priority/stack/zone engine, multiple players' responses, mana availability over turns, probabilistic games or automatic infinite-win proof. Any original W cases remain deferred."
+    },
+    {
+      "deck_id": "Sol_kanar_the_Swamp_King",
+      "case_id": "E1",
+      "approved_raw_sha256": "2bd99c569df4a86897bca0164d2a1fa309b92f8b721e406b8394dfb04b1239e3",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "The original deferred E1 case is now exercised against the exact current deck source SHA and required-card inventory with both opposite finite mechanics witnesses in the independently merged, exact-head CI batch. Solkanar gains one per black spell actually cast, including with Painter naming black. This is deliberately a narrowed source-bound predicate, not proof of an exhaustive multiplayer game or complete win line.",
+      "engineering_commit_sha": "a11db76dc6ef2d842c424293ce87ea8ab9497c99",
+      "test_blob_sha": "471212d7599c832c01fb93cf83ca8385c8fd349c",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40672818902",
+      "test_ref": "tests/test_m8_original_p1_batch_b_bounded.py::OriginalP1BatchBTests.test_solkanar_E1",
+      "positive_assertion": "With Sol'kanar present, three genuine black spell casts result in three one-life triggers.",
+      "adversarial_assertion": "Without the commander present, the same black spell casts do not generate his lifegain.",
+      "limitations": "Finite Python model of source-present and explicitly negated state predicates only. Does not run a full Oracle priority/stack/zone engine, multiple players' responses, mana availability over turns, probabilistic games or automatic infinite-win proof. Any original W cases remain deferred."
+    },
+    {
+      "deck_id": "Sol_kanar_the_Swamp_King",
+      "case_id": "E2",
+      "approved_raw_sha256": "2bd99c569df4a86897bca0164d2a1fa309b92f8b721e406b8394dfb04b1239e3",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "The original deferred E2 case is now exercised against the exact current deck source SHA and required-card inventory with both opposite finite mechanics witnesses in the independently merged, exact-head CI batch. Coffers activation pays two generic and taps; six Swamps net four B, one cannot. This is deliberately a narrowed source-bound predicate, not proof of an exhaustive multiplayer game or complete win line.",
+      "engineering_commit_sha": "a11db76dc6ef2d842c424293ce87ea8ab9497c99",
+      "test_blob_sha": "471212d7599c832c01fb93cf83ca8385c8fd349c",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40672818902",
+      "test_ref": "tests/test_m8_original_p1_batch_b_bounded.py::OriginalP1BatchBTests.test_solkanar_E2",
+      "positive_assertion": "Coffers activated for two mana with six Swamps produces six black, a four-mana net increase.",
+      "adversarial_assertion": "With only one Swamp, spending two to produce one is net negative rather than useful ramp.",
+      "limitations": "Finite Python model of source-present and explicitly negated state predicates only. Does not run a full Oracle priority/stack/zone engine, multiple players' responses, mana availability over turns, probabilistic games or automatic infinite-win proof. Any original W cases remain deferred."
+    },
+    {
+      "deck_id": "Sol_kanar_the_Swamp_King",
+      "case_id": "F2",
+      "approved_raw_sha256": "2bd99c569df4a86897bca0164d2a1fa309b92f8b721e406b8394dfb04b1239e3",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "The original deferred F2 case is now exercised against the exact current deck source SHA and required-card inventory with both opposite finite mechanics witnesses in the independently merged, exact-head CI batch. Alone commander gains small incremental life only on real black casts, no instant win. This is deliberately a narrowed source-bound predicate, not proof of an exhaustive multiplayer game or complete win line.",
+      "engineering_commit_sha": "a11db76dc6ef2d842c424293ce87ea8ab9497c99",
+      "test_blob_sha": "471212d7599c832c01fb93cf83ca8385c8fd349c",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40672818902",
+      "test_ref": "tests/test_m8_original_p1_batch_b_bounded.py::OriginalP1BatchBTests.test_solkanar_F2",
+      "positive_assertion": "One cast black spell with Sol'kanar present produces only one incremental life gain.",
+      "adversarial_assertion": "With no actual black spell cast, the commander provides zero lifegain and no autonomous win.",
+      "limitations": "Finite Python model of source-present and explicitly negated state predicates only. Does not run a full Oracle priority/stack/zone engine, multiple players' responses, mana availability over turns, probabilistic games or automatic infinite-win proof. Any original W cases remain deferred."
+    },
+    {
+      "deck_id": "Tetsuo__Imperial_Champion",
+      "case_id": "F2",
+      "approved_raw_sha256": "36890584524fb32d038ba27926af663dc98197f06f87d84a08282ce1f3fb29db",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "The original deferred F2 case is now exercised against the exact current deck source SHA and required-card inventory with both opposite finite mechanics witnesses in the independently merged, exact-head CI batch. Tetsuo must declare an equipped attack to trigger; removal after trigger not automatically a fizzle. This is deliberately a narrowed source-bound predicate, not proof of an exhaustive multiplayer game or complete win line.",
+      "engineering_commit_sha": "a11db76dc6ef2d842c424293ce87ea8ab9497c99",
+      "test_blob_sha": "471212d7599c832c01fb93cf83ca8385c8fd349c",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40672818902",
+      "test_ref": "tests/test_m8_original_p1_batch_b_bounded.py::OriginalP1BatchBTests.test_tetsuo_F2",
+      "positive_assertion": "Declaring an attack while Tetsuo is equipped creates the conditional attack trigger.",
+      "adversarial_assertion": "No declared attack produces no ability, irrespective of what Equipment is attached.",
+      "limitations": "Finite Python model of source-present and explicitly negated state predicates only. Does not run a full Oracle priority/stack/zone engine, multiple players' responses, mana availability over turns, probabilistic games or automatic infinite-win proof. Any original W cases remain deferred."
+    },
+    {
+      "deck_id": "Tetsuo__Imperial_Champion",
+      "case_id": "F3",
+      "approved_raw_sha256": "36890584524fb32d038ba27926af663dc98197f06f87d84a08282ce1f3fb29db",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "The original deferred F3 case is now exercised against the exact current deck source SHA and required-card inventory with both opposite finite mechanics witnesses in the independently merged, exact-head CI batch. Free-cast mode needs eligible instant/sorcery in hand with mana value at most attached equipment highest MV. This is deliberately a narrowed source-bound predicate, not proof of an exhaustive multiplayer game or complete win line.",
+      "engineering_commit_sha": "a11db76dc6ef2d842c424293ce87ea8ab9497c99",
+      "test_blob_sha": "471212d7599c832c01fb93cf83ca8385c8fd349c",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40672818902",
+      "test_ref": "tests/test_m8_original_p1_batch_b_bounded.py::OriginalP1BatchBTests.test_tetsuo_F3",
+      "positive_assertion": "A three-mana-value instant in hand is within attached Equipment's maximum mana value four.",
+      "adversarial_assertion": "A five-mana-value spell exceeds the same Equipment limit and cannot be chosen for free casting.",
+      "limitations": "Finite Python model of source-present and explicitly negated state predicates only. Does not run a full Oracle priority/stack/zone engine, multiple players' responses, mana availability over turns, probabilistic games or automatic infinite-win proof. Any original W cases remain deferred."
+    },
+    {
+      "deck_id": "Sol_kanar_the_Swamp_King",
+      "case_id": "F3",
+      "approved_raw_sha256": "2bd99c569df4a86897bca0164d2a1fa309b92f8b721e406b8394dfb04b1239e3",
+      "disposition": "SUPERSEDED_BY_APPROVED_REVISION",
+      "reason": "The original failure premise specifically criticized too few blue cards available to pitch to Force of Will. That Force of Will is physically absent from the owner-approved M7 exact 100, so the historic pitch-choice scenario no longer occurs from this deck.",
+      "evidence_path": "refinement/verification/m7_certification_transfer/Sol_kanar_the_Swamp_King_2bd99c569df4a868.json",
+      "evidence_sha256": "60336aa1f0b549a048ec07f26943c59567f02bfae3b13a78c077926a55ac3d6a",
+      "removed_source_cards": [
+        "Force of Will"
+      ],
+      "surviving_line_disposition": "Remaining blue protection and interaction consistency is a separate commander-first question, not a claim of successful Force of Will payment or a spell-counter win."
+    },
+    {
+      "deck_id": "Tetsuo__Imperial_Champion",
+      "case_id": "K6",
+      "approved_raw_sha256": "36890584524fb32d038ba27926af663dc98197f06f87d84a08282ce1f3fb29db",
+      "disposition": "SUPERSEDED_BY_APPROVED_REVISION",
+      "reason": "The original K6 Sword of Wealth and Power scenario was an equipment anti-synergy warning: protection from instants and sorceries can interfere with targeting the equipped Tetsuo. That Sword is not in the currently approved list.",
+      "evidence_path": "refinement/verification/m7_certification_transfer/Tetsuo__Imperial_Champion_36890584524fb32d.json",
+      "evidence_sha256": "2dca297bc434ac00829e9f349acd34466079de6360a70e642e01c7fde59f071e",
+      "removed_source_cards": [
+        "Sword of Wealth and Power"
+      ],
+      "surviving_line_disposition": "The other Equipment and possible targeted interaction still require their own source-specific evaluation; no Sword of Wealth and Power protection line is asserted here."
+    },
+    {
+      "deck_id": "Marchesa__Dealer_of_Death",
+      "case_id": "K6",
+      "approved_raw_sha256": "931baa2762738ab32cd274ae8e128d0e3cd1aa85e81e51c2faa4934c1c70f363",
+      "disposition": "SUPERSEDED_BY_APPROVED_REVISION",
+      "reason": "The original double-extra-turn creation-order critique depended on both Last Chance and Final Fortune in the same deck. Last Chance was removed before the M7 approved current 100, so the precise two-extra-turn timing fixture is obsolete.",
+      "evidence_path": "refinement/verification/m7_certification_transfer/Marchesa__Dealer_of_Death_931baa2762738ab3.json",
+      "evidence_sha256": "0ffae69673fdd117949462e785e362375ef0320b8e5e0724e79369f58b38408c",
+      "removed_source_cards": [
+        "Last Chance"
+      ],
+      "surviving_line_disposition": "Final Fortune remains a separate payable extra-turn card; its delayed loss trigger and payment are not certified as a two-turn stack interaction by this retirement."
     }
   ],
   "deck_quality_attestations": [
