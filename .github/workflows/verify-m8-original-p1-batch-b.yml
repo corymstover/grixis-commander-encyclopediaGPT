@@ -1,0 +1,32 @@
+name: M8 original P1 exact-current bounded mechanics batch B
+
+on:
+  pull_request:
+    paths:
+      - 'tests/test_m8_original_p1_batch_b_bounded.py'
+      - 'architecture/M8_ORIGINAL_P1_BATCH_B_BOUNDARIES.md'
+      - '.github/workflows/verify-m8-original-p1-batch-b.yml'
+      - 'refinement/verification/m8_current_release_evidence_v1.json'
+  push:
+    branches: [main]
+    paths:
+      - 'tests/test_m8_original_p1_batch_b_bounded.py'
+      - 'refinement/verification/m8_current_release_evidence_v1.json'
+  workflow_dispatch:
+
+jobs:
+  exact-current-original-p1:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run 28 selected source-bound positive/adversarial original P1 witnesses
+        run: python -m unittest discover -s tests -p test_m8_original_p1_batch_b_bounded.py -v
+      - name: Re-run fail-closed M8 current-SHA certification gate
+        run: python scripts/verify_m8_current_certification.py --check
+      - name: Re-run immutable M7 transfer gate
+        run: python scripts/verify_m7_certification_transfer.py --check
