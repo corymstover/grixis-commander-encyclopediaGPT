@@ -1911,6 +1911,48 @@
       "positive_assertion": "An uncontested Oracle with paid Consultation naming an absent card has the sufficient trigger condition for a win regardless of graveyard card availability, consistent with its library-exiling/non-graveyard mechanism.",
       "adversarial_assertion": "Removing the Oracle triggered ability with ETB-trigger hate, stopping the consultation response or preventing Pact library exhaustion each makes that exact Oracle win fail despite the other card names being present in deck.",
       "limitations": "Finite adverse trigger/protection prerequisites; does not model every counterspell, stax card, replacement ability or opponents' alternate win line. Future-release project-only Jester status is unchanged."
+    },
+    {
+      "deck_id": "Missy",
+      "case_id": "W1",
+      "approved_raw_sha256": "f3f8ffa671cef5df9612a52ab0a5003931f2b71110f6d7fef45906b4f052f83d",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "The exact current owner-approved physical Missy 100 and the original M6 deferred P1 W1 are now bound to successful exact engineering-head GitHub Actions, with finite source-specific paid/reveal/sacrifice/identity/trigger/choice tests and explicit adverse counters. The reported repeating lines are constrained by source costs, real face-down artifact versus face-up nonartifact changes, finite forced-draw library and opponent choice. No new cards, previous M7 double-counting or owner final M8 acceptance is asserted.",
+      "engineering_commit_sha": "be54cea84e74aef36f6668dd19ae0999e36fc209",
+      "test_blob_sha": "8275d3206e766c4f11121067ba1d4426824d22c0",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40680617847",
+      "test_ref": "tests/test_m8_missy_final_three_p1_loops.py::MissyFinalOriginalP1Loops.test_W1_one_ripper_recurs_after_each_actual_face_up_nontoken_death",
+      "positive_assertion": "One and only one currently approved Ruthless Ripper is returned by Missy as face-down artifact Cyberman, revealed using a retained black card (actual morph cost), turned face up into the original nonartifact creature to trigger two opponent life loss, and sacrificed through a real Viscera Seer to repeat Missy's qualifying nonartifact-death trigger. Twenty physically repeated favorable cycles reduce a 40-life target opponent to zero; Goblin Bombardment variant adds a paid targeted damage event.",
+      "adversarial_assertion": "Missing Missy, the retained black card needed for the real no-mana reveal cost, or the legal free sacrifice outlet prevents that complete repeated sequence; simply sacrificing an unchanged face-down artifact Cyberman does not retrigger Missy.",
+      "limitations": "One source-authentic reveal-cost morph branch with assumed safe initial creature setup and available legal target player. No blanket proof of all morph colors, protection from opponent interruption or literal independent unlimited library/game objects."
+    },
+    {
+      "deck_id": "Missy",
+      "case_id": "W2",
+      "approved_raw_sha256": "f3f8ffa671cef5df9612a52ab0a5003931f2b71110f6d7fef45906b4f052f83d",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "The exact current owner-approved physical Missy 100 and the original M6 deferred P1 W2 are now bound to successful exact engineering-head GitHub Actions, with finite source-specific paid/reveal/sacrifice/identity/trigger/choice tests and explicit adverse counters. The reported repeating lines are constrained by source costs, real face-down artifact versus face-up nonartifact changes, finite forced-draw library and opponent choice. No new cards, previous M7 double-counting or owner final M8 acceptance is asserted.",
+      "engineering_commit_sha": "be54cea84e74aef36f6668dd19ae0999e36fc209",
+      "test_blob_sha": "8275d3206e766c4f11121067ba1d4426824d22c0",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40680617847",
+      "test_ref": "tests/test_m8_missy_final_three_p1_loops.py::MissyFinalOriginalP1Loops.test_W2_altar_haruspex_forced_draw_ceiling_and_ixidor_paid_loop",
+      "positive_assertion": "With a real face-up recurring Ripper and Missy, Phyrexian Altar adds one mana per sacrificed nontoken creature and live Grim Haruspex requires one card drawn; eight physical loops with eight-card library yield eight mana and eight draws. Separately Ixidor pays 2U to turn a returned Cyberman face up, Ashnod's Altar adds CC from its death, Pitiless Plunderer's Treasure pays the next U and twelve such finite loops preserve the next 2U payment and the one card's alternating identity.",
+      "adversarial_assertion": "A forced ninth Grim Haruspex draw with only eight real starting library cards loses instead of producing a safe infinity. Lacking Ixidor, Plunderer, Ashnod's Altar or initial U prevents the separately stated paid recurring branch.",
+      "limitations": "Original three-card-engine descriptions require an actual returnable nonartifact creature with turn-up access, not a phantom extra card. Modeled finite mana, identity, trigger and draw-limit transitions, not full resolution ordering, every card choice or opponent responses."
+    },
+    {
+      "deck_id": "Missy",
+      "case_id": "W3",
+      "approved_raw_sha256": "f3f8ffa671cef5df9612a52ab0a5003931f2b71110f6d7fef45906b4f052f83d",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "The exact current owner-approved physical Missy 100 and the original M6 deferred P1 W3 are now bound to successful exact engineering-head GitHub Actions, with finite source-specific paid/reveal/sacrifice/identity/trigger/choice tests and explicit adverse counters. The reported repeating lines are constrained by source costs, real face-down artifact versus face-up nonartifact changes, finite forced-draw library and opponent choice. No new cards, previous M7 double-counting or owner final M8 acceptance is asserted.",
+      "engineering_commit_sha": "be54cea84e74aef36f6668dd19ae0999e36fc209",
+      "test_blob_sha": "8275d3206e766c4f11121067ba1d4426824d22c0",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40680617847",
+      "test_ref": "tests/test_m8_missy_final_three_p1_loops.py::MissyFinalOriginalP1Loops.test_W3_opponent_may_take_draw_branch_valeyard_makes_extra_choice",
+      "positive_assertion": "With Missy, three physically assumed controlled artifact Cybermen and The Valeyard, each of three opponents faces two separate villainous choices; choosing damage twice per opponent causes six damage to each of them, versus three damage each without Valeyard. Every choice is independently owned by the appropriate opponent.",
+      "adversarial_assertion": "All three opponents can instead select draw for both choices: the player controlling Missy draws six and the opponents take zero damage, potentially causing Missy's controller to lose if their library has fewer than six cards; with no artifact Cybermen the damage choice is zero.",
+      "limitations": "Conditional end-step branch arithmetic, not forced damage or unconditional kill. The original M6 case named Cybermen Squadron and Ashad, the Lone Cyberman; neither card appears in the exact approved 100 and neither is credited. Assumes the stated three artifact creatures were already legally available."
     }
   ],
   "deck_quality_attestations": [
