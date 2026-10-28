@@ -3516,5 +3516,12 @@
       "grandfathered_case_scope_sha256": "7ab4146bb356871bc5f8ff1e7c8613fff3e9c473596a716b117c86b582207882"
     }
   ],
-  "m8_owner_acceptance": null
+  "m8_owner_acceptance": {
+    "release_fingerprint": "414d7ff269ea2dc47b87d4e35da50e860f8e868ccf06264efca72d1494006057",
+    "evidence_fingerprint": "6ce06f6f928add4b3eb3e2a88f6f43b77c09fefd0fe957ece31545015f436f4d",
+    "final_archive_path": "exports/Grixis_Commander_Encyclopedia_62_M8_RELEASE_2026-10-28.zip",
+    "final_archive_sha256": "8ce9ec8e622df5ea7c29077c2b69a50cd9345d486703e1e16811ee6d1a802986",
+    "receipt_path": "refinement/approvals/Grixis_62_M8_Final_Owner_Acceptance_2026-10-28.md",
+    "receipt_sha256": "529b2d041ba77477d6865d49f257d61078a3101667037caf8149ce208093a89b"
+  }
 }
