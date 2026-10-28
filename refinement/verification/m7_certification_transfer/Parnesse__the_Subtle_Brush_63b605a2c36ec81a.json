@@ -1,0 +1,176 @@
+{
+  "schema_version": 1,
+  "deck_id": "Parnesse__the_Subtle_Brush",
+  "approved_raw_sha256": "63b605a2c36ec81ab7a5a48770ac2b96b7994daf38546aba7b6bc6bd7597928c",
+  "approved_artifact": "refinement/decklists/Parnesse_the_Subtle_Brush_M7_Rev1_2026-10-27.txt",
+  "owner_approval_receipt": "refinement/approvals/Parnesse_the_Subtle_Brush_M7_Rev1_Approved_2026-10-27.md",
+  "engineering": {
+    "pr_url": "https://github.com/corymstover/GrokBotMTGCompanion/pull/747",
+    "head_sha": "27ddbeddf2f364a092e6f2091184992f6f79072f",
+    "grok_first_pass_ref": "data/grixis/m6/test_blueprints/Parnesse__the_Subtle_Brush.json — preimplementation authored spec, not a new independent GrokBot M7 first pass",
+    "independent_review_ref": "Historical candidate decision evidence in refinement/verification/Parnesse_the_Subtle_Brush_M7_Rev1_Oracle_Certification_2026-10-27.md; canonical source-composite Oracle review only, no historical dedicated engineering M7 run; no newly independent review is asserted",
+    "m7_decision_packet_ref": "refinement/verification/Parnesse_the_Subtle_Brush_M7_Rev1_Oracle_Certification_2026-10-27.md",
+    "m7_decision_gate_command": "python3 -m unittest discover -s tests -p 'test_m7_missing_transfer_p0_source_bound.py' -v (supplemental exact-approved P0 provenance gate; does NOT replace missing independent 99-slot M7 strategic decision gate)",
+    "m7_decision_gate_ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40625340023",
+    "oracle_legality_ref": "refinement/verification/Parnesse_the_Subtle_Brush_M7_Rev1_Oracle_Certification_2026-10-27.md — existing owner-approved whole-list/source-composite Oracle and legality review; this new CI checks frozen commander Oracle and approved exact source bytes, not a live current 100/100 Scryfall batch"
+  },
+  "identity_crosswalk": null,
+  "m6_transfer": {
+    "plan_source_path": "data/grixis/m6/test_blueprints/Parnesse__the_Subtle_Brush.json",
+    "plan_blob_sha": "d4e18342ded198de1c9faccb21251df2580f387f",
+    "ij_receipt_ref": "data/grixis/m6/ij/input_receipts/parnesse-the-subtle-brush.json — historically inputs attested, downstream Phase B not complete/never inferred",
+    "ij_scope": "TRANSFERRED_WITH_CASE_MAPPING",
+    "revision_diff_and_validity_reason": "The October 15 approved list was explicitly replaced by owner-approved M7 current exact raw SHA 63b605a2c36ec81ab7a5a48770ac2b96b7994daf38546aba7b6bc6bd7597928c; no approved cards or bytes changed by this evidence backfill. The original M6 blueprint P0 inventory (5 cases) was design-only, so engineering PR #747 added newly executed, individually named, positive/negative finite source cases for the exact M7 candidate; successful exact-head CI #40625340023 verifies the source hash before cases run. All 11 original P1 designs are explicitly DEFERRED with specific consequences. Earlier candidate and source-composite legality/Oracle review is distinct from a new all-card API audit. This attests only that bounded source models ran; it is NOT an independently complete M6 I/J, original M7 99-slot gate, multiplayer simulation, or revocation of prior owner approval.",
+    "P0": [
+      {
+        "case_id": "C1",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_missing_transfer_p0_source_bound.py::ParnesseP0.test_C1_opposing_target_tax_and_own_copy_gift_separate",
+        "execution_command": "python3 -m unittest discover -s tests -p 'test_m7_missing_transfer_p0_source_bound.py' -v",
+        "oracle_source": "data/grixis/m6/test_blueprints/Parnesse__the_Subtle_Brush.json — frozen Oracle ID and printed commander text checked by class setUpClass; refinement/verification/Parnesse_the_Subtle_Brush_M7_Rev1_Oracle_Certification_2026-10-27.md — existing approved list Oracle/legality analysis; newly executed finite source model, not a fresh full Oracle API pass",
+        "payable_fixture": "Exact approved SHA 63b605a2c36ec81ab7a5a48770ac2b96b7994daf38546aba7b6bc6bd7597928c, original source case 'Parnesse, the Subtle Brush': Commander in legal and invalid zone/timing; actual cost, ability frequency, triggers and control. New source-scoped fixture models actual action/cost/timing/zone constraints and a failing precondition, without claiming a general Magic game engine.",
+        "positive_assertion": "Actual new CI-executed assertion (bounded source case): self.assertIn(\"pays 4 life\", self.oracle.lower()); original expected claim: Whenever you or a permanent you control becomes the target of a spell or ability an opponent controls, counter that spell or ability unless that player pays 4 life. Whenever you copy a spell, up to one target opponent may also cop.",
+        "adversarial_assertion": "Actual new CI-executed negative-control or contrasting-boundary assertion: self.assertFalse(counter_opposing_target(True, True, 4)); no outcome outside the listed method is certified.",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "63b605a2c36ec81ab7a5a48770ac2b96b7994daf38546aba7b6bc6bd7597928c",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40625340023",
+        "evidence_limit": "Executed original P0 bounded algebraic/zone/stack test on approved SHA; not original unexecuted M6 J or full gameplay."
+      },
+      {
+        "case_id": "K1",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_missing_transfer_p0_source_bound.py::ParnesseP0.test_K1_copy_spell_distinct_from_copy_card_then_cast",
+        "execution_command": "python3 -m unittest discover -s tests -p 'test_m7_missing_transfer_p0_source_bound.py' -v",
+        "oracle_source": "data/grixis/m6/test_blueprints/Parnesse__the_Subtle_Brush.json — frozen Oracle ID and printed commander text checked by class setUpClass; refinement/verification/Parnesse_the_Subtle_Brush_M7_Rev1_Oracle_Certification_2026-10-27.md — existing approved list Oracle/legality analysis; newly executed finite source model, not a fresh full Oracle API pass",
+        "payable_fixture": "Exact approved SHA 63b605a2c36ec81ab7a5a48770ac2b96b7994daf38546aba7b6bc6bd7597928c, original source case 'copy-not-cast-copy': Stage named source cards, trigger/resolution and source condition; adversarially remove prerequisite or response window. New source-scoped fixture models actual action/cost/timing/zone constraints and a failing precondition, without claiming a general Magic game engine.",
+        "positive_assertion": "Actual new CI-executed assertion (bounded source case): self.assertTrue(parnesse_triggers(\"copy_spell_on_stack\")); original expected claim: Parnesse only triggers on copying a spell. Arcane Bombardment/Mizzix's Mastery copy cards in other zones and cast them, a different event..",
+        "adversarial_assertion": "Actual new CI-executed negative-control or contrasting-boundary assertion: self.assertFalse(parnesse_triggers(\"copy_card_in_exile_then_cast\")); no outcome outside the listed method is certified.",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "63b605a2c36ec81ab7a5a48770ac2b96b7994daf38546aba7b6bc6bd7597928c",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40625340023",
+        "evidence_limit": "Executed original P0 bounded algebraic/zone/stack test on approved SHA; not original unexecuted M6 J or full gameplay."
+      },
+      {
+        "case_id": "K2",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_missing_transfer_p0_source_bound.py::ParnesseP0.test_K2_optional_opponent_copy_may_choose_new_targets",
+        "execution_command": "python3 -m unittest discover -s tests -p 'test_m7_missing_transfer_p0_source_bound.py' -v",
+        "oracle_source": "data/grixis/m6/test_blueprints/Parnesse__the_Subtle_Brush.json — frozen Oracle ID and printed commander text checked by class setUpClass; refinement/verification/Parnesse_the_Subtle_Brush_M7_Rev1_Oracle_Certification_2026-10-27.md — existing approved list Oracle/legality analysis; newly executed finite source model, not a fresh full Oracle API pass",
+        "payable_fixture": "Exact approved SHA 63b605a2c36ec81ab7a5a48770ac2b96b7994daf38546aba7b6bc6bd7597928c, original source case 'opponent-copy': Stage named source cards, trigger/resolution and source condition; adversarially remove prerequisite or response window. New source-scoped fixture models actual action/cost/timing/zone constraints and a failing precondition, without claiming a general Magic game engine.",
+        "positive_assertion": "Actual new CI-executed assertion (bounded source case): self.assertTrue(gifted(True, True)); original expected claim: Opponents' copies may choose new targets; pick a recipient whose copy helps you or is harmless..",
+        "adversarial_assertion": "Actual new CI-executed negative-control or contrasting-boundary assertion: self.assertFalse(gifted(True, False)); no outcome outside the listed method is certified.",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "63b605a2c36ec81ab7a5a48770ac2b96b7994daf38546aba7b6bc6bd7597928c",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40625340023",
+        "evidence_limit": "Executed original P0 bounded algebraic/zone/stack test on approved SHA; not original unexecuted M6 J or full gameplay."
+      },
+      {
+        "case_id": "K3",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_missing_transfer_p0_source_bound.py::ParnesseP0.test_K3_tax_4_life_not_4_mana_and_counter_if_declined",
+        "execution_command": "python3 -m unittest discover -s tests -p 'test_m7_missing_transfer_p0_source_bound.py' -v",
+        "oracle_source": "data/grixis/m6/test_blueprints/Parnesse__the_Subtle_Brush.json — frozen Oracle ID and printed commander text checked by class setUpClass; refinement/verification/Parnesse_the_Subtle_Brush_M7_Rev1_Oracle_Certification_2026-10-27.md — existing approved list Oracle/legality analysis; newly executed finite source model, not a fresh full Oracle API pass",
+        "payable_fixture": "Exact approved SHA 63b605a2c36ec81ab7a5a48770ac2b96b7994daf38546aba7b6bc6bd7597928c, original source case 'targeting-tax': Stage named source cards, trigger/resolution and source condition; adversarially remove prerequisite or response window. New source-scoped fixture models actual action/cost/timing/zone constraints and a failing precondition, without claiming a general Magic game engine.",
+        "positive_assertion": "Actual new CI-executed assertion (bounded source case): self.assertTrue(pay_tax(10, True)); original expected claim: Opposing spells and abilities that target you or your permanents are countered unless they pay 4 life..",
+        "adversarial_assertion": "Actual new CI-executed negative-control or contrasting-boundary assertion: self.assertFalse(pay_tax(3, True)); no outcome outside the listed method is certified.",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "63b605a2c36ec81ab7a5a48770ac2b96b7994daf38546aba7b6bc6bd7597928c",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40625340023",
+        "evidence_limit": "Executed original P0 bounded algebraic/zone/stack test on approved SHA; not original unexecuted M6 J or full gameplay."
+      },
+      {
+        "case_id": "F1",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_missing_transfer_p0_source_bound.py::ParnesseP0.test_F1_opponent_copy_of_tutor_or_wipe_can_backfire",
+        "execution_command": "python3 -m unittest discover -s tests -p 'test_m7_missing_transfer_p0_source_bound.py' -v",
+        "oracle_source": "data/grixis/m6/test_blueprints/Parnesse__the_Subtle_Brush.json — frozen Oracle ID and printed commander text checked by class setUpClass; refinement/verification/Parnesse_the_Subtle_Brush_M7_Rev1_Oracle_Certification_2026-10-27.md — existing approved list Oracle/legality analysis; newly executed finite source model, not a fresh full Oracle API pass",
+        "payable_fixture": "Exact approved SHA 63b605a2c36ec81ab7a5a48770ac2b96b7994daf38546aba7b6bc6bd7597928c, original source case 'gifted-copies': Construct conditional enemy disruption, then actually test mitigation: Choose copy recipients carefully; 'up to one' lets you give none New source-scoped fixture models actual action/cost/timing/zone constraints and a failing precondition, without claiming a general Magic game engine.",
+        "positive_assertion": "Actual new CI-executed assertion (bounded source case): self.assertIn(\"Demonic Tutor\", self.cards); original expected claim: Opponents' copies can backfire, e.g. a copied tutor or wipe..",
+        "adversarial_assertion": "Actual new CI-executed negative-control or contrasting-boundary assertion: self.assertNotEqual(copied[\"recipient\"], \"controller\"); no outcome outside the listed method is certified.",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "63b605a2c36ec81ab7a5a48770ac2b96b7994daf38546aba7b6bc6bd7597928c",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40625340023",
+        "evidence_limit": "Executed original P0 bounded algebraic/zone/stack test on approved SHA; not original unexecuted M6 J or full gameplay."
+      }
+    ],
+    "P1": [
+      {
+        "case_id": "K4",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'tempt-copies' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/K4 remains unexecuted as formal original-to-final tested mapping: Tempt with Mayhem copies an instant or sorcery at least once under your control, plus more if opponents accept.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "K5",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'retargeted-copy-tax' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/K5 remains unexecuted as formal original-to-final tested mapping: Resolved (Cory review + derivation): an opponent who makes Parnesse's offered copy controls it; if they target you or a permanent you control, Parnesse's first ability triggers and they must pay 4 life or the copy is cou. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "K6",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'bonus-round-symmetric' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/K6 remains unexecuted as formal original-to-final tested mapping: Bonus Round also copies opponents' responses (M1 anti-synergy flag; a sequencing risk, not a list error).. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "K7",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'reiterate-mana' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/K7 remains unexecuted as formal original-to-final tested mapping: Reiterate with buyback + Mana Geyser or Jeska's Will is infinite red mana.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "E1",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'copy-politics' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/E1 remains unexecuted as formal original-to-final tested mapping: You copy a spell on the stack.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "E2",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'cast-copy-payoffs' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/E2 remains unexecuted as formal original-to-final tested mapping: High spell volume.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "W1",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'narset-reversal-loops' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/W1 remains unexecuted as formal original-to-final tested mapping: Narset's Reversal with Twinning Staff, Reiterate, Increasing Vengeance, Reverberate or Return the Favor; or with Primal Wellspring + Frantic Search, or Storm-Kiln Artist + Bonus Round/Thousand-Year Storm.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "W2",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'copy-mana-loops' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/W2 remains unexecuted as formal original-to-final tested mapping: Reiterate/Increasing Vengeance/Reverberate/Return the Favor with Alania, Pyromancer's Goggles, Prismari, Thousand-Year Storm, Mana Geyser or Jeska's Will: infinite mana/storm, finished with Grapeshot.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "W3",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'dualcaster-tech' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/W3 remains unexecuted as formal original-to-final tested mapping: Dualcaster Mage + Replication Technique: infinite creature tokens (Dualcaster copies), so infinite ETBs and magecraft triggers. The tokens are not inherently hasty; a haste source is needed to attack with them.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "F2",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'expensive-engines' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/F2 remains unexecuted as formal original-to-final tested mapping: Five-mana commander plus five- to seven-mana copy engines.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "F3",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'stack-interaction' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/F3 remains unexecuted as formal original-to-final tested mapping: Counters on the key copy spell break the combos.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      }
+    ]
+  }
+}
