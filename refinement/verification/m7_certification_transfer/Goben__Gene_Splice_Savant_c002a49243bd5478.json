@@ -1,0 +1,176 @@
+{
+  "schema_version": 1,
+  "deck_id": "Goben__Gene_Splice_Savant",
+  "approved_raw_sha256": "c002a49243bd54780bb0f4a36a3c239a00e042defa1d0c6c4b891c3c8060eef9",
+  "approved_artifact": "refinement/decklists/Norman_Osborn_Green_Goblin_M7_Rev1_Approved_2026-10-26.txt",
+  "owner_approval_receipt": "refinement/approvals/Norman_Osborn_Green_Goblin_M7_Rev1_Approved_2026-10-26.md",
+  "engineering": {
+    "pr_url": "https://github.com/corymstover/GrokBotMTGCompanion/pull/747",
+    "head_sha": "27ddbeddf2f364a092e6f2091184992f6f79072f",
+    "grok_first_pass_ref": "data/grixis/m6/test_blueprints/Norman_Osborn_Green_Goblin.json — preimplementation authored spec, not a new independent GrokBot M7 first pass",
+    "independent_review_ref": "Historical candidate decision evidence in data/grixis/m7/decision_reviews/Norman_Osborn_Green_Goblin_chatgpt_rev1_review.md; first-stage engineering PR #725; no newly independent review is asserted",
+    "m7_decision_packet_ref": "data/grixis/m7/decision_reviews/Norman_Osborn_Green_Goblin_chatgpt_rev1_review.md",
+    "m7_decision_gate_command": "python3 -m unittest discover -s tests -p 'test_m7_missing_transfer_p0_source_bound.py' -v (supplemental exact-approved P0 provenance gate; does NOT replace missing independent 99-slot M7 strategic decision gate)",
+    "m7_decision_gate_ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40625340023",
+    "oracle_legality_ref": "refinement/verification/Norman_Osborn_Green_Goblin_M7_Rev1_Approved_2026-10-26_Verification.md — existing owner-approved whole-list/source-composite Oracle and legality review; this new CI checks frozen commander Oracle and approved exact source bytes, not a live current 100/100 Scryfall batch"
+  },
+  "identity_crosswalk": "Cory expressly confirmed on 2026-10-27: 'Goben IS Green Goblin, theyre the same CARD.' The canonical registry retains the historical key Goben__Gene_Splice_Savant; its approved 100-card list and owner receipt explicitly name Norman Osborn // Green Goblin, whose exact original 61-plan key Norman_Osborn_Green_Goblin is used for the five P0/eleven P1 inventory. Neither immutable baseline, commander card, owner-approved raw SHA nor pinned plan manifest was rewritten.",
+  "m6_transfer": {
+    "plan_source_path": "data/grixis/m6/test_blueprints/Norman_Osborn_Green_Goblin.json",
+    "plan_blob_sha": "24c7b78a1548c7f0c9cf40931d06b13286cf0f6c",
+    "ij_receipt_ref": "data/grixis/m6/ij/input_receipts/norman-osborn.json — historically inputs attested, downstream Phase B not complete/never inferred",
+    "ij_scope": "TRANSFERRED_WITH_CASE_MAPPING",
+    "revision_diff_and_validity_reason": "The October 15 approved list was explicitly replaced by owner-approved M7 current exact raw SHA c002a49243bd54780bb0f4a36a3c239a00e042defa1d0c6c4b891c3c8060eef9; no approved cards or bytes changed by this evidence backfill. The original M6 blueprint P0 inventory (5 cases) was design-only, so engineering PR #747 added newly executed, individually named, positive/negative finite source cases for the exact M7 candidate; successful exact-head CI #40625340023 verifies the source hash before cases run. All 11 original P1 designs are explicitly DEFERRED with specific consequences. Earlier candidate and source-composite legality/Oracle review is distinct from a new all-card API audit. This attests only that bounded source models ran; it is NOT an independently complete M6 I/J, original M7 99-slot gate, multiplayer simulation, or revocation of prior owner approval.",
+    "P0": [
+      {
+        "case_id": "C1",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_missing_transfer_p0_source_bound.py::NormanGreenGoblinP0.test_C1_norman_connive_and_four_color_transform_timing",
+        "execution_command": "python3 -m unittest discover -s tests -p 'test_m7_missing_transfer_p0_source_bound.py' -v",
+        "oracle_source": "data/grixis/m6/test_blueprints/Norman_Osborn_Green_Goblin.json — frozen Oracle ID and printed commander text checked by class setUpClass; refinement/verification/Norman_Osborn_Green_Goblin_M7_Rev1_Approved_2026-10-26_Verification.md — existing approved list Oracle/legality analysis; newly executed finite source model, not a fresh full Oracle API pass",
+        "payable_fixture": "Exact approved SHA c002a49243bd54780bb0f4a36a3c239a00e042defa1d0c6c4b891c3c8060eef9, original source case 'Norman Osborn // Green Goblin': Build commander in legal and illegal zones; test trigger/activated/static condition, casting, summoning/timing, exact physical effects. New source-scoped fixture models actual action/cost/timing/zone constraints and a failing precondition, without claiming a general Magic game engine.",
+        "positive_assertion": "Actual new CI-executed assertion (bounded source case): self.assertIn(\"Norman Osborn can't be blocked\", self.oracle); original expected claim: Norman Osborn can't be blocked. Whenever Norman Osborn deals combat damage to a player, he connives. (Draw a card, then discard a card. If you discarded a nonland card, put a +1/+1 counter on this creature.) {1}{U}{B}{R}: Transfor.",
+        "adversarial_assertion": "Actual new CI-executed negative-control or contrasting-boundary assertion: self.assertFalse(transform(1, {\"U\":1,\"B\":1,\"R\":1}, False, True)); no outcome outside the listed method is certified.",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "c002a49243bd54780bb0f4a36a3c239a00e042defa1d0c6c4b891c3c8060eef9",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40625340023",
+        "evidence_limit": "Executed original P0 bounded algebraic/zone/stack test on approved SHA; not original unexecuted M6 J or full gameplay."
+      },
+      {
+        "case_id": "K1",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_missing_transfer_p0_source_bound.py::NormanGreenGoblinP0.test_K1_green_goblin_reduces_generic_not_colored_costs",
+        "execution_command": "python3 -m unittest discover -s tests -p 'test_m7_missing_transfer_p0_source_bound.py' -v",
+        "oracle_source": "data/grixis/m6/test_blueprints/Norman_Osborn_Green_Goblin.json — frozen Oracle ID and printed commander text checked by class setUpClass; refinement/verification/Norman_Osborn_Green_Goblin_M7_Rev1_Approved_2026-10-26_Verification.md — existing approved list Oracle/legality analysis; newly executed finite source model, not a fresh full Oracle API pass",
+        "payable_fixture": "Exact approved SHA c002a49243bd54780bb0f4a36a3c239a00e042defa1d0c6c4b891c3c8060eef9, original source case 'generic-only-reduction': Arrange named physical cards and precisely the Oracle condition described; compare resolved stack/effect to a false-condition or counter-window case. New source-scoped fixture models actual action/cost/timing/zone constraints and a failing precondition, without claiming a general Magic game engine.",
+        "positive_assertion": "Actual new CI-executed assertion (bounded source case): self.assertIn(\"Spells you cast from your graveyard cost {2} less\", self.oracle); original expected claim: Green Goblin's {2} reduction only reduces generic mana..",
+        "adversarial_assertion": "Actual new CI-executed negative-control or contrasting-boundary assertion: self.assertNotEqual(discounted(3, (\"U\", \"B\")), (1, ())); no outcome outside the listed method is certified.",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "c002a49243bd54780bb0f4a36a3c239a00e042defa1d0c6c4b891c3c8060eef9",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40625340023",
+        "evidence_limit": "Executed original P0 bounded algebraic/zone/stack test on approved SHA; not original unexecuted M6 J or full gameplay."
+      },
+      {
+        "case_id": "K2",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_missing_transfer_p0_source_bound.py::NormanGreenGoblinP0.test_K2_mayhem_discard_this_turn_and_normal_timing_or_flash",
+        "execution_command": "python3 -m unittest discover -s tests -p 'test_m7_missing_transfer_p0_source_bound.py' -v",
+        "oracle_source": "data/grixis/m6/test_blueprints/Norman_Osborn_Green_Goblin.json — frozen Oracle ID and printed commander text checked by class setUpClass; refinement/verification/Norman_Osborn_Green_Goblin_M7_Rev1_Approved_2026-10-26_Verification.md — existing approved list Oracle/legality analysis; newly executed finite source model, not a fresh full Oracle API pass",
+        "payable_fixture": "Exact approved SHA c002a49243bd54780bb0f4a36a3c239a00e042defa1d0c6c4b891c3c8060eef9, original source case 'mayhem-timing': Arrange named physical cards and precisely the Oracle condition described; compare resolved stack/effect to a false-condition or counter-window case. New source-scoped fixture models actual action/cost/timing/zone constraints and a failing precondition, without claiming a general Magic game engine.",
+        "positive_assertion": "Actual new CI-executed assertion (bounded source case): self.assertIn(\"mayhem\", self.oracle); original expected claim: Mayhem needs the card discarded this turn and follows normal timing rules; Borne Upon a Wind/Valley Floodcaller add flash..",
+        "adversarial_assertion": "Actual new CI-executed negative-control or contrasting-boundary assertion: self.assertFalse(cast_mayhem(False, True, True)); no outcome outside the listed method is certified.",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "c002a49243bd54780bb0f4a36a3c239a00e042defa1d0c6c4b891c3c8060eef9",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40625340023",
+        "evidence_limit": "Executed original P0 bounded algebraic/zone/stack test on approved SHA; not original unexecuted M6 J or full gameplay."
+      },
+      {
+        "case_id": "K3",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_missing_transfer_p0_source_bound.py::NormanGreenGoblinP0.test_K3_necropotence_discard_exile_breaks_mayhem",
+        "execution_command": "python3 -m unittest discover -s tests -p 'test_m7_missing_transfer_p0_source_bound.py' -v",
+        "oracle_source": "data/grixis/m6/test_blueprints/Norman_Osborn_Green_Goblin.json — frozen Oracle ID and printed commander text checked by class setUpClass; refinement/verification/Norman_Osborn_Green_Goblin_M7_Rev1_Approved_2026-10-26_Verification.md — existing approved list Oracle/legality analysis; newly executed finite source model, not a fresh full Oracle API pass",
+        "payable_fixture": "Exact approved SHA c002a49243bd54780bb0f4a36a3c239a00e042defa1d0c6c4b891c3c8060eef9, original source case 'no-necropotence': Arrange named physical cards and precisely the Oracle condition described; compare resolved stack/effect to a false-condition or counter-window case. New source-scoped fixture models actual action/cost/timing/zone constraints and a failing precondition, without claiming a general Magic game engine.",
+        "positive_assertion": "Actual new CI-executed assertion (bounded source case): self.assertTrue(mayhem_card_in_grave(True, False)); original expected claim: Necropotence exiles discarded cards, which conflicts with mayhem, so it's deliberately excluded..",
+        "adversarial_assertion": "Actual new CI-executed negative-control or contrasting-boundary assertion: self.assertNotIn(\"Necropotence\", self.cards); no outcome outside the listed method is certified.",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "c002a49243bd54780bb0f4a36a3c239a00e042defa1d0c6c4b891c3c8060eef9",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40625340023",
+        "evidence_limit": "Executed original P0 bounded algebraic/zone/stack test on approved SHA; not original unexecuted M6 J or full gameplay."
+      },
+      {
+        "case_id": "F1",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_missing_transfer_p0_source_bound.py::NormanGreenGoblinP0.test_F1_graveyard_exile_removes_breach_and_mayhem_resources",
+        "execution_command": "python3 -m unittest discover -s tests -p 'test_m7_missing_transfer_p0_source_bound.py' -v",
+        "oracle_source": "data/grixis/m6/test_blueprints/Norman_Osborn_Green_Goblin.json — frozen Oracle ID and printed commander text checked by class setUpClass; refinement/verification/Norman_Osborn_Green_Goblin_M7_Rev1_Approved_2026-10-26_Verification.md — existing approved list Oracle/legality analysis; newly executed finite source model, not a fresh full Oracle API pass",
+        "payable_fixture": "Exact approved SHA c002a49243bd54780bb0f4a36a3c239a00e042defa1d0c6c4b891c3c8060eef9, original source case 'graveyard-hate': Conditionally apply adversarial failure; stage source-documented mitigations: Oracle lines; no opponent-frequency inference. New source-scoped fixture models actual action/cost/timing/zone constraints and a failing precondition, without claiming a general Magic game engine.",
+        "positive_assertion": "Actual new CI-executed assertion (bounded source case): self.assertIn(\"Underworld Breach\", self.cards); original expected claim: Graveyard hate stops Breach and mayhem..",
+        "adversarial_assertion": "Actual new CI-executed negative-control or contrasting-boundary assertion: self.assertFalse(bool(grave)); no outcome outside the listed method is certified.",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "c002a49243bd54780bb0f4a36a3c239a00e042defa1d0c6c4b891c3c8060eef9",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40625340023",
+        "evidence_limit": "Executed original P0 bounded algebraic/zone/stack test on approved SHA; not original unexecuted M6 J or full gameplay."
+      }
+    ],
+    "P1": [
+      {
+        "case_id": "K4",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'mox-amber-norman' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/K4 remains unexecuted as formal original-to-final tested mapping: Norman is a blue legendary creature, so Mox Amber makes blue mana.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "K5",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'connive' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/K5 remains unexecuted as formal original-to-final tested mapping: Connive: draw, discard; a nonland discard adds a +1/+1 counter.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "K6",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'cavern-human' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/K6 remains unexecuted as formal original-to-final tested mapping: Cavern of Souls naming Human protects only the Norman face's cast.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "K7",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'generic-kills' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/K7 remains unexecuted as formal original-to-final tested mapping: The Oracle and Breach kills are verified and need no commander.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "E1",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'mayhem' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/E1 remains unexecuted as formal original-to-final tested mapping: Green Goblin transformed ({1}{U}{B}{R}, sorcery speed) and a discard outlet.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "E2",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'fast-mana' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/E2 remains unexecuted as formal original-to-final tested mapping: Opening hand.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "W1",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'oracle' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/W1 remains unexecuted as formal original-to-final tested mapping: Thassa's Oracle + Demonic Consultation or Tainted Pact.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "W2",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'breach' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/W2 remains unexecuted as formal original-to-final tested mapping: Underworld Breach + LED/Lotus Petal + Brain Freeze, or + Wheel of Fortune (+ LED or Jeska's Will).. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "W3",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'breach-station' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/W3 remains unexecuted as formal original-to-final tested mapping: Underworld Breach + Grinding Station + Mox Amber: self-mill, storm and mana. With Norman out, Mox Amber makes blue.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "F2",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'slow-transform' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/F2 remains unexecuted as formal original-to-final tested mapping: Green Goblin needs a four-mana sorcery-speed transform.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "F3",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario '23-lands' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/F3 remains unexecuted as formal original-to-final tested mapping: A 23-land turbo build can stumble without fast mana.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      }
+    ]
+  }
+}
