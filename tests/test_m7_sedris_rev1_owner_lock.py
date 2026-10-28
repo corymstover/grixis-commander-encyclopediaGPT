@@ -91,6 +91,23 @@ class SedrisExactOwnerLock(unittest.TestCase):
         for name, entry in before["decks"].items():
             if name != KEY:
                 now = after["decks"][name]
+                if name == "Wick__the_Whorled_Mind":
+                    # A distinct, explicitly owner-approved Deck #61 lock is
+                    # permitted only at these two exact raw-source digests.
+                    old = "f4556840dc8f7a8e1d532b73652d0035592b52b86adbbad6ed8fbe4270341e98"
+                    new = "1aea08a53b983ee9ce083c1e9c95b366a3abc478a43b75517714d6280b484c48"
+                    self.assertEqual(entry["approved_list_sha256"], old)
+                    self.assertEqual(now["approved_list_sha256"], new)
+                    self.assertEqual(now["previous_approved_list_sha256"], old)
+                    self.assertEqual(now["m7_final_candidate_sha256"], new)
+                    self.assertEqual(now["approval_status"], "APPROVED")
+                    self.assertEqual(now["lock_status"], "LOCKED")
+                    self.assertEqual(hashlib.sha256((ROOT / now["approved_list_artifact"]).read_bytes()).hexdigest(), new)
+                    self.assertEqual(hashlib.sha256((ROOT / now["previous_approved_list_artifact"]).read_bytes()).hexdigest(), old)
+                    receipt = (ROOT / now["approval_record_artifact"]).read_text(encoding="utf-8")
+                    self.assertIn(new, receipt)
+                    self.assertIn(old, receipt)
+                    continue
                 # Evidence-only PRs may correct receipt and source pointers;
                 # the actual owner-approved raw SHA, lock, approval and
                 # decision basis may never silently change.
