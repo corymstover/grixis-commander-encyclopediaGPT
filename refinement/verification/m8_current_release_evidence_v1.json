@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "policy": "CURRENT_SHA_CERTIFICATION_V1",
+  "owner_policy_authorized_on": "2026-10-28",
+  "historical_m6_j_relabelled_as_current": false,
+  "case_dispositions": [
+    {
+      "deck_id": "Kefka__Court_Mage",
+      "case_id": "K4",
+      "approved_raw_sha256": "14277f6e9774c5ef02b4f92332b52684794367007abf81bc2d84ef7ad7bcaa7d",
+      "disposition": "SUPERSEDED_BY_APPROVED_REVISION",
+      "reason": "The old K4 card-specific Demonic Counsel delirium tutor assertion cannot occur because Cory approved the exact list replacing Demonic Counsel with Step Through.",
+      "evidence_path": "refinement/verification/m7_certification_transfer/Kefka__Court_Mage_14277f6e9774c5ef.json",
+      "evidence_sha256": "bf8d815ecc213f63b423efe7060afa0215240372f4ecb5efec0991922023779c",
+      "removed_source_cards": ["Demonic Counsel"],
+      "surviving_line_disposition": "The current wizardcycling Step Through and independent tutor package are separately scoped; there is no claim of Demonic Counsel delirium tutoring in this exact 100. This is a retired K4 claim, not a test pass."
+    },
+    {
+      "deck_id": "Kefka__Court_Mage",
+      "case_id": "F3",
+      "approved_raw_sha256": "14277f6e9774c5ef02b4f92332b52684794367007abf81bc2d84ef7ad7bcaa7d",
+      "disposition": "SUPERSEDED_BY_APPROVED_REVISION",
+      "reason": "Historical F3 examined the failure of a Demonic Counsel tutor without the relevant Demon/delirium condition. There is no Demonic Counsel in the approved final list.",
+      "evidence_path": "refinement/verification/m7_certification_transfer/Kefka__Court_Mage_14277f6e9774c5ef.json",
+      "evidence_sha256": "bf8d815ecc213f63b423efe7060afa0215240372f4ecb5efec0991922023779c",
+      "removed_source_cards": ["Demonic Counsel"],
+      "surviving_line_disposition": "Current tutor failures remain worth assessing in the overall commander-first review; they are not a transferable Counsel-specific F3 result."
+    },
+    {
+      "deck_id": "Nekusar__the_Mindrazer",
+      "case_id": "K5",
+      "approved_raw_sha256": "043d2521cec1e82d7ba8ff899b96920249e16ae32e73e2759f02044b41f94e53",
+      "disposition": "SUPERSEDED_BY_APPROVED_REVISION",
+      "reason": "Original K5 warned that the old Krang draw modifier with Spiteful Visions or Phyrexian Tyranny could hurt the controller. Both named self-punish cards are absent from the current locked list.",
+      "evidence_path": "refinement/verification/m7_certification_transfer/Nekusar__the_Mindrazer_043d2521cec1e82d.json",
+      "evidence_sha256": "5e1751b9263afde58c21815ca23c1efd4d36afc4367f0dde699d89ff0276c965",
+      "removed_source_cards": ["Spiteful Visions", "Phyrexian Tyranny"],
+      "surviving_line_disposition": "Other opponent-draw and replacement-effect cases remain relevant and deferred separately. K5's old self-punisher branch is retired, not proven in the revised 100."
+    },
+    {
+      "deck_id": "Nekusar__the_Mindrazer",
+      "case_id": "W1",
+      "approved_raw_sha256": "043d2521cec1e82d7ba8ff899b96920249e16ae32e73e2759f02044b41f94e53",
+      "disposition": "SUPERSEDED_BY_APPROVED_REVISION",
+      "reason": "The original specific Peer into the Abyss opponent-draw lethal line is not a legal play from this deck because Peer into the Abyss was removed before the final approved list.",
+      "evidence_path": "refinement/verification/m7_certification_transfer/Nekusar__the_Mindrazer_043d2521cec1e82d.json",
+      "evidence_sha256": "5e1751b9263afde58c21815ca23c1efd4d36afc4367f0dde699d89ff0276c965",
+      "removed_source_cards": ["Peer into the Abyss"],
+      "surviving_line_disposition": "Wheel-based draw punishment, Underworld Breach, and opponent-relative Narset/Notion Thief cases are independent surviving claims; no Peer-specific win assertion transfers."
+    }
+  ],
+  "deck_quality_attestations": [],
+  "m8_owner_acceptance": null
+}

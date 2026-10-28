@@ -1,0 +1,35 @@
+name: M8 versioned exact-current-SHA certification (pending until final acceptance)
+
+on:
+  pull_request:
+    paths:
+      - 'architecture/CURRENT_SHA_CERTIFICATION_V1.md'
+      - 'refinement/verification/m8_current_release_evidence_v1.json'
+      - 'scripts/verify_m8_current_certification.py'
+      - 'tests/test_m8_current_certification.py'
+      - '.github/workflows/verify-m8-current-certification.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'refinement/verification/m8_current_release_evidence_v1.json'
+      - 'scripts/verify_m8_current_certification.py'
+  workflow_dispatch:
+
+jobs:
+  verify-current-release-evidence:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify all 62 owner-approved exact current sources and versioned evidence boundary
+        run: python scripts/verify_m8_current_certification.py --check
+      - name: Fail-closed negative gate tests
+        run: python -m unittest discover -s tests -p test_m8_current_certification.py -v
+      - name: Recheck original exact M7 certification transfers
+        run: python scripts/verify_m7_certification_transfer.py --check
+      - name: Confirm that the prior archive remains an explicitly unaccepted candidate
+        run: python scripts/build_m8_candidate_export.py --check
