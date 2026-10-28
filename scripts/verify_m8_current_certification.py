@@ -24,6 +24,9 @@ CI = re.compile(r"^https://github\.com/corymstover/(GrokBotMTGCompanion|grixis-c
 ALLOWED = {"CURRENT_SHA_TESTED", "SUPERSEDED_BY_APPROVED_REVISION", "OWNER_ACCEPTED_LIMITATION"}
 WHOLE_LIST_SOURCE_PREFIXES = (
     "data/grixis/m7/decision_reviews/",
+    # Exact current-source multi-100 local-best pools were written in the M6
+    # I/J research tree for certain early M7 decks (Ashad Rev3 included).
+    "data/grixis/m6/ij/tested_pools/",
     "data/grixis/m7/nekusar_rev1/",
     "data/grixis/m7/rogsi_rev1/",
     "data/grixis/m7/saruman_rev1/",
