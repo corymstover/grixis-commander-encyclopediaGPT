@@ -25,8 +25,8 @@ class CurrentSHAReleaseGate(unittest.TestCase):
         self.assertEqual(self.report["current_M7_transfer_receipts"], 38)
         self.assertEqual(self.report["historical_grandfathered_decks"], 24)
         self.assertEqual(self.report["original_deferred_P1"], 180)
-        self.assertEqual(self.report["current_sha_case_dispositions"], 149)
-        self.assertEqual(self.report["P1_pending_current_disposition"], 31)
+        self.assertEqual(self.report["current_sha_case_dispositions"], 159)
+        self.assertEqual(self.report["P1_pending_current_disposition"], 21)
         self.assertEqual(self.report["current_sha_commander_first_attestations"], 62)
         self.assertEqual(self.report["quality_attestations_pending"], 0)
         self.assertEqual(self.report["transferred_P0_passed"], 192)
@@ -413,6 +413,50 @@ class CurrentSHAReleaseGate(unittest.TestCase):
         deferred, _, _, _ = gate.current_case_index(sources)
         self.assertEqual(gate.validate_dispositions(rows, deferred, sources),
                          {("Nicol_Bolas__the_Ravager", case) for case in ("W1", "W2", "W3")})
+
+    def test_m8_original_remaining_ten_w_cases_exact_ci_four_approved_sources(self):
+        head = "3ea3375d894efcf60caf79d069449913fe2dfc62"
+        ci = "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40759164785"
+        three_blob = "538dca2a8d6fb1927544523cd7d33c113fd2a0d0"
+        obeka_blob = "8d5afc3bd873c85eabe127f5c332e8bcd86e80f9"
+        expected = {
+            "Sol_kanar_the_Swamp_King": (
+                {"W1", "W2", "W3"},
+                "2bd99c569df4a86897bca0164d2a1fa309b92f8b721e406b8394dfb04b1239e3"),
+            "RogSi": ({"W1", "W2", "W3"},
+                      "97f3c0ca70303b44cd887938c320b75de01e991feec7d71d4c18811aeaa88225"),
+            "Nekusar__the_Mindrazer": ({"W2", "W3"},
+                                        "043d2521cec1e82d7ba8ff899b96920249e16ae32e73e2759f02044b41f94e53"),
+            "Obeka__Splitter_of_Seconds": ({"W1", "W2"},
+                                           "f80d882944d5e39f3c6661da4dcdce3ec6eead577cd981dc54f7dc522be50859"),
+        }
+        rows = [r for r in self.base["case_dispositions"] if r.get("test_blob_sha")
+                in {three_blob, obeka_blob}]
+        self.assertEqual(len(rows), 10)
+        self.assertEqual(len([r for r in rows if r["test_blob_sha"] == three_blob]), 8)
+        self.assertEqual(len([r for r in rows if r["test_blob_sha"] == obeka_blob]), 2)
+        for deck, (cases, source_sha) in expected.items():
+            selected = [r for r in rows if r["deck_id"] == deck]
+            self.assertEqual({r["case_id"] for r in selected}, cases)
+            for row in selected:
+                self.assertEqual(row["approved_raw_sha256"], source_sha)
+                self.assertEqual(row["engineering_commit_sha"], head)
+                self.assertEqual(row["ci_run_url"], ci)
+                self.assertEqual(row["disposition"], "CURRENT_SHA_TESTED")
+                self.assertGreater(len(row["positive_assertion"]), 75)
+                self.assertGreater(len(row["adversarial_assertion"]), 75)
+                self.assertGreater(len(row["limitations"]), 75)
+                self.assertIn("::", row["test_ref"])
+        self.assertIn("returns to the grave", next(r for r in rows
+                      if r["deck_id"] == "Nekusar__the_Mindrazer" and r["case_id"] == "W2")
+                      ["positive_assertion"])
+        self.assertIn("Darksteel Reactor is absent", next(r for r in rows
+                      if r["deck_id"] == "Obeka__Splitter_of_Seconds" and r["case_id"] == "W2")
+                      ["adversarial_assertion"])
+        sources = gate.read_current()
+        deferred, _, _, _ = gate.current_case_index(sources)
+        self.assertEqual(gate.validate_dispositions(rows, deferred, sources),
+                         {(r["deck_id"], r["case_id"]) for r in rows})
 
     def test_owner_acceptance_cannot_be_inferred_or_pre_signed(self):
         invalid = copy.deepcopy(self.base)
