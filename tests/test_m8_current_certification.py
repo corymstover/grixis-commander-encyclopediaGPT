@@ -27,8 +27,8 @@ class CurrentSHAReleaseGate(unittest.TestCase):
         self.assertEqual(self.report["original_deferred_P1"], 180)
         self.assertEqual(self.report["current_sha_case_dispositions"], 12)
         self.assertEqual(self.report["P1_pending_current_disposition"], 168)
-        self.assertEqual(self.report["current_sha_commander_first_attestations"], 41)
-        self.assertEqual(self.report["quality_attestations_pending"], 21)
+        self.assertEqual(self.report["current_sha_commander_first_attestations"], 42)
+        self.assertEqual(self.report["quality_attestations_pending"], 20)
         self.assertEqual(self.report["transferred_P0_passed"], 192)
         self.assertEqual(self.report["transferred_P1_passed"], 193)
         self.assertFalse(self.report["ready_for_final_release"])
@@ -261,6 +261,36 @@ class CurrentSHAReleaseGate(unittest.TestCase):
             bad[field] = wrong
             with self.assertRaisesRegex(gate.CertificationError, message):
                 gate.validate_deck_attestations([bad], approved)
+
+    def test_ashad_rev3_current_99_and_oracle_corrections_have_scoped_evidence(self):
+        approved = gate.read_current()
+        row = next(x for x in self.base["deck_quality_attestations"]
+                   if x["deck_id"] == "Ashad_the_Lone_Cyberman")
+        self.assertEqual(gate.validate_deck_attestations([row], approved),
+                         {"Ashad_the_Lone_Cyberman"})
+        current = next(x for x in approved if x["id"] == "Ashad_the_Lone_Cyberman")
+        report = gate.repo_file(row["review_path"]).read_text(encoding="utf-8")
+        self.assertIn(current["sha256"], report)
+        for marker in ("five P0", "nine P1", "Reckless Fireweaver", "Noxious Gearhulk",
+                       "32 lands", "Twinning Staff"):
+            self.assertIn(marker, report)
+        counted = Counter()
+        for quantity, name in re.findall(r"^- (\d+)x (.+)$", report, re.MULTILINE):
+            counted[name] += int(quantity)
+        pool = Counter({name: quantity for quantity, name, zone in current["cards"]
+                        if zone == "Main"})
+        self.assertEqual(sum(counted.values()), 99)
+        self.assertEqual(counted, pool)
+        for field, wrong, error in (
+            ("approved_raw_sha256", "0" * 64, "not for current 100"),
+            ("grandfathered_case_scope_sha256", "0" * 64, "Evidence SHA drift"),
+            ("engineering_review_blob_sha", "not-a-blob", "Missing Git blob commitment"),
+        ):
+            with self.subTest(field=field):
+                invalid = copy.deepcopy(row)
+                invalid[field] = wrong
+                with self.assertRaisesRegex(gate.CertificationError, error):
+                    gate.validate_deck_attestations([invalid], approved)
 
     def test_original_nicol_bolas_current_99_copy_ledger_not_ravager(self):
         decks = gate.read_current()
