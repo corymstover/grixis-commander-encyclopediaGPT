@@ -33,8 +33,13 @@ jobs:
         run: python -m pip install -r requirements-scryfall.txt
       - name: Validate unsigned metadata and source-bound evidence
         run: python -m unittest tests.test_m8_release_export -v
-      - name: Build immutable M8 release ZIP from current approved list
-        run: python scripts/build_m8_release_export.py --build
+      - name: Build pre-acceptance or verify immutable accepted M8 release ZIP
+        run: |
+          if [ -f exports/Grixis_Commander_Encyclopedia_62_M8_RELEASE_2026-10-28.zip ]; then
+            python scripts/build_m8_release_export.py --check
+          else
+            python scripts/build_m8_release_export.py --build
+          fi
       - name: Verify exact source and Archidekt hashes inside generated ZIP
         run: python scripts/build_m8_release_export.py --check
       - name: Verify current M8 evidence still awaits separate acceptance
