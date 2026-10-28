@@ -25,8 +25,8 @@ class CurrentSHAReleaseGate(unittest.TestCase):
         self.assertEqual(self.report["current_M7_transfer_receipts"], 38)
         self.assertEqual(self.report["historical_grandfathered_decks"], 24)
         self.assertEqual(self.report["original_deferred_P1"], 180)
-        self.assertEqual(self.report["current_sha_case_dispositions"], 12)
-        self.assertEqual(self.report["P1_pending_current_disposition"], 168)
+        self.assertEqual(self.report["current_sha_case_dispositions"], 47)
+        self.assertEqual(self.report["P1_pending_current_disposition"], 133)
         self.assertEqual(self.report["current_sha_commander_first_attestations"], 62)
         self.assertEqual(self.report["quality_attestations_pending"], 0)
         self.assertEqual(self.report["transferred_P0_passed"], 192)
@@ -41,6 +41,34 @@ class CurrentSHAReleaseGate(unittest.TestCase):
         invalid["historical_m6_j_relabelled_as_current"] = True
         with self.assertRaisesRegex(gate.CertificationError, "may not relabel historical J"):
             gate.inspect(invalid, include_archive=False)
+
+    def test_m8_original_p1_batch_a_exact_head_thirty_five_bounded_not_w_cases(self):
+        expected = {
+            "Saruman__the_White_Hand": {"K4", "K5", "K6", "K7", "K8", "K9", "K10", "E1", "E2", "F2", "F3"},
+            "Missy": {"K4", "K5", "K6", "K7", "E1", "E2", "F2", "F3"},
+            "RogSi": {"K4", "K6", "K7", "E1", "E2", "F2", "F3"},
+            "Nekusar__the_Mindrazer": {"K4", "K6", "E1", "E2", "F2", "F3"},
+            "Parnesse__the_Subtle_Brush": {"K4", "E2", "F2"},
+        }
+        test_blob = "d7a5d78b0a12a0fa082fabaaa05b9628baf4d24a"
+        test_head = "e2d02332739bf6a4562a89ce5ac32214f8456caf"
+        test_run = "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40671465009"
+        rows = [r for r in self.base["case_dispositions"] if r.get("test_blob_sha") == test_blob]
+        self.assertEqual(len(rows), 35)
+        for deck, cases in expected.items():
+            actual = {r["case_id"] for r in rows if r["deck_id"] == deck}
+            self.assertEqual(actual, cases, deck)
+        for row in rows:
+            self.assertEqual(row["disposition"], "CURRENT_SHA_TESTED")
+            self.assertEqual(row["engineering_commit_sha"], test_head)
+            self.assertEqual(row["ci_run_url"], test_run)
+            self.assertNotIn(row["case_id"][0], {"W"})
+            self.assertIn("test_" , row["test_ref"])
+            self.assertIn("Finite Python model", row["limitations"])
+        sources = gate.read_current()
+        deferred, _, _, _ = gate.current_case_index(sources)
+        self.assertEqual(gate.validate_dispositions(rows, deferred, sources),
+                         {(r["deck_id"], r["case_id"]) for r in rows})
 
     def test_owner_acceptance_cannot_be_inferred_or_pre_signed(self):
         invalid = copy.deepcopy(self.base)
@@ -96,7 +124,8 @@ class CurrentSHAReleaseGate(unittest.TestCase):
     def test_parnesse_exact_current_positive_and_adversarial_case_evidence_is_pinned(self):
         original = [row for row in self.base["case_dispositions"]
                     if row["deck_id"] == "Parnesse__the_Subtle_Brush"
-                    and row["disposition"] == "CURRENT_SHA_TESTED"]
+                    and row["disposition"] == "CURRENT_SHA_TESTED"
+                    and row["test_blob_sha"] == "d959ec8567046da38fdfd217b39efeec5e9b5c15"]
         self.assertEqual({x["case_id"] for x in original}, {"K5", "K6", "K7", "E1", "F3"})
         decks = gate.read_current()
         deferred, _, _, _ = gate.current_case_index(decks)
