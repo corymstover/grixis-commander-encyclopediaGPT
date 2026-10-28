@@ -25,8 +25,8 @@ class CurrentSHAReleaseGate(unittest.TestCase):
         self.assertEqual(self.report["current_M7_transfer_receipts"], 38)
         self.assertEqual(self.report["historical_grandfathered_decks"], 24)
         self.assertEqual(self.report["original_deferred_P1"], 180)
-        self.assertEqual(self.report["current_sha_case_dispositions"], 106)
-        self.assertEqual(self.report["P1_pending_current_disposition"], 74)
+        self.assertEqual(self.report["current_sha_case_dispositions"], 112)
+        self.assertEqual(self.report["P1_pending_current_disposition"], 68)
         self.assertEqual(self.report["current_sha_commander_first_attestations"], 62)
         self.assertEqual(self.report["quality_attestations_pending"], 0)
         self.assertEqual(self.report["transferred_P0_passed"], 192)
@@ -171,6 +171,32 @@ class CurrentSHAReleaseGate(unittest.TestCase):
         sources = gate.read_current()
         deferred, _, _, _ = gate.current_case_index(sources)
         self.assertEqual(gate.validate_dispositions(rows, deferred, sources),
+                         {(r["deck_id"], r["case_id"]) for r in rows})
+
+    def test_m8_mishra_eminent_helm_exact_ci_six_cases_and_two_still_deferred(self):
+        test_blob = "7968439888300c05acdb25a1c2a3e504be4807fd"
+        head = "71f4d01d68dea52465511ebe3b3b4516e1f82dcc"
+        ci = "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40676873094"
+        rows = [r for r in self.base["case_dispositions"] if r.get("test_blob_sha") == test_blob]
+        self.assertEqual(len(rows), 6)
+        self.assertEqual({r["deck_id"] for r in rows}, {"Mishra__Eminent_One"})
+        self.assertEqual({r["case_id"] for r in rows}, {"K4", "K6", "E1", "E2", "W2", "F2"})
+        for row in rows:
+            self.assertEqual(row["disposition"], "CURRENT_SHA_TESTED")
+            self.assertEqual(row["engineering_commit_sha"], head)
+            self.assertEqual(row["ci_run_url"], ci)
+            self.assertIn("MishraEminentP1Trace.test_", row["test_ref"])
+            self.assertGreater(len(row["positive_assertion"]), 60)
+            self.assertGreater(len(row["adversarial_assertion"]), 60)
+            self.assertGreater(len(row["limitations"]), 60)
+        combo = next(r for r in rows if r["case_id"] == "W2")
+        self.assertIn("Helm/Urza/Elixir", combo["positive_assertion"])
+        self.assertIn("Elixir", combo["adversarial_assertion"])
+        self.assertFalse(any(r["deck_id"] == "Mishra__Eminent_One" and r["case_id"] in {"W3", "F3"}
+                             for r in self.base["case_dispositions"]))
+        decks = gate.read_current()
+        deferred, _, _, _ = gate.current_case_index(decks)
+        self.assertEqual(gate.validate_dispositions(rows, deferred, decks),
                          {(r["deck_id"], r["case_id"]) for r in rows})
 
     def test_owner_acceptance_cannot_be_inferred_or_pre_signed(self):
