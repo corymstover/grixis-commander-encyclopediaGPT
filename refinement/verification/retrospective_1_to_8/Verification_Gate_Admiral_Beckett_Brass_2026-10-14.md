@@ -1,6 +1,6 @@
 # Fresh Oracle/legality gate — #2 Admiral Beckett Brass
 
-- Generated UTC: `2026-10-28T03:23:56.265466+00:00`
+- Generated UTC: `2026-10-28T04:01:36.475957+00:00`
 - Approved source: `refinement/decklists/Admiral_Beckett_Brass_Approval_Ready_2026-10-13.txt`
 - Approved source SHA-256 (raw bytes): `4ba5c483eb67b5f2647d375450adf9c2b7e79a036d0ba1866e58de8441bf3414`
 - Approval evidence: state/current_deck_overrides.json; refinement/verification/Admiral_Beckett_Brass_Approval_Ready_Closeout_2026-10-13.md
