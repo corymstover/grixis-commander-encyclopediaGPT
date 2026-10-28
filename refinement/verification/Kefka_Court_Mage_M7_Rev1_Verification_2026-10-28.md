@@ -1,0 +1,9 @@
+# Kefka, Court Mage — exact M7 Rev1 owner-locked technical verification
+
+- Owner-approved 100-card source SHA-256: `14277f6e9774c5ef02b4f92332b52684794367007abf81bc2d84ef7ad7bcaa7d`.
+- [Merged engineering review PR #700](https://github.com/corymstover/GrokBotMTGCompanion/pull/700): final exact test head `d7b5dcf3e7ba272941990d4ba0c88d837f4f8a64`, all five triggered Actions success (Kefka, M7 contract, two Xander historical checks, Lynde).
+- [M7 global source-bound contract](https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40637695801) and [Kefka exact case transfer](https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40637695649) success; 23 material candidate judgments, 99-slot review, special exact-SHA-only five-swap-floor waiver.
+- [Current archived 100-card Oracle source](https://github.com/corymstover/GrokBotMTGCompanion/blob/chatgpt-m7-deck25-kefka-independent-20261024/data/grixis/m7/independent_reviews/Kefka__Court_Mage_M7_Current_Scryfall_20261024.json): 100 cards, 100 distinct names, UBR identity, official Commander legality, 28 printed lands, no exception. This verifies the archived October 24 snapshot, not a new live October 28 query.
+- Original five M6 P0 cases and six source-bound P1 cases have positive and adversarial bounded assertions. Original P1 K4/F3 are retired by removing Demonic Counsel, and P1 W2 full Breach-engine coverage remains open; the exact 3 P1 deferrals are visible in the SHA-bound certification-transfer attestation.
+- The source is byte-for-byte the approved engineering candidate (including no terminal LF); card-name-and-quantity multiset exactly matches owner ZIP `Kefka_GPT2.csv`, but its distinct CSV file bytes are not asserted to be raw-source identical.
+- Historical I/J Phase B and independent full multi-player engine outcomes remain unverified; bounded model checks do not certify statistical win rates.

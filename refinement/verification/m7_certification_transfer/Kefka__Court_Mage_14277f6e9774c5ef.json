@@ -1,0 +1,203 @@
+{
+  "schema_version": 1,
+  "deck_id": "Kefka__Court_Mage",
+  "approved_raw_sha256": "14277f6e9774c5ef02b4f92332b52684794367007abf81bc2d84ef7ad7bcaa7d",
+  "approved_artifact": "refinement/decklists/Kefka_Court_Mage_M7_Rev1_Approved_2026-10-28.txt",
+  "owner_approval_receipt": "refinement/approvals/Kefka_Court_Mage_M7_Rev1_Approved_2026-10-28.md",
+  "engineering": {
+    "pr_url": "https://github.com/corymstover/GrokBotMTGCompanion/pull/700",
+    "head_sha": "d7b5dcf3e7ba272941990d4ba0c88d837f4f8a64",
+    "grok_first_pass_ref": "data/grixis/m6/ij/certificates/kefka-court-mage-m7.json — historical 12-source research I/J only, not transferable to exact new 100",
+    "independent_review_ref": "data/grixis/m7/independent_reviews/Kefka__Court_Mage_M7_Independent_Oracle_Index_20261024.json — current independent source review",
+    "m7_decision_packet_ref": "data/grixis/m7/decision_reviews/Kefka__Court_Mage_rev1.json — 23 material candidates and special exact-SHA five-swap-floor waiver",
+    "m7_decision_gate_command": "python3 scripts/grixis_m7_decision_gate.py --check --file data/grixis/m7/decision_reviews/Kefka__Court_Mage_rev1.json",
+    "m7_decision_gate_ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40637695801",
+    "oracle_legality_ref": "data/grixis/m7/independent_reviews/Kefka__Court_Mage_M7_Current_Scryfall_20261024.json — 100 Commander-legal current Oct24 Oracle IDs and UBR; 28 land fronts"
+  },
+  "m6_transfer": {
+    "plan_source_path": "data/grixis/m6/test_blueprints/Kefka__Court_Mage.json",
+    "plan_blob_sha": "07efd24960263757e3dbc9177127554ce3539f14",
+    "ij_receipt_ref": "data/grixis/m6/ij/certificates/kefka-court-mage-m7.json — historical 12-source I/J scope belongs to old 100, Phase B not replayed on this approved candidate",
+    "ij_scope": "TRANSFERRED_WITH_CASE_MAPPING",
+    "revision_diff_and_validity_reason": "Two distinct approved changes from October14 100: Step Through over Demonic Counsel, Sakashima of a Thousand Faces over Phyrexian Metamorph. Wizardcycling/legend exception improve Kefka-specific tutoring/copying; lose conditional delirium tutoring, Metamorph artifact flexibility and raise printed mana value for Ad Nauseam. Exact new 100 source-bound five original P0 and six P1 bounded cases passed; old Counsel-dependent K4/F3 no longer apply and W2 full Breach stack loop still deferred with explicit owner-visible consequence. M6 historical I/J multi-source pool is not reproduced as an independent new Phase B; bounded transfer is not full Magic gameplay or claimed local optimum.",
+    "P0": [
+      {
+        "case_id": "C1",
+        "status": "PASSED",
+        "test_ref": "tests/test_m6_kefka_m7_rev1_exact_case_transfer.py::KefkaExactP0Transfer.test_C1_cast_paid_etb_attack_and_transform_boundaries",
+        "execution_command": "python3 -m unittest discover -s tests -p 'test_m6_kefka_m7_rev1_exact_case_transfer.py' -v",
+        "oracle_source": "data/grixis/m7/independent_reviews/Kefka__Court_Mage_M7_Current_Scryfall_20261024.json — archived live Oct24 exact 100; UBR/legal/Oracle IDs for all names",
+        "payable_fixture": "Five actual mana including U,B,R to cast Kefka, ETB discards and eight-mana sorcery-speed transform; opposing permanents explicitly chosen.",
+        "positive_assertion": "Cast UBR plus two, trigger ETB, draw by types, transform paid eight sorcery timing",
+        "adversarial_assertion": "Missing black, haste, eight mana or legal timing fails",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40637695649",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "14277f6e9774c5ef02b4f92332b52684794367007abf81bc2d84ef7ad7bcaa7d",
+        "coverage_note": "Finite source-bound positive/adversarial state predicate only; original M6 I/J Phase B and randomized multiplayer outcomes not independently validated."
+      },
+      {
+        "case_id": "K1",
+        "status": "PASSED",
+        "test_ref": "tests/test_m6_kefka_m7_rev1_exact_case_transfer.py::KefkaExactP0Transfer.test_K1_card_types_are_distinct_and_supertypes_are_not_types",
+        "execution_command": "python3 -m unittest discover -s tests -p 'test_m6_kefka_m7_rev1_exact_case_transfer.py' -v",
+        "oracle_source": "data/grixis/m7/independent_reviews/Kefka__Court_Mage_M7_Current_Scryfall_20261024.json — archived live Oct24 exact 100; UBR/legal/Oracle IDs for all names",
+        "payable_fixture": "Kefka ETB discard types Legendary Artifact Creature, repeated Artifacts and a Basic Land across players.",
+        "positive_assertion": "Distinct card-type count across all current trigger discards",
+        "adversarial_assertion": "Legendary/basic and duplicate types do not increase draw",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40637695649",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "14277f6e9774c5ef02b4f92332b52684794367007abf81bc2d84ef7ad7bcaa7d",
+        "coverage_note": "Finite source-bound positive/adversarial state predicate only; original M6 I/J Phase B and randomized multiplayer outcomes not independently validated."
+      },
+      {
+        "case_id": "K2",
+        "status": "PASSED",
+        "test_ref": "tests/test_m6_kefka_m7_rev1_exact_case_transfer.py::KefkaExactP0Transfer.test_K2_anger_discard_on_etb_enables_only_mountain_haste",
+        "execution_command": "python3 -m unittest discover -s tests -p 'test_m6_kefka_m7_rev1_exact_case_transfer.py' -v",
+        "oracle_source": "data/grixis/m7/independent_reviews/Kefka__Court_Mage_M7_Current_Scryfall_20261024.json — archived live Oct24 exact 100; UBR/legal/Oracle IDs for all names",
+        "payable_fixture": "Anger discarded by Kefka, with and without a Mountain, and exact payable color sources.",
+        "positive_assertion": "Anger in graveyard + Mountain permits Kefka immediate attack",
+        "adversarial_assertion": "No Mountain prevents haste",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40637695649",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "14277f6e9774c5ef02b4f92332b52684794367007abf81bc2d84ef7ad7bcaa7d",
+        "coverage_note": "Finite source-bound positive/adversarial state predicate only; original M6 I/J Phase B and randomized multiplayer outcomes not independently validated."
+      },
+      {
+        "case_id": "K3",
+        "status": "PASSED",
+        "test_ref": "tests/test_m6_kefka_m7_rev1_exact_case_transfer.py::KefkaExactP0Transfer.test_K3_copy_of_transforming_card_vs_single_faced_clone",
+        "execution_command": "python3 -m unittest discover -s tests -p 'test_m6_kefka_m7_rev1_exact_case_transfer.py' -v",
+        "oracle_source": "data/grixis/m7/independent_reviews/Kefka__Court_Mage_M7_Current_Scryfall_20261024.json — archived live Oct24 exact 100; UBR/legal/Oracle IDs for all names",
+        "payable_fixture": "A physical one-face copy of transforming Kefka contrasted with a token created copying the DFC and a token copying a one-face clone.",
+        "positive_assertion": "Token created copying actual transforming DFC may transform",
+        "adversarial_assertion": "Ordinary single-face clone and tokens copying it cannot transform",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40637695649",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "14277f6e9774c5ef02b4f92332b52684794367007abf81bc2d84ef7ad7bcaa7d",
+        "coverage_note": "Finite source-bound positive/adversarial state predicate only; original M6 I/J Phase B and randomized multiplayer outcomes not independently validated."
+      },
+      {
+        "case_id": "F1",
+        "status": "PASSED",
+        "test_ref": "tests/test_m6_kefka_m7_rev1_exact_case_transfer.py::KefkaExactP0Transfer.test_F1_remove_kefka_before_trigger_resolves_does_not_counter_etb",
+        "execution_command": "python3 -m unittest discover -s tests -p 'test_m6_kefka_m7_rev1_exact_case_transfer.py' -v",
+        "oracle_source": "data/grixis/m7/independent_reviews/Kefka__Court_Mage_M7_Current_Scryfall_20261024.json — archived live Oct24 exact 100; UBR/legal/Oracle IDs for all names",
+        "payable_fixture": "Kefka is removed after ETB triggered but before the discard trigger resolves.",
+        "positive_assertion": "Triggered ETB remains on stack after removing source",
+        "adversarial_assertion": "Absent source cannot subsequently attack",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40637695649",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "14277f6e9774c5ef02b4f92332b52684794367007abf81bc2d84ef7ad7bcaa7d",
+        "coverage_note": "Finite source-bound positive/adversarial state predicate only; original M6 I/J Phase B and randomized multiplayer outcomes not independently validated."
+      }
+    ],
+    "P1": [
+      {
+        "case_id": "K4",
+        "status": "DEFERRED",
+        "specific_reason": "Historical Demonic Counsel delirium interaction removed by exact candidate",
+        "coverage_consequence": "No transfer of Counsel-specific mechanics to a deck lacking Counsel",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "K5",
+        "status": "PASSED",
+        "test_ref": "tests/test_m6_kefka_m7_rev1_exact_case_transfer.py::KefkaExactP0Transfer.test_P1_K5_valley_flash_noncreature_does_not_untap_kefka",
+        "execution_command": "python3 -m unittest discover -s tests -p 'test_m6_kefka_m7_rev1_exact_case_transfer.py' -v",
+        "oracle_source": "data/grixis/m7/independent_reviews/Kefka__Court_Mage_M7_Current_Scryfall_20261024.json — archived live Oct24 exact 100; UBR/legal/Oracle IDs for all names",
+        "payable_fixture": "Valley Floodcaller present with a newly cast summoning-sick Kefka and a payable noncreature spell.",
+        "positive_assertion": "Floodcaller grants flash to noncreature spells",
+        "adversarial_assertion": "Does not give Kefka haste or untap Wizard",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40637695649",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "14277f6e9774c5ef02b4f92332b52684794367007abf81bc2d84ef7ad7bcaa7d",
+        "coverage_note": "Finite source-bound positive/adversarial state predicate only; original M6 I/J Phase B and randomized multiplayer outcomes not independently validated."
+      },
+      {
+        "case_id": "E1",
+        "status": "PASSED",
+        "test_ref": "tests/test_m6_kefka_m7_rev1_exact_case_transfer.py::KefkaExactP0Transfer.test_P1_E1_E2_essence_flux_requires_target_and_creates_return_etb",
+        "execution_command": "python3 -m unittest discover -s tests -p 'test_m6_kefka_m7_rev1_exact_case_transfer.py' -v",
+        "oracle_source": "data/grixis/m7/independent_reviews/Kefka__Court_Mage_M7_Current_Scryfall_20261024.json — archived live Oct24 exact 100; UBR/legal/Oracle IDs for all names",
+        "payable_fixture": "Pay U for Essence Flux targeting a live Kefka, then compare the absent-target branch.",
+        "positive_assertion": "Paid Essence Flux blink creates new Kefka ETB",
+        "adversarial_assertion": "Absent Kefka is an invalid target",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40637695649",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "14277f6e9774c5ef02b4f92332b52684794367007abf81bc2d84ef7ad7bcaa7d",
+        "coverage_note": "Finite source-bound positive/adversarial state predicate only; original M6 I/J Phase B and randomized multiplayer outcomes not independently validated."
+      },
+      {
+        "case_id": "E2",
+        "status": "PASSED",
+        "test_ref": "tests/test_m6_kefka_m7_rev1_exact_case_transfer.py::KefkaExactP0Transfer.test_P1_E1_E2_essence_flux_requires_target_and_creates_return_etb",
+        "execution_command": "python3 -m unittest discover -s tests -p 'test_m6_kefka_m7_rev1_exact_case_transfer.py' -v",
+        "oracle_source": "data/grixis/m7/independent_reviews/Kefka__Court_Mage_M7_Current_Scryfall_20261024.json — archived live Oct24 exact 100; UBR/legal/Oracle IDs for all names",
+        "payable_fixture": "Resolved paid Essence Flux returns Kefka and creates a new separately resolved ETB trigger, with heterogeneous opposing discards.",
+        "positive_assertion": "Returned Kefka draws by discards in new trigger",
+        "adversarial_assertion": "Draw count not a fixed four",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40637695649",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "14277f6e9774c5ef02b4f92332b52684794367007abf81bc2d84ef7ad7bcaa7d",
+        "coverage_note": "Finite source-bound positive/adversarial state predicate only; original M6 I/J Phase B and randomized multiplayer outcomes not independently validated."
+      },
+      {
+        "case_id": "W1",
+        "status": "PASSED",
+        "test_ref": "tests/test_m6_kefka_m7_rev1_exact_case_transfer.py::KefkaExactP0Transfer.test_P1_W1_oracle_consultation_pact_source_paid_boundary",
+        "execution_command": "python3 -m unittest discover -s tests -p 'test_m6_kefka_m7_rev1_exact_case_transfer.py' -v",
+        "oracle_source": "data/grixis/m7/independent_reviews/Kefka__Court_Mage_M7_Current_Scryfall_20261024.json — archived live Oct24 exact 100; UBR/legal/Oracle IDs for all names",
+        "payable_fixture": "Demonic Consultation, Tainted Pact and Thassa's Oracle official text, empty-vs-nonempty library, devotion and payable blue/black mana.",
+        "positive_assertion": "Consultation/Pact/Oracle text, payable U/B and empty-library Oracle condition",
+        "adversarial_assertion": "Nonempty library with insufficient devotion does not win; full stack chain NOT tested",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40637695649",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "14277f6e9774c5ef02b4f92332b52684794367007abf81bc2d84ef7ad7bcaa7d",
+        "coverage_note": "Finite source-bound positive/adversarial state predicate only; original M6 I/J Phase B and randomized multiplayer outcomes not independently validated."
+      },
+      {
+        "case_id": "W2",
+        "status": "DEFERRED",
+        "specific_reason": "Underworld Breach, LED, Brain Freeze unchanged; prior Grok scope did not comprehensively simulate repeatable full-stack loop",
+        "coverage_consequence": "Presence/legality validated; full priority/repeatability of loop not newly exhaustively verified",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "W3",
+        "status": "PASSED",
+        "test_ref": "tests/test_m6_kefka_m7_rev1_exact_case_transfer.py::KefkaExactP0Transfer.test_P1_W3_F2_repeated_hand_attack_and_extra_turn_liability",
+        "execution_command": "python3 -m unittest discover -s tests -p 'test_m6_kefka_m7_rev1_exact_case_transfer.py' -v",
+        "oracle_source": "data/grixis/m7/independent_reviews/Kefka__Court_Mage_M7_Current_Scryfall_20261024.json — archived live Oct24 exact 100; UBR/legal/Oracle IDs for all names",
+        "payable_fixture": "Repeated Kefka attacks versus opposing hands [3,2,1] and finite discard counts.",
+        "positive_assertion": "Repeated attacks reduce hand sizes",
+        "adversarial_assertion": "Zero-hand opponent discards no card",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40637695649",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "14277f6e9774c5ef02b4f92332b52684794367007abf81bc2d84ef7ad7bcaa7d",
+        "coverage_note": "Finite source-bound positive/adversarial state predicate only; original M6 I/J Phase B and randomized multiplayer outcomes not independently validated."
+      },
+      {
+        "case_id": "F2",
+        "status": "PASSED",
+        "test_ref": "tests/test_m6_kefka_m7_rev1_exact_case_transfer.py::KefkaExactP0Transfer.test_P1_W3_F2_repeated_hand_attack_and_extra_turn_liability",
+        "execution_command": "python3 -m unittest discover -s tests -p 'test_m6_kefka_m7_rev1_exact_case_transfer.py' -v",
+        "oracle_source": "data/grixis/m7/independent_reviews/Kefka__Court_Mage_M7_Current_Scryfall_20261024.json — archived live Oct24 exact 100; UBR/legal/Oracle IDs for all names",
+        "payable_fixture": "Final Fortune extra-turn delayed loss with/without a winning line before its specified end step.",
+        "positive_assertion": "Final Fortune extra turn",
+        "adversarial_assertion": "Delayed loss applies unless win or valid effect by end step",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40637695649",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "14277f6e9774c5ef02b4f92332b52684794367007abf81bc2d84ef7ad7bcaa7d",
+        "coverage_note": "Finite source-bound positive/adversarial state predicate only; original M6 I/J Phase B and randomized multiplayer outcomes not independently validated."
+      },
+      {
+        "case_id": "F3",
+        "status": "DEFERRED",
+        "specific_reason": "Demonic Counsel absent; Demons/delirium conditional tutor no longer claimed",
+        "coverage_consequence": "Historical no-Demon Counsel branch no longer pertinent",
+        "owner_visible_unresolved": true
+      }
+    ]
+  }
+}
