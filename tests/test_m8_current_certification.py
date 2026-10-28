@@ -25,8 +25,8 @@ class CurrentSHAReleaseGate(unittest.TestCase):
         self.assertEqual(self.report["original_deferred_P1"], 180)
         self.assertEqual(self.report["current_sha_case_dispositions"], 7)
         self.assertEqual(self.report["P1_pending_current_disposition"], 173)
-        self.assertEqual(self.report["current_sha_commander_first_attestations"], 36)
-        self.assertEqual(self.report["quality_attestations_pending"], 26)
+        self.assertEqual(self.report["current_sha_commander_first_attestations"], 37)
+        self.assertEqual(self.report["quality_attestations_pending"], 25)
         self.assertEqual(self.report["transferred_P0_passed"], 192)
         self.assertEqual(self.report["transferred_P1_passed"], 193)
         self.assertFalse(self.report["ready_for_final_release"])
@@ -141,6 +141,23 @@ class CurrentSHAReleaseGate(unittest.TestCase):
         }
         with self.assertRaisesRegex(gate.CertificationError, "Grandfathered M6 P0/P1 scope"):
             gate.validate_deck_attestations([attestation], approved)
+
+    def test_admiral_grandfathered_case_scope_is_exact_sha_and_report_hash_bound(self):
+        approved = gate.read_current()
+        original = next(row for row in self.base["deck_quality_attestations"]
+                        if row["deck_id"] == "Admiral_Beckett_Brass")
+        self.assertEqual(gate.validate_deck_attestations([original], approved),
+                         {"Admiral_Beckett_Brass"})
+        for field, value, message in (
+            ("approved_raw_sha256", "0" * 64, "not for current 100"),
+            ("grandfathered_case_scope_sha256", "0" * 64, "Evidence SHA drift"),
+            ("grandfathered_case_scope_outcome", "INCOMPLETE", "scope remains unverified"),
+        ):
+            with self.subTest(field=field):
+                invalid = copy.deepcopy(original)
+                invalid[field] = value
+                with self.assertRaisesRegex(gate.CertificationError, message):
+                    gate.validate_deck_attestations([invalid], approved)
 
     def test_prematurely_accepted_archive_manifest_is_rejected(self):
         with self.assertRaisesRegex(gate.CertificationError, "distinct final artifact"):
