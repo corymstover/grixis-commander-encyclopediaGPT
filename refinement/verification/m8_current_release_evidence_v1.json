@@ -84,6 +84,24 @@
   ],
   "deck_quality_attestations": [
     {
+      "deck_id": "Admiral_Beckett_Brass",
+      "approved_raw_sha256": "ff5f54f9f608ab0facd62fd3b79df16a0255b4dbbc12d39154a127f27bb8c000",
+      "outcome": "KEEP_EXACT_100",
+      "commander_first": "Admiral needs three distinct Pirate creatures to combat-damage the same opponent before her end-step nonland permanent theft trigger exists. The 2026-10-22 six-change approved 100 supports evasive Pirate connections, paid blockers suppression and actual Pirate density instead of generic turbo or token-count inflation. Kari Zev's Monkey is not a Pirate; Roaming Throne multiplies only a legitimately earned theft trigger.",
+      "mana_and_protection": "The exact 100 has 35 lands and 34 creatures. The six-swap revision trades a tapped Crumbling Necropolis for City of Brass's untapped any-color mana at one-life cost; Cosmotronic Wave's 3R sorcery prevents blocks for one turn, unlike the removed Raise the Palisade's bounce. Retained Fiery Cannonade is instant-speed non-Pirate defense, and Open into Wonder retains paid evasion plus draw. Countermagic, Fog and commander removal can still break a combat plan.",
+      "win_lines_and_counterplay": "Real three-Pirate same-opponent damage conditionally steals a nonland permanent at end step; Throne may add another trigger without reducing threshold. Port Razer can grant further combats only on its defined hit/player conditions; staged Pirate damage can win but is stopped by blockers, Fog, removal or absent sources. Lannery, Malcolm and Breeches provide contingent Treasure/exile/draw without a fabricated deterministic loop. No measured four-player win rate is claimed.",
+      "historical_M6_case_scope": "The 5 original P0 and 8 original P1 blueprint groups were re-accounted against owner-approved ff5f54f9f608ab0facd62fd3b79df16a0255b4dbbc12d39154a127f27bb8c000 using 13 new current-roster guarded adapters and executed bounded positive/adversarial fixtures on engineering PR #755 head 981b18537737b9543c621cd275322129c0109f6b (CI #40657037883 SUCCESS). The old Palisade bounce case and Dire Fleet Captain-specific branch are not current-card passes. The 25 old methods are historical, not current I/J or independent J; see hashed scoped case report.",
+      "tested_pool_stop_reason": "The pinned whole-99 Admiral Rev2 packet contains 28 substantive card judgments, 16 incumbent-role challenges and seven complete 100-card alternative builds including seven- and nine-change expansions. It explicitly protects Bident of Thassa, The Indomitable, Open into Wonder and Fiery Cannonade roles when higher-count packages cost more repeatable draw, evasion or defense than they gain. The six accepted swaps reflect the better final role balance rather than a mandatory swap quota; no further change was justified by original-case replay.",
+      "review_path": "refinement/verification/Admiral_Beckett_Brass_M7_Approval_Verification_2026-10-22.md",
+      "review_sha256": "9f4adf76f32e9e02e2933a926d965d4e54c03af2fb9fad69c9a4d8e0ee9ac52a",
+      "source_commit_sha": "981b18537737b9543c621cd275322129c0109f6b",
+      "engineering_review_path": "data/grixis/m7/decision_reviews/Admiral_Beckett_Brass_rev2.json",
+      "engineering_review_blob_sha": "7e1ce79ddc0c94fa12bf70af90c1aca1583687fe",
+      "grandfathered_case_scope_outcome": "ALL_RELEVANT_ORIGINAL_CASES_ACCOUNTED_FOR",
+      "grandfathered_case_scope_path": "refinement/verification/m8_grandfathered_case_scope/Admiral_Beckett_Brass_ff5f54f9f608ab0f.md",
+      "grandfathered_case_scope_sha256": "ce789875857c2288543697b39e6381ba3968f02873a3db75260191b78f17567e"
+    },
+    {
       "deck_id": "Kess__Dissident_Mage",
       "approved_raw_sha256": "11415352a453e52afe4b1cc6881061e0d255e8403f8d5af5a24f9803c004fde4",
       "outcome": "KEEP_EXACT_100",
