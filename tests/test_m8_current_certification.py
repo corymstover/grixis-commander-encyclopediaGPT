@@ -25,8 +25,8 @@ class CurrentSHAReleaseGate(unittest.TestCase):
         self.assertEqual(self.report["current_M7_transfer_receipts"], 38)
         self.assertEqual(self.report["historical_grandfathered_decks"], 24)
         self.assertEqual(self.report["original_deferred_P1"], 180)
-        self.assertEqual(self.report["current_sha_case_dispositions"], 112)
-        self.assertEqual(self.report["P1_pending_current_disposition"], 68)
+        self.assertEqual(self.report["current_sha_case_dispositions"], 121)
+        self.assertEqual(self.report["P1_pending_current_disposition"], 59)
         self.assertEqual(self.report["current_sha_commander_first_attestations"], 62)
         self.assertEqual(self.report["quality_attestations_pending"], 0)
         self.assertEqual(self.report["transferred_P0_passed"], 192)
@@ -197,6 +197,31 @@ class CurrentSHAReleaseGate(unittest.TestCase):
         decks = gate.read_current()
         deferred, _, _, _ = gate.current_case_index(decks)
         self.assertEqual(gate.validate_dispositions(rows, deferred, decks),
+                         {(r["deck_id"], r["case_id"]) for r in rows})
+
+    def test_m8_mairsil_exact_head_nine_cage_cases_leave_w3_f3_open(self):
+        test_blob = "009fdbd70fba6aec41603abd0bd2d0f853190caa"
+        head = "aabb3b48e8f921e25427d444385e2fb864b1ec9c"
+        ci = "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40677731394"
+        rows = [r for r in self.base["case_dispositions"] if r.get("test_blob_sha") == test_blob]
+        self.assertEqual(len(rows), 9)
+        self.assertEqual({r["deck_id"] for r in rows}, {"Mairsil__the_Pretender"})
+        self.assertEqual({r["case_id"] for r in rows},
+                         {"K4", "K5", "K6", "K7", "E1", "E2", "W1", "W2", "F2"})
+        for row in rows:
+            self.assertEqual(row["disposition"], "CURRENT_SHA_TESTED")
+            self.assertEqual(row["engineering_commit_sha"], head)
+            self.assertEqual(row["ci_run_url"], ci)
+            self.assertIn("test_m8_mairsil_p1_cage_loops.py::MairsilCageOriginalP1.test_", row["test_ref"])
+            self.assertGreater(len(row["positive_assertion"]), 60)
+            self.assertGreater(len(row["adversarial_assertion"]), 60)
+            self.assertGreater(len(row["limitations"]), 60)
+        self.assertIn("net one U", next(r for r in rows if r["case_id"] == "W2")["positive_assertion"])
+        self.assertFalse(any(r["deck_id"] == "Mairsil__the_Pretender" and r["case_id"] in {"W3", "F3"}
+                             for r in self.base["case_dispositions"]))
+        sources = gate.read_current()
+        deferred, _, _, _ = gate.current_case_index(sources)
+        self.assertEqual(gate.validate_dispositions(rows, deferred, sources),
                          {(r["deck_id"], r["case_id"]) for r in rows})
 
     def test_owner_acceptance_cannot_be_inferred_or_pre_signed(self):
