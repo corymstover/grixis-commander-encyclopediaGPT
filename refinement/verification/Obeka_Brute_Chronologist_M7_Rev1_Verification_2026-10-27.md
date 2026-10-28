@@ -1,0 +1,11 @@
+# Obeka, Brute Chronologist — M7 Rev1 exact-source verification and transfer scope
+
+Approved source: `refinement/decklists/Obeka_Brute_Chronologist_M7_Rev1_Approved_2026-10-27.txt`.
+
+Raw SHA-256 `43f1249c9a1da82bc1e74254a44613a0ab5763c91295a56ffae3b75a889029f2`; original October 15 SHA-256 `31b6ff7f23effa78512c2a409a21440bccf457e6faece51d8db38b74102169a8` preserved in `Approval_Ready_2026-10-15.txt`. The old Approved-named file had already been overwritten with these same M7 bytes by a prior merge; the state pointer was later repaired to the preserved original. This versioned file makes the approved revision explicit and retains both sources.
+
+Engineering [PR #726](https://github.com/corymstover/GrokBotMTGCompanion/pull/726), head `1a70749a92001bf3fa86ad5907c80791c565bd00`, exact-source [CI run 40439389279](https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40439389279) succeeded for full 100-card Oracle/singleton/identity, the decision gate and 15 finite case fixtures. Sources: `data/grixis/m7/oracle_snapshots/Obeka__Brute_Chronologist_Rev1_Scryfall_20261027.json`, `data/grixis/m7/decision_reviews/Obeka__Brute_Chronologist_rev1.json`, and `data/grixis/m7/verification/Obeka__Brute_Chronologist_Rev1_Scoped_M6_IJ_20261027.json`.
+
+Original M6 blueprint `data/grixis/m6/test_blueprints/Obeka__Brute_Chronologist.json` had **5 required P0 and 10 required P1**. All 15 have a candidate-scoped finite test in `data/grixis/m7/obeka_rev1/test_obeka_rev1.py`; each maps one specific case and is recorded in the versioned attestation. The tests model turn-ending timing and payments, but do not run a four-player Magic engine, prove win rate or complete historical independent I/J Phase B. The source is 100 physical / 100 distinct / 34 lands, color identity U/B/R, no legality exceptions according to the pinned October 27 Scryfall snapshot. The retained Psychic Vortex compounding card draw was re-reviewed; early end-step skipping is **not** treated as permanently clearing delayed liabilities.
+
+Verification scope is evidence provenance and bounded tested claims, subject to the repository's global transfer and exact-head canonical checks. Do not infer complete M6, I/J, M7 aggregate or M8 certification.

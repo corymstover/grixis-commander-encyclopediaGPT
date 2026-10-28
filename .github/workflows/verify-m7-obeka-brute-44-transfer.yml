@@ -1,0 +1,27 @@
+name: "M7 Deck 44 Obeka Brute exact-approved case transfer"
+
+on:
+  pull_request:
+    paths:
+      - "state/current_deck_overrides.json"
+      - "refinement/decklists/Obeka_Brute_Chronologist_M7_Rev1_Approved_2026-10-27.txt"
+      - "refinement/verification/m7_certification_transfer/Obeka__Brute_Chronologist_43f1249c9a1da82b.json"
+      - "tests/test_m7_obeka_brute_44_owner_lock.py"
+      - ".github/workflows/verify-m7-obeka-brute-44-transfer.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-obeka-owner-lock:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Exact owner SHA and 15 original required M6 cases
+        run: python3 -m unittest discover -s tests -p 'test_m7_obeka_brute_44_owner_lock.py' -v
