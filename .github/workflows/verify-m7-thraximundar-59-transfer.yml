@@ -1,0 +1,26 @@
+name: "M7 Deck 59 Thraximundar exact-owner source and M6 case transfer"
+
+on:
+  pull_request:
+    paths:
+      - "state/current_deck_overrides.json"
+      - "refinement/decklists/Thraximundar_M7_Rev1_Approved_2026-10-27.txt"
+      - "refinement/verification/m7_certification_transfer/Thraximundar_f3e71b71fc10fbe6.json"
+      - "tests/test_m7_thraximundar_59_owner_lock.py"
+      - ".github/workflows/verify-m7-thraximundar-59-transfer.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-thrax-owner-100:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 -m unittest discover -s tests -p 'test_m7_thraximundar_59_owner_lock.py' -v
