@@ -1,0 +1,29 @@
+name: "M7 Deck 60 Tresserhorn exact-owner source and original P0/P1 transfer"
+
+on:
+  pull_request:
+    paths:
+      - "state/current_deck_overrides.json"
+      - "refinement/decklists/Tresserhorn_s_Lord_Returned_M7_Rev1_Approved_2026-10-27.txt"
+      - "refinement/verification/m7_certification_transfer/Tresserhorn_s_Lord__Returned_9a9d2f7a344e2491.json"
+      - "tests/test_m7_tresserhorn_60_owner_lock.py"
+      - ".github/workflows/verify-m7-tresserhorn-60-transfer.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-exact-owner-100:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verify original 15 cases, exact hash and untouched other 61 decks
+        env:
+          BASE_REF_SHA: ${{ github.event.pull_request.base.sha }}
+        run: python3 -m unittest discover -s tests -p 'test_m7_tresserhorn_60_owner_lock.py' -v
