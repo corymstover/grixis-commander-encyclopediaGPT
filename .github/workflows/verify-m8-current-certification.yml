@@ -1,4 +1,4 @@
-name: M8 versioned exact-current-SHA certification (pending until final acceptance)
+name: M8 versioned exact-current-SHA final certification
 
 on:
   pull_request:
@@ -57,6 +57,8 @@ jobs:
           python-version: '3.12'
       - name: Verify all 62 owner-approved exact current sources and versioned evidence boundary
         run: python scripts/verify_m8_current_certification.py --check
+      - name: Require complete M8 owner acceptance bound to the exact release ZIP
+        run: python scripts/verify_m8_current_certification.py --check --require-complete
       - name: Fail-closed negative gate tests
         run: python -m unittest discover -s tests -p test_m8_current_certification.py -v
       - name: Verify Admiral Brass Unsinkable exact current 99 and original bounded cases

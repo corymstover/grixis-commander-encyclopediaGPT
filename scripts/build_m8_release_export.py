@@ -91,6 +91,49 @@ def payloads() -> dict[str, bytes]:
 def check_archive() -> str:
     if not ARCHIVE.is_file():
         raise FileNotFoundError(ARCHIVE)
+    live = json.loads((ROOT / "refinement/verification/m8_current_release_evidence_v1.json")
+                      .read_text(encoding="utf-8"))
+    if live.get("m8_owner_acceptance") is not None:
+        # Once owner-accepted, the archive is immutable.  NEVER rebuild or
+        # rewrite its embedded unsigned snapshot/manifest from the live receipt.
+        report = inspect(live)
+        if not report["ready_for_final_release"]:
+            raise ValueError("Exact owner-accepted M8 release gate is incomplete")
+        accepted = live["m8_owner_acceptance"]
+        archive_sha = digest(ARCHIVE.read_bytes())
+        if archive_sha != accepted["final_archive_sha256"]:
+            raise ValueError("Accepted immutable archive SHA drift")
+        with zipfile.ZipFile(ARCHIVE) as z:
+            names = z.namelist()
+            if len(names) != 129 or len(set(names)) != 129:
+                raise ValueError("Accepted archive member count/identity drift")
+            index = json.loads(z.read(PREFIX + "index.json"))
+            frozen = json.loads(z.read(PREFIX + "M8_EVIDENCE_LEDGER.json"))
+            if (index.get("metadata_gaps") != [] or
+                    index.get("status") != STATUS or
+                    index.get("m8_owner_acceptance") is not None or
+                    index["release_fingerprint"] != report["release_fingerprint"] or
+                    index["evidence_fingerprint"] != report["evidence_fingerprint"] or
+                    frozen.get("m8_owner_acceptance") is not None or
+                    frozen["case_dispositions"] != live["case_dispositions"] or
+                    frozen["deck_quality_attestations"] != live["deck_quality_attestations"]):
+                raise ValueError("Accepted release frozen-evidence or metadata drift")
+            changes = metadata_map()
+            rows = index["decks"]
+            if len(rows) != 62:
+                raise ValueError("Not 62 approved decks")
+            used = set()
+            for row in rows:
+                if not row.get("power_bracket") or len(row.get("archidekt_tags") or []) != 3:
+                    raise ValueError("Incomplete accepted metadata")
+                if row["commander"] in changes:
+                    if row["archidekt_tags"] != changes[row["commander"]]["archidekt_tags"]:
+                        raise ValueError("Approved metadata changed after acceptance")
+                    used.add(row["commander"])
+            if used != set(changes):
+                raise ValueError("Six approved metadata records missing")
+        print(f"M8_RELEASE_OWNER_ACCEPTED_VERIFIED decks=62 cases=180 quality=62 metadata_gaps=0 sha256={archive_sha}")
+        return archive_sha
     report, register, decks = review.state()
     expected = payloads()
     with zipfile.ZipFile(ARCHIVE) as z:

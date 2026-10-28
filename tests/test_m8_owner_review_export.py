@@ -15,6 +15,11 @@ import build_m8_owner_review_export as review
 class M8OwnerReviewUnsignedArchive(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
+        from pathlib import Path
+        import json
+        live = json.loads((ROOT / "refinement/verification/m8_current_release_evidence_v1.json").read_text(encoding="utf-8"))
+        if live.get("m8_owner_acceptance") is not None:
+            raise unittest.SkipTest("Unsigned preview builder correctly stops after exact-M8 owner acceptance")
         cls.files = review.files_for_review()
         cls.index = json.loads(cls.files["index.json"])
         cls.summary = json.loads(cls.files["M8_EVIDENCE_SUMMARY.json"])

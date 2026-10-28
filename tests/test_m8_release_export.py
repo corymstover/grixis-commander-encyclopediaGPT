@@ -13,7 +13,13 @@ from verify_m8_current_certification import inspect, read_current
 class ExactM8MetadataRelease(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.files = release.payloads()
+        import zipfile
+        live = json.loads((ROOT / "refinement/verification/m8_current_release_evidence_v1.json").read_text(encoding="utf-8"))
+        if live.get("m8_owner_acceptance") is not None:
+            with zipfile.ZipFile(release.ARCHIVE) as package:
+                cls.files = {n.removeprefix(release.PREFIX): package.read(n) for n in package.namelist()}
+        else:
+            cls.files = release.payloads()
         cls.index = json.loads(cls.files["index.json"])
         cls.summary = json.loads(cls.files["M8_EVIDENCE_SUMMARY.json"])
         cls.ledger = json.loads(cls.files["M8_EVIDENCE_LEDGER.json"])

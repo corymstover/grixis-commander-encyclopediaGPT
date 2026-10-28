@@ -31,7 +31,7 @@ class CurrentSHAReleaseGate(unittest.TestCase):
         self.assertEqual(self.report["quality_attestations_pending"], 0)
         self.assertEqual(self.report["transferred_P0_passed"], 192)
         self.assertEqual(self.report["transferred_P1_passed"], 193)
-        self.assertFalse(self.report["ready_for_final_release"])
+        self.assertTrue(self.report["ready_for_final_release"])
         self.assertEqual(self.report["historical_M6_J_counted_as_current"], 0)
         self.assertEqual(len(self.report["release_fingerprint"]), 64)
         self.assertEqual(len(self.report["evidence_fingerprint"]), 64)
@@ -573,8 +573,8 @@ class CurrentSHAReleaseGate(unittest.TestCase):
         resolved = gate.validate_dispositions(self.base["case_dispositions"], deferred, sources)
         self.assertEqual(resolved, set(deferred))
         self.assertEqual(len(resolved), 180)
-        self.assertIsNone(self.base["m8_owner_acceptance"])
-        self.assertFalse(self.report["ready_for_final_release"])
+        self.assertIsNotNone(self.base["m8_owner_acceptance"])
+        self.assertTrue(self.report["ready_for_final_release"])
 
     def test_owner_acceptance_cannot_be_inferred_or_pre_signed(self):
         invalid = copy.deepcopy(self.base)
