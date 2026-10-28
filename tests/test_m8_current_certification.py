@@ -23,8 +23,9 @@ class CurrentSHAReleaseGate(unittest.TestCase):
         self.assertEqual(self.report["current_M7_transfer_receipts"], 38)
         self.assertEqual(self.report["historical_grandfathered_decks"], 24)
         self.assertEqual(self.report["original_deferred_P1"], 180)
-        self.assertEqual(self.report["current_sha_case_dispositions"], 4)
-        self.assertEqual(self.report["P1_pending_current_disposition"], 176)
+        self.assertEqual(self.report["current_sha_case_dispositions"], 7)
+        self.assertEqual(self.report["P1_pending_current_disposition"], 173)
+        self.assertEqual(self.report["current_sha_commander_first_attestations"], 1)
         self.assertEqual(self.report["transferred_P0_passed"], 192)
         self.assertEqual(self.report["transferred_P1_passed"], 193)
         self.assertFalse(self.report["ready_for_final_release"])
@@ -92,7 +93,7 @@ class CurrentSHAReleaseGate(unittest.TestCase):
     def test_fake_quality_review_cannot_be_counted(self):
         invalid = copy.deepcopy(self.base)
         invalid["deck_quality_attestations"] = [{
-            "deck_id": "Kefka__Court_Mage",
+            "deck_id": "RogSi",
             "approved_raw_sha256": "0" * 64,
             "outcome": "KEEP_EXACT_100",
         }]
