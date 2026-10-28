@@ -1,0 +1,32 @@
+name: M8 Mishra Eminent One original P1 Helm paid trace
+
+on:
+  pull_request:
+    paths:
+      - 'tests/test_m8_mishra_eminent_p1_helm_trace.py'
+      - 'architecture/M8_MISHRA_EMINENT_P1_HELM_TRACE.md'
+      - '.github/workflows/verify-m8-mishra-eminent-p1-helm.yml'
+      - 'refinement/verification/m8_current_release_evidence_v1.json'
+  push:
+    branches: [main]
+    paths:
+      - 'tests/test_m8_mishra_eminent_p1_helm_trace.py'
+      - 'refinement/verification/m8_current_release_evidence_v1.json'
+  workflow_dispatch:
+
+jobs:
+  source-paid-helm-loop:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run six original exact-current Mishra P1 paid and adversarial cases
+        run: python -m unittest discover -s tests -p test_m8_mishra_eminent_p1_helm_trace.py -v
+      - name: Verify fail-closed M8 current SHA candidate and register
+        run: python scripts/verify_m8_current_certification.py --check
+      - name: Verify immutable M7 original transfer scope
+        run: python scripts/verify_m7_certification_transfer.py --check
