@@ -1,0 +1,40 @@
+name: Publish verified M8 release ZIP to review branch
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/m8-publish-release-archive.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out exact main
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install -r requirements-scryfall.txt
+      - name: Check metadata, source and evidence fingerprints
+        run: python -m unittest tests.test_m8_release_export -v
+      - name: Build and verify exact ZIP
+        run: |
+          python scripts/build_m8_release_export.py --build
+          python scripts/build_m8_release_export.py --check
+          test "$(sha256sum exports/Grixis_Commander_Encyclopedia_62_M8_RELEASE_2026-10-28.zip | cut -d' ' -f1)" = "8ce9ec8e622df5ea7c29077c2b69a50cd9345d486703e1e16811ee6d1a802986"
+      - name: Create review branch with exact verified ZIP, never commit to main directly
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b m8/release-artifact-20261028
+          git add -f exports/Grixis_Commander_Encyclopedia_62_M8_RELEASE_2026-10-28.zip
+          git commit -m "Stage exact verified 62-deck M8 release ZIP, awaiting owner receipt"
+          git push origin HEAD:refs/heads/m8/release-artifact-20261028
