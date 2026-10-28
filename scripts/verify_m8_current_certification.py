@@ -150,6 +150,19 @@ def validate_deck_attestations(rows: list[dict], decks: list[dict]) -> set[str]:
         bound_file(row.get("review_path"), row.get("review_sha256"))
         require(HEX40.fullmatch(str(row.get("source_commit_sha", ""))) is not None,
                 f"Missing pinned tested review commit: {deck_id}")
+        # The 24 original/Oct24 grandfathered locks do not have the newer
+        # exact-SHA M7 P0/P1 transfer receipt. Never let a general whole-99
+        # strategy paragraph silently stand in for original-case mechanics.
+        transfer = RECEIPTS / f"{deck_id}_{current[deck_id]['sha256'][:16]}.json"
+        if not transfer.is_file():
+            require(row.get("grandfathered_case_scope_outcome") ==
+                    "ALL_RELEVANT_ORIGINAL_CASES_ACCOUNTED_FOR",
+                    f"Grandfathered M6 P0/P1 scope remains unverified: {deck_id}")
+            bound_file(row.get("grandfathered_case_scope_path"),
+                       row.get("grandfathered_case_scope_sha256"))
+            mechanics = repo_file(row["grandfathered_case_scope_path"]).read_text(encoding="utf-8")
+            require(current[deck_id]["sha256"] in mechanics and "P0" in mechanics and "P1" in mechanics,
+                    f"Grandfathered case report must explicitly bind current SHA and P0/P1: {deck_id}")
     return seen
 
 
@@ -172,7 +185,10 @@ def verify_final_archive(name: str, digest: str, decks: list[dict]) -> None:
         index_names = [n for n in archive.namelist() if n.endswith("/index.json")]
         require(len(index_names) == 1, "Final archive must contain one manifest index")
         index = json.loads(archive.read(index_names[0]))
-        require(index.get("status") == "M8_FINAL_OWNER_ACCEPTED", "Final archive still marked candidate")
+        # Artifact exists BEFORE the user accepts it, so it must not claim
+        # OWNER_ACCEPTED by itself. The separate owner receipt certifies it.
+        require(index.get("status") == "M8_RELEASE_CANDIDATE_AWAITING_OWNER_ACCEPTANCE",
+                "Final export manifest must await explicit owner acceptance")
         records = index.get("decks") or []
         require(len(records) == 62, "Final archive manifest is not 62 decks")
         by_id = {x["id"]: x for x in decks}
