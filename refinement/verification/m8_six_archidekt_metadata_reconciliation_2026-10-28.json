@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "status": "approved_metadata_recovered_from_canonical_approval_records",
+  "scope": "metadata_only_no_decklist_changes",
+  "decks": [
+    {
+      "commander": "Abaddon the Despoiler",
+      "power_bracket": 4,
+      "archidekt_tags": [
+        "Cascade",
+        "Exile Cast",
+        "40K Chaos"
+      ]
+    },
+    {
+      "commander": "Admiral Beckett Brass",
+      "power_bracket": 4,
+      "archidekt_tags": [
+        "Pirates",
+        "Permanent Theft",
+        "Evasive Combat"
+      ]
+    },
+    {
+      "commander": "Admiral Brass, Unsinkable",
+      "power_bracket": 4,
+      "archidekt_tags": [
+        "Pirates",
+        "Reanimator",
+        "Aggro"
+      ]
+    },
+    {
+      "commander": "Anhelo, the Painter",
+      "power_bracket": 4,
+      "archidekt_tags": [
+        "Spell Copy",
+        "Casualty Aristocrats",
+        "Spellslinger Combo"
+      ]
+    },
+    {
+      "commander": "Parnesse, the Subtle Brush",
+      "power_bracket": 4,
+      "archidekt_tags": [
+        "Spell Copy",
+        "Politics",
+        "Spellslinger"
+      ]
+    },
+    {
+      "commander": "The Rani",
+      "power_bracket": 4,
+      "archidekt_tags": [
+        "Goad",
+        "Clues",
+        "Forced Combat"
+      ]
+    }
+  ]
+}
