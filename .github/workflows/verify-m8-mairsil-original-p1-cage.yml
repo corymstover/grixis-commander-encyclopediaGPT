@@ -1,0 +1,32 @@
+name: M8 Mairsil original P1 cage and paid mana loops
+
+on:
+  pull_request:
+    paths:
+      - 'tests/test_m8_mairsil_p1_cage_loops.py'
+      - 'architecture/M8_MAIRSIL_ORIGINAL_P1_CAGE_LOOPS.md'
+      - '.github/workflows/verify-m8-mairsil-original-p1-cage.yml'
+      - 'refinement/verification/m8_current_release_evidence_v1.json'
+  push:
+    branches: [main]
+    paths:
+      - 'tests/test_m8_mairsil_p1_cage_loops.py'
+      - 'refinement/verification/m8_current_release_evidence_v1.json'
+  workflow_dispatch:
+
+jobs:
+  caged-ability-instance-and-mana-traces:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run 9 exact-current original Mairsil P1 favorable/adverse cases
+        run: python -m unittest discover -s tests -p test_m8_mairsil_p1_cage_loops.py -v
+      - name: Check versioned current M8 gate remains fail-closed
+        run: python scripts/verify_m8_current_certification.py --check
+      - name: Verify immutable M7 source and owner transfer
+        run: python scripts/verify_m7_certification_transfer.py --check
