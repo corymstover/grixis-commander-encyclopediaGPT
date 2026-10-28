@@ -25,8 +25,8 @@ class CurrentSHAReleaseGate(unittest.TestCase):
         self.assertEqual(self.report["current_M7_transfer_receipts"], 38)
         self.assertEqual(self.report["historical_grandfathered_decks"], 24)
         self.assertEqual(self.report["original_deferred_P1"], 180)
-        self.assertEqual(self.report["current_sha_case_dispositions"], 121)
-        self.assertEqual(self.report["P1_pending_current_disposition"], 59)
+        self.assertEqual(self.report["current_sha_case_dispositions"], 132)
+        self.assertEqual(self.report["P1_pending_current_disposition"], 48)
         self.assertEqual(self.report["current_sha_commander_first_attestations"], 62)
         self.assertEqual(self.report["quality_attestations_pending"], 0)
         self.assertEqual(self.report["transferred_P0_passed"], 192)
@@ -222,6 +222,36 @@ class CurrentSHAReleaseGate(unittest.TestCase):
         sources = gate.read_current()
         deferred, _, _, _ = gate.current_case_index(sources)
         self.assertEqual(gate.validate_dispositions(rows, deferred, sources),
+                         {(r["deck_id"], r["case_id"]) for r in rows})
+
+    def test_m8_norman_goben_exact_ci_eleven_cases_with_valid_owner_crosswalk(self):
+        blob = "bcbb3408649fa78c3a8a29805d523b6639d2624f"
+        head = "e22380e912d8ff756e6dc16c6ab1fc1e458645f1"
+        ci = "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40678947752"
+        rows = [r for r in self.base["case_dispositions"] if r.get("test_blob_sha") == blob]
+        self.assertEqual(len(rows), 11)
+        self.assertEqual({r["deck_id"] for r in rows}, {"Goben__Gene_Splice_Savant"})
+        self.assertEqual({r["case_id"] for r in rows},
+                         {"K4", "K5", "K6", "K7", "E1", "E2", "W1", "W2", "W3", "F2", "F3"})
+        self.assertEqual({r["approved_raw_sha256"] for r in rows},
+                         {"c002a49243bd54780bb0f4a36a3c239a00e042defa1d0c6c4b891c3c8060eef9"})
+        for row in rows:
+            self.assertEqual(row["disposition"], "CURRENT_SHA_TESTED")
+            self.assertEqual(row["engineering_commit_sha"], head)
+            self.assertEqual(row["ci_run_url"], ci)
+            self.assertIn("test_m8_norman_goblin_original_p1.py::NormanGreenGoblinOriginalP1.test_",
+                          row["test_ref"])
+            self.assertGreater(len(row["positive_assertion"]), 70)
+            self.assertGreater(len(row["adversarial_assertion"]), 70)
+            self.assertGreater(len(row["limitations"]), 70)
+        station = next(r for r in rows if r["case_id"] == "W3")
+        self.assertIn("Thirty steps", station["positive_assertion"])
+        self.assertIn("infinite mana claim", station["limitations"])
+        missing_city = next(r for r in rows if r["case_id"] == "E2")
+        self.assertIn("City of Traitors", missing_city["limitations"])
+        decks = gate.read_current()
+        deferred, _, _, _ = gate.current_case_index(decks)
+        self.assertEqual(gate.validate_dispositions(rows, deferred, decks),
                          {(r["deck_id"], r["case_id"]) for r in rows})
 
     def test_owner_acceptance_cannot_be_inferred_or_pre_signed(self):
