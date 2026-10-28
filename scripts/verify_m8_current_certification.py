@@ -22,6 +22,13 @@ HEX40 = re.compile(r"^[0-9a-f]{40}$")
 HEX64 = re.compile(r"^[0-9a-f]{64}$")
 CI = re.compile(r"^https://github\.com/corymstover/(GrokBotMTGCompanion|grixis-commander-encyclopediaGPT)/actions/runs/\d+(?:/job/\d+)?$")
 ALLOWED = {"CURRENT_SHA_TESTED", "SUPERSEDED_BY_APPROVED_REVISION", "OWNER_ACCEPTED_LIMITATION"}
+WHOLE_LIST_SOURCE_PREFIXES = (
+    "data/grixis/m7/decision_reviews/",
+    "data/grixis/m7/nekusar_rev1/",
+    "data/grixis/m7/rogsi_rev1/",
+    "data/grixis/m7/saruman_rev1/",
+    "data/grixis/m7/sauron_rev1/",
+)
 
 
 class CertificationError(ValueError):
@@ -152,8 +159,8 @@ def validate_deck_attestations(rows: list[dict], decks: list[dict]) -> set[str]:
                 f"Missing pinned tested review commit: {deck_id}")
         engineering_source = row.get("engineering_review_path")
         require(isinstance(engineering_source, str)
-                and engineering_source.startswith("data/grixis/m7/decision_reviews/")
-                and engineering_source.endswith(".json")
+                and any(engineering_source.startswith(prefix) for prefix in WHOLE_LIST_SOURCE_PREFIXES)
+                and engineering_source.endswith((".json", ".md"))
                 and ".." not in Path(engineering_source).parts,
                 f"Missing exact M7 whole-list decision source: {deck_id}")
         require(HEX40.fullmatch(str(row.get("engineering_review_blob_sha", ""))) is not None,
