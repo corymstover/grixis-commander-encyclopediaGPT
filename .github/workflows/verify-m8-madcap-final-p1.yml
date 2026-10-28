@@ -1,0 +1,32 @@
+name: M8 Madcap Jester original P1 exact paid wins and response traces
+
+on:
+  pull_request:
+    paths:
+      - 'tests/test_m8_madcap_original_p1_win_and_hate.py'
+      - 'architecture/M8_MADCAP_FINAL_FIVE_P1_TRACES.md'
+      - '.github/workflows/verify-m8-madcap-final-p1.yml'
+      - 'refinement/verification/m8_current_release_evidence_v1.json'
+  push:
+    branches: [main]
+    paths:
+      - 'tests/test_m8_madcap_original_p1_win_and_hate.py'
+      - 'refinement/verification/m8_current_release_evidence_v1.json'
+  workflow_dispatch:
+
+jobs:
+  original-madcap-paid-source-actions:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run five exact-source Madcap P1 positive and adversarial finite cases
+        run: python -m unittest discover -s tests -p test_m8_madcap_original_p1_win_and_hate.py -v
+      - name: Check owner-approved M8 gate fails closed while remaining cases exist
+        run: python scripts/verify_m8_current_certification.py --check
+      - name: Verify M7 exact-source transfer and project-only legality exceptions
+        run: python scripts/verify_m7_certification_transfer.py --check
