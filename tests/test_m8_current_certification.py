@@ -23,8 +23,8 @@ class CurrentSHAReleaseGate(unittest.TestCase):
         self.assertEqual(self.report["current_M7_transfer_receipts"], 38)
         self.assertEqual(self.report["historical_grandfathered_decks"], 24)
         self.assertEqual(self.report["original_deferred_P1"], 180)
-        self.assertEqual(self.report["current_sha_case_dispositions"], 7)
-        self.assertEqual(self.report["P1_pending_current_disposition"], 173)
+        self.assertEqual(self.report["current_sha_case_dispositions"], 12)
+        self.assertEqual(self.report["P1_pending_current_disposition"], 168)
         self.assertEqual(self.report["current_sha_commander_first_attestations"], 37)
         self.assertEqual(self.report["quality_attestations_pending"], 25)
         self.assertEqual(self.report["transferred_P0_passed"], 192)
@@ -90,6 +90,28 @@ class CurrentSHAReleaseGate(unittest.TestCase):
         invalid["case_dispositions"].append(copy.deepcopy(invalid["case_dispositions"][0]))
         with self.assertRaisesRegex(gate.CertificationError, "Duplicate case disposition"):
             gate.inspect(invalid, include_archive=False)
+
+    def test_parnesse_exact_current_positive_and_adversarial_case_evidence_is_pinned(self):
+        original = [row for row in self.base["case_dispositions"]
+                    if row["deck_id"] == "Parnesse__the_Subtle_Brush"
+                    and row["disposition"] == "CURRENT_SHA_TESTED"]
+        self.assertEqual({x["case_id"] for x in original}, {"K5", "K6", "K7", "E1", "F3"})
+        decks = gate.read_current()
+        deferred, _, _, _ = gate.current_case_index(decks)
+        self.assertEqual(gate.validate_dispositions(original, deferred, decks),
+                         {(x["deck_id"], x["case_id"]) for x in original})
+        for field, wrong, message in (
+            ("approved_raw_sha256", "0" * 64, "Case SHA drift"),
+            ("disposition", "FAKE_PASS", "Unknown disposition"),
+            ("test_blob_sha", "not-a-blob", "Missing exact test blob"),
+            ("ci_run_url", "https://example.com/unverifiable", "Missing exact-head test run"),
+            ("adversarial_assertion", "", "Incomplete positive/adversarial"),
+        ):
+            with self.subTest(field=field):
+                invalid = copy.deepcopy(original[0])
+                invalid[field] = wrong
+                with self.assertRaisesRegex(gate.CertificationError, message):
+                    gate.validate_dispositions([invalid], deferred, decks)
 
     def test_fake_quality_review_cannot_be_counted(self):
         invalid = copy.deepcopy(self.base)
