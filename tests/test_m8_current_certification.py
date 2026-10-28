@@ -25,8 +25,8 @@ class CurrentSHAReleaseGate(unittest.TestCase):
         self.assertEqual(self.report["current_M7_transfer_receipts"], 38)
         self.assertEqual(self.report["historical_grandfathered_decks"], 24)
         self.assertEqual(self.report["original_deferred_P1"], 180)
-        self.assertEqual(self.report["current_sha_case_dispositions"], 146)
-        self.assertEqual(self.report["P1_pending_current_disposition"], 34)
+        self.assertEqual(self.report["current_sha_case_dispositions"], 149)
+        self.assertEqual(self.report["P1_pending_current_disposition"], 31)
         self.assertEqual(self.report["current_sha_commander_first_attestations"], 62)
         self.assertEqual(self.report["quality_attestations_pending"], 0)
         self.assertEqual(self.report["transferred_P0_passed"], 192)
@@ -383,6 +383,36 @@ class CurrentSHAReleaseGate(unittest.TestCase):
         deferred, _, _, _ = gate.current_case_index(sources)
         self.assertEqual(gate.validate_dispositions(rows, deferred, sources),
                          {("Kefka__Court_Mage", "W2")})
+
+    def test_m8_ravager_three_original_w_cases_two_teferis_paid_ultimate_and_conditional_superfriends(self):
+        blob = "b34d7737840f002e96effaf3ec9330c6d86c3af1"
+        head = "32070f653ef64fb32cbdaa934459224ecf8aa90f"
+        ci = "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40757579430"
+        rows = [r for r in self.base["case_dispositions"] if r.get("test_blob_sha") == blob]
+        self.assertEqual(len(rows), 3)
+        self.assertEqual({r["deck_id"] for r in rows}, {"Nicol_Bolas__the_Ravager"})
+        self.assertEqual({r["case_id"] for r in rows}, {"W1", "W2", "W3"})
+        for row in rows:
+            self.assertEqual(row["approved_raw_sha256"],
+                             "acfa7922e262805a15932b53b1399acdf6ddf5592c8a3793fafdeec720ad4693")
+            self.assertEqual(row["disposition"], "CURRENT_SHA_TESTED")
+            self.assertEqual(row["engineering_commit_sha"], head)
+            self.assertEqual(row["ci_run_url"], ci)
+            self.assertIn("test_m8_ravager_original_w1_w2_w3.py::RavagerOriginalW1W2W3.test_",
+                          row["test_ref"])
+            self.assertGreater(len(row["positive_assertion"]), 75)
+            self.assertGreater(len(row["adversarial_assertion"]), 75)
+            self.assertGreater(len(row["limitations"]), 75)
+        self.assertIn("eight", next(r for r in rows if r["case_id"] == "W1")
+                      ["positive_assertion"].lower())
+        self.assertIn("without immediately", next(r for r in rows if r["case_id"] == "W2")
+                      ["positive_assertion"])
+        self.assertIn("legendary", next(r for r in rows if r["case_id"] == "W3")
+                      ["adversarial_assertion"])
+        sources = gate.read_current()
+        deferred, _, _, _ = gate.current_case_index(sources)
+        self.assertEqual(gate.validate_dispositions(rows, deferred, sources),
+                         {("Nicol_Bolas__the_Ravager", case) for case in ("W1", "W2", "W3")})
 
     def test_owner_acceptance_cannot_be_inferred_or_pre_signed(self):
         invalid = copy.deepcopy(self.base)
