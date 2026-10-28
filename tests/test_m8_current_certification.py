@@ -25,8 +25,8 @@ class CurrentSHAReleaseGate(unittest.TestCase):
         self.assertEqual(self.report["current_M7_transfer_receipts"], 38)
         self.assertEqual(self.report["historical_grandfathered_decks"], 24)
         self.assertEqual(self.report["original_deferred_P1"], 180)
-        self.assertEqual(self.report["current_sha_case_dispositions"], 168)
-        self.assertEqual(self.report["P1_pending_current_disposition"], 12)
+        self.assertEqual(self.report["current_sha_case_dispositions"], 173)
+        self.assertEqual(self.report["P1_pending_current_disposition"], 7)
         self.assertEqual(self.report["current_sha_commander_first_attestations"], 62)
         self.assertEqual(self.report["quality_attestations_pending"], 0)
         self.assertEqual(self.report["transferred_P0_passed"], 192)
@@ -163,11 +163,11 @@ class CurrentSHAReleaseGate(unittest.TestCase):
             self.assertGreater(len(row["positive_assertion"]), 60)
             self.assertGreater(len(row["adversarial_assertion"]), 60)
             self.assertGreater(len(row["limitations"]), 60)
-        # Finite-repeatable victories are permitted as specifically evidenced;
-        # do not infer W3 or a literally infinite Yawgmoth/Gary line.
+        # This prior blob did not certify W3 or a literally infinite Gary line;
+        # the newer dedicated W3 blob is verified separately below.
         self.assertIn("finite library", next(r for r in rows if r["case_id"] == "W2")["limitations"])
         self.assertFalse(any(r["deck_id"] == "Marchesa__the_Black_Rose" and r["case_id"] == "W3"
-                             for r in self.base["case_dispositions"]))
+                             for r in rows))
         sources = gate.read_current()
         deferred, _, _, _ = gate.current_case_index(sources)
         self.assertEqual(gate.validate_dispositions(rows, deferred, sources),
@@ -193,7 +193,7 @@ class CurrentSHAReleaseGate(unittest.TestCase):
         self.assertIn("Helm/Urza/Elixir", combo["positive_assertion"])
         self.assertIn("Elixir", combo["adversarial_assertion"])
         self.assertFalse(any(r["deck_id"] == "Mishra__Eminent_One" and r["case_id"] in {"W3", "F3"}
-                             for r in self.base["case_dispositions"]))
+                             for r in rows))
         decks = gate.read_current()
         deferred, _, _, _ = gate.current_case_index(decks)
         self.assertEqual(gate.validate_dispositions(rows, deferred, decks),
@@ -218,7 +218,7 @@ class CurrentSHAReleaseGate(unittest.TestCase):
             self.assertGreater(len(row["limitations"]), 60)
         self.assertIn("net one U", next(r for r in rows if r["case_id"] == "W2")["positive_assertion"])
         self.assertFalse(any(r["deck_id"] == "Mairsil__the_Pretender" and r["case_id"] in {"W3", "F3"}
-                             for r in self.base["case_dispositions"]))
+                             for r in rows))
         sources = gate.read_current()
         deferred, _, _, _ = gate.current_case_index(sources)
         self.assertEqual(gate.validate_dispositions(rows, deferred, sources),
@@ -500,6 +500,46 @@ class CurrentSHAReleaseGate(unittest.TestCase):
         deferred, _, _, _ = gate.current_case_index(sources)
         self.assertEqual(gate.validate_dispositions(rows, deferred, sources),
                          {(r["deck_id"], r["case_id"]) for r in rows})
+
+    def test_m8_mairsil_marchesa_mishra_four_exact_ci_and_one_mirror_mad_retirement(self):
+        head = "122e9a1658a7f054aad33a32d010e25e9f3a2a07"
+        blob = "551e9d2f101c757250f6a6ebe8e551f390543eb4"
+        ci = "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40761315546"
+        expected = {
+            "Mairsil__the_Pretender": ("W3",
+                                     "fd5e44773c829311254193d5c6d4433676e787743249451cc37a7345b0cf83ad"),
+            "Marchesa__the_Black_Rose": ("W3",
+                                         "c4857d176eaa6ed682da7cab974014d393fce2efe698bdca6994d77bb27ddf02"),
+            "Mishra__Eminent_One": ("W3", "0fa7b00d9d74b208f3fd5783b30aa190c4e5b17e72ea64851f895315f05083a0"),
+        }
+        rows = [r for r in self.base["case_dispositions"] if r.get("test_blob_sha") == blob]
+        self.assertEqual(len(rows), 4)
+        self.assertEqual({(r["deck_id"], r["case_id"]) for r in rows},
+                         {("Mairsil__the_Pretender", "W3"),
+                          ("Marchesa__the_Black_Rose", "W3"),
+                          ("Mishra__Eminent_One", "W3"),
+                          ("Mishra__Eminent_One", "F3")})
+        for row in rows:
+            self.assertEqual(row["disposition"], "CURRENT_SHA_TESTED")
+            self.assertEqual(row["engineering_commit_sha"], head)
+            self.assertEqual(row["ci_run_url"], ci)
+            self.assertIn("test_m8_mairsil_marchesa_mishra_last_win_cases.py::ThreeLastWinPackages.test_",
+                          row["test_ref"])
+            self.assertGreater(len(row["positive_assertion"]), 75)
+            self.assertGreater(len(row["adversarial_assertion"]), 75)
+            self.assertGreater(len(row["limitations"]), 75)
+            self.assertEqual(row["approved_raw_sha256"], expected[row["deck_id"]][1])
+        retired = [r for r in self.base["case_dispositions"]
+                   if r["deck_id"] == "Mairsil__the_Pretender" and r["case_id"] == "F3"]
+        self.assertEqual(len(retired), 1)
+        self.assertEqual(retired[0]["disposition"], "SUPERSEDED_BY_APPROVED_REVISION")
+        self.assertEqual(retired[0]["removed_source_cards"], ["Mirror-Mad Phantasm"])
+        self.assertIn("m7_certification_transfer", retired[0]["evidence_path"])
+        self.assertTrue(retired[0]["surviving_line_disposition"])
+        sources = gate.read_current()
+        deferred, _, _, _ = gate.current_case_index(sources)
+        self.assertEqual(gate.validate_dispositions(rows + retired, deferred, sources),
+                         {(r["deck_id"], r["case_id"]) for r in rows + retired})
 
     def test_owner_acceptance_cannot_be_inferred_or_pre_signed(self):
         invalid = copy.deepcopy(self.base)

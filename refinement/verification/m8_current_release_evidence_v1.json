@@ -2345,6 +2345,73 @@
       "positive_assertion": "Two source-earned real investigations with Erdwal and Academy Manufactor create six distinct Clue/Food/Treasure artifacts. Tapping Bjorna and sacrificing one artifact deals exactly one damage and goads a target creature, not a player. A still-untapped Time Sieve then sacrifices all five different remaining artifact objects and taps to yield one actual extra turn, with zero artifacts remaining in this bounded trace.",
       "adversarial_assertion": "Without Manufactor only two Clues exist, or with only one investigation the three generated tokens cannot both pay Bjorna's one artifact and Time Sieve's five. A tapped or removed Time Sieve cannot take the extra turn, and no legal Bjorna creature target prevents its goad action. One extra turn does not become infinite without fresh investigative combat events and five new artifacts in each later turn.",
       "limitations": "Finite one-turn Bjorna/Time Sieve token-cost accounting on a declared live board, not a guarantee of getting the two goaded combat investigations, untapping abilities in the same turn, damage to players via Bjorna or opponent-independent repeat turns. No measured win rate, approved-source changes or M8 final signoff."
+    },
+    {
+      "deck_id": "Mairsil__the_Pretender",
+      "case_id": "W3",
+      "approved_raw_sha256": "fd5e44773c829311254193d5c6d4433676e787743249451cc37a7345b0cf83ad",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "Original Mairsil deferred W3 now has source/plan-bound green GitHub CI finite caged Tree of Perdition and Hateflayer {Q} finish plus a separately paid Disk/Aetherling priority-blink example, enforcing one use per caged ability each turn.",
+      "engineering_commit_sha": "122e9a1658a7f054aad33a32d010e25e9f3a2a07",
+      "test_blob_sha": "551e9d2f101c757250f6a6ebe8e551f390543eb4",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40761315546",
+      "test_ref": "tests/test_m8_mairsil_marchesa_mishra_last_win_cases.py::ThreeLastWinPackages.test_mairsil_W3_tree_hateflayer_once_each_and_paid_disk_blink",
+      "positive_assertion": "Actual caged Tree ability taps a controlled-since-turn-start 4/4 Mairsil, exchanges an opposing forty life with Mairsil's four toughness, then a separately caged Hateflayer ability pays 2R and untaps Mairsil with Q to deal its unchanged four power and eliminate that four-life opponent. Independently Disk's paid one-generic tap goes on stack; a paid U caged Aetherling blink can exile Mairsil, resolve the destructive Disk ability, and return the physical commander at next end step when owner leaves it exiled.",
+      "adversarial_assertion": "Missing caged Hateflayer, real 2R, legal player target or unprevented damage leaves the opponent alive after Tree; using a tap/untap symbol on a creature not controlled since turn start without Anger haste is unavailable. Without U, Aetherling's caged ability, or the owner's choice to leave Mairsil in exile rather than move to command zone, the proposed Disk wipe does not protect or return Mairsil.",
+      "limitations": "Finite one-opponent paid/sourced two-ability combo and separate Disk-stack protection sequence, not a simultaneous Tree/Disk activation with one tap, infinite loyalty or untap claim, arbitrary opponent priority tree, probability of caging both pieces, graveyard availability or guaranteed game win at a multiplayer table. All exact M7 owner locks remain fixed."
+    },
+    {
+      "deck_id": "Mairsil__the_Pretender",
+      "case_id": "F3",
+      "approved_raw_sha256": "fd5e44773c829311254193d5c6d4433676e787743249451cc37a7345b0cf83ad",
+      "disposition": "SUPERSEDED_BY_APPROVED_REVISION",
+      "reason": "Original M6 deferred Mairsil F3 specifically described unsafe Mirror-Mad Phantasm self-mill, but the exact owner-approved current Rev1 physically omitted Mirror-Mad. Its old line is retired without relabeling Entomb or Buried Alive as that same whole-library effect; the absence is also guarded in successful new CI.",
+      "evidence_path": "refinement/verification/m7_certification_transfer/Mairsil__the_Pretender_fd5e44773c829311.json",
+      "evidence_sha256": "f1549d693b7f86b94ed6815e2283ce1b0177ee7ba5112d0014a06ba6508af52b",
+      "removed_source_cards": ["Mirror-Mad Phantasm"],
+      "surviving_line_disposition": "No Mirror-Mad Phantasm self-mill roulette remains in this frozen 100. Entomb and Buried Alive are separately present targeted graveyard setup effects; existing Mairsil W1/W2 cage loops and new W3 finish are accounted elsewhere. This retirement does not certify any substitute whole-library self-mill line or revise the approved list."
+    },
+    {
+      "deck_id": "Marchesa__the_Black_Rose",
+      "case_id": "W3",
+      "approved_raw_sha256": "c4857d176eaa6ed682da7cab974014d393fce2efe698bdca6994d77bb27ddf02",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "Original Marchesa Black Rose W3 gains current Rev1 and original-plan-bound successful GitHub CI on a single Spark Double persist Redcap copied card, real sacrifice and +1/-1 counter annihilation, with the old River Kelpie removed-source branch disclaimed.",
+      "engineering_commit_sha": "122e9a1658a7f054aad33a32d010e25e9f3a2a07",
+      "test_blob_sha": "551e9d2f101c757250f6a6ebe8e551f390543eb4",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40761315546",
+      "test_ref": "tests/test_m8_mairsil_marchesa_mishra_last_win_cases.py::ThreeLastWinPackages.test_marchesa_W3_one_spark_copy_redcap_persist_counter_annihilation",
+      "positive_assertion": "One source-bound Spark Double enters as a Murderous Redcap copy with an additional +1/+1 counter. When sacrificed to a real Ashnod's Altar, its copied persist returns that same card with -1/-1, and Spark Double's additional entering +1/+1 cancels it; Redcap's return ETB deals two power damage. Ten finite independent sacrifice/reentry events cause twenty damage to a declared target opponent, with twenty colorless mana from ten real Altar sacrifices rather than extra invented Spark Double cards.",
+      "adversarial_assertion": "Without a living Redcap to copy upon return, Spark Double, Altar, legal damage targets or graveyard access, the described kill stops. An unremoved -1/-1 counter prevents repeated persist, and a graveyard-exile replacement allows at most the original death trigger. Marchesa's delayed end-step card return does not independently duplicate the same Spark Double already returned through persist; River Kelpie is absent from the frozen source.",
+      "limitations": "Finite one-Redcap 2-damage-per-return source-bound loop with real counters, one Altar and a declared target, not proof of assembly probability, an opponent permitting repeated priority passes, arbitrary extra persist creatures, unlimited target life, or a second cloned physical card from Marchesa's end-step ability. No deck mutation or owner final signoff."
+    },
+    {
+      "deck_id": "Mishra__Eminent_One",
+      "case_id": "W3",
+      "approved_raw_sha256": "0fa7b00d9d74b208f3fd5783b30aa190c4e5b17e72ea64851f895315f05083a0",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "Mishra Eminent One's original Reservoir/KCI copy W3 now has exact-approved and original M6 plan-bound CI showing one beginning-of-combat trigger, two independent separately paid/tapped ability copies and a finite Reservoir Warform payoff rather than a fabricated self-funding infinite recursion.",
+      "engineering_commit_sha": "122e9a1658a7f054aad33a32d010e25e9f3a2a07",
+      "test_blob_sha": "551e9d2f101c757250f6a6ebe8e551f390543eb4",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40761315546",
+      "test_ref": "tests/test_m8_mairsil_marchesa_mishra_last_win_cases.py::ThreeLastWinPackages.test_mishra_W3_reservoir_warform_paid_not_infinite_kci_resonator",
+      "positive_assertion": "The original actual Mishra combat trigger can create one hasty four-power artifact creature Warform from a present noncreature artifact. Paying two and tapping each distinct ready Strionic Resonator and Lithoform Engine to copy that one triggered ability can create exactly two additional Warforms, for three physical tokens, each sacrificed at next end step if it survives. Copying Aetherflux Reservoir carries its actual fifty-life activation, so a staged player at 51 can pay fifty to cause fifty unprevented target damage with one Warform.",
+      "adversarial_assertion": "Without a legal noncreature artifact target or Mishra at combat no Warform is created. Missing or tapped Resonator/Engine, or their actual two generic payments, reduces copies to one base or two tokens rather than endless tokens; KCI sacrificing a token for CC does not untap either copier or trigger Mishra again. A player at fifty life cannot sustain a 50-life Reservoir activation, and prevented damage is not a win.",
+      "limitations": "Finite beginning-of-combat source-target and separately tapped paid ability-copy count, not an unbounded engine, full mana/priority game simulator, guarantee of starting at 51 life, multiple combat steps, KCI infinite loop, or actual multiplayer victory. Approved exact source and M8 owner acceptance remain fixed."
+    },
+    {
+      "deck_id": "Mishra__Eminent_One",
+      "case_id": "F3",
+      "approved_raw_sha256": "0fa7b00d9d74b208f3fd5783b30aa190c4e5b17e72ea64851f895315f05083a0",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "Original five-mana, beginning-of-combat Mishra speed vulnerability F3 now has a finite conditional precommander opposing win and real blue-pitch Force defense test, tied to the exact approved deck and original blueprint instead of asserted matchup frequency.",
+      "engineering_commit_sha": "122e9a1658a7f054aad33a32d010e25e9f3a2a07",
+      "test_blob_sha": "551e9d2f101c757250f6a6ebe8e551f390543eb4",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40761315546",
+      "test_ref": "tests/test_m8_mairsil_marchesa_mishra_last_win_cases.py::ThreeLastWinPackages.test_mishra_F3_five_mana_combat_timing_and_precommander_response",
+      "positive_assertion": "In an explicit opposing turn-three fast-combo scenario, a naturally turn-five five-mana Mishra has not yet entered combat and therefore cannot have generated any Warform. One genuine source-bound Force of Will with a blue pitch card and sufficient life can instead answer a counterable offending spell before Mishra appears; the deck also has Mana Drain and commander-conditional Fierce Guardianship as real distinct defenses, not automatic draws.",
+      "adversarial_assertion": "No blue pitch card or counter in hand, player at one life or an uncounterable opposing spell leaves the model's early opposing combo unresolved by that Force line. Acceleration can permit an earlier Mishra and other interaction may help; the test does not force exactly a turn-five cast or declare all opposing fast decks always win.",
+      "limitations": "Finite illustrative threat/timing stress, not probabilistic cEDH performance, a complete source-paid five-mana hand, all opponent plays, exact Force chance or an automatic deck downgrade. The original five-mana combat-trigger weakness remains an acknowledged ceiling/floor tradeoff under the approved 100 and no owner acceptance is implied."
     }
   ],
   "deck_quality_attestations": [
