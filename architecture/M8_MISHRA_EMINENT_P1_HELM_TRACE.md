@@ -1,0 +1,28 @@
+# M8 Mishra, Eminent One — Helm/Urza/Elixir original P1 proof boundary
+
+Date: October 28, 2026. Exact approved source `Mishra__Eminent_One`, SHA-256 `0fa7b00d9d74b208f3fd5783b30aa190c4e5b17e72ea64851f895315f05083a0`; no cards, approvals, or exceptions change.
+
+This is a **focused card-object and resource trace**, not merely a list-presence check. `tests/test_m8_mishra_eminent_p1_helm_trace.py` covers six original deferred P1 cases: **K4, K6, E1, E2, W2, F2**. Original **W3 and F3 remain deferred**. Before any evidence register increment, pin the committed exact-test blob, successful exact-head GitHub CI, and per-case trace assertions in a separate PR.
+
+## The commander-specific W2/K6 loop, with actual costs
+
+With live **Mishra, Eminent One + Worldwalker Helm + Urza, Lord High Artificer + Thousand-Year Elixir** and a Mishra beginning-of-combat trigger targeting noncreature Worldwalker Helm:
+
+1. Mishra creates a 4/4 token named *Mishra's Warform* that copies Helm's activated and replacement abilities. It has haste until end of turn from Mishra, but that haste grant is **not copiable**. The original Helm's replacement effect creates **one Map** with it.
+2. Urza's own mana ability can tap the Map and original Helm for **{U}{U}**. This pays the new hasty Helm Warform's `{1}{U}` activated ability (one U for the generic component) and its tap cost. It targets that token Warform, making a copy.
+3. **Both existing Helm replacement effects** (original + Warform) each add a Map to the single artifact-token creation event. The resulting copy is another 4/4 Helm Warform, but **does not inherit temporary haste**. Thousand-Year Elixir permits activating its tap ability as though it had haste. Its static Helm replacement effect is now live for future token events.
+4. Two new Maps pay the next `{1}{U}` through Urza. The next copy event adds three Maps; later events add four, five, and so on, because the number of existing Helm-effect sources increases by one each iteration. Tapped older Warforms still contribute static replacement effects. The controller can reserve two new untapped Maps for the next cost and tap excess Maps via Urza to obtain arbitrarily much {U}.
+5. Eight paid repetitions yield **nine total Warform Helm tokens**, **ten active Helm replacement sources** (including original), and **30 untapped Map tokens remaining** after each repeated ability's cost. At least 28 of these Maps are surplus to the next activation and can be tapped for {U}. The invariant is extensible, not only a one-shot positive predicate.
+
+The adversarial branch removes Thousand-Year Elixir (the copied Warform cannot activate its own `{T}` ability that turn), Urza (no automatic U from Maps), original Worldwalker Helm (no starting copy) or access to the initial second U. This *does* support one unbounded artifact-token and blue-mana line under the stated undisturbed state. It **does not** prove all alternate Mishra combo lines, replacement-effect stacks with external cards, or inability of opponents to interrupt the sequence.
+
+Oracle provenance: Wizards' official *The Brothers' War Release Notes* discuss that a token copying a previously copied token keeps the original token creation effect's copiable exceptions, whereas later temporary grants aren't copied: https://magic.wizards.com/en/news/feature/the-brothers-war-release-notes. The October 26 exact-deck Scryfall snapshot in the engineering repository supplies the current Helm `{1}{U},{T}`, Map replacement, Urza artifact-tap ability and Elixir wording. Do not treat the text of this document as a substitute for fresh Oracle validation if a card changes.
+
+## Other verified bounded cases
+
+- **K4:** Copying Mishra's Mindslaver-trigger with Strionic Resonator costs `{2}`; each Warform Mindslaver activation costs `{4}`, `{T}` and sacrifices that Warform. Since legendary Mindslaver's supertype remains copiable, **two Warforms named Mishra's Warform cannot coexist** without the legend rule. To use both copies, activate and sacrifice the first between the two trigger resolutions; doing so requires `{10}` total and leaves no indefinite Mindslaver loop merely from card presence. A single hasty copy needs `{4}`. This is a source-paid timing witness, not proof of recurring control every turn.
+- **E1:** Mishra copies Ichor Wellspring: one card drawn on artifact-token entry, one when the token is later sacrificed into a graveyard. Exiling/bouncing it instead does not trigger the graveyard event. The copy's death trigger still sees the token before it disappears.
+- **E2:** A Warform is a real artifact that can be sacrificed once to Krark-Clan Ironworks for `{C}{C}`. Master Transmuter can use a token as the returned artifact as part of its cost, but needs `{U}`, an untapped Transmuter and an actual artifact **card** in hand to put onto the battlefield. No imaginary token card in hand is manufactured.
+- **F2:** The combat-triggered copy needs an actual noncreature artifact target that remains legal through resolution. Removing the original before that resolution defeats that instance of the trigger; removing the original after token creation does not retroactively erase the newly created token.
+
+The named finite tester assumes real live starting permanents, unopposed legal targets, sufficient mana for any prior *casting* costs (the recurring activated costs are explicit), no external replacement/trigger disruption and that the phase has reached Mishra's own combat. The two remaining P1 cases **W3** (other Reservoir/KCI claims) and **F3** (statistical five-mana commander speed) need different evidence and are **not certified** here. No final M8 owner acceptance is inferred.
