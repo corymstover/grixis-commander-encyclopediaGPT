@@ -8,6 +8,9 @@ on:
       - "exports/Grixis_Commander_Encyclopedia_62_M8_CANDIDATE_2026-10-28.zip"
       - "scripts/build_m8_candidate_export.py"
       - "tests/test_build_m8_candidate_export.py"
+      - "scripts/verify_current_62_oracle_coverage.py"
+      - "tests/test_verify_current_62_oracle_coverage.py"
+      - "refinement/metadata_audit/Current_Cycle_Oracle_Cache_Supplement_2026-10-28.jsonl"
       - ".github/workflows/verify-m8-candidate-export.yml"
   push:
     branches: [main]
@@ -16,6 +19,9 @@ on:
       - "exports/Grixis_Commander_Encyclopedia_62_M8_CANDIDATE_2026-10-28.zip"
       - "scripts/build_m8_candidate_export.py"
       - "tests/test_build_m8_candidate_export.py"
+      - "scripts/verify_current_62_oracle_coverage.py"
+      - "tests/test_verify_current_62_oracle_coverage.py"
+      - "refinement/metadata_audit/Current_Cycle_Oracle_Cache_Supplement_2026-10-28.jsonl"
       - ".github/workflows/verify-m8-candidate-export.yml"
 
 permissions:
@@ -40,4 +46,6 @@ jobs:
         run: |
           python scripts/check_tracker_integrity.py
           python scripts/verify_m7_certification_transfer.py --check
+          python scripts/verify_current_62_oracle_coverage.py
           python -m unittest discover -s tests -p 'test_build_m8_candidate_export.py' -v
+          python -m unittest discover -s tests -p 'test_verify_current_62_oracle_coverage.py' -v
