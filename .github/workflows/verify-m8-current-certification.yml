@@ -12,6 +12,7 @@ on:
       - 'tests/test_m8_ashad_lone_cyberman_current.py'
       - 'tests/test_m8_batch6_to_10_current_quality.py'
       - 'tests/test_m8_batch11_to_15_current_quality.py'
+      - 'tests/test_m8_batch16_to_20_current_quality.py'
       - 'refinement/verification/m8_quality_scope/Admiral_Brass__Unsinkable_dfa192cce0d92562.md'
       - 'refinement/verification/m8_quality_scope/Anhelo__the_Painter_865b3a16567f1cb8.md'
       - 'refinement/verification/m8_quality_scope/Ashad__the_Lone_Cyberman_352911498345e78b.md'
@@ -25,6 +26,11 @@ on:
       - 'refinement/verification/m8_quality_scope/Doctor_Doom__King_of_Latveria_7f74aa25cbbc47d4.md'
       - 'refinement/verification/m8_quality_scope/Don_Andres__the_Renegade_59c62e50874816a4.md'
       - 'refinement/verification/m8_quality_scope/Dr__Eggman_3ef9dc5bcda84834.md'
+      - 'refinement/verification/m8_quality_scope/Edea__Possessed_Sorceress_a039a79c6205c3dc.md'
+      - 'refinement/verification/m8_quality_scope/Edward_Kenway_8c01f2be6190be3e.md'
+      - 'refinement/verification/m8_quality_scope/Evelyn__the_Covetous_c3f6862c6f449877.md'
+      - 'refinement/verification/m8_quality_scope/Fire_Lord_Azula_77ac26a4f4ff70d0.md'
+      - 'refinement/verification/m8_quality_scope/Garza_Zol__Plague_Queen_353381caa82e6804.md'
       - '.github/workflows/verify-m8-current-certification.yml'
   push:
     branches: [main]
@@ -57,6 +63,8 @@ jobs:
         run: python -m unittest discover -s tests -p test_m8_batch6_to_10_current_quality.py -v
       - name: Verify five exact-current decks 11-15 with 67 original adversarial case scopes
         run: python -m unittest discover -s tests -p test_m8_batch11_to_15_current_quality.py -v
+      - name: Verify five exact-current decks 16-20 with 70 original adversarial case scopes
+        run: python -m unittest discover -s tests -p test_m8_batch16_to_20_current_quality.py -v
       - name: Recheck original exact M7 certification transfers
         run: python scripts/verify_m7_certification_transfer.py --check
       - name: Confirm that the prior archive remains an explicitly unaccepted candidate
