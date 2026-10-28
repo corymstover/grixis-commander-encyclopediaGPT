@@ -1,6 +1,6 @@
 # Fresh Oracle/legality gate — #7 Be'lakor, the Dark Master
 
-- Generated UTC: `2026-10-28T04:58:18.949240+00:00`
+- Generated UTC: `2026-10-28T05:19:15.115552+00:00`
 - Approved source: `refinement/decklists/Be_lakor_the_Dark_Master_Approved_2026-10-13.txt`
 - Approved source SHA-256 (raw bytes): `3abc951606a6db2b17ea2aceb471fc2ef4c55e2ef082d49d9140a83b2491155e`
 - Approval evidence: refinement/approvals/Be_lakor_the_Dark_Master_Approved_2026-10-13.md
