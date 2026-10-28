@@ -8,7 +8,7 @@ import unittest
 from pathlib import Path
 from scripts.verify_m7_certification_transfer import (
     ATTESTATIONS, FROZEN, PLANS, REGISTRY, ROOT,
-    EvidenceError, validate_attestation, validate_case_records, validate_live_state,
+    EvidenceError, certified_plan_key, validate_attestation, validate_case_records, validate_live_state,
 )
 
 
@@ -161,6 +161,21 @@ class TransferEvidenceTests(unittest.TestCase):
 
 
 class CompleteRegistryGateTests(unittest.TestCase):
+    def test_owner_explicit_goben_green_goblin_alias_is_exact_and_one_to_one(self):
+        decks = json.loads((ROOT / REGISTRY).read_text(encoding="utf-8"))["decks"]
+        self.assertEqual(
+            certified_plan_key(ROOT, "Goben__Gene_Splice_Savant", decks["Goben__Gene_Splice_Savant"]),
+            "Norman_Osborn_Green_Goblin",
+        )
+        self.assertEqual(certified_plan_key(ROOT, "Nicol_Bolas", decks["Nicol_Bolas"]), "Nicol_Bolas")
+
+    def test_goben_identity_alias_rejects_modified_approved_sha(self):
+        deck = json.loads((ROOT / REGISTRY).read_text(encoding="utf-8"))["decks"]["Goben__Gene_Splice_Savant"]
+        changed = copy.deepcopy(deck)
+        changed["approved_list_sha256"] = "f" * 64
+        with self.assertRaisesRegex(EvidenceError, "applies only"):
+            certified_plan_key(ROOT, "Goben__Gene_Splice_Savant", changed)
+
     def test_current_62_lock_registry_requires_evidence_for_any_new_sha(self):
         result = validate_live_state(ROOT)
         self.assertEqual(61, result["source_plans"])
@@ -180,6 +195,14 @@ class CompleteRegistryGateTests(unittest.TestCase):
             target = root / REGISTRY
             target.parent.mkdir(parents=True, exist_ok=True)
             target.write_text(json.dumps(reg), encoding="utf-8")
+            # The user-resolved Norman/Goben identity guard checks real
+            # existing source bytes and receipt even in this temp-root test.
+            goben = reg["decks"]["Goben__Gene_Splice_Savant"]
+            for field in ("approved_list_artifact", "approval_record_artifact"):
+                rel = Path(goben[field])
+                path = root / rel
+                path.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(ROOT / rel, path)
             with self.assertRaisesRegex(EvidenceError, "Missing evidence file"):
                 validate_live_state(root)
 

@@ -23,6 +23,12 @@ ATTESTATIONS = Path("refinement/verification/m7_certification_transfer")
 # revision must change both these pins and document why.
 SNAPSHOT_SHA256 = "821468502031359c24ab92acb235ccce22c31299a0fff16a43b3bced6da491b5"
 PLAN_MANIFEST_SHA256 = "195e2dd6f15aed70cc4384e68d33e200623e34e8f088da939752ea28216dcac8"
+# Owner-resolved *exact* registry-label alias; no generalized remapping and no
+# edit of either SHA-pinned historical manifest. Cory explicitly confirmed:
+# "Goben IS Green Goblin, theyre the same CARD." (2026-10-27).
+OWNER_RESOLVED_CASE_PLAN_ALIAS = {
+    "Goben__Gene_Splice_Savant": "Norman_Osborn_Green_Goblin",
+}
 HEX64 = re.compile(r"^[0-9a-f]{64}$")
 HEX40 = re.compile(r"^[0-9a-f]{40}$")
 CI_URL = re.compile(r"^https://github\.com/corymstover/(?:GrokBotMTGCompanion|grixis-commander-encyclopediaGPT)/actions/runs/[0-9]+(?:/job/[0-9]+)?$")
@@ -57,6 +63,27 @@ def inside_repo(root: Path, relative: str) -> Path:
 
 def valid_ci(value: str, label: str):
     require(isinstance(value, str) and CI_URL.fullmatch(value), f"{label}: exact GitHub Actions URL required")
+
+
+def certified_plan_key(root: Path, deck_id: str, deck: dict) -> str:
+    """Permit only the proven Norman/Green Goblin owner-approved registry alias."""
+    if deck_id not in OWNER_RESOLVED_CASE_PLAN_ALIAS:
+        return deck_id
+    require(deck_id == "Goben__Gene_Splice_Savant", "Unsupported registry alias")
+    require(deck.get("approved_list_sha256") ==
+            "c002a49243bd54780bb0f4a36a3c239a00e042defa1d0c6c4b891c3c8060eef9",
+            "Goben/Norman owner-resolution applies only to the expressly approved exact list")
+    require(deck.get("approved_list_artifact") ==
+            "refinement/decklists/Norman_Osborn_Green_Goblin_M7_Rev1_Approved_2026-10-26.txt",
+            "Goben/Norman owner-resolution list pointer drift")
+    source = inside_repo(root, deck["approved_list_artifact"])
+    require(source.is_file() and source.read_bytes().startswith(
+            b"1x Norman Osborn // Green Goblin [Commander]\n"),
+            "Goben/Norman approved leader is not Norman Osborn // Green Goblin")
+    receipt = inside_repo(root, deck.get("approval_record_artifact", ""))
+    require(receipt.is_file() and "Norman Osborn // Green Goblin" in receipt.read_text(),
+            "Goben/Norman owner receipt identity mismatch")
+    return OWNER_RESOLVED_CASE_PLAN_ALIAS[deck_id]
 
 
 def validate_case_records(tier: str, records: list, expected: list, prefix: str, candidate_sha: str):
@@ -164,6 +191,10 @@ def validate_live_state(root: Path) -> dict:
             "Snapshot/registry roster drift: do not silently remap any of 62 decks")
     require(len(plans["decks"]) == 61 and plans["case_totals"] == {"P0": 308, "P1": 574},
             "M6 61-deck source requirement manifest drift")
+    mapped_ids = [certified_plan_key(root, deck_id, deck) for deck_id, deck in actual.items()
+                  if deck_id != "Abaddon_the_Despoiler"]
+    require(len(mapped_ids) == 61 and len(set(mapped_ids)) == 61 and set(mapped_ids) == set(plans["decks"]),
+            "Unresolved registry/plan roster discrepancy; only owner-resolved Goben alias is allowed")
     require(snapshot["already_new_m7_locked_at_snapshot_count"] == 24,
             "Historical owner-approved lock count modified")
     changed = []
@@ -174,7 +205,8 @@ def validate_live_state(root: Path) -> dict:
             continue  # historical owner approval immutable; no retroactive silent invalidation
         rel = ATTESTATIONS / f"{deck_id}_{sha[:16]}.json"
         attestation = load_json(root, rel)
-        validate_attestation(root, deck_id, deck, plans["decks"].get(deck_id), attestation)
+        validate_attestation(root, deck_id, deck,
+                             plans["decks"].get(certified_plan_key(root, deck_id, deck)), attestation)
         changed.append(deck_id)
     return {"historical_locks_preserved": len(actual) - len(changed),
             "new_or_revised_approvals_with_case_evidence": changed,

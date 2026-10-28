@@ -286,13 +286,13 @@ OTHER61 = json.loads(r'''{
   ],
   "Obeka__Brute_Chronologist": [
     "31b6ff7f23effa78512c2a409a21440bccf457e6faece51d8db38b74102169a8",
-    "refinement/decklists/Obeka_Brute_Chronologist_Approved_2026-10-15.txt",
+    "refinement/decklists/Obeka_Brute_Chronologist_Approval_Ready_2026-10-15.txt",
     "2026-10-15",
     "LOCKED"
   ],
   "Obeka__Splitter_of_Seconds": [
     "c7e855e69d6538d05eec2e4b3da98b0a5bdb057b19e2c672294b9ba3a60a4f63",
-    "refinement/decklists/Obeka_Splitter_of_Seconds_Approved_2026-10-15.txt",
+    "refinement/decklists/Obeka_Splitter_of_Seconds_Approval_Ready_2026-10-15.txt",
     "2026-10-15",
     "LOCKED"
   ],

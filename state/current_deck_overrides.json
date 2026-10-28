@@ -114,7 +114,9 @@
         "Casualty Aristocrats",
         "Artifact Combo"
       ],
-      "m7_power_bracket": "4 — Optimized"
+      "m7_power_bracket": "4 — Optimized",
+      "approval_record_artifact": "refinement/approvals/Ashad_the_Lone_Cyberman_M7_Rev3_Approved_2026-10-23.md",
+      "approval_receipt_reconciliation": "Metadata pointer only: linked existing owner approval receipt refinement/approvals/Ashad_the_Lone_Cyberman_M7_Rev3_Approved_2026-10-23.md; its text explicitly cites current locked raw SHA 352911498345e78bd55773f4c9d1c49d05599610d5fc806f7b779c85eb5f6267. No approval, source bytes or SHA changed."
     },
     "Ashnod_the_Uncaring": {
       "approval_status": "APPROVED",
@@ -141,7 +143,9 @@
         "Artifact Sacrifice",
         "Artifact Combo"
       ],
-      "m7_power_bracket": "4 — Optimized"
+      "m7_power_bracket": "4 — Optimized",
+      "approval_record_artifact": "refinement/approvals/Ashnod_the_Uncaring_M7_Rev2_Approved_2026-10-23.md",
+      "approval_receipt_reconciliation": "Metadata pointer only: linked existing owner approval receipt refinement/approvals/Ashnod_the_Uncaring_M7_Rev2_Approved_2026-10-23.md; its text explicitly cites current locked raw SHA a045579b6f9d21f50c47da0096cb0dfc0dee772493eb522186944f61cb6c4761. No approval, source bytes or SHA changed."
     },
     "Be_lakor_the_Dark_Master": {
       "approval_status": "APPROVED",
@@ -167,7 +171,9 @@
         "ETB Damage",
         "Reanimator"
       ],
-      "m7_power_bracket": "4 — Optimized"
+      "m7_power_bracket": "4 — Optimized",
+      "approval_record_artifact": "refinement/approvals/Be_lakor_the_Dark_Master_M7_Rev2_Approved_2026-10-23.md",
+      "approval_receipt_reconciliation": "Metadata pointer only: linked existing owner approval receipt refinement/approvals/Be_lakor_the_Dark_Master_M7_Rev2_Approved_2026-10-23.md; its text explicitly cites current locked raw SHA 2107f02e7a5303eef15b6720565d08dfe974b3d6fa57ea449440042cec1b4dd4. No approval, source bytes or SHA changed."
     },
     "Cecily__Bjorna__Lutri": {
       "approval_status": "APPROVED",
@@ -200,7 +206,9 @@
         "Lutri, the Spellchaser — officially banned as companion",
         "Trade Secrets — officially Commander-banned",
         "Yawgmoth's Bargain — officially Commander-banned"
-      ]
+      ],
+      "approval_record_artifact": "refinement/approvals/Cecily__Bjorna__Lutri_M7_Rev2_Approved_2026-10-23.md",
+      "approval_receipt_reconciliation": "Metadata pointer only: linked existing owner approval receipt refinement/approvals/Cecily__Bjorna__Lutri_M7_Rev2_Approved_2026-10-23.md; its text explicitly cites current locked raw SHA e4028f06d2d928ad06fb8667ae4bba77c31b4f97c1d4fb5490f83b73eb6d6b5d. No approval, source bytes or SHA changed."
     },
     "Cormela__Glamour_Thief": {
       "approval_status": "APPROVED",
@@ -225,7 +233,9 @@
       ],
       "m7_power_bracket": "5 — cEDH",
       "m7_project_exceptions": [],
-      "m7_verified_100_physical": true
+      "m7_verified_100_physical": true,
+      "approval_record_artifact": "refinement/approvals/Cormela__Glamour_Thief_M7_Rev2_Approved_2026-10-23.md",
+      "approval_receipt_reconciliation": "Metadata pointer only: linked existing owner approval receipt refinement/approvals/Cormela__Glamour_Thief_M7_Rev2_Approved_2026-10-23.md; its text explicitly cites current locked raw SHA d91ac1ab1dc543ee9fe93c69978c33966a8e9578bc46935e65d5d3b7139c46fd. No approval, source bytes or SHA changed."
     },
     "Crosis__the_Purger": {
       "approval_status": "APPROVED",
@@ -251,7 +261,9 @@
       ],
       "m7_power_bracket": "4 — Optimized",
       "m7_project_exceptions": [],
-      "m7_verified_100_physical": true
+      "m7_verified_100_physical": true,
+      "approval_record_artifact": "refinement/approvals/Crosis__the_Purger_M7_Rev2_Approved_2026-10-23.md",
+      "approval_receipt_reconciliation": "Metadata pointer only: linked existing owner approval receipt refinement/approvals/Crosis__the_Purger_M7_Rev2_Approved_2026-10-23.md; its text explicitly cites current locked raw SHA a2f842355958dc8579b01eb067197ea303102e358d1c4ff658c3aed18cfd9d4a. No approval, source bytes or SHA changed."
     },
     "Cult_of_Skaro": {
       "approval_status": "APPROVED",
@@ -277,7 +289,9 @@
       ],
       "m7_power_bracket": "4 — Optimized",
       "m7_project_exceptions": [],
-      "m7_verified_100_physical": true
+      "m7_verified_100_physical": true,
+      "approval_record_artifact": "refinement/approvals/Cult_of_Skaro_M7_Rev2_Approved_2026-10-23.md",
+      "approval_receipt_reconciliation": "Metadata pointer only: linked existing owner approval receipt refinement/approvals/Cult_of_Skaro_M7_Rev2_Approved_2026-10-23.md; its text explicitly cites current locked raw SHA e7c264409bd23bd6b3dc02548f555e3f64f2d2d11cc0430d61f49cbf452a1e3d. No approval, source bytes or SHA changed."
     },
     "Davros__Dalek_Creator": {
       "approval_status": "APPROVED",
@@ -303,7 +317,9 @@
       ],
       "m7_power_bracket": "4 — Optimized",
       "m7_project_exceptions": [],
-      "m7_verified_100_physical": true
+      "m7_verified_100_physical": true,
+      "approval_record_artifact": "refinement/approvals/Davros_Dalek_Creator_M7_Rev2_Approved_2026-10-23.md",
+      "approval_receipt_reconciliation": "Metadata pointer only: linked existing owner approval receipt refinement/approvals/Davros_Dalek_Creator_M7_Rev2_Approved_2026-10-23.md; its text explicitly cites current locked raw SHA 96c6b1cde56eb79db1527e64b82d218f341511a8de99c2395729c0388fd88cfc. No approval, source bytes or SHA changed."
     },
     "Doctor_Doom__King_of_Latveria": {
       "approval_status": "APPROVED",
@@ -330,7 +346,9 @@
       ],
       "m7_power_bracket": "4 — Optimized",
       "m7_project_exceptions": [],
-      "m7_verified_100_physical": true
+      "m7_verified_100_physical": true,
+      "approval_record_artifact": "refinement/approvals/Doctor_Doom_King_of_Latveria_M7_Rev2_Approved_2026-10-23.md",
+      "approval_receipt_reconciliation": "Metadata pointer only: linked existing owner approval receipt refinement/approvals/Doctor_Doom_King_of_Latveria_M7_Rev2_Approved_2026-10-23.md; its text explicitly cites current locked raw SHA 7f74aa25cbbc47d46198f585b379b355cbeb10105ab374f883d2b8b9777a2d20. No approval, source bytes or SHA changed."
     },
     "Don_Andres__the_Renegade": {
       "approval_status": "APPROVED",
@@ -357,7 +375,9 @@
       ],
       "m7_power_bracket": "4 — Optimized",
       "m7_project_exceptions": [],
-      "m7_verified_100_physical": true
+      "m7_verified_100_physical": true,
+      "approval_record_artifact": "refinement/approvals/Don_Andres_the_Renegade_M7_Rev2_Approved_2026-10-23.md",
+      "approval_receipt_reconciliation": "Metadata pointer only: linked existing owner approval receipt refinement/approvals/Don_Andres_the_Renegade_M7_Rev2_Approved_2026-10-23.md; its text explicitly cites current locked raw SHA 59c62e50874816a434e0198e272084a3aad619a4eff2e374fc9b38fbdaf62f8f. No approval, source bytes or SHA changed."
     },
     "Dr__Eggman": {
       "approval_status": "APPROVED",
@@ -384,7 +404,9 @@
       ],
       "m7_power_bracket": "4 — Optimized",
       "m7_project_exceptions": [],
-      "m7_verified_100_physical": true
+      "m7_verified_100_physical": true,
+      "approval_record_artifact": "refinement/approvals/Dr_Eggman_M7_Rev2_Approved_2026-10-23.md",
+      "approval_receipt_reconciliation": "Metadata pointer only: linked existing owner approval receipt refinement/approvals/Dr_Eggman_M7_Rev2_Approved_2026-10-23.md; its text explicitly cites current locked raw SHA 3ef9dc5bcda84834ccea2f13c1227b6bffda8f4bd914754894ae508adcc404ec. No approval, source bytes or SHA changed."
     },
     "Edea__Possessed_Sorceress": {
       "approval_status": "APPROVED",
@@ -411,7 +433,9 @@
       ],
       "m7_power_bracket": "4 — Optimized",
       "m7_project_exceptions": [],
-      "m7_verified_100_physical": true
+      "m7_verified_100_physical": true,
+      "approval_record_artifact": "refinement/approvals/Edea_M7_Rev2_Approved_2026-10-23.md",
+      "approval_receipt_reconciliation": "Metadata pointer only: linked existing owner approval receipt refinement/approvals/Edea_M7_Rev2_Approved_2026-10-23.md; its text explicitly cites current locked raw SHA a039a79c6205c3dc61e0e237816d0d6b0168061b850cb8ca4a598483150b3f54. No approval, source bytes or SHA changed."
     },
     "Edward_Kenway": {
       "approval_status": "APPROVED",
@@ -438,7 +462,9 @@
       ],
       "m7_power_bracket": "4 — Optimized",
       "m7_project_exceptions": [],
-      "m7_verified_100_physical": true
+      "m7_verified_100_physical": true,
+      "approval_record_artifact": "refinement/approvals/Edward_Kenway_M7_Rev2_Approved_2026-10-23.md",
+      "approval_receipt_reconciliation": "Metadata pointer only: linked existing owner approval receipt refinement/approvals/Edward_Kenway_M7_Rev2_Approved_2026-10-23.md; its text explicitly cites current locked raw SHA 8c01f2be6190be3e3af0fc5ba45eca16faa1b9346981f840811e4b63822c5ee1. No approval, source bytes or SHA changed."
     },
     "Evelyn__the_Covetous": {
       "approval_status": "APPROVED",
@@ -451,7 +477,7 @@
       "approval_basis": "Cory reviewed the complete 100-card Evelyn M7 Rev2 list, five exact swaps and tradeoffs, archival Oracle/legal results, bracket/tags, SHA c3f6862c6f4498778069f45e7a5e5bc7efe92d70158b5e9b3f438c8c861b89ac and engineering PR #693, then replied 'Approve' on 2026-10-23. ChatGPT's independent stress test confirmed the original Grok five swaps rather than manufacturing additional changes. Protects Vexing Bauble, Ripples, Saw in Half, Windfall/Notion Thief, Stifle, Mistrise Village and Leyline; exact approval only for Evelyn.",
       "complete_gate_artifact": "refinement/verification/evelyn_the_covetous_2026-10-14/gate_output/Evelyn_the_Covetous_2026-10-14_Complete_Gate.json",
       "whole_list_audit_artifact": "refinement/decisions/Evelyn_the_Covetous_Current_Cycle_Decisions_2026-10-14.md",
-      "approval_record_artifact": "refinement/approvals/Evelyn_the_Covetous_Approved_2026-10-14.md",
+      "approval_record_artifact": "refinement/approvals/Evelyn_the_Covetous_M7_Rev2_Approved_2026-10-23.md",
       "approved_list_artifact": "refinement/decklists/Evelyn_the_Covetous_M7_Rev2_Approved_2026-10-23.txt",
       "m7_final_candidate_sha256": "c3f6862c6f4498778069f45e7a5e5bc7efe92d70158b5e9b3f438c8c861b89ac",
       "previous_approved_list_sha256": "1d602b5d9b2a370d3448816f593198212b2b83da74e92ccc3232798641b2588a",
@@ -466,7 +492,8 @@
       ],
       "m7_power_bracket": "5 — cEDH",
       "m7_project_exceptions": [],
-      "m7_verified_100_physical": true
+      "m7_verified_100_physical": true,
+      "approval_receipt_reconciliation": "Metadata pointer only: linked existing owner approval receipt refinement/approvals/Evelyn_the_Covetous_M7_Rev2_Approved_2026-10-23.md; its text explicitly cites current locked raw SHA c3f6862c6f4498778069f45e7a5e5bc7efe92d70158b5e9b3f438c8c861b89ac. No approval, source bytes or SHA changed."
     },
     "Fire_Lord_Azula": {
       "approval_status": "APPROVED",
@@ -1273,7 +1300,8 @@
       "verification_artifact": "refinement/verification/Obeka_Brute_Chronologist_Approval_Ready_Verification_2026-10-15.md",
       "decision_closeout_artifact": "refinement/decisions/Obeka_Brute_Chronologist_Candidate_Decisions_2026-10-15.md",
       "approval_record_artifact": "refinement/approvals/Obeka_Brute_Chronologist_Approved_2026-10-15.md",
-      "approved_list_artifact": "refinement/decklists/Obeka_Brute_Chronologist_Approved_2026-10-15.txt"
+      "approved_list_artifact": "refinement/decklists/Obeka_Brute_Chronologist_Approval_Ready_2026-10-15.txt",
+      "source_pointer_reconciliation": "2026-10-27 evidence-only pointer correction: original approved SHA 31b6ff7f23effa78512c2a409a21440bccf457e6faece51d8db38b74102169a8 exactly matches the preserved Approval_Ready file, not the separately retained Approved-named copy. No approved SHA or card content changed."
     },
     "Obeka__Splitter_of_Seconds": {
       "approval_status": "APPROVED",
@@ -1288,8 +1316,9 @@
       "verification_artifact": "refinement/verification/Obeka_Splitter_of_Seconds_Approval_Ready_Verification_2026-10-15.md",
       "decision_closeout_artifact": "refinement/decisions/Obeka_Splitter_of_Seconds_Candidate_Decisions_2026-10-15.md",
       "approval_record_artifact": "refinement/approvals/Obeka_Splitter_of_Seconds_Approved_2026-10-15.md",
-      "approved_list_artifact": "refinement/decklists/Obeka_Splitter_of_Seconds_Approved_2026-10-15.txt",
-      "sha_reconciliation_note": "Prior documented hash 83062ff2dbc955c628f9a6df460cf72dd5d450b6685bc4b53f63894bc8c321fb was incorrect. GitHub Actions verified the unchanged raw candidate bytes as c7e855e69d6538d05eec2e4b3da98b0a5bdb057b19e2c672294b9ba3a60a4f63; no card content changed."
+      "approved_list_artifact": "refinement/decklists/Obeka_Splitter_of_Seconds_Approval_Ready_2026-10-15.txt",
+      "sha_reconciliation_note": "Prior documented hash 83062ff2dbc955c628f9a6df460cf72dd5d450b6685bc4b53f63894bc8c321fb was incorrect. GitHub Actions verified the unchanged raw candidate bytes as c7e855e69d6538d05eec2e4b3da98b0a5bdb057b19e2c672294b9ba3a60a4f63; no card content changed.",
+      "source_pointer_reconciliation": "2026-10-27 evidence-only pointer correction: approved SHA c7e855e69d6538d05eec2e4b3da98b0a5bdb057b19e2c672294b9ba3a60a4f63 exactly matches the preserved Approval_Ready file, not the separately retained Approved-named copy. No approved SHA or card content changed."
     },
     "Parnesse__the_Subtle_Brush": {
       "approval_status": "APPROVED",
@@ -1304,7 +1333,7 @@
       "verification_artifact": "refinement/verification/Parnesse_the_Subtle_Brush_M7_Rev1_Oracle_Certification_2026-10-27.md",
       "complete_gate_artifact": "refinement/verification/parnesse_2026-10-15/gate_output/Parnesse_the_Subtle_Brush_2026-10-15_Complete_Gate.json",
       "decision_closeout_artifact": "refinement/decisions/Parnesse_the_Subtle_Brush_Candidate_Decisions_2026-10-15.md",
-      "approval_record_artifact": "refinement/approvals/Parnesse_the_Subtle_Brush_Approved_2026-10-15.md",
+      "approval_record_artifact": "refinement/approvals/Parnesse_the_Subtle_Brush_M7_Rev1_Approved_2026-10-27.md",
       "approved_list_artifact": "refinement/decklists/Parnesse_the_Subtle_Brush_M7_Rev1_2026-10-27.txt",
       "m7_final_candidate_sha256": "63b605a2c36ec81ab7a5a48770ac2b96b7994daf38546aba7b6bc6bd7597928c",
       "m7_owner_approval_date": "2026-10-27",

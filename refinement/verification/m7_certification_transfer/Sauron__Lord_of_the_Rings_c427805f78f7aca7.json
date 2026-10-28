@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "deck_id": "Sauron__Lord_of_the_Rings",
+  "approved_raw_sha256": "c427805f78f7aca7384db56022868a2e7cb7d01eeeabbb280a18e77e538a8159",
+  "approved_artifact": "refinement/decklists/Sauron_Lord_of_the_Rings_M7_Rev1_Approved_2026-10-27.txt",
+  "owner_approval_receipt": "refinement/approvals/Sauron_Lord_of_the_Rings_M7_Rev1_Approved_2026-10-27.md",
+  "engineering": {
+    "pr_url": "https://github.com/corymstover/GrokBotMTGCompanion/pull/747",
+    "head_sha": "27ddbeddf2f364a092e6f2091184992f6f79072f",
+    "grok_first_pass_ref": "data/grixis/m6/test_blueprints/Sauron__Lord_of_the_Rings.json — preimplementation authored spec, not a new independent GrokBot M7 first pass",
+    "independent_review_ref": "Historical candidate decision evidence in data/grixis/m7/sauron_rev1/Sauron_Lord_of_the_Rings_M7_Rev1_Whole99_Review_2026-10-27.md; first-stage engineering PR #730; no newly independent review is asserted",
+    "m7_decision_packet_ref": "data/grixis/m7/sauron_rev1/Sauron_Lord_of_the_Rings_M7_Rev1_Whole99_Review_2026-10-27.md",
+    "m7_decision_gate_command": "python3 -m unittest discover -s tests -p 'test_m7_missing_transfer_p0_source_bound.py' -v (supplemental exact-approved P0 provenance gate; does NOT replace missing independent 99-slot M7 strategic decision gate)",
+    "m7_decision_gate_ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40625340023",
+    "oracle_legality_ref": "refinement/verification/Sauron_Lord_of_the_Rings_M7_Rev1_Approval_Verification_2026-10-27.md — existing owner-approved whole-list/source-composite Oracle and legality review; this new CI checks frozen commander Oracle and approved exact source bytes, not a live current 100/100 Scryfall batch"
+  },
+  "identity_crosswalk": null,
+  "m6_transfer": {
+    "plan_source_path": "data/grixis/m6/test_blueprints/Sauron__Lord_of_the_Rings.json",
+    "plan_blob_sha": "f156344c744b0448f3e91e69552d8f0ffd37393f",
+    "ij_receipt_ref": "data/grixis/m6/ij/input_receipts/sauron-lord-of-the-rings.json — historically inputs attested, downstream Phase B not complete/never inferred",
+    "ij_scope": "TRANSFERRED_WITH_CASE_MAPPING",
+    "revision_diff_and_validity_reason": "The October 15 approved list was explicitly replaced by owner-approved M7 current exact raw SHA c427805f78f7aca7384db56022868a2e7cb7d01eeeabbb280a18e77e538a8159; no approved cards or bytes changed by this evidence backfill. The original M6 blueprint P0 inventory (5 cases) was design-only, so engineering PR #747 added newly executed, individually named, positive/negative finite source cases for the exact M7 candidate; successful exact-head CI #40625340023 verifies the source hash before cases run. All 10 original P1 designs are explicitly DEFERRED with specific consequences. Earlier candidate and source-composite legality/Oracle review is distinct from a new all-card API audit. This attests only that bounded source models ran; it is NOT an independently complete M6 I/J, original M7 99-slot gate, multiplayer simulation, or revocation of prior owner approval.",
+    "P0": [
+      {
+        "case_id": "C1",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_missing_transfer_p0_source_bound.py::SauronLordP0.test_C1_cast_trigger_amass_mill_reanimate_and_opposing_commander_death",
+        "execution_command": "python3 -m unittest discover -s tests -p 'test_m7_missing_transfer_p0_source_bound.py' -v",
+        "oracle_source": "data/grixis/m6/test_blueprints/Sauron__Lord_of_the_Rings.json — frozen Oracle ID and printed commander text checked by class setUpClass; refinement/verification/Sauron_Lord_of_the_Rings_M7_Rev1_Approval_Verification_2026-10-27.md — existing approved list Oracle/legality analysis; newly executed finite source model, not a fresh full Oracle API pass",
+        "payable_fixture": "Exact approved SHA c427805f78f7aca7384db56022868a2e7cb7d01eeeabbb280a18e77e538a8159, original source case 'Sauron, Lord of the Rings': Commander in legal and invalid zone/timing; actual cost, ability frequency, triggers and control. New source-scoped fixture models actual action/cost/timing/zone constraints and a failing precondition, without claiming a general Magic game engine.",
+        "positive_assertion": "Actual new CI-executed assertion (bounded source case): self.assertIn(\"When you cast this spell\", self.oracle); original expected claim: When you cast this spell, amass Orcs 5, mill five cards, then return a creature card from your graveyard to the battlefield. Trample Whenever a commander an opponent controls dies, the Ring tempts you..",
+        "adversarial_assertion": "Actual new CI-executed negative-control or contrasting-boundary assertion: self.assertLess(events.index(\"mill_5\"), events.index(\"target_creature_grave\")); no outcome outside the listed method is certified.",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "c427805f78f7aca7384db56022868a2e7cb7d01eeeabbb280a18e77e538a8159",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40625340023",
+        "evidence_limit": "Executed original P0 bounded algebraic/zone/stack test on approved SHA; not original unexecuted M6 J or full gameplay."
+      },
+      {
+        "case_id": "K1",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_missing_transfer_p0_source_bound.py::SauronLordP0.test_K1_countering_spell_does_not_counter_on_cast_trigger",
+        "execution_command": "python3 -m unittest discover -s tests -p 'test_m7_missing_transfer_p0_source_bound.py' -v",
+        "oracle_source": "data/grixis/m6/test_blueprints/Sauron__Lord_of_the_Rings.json — frozen Oracle ID and printed commander text checked by class setUpClass; refinement/verification/Sauron_Lord_of_the_Rings_M7_Rev1_Approval_Verification_2026-10-27.md — existing approved list Oracle/legality analysis; newly executed finite source model, not a fresh full Oracle API pass",
+        "payable_fixture": "Exact approved SHA c427805f78f7aca7384db56022868a2e7cb7d01eeeabbb280a18e77e538a8159, original source case 'cast-not-enter': Stage named source cards, trigger/resolution and source condition; adversarially remove prerequisite or response window. New source-scoped fixture models actual action/cost/timing/zone constraints and a failing precondition, without claiming a general Magic game engine.",
+        "positive_assertion": "Actual new CI-executed assertion (bounded source case): self.assertIn(\"sauron_cast_trigger\", stack); original expected claim: The trigger is on cast; countering Sauron doesn't stop it..",
+        "adversarial_assertion": "Actual new CI-executed negative-control or contrasting-boundary assertion: self.assertNotIn(\"sauron_spell\", stack); no outcome outside the listed method is certified.",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "c427805f78f7aca7384db56022868a2e7cb7d01eeeabbb280a18e77e538a8159",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40625340023",
+        "evidence_limit": "Executed original P0 bounded algebraic/zone/stack test on approved SHA; not original unexecuted M6 J or full gameplay."
+      },
+      {
+        "case_id": "K2",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_missing_transfer_p0_source_bound.py::SauronLordP0.test_K2_mill_five_before_reanimate_can_use_fresh_milled_creature",
+        "execution_command": "python3 -m unittest discover -s tests -p 'test_m7_missing_transfer_p0_source_bound.py' -v",
+        "oracle_source": "data/grixis/m6/test_blueprints/Sauron__Lord_of_the_Rings.json — frozen Oracle ID and printed commander text checked by class setUpClass; refinement/verification/Sauron_Lord_of_the_Rings_M7_Rev1_Approval_Verification_2026-10-27.md — existing approved list Oracle/legality analysis; newly executed finite source model, not a fresh full Oracle API pass",
+        "payable_fixture": "Exact approved SHA c427805f78f7aca7384db56022868a2e7cb7d01eeeabbb280a18e77e538a8159, original source case 'mill-then-return': Stage named source cards, trigger/resolution and source condition; adversarially remove prerequisite or response window. New source-scoped fixture models actual action/cost/timing/zone constraints and a failing precondition, without claiming a general Magic game engine.",
+        "positive_assertion": "Actual new CI-executed assertion (bounded source case): self.assertEqual(len(grave), 5); original expected claim: Amass 5, mill five, then return: the five milled cards can be the target..",
+        "adversarial_assertion": "Actual new CI-executed negative-control or contrasting-boundary assertion: self.assertNotEqual(target, \"Instant\"); no outcome outside the listed method is certified.",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "c427805f78f7aca7384db56022868a2e7cb7d01eeeabbb280a18e77e538a8159",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40625340023",
+        "evidence_limit": "Executed original P0 bounded algebraic/zone/stack test on approved SHA; not original unexecuted M6 J or full gameplay."
+      },
+      {
+        "case_id": "K3",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_missing_transfer_p0_source_bound.py::SauronLordP0.test_K3_beacon_moves_to_hand_and_no_command_zone_tax",
+        "execution_command": "python3 -m unittest discover -s tests -p 'test_m7_missing_transfer_p0_source_bound.py' -v",
+        "oracle_source": "data/grixis/m6/test_blueprints/Sauron__Lord_of_the_Rings.json — frozen Oracle ID and printed commander text checked by class setUpClass; refinement/verification/Sauron_Lord_of_the_Rings_M7_Rev1_Approval_Verification_2026-10-27.md — existing approved list Oracle/legality analysis; newly executed finite source model, not a fresh full Oracle API pass",
+        "payable_fixture": "Exact approved SHA c427805f78f7aca7384db56022868a2e7cb7d01eeeabbb280a18e77e538a8159, original source case 'beacon-tax': Stage named source cards, trigger/resolution and source condition; adversarially remove prerequisite or response window. New source-scoped fixture models actual action/cost/timing/zone constraints and a failing precondition, without claiming a general Magic game engine.",
+        "positive_assertion": "Actual new CI-executed assertion (bounded source case): self.assertIn(\"Command Beacon\", self.cards); original expected claim: Command Beacon puts Sauron in hand, so the next cast avoids commander tax and still triggers..",
+        "adversarial_assertion": "Actual new CI-executed negative-control or contrasting-boundary assertion: self.assertNotEqual(generic_to_pay(\"command\", 3), generic_to_pay(\"hand\", 3)); no outcome outside the listed method is certified.",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "c427805f78f7aca7384db56022868a2e7cb7d01eeeabbb280a18e77e538a8159",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40625340023",
+        "evidence_limit": "Executed original P0 bounded algebraic/zone/stack test on approved SHA; not original unexecuted M6 J or full gameplay."
+      },
+      {
+        "case_id": "F1",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_missing_transfer_p0_source_bound.py::SauronLordP0.test_F1_eight_mana_ubr_slow_vs_fast_mana",
+        "execution_command": "python3 -m unittest discover -s tests -p 'test_m7_missing_transfer_p0_source_bound.py' -v",
+        "oracle_source": "data/grixis/m6/test_blueprints/Sauron__Lord_of_the_Rings.json — frozen Oracle ID and printed commander text checked by class setUpClass; refinement/verification/Sauron_Lord_of_the_Rings_M7_Rev1_Approval_Verification_2026-10-27.md — existing approved list Oracle/legality analysis; newly executed finite source model, not a fresh full Oracle API pass",
+        "payable_fixture": "Exact approved SHA c427805f78f7aca7384db56022868a2e7cb7d01eeeabbb280a18e77e538a8159, original source case 'eight-drop': Construct conditional enemy disruption, then actually test mitigation: Mana Vault; Grim Monolith; Command Beacon New source-scoped fixture models actual action/cost/timing/zone constraints and a failing precondition, without claiming a general Magic game engine.",
+        "positive_assertion": "Actual new CI-executed assertion (bounded source case): self.assertTrue(castable(5, 1, 1, 1)); original expected claim: Sauron costs eight; slow without fast mana..",
+        "adversarial_assertion": "Actual new CI-executed negative-control or contrasting-boundary assertion: self.assertFalse(castable(5, 0, 1, 1)); no outcome outside the listed method is certified.",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "c427805f78f7aca7384db56022868a2e7cb7d01eeeabbb280a18e77e538a8159",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40625340023",
+        "evidence_limit": "Executed original P0 bounded algebraic/zone/stack test on approved SHA; not original unexecuted M6 J or full gameplay."
+      }
+    ],
+    "P1": [
+      {
+        "case_id": "K4",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'fanatic-chain' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/K4 remains unexecuted as formal original-to-final tested mapping: A Metamorphosis Fanatic returned by Sauron triggers its own reanimation for a second creature.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "K5",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'nazgul-nine' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/K5 remains unexecuted as formal original-to-final tested mapping: Nazgûl allows up to nine copies; four is legal (registry exception row is official_card_rule, NOT_REQUIRED).. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "K6",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'anger-wonder-types' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/K6 remains unexecuted as formal original-to-final tested mapping: Anger needs a Mountain and Wonder an Island while in the graveyard; the mana base keeps both types.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "K7",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'living-death-order' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/K7 remains unexecuted as formal original-to-final tested mapping: Living Death exiles, then sacrifices, then returns; tokens and Sauron don't come back.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "E1",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'cast-trigger' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/E1 remains unexecuted as formal original-to-final tested mapping: Eight mana (less tax with Command Beacon); the trigger survives a counter.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "E2",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'setup-and-reanimate' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/E2 remains unexecuted as formal original-to-final tested mapping: A target in the graveyard.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "W1",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'reanimated-threats' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/W1 remains unexecuted as formal original-to-final tested mapping: Reanimated Archon of Cruelty, Valgavoth, Jin-Gitaxias or Sheoldred plus the Orc Army, with haste/flying from Anger and Wonder.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "W2",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'ring-orcs' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/W2 remains unexecuted as formal original-to-final tested mapping: Nazgûl, Call of the Ring and Army growth as pressure.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "F2",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'graveyard-hate' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/F2 remains unexecuted as formal original-to-final tested mapping: Graveyard hate stops the trigger's best mode and the backup reanimation.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "F3",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'living-death-symmetry' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/F3 remains unexecuted as formal original-to-final tested mapping: Living Death is symmetric.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      }
+    ]
+  }
+}

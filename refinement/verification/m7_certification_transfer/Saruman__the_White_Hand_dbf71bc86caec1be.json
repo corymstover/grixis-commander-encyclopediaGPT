@@ -1,0 +1,190 @@
+{
+  "schema_version": 1,
+  "deck_id": "Saruman__the_White_Hand",
+  "approved_raw_sha256": "dbf71bc86caec1be73c4333bf43e4104cccb5f91a06d2766e8b586adabd9724b",
+  "approved_artifact": "refinement/decklists/Saruman_the_White_Hand_M7_Rev1_Approved_2026-10-27.txt",
+  "owner_approval_receipt": "refinement/approvals/Saruman_the_White_Hand_M7_Rev1_Approved_2026-10-27.md",
+  "engineering": {
+    "pr_url": "https://github.com/corymstover/GrokBotMTGCompanion/pull/747",
+    "head_sha": "27ddbeddf2f364a092e6f2091184992f6f79072f",
+    "grok_first_pass_ref": "data/grixis/m6/test_blueprints/Saruman__the_White_Hand.json — preimplementation authored spec, not a new independent GrokBot M7 first pass",
+    "independent_review_ref": "Historical candidate decision evidence in data/grixis/m7/saruman_rev1/Saruman_M7_Rev1_Whole99_Review_2026-10-27.md; first-stage engineering PR #729; no newly independent review is asserted",
+    "m7_decision_packet_ref": "data/grixis/m7/saruman_rev1/Saruman_M7_Rev1_Whole99_Review_2026-10-27.md",
+    "m7_decision_gate_command": "python3 -m unittest discover -s tests -p 'test_m7_missing_transfer_p0_source_bound.py' -v (supplemental exact-approved P0 provenance gate; does NOT replace missing independent 99-slot M7 strategic decision gate)",
+    "m7_decision_gate_ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40625340023",
+    "oracle_legality_ref": "refinement/verification/Saruman_the_White_Hand_M7_Rev1_Approval_Verification_2026-10-27.md — existing owner-approved whole-list/source-composite Oracle and legality review; this new CI checks frozen commander Oracle and approved exact source bytes, not a live current 100/100 Scryfall batch"
+  },
+  "identity_crosswalk": null,
+  "m6_transfer": {
+    "plan_source_path": "data/grixis/m6/test_blueprints/Saruman__the_White_Hand.json",
+    "plan_blob_sha": "4b0910b7ab8366f4851d877f53e73b1d3aacb621",
+    "ij_receipt_ref": "data/grixis/m6/ij/input_receipts/saruman-the-white-hand.json — historically inputs attested, downstream Phase B not complete/never inferred",
+    "ij_scope": "TRANSFERRED_WITH_CASE_MAPPING",
+    "revision_diff_and_validity_reason": "The October 15 approved list was explicitly replaced by owner-approved M7 current exact raw SHA dbf71bc86caec1be73c4333bf43e4104cccb5f91a06d2766e8b586adabd9724b; no approved cards or bytes changed by this evidence backfill. The original M6 blueprint P0 inventory (5 cases) was design-only, so engineering PR #747 added newly executed, individually named, positive/negative finite source cases for the exact M7 candidate; successful exact-head CI #40625340023 verifies the source hash before cases run. All 13 original P1 designs are explicitly DEFERRED with specific consequences. Earlier candidate and source-composite legality/Oracle review is distinct from a new all-card API audit. This attests only that bounded source models ran; it is NOT an independently complete M6 I/J, original M7 99-slot gate, multiplayer simulation, or revocation of prior owner approval.",
+    "P0": [
+      {
+        "case_id": "C1",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_missing_transfer_p0_source_bound.py::SarumanP0.test_C1_noncreature_spell_cast_amass_mana_value_and_orc_goblin",
+        "execution_command": "python3 -m unittest discover -s tests -p 'test_m7_missing_transfer_p0_source_bound.py' -v",
+        "oracle_source": "data/grixis/m6/test_blueprints/Saruman__the_White_Hand.json — frozen Oracle ID and printed commander text checked by class setUpClass; refinement/verification/Saruman_the_White_Hand_M7_Rev1_Approval_Verification_2026-10-27.md — existing approved list Oracle/legality analysis; newly executed finite source model, not a fresh full Oracle API pass",
+        "payable_fixture": "Exact approved SHA dbf71bc86caec1be73c4333bf43e4104cccb5f91a06d2766e8b586adabd9724b, original source case 'Saruman, the White Hand': Commander in legal and invalid zone/timing; actual cost, ability frequency, triggers and control. New source-scoped fixture models actual action/cost/timing/zone constraints and a failing precondition, without claiming a general Magic game engine.",
+        "positive_assertion": "Actual new CI-executed assertion (bounded source case): self.assertIn(\"noncreature spell\", self.oracle.lower()); original expected claim: Whenever you cast a noncreature spell, amass Orcs X, where X is that spell's mana value. (Put X +1/+1 counters on an Army you control. It's also an Orc. If you don't control an Army, create a 0/0 black Orc Army creature token firs.",
+        "adversarial_assertion": "Actual new CI-executed negative-control or contrasting-boundary assertion: self.assertEqual(amass_if_cast(True, 0), 0); no outcome outside the listed method is certified.",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "dbf71bc86caec1be73c4333bf43e4104cccb5f91a06d2766e8b586adabd9724b",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40625340023",
+        "evidence_limit": "Executed original P0 bounded algebraic/zone/stack test on approved SHA; not original unexecuted M6 J or full gameplay."
+      },
+      {
+        "case_id": "K1",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_missing_transfer_p0_source_bound.py::SarumanP0.test_K1_alt_cost_and_delve_do_not_change_printed_mana_value",
+        "execution_command": "python3 -m unittest discover -s tests -p 'test_m7_missing_transfer_p0_source_bound.py' -v",
+        "oracle_source": "data/grixis/m6/test_blueprints/Saruman__the_White_Hand.json — frozen Oracle ID and printed commander text checked by class setUpClass; refinement/verification/Saruman_the_White_Hand_M7_Rev1_Approval_Verification_2026-10-27.md — existing approved list Oracle/legality analysis; newly executed finite source model, not a fresh full Oracle API pass",
+        "payable_fixture": "Exact approved SHA dbf71bc86caec1be73c4333bf43e4104cccb5f91a06d2766e8b586adabd9724b, original source case 'alt-cost-keeps-mv': Stage named source cards, trigger/resolution and source condition; adversarially remove prerequisite or response window. New source-scoped fixture models actual action/cost/timing/zone constraints and a failing precondition, without claiming a general Magic game engine.",
+        "positive_assertion": "Actual new CI-executed assertion (bounded source case): self.assertIn(\"Force of Will\", self.cards); original expected claim: Alternative costs, delve and cost reductions don't change mana value, so a pitched Force of Will still amasses 5..",
+        "adversarial_assertion": "Actual new CI-executed negative-control or contrasting-boundary assertion: self.assertNotEqual(printed_mv, mana_spent); no outcome outside the listed method is certified.",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "dbf71bc86caec1be73c4333bf43e4104cccb5f91a06d2766e8b586adabd9724b",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40625340023",
+        "evidence_limit": "Executed original P0 bounded algebraic/zone/stack test on approved SHA; not original unexecuted M6 J or full gameplay."
+      },
+      {
+        "case_id": "K2",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_missing_transfer_p0_source_bound.py::SarumanP0.test_K2_x_spell_stack_mana_value_includes_chosen_x",
+        "execution_command": "python3 -m unittest discover -s tests -p 'test_m7_missing_transfer_p0_source_bound.py' -v",
+        "oracle_source": "data/grixis/m6/test_blueprints/Saruman__the_White_Hand.json — frozen Oracle ID and printed commander text checked by class setUpClass; refinement/verification/Saruman_the_White_Hand_M7_Rev1_Approval_Verification_2026-10-27.md — existing approved list Oracle/legality analysis; newly executed finite source model, not a fresh full Oracle API pass",
+        "payable_fixture": "Exact approved SHA dbf71bc86caec1be73c4333bf43e4104cccb5f91a06d2766e8b586adabd9724b, original source case 'x-on-stack': Stage named source cards, trigger/resolution and source condition; adversarially remove prerequisite or response window. New source-scoped fixture models actual action/cost/timing/zone constraints and a failing precondition, without claiming a general Magic game engine.",
+        "positive_assertion": "Actual new CI-executed assertion (bounded source case): self.assertEqual(mv_on_stack(2, 5), 7); original expected claim: On the stack, an X spell's mana value includes the chosen X..",
+        "adversarial_assertion": "Actual new CI-executed negative-control or contrasting-boundary assertion: self.assertNotEqual(mv_on_stack(2, 5), 2); no outcome outside the listed method is certified.",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "dbf71bc86caec1be73c4333bf43e4104cccb5f91a06d2766e8b586adabd9724b",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40625340023",
+        "evidence_limit": "Executed original P0 bounded algebraic/zone/stack test on approved SHA; not original unexecuted M6 J or full gameplay."
+      },
+      {
+        "case_id": "K3",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_missing_transfer_p0_source_bound.py::SarumanP0.test_K3_fling_cost_sacrifices_army_before_amass_souls_fire_does_not",
+        "execution_command": "python3 -m unittest discover -s tests -p 'test_m7_missing_transfer_p0_source_bound.py' -v",
+        "oracle_source": "data/grixis/m6/test_blueprints/Saruman__the_White_Hand.json — frozen Oracle ID and printed commander text checked by class setUpClass; refinement/verification/Saruman_the_White_Hand_M7_Rev1_Approval_Verification_2026-10-27.md — existing approved list Oracle/legality analysis; newly executed finite source model, not a fresh full Oracle API pass",
+        "payable_fixture": "Exact approved SHA dbf71bc86caec1be73c4333bf43e4104cccb5f91a06d2766e8b586adabd9724b, original source case 'fling-rejected': Stage named source cards, trigger/resolution and source condition; adversarially remove prerequisite or response window. New source-scoped fixture models actual action/cost/timing/zone constraints and a failing precondition, without claiming a general Magic game engine.",
+        "positive_assertion": "Actual new CI-executed assertion (bounded source case): self.assertIn(\"Soul's Fire\", self.cards); original expected claim: Sacrificing the Army as an additional cost (Fling) happens before Saruman's trigger resolves; Soul's Fire keeps the Army..",
+        "adversarial_assertion": "Actual new CI-executed negative-control or contrasting-boundary assertion: self.assertNotIn(\"Fling\", self.cards); no outcome outside the listed method is certified.",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "dbf71bc86caec1be73c4333bf43e4104cccb5f91a06d2766e8b586adabd9724b",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40625340023",
+        "evidence_limit": "Executed original P0 bounded algebraic/zone/stack test on approved SHA; not original unexecuted M6 J or full gameplay."
+      },
+      {
+        "case_id": "F1",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_missing_transfer_p0_source_bound.py::SarumanP0.test_F1_multi_spell_requirement_vs_one_no_compact_infinite",
+        "execution_command": "python3 -m unittest discover -s tests -p 'test_m7_missing_transfer_p0_source_bound.py' -v",
+        "oracle_source": "data/grixis/m6/test_blueprints/Saruman__the_White_Hand.json — frozen Oracle ID and printed commander text checked by class setUpClass; refinement/verification/Saruman_the_White_Hand_M7_Rev1_Approval_Verification_2026-10-27.md — existing approved list Oracle/legality analysis; newly executed finite source model, not a fresh full Oracle API pass",
+        "payable_fixture": "Exact approved SHA dbf71bc86caec1be73c4333bf43e4104cccb5f91a06d2766e8b586adabd9724b, original source case 'no-compact-win': Construct conditional enemy disruption, then actually test mitigation: Card draw and cost reduction New source-scoped fixture models actual action/cost/timing/zone constraints and a failing precondition, without claiming a general Magic game engine.",
+        "positive_assertion": "Actual new CI-executed assertion (bounded source case): self.assertIn(\"Saruman, the White Hand\", self.cards); original expected claim: No compact win; the deck needs several spells after Saruman lands..",
+        "adversarial_assertion": "Actual new CI-executed negative-control or contrasting-boundary assertion: self.assertLess(counters_from_casts([5]), counters_from_casts([5, 7])); no outcome outside the listed method is certified.",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "dbf71bc86caec1be73c4333bf43e4104cccb5f91a06d2766e8b586adabd9724b",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40625340023",
+        "evidence_limit": "Executed original P0 bounded algebraic/zone/stack test on approved SHA; not original unexecuted M6 J or full gameplay."
+      }
+    ],
+    "P1": [
+      {
+        "case_id": "K4",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'copies-not-cast' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/K4 remains unexecuted as formal original-to-final tested mapping: Copied spells aren't cast, so they don't trigger Saruman (why Storm of Saruman was cut).. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "K5",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'mdfc-land-face' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/K5 remains unexecuted as formal original-to-final tested mapping: Playing an MDFC's land face doesn't trigger Saruman; casting the spell face does.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "K6",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'saruman-doublers' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/K6 remains unexecuted as formal original-to-final tested mapping: Saruman is an Avatar Wizard: Harmonic Prodigy, Wizard's Staff and Veyran double his trigger.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "K7",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'counter-events' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/K7 remains unexecuted as formal original-to-final tested mapping: Mauhúr adds one per counter event; The Great Goblin and All Will Be One work per event.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "K8",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'cair-andros-act' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/K8 remains unexecuted as formal original-to-final tested mapping: Fall of Cair Andros + Blasphemous Act amasses off every damaged creature (the Spellbook combo).. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "K9",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'mizzix-casts' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/K9 remains unexecuted as formal original-to-final tested mapping: Mizzix's Mastery casts copies, so those copies do trigger Saruman (unlike stack copies).. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "K10",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'black-gate-wording' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/K10 remains unexecuted as formal original-to-final tested mapping: M1 documentation flag: The Black Gate targets only the creature and chooses the player; the source attestation says it targets both. Text fix only.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "E1",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'mv-amass' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/E1 remains unexecuted as formal original-to-final tested mapping: Saruman in play; noncreature spells cast (copies don't trigger).. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "E2",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'trigger-and-counter-multipliers' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/E2 remains unexecuted as formal original-to-final tested mapping: Saruman in play.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "W1",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'cair-andros-act' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/W1 remains unexecuted as formal original-to-final tested mapping: Fall of Cair Andros + Blasphemous Act: excess damage amasses, which triggers more.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "W2",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'army-damage' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/W2 remains unexecuted as formal original-to-final tested mapping: A huge Orc Army attacks or is fired through Soul's Fire/Chandra's Ignition; The Great Goblin and All Will Be One ping per counter event.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "F2",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'army-removal' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/F2 remains unexecuted as formal original-to-final tested mapping: One removal spell on the Army resets most of the board.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "F3",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'saruman-removed' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/F3 remains unexecuted as formal original-to-final tested mapping: Without Saruman the high-MV discount plan is just card quality.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      }
+    ]
+  }
+}
