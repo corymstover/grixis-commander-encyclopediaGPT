@@ -1,10 +1,10 @@
 # Fresh Oracle/legality gate — #7 Be'lakor, the Dark Master
 
-- Generated UTC: `2026-10-28T05:42:39.474717+00:00`
+- Generated UTC: `2026-10-28T07:33:11.867942+00:00`
 - Approved source: `refinement/decklists/Be_lakor_the_Dark_Master_Approved_2026-10-13.txt`
 - Approved source SHA-256 (raw bytes): `3abc951606a6db2b17ea2aceb471fc2ef4c55e2ef082d49d9140a83b2491155e`
 - Approval evidence: refinement/approvals/Be_lakor_the_Dark_Master_Approved_2026-10-13.md
-- Oracle cache generated UTC: `2026-10-28T04:54:49.658651+00:00`
+- Oracle cache generated UTC: `2026-10-28T06:00:33.495443+00:00`
 - Scryfall bulk updated UTC: `2026-10-27T21:06:03.648+00:00`
 - 100-card count: **PASS** (100)
 - Singleton: **PASS**
