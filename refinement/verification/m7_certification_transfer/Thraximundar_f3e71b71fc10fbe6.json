@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "deck_id": "Thraximundar",
+  "approved_raw_sha256": "f3e71b71fc10fbe6d8a1afde29b5291e9e32d4e83db44c2dcb7aab0773f18da2",
+  "approved_artifact": "refinement/decklists/Thraximundar_M7_Rev1_Approved_2026-10-27.txt",
+  "owner_approval_receipt": "refinement/approvals/Thraximundar_M7_Rev1_Approved_2026-10-27.md",
+  "engineering": {
+    "pr_url": "https://github.com/corymstover/GrokBotMTGCompanion/pull/751",
+    "head_sha": "e9fbfe9963e6a3287196fa2665d48258610b47f5",
+    "grok_first_pass_ref": "data/grixis/m6/grokbot_pass_c_advisory/Thraximundar.md — original historical advisory, not the new M7 ten-swap first pass",
+    "independent_review_ref": "data/grixis/m6/owner_pass_c_substitute/Thraximundar/final_disposition.md — owner-equivalent historical Pass C and full deck KEEP, not independent M7 swap endorsement",
+    "m7_decision_packet_ref": "data/grixis/m7/decision_reviews/Thraximundar_rev1.json",
+    "m7_decision_gate_command": "python3 scripts/grixis_m7_decision_gate.py --check --file data/grixis/m7/decision_reviews/Thraximundar_rev1.json",
+    "m7_decision_gate_ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40634977638",
+    "oracle_legality_ref": "data/grixis/m7/oracle_snapshots/Thraximundar_Rev1_Scryfall_20261028.json; all 93/93 final identities current official Commander legal UBR, including Tergrid front-face Oracle query"
+  },
+  "m6_transfer": {
+    "plan_source_path": "data/grixis/m6/test_blueprints/Thraximundar.json",
+    "plan_blob_sha": "ee410cdca6d22af61e6e1603b941cc3e7204b89c",
+    "ij_receipt_ref": "data/grixis/m6/ij/input_receipts/thraximundar.json — original source input only, no finished independent I/J Phase B",
+    "ij_scope": "TRANSFERRED_WITH_CASE_MAPPING",
+    "revision_diff_and_validity_reason": "Ten approved swaps retain 36 lands and original sacrifice-Zombie commander core while replacing slower engine pieces and three conditional taplands. Original M6 5 P0 cases were newly source-bound and tested on this exact final 100 and 93 current Oracle identities; eight P1 cases remain explicitly deferred. Historical M6 Oct20 KEEP was for the prior source, not new ten-swap case certification. The reconstruction uses Cory's exact final Archidekt 100, but no formal I/J Phase B or multiplayer win result is inferred.",
+    "P0": [
+      {
+        "case_id": "C1",
+        "status": "PASSED",
+        "test_ref": "data/grixis/m7/thraximundar_rev1/m6_p0_followup.py::ThraximundarOriginalP0.test_C1_attacking_defender_sacrifice_and_counter_timing",
+        "execution_command": "python3 data/grixis/m7/thraximundar_rev1/m6_p0_followup.py",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Thraximundar_Rev1_Scryfall_20261028.json — all 93 source names current Scryfall official Commander legal, UBR",
+        "payable_fixture": "Thrax on battlefield attacks a defending player with two creatures, trigger sacrifices one before damage.",
+        "positive_assertion": "One defending player creature of their choice sacrificed; one separate may-counter trigger can grow Thrax before damage.",
+        "adversarial_assertion": "No defender creatures or absent Thrax produces no on-attack sacrifice/counter.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40634977638",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "f3e71b71fc10fbe6d8a1afde29b5291e9e32d4e83db44c2dcb7aab0773f18da2",
+        "coverage_note": "Finite source-bound cost/zone/sacrifice model only, not a full multiplayer Magic rules engine or independent I/J gameplay test."
+      },
+      {
+        "case_id": "K1",
+        "status": "PASSED",
+        "test_ref": "data/grixis/m7/thraximundar_rev1/m6_p0_followup.py::ThraximundarOriginalP0.test_K1_any_players_creature_sacrifice_including_paid_costs",
+        "execution_command": "python3 data/grixis/m7/thraximundar_rev1/m6_p0_followup.py",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Thraximundar_Rev1_Scryfall_20261028.json — all 93 source names current Scryfall official Commander legal, UBR",
+        "payable_fixture": "Multiple actual own and opponent sacrifices as paid costs plus one unrelated destroyed creature.",
+        "positive_assertion": "Three sacrifices from either player cause three separate optional +1/+1 counter triggers.",
+        "adversarial_assertion": "Ordinary destruction not counted; no controlled Thrax or declining may choice produces no counters.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40634977638",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "f3e71b71fc10fbe6d8a1afde29b5291e9e32d4e83db44c2dcb7aab0773f18da2",
+        "coverage_note": "Finite source-bound cost/zone/sacrifice model only, not a full multiplayer Magic rules engine or independent I/J gameplay test."
+      },
+      {
+        "case_id": "K2",
+        "status": "PASSED",
+        "test_ref": "data/grixis/m7/thraximundar_rev1/m6_p0_followup.py::ThraximundarOriginalP0.test_K2_call_to_grave_spares_all_zombies",
+        "execution_command": "python3 data/grixis/m7/thraximundar_rev1/m6_p0_followup.py",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Thraximundar_Rev1_Scryfall_20261028.json — all 93 source names current Scryfall official Commander legal, UBR",
+        "payable_fixture": "Each player's upkeep with Call to the Grave; Thrax and Fleshbag are Zombies beside non-Zombie Blood Artist.",
+        "positive_assertion": "Only non-Zombie creatures enter Call's sacrifice choice; Zombie commander survives.",
+        "adversarial_assertion": "Cannot choose Thrax merely because controller has creatures; no available non-Zombie means no sacrifice.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40634977638",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "f3e71b71fc10fbe6d8a1afde29b5291e9e32d4e83db44c2dcb7aab0773f18da2",
+        "coverage_note": "Finite source-bound cost/zone/sacrifice model only, not a full multiplayer Magic rules engine or independent I/J gameplay test."
+      },
+      {
+        "case_id": "K3",
+        "status": "PASSED",
+        "test_ref": "data/grixis/m7/thraximundar_rev1/m6_p0_followup.py::ThraximundarOriginalP0.test_K3_skeleton_plunderer_ashnod_mana_conservation",
+        "execution_command": "python3 data/grixis/m7/thraximundar_rev1/m6_p0_followup.py",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Thraximundar_Rev1_Scryfall_20261028.json — all 93 source names current Scryfall official Commander legal, UBR",
+        "payable_fixture": "Skeleton in graveyard, Plunderer and Ashnod's Altar active; sacrifice Skeleton to 2 colorless + Treasure black.",
+        "positive_assertion": "Spend {1}{B} to recur Skeleton tapped, netting one colorless per full loop.",
+        "adversarial_assertion": "Without Treasure black or Skeleton in graveyard, loop fails; no free cast or extra mana fabricated.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40634977638",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "f3e71b71fc10fbe6d8a1afde29b5291e9e32d4e83db44c2dcb7aab0773f18da2",
+        "coverage_note": "Finite source-bound cost/zone/sacrifice model only, not a full multiplayer Magic rules engine or independent I/J gameplay test."
+      },
+      {
+        "case_id": "F1",
+        "status": "PASSED",
+        "test_ref": "data/grixis/m7/thraximundar_rev1/m6_p0_followup.py::ThraximundarOriginalP0.test_F1_seven_mana_commander_tax_and_removal",
+        "execution_command": "python3 data/grixis/m7/thraximundar_rev1/m6_p0_followup.py",
+        "oracle_source": "data/grixis/m7/oracle_snapshots/Thraximundar_Rev1_Scryfall_20261028.json — all 93 source names current Scryfall official Commander legal, UBR",
+        "payable_fixture": "Thrax printed {4}{U}{B}{R}, zone recasts after repeated removal and only eight mana.",
+        "positive_assertion": "Initial seven and subsequent nine/eleven mana due tax; only present commander can attack.",
+        "adversarial_assertion": "Eight mana cannot pay second commander-zone cast and removed Thrax triggers no attack edict.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40634977638",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "f3e71b71fc10fbe6d8a1afde29b5291e9e32d4e83db44c2dcb7aab0773f18da2",
+        "coverage_note": "Finite source-bound cost/zone/sacrifice model only, not a full multiplayer Magic rules engine or independent I/J gameplay test."
+      }
+    ],
+    "P1": [
+      {
+        "case_id": "K4",
+        "status": "DEFERRED",
+        "specific_reason": "Gravecrawler's other-Zombie graveyard cast and actual paid-cost restriction not executed as complete all-zones source test.",
+        "coverage_consequence": "Do not count all graveyard recasts as legal without another Zombie and a payable source.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "K5",
+        "status": "DEFERRED",
+        "specific_reason": "Historic M6 explanation of Force of Will being previously cut for Mana Vault is baseline provenance, not an executable rules interaction on this revision.",
+        "coverage_consequence": "The thin pitch/counterspell density remains an unbenchmarked strategic weakness; no tested counterspell resilience claim.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "E1",
+        "status": "DEFERRED",
+        "specific_reason": "Thraximundar optional counter growth across many-player concurrent sacrifice triggers and Roaming Throne doubling is not exhaustively modeled.",
+        "coverage_consequence": "Only five bounded P0 events pass; no proof that each iterative Sacrifice engine/pump sequence is stack-correct.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "E2",
+        "status": "DEFERRED",
+        "specific_reason": "Grave Pact and Dictate retaliatory opposing sacrifices, simultaneous death ordering and controller costs lack a complete bounded test.",
+        "coverage_consequence": "Cannot claim deterministic commander growth/lock against tokens, replacement effects or opposing responses.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "W1",
+        "status": "DEFERRED",
+        "specific_reason": "Multiple Gravecrawler/Skeleton/Rooftop Storm loops with payoffs not individually source-paid to an actual win sequence.",
+        "coverage_consequence": "No infinite drain/mill win or payoff protected through disruption is certified, despite pieces existing.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "W2",
+        "status": "DEFERRED",
+        "specific_reason": "Regalia/Cultist/Thrax commander-damage path lacks an executable blocking/removal and lethal combat-turn proof.",
+        "coverage_consequence": "No assured 21 commander damage or uncontested opponent kill claim.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "F2",
+        "status": "DEFERRED",
+        "specific_reason": "Counterspell density and seven-mana commander-protection failure modes have no adversarial matchup-level test.",
+        "coverage_consequence": "Do not infer resilience to fast spells or removal from legality or the five finite P0 cases.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "F3",
+        "status": "DEFERRED",
+        "specific_reason": "Opponent graveyard exile and hate against Gravecrawler/Skeleton loops have no complete reassembly source-cost trace.",
+        "coverage_consequence": "Creature-recursion game-plan performance under graveyard hate remains owner-visible unresolved.",
+        "owner_visible_unresolved": true
+      }
+    ]
+  }
+}
