@@ -100,6 +100,30 @@ class CurrentSHAReleaseGate(unittest.TestCase):
         with self.assertRaisesRegex(gate.CertificationError, "Quality review not for current"):
             gate.inspect(invalid, include_archive=False)
 
+    def test_grandfathered_quality_cannot_substitute_for_unexecuted_cases(self):
+        approved = gate.read_current()
+        target = next(x for x in approved if x["id"] == "Abaddon_the_Despoiler")
+        attestation = {
+            "deck_id": target["id"],
+            "approved_raw_sha256": target["sha256"],
+            "outcome": "KEEP_EXACT_100",
+            "commander_first": "Cascade/life loss",
+            "mana_and_protection": "Source-paid colored acceleration",
+            "win_lines_and_counterplay": "Multiple real combo lines",
+            "historical_M6_case_scope": "Historical P0/P1 review remains separate",
+            "tested_pool_stop_reason": "Existing open-ended candidate challenge",
+            "review_path": target["record"]["approval_record_artifact"],
+            "review_sha256": gate.sha(ROOT / target["record"]["approval_record_artifact"]),
+            "source_commit_sha": "a" * 40,
+        }
+        with self.assertRaisesRegex(gate.CertificationError, "Grandfathered M6 P0/P1 scope"):
+            gate.validate_deck_attestations([attestation], approved)
+
+    def test_prematurely_accepted_archive_manifest_is_rejected(self):
+        with self.assertRaisesRegex(gate.CertificationError, "distinct final artifact"):
+            gate.verify_final_archive("exports/Grixis_Commander_Encyclopedia_62_M8_CANDIDATE_2026-10-28.zip",
+                                      "0" * 64, gate.read_current())
+
     def test_evidence_paths_cannot_escape_repository(self):
         for path in ("../sibling", "/tmp/whatever", ""):
             with self.subTest(path=path), self.assertRaises(gate.CertificationError):
