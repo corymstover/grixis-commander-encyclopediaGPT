@@ -18,15 +18,22 @@ PLAN_BLOB = "fb8641de923796d2b3b4b9de1eb76cd02367bc9d"
 CASES = {"W1", "W2", "F3"}
 
 
-def assault_mana_payable(lands):
-    """Untapped land output for {3}{R}{R}; each is one modeled mana."""
-    return len(lands) >= 5 and sum(color == "R" for color in lands) >= 2
+def assault_land_payment(lands, tapped):
+    """Select and tap exactly five real available lands, including two red."""
+    reds = [i for i, color in enumerate(lands) if color == "R" and not tapped[i]]
+    if len(reds) < 2:
+        return ()
+    paid = reds[:2]
+    generics = [i for i in range(len(lands)) if i not in paid and not tapped[i]]
+    if len(generics) < 3:
+        return ()
+    return tuple(paid + generics[:3])
 
 
 def sword_assault_combats(*, lands=("R", "R", "U", "B", "C"),
                           sword_equipped=True, assault_present=True,
                           bolas_present=True, combat_hits=(True,) * 5,
-                          bolass_upkeep_paid=True, assault_resolves=True):
+                          bolas_upkeep_paid=True, assault_resolves=True):
     """Physical combat/land-payment ledger within one turn.
 
     The first hit may untap all lands, then postcombat-main Assault pays five
@@ -34,20 +41,30 @@ def sword_assault_combats(*, lands=("R", "R", "U", "B", "C"),
     untap/payment in the ensuing main. No free extra combat or phantom land.
     """
     commander_damage = 0
+    # Model setup having tapped the physical lands before the first combat.
+    # A Sword hit, not a phantom untap, must refill the pool here.
+    tapped = [True] * len(lands)
     records = []
-    if not bolas_present or not bolass_upkeep_paid:
+    if not bolas_present or not bolas_upkeep_paid:
         return records
     for n, hit in enumerate(combat_hits):
         # An unblocked 7/7 Nicol Bolas with Sword attached deals nine combat.
         combat_damage = (7 + (2 if sword_equipped else 0)) if hit else 0
         commander_damage += combat_damage
         sword_untapped_lands = bool(hit and sword_equipped)
-        may_continue = bool(commander_damage < 21 and sword_untapped_lands and assault_present
-                            and assault_resolves and assault_mana_payable(lands))
+        if sword_untapped_lands:
+            tapped = [False] * len(lands)
+        payment = (assault_land_payment(lands, tapped)
+                   if (commander_damage < 21 and assault_present and assault_resolves)
+                   else ())
+        for i in payment:
+            tapped[i] = True
+        may_continue = bool(payment)
         records.append({"combat": n + 1, "hit": hit,
                         "damage": combat_damage, "commander_damage": commander_damage,
                         "lands_untapped_by_sword": sword_untapped_lands,
-                        "assault_paid": may_continue,
+                        "assault_paid": may_continue, "paid_lands": payment,
+                        "lands_tapped_after": tuple(tapped),
                         "commander_loss": commander_damage >= 21})
         if not may_continue or commander_damage >= 21:
             break
@@ -170,6 +187,8 @@ class NicolBolasOriginalP1Finishes(unittest.TestCase):
         trace = sword_assault_combats()
         self.assertEqual([r["commander_damage"] for r in trace], [9, 18, 27])
         self.assertEqual([r["assault_paid"] for r in trace], [True, True, False])
+        self.assertEqual([len(r["paid_lands"]) for r in trace], [5, 5, 0])
+        self.assertEqual(trace[0]["lands_tapped_after"], (True,) * 5)
         self.assertTrue(trace[-1]["commander_loss"])
         # A hit is not an automatically free combat. RR and total five are
         # actually required in the main phase after each Sword untap.
@@ -179,7 +198,7 @@ class NicolBolasOriginalP1Finishes(unittest.TestCase):
         self.assertEqual(len(sword_assault_combats(sword_equipped=False)), 1)
         self.assertEqual(len(sword_assault_combats(assault_present=False)), 1)
         self.assertEqual(len(sword_assault_combats(assault_resolves=False)), 1)
-        self.assertEqual(sword_assault_combats(bolass_upkeep_paid=False), [])
+        self.assertEqual(sword_assault_combats(bolas_upkeep_paid=False), [])
         # Three uninterrupted hits are only one possible finite witness;
         # removal, blockers, tax and initial setup are not waived.
 
