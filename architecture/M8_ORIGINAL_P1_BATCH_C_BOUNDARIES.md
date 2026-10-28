@@ -8,7 +8,7 @@ October 28, 2026. **Seventeen** original P1 cases, all in the still-deferred sou
 | Nicol Bolas, the Ravager `acfa7922...` | K4–K6, E1–E2, F2–F3 (7) | W1–W3; complete loyalty-win proof |
 | Thraximundar `f3e71b71...` | K4, E1–E2, F3 (4) | W1–W2; subjective counterspell-density F2 |
 
-Two **separately candidate supersessions** concern No Mercy (absent from the current Nicol Bolas list, original K7) and Force of Will (absent from current Thraximundar list, original K5). They must reference their current-source M7 transfer receipts and explicitly distinguish still-surviving lines in the second PR. Neither should be reported as an executed match result.
+The original **No Mercy** claim (Nicol Bolas K7) is **already superseded in the existing M8 evidence register** and must not be counted again. One **additional separately candidate supersession** concerns Force of Will (absent from current Thraximundar list, original K5). It must reference its exact-current M7 transfer receipt and explicitly distinguish still-surviving lines in the second PR; it is not an executed match result.
 
 ## Technical boundaries
 

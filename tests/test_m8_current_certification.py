@@ -25,8 +25,8 @@ class CurrentSHAReleaseGate(unittest.TestCase):
         self.assertEqual(self.report["current_M7_transfer_receipts"], 38)
         self.assertEqual(self.report["historical_grandfathered_decks"], 24)
         self.assertEqual(self.report["original_deferred_P1"], 180)
-        self.assertEqual(self.report["current_sha_case_dispositions"], 78)
-        self.assertEqual(self.report["P1_pending_current_disposition"], 102)
+        self.assertEqual(self.report["current_sha_case_dispositions"], 96)
+        self.assertEqual(self.report["P1_pending_current_disposition"], 84)
         self.assertEqual(self.report["current_sha_commander_first_attestations"], 62)
         self.assertEqual(self.report["quality_attestations_pending"], 0)
         self.assertEqual(self.report["transferred_P0_passed"], 192)
@@ -110,6 +110,39 @@ class CurrentSHAReleaseGate(unittest.TestCase):
         sources = gate.read_current()
         deferred, _, _, _ = gate.current_case_index(sources)
         self.assertEqual(gate.validate_dispositions(rows + retired, deferred, sources),
+                         {(r["deck_id"], r["case_id"]) for r in rows + retired})
+
+    def test_m8_original_p1_batch_c_seventeen_finite_witnesses_plus_one_retired(self):
+        expected = {
+            "Nicol_Bolas": {"K4", "K5", "K6", "E1", "E2", "F2"},
+            "Nicol_Bolas__the_Ravager": {"K4", "K5", "K6", "E1", "E2", "F2", "F3"},
+            "Thraximundar": {"K4", "E1", "E2", "F3"},
+        }
+        commit = "25bac69852680cea68a7ff50c153c0f9b8fe8836"
+        blob = "d0f38a9996d0f017515445d9e59353a383bc310a"
+        ci = "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40673731627"
+        rows = [r for r in self.base["case_dispositions"] if r.get("test_blob_sha") == blob]
+        self.assertEqual(len(rows), 17)
+        for deck, cases in expected.items():
+            self.assertEqual({r["case_id"] for r in rows if r["deck_id"] == deck}, cases)
+        for row in rows:
+            self.assertEqual(row["disposition"], "CURRENT_SHA_TESTED")
+            self.assertEqual(row["engineering_commit_sha"], commit)
+            self.assertEqual(row["ci_run_url"], ci)
+            self.assertFalse(row["case_id"].startswith("W"))
+            self.assertIn("Finite Python model", row["limitations"])
+            self.assertIn("OriginalP1BatchCTests.test_", row["test_ref"])
+        retired = [r for r in self.base["case_dispositions"]
+                   if r["deck_id"] == "Thraximundar" and r["case_id"] == "K5"]
+        self.assertEqual(len(retired), 1)
+        self.assertEqual(retired[0]["disposition"], "SUPERSEDED_BY_APPROVED_REVISION")
+        self.assertEqual(retired[0]["removed_source_cards"], ["Force of Will"])
+        # Nicol Bolas K7 No Mercy was retired in prior batches: never count it twice.
+        self.assertEqual(len([r for r in self.base["case_dispositions"]
+                              if r["deck_id"] == "Nicol_Bolas" and r["case_id"] == "K7"]), 1)
+        decks = gate.read_current()
+        deferred, _, _, _ = gate.current_case_index(decks)
+        self.assertEqual(gate.validate_dispositions(rows + retired, deferred, decks),
                          {(r["deck_id"], r["case_id"]) for r in rows + retired})
 
     def test_owner_acceptance_cannot_be_inferred_or_pre_signed(self):
