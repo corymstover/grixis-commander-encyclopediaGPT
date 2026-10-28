@@ -90,7 +90,17 @@ class SedrisExactOwnerLock(unittest.TestCase):
         self.assertEqual(set(after["decks"]), set(before["decks"]))
         for name, entry in before["decks"].items():
             if name != KEY:
-                self.assertEqual(after["decks"][name], entry, name)
+                now = after["decks"][name]
+                # Evidence-only PRs may correct receipt and source pointers;
+                # the actual owner-approved raw SHA, lock, approval and
+                # decision basis may never silently change.
+                for field in ("approved_list_sha256", "approval_status", "lock_status",
+                              "approval_basis", "user_approval_date", "m7_final_candidate_sha256"):
+                    self.assertEqual(now.get(field), entry.get(field), (name, field))
+                source = ROOT / now["approved_list_artifact"]
+                self.assertTrue(source.is_file(), name)
+                self.assertEqual(hashlib.sha256(source.read_bytes()).hexdigest(),
+                                 entry["approved_list_sha256"], name)
 
 if __name__ == "__main__":
     unittest.main()
