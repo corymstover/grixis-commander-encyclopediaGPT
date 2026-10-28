@@ -1995,6 +1995,34 @@
       "positive_assertion": "An explicitly counterable hypothetical opposing win spell on turn three can be stopped with real Force of Will in hand, a separate blue card to exile, and a life-payment survival margin despite Nicol Bolas not yet being on board until turn four.",
       "adversarial_assertion": "With no actually held Force, no blue pitch card, insufficient life or an uncounterable opposing spell, that specific turn-three opponent line wins before the modeled turn-four Nicol Bolas plan. The mere presence of counterspells in the approved 100 cannot answer an undrawn or noncounterable spell.",
       "limitations": "One explicit favorable/adverse opposing combo fixture, not full turn-by-turn mana simulation, random opening-hand access, a measured cEDH matchup rate, or proof that Nicol Bolas has no deterministic conditional combat kill. No commander change."
+    },
+    {
+      "deck_id": "Marchesa__Dealer_of_Death",
+      "case_id": "E2",
+      "approved_raw_sha256": "931baa2762738ab32cd274ae8e128d0e3cd1aa85e81e51c2faa4934c1c70f363",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "Original Marchesa Dealer fast-mana/draw E2 now has a newly executed exact-approved-100 and original-plan-bound opening-hand resource trace with successful exact-head GitHub Actions, explicitly paying imprint, land discard, colored costs and drawing limitations without a deck edit.",
+      "engineering_commit_sha": "78cbd544e2b352aa8b2af68f4eddec7c672ac8dd",
+      "test_blob_sha": "dbdbfade741c979e190153546da94a4625881b84",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40754381517",
+      "test_ref": "tests/test_m8_marchesa_dealer_original_e2_w2.py::MarchesaDealerOriginalE2W2.test_E2_seven_card_fast_mana_draw_has_real_imprint_land_and_payments",
+      "positive_assertion": "In one actual seven-card City/Chrome Mox/Dark Ritual/Mox Diamond/Badlands/Mana Vault/Ad Nauseam opening, City pays Vault's generic and costs one life, Chrome exiles Ritual, Diamond discards Badlands, and the tapped Vault's CCC plus Chrome/Diamond B+B pays Ad Nauseam 3BB, with every revealed mana value costing life. Separate seven-card variants source real U/2U/BBB for Remora/Study/Necropotence.",
+      "adversarial_assertion": "Replacing the required nonartifact nonland Chrome imprint or the Diamond discardable land prevents the prescribed opening; Vault's three colorless cannot substitute for U or BBB, and Rhystic/Remora may draw zero after opponents pay their taxes or cast nonqualifying spells. No second land play or simultaneous reuse of tapped sources is credited.",
+      "limitations": "Finite distinct seven-card favorable/adverse examples, not a statistical opening-hand probability, automatic Ad Nauseam survival, guaranteed opponent draw, skip-draw-step bypass for Necropotence, or complete turn/stack engine. Existing locked source and its cEDH bracket unchanged."
+    },
+    {
+      "deck_id": "Marchesa__Dealer_of_Death",
+      "case_id": "W2",
+      "approved_raw_sha256": "931baa2762738ab32cd274ae8e128d0e3cd1aa85e81e51c2faa4934c1c70f363",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "Original Marchesa Dealer Underworld Breach P1 W2 now has successful exact-source CI physically conserving one LED and Brain Freeze, paying every 1U/three-other-card escape, counting actual storm casts/copies and bounding Oracle conversion and adversarial removal/resource failures.",
+      "engineering_commit_sha": "78cbd544e2b352aa8b2af68f4eddec7c672ac8dd",
+      "test_blob_sha": "dbdbfade741c979e190153546da94a4625881b84",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40754381517",
+      "test_ref": "tests/test_m8_marchesa_dealer_original_e2_w2.py::MarchesaDealerOriginalE2W2.test_W2_paid_led_breach_brain_freeze_and_oracle_conversion",
+      "positive_assertion": "A staged physical 100 comprising 84 library cards, nine distinct grave fillers, Breach and LED, grave Brain Freeze/Oracle, two tapped lands and command-zone Marchesa executes eleven finite LED/Brain Freeze casts with 3U from each real LED, 1U and three other exiles for Freeze, and three other exiles for LED recasts. Own self-mill replenishes grave fuel; opponent mill does not. With an empty own library, six more other exiles and a live grave Oracle, escaping LED for UUU funds an escaped UU Oracle and a conditional ETB victory.",
+      "adversarial_assertion": "Absent Breach, LED, Freeze, three other graveyard cards or survival through graveyard hate prevents the original recurrence; lone Petal gives one mana and cannot by itself cast 1U Freeze. Oracle fails if its ETB is countered, its card is missing, its exiles cannot be paid or own library remains nonempty. Opponent-library exhaustion alone is not immediate loss, and storm spell copies are not extra Marchesa crime casts.",
+      "limitations": "Finite staged late-game physical library/zone/cost ledger, not a guaranteed opening, arbitrary opponent priority/targeting tree, infinite loop, observed multiplayer win-rate or automatic library-loss certification. Oracle conversion requires its actual grave object and uncontested triggered ability; source cards and M8 owner status remain unchanged."
     }
   ],
   "deck_quality_attestations": [
