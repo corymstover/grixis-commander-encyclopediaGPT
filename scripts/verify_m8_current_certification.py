@@ -29,6 +29,8 @@ WHOLE_LIST_SOURCE_PREFIXES = (
     # Davros, Doctor Doom and Don Andres Rev2 whole-99 research was independently
     # archived here; current-SHA, Git blob and local review SHA still mandatory.
     "data/grixis/m7/independent_reviews/",
+    # Azula/Garza exact owner-approved Oct24 Rev2 studies used this research tree.
+    "data/grixis/m7/chatgpt_reviews/",
     # Exact current-source multi-100 local-best pools were written in the M6
     # I/J research tree for certain early M7 decks (Ashad Rev3 included).
     "data/grixis/m6/ij/tested_pools/",
