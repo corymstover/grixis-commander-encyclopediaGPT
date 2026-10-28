@@ -1,0 +1,52 @@
+name: M8 exact-62 release archive verification
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "scripts/build_m8_release_export.py"
+      - "tests/test_m8_release_export.py"
+      - "refinement/verification/m8_six_archidekt_metadata_reconciliation_2026-10-28.json"
+      - ".github/workflows/m8-release-artifact.yml"
+  push:
+    branches: [main]
+    paths:
+      - "scripts/build_m8_release_export.py"
+      - "tests/test_m8_release_export.py"
+      - "refinement/verification/m8_six_archidekt_metadata_reconciliation_2026-10-28.json"
+      - ".github/workflows/m8-release-artifact.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  release-archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Oracle audit dependencies
+        run: python -m pip install -r requirements-scryfall.txt
+      - name: Validate unsigned metadata and source-bound evidence
+        run: python -m unittest tests.test_m8_release_export -v
+      - name: Build immutable M8 release ZIP from current approved list
+        run: python scripts/build_m8_release_export.py --build
+      - name: Verify exact source and Archidekt hashes inside generated ZIP
+        run: python scripts/build_m8_release_export.py --check
+      - name: Verify current M8 evidence still awaits separate acceptance
+        run: python scripts/verify_m8_current_certification.py --check
+      - name: Record release archive digest
+        run: sha256sum exports/Grixis_Commander_Encyclopedia_62_M8_RELEASE_2026-10-28.zip > exports/M8_RELEASE_SHA256.txt
+      - name: Publish verified unsigned ZIP for owner review
+        uses: actions/upload-artifact@v4
+        with:
+          name: M8_62_deck_release_candidate_unsigned
+          path: |
+            exports/Grixis_Commander_Encyclopedia_62_M8_RELEASE_2026-10-28.zip
+            exports/M8_RELEASE_SHA256.txt
+          if-no-files-found: error
+          retention-days: 30
