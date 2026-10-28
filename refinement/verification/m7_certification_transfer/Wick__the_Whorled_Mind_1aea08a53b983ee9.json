@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "deck_id": "Wick__the_Whorled_Mind",
+  "approved_raw_sha256": "1aea08a53b983ee9ce083c1e9c95b366a3abc478a43b75517714d6280b484c48",
+  "approved_artifact": "refinement/decklists/Wick_the_Whorled_Mind_M7_Rev1_Approved_2026-10-27.txt",
+  "owner_approval_receipt": "refinement/approvals/Wick_the_Whorled_Mind_M7_Rev1_Approved_2026-10-27.md",
+  "engineering": {
+    "pr_url": "https://github.com/corymstover/GrokBotMTGCompanion/pull/746",
+    "head_sha": "d6ca6d87c7174fbef0de888bd75bd9b21ad88e6f",
+    "grok_first_pass_ref": "data/grixis/m6/grokbot_pass_c_advisory/Wick__the_Whorled_Mind.md — historical noncertifying GrokBot advice; no assertion of a new independent M7 first pass",
+    "independent_review_ref": "data/grixis/m6/owner_pass_c_substitute/Wick__the_Whorled_Mind/final_disposition.md — formal owner-waived Pass C equivalent with technically_independent=false, historical Oct15 baseline, not new exact-Rev1 certification",
+    "m7_decision_packet_ref": "data/grixis/m7/decision_reviews/Wick__the_Whorled_Mind_rev1.json",
+    "m7_decision_gate_command": "python3 scripts/grixis_m7_decision_gate.py --check --file data/grixis/m7/decision_reviews/Wick__the_Whorled_Mind_rev1.json",
+    "m7_decision_gate_ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40621910172",
+    "oracle_legality_ref": "data/grixis/m7/wick_rev1/Wick_M7_Rev1_Scryfall_snapshot.json — exact 111-name 2026-10-27 Oracle snapshot, Commander legality and color identity"
+  },
+  "m6_transfer": {
+    "plan_source_path": "data/grixis/m6/test_blueprints/Wick__the_Whorled_Mind.json",
+    "plan_blob_sha": "f1c22505ea4afed4914167c0fb83ae14cc13b884",
+    "ij_receipt_ref": "data/grixis/m6/ij/input_receipts/wick-the-whorled-mind.json — inputs_attested_downstream_incomplete / phase_b_replayed=false, not a final I/J certificate",
+    "ij_scope": "TRANSFERRED_WITH_CASE_MAPPING",
+    "revision_diff_and_validity_reason": "The Oct15 approved baseline f4556840dc8f7a8e1d532b73652d0035592b52b86adbbad6ed8fbe4270341e98 is supplanted, with explicit owner approval, by exact 100 M7 nine-swap raw SHA 1aea08a53b983ee9ce083c1e9c95b366a3abc478a43b75517714d6280b484c48. Prior Wick I/J input-attestation was not a Phase B replay and does NOT transfer automatically. Each of the original five P0 and nine P1 case IDs maps to a newly executed actual bounded fixture in integrated engineering PR #746, whose first test pins both original and final 100-card hashes and all selected legality/Oracle records. All fourteen IDs have positive and adverse result assertions; K4/K5 and E1/E2 share two fixture methods, not omitted cases. Five additional swap check methods cover changed cards. The dedicated exact-head 18-test CI and structural decision gate passed. This is source-paid finite M7 correspondence, not an invented complete independent MTG-game simulation or retrospectively completed historical M6 J.",
+    "P0": [
+      {
+        "case_id": "C1", "status": "PASSED", "test_ref": "data/grixis/m7/wick_rev1/verify.py::WickM7SourceBoundChecks.test_C1_commander_trigger_and_adversarial_opponent_rat",
+        "execution_command": "python3 data/grixis/m7/wick_rev1/verify.py", "oracle_source": "data/grixis/m7/wick_rev1/Wick_M7_Rev1_Scryfall_snapshot.json — Wick Oracle ID and trigger/activation text",
+        "payable_fixture": "Wick {3}{B} in play as a Rat; separate own and opposing Rat ETB events; one existing or absent Snail; four successive Wick triggers with a single Snail present.",
+        "positive_assertion": "Own Wick/Rat entry while controlled causes one 1/1 Snail when absent, otherwise puts one counter on the existing Snail; four more entries grow a single Snail to power five.",
+        "adversarial_assertion": "An opponent-controlled Rat does not trigger Wick, and an own Rat entry after Wick leaves no longer creates a Wick-triggered Snail.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40621910172", "scope": "EXACT_APPROVED_100", "tested_raw_sha256": "1aea08a53b983ee9ce083c1e9c95b366a3abc478a43b75517714d6280b484c48"
+      },
+      {
+        "case_id": "K1", "status": "PASSED", "test_ref": "data/grixis/m7/wick_rev1/verify.py::WickM7SourceBoundChecks.test_K1_snail_last_known_power_and_activation_source_independent",
+        "execution_command": "python3 data/grixis/m7/wick_rev1/verify.py", "oracle_source": "data/grixis/m7/wick_rev1/Wick_M7_Rev1_Scryfall_snapshot.json — Wick, Bulk Up, Lich's Relic Oracle",
+        "payable_fixture": "Pay actual {U}{B}{R} plus sacrifice a controlled Snail as activation cost. Fixture Snail power seven plus Lich's Relic +2, one Bulk Up power-doubling instant, then legal Wick activation and opponent removal of Wick in response.",
+        "positive_assertion": "Sacrificed Snail last-known power eighteen is snapshotted when paid as cost, generating three 18-damage opponent results and 18 card draws after Wick's activated ability resolves.",
+        "adversarial_assertion": "Removing Wick in response does not change the paid sacrifice or last-known power; this bounded fixture does not invent Snail return or free source of colored mana.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40621910172", "scope": "EXACT_APPROVED_100", "tested_raw_sha256": "1aea08a53b983ee9ce083c1e9c95b366a3abc478a43b75517714d6280b484c48"
+      },
+      {
+        "case_id": "K2", "status": "PASSED", "test_ref": "data/grixis/m7/wick_rev1/verify.py::WickM7SourceBoundChecks.test_K2_type_changers_preserve_snail_and_conspiracy_does_not",
+        "execution_command": "python3 data/grixis/m7/wick_rev1/verify.py", "oracle_source": "data/grixis/m7/wick_rev1/Wick_M7_Rev1_Scryfall_snapshot.json — Arcane Adaptation, Leyline of Transformation, Maskwood Nexus, Conspiracy",
+        "payable_fixture": "Place named actually controlled or applicable type-add enchantment/artifact in play with a creature that began as Snail; choose Rat, without inventing a new entering event.",
+        "positive_assertion": "Each of Arcane Adaptation, Leyline of Transformation and Maskwood Nexus adds Rat without removing Snail, so a newly entering Snail qualifies for Wick entry and Snail-sacrifice cost.",
+        "adversarial_assertion": "Conspiracy replaces original creature types, yielding Rat without Snail, so the modeled token cannot satisfy Wick's printed sacrifice-a-Snail cost.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40621910172", "scope": "EXACT_APPROVED_100", "tested_raw_sha256": "1aea08a53b983ee9ce083c1e9c95b366a3abc478a43b75517714d6280b484c48"
+      },
+      {
+        "case_id": "K3", "status": "PASSED", "test_ref": "data/grixis/m7/wick_rev1/verify.py::WickM7SourceBoundChecks.test_K3_wick_infect_source_and_cast_window",
+        "execution_command": "python3 data/grixis/m7/wick_rev1/verify.py", "oracle_source": "data/grixis/m7/wick_rev1/Wick_M7_Rev1_Scryfall_snapshot.json — Wick and Tainted Strike Oracle",
+        "payable_fixture": "Pay {B} Tainted Strike on controlled Wick while it is a legal instant target, and separate {U}{B}{R} plus Snail sacrifice to activate its deal-damage ability; model Snail power ten.",
+        "positive_assertion": "The activated ability explicitly makes Wick deal damage; Wick having infect means ten power can produce ten poison counters for each damaged opponent.",
+        "adversarial_assertion": "Giving infect to sacrificed Snail alone cannot change the ability's actual Wick damage source; no poison is credited to a noninfect Wick in that alternative.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40621910172", "scope": "EXACT_APPROVED_100", "tested_raw_sha256": "1aea08a53b983ee9ce083c1e9c95b366a3abc478a43b75517714d6280b484c48"
+      },
+      {
+        "case_id": "F1", "status": "PASSED", "test_ref": "data/grixis/m7/wick_rev1/verify.py::WickM7SourceBoundChecks.test_F1_actual_three_colors_and_cavern_restriction",
+        "execution_command": "python3 data/grixis/m7/wick_rev1/verify.py", "oracle_source": "data/grixis/m7/wick_rev1/Wick_M7_Rev1_Scryfall_snapshot.json — Wick, Cavern of Souls, Phyrexian Altar, land texts",
+        "payable_fixture": "One Wick activated ability cost {U}{B}{R}; finite sources representing single U, B, R, colorless Swarmyard, restricted Cavern and one Snail consumed by Altar.",
+        "positive_assertion": "Three independent unrestricted U/B/R sources pay a legal activation; Cavern may produce tribal color for a Rat creature SPELL cast, a distinct payment use.",
+        "adversarial_assertion": "One Cavern-plus-B-plus-R cannot pay the U in an activated ability; one Altar sacrifice supplies only a single mana, not all three U/B/R pips.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40621910172", "scope": "EXACT_APPROVED_100", "tested_raw_sha256": "1aea08a53b983ee9ce083c1e9c95b366a3abc478a43b75517714d6280b484c48"
+      }
+    ],
+    "P1": [
+      {
+        "case_id": "K4", "status": "PASSED", "test_ref": "data/grixis/m7/wick_rev1/verify.py::WickM7SourceBoundChecks.test_K4_cavern_cast_only_and_K5_ozolith_combat_window",
+        "execution_command": "python3 data/grixis/m7/wick_rev1/verify.py", "oracle_source": "data/grixis/m7/wick_rev1/Wick_M7_Rev1_Scryfall_snapshot.json — Cavern and Wick Oracle",
+        "payable_fixture": "Pay printed {U}{B}{R} for one Wick activation using exactly U, B and R rather than incorrectly borrowing Cavern's restricted creature-cast color; compare one chosen-Rat creature spell cast.",
+        "positive_assertion": "Cavern's printed restriction applies to creature spell casting only, so colored mana may correctly cast a Rat creature spell.",
+        "adversarial_assertion": "The same special tribal-colored mana may not pay Wick's ability; a colorless Cavern activation does not produce the missing blue pip.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40621910172", "scope": "EXACT_APPROVED_100", "tested_raw_sha256": "1aea08a53b983ee9ce083c1e9c95b366a3abc478a43b75517714d6280b484c48"
+      },
+      {
+        "case_id": "K5", "status": "PASSED", "test_ref": "data/grixis/m7/wick_rev1/verify.py::WickM7SourceBoundChecks.test_K4_cavern_cast_only_and_K5_ozolith_combat_window",
+        "execution_command": "python3 data/grixis/m7/wick_rev1/verify.py", "oracle_source": "data/grixis/m7/wick_rev1/Wick_M7_Rev1_Scryfall_snapshot.json — The Ozolith Oracle",
+        "payable_fixture": "Snail carrying five +1/+1 counters leaves after legitimate sacrifice; The Ozolith in play stores five counters, then begin combat on its controller's turn with a legal target creature.",
+        "positive_assertion": "Ozolith can receive saved Snail counters on the leave event and can transfer those counters only at its printed beginning-of-combat trigger.",
+        "adversarial_assertion": "Stored counters are not transferred to a newly created Snail instantaneously in response to a Wick activation before the next combat trigger window.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40621910172", "scope": "EXACT_APPROVED_100", "tested_raw_sha256": "1aea08a53b983ee9ce083c1e9c95b366a3abc478a43b75517714d6280b484c48"
+      },
+      {
+        "case_id": "E1", "status": "PASSED", "test_ref": "data/grixis/m7/wick_rev1/verify.py::WickM7SourceBoundChecks.test_E1_growth_requires_rat_entries_and_E2_type_changer",
+        "execution_command": "python3 data/grixis/m7/wick_rev1/verify.py", "oracle_source": "data/grixis/m7/wick_rev1/Wick_M7_Rev1_Scryfall_snapshot.json — Wick Oracle",
+        "payable_fixture": "Wick alive with four actual own Rat-enter events and four legal Wick trigger resolutions; no invented token entry from simply changing an existing permanent's subtype.",
+        "positive_assertion": "Four own Rat entry triggers create one Snail initially and then place three counters, reaching one power-four Snail, with no duplicate Snail creation while one is controlled.",
+        "adversarial_assertion": "An existing Snail merely becoming a Rat via Arcane Adaptation has not entered the battlefield and therefore does not create a free Wick trigger.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40621910172", "scope": "EXACT_APPROVED_100", "tested_raw_sha256": "1aea08a53b983ee9ce083c1e9c95b366a3abc478a43b75517714d6280b484c48"
+      },
+      {
+        "case_id": "E2", "status": "PASSED", "test_ref": "data/grixis/m7/wick_rev1/verify.py::WickM7SourceBoundChecks.test_E1_growth_requires_rat_entries_and_E2_type_changer",
+        "execution_command": "python3 data/grixis/m7/wick_rev1/verify.py", "oracle_source": "data/grixis/m7/wick_rev1/Wick_M7_Rev1_Scryfall_snapshot.json — type changer and Wick Oracle",
+        "payable_fixture": "After four real entry triggers, resolve an actual add-Rat type-changer and separately stage a subsequent fresh Rat-entry event, then resolve its Wick trigger.",
+        "positive_assertion": "A genuinely new Rat entry after changing types grows the already present Snail by one additional counter, reaching power five.",
+        "adversarial_assertion": "The type-changing continuous effect alone creates zero pending Wick triggers and cannot substitute for a real Rat permanent entering.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40621910172", "scope": "EXACT_APPROVED_100", "tested_raw_sha256": "1aea08a53b983ee9ce083c1e9c95b366a3abc478a43b75517714d6280b484c48"
+      },
+      {
+        "case_id": "W1", "status": "PASSED", "test_ref": "data/grixis/m7/wick_rev1/verify.py::WickM7SourceBoundChecks.test_W1_snail_rat_free_outlet_stack_recursion_and_disruption",
+        "execution_command": "python3 data/grixis/m7/wick_rev1/verify.py", "oracle_source": "data/grixis/m7/wick_rev1/Wick_M7_Rev1_Scryfall_snapshot.json — Wick, Arcane Adaptation, Goblin Bombardment, Altar Oracle",
+        "payable_fixture": "Controlled Wick, added-Rat Snail, already pending genuine Rat-entry trigger, and zero-mana Snail sacrifice outlet; explicitly pay each sacrifice and resolve each new Wick trigger, bounded to twelve iterations.",
+        "positive_assertion": "Each sacrifice removes exactly one Snail; ensuing Wick trigger creates a Rat/Snail and one new pending Wick trigger, repeating under a real free outlet and creating twelve replacement tokens/36 Impact Tremors events across three opponents.",
+        "adversarial_assertion": "Without a type changer only one new Snail appears and the loop ends; removing Wick before a replacement entry prevents additional triggers. Yawgmoth life payment is not misrepresented as free.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40621910172", "scope": "EXACT_APPROVED_100", "tested_raw_sha256": "1aea08a53b983ee9ce083c1e9c95b366a3abc478a43b75517714d6280b484c48"
+      },
+      {
+        "case_id": "W2", "status": "PASSED", "test_ref": "data/grixis/m7/wick_rev1/verify.py::WickM7SourceBoundChecks.test_W2_marrow_gnawer_alarm_actual_rat_arithmetic",
+        "execution_command": "python3 data/grixis/m7/wick_rev1/verify.py", "oracle_source": "data/grixis/m7/wick_rev1/Wick_M7_Rev1_Scryfall_snapshot.json — Marrow-Gnawer and Intruder Alarm Oracle",
+        "payable_fixture": "Marrow-Gnawer untapped with one, two, three, or four controlled Rats in play; sacrifice one Rat as activation cost, then count survivors to create corresponding Rat tokens; Intruder Alarm untaps creatures after entries.",
+        "positive_assertion": "With two Rats, sacrificing one leaves one to create one, sustainable rather than increasing; three Rats leave two and create two, increasing to four, and a fourth Rat increases to six.",
+        "adversarial_assertion": "With one Rat the cost removes Marrow-Gnawer and no Rats are generated; the symmetric Alarm also untaps opposing creatures, so this is not an isolated free advantage.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40621910172", "scope": "EXACT_APPROVED_100", "tested_raw_sha256": "1aea08a53b983ee9ce083c1e9c95b366a3abc478a43b75517714d6280b484c48"
+      },
+      {
+        "case_id": "W3", "status": "PASSED", "test_ref": "data/grixis/m7/wick_rev1/verify.py::WickM7SourceBoundChecks.test_W3_power_draw_infect_and_deckout_adversary",
+        "execution_command": "python3 data/grixis/m7/wick_rev1/verify.py", "oracle_source": "data/grixis/m7/wick_rev1/Wick_M7_Rev1_Scryfall_snapshot.json — Wick and Tainted Strike Oracle",
+        "payable_fixture": "Wick on battlefield with a source-paid {U}{B}{R}/Snail sacrifice ability, Snail power 50, three opponents each at 35 life and 20 cards left in the controller library.",
+        "positive_assertion": "The ability can deal fifty Wick-source damage to each opponent before mandatory drawing fifty cards; Tainted Strike changes source damage if applied to Wick.",
+        "adversarial_assertion": "Attempting fifty draws from only twenty cards is not a guaranteed single-player win and may cause the controller to lose through empty-library state-based actions; no unsupported guaranteed survival claim.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40621910172", "scope": "EXACT_APPROVED_100", "tested_raw_sha256": "1aea08a53b983ee9ce083c1e9c95b366a3abc478a43b75517714d6280b484c48"
+      },
+      {
+        "case_id": "F2", "status": "PASSED", "test_ref": "data/grixis/m7/wick_rev1/verify.py::WickM7SourceBoundChecks.test_F2_snail_or_wick_removed_in_response",
+        "execution_command": "python3 data/grixis/m7/wick_rev1/verify.py", "oracle_source": "data/grixis/m7/wick_rev1/Wick_M7_Rev1_Scryfall_snapshot.json — Wick Oracle",
+        "payable_fixture": "Own Rat has entered and one Wick trigger is pending; opponent removes the existing eight-power Snail before the trigger resolves. Separate branch removes Wick before a later Rat enters.",
+        "positive_assertion": "If no Snail exists when pending entry trigger resolves, it creates a new 1/1 rather than putting a counter on a departed Snail.",
+        "adversarial_assertion": "If Wick is removed before the new Rat enters, that later Rat entry generates no Wick trigger; earlier activated abilities on stack do not retroactively disappear.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40621910172", "scope": "EXACT_APPROVED_100", "tested_raw_sha256": "1aea08a53b983ee9ce083c1e9c95b366a3abc478a43b75517714d6280b484c48"
+      },
+      {
+        "case_id": "F3", "status": "PASSED", "test_ref": "data/grixis/m7/wick_rev1/verify.py::WickM7SourceBoundChecks.test_F3_artifact_vs_enchantment_hate_differentiated",
+        "execution_command": "python3 data/grixis/m7/wick_rev1/verify.py", "oracle_source": "data/grixis/m7/wick_rev1/Wick_M7_Rev1_Scryfall_snapshot.json — Ashnod's Altar, Phyrexian Altar, Goblin Bombardment, Arcane Adaptation",
+        "payable_fixture": "Existing Snail as Rat, controlled Wick, one pending entry trigger, and separate genuinely activated artifact Altar versus enchantment Bombardment outlets with respective type-changer support.",
+        "positive_assertion": "The three named outlets have correctly differentiated actual sacrifice-as-cost text; losing an enchantment type-changer breaks further Snail-as-Rat self-entry in a bounded repeat.",
+        "adversarial_assertion": "Artifact-hate suppression can stop Ashnod's/Phyrexian Altars without necessarily disabling enchantment Goblin Bombardment; losing Arcane Adaptation with no other type changer terminates the modeled Rat-Snail chain.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40621910172", "scope": "EXACT_APPROVED_100", "tested_raw_sha256": "1aea08a53b983ee9ce083c1e9c95b366a3abc478a43b75517714d6280b484c48"
+      }
+    ]
+  }
+}
