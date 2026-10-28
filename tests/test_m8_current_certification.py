@@ -25,8 +25,8 @@ class CurrentSHAReleaseGate(unittest.TestCase):
         self.assertEqual(self.report["current_M7_transfer_receipts"], 38)
         self.assertEqual(self.report["historical_grandfathered_decks"], 24)
         self.assertEqual(self.report["original_deferred_P1"], 180)
-        self.assertEqual(self.report["current_sha_case_dispositions"], 173)
-        self.assertEqual(self.report["P1_pending_current_disposition"], 7)
+        self.assertEqual(self.report["current_sha_case_dispositions"], 180)
+        self.assertEqual(self.report["P1_pending_current_disposition"], 0)
         self.assertEqual(self.report["current_sha_commander_first_attestations"], 62)
         self.assertEqual(self.report["quality_attestations_pending"], 0)
         self.assertEqual(self.report["transferred_P0_passed"], 192)
@@ -541,10 +541,47 @@ class CurrentSHAReleaseGate(unittest.TestCase):
         self.assertEqual(gate.validate_dispositions(rows + retired, deferred, sources),
                          {(r["deck_id"], r["case_id"]) for r in rows + retired})
 
+    def test_m8_final_seven_original_p1_exact_head_ci_and_zero_unresolved(self):
+        head = "ae3ed66698693b7f0ef95da9cafb14f49e3a152e"
+        ci = "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40762556219"
+        blobs = {
+            "a9fed7453b551bb1b56458a3415a5c678ea3d47d":
+                {("Parnesse__the_Subtle_Brush", "W1"),
+                 ("Parnesse__the_Subtle_Brush", "W2")},
+            "e62b5de777770bb8b9ebf875a1a60200649fbf21":
+                {("Nathan_Drake__Treasure_Hunter", "W2"),
+                 ("Nathan_Drake__Treasure_Hunter", "F2"),
+                 ("Obeka__Splitter_of_Seconds", "W3"),
+                 ("The_Rani", "F2"),
+                 ("Mishra__Artificer_Prodigy", "F2")},
+        }
+        selected = [r for r in self.base["case_dispositions"]
+                    if r.get("engineering_commit_sha") == head]
+        self.assertEqual(len(selected), 7)
+        for blob, expected in blobs.items():
+            rows = [r for r in selected if r["test_blob_sha"] == blob]
+            self.assertEqual({(r["deck_id"], r["case_id"]) for r in rows}, expected)
+            for row in rows:
+                self.assertEqual(row["disposition"], "CURRENT_SHA_TESTED")
+                self.assertEqual(row["ci_run_url"], ci)
+                self.assertIn("::", row["test_ref"])
+                self.assertGreater(len(row["positive_assertion"]), 75)
+                self.assertGreater(len(row["adversarial_assertion"]), 75)
+                self.assertGreater(len(row["limitations"]), 75)
+        sources = gate.read_current()
+        deferred, _, _, _ = gate.current_case_index(sources)
+        resolved = gate.validate_dispositions(self.base["case_dispositions"], deferred, sources)
+        self.assertEqual(resolved, set(deferred))
+        self.assertEqual(len(resolved), 180)
+        self.assertIsNone(self.base["m8_owner_acceptance"])
+        self.assertFalse(self.report["ready_for_final_release"])
+
     def test_owner_acceptance_cannot_be_inferred_or_pre_signed(self):
         invalid = copy.deepcopy(self.base)
         invalid["m8_owner_acceptance"] = {"release_fingerprint": self.report["release_fingerprint"]}
-        with self.assertRaisesRegex(gate.CertificationError, "cannot predate unresolved"):
+        # All P1 now have dispositions, but a fabricated owner acceptance
+        # without the exact evidence fingerprint must still fail closed.
+        with self.assertRaisesRegex(gate.CertificationError, "different set of test and judgment evidence"):
             gate.inspect(invalid, include_archive=False)
 
     def test_no_duplicate_or_non_original_case_dispositions(self):
