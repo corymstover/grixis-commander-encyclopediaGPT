@@ -25,8 +25,8 @@ class CurrentSHAReleaseGate(unittest.TestCase):
         self.assertEqual(self.report["original_deferred_P1"], 180)
         self.assertEqual(self.report["current_sha_case_dispositions"], 7)
         self.assertEqual(self.report["P1_pending_current_disposition"], 173)
-        self.assertEqual(self.report["current_sha_commander_first_attestations"], 24)
-        self.assertEqual(self.report["quality_attestations_pending"], 38)
+        self.assertEqual(self.report["current_sha_commander_first_attestations"], 31)
+        self.assertEqual(self.report["quality_attestations_pending"], 31)
         self.assertEqual(self.report["transferred_P0_passed"], 192)
         self.assertEqual(self.report["transferred_P1_passed"], 193)
         self.assertFalse(self.report["ready_for_final_release"])
@@ -100,6 +100,26 @@ class CurrentSHAReleaseGate(unittest.TestCase):
         }]
         with self.assertRaisesRegex(gate.CertificationError, "Quality review not for current"):
             gate.inspect(invalid, include_archive=False)
+
+    def test_markdown_whole_list_review_is_sha_and_path_bound(self):
+        approved = gate.read_current()
+        original = next(row for row in self.base["deck_quality_attestations"]
+                        if row["deck_id"] == "RogSi")
+        self.assertEqual(gate.validate_deck_attestations([original], approved), {"RogSi"})
+        for unsafe in (
+            "data/grixis/m7/unreviewed/claim.md",
+            "data/grixis/m7/decision_reviews/../../claim.md",
+            "data/grixis/m7/decision_reviews/claim.txt",
+        ):
+            with self.subTest(path=unsafe):
+                invalid = copy.deepcopy(original)
+                invalid["engineering_review_path"] = unsafe
+                with self.assertRaisesRegex(gate.CertificationError, "Missing exact M7 whole-list decision source"):
+                    gate.validate_deck_attestations([invalid], approved)
+        invalid = copy.deepcopy(original)
+        invalid["engineering_review_blob_sha"] = "not-a-git-blob"
+        with self.assertRaisesRegex(gate.CertificationError, "Missing Git blob commitment"):
+            gate.validate_deck_attestations([invalid], approved)
 
     def test_grandfathered_quality_cannot_substitute_for_unexecuted_cases(self):
         approved = gate.read_current()
