@@ -47,8 +47,55 @@
       "evidence_sha256": "5e1751b9263afde58c21815ca23c1efd4d36afc4367f0dde699d89ff0276c965",
       "removed_source_cards": ["Peer into the Abyss"],
       "surviving_line_disposition": "Wheel-based draw punishment, Underworld Breach, and opponent-relative Narset/Notion Thief cases are independent surviving claims; no Peer-specific win assertion transfers."
+    },
+    {
+      "deck_id": "RogSi",
+      "case_id": "K5",
+      "approved_raw_sha256": "97f3c0ca70303b44cd887938c320b75de01e991feec7d71d4c18811aeaa88225",
+      "disposition": "SUPERSEDED_BY_APPROVED_REVISION",
+      "reason": "The original K5 pre-delirium restriction is specific to Demonic Counsel, a card absent from the locked Rograkh/Silas list. The old Demon-only lookup cannot occur in this build.",
+      "evidence_path": "refinement/verification/m7_certification_transfer/RogSi_97f3c0ca70303b44.json",
+      "evidence_sha256": "75f4760dae28498d62224447f09ff2dc1bd679a4b9e23331588f1198f51d0645",
+      "removed_source_cards": ["Demonic Counsel"],
+      "surviving_line_disposition": "Existing black tutors and combo-search consistency remain separate exact-list concerns; retirement of K5 does not certify them or a Demon-search line."
+    },
+    {
+      "deck_id": "Parnesse__the_Subtle_Brush",
+      "case_id": "W3",
+      "approved_raw_sha256": "63b605a2c36ec81ab7a5a48770ac2b96b7994daf38546aba7b6bc6bd7597928c",
+      "disposition": "SUPERSEDED_BY_APPROVED_REVISION",
+      "reason": "The original W3 infinite-Dualcaster token line specifically requires Replication Technique, which was removed before Cory approved the final Parnesse list.",
+      "evidence_path": "refinement/verification/m7_certification_transfer/Parnesse__the_Subtle_Brush_63b605a2c36ec81a.json",
+      "evidence_sha256": "8d953f60940bcffde2d1ed32f700082da022d67b567fc64bf935a026365cb050",
+      "removed_source_cards": ["Replication Technique"],
+      "surviving_line_disposition": "Other copy loops, mana lines and finishers must stand on their own existing Parnesse case evidence. There is no legal W3 Replication Technique loop in the current 100."
+    },
+    {
+      "deck_id": "Nicol_Bolas",
+      "case_id": "K7",
+      "approved_raw_sha256": "a6079935a50b9469ca487e58e6bac159f8b777348b31585256b967f92c5d0df6",
+      "disposition": "SUPERSEDED_BY_APPROVED_REVISION",
+      "reason": "The original K7 scenario described No Mercy's retaliation and own-creature damage edge cases. The exact approved Nicol Bolas 100 does not contain No Mercy.",
+      "evidence_path": "refinement/verification/m7_certification_transfer/Nicol_Bolas_a6079935a50b9469.json",
+      "evidence_sha256": "448c5afbcd7f733cb6f2255f878ba2a6759def930dbc78af9b32b96b6c3c328b",
+      "removed_source_cards": ["No Mercy"],
+      "surviving_line_disposition": "Nicol Bolas's actual combat-damage, discard and Curiosity interactions remain separately accountable; this only retires the absent No Mercy-specific effect."
     }
   ],
-  "deck_quality_attestations": [],
+  "deck_quality_attestations": [
+    {
+      "deck_id": "Kefka__Court_Mage",
+      "approved_raw_sha256": "14277f6e9774c5ef02b4f92332b52684794367007abf81bc2d84ef7ad7bcaa7d",
+      "outcome": "KEEP_EXACT_100",
+      "commander_first": "Kefka's distinct discard-card-type ETB/attack trigger and Wizard copy/blink axis remain primary; an owner-approved special two-swap M7 waiver favored Step Through and Sakashima over adding unsupported generic staples.",
+      "mana_and_protection": "The reviewed exact list preserves low-curve Ad Nauseam, Culling the Weak black burst, protected Grixis acceleration, and key interaction; replacing Culling with Generator Servant or stripping tutor depth lost tempo and colored reliability in the tested alternatives.",
+      "win_lines_and_counterplay": "Oracle/Consultation and the source-paid Breach/LED/Brain Freeze finite loop are available but subject to actual stack, fuel and opposition. The W2 original full-stack obligation remains deferred; it is not concealed by this quality judgment. Multiple Kefka copy/ETB axes maintain commander relevance.",
+      "historical_M6_case_scope": "Five P0 exact cases, six originally mapped P1 PASSED, W2 Breach line bounded in engineering PR #754 and still historically DEFERRED, and the cut Counsel-specific K4/F3 explicitly retired; no false original I/J certificate transferred.",
+      "tested_pool_stop_reason": "The current M7 decision packet records 23 material challengers, 44 staged exact whole-100 alternatives, direct Generator Servant/Culling and Twinflame/Molten Duplication checks, and an open-ended, quality-based no-third-through-fifth-swap rationale. No stronger commander-first cut/add has been demonstrated within that tested pool; this does not claim a global optimum.",
+      "review_path": "refinement/verification/m7_certification_transfer/Kefka__Court_Mage_14277f6e9774c5ef.json",
+      "review_sha256": "bf8d815ecc213f63b423efe7060afa0215240372f4ecb5efec0991922023779c",
+      "source_commit_sha": "d7b5dcf3e7ba272941990d4ba0c88d837f4f8a64"
+    }
+  ],
   "m8_owner_acceptance": null
 }
