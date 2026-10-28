@@ -25,8 +25,8 @@ class CurrentSHAReleaseGate(unittest.TestCase):
         self.assertEqual(self.report["current_M7_transfer_receipts"], 38)
         self.assertEqual(self.report["historical_grandfathered_decks"], 24)
         self.assertEqual(self.report["original_deferred_P1"], 180)
-        self.assertEqual(self.report["current_sha_case_dispositions"], 47)
-        self.assertEqual(self.report["P1_pending_current_disposition"], 133)
+        self.assertEqual(self.report["current_sha_case_dispositions"], 78)
+        self.assertEqual(self.report["P1_pending_current_disposition"], 102)
         self.assertEqual(self.report["current_sha_commander_first_attestations"], 62)
         self.assertEqual(self.report["quality_attestations_pending"], 0)
         self.assertEqual(self.report["transferred_P0_passed"], 192)
@@ -69,6 +69,48 @@ class CurrentSHAReleaseGate(unittest.TestCase):
         deferred, _, _, _ = gate.current_case_index(sources)
         self.assertEqual(gate.validate_dispositions(rows, deferred, sources),
                          {(r["deck_id"], r["case_id"]) for r in rows})
+
+    def test_m8_original_p1_batch_b_exact_head_twenty_eight_bounded_and_three_retired(self):
+        expected = {
+            "Sauron__Lord_of_the_Rings": {"K4", "K5", "K6", "K7", "E1", "E2", "F2", "F3"},
+            "Obeka__Splitter_of_Seconds": {"K4", "K5", "K6", "E1", "E2", "F2", "F3"},
+            "The_Rani": {"K4", "K5", "E1", "E2", "E3", "F3"},
+            "Sol_kanar_the_Swamp_King": {"K4", "K5", "E1", "E2", "F2"},
+            "Tetsuo__Imperial_Champion": {"F2", "F3"},
+        }
+        test_head = "a11db76dc6ef2d842c424293ce87ea8ab9497c99"
+        test_blob = "471212d7599c832c01fb93cf83ca8385c8fd349c"
+        test_ci = "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40672818902"
+        rows = [r for r in self.base["case_dispositions"] if r.get("test_blob_sha") == test_blob]
+        self.assertEqual(len(rows), 28)
+        for deck, cases in expected.items():
+            self.assertEqual({r["case_id"] for r in rows if r["deck_id"] == deck}, cases)
+        for row in rows:
+            self.assertEqual(row["disposition"], "CURRENT_SHA_TESTED")
+            self.assertEqual(row["engineering_commit_sha"], test_head)
+            self.assertEqual(row["ci_run_url"], test_ci)
+            self.assertFalse(row["case_id"].startswith("W"))
+            self.assertIn("Finite Python model", row["limitations"])
+            self.assertIn("OriginalP1BatchBTests.test_", row["test_ref"])
+            self.assertTrue(row["positive_assertion"] and row["adversarial_assertion"])
+        retired_cases = {
+            ("Sol_kanar_the_Swamp_King", "F3"): "Force of Will",
+            ("Tetsuo__Imperial_Champion", "K6"): "Sword of Wealth and Power",
+            ("Marchesa__Dealer_of_Death", "K6"): "Last Chance",
+        }
+        retired = [r for r in self.base["case_dispositions"]
+                   if (r["deck_id"], r["case_id"]) in retired_cases]
+        self.assertEqual(len(retired), 3)
+        for row in retired:
+            key = row["deck_id"], row["case_id"]
+            self.assertEqual(row["disposition"], "SUPERSEDED_BY_APPROVED_REVISION")
+            self.assertEqual(row["removed_source_cards"], [retired_cases[key]])
+            self.assertIn("m7_certification_transfer", row["evidence_path"])
+            self.assertTrue(row["surviving_line_disposition"])
+        sources = gate.read_current()
+        deferred, _, _, _ = gate.current_case_index(sources)
+        self.assertEqual(gate.validate_dispositions(rows + retired, deferred, sources),
+                         {(r["deck_id"], r["case_id"]) for r in rows + retired})
 
     def test_owner_acceptance_cannot_be_inferred_or_pre_signed(self):
         invalid = copy.deepcopy(self.base)
