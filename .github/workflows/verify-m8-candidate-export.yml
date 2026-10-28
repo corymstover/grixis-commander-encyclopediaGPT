@@ -10,7 +10,6 @@ on:
       - "tests/test_build_m8_candidate_export.py"
       - "scripts/verify_current_62_oracle_coverage.py"
       - "tests/test_verify_current_62_oracle_coverage.py"
-      - "refinement/metadata_audit/Current_Cycle_Oracle_Cache_Supplement_2026-10-28.jsonl"
       - ".github/workflows/verify-m8-candidate-export.yml"
   push:
     branches: [main]
@@ -21,7 +20,6 @@ on:
       - "tests/test_build_m8_candidate_export.py"
       - "scripts/verify_current_62_oracle_coverage.py"
       - "tests/test_verify_current_62_oracle_coverage.py"
-      - "refinement/metadata_audit/Current_Cycle_Oracle_Cache_Supplement_2026-10-28.jsonl"
       - ".github/workflows/verify-m8-candidate-export.yml"
 
 permissions:

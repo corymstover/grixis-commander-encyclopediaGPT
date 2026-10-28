@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Audit the exact 62 approved decklists against dated Scryfall records.
 
-The October 28 cache was built before the last Tresserhorn additions reached its
-input scan. Keep those three source-checked late records in a small supplement
-until the next full cache refresh. Neither a record match nor this script is an
-Oracle-rulings engine, playtest, or formal M6/M8 certification.
+The current main cache has been refreshed to include the three late Tresserhorn
+additions. Validate coverage against that exact current base-cache hash. Neither
+a record match nor this script is an Oracle-rulings engine, playtest, or formal
+M6/M8 certification.
 """
 from __future__ import annotations
 
@@ -20,7 +20,6 @@ ROOT = Path(__file__).resolve().parents[1]
 META = ROOT / "refinement" / "metadata_audit"
 CACHE = META / "Current_Cycle_Oracle_Cache.jsonl"
 SUMMARY = META / "Current_Cycle_Oracle_Cache_Summary.json"
-SUPPLEMENT = META / "Current_Cycle_Oracle_Cache_Supplement_2026-10-28.jsonl"
 REGISTRY = ROOT / "state" / "current_deck_overrides.json"
 EXCEPTIONS = ROOT / "source-package" / "research" / "Project_Exceptions_Current_2026-10-12.csv"
 
@@ -45,10 +44,9 @@ def audit() -> dict:
     if hashlib.sha256(CACHE.read_bytes()).hexdigest() != summary["cache_sha256"]:
         raise ValueError("base Oracle cache has changed without summary update")
     base = records(CACHE)
-    extra = records(SUPPLEMENT)
-    if any(key in base for key in extra):
-        raise ValueError("supplement overlaps base cache; consolidate after refresh")
-    combined = base | extra
+    late_names = {"Genesis Chamber", "Sengir Autocrat", "The Meathook Massacre"}
+    if not all(norm(name) in base for name in late_names):
+        raise ValueError("current full Oracle cache missing late Tresserhorn additions")
 
     with EXCEPTIONS.open(newline="", encoding="utf-8-sig") as f:
         allowed = {
@@ -63,7 +61,7 @@ def audit() -> dict:
     checked = 0
     companions = 0
     exception_hits = set()
-    supplement_hits = Counter()
+    late_hits = Counter()
     for deck_id, info in registry.items():
         if info.get("approval_status") != "APPROVED" or info.get("lock_status") != "LOCKED":
             raise ValueError(f"unapproved/unlocked deck: {deck_id}")
@@ -81,7 +79,7 @@ def audit() -> dict:
             if quantity < 1:
                 raise ValueError(f"invalid quantity: {deck_id}: {line}")
             key = norm(name)
-            record = combined.get(key)
+            record = base.get(key)
             if not record:
                 raise ValueError(f"Oracle cache gap: {deck_id}: {name}")
             if not set(record["color_identity"]).issubset({"U", "B", "R"}):
@@ -90,8 +88,8 @@ def audit() -> dict:
                 if (deck_id, key) not in allowed:
                     raise ValueError(f"unapproved official legality exception: {deck_id}: {name}")
                 exception_hits.add((deck_id, key))
-            if key in extra:
-                supplement_hits[name] += quantity
+            if name in late_names:
+                late_hits[name] += quantity
             if "[Companion]" in line:
                 deck_companions += quantity
             else:
@@ -102,8 +100,8 @@ def audit() -> dict:
         companions += deck_companions
     if (checked, companions) != (6200, 1):
         raise ValueError(f"unexpected totals: {checked} playable, {companions} companions")
-    if set(supplement_hits) != {"Genesis Chamber", "Sengir Autocrat", "The Meathook Massacre"}:
-        raise ValueError(f"supplement must correspond to late Tresserhorn additions: {supplement_hits}")
+    if set(late_hits) != late_names:
+        raise ValueError(f"latest Tresserhorn additions not all in current lists: {late_hits}")
     if len(exception_hits) != 6:
         raise ValueError(f"expected six explicit nonlegal card/deck entries, got {exception_hits}")
     return {
@@ -112,7 +110,7 @@ def audit() -> dict:
         "playable_cards": checked,
         "companions": companions,
         "base_cache_names": len(base),
-        "supplement_names": sorted(supplement_hits),
+        "late_tresserhorn_names_covered": sorted(late_hits),
         "nonlegal_entries_with_explicit_project_exception": len(exception_hits),
         "new_unresolved_names": 0,
         "out_of_grixis_color_identity": 0,
