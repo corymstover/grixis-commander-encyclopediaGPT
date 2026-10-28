@@ -1,0 +1,26 @@
+name: "M7 Deck 45 Obeka Splitter exact-approved M6 case transfer"
+
+on:
+  pull_request:
+    paths:
+      - "state/current_deck_overrides.json"
+      - "refinement/decklists/Obeka_Splitter_of_Seconds_M7_Rev1_Approved_2026-10-27.txt"
+      - "refinement/verification/m7_certification_transfer/Obeka__Splitter_of_Seconds_f80d882944d5e39f.json"
+      - "tests/test_m7_obeka_splitter_45_owner_lock.py"
+      - ".github/workflows/verify-m7-obeka-splitter-45-transfer.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  exact-owner-source-p0-deferrals:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 -m unittest discover -s tests -p 'test_m7_obeka_splitter_45_owner_lock.py' -v
