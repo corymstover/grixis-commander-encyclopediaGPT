@@ -25,8 +25,8 @@ class CurrentSHAReleaseGate(unittest.TestCase):
         self.assertEqual(self.report["current_M7_transfer_receipts"], 38)
         self.assertEqual(self.report["historical_grandfathered_decks"], 24)
         self.assertEqual(self.report["original_deferred_P1"], 180)
-        self.assertEqual(self.report["current_sha_case_dispositions"], 143)
-        self.assertEqual(self.report["P1_pending_current_disposition"], 37)
+        self.assertEqual(self.report["current_sha_case_dispositions"], 145)
+        self.assertEqual(self.report["P1_pending_current_disposition"], 35)
         self.assertEqual(self.report["current_sha_commander_first_attestations"], 62)
         self.assertEqual(self.report["quality_attestations_pending"], 0)
         self.assertEqual(self.report["transferred_P0_passed"], 192)
@@ -332,6 +332,30 @@ class CurrentSHAReleaseGate(unittest.TestCase):
                       ["positive_assertion"])
         self.assertIn("absent", next(r for r in rows if r["case_id"] == "W2")
                       ["adversarial_assertion"])
+        sources = gate.read_current()
+        deferred, _, _, _ = gate.current_case_index(sources)
+        self.assertEqual(gate.validate_dispositions(rows, deferred, sources),
+                         {(r["deck_id"], r["case_id"]) for r in rows})
+
+    def test_m8_marchesa_dealer_two_original_e2_w2_exact_ci(self):
+        blob = "dbdbfade741c979e190153546da94a4625881b84"
+        head = "78cbd544e2b352aa8b2af68f4eddec7c672ac8dd"
+        ci = "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40754381517"
+        rows = [r for r in self.base["case_dispositions"] if r.get("test_blob_sha") == blob]
+        self.assertEqual(len(rows), 2)
+        self.assertEqual({r["deck_id"] for r in rows}, {"Marchesa__Dealer_of_Death"})
+        self.assertEqual({r["case_id"] for r in rows}, {"E2", "W2"})
+        for row in rows:
+            self.assertEqual(row["approved_raw_sha256"],
+                             "931baa2762738ab32cd274ae8e128d0e3cd1aa85e81e51c2faa4934c1c70f363")
+            self.assertEqual(row["disposition"], "CURRENT_SHA_TESTED")
+            self.assertEqual(row["engineering_commit_sha"], head)
+            self.assertEqual(row["ci_run_url"], ci)
+            self.assertIn("test_m8_marchesa_dealer_original_e2_w2.py::MarchesaDealerOriginalE2W2.test_",
+                          row["test_ref"])
+            self.assertGreater(len(row["positive_assertion"]), 75)
+            self.assertGreater(len(row["adversarial_assertion"]), 75)
+            self.assertGreater(len(row["limitations"]), 75)
         sources = gate.read_current()
         deferred, _, _, _ = gate.current_case_index(sources)
         self.assertEqual(gate.validate_dispositions(rows, deferred, sources),
