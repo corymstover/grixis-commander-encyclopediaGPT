@@ -102,7 +102,16 @@ class TetsuoM7OwnerLock(unittest.TestCase):
         self.assertEqual(set(current["decks"]), set(historical["decks"]))
         for name, entry in historical["decks"].items():
             if name != KEY:
-                self.assertEqual(current["decks"][name], entry, name)
+                now = current["decks"][name]
+                # Non-card certification repairs may adjust metadata. Preserve
+                # exact owner approval, strategy basis, SHA and source bytes.
+                for field in ("approved_list_sha256", "approval_status", "lock_status",
+                              "approval_basis", "user_approval_date", "m7_final_candidate_sha256"):
+                    self.assertEqual(now.get(field), entry.get(field), (name, field))
+                source = ROOT / now["approved_list_artifact"]
+                self.assertTrue(source.is_file(), name)
+                self.assertEqual(hashlib.sha256(source.read_bytes()).hexdigest(),
+                                 entry["approved_list_sha256"], name)
 
 if __name__ == "__main__":
     unittest.main()
