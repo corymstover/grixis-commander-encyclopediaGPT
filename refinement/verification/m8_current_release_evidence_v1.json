@@ -154,6 +154,21 @@
   ],
   "deck_quality_attestations": [
     {
+      "deck_id": "Nicol_Bolas",
+      "approved_raw_sha256": "a6079935a50b9469ca487e58e6bac159f8b777348b31585256b967f92c5d0df6",
+      "outcome": "KEEP_EXACT_100",
+      "commander_first": "Original eight-mana 2UUBBRR Nicol Bolas, unlike the Ravager superfriends #42, requires recurring UBR upkeep and actually dealing its own damage to each opponent to make that opponent discard their hand. All 99 exact current noncommander physical copies have new separate role judgments: 37 land, 18 ramp/payment, 17 source-damage/evasion/protection, 11 interaction, ten discard conversion, six access/recovery. Kediss, Chandra's Ignition, Dragon Tempest, Ingris, Quicksilver Dagger and Minamo improve source-specific damage without replacing the commander with generic Grixis loops.",
+      "mana_and_protection": "Thirty-seven lands include premium typed-dual fetch access, color-flex sources, Plaza legend fixing, Arena/Hall haste utility, Minamo untap and Command Beacon tax mitigation; Island repeats twice and no other nonbasic repeats. Eighteen colored rocks, rituals and restricted Rivaz Dragon-cast mana support hard UUBBRR plus ongoing UBR upkeep; Coalition Relic stores colors where cut Seething Song offered one burst. Greaves/Boots/Regalia/Mithril Coat have distinct attach and protective limits, while counter/removal/Deluge and Swiftfoot cannot ensure the Dragon survives all three opponents. Loss of Bojuka Bog graveyard hate and No Mercy combat deterrence remains a specific conscious risk.",
+      "win_lines_and_counterplay": "Curiosity/Ophidian Eye draw on actual Bolas-sourced damage events; Kediss spreads commander combat damage to other opponents under its source, and tap damage from Quicksilver Dagger plus paid Minamo untap can cause noncombat whole-hand discards. Sarkhan can have a distinct legendary name while copying Nicol temporarily and may have summoning sickness; Aggravated Assault plus Sword of Feast and Famine needs a real unblocked hit and at least five usable land mana. Dream Halls is symmetrical and preserves command tax and UBR upkeep, so opponents may exploit it; Reanimate needs Nicol actually in graveyard and pays eight life. No automatic deterministic win or measured win rate is claimed.",
+      "historical_M6_case_scope": "Exact M7 SHA transfer receipt has five original P0 source-bound PASSED and ten original P1 DEFERRED. The source-removed No Mercy-specific K7 has one separately accepted SUPERSEDED_BY_APPROVED_REVISION disposition; nine other original P1 remain deferred. Engineering #723 exact-source CI #40411851701 verified 99/99 live Scryfall unique names, 14 Oracle witness sets and seven finite tests. These are separate from original M6 I/J or the owner-waived non-independent Pass C and not recertified by this whole99 attestation.",
+      "tested_pool_stop_reason": "The full 99-copy ledger crosschecks exact current list after ten owner-approved additions and cuts, preserving commander-sourced damage and draw over redundant old Oppression/Raiders/No Mercy/Bog/Longbow roles. Four complete legal alternative 100s were opposed with named opportunity costs: Minamo to Shizo, Plaza/Coat back to Bog/No Mercy, Dream Halls/Minamo to Song/Shizo and Ophidian Eye to Raiders' Wake. Shizo fear, renewed grave hate and asymmetric burst casting offer genuine metagame arguments but sacrifice repeatable damage, colored upkeep, direct commander protection or card-flow, so current ten-swap deck is still preferred on commander-first quality, not quota. Symmetric Dream Halls risk and lack of a generic graveyard-exile slot stay transparent.",
+      "review_path": "refinement/verification/m8_quality_scope/Nicol_Bolas_a6079935a50b9469.md",
+      "review_sha256": "452a22c879f27eda2a097689f2f356d122a3097c3bd4ba09e02d9f52cebb30fa",
+      "source_commit_sha": "5a0463d11b66711257506cc1a035af669bf86871",
+      "engineering_review_path": "data/grixis/m7/decision_reviews/Nicol_Bolas_chatgpt_rev1_review.md",
+      "engineering_review_blob_sha": "48a4482010a1517e5a047d6cc22e814d04e3e0c2"
+    },
+    {
       "deck_id": "Admiral_Beckett_Brass",
       "approved_raw_sha256": "ff5f54f9f608ab0facd62fd3b79df16a0255b4dbbc12d39154a127f27bb8c000",
       "outcome": "KEEP_EXACT_100",

@@ -2,8 +2,10 @@
 
 import copy
 import json
+import re
 import sys
 import unittest
+from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -25,8 +27,8 @@ class CurrentSHAReleaseGate(unittest.TestCase):
         self.assertEqual(self.report["original_deferred_P1"], 180)
         self.assertEqual(self.report["current_sha_case_dispositions"], 12)
         self.assertEqual(self.report["P1_pending_current_disposition"], 168)
-        self.assertEqual(self.report["current_sha_commander_first_attestations"], 37)
-        self.assertEqual(self.report["quality_attestations_pending"], 25)
+        self.assertEqual(self.report["current_sha_commander_first_attestations"], 38)
+        self.assertEqual(self.report["quality_attestations_pending"], 24)
         self.assertEqual(self.report["transferred_P0_passed"], 192)
         self.assertEqual(self.report["transferred_P1_passed"], 193)
         self.assertFalse(self.report["ready_for_final_release"])
@@ -180,6 +182,34 @@ class CurrentSHAReleaseGate(unittest.TestCase):
                 invalid[field] = value
                 with self.assertRaisesRegex(gate.CertificationError, message):
                     gate.validate_deck_attestations([invalid], approved)
+
+    def test_original_nicol_bolas_current_99_copy_ledger_not_ravager(self):
+        decks = gate.read_current()
+        current = next(x for x in decks if x["id"] == "Nicol_Bolas")
+        row = next(x for x in self.base["deck_quality_attestations"]
+                   if x["deck_id"] == "Nicol_Bolas")
+        self.assertEqual(gate.validate_deck_attestations([row], decks), {"Nicol_Bolas"})
+        text = gate.repo_file(row["review_path"]).read_text(encoding="utf-8")
+        self.assertIn(current["sha256"], text)
+        roster = Counter({name: quantity for quantity, name, zone in current["cards"]
+                          if zone == "Main"})
+        ledger = Counter()
+        for quantity, name in re.findall(r"^- (\d+)x (.+)$", text, re.MULTILINE):
+            ledger[name] += int(quantity)
+        self.assertEqual(sum(ledger.values()), 99)
+        self.assertEqual(ledger, roster)
+        self.assertNotIn("Nicol Bolas", ledger)
+        self.assertIn("Nicol Bolas, the Ravager // Nicol Bolas, the Arisen", ledger)
+        for field, invalid_value, error in (
+            ("approved_raw_sha256", "0" * 64, "not for current 100"),
+            ("review_sha256", "0" * 64, "Evidence SHA drift"),
+            ("engineering_review_blob_sha", "invalid", "Missing Git blob commitment"),
+        ):
+            with self.subTest(field=field):
+                tampered = copy.deepcopy(row)
+                tampered[field] = invalid_value
+                with self.assertRaisesRegex(gate.CertificationError, error):
+                    gate.validate_deck_attestations([tampered], decks)
 
     def test_prematurely_accepted_archive_manifest_is_rejected(self):
         with self.assertRaisesRegex(gate.CertificationError, "distinct final artifact"):
