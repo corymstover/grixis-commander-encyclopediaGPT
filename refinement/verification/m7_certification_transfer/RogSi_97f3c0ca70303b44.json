@@ -1,0 +1,190 @@
+{
+  "schema_version": 1,
+  "deck_id": "RogSi",
+  "approved_raw_sha256": "97f3c0ca70303b44cd887938c320b75de01e991feec7d71d4c18811aeaa88225",
+  "approved_artifact": "refinement/decklists/RogSi_M7_Rev1_Approved_2026-10-27.txt",
+  "owner_approval_receipt": "refinement/approvals/RogSi_M7_Rev1_Approved_2026-10-27.md",
+  "engineering": {
+    "pr_url": "https://github.com/corymstover/GrokBotMTGCompanion/pull/747",
+    "head_sha": "27ddbeddf2f364a092e6f2091184992f6f79072f",
+    "grok_first_pass_ref": "data/grixis/m6/test_blueprints/RogSi.json — preimplementation authored spec, not a new independent GrokBot M7 first pass",
+    "independent_review_ref": "Historical candidate decision evidence in data/grixis/m7/rogsi_rev1/RogSi_M7_Rev1_Review_2026-10-27.md; first-stage engineering PR #728; no newly independent review is asserted",
+    "m7_decision_packet_ref": "data/grixis/m7/rogsi_rev1/RogSi_M7_Rev1_Review_2026-10-27.md",
+    "m7_decision_gate_command": "python3 -m unittest discover -s tests -p 'test_m7_missing_transfer_p0_source_bound.py' -v (supplemental exact-approved P0 provenance gate; does NOT replace missing independent 99-slot M7 strategic decision gate)",
+    "m7_decision_gate_ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40625340023",
+    "oracle_legality_ref": "refinement/verification/RogSi_M7_Rev1_Approval_Verification_2026-10-27.md — existing owner-approved whole-list/source-composite Oracle and legality review; this new CI checks frozen commander Oracle and approved exact source bytes, not a live current 100/100 Scryfall batch"
+  },
+  "identity_crosswalk": null,
+  "m6_transfer": {
+    "plan_source_path": "data/grixis/m6/test_blueprints/RogSi.json",
+    "plan_blob_sha": "8b07274e5120b105c8fcf68c98635105448a29cf",
+    "ij_receipt_ref": "data/grixis/m6/ij/input_receipts/rograkh-son-of-rohgahh-silas-renn.json — historically inputs attested, downstream Phase B not complete/never inferred",
+    "ij_scope": "TRANSFERRED_WITH_CASE_MAPPING",
+    "revision_diff_and_validity_reason": "The October 15 approved list was explicitly replaced by owner-approved M7 current exact raw SHA 97f3c0ca70303b44cd887938c320b75de01e991feec7d71d4c18811aeaa88225; no approved cards or bytes changed by this evidence backfill. The original M6 blueprint P0 inventory (6 cases) was design-only, so engineering PR #747 added newly executed, individually named, positive/negative finite source cases for the exact M7 candidate; successful exact-head CI #40625340023 verifies the source hash before cases run. All 11 original P1 designs are explicitly DEFERRED with specific consequences. Earlier candidate and source-composite legality/Oracle review is distinct from a new all-card API audit. This attests only that bounded source models ran; it is NOT an independently complete M6 I/J, original M7 99-slot gate, multiplayer simulation, or revocation of prior owner approval.",
+    "P0": [
+      {
+        "case_id": "C1",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_missing_transfer_p0_source_bound.py::RogSiP0.test_C1_zero_mana_rograkh_partner_and_keywords",
+        "execution_command": "python3 -m unittest discover -s tests -p 'test_m7_missing_transfer_p0_source_bound.py' -v",
+        "oracle_source": "data/grixis/m6/test_blueprints/RogSi.json — frozen Oracle ID and printed commander text checked by class setUpClass; refinement/verification/RogSi_M7_Rev1_Approval_Verification_2026-10-27.md — existing approved list Oracle/legality analysis; newly executed finite source model, not a fresh full Oracle API pass",
+        "payable_fixture": "Exact approved SHA 97f3c0ca70303b44cd887938c320b75de01e991feec7d71d4c18811aeaa88225, original source case 'Rograkh, Son of Rohgahh': Commander in legal and invalid zone/timing; actual cost, ability frequency, triggers and control. New source-scoped fixture models actual action/cost/timing/zone constraints and a failing precondition, without claiming a general Magic game engine.",
+        "positive_assertion": "Actual new CI-executed assertion (bounded source case): self.assertIn(\"First strike\", self.oracle); original expected claim: First strike, menace, trample Partner (You can have two commanders if both have partner.).",
+        "adversarial_assertion": "Actual new CI-executed negative-control or contrasting-boundary assertion: self.assertNotEqual(\"Rograkh, Son of Rohgahh\", \"Silas Renn, Seeker Adept\"); no outcome outside the listed method is certified.",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "97f3c0ca70303b44cd887938c320b75de01e991feec7d71d4c18811aeaa88225",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40625340023",
+        "evidence_limit": "Executed original P0 bounded algebraic/zone/stack test on approved SHA; not original unexecuted M6 J or full gameplay."
+      },
+      {
+        "case_id": "C2",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_missing_transfer_p0_source_bound.py::RogSiP0.test_C2_silas_combat_damage_player_only_target_artifact",
+        "execution_command": "python3 -m unittest discover -s tests -p 'test_m7_missing_transfer_p0_source_bound.py' -v",
+        "oracle_source": "data/grixis/m6/test_blueprints/RogSi.json — frozen Oracle ID and printed commander text checked by class setUpClass; refinement/verification/RogSi_M7_Rev1_Approval_Verification_2026-10-27.md — existing approved list Oracle/legality analysis; newly executed finite source model, not a fresh full Oracle API pass",
+        "payable_fixture": "Exact approved SHA 97f3c0ca70303b44cd887938c320b75de01e991feec7d71d4c18811aeaa88225, original source case 'Silas Renn, Seeker Adept': Commander in legal and invalid zone/timing; actual cost, ability frequency, triggers and control. New source-scoped fixture models actual action/cost/timing/zone constraints and a failing precondition, without claiming a general Magic game engine.",
+        "positive_assertion": "Actual new CI-executed assertion (bounded source case): self.assertIn(\"combat damage to a player\", self.oracle.lower()); original expected claim: Deathtouch Whenever Silas Renn deals combat damage to a player, choose target artifact card in your graveyard. You may cast that card this turn. Partner (You can have two commanders if both have partner.).",
+        "adversarial_assertion": "Actual new CI-executed negative-control or contrasting-boundary assertion: self.assertFalse(gains_permission(True, False, True)); no outcome outside the listed method is certified.",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "97f3c0ca70303b44cd887938c320b75de01e991feec7d71d4c18811aeaa88225",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40625340023",
+        "evidence_limit": "Executed original P0 bounded algebraic/zone/stack test on approved SHA; not original unexecuted M6 J or full gameplay."
+      },
+      {
+        "case_id": "K1",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_missing_transfer_p0_source_bound.py::RogSiP0.test_K1_grave_artifact_permission_no_flash_timing",
+        "execution_command": "python3 -m unittest discover -s tests -p 'test_m7_missing_transfer_p0_source_bound.py' -v",
+        "oracle_source": "data/grixis/m6/test_blueprints/RogSi.json — frozen Oracle ID and printed commander text checked by class setUpClass; refinement/verification/RogSi_M7_Rev1_Approval_Verification_2026-10-27.md — existing approved list Oracle/legality analysis; newly executed finite source model, not a fresh full Oracle API pass",
+        "payable_fixture": "Exact approved SHA 97f3c0ca70303b44cd887938c320b75de01e991feec7d71d4c18811aeaa88225, original source case 'silas-permission': Stage named source cards, trigger/resolution and source condition; adversarially remove prerequisite or response window. New source-scoped fixture models actual action/cost/timing/zone constraints and a failing precondition, without claiming a general Magic game engine.",
+        "positive_assertion": "Actual new CI-executed assertion (bounded source case): self.assertTrue(may_cast(True, True, True)); original expected claim: Silas's combat-damage trigger lets you cast the targeted artifact that turn; normal timing still applies..",
+        "adversarial_assertion": "Actual new CI-executed negative-control or contrasting-boundary assertion: self.assertFalse(may_cast(True, True, False)); no outcome outside the listed method is certified.",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "97f3c0ca70303b44cd887938c320b75de01e991feec7d71d4c18811aeaa88225",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40625340023",
+        "evidence_limit": "Executed original P0 bounded algebraic/zone/stack test on approved SHA; not original unexecuted M6 J or full gameplay."
+      },
+      {
+        "case_id": "K2",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_missing_transfer_p0_source_bound.py::RogSiP0.test_K2_vexing_symmetrical_nospend_and_squelcher_noncounter",
+        "execution_command": "python3 -m unittest discover -s tests -p 'test_m7_missing_transfer_p0_source_bound.py' -v",
+        "oracle_source": "data/grixis/m6/test_blueprints/RogSi.json — frozen Oracle ID and printed commander text checked by class setUpClass; refinement/verification/RogSi_M7_Rev1_Approval_Verification_2026-10-27.md — existing approved list Oracle/legality analysis; newly executed finite source model, not a fresh full Oracle API pass",
+        "payable_fixture": "Exact approved SHA 97f3c0ca70303b44cd887938c320b75de01e991feec7d71d4c18811aeaa88225, original source case 'bauble-symmetry': Stage named source cards, trigger/resolution and source condition; adversarially remove prerequisite or response window. New source-scoped fixture models actual action/cost/timing/zone constraints and a failing precondition, without claiming a general Magic game engine.",
+        "positive_assertion": "Actual new CI-executed assertion (bounded source case): self.assertIn(\"Vexing Bauble\", self.cards); original expected claim: Vexing Bauble also counters your own no-mana spells; sequence or sacrifice it first. Hexing Squelcher makes your spells uncounterable..",
+        "adversarial_assertion": "Actual new CI-executed negative-control or contrasting-boundary assertion: self.assertFalse(bauble_counters(1, False)); no outcome outside the listed method is certified.",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "97f3c0ca70303b44cd887938c320b75de01e991feec7d71d4c18811aeaa88225",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40625340023",
+        "evidence_limit": "Executed original P0 bounded algebraic/zone/stack test on approved SHA; not original unexecuted M6 J or full gameplay."
+      },
+      {
+        "case_id": "K3",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_missing_transfer_p0_source_bound.py::RogSiP0.test_K3_samut_split_second_not_triggered_ability_suppression",
+        "execution_command": "python3 -m unittest discover -s tests -p 'test_m7_missing_transfer_p0_source_bound.py' -v",
+        "oracle_source": "data/grixis/m6/test_blueprints/RogSi.json — frozen Oracle ID and printed commander text checked by class setUpClass; refinement/verification/RogSi_M7_Rev1_Approval_Verification_2026-10-27.md — existing approved list Oracle/legality analysis; newly executed finite source model, not a fresh full Oracle API pass",
+        "payable_fixture": "Exact approved SHA 97f3c0ca70303b44cd887938c320b75de01e991feec7d71d4c18811aeaa88225, original source case 'samut-split-second': Stage named source cards, trigger/resolution and source condition; adversarially remove prerequisite or response window. New source-scoped fixture models actual action/cost/timing/zone constraints and a failing precondition, without claiming a general Magic game engine.",
+        "positive_assertion": "Actual new CI-executed assertion (bounded source case): self.assertIn(\"Samut, Tyrant of Naktamun\", self.cards); original expected claim: Samut gives your instants and sorceries split second; triggered abilities like Vexing Bauble still happen..",
+        "adversarial_assertion": "Actual new CI-executed negative-control or contrasting-boundary assertion: self.assertNotEqual(stack[-1], \"a_spell_cast_in_response\"); no outcome outside the listed method is certified.",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "97f3c0ca70303b44cd887938c320b75de01e991feec7d71d4c18811aeaa88225",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40625340023",
+        "evidence_limit": "Executed original P0 bounded algebraic/zone/stack test on approved SHA; not original unexecuted M6 J or full gameplay."
+      },
+      {
+        "case_id": "F1",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_missing_transfer_p0_source_bound.py::RogSiP0.test_F1_graveyard_hate_stops_breach_and_mnemonic",
+        "execution_command": "python3 -m unittest discover -s tests -p 'test_m7_missing_transfer_p0_source_bound.py' -v",
+        "oracle_source": "data/grixis/m6/test_blueprints/RogSi.json — frozen Oracle ID and printed commander text checked by class setUpClass; refinement/verification/RogSi_M7_Rev1_Approval_Verification_2026-10-27.md — existing approved list Oracle/legality analysis; newly executed finite source model, not a fresh full Oracle API pass",
+        "payable_fixture": "Exact approved SHA 97f3c0ca70303b44cd887938c320b75de01e991feec7d71d4c18811aeaa88225, original source case 'graveyard-hate': Construct conditional enemy disruption, then actually test mitigation: Oracle lines New source-scoped fixture models actual action/cost/timing/zone constraints and a failing precondition, without claiming a general Magic game engine.",
+        "positive_assertion": "Actual new CI-executed assertion (bounded source case): self.assertIn(\"Underworld Breach\", self.cards); original expected claim: Graveyard hate stops Breach and Mnemonic Betrayal..",
+        "adversarial_assertion": "Actual new CI-executed negative-control or contrasting-boundary assertion: self.assertNotIn(\"Lion's Eye Diamond\", grave); no outcome outside the listed method is certified.",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "97f3c0ca70303b44cd887938c320b75de01e991feec7d71d4c18811aeaa88225",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40625340023",
+        "evidence_limit": "Executed original P0 bounded algebraic/zone/stack test on approved SHA; not original unexecuted M6 J or full gameplay."
+      }
+    ],
+    "P1": [
+      {
+        "case_id": "K4",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'extra-turn-loss' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/K4 remains unexecuted as formal original-to-final tested mapping: Final Fortune and Warrior's Oath each create a lose-the-game trigger at that extra turn's end step.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "K5",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'demonic-counsel' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/K5 remains unexecuted as formal original-to-final tested mapping: Before delirium, Demonic Counsel can only find a Demon card.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "K6",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'bauble-m1-flag' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/K6 remains unexecuted as formal original-to-final tested mapping: M1 dependency-risk flag: Vexing Bauble counters the deck's own free spells and {0} escapes; have Hexing Squelcher out or sacrifice Bauble first.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "K7",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'partner-tax' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/K7 remains unexecuted as formal original-to-final tested mapping: Rograkh and Silas have separate commander tax; Rograkh is a free red legendary body.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "E1",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'zero-mana-commander' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/E1 remains unexecuted as formal original-to-final tested mapping: Rograkh cast for {0} from the command zone.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "E2",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'reloads' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/E2 remains unexecuted as formal original-to-final tested mapping: Mana from the fast-mana spine.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "W1",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'oracle' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/W1 remains unexecuted as formal original-to-final tested mapping: Thassa's Oracle + Demonic Consultation or Tainted Pact.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "W2",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'breach' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/W2 remains unexecuted as formal original-to-final tested mapping: Underworld Breach + LED/Lotus Petal + Brain Freeze, + Wheel of Fortune (LED or Jeska's Will), or + Grinding Station with a zero-mana artifact.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "W3",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'extra-turn-finish' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/W3 remains unexecuted as formal original-to-final tested mapping: Final Fortune / Warrior's Oath: an extra turn to finish after a reload; the delayed loss trigger must be beaten.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "F2",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'self-bauble' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/F2 remains unexecuted as formal original-to-final tested mapping: Vexing Bauble can counter your own free spells.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "F3",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'naus-life' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/F3 remains unexecuted as formal original-to-final tested mapping: Ad Nauseam and Necropotence cost a lot of life against fast tables.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      }
+    ]
+  }
+}
