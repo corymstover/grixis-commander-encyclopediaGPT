@@ -1,0 +1,43 @@
+name: M8 Candidate Integrity (Not Milestone Acceptance)
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "exports/m8_candidate_2026-10-28/**"
+      - "exports/Grixis_Commander_Encyclopedia_62_M8_CANDIDATE_2026-10-28.zip"
+      - "scripts/build_m8_candidate_export.py"
+      - "tests/test_build_m8_candidate_export.py"
+      - ".github/workflows/verify-m8-candidate-export.yml"
+  push:
+    branches: [main]
+    paths:
+      - "exports/m8_candidate_2026-10-28/**"
+      - "exports/Grixis_Commander_Encyclopedia_62_M8_CANDIDATE_2026-10-28.zip"
+      - "scripts/build_m8_candidate_export.py"
+      - "tests/test_build_m8_candidate_export.py"
+      - ".github/workflows/verify-m8-candidate-export.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  preview-is-not-final-certification:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verify exact head
+        run: git rev-parse HEAD
+      - name: Verify SHA-bound all-62 preview archive
+        run: python scripts/build_m8_candidate_export.py --check
+      - name: Verify roster, transfer, exceptions and fail-closed regressions
+        run: |
+          python scripts/check_tracker_integrity.py
+          python scripts/verify_m7_certification_transfer.py --check
+          python -m unittest discover -s tests -p 'test_build_m8_candidate_export.py' -v
