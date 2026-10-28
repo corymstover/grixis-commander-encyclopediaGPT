@@ -154,6 +154,21 @@
   ],
   "deck_quality_attestations": [
     {
+      "deck_id": "Parnesse__the_Subtle_Brush",
+      "approved_raw_sha256": "63b605a2c36ec81ab7a5a48770ac2b96b7994daf38546aba7b6bc6bd7597928c",
+      "outcome": "KEEP_EXACT_100",
+      "commander_first": "Parnesse, the Subtle Brush has an opponent-targeting four-life tax and optional political spell-copy gifts whenever we actually copy a spell; copies made by opponents are not our own triggers. The exact 99 noncommander physical copies were each source-reconciled as 35 land, 15 mana/access, 25 real-copy engines, eight copy/cast payoffs, eight answers and eight selection/recast roles. The seven approved replacements strengthen actual stack-copy density and storm finishing while preserving meaningful optional political gifts rather than generic Grixis turbo.",
+      "mana_and_protection": "Thirty-five lands with Island x2, Mountain x3, Swamp x2, typed fetch/dual fixing, Sunken Palace and life-paying color flex support a five-mana UBR commander plus 5–7 mana copy engines. Rituals Jeska's Will/Mana Geyser depend on real opponent hand/tapped-land counts; Mica requires artifact sacrifice funded by Big Score/Storm-Kiln only when those tokens occur. Free Fierce/Swat need commander present, Flusterstorm only hits actual instants/sorceries; losing Counterspell/An Offer expands artifact/creature stack answer vulnerabilities, while Chaos Warp/Feed/Blasphemous Act remain actual board interaction. No guaranteed resource access is inferred.",
+      "win_lines_and_counterplay": "Actual copy and storm sources can deliver Tendrils/Grapeshot/Onyx/Ral/Storm-Kiln payoffs, but storm copies aren't casts and Parnesse gifts can assist the opponent unless declined. Staff/Harmonic/Veyran additively give four optional Parnesse triggers on an instant/sorcery copy, not eight. Bonus Round is symmetric. Reiterate 4RR buyback is mana-positive only when each copy of live Mana Geyser/Jeska's Will makes at least seven red, real mana and the original stack target persist. Removed Replication Technique means no old Dualcaster token loop is claimed. Kess/Mizzix casting a copied card is not itself Parnesse spell copying. No measured multiplayer winrate.",
+      "historical_M6_case_scope": "The exact approved SHA has five original P0 source-bound PASSED via engineering #747; original eleven P1 initially DEFERRED. Five are now individually source-tested (K5, K6, K7, E1, F3) in engineering #756 (CI #40658115383), one removed-card W3 retired by current canonical case disposition and five other original P1 remain explicitly deferred. The M8 quality report does not elevate historical I/J, non-independent Pass C or partial finite algebraic models to a full engine. October 27 all-card Oracle review was explicitly source-composite, not a newly successful 100-name Scryfall collection.",
+      "tested_pool_stop_reason": "A fully source-hash-guarded engineering whole99 judgment enumerates all current 99 physical slots and explicitly charges the seven chosen replacements for lost Cormela recursion, Goggles fixing, Witch token defense, Replication Technique combo, two broader stack counters and Dark Ritual burst. Four complete 100-card counterfactuals were checked against physical singleton/counts: Twincast over Display of Power, Teach by Example plus Chandra Hope over Galvanic/Double Vision, Counterspell/Dark Ritual over Flusterstorm/Loki and See Double over Mica. Each loses contested-stack multi-copy, flashback/curve stability, storm-sensitive protection or repeatable artifact-funded copy relative to current cards. No stronger natural-ceiling commander-first swap survives without a real source/rules/playpattern reversal.",
+      "review_path": "refinement/verification/m8_quality_scope/Parnesse__the_Subtle_Brush_63b605a2c36ec81a.md",
+      "review_sha256": "c8e079dd5c1ff36545efbbfa4249732f69dcc20d54141087caa25dd2741e4a9b",
+      "source_commit_sha": "3690f2ea40721231a3954a92bd75c723c63b09ed",
+      "engineering_review_path": "data/grixis/m7/decision_reviews/Parnesse_M7_Rev1_Exact_Current_Whole99_20261028.md",
+      "engineering_review_blob_sha": "0aeb4f58f53aed741efe30ad76b7456e99119b79"
+    },
+    {
       "deck_id": "Nicol_Bolas",
       "approved_raw_sha256": "a6079935a50b9469ca487e58e6bac159f8b777348b31585256b967f92c5d0df6",
       "outcome": "KEEP_EXACT_100",
