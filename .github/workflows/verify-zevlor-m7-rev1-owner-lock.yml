@@ -1,0 +1,33 @@
+name: "Deck 62 Zevlor M7 Rev1 exact-owner SHA and 61 immutable locks"
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "state/current_deck_overrides.json"
+      - "refinement/Deck_Refinement_Tracker_2026-10-12.csv"
+      - "refinement/decklists/Zevlor_Elturel_Exile_M7_Rev1_Approved_2026-10-27.txt"
+      - "refinement/approvals/Zevlor_Elturel_Exile_M7_Rev1_Approved_2026-10-27.md"
+      - "refinement/verification/Zevlor_Elturel_Exile_M7_Rev1_Approved_2026-10-27_Verification.md"
+      - "refinement/verification/m7_certification_transfer/Zevlor__Elturel_Exile_071e9a8b9eaa0f2c.json"
+      - "refinement/decisions/Zevlor_Elturel_Exile_M7_Rev1_Whole99_Audit_2026-10-27.csv"
+      - "tests/test_m7_zevlor_rev1_owner_lock.py"
+      - ".github/workflows/verify-zevlor-m7-rev1-owner-lock.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  exact-zevlor-and-other-61-unchanged:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: "Owner exact SHA, six genuine swaps, 16 cases, ledger and all other 61 immovable"
+        env:
+          BASE_REF_SHA: ${{ github.event.pull_request.base.sha }}
+        run: python3 -m unittest discover -s tests -p 'test_m7_zevlor_rev1_owner_lock.py' -v
