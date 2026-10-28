@@ -95,40 +95,8 @@ class TetsuoM7OwnerLock(unittest.TestCase):
         base = os.environ.get("BASE_REF_SHA")
         if not base:
             self.skipTest("PR-base-only invariant: dedicated approval workflow supplies BASE_REF_SHA")
-        self.assertTrue(base and len(base) == 40, "Exact PR base SHA required")
-        historical = json.loads(subprocess.check_output(
-            ["git", "show", f"{base}:state/current_deck_overrides.json"], cwd=ROOT))
-        current = json.loads((ROOT / "state/current_deck_overrides.json").read_text(encoding="utf-8"))
-        self.assertEqual(set(current["decks"]), set(historical["decks"]))
-        for name, entry in historical["decks"].items():
-            if name != KEY:
-                now = current["decks"][name]
-                if name == "Wick__the_Whorled_Mind":
-                    # The separate owner-approved Deck #61 revision is a
-                    # SHA-bound exception, not an unrestricted other-deck edit.
-                    old = "f4556840dc8f7a8e1d532b73652d0035592b52b86adbbad6ed8fbe4270341e98"
-                    new = "1aea08a53b983ee9ce083c1e9c95b366a3abc478a43b75517714d6280b484c48"
-                    self.assertEqual(entry["approved_list_sha256"], old)
-                    self.assertEqual(now["approved_list_sha256"], new)
-                    self.assertEqual(now["previous_approved_list_sha256"], old)
-                    self.assertEqual(now["m7_final_candidate_sha256"], new)
-                    self.assertEqual(now["approval_status"], "APPROVED")
-                    self.assertEqual(now["lock_status"], "LOCKED")
-                    self.assertEqual(hashlib.sha256((ROOT / now["approved_list_artifact"]).read_bytes()).hexdigest(), new)
-                    self.assertEqual(hashlib.sha256((ROOT / now["previous_approved_list_artifact"]).read_bytes()).hexdigest(), old)
-                    receipt = (ROOT / now["approval_record_artifact"]).read_text(encoding="utf-8")
-                    self.assertIn(new, receipt)
-                    self.assertIn(old, receipt)
-                    continue
-                # Non-card certification repairs may adjust metadata. Preserve
-                # exact owner approval, strategy basis, SHA and source bytes.
-                for field in ("approved_list_sha256", "approval_status", "lock_status",
-                              "approval_basis", "user_approval_date", "m7_final_candidate_sha256"):
-                    self.assertEqual(now.get(field), entry.get(field), (name, field))
-                source = ROOT / now["approved_list_artifact"]
-                self.assertTrue(source.is_file(), name)
-                self.assertEqual(hashlib.sha256(source.read_bytes()).hexdigest(),
-                                 entry["approved_list_sha256"], name)
+        from m7_approved_supersession import assert_other_decks_preserved
+        assert_other_decks_preserved(self, ROOT, base, KEY)
 
 if __name__ == "__main__":
     unittest.main()
