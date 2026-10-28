@@ -1,0 +1,32 @@
+name: M8 Missy final three original P1 Cyberman wins and choices
+
+on:
+  pull_request:
+    paths:
+      - 'tests/test_m8_missy_final_three_p1_loops.py'
+      - 'architecture/M8_MISSY_FINAL_THREE_ORIGINAL_P1.md'
+      - '.github/workflows/verify-m8-missy-final-three.yml'
+      - 'refinement/verification/m8_current_release_evidence_v1.json'
+  push:
+    branches: [main]
+    paths:
+      - 'tests/test_m8_missy_final_three_p1_loops.py'
+      - 'refinement/verification/m8_current_release_evidence_v1.json'
+  workflow_dispatch:
+
+jobs:
+  cyberman-paid-death-and-choice-traces:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run Missy original W1 W2 W3 favorable and adverse finite cases
+        run: python -m unittest discover -s tests -p test_m8_missy_final_three_p1_loops.py -v
+      - name: Check exact-current M8 fail-closed evidence status
+        run: python scripts/verify_m8_current_certification.py --check
+      - name: Check current owner-approved M7 source locks
+        run: python scripts/verify_m7_certification_transfer.py --check
