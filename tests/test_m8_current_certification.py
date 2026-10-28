@@ -25,8 +25,8 @@ class CurrentSHAReleaseGate(unittest.TestCase):
         self.assertEqual(self.report["current_M7_transfer_receipts"], 38)
         self.assertEqual(self.report["historical_grandfathered_decks"], 24)
         self.assertEqual(self.report["original_deferred_P1"], 180)
-        self.assertEqual(self.report["current_sha_case_dispositions"], 132)
-        self.assertEqual(self.report["P1_pending_current_disposition"], 48)
+        self.assertEqual(self.report["current_sha_case_dispositions"], 137)
+        self.assertEqual(self.report["P1_pending_current_disposition"], 43)
         self.assertEqual(self.report["current_sha_commander_first_attestations"], 62)
         self.assertEqual(self.report["quality_attestations_pending"], 0)
         self.assertEqual(self.report["transferred_P0_passed"], 192)
@@ -252,6 +252,33 @@ class CurrentSHAReleaseGate(unittest.TestCase):
         decks = gate.read_current()
         deferred, _, _, _ = gate.current_case_index(decks)
         self.assertEqual(gate.validate_dispositions(rows, deferred, decks),
+                         {(r["deck_id"], r["case_id"]) for r in rows})
+
+    def test_m8_madcap_final_five_original_p1_exact_ci_without_future_legality_claim(self):
+        blob = "75b7110315e639dc97e4f5e666d2f04e2d41c174"
+        head = "9dd200e99ae59964637883babf048a94503c03fd"
+        ci = "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40679874496"
+        rows = [r for r in self.base["case_dispositions"] if r.get("test_blob_sha") == blob]
+        self.assertEqual(len(rows), 5)
+        self.assertEqual({r["deck_id"] for r in rows}, {"The_Madcap_Jester"})
+        self.assertEqual({r["case_id"] for r in rows}, {"W1", "W2", "W3", "F2", "F3"})
+        for row in rows:
+            self.assertEqual(row["approved_raw_sha256"],
+                             "643eb1cc4827c1dd95485e9922506b514746e6bbc5b4b8a4cfff0f44b1007e43")
+            self.assertEqual(row["disposition"], "CURRENT_SHA_TESTED")
+            self.assertEqual(row["engineering_commit_sha"], head)
+            self.assertEqual(row["ci_run_url"], ci)
+            self.assertIn("test_m8_madcap_original_p1_win_and_hate.py::MadcapOriginalP1WinAndHate.test_",
+                          row["test_ref"])
+            self.assertGreater(len(row["positive_assertion"]), 75)
+            self.assertGreater(len(row["adversarial_assertion"]), 75)
+            self.assertGreater(len(row["limitations"]), 75)
+        self.assertIn("do not make opponents lose", next(r for r in rows if r["case_id"] == "W2")
+                      ["adversarial_assertion"])
+        self.assertIn("Bitter Ordeal", next(r for r in rows if r["case_id"] == "W3")["limitations"])
+        sources = gate.read_current()
+        deferred, _, _, _ = gate.current_case_index(sources)
+        self.assertEqual(gate.validate_dispositions(rows, deferred, sources),
                          {(r["deck_id"], r["case_id"]) for r in rows})
 
     def test_owner_acceptance_cannot_be_inferred_or_pre_signed(self):
