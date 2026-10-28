@@ -150,6 +150,14 @@ def validate_deck_attestations(rows: list[dict], decks: list[dict]) -> set[str]:
         bound_file(row.get("review_path"), row.get("review_sha256"))
         require(HEX40.fullmatch(str(row.get("source_commit_sha", ""))) is not None,
                 f"Missing pinned tested review commit: {deck_id}")
+        engineering_source = row.get("engineering_review_path")
+        require(isinstance(engineering_source, str)
+                and engineering_source.startswith("data/grixis/m7/decision_reviews/")
+                and engineering_source.endswith(".json")
+                and ".." not in Path(engineering_source).parts,
+                f"Missing exact M7 whole-list decision source: {deck_id}")
+        require(HEX40.fullmatch(str(row.get("engineering_review_blob_sha", ""))) is not None,
+                f"Missing Git blob commitment for M7 whole-list decision: {deck_id}")
         # The 24 original/Oct24 grandfathered locks do not have the newer
         # exact-SHA M7 P0/P1 transfer receipt. Never let a general whole-99
         # strategy paragraph silently stand in for original-case mechanics.

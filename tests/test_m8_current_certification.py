@@ -25,7 +25,8 @@ class CurrentSHAReleaseGate(unittest.TestCase):
         self.assertEqual(self.report["original_deferred_P1"], 180)
         self.assertEqual(self.report["current_sha_case_dispositions"], 7)
         self.assertEqual(self.report["P1_pending_current_disposition"], 173)
-        self.assertEqual(self.report["current_sha_commander_first_attestations"], 1)
+        self.assertEqual(self.report["current_sha_commander_first_attestations"], 24)
+        self.assertEqual(self.report["quality_attestations_pending"], 38)
         self.assertEqual(self.report["transferred_P0_passed"], 192)
         self.assertEqual(self.report["transferred_P1_passed"], 193)
         self.assertFalse(self.report["ready_for_final_release"])
@@ -115,6 +116,8 @@ class CurrentSHAReleaseGate(unittest.TestCase):
             "review_path": target["record"]["approval_record_artifact"],
             "review_sha256": gate.sha(ROOT / target["record"]["approval_record_artifact"]),
             "source_commit_sha": "a" * 40,
+            "engineering_review_path": "data/grixis/m7/decision_reviews/Abaddon_the_Despoiler_rev3.json",
+            "engineering_review_blob_sha": "b" * 40,
         }
         with self.assertRaisesRegex(gate.CertificationError, "Grandfathered M6 P0/P1 scope"):
             gate.validate_deck_attestations([attestation], approved)
