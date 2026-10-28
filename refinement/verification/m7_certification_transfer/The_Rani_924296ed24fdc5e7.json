@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "deck_id": "The_Rani",
+  "approved_raw_sha256": "924296ed24fdc5e79431821d31a77134c5ed5c089a92cb5e69c78f78bde4fe27",
+  "approved_artifact": "refinement/decklists/The_Rani_M7_Rev1_Approved_2026-10-27.txt",
+  "owner_approval_receipt": "refinement/approvals/The_Rani_M7_Rev1_Approved_2026-10-27.md",
+  "engineering": {
+    "pr_url": "https://github.com/corymstover/GrokBotMTGCompanion/pull/741",
+    "head_sha": "e4e18415dde7eae5fc06b0ef257a167cfa0bcb98",
+    "merge_commit_sha": "1b37673f3856583affa2f4c29f71ecfa7c4cc2da",
+    "p0_followup_pr_url": "https://github.com/corymstover/GrokBotMTGCompanion/pull/742",
+    "p0_followup_head_sha": "a84f8e93737ebc06ce08c775d30c1cb601e4ae73",
+    "p0_followup_merge_sha": "e5a0f915dab9ad0cb1606460dde4ba9bcaf3fc0b",
+    "grok_first_pass_ref": "data/grixis/m6/grokbot_pass_c_advisory/The_Rani.md — original advisory; not new live independent pass",
+    "independent_review_ref": "data/grixis/m7/decision_reviews/The_Rani_M7_Rev1_ChatGPT_review.md — independent M7 review; prior owner-equivalent final disposition at data/grixis/m6/owner_pass_c_substitute/The_Rani/final_disposition.md",
+    "m7_decision_packet_ref": "data/grixis/m7/decision_reviews/The_Rani_rev1.json",
+    "m7_decision_gate_command": "python3 scripts/grixis_m7_decision_gate.py --check --file data/grixis/m7/decision_reviews/The_Rani_rev1.json",
+    "m7_decision_gate_ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40602646407",
+    "oracle_legality_ref": "data/grixis/m7/the_rani_rev1/verify.py::assert_official, data/grixis/m7/the_rani_rev1/The_Rani_M7_Rev1_Scryfall_snapshot.json (pinned 104 oracle names)"
+  },
+  "m6_transfer": {
+    "plan_source_path": "data/grixis/m6/test_blueprints/The_Rani.json",
+    "plan_blob_sha": "65b91c7eec13c7fc4494662576b5ebf16c8a8c9e",
+    "ij_receipt_ref": "data/grixis/m6/ij/input_receipts/the-rani.json — original inputs accepted, I/J Phase B incomplete; no invented simulation",
+    "ij_scope": "TRANSFERRED_WITH_CASE_MAPPING",
+    "revision_diff_and_validity_reason": "The exact 2026-10-27 M7 Rev1 approval changes eight one-for-one cards from preserved October 15 exact approved 100, including goad/Clue trigger payoffs while retaining Rani, Academy Manufactor, Erdwal Illuminator, Thassa, Baeloth and Time Sieve. The original 14-case M6 plan was DESIGN_ONLY; its five P0 cases now have positive/adversarial finite test coverage pinned to the new exact raw SHA on engineering PR #742, exact-head CI #40603868570; nine P1s are explicitly deferred. The tests do not complete the historical I/J Phase B or a full multiplayer game engine.",
+    "P0": [
+      {
+        "case_id": "C1",
+        "status": "PASSED",
+        "test_ref": "data/grixis/m7/the_rani_rev1/m6_p0_followup.py::SourceBoundRaniP0.test_C1_rani_marks_and_damage_gated_investigate",
+        "execution_command": "python3 data/grixis/m7/the_rani_rev1/m6_p0_followup.py",
+        "oracle_source": "Pinned 2026-10-27 Scryfall Oracle snapshot: data/grixis/m7/the_rani_rev1/The_Rani_M7_Rev1_Scryfall_snapshot.json, raw SHA256 2d690a12a8607769ed2f5c865f783156246f26514ef76ab760d12ce57b1e0922; immutable M6 blueprint source SHA 65b91c7eec13c7fc4494662576b5ebf16c8a8c9e",
+        "payable_fixture": "Rani-1 ETB/attack, one opposing target creature; force a goaded creature to connect in combat.",
+        "positive_assertion": "Exactly one Mark on a different legal target and an investigation on goaded combat damage to an opponent.",
+        "adversarial_assertion": "Rani cannot target herself, an absent creature, or a hexproof target; noncombat or nonopponent damage yields no investigation.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40603868570",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "924296ed24fdc5e79431821d31a77134c5ed5c089a92cb5e69c78f78bde4fe27",
+        "coverage_note": "Executed positive-and-adversarial finite source case, not a full Magic game simulator, paid multiplayer game trace, or completion of historical M6 I/J Phase B."
+      },
+      {
+        "case_id": "K1",
+        "status": "PASSED",
+        "test_ref": "data/grixis/m7/the_rani_rev1/m6_p0_followup.py::SourceBoundRaniP0.test_K1_manufactor_erdwal_first_investigation",
+        "execution_command": "python3 data/grixis/m7/the_rani_rev1/m6_p0_followup.py",
+        "oracle_source": "Pinned 2026-10-27 Scryfall Oracle snapshot: data/grixis/m7/the_rani_rev1/The_Rani_M7_Rev1_Scryfall_snapshot.json, raw SHA256 2d690a12a8607769ed2f5c865f783156246f26514ef76ab760d12ce57b1e0922; immutable M6 blueprint source SHA 65b91c7eec13c7fc4494662576b5ebf16c8a8c9e",
+        "payable_fixture": "First investigate that turn while Manufactor and Illuminator are controlled; compare second investigate and missing Manufactor.",
+        "positive_assertion": "First investigate is repeated once, so two investigations produce two each of Clue, Food and Treasure = six artifacts.",
+        "adversarial_assertion": "A later investigate produces only three with Manufactor; without Manufactor first investigate produces two Clues, not six varied artifacts.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40603868570",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "924296ed24fdc5e79431821d31a77134c5ed5c089a92cb5e69c78f78bde4fe27",
+        "coverage_note": "Executed positive-and-adversarial finite source case, not a full Magic game simulator, paid multiplayer game trace, or completion of historical M6 I/J Phase B."
+      },
+      {
+        "case_id": "K2",
+        "status": "PASSED",
+        "test_ref": "data/grixis/m7/the_rani_rev1/m6_p0_followup.py::SourceBoundRaniP0.test_K2_thassa_exile_return_new_rani_mark",
+        "execution_command": "python3 data/grixis/m7/the_rani_rev1/m6_p0_followup.py",
+        "oracle_source": "Pinned 2026-10-27 Scryfall Oracle snapshot: data/grixis/m7/the_rani_rev1/The_Rani_M7_Rev1_Scryfall_snapshot.json, raw SHA256 2d690a12a8607769ed2f5c865f783156246f26514ef76ab760d12ce57b1e0922; immutable M6 blueprint source SHA 65b91c7eec13c7fc4494662576b5ebf16c8a8c9e",
+        "payable_fixture": "End step controlled Rani selected for Thassa blink, another legal creature remains available for Mark.",
+        "positive_assertion": "Thassa returns controlled Rani, her new ETB condition is true, and another valid target supports one new Mark.",
+        "adversarial_assertion": "Declining the optional Thassa blink, not controlling Rani, or lacking another legal Mark target produces no Mark.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40603868570",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "924296ed24fdc5e79431821d31a77134c5ed5c089a92cb5e69c78f78bde4fe27",
+        "coverage_note": "Executed positive-and-adversarial finite source case, not a full Magic game simulator, paid multiplayer game trace, or completion of historical M6 I/J Phase B."
+      },
+      {
+        "case_id": "K3",
+        "status": "PASSED",
+        "test_ref": "data/grixis/m7/the_rani_rev1/m6_p0_followup.py::SourceBoundRaniP0.test_K3_mark_baeloth_threshold_is_strict_less_than",
+        "execution_command": "python3 data/grixis/m7/the_rani_rev1/m6_p0_followup.py",
+        "oracle_source": "Pinned 2026-10-27 Scryfall Oracle snapshot: data/grixis/m7/the_rani_rev1/The_Rani_M7_Rev1_Scryfall_snapshot.json, raw SHA256 2d690a12a8607769ed2f5c865f783156246f26514ef76ab760d12ce57b1e0922; immutable M6 blueprint source SHA 65b91c7eec13c7fc4494662576b5ebf16c8a8c9e",
+        "payable_fixture": "Owned Baeloth base 2/5, another creature Rani creates +2/+2 Mark on Baeloth; opposing powers 3/4/5.",
+        "positive_assertion": "Marked Baeloth is 4/7 and automatically goads opposing creatures with power below 4.",
+        "adversarial_assertion": "Power exactly 4 or 5 is outside strict threshold, and own creatures are excluded even if power 3.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40603868570",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "924296ed24fdc5e79431821d31a77134c5ed5c089a92cb5e69c78f78bde4fe27",
+        "coverage_note": "Executed positive-and-adversarial finite source case, not a full Magic game simulator, paid multiplayer game trace, or completion of historical M6 I/J Phase B."
+      },
+      {
+        "case_id": "F1",
+        "status": "PASSED",
+        "test_ref": "data/grixis/m7/the_rani_rev1/m6_p0_followup.py::SourceBoundRaniP0.test_F1_creature_light_or_protected_board_fails_mark",
+        "execution_command": "python3 data/grixis/m7/the_rani_rev1/m6_p0_followup.py",
+        "oracle_source": "Pinned 2026-10-27 Scryfall Oracle snapshot: data/grixis/m7/the_rani_rev1/The_Rani_M7_Rev1_Scryfall_snapshot.json, raw SHA256 2d690a12a8607769ed2f5c865f783156246f26514ef76ab760d12ce57b1e0922; immutable M6 blueprint source SHA 65b91c7eec13c7fc4494662576b5ebf16c8a8c9e",
+        "payable_fixture": "Rani enters with a legal opposing creature versus empty/self-only/hexproof boards; counterspell exists as conditional protection.",
+        "positive_assertion": "A legally targetable other creature permits Rani's Mark; Swan Song exists as narrow protection in the exact 100.",
+        "adversarial_assertion": "No other legal target gives no Mark despite ETB/attack; Swan Song cannot make an invalid target legal or guarantee protection.",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40603868570",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "924296ed24fdc5e79431821d31a77134c5ed5c089a92cb5e69c78f78bde4fe27",
+        "coverage_note": "Executed positive-and-adversarial finite source case, not a full Magic game simulator, paid multiplayer game trace, or completion of historical M6 I/J Phase B."
+      }
+    ],
+    "P1": [
+      {
+        "case_id": "K4",
+        "status": "DEFERRED",
+        "specific_reason": "Time Sieve is Oracle-checked and bounded sacrifice count is modeled by general M7 verifier, but original K4 P1 timing, resource recursion, and second-turn adversarial fixture is not executed as an independently named case.",
+        "coverage_consequence": "Original immutable M6 blueprint P1 K4 cannot be certified from bounded structural/Oracle/P0 checks; conclusions are conditional and not a validated repeated-gameplay result.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "K5",
+        "status": "DEFERRED",
+        "specific_reason": "Combat goad damage condition is checked by P0 C1; original P1 K5 forced-attack legality over multiplayer turn order is not independently executed.",
+        "coverage_consequence": "Original immutable M6 blueprint P1 K5 cannot be certified from bounded structural/Oracle/P0 checks; conclusions are conditional and not a validated repeated-gameplay result.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "E1",
+        "status": "DEFERRED",
+        "specific_reason": "Basic Mark/investigate preconditions covered by P0 C1, but engine two-cycle paid repeat and cumulative object accounting not independently executed.",
+        "coverage_consequence": "Original immutable M6 blueprint P1 E1 cannot be certified from bounded structural/Oracle/P0 checks; conclusions are conditional and not a validated repeated-gameplay result.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "E2",
+        "status": "DEFERRED",
+        "specific_reason": "K1 first-investigate replacement is bounded-tested; repeat over full token-multiplier engine, source-paid actions and second-cycle adversarial traces remain unexecuted.",
+        "coverage_consequence": "Original immutable M6 blueprint P1 E2 cannot be certified from bounded structural/Oracle/P0 checks; conclusions are conditional and not a validated repeated-gameplay result.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "E3",
+        "status": "DEFERRED",
+        "specific_reason": "Thassa's Rani flicker precondition covered by P0 K2; mixed Thassa/Displacer Kitten repeat loops and priority windows not independently executed.",
+        "coverage_consequence": "Original immutable M6 blueprint P1 E3 cannot be certified from bounded structural/Oracle/P0 checks; conclusions are conditional and not a validated repeated-gameplay result.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "W1",
+        "status": "DEFERRED",
+        "specific_reason": "Forced-combat finish is strategic, opponent board and block decisions contingent; no executed sourced adversarial win-line scenario.",
+        "coverage_consequence": "Original immutable M6 blueprint P1 W1 cannot be certified from bounded structural/Oracle/P0 checks; conclusions are conditional and not a validated repeated-gameplay result.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "W2",
+        "status": "DEFERRED",
+        "specific_reason": "Bjorna and Time Sieve exist in exact approved 100, but paid artifact conversion to lethal pressure / extra turns has no independently executed end-to-end fixture.",
+        "coverage_consequence": "Original immutable M6 blueprint P1 W2 cannot be certified from bounded structural/Oracle/P0 checks; conclusions are conditional and not a validated repeated-gameplay result.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "F2",
+        "status": "DEFERRED",
+        "specific_reason": "No deterministic compact victory is claimed; no implemented opponent-resistant late-game adverse case for the original P1 failure mode.",
+        "coverage_consequence": "Original immutable M6 blueprint P1 F2 cannot be certified from bounded structural/Oracle/P0 checks; conclusions are conditional and not a validated repeated-gameplay result.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "F3",
+        "status": "DEFERRED",
+        "specific_reason": "33-land UBR mana base verified structurally; colored opening hands and mulligan/turn-sequence variance under adversarial fixture not executed.",
+        "coverage_consequence": "Original immutable M6 blueprint P1 F3 cannot be certified from bounded structural/Oracle/P0 checks; conclusions are conditional and not a validated repeated-gameplay result.",
+        "owner_visible_unresolved": true
+      }
+    ]
+  }
+}
