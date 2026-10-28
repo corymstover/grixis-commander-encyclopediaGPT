@@ -1,0 +1,31 @@
+name: "Deck 61 Wick Rev1 owner-approved exact 100 and original 61 locks"
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "state/current_deck_overrides.json"
+      - "refinement/decklists/Wick_the_Whorled_Mind_M7_Rev1_Approved_2026-10-27.txt"
+      - "refinement/approvals/Wick_the_Whorled_Mind_M7_Rev1_Approved_2026-10-27.md"
+      - "refinement/verification/Wick_the_Whorled_Mind_M7_Rev1_Approved_2026-10-27_Verification.md"
+      - "refinement/verification/m7_certification_transfer/Wick__the_Whorled_Mind_1aea08a53b983ee9.json"
+      - "tests/test_m7_wick_rev1_owner_lock.py"
+      - ".github/workflows/verify-wick-m7-rev1-owner-approval.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  exact-wick-and-other-61-unchanged:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: "One owner approval, raw SHA, 100 cards, nine swaps and all other 61 immutable"
+        env:
+          BASE_REF_SHA: ${{ github.event.pull_request.base.sha }}
+        run: python3 -m unittest discover -s tests -p 'test_m7_wick_rev1_owner_lock.py' -v
