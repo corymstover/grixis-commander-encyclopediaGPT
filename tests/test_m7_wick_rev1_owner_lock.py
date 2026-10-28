@@ -92,14 +92,8 @@ class WickM7OwnerApproval(unittest.TestCase):
         baseline=os.environ.get("BASE_REF_SHA")
         if baseline is None:
             self.skipTest("Exact base comparison is enforced in the dedicated Wick PR workflow")
-        self.assertTrue(baseline and len(baseline)==40,"Required exact canonical PR base SHA")
-        previous=json.loads(subprocess.check_output(
-            ["git","show",f"{baseline}:state/current_deck_overrides.json"],cwd=ROOT))["decks"]
-        now=json.loads((ROOT/"state/current_deck_overrides.json").read_text())["decks"]
-        self.assertEqual(set(previous),set(now))
-        for key in previous:
-            if key!=KEY:
-                self.assertEqual(now[key],previous[key],key)
+        from m7_approved_supersession import assert_other_decks_preserved
+        assert_other_decks_preserved(self, ROOT, baseline, KEY)
 
 
 if __name__=="__main__":

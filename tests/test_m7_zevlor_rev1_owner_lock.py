@@ -10,6 +10,7 @@ import subprocess
 import unittest
 
 from scripts import verify_m7_certification_transfer as transfer
+from m7_approved_supersession import assert_other_decks_preserved
 
 ROOT = Path(__file__).resolve().parents[1]
 KEY = "Zevlor__Elturel_Exile"
@@ -104,25 +105,7 @@ class ZevlorM7Rev1OwnerLock(unittest.TestCase):
         base_sha = os.environ.get("BASE_REF_SHA")
         if base_sha is None:
             self.skipTest("Dedicated PR workflow supplies exact base comparison")
-        self.assertRegex(base_sha, r"^[0-9a-f]{40}$")
-        old = json.loads(subprocess.check_output(
-            ["git", "show", f"{base_sha}:state/current_deck_overrides.json"], cwd=ROOT))["decks"]
-        new = json.loads((ROOT / "state/current_deck_overrides.json").read_text())["decks"]
-        self.assertEqual(set(old), set(new))
-        for key in old:
-            if key != KEY:
-                self.assertEqual(old[key], new[key], key)
-        def tracker(content):
-            return {r["deck_id"]: r for r in csv.DictReader(content.splitlines())}
-        old_tracker = tracker(subprocess.check_output(
-            ["git", "show", f"{base_sha}:refinement/Deck_Refinement_Tracker_2026-10-12.csv"],
-            cwd=ROOT, text=True))
-        new_tracker = tracker(
-            (ROOT / "refinement/Deck_Refinement_Tracker_2026-10-12.csv").read_text())
-        self.assertEqual(set(old_tracker), set(new_tracker))
-        for key in old_tracker:
-            if key != KEY:
-                self.assertEqual(old_tracker[key], new_tracker[key], key)
+        assert_other_decks_preserved(self, ROOT, base_sha, KEY, check_tracker=True)
 
 
 if __name__ == "__main__":
