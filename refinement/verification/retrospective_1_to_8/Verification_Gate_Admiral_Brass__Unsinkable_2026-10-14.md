@@ -1,10 +1,10 @@
 # Fresh Oracle/legality gate — #3 Admiral Brass, Unsinkable
 
-- Generated UTC: `2026-10-28T04:50:51.962835+00:00`
+- Generated UTC: `2026-10-28T04:58:18.949240+00:00`
 - Approved source: `refinement/decklists/Admiral_Brass_Unsinkable_Whole_List_Approval_Candidate_2026-10-13.txt`
 - Approved source SHA-256 (raw bytes): `056f0369bc4b11967365eef65d15a806b2d0f673ecf8097b028ffcdfd472f5cc`
 - Approval evidence: state/current_deck_overrides.json; refinement/verification/Admiral_Brass_Unsinkable_Whole_List_Closeout_2026-10-13.md
-- Oracle cache generated UTC: `2026-10-28T04:01:51.874212+00:00`
+- Oracle cache generated UTC: `2026-10-28T04:54:49.658651+00:00`
 - Scryfall bulk updated UTC: `2026-10-27T21:06:03.648+00:00`
 - 100-card count: **PASS** (100)
 - Singleton: **PASS**
