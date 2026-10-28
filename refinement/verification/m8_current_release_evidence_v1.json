@@ -1953,6 +1953,48 @@
       "positive_assertion": "With Missy, three physically assumed controlled artifact Cybermen and The Valeyard, each of three opponents faces two separate villainous choices; choosing damage twice per opponent causes six damage to each of them, versus three damage each without Valeyard. Every choice is independently owned by the appropriate opponent.",
       "adversarial_assertion": "All three opponents can instead select draw for both choices: the player controlling Missy draws six and the opponents take zero damage, potentially causing Missy's controller to lose if their library has fewer than six cards; with no artifact Cybermen the damage choice is zero.",
       "limitations": "Conditional end-step branch arithmetic, not forced damage or unconditional kill. The original M6 case named Cybermen Squadron and Ashad, the Lone Cyberman; neither card appears in the exact approved 100 and neither is credited. Assumes the stated three artifact creatures were already legally available."
+    },
+    {
+      "deck_id": "Nicol_Bolas",
+      "case_id": "W1",
+      "approved_raw_sha256": "a6079935a50b9469ca487e58e6bac159f8b777348b31585256b967f92c5d0df6",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "The exact current owner-approved Rev1 Nicol Bolas 100 and original deferred Sword/Aggravated Assault W1 now have successful exact-head CI for a bounded physical land-payment and combat trace with adverse interruptions, without a deck edit or global infinity assertion.",
+      "engineering_commit_sha": "ffd252ff487a3c986908d1f946f7953cdf127b32",
+      "test_blob_sha": "944ecca72fe721a535f3d3bddb7bf8bb247f2df6",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40753247250",
+      "test_ref": "tests/test_m8_nicol_bolas_original_p1_finishes.py::NicolBolasOriginalP1Finishes.test_W1_sword_assault_actual_five_mana_and_three_hits",
+      "positive_assertion": "One physically present Sword-equipped 7/7 Nicol Bolas connects for nine combat damage; each Sword trigger untaps the five actual modeled lands, including two red sources. Tapping and paying exactly 3RR for Assault after the first two hits gives three legal combat hits in the favorable finite fixture and 27 accumulated commander damage to one opponent.",
+      "adversarial_assertion": "One red source, only four one-mana lands, a blocked second hit, absent Sword, absent Assault, a countered Assault ability, or the unpaid upkeep sacrifice each breaks that exact repeating sequence; cards and lands not in the setup are not granted.",
+      "limitations": "Finite conditional single-opponent combat and land-tapping model, not guaranteed evasion, initial deployment and equip access, arbitrary priority, protection, extra turn or literal unbounded combat proof. The exact 100 is unchanged."
+    },
+    {
+      "deck_id": "Nicol_Bolas",
+      "case_id": "W2",
+      "approved_raw_sha256": "a6079935a50b9469ca487e58e6bac159f8b777348b31585256b967f92c5d0df6",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "The exact owner-approved Nicol Bolas Rev1 W2 has successful source-bound CI checking real commander-caused noncombat damage, target-specific whole-hand discards, discard payoff arithmetic and opponent-selected Torment choices. Removed old plan cards are explicitly excluded.",
+      "engineering_commit_sha": "ffd252ff487a3c986908d1f946f7953cdf127b32",
+      "test_blob_sha": "944ecca72fe721a535f3d3bddb7bf8bb247f2df6",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40753247250",
+      "test_ref": "tests/test_m8_nicol_bolas_original_p1_finishes.py::NicolBolasOriginalP1Finishes.test_W2_real_damage_discard_copies_and_nonlethal_torment",
+      "positive_assertion": "A live Kediss with seven Bolas combat damage to player A causes seven additional Bolas-sourced noncombat damage each to B/C and three actual whole-hand discards; Caress gives life 23/25/21 from 40 against starting hand sizes 5/4/6, while only A gains seven commander damage. Separately legal noncombat Bolas damage still triggers discard, and an empty-resource Torment X4 makes a player lose 12 life.",
+      "adversarial_assertion": "Blocking combat prevents the Kediss branch, absent Kediss confines effects to the damaged player, and Torment's opponent can sacrifice two nonland permanents and discard two cards to take zero life loss at X4. Original-plan Raiders' Wake and Viridian Longbow are absent from the locked 100 and credited with no live triggers.",
+      "limitations": "Finite player-state arithmetic with named present cards, not an actual player-choice solver, access/casting/tapping-time probability, protection guarantee or automatic multiplayer kill. Chandra's Ignition, Ingris and Dagger alternatives are identified, not each independently replayed through the full stack."
+    },
+    {
+      "deck_id": "Nicol_Bolas",
+      "case_id": "F3",
+      "approved_raw_sha256": "a6079935a50b9469ca487e58e6bac159f8b777348b31585256b967f92c5d0df6",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "The original Nicol Bolas fast-combo failure P1 F3 now has a successful exact-current CI negative/mitigation witness distinguishing an eight-mana commander not yet deployed from genuinely payable and held free interaction, without inventing universal win rates or denying conditional commander-damage wins.",
+      "engineering_commit_sha": "ffd252ff487a3c986908d1f946f7953cdf127b32",
+      "test_blob_sha": "944ecca72fe721a535f3d3bddb7bf8bb247f2df6",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40753247250",
+      "test_ref": "tests/test_m8_nicol_bolas_original_p1_finishes.py::NicolBolasOriginalP1Finishes.test_F3_fast_combo_precommander_counterplay_is_conditional",
+      "positive_assertion": "An explicitly counterable hypothetical opposing win spell on turn three can be stopped with real Force of Will in hand, a separate blue card to exile, and a life-payment survival margin despite Nicol Bolas not yet being on board until turn four.",
+      "adversarial_assertion": "With no actually held Force, no blue pitch card, insufficient life or an uncounterable opposing spell, that specific turn-three opponent line wins before the modeled turn-four Nicol Bolas plan. The mere presence of counterspells in the approved 100 cannot answer an undrawn or noncounterable spell.",
+      "limitations": "One explicit favorable/adverse opposing combo fixture, not full turn-by-turn mana simulation, random opening-hand access, a measured cEDH matchup rate, or proof that Nicol Bolas has no deterministic conditional combat kill. No commander change."
     }
   ],
   "deck_quality_attestations": [
