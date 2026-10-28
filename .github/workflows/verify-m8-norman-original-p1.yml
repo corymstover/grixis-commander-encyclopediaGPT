@@ -1,0 +1,32 @@
+name: M8 Norman Green Goblin original P1 finite win and mayhem traces
+
+on:
+  pull_request:
+    paths:
+      - 'tests/test_m8_norman_goblin_original_p1.py'
+      - 'architecture/M8_NORMAN_GREEN_GOBLIN_ORIGINAL_P1_TRACES.md'
+      - '.github/workflows/verify-m8-norman-original-p1.yml'
+      - 'refinement/verification/m8_current_release_evidence_v1.json'
+  push:
+    branches: [main]
+    paths:
+      - 'tests/test_m8_norman_goblin_original_p1.py'
+      - 'refinement/verification/m8_current_release_evidence_v1.json'
+  workflow_dispatch:
+
+jobs:
+  original-norman-p1-finite-traces:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run eleven exact-current Norman original P1 tests
+        run: python -m unittest discover -s tests -p test_m8_norman_goblin_original_p1.py -v
+      - name: Check M8 gate remains fail-closed pending all cases and acceptance
+        run: python scripts/verify_m8_current_certification.py --check
+      - name: Verify immutable current M7 transfer provenance
+        run: python scripts/verify_m7_certification_transfer.py --check
