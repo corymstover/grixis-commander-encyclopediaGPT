@@ -25,8 +25,8 @@ class CurrentSHAReleaseGate(unittest.TestCase):
         self.assertEqual(self.report["current_M7_transfer_receipts"], 38)
         self.assertEqual(self.report["historical_grandfathered_decks"], 24)
         self.assertEqual(self.report["original_deferred_P1"], 180)
-        self.assertEqual(self.report["current_sha_case_dispositions"], 96)
-        self.assertEqual(self.report["P1_pending_current_disposition"], 84)
+        self.assertEqual(self.report["current_sha_case_dispositions"], 106)
+        self.assertEqual(self.report["P1_pending_current_disposition"], 74)
         self.assertEqual(self.report["current_sha_commander_first_attestations"], 62)
         self.assertEqual(self.report["quality_attestations_pending"], 0)
         self.assertEqual(self.report["transferred_P0_passed"], 192)
@@ -144,6 +144,34 @@ class CurrentSHAReleaseGate(unittest.TestCase):
         deferred, _, _, _ = gate.current_case_index(decks)
         self.assertEqual(gate.validate_dispositions(rows + retired, deferred, decks),
                          {(r["deck_id"], r["case_id"]) for r in rows + retired})
+
+    def test_m8_marchesa_black_rose_exact_ci_ten_trace_cases_and_W3_still_deferred(self):
+        test_blob = "4eee3be681ad7c1931e695b397e868772a612895"
+        test_head = "36b82fafb3ab9609af0bfbdeaf445bd59dec097c"
+        ci = "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40675987285"
+        rows = [r for r in self.base["case_dispositions"] if r.get("test_blob_sha") == test_blob]
+        self.assertEqual(len(rows), 10)
+        self.assertEqual({r["deck_id"] for r in rows}, {"Marchesa__the_Black_Rose"})
+        self.assertEqual({r["case_id"] for r in rows},
+                         {"K4", "K5", "K6", "K7", "E1", "E2", "W1", "W2", "F2", "F3"})
+        for row in rows:
+            self.assertEqual(row["disposition"], "CURRENT_SHA_TESTED")
+            self.assertEqual(row["engineering_commit_sha"], test_head)
+            self.assertEqual(row["ci_run_url"], ci)
+            self.assertIn("test_m8_marchesa_black_rose_p1_trace.py::MarchesaOriginalP1Trace.test_",
+                          row["test_ref"])
+            self.assertGreater(len(row["positive_assertion"]), 60)
+            self.assertGreater(len(row["adversarial_assertion"]), 60)
+            self.assertGreater(len(row["limitations"]), 60)
+        # Finite-repeatable victories are permitted as specifically evidenced;
+        # do not infer W3 or a literally infinite Yawgmoth/Gary line.
+        self.assertIn("finite library", next(r for r in rows if r["case_id"] == "W2")["limitations"])
+        self.assertFalse(any(r["deck_id"] == "Marchesa__the_Black_Rose" and r["case_id"] == "W3"
+                             for r in self.base["case_dispositions"]))
+        sources = gate.read_current()
+        deferred, _, _, _ = gate.current_case_index(sources)
+        self.assertEqual(gate.validate_dispositions(rows, deferred, sources),
+                         {(r["deck_id"], r["case_id"]) for r in rows})
 
     def test_owner_acceptance_cannot_be_inferred_or_pre_signed(self):
         invalid = copy.deepcopy(self.base)
