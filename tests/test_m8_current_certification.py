@@ -25,8 +25,8 @@ class CurrentSHAReleaseGate(unittest.TestCase):
         self.assertEqual(self.report["current_M7_transfer_receipts"], 38)
         self.assertEqual(self.report["historical_grandfathered_decks"], 24)
         self.assertEqual(self.report["original_deferred_P1"], 180)
-        self.assertEqual(self.report["current_sha_case_dispositions"], 145)
-        self.assertEqual(self.report["P1_pending_current_disposition"], 35)
+        self.assertEqual(self.report["current_sha_case_dispositions"], 146)
+        self.assertEqual(self.report["P1_pending_current_disposition"], 34)
         self.assertEqual(self.report["current_sha_commander_first_attestations"], 62)
         self.assertEqual(self.report["quality_attestations_pending"], 0)
         self.assertEqual(self.report["transferred_P0_passed"], 192)
@@ -360,6 +360,29 @@ class CurrentSHAReleaseGate(unittest.TestCase):
         deferred, _, _, _ = gate.current_case_index(sources)
         self.assertEqual(gate.validate_dispositions(rows, deferred, sources),
                          {(r["deck_id"], r["case_id"]) for r in rows})
+
+    def test_m8_kefka_original_w2_breach_wheel_exact_ci(self):
+        blob = "14b1511d27dd79764e81eec95f446d5e2481c35f"
+        head = "3bda23a536e06743ece2bbc97964124f800919aa"
+        ci = "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40755712899"
+        rows = [r for r in self.base["case_dispositions"] if r.get("test_blob_sha") == blob]
+        self.assertEqual(len(rows), 1)
+        row = rows[0]
+        self.assertEqual((row["deck_id"], row["case_id"]), ("Kefka__Court_Mage", "W2"))
+        self.assertEqual(row["approved_raw_sha256"],
+                         "14277f6e9774c5ef02b4f92332b52684794367007abf81bc2d84ef7ad7bcaa7d")
+        self.assertEqual(row["disposition"], "CURRENT_SHA_TESTED")
+        self.assertEqual(row["engineering_commit_sha"], head)
+        self.assertEqual(row["ci_run_url"], ci)
+        self.assertIn("test_m8_kefka_original_w2_breach_wheel.py::KefkaOriginalW2BreachWheel.test_W2_",
+                      row["test_ref"])
+        self.assertIn("LED", row["positive_assertion"])
+        self.assertIn("Jeska's Will", row["adversarial_assertion"])
+        self.assertGreater(len(row["limitations"]), 75)
+        sources = gate.read_current()
+        deferred, _, _, _ = gate.current_case_index(sources)
+        self.assertEqual(gate.validate_dispositions(rows, deferred, sources),
+                         {("Kefka__Court_Mage", "W2")})
 
     def test_owner_acceptance_cannot_be_inferred_or_pre_signed(self):
         invalid = copy.deepcopy(self.base)

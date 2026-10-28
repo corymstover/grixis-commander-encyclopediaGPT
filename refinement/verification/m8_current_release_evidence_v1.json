@@ -2023,6 +2023,20 @@
       "positive_assertion": "A staged physical 100 comprising 84 library cards, nine distinct grave fillers, Breach and LED, grave Brain Freeze/Oracle, two tapped lands and command-zone Marchesa executes eleven finite LED/Brain Freeze casts with 3U from each real LED, 1U and three other exiles for Freeze, and three other exiles for LED recasts. Own self-mill replenishes grave fuel; opponent mill does not. With an empty own library, six more other exiles and a live grave Oracle, escaping LED for UUU funds an escaped UU Oracle and a conditional ETB victory.",
       "adversarial_assertion": "Absent Breach, LED, Freeze, three other graveyard cards or survival through graveyard hate prevents the original recurrence; lone Petal gives one mana and cannot by itself cast 1U Freeze. Oracle fails if its ETB is countered, its card is missing, its exiles cannot be paid or own library remains nonempty. Opponent-library exhaustion alone is not immediate loss, and storm spell copies are not extra Marchesa crime casts.",
       "limitations": "Finite staged late-game physical library/zone/cost ledger, not a guaranteed opening, arbitrary opponent priority/targeting tree, infinite loop, observed multiplayer win-rate or automatic library-loss certification. Oracle conversion requires its actual grave object and uncontested triggered ability; source cards and M8 owner status remain unchanged."
+    },
+    {
+      "deck_id": "Kefka__Court_Mage",
+      "case_id": "W2",
+      "approved_raw_sha256": "14277f6e9774c5ef02b4f92332b52684794367007abf81bc2d84ef7ad7bcaa7d",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "Kefka original M6 deferred P1 W2 now has exact owner-approved Rev1 source and original-plan-bound successful GitHub CI, reusing a previously verified physical Breach/LED/Freeze engine only after checking all cards in this list and independently executing Wheel/Jeska's Will stack, hand and cost counterexamples.",
+      "engineering_commit_sha": "3bda23a536e06743ece2bbc97964124f800919aa",
+      "test_blob_sha": "14b1511d27dd79764e81eec95f446d5e2481c35f",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40755712899",
+      "test_ref": "tests/test_m8_kefka_original_w2_breach_wheel.py::KefkaOriginalW2BreachWheel.test_W2_breach_and_wheel_paid_finite_positives_and_adverse_states",
+      "positive_assertion": "Exact Kefka-approved Breach, LED, Petal, Brain Freeze, Wheel, Jeska's Will and Oracle membership permits the reused one-real-LED, three-other-card escape ledger: eleven finite Freeze casts exhaust staged own and three opponent libraries, and an actual grave Oracle with full UU and escape exiles can conditionally win. Separately a paid 2R Wheel can go on stack before LED sacrifices for three same-color mana, then actually refill seven cards; paid Jeska's Will can make seven red from a seven-card opposing hand at resolution, fund 2R Wheel and leave four red.",
+      "adversarial_assertion": "Missing Breach or adequate grave cards, removed Breach or prevented Oracle trigger stops that exact combo; Petal alone cannot fund 1U Freeze and empty opponents do not immediately lose. LED sacrificed before casting Wheel from hand discards Wheel; unpaid/countered Wheel does not draw seven. Jeska's Will yields no red if target hand becomes empty, cannot choose both modes without commander controlled when cast, and exiled cards are not free draws or casts.",
+      "limitations": "Finite late-game physical 100-card Breach engine reuse and distinct paid Wheel/Will priority examples, not an independent full Magic engine, infinite proof, automatic W2 multiplayer victory, card-access probability or response-tree coverage. Old Counsel-specific K4/F3 were already retired rather than retested; no current approval or decklist mutation."
     }
   ],
   "deck_quality_attestations": [
