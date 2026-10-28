@@ -2037,6 +2037,48 @@
       "positive_assertion": "Exact Kefka-approved Breach, LED, Petal, Brain Freeze, Wheel, Jeska's Will and Oracle membership permits the reused one-real-LED, three-other-card escape ledger: eleven finite Freeze casts exhaust staged own and three opponent libraries, and an actual grave Oracle with full UU and escape exiles can conditionally win. Separately a paid 2R Wheel can go on stack before LED sacrifices for three same-color mana, then actually refill seven cards; paid Jeska's Will can make seven red from a seven-card opposing hand at resolution, fund 2R Wheel and leave four red.",
       "adversarial_assertion": "Missing Breach or adequate grave cards, removed Breach or prevented Oracle trigger stops that exact combo; Petal alone cannot fund 1U Freeze and empty opponents do not immediately lose. LED sacrificed before casting Wheel from hand discards Wheel; unpaid/countered Wheel does not draw seven. Jeska's Will yields no red if target hand becomes empty, cannot choose both modes without commander controlled when cast, and exiled cards are not free draws or casts.",
       "limitations": "Finite late-game physical 100-card Breach engine reuse and distinct paid Wheel/Will priority examples, not an independent full Magic engine, infinite proof, automatic W2 multiplayer victory, card-access probability or response-tree coverage. Old Counsel-specific K4/F3 were already retired rather than retested; no current approval or decklist mutation."
+    },
+    {
+      "deck_id": "Nicol_Bolas__the_Ravager",
+      "case_id": "W1",
+      "approved_raw_sha256": "acfa7922e262805a15932b53b1399acdf6ddf5592c8a3793fafdeec720ad4693",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "Exact owner-approved Ravager Rev1 and original M6 deferred W1 were bound to a new GitHub-CI-passed bounded two-Teferi Veil/Gauntlet/Rowan witness, with every Veil mana payment, physical untap, loyalty activation and separate copied proliferate effect tracked. The abbreviated two-card infinite slogan was explicitly delimited.",
+      "engineering_commit_sha": "32070f653ef64fb32cbdaa934459224ecf8aa90f",
+      "test_blob_sha": "b34d7737840f002e96effaf3ec9330c6d86c3af1",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40757579430",
+      "test_ref": "tests/test_m8_ravager_original_w1_w2_w3.py::RavagerOriginalW1W2W3.test_W1_two_teferis_veil_paid_repeat_and_missing_replenishment",
+      "positive_assertion": "Eight successive unopposed exact-deck iterations use one physical Sol Ring producing CC and one each Command Tower/Underground Sea mana to pay Veil's 4 and tap. Temporal Archmage spends -1, then untaps Veil plus all three sources; the separate Master of Time uses Gauntlet's 0 proliferate. Rowan's Talent copies that effect once without extra activation. Both Teferis keep increasing loyalty under the same restored resource state, yielding a repeatable fixed-board invariant rather than fabricated free activation allowances.",
+      "adversarial_assertion": "Temporal Archmage plus Veil alone spends its five loyalty and dies, with no automatically infinite loop. Missing Master, Gauntlet, Veil, four generated generic mana, or a surviving Temporal interrupts the specifically witnessed recurrence; an opposing disruption or removal likewise prevents this idealized sequence. Rowan's copy is never recorded as another loyalty activation; without Rowan the Gauntlet line can still replenish exactly one spent loyalty per iteration.",
+      "limitations": "Conditional fixed-board repeatability requires two separately activated Teferis, already-resolved Gauntlet and optional Rowan, a live untapped Veil, three specifically identified reusable mana sources and no interference. This is a finite eight-iteration resource/state proof with an explicit recurring invariant, not a probabilistic assembly claim, universal infinite-engine validation, measured win-rate, instant-speed exception or deck modification."
+    },
+    {
+      "deck_id": "Nicol_Bolas__the_Ravager",
+      "case_id": "W2",
+      "approved_raw_sha256": "acfa7922e262805a15932b53b1399acdf6ddf5592c8a3793fafdeec720ad4693",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "The original Ravager-Arisen ultimate W2 now has a current-Rev1 source-bound successful CI trace of paid sorcery-speed transformation, real loyalty buildup, paid Rings copies and library/draw outcomes, while distinguishing Spark Double, Deepglow and cast/tap proliferate sources.",
+      "engineering_commit_sha": "32070f653ef64fb32cbdaa934459224ecf8aa90f",
+      "test_blob_sha": "b34d7737840f002e96effaf3ec9330c6d86c3af1",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40757579430",
+      "test_ref": "tests/test_m8_ravager_original_w1_w2_w3.py::RavagerOriginalW1W2W3.test_W2_seven_to_twelve_paid_arisen_rings_and_draw_not_instant_loss",
+      "positive_assertion": "The transform fixture pays four generic and UBR at sorcery speed and enters Arisen at seven loyalty. A resolving Deepglow Skate doubles legal-target Arisen to fourteen and a nonlegendary Spark Double copying it starts at eight then doubles to sixteen. Arisen pays -12 once to two loyalty; a separately paid two-generic Rings trigger copies the ability to a second opponent, reducing two distinct libraries of seventy and sixty cards to one each, without immediately ending either player's game. Flux/Tekuthal and paid tapped Karn's Bastion produce explicit finite loyalty buildup.",
+      "adversarial_assertion": "Missing a transform color, generic payment or sorcery-speed opportunity stops transformation; seven loyalty cannot pay -12. Illegal Deepglow targets receive no doubling, unavailable Rings 2 payment leaves only the original library affected, and a countered original has no original effect even when the Rings copy resolves. A player with one library card draws it successfully once and loses only on a later unsuccessful attempted draw; +2 loyalty activation does not grant a free same-turn -12.",
+      "limitations": "Finite staged board/target/mana/loyalty and library-state trace, not a complete spell-stack judge, proof of assembling the seven cards, inevitable draw trigger or universal multiplayer victory. Karn's Bastion requires a real 4 and tap; extra Chain Veil permissions must be sourced separately. No owner signoff, metagame performance or modification of the approved Rev1 source is implied."
+    },
+    {
+      "deck_id": "Nicol_Bolas__the_Ravager",
+      "case_id": "W3",
+      "approved_raw_sha256": "acfa7922e262805a15932b53b1399acdf6ddf5592c8a3793fafdeec720ad4693",
+      "disposition": "CURRENT_SHA_TESTED",
+      "reason": "The original M6 superfriends advantage/ultimate W3 is now anchored to all twelve specified exact-approved Rev1 source cards and a successful finite GitHub-CI counter/conditional-loss trace instead of an assumed automatic planeswalker victory.",
+      "engineering_commit_sha": "32070f653ef64fb32cbdaa934459224ecf8aa90f",
+      "test_blob_sha": "b34d7737840f002e96effaf3ec9330c6d86c3af1",
+      "ci_run_url": "https://github.com/corymstover/grixis-commander-encyclopediaGPT/actions/runs/40757579430",
+      "test_ref": "tests/test_m8_ravager_original_w1_w2_w3.py::RavagerOriginalW1W2W3.test_W3_superfriends_actual_ultimates_legendary_exception_and_triggers",
+      "positive_assertion": "On a staged legal four-walker board, Deepglow doubles Dragon-God from four to eight, God-Pharaoh seven to fourteen, old Nicol Bolas planeswalker five to ten and Liliana six to twelve. Dragon-God can pay -8 and cause only opponents lacking both legendary creatures and planeswalkers to lose on resolution; Liliana pays -9 to three and lets opponents select one permanent of each type to retain. One noncreature cast gives distinct Flux/Tide proliferate events, second spell adds Whale, and Tekuthal doubles each; a resolving Tezzeret's Gambit adds its own two draws and proliferate instruction.",
+      "adversarial_assertion": "Dragon-God at four cannot pay -8; an opponent with a legendary creature or planeswalker survives its resolved ultimate, and countering that loyalty ability prevents the modeled loss. Liliana's -9 need not sacrifice a lone permanent of a type. Whale does not proliferate on a first spell or after its own disappearance; Flux does not trigger from creature spells. Countered Gambit provides no resolving draw/proliferate although prior cast triggers remain. Paid Ripples proliferates but selected protected planeswalkers phase out and cannot be activated until they return.",
+      "limitations": "A conditional finite staged superfriends payoff with exact Oracle-string and source bindings, not full board-assembly timing, opponents' choices for multi-typed permanents, every priority/target branch, infinite proliferate, metagame win-rate or an automatic four-ultimate single-turn result. Dragon-God and Liliana ultimates are separate scenario branches; no approved list, power claim or M8 owner acceptance is changed."
     }
   ],
   "deck_quality_attestations": [
