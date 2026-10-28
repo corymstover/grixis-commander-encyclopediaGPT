@@ -1,0 +1,8 @@
+# The Valeyard — M7 Rev1 owner-locked exact 100 verification
+
+- Owner-exact raw SHA-256: `1735629783fbea2c9b8782fe18835f6dc8b3b980715344249cdb0941fbd9887b`, identical to engineering selected candidate TXT bytes and all names/quantities in owner ZIP `The_Valeyard_GPT2.csv`.
+- [Merged engineering PR #743](https://github.com/corymstover/GrokBotMTGCompanion/pull/743), exact verification head `f2f0c9673dcf8ebccac59604dae7fcf79edba555`: **5/5 GitHub Actions success**, including [dedicated Valeyard](https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40637249710) and [full M7 contract](https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40637249735).
+- Current archived 2026-10-27 Scryfall source: `data/grixis/m7/the_valeyard_rev1/The_Valeyard_M7_Rev1_Scryfall_snapshot.json`, 100 cards / 96 distinct names / 36 lands, Grixis Commander identity/legal, singleton, zero project exceptions. Review assesses 18 material challengers, 16 incumbents, Alt7/Alt8 full lists.
+- Original M6 C1/K1/K2/K3/F1 and K4/K5/E1/E2/E3/W1/W2/F2/F3 all passed exact-source **bounded** positive/adversarial finite tests; the SHA-bound canonical transfer record enumerates the original IDs, method, Oracle source and exact action URL.
+- No complete independent original I/J Phase B replay or general multi-player win-rate/stack simulator has been run. Finite case tests are not equivalent to statistical dominance or proof of a local optimum.
+- Former 2026-10-15 approved raw SHA `4bef619a33d85eafaf194997924fc8378dd490f62c59d76bafccc4fa07ef821c` and original approval receipt/source remain historical, not modified.

@@ -1,0 +1,29 @@
+name: "M7 Deck 58 The Valeyard exact owner ZIP six-swap, P0/P1 and other-61 preservation"
+
+on:
+  pull_request:
+    paths:
+      - "state/current_deck_overrides.json"
+      - "refinement/decklists/The_Valeyard_M7_Rev1_Approved_2026-10-28.txt"
+      - "refinement/verification/m7_certification_transfer/The_Valeyard_1735629783fbea2c.json"
+      - "tests/test_m7_valeyard_58_owner_lock.py"
+      - ".github/workflows/verify-m7-valeyard-58-owner-lock.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  owner-exact-source-and-original-p0-p1:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verify exact 100, six swaps, 5 original P0 + 9 P1, receipt, and unchanged other 61
+        env:
+          BASE_REF_SHA: ${{ github.event.pull_request.base.sha }}
+        run: python3 -m unittest discover -s tests -p 'test_m7_valeyard_58_owner_lock.py' -v
