@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "deck_id": "Nicol_Bolas__the_Ravager",
+  "approved_raw_sha256": "acfa7922e262805a15932b53b1399acdf6ddf5592c8a3793fafdeec720ad4693",
+  "approved_artifact": "refinement/decklists/Nicol_Bolas_the_Ravager_M7_Rev1_Approved_2026-10-26.txt",
+  "owner_approval_receipt": "refinement/approvals/Nicol_Bolas_the_Ravager_M7_Rev1_Approved_2026-10-26.md",
+  "engineering": {
+    "pr_url": "https://github.com/corymstover/GrokBotMTGCompanion/pull/747",
+    "head_sha": "27ddbeddf2f364a092e6f2091184992f6f79072f",
+    "grok_first_pass_ref": "data/grixis/m6/test_blueprints/Nicol_Bolas__the_Ravager.json — preimplementation authored spec, not a new independent GrokBot M7 first pass",
+    "independent_review_ref": "Historical candidate decision evidence in data/grixis/m7/decision_reviews/Nicol_Bolas__the_Ravager_chatgpt_rev1_review.md; first-stage engineering PR #724; no newly independent review is asserted",
+    "m7_decision_packet_ref": "data/grixis/m7/decision_reviews/Nicol_Bolas__the_Ravager_chatgpt_rev1_review.md",
+    "m7_decision_gate_command": "python3 -m unittest discover -s tests -p 'test_m7_missing_transfer_p0_source_bound.py' -v (supplemental exact-approved P0 provenance gate; does NOT replace missing independent 99-slot M7 strategic decision gate)",
+    "m7_decision_gate_ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40625340023",
+    "oracle_legality_ref": "refinement/verification/Nicol_Bolas_the_Ravager_M7_Rev1_Approved_2026-10-26_Verification.md — existing owner-approved whole-list/source-composite Oracle and legality review; this new CI checks frozen commander Oracle and approved exact source bytes, not a live current 100/100 Scryfall batch"
+  },
+  "identity_crosswalk": null,
+  "m6_transfer": {
+    "plan_source_path": "data/grixis/m6/test_blueprints/Nicol_Bolas__the_Ravager.json",
+    "plan_blob_sha": "15450a891569966fdec582e4a905ce21f739b3c8",
+    "ij_receipt_ref": "data/grixis/m6/ij/input_receipts/nicol-bolas-the-ravager.json — historically inputs attested, downstream Phase B not complete/never inferred",
+    "ij_scope": "TRANSFERRED_WITH_CASE_MAPPING",
+    "revision_diff_and_validity_reason": "The October 15 approved list was explicitly replaced by owner-approved M7 current exact raw SHA acfa7922e262805a15932b53b1399acdf6ddf5592c8a3793fafdeec720ad4693; no approved cards or bytes changed by this evidence backfill. The original M6 blueprint P0 inventory (5 cases) was design-only, so engineering PR #747 added newly executed, individually named, positive/negative finite source cases for the exact M7 candidate; successful exact-head CI #40625340023 verifies the source hash before cases run. All 10 original P1 designs are explicitly DEFERRED with specific consequences. Earlier candidate and source-composite legality/Oracle review is distinct from a new all-card API audit. This attests only that bounded source models ran; it is NOT an independently complete M6 I/J, original M7 99-slot gate, multiplayer simulation, or revocation of prior owner approval.",
+    "P0": [
+      {
+        "case_id": "C1",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_missing_transfer_p0_source_bound.py::RavagerP0.test_C1_etb_each_opponent_one_discard_and_source_paid_transform",
+        "execution_command": "python3 -m unittest discover -s tests -p 'test_m7_missing_transfer_p0_source_bound.py' -v",
+        "oracle_source": "data/grixis/m6/test_blueprints/Nicol_Bolas__the_Ravager.json — frozen Oracle ID and printed commander text checked by class setUpClass; refinement/verification/Nicol_Bolas_the_Ravager_M7_Rev1_Approved_2026-10-26_Verification.md — existing approved list Oracle/legality analysis; newly executed finite source model, not a fresh full Oracle API pass",
+        "payable_fixture": "Exact approved SHA acfa7922e262805a15932b53b1399acdf6ddf5592c8a3793fafdeec720ad4693, original source case 'Nicol Bolas, the Ravager // Nicol Bolas, the Arisen': Commander in legal and invalid zone/timing; actual cost, ability frequency, triggers and control. New source-scoped fixture models actual action/cost/timing/zone constraints and a failing precondition, without claiming a general Magic game engine.",
+        "positive_assertion": "Actual new CI-executed assertion (bounded source case): self.assertIn(\"each opponent discards a card\", self.oracle.lower()); original expected claim: Flying When Nicol Bolas enters, each opponent discards a card. {4}{U}{B}{R}: Exile Nicol Bolas, then return him to the battlefield transformed under his owner's control. Activate only as a sorcery. +2: Draw two cards. −3: Nicol Bo.",
+        "adversarial_assertion": "Actual new CI-executed negative-control or contrasting-boundary assertion: self.assertFalse(may_transform(4, {\"U\":1, \"B\":1, \"R\":1}, False, True)); no outcome outside the listed method is certified.",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "acfa7922e262805a15932b53b1399acdf6ddf5592c8a3793fafdeec720ad4693",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40625340023",
+        "evidence_limit": "Executed original P0 bounded algebraic/zone/stack test on approved SHA; not original unexecuted M6 J or full gameplay."
+      },
+      {
+        "case_id": "K1",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_missing_transfer_p0_source_bound.py::RavagerP0.test_K1_exile_return_transformed_new_object_not_etb_discard",
+        "execution_command": "python3 -m unittest discover -s tests -p 'test_m7_missing_transfer_p0_source_bound.py' -v",
+        "oracle_source": "data/grixis/m6/test_blueprints/Nicol_Bolas__the_Ravager.json — frozen Oracle ID and printed commander text checked by class setUpClass; refinement/verification/Nicol_Bolas_the_Ravager_M7_Rev1_Approved_2026-10-26_Verification.md — existing approved list Oracle/legality analysis; newly executed finite source model, not a fresh full Oracle API pass",
+        "payable_fixture": "Exact approved SHA acfa7922e262805a15932b53b1399acdf6ddf5592c8a3793fafdeec720ad4693, original source case 'transform-exile-return': Stage named source cards, trigger/resolution and source condition; adversarially remove prerequisite or response window. New source-scoped fixture models actual action/cost/timing/zone constraints and a failing precondition, without claiming a general Magic game engine.",
+        "positive_assertion": "Actual new CI-executed assertion (bounded source case): self.assertEqual(exile[1], \"exile\"); original expected claim: Ravager's ability exiles him and returns him transformed: a new object with summoning sickness that doesn't matter for loyalty abilities..",
+        "adversarial_assertion": "Actual new CI-executed negative-control or contrasting-boundary assertion: self.assertNotEqual(before[2], after[2]); no outcome outside the listed method is certified.",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "acfa7922e262805a15932b53b1399acdf6ddf5592c8a3793fafdeec720ad4693",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40625340023",
+        "evidence_limit": "Executed original P0 bounded algebraic/zone/stack test on approved SHA; not original unexecuted M6 J or full gameplay."
+      },
+      {
+        "case_id": "K2",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_missing_transfer_p0_source_bound.py::RavagerP0.test_K2_one_loyalty_activation_per_turn_unless_effect",
+        "execution_command": "python3 -m unittest discover -s tests -p 'test_m7_missing_transfer_p0_source_bound.py' -v",
+        "oracle_source": "data/grixis/m6/test_blueprints/Nicol_Bolas__the_Ravager.json — frozen Oracle ID and printed commander text checked by class setUpClass; refinement/verification/Nicol_Bolas_the_Ravager_M7_Rev1_Approved_2026-10-26_Verification.md — existing approved list Oracle/legality analysis; newly executed finite source model, not a fresh full Oracle API pass",
+        "payable_fixture": "Exact approved SHA acfa7922e262805a15932b53b1399acdf6ddf5592c8a3793fafdeec720ad4693, original source case 'one-loyalty-activation': Stage named source cards, trigger/resolution and source condition; adversarially remove prerequisite or response window. New source-scoped fixture models actual action/cost/timing/zone constraints and a failing precondition, without claiming a general Magic game engine.",
+        "positive_assertion": "Actual new CI-executed assertion (bounded source case): self.assertTrue(may_use_loyalty(0)); original expected claim: Normally one loyalty activation per planeswalker per turn; Chain Veil, Gauntlet and Rings break this..",
+        "adversarial_assertion": "Actual new CI-executed negative-control or contrasting-boundary assertion: self.assertFalse(may_use_loyalty(1)); no outcome outside the listed method is certified.",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "acfa7922e262805a15932b53b1399acdf6ddf5592c8a3793fafdeec720ad4693",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40625340023",
+        "evidence_limit": "Executed original P0 bounded algebraic/zone/stack test on approved SHA; not original unexecuted M6 J or full gameplay."
+      },
+      {
+        "case_id": "K3",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_missing_transfer_p0_source_bound.py::RavagerP0.test_K3_proliferate_adds_one_to_each_chosen_permanent",
+        "execution_command": "python3 -m unittest discover -s tests -p 'test_m7_missing_transfer_p0_source_bound.py' -v",
+        "oracle_source": "data/grixis/m6/test_blueprints/Nicol_Bolas__the_Ravager.json — frozen Oracle ID and printed commander text checked by class setUpClass; refinement/verification/Nicol_Bolas_the_Ravager_M7_Rev1_Approved_2026-10-26_Verification.md — existing approved list Oracle/legality analysis; newly executed finite source model, not a fresh full Oracle API pass",
+        "payable_fixture": "Exact approved SHA acfa7922e262805a15932b53b1399acdf6ddf5592c8a3793fafdeec720ad4693, original source case 'proliferate': Stage named source cards, trigger/resolution and source condition; adversarially remove prerequisite or response window. New source-scoped fixture models actual action/cost/timing/zone constraints and a failing precondition, without claiming a general Magic game engine.",
+        "positive_assertion": "Actual new CI-executed assertion (bounded source case): self.assertEqual(after, {\"Bolas\": 4, \"Other walker\": 2, \"No chosen\": 7}); original expected claim: Proliferate adds loyalty to every chosen planeswalker..",
+        "adversarial_assertion": "Actual new CI-executed negative-control or contrasting-boundary assertion: self.assertEqual(after[\"No chosen\"], before[\"No chosen\"]); no outcome outside the listed method is certified.",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "acfa7922e262805a15932b53b1399acdf6ddf5592c8a3793fafdeec720ad4693",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40625340023",
+        "evidence_limit": "Executed original P0 bounded algebraic/zone/stack test on approved SHA; not original unexecuted M6 J or full gameplay."
+      },
+      {
+        "case_id": "F1",
+        "status": "PASSED",
+        "test_ref": "tests/test_m7_missing_transfer_p0_source_bound.py::RavagerP0.test_F1_sorcery_window_telegraphs_transformation",
+        "execution_command": "python3 -m unittest discover -s tests -p 'test_m7_missing_transfer_p0_source_bound.py' -v",
+        "oracle_source": "data/grixis/m6/test_blueprints/Nicol_Bolas__the_Ravager.json — frozen Oracle ID and printed commander text checked by class setUpClass; refinement/verification/Nicol_Bolas_the_Ravager_M7_Rev1_Approved_2026-10-26_Verification.md — existing approved list Oracle/legality analysis; newly executed finite source model, not a fresh full Oracle API pass",
+        "payable_fixture": "Exact approved SHA acfa7922e262805a15932b53b1399acdf6ddf5592c8a3793fafdeec720ad4693, original source case 'sorcery-transform': Construct conditional enemy disruption, then actually test mitigation: Training Grounds New source-scoped fixture models actual action/cost/timing/zone constraints and a failing precondition, without claiming a general Magic game engine.",
+        "positive_assertion": "Actual new CI-executed assertion (bounded source case): self.assertTrue(can_respond_activation(True, True, set(\"UBR\"))); original expected claim: The transform is slow and telegraphed..",
+        "adversarial_assertion": "Actual new CI-executed negative-control or contrasting-boundary assertion: self.assertFalse(can_respond_activation(False, True, set(\"UBR\"))); no outcome outside the listed method is certified.",
+        "scope": "EXACT_APPROVED_100",
+        "tested_raw_sha256": "acfa7922e262805a15932b53b1399acdf6ddf5592c8a3793fafdeec720ad4693",
+        "ci_run_url": "https://github.com/corymstover/GrokBotMTGCompanion/actions/runs/40625340023",
+        "evidence_limit": "Executed original P0 bounded algebraic/zone/stack test on approved SHA; not original unexecuted M6 J or full gameplay."
+      }
+    ],
+    "P1": [
+      {
+        "case_id": "K4",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'kitten-reset' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/K4 remains unexecuted as formal original-to-final tested mapping: Displacer Kitten flickers Ravager for repeated ETB discard. Flickering the Arisen returns the front face and strips Talents attached to him.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "K5",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'bolas-walker-checks' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/K5 remains unexecuted as formal original-to-final tested mapping: Deliver Unto Evil sees the Bolas planeswalkers; Dark Intimations' Bolas clause doesn't apply here.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "K6",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'spark-dragon-god' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/K6 remains unexecuted as formal original-to-final tested mapping: Spark Double copies the Arisen; Nicol Bolas, Dragon-God borrows every planeswalker's loyalty abilities.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "E1",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'transform' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/E1 remains unexecuted as formal original-to-final tested mapping: Seven mana at sorcery speed (less with Training Grounds).. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "E2",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'loyalty-multiplication' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/E2 remains unexecuted as formal original-to-final tested mapping: Planeswalkers in play.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "W1",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'teferi-veil' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/W1 remains unexecuted as formal original-to-final tested mapping: Teferi, Temporal Archmage + The Chain Veil; Teferi, Master of Time + Ichormoon Gauntlet + The Chain Veil or Rowan's Talent: infinite loyalty activations.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "W2",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'arisen-ultimate' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/W2 remains unexecuted as formal original-to-final tested mapping: The Arisen's -12 exiles all but one card of a library; extra activations and proliferate get there quickly.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "W3",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'superfriends-value' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/W3 remains unexecuted as formal original-to-final tested mapping: Planeswalker advantage and ultimates.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "F2",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'walker-pressure' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/F2 remains unexecuted as formal original-to-final tested mapping: Combat pressure and walker removal punish a superfriends board.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      },
+      {
+        "case_id": "F3",
+        "status": "DEFERRED",
+        "specific_reason": "Original designed M6 P1 scenario 'veil-hate' was not implemented as an exact-approved-hash, source-specific normal/adversarial case in new engineering PR #747. Historic candidate structural checks or discussion are not proof of this original P1 case.",
+        "coverage_consequence": "P1/F3 remains unexecuted as formal original-to-final tested mapping: Artifact removal answers the Veil/Gauntlet.. This is owner-visible and must not be counted as passing gameplay certification.",
+        "owner_visible_unresolved": true
+      }
+    ]
+  }
+}
