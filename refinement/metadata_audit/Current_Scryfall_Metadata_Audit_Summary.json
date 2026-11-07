@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-11-06T09:15:25.936138+00:00",
+  "generated_at_utc": "2026-11-07T09:07:12.518408+00:00",
   "bulk_type": "default_cards",
-  "bulk_updated_at": "2026-11-05T22:06:50.002+00:00",
+  "bulk_updated_at": "2026-11-06T22:06:52.389+00:00",
   "deck_count": 62,
   "decklist_rows": 5964,
   "distinct_printing_keys": 1644,
@@ -35,27 +35,6 @@
       "zone": "Main",
       "official_status": "banned",
       "project_exception_status": "REGISTERED PROJECT EXCEPTION — project banned-card exception; official status retained separately"
-    },
-    {
-      "deck_id": "The_Madcap_Jester",
-      "card_name": "Dragon's Smile",
-      "zone": "Main",
-      "official_status": "not_legal",
-      "project_exception_status": "REGISTERED PROJECT EXCEPTION — future-release or project card; official status retained separately"
-    },
-    {
-      "deck_id": "The_Madcap_Jester",
-      "card_name": "The Madcap Jester",
-      "zone": "Main",
-      "official_status": "not_legal",
-      "project_exception_status": "REGISTERED PROJECT EXCEPTION — future-release commander; official status retained separately"
-    },
-    {
-      "deck_id": "Tresserhorn_s_Lord__Returned",
-      "card_name": "Tresserhorn's Lord, Returned",
-      "zone": "Main",
-      "official_status": "not_legal",
-      "project_exception_status": "REGISTERED PROJECT EXCEPTION — future-release commander; official status retained separately"
     }
   ],
   "unknown_commander_legality_rows": [],
